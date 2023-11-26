@@ -1,10 +1,13 @@
 package kittens
 
-import "fmt"
-import "log"
-import "strings"
-import "time"
-import "github.com/kssilveira/idle-game-engine/game"
+import (
+	"fmt"
+	"log"
+	"strings"
+	"time"
+
+	"github.com/kssilveira/idle-game-engine/game"
+)
 
 type Input func() int
 type Now func() time.Time
@@ -101,7 +104,6 @@ func Run(logger *log.Logger, input Input, now Now) {
 
 TODO
 
-- fix import syntax
 - validate Game to simplify error handling
 
 actions

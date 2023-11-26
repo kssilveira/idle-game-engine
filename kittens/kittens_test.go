@@ -1,10 +1,12 @@
 package kittens
 
-import "bytes"
-import "log"
-import "testing"
-import "strings"
-import "time"
+import (
+	"bytes"
+	"log"
+	"strings"
+	"testing"
+	"time"
+)
 
 func TestRun(t *testing.T) {
 	inputs := []struct {

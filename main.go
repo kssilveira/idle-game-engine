@@ -1,10 +1,13 @@
 package main
 
-import "fmt"
-import "log"
-import "os"
-import "time"
-import "github.com/kssilveira/idle-game-engine/kittens"
+import (
+	"fmt"
+	"log"
+	"os"
+	"time"
+
+	"github.com/kssilveira/idle-game-engine/kittens"
+)
 
 func main() {
 	logger := log.New(os.Stdout, "", 0 /* flags */)

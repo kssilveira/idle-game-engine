@@ -1,7 +1,9 @@
 package game
 
-import "testing"
-import "time"
+import (
+	"testing"
+	"time"
+)
 
 func TestAct(t *testing.T) {
 	inputs := []struct {

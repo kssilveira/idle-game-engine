@@ -1,7 +1,9 @@
 package game
 
-import "fmt"
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 type Resource struct {
 	Name           string
