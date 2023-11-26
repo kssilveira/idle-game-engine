@@ -30,16 +30,8 @@ func main() {
 		input := -1
 		fmt.Printf("> ")
 		fmt.Scanf("%d", &input)
-		if input < 0 || input >= len(g.Actions) {
-			fmt.Printf("invalid input\n")
-			continue
-		}
-		for _, add := range g.Actions[input].Add {
-			r := g.Resources[g.ResourceToIndex[add.Name]]
-			r.Quantity += add.Quantity
-			if r.Quantity > r.Capacity {
-				r.Quantity = r.Capacity
-			}
+		if err := g.Act(input); err != nil {
+			fmt.Printf("%v\n", err)
 		}
 	}
 }

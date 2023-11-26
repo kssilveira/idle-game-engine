@@ -1,5 +1,7 @@
 package game
 
+import "fmt"
+
 type Resource struct {
 	Name string
 	Quantity int
@@ -28,3 +30,16 @@ func (g *Game) AddResource(r *Resource) {
 	g.Resources = append(g.Resources, r)
 }
 
+func (g *Game) Act(index int) error {
+	if index < 0 || index >= len(g.Actions) {
+		return fmt.Errorf("invalid index %d", index)
+	}
+	for _, add := range g.Actions[index].Add {
+		r := g.Resources[g.ResourceToIndex[add.Name]]
+		r.Quantity += add.Quantity
+		if r.Quantity > r.Capacity {
+			r.Quantity = r.Capacity
+		}
+	}
+	return nil
+}
