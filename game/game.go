@@ -30,12 +30,23 @@ func (g *Game) AddResource(r *Resource) {
 	g.Resources = append(g.Resources, r)
 }
 
+func (g *Game) GetResource(name string) (*Resource, error) {
+	index, ok := g.ResourceToIndex[name]
+	if !ok {
+		return nil, fmt.Errorf("invalid resource name %s", name)
+	}
+	return g.Resources[index], nil
+}
+
 func (g *Game) Act(index int) error {
 	if index < 0 || index >= len(g.Actions) {
 		return fmt.Errorf("invalid index %d", index)
 	}
 	for _, add := range g.Actions[index].Add {
-		r := g.Resources[g.ResourceToIndex[add.Name]]
+		r, err := g.GetResource(add.Name)
+		if err != nil {
+			return err
+		}
 		r.Quantity += add.Quantity
 		if r.Quantity > r.Capacity {
 			r.Quantity = r.Capacity
