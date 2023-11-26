@@ -4,26 +4,29 @@ import "bytes"
 import "log"
 import "testing"
 import "strings"
+import "time"
 
 func TestRun(t *testing.T) {
 	inputs := []struct {
 		name   string
 		inputs []int
+		times  []int64
 		want   string
 	}{{
 		name:   "0 0 0",
-		inputs: []int{0, 1},
+		inputs: []int{1, 0},
+		times:  []int64{1, 2, 3},
 		want: `
-catnip 0/5000
-Catnip Field 0
+Spring 1.00
 0: 'Gather catnip' (catnip + 1)
 1: 'Catnip Field' (Catnip Field + 1)
-catnip 1/5000
-Catnip Field 0
+Catnip Field 1.00
+Spring 1.00
 0: 'Gather catnip' (catnip + 1)
 1: 'Catnip Field' (Catnip Field + 1)
-catnip 1/5000
-Catnip Field 1
+catnip 1.94/5000 (0.94/s)
+Catnip Field 1.00
+Spring 1.00
 0: 'Gather catnip' (catnip + 1)
 1: 'Catnip Field' (Catnip Field + 1)
 `,
@@ -31,13 +34,18 @@ Catnip Field 1
 	for _, in := range inputs {
 		var buf bytes.Buffer
 		logger := log.New(&buf, "", 0 /* flags */)
-		index := 0
+		inputIndex := 0
+		timeIndex := 0
 		Run(logger, func() int {
-			if index >= len(in.inputs) {
+			if inputIndex >= len(in.inputs) {
 				return 999
 			}
-			res := in.inputs[index]
-			index++
+			res := in.inputs[inputIndex]
+			inputIndex++
+			return res
+		}, func() time.Time {
+			res := time.Unix(in.times[timeIndex], 0)
+			timeIndex++
 			return res
 		})
 		got := buf.String()
