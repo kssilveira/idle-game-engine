@@ -1,53 +1,26 @@
 package main
 
 import "fmt"
-
-type Resource struct {
-	Name string
-	Quantity int
-	Capacity int
-}
-
-type Action struct {
-	Name string
-	Add []Resource
-}
-
-type Game struct {
-	Resources []*Resource
-	ResourceToIndex map[string]int
-	Actions []Action
-}
-
-func NewGame() *Game {
-	return &Game{
-		ResourceToIndex: map[string]int{},
-	}
-}
-
-func (g *Game) AddResource(r *Resource) {
-	g.ResourceToIndex[r.Name] = len(g.Resources)
-	g.Resources = append(g.Resources, r)
-}
+import "github.com/kssilveira/idle-game-engine/game"
 
 func main() {
-	game := NewGame()
-	game.AddResource(&Resource{
+	g := game.NewGame()
+	g.AddResource(&game.Resource{
 			Name: "catnip",
 			Capacity: 5,
 		})
-	game.Actions = []Action{{
+	g.Actions = []game.Action{{
 		Name: "Gather catnip",
-		Add: []Resource{{
+		Add: []game.Resource{{
 			Name: "catnip",
 			Quantity: 1,
 		}},
 	}}
 	for ;; {
-		for _, r := range game.Resources {
+		for _, r := range g.Resources {
 			fmt.Printf("%s %d/%d\n", r.Name, r.Quantity, r.Capacity)
 		}
-		for i, a := range game.Actions {
+		for i, a := range g.Actions {
 			fmt.Printf("%d: '%s' (", i, a.Name)
 			for _, r := range a.Add  {
 				fmt.Printf("%s + %d", r.Name, r.Quantity)
@@ -57,12 +30,12 @@ func main() {
 		input := -1
 		fmt.Printf("> ")
 		fmt.Scanf("%d", &input)
-		if input < 0 || input >= len(game.Actions) {
+		if input < 0 || input >= len(g.Actions) {
 			fmt.Printf("invalid input\n")
 			continue
 		}
-		for _, add := range game.Actions[input].Add {
-			r := game.Resources[game.ResourceToIndex[add.Name]]
+		for _, add := range g.Actions[input].Add {
+			r := g.Resources[g.ResourceToIndex[add.Name]]
 			r.Quantity += add.Quantity
 			if r.Quantity > r.Capacity {
 				r.Quantity = r.Capacity
