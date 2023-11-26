@@ -74,7 +74,12 @@ func Run(logger *log.Logger, input Input, now Now) {
 			rateStr := ""
 			rate := g.GetRate(r)
 			if rate != 0 {
-				rateStr = fmt.Sprintf(" (%.2f/s)", rate)
+				capStr := ""
+				if r.Capacity > 0 {
+					duration := time.Duration(((r.Capacity - r.Quantity) / rate)) * time.Second
+					capStr = fmt.Sprintf(", %s to cap", duration)
+				}
+				rateStr = fmt.Sprintf(" (%.2f/s%s)", rate, capStr)
 			}
 			logger.Printf("%s %.2f%s%s\n", r.Name, r.Quantity, capacity, rateStr)
 		}

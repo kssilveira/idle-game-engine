@@ -26,7 +26,7 @@ Catnip Field 1.00
 Spring 1.00
 0: 'Gather catnip' (catnip + 1)
 1: 'Catnip Field' (Catnip Field + 1)
-catnip 1.94/5000 (0.94/s)
+catnip 1.94/5000 (0.94/s, 1h28m8s to cap)
 Catnip Field 1.00
 Spring 1.00
 0: 'Gather catnip' (catnip + 1)
