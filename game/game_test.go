@@ -83,6 +83,21 @@ func TestUpdate(t *testing.T) {
 		times: []int64{4, 5, 6},
 		want:  []int{2 * 3 * 4, 2 * 3 * 5, 2 * 3 * 6},
 	}, {
+		name: "over cap",
+		resources: []Resource{{
+			Name:     "resource",
+			Capacity: 28,
+			Rate: []Resource{{
+				Name:   "input",
+				Factor: 2,
+			}},
+		}, {
+			Name:     "input",
+			Quantity: 3,
+		}},
+		times: []int64{4, 5, 6},
+		want:  []int{2 * 3 * 4, 28, 28},
+	}, {
 		name: "two inputs",
 		resources: []Resource{{
 			Name: "resource",

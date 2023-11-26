@@ -14,6 +14,13 @@ type Resource struct {
 	ResourceFactor string
 }
 
+func (r *Resource) AddQuantity(add float64) {
+	r.Quantity += add
+	if r.Quantity > r.Capacity && r.Capacity > 0 {
+		r.Quantity = r.Capacity
+	}
+}
+
 type Action struct {
 	Name string
 	Add  []Resource
@@ -81,7 +88,7 @@ func (g *Game) Update(now time.Time) {
 	g.Now = now
 	for _, resource := range g.Resources {
 		factor := g.GetRate(resource)
-		resource.Quantity += factor * elapsed.Seconds()
+		resource.AddQuantity(factor * elapsed.Seconds())
 	}
 }
 
@@ -103,10 +110,7 @@ func (g *Game) Act(index int) error {
 	}
 	for _, add := range g.Actions[index].Add {
 		r := g.GetResource(add.Name)
-		r.Quantity += add.Quantity
-		if r.Capacity > 0 && r.Quantity > r.Capacity {
-			r.Quantity = r.Capacity
-		}
+		r.AddQuantity(add.Quantity)
 	}
 	return nil
 }
