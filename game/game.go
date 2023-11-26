@@ -25,9 +25,12 @@ func NewGame() *Game {
 	}
 }
 
-func (g *Game) AddResource(r *Resource) {
-	g.ResourceToIndex[r.Name] = len(g.Resources)
-	g.Resources = append(g.Resources, r)
+func (g *Game) AddResources(resources []Resource) {
+	for _, resource := range resources {
+		g.ResourceToIndex[resource.Name] = len(g.Resources)
+		cp := resource
+		g.Resources = append(g.Resources, &cp)
+	}
 }
 
 func (g *Game) GetResource(name string) (*Resource, error) {
@@ -48,7 +51,7 @@ func (g *Game) Act(index int) error {
 			return err
 		}
 		r.Quantity += add.Quantity
-		if r.Quantity > r.Capacity {
+		if r.Capacity > 0 && r.Quantity > r.Capacity {
 			r.Quantity = r.Capacity
 		}
 	}

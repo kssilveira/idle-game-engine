@@ -9,20 +9,32 @@ type Input func() int
 
 func Run(logger *log.Logger, input Input) {
 	g := game.NewGame()
-	g.AddResource(&game.Resource{
+	g.AddResources([]game.Resource{{
 		Name:     "catnip",
 		Capacity: 5000,
-	})
+	}, {
+		Name: "Catnip Field",
+	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
 		Add: []game.Resource{{
 			Name:     "catnip",
 			Quantity: 1,
 		}},
+	}, {
+		Name: "Catnip Field",
+		Add: []game.Resource{{
+			Name:     "Catnip Field",
+			Quantity: 1,
+		}},
 	}}
 	for {
 		for _, r := range g.Resources {
-			logger.Printf("%s %d/%d\n", r.Name, r.Quantity, r.Capacity)
+			capacity := ""
+			if r.Capacity > 0 {
+				capacity = fmt.Sprintf("/%d", r.Capacity)
+			}
+			logger.Printf("%s %d%s\n", r.Name, r.Quantity, capacity)
 		}
 		for i, a := range g.Actions {
 			parts := []string{

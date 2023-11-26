@@ -24,12 +24,24 @@ func TestGame(t *testing.T) {
 		}},
 		inputs: []int{0, 0, 0},
 		want:   []int{1, 2, 2},
+	}, {
+		name: "no cap",
+		resources: []Resource{{
+			Name: "resource",
+		}},
+		actions: []Action{{
+			Name: "add 1",
+			Add: []Resource{{
+				Name:     "resource",
+				Quantity: 1,
+			}},
+		}},
+		inputs: []int{0, 0, 0},
+		want:   []int{1, 2, 3},
 	}}
 	for _, in := range inputs {
 		g := NewGame()
-		for _, r := range in.resources {
-			g.AddResource(&r)
-		}
+		g.AddResources(in.resources)
 		g.Actions = in.actions
 		for index, input := range in.inputs {
 			if err := g.Act(input); err != nil {
