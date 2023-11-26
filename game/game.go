@@ -41,45 +41,60 @@ func (g *Game) AddResources(resources []Resource) {
 	}
 }
 
-func (g *Game) GetResource(name string) (*Resource, error) {
-	index, ok := g.ResourceToIndex[name]
-	if !ok {
-		return nil, fmt.Errorf("invalid resource name %s", name)
-	}
-	return g.Resources[index], nil
-}
-
-func (g *Game) Update(now time.Time) error {
-	elapsed := now.Sub(g.Now)
-	g.Now = now
-	for _, resource := range g.Resources {
-		factor, err := g.GetRate(resource)
-		if err != nil {
+func (g *Game) Validate() error {
+	for _, r := range g.Resources {
+		if err := g.ValidateResource(r); err != nil {
 			return err
 		}
-		resource.Quantity += factor * elapsed.Seconds()
+	}
+	for _, a := range g.Actions {
+		for _, r := range a.Add {
+			if err := g.ValidateResource(&r); err != nil {
+				return err
+			}
+		}
 	}
 	return nil
 }
 
-func (g *Game) GetRate(resource *Resource) (float64, error) {
+func (g *Game) ValidateResource(r *Resource) error {
+	if _, ok := g.ResourceToIndex[r.Name]; !ok {
+		return fmt.Errorf("invalid resource name %s", r.Name)
+	}
+	if _, ok := g.ResourceToIndex[r.ResourceFactor]; !ok && r.ResourceFactor != "" {
+		return fmt.Errorf("invalid resource name %s", r.ResourceFactor)
+	}
+	for _, r := range r.Rate {
+		if err := g.ValidateResource(&r); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (g *Game) GetResource(name string) *Resource {
+	return g.Resources[g.ResourceToIndex[name]]
+}
+
+func (g *Game) Update(now time.Time) {
+	elapsed := now.Sub(g.Now)
+	g.Now = now
+	for _, resource := range g.Resources {
+		factor := g.GetRate(resource)
+		resource.Quantity += factor * elapsed.Seconds()
+	}
+}
+
+func (g *Game) GetRate(resource *Resource) float64 {
 	factor := 0.0
 	for _, rate := range resource.Rate {
-		rateResource, err := g.GetResource(rate.Name)
-		if err != nil {
-			return 0, err
-		}
-		one := rateResource.Quantity * rate.Factor
+		one := g.GetResource(rate.Name).Quantity * rate.Factor
 		if rate.ResourceFactor != "" {
-			resourceFactor, err := g.GetResource(rate.ResourceFactor)
-			if err != nil {
-				return 0, err
-			}
-			one *= resourceFactor.Quantity
+			one *= g.GetResource(rate.ResourceFactor).Quantity
 		}
 		factor += one
 	}
-	return factor, nil
+	return factor
 }
 
 func (g *Game) Act(index int) error {
@@ -87,10 +102,7 @@ func (g *Game) Act(index int) error {
 		return fmt.Errorf("invalid index %d", index)
 	}
 	for _, add := range g.Actions[index].Add {
-		r, err := g.GetResource(add.Name)
-		if err != nil {
-			return err
-		}
+		r := g.GetResource(add.Name)
 		r.Quantity += add.Quantity
 		if r.Capacity > 0 && r.Quantity > r.Capacity {
 			r.Quantity = r.Capacity

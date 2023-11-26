@@ -59,6 +59,9 @@ func Run(logger *log.Logger, input Input, now Now) {
 			Quantity: 1,
 		}},
 	}}
+	if err := g.Validate(); err != nil {
+		logger.Printf("%v\n", err)
+	}
 	for {
 		for _, r := range g.Resources {
 			if r.Quantity == 0 {
@@ -69,10 +72,7 @@ func Run(logger *log.Logger, input Input, now Now) {
 				capacity = fmt.Sprintf("/%.0f", r.Capacity)
 			}
 			rateStr := ""
-			rate, err := g.GetRate(r)
-			if err != nil {
-				logger.Printf("%v\n", err)
-			}
+			rate := g.GetRate(r)
 			if rate != 0 {
 				rateStr = fmt.Sprintf(" (%.2f/s)", rate)
 			}
@@ -91,9 +91,7 @@ func Run(logger *log.Logger, input Input, now Now) {
 		if in == 999 {
 			break
 		}
-		if err := g.Update(now()); err != nil {
-			logger.Printf("%v\n", err)
-		}
+		g.Update(now())
 		if err := g.Act(in); err != nil {
 			logger.Printf("%v\n", err)
 		}
@@ -103,8 +101,6 @@ func Run(logger *log.Logger, input Input, now Now) {
 /*
 
 TODO
-
-- validate Game to simplify error handling
 
 actions
 

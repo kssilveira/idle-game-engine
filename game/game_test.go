@@ -46,16 +46,15 @@ func TestAct(t *testing.T) {
 		g := NewGame(time.Unix(0, 0))
 		g.AddResources(in.resources)
 		g.Actions = in.actions
+		if err := g.Validate(); err != nil {
+			t.Errorf("[%s] Validate got err %v", in.name, err)
+		}
 		for index, input := range in.inputs {
 			if err := g.Act(input); err != nil {
 				t.Errorf("[%s] index %d got err %v", in.name, index, err)
 			}
 			want := in.want[index]
-			r, err := g.GetResource("resource")
-			if err != nil {
-				t.Errorf("[%s] index %d got err %v", in.name, index, err)
-			}
-			got := int(r.Quantity)
+			got := int(g.GetResource("resource").Quantity)
 			if got != want {
 				t.Errorf("[%s] index %d want %d got %d", in.name, index, want, got)
 			}
@@ -125,16 +124,13 @@ func TestUpdate(t *testing.T) {
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))
 		g.AddResources(in.resources)
+		if err := g.Validate(); err != nil {
+			t.Errorf("[%s] Validate got err %v", in.name, err)
+		}
 		for index, one := range in.times {
-			if err := g.Update(time.Unix(one, 0)); err != nil {
-				t.Errorf("[%s] index %d got err %v", in.name, index, err)
-			}
+			g.Update(time.Unix(one, 0))
 			want := in.want[index]
-			r, err := g.GetResource("resource")
-			if err != nil {
-				t.Errorf("[%s] index %d got err %v", in.name, index, err)
-			}
-			got := int(r.Quantity)
+			got := int(g.GetResource("resource").Quantity)
 			if got != want {
 				t.Errorf("[%s] index %d want %d got %d", in.name, index, want, got)
 			}
