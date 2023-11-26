@@ -25,7 +25,7 @@ buildings
   - sell for half price
 - "Catnip Field" cost 10 catnip add 0.63 catnip/s
 	- cost 10 11.20 12.54 14.05 15.74 17.62
-	- add 
+	- add
 		- winter -75% 0.16/s
 		- spring +50% 0.94/s
 
@@ -43,7 +43,7 @@ resources
 jobs
 
 woodcuttter 0.09 wood/s
-  - reduced by happiness 
+  - reduced by happiness
 
 happiness
 - kittens 5 => 100% 98% 96% 94% 92% 90%

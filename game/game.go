@@ -3,20 +3,20 @@ package game
 import "fmt"
 
 type Resource struct {
-	Name string
+	Name     string
 	Quantity int
 	Capacity int
 }
 
 type Action struct {
 	Name string
-	Add []Resource
+	Add  []Resource
 }
 
 type Game struct {
-	Resources []*Resource
+	Resources       []*Resource
 	ResourceToIndex map[string]int
-	Actions []Action
+	Actions         []Action
 }
 
 func NewGame() *Game {
