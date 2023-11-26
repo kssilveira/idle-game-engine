@@ -42,7 +42,7 @@ func TestGame(t *testing.T) {
 			}
 			got := r.Quantity
 			if got != want {
-				t.Errorf("[%s] game %#v index %d want %d got %d", in.name, g, index, want, got)
+				t.Errorf("[%s] index %d want %d got %d", in.name, index, want, got)
 			}
 		}
 	}
