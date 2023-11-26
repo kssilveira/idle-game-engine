@@ -11,12 +11,16 @@ import (
 
 func main() {
 	logger := log.New(os.Stdout, "", 0 /* flags */)
-	kittens.Run(logger, func() int {
-		input := -1
-		fmt.Printf("> ")
-		fmt.Scanf("%d", &input)
-		return input
-	}, func() time.Time {
+	input := make(chan int)
+	go func() {
+		for {
+			got := -1
+			fmt.Scanf("%d", &got)
+			input <- got
+		}
+	}()
+	separator := "\033[H\033[2J"
+	kittens.Run(logger, separator, input, func() time.Time {
 		return time.Now()
 	})
 }

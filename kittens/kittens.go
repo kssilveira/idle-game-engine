@@ -9,10 +9,10 @@ import (
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
-type Input func() int
+type Input chan int
 type Now func() time.Time
 
-func Run(logger *log.Logger, input Input, now Now) {
+func Run(logger *log.Logger, separator string, input Input, now Now) {
 	g := game.NewGame(now())
 	g.AddResources([]game.Resource{{
 		Name:     "catnip",
@@ -59,10 +59,15 @@ func Run(logger *log.Logger, input Input, now Now) {
 			Quantity: 1,
 		}},
 	}}
-	if err := g.Validate(); err != nil {
-		logger.Printf("%v\n", err)
+	var err error
+	if err = g.Validate(); err != nil {
+		logger.Fatalf("%v\n", err)
 	}
 	for {
+		logger.Printf("%s", separator)
+		if err != nil {
+			logger.Printf("%v\n", err)
+		}
 		for _, r := range g.Resources {
 			if r.Quantity == 0 {
 				continue
@@ -92,13 +97,17 @@ func Run(logger *log.Logger, input Input, now Now) {
 			}
 			logger.Printf("%s)\n", strings.Join(parts, ""))
 		}
-		in := input()
-		if in == 999 {
-			break
-		}
-		g.Update(now())
-		if err := g.Act(in); err != nil {
-			logger.Printf("%v\n", err)
+		select {
+		case in := <-input:
+			if in == 999 {
+				return
+			}
+			g.Update(now())
+			if err = g.Act(in); err != nil {
+				logger.Printf("%v\n", err)
+			}
+		case <-time.After(1 * time.Second):
+			g.Update(now())
 		}
 	}
 }
