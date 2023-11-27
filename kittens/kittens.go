@@ -49,8 +49,6 @@ func NewGame(now game.Now) *game.Game {
 
 TODO
 
-- game_test skip
-
 actions
 
 - "Refine catnip" cost 100 catnip add 1 wood
