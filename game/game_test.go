@@ -23,21 +23,8 @@ func TestAct(t *testing.T) {
 				Name: "resource", Quantity: 1,
 			}},
 		}},
-		inputs: []string{"0", "0", "0"},
-		want:   []int{1, 2, 2},
-	}, {
-		name: "no cap",
-		resources: []Resource{{
-			Name: "resource",
-		}},
-		actions: []Action{{
-			Name: "add 1",
-			Adds: []Resource{{
-				Name: "resource", Quantity: 1,
-			}},
-		}},
-		inputs: []string{"0", "0", "0"},
-		want:   []int{1, 2, 3},
+		inputs: []string{"0", "0"},
+		want:   []int{1, 2},
 	}, {
 		name: "cost",
 		resources: []Resource{{

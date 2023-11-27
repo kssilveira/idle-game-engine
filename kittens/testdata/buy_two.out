@@ -2,7 +2,8 @@
 catnip 100.00/5000
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 10.00) (Catnip Field + 1)
+1: 'Refine catnip' (catnip 100.00) (wood + 1)
+2: 'Catnip Field' (catnip 10.00) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 
 ###
@@ -10,15 +11,17 @@ catnip 90.00/5000 (0.94/s, 1h26m35s to cap)
 Catnip Field 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
+1: 'Refine catnip' (catnip 90.00/100.00 10s) (wood + 1)
+2: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
 sX: time skip until action X is available
-last input: 1
+last input: 2
 ###
 catnip 90.94/5000 (0.94/s, 1h26m34s to cap)
 Catnip Field 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
+1: 'Refine catnip' (catnip 90.94/100.00 9s) (wood + 1)
+2: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
@@ -27,7 +30,8 @@ catnip 100.39/5000 (0.94/s, 1h26m24s to cap)
 Catnip Field 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
+1: 'Refine catnip' (catnip 100.00) (wood + 1)
+2: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
@@ -36,15 +40,17 @@ catnip 89.19/5000 (1.89/s, 43m18s to cap)
 Catnip Field 2.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
+1: 'Refine catnip' (catnip 89.19/100.00 5s) (wood + 1)
+2: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
 sX: time skip until action X is available
-last input: 1
+last input: 2
 ###
 catnip 91.08/5000 (1.89/s, 43m17s to cap)
 Catnip Field 2.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
+1: 'Refine catnip' (catnip 91.08/100.00 4s) (wood + 1)
+2: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
@@ -53,7 +59,8 @@ catnip 109.98/5000 (1.89/s, 43m7s to cap)
 Catnip Field 2.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
+1: 'Refine catnip' (catnip 100.00) (wood + 1)
+2: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax

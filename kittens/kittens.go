@@ -18,6 +18,9 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Catnip Field", ProductionFactor: 0.63 * (1 - 0.75), ProductionResourceFactor: "Winter",
 		}},
 	}, {
+		Name:     "wood",
+		Capacity: 200,
+	}, {
 		Name: "Catnip Field",
 	}, {
 		Name: "Spring", Quantity: 1,
@@ -32,6 +35,14 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Gather catnip",
 		Adds: []game.Resource{{
 			Name: "catnip", Quantity: 1,
+		}},
+	}, {
+		Name: "Refine catnip",
+		Costs: []game.Resource{{
+			Name: "catnip", Quantity: 100, CostExponentBase: 1,
+		}},
+		Adds: []game.Resource{{
+			Name: "wood", Quantity: 1,
 		}},
 	}, {
 		Name: "Catnip Field",

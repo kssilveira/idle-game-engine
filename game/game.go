@@ -167,6 +167,17 @@ func (g *Game) Act(input string) error {
 		return fmt.Errorf("invalid index %d", index)
 	}
 	a := g.Actions[index]
+	found := false
+	for _, add := range a.Adds {
+		r := g.GetResource(add.Name)
+		if r.Quantity < r.Capacity || r.Capacity == 0 {
+			found = true
+			break
+		}
+	}
+	if !found {
+		return fmt.Errorf("added resources already at max")
+	}
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
 		cost := g.GetCost(a, c)

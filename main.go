@@ -24,7 +24,7 @@ func main() {
 	input := make(chan string)
 	go func() {
 		lastAuto := 0
-		actions := []string{"1", "s1"}
+		actions := []string{"s1", "1", "s2", "2"}
 		for {
 			var got string
 			if *auto {

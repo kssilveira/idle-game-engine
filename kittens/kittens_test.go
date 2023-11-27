@@ -16,6 +16,11 @@ type iter struct {
 }
 
 func TestRun(t *testing.T) {
+	gather := "0"
+	refine := "1"
+	srefine := "s1"
+	field := "2"
+	sfield := "s2"
 	inputs := []struct {
 		name      string
 		iters     []iter
@@ -24,9 +29,7 @@ func TestRun(t *testing.T) {
 		name: "gather",
 		iters: []iter{
 			// gather 2 catnip
-			{"0", 0}, {"0", 0},
-			// buy catnip field, catnip not enough
-			{"1", 0},
+			{gather, 0}, {gather, 0},
 			// end
 			{"999", 0},
 		},
@@ -37,11 +40,11 @@ func TestRun(t *testing.T) {
 		},
 		iters: []iter{
 			// buy catnip field, catnip not enough
-			{"1", 0},
+			{field, 0},
 			// gather 10th catnip
-			{"0", 0}, {"0", 0},
+			{gather, 0},
 			// buy catnip field
-			{"1", 0},
+			{field, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
 			// end
@@ -54,11 +57,11 @@ func TestRun(t *testing.T) {
 		},
 		iters: []iter{
 			// buy 1st catnip field
-			{"1", 0},
+			{field, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
 			// buy 2nd catnip field
-			{"1", 0},
+			{field, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
 			// end
@@ -71,11 +74,11 @@ func TestRun(t *testing.T) {
 		},
 		iters: []iter{
 			// buy catnip field
-			{"1", 0},
+			{field, 0},
 			// wait 1 second
 			{"", 1},
 			// skip to buy catnip field and buy it
-			{"s1", 0}, {"1", 0},
+			{sfield, 0}, {field, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
 			// end
@@ -86,13 +89,40 @@ func TestRun(t *testing.T) {
 		resources: map[string]float64{
 			"catnip": 10,
 		},
+		iters: append(
+			append(
+				// field
+				repeat([]iter{{field, 1}, {sfield, 1}}, 56),
+				// wood
+				repeat([]iter{{srefine, 1}, {refine, 1}}, 142)...),
+			// end
+			[]iter{{sfield, 1}, {"999", 0}}...),
+	}, {
+		name: "refine one",
+		resources: map[string]float64{
+			"catnip": 99,
+		},
 		iters: []iter{
-			{"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1},
-			{"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1},
-			{"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1},
-			{"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1},
-			{"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1},
-			{"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1}, {"1", 1}, {"s1", 1},
+			// refine catnip, catnip not enough
+			{refine, 0},
+			// gather 100th catnip
+			{gather, 0},
+			// refine catnip
+			{refine, 0},
+			// end
+			{"999", 0},
+		},
+	}, {
+		name: "refine two",
+		resources: map[string]float64{
+			"catnip": 200,
+		},
+		iters: []iter{
+			// refine catnip
+			{refine, 0},
+			// refine catnip,
+			{refine, 0},
+			// end
 			{"999", 0},
 		},
 	}}
@@ -121,9 +151,17 @@ func TestRun(t *testing.T) {
 			t.Errorf("[%s] got err %v", in.name, err)
 		}
 		g.Run(logger, "###", input, nowfn)
-		name := filepath.Join("testdata", strings.Replace(in.name, " ", "_", -1) + ".out")
+		name := filepath.Join("testdata", strings.Replace(in.name, " ", "_", -1)+".out")
 		if err := os.WriteFile(name, buf.Bytes(), 0644); err != nil {
 			t.Errorf("[%s] got err %v", in.name, err)
 		}
 	}
+}
+
+func repeat(iters []iter, count int) []iter {
+	res := []iter{}
+	for i := 0; i < count; i++ {
+		res = append(res, iters...)
+	}
+	return res
 }
