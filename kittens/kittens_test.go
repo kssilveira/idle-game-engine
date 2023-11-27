@@ -49,12 +49,17 @@ func TestRun(t *testing.T) {
 		}()
 		timeIndex := 0
 		now := time.Unix(0, 0)
-		Run(logger, "###", input, func() time.Time {
+		nowfn := func() time.Time {
 			res := now
 			now = now.Add(time.Duration(in.iters[timeIndex].elapsed) * time.Second)
 			timeIndex++
 			return res
-		})
+		}
+		g := NewGame(nowfn)
+		if err := g.Validate(); err != nil {
+			t.Errorf("[%s] got err %v", in.name, err)
+		}
+		g.Run(logger, "###", input, nowfn)
 		if err := os.WriteFile(in.name+".out", buf.Bytes(), 0644); err != nil {
 			t.Errorf("[%s] got err %v", in.name, err)
 		}

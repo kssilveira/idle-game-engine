@@ -2,7 +2,9 @@ package game
 
 import (
 	"fmt"
+	"log"
 	"math"
+	"strings"
 	"time"
 )
 
@@ -28,6 +30,9 @@ type Action struct {
 	Costs []Resource
 	Adds  []Resource
 }
+
+type Input chan int
+type Now func() time.Time
 
 func NewGame(now time.Time) *Game {
 	return &Game{
@@ -58,6 +63,76 @@ func (g *Game) Validate() error {
 		}
 	}
 	return nil
+}
+
+func (g *Game) Run(logger *log.Logger, separator string, input Input, now Now) {
+	var err error
+	for {
+		logger.Printf("%s", separator)
+		if err != nil {
+			logger.Printf("error: %v\n", err)
+		}
+		g.ShowResources(logger)
+		g.ShowActions(logger)
+		select {
+		case in := <-input:
+			if in == 999 {
+				return
+			}
+			g.Update(now())
+			err = g.Act(in)
+		case <-time.After(1 * time.Second):
+			g.Update(now())
+		}
+	}
+}
+
+func (g *Game) ShowResources(logger *log.Logger) {
+	for _, r := range g.Resources {
+		if r.Quantity == 0 {
+			continue
+		}
+		capacity := ""
+		if r.Capacity > 0 {
+			capacity = fmt.Sprintf("/%.0f", r.Capacity)
+		}
+		rateStr := ""
+		rate := g.GetRate(r)
+		if rate != 0 {
+			capStr := ""
+			if r.Capacity > 0 {
+				capStr = fmt.Sprintf(", %s to cap", g.GetDuration(r, r.Capacity))
+			}
+			rateStr = fmt.Sprintf(" (%.2f/s%s)", rate, capStr)
+		}
+		logger.Printf("%s %.2f%s%s\n", r.Name, r.Quantity, capacity, rateStr)
+	}
+}
+
+func (g *Game) ShowActions(logger *log.Logger) {
+	for i, a := range g.Actions {
+		parts := []string{
+			fmt.Sprintf("%d: '%s' (", i, a.Name),
+		}
+		for _, c := range a.Costs {
+			cost := g.GetCost(a, c)
+			r := g.GetResource(c.Name)
+			out := fmt.Sprintf("%.2f/%.2f %s", r.Quantity, cost, g.GetDuration(r, cost))
+			if r.Quantity >= cost {
+				out = fmt.Sprintf("%.2f", cost)
+			}
+			parts = append(parts, fmt.Sprintf("%s %s", c.Name, out))
+		}
+		parts = append(parts, ") (")
+		for _, r := range a.Adds {
+			parts = append(parts, fmt.Sprintf("%s + %.0f", r.Name, r.Quantity))
+		}
+		logger.Printf("%s)\n", strings.Join(parts, ""))
+	}
+}
+
+func (g *Game) GetDuration(r *Resource, quantity float64) time.Duration {
+	return time.Duration(((quantity - r.Quantity) / g.GetRate(r))) * time.Second
 }
 
 func (g *Game) Update(now time.Time) {
