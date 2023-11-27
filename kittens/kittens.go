@@ -15,30 +15,20 @@ type Now func() time.Time
 func Run(logger *log.Logger, separator string, input Input, now Now) {
 	g := game.NewGame(now())
 	g.AddResources([]game.Resource{{
-		Name:     "catnip",
-		Capacity: 5000,
+		Name: "catnip", Capacity: 5000,
 		Rate: []game.Resource{{
-			Name:           "Catnip Field",
-			Factor:         0.63 * (1 + 0.50),
-			ResourceFactor: "Spring",
+			Name: "Catnip Field", Factor: 0.63 * (1 + 0.50), ResourceFactor: "Spring",
 		}, {
-			Name:           "Catnip Field",
-			Factor:         0.63,
-			ResourceFactor: "Summer",
+			Name: "Catnip Field", Factor: 0.63, ResourceFactor: "Summer",
 		}, {
-			Name:           "Catnip Field",
-			Factor:         0.63,
-			ResourceFactor: "Autumn",
+			Name: "Catnip Field", Factor: 0.63, ResourceFactor: "Autumn",
 		}, {
-			Name:           "Catnip Field",
-			Factor:         0.63 * (1 - 0.75),
-			ResourceFactor: "Winter",
+			Name: "Catnip Field", Factor: 0.63 * (1 - 0.75), ResourceFactor: "Winter",
 		}},
 	}, {
 		Name: "Catnip Field",
 	}, {
-		Name:     "Spring",
-		Quantity: 1,
+		Name: "Spring", Quantity: 1,
 	}, {
 		Name: "Summer",
 	}, {
@@ -49,19 +39,15 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
 		Add: []game.Resource{{
-			Name:     "catnip",
-			Quantity: 1,
+			Name: "catnip", Quantity: 1,
 		}},
 	}, {
 		Name: "Catnip Field",
 		Cost: []game.Resource{{
-			Name:             "catnip",
-			Quantity:         10,
-			CostExponentBase: 1.12,
+			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
 		}},
 		Add: []game.Resource{{
-			Name:     "Catnip Field",
-			Quantity: 1,
+			Name: "Catnip Field", Quantity: 1,
 		}},
 	}}
 	var err error
@@ -129,7 +115,6 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 
 TODO
 
-- format structs inline
 - rename game fields
 - move run to game
 

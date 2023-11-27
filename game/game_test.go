@@ -15,14 +15,12 @@ func TestAct(t *testing.T) {
 	}{{
 		name: "add 1",
 		resources: []Resource{{
-			Name:     "resource",
-			Capacity: 2,
+			Name: "resource", Capacity: 2,
 		}},
 		actions: []Action{{
 			Name: "add 1",
 			Add: []Resource{{
-				Name:     "resource",
-				Quantity: 1,
+				Name: "resource", Quantity: 1,
 			}},
 		}},
 		inputs: []int{0, 0, 0},
@@ -35,8 +33,7 @@ func TestAct(t *testing.T) {
 		actions: []Action{{
 			Name: "add 1",
 			Add: []Resource{{
-				Name:     "resource",
-				Quantity: 1,
+				Name: "resource", Quantity: 1,
 			}},
 		}},
 		inputs: []int{0, 0, 0},
@@ -44,25 +41,25 @@ func TestAct(t *testing.T) {
 	}, {
 		name: "cost",
 		resources: []Resource{{
-			Name:     "resource",
-			Quantity: 100,
+			Name: "resource", Quantity: 100,
 		}, {
 			Name: "producer",
 		}},
 		actions: []Action{{
 			Name: "producer",
 			Cost: []Resource{{
-				Name:             "resource",
-				Quantity:         1,
-				CostExponentBase: 2,
+				Name: "resource", Quantity: 1, CostExponentBase: 2,
 			}},
 			Add: []Resource{{
-				Name:     "producer",
-				Quantity: 1,
+				Name: "producer", Quantity: 1,
 			}},
 		}},
 		inputs: []int{0, 0, 0},
-		want:   []int{100 - (1), 100 - (1 + 2), 100 - (1 + 2 + 4)},
+		want: []int{
+			100 - (1),
+			100 - (1 + 2),
+			100 - (1 + 2 + 4),
+		},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))
@@ -95,68 +92,71 @@ func TestUpdate(t *testing.T) {
 		resources: []Resource{{
 			Name: "resource",
 			Rate: []Resource{{
-				Name:   "input",
-				Factor: 2,
+				Name: "input", Factor: 2,
 			}},
 		}, {
-			Name:     "input",
-			Quantity: 3,
+			Name: "input", Quantity: 3,
 		}},
 		times: []int64{4, 5, 6},
-		want:  []int{2 * 3 * 4, 2 * 3 * 5, 2 * 3 * 6},
+		want: []int{
+			2 * 3 * 4,
+			2 * 3 * 5,
+			2 * 3 * 6,
+		},
 	}, {
 		name: "over cap",
 		resources: []Resource{{
-			Name:     "resource",
-			Capacity: 28,
+			Name: "resource", Capacity: 28,
 			Rate: []Resource{{
-				Name:   "input",
-				Factor: 2,
+				Name: "input", Factor: 2,
 			}},
 		}, {
-			Name:     "input",
-			Quantity: 3,
+			Name: "input", Quantity: 3,
 		}},
 		times: []int64{4, 5, 6},
-		want:  []int{2 * 3 * 4, 28, 28},
+		want: []int{
+			2 * 3 * 4,
+			28,
+			28,
+		},
 	}, {
 		name: "two inputs",
 		resources: []Resource{{
 			Name: "resource",
 			Rate: []Resource{{
-				Name:   "input 1",
-				Factor: 2,
+				Name: "input 1", Factor: 2,
 			}, {
-				Name:   "input 2",
-				Factor: 3,
+				Name: "input 2", Factor: 3,
 			}},
 		}, {
-			Name:     "input 1",
-			Quantity: 4,
+			Name: "input 1", Quantity: 4,
 		}, {
-			Name:     "input 2",
-			Quantity: 5,
+			Name: "input 2", Quantity: 5,
 		}},
 		times: []int64{6, 7, 8},
-		want:  []int{(2*4 + 3*5) * 6, (2*4 + 3*5) * 7, (2*4 + 3*5) * 8},
+		want: []int{
+			(2*4 + 3*5) * 6,
+			(2*4 + 3*5) * 7,
+			(2*4 + 3*5) * 8,
+		},
 	}, {
 		name: "one resource factor",
 		resources: []Resource{{
 			Name: "resource",
 			Rate: []Resource{{
-				Name:           "input",
-				Factor:         2,
-				ResourceFactor: "resource factor",
+				Name: "input", Factor: 2, ResourceFactor: "resource factor",
 			}},
 		}, {
-			Name:     "input",
-			Quantity: 3,
+			Name: "input", Quantity: 3,
 		}, {
-			Name:     "resource factor",
-			Quantity: 4,
+			Name: "resource factor", Quantity: 4,
 		}},
 		times: []int64{5, 6, 7},
-		want:  []int{2 * 3 * 4 * 5, 2 * 3 * 4 * 6, 2 * 3 * 4 * 7},
+		want: []int{
+			2 * 3 * 4 * 5,
+			2 * 3 * 4 * 6,
+			2 * 3 * 4 * 7,
+		},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))

@@ -20,7 +20,5 @@ func main() {
 		}
 	}()
 	separator := "\033[H\033[2J"
-	kittens.Run(logger, separator, input, func() time.Time {
-		return time.Now()
-	})
+	kittens.Run(logger, separator, input, func() time.Time { return time.Now() })
 }
