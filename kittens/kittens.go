@@ -49,10 +49,7 @@ func NewGame(now game.Now) *game.Game {
 
 TODO
 
-- move error to bottom
-- show last action
-- time skip action
-- auto act with time skip until the end
+- test skip until the end
 
 actions
 

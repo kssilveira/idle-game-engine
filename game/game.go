@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"math"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -31,14 +32,18 @@ type Action struct {
 	Adds  []Resource
 }
 
-type Input chan int
+type Input chan string
 type Now func() time.Time
 
 func NewGame(now time.Time) *Game {
-	return &Game{
+	g := &Game{
 		Now:             now,
 		ResourceToIndex: map[string]int{},
 	}
+	g.AddResources([]Resource{{
+		Name: "skip",
+	}})
+	return g
 }
 
 func (g *Game) AddResources(resources []Resource) {
@@ -66,19 +71,19 @@ func (g *Game) Validate() error {
 }
 
 func (g *Game) Run(logger *log.Logger, separator string, input Input, now Now) {
-	var in int
+	var in string
 	var err error
 	for {
 		logger.Printf("%s", separator)
 		g.ShowResources(logger)
 		g.ShowActions(logger)
-		logger.Printf("last input: %d\n", in)
+		logger.Printf("last input: %s\n", in)
 		if err != nil {
 			logger.Printf("error: %v\n", err)
 		}
 		select {
 		case in = <-input:
-			if in == 999 {
+			if in == "999" {
 				return
 			}
 			g.Update(now())
@@ -131,6 +136,7 @@ func (g *Game) ShowActions(logger *log.Logger) {
 		}
 		logger.Printf("%s)\n", strings.Join(parts, ""))
 	}
+	logger.Printf("sX: time skip until action X is available\n")
 }
 
 func (g *Game) GetDuration(r *Resource, quantity float64) time.Duration {
@@ -146,16 +152,38 @@ func (g *Game) Update(now time.Time) {
 	}
 }
 
-func (g *Game) Act(index int) error {
+func (g *Game) Act(input string) error {
+	skip := false
+	var skipTime time.Duration
+	if strings.HasPrefix(input, "s") {
+		skip = true
+		input = input[1:]
+	}
+	index, err := strconv.Atoi(input)
+	if err != nil {
+		return err
+	}
 	if index < 0 || index >= len(g.Actions) {
 		return fmt.Errorf("invalid index %d", index)
 	}
 	a := g.Actions[index]
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
-		if r.Quantity < g.GetCost(a, c) {
-			return fmt.Errorf("resource %s not enough", c.Name)
+		cost := g.GetCost(a, c)
+		if r.Quantity < cost {
+			if skip && g.GetRate(r) > 0 && r.Quantity < r.Capacity {
+				duration := g.GetDuration(r, cost)
+				if duration > skipTime {
+					skipTime = duration
+				}
+			} else {
+				return fmt.Errorf("resource %s not enough", c.Name)
+			}
 		}
+	}
+	if skip && skipTime > 0 {
+		g.TimeSkip(skipTime)
+		return nil
 	}
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
@@ -166,6 +194,14 @@ func (g *Game) Act(index int) error {
 		r.AddQuantity(add.Quantity)
 	}
 	return nil
+}
+
+func (g *Game) TimeSkip(skip time.Duration) {
+	skip = skip + time.Second
+	g.GetResource("skip").Quantity += float64(skip / time.Second)
+	now := g.Now
+	g.Now = time.Time(now.Add(-skip))
+	g.Update(now)
 }
 
 func (g *Game) ValidateResource(r *Resource) error {

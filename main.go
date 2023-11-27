@@ -11,26 +11,29 @@ import (
 )
 
 var (
-	auto = flag.Bool("auto", false, "automatically trigger all actions")
+	auto        = flag.Bool("auto", false, "automatically trigger all actions")
+	autoSleepMS = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
 )
 
 func main() {
 	flag.Parse()
 	now := func() time.Time { return time.Now() }
 	g := kittens.NewGame(now)
+	g.GetResource("catnip").Quantity = 10
 	logger := log.New(os.Stdout, "", 0 /* flags */)
-	input := make(chan int)
+	input := make(chan string)
 	go func() {
 		lastAuto := 0
+		actions := []string{"1", "s1"}
 		for {
-			got := -1
+			var got string
 			if *auto {
-				got = lastAuto
+				got = actions[lastAuto]
 				lastAuto++
-				lastAuto %= len(g.Actions)
-				time.Sleep(time.Second)
+				lastAuto %= len(actions)
+				time.Sleep(time.Second * time.Duration(*autoSleepMS) / 1000.)
 			} else {
-				fmt.Scanf("%d", &got)
+				fmt.Scanln(&got)
 			}
 			input <- got
 		}

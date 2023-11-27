@@ -1,0 +1,28 @@
+###
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Catnip Field' (catnip 0.00/10.00 0s) (Catnip Field + 1)
+sX: time skip until action X is available
+last input: 
+###
+catnip 1.00/5000
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Catnip Field' (catnip 1.00/10.00 0s) (Catnip Field + 1)
+sX: time skip until action X is available
+last input: 0
+###
+catnip 2.00/5000
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Catnip Field' (catnip 2.00/10.00 0s) (Catnip Field + 1)
+sX: time skip until action X is available
+last input: 0
+###
+catnip 2.00/5000
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Catnip Field' (catnip 2.00/10.00 0s) (Catnip Field + 1)
+sX: time skip until action X is available
+last input: 1
+error: resource catnip not enough
