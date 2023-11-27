@@ -33,7 +33,7 @@ func TestRun(t *testing.T) {
 	}, {
 		name: "buy one",
 		resources: map[string]float64{
-			"catnip": 10,
+			"catnip": 9,
 		},
 		iters: []iter{
 			// buy catnip field, catnip not enough
