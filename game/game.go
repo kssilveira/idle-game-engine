@@ -6,34 +6,27 @@ import (
 	"time"
 )
 
-type Resource struct {
-	Name             string
-	Quantity         float64
-	Capacity         float64
-	Rate             []Resource // producers of this resource
-	Factor           float64    // production factor
-	ResourceFactor   string     // production resource factor
-	CostExponentBase float64
-}
-
-func (r *Resource) AddQuantity(add float64) {
-	r.Quantity += add
-	if r.Quantity > r.Capacity && r.Capacity > 0 {
-		r.Quantity = r.Capacity
-	}
-}
-
-type Action struct {
-	Name string
-	Cost []Resource
-	Add  []Resource
-}
-
 type Game struct {
 	Resources       []*Resource
 	ResourceToIndex map[string]int
 	Actions         []Action
 	Now             time.Time
+}
+
+type Resource struct {
+	Name                     string
+	Quantity                 float64
+	Capacity                 float64
+	Producers                []Resource
+	ProductionFactor         float64
+	ProductionResourceFactor string
+	CostExponentBase         float64
+}
+
+type Action struct {
+	Name  string
+	Costs []Resource
+	Adds  []Resource
 }
 
 func NewGame(now time.Time) *Game {
@@ -58,32 +51,13 @@ func (g *Game) Validate() error {
 		}
 	}
 	for _, a := range g.Actions {
-		for _, r := range a.Add {
+		for _, r := range a.Adds {
 			if err := g.ValidateResource(&r); err != nil {
 				return err
 			}
 		}
 	}
 	return nil
-}
-
-func (g *Game) ValidateResource(r *Resource) error {
-	if _, ok := g.ResourceToIndex[r.Name]; !ok {
-		return fmt.Errorf("invalid resource name %s", r.Name)
-	}
-	if _, ok := g.ResourceToIndex[r.ResourceFactor]; !ok && r.ResourceFactor != "" {
-		return fmt.Errorf("invalid resource name %s", r.ResourceFactor)
-	}
-	for _, r := range r.Rate {
-		if err := g.ValidateResource(&r); err != nil {
-			return err
-		}
-	}
-	return nil
-}
-
-func (g *Game) GetResource(name string) *Resource {
-	return g.Resources[g.ResourceToIndex[name]]
 }
 
 func (g *Game) Update(now time.Time) {
@@ -95,40 +69,66 @@ func (g *Game) Update(now time.Time) {
 	}
 }
 
-func (g *Game) GetRate(resource *Resource) float64 {
-	factor := 0.0
-	for _, rate := range resource.Rate {
-		one := g.GetResource(rate.Name).Quantity * rate.Factor
-		if rate.ResourceFactor != "" {
-			one *= g.GetResource(rate.ResourceFactor).Quantity
-		}
-		factor += one
-	}
-	return factor
-}
-
 func (g *Game) Act(index int) error {
 	if index < 0 || index >= len(g.Actions) {
 		return fmt.Errorf("invalid index %d", index)
 	}
 	a := g.Actions[index]
-	for _, c := range a.Cost {
+	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
 		if r.Quantity < g.GetCost(a, c) {
 			return fmt.Errorf("resource %s not enough", c.Name)
 		}
 	}
-	for _, c := range a.Cost {
+	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
 		r.Quantity -= g.GetCost(a, c)
 	}
-	for _, add := range a.Add {
+	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
 		r.AddQuantity(add.Quantity)
 	}
 	return nil
 }
 
+func (g *Game) ValidateResource(r *Resource) error {
+	if _, ok := g.ResourceToIndex[r.Name]; !ok {
+		return fmt.Errorf("invalid resource name %s", r.Name)
+	}
+	if _, ok := g.ResourceToIndex[r.ProductionResourceFactor]; !ok && r.ProductionResourceFactor != "" {
+		return fmt.Errorf("invalid resource name %s", r.ProductionResourceFactor)
+	}
+	for _, r := range r.Producers {
+		if err := g.ValidateResource(&r); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (r *Resource) AddQuantity(add float64) {
+	r.Quantity += add
+	if r.Quantity > r.Capacity && r.Capacity > 0 {
+		r.Quantity = r.Capacity
+	}
+}
+
+func (g *Game) GetRate(resource *Resource) float64 {
+	factor := 0.0
+	for _, p := range resource.Producers {
+		one := g.GetResource(p.Name).Quantity * p.ProductionFactor
+		if p.ProductionResourceFactor != "" {
+			one *= g.GetResource(p.ProductionResourceFactor).Quantity
+		}
+		factor += one
+	}
+	return factor
+}
+
+func (g *Game) GetResource(name string) *Resource {
+	return g.Resources[g.ResourceToIndex[name]]
+}
+
 func (g *Game) GetCost(a Action, c Resource) float64 {
-	return c.Quantity * math.Pow(c.CostExponentBase, g.GetResource(a.Add[0].Name).Quantity)
+	return c.Quantity * math.Pow(c.CostExponentBase, g.GetResource(a.Adds[0].Name).Quantity)
 }

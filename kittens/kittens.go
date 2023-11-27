@@ -16,14 +16,14 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 	g := game.NewGame(now())
 	g.AddResources([]game.Resource{{
 		Name: "catnip", Capacity: 5000,
-		Rate: []game.Resource{{
-			Name: "Catnip Field", Factor: 0.63 * (1 + 0.50), ResourceFactor: "Spring",
+		Producers: []game.Resource{{
+			Name: "Catnip Field", ProductionFactor: 0.63 * (1 + 0.50), ProductionResourceFactor: "Spring",
 		}, {
-			Name: "Catnip Field", Factor: 0.63, ResourceFactor: "Summer",
+			Name: "Catnip Field", ProductionFactor: 0.63, ProductionResourceFactor: "Summer",
 		}, {
-			Name: "Catnip Field", Factor: 0.63, ResourceFactor: "Autumn",
+			Name: "Catnip Field", ProductionFactor: 0.63, ProductionResourceFactor: "Autumn",
 		}, {
-			Name: "Catnip Field", Factor: 0.63 * (1 - 0.75), ResourceFactor: "Winter",
+			Name: "Catnip Field", ProductionFactor: 0.63 * (1 - 0.75), ProductionResourceFactor: "Winter",
 		}},
 	}, {
 		Name: "Catnip Field",
@@ -38,15 +38,15 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
-		Add: []game.Resource{{
+		Adds: []game.Resource{{
 			Name: "catnip", Quantity: 1,
 		}},
 	}, {
 		Name: "Catnip Field",
-		Cost: []game.Resource{{
+		Costs: []game.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
 		}},
-		Add: []game.Resource{{
+		Adds: []game.Resource{{
 			Name: "Catnip Field", Quantity: 1,
 		}},
 	}}
@@ -83,7 +83,7 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 			parts := []string{
 				fmt.Sprintf("%d: '%s' (", i, a.Name),
 			}
-			for _, c := range a.Cost {
+			for _, c := range a.Costs {
 				cost := g.GetCost(a, c)
 				r := g.GetResource(c.Name)
 				out := fmt.Sprintf("%.2f/%.2f %s", r.Quantity, cost, time.Duration((cost-r.Quantity)/g.GetRate(r))*time.Second)
@@ -93,7 +93,7 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 				parts = append(parts, fmt.Sprintf("%s %s", c.Name, out))
 			}
 			parts = append(parts, ") (")
-			for _, r := range a.Add {
+			for _, r := range a.Adds {
 				parts = append(parts, fmt.Sprintf("%s + %.0f", r.Name, r.Quantity))
 			}
 			logger.Printf("%s)\n", strings.Join(parts, ""))

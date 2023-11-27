@@ -19,7 +19,7 @@ func TestAct(t *testing.T) {
 		}},
 		actions: []Action{{
 			Name: "add 1",
-			Add: []Resource{{
+			Adds: []Resource{{
 				Name: "resource", Quantity: 1,
 			}},
 		}},
@@ -32,7 +32,7 @@ func TestAct(t *testing.T) {
 		}},
 		actions: []Action{{
 			Name: "add 1",
-			Add: []Resource{{
+			Adds: []Resource{{
 				Name: "resource", Quantity: 1,
 			}},
 		}},
@@ -47,10 +47,10 @@ func TestAct(t *testing.T) {
 		}},
 		actions: []Action{{
 			Name: "producer",
-			Cost: []Resource{{
+			Costs: []Resource{{
 				Name: "resource", Quantity: 1, CostExponentBase: 2,
 			}},
-			Add: []Resource{{
+			Adds: []Resource{{
 				Name: "producer", Quantity: 1,
 			}},
 		}},
@@ -91,8 +91,8 @@ func TestUpdate(t *testing.T) {
 		name: "one input",
 		resources: []Resource{{
 			Name: "resource",
-			Rate: []Resource{{
-				Name: "input", Factor: 2,
+			Producers: []Resource{{
+				Name: "input", ProductionFactor: 2,
 			}},
 		}, {
 			Name: "input", Quantity: 3,
@@ -107,8 +107,8 @@ func TestUpdate(t *testing.T) {
 		name: "over cap",
 		resources: []Resource{{
 			Name: "resource", Capacity: 28,
-			Rate: []Resource{{
-				Name: "input", Factor: 2,
+			Producers: []Resource{{
+				Name: "input", ProductionFactor: 2,
 			}},
 		}, {
 			Name: "input", Quantity: 3,
@@ -123,10 +123,10 @@ func TestUpdate(t *testing.T) {
 		name: "two inputs",
 		resources: []Resource{{
 			Name: "resource",
-			Rate: []Resource{{
-				Name: "input 1", Factor: 2,
+			Producers: []Resource{{
+				Name: "input 1", ProductionFactor: 2,
 			}, {
-				Name: "input 2", Factor: 3,
+				Name: "input 2", ProductionFactor: 3,
 			}},
 		}, {
 			Name: "input 1", Quantity: 4,
@@ -143,8 +143,8 @@ func TestUpdate(t *testing.T) {
 		name: "one resource factor",
 		resources: []Resource{{
 			Name: "resource",
-			Rate: []Resource{{
-				Name: "input", Factor: 2, ResourceFactor: "resource factor",
+			Producers: []Resource{{
+				Name: "input", ProductionFactor: 2, ProductionResourceFactor: "resource factor",
 			}},
 		}, {
 			Name: "input", Quantity: 3,
