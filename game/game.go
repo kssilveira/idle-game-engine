@@ -2,16 +2,18 @@ package game
 
 import (
 	"fmt"
+	"math"
 	"time"
 )
 
 type Resource struct {
-	Name           string
-	Quantity       float64
-	Capacity       float64
-	Rate           []Resource
-	Factor         float64
-	ResourceFactor string
+	Name             string
+	Quantity         float64
+	Capacity         float64
+	Rate             []Resource // producers of this resource
+	Factor           float64    // production factor
+	ResourceFactor   string     // production resource factor
+	CostExponentBase float64
 }
 
 func (r *Resource) AddQuantity(add float64) {
@@ -23,6 +25,7 @@ func (r *Resource) AddQuantity(add float64) {
 
 type Action struct {
 	Name string
+	Cost []Resource
 	Add  []Resource
 }
 
@@ -108,9 +111,24 @@ func (g *Game) Act(index int) error {
 	if index < 0 || index >= len(g.Actions) {
 		return fmt.Errorf("invalid index %d", index)
 	}
-	for _, add := range g.Actions[index].Add {
+	a := g.Actions[index]
+	for _, c := range a.Cost {
+		r := g.GetResource(c.Name)
+		if r.Quantity < g.GetCost(a, c) {
+			return fmt.Errorf("resource %s not enough", c.Name)
+		}
+	}
+	for _, c := range a.Cost {
+		r := g.GetResource(c.Name)
+		r.Quantity -= g.GetCost(a, c)
+	}
+	for _, add := range a.Add {
 		r := g.GetResource(add.Name)
 		r.AddQuantity(add.Quantity)
 	}
 	return nil
+}
+
+func (g *Game) GetCost(a Action, c Resource) float64 {
+	return c.Quantity * math.Pow(c.CostExponentBase, g.GetResource(a.Add[0].Name).Quantity)
 }

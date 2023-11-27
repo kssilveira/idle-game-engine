@@ -54,6 +54,11 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 		}},
 	}, {
 		Name: "Catnip Field",
+		Cost: []game.Resource{{
+			Name:             "catnip",
+			Quantity:         10,
+			CostExponentBase: 1.12,
+		}},
 		Add: []game.Resource{{
 			Name:     "Catnip Field",
 			Quantity: 1,
@@ -92,6 +97,16 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 			parts := []string{
 				fmt.Sprintf("%d: '%s' (", i, a.Name),
 			}
+			for _, c := range a.Cost {
+				cost := g.GetCost(a, c)
+				r := g.GetResource(c.Name)
+				out := fmt.Sprintf("%.2f/%.2f %s", r.Quantity, cost, time.Duration((cost-r.Quantity)/g.GetRate(r))*time.Second)
+				if r.Quantity >= cost {
+					out = fmt.Sprintf("%.2f", cost)
+				}
+				parts = append(parts, fmt.Sprintf("%s %s", c.Name, out))
+			}
+			parts = append(parts, ") (")
 			for _, r := range a.Add {
 				parts = append(parts, fmt.Sprintf("%s + %.0f", r.Name, r.Quantity))
 			}
@@ -103,9 +118,7 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 				return
 			}
 			g.Update(now())
-			if err = g.Act(in); err != nil {
-				logger.Printf("%v\n", err)
-			}
+			err = g.Act(in)
 		case <-time.After(1 * time.Second):
 			g.Update(now())
 		}
@@ -115,6 +128,10 @@ func Run(logger *log.Logger, separator string, input Input, now Now) {
 /*
 
 TODO
+
+- format structs inline
+- rename game fields
+- move run to game
 
 actions
 
