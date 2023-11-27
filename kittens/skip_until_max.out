@@ -121,27 +121,26 @@ Spring 1.00
 sX: time skip until action X is available
 last input: 1
 ###
-skip 27.00
-catnip -4.32/5000 (7.56/s, 11m1s to cap)
-Catnip Field 8.00
+skip 28.00
+catnip 24.40/5000 (6.61/s, 12m32s to cap)
+Catnip Field 7.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip -4.32/24.76 3s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 22.11) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: s1
 ###
-skip 27.00
-catnip 3.24/5000 (7.56/s, 11m0s to cap)
+skip 28.00
+catnip 8.91/5000 (7.56/s, 11m0s to cap)
 Catnip Field 8.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 3.24/24.76 2s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 8.91/24.76 2s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
-error: resource catnip not enough
 ###
-skip 29.00
-catnip 25.92/5000 (7.56/s, 10m57s to cap)
+skip 30.00
+catnip 31.59/5000 (7.56/s, 10m57s to cap)
 Catnip Field 8.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -149,17 +148,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 29.00
-catnip 8.72/5000 (8.50/s, 9m46s to cap)
+skip 30.00
+catnip 14.39/5000 (8.50/s, 9m46s to cap)
 Catnip Field 9.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 8.72/27.73 2s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 14.39/27.73 1s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
 skip 31.00
-catnip 34.23/5000 (8.50/s, 9m43s to cap)
+catnip 31.40/5000 (8.50/s, 9m44s to cap)
 Catnip Field 9.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -168,35 +167,34 @@ sX: time skip until action X is available
 last input: s1
 ###
 skip 31.00
-catnip 15.01/5000 (9.45/s, 8m47s to cap)
+catnip 12.17/5000 (9.45/s, 8m47s to cap)
 Catnip Field 10.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 15.01/31.06 1s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 12.17/31.06 1s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 31.00
-catnip -6.60/5000 (10.39/s, 8m1s to cap)
-Catnip Field 11.00
+skip 32.00
+catnip 31.07/5000 (9.45/s, 8m45s to cap)
+Catnip Field 10.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip -6.60/34.79 3s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 31.06) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: s1
 ###
-skip 31.00
-catnip 3.79/5000 (10.39/s, 8m0s to cap)
+skip 32.00
+catnip 9.46/5000 (10.39/s, 8m0s to cap)
 Catnip Field 11.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 3.79/34.79 2s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 9.46/34.79 2s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
-error: resource catnip not enough
 ###
-skip 33.00
-catnip 34.98/5000 (10.39/s, 7m57s to cap)
+skip 34.00
+catnip 40.65/5000 (10.39/s, 7m57s to cap)
 Catnip Field 11.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -204,17 +202,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 33.00
-catnip 10.59/5000 (11.34/s, 7m19s to cap)
+skip 34.00
+catnip 16.26/5000 (11.34/s, 7m19s to cap)
 Catnip Field 12.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 10.59/38.96 2s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 16.26/38.96 2s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 35.00
-catnip 44.61/5000 (11.34/s, 7m16s to cap)
+skip 36.00
+catnip 50.28/5000 (11.34/s, 7m16s to cap)
 Catnip Field 12.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -222,17 +220,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 35.00
-catnip 16.99/5000 (12.29/s, 6m45s to cap)
+skip 36.00
+catnip 22.66/5000 (12.29/s, 6m45s to cap)
 Catnip Field 13.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 16.99/43.63 2s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 22.66/43.63 1s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
 skip 37.00
-catnip 53.84/5000 (12.29/s, 6m42s to cap)
+catnip 47.23/5000 (12.29/s, 6m43s to cap)
 Catnip Field 13.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -241,35 +239,34 @@ sX: time skip until action X is available
 last input: s1
 ###
 skip 37.00
-catnip 22.49/5000 (13.23/s, 6m16s to cap)
+catnip 15.88/5000 (13.23/s, 6m16s to cap)
 Catnip Field 14.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 22.49/48.87 1s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 15.88/48.87 2s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 37.00
-catnip -13.15/5000 (14.17/s, 5m53s to cap)
-Catnip Field 15.00
+skip 39.00
+catnip 55.57/5000 (13.23/s, 6m13s to cap)
+Catnip Field 14.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip -13.15/54.74 4s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 48.87) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: s1
 ###
-skip 37.00
-catnip 1.03/5000 (14.17/s, 5m52s to cap)
+skip 39.00
+catnip 19.93/5000 (14.17/s, 5m51s to cap)
 Catnip Field 15.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 1.03/54.74 3s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 19.93/54.74 2s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
-error: resource catnip not enough
 ###
-skip 40.00
-catnip 57.73/5000 (14.17/s, 5m48s to cap)
+skip 41.00
+catnip 62.45/5000 (14.17/s, 5m48s to cap)
 Catnip Field 15.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -277,17 +274,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 40.00
-catnip 17.17/5000 (15.12/s, 5m29s to cap)
+skip 41.00
+catnip 21.89/5000 (15.12/s, 5m29s to cap)
 Catnip Field 16.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 17.17/61.30 2s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 21.89/61.30 2s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 42.00
-catnip 62.53/5000 (15.12/s, 5m26s to cap)
+skip 43.00
+catnip 67.25/5000 (15.12/s, 5m26s to cap)
 Catnip Field 16.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -295,17 +292,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 42.00
-catnip 16.34/5000 (16.06/s, 5m10s to cap)
+skip 43.00
+catnip 21.07/5000 (16.06/s, 5m9s to cap)
 Catnip Field 17.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 16.34/68.66 3s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 21.07/68.66 2s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
 skip 45.00
-catnip 80.60/5000 (16.06/s, 5m6s to cap)
+catnip 69.26/5000 (16.06/s, 5m6s to cap)
 Catnip Field 17.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -314,16 +311,16 @@ sX: time skip until action X is available
 last input: s1
 ###
 skip 45.00
-catnip 28.01/5000 (17.01/s, 4m52s to cap)
+catnip 16.67/5000 (17.01/s, 4m52s to cap)
 Catnip Field 18.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 28.01/76.90 2s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 16.67/76.90 3s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 47.00
-catnip 79.04/5000 (17.01/s, 4m49s to cap)
+skip 48.00
+catnip 84.71/5000 (17.01/s, 4m48s to cap)
 Catnip Field 18.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -331,17 +328,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 47.00
-catnip 19.15/5000 (17.95/s, 4m37s to cap)
+skip 48.00
+catnip 24.82/5000 (17.95/s, 4m37s to cap)
 Catnip Field 19.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 19.15/86.13 3s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 24.82/86.13 3s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 50.00
-catnip 90.97/5000 (17.95/s, 4m33s to cap)
+skip 51.00
+catnip 96.64/5000 (17.95/s, 4m33s to cap)
 Catnip Field 19.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -349,17 +346,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 50.00
-catnip 22.80/5000 (18.90/s, 4m23s to cap)
+skip 51.00
+catnip 28.47/5000 (18.90/s, 4m23s to cap)
 Catnip Field 20.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 22.80/96.46 3s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 28.47/96.46 3s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 53.00
-catnip 98.40/5000 (18.90/s, 4m19s to cap)
+skip 54.00
+catnip 104.07/5000 (18.90/s, 4m19s to cap)
 Catnip Field 20.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -367,17 +364,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 53.00
-catnip 20.83/5000 (19.84/s, 4m10s to cap)
+skip 54.00
+catnip 26.50/5000 (19.84/s, 4m10s to cap)
 Catnip Field 21.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 20.83/108.04 4s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 26.50/108.04 4s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 57.00
-catnip 120.06/5000 (19.84/s, 4m5s to cap)
+skip 58.00
+catnip 125.73/5000 (19.84/s, 4m5s to cap)
 Catnip Field 21.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -385,17 +382,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 57.00
-catnip 31.86/5000 (20.79/s, 3m58s to cap)
+skip 58.00
+catnip 37.53/5000 (20.79/s, 3m58s to cap)
 Catnip Field 22.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 31.86/121.00 4s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 37.53/121.00 4s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 61.00
-catnip 135.81/5000 (20.79/s, 3m53s to cap)
+skip 62.00
+catnip 141.48/5000 (20.79/s, 3m53s to cap)
 Catnip Field 22.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -403,17 +400,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 61.00
-catnip 35.60/5000 (21.73/s, 3m48s to cap)
+skip 62.00
+catnip 41.27/5000 (21.73/s, 3m48s to cap)
 Catnip Field 23.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 35.60/135.52 4s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 41.27/135.52 4s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 65.00
-catnip 144.28/5000 (21.73/s, 3m43s to cap)
+skip 66.00
+catnip 149.95/5000 (21.73/s, 3m43s to cap)
 Catnip Field 23.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -421,17 +418,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 65.00
-catnip 30.49/5000 (22.68/s, 3m39s to cap)
+skip 66.00
+catnip 36.16/5000 (22.68/s, 3m38s to cap)
 Catnip Field 24.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 30.49/151.79 5s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 36.16/151.79 5s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 70.00
-catnip 166.57/5000 (22.68/s, 3m33s to cap)
+skip 71.00
+catnip 172.24/5000 (22.68/s, 3m32s to cap)
 Catnip Field 24.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -439,17 +436,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 70.00
-catnip 37.46/5000 (23.62/s, 3m30s to cap)
+skip 71.00
+catnip 43.13/5000 (23.62/s, 3m29s to cap)
 Catnip Field 25.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 37.46/170.00 5s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 43.13/170.00 5s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 75.00
-catnip 179.21/5000 (23.62/s, 3m24s to cap)
+skip 76.00
+catnip 184.88/5000 (23.62/s, 3m23s to cap)
 Catnip Field 25.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -457,17 +454,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 75.00
-catnip 32.84/5000 (24.57/s, 3m22s to cap)
+skip 76.00
+catnip 38.51/5000 (24.57/s, 3m21s to cap)
 Catnip Field 26.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 32.84/190.40 6s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 38.51/190.40 6s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 81.00
-catnip 204.83/5000 (24.57/s, 3m15s to cap)
+skip 82.00
+catnip 210.50/5000 (24.57/s, 3m14s to cap)
 Catnip Field 26.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -475,17 +472,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 81.00
-catnip 38.99/5000 (25.51/s, 3m14s to cap)
+skip 82.00
+catnip 44.66/5000 (25.51/s, 3m14s to cap)
 Catnip Field 27.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 38.99/213.25 6s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 44.66/213.25 6s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 87.00
-catnip 217.60/5000 (25.51/s, 3m7s to cap)
+skip 88.00
+catnip 223.27/5000 (25.51/s, 3m7s to cap)
 Catnip Field 27.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -493,17 +490,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 87.00
-catnip 29.87/5000 (26.46/s, 3m7s to cap)
+skip 88.00
+catnip 35.54/5000 (26.46/s, 3m7s to cap)
 Catnip Field 28.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 29.87/238.84 7s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 35.54/238.84 7s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 94.00
-catnip 241.55/5000 (26.46/s, 2m59s to cap)
+skip 95.00
+catnip 247.22/5000 (26.46/s, 2m59s to cap)
 Catnip Field 28.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -511,17 +508,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 94.00
-catnip 29.17/5000 (27.40/s, 3m1s to cap)
+skip 95.00
+catnip 34.84/5000 (27.40/s, 3m1s to cap)
 Catnip Field 29.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 29.17/267.50 8s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 34.84/267.50 8s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 102.00
-catnip 275.81/5000 (27.40/s, 2m52s to cap)
+skip 103.00
+catnip 281.48/5000 (27.40/s, 2m52s to cap)
 Catnip Field 29.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -529,17 +526,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 102.00
-catnip 35.72/5000 (28.35/s, 2m55s to cap)
+skip 103.00
+catnip 41.39/5000 (28.35/s, 2m54s to cap)
 Catnip Field 30.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 35.72/299.60 9s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 41.39/299.60 9s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 111.00
-catnip 319.22/5000 (28.35/s, 2m45s to cap)
+skip 112.00
+catnip 324.89/5000 (28.35/s, 2m44s to cap)
 Catnip Field 30.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -547,17 +544,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 111.00
-catnip 47.97/5000 (29.29/s, 2m49s to cap)
+skip 112.00
+catnip 53.64/5000 (29.29/s, 2m48s to cap)
 Catnip Field 31.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 47.97/335.55 9s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 53.64/335.55 9s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 120.00
-catnip 340.92/5000 (29.29/s, 2m39s to cap)
+skip 121.00
+catnip 346.59/5000 (29.29/s, 2m38s to cap)
 Catnip Field 31.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -565,17 +562,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 120.00
-catnip 34.66/5000 (30.24/s, 2m44s to cap)
+skip 121.00
+catnip 40.33/5000 (30.24/s, 2m44s to cap)
 Catnip Field 32.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 34.66/375.82 11s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 40.33/375.82 11s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 131.00
-catnip 397.54/5000 (30.24/s, 2m32s to cap)
+skip 132.00
+catnip 403.21/5000 (30.24/s, 2m32s to cap)
 Catnip Field 32.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -583,17 +580,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 131.00
-catnip 51.97/5000 (31.18/s, 2m38s to cap)
+skip 132.00
+catnip 57.64/5000 (31.18/s, 2m38s to cap)
 Catnip Field 33.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 51.97/420.92 11s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 57.64/420.92 11s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 142.00
-catnip 426.19/5000 (31.18/s, 2m26s to cap)
+skip 143.00
+catnip 431.86/5000 (31.18/s, 2m26s to cap)
 Catnip Field 33.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -601,17 +598,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 142.00
-catnip 36.46/5000 (32.13/s, 2m34s to cap)
+skip 143.00
+catnip 42.13/5000 (32.13/s, 2m34s to cap)
 Catnip Field 34.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 36.46/471.43 13s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 42.13/471.43 13s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 155.00
-catnip 486.28/5000 (32.13/s, 2m20s to cap)
+skip 156.00
+catnip 491.95/5000 (32.13/s, 2m20s to cap)
 Catnip Field 34.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -619,17 +616,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 155.00
-catnip 46.98/5000 (33.07/s, 2m29s to cap)
+skip 156.00
+catnip 52.65/5000 (33.07/s, 2m29s to cap)
 Catnip Field 35.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 46.98/528.00 14s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 52.65/528.00 14s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 169.00
-catnip 543.11/5000 (33.07/s, 2m14s to cap)
+skip 170.00
+catnip 548.78/5000 (33.07/s, 2m14s to cap)
 Catnip Field 35.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -637,17 +634,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 169.00
-catnip 48.18/5000 (34.02/s, 2m25s to cap)
+skip 170.00
+catnip 53.85/5000 (34.02/s, 2m25s to cap)
 Catnip Field 36.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 48.18/591.36 15s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 53.85/591.36 15s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 184.00
-catnip 592.50/5000 (34.02/s, 2m9s to cap)
+skip 185.00
+catnip 598.17/5000 (34.02/s, 2m9s to cap)
 Catnip Field 36.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -655,17 +652,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 184.00
-catnip 35.17/5000 (34.96/s, 2m21s to cap)
+skip 185.00
+catnip 40.84/5000 (34.96/s, 2m21s to cap)
 Catnip Field 37.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 35.17/662.32 17s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 40.84/662.32 17s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 201.00
-catnip 664.54/5000 (34.96/s, 2m3s to cap)
+skip 202.00
+catnip 670.21/5000 (34.96/s, 2m3s to cap)
 Catnip Field 37.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -673,17 +670,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 201.00
-catnip 37.18/5000 (35.91/s, 2m18s to cap)
+skip 202.00
+catnip 42.85/5000 (35.91/s, 2m18s to cap)
 Catnip Field 38.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 37.18/741.80 19s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 42.85/741.80 19s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 220.00
-catnip 755.38/5000 (35.91/s, 1m58s to cap)
+skip 221.00
+catnip 761.05/5000 (35.91/s, 1m58s to cap)
 Catnip Field 38.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -691,17 +688,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 220.00
-catnip 49.50/5000 (36.85/s, 2m14s to cap)
+skip 221.00
+catnip 55.17/5000 (36.85/s, 2m14s to cap)
 Catnip Field 39.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 49.50/830.81 21s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 55.17/830.81 21s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 241.00
-catnip 860.31/5000 (36.85/s, 1m52s to cap)
+skip 242.00
+catnip 865.98/5000 (36.85/s, 1m52s to cap)
 Catnip Field 39.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -709,17 +706,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 241.00
-catnip 66.35/5000 (37.80/s, 2m10s to cap)
+skip 242.00
+catnip 72.02/5000 (37.80/s, 2m10s to cap)
 Catnip Field 40.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 66.35/930.51 22s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 72.02/930.51 22s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 263.00
-catnip 935.75/5000 (37.80/s, 1m47s to cap)
+skip 264.00
+catnip 941.42/5000 (37.80/s, 1m47s to cap)
 Catnip Field 40.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -727,17 +724,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 263.00
-catnip 43.04/5000 (38.74/s, 2m7s to cap)
+skip 264.00
+catnip 48.71/5000 (38.74/s, 2m7s to cap)
 Catnip Field 41.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 43.04/1042.17 25s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 48.71/1042.17 25s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 288.00
-catnip 1050.41/5000 (38.74/s, 1m41s to cap)
+skip 289.00
+catnip 1056.08/5000 (38.74/s, 1m41s to cap)
 Catnip Field 41.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -745,17 +742,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 288.00
-catnip 46.99/5000 (39.69/s, 2m4s to cap)
+skip 289.00
+catnip 52.66/5000 (39.69/s, 2m4s to cap)
 Catnip Field 42.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 46.99/1167.23 28s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 52.66/1167.23 28s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 316.00
-catnip 1198.00/5000 (39.69/s, 1m35s to cap)
+skip 317.00
+catnip 1203.67/5000 (39.69/s, 1m35s to cap)
 Catnip Field 42.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -763,17 +760,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 316.00
-catnip 70.45/5000 (40.63/s, 2m1s to cap)
+skip 317.00
+catnip 76.12/5000 (40.63/s, 2m1s to cap)
 Catnip Field 43.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 70.45/1307.30 30s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 76.12/1307.30 30s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 346.00
-catnip 1330.14/5000 (40.63/s, 1m30s to cap)
+skip 347.00
+catnip 1335.81/5000 (40.63/s, 1m30s to cap)
 Catnip Field 43.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -781,17 +778,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 346.00
-catnip 63.47/5000 (41.58/s, 1m58s to cap)
+skip 347.00
+catnip 69.14/5000 (41.58/s, 1m58s to cap)
 Catnip Field 44.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 63.47/1464.18 33s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 69.14/1464.18 33s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 379.00
-catnip 1477.19/5000 (41.58/s, 1m24s to cap)
+skip 380.00
+catnip 1482.86/5000 (41.58/s, 1m24s to cap)
 Catnip Field 44.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -799,17 +796,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 379.00
-catnip 54.60/5000 (42.52/s, 1m56s to cap)
+skip 380.00
+catnip 60.27/5000 (42.52/s, 1m56s to cap)
 Catnip Field 45.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 54.60/1639.88 37s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 60.27/1639.88 37s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 416.00
-catnip 1670.55/5000 (42.52/s, 1m18s to cap)
+skip 417.00
+catnip 1676.22/5000 (42.52/s, 1m18s to cap)
 Catnip Field 45.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -817,17 +814,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 416.00
-catnip 73.20/5000 (43.47/s, 1m53s to cap)
+skip 417.00
+catnip 78.87/5000 (43.47/s, 1m53s to cap)
 Catnip Field 46.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 73.20/1836.66 40s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 78.87/1836.66 40s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 456.00
-catnip 1855.47/5000 (43.47/s, 1m12s to cap)
+skip 457.00
+catnip 1861.14/5000 (43.47/s, 1m12s to cap)
 Catnip Field 46.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -835,17 +832,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 456.00
-catnip 62.28/5000 (44.41/s, 1m51s to cap)
+skip 457.00
+catnip 67.95/5000 (44.41/s, 1m51s to cap)
 Catnip Field 47.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 62.28/2057.06 44s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 67.95/2057.06 44s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 500.00
-catnip 2060.95/5000 (44.41/s, 1m6s to cap)
+skip 501.00
+catnip 2066.62/5000 (44.41/s, 1m6s to cap)
 Catnip Field 47.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -853,17 +850,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 500.00
-catnip 48.31/5000 (45.36/s, 1m49s to cap)
+skip 501.00
+catnip 53.98/5000 (45.36/s, 1m49s to cap)
 Catnip Field 48.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 48.31/2303.91 49s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 53.98/2303.91 49s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 549.00
-catnip 2316.31/5000 (45.36/s, 59s to cap)
+skip 550.00
+catnip 2321.98/5000 (45.36/s, 59s to cap)
 Catnip Field 48.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -871,17 +868,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 549.00
-catnip 57.76/5000 (46.30/s, 1m46s to cap)
+skip 550.00
+catnip 63.43/5000 (46.30/s, 1m46s to cap)
 Catnip Field 49.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 57.76/2580.38 54s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 63.43/2580.38 54s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 603.00
-catnip 2604.53/5000 (46.30/s, 51s to cap)
+skip 604.00
+catnip 2610.20/5000 (46.30/s, 51s to cap)
 Catnip Field 49.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -889,17 +886,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 603.00
-catnip 70.46/5000 (47.25/s, 1m44s to cap)
+skip 604.00
+catnip 76.13/5000 (47.25/s, 1m44s to cap)
 Catnip Field 50.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 70.46/2890.02 59s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 76.13/2890.02 59s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 662.00
-catnip 2905.46/5000 (47.25/s, 44s to cap)
+skip 663.00
+catnip 2911.13/5000 (47.25/s, 44s to cap)
 Catnip Field 50.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -907,17 +904,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 662.00
-catnip 62.69/5000 (48.20/s, 1m42s to cap)
+skip 663.00
+catnip 68.36/5000 (48.20/s, 1m42s to cap)
 Catnip Field 51.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 62.69/3236.82 1m5s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 68.36/3236.82 1m5s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 727.00
-catnip 3243.56/5000 (48.20/s, 36s to cap)
+skip 728.00
+catnip 3249.23/5000 (48.20/s, 36s to cap)
 Catnip Field 51.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -925,17 +922,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 727.00
-catnip 54.93/5000 (49.14/s, 1m40s to cap)
+skip 728.00
+catnip 60.60/5000 (49.14/s, 1m40s to cap)
 Catnip Field 52.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 54.93/3625.24 1m12s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 60.60/3625.24 1m12s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 799.00
-catnip 3642.15/5000 (49.14/s, 27s to cap)
+skip 800.00
+catnip 3647.82/5000 (49.14/s, 27s to cap)
 Catnip Field 52.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -943,17 +940,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 799.00
-catnip 66.05/5000 (50.09/s, 1m38s to cap)
+skip 800.00
+catnip 71.72/5000 (50.09/s, 1m38s to cap)
 Catnip Field 53.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 66.05/4060.27 1m19s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 71.72/4060.27 1m19s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 878.00
-catnip 4072.85/5000 (50.09/s, 18s to cap)
+skip 879.00
+catnip 4078.52/5000 (50.09/s, 18s to cap)
 Catnip Field 53.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -961,17 +958,17 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 878.00
-catnip 62.66/5000 (51.03/s, 1m36s to cap)
+skip 879.00
+catnip 68.33/5000 (51.03/s, 1m36s to cap)
 Catnip Field 54.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 62.66/4547.51 1m27s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 68.33/4547.51 1m27s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 965.00
-catnip 4553.30/5000 (51.03/s, 8s to cap)
+skip 966.00
+catnip 4558.97/5000 (51.03/s, 8s to cap)
 Catnip Field 54.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -979,16 +976,16 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 965.00
-catnip 56.82/5000 (51.97/s, 1m35s to cap)
+skip 966.00
+catnip 62.49/5000 (51.97/s, 1m34s to cap)
 Catnip Field 55.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 56.82/5093.21 1m36s) (Catnip Field + 1)
+1: 'Catnip Field' (catnip 62.49/5093.21 1m36s) (Catnip Field + 1)
 sX: time skip until action X is available
 last input: 1
 ###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -997,7 +994,7 @@ Spring 1.00
 sX: time skip until action X is available
 last input: s1
 ###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -1007,27 +1004,7 @@ sX: time skip until action X is available
 last input: 1
 error: resource catnip not enough
 ###
-skip 1061.00
-catnip 5000.00/5000 (51.97/s, 0s to cap)
-Catnip Field 55.00
-Spring 1.00
-0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 5000.00/5093.21 1s) (Catnip Field + 1)
-sX: time skip until action X is available
-last input: s1
-error: resource catnip not enough
-###
-skip 1061.00
-catnip 5000.00/5000 (51.97/s, 0s to cap)
-Catnip Field 55.00
-Spring 1.00
-0: 'Gather catnip' () (catnip + 1)
-1: 'Catnip Field' (catnip 5000.00/5093.21 1s) (Catnip Field + 1)
-sX: time skip until action X is available
-last input: 1
-error: resource catnip not enough
-###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -1037,7 +1014,7 @@ sX: time skip until action X is available
 last input: s1
 error: resource catnip not enough
 ###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -1047,7 +1024,7 @@ sX: time skip until action X is available
 last input: 1
 error: resource catnip not enough
 ###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -1057,7 +1034,7 @@ sX: time skip until action X is available
 last input: s1
 error: resource catnip not enough
 ###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -1067,7 +1044,7 @@ sX: time skip until action X is available
 last input: 1
 error: resource catnip not enough
 ###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -1077,7 +1054,7 @@ sX: time skip until action X is available
 last input: s1
 error: resource catnip not enough
 ###
-skip 1061.00
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00
@@ -1087,7 +1064,27 @@ sX: time skip until action X is available
 last input: 1
 error: resource catnip not enough
 ###
-skip 1061.00
+skip 1062.00
+catnip 5000.00/5000 (51.97/s, 0s to cap)
+Catnip Field 55.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Catnip Field' (catnip 5000.00/5093.21 1s) (Catnip Field + 1)
+sX: time skip until action X is available
+last input: s1
+error: resource catnip not enough
+###
+skip 1062.00
+catnip 5000.00/5000 (51.97/s, 0s to cap)
+Catnip Field 55.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Catnip Field' (catnip 5000.00/5093.21 1s) (Catnip Field + 1)
+sX: time skip until action X is available
+last input: 1
+error: resource catnip not enough
+###
+skip 1062.00
 catnip 5000.00/5000 (51.97/s, 0s to cap)
 Catnip Field 55.00
 Spring 1.00

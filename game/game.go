@@ -172,7 +172,7 @@ func (g *Game) Act(input string) error {
 		cost := g.GetCost(a, c)
 		if r.Quantity < cost {
 			if skip && g.GetRate(r) > 0 && r.Quantity < r.Capacity {
-				duration := g.GetDuration(r, cost)
+				duration := g.GetDuration(r, cost) + time.Second
 				if duration > skipTime {
 					skipTime = duration
 				}
@@ -197,7 +197,6 @@ func (g *Game) Act(input string) error {
 }
 
 func (g *Game) TimeSkip(skip time.Duration) {
-	skip = skip + time.Second
 	g.GetResource("skip").Quantity += float64(skip / time.Second)
 	now := g.Now
 	g.Now = time.Time(now.Add(-skip))

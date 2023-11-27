@@ -49,7 +49,7 @@ func NewGame(now game.Now) *game.Game {
 
 TODO
 
-- test skip until the end
+- game_test skip
 
 actions
 
