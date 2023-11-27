@@ -24,7 +24,6 @@ func main() {
 		lastAuto := 0
 		for {
 			got := -1
-
 			if *auto {
 				got = lastAuto
 				lastAuto++

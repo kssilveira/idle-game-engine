@@ -66,16 +66,18 @@ func (g *Game) Validate() error {
 }
 
 func (g *Game) Run(logger *log.Logger, separator string, input Input, now Now) {
+	var in int
 	var err error
 	for {
 		logger.Printf("%s", separator)
+		g.ShowResources(logger)
+		g.ShowActions(logger)
+		logger.Printf("last input: %d\n", in)
 		if err != nil {
 			logger.Printf("error: %v\n", err)
 		}
-		g.ShowResources(logger)
-		g.ShowActions(logger)
 		select {
-		case in := <-input:
+		case in = <-input:
 			if in == 999 {
 				return
 			}
