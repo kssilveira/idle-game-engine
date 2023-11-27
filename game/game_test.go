@@ -1,7 +1,6 @@
 package game
 
 import (
-	"fmt"
 	"testing"
 	"time"
 )
@@ -11,7 +10,7 @@ func TestAct(t *testing.T) {
 		name      string
 		resources []Resource
 		actions   []Action
-		inputs    []int
+		inputs    []string
 		want      []int
 	}{{
 		name: "add 1",
@@ -24,7 +23,7 @@ func TestAct(t *testing.T) {
 				Name: "resource", Quantity: 1,
 			}},
 		}},
-		inputs: []int{0, 0, 0},
+		inputs: []string{"0", "0", "0"},
 		want:   []int{1, 2, 2},
 	}, {
 		name: "no cap",
@@ -37,7 +36,7 @@ func TestAct(t *testing.T) {
 				Name: "resource", Quantity: 1,
 			}},
 		}},
-		inputs: []int{0, 0, 0},
+		inputs: []string{"0", "0", "0"},
 		want:   []int{1, 2, 3},
 	}, {
 		name: "cost",
@@ -55,12 +54,36 @@ func TestAct(t *testing.T) {
 				Name: "producer", Quantity: 1,
 			}},
 		}},
-		inputs: []int{0, 0, 0},
+		inputs: []string{"0", "0", "0"},
 		want: []int{
 			100 - (1),
 			100 - (1 + 2),
 			100 - (1 + 2 + 4),
 		},
+	}, {
+		name: "skip",
+		resources: []Resource{{
+			Name:     "resource",
+			Quantity: 1,
+			Producers: []Resource{{
+				Name: "producer", ProductionFactor: 1,
+			}},
+		}, {
+			Name: "producer",
+		}, {
+			Name: "skip",
+		}},
+		actions: []Action{{
+			Name: "producer",
+			Costs: []Resource{{
+				Name: "resource", Quantity: 1, CostExponentBase: 2,
+			}},
+			Adds: []Resource{{
+				Name: "producer", Quantity: 1,
+			}},
+		}},
+		inputs: []string{"0", "s0", "0", "s0", "0"},
+		want:   []int{0, 3, 1, 5, 1},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))
@@ -70,7 +93,7 @@ func TestAct(t *testing.T) {
 			t.Errorf("[%s] Validate got err %v", in.name, err)
 		}
 		for index, input := range in.inputs {
-			if err := g.Act(fmt.Sprintf("%d", input)); err != nil {
+			if err := g.Act(input); err != nil {
 				t.Errorf("[%s] index %d got err %v", in.name, index, err)
 			}
 			want := in.want[index]
@@ -121,7 +144,7 @@ func TestUpdate(t *testing.T) {
 			28,
 		},
 	}, {
-		name: "two inputs",
+		name: "two producers",
 		resources: []Resource{{
 			Name: "resource",
 			Producers: []Resource{{

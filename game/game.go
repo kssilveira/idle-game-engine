@@ -171,7 +171,7 @@ func (g *Game) Act(input string) error {
 		r := g.GetResource(c.Name)
 		cost := g.GetCost(a, c)
 		if r.Quantity < cost {
-			if skip && g.GetRate(r) > 0 && r.Quantity < r.Capacity {
+			if skip && g.GetRate(r) > 0 && (r.Capacity == 0 || r.Quantity < r.Capacity) {
 				duration := g.GetDuration(r, cost) + time.Second
 				if duration > skipTime {
 					skipTime = duration
