@@ -2,9 +2,9 @@ package kittens
 
 import (
 	"bytes"
-	"strings"
 	"log"
 	"os"
+	"strings"
 	"testing"
 	"time"
 )
@@ -120,7 +120,7 @@ func TestRun(t *testing.T) {
 			t.Errorf("[%s] got err %v", in.name, err)
 		}
 		g.Run(logger, "###", input, nowfn)
-		name := strings.Replace(in.name, " ", "_", -1)+".out"
+		name := strings.Replace(in.name, " ", "_", -1) + ".out"
 		if err := os.WriteFile(name, buf.Bytes(), 0644); err != nil {
 			t.Errorf("[%s] got err %v", in.name, err)
 		}
