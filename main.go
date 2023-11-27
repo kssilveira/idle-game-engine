@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -9,15 +10,29 @@ import (
 	"github.com/kssilveira/idle-game-engine/kittens"
 )
 
+var (
+	auto = flag.Bool("auto", false, "automatically trigger all actions")
+)
+
 func main() {
+	flag.Parse()
 	now := func() time.Time { return time.Now() }
 	g := kittens.NewGame(now)
 	logger := log.New(os.Stdout, "", 0 /* flags */)
 	input := make(chan int)
 	go func() {
+		lastAuto := 0
 		for {
 			got := -1
-			fmt.Scanf("%d", &got)
+
+			if *auto {
+				got = lastAuto
+				lastAuto++
+				lastAuto %= len(g.Actions)
+				time.Sleep(time.Second)
+			} else {
+				fmt.Scanf("%d", &got)
+			}
 			input <- got
 		}
 	}()

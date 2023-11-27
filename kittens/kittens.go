@@ -49,13 +49,16 @@ func NewGame(now game.Now) *game.Game {
 
 TODO
 
+- move error to bottom
+- show last action
+- time skip action
+- auto act with time skip until the end
+
 actions
 
 - "Refine catnip" cost 100 catnip add 1 wood
 
 buildings
-
-- sell for half price
 
 - "Hut" cost 5 wood add 2 kitten
   - cost 10 12.5 31.25 78.13 195.31 488.28
@@ -73,4 +76,9 @@ woodcuttter 0.09 wood/s
 
 happiness
 - kittens 5 => 100% 98% 96% 94% 92% 90%
+
+maybe
+
+- sell building for half price
+
 */
