@@ -22,6 +22,7 @@ func TestRun(t *testing.T) {
 	field := "2"
 	sfield := "s2"
 	hut := "3"
+	woodcutter := "4"
 	inputs := []struct {
 		name      string
 		iters     []iter
@@ -149,6 +150,24 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
+		name: "woodcutter 2",
+		resources: map[string]float64{
+			"catnip": 1000,
+			"kitten": 2,
+		},
+		iters: []iter{
+			// 1st woodcutter
+			{woodcutter, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// 2nd woodcutter
+			{woodcutter, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// end
+			{"999", 0},
+		},
+	}, {
 		name:      "all",
 		resources: map[string]float64{},
 		iters: append(
@@ -175,7 +194,14 @@ func TestRun(t *testing.T) {
 		}
 		g := NewGame(nowfn)
 		for name, quantity := range in.resources {
-			g.GetResource(name).Quantity = quantity
+			if !g.HasResource(name) {
+				t.Errorf("[%s] missing resource %s", in.name, name)
+			}
+			r := g.GetResource(name)
+			r.Quantity = quantity
+			if r.Capacity != -1 && r.Capacity < quantity {
+				r.Capacity = quantity
+			}
 		}
 		if err := g.Validate(); err != nil {
 			t.Errorf("[%s] got err %v", in.name, err)

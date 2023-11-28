@@ -209,6 +209,7 @@ func (g *Game) Act(input string) error {
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
 		r.Quantity -= g.GetCost(a, c)
+		r.Capacity -= c.Capacity
 	}
 	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
@@ -225,10 +226,10 @@ func (g *Game) TimeSkip(skip time.Duration) {
 }
 
 func (g *Game) ValidateResource(r *Resource) error {
-	if _, ok := g.ResourceToIndex[r.Name]; !ok && r.Name != "" {
+	if r.Name != "" && !g.HasResource(r.Name) {
 		return fmt.Errorf("invalid resource name %s", r.Name)
 	}
-	if _, ok := g.ResourceToIndex[r.ProductionResourceFactor]; !ok && r.ProductionResourceFactor != "" {
+	if r.ProductionResourceFactor != "" && !g.HasResource(r.ProductionResourceFactor) {
 		return fmt.Errorf("invalid resource name %s", r.ProductionResourceFactor)
 	}
 	for _, r := range r.Producers {
@@ -289,4 +290,9 @@ func (g *Game) GetResource(name string) *Resource {
 
 func (g *Game) GetCost(a Action, c Resource) float64 {
 	return c.Quantity * math.Pow(c.CostExponentBase, g.GetResource(a.Adds[0].Name).Quantity)
+}
+
+func (g *Game) HasResource(name string) bool {
+	_, ok := g.ResourceToIndex[name]
+	return ok
 }

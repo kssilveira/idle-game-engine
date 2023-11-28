@@ -18,14 +18,21 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Catnip Field", ProductionFactor: 0.63 * (1 - 0.75), ProductionResourceFactor: "Winter",
 		}, {
 			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true,
+		}, {
+			Name: "woodcutter", ProductionFactor: -4.25,
 		}},
 	}, {
 		Name: "wood", Capacity: 200,
+		Producers: []game.Resource{{
+			Name: "woodcutter", ProductionFactor: 0.09,
+		}},
 	}, {
 		Name: "kitten", Capacity: 0,
 		Producers: []game.Resource{{
 			Name: "", ProductionFactor: 0.05,
 		}},
+	}, {
+		Name: "woodcutter", Capacity: -1,
 	}, {
 		Name: "Catnip Field", Capacity: -1,
 	}, {
@@ -70,6 +77,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "kitten", Capacity: 1,
 		}},
+	}, {
+		Name: "woodcutter",
+		Costs: []game.Resource{{
+			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
+		}},
+		Adds: []game.Resource{{
+			Name: "woodcutter", Quantity: 1,
+		}},
 	}}
 	return g
 }
@@ -86,8 +101,7 @@ resources
 
 jobs
 
-woodcuttter 0.09 wood/s
-  - reduced by happiness
+woodcutter reduced by happiness
 
 happiness
 - kittens 5 => 100% 98% 96% 94% 92% 90%

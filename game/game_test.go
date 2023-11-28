@@ -85,6 +85,25 @@ func TestAct(t *testing.T) {
 		inputs:       []string{"0", "0"},
 		want:         []int{0, 0},
 		wantCapacity: 2,
+	}, {
+		name: "cost 1 capacity",
+		resources: []Resource{{
+			Name: "resource", Capacity: 4,
+		}, {
+			Name: "other", Capacity: -1,
+		}},
+		actions: []Action{{
+			Name: "cost 1",
+			Costs: []Resource{{
+				Name: "resource", Capacity: 1,
+			}},
+			Adds: []Resource{{
+				Name: "other", Quantity: 1,
+			}},
+		}},
+		inputs:       []string{"0", "0"},
+		want:         []int{0, 0},
+		wantCapacity: 2,
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))
