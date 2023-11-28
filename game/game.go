@@ -21,6 +21,7 @@ type Resource struct {
 	Quantity                 float64
 	Capacity                 float64
 	Producers                []Resource
+	OnGone                   []Resource
 	ProductionFactor         float64
 	ProductionFloor          bool
 	ProductionResourceFactor string
@@ -237,6 +238,11 @@ func (g *Game) ValidateResource(r *Resource) error {
 			return err
 		}
 	}
+	for _, r := range r.OnGone {
+		if err := g.ValidateResource(&r); err != nil {
+			return err
+		}
+	}
 	return nil
 }
 
@@ -278,7 +284,13 @@ func (g *Game) UpdateRate(resource *Resource) {
 	for _, p := range resource.Producers {
 		one := g.GetQuantityForRate(p) * p.ProductionFactor
 		if one < 0 {
-			g.GetResource(p.Name).Quantity--
+			r := g.GetResource(p.Name)
+			r.Quantity--
+			for _, onGone := range r.OnGone {
+				gone := g.GetResource(onGone.Name)
+				gone.Quantity += onGone.Quantity
+				gone.Capacity += onGone.Capacity
+			}
 			return
 		}
 	}

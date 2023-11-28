@@ -232,17 +232,23 @@ func TestUpdate(t *testing.T) {
 		resources: []Resource{{
 			Name: "resource", Quantity: 2, Capacity: -1,
 			Producers: []Resource{{
-				Name: "input", ProductionFactor: -0.25,
+				Name: "input", ProductionFactor: -0.2,
 			}},
 		}, {
-			Name: "input", Quantity: 4, Capacity: -1,
+			Name: "input", Quantity: 5, Capacity: -1,
+			OnGone: []Resource{{
+				Name: "gone input", Quantity: 1,
+			}},
+		}, {
+			Name: "gone input", Capacity: -1,
 		}},
 		times: []int64{0, 1, 2, 3},
 		want: []int{
 			2, 1, 0, 0,
 		},
 		wantResources: map[string]int{
-			"input": 2,
+			"input":      3,
+			"gone input": 2,
 		},
 	}}
 	for _, in := range inputs {

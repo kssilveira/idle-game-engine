@@ -31,8 +31,18 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []game.Resource{{
 			Name: "", ProductionFactor: 0.05,
 		}},
+		OnGone: []game.Resource{{
+			Name: "gone kitten", Quantity: 1,
+		}},
+	}, {
+		Name: "gone kitten", Capacity: -1,
 	}, {
 		Name: "woodcutter", Capacity: -1,
+		OnGone: []game.Resource{{
+			Name: "gone kitten", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
 	}, {
 		Name: "Catnip Field", Capacity: -1,
 	}, {
@@ -92,8 +102,6 @@ func NewGame(now game.Now) *game.Game {
 /*
 
 TODO
-
-woodcutter die add back kitten cap
 
 actions
 
