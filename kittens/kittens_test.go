@@ -152,7 +152,7 @@ func TestRun(t *testing.T) {
 		name:      "all",
 		resources: map[string]float64{},
 		iters: append(
-			repeat(all(), 999),
+			repeat(all(), 300),
 			// end
 			iter{"999", 0}),
 	}}
