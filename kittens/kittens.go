@@ -103,6 +103,8 @@ func NewGame(now game.Now) *game.Game {
 
 TODO
 
+- make --auto get to the end like kittens_test
+
 actions
 
 buildings
