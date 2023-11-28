@@ -75,7 +75,7 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []game.Resource{{
 			Name: "Hut", Quantity: 1,
 		}, {
-			Name: "kitten", Capacity: 1,
+			Name: "kitten", Capacity: 2,
 		}},
 	}, {
 		Name: "woodcutter",
@@ -92,6 +92,8 @@ func NewGame(now game.Now) *game.Game {
 /*
 
 TODO
+
+woodcutter die add back kitten cap
 
 actions
 

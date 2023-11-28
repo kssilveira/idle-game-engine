@@ -4,7 +4,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
 2: 'Catnip Field' (catnip 10.00) (Catnip Field + 1)
-3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 2)
 4: 'woodcutter' (kitten 0.00/1.00 20s) (woodcutter + 1)
 sX: time skip until action X is available
 last input: 
@@ -15,7 +15,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
 2: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
-3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 2)
 4: 'woodcutter' (kitten 0.00/1.00 20s) (woodcutter + 1)
 sX: time skip until action X is available
 last input: 2
@@ -26,7 +26,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
 2: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
-3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 2)
 4: 'woodcutter' (kitten 0.00/1.00 20s) (woodcutter + 1)
 sX: time skip until action X is available
 last input: 
@@ -38,7 +38,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
 2: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
-3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 2)
 4: 'woodcutter' (kitten 0.00/1.00 20s) (woodcutter + 1)
 sX: time skip until action X is available
 last input: 
@@ -50,7 +50,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
 2: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
-3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 2)
 4: 'woodcutter' (kitten 0.00/1.00 20s) (woodcutter + 1)
 sX: time skip until action X is available
 last input: 2
@@ -61,7 +61,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
 2: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
-3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 2)
 4: 'woodcutter' (kitten 0.00/1.00 20s) (woodcutter + 1)
 sX: time skip until action X is available
 last input: 
@@ -73,7 +73,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
 2: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
-3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 2)
 4: 'woodcutter' (kitten 0.00/1.00 20s) (woodcutter + 1)
 sX: time skip until action X is available
 last input: 
