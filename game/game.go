@@ -2,11 +2,12 @@ package game
 
 import (
 	"fmt"
-	"log"
 	"math"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/kssilveira/idle-game-engine/ui"
 )
 
 type Game struct {
@@ -35,6 +36,7 @@ type Action struct {
 }
 
 type Input chan string
+type Output chan *ui.Data
 type Now func() time.Time
 
 func NewGame(now time.Time) *Game {
@@ -72,20 +74,21 @@ func (g *Game) Validate() error {
 	return nil
 }
 
-func (g *Game) Run(logger *log.Logger, separator string, input Input, now Now) {
+func (g *Game) Run(now Now, input Input, output Output) {
 	var in string
 	var err error
 	for {
-		logger.Printf("%s", separator)
-		g.ShowResources(logger)
-		g.ShowActions(logger)
-		logger.Printf("last input: %s\n", in)
-		if err != nil {
-			logger.Printf("error: %v\n", err)
+		data := &ui.Data{
+			LastInput: in,
+			Error:     err,
 		}
+		g.PopulateUIResources(data)
+		g.PopulateUIActions(data)
+		output <- data
 		select {
 		case in = <-input:
 			if in == "999" {
+				close(output)
 				return
 			}
 			g.Update(now())
@@ -96,55 +99,45 @@ func (g *Game) Run(logger *log.Logger, separator string, input Input, now Now) {
 	}
 }
 
-func (g *Game) ShowResources(logger *log.Logger) {
+func (g *Game) PopulateUIResources(data *ui.Data) {
 	for _, r := range g.Resources {
-		if r.Quantity == 0 {
-			continue
-		}
-		capacity := ""
-		if r.Capacity > 0 {
-			capacity = fmt.Sprintf("/%.0f", r.Capacity)
-		}
-		rateStr := ""
-		rate := g.GetRate(r)
-		if rate != 0 {
-			capStr := ""
-			if r.Capacity > 0 {
-				capStr = fmt.Sprintf(", %s to cap", g.GetDuration(r, r.Capacity))
-			}
-			rateStr = fmt.Sprintf(" (%.2f/s%s)", rate, capStr)
-		}
-		logger.Printf("%s %.2f%s%s\n", r.Name, r.Quantity, capacity, rateStr)
+		data.Resources = append(data.Resources, ui.Resource{
+			Name:     r.Name,
+			Quantity: r.Quantity,
+			Capacity: r.Capacity,
+			Rate:     g.GetRate(r),
+			Duration: g.GetDuration(r, r.Capacity),
+		})
 	}
 }
 
-func (g *Game) ShowActions(logger *log.Logger) {
-	for i, a := range g.Actions {
-		parts := []string{
-			fmt.Sprintf("%d: '%s' (", i, a.Name),
+func (g *Game) PopulateUIActions(data *ui.Data) {
+	for _, a := range g.Actions {
+		action := ui.Action{
+			Name: a.Name,
 		}
 		for _, c := range a.Costs {
 			cost := g.GetCost(a, c)
 			r := g.GetResource(c.Name)
-			out := fmt.Sprintf("%.2f/%.2f %s", r.Quantity, cost, g.GetDuration(r, cost))
-			if r.Quantity >= cost {
-				out = fmt.Sprintf("%.2f", cost)
-			}
-			parts = append(parts, fmt.Sprintf("%s %s", c.Name, out))
+			action.Costs = append(action.Costs, ui.Cost{
+				Name:     c.Name,
+				Quantity: r.Quantity,
+				Cost:     cost,
+				Duration: g.GetDuration(r, cost),
+			})
 		}
-		parts = append(parts, ") (")
-		adds := []string{}
 		for _, r := range a.Adds {
-			one := fmt.Sprintf("%s + %.0f", r.Name, r.Quantity)
-			if r.Quantity == 0 && r.Capacity > 0 {
-				one = fmt.Sprintf("%s cap + %.0f", r.Name, r.Capacity)
-			}
-			adds = append(adds, one)
+			action.Adds = append(action.Adds, ui.Add{
+				Name:     r.Name,
+				Quantity: r.Quantity,
+				Capacity: r.Capacity,
+			})
 		}
-		parts = append(parts, strings.Join(adds, ", "))
-		logger.Printf("%s)\n", strings.Join(parts, ""))
+		data.Actions = append(data.Actions, action)
 	}
-	logger.Printf("sX: time skip until action X is available\n")
+	data.CustomActions = append(data.CustomActions, ui.CustomAction{
+		Name: "sX: time skip until action X is available",
+	})
 }
 
 func (g *Game) GetDuration(r *Resource, quantity float64) time.Duration {

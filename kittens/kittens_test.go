@@ -9,6 +9,9 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/kssilveira/idle-game-engine/textui"
+	"github.com/kssilveira/idle-game-engine/ui"
 )
 
 type iter struct {
@@ -203,7 +206,11 @@ func TestRun(t *testing.T) {
 		if err := g.Validate(); err != nil {
 			t.Errorf("[%s] got err %v", in.name, err)
 		}
-		g.Run(logger, "###", input, nowfn)
+		output := make(chan *ui.Data)
+		go g.Run(nowfn, input, output)
+		for data := range output {
+			textui.Show(logger, "###", data)
+		}
 		name := filepath.Join("testdata", strings.Replace(in.name, " ", "_", -1)+".out")
 		if err := os.WriteFile(name, buf.Bytes(), 0644); err != nil {
 			t.Errorf("[%s] got err %v", in.name, err)

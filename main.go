@@ -11,6 +11,8 @@ import (
 
 	"github.com/kssilveira/idle-game-engine/game"
 	"github.com/kssilveira/idle-game-engine/kittens"
+	"github.com/kssilveira/idle-game-engine/textui"
+	"github.com/kssilveira/idle-game-engine/ui"
 )
 
 var (
@@ -49,7 +51,11 @@ func all() error {
 	if err := g.Validate(); err != nil {
 		return err
 	}
-	g.Run(logger, separator, input, now)
+	output := make(chan *ui.Data)
+	go g.Run(now, input, output)
+	for data := range output {
+		textui.Show(logger, separator, data)
+	}
 	return nil
 }
 
