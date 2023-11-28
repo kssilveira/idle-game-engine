@@ -22,6 +22,7 @@ type Resource struct {
 	Capacity                 float64
 	Producers                []Resource
 	ProductionFactor         float64
+	ProductionFloor          bool
 	ProductionResourceFactor string
 	CostExponentBase         float64
 }
@@ -41,7 +42,7 @@ func NewGame(now time.Time) *Game {
 		ResourceToIndex: map[string]int{},
 	}
 	g.AddResources([]Resource{{
-		Name: "skip",
+		Name: "skip", Capacity: -1,
 	}})
 	return g
 }
@@ -131,9 +132,15 @@ func (g *Game) ShowActions(logger *log.Logger) {
 			parts = append(parts, fmt.Sprintf("%s %s", c.Name, out))
 		}
 		parts = append(parts, ") (")
+		adds := []string{}
 		for _, r := range a.Adds {
-			parts = append(parts, fmt.Sprintf("%s + %.0f", r.Name, r.Quantity))
+			one := fmt.Sprintf("%s + %.0f", r.Name, r.Quantity)
+			if r.Quantity == 0 && r.Capacity > 0 {
+				one = fmt.Sprintf("%s cap + %.0f", r.Name, r.Capacity)
+			}
+			adds = append(adds, one)
 		}
+		parts = append(parts, strings.Join(adds, ", "))
 		logger.Printf("%s)\n", strings.Join(parts, ""))
 	}
 	logger.Printf("sX: time skip until action X is available\n")
@@ -148,7 +155,10 @@ func (g *Game) Update(now time.Time) {
 	g.Now = now
 	for _, resource := range g.Resources {
 		factor := g.GetRate(resource)
-		resource.AddQuantity(factor * elapsed.Seconds())
+		resource.Add(Resource{Quantity: factor * elapsed.Seconds()})
+		if factor < 0 && resource.Quantity == 0 {
+			g.UpdateRate(resource)
+		}
 	}
 }
 
@@ -170,7 +180,7 @@ func (g *Game) Act(input string) error {
 	found := false
 	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
-		if r.Quantity < r.Capacity || r.Capacity == 0 {
+		if r.Quantity < r.Capacity || r.Capacity == -1 || add.Capacity > 0 {
 			found = true
 			break
 		}
@@ -182,13 +192,13 @@ func (g *Game) Act(input string) error {
 		r := g.GetResource(c.Name)
 		cost := g.GetCost(a, c)
 		if r.Quantity < cost {
-			if skip && g.GetRate(r) > 0 && (r.Capacity == 0 || r.Quantity < r.Capacity) {
+			if skip && g.GetRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
 				duration := g.GetDuration(r, cost) + time.Second
 				if duration > skipTime {
 					skipTime = duration
 				}
 			} else {
-				return fmt.Errorf("resource %s not enough", c.Name)
+				return fmt.Errorf("not enough %s", c.Name)
 			}
 		}
 	}
@@ -202,7 +212,7 @@ func (g *Game) Act(input string) error {
 	}
 	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
-		r.AddQuantity(add.Quantity)
+		r.Add(add)
 	}
 	return nil
 }
@@ -215,7 +225,7 @@ func (g *Game) TimeSkip(skip time.Duration) {
 }
 
 func (g *Game) ValidateResource(r *Resource) error {
-	if _, ok := g.ResourceToIndex[r.Name]; !ok {
+	if _, ok := g.ResourceToIndex[r.Name]; !ok && r.Name != "" {
 		return fmt.Errorf("invalid resource name %s", r.Name)
 	}
 	if _, ok := g.ResourceToIndex[r.ProductionResourceFactor]; !ok && r.ProductionResourceFactor != "" {
@@ -229,23 +239,48 @@ func (g *Game) ValidateResource(r *Resource) error {
 	return nil
 }
 
-func (r *Resource) AddQuantity(add float64) {
-	r.Quantity += add
-	if r.Quantity > r.Capacity && r.Capacity > 0 {
+func (r *Resource) Add(add Resource) {
+	r.Capacity += add.Capacity
+	r.Quantity += add.Quantity
+	if r.Quantity > r.Capacity && r.Capacity >= 0 {
 		r.Quantity = r.Capacity
+	}
+	if r.Quantity < 0 {
+		r.Quantity = 0
 	}
 }
 
 func (g *Game) GetRate(resource *Resource) float64 {
 	factor := 0.0
 	for _, p := range resource.Producers {
-		one := g.GetResource(p.Name).Quantity * p.ProductionFactor
+		one := g.GetQuantityForRate(p) * p.ProductionFactor
 		if p.ProductionResourceFactor != "" {
 			one *= g.GetResource(p.ProductionResourceFactor).Quantity
 		}
 		factor += one
 	}
 	return factor
+}
+
+func (g *Game) GetQuantityForRate(p Resource) float64 {
+	quantity := 1.0
+	if p.Name != "" {
+		quantity = g.GetResource(p.Name).Quantity
+	}
+	if p.ProductionFloor {
+		quantity = math.Floor(quantity)
+	}
+	return quantity
+}
+
+func (g *Game) UpdateRate(resource *Resource) {
+	for _, p := range resource.Producers {
+		one := g.GetQuantityForRate(p) * p.ProductionFactor
+		if one < 0 {
+			g.GetResource(p.Name).Quantity--
+			return
+		}
+	}
 }
 
 func (g *Game) GetResource(name string) *Resource {

@@ -4,6 +4,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 9.00/100.00 0s) (wood + 1)
 2: 'Catnip Field' (catnip 9.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 
 ###
@@ -12,15 +13,17 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 9.00/100.00 0s) (wood + 1)
 2: 'Catnip Field' (catnip 9.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 2
-error: resource catnip not enough
+error: not enough catnip
 ###
 catnip 10.00/5000
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 10.00/100.00 0s) (wood + 1)
 2: 'Catnip Field' (catnip 10.00) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -29,6 +32,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 0.00/100.00 1m45s) (wood + 1)
 2: 'Catnip Field' (catnip 0.00/11.20 11s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -38,6 +42,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 0.94/100.00 1m44s) (wood + 1)
 2: 'Catnip Field' (catnip 0.94/11.20 10s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
@@ -48,6 +53,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 10.39/100.00 1m34s) (wood + 1)
 2: 'Catnip Field' (catnip 10.39/11.20 0s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax

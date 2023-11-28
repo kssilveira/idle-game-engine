@@ -20,17 +20,18 @@ func main() {
 	now := func() time.Time { return time.Now() }
 	g := kittens.NewGame(now)
 	g.GetResource("catnip").Quantity = 10
+	g.GetResource("wood").Quantity = 5
 	logger := log.New(os.Stdout, "", 0 /* flags */)
 	input := make(chan string)
 	go func() {
 		lastAuto := 0
-		actions := []string{"s1", "1", "s2", "2"}
 		for {
 			var got string
+			prefix := []string{"s", ""}
 			if *auto {
-				got = actions[lastAuto]
+				got = fmt.Sprintf("%s%d", prefix[lastAuto%2], lastAuto/2)
 				lastAuto++
-				lastAuto %= len(actions)
+				lastAuto %= 2 * len(g.Actions)
 				time.Sleep(time.Second * time.Duration(*autoSleepMS) / 1000.)
 			} else {
 				fmt.Scanln(&got)

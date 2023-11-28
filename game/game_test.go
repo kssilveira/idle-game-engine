@@ -7,11 +7,12 @@ import (
 
 func TestAct(t *testing.T) {
 	inputs := []struct {
-		name      string
-		resources []Resource
-		actions   []Action
-		inputs    []string
-		want      []int
+		name         string
+		resources    []Resource
+		actions      []Action
+		inputs       []string
+		want         []int
+		wantCapacity int
 	}{{
 		name: "add 1",
 		resources: []Resource{{
@@ -28,9 +29,9 @@ func TestAct(t *testing.T) {
 	}, {
 		name: "cost",
 		resources: []Resource{{
-			Name: "resource", Quantity: 100,
+			Name: "resource", Quantity: 100, Capacity: -1,
 		}, {
-			Name: "producer",
+			Name: "producer", Capacity: -1,
 		}},
 		actions: []Action{{
 			Name: "producer",
@@ -50,15 +51,14 @@ func TestAct(t *testing.T) {
 	}, {
 		name: "skip",
 		resources: []Resource{{
-			Name:     "resource",
-			Quantity: 1,
+			Name: "resource", Quantity: 1, Capacity: -1,
 			Producers: []Resource{{
 				Name: "producer", ProductionFactor: 1,
 			}},
 		}, {
-			Name: "producer",
+			Name: "producer", Capacity: -1,
 		}, {
-			Name: "skip",
+			Name: "skip", Capacity: -1,
 		}},
 		actions: []Action{{
 			Name: "producer",
@@ -71,6 +71,20 @@ func TestAct(t *testing.T) {
 		}},
 		inputs: []string{"0", "s0", "0", "s0", "0"},
 		want:   []int{0, 3, 1, 5, 1},
+	}, {
+		name: "add 1 capacity",
+		resources: []Resource{{
+			Name: "resource",
+		}},
+		actions: []Action{{
+			Name: "add 1",
+			Adds: []Resource{{
+				Name: "resource", Capacity: 1,
+			}},
+		}},
+		inputs:       []string{"0", "0"},
+		want:         []int{0, 0},
+		wantCapacity: 2,
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))
@@ -89,24 +103,29 @@ func TestAct(t *testing.T) {
 				t.Errorf("[%s] index %d want %d got %d", in.name, index, want, got)
 			}
 		}
+		got := int(g.GetResource("resource").Capacity)
+		if got != in.wantCapacity && in.wantCapacity != 0 {
+			t.Errorf("[%s] capacity want %d got %d", in.name, in.wantCapacity, got)
+		}
 	}
 }
 
 func TestUpdate(t *testing.T) {
 	inputs := []struct {
-		name      string
-		resources []Resource
-		times     []int64
-		want      []int
+		name          string
+		resources     []Resource
+		times         []int64
+		want          []int
+		wantResources map[string]int
 	}{{
 		name: "one input",
 		resources: []Resource{{
-			Name: "resource",
+			Name: "resource", Capacity: -1,
 			Producers: []Resource{{
 				Name: "input", ProductionFactor: 2,
 			}},
 		}, {
-			Name: "input", Quantity: 3,
+			Name: "input", Quantity: 3, Capacity: -1,
 		}},
 		times: []int64{4, 5, 6},
 		want: []int{
@@ -122,7 +141,7 @@ func TestUpdate(t *testing.T) {
 				Name: "input", ProductionFactor: 2,
 			}},
 		}, {
-			Name: "input", Quantity: 3,
+			Name: "input", Quantity: 3, Capacity: -1,
 		}},
 		times: []int64{4, 5, 6},
 		want: []int{
@@ -133,16 +152,16 @@ func TestUpdate(t *testing.T) {
 	}, {
 		name: "two producers",
 		resources: []Resource{{
-			Name: "resource",
+			Name: "resource", Capacity: -1,
 			Producers: []Resource{{
 				Name: "input 1", ProductionFactor: 2,
 			}, {
 				Name: "input 2", ProductionFactor: 3,
 			}},
 		}, {
-			Name: "input 1", Quantity: 4,
+			Name: "input 1", Quantity: 4, Capacity: -1,
 		}, {
-			Name: "input 2", Quantity: 5,
+			Name: "input 2", Quantity: 5, Capacity: -1,
 		}},
 		times: []int64{6, 7, 8},
 		want: []int{
@@ -153,20 +172,58 @@ func TestUpdate(t *testing.T) {
 	}, {
 		name: "one resource factor",
 		resources: []Resource{{
-			Name: "resource",
+			Name: "resource", Capacity: -1,
 			Producers: []Resource{{
 				Name: "input", ProductionFactor: 2, ProductionResourceFactor: "resource factor",
 			}},
 		}, {
-			Name: "input", Quantity: 3,
+			Name: "input", Quantity: 3, Capacity: -1,
 		}, {
-			Name: "resource factor", Quantity: 4,
+			Name: "resource factor", Quantity: 4, Capacity: -1,
 		}},
 		times: []int64{5, 6, 7},
 		want: []int{
 			2 * 3 * 4 * 5,
 			2 * 3 * 4 * 6,
 			2 * 3 * 4 * 7,
+		},
+	}, {
+		name: "production floor",
+		resources: []Resource{{
+			Name: "resource", Capacity: -1,
+			Producers: []Resource{{
+				Name: "input", ProductionFactor: 2, ProductionFloor: true,
+			}},
+		}, {
+			Name: "input", Quantity: 0, Capacity: -1,
+			Producers: []Resource{{
+				Name: "", ProductionFactor: 0.5,
+			}},
+		}},
+		times: []int64{1, 2, 3, 4, 5},
+		want: []int{
+			0,
+			0,
+			2,
+			2 + 2,
+			2 + 2 + 4,
+		},
+	}, {
+		name: "negative production",
+		resources: []Resource{{
+			Name: "resource", Quantity: 2, Capacity: -1,
+			Producers: []Resource{{
+				Name: "input", ProductionFactor: -0.25,
+			}},
+		}, {
+			Name: "input", Quantity: 4, Capacity: -1,
+		}},
+		times: []int64{0, 1, 2, 3},
+		want: []int{
+			2, 1, 0, 0,
+		},
+		wantResources: map[string]int{
+			"input": 2,
 		},
 	}}
 	for _, in := range inputs {
@@ -181,6 +238,12 @@ func TestUpdate(t *testing.T) {
 			got := int(g.GetResource("resource").Quantity)
 			if got != want {
 				t.Errorf("[%s] index %d want %d got %d", in.name, index, want, got)
+			}
+		}
+		for name, want := range in.wantResources {
+			got := int(g.GetResource(name).Quantity)
+			if got != want {
+				t.Errorf("[%s] resource %s want %d got %d", in.name, name, want, got)
 			}
 		}
 	}

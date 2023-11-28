@@ -2,6 +2,7 @@ package kittens
 
 import (
 	"bytes"
+	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -18,15 +19,15 @@ type iter struct {
 func TestRun(t *testing.T) {
 	gather := "0"
 	refine := "1"
-	srefine := "s1"
 	field := "2"
 	sfield := "s2"
+	hut := "3"
 	inputs := []struct {
 		name      string
 		iters     []iter
 		resources map[string]float64
 	}{{
-		name: "gather",
+		name: "gather catnip",
 		iters: []iter{
 			// gather 2 catnip
 			{gather, 0}, {gather, 0},
@@ -34,12 +35,12 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "buy one",
+		name: "catnip field 1",
 		resources: map[string]float64{
 			"catnip": 9,
 		},
 		iters: []iter{
-			// buy catnip field, catnip not enough
+			// buy catnip field, not enough catnip
 			{field, 0},
 			// gather 10th catnip
 			{gather, 0},
@@ -51,9 +52,9 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "buy two",
+		name: "catnip field 2",
 		resources: map[string]float64{
-			"catnip": 100,
+			"catnip": 200,
 		},
 		iters: []iter{
 			// buy 1st catnip field
@@ -68,7 +69,7 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "skip",
+		name: "catnip field skip",
 		resources: map[string]float64{
 			"catnip": 10,
 		},
@@ -85,25 +86,12 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "skip until max",
-		resources: map[string]float64{
-			"catnip": 10,
-		},
-		iters: append(
-			append(
-				// field
-				repeat([]iter{{field, 1}, {sfield, 1}}, 56),
-				// wood
-				repeat([]iter{{srefine, 1}, {refine, 1}}, 142)...),
-			// end
-			[]iter{{sfield, 1}, {"999", 0}}...),
-	}, {
-		name: "refine one",
+		name: "refine catnip 1",
 		resources: map[string]float64{
 			"catnip": 99,
 		},
 		iters: []iter{
-			// refine catnip, catnip not enough
+			// refine catnip, not enough catnip
 			{refine, 0},
 			// gather 100th catnip
 			{gather, 0},
@@ -113,7 +101,7 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "refine two",
+		name: "refine catnip 2",
 		resources: map[string]float64{
 			"catnip": 200,
 		},
@@ -125,6 +113,48 @@ func TestRun(t *testing.T) {
 			// end
 			{"999", 0},
 		},
+	}, {
+		name: "hut 1",
+		resources: map[string]float64{
+			"catnip": 100,
+			"wood":   4,
+		},
+		iters: []iter{
+			// buy hut, not enough wood
+			{hut, 0},
+			// refine 5th wood
+			{refine, 0},
+			// buy hut
+			{hut, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// end
+			{"999", 0},
+		},
+	}, {
+		name: "hut 2",
+		resources: map[string]float64{
+			"wood": 100,
+		},
+		iters: []iter{
+			// buy 1st hut
+			{hut, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// buy 2nd hut
+			{hut, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// end
+			{"999", 0},
+		},
+	}, {
+		name:      "all",
+		resources: map[string]float64{},
+		iters: append(
+			repeat(all(), 999),
+			// end
+			iter{"999", 0}),
 	}}
 	for _, in := range inputs {
 		var buf bytes.Buffer
@@ -162,6 +192,18 @@ func repeat(iters []iter, count int) []iter {
 	res := []iter{}
 	for i := 0; i < count; i++ {
 		res = append(res, iters...)
+	}
+	return res
+}
+
+func all() []iter {
+	res := []iter{}
+	n := len(NewGame(func() time.Time { return time.Unix(0, 0) }).Actions)
+	for i := 0; i < n; i++ {
+		res = append(res, []iter{
+			{fmt.Sprintf("s%d", i), 1},
+			{fmt.Sprintf("%d", i), 1},
+		}...)
 	}
 	return res
 }

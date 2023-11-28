@@ -16,20 +16,28 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Catnip Field", ProductionFactor: 0.63, ProductionResourceFactor: "Autumn",
 		}, {
 			Name: "Catnip Field", ProductionFactor: 0.63 * (1 - 0.75), ProductionResourceFactor: "Winter",
+		}, {
+			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true,
 		}},
 	}, {
-		Name:     "wood",
-		Capacity: 200,
+		Name: "wood", Capacity: 200,
 	}, {
-		Name: "Catnip Field",
+		Name: "kitten", Capacity: 0,
+		Producers: []game.Resource{{
+			Name: "", ProductionFactor: 0.05,
+		}},
 	}, {
-		Name: "Spring", Quantity: 1,
+		Name: "Catnip Field", Capacity: -1,
 	}, {
-		Name: "Summer",
+		Name: "Hut", Capacity: -1,
 	}, {
-		Name: "Autumn",
+		Name: "Spring", Quantity: 1, Capacity: -1,
 	}, {
-		Name: "Winter",
+		Name: "Summer", Capacity: -1,
+	}, {
+		Name: "Autumn", Capacity: -1,
+	}, {
+		Name: "Winter", Capacity: -1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
@@ -52,6 +60,16 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []game.Resource{{
 			Name: "Catnip Field", Quantity: 1,
 		}},
+	}, {
+		Name: "Hut",
+		Costs: []game.Resource{{
+			Name: "wood", Quantity: 5, CostExponentBase: 2.5,
+		}},
+		Adds: []game.Resource{{
+			Name: "Hut", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
 	}}
 	return g
 }
@@ -62,18 +80,9 @@ TODO
 
 actions
 
-- "Refine catnip" cost 100 catnip add 1 wood
-
 buildings
 
-- "Hut" cost 5 wood add 2 kitten
-  - cost 10 12.5 31.25 78.13 195.31 488.28
-
 resources
-
-- wood cap 200
-- kitten
-  - eat 4.25 catnip/s
 
 jobs
 

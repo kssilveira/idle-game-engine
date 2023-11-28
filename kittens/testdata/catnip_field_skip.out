@@ -4,6 +4,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 10.00/100.00 0s) (wood + 1)
 2: 'Catnip Field' (catnip 10.00) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 
 ###
@@ -12,6 +13,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 0.00/100.00 1m45s) (wood + 1)
 2: 'Catnip Field' (catnip 0.00/11.20 11s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -21,6 +23,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 0.94/100.00 1m44s) (wood + 1)
 2: 'Catnip Field' (catnip 0.94/11.20 10s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
@@ -32,6 +35,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 11.34/100.00 1m33s) (wood + 1)
 2: 'Catnip Field' (catnip 11.20) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -42,6 +46,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 0.14/100.00 52s) (wood + 1)
 2: 'Catnip Field' (catnip 0.14/12.54 6s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -52,6 +57,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 2.03/100.00 51s) (wood + 1)
 2: 'Catnip Field' (catnip 2.03/12.54 5s) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
@@ -63,6 +69,7 @@ Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 20.93/100.00 41s) (wood + 1)
 2: 'Catnip Field' (catnip 12.54) (Catnip Field + 1)
+3: 'Hut' (wood 0.00/5.00 0s) (Hut + 1, kitten cap + 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax

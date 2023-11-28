@@ -1,0 +1,78 @@
+###
+wood 100.00/200
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Refine catnip' (catnip 0.00/100.00 0s) (wood + 1)
+2: 'Catnip Field' (catnip 0.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 5.00) (Hut + 1, kitten cap + 1)
+sX: time skip until action X is available
+last input: 
+###
+wood 95.00/200
+Hut 1.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Refine catnip' (catnip 0.00/100.00 0s) (wood + 1)
+2: 'Catnip Field' (catnip 0.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 12.50) (Hut + 1, kitten cap + 1)
+sX: time skip until action X is available
+last input: 3
+###
+wood 95.00/200
+kitten 0.05/1 (0.05/s, 18s to cap)
+Hut 1.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Refine catnip' (catnip 0.00/100.00 0s) (wood + 1)
+2: 'Catnip Field' (catnip 0.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 12.50) (Hut + 1, kitten cap + 1)
+sX: time skip until action X is available
+last input: 
+error: strconv.Atoi: parsing "": invalid syntax
+###
+wood 95.00/200
+kitten 0.55/1 (0.05/s, 8s to cap)
+Hut 1.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Refine catnip' (catnip 0.00/100.00 0s) (wood + 1)
+2: 'Catnip Field' (catnip 0.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 12.50) (Hut + 1, kitten cap + 1)
+sX: time skip until action X is available
+last input: 
+error: strconv.Atoi: parsing "": invalid syntax
+###
+wood 82.50/200
+kitten 0.55/2 (0.05/s, 28s to cap)
+Hut 2.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Refine catnip' (catnip 0.00/100.00 0s) (wood + 1)
+2: 'Catnip Field' (catnip 0.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 31.25) (Hut + 1, kitten cap + 1)
+sX: time skip until action X is available
+last input: 3
+###
+wood 82.50/200
+kitten 0.60/2 (0.05/s, 27s to cap)
+Hut 2.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Refine catnip' (catnip 0.00/100.00 0s) (wood + 1)
+2: 'Catnip Field' (catnip 0.00/10.00 0s) (Catnip Field + 1)
+3: 'Hut' (wood 31.25) (Hut + 1, kitten cap + 1)
+sX: time skip until action X is available
+last input: 
+error: strconv.Atoi: parsing "": invalid syntax
+###
+wood 82.50/200
+kitten 1.10/2 (0.05/s, 17s to cap)
+Hut 2.00
+Spring 1.00
+0: 'Gather catnip' () (catnip + 1)
+1: 'Refine catnip' (catnip 0.00/100.00 -23s) (wood + 1)
+2: 'Catnip Field' (catnip 0.00/10.00 -2s) (Catnip Field + 1)
+3: 'Hut' (wood 31.25) (Hut + 1, kitten cap + 1)
+sX: time skip until action X is available
+last input: 
+error: strconv.Atoi: parsing "": invalid syntax
