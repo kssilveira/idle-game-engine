@@ -17,14 +17,6 @@ type iter struct {
 }
 
 func TestRun(t *testing.T) {
-	gather := "0"
-	refine := "1"
-	field := "2"
-	sfield := "s2"
-	hut := "3"
-	shut := "s3"
-	woodcutter := "4"
-	swoodcutter := "s4"
 	inputs := []struct {
 		name      string
 		iters     []iter
@@ -170,34 +162,17 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "all",
-		iters: append(
-			repeat(all(), 100),
-			// end
-			iter{"999", 0}),
-	}, {
-		name: "order",
-		iters: join(
-			// gather 10 catnip
-			repeat([]iter{{gather, 1}}, 10),
-			// buy 55 catnip field
-			repeat([]iter{{field, 1}, {sfield, 1}}, 55),
-			// refine 5 wood
-			repeat([]iter{{refine, 1}}, 5),
-			// buy 1 hut, assign 2 woodcutter
-			repeat([]iter{
-				{hut, 1},
-				{swoodcutter, 1}, {woodcutter, 1},
-				{swoodcutter, 1}, {woodcutter, 1},
-				{shut, 1}}, 5),
-			// end
-			[]iter{{"999", 0}}),
+		name: "solve",
 	}}
 	for _, in := range inputs {
 		var buf bytes.Buffer
 		logger := log.New(&buf, "", 0 /* flags */)
 		input := make(chan string)
 		go func() {
+			if len(in.iters) == 0 {
+				Solve(input, 0 /* sleepMS */)
+				return
+			}
 			for _, one := range in.iters {
 				input <- one.input
 			}
@@ -206,8 +181,12 @@ func TestRun(t *testing.T) {
 		now := time.Unix(0, 0)
 		nowfn := func() time.Time {
 			res := now
-			now = now.Add(time.Duration(in.iters[timeIndex].elapsed) * time.Second)
-			timeIndex++
+			if len(in.iters) == 0 {
+				now.Add(time.Second)
+			} else {
+				now = now.Add(time.Duration(in.iters[timeIndex].elapsed) * time.Second)
+				timeIndex++
+			}
 			return res
 		}
 		g := NewGame(nowfn)

@@ -1,6 +1,8 @@
 package kittens
 
 import (
+	"time"
+
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
@@ -99,11 +101,53 @@ func NewGame(now game.Now) *game.Game {
 	return g
 }
 
+const (
+	gather      = "0"
+	refine      = "1"
+	field       = "2"
+	sfield      = "s2"
+	hut         = "3"
+	shut        = "s3"
+	woodcutter  = "4"
+	swoodcutter = "s4"
+)
+
+func Solve(input chan string, sleepMS int) {
+	for _, one := range []struct {
+		cmds  []string
+		count int
+	}{
+		// gather 10 catnip
+		{[]string{gather}, 10},
+		// buy 55 catnip field
+		{[]string{field, sfield}, 55},
+		// refine 5 wood
+		{[]string{refine}, 5},
+		// buy 5 hut, assign 10 woodcutter
+		{[]string{
+			hut,
+			swoodcutter, woodcutter,
+			swoodcutter, woodcutter,
+			shut}, 5},
+		// end
+		{[]string{"999"}, 1},
+	} {
+		for i := 0; i < one.count; i++ {
+			for _, cmd := range one.cmds {
+				input <- cmd
+				time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
+			}
+		}
+	}
+}
+
 /*
 
 TODO
 
-- make --auto get to the end like kittens_test
+- move Run to ui.go
+- review all the code
+- add README.md
 
 actions
 

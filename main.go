@@ -35,18 +35,13 @@ func all() error {
 	logger := log.New(os.Stdout, "", 0 /* flags */)
 	input := make(chan string)
 	go func() {
-		lastAuto := 0
+		if *auto {
+			kittens.Solve(input, *autoSleepMS)
+			return
+		}
 		for {
 			var got string
-			prefix := []string{"s", ""}
-			if *auto {
-				got = fmt.Sprintf("%s%d", prefix[lastAuto%2], lastAuto/2)
-				lastAuto++
-				lastAuto %= 2 * len(g.Actions)
-				time.Sleep(time.Second * time.Duration(*autoSleepMS) / 1000.)
-			} else {
-				fmt.Scanln(&got)
-			}
+			fmt.Scanln(&got)
 			input <- got
 		}
 	}()
