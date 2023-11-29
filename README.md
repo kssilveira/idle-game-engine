@@ -4,11 +4,11 @@ Game engine for idle games like kittens game.
 
 ## Code
 
-- [game/game.go](game.go) general game engine
-- [ui/ui.go](ui.go) representation of the UI
-- [textui/textui.go](textui.go) text UI
-- [kittens/kittens.go](kittens.go) kittens game implemented using the game engine
-- [kittens/testdata/solve.out](solve.out) text UI output for the kittens game solution
+- [game.go](game/game.go) general game engine
+- [ui.go](ui/ui.go) representation of the UI
+- [textui.go](textui/textui.go) text UI
+- [kittens.go](kittens/kittens.go) kittens game implemented using the game engine
+- [solve.out](kittens/testdata/solve.out) text UI output for the kittens game solution
 - [main.go](main.go) run kittens game
 
 ## Development
