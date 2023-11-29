@@ -50,6 +50,40 @@ General features:
 
 Features from kittens game:
 
-- create resource 'free kittens'
-- maybe sell building for half price
+- catnip
+  - unlock Catnip Field
+- wood
+  - unlock Hut, Library
+- Hut
+  - unlock woodcutter
+- Library
+  - cost wood 25 28.75 33.06 rate 1.15
+  - science production 10%
+  - science cap 250
+  - unlock scholar, Calendar
+- scholar
+  - science 0.175
+- science cap 250
+- Calendar
+  - cost science 30
+  - show year and day
+    - day 2 seconds
+    - season 100 days
+    - year 400 days
+  - unlock Agriculture
+- Agriculture
+  - cost science 100
+  - unlock Archery, Mining, Barn, farmer
+- Archery
+  - cost science 300
+- Mining
+  - cost science 500
+- Barn
+  - cost wood 50 87.50
+  - catnip cap 500
+  - wood cap 200
+- farmer
+  - catnip 5
 - etc.
+- maybe
+  - sell building for half price
