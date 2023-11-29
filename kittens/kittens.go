@@ -140,28 +140,3 @@ func Solve(input chan string, sleepMS int) {
 		}
 	}
 }
-
-/*
-
-TODO
-
-- add README.md
-
-actions
-
-buildings
-
-resources
-
-jobs
-
-woodcutter reduced by happiness
-
-happiness
-- kittens 5 => 100% 98% 96% 94% 92% 90%
-
-maybe
-
-- sell building for half price
-
-*/
