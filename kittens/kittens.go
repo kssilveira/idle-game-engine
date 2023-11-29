@@ -145,7 +145,6 @@ func Solve(input chan string, sleepMS int) {
 
 TODO
 
-- review all the code
 - add README.md
 
 actions

@@ -157,44 +157,16 @@ func (g *Game) Update(now time.Time) {
 }
 
 func (g *Game) Act(input string) error {
-	skip := false
-	var skipTime time.Duration
-	if strings.HasPrefix(input, "s") {
-		skip = true
-		input = input[1:]
-	}
-	index, err := strconv.Atoi(input)
+	skip, a, err := g.ParseInput(input)
 	if err != nil {
 		return err
 	}
-	if index < 0 || index >= len(g.Actions) {
-		return fmt.Errorf("invalid index %d", index)
+	if err := g.CheckMax(a); err != nil {
+		return err
 	}
-	a := g.Actions[index]
-	found := false
-	for _, add := range a.Adds {
-		r := g.GetResource(add.Name)
-		if r.Quantity < r.Capacity || r.Capacity == -1 || add.Capacity > 0 {
-			found = true
-			break
-		}
-	}
-	if !found {
-		return fmt.Errorf("added resources already at max")
-	}
-	for _, c := range a.Costs {
-		r := g.GetResource(c.Name)
-		cost := g.GetCost(a, c)
-		if r.Quantity < cost {
-			if skip && g.GetRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
-				duration := g.GetDuration(r, cost) + time.Second
-				if duration > skipTime {
-					skipTime = duration
-				}
-			} else {
-				return fmt.Errorf("not enough %s", c.Name)
-			}
-		}
+	skipTime, err := g.GetSkipTime(a, skip)
+	if err != nil {
+		return err
 	}
 	if skip && skipTime > 0 {
 		g.TimeSkip(skipTime)
@@ -210,6 +182,56 @@ func (g *Game) Act(input string) error {
 		r.Add(add)
 	}
 	return nil
+}
+
+func (g *Game) ParseInput(input string) (bool, Action, error) {
+	skip := false
+	if strings.HasPrefix(input, "s") {
+		skip = true
+		input = input[1:]
+	}
+	index, err := strconv.Atoi(input)
+	if err != nil {
+		return false, Action{}, err
+	}
+	if index < 0 || index >= len(g.Actions) {
+		return false, Action{}, fmt.Errorf("invalid index %d", index)
+	}
+	return skip, g.Actions[index], nil
+}
+
+func (g *Game) CheckMax(a Action) error {
+	found := false
+	for _, add := range a.Adds {
+		r := g.GetResource(add.Name)
+		if r.Quantity < r.Capacity || r.Capacity == -1 || add.Capacity > 0 {
+			found = true
+			break
+		}
+	}
+	if !found {
+		return fmt.Errorf("added resources already at max")
+	}
+	return nil
+}
+
+func (g *Game) GetSkipTime(a Action, skip bool) (time.Duration, error) {
+	var skipTime time.Duration
+	for _, c := range a.Costs {
+		r := g.GetResource(c.Name)
+		cost := g.GetCost(a, c)
+		if r.Quantity < cost {
+			if skip && g.GetRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
+				duration := g.GetDuration(r, cost) + time.Second
+				if duration > skipTime {
+					skipTime = duration
+				}
+			} else {
+				return 0, fmt.Errorf("not enough %s", c.Name)
+			}
+		}
+	}
+	return skipTime, nil
 }
 
 func (g *Game) TimeSkip(skip time.Duration) {
