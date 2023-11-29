@@ -13,11 +13,12 @@ type Data struct {
 }
 
 type Resource struct {
-	Name     string
-	Quantity float64
-	Capacity float64
-	Rate     float64
-	Duration time.Duration
+	Name          string
+	Quantity      float64
+	Capacity      float64
+	Rate          float64
+	Duration      time.Duration
+	StartQuantity float64
 }
 
 type Action struct {

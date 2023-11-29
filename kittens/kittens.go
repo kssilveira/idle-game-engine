@@ -21,12 +21,12 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true,
 		}, {
-			Name: "woodcutter", ProductionFactor: -4.25,
+			Name: "woodcutter", ProductionFactor: -4.25, ProductionFloor: true,
 		}},
 	}, {
 		Name: "wood", Capacity: 200,
 		Producers: []game.Resource{{
-			Name: "woodcutter", ProductionFactor: 0.09,
+			Name: "woodcutter", ProductionFactor: 0.09, ProductionResourceFactor: "happiness",
 		}},
 	}, {
 		Name: "kitten", Capacity: 0,
@@ -44,6 +44,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "gone kitten", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 1,
+		}},
+	}, {
+		Name: "happiness", StartQuantity: 1.1, Capacity: -1,
+		Producers: []game.Resource{{
+			Name: "kitten", ProductionFactor: -0.02, ProductionFloor: true,
+		}, {
+			Name: "woodcutter", ProductionFactor: -0.02, ProductionFloor: true,
 		}},
 	}, {
 		Name: "Catnip Field", Capacity: -1,

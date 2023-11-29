@@ -250,6 +250,22 @@ func TestUpdate(t *testing.T) {
 			"input":      3,
 			"gone input": 2,
 		},
+	}, {
+		name: "start quantity",
+		resources: []Resource{{
+			Name: "resource", StartQuantity: 10, Capacity: -1,
+			Producers: []Resource{{
+				Name: "input", ProductionFactor: 2,
+			}},
+		}, {
+			Name: "input", Quantity: 3, Capacity: -1,
+		}},
+		times: []int64{4, 5, 6},
+		want: []int{
+			10 + 2*3,
+			10 + 2*3,
+			10 + 2*3,
+		},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))

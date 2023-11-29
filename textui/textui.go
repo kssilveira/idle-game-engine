@@ -27,15 +27,21 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 		if r.Capacity > 0 {
 			capacity = fmt.Sprintf("/%.0f", r.Capacity)
 		}
-		rateStr := ""
+		extra := ""
 		if r.Rate != 0 {
 			capStr := ""
-			if r.Capacity > 0 {
+			if r.Capacity > 0 && r.Duration > 0 {
 				capStr = fmt.Sprintf(", %s to cap", r.Duration)
 			}
-			rateStr = fmt.Sprintf(" (%.2f/s%s)", r.Rate, capStr)
+			rateStr := ""
+			if r.StartQuantity > 0 {
+				rateStr = fmt.Sprintf("%.2f + %.2f", r.StartQuantity, r.Rate)
+			} else {
+				rateStr = fmt.Sprintf("%.2f/s", r.Rate)
+			}
+			extra = fmt.Sprintf(" (%s%s)", rateStr, capStr)
 		}
-		logger.Printf("%s %.2f%s%s\n", r.Name, r.Quantity, capacity, rateStr)
+		logger.Printf("%s %.2f%s%s\n", r.Name, r.Quantity, capacity, extra)
 	}
 }
 

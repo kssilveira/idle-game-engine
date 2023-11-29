@@ -165,6 +165,24 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
+		name: "woodcutter 8",
+		resources: map[string]float64{
+			"catnip": 1000,
+			"kitten": 8,
+		},
+		iters: []iter{
+			// 1st woodcutter
+			{woodcutter, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// 2nd woodcutter
+			{woodcutter, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// end
+			{"999", 0},
+		},
+	}, {
 		name: "solve",
 	}}
 	for _, in := range inputs {

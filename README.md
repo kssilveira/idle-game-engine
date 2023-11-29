@@ -50,7 +50,6 @@ General features:
 
 Features from kittens game:
 
-- woodcutter reduced by happiness
-  - kittens 5 => 100% 98% 96% 94% 92% 90%
+- create resource 'free kittens'
 - maybe sell building for half price
 - etc.

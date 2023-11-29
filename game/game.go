@@ -27,6 +27,7 @@ type Resource struct {
 	ProductionFloor          bool
 	ProductionResourceFactor string
 	CostExponentBase         float64
+	StartQuantity            float64 // not produced per second, instead (re)calculated
 }
 
 type Action struct {
@@ -102,11 +103,12 @@ func (g *Game) Run(now Now, input Input, output Output) {
 func (g *Game) PopulateUIResources(data *ui.Data) {
 	for _, r := range g.Resources {
 		data.Resources = append(data.Resources, ui.Resource{
-			Name:     r.Name,
-			Quantity: r.Quantity,
-			Capacity: r.Capacity,
-			Rate:     g.GetRate(r),
-			Duration: g.GetDuration(r, r.Capacity),
+			Name:          r.Name,
+			Quantity:      r.Quantity,
+			Capacity:      r.Capacity,
+			Rate:          g.GetRate(r),
+			Duration:      g.GetDuration(r, r.Capacity),
+			StartQuantity: r.StartQuantity,
 		})
 	}
 }
@@ -149,7 +151,11 @@ func (g *Game) Update(now time.Time) {
 	g.Now = now
 	for _, resource := range g.Resources {
 		factor := g.GetRate(resource)
-		resource.Add(Resource{Quantity: factor * elapsed.Seconds()})
+		if resource.StartQuantity != 0 {
+			resource.Quantity = resource.StartQuantity + factor
+		} else {
+			resource.Add(Resource{Quantity: factor * elapsed.Seconds()})
+		}
 		if factor < 0 && resource.Quantity == 0 {
 			g.UpdateRate(resource)
 		}
@@ -277,7 +283,7 @@ func (g *Game) GetRate(resource *Resource) float64 {
 	for _, p := range resource.Producers {
 		one := g.GetQuantityForRate(p) * p.ProductionFactor
 		if p.ProductionResourceFactor != "" {
-			one *= g.GetResource(p.ProductionResourceFactor).Quantity
+			one *= g.GetQuantityForRate(*g.GetResource(p.ProductionResourceFactor))
 		}
 		factor += one
 	}

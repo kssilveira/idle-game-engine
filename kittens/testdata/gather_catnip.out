@@ -9,6 +9,7 @@ sX: time skip until action X is available
 last input: 
 ###
 catnip 1.00/5000
+happiness 1.10
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 1.00/100.00 0s) (wood + 1)
@@ -19,6 +20,7 @@ sX: time skip until action X is available
 last input: 0
 ###
 catnip 2.00/5000
+happiness 1.10
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 2.00/100.00 0s) (wood + 1)

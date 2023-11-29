@@ -12,6 +12,7 @@ last input:
 ###
 catnip 100.00/5000
 wood 4.00/200
+happiness 1.10
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 100.00) (wood + 1)
@@ -23,6 +24,7 @@ last input: 3
 error: not enough wood
 ###
 wood 5.00/200
+happiness 1.10
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
 1: 'Refine catnip' (catnip 0.00/100.00 0s) (wood + 1)
@@ -32,6 +34,7 @@ Spring 1.00
 sX: time skip until action X is available
 last input: 1
 ###
+happiness 1.10
 Hut 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -43,6 +46,7 @@ sX: time skip until action X is available
 last input: 3
 ###
 kitten 0.05/2 (0.05/s, 39s to cap)
+happiness 1.10
 Hut 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -55,6 +59,7 @@ last input:
 error: strconv.Atoi: parsing "": invalid syntax
 ###
 kitten 0.55/2 (0.05/s, 28s to cap)
+happiness 1.10
 Hut 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)

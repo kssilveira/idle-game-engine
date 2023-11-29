@@ -10,6 +10,7 @@ sX: time skip until action X is available
 last input: 
 ###
 wood 95.00/200
+happiness 1.10
 Hut 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -22,6 +23,7 @@ last input: 3
 ###
 wood 95.00/200
 kitten 0.05/2 (0.05/s, 39s to cap)
+happiness 1.10
 Hut 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -35,6 +37,7 @@ error: strconv.Atoi: parsing "": invalid syntax
 ###
 wood 95.00/200
 kitten 0.55/2 (0.05/s, 28s to cap)
+happiness 1.10
 Hut 1.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -48,6 +51,7 @@ error: strconv.Atoi: parsing "": invalid syntax
 ###
 wood 82.50/200
 kitten 0.55/4 (0.05/s, 1m9s to cap)
+happiness 1.10
 Hut 2.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -60,6 +64,7 @@ last input: 3
 ###
 wood 82.50/200
 kitten 0.60/4 (0.05/s, 1m8s to cap)
+happiness 1.10
 Hut 2.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
@@ -73,6 +78,7 @@ error: strconv.Atoi: parsing "": invalid syntax
 ###
 wood 82.50/200
 kitten 1.10/4 (0.05/s, 57s to cap)
+happiness 1.08 (1.10 + -0.02)
 Hut 2.00
 Spring 1.00
 0: 'Gather catnip' () (catnip + 1)
