@@ -55,7 +55,11 @@ func ShowActions(logger *log.Logger, data *ui.Data) {
 		}
 		costs := []string{}
 		for _, c := range a.Costs {
-			out := fmt.Sprintf("%.2f/%.2f %s", c.Quantity, c.Cost, c.Duration)
+			overCap := ""
+			if c.Cost > c.Capacity && c.Capacity != -1 {
+				overCap = "*"
+			}
+			out := fmt.Sprintf("%.2f/%.2f%s %s", c.Quantity, c.Cost, overCap, c.Duration)
 			if c.Quantity >= c.Cost {
 				out = fmt.Sprintf("%.2f", c.Cost)
 			}

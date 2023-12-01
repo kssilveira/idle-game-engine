@@ -133,6 +133,7 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 			action.Costs = append(action.Costs, ui.Cost{
 				Name:     c.Name,
 				Quantity: r.Quantity,
+				Capacity: r.Capacity,
 				Cost:     cost,
 				Duration: g.GetDuration(r, cost),
 			})

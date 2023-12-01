@@ -5,7 +5,7 @@ Spring 1.00
 1: Refine catnip -(catnip 99.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 0.00/5.00 0s) +(Hut 1, kitten cap 2)
-4: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
+4: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 
 ###
@@ -16,7 +16,7 @@ Spring 1.00
 1: Refine catnip -(catnip 99.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 0.00/5.00 0s) +(Hut 1, kitten cap 2)
-4: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
+4: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 1
 error: not enough catnip
@@ -28,7 +28,7 @@ Spring 1.00
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 0.00/5.00 0s) +(Hut 1, kitten cap 2)
-4: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
+4: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -39,6 +39,6 @@ Spring 1.00
 1: Refine catnip -(catnip 0.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 0.00/10.00 0s) +(Catnip Field 1)
 3: Hut -(wood 1.00/5.00 0s) +(Hut 1, kitten cap 2)
-4: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
+4: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 1

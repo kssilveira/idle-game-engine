@@ -31,6 +31,7 @@ type Action struct {
 type Cost struct {
 	Name     string
 	Quantity float64
+	Capacity float64
 	Cost     float64
 	Duration time.Duration
 }
