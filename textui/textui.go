@@ -9,7 +9,9 @@ import (
 )
 
 func Show(logger *log.Logger, separator string, data *ui.Data) {
-	logger.Printf("%s", separator)
+	if separator != "" {
+		logger.Printf("%s", separator)
+	}
 	ShowResources(logger, data)
 	ShowActions(logger, data)
 	logger.Printf("last input: %s\n", data.LastInput)

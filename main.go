@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bytes"
 	"flag"
 	"fmt"
 	"log"
+	"net/http"
 	"os"
 	"strconv"
 	"strings"
@@ -30,33 +32,33 @@ func main() {
 
 func all() error {
 	now := func() time.Time { return time.Now() }
-	g := kittens.NewGame(now)
-	if err := updateResources(g, *resourceMap); err != nil {
+
+	g, err := newGame(now)
+	if err != nil {
 		return err
 	}
-	logger := log.New(os.Stdout, "", 0 /* flags */)
+
 	input := make(chan string)
-	go func() {
-		if *auto {
-			kittens.Solve(input, *autoSleepMS)
-			return
-		}
-		for {
-			var got string
-			fmt.Scanln(&got)
-			input <- got
-		}
-	}()
-	separator := "\033[H\033[2J"
-	if err := g.Validate(); err != nil {
-		return err
-	}
 	output := make(chan *ui.Data)
 	go g.Run(now, input, output)
-	for data := range output {
-		textui.Show(logger, separator, data)
+
+	go handleInput(input)
+	var last string
+	go handleOutput(output, &last)
+
+	http.HandleFunc("/", handleHTTP(&last, *autoSleepMS))
+	return http.ListenAndServe(":8080", nil)
+}
+
+func newGame(now game.Now) (*game.Game, error) {
+	g := kittens.NewGame(now)
+	if err := updateResources(g, *resourceMap); err != nil {
+		return nil, err
 	}
-	return nil
+	if err := g.Validate(); err != nil {
+		return nil, err
+	}
+	return g, nil
 }
 
 func updateResources(g *game.Game, resourceMap string) error {
@@ -82,4 +84,45 @@ func updateResources(g *game.Game, resourceMap string) error {
 		}
 	}
 	return nil
+}
+
+func handleInput(input game.Input) {
+	if *auto {
+		kittens.Solve(input, *autoSleepMS)
+		return
+	}
+	for {
+		var got string
+		fmt.Scanln(&got)
+		input <- got
+	}
+}
+
+func handleOutput(output game.Output, last *string) {
+	logger := log.New(os.Stdout, "" /* prefix */, 0 /* flags */)
+	separator := "\033[H\033[2J"
+	for data := range output {
+		textui.Show(logger, separator, data)
+		var buf bytes.Buffer
+		buflogger := log.New(&buf, "" /* prefix */, 0 /* flags */)
+		textui.Show(buflogger, "" /* separator */, data)
+		*last = buf.String()
+	}
+}
+
+func handleHTTP(last *string, autoSleepMS int) func(http.ResponseWriter, *http.Request) {
+	return func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, `
+<html>
+<head>
+  <meta http-equiv='refresh' content='%f'/>
+</head>
+<body>
+  <pre>
+%s
+  </pre>
+</body>
+</html>
+`, float64(autoSleepMS)/1000, *last)
+	}
 }

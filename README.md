@@ -50,6 +50,8 @@ Faster solution:
 ./idle-game-engine --auto --auto_sleep_ms=100
 ```
 
+Watch on the browser on http://localhost:8080/.
+
 ## Ideas
 
 General features:
@@ -102,3 +104,4 @@ Features from kittens game:
 - TODO
 - maybe
   - sell building for half price
+  - unassign workers
