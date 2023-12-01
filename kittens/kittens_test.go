@@ -23,6 +23,7 @@ func TestRun(t *testing.T) {
 	inputs := []struct {
 		name      string
 		iters     []iter
+		isHTML    bool
 		resources map[string]float64
 	}{{
 		name: "gather catnip",
@@ -32,6 +33,15 @@ func TestRun(t *testing.T) {
 			// end
 			{"999", 0},
 		},
+	}, {
+		name: "gather catnip html",
+		iters: []iter{
+			// gather 2 catnip
+			{gather, 0}, {gather, 0},
+			// end
+			{"999", 0},
+		},
+		isHTML: true,
 	}, {
 		name: "catnip field 1",
 		resources: map[string]float64{
@@ -227,7 +237,7 @@ func TestRun(t *testing.T) {
 		output := make(chan *ui.Data)
 		go g.Run(nowfn, input, output)
 		for data := range output {
-			textui.Show(logger, "###", data, false /* isHTML */)
+			textui.Show(logger, "###", data, in.isHTML)
 		}
 		name := filepath.Join("testdata", strings.Replace(in.name, " ", "_", -1)+".out")
 		if err := os.WriteFile(name, buf.Bytes(), 0644); err != nil {
