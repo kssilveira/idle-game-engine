@@ -31,18 +31,18 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 		if r.Rate != 0 {
 			capStr := ""
 			if r.DurationToCap > 0 && r.Capacity > 0 {
-				capStr = fmt.Sprintf(", %s to cap", r.DurationToCap)
+				capStr = fmt.Sprintf(" %s to cap", r.DurationToCap)
 			}
 			if r.DurationToEmpty > 0 && r.StartQuantity == 0 {
-				capStr = fmt.Sprintf(", %s to empty", r.DurationToEmpty)
+				capStr = fmt.Sprintf(" %s to empty", r.DurationToEmpty)
 			}
 			rateStr := ""
 			if r.StartQuantity > 0 {
-				rateStr = fmt.Sprintf("%.2f + %.2f", r.StartQuantity, r.Rate)
+				rateStr = fmt.Sprintf("(%.2f + %.2f)", r.StartQuantity, r.Rate)
 			} else {
 				rateStr = fmt.Sprintf("%.2f/s", r.Rate)
 			}
-			extra = fmt.Sprintf(" (%s%s)", rateStr, capStr)
+			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}
 		logger.Printf("%s %.2f%s%s\n", r.Name, r.Quantity, capacity, extra)
 	}
@@ -51,21 +51,25 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 func ShowActions(logger *log.Logger, data *ui.Data) {
 	for i, a := range data.Actions {
 		parts := []string{
-			fmt.Sprintf("%d: '%s' (", i, a.Name),
+			fmt.Sprintf("%d: %s", i, a.Name),
 		}
+		costs := []string{}
 		for _, c := range a.Costs {
 			out := fmt.Sprintf("%.2f/%.2f %s", c.Quantity, c.Cost, c.Duration)
 			if c.Quantity >= c.Cost {
 				out = fmt.Sprintf("%.2f", c.Cost)
 			}
-			parts = append(parts, fmt.Sprintf("%s %s", c.Name, out))
+			costs = append(costs, fmt.Sprintf("%s %s", c.Name, out))
 		}
-		parts = append(parts, ") (")
+		if len(costs) > 0 {
+			parts = append(parts, fmt.Sprintf(" -(%s)", strings.Join(costs, "")))
+		}
+		parts = append(parts, " +(")
 		adds := []string{}
 		for _, r := range a.Adds {
-			one := fmt.Sprintf("%s + %.0f", r.Name, r.Quantity)
+			one := fmt.Sprintf("%s %.0f", r.Name, r.Quantity)
 			if r.Quantity == 0 && r.Capacity > 0 {
-				one = fmt.Sprintf("%s cap + %.0f", r.Name, r.Capacity)
+				one = fmt.Sprintf("%s cap %.0f", r.Name, r.Capacity)
 			}
 			adds = append(adds, one)
 		}
