@@ -44,9 +44,11 @@ func all() error {
 
 	go handleInput(input)
 	var last string
-	go handleOutput(output, &last)
+	waiting := make(chan bool)
+	refreshed := make(chan bool)
+	go handleOutput(output, &last, waiting, refreshed)
 
-	http.HandleFunc("/", handleHTTP(&last, *autoSleepMS))
+	http.HandleFunc("/", handleHTTP(&last, input, *auto, *autoSleepMS, waiting, refreshed))
 	return http.ListenAndServe(":8080", nil)
 }
 
@@ -98,31 +100,47 @@ func handleInput(input game.Input) {
 	}
 }
 
-func handleOutput(output game.Output, last *string) {
+func handleOutput(output game.Output, last *string, waiting chan bool, refreshed chan bool) {
 	logger := log.New(os.Stdout, "" /* prefix */, 0 /* flags */)
 	separator := "\033[H\033[2J"
 	for data := range output {
-		textui.Show(logger, separator, data)
+		textui.Show(logger, separator, data, false /* isHTML */)
 		var buf bytes.Buffer
 		buflogger := log.New(&buf, "" /* prefix */, 0 /* flags */)
-		textui.Show(buflogger, "" /* separator */, data)
+		textui.Show(buflogger, "" /* separator */, data, true /* isHTML */)
 		*last = buf.String()
+		select {
+		case <-waiting:
+			refreshed <- true
+		default:
+		}
 	}
 }
 
-func handleHTTP(last *string, autoSleepMS int) func(http.ResponseWriter, *http.Request) {
+func handleHTTP(last *string, input game.Input, auto bool, autoSleepMS int, waiting chan bool, refreshed chan bool) func(http.ResponseWriter, *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
+		if !auto {
+			path := strings.TrimPrefix(r.URL.Path, "/")
+			if path != "" && path != "favicon.ico" {
+				input <- path
+				waiting <- true
+				<-refreshed
+			}
+		}
 		fmt.Fprintf(w, `
 <html>
 <head>
-  <meta http-equiv='refresh' content='%f'/>
+  <meta http-equiv='refresh' content='%f; url=/'/>
+  <style>
+  body {
+    font-family: monospace;
+  }
+  </style>
 </head>
 <body>
-  <pre>
 %s
-  </pre>
 </body>
 </html>
-`, float64(autoSleepMS)/1000, *last)
+`, float64(autoSleepMS)/1000, strings.Replace(*last, "\n", "<br>\n", -1))
 	}
 }

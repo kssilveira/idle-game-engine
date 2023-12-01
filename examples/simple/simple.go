@@ -50,6 +50,6 @@ func main() {
 	logger := log.New(os.Stdout, "", 0 /* flags */)
 	separator := "\033[H\033[2J"
 	for data := range output {
-		textui.Show(logger, separator, data)
+		textui.Show(logger, separator, data, false /* isHTML */)
 	}
 }

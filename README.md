@@ -32,6 +32,8 @@ Run interactive kittens game:
 $ ./idle-game-engine
 ```
 
+Use text UI or http://localhost:8080/.
+
 Set starting resources:
 
 ```
@@ -50,13 +52,11 @@ Faster solution:
 ./idle-game-engine --auto --auto_sleep_ms=100
 ```
 
-Watch on the browser on http://localhost:8080/.
-
 ## Ideas
 
 General features:
 
-- web server and web UI
+- shared web server
 - configurable game rules at runtime
 - competition of best solutions
   - least actions 

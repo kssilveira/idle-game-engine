@@ -8,12 +8,12 @@ import (
 	"github.com/kssilveira/idle-game-engine/ui"
 )
 
-func Show(logger *log.Logger, separator string, data *ui.Data) {
+func Show(logger *log.Logger, separator string, data *ui.Data, isHTML bool) {
 	if separator != "" {
 		logger.Printf("%s", separator)
 	}
 	ShowResources(logger, data)
-	ShowActions(logger, data)
+	ShowActions(logger, data, isHTML)
 	logger.Printf("last input: %s\n", data.LastInput)
 	if data.Error != nil {
 		logger.Printf("error: %v\n", data.Error)
@@ -50,11 +50,13 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 	}
 }
 
-func ShowActions(logger *log.Logger, data *ui.Data) {
+func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 	for i, a := range data.Actions {
-		parts := []string{
-			fmt.Sprintf("%d: %s", i, a.Name),
+		name := fmt.Sprintf("%d: %s", i, a.Name)
+		if isHTML {
+			name = fmt.Sprintf("%d: <a href='/%d'>%s</a> [<a href='/s%d'>skip</a>]", i, i, a.Name, i)
 		}
+		parts := []string{name}
 		costs := []string{}
 		for _, c := range a.Costs {
 			overCap := ""
