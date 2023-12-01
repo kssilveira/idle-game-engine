@@ -30,8 +30,11 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 		extra := ""
 		if r.Rate != 0 {
 			capStr := ""
-			if r.Capacity > 0 && r.Duration > 0 {
-				capStr = fmt.Sprintf(", %s to cap", r.Duration)
+			if r.DurationToCap > 0 && r.Capacity > 0 {
+				capStr = fmt.Sprintf(", %s to cap", r.DurationToCap)
+			}
+			if r.DurationToEmpty > 0 && r.StartQuantity == 0 {
+				capStr = fmt.Sprintf(", %s to empty", r.DurationToEmpty)
 			}
 			rateStr := ""
 			if r.StartQuantity > 0 {
