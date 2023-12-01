@@ -11,23 +11,31 @@ import (
 )
 
 type Game struct {
-	Resources       []*Resource
+	Resources []*Resource
+	// maps resource name to index in Resources
 	ResourceToIndex map[string]int
 	Actions         []Action
 	Now             time.Time
 }
 
 type Resource struct {
-	Name                     string
-	Quantity                 float64
-	Capacity                 float64
-	Producers                []Resource
-	OnGone                   []Resource
-	ProductionFactor         float64
-	ProductionFloor          bool
+	Name     string
+	Quantity float64
+	Capacity float64
+
+	Producers []Resource
+	OnGone    []Resource
+
+	// quantity += producer.Quantity * ProductionFactor * elapsedTime
+	ProductionFactor float64
+	// quantity += producer.Quantity * ProductionFactor * elapsedTime * ProductionResourceFactor.Quantity
 	ProductionResourceFactor string
-	CostExponentBase         float64
-	StartQuantity            float64 // not produced per second, instead (re)calculated
+	// quantity += floor(producer.Quantity) * ProductionFactor * elapsedTime
+	ProductionFloor bool
+	// quantity = StartQuantity + producer.Quantity * ProductionFactor
+	StartQuantity float64
+	// cost = Quantity * pow(CostExponentBase, add.Quantity)
+	CostExponentBase float64
 }
 
 type Action struct {
