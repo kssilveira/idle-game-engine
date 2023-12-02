@@ -30,16 +30,12 @@ func TestRun(t *testing.T) {
 		iters: []iter{
 			// gather 2 catnip
 			{gather, 0}, {gather, 0},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "gather catnip html",
 		iters: []iter{
 			// gather 2 catnip
 			{gather, 0}, {gather, 0},
-			// end
-			{"999", 0},
 		},
 		isHTML: true,
 	}, {
@@ -56,8 +52,6 @@ func TestRun(t *testing.T) {
 			{field, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "catnip field 2",
@@ -73,8 +67,6 @@ func TestRun(t *testing.T) {
 			{field, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "catnip field skip",
@@ -90,8 +82,6 @@ func TestRun(t *testing.T) {
 			{sfield, 0}, {field, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "refine catnip",
@@ -103,8 +93,6 @@ func TestRun(t *testing.T) {
 			{refine, 0},
 			// refine catnip,
 			{refine, 0},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "hut",
@@ -120,8 +108,6 @@ func TestRun(t *testing.T) {
 			{hut, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "library",
@@ -143,8 +129,6 @@ func TestRun(t *testing.T) {
 			{scholar, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "woodcutter",
@@ -161,8 +145,6 @@ func TestRun(t *testing.T) {
 			{woodcutter, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "gone",
@@ -181,8 +163,6 @@ func TestRun(t *testing.T) {
 			{"", 1}, {"", 10},
 			// wait 1000 seconds
 			{"", 1000},
-			// end
-			{"999", 0},
 		},
 	}, {
 		name: "solve",
@@ -194,11 +174,11 @@ func TestRun(t *testing.T) {
 		go func() {
 			if len(in.iters) == 0 {
 				Solve(input, 0 /* sleepMS */)
-				input <- "999"
 			}
 			for _, one := range in.iters {
 				input <- one.input
 			}
+			input <- "999"
 		}()
 		timeIndex := 0
 		now := time.Unix(0, 0)
@@ -207,7 +187,7 @@ func TestRun(t *testing.T) {
 			if len(in.iters) == 0 {
 				now = now.Add(time.Second)
 			} else {
-				now = now.Add(time.Duration(in.iters[timeIndex].elapsed) * time.Second)
+				now = now.Add(time.Duration(append(in.iters, iter{"", 0})[timeIndex].elapsed) * time.Second)
 				timeIndex++
 			}
 			return res

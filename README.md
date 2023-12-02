@@ -54,10 +54,6 @@ Faster solution:
 
 ## Ideas
 
-TODO
-
-- remove end from kittens_test
-
 General features:
 
 - shared web server
