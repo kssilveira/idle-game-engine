@@ -10,23 +10,38 @@ import (
 func NewGame(now game.Now) *game.Game {
 	g := game.NewGame(now())
 	g.AddResources([]data.Resource{{
-		Name: "day", Quantity: 1, Capacity: -1,
+		Name: "day", Quantity: 0, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.5,
 		}},
 	}, {
-		Name: "day_of_year", StartQuantity: 1, ProductionModulus: 400, Capacity: -1,
+		Name: "day_of_year", Quantity: 1,
+		StartQuantity: 1, ProductionModulus: 400, ProductionModulusEquals: -1,
+		Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "day", ProductionFactor: 1,
+			Name: "day", ProductionFactor: 1, ProductionFloor: true,
 		}},
 	}, {
-		Name: "Spring", Quantity: 1, Capacity: -1,
+		Name: "Spring", Quantity: 1,
+		StartQuantity: 1, ProductionModulus: 4, ProductionModulusEquals: 0, Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "day", ProductionFactor: 0.01, ProductionFloor: true,
+		}},
 	}, {
-		Name: "Summer", Capacity: -1,
+		Name: "Summer", StartQuantity: 1, ProductionModulus: 4, ProductionModulusEquals: 1, Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "day", ProductionFactor: 0.01, ProductionFloor: true,
+		}},
 	}, {
-		Name: "Autumn", Capacity: -1,
+		Name: "Autumn", StartQuantity: 1, ProductionModulus: 4, ProductionModulusEquals: 2, Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "day", ProductionFactor: 0.01, ProductionFloor: true,
+		}},
 	}, {
-		Name: "Winter", Capacity: -1,
+		Name: "Winter", StartQuantity: 1, ProductionModulus: 4, ProductionModulusEquals: 3, Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "day", ProductionFactor: 0.01, ProductionFloor: true,
+		}},
 	}, {
 		Name: "catnip", Capacity: 5000,
 		Producers: []data.Resource{{

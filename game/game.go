@@ -153,7 +153,15 @@ func (g *Game) Update(now time.Time) {
 			factor = float64(int(factor) % resource.ProductionModulus)
 		}
 		if resource.StartQuantity != 0 {
-			resource.Quantity = resource.StartQuantity + factor
+			if resource.ProductionModulus != 0 && resource.ProductionModulusEquals >= 0 {
+				if int(factor) == resource.ProductionModulusEquals {
+					resource.Quantity = resource.StartQuantity
+				} else {
+					resource.Quantity = 0
+				}
+			} else {
+				resource.Quantity = resource.StartQuantity + factor
+			}
 		} else {
 			resource.Add(data.Resource{Quantity: factor * elapsed.Seconds()})
 		}

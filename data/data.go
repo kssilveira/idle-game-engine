@@ -17,6 +17,8 @@ type Resource struct {
 	StartQuantity float64
 	// quantity = StartQuantity + (producer.Quantity * ProductionFactor) % ProductionModulus
 	ProductionModulus int
+	// quantity = StartQuantity if (producer.Quantity * ProductionFactor) % ProductionModulus == ProductionModulusEquals else 0
+	ProductionModulusEquals int
 
 	// production *= 1 + bonus
 	ProductionBonus []Resource

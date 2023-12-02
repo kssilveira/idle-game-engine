@@ -271,7 +271,7 @@ func TestUpdate(t *testing.T) {
 	}, {
 		name: "start quantity modulus",
 		resources: []data.Resource{{
-			Name: "resource", StartQuantity: 10, ProductionModulus: 4, Capacity: -1,
+			Name: "resource", StartQuantity: 10, ProductionModulus: 4, ProductionModulusEquals: -1, Capacity: -1,
 			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: 2,
 			}},
@@ -284,6 +284,22 @@ func TestUpdate(t *testing.T) {
 			10 + 2*3%4,
 			10 + 2*3%4,
 		},
+	}, {
+		name: "start quantity modulus equals",
+		resources: []data.Resource{{
+			Name: "input", Quantity: 0, Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "", ProductionFactor: 1,
+			}},
+		}, {
+			Name: "resource", StartQuantity: 1, ProductionModulus: 2, ProductionModulusEquals: 1,
+			Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "input", ProductionFactor: 1,
+			}},
+		}},
+		times: []int64{0, 1, 2, 3},
+		want:  []int{0, 1, 0, 1},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))

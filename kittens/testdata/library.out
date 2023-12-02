@@ -1,5 +1,5 @@
 ###
-day 1.00 0.50/s
+day_of_year 1.00
 Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 wood 100.00/200
@@ -12,8 +12,7 @@ kitten 2.00/2 0.05/s
 sX: time skip until action X is available
 last input: 
 ###
-day 1.00 0.50/s
-day_of_year 2.00 (1.00 + 1.00 % 400)
+day_of_year 1.00
 Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 wood 75.00/200
@@ -30,8 +29,7 @@ Library 1.00
 sX: time skip until action X is available
 last input: 4
 ###
-day 1.00 0.50/s
-day_of_year 2.00 (1.00 + 1.00 % 400)
+day_of_year 1.00
 Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 wood 75.00/200
@@ -49,8 +47,8 @@ Library 1.00
 sX: time skip until action X is available
 last input: 6
 ###
-day 1.50 0.50/s
-day_of_year 2.00 (1.00 + 1.50 % 400)
+day 0.50 0.50/s
+day_of_year 1.00
 Spring 1.00
 catnip 991.50/5000 -8.50/s 1m56s to empty
 wood 75.00/200
@@ -70,9 +68,9 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
-day 6.50 0.50/s
-day_of_year 7.00 (1.00 + 6.50 % 400)
-Spring 1.00
+day 5.50 0.50/s
+day_of_year 6.00 (1.00 + 5.00 % 400)
+Spring 1.00 (1.00 if 0.05 % 4 == 0)
 catnip 906.50/5000 -8.50/s 1m46s to empty
 wood 75.00/200
 science 2.24/500 0.20/s 40m39s to cap
@@ -91,9 +89,9 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
-day 6.50 0.50/s
-day_of_year 7.00 (1.00 + 6.50 % 400)
-Spring 1.00
+day 5.50 0.50/s
+day_of_year 6.00 (1.00 + 5.00 % 400)
+Spring 1.00 (1.00 if 0.05 % 4 == 0)
 catnip 906.50/5000 -8.50/s 1m46s to empty
 wood 46.25/200
 science 2.24/750 0.22/s 55m59s to cap
@@ -111,9 +109,9 @@ Library 2.00
 sX: time skip until action X is available
 last input: 4
 ###
-day 7.00 0.50/s
-day_of_year 8.00 (1.00 + 7.00 % 400)
-Spring 1.00
+day 6.00 0.50/s
+day_of_year 7.00 (1.00 + 6.00 % 400)
+Spring 1.00 (1.00 if 0.06 % 4 == 0)
 catnip 898.00/5000 -8.50/s 1m45s to empty
 wood 46.25/200
 science 2.47/750 0.22/s 55m58s to cap
@@ -132,9 +130,9 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
-day 12.00 0.50/s
-day_of_year 13.00 (1.00 + 12.00 % 400)
-Spring 1.00
+day 11.00 0.50/s
+day_of_year 12.00 (1.00 + 11.00 % 400)
+Spring 1.00 (1.00 if 0.11 % 4 == 0)
 catnip 813.00/5000 -8.50/s 1m35s to empty
 wood 46.25/200
 science 4.69/750 0.22/s 55m48s to cap
@@ -153,9 +151,9 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
-day 12.00 0.50/s
-day_of_year 13.00 (1.00 + 12.00 % 400)
-Spring 1.00
+day 11.00 0.50/s
+day_of_year 12.00 (1.00 + 11.00 % 400)
+Spring 1.00 (1.00 if 0.11 % 4 == 0)
 catnip 813.00/5000 -8.50/s 1m35s to empty
 wood 46.25/200
 science 4.69/750 0.45/s 27m54s to cap
@@ -172,9 +170,9 @@ Library 2.00
 sX: time skip until action X is available
 last input: 6
 ###
-day 12.50 0.50/s
-day_of_year 13.00 (1.00 + 12.50 % 400)
-Spring 1.00
+day 11.50 0.50/s
+day_of_year 12.00 (1.00 + 11.00 % 400)
+Spring 1.00 (1.00 if 0.11 % 4 == 0)
 catnip 804.50/5000 -8.50/s 1m34s to empty
 wood 46.25/200
 science 5.14/750 0.45/s 27m53s to cap
@@ -192,9 +190,9 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
-day 17.50 0.50/s
-day_of_year 18.00 (1.00 + 17.50 % 400)
-Spring 1.00
+day 16.50 0.50/s
+day_of_year 17.00 (1.00 + 16.00 % 400)
+Spring 1.00 (1.00 if 0.16 % 4 == 0)
 catnip 719.50/5000 -8.50/s 1m24s to empty
 wood 46.25/200
 science 9.59/750 0.45/s 27m43s to cap

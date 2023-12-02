@@ -40,12 +40,17 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 				capStr = fmt.Sprintf(" %s to empty", d.DurationToEmpty)
 			}
 			rateStr := ""
+			operator := "+"
 			if r.StartQuantity > 0 {
 				extra := ""
 				if r.ProductionModulus > 0 {
 					extra = fmt.Sprintf(" %% %d", r.ProductionModulus)
+					if r.ProductionModulusEquals >= 0 {
+						operator = "if"
+						extra = fmt.Sprintf("%s == %d", extra, r.ProductionModulusEquals)
+					}
 				}
-				rateStr = fmt.Sprintf("(%.2f + %.2f%s)", r.StartQuantity, d.Rate, extra)
+				rateStr = fmt.Sprintf("(%.2f %s %.2f%s)", r.StartQuantity, operator, d.Rate, extra)
 			} else {
 				rateStr = fmt.Sprintf("%.2f/s", d.Rate)
 			}

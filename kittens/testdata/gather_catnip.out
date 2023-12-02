@@ -1,12 +1,11 @@
 ###
-day 1.00 0.50/s
+day_of_year 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
 sX: time skip until action X is available
 last input: 
 ###
-day 1.00 0.50/s
-day_of_year 2.00 (1.00 + 1.00 % 400)
+day_of_year 1.00
 Spring 1.00
 catnip 1.00/5000
 happiness 1.10
@@ -16,8 +15,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
-day 1.00 0.50/s
-day_of_year 2.00 (1.00 + 1.00 % 400)
+day_of_year 1.00
 Spring 1.00
 catnip 2.00/5000
 happiness 1.10
