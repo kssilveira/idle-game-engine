@@ -1,13 +1,15 @@
 ###
-day_of_year 1.00
+year 1.00
 Spring 1.00
+day_of_year 1.00
 0: Gather catnip +(catnip 1)
 sX: time skip until action X is available
 last input: 
 ###
 day 0.50 0.50/s
-day_of_year 1.00
+year 1.00
 Spring 1.00
+day_of_year 1.00
 catnip 1.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -17,8 +19,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 1.00 0.50/s
-day_of_year 2.00 (1.00 + 1.00 % 400)
+year 1.00 (1.00 + 0.00)
 Spring 1.00 (1.00 if 0.01 % 4 == 0)
+day_of_year 2.00 (1.00 + 1.00 % 400)
 catnip 2.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -28,8 +31,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 1.50 0.50/s
-day_of_year 2.00 (1.00 + 1.00 % 400)
+year 1.00 (1.00 + 0.00)
 Spring 1.00 (1.00 if 0.01 % 4 == 0)
+day_of_year 2.00 (1.00 + 1.00 % 400)
 catnip 3.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -39,8 +43,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 2.00 0.50/s
-day_of_year 3.00 (1.00 + 2.00 % 400)
+year 1.00 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.02 % 4 == 0)
+day_of_year 3.00 (1.00 + 2.00 % 400)
 catnip 4.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -50,8 +55,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 2.50 0.50/s
-day_of_year 3.00 (1.00 + 2.00 % 400)
+year 1.00 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.02 % 4 == 0)
+day_of_year 3.00 (1.00 + 2.00 % 400)
 catnip 5.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -61,8 +67,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 3.00 0.50/s
-day_of_year 4.00 (1.00 + 3.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.03 % 4 == 0)
+day_of_year 4.00 (1.00 + 3.00 % 400)
 catnip 6.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -72,8 +79,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 3.50 0.50/s
-day_of_year 4.00 (1.00 + 3.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.03 % 4 == 0)
+day_of_year 4.00 (1.00 + 3.00 % 400)
 catnip 7.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -83,8 +91,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 4.00 0.50/s
-day_of_year 5.00 (1.00 + 4.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.04 % 4 == 0)
+day_of_year 5.00 (1.00 + 4.00 % 400)
 catnip 8.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -94,8 +103,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 4.50 0.50/s
-day_of_year 5.00 (1.00 + 4.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.04 % 4 == 0)
+day_of_year 5.00 (1.00 + 4.00 % 400)
 catnip 9.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -105,8 +115,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 5.00 0.50/s
-day_of_year 6.00 (1.00 + 5.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
+day_of_year 6.00 (1.00 + 5.00 % 400)
 catnip 10.00/5000
 happiness 1.10
 0: Gather catnip +(catnip 1)
@@ -116,8 +127,9 @@ sX: time skip until action X is available
 last input: 0
 ###
 day 5.50 0.50/s
-day_of_year 6.00 (1.00 + 5.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
+day_of_year 6.00 (1.00 + 5.00 % 400)
 happiness 1.10
 Catnip Field 1.00
 0: Gather catnip +(catnip 1)
@@ -126,8 +138,9 @@ last input: 2
 ###
 skip 11.00
 day 11.50 0.50/s
-day_of_year 12.00 (1.00 + 11.00 % 400)
+year 1.03 (1.00 + 0.03)
 Spring 1.00 (1.00 if 0.11 % 4 == 0)
+day_of_year 12.00 (1.00 + 11.00 % 400)
 catnip 11.34/5000 0.94/s 1h27m59s to cap
 happiness 1.10
 Catnip Field 1.00
@@ -139,8 +152,9 @@ last input: s2
 ###
 skip 11.00
 day 12.00 0.50/s
-day_of_year 13.00 (1.00 + 12.00 % 400)
+year 1.03 (1.00 + 0.03)
 Spring 1.00 (1.00 if 0.12 % 4 == 0)
+day_of_year 13.00 (1.00 + 12.00 % 400)
 catnip 1.08/5000 1.89/s 44m4s to cap
 happiness 1.10
 Catnip Field 2.00
@@ -152,8 +166,9 @@ last input: 2
 ###
 skip 17.00
 day 15.50 0.50/s
-day_of_year 16.00 (1.00 + 15.00 % 400)
+year 1.04 (1.00 + 0.04)
 Spring 1.00 (1.00 if 0.15 % 4 == 0)
+day_of_year 16.00 (1.00 + 15.00 % 400)
 catnip 14.31/5000 1.89/s 43m57s to cap
 happiness 1.10
 Catnip Field 2.00
@@ -165,8 +180,9 @@ last input: s2
 ###
 skip 17.00
 day 16.00 0.50/s
-day_of_year 17.00 (1.00 + 16.00 % 400)
+year 1.04 (1.00 + 0.04)
 Spring 1.00 (1.00 if 0.16 % 4 == 0)
+day_of_year 17.00 (1.00 + 16.00 % 400)
 catnip 3.66/5000 2.83/s 29m22s to cap
 happiness 1.10
 Catnip Field 3.00
@@ -178,8 +194,9 @@ last input: 2
 ###
 skip 20.00
 day 18.00 0.50/s
-day_of_year 19.00 (1.00 + 18.00 % 400)
+year 1.04 (1.00 + 0.04)
 Spring 1.00 (1.00 if 0.18 % 4 == 0)
+day_of_year 19.00 (1.00 + 18.00 % 400)
 catnip 15.00/5000 2.83/s 29m18s to cap
 happiness 1.10
 Catnip Field 3.00
@@ -191,8 +208,9 @@ last input: s2
 ###
 skip 20.00
 day 18.50 0.50/s
-day_of_year 19.00 (1.00 + 18.00 % 400)
+year 1.04 (1.00 + 0.04)
 Spring 1.00 (1.00 if 0.18 % 4 == 0)
+day_of_year 19.00 (1.00 + 18.00 % 400)
 catnip 3.79/5000 3.78/s 22m1s to cap
 happiness 1.10
 Catnip Field 4.00
@@ -204,8 +222,9 @@ last input: 2
 ###
 skip 23.00
 day 20.50 0.50/s
-day_of_year 21.00 (1.00 + 20.00 % 400)
+year 1.05 (1.00 + 0.05)
 Spring 1.00 (1.00 if 0.20 % 4 == 0)
+day_of_year 21.00 (1.00 + 20.00 % 400)
 catnip 18.91/5000 3.78/s 21m57s to cap
 happiness 1.10
 Catnip Field 4.00
@@ -217,8 +236,9 @@ last input: s2
 ###
 skip 23.00
 day 21.00 0.50/s
-day_of_year 22.00 (1.00 + 21.00 % 400)
+year 1.05 (1.00 + 0.05)
 Spring 1.00 (1.00 if 0.21 % 4 == 0)
+day_of_year 22.00 (1.00 + 21.00 % 400)
 catnip 6.95/5000 4.72/s 17m36s to cap
 happiness 1.10
 Catnip Field 5.00
@@ -230,8 +250,9 @@ last input: 2
 ###
 skip 25.00
 day 22.50 0.50/s
-day_of_year 23.00 (1.00 + 22.00 % 400)
+year 1.05 (1.00 + 0.06)
 Spring 1.00 (1.00 if 0.22 % 4 == 0)
+day_of_year 23.00 (1.00 + 22.00 % 400)
 catnip 21.13/5000 4.72/s 17m33s to cap
 happiness 1.10
 Catnip Field 5.00
@@ -243,8 +264,9 @@ last input: s2
 ###
 skip 25.00
 day 23.00 0.50/s
-day_of_year 24.00 (1.00 + 23.00 % 400)
+year 1.06 (1.00 + 0.06)
 Spring 1.00 (1.00 if 0.23 % 4 == 0)
+day_of_year 24.00 (1.00 + 23.00 % 400)
 catnip 8.23/5000 5.67/s 14m40s to cap
 happiness 1.10
 Catnip Field 6.00
@@ -256,8 +278,9 @@ last input: 2
 ###
 skip 27.00
 day 24.50 0.50/s
-day_of_year 25.00 (1.00 + 24.00 % 400)
+year 1.06 (1.00 + 0.06)
 Spring 1.00 (1.00 if 0.24 % 4 == 0)
+day_of_year 25.00 (1.00 + 24.00 % 400)
 catnip 25.24/5000 5.67/s 14m37s to cap
 happiness 1.10
 Catnip Field 6.00
@@ -269,8 +292,9 @@ last input: s2
 ###
 skip 27.00
 day 25.00 0.50/s
-day_of_year 26.00 (1.00 + 25.00 % 400)
+year 1.06 (1.00 + 0.06)
 Spring 1.00 (1.00 if 0.25 % 4 == 0)
+day_of_year 26.00 (1.00 + 25.00 % 400)
 catnip 11.17/5000 6.61/s 12m34s to cap
 happiness 1.10
 Catnip Field 7.00
@@ -282,8 +306,9 @@ last input: 2
 ###
 skip 28.00
 day 26.00 0.50/s
-day_of_year 27.00 (1.00 + 26.00 % 400)
+year 1.06 (1.00 + 0.07)
 Spring 1.00 (1.00 if 0.26 % 4 == 0)
+day_of_year 27.00 (1.00 + 26.00 % 400)
 catnip 24.40/5000 6.61/s 12m32s to cap
 happiness 1.10
 Catnip Field 7.00
@@ -295,8 +320,9 @@ last input: s2
 ###
 skip 28.00
 day 26.50 0.50/s
-day_of_year 27.00 (1.00 + 26.00 % 400)
+year 1.06 (1.00 + 0.07)
 Spring 1.00 (1.00 if 0.26 % 4 == 0)
+day_of_year 27.00 (1.00 + 26.00 % 400)
 catnip 8.91/5000 7.56/s 11m0s to cap
 happiness 1.10
 Catnip Field 8.00
@@ -308,8 +334,9 @@ last input: 2
 ###
 skip 30.00
 day 28.00 0.50/s
-day_of_year 29.00 (1.00 + 28.00 % 400)
+year 1.07 (1.00 + 0.07)
 Spring 1.00 (1.00 if 0.28 % 4 == 0)
+day_of_year 29.00 (1.00 + 28.00 % 400)
 catnip 31.59/5000 7.56/s 10m57s to cap
 happiness 1.10
 Catnip Field 8.00
@@ -321,8 +348,9 @@ last input: s2
 ###
 skip 30.00
 day 28.50 0.50/s
-day_of_year 29.00 (1.00 + 28.00 % 400)
+year 1.07 (1.00 + 0.07)
 Spring 1.00 (1.00 if 0.28 % 4 == 0)
+day_of_year 29.00 (1.00 + 28.00 % 400)
 catnip 14.39/5000 8.50/s 9m46s to cap
 happiness 1.10
 Catnip Field 9.00
@@ -334,8 +362,9 @@ last input: 2
 ###
 skip 31.00
 day 29.50 0.50/s
-day_of_year 30.00 (1.00 + 29.00 % 400)
+year 1.07 (1.00 + 0.07)
 Spring 1.00 (1.00 if 0.29 % 4 == 0)
+day_of_year 30.00 (1.00 + 29.00 % 400)
 catnip 31.40/5000 8.50/s 9m44s to cap
 happiness 1.10
 Catnip Field 9.00
@@ -347,8 +376,9 @@ last input: s2
 ###
 skip 31.00
 day 30.00 0.50/s
-day_of_year 31.00 (1.00 + 30.00 % 400)
+year 1.07 (1.00 + 0.07)
 Spring 1.00 (1.00 if 0.30 % 4 == 0)
+day_of_year 31.00 (1.00 + 30.00 % 400)
 catnip 12.17/5000 9.45/s 8m47s to cap
 happiness 1.10
 Catnip Field 10.00
@@ -360,8 +390,9 @@ last input: 2
 ###
 skip 32.00
 day 31.00 0.50/s
-day_of_year 32.00 (1.00 + 31.00 % 400)
+year 1.08 (1.00 + 0.08)
 Spring 1.00 (1.00 if 0.31 % 4 == 0)
+day_of_year 32.00 (1.00 + 31.00 % 400)
 catnip 31.07/5000 9.45/s 8m45s to cap
 happiness 1.10
 Catnip Field 10.00
@@ -373,8 +404,9 @@ last input: s2
 ###
 skip 32.00
 day 31.50 0.50/s
-day_of_year 32.00 (1.00 + 31.00 % 400)
+year 1.08 (1.00 + 0.08)
 Spring 1.00 (1.00 if 0.31 % 4 == 0)
+day_of_year 32.00 (1.00 + 31.00 % 400)
 catnip 9.46/5000 10.39/s 8m0s to cap
 happiness 1.10
 Catnip Field 11.00
@@ -386,8 +418,9 @@ last input: 2
 ###
 skip 34.00
 day 33.00 0.50/s
-day_of_year 34.00 (1.00 + 33.00 % 400)
+year 1.08 (1.00 + 0.08)
 Spring 1.00 (1.00 if 0.33 % 4 == 0)
+day_of_year 34.00 (1.00 + 33.00 % 400)
 catnip 40.65/5000 10.39/s 7m57s to cap
 happiness 1.10
 Catnip Field 11.00
@@ -399,8 +432,9 @@ last input: s2
 ###
 skip 34.00
 day 33.50 0.50/s
-day_of_year 34.00 (1.00 + 33.00 % 400)
+year 1.08 (1.00 + 0.08)
 Spring 1.00 (1.00 if 0.33 % 4 == 0)
+day_of_year 34.00 (1.00 + 33.00 % 400)
 catnip 16.26/5000 11.34/s 7m19s to cap
 happiness 1.10
 Catnip Field 12.00
@@ -412,8 +446,9 @@ last input: 2
 ###
 skip 36.00
 day 35.00 0.50/s
-day_of_year 36.00 (1.00 + 35.00 % 400)
+year 1.09 (1.00 + 0.09)
 Spring 1.00 (1.00 if 0.35 % 4 == 0)
+day_of_year 36.00 (1.00 + 35.00 % 400)
 catnip 50.28/5000 11.34/s 7m16s to cap
 happiness 1.10
 Catnip Field 12.00
@@ -425,8 +460,9 @@ last input: s2
 ###
 skip 36.00
 day 35.50 0.50/s
-day_of_year 36.00 (1.00 + 35.00 % 400)
+year 1.09 (1.00 + 0.09)
 Spring 1.00 (1.00 if 0.35 % 4 == 0)
+day_of_year 36.00 (1.00 + 35.00 % 400)
 catnip 22.66/5000 12.29/s 6m45s to cap
 happiness 1.10
 Catnip Field 13.00
@@ -438,8 +474,9 @@ last input: 2
 ###
 skip 37.00
 day 36.50 0.50/s
-day_of_year 37.00 (1.00 + 36.00 % 400)
+year 1.09 (1.00 + 0.09)
 Spring 1.00 (1.00 if 0.36 % 4 == 0)
+day_of_year 37.00 (1.00 + 36.00 % 400)
 catnip 47.23/5000 12.29/s 6m43s to cap
 happiness 1.10
 Catnip Field 13.00
@@ -451,8 +488,9 @@ last input: s2
 ###
 skip 37.00
 day 37.00 0.50/s
-day_of_year 38.00 (1.00 + 37.00 % 400)
+year 1.09 (1.00 + 0.09)
 Spring 1.00 (1.00 if 0.37 % 4 == 0)
+day_of_year 38.00 (1.00 + 37.00 % 400)
 catnip 15.88/5000 13.23/s 6m16s to cap
 happiness 1.10
 Catnip Field 14.00
@@ -464,8 +502,9 @@ last input: 2
 ###
 skip 39.00
 day 38.50 0.50/s
-day_of_year 39.00 (1.00 + 38.00 % 400)
+year 1.09 (1.00 + 0.10)
 Spring 1.00 (1.00 if 0.38 % 4 == 0)
+day_of_year 39.00 (1.00 + 38.00 % 400)
 catnip 55.57/5000 13.23/s 6m13s to cap
 happiness 1.10
 Catnip Field 14.00
@@ -477,8 +516,9 @@ last input: s2
 ###
 skip 39.00
 day 39.00 0.50/s
-day_of_year 40.00 (1.00 + 39.00 % 400)
+year 1.10 (1.00 + 0.10)
 Spring 1.00 (1.00 if 0.39 % 4 == 0)
+day_of_year 40.00 (1.00 + 39.00 % 400)
 catnip 19.93/5000 14.17/s 5m51s to cap
 happiness 1.10
 Catnip Field 15.00
@@ -490,8 +530,9 @@ last input: 2
 ###
 skip 41.00
 day 40.50 0.50/s
-day_of_year 41.00 (1.00 + 40.00 % 400)
+year 1.10 (1.00 + 0.10)
 Spring 1.00 (1.00 if 0.40 % 4 == 0)
+day_of_year 41.00 (1.00 + 40.00 % 400)
 catnip 62.45/5000 14.17/s 5m48s to cap
 happiness 1.10
 Catnip Field 15.00
@@ -503,8 +544,9 @@ last input: s2
 ###
 skip 41.00
 day 41.00 0.50/s
-day_of_year 42.00 (1.00 + 41.00 % 400)
+year 1.10 (1.00 + 0.10)
 Spring 1.00 (1.00 if 0.41 % 4 == 0)
+day_of_year 42.00 (1.00 + 41.00 % 400)
 catnip 21.89/5000 15.12/s 5m29s to cap
 happiness 1.10
 Catnip Field 16.00
@@ -516,8 +558,9 @@ last input: 2
 ###
 skip 43.00
 day 42.50 0.50/s
-day_of_year 43.00 (1.00 + 42.00 % 400)
+year 1.10 (1.00 + 0.10)
 Spring 1.00 (1.00 if 0.42 % 4 == 0)
+day_of_year 43.00 (1.00 + 42.00 % 400)
 catnip 67.25/5000 15.12/s 5m26s to cap
 happiness 1.10
 Catnip Field 16.00
@@ -529,8 +572,9 @@ last input: s2
 ###
 skip 43.00
 day 43.00 0.50/s
-day_of_year 44.00 (1.00 + 43.00 % 400)
+year 1.11 (1.00 + 0.11)
 Spring 1.00 (1.00 if 0.43 % 4 == 0)
+day_of_year 44.00 (1.00 + 43.00 % 400)
 catnip 21.07/5000 16.06/s 5m9s to cap
 happiness 1.10
 Catnip Field 17.00
@@ -542,8 +586,9 @@ last input: 2
 ###
 skip 45.00
 day 44.50 0.50/s
-day_of_year 45.00 (1.00 + 44.00 % 400)
+year 1.11 (1.00 + 0.11)
 Spring 1.00 (1.00 if 0.44 % 4 == 0)
+day_of_year 45.00 (1.00 + 44.00 % 400)
 catnip 69.26/5000 16.06/s 5m6s to cap
 happiness 1.10
 Catnip Field 17.00
@@ -555,8 +600,9 @@ last input: s2
 ###
 skip 45.00
 day 45.00 0.50/s
-day_of_year 46.00 (1.00 + 45.00 % 400)
+year 1.11 (1.00 + 0.11)
 Spring 1.00 (1.00 if 0.45 % 4 == 0)
+day_of_year 46.00 (1.00 + 45.00 % 400)
 catnip 16.67/5000 17.01/s 4m52s to cap
 happiness 1.10
 Catnip Field 18.00
@@ -568,8 +614,9 @@ last input: 2
 ###
 skip 48.00
 day 47.00 0.50/s
-day_of_year 48.00 (1.00 + 47.00 % 400)
+year 1.12 (1.00 + 0.12)
 Spring 1.00 (1.00 if 0.47 % 4 == 0)
+day_of_year 48.00 (1.00 + 47.00 % 400)
 catnip 84.71/5000 17.01/s 4m48s to cap
 happiness 1.10
 Catnip Field 18.00
@@ -581,8 +628,9 @@ last input: s2
 ###
 skip 48.00
 day 47.50 0.50/s
-day_of_year 48.00 (1.00 + 47.00 % 400)
+year 1.12 (1.00 + 0.12)
 Spring 1.00 (1.00 if 0.47 % 4 == 0)
+day_of_year 48.00 (1.00 + 47.00 % 400)
 catnip 24.82/5000 17.95/s 4m37s to cap
 happiness 1.10
 Catnip Field 19.00
@@ -594,8 +642,9 @@ last input: 2
 ###
 skip 51.00
 day 49.50 0.50/s
-day_of_year 50.00 (1.00 + 49.00 % 400)
+year 1.12 (1.00 + 0.12)
 Spring 1.00 (1.00 if 0.49 % 4 == 0)
+day_of_year 50.00 (1.00 + 49.00 % 400)
 catnip 96.64/5000 17.95/s 4m33s to cap
 happiness 1.10
 Catnip Field 19.00
@@ -607,8 +656,9 @@ last input: s2
 ###
 skip 51.00
 day 50.00 0.50/s
-day_of_year 51.00 (1.00 + 50.00 % 400)
+year 1.12 (1.00 + 0.12)
 Spring 1.00 (1.00 if 0.50 % 4 == 0)
+day_of_year 51.00 (1.00 + 50.00 % 400)
 catnip 28.47/5000 18.90/s 4m23s to cap
 happiness 1.10
 Catnip Field 20.00
@@ -620,8 +670,9 @@ last input: 2
 ###
 skip 54.00
 day 52.00 0.50/s
-day_of_year 53.00 (1.00 + 52.00 % 400)
+year 1.13 (1.00 + 0.13)
 Spring 1.00 (1.00 if 0.52 % 4 == 0)
+day_of_year 53.00 (1.00 + 52.00 % 400)
 catnip 104.07/5000 18.90/s 4m19s to cap
 happiness 1.10
 Catnip Field 20.00
@@ -633,8 +684,9 @@ last input: s2
 ###
 skip 54.00
 day 52.50 0.50/s
-day_of_year 53.00 (1.00 + 52.00 % 400)
+year 1.13 (1.00 + 0.13)
 Spring 1.00 (1.00 if 0.52 % 4 == 0)
+day_of_year 53.00 (1.00 + 52.00 % 400)
 catnip 26.50/5000 19.84/s 4m10s to cap
 happiness 1.10
 Catnip Field 21.00
@@ -646,8 +698,9 @@ last input: 2
 ###
 skip 58.00
 day 55.00 0.50/s
-day_of_year 56.00 (1.00 + 55.00 % 400)
+year 1.14 (1.00 + 0.14)
 Spring 1.00 (1.00 if 0.55 % 4 == 0)
+day_of_year 56.00 (1.00 + 55.00 % 400)
 catnip 125.73/5000 19.84/s 4m5s to cap
 happiness 1.10
 Catnip Field 21.00
@@ -659,8 +712,9 @@ last input: s2
 ###
 skip 58.00
 day 55.50 0.50/s
-day_of_year 56.00 (1.00 + 55.00 % 400)
+year 1.14 (1.00 + 0.14)
 Spring 1.00 (1.00 if 0.55 % 4 == 0)
+day_of_year 56.00 (1.00 + 55.00 % 400)
 catnip 37.53/5000 20.79/s 3m58s to cap
 happiness 1.10
 Catnip Field 22.00
@@ -672,8 +726,9 @@ last input: 2
 ###
 skip 62.00
 day 58.00 0.50/s
-day_of_year 59.00 (1.00 + 58.00 % 400)
+year 1.15 (1.00 + 0.14)
 Spring 1.00 (1.00 if 0.58 % 4 == 0)
+day_of_year 59.00 (1.00 + 58.00 % 400)
 catnip 141.48/5000 20.79/s 3m53s to cap
 happiness 1.10
 Catnip Field 22.00
@@ -685,8 +740,9 @@ last input: s2
 ###
 skip 62.00
 day 58.50 0.50/s
-day_of_year 59.00 (1.00 + 58.00 % 400)
+year 1.15 (1.00 + 0.14)
 Spring 1.00 (1.00 if 0.58 % 4 == 0)
+day_of_year 59.00 (1.00 + 58.00 % 400)
 catnip 41.27/5000 21.73/s 3m48s to cap
 happiness 1.10
 Catnip Field 23.00
@@ -698,8 +754,9 @@ last input: 2
 ###
 skip 66.00
 day 61.00 0.50/s
-day_of_year 62.00 (1.00 + 61.00 % 400)
+year 1.15 (1.00 + 0.15)
 Spring 1.00 (1.00 if 0.61 % 4 == 0)
+day_of_year 62.00 (1.00 + 61.00 % 400)
 catnip 149.95/5000 21.73/s 3m43s to cap
 happiness 1.10
 Catnip Field 23.00
@@ -711,8 +768,9 @@ last input: s2
 ###
 skip 66.00
 day 61.50 0.50/s
-day_of_year 62.00 (1.00 + 61.00 % 400)
+year 1.15 (1.00 + 0.15)
 Spring 1.00 (1.00 if 0.61 % 4 == 0)
+day_of_year 62.00 (1.00 + 61.00 % 400)
 catnip 36.16/5000 22.68/s 3m38s to cap
 happiness 1.10
 Catnip Field 24.00
@@ -724,8 +782,9 @@ last input: 2
 ###
 skip 71.00
 day 64.50 0.50/s
-day_of_year 65.00 (1.00 + 64.00 % 400)
+year 1.16 (1.00 + 0.16)
 Spring 1.00 (1.00 if 0.64 % 4 == 0)
+day_of_year 65.00 (1.00 + 64.00 % 400)
 catnip 172.24/5000 22.68/s 3m32s to cap
 happiness 1.10
 Catnip Field 24.00
@@ -737,8 +796,9 @@ last input: s2
 ###
 skip 71.00
 day 65.00 0.50/s
-day_of_year 66.00 (1.00 + 65.00 % 400)
+year 1.16 (1.00 + 0.16)
 Spring 1.00 (1.00 if 0.65 % 4 == 0)
+day_of_year 66.00 (1.00 + 65.00 % 400)
 catnip 43.13/5000 23.62/s 3m29s to cap
 happiness 1.10
 Catnip Field 25.00
@@ -750,8 +810,9 @@ last input: 2
 ###
 skip 76.00
 day 68.00 0.50/s
-day_of_year 69.00 (1.00 + 68.00 % 400)
+year 1.17 (1.00 + 0.17)
 Spring 1.00 (1.00 if 0.68 % 4 == 0)
+day_of_year 69.00 (1.00 + 68.00 % 400)
 catnip 184.88/5000 23.62/s 3m23s to cap
 happiness 1.10
 Catnip Field 25.00
@@ -763,8 +824,9 @@ last input: s2
 ###
 skip 76.00
 day 68.50 0.50/s
-day_of_year 69.00 (1.00 + 68.00 % 400)
+year 1.17 (1.00 + 0.17)
 Spring 1.00 (1.00 if 0.68 % 4 == 0)
+day_of_year 69.00 (1.00 + 68.00 % 400)
 catnip 38.51/5000 24.57/s 3m21s to cap
 happiness 1.10
 Catnip Field 26.00
@@ -776,8 +838,9 @@ last input: 2
 ###
 skip 82.00
 day 72.00 0.50/s
-day_of_year 73.00 (1.00 + 72.00 % 400)
+year 1.18 (1.00 + 0.18)
 Spring 1.00 (1.00 if 0.72 % 4 == 0)
+day_of_year 73.00 (1.00 + 72.00 % 400)
 catnip 210.50/5000 24.57/s 3m14s to cap
 happiness 1.10
 Catnip Field 26.00
@@ -789,8 +852,9 @@ last input: s2
 ###
 skip 82.00
 day 72.50 0.50/s
-day_of_year 73.00 (1.00 + 72.00 % 400)
+year 1.18 (1.00 + 0.18)
 Spring 1.00 (1.00 if 0.72 % 4 == 0)
+day_of_year 73.00 (1.00 + 72.00 % 400)
 catnip 44.66/5000 25.51/s 3m14s to cap
 happiness 1.10
 Catnip Field 27.00
@@ -802,8 +866,9 @@ last input: 2
 ###
 skip 88.00
 day 76.00 0.50/s
-day_of_year 77.00 (1.00 + 76.00 % 400)
+year 1.19 (1.00 + 0.19)
 Spring 1.00 (1.00 if 0.76 % 4 == 0)
+day_of_year 77.00 (1.00 + 76.00 % 400)
 catnip 223.27/5000 25.51/s 3m7s to cap
 happiness 1.10
 Catnip Field 27.00
@@ -815,8 +880,9 @@ last input: s2
 ###
 skip 88.00
 day 76.50 0.50/s
-day_of_year 77.00 (1.00 + 76.00 % 400)
+year 1.19 (1.00 + 0.19)
 Spring 1.00 (1.00 if 0.76 % 4 == 0)
+day_of_year 77.00 (1.00 + 76.00 % 400)
 catnip 35.54/5000 26.46/s 3m7s to cap
 happiness 1.10
 Catnip Field 28.00
@@ -828,8 +894,9 @@ last input: 2
 ###
 skip 95.00
 day 80.50 0.50/s
-day_of_year 81.00 (1.00 + 80.00 % 400)
+year 1.20 (1.00 + 0.20)
 Spring 1.00 (1.00 if 0.80 % 4 == 0)
+day_of_year 81.00 (1.00 + 80.00 % 400)
 catnip 247.22/5000 26.46/s 2m59s to cap
 happiness 1.10
 Catnip Field 28.00
@@ -841,8 +908,9 @@ last input: s2
 ###
 skip 95.00
 day 81.00 0.50/s
-day_of_year 82.00 (1.00 + 81.00 % 400)
+year 1.20 (1.00 + 0.20)
 Spring 1.00 (1.00 if 0.81 % 4 == 0)
+day_of_year 82.00 (1.00 + 81.00 % 400)
 catnip 34.84/5000 27.40/s 3m1s to cap
 happiness 1.10
 Catnip Field 29.00
@@ -854,8 +922,9 @@ last input: 2
 ###
 skip 103.00
 day 85.50 0.50/s
-day_of_year 86.00 (1.00 + 85.00 % 400)
+year 1.21 (1.00 + 0.21)
 Spring 1.00 (1.00 if 0.85 % 4 == 0)
+day_of_year 86.00 (1.00 + 85.00 % 400)
 catnip 281.48/5000 27.40/s 2m52s to cap
 happiness 1.10
 Catnip Field 29.00
@@ -867,8 +936,9 @@ last input: s2
 ###
 skip 103.00
 day 86.00 0.50/s
-day_of_year 87.00 (1.00 + 86.00 % 400)
+year 1.22 (1.00 + 0.21)
 Spring 1.00 (1.00 if 0.86 % 4 == 0)
+day_of_year 87.00 (1.00 + 86.00 % 400)
 catnip 41.39/5000 28.35/s 2m54s to cap
 happiness 1.10
 Catnip Field 30.00
@@ -880,8 +950,9 @@ last input: 2
 ###
 skip 112.00
 day 91.00 0.50/s
-day_of_year 92.00 (1.00 + 91.00 % 400)
+year 1.23 (1.00 + 0.23)
 Spring 1.00 (1.00 if 0.91 % 4 == 0)
+day_of_year 92.00 (1.00 + 91.00 % 400)
 catnip 324.89/5000 28.35/s 2m44s to cap
 happiness 1.10
 Catnip Field 30.00
@@ -893,8 +964,9 @@ last input: s2
 ###
 skip 112.00
 day 91.50 0.50/s
-day_of_year 92.00 (1.00 + 91.00 % 400)
+year 1.23 (1.00 + 0.23)
 Spring 1.00 (1.00 if 0.91 % 4 == 0)
+day_of_year 92.00 (1.00 + 91.00 % 400)
 catnip 53.64/5000 29.29/s 2m48s to cap
 happiness 1.10
 Catnip Field 31.00
@@ -906,8 +978,9 @@ last input: 2
 ###
 skip 121.00
 day 96.50 0.50/s
-day_of_year 97.00 (1.00 + 96.00 % 400)
+year 1.24 (1.00 + 0.24)
 Spring 1.00 (1.00 if 0.96 % 4 == 0)
+day_of_year 97.00 (1.00 + 96.00 % 400)
 catnip 346.59/5000 29.29/s 2m38s to cap
 happiness 1.10
 Catnip Field 31.00
@@ -919,8 +992,9 @@ last input: s2
 ###
 skip 121.00
 day 97.00 0.50/s
-day_of_year 98.00 (1.00 + 97.00 % 400)
+year 1.24 (1.00 + 0.24)
 Spring 1.00 (1.00 if 0.97 % 4 == 0)
+day_of_year 98.00 (1.00 + 97.00 % 400)
 catnip 40.33/5000 30.24/s 2m44s to cap
 happiness 1.10
 Catnip Field 32.00
@@ -932,8 +1006,9 @@ last input: 2
 ###
 skip 132.00
 day 103.00 0.50/s
-day_of_year 104.00 (1.00 + 103.00 % 400)
+year 1.26 (1.00 + 0.26)
 Summer 1.00 (1.00 if 1.03 % 4 == 1)
+day_of_year 104.00 (1.00 + 103.00 % 400)
 catnip 292.33/5000 20.16/s 3m53s to cap
 happiness 1.10
 Catnip Field 32.00
@@ -945,8 +1020,9 @@ last input: s2
 ###
 skip 132.00
 day 103.50 0.50/s
-day_of_year 104.00 (1.00 + 103.00 % 400)
+year 1.26 (1.00 + 0.26)
 Summer 1.00 (1.00 if 1.03 % 4 == 1)
+day_of_year 104.00 (1.00 + 103.00 % 400)
 catnip 312.49/5000 20.16/s 3m52s to cap
 happiness 1.10
 Catnip Field 32.00
@@ -959,8 +1035,9 @@ error: not enough catnip
 ###
 skip 135.00
 day 105.50 0.50/s
-day_of_year 106.00 (1.00 + 105.00 % 400)
+year 1.26 (1.00 + 0.26)
 Summer 1.00 (1.00 if 1.05 % 4 == 1)
+day_of_year 106.00 (1.00 + 105.00 % 400)
 catnip 393.13/5000 20.16/s 3m48s to cap
 happiness 1.10
 Catnip Field 32.00
@@ -972,8 +1049,9 @@ last input: s2
 ###
 skip 135.00
 day 106.00 0.50/s
-day_of_year 107.00 (1.00 + 106.00 % 400)
+year 1.27 (1.00 + 0.27)
 Summer 1.00 (1.00 if 1.06 % 4 == 1)
+day_of_year 107.00 (1.00 + 106.00 % 400)
 catnip 37.48/5000 20.79/s 3m58s to cap
 happiness 1.10
 Catnip Field 33.00
@@ -985,8 +1063,9 @@ last input: 2
 ###
 skip 153.00
 day 115.50 0.50/s
-day_of_year 116.00 (1.00 + 115.00 % 400)
+year 1.29 (1.00 + 0.29)
 Summer 1.00 (1.00 if 1.15 % 4 == 1)
+day_of_year 116.00 (1.00 + 115.00 % 400)
 catnip 432.49/5000 20.79/s 3m39s to cap
 happiness 1.10
 Catnip Field 33.00
@@ -998,8 +1077,9 @@ last input: s2
 ###
 skip 153.00
 day 116.00 0.50/s
-day_of_year 117.00 (1.00 + 116.00 % 400)
+year 1.29 (1.00 + 0.29)
 Summer 1.00 (1.00 if 1.16 % 4 == 1)
+day_of_year 117.00 (1.00 + 116.00 % 400)
 catnip 32.36/5000 21.42/s 3m51s to cap
 happiness 1.10
 Catnip Field 34.00
@@ -1011,8 +1091,9 @@ last input: 2
 ###
 skip 173.00
 day 126.50 0.50/s
-day_of_year 127.00 (1.00 + 126.00 % 400)
+year 1.31 (1.00 + 0.32)
 Summer 1.00 (1.00 if 1.26 % 4 == 1)
+day_of_year 127.00 (1.00 + 126.00 % 400)
 catnip 482.18/5000 21.42/s 3m30s to cap
 happiness 1.10
 Catnip Field 34.00
@@ -1024,8 +1105,9 @@ last input: s2
 ###
 skip 173.00
 day 127.00 0.50/s
-day_of_year 128.00 (1.00 + 127.00 % 400)
+year 1.32 (1.00 + 0.32)
 Summer 1.00 (1.00 if 1.27 % 4 == 1)
+day_of_year 128.00 (1.00 + 127.00 % 400)
 catnip 32.18/5000 22.05/s 3m45s to cap
 happiness 1.10
 Catnip Field 35.00
@@ -1037,8 +1119,9 @@ last input: 2
 ###
 skip 195.00
 day 138.50 0.50/s
-day_of_year 139.00 (1.00 + 138.00 % 400)
+year 1.34 (1.00 + 0.35)
 Summer 1.00 (1.00 if 1.38 % 4 == 1)
+day_of_year 139.00 (1.00 + 138.00 % 400)
 catnip 539.33/5000 22.05/s 3m22s to cap
 happiness 1.10
 Catnip Field 35.00
@@ -1050,8 +1133,9 @@ last input: s2
 ###
 skip 195.00
 day 139.00 0.50/s
-day_of_year 140.00 (1.00 + 139.00 % 400)
+year 1.35 (1.00 + 0.35)
 Summer 1.00 (1.00 if 1.39 % 4 == 1)
+day_of_year 140.00 (1.00 + 139.00 % 400)
 catnip 33.38/5000 22.68/s 3m38s to cap
 happiness 1.10
 Catnip Field 36.00
@@ -1063,8 +1147,9 @@ last input: 2
 ###
 skip 219.00
 day 151.50 0.50/s
-day_of_year 152.00 (1.00 + 151.00 % 400)
+year 1.38 (1.00 + 0.38)
 Summer 1.00 (1.00 if 1.51 % 4 == 1)
+day_of_year 152.00 (1.00 + 151.00 % 400)
 catnip 600.38/5000 22.68/s 3m13s to cap
 happiness 1.10
 Catnip Field 36.00
@@ -1076,8 +1161,9 @@ last input: s2
 ###
 skip 219.00
 day 152.00 0.50/s
-day_of_year 153.00 (1.00 + 152.00 % 400)
+year 1.38 (1.00 + 0.38)
 Summer 1.00 (1.00 if 1.52 % 4 == 1)
+day_of_year 153.00 (1.00 + 152.00 % 400)
 catnip 31.70/5000 23.31/s 3m33s to cap
 happiness 1.10
 Catnip Field 37.00
@@ -1089,8 +1175,9 @@ last input: 2
 ###
 skip 246.00
 day 166.00 0.50/s
-day_of_year 167.00 (1.00 + 166.00 % 400)
+year 1.42 (1.00 + 0.42)
 Summer 1.00 (1.00 if 1.66 % 4 == 1)
+day_of_year 167.00 (1.00 + 166.00 % 400)
 catnip 684.38/5000 23.31/s 3m5s to cap
 happiness 1.10
 Catnip Field 37.00
@@ -1102,8 +1189,9 @@ last input: s2
 ###
 skip 246.00
 day 166.50 0.50/s
-day_of_year 167.00 (1.00 + 166.00 % 400)
+year 1.42 (1.00 + 0.42)
 Summer 1.00 (1.00 if 1.66 % 4 == 1)
+day_of_year 167.00 (1.00 + 166.00 % 400)
 catnip 45.37/5000 23.94/s 3m26s to cap
 happiness 1.10
 Catnip Field 38.00
@@ -1115,8 +1203,9 @@ last input: 2
 ###
 skip 275.00
 day 181.50 0.50/s
-day_of_year 182.00 (1.00 + 181.00 % 400)
+year 1.45 (1.00 + 0.45)
 Summer 1.00 (1.00 if 1.81 % 4 == 1)
+day_of_year 182.00 (1.00 + 181.00 % 400)
 catnip 763.57/5000 23.94/s 2m56s to cap
 happiness 1.10
 Catnip Field 38.00
@@ -1128,8 +1217,9 @@ last input: s2
 ###
 skip 275.00
 day 182.00 0.50/s
-day_of_year 183.00 (1.00 + 182.00 % 400)
+year 1.46 (1.00 + 0.46)
 Summer 1.00 (1.00 if 1.82 % 4 == 1)
+day_of_year 183.00 (1.00 + 182.00 % 400)
 catnip 45.72/5000 24.57/s 3m21s to cap
 happiness 1.10
 Catnip Field 39.00
@@ -1141,8 +1231,9 @@ last input: 2
 ###
 skip 306.00
 day 198.00 0.50/s
-day_of_year 199.00 (1.00 + 198.00 % 400)
+year 1.50 (1.00 + 0.49)
 Summer 1.00 (1.00 if 1.98 % 4 == 1)
+day_of_year 199.00 (1.00 + 198.00 % 400)
 catnip 831.96/5000 24.57/s 2m49s to cap
 happiness 1.10
 Catnip Field 39.00
@@ -1154,8 +1245,9 @@ last input: s2
 ###
 skip 306.00
 day 198.50 0.50/s
-day_of_year 199.00 (1.00 + 198.00 % 400)
+year 1.50 (1.00 + 0.49)
 Summer 1.00 (1.00 if 1.98 % 4 == 1)
+day_of_year 199.00 (1.00 + 198.00 % 400)
 catnip 25.72/5000 25.20/s 3m17s to cap
 happiness 1.10
 Catnip Field 40.00
@@ -1167,8 +1259,9 @@ last input: 2
 ###
 skip 341.00
 day 216.50 0.50/s
-day_of_year 217.00 (1.00 + 216.00 % 400)
+year 1.54 (1.00 + 0.54)
 Autumn 1.00 (1.00 if 2.16 % 4 == 2)
+day_of_year 217.00 (1.00 + 216.00 % 400)
 catnip 932.92/5000 25.20/s 2m41s to cap
 happiness 1.10
 Catnip Field 40.00
@@ -1180,8 +1273,9 @@ last input: s2
 ###
 skip 341.00
 day 217.00 0.50/s
-day_of_year 218.00 (1.00 + 217.00 % 400)
+year 1.54 (1.00 + 0.54)
 Autumn 1.00 (1.00 if 2.17 % 4 == 2)
+day_of_year 218.00 (1.00 + 217.00 % 400)
 catnip 27.61/5000 25.83/s 3m12s to cap
 happiness 1.10
 Catnip Field 41.00
@@ -1193,8 +1287,9 @@ last input: 2
 ###
 skip 380.00
 day 237.00 0.50/s
-day_of_year 238.00 (1.00 + 237.00 % 400)
+year 1.59 (1.00 + 0.59)
 Autumn 1.00 (1.00 if 2.37 % 4 == 2)
+day_of_year 238.00 (1.00 + 237.00 % 400)
 catnip 1060.81/5000 25.83/s 2m32s to cap
 happiness 1.10
 Catnip Field 41.00
@@ -1206,8 +1301,9 @@ last input: s2
 ###
 skip 380.00
 day 237.50 0.50/s
-day_of_year 238.00 (1.00 + 237.00 % 400)
+year 1.59 (1.00 + 0.59)
 Autumn 1.00 (1.00 if 2.37 % 4 == 2)
+day_of_year 238.00 (1.00 + 237.00 % 400)
 catnip 44.47/5000 26.46/s 3m7s to cap
 happiness 1.10
 Catnip Field 42.00
@@ -1219,8 +1315,9 @@ last input: 2
 ###
 skip 422.00
 day 259.00 0.50/s
-day_of_year 260.00 (1.00 + 259.00 % 400)
+year 1.65 (1.00 + 0.65)
 Autumn 1.00 (1.00 if 2.59 % 4 == 2)
+day_of_year 260.00 (1.00 + 259.00 % 400)
 catnip 1182.25/5000 26.46/s 2m24s to cap
 happiness 1.10
 Catnip Field 42.00
@@ -1232,8 +1329,9 @@ last input: s2
 ###
 skip 422.00
 day 259.50 0.50/s
-day_of_year 260.00 (1.00 + 259.00 % 400)
+year 1.65 (1.00 + 0.65)
 Autumn 1.00 (1.00 if 2.59 % 4 == 2)
+day_of_year 260.00 (1.00 + 259.00 % 400)
 catnip 41.47/5000 27.09/s 3m3s to cap
 happiness 1.10
 Catnip Field 43.00
@@ -1245,8 +1343,9 @@ last input: 2
 ###
 skip 468.00
 day 283.00 0.50/s
-day_of_year 284.00 (1.00 + 283.00 % 400)
+year 1.71 (1.00 + 0.71)
 Autumn 1.00 (1.00 if 2.83 % 4 == 2)
+day_of_year 284.00 (1.00 + 283.00 % 400)
 catnip 1314.70/5000 27.09/s 2m16s to cap
 happiness 1.10
 Catnip Field 43.00
@@ -1258,8 +1357,9 @@ last input: s2
 ###
 skip 468.00
 day 283.50 0.50/s
-day_of_year 284.00 (1.00 + 283.00 % 400)
+year 1.71 (1.00 + 0.71)
 Autumn 1.00 (1.00 if 2.83 % 4 == 2)
+day_of_year 284.00 (1.00 + 283.00 % 400)
 catnip 34.49/5000 27.72/s 2m59s to cap
 happiness 1.10
 Catnip Field 44.00
@@ -1271,8 +1371,9 @@ last input: 2
 ###
 skip 519.00
 day 309.50 0.50/s
-day_of_year 310.00 (1.00 + 309.00 % 400)
+year 1.77 (1.00 + 0.77)
 Winter 1.00 (1.00 if 3.09 % 4 == 3)
+day_of_year 310.00 (1.00 + 309.00 % 400)
 catnip 415.64/5000 6.93/s 11m1s to cap
 happiness 1.10
 Catnip Field 44.00
@@ -1284,8 +1385,9 @@ last input: s2
 ###
 skip 519.00
 day 310.00 0.50/s
-day_of_year 311.00 (1.00 + 310.00 % 400)
+year 1.77 (1.00 + 0.78)
 Winter 1.00 (1.00 if 3.10 % 4 == 3)
+day_of_year 311.00 (1.00 + 310.00 % 400)
 catnip 422.57/5000 6.93/s 11m0s to cap
 happiness 1.10
 Catnip Field 44.00
@@ -1298,8 +1400,9 @@ error: not enough catnip
 ###
 skip 669.00
 day 385.50 0.50/s
-day_of_year 386.00 (1.00 + 385.00 % 400)
+year 1.96 (1.00 + 0.96)
 Winter 1.00 (1.00 if 3.85 % 4 == 3)
+day_of_year 386.00 (1.00 + 385.00 % 400)
 catnip 1469.00/5000 6.93/s 8m29s to cap
 happiness 1.10
 Catnip Field 44.00
@@ -1311,8 +1414,9 @@ last input: s2
 ###
 skip 669.00
 day 386.00 0.50/s
-day_of_year 387.00 (1.00 + 386.00 % 400)
+year 1.96 (1.00 + 0.96)
 Winter 1.00 (1.00 if 3.86 % 4 == 3)
+day_of_year 387.00 (1.00 + 386.00 % 400)
 catnip 11.76/5000 7.09/s 11m43s to cap
 happiness 1.10
 Catnip Field 45.00
@@ -1324,8 +1428,9 @@ last input: 2
 ###
 skip 898.00
 day 501.00 0.50/s
-day_of_year 102.00 (1.00 + 501.00 % 400)
+year 2.25 (1.00 + 1.25)
 Summer 1.00 (1.00 if 5.01 % 4 == 1)
+day_of_year 102.00 (1.00 + 501.00 % 400)
 catnip 5000.00/5000 28.35/s
 happiness 1.10
 Catnip Field 45.00
@@ -1337,8 +1442,9 @@ last input: s2
 ###
 skip 898.00
 day 501.50 0.50/s
-day_of_year 102.00 (1.00 + 501.00 % 400)
+year 2.25 (1.00 + 1.25)
 Summer 1.00 (1.00 if 5.01 % 4 == 1)
+day_of_year 102.00 (1.00 + 501.00 % 400)
 catnip 3360.12/5000 28.98/s 56s to cap
 happiness 1.10
 Catnip Field 46.00
@@ -1350,8 +1456,9 @@ last input: 2
 ###
 skip 898.00
 day 502.00 0.50/s
-day_of_year 103.00 (1.00 + 502.00 % 400)
+year 2.25 (1.00 + 1.26)
 Summer 1.00 (1.00 if 5.02 % 4 == 1)
+day_of_year 103.00 (1.00 + 502.00 % 400)
 catnip 1552.44/5000 29.61/s 1m56s to cap
 happiness 1.10
 Catnip Field 47.00
@@ -1363,8 +1470,9 @@ last input: s2
 ###
 skip 898.00
 day 502.50 0.50/s
-day_of_year 103.00 (1.00 + 502.00 % 400)
+year 2.25 (1.00 + 1.26)
 Summer 1.00 (1.00 if 5.02 % 4 == 1)
+day_of_year 103.00 (1.00 + 502.00 % 400)
 catnip 1582.05/5000 29.61/s 1m55s to cap
 happiness 1.10
 Catnip Field 47.00
@@ -1377,8 +1485,9 @@ error: not enough catnip
 ###
 skip 914.00
 day 511.00 0.50/s
-day_of_year 112.00 (1.00 + 511.00 % 400)
+year 2.28 (1.00 + 1.28)
 Summer 1.00 (1.00 if 5.11 % 4 == 1)
+day_of_year 112.00 (1.00 + 511.00 % 400)
 catnip 2085.42/5000 29.61/s 1m38s to cap
 happiness 1.10
 Catnip Field 47.00
@@ -1390,8 +1499,9 @@ last input: s2
 ###
 skip 914.00
 day 511.50 0.50/s
-day_of_year 112.00 (1.00 + 511.00 % 400)
+year 2.28 (1.00 + 1.28)
 Summer 1.00 (1.00 if 5.11 % 4 == 1)
+day_of_year 112.00 (1.00 + 511.00 % 400)
 catnip 57.97/5000 30.24/s 2m43s to cap
 happiness 1.10
 Catnip Field 48.00
@@ -1403,8 +1513,9 @@ last input: 2
 ###
 skip 988.00
 day 549.00 0.50/s
-day_of_year 150.00 (1.00 + 549.00 % 400)
+year 2.37 (1.00 + 1.37)
 Summer 1.00 (1.00 if 5.49 % 4 == 1)
+day_of_year 150.00 (1.00 + 549.00 % 400)
 catnip 2325.97/5000 30.24/s 1m28s to cap
 happiness 1.10
 Catnip Field 48.00
@@ -1416,8 +1527,9 @@ last input: s2
 ###
 skip 988.00
 day 549.50 0.50/s
-day_of_year 150.00 (1.00 + 549.00 % 400)
+year 2.37 (1.00 + 1.37)
 Summer 1.00 (1.00 if 5.49 % 4 == 1)
+day_of_year 150.00 (1.00 + 549.00 % 400)
 catnip 52.30/5000 30.87/s 2m40s to cap
 happiness 1.10
 Catnip Field 49.00
@@ -1429,8 +1541,9 @@ last input: 2
 ###
 skip 1069.00
 day 590.50 0.50/s
-day_of_year 191.00 (1.00 + 590.00 % 400)
+year 2.48 (1.00 + 1.48)
 Summer 1.00 (1.00 if 5.90 % 4 == 1)
+day_of_year 191.00 (1.00 + 590.00 % 400)
 catnip 2583.64/5000 30.87/s 1m18s to cap
 happiness 1.10
 Catnip Field 49.00
@@ -1442,8 +1555,9 @@ last input: s2
 ###
 skip 1069.00
 day 591.00 0.50/s
-day_of_year 192.00 (1.00 + 591.00 % 400)
+year 2.48 (1.00 + 1.48)
 Summer 1.00 (1.00 if 5.91 % 4 == 1)
+day_of_year 192.00 (1.00 + 591.00 % 400)
 catnip 34.14/5000 31.50/s 2m37s to cap
 happiness 1.10
 Catnip Field 50.00
@@ -1455,8 +1569,9 @@ last input: 2
 ###
 skip 1159.00
 day 636.50 0.50/s
-day_of_year 237.00 (1.00 + 636.00 % 400)
+year 2.59 (1.00 + 1.59)
 Autumn 1.00 (1.00 if 6.36 % 4 == 2)
+day_of_year 237.00 (1.00 + 636.00 % 400)
 catnip 2900.64/5000 31.50/s 1m6s to cap
 happiness 1.10
 Catnip Field 50.00
@@ -1468,8 +1583,9 @@ last input: s2
 ###
 skip 1159.00
 day 637.00 0.50/s
-day_of_year 238.00 (1.00 + 637.00 % 400)
+year 2.59 (1.00 + 1.59)
 Autumn 1.00 (1.00 if 6.37 % 4 == 2)
+day_of_year 238.00 (1.00 + 637.00 % 400)
 catnip 42.12/5000 32.13/s 2m34s to cap
 happiness 1.10
 Catnip Field 51.00
@@ -1481,8 +1597,9 @@ last input: 2
 ###
 skip 1258.00
 day 687.00 0.50/s
-day_of_year 288.00 (1.00 + 687.00 % 400)
+year 2.72 (1.00 + 1.72)
 Autumn 1.00 (1.00 if 6.87 % 4 == 2)
+day_of_year 288.00 (1.00 + 687.00 % 400)
 catnip 3255.12/5000 32.13/s 54s to cap
 happiness 1.10
 Catnip Field 51.00
@@ -1494,8 +1611,9 @@ last input: s2
 ###
 skip 1258.00
 day 687.50 0.50/s
-day_of_year 288.00 (1.00 + 687.00 % 400)
+year 2.72 (1.00 + 1.72)
 Autumn 1.00 (1.00 if 6.87 % 4 == 2)
+day_of_year 288.00 (1.00 + 687.00 % 400)
 catnip 50.42/5000 32.76/s 2m31s to cap
 happiness 1.10
 Catnip Field 52.00
@@ -1507,8 +1625,9 @@ last input: 2
 ###
 skip 1367.00
 day 742.50 0.50/s
-day_of_year 343.00 (1.00 + 742.00 % 400)
+year 2.85 (1.00 + 1.85)
 Winter 1.00 (1.00 if 7.42 % 4 == 3)
+day_of_year 343.00 (1.00 + 742.00 % 400)
 catnip 975.89/5000 8.19/s 8m11s to cap
 happiness 1.10
 Catnip Field 52.00
@@ -1520,8 +1639,9 @@ last input: s2
 ###
 skip 1367.00
 day 743.00 0.50/s
-day_of_year 344.00 (1.00 + 743.00 % 400)
+year 2.86 (1.00 + 1.86)
 Winter 1.00 (1.00 if 7.43 % 4 == 3)
+day_of_year 344.00 (1.00 + 743.00 % 400)
 catnip 984.08/5000 8.19/s 8m10s to cap
 happiness 1.10
 Catnip Field 52.00
@@ -1534,8 +1654,9 @@ error: not enough catnip
 ###
 skip 1689.00
 day 904.50 0.50/s
-day_of_year 105.00 (1.00 + 904.00 % 400)
+year 3.26 (1.00 + 2.26)
 Summer 1.00 (1.00 if 9.04 % 4 == 1)
+day_of_year 105.00 (1.00 + 904.00 % 400)
 catnip 5000.00/5000 32.76/s
 happiness 1.10
 Catnip Field 52.00
@@ -1547,8 +1668,9 @@ last input: s2
 ###
 skip 1689.00
 day 905.00 0.50/s
-day_of_year 106.00 (1.00 + 905.00 % 400)
+year 3.26 (1.00 + 2.26)
 Summer 1.00 (1.00 if 9.05 % 4 == 1)
+day_of_year 106.00 (1.00 + 905.00 % 400)
 catnip 4900.00/5000 32.76/s 3s to cap
 wood 1.00/200
 happiness 1.10
@@ -1563,8 +1685,9 @@ last input: 1
 ###
 skip 1689.00
 day 905.50 0.50/s
-day_of_year 106.00 (1.00 + 905.00 % 400)
+year 3.26 (1.00 + 2.26)
 Summer 1.00 (1.00 if 9.05 % 4 == 1)
+day_of_year 106.00 (1.00 + 905.00 % 400)
 catnip 4832.76/5000 32.76/s 5s to cap
 wood 2.00/200
 happiness 1.10
@@ -1579,8 +1702,9 @@ last input: 1
 ###
 skip 1689.00
 day 906.00 0.50/s
-day_of_year 107.00 (1.00 + 906.00 % 400)
+year 3.27 (1.00 + 2.27)
 Summer 1.00 (1.00 if 9.06 % 4 == 1)
+day_of_year 107.00 (1.00 + 906.00 % 400)
 catnip 4765.52/5000 32.76/s 7s to cap
 wood 3.00/200
 happiness 1.10
@@ -1595,8 +1719,9 @@ last input: 1
 ###
 skip 1689.00
 day 906.50 0.50/s
-day_of_year 107.00 (1.00 + 906.00 % 400)
+year 3.27 (1.00 + 2.27)
 Summer 1.00 (1.00 if 9.06 % 4 == 1)
+day_of_year 107.00 (1.00 + 906.00 % 400)
 catnip 4698.28/5000 32.76/s 9s to cap
 wood 4.00/200
 happiness 1.10
@@ -1611,8 +1736,9 @@ last input: 1
 ###
 skip 1689.00
 day 907.00 0.50/s
-day_of_year 108.00 (1.00 + 907.00 % 400)
+year 3.27 (1.00 + 2.27)
 Summer 1.00 (1.00 if 9.07 % 4 == 1)
+day_of_year 108.00 (1.00 + 907.00 % 400)
 catnip 4631.04/5000 32.76/s 11s to cap
 wood 5.00/200
 happiness 1.10
@@ -1627,8 +1753,9 @@ last input: 1
 ###
 skip 1689.00
 day 907.50 0.50/s
-day_of_year 108.00 (1.00 + 907.00 % 400)
+year 3.27 (1.00 + 2.27)
 Summer 1.00 (1.00 if 9.07 % 4 == 1)
+day_of_year 108.00 (1.00 + 907.00 % 400)
 catnip 4663.80/5000 32.76/s 10s to cap
 happiness 1.10
 Catnip Field 52.00
@@ -1642,8 +1769,9 @@ last input: 3
 ###
 skip 1708.00
 day 917.50 0.50/s
-day_of_year 118.00 (1.00 + 917.00 % 400)
+year 3.29 (1.00 + 2.29)
 Summer 1.00 (1.00 if 9.17 % 4 == 1)
+day_of_year 118.00 (1.00 + 917.00 % 400)
 catnip 5000.00/5000 28.51/s
 kitten 1.00/2 0.05/s 20s to cap
 happiness 1.08 (1.10 + -0.02)
@@ -1658,8 +1786,9 @@ last input: s5
 ###
 skip 1708.00
 day 918.00 0.50/s
-day_of_year 119.00 (1.00 + 918.00 % 400)
+year 3.29 (1.00 + 2.29)
 Summer 1.00 (1.00 if 9.18 % 4 == 1)
+day_of_year 119.00 (1.00 + 918.00 % 400)
 catnip 5000.00/5000 28.51/s
 kitten 0.05/1 0.05/s 18s to cap
 woodcutter 1.00
@@ -1675,8 +1804,9 @@ last input: 5
 ###
 skip 1726.00
 day 927.50 0.50/s
-day_of_year 128.00 (1.00 + 927.00 % 400)
+year 3.32 (1.00 + 2.32)
 Summer 1.00 (1.00 if 9.27 % 4 == 1)
+day_of_year 128.00 (1.00 + 927.00 % 400)
 catnip 5000.00/5000 24.26/s
 wood 1.85/200 0.10/s 34m37s to cap
 kitten 1.00/1 0.05/s
@@ -1695,8 +1825,9 @@ last input: s5
 ###
 skip 1726.00
 day 928.00 0.50/s
-day_of_year 129.00 (1.00 + 928.00 % 400)
+year 3.32 (1.00 + 2.32)
 Summer 1.00 (1.00 if 9.28 % 4 == 1)
+day_of_year 129.00 (1.00 + 928.00 % 400)
 catnip 5000.00/5000 24.26/s
 wood 1.94/200 0.19/s 17m18s to cap
 woodcutter 2.00
@@ -1714,8 +1845,9 @@ last input: 5
 ###
 skip 1781.00
 day 956.00 0.50/s
-day_of_year 157.00 (1.00 + 956.00 % 400)
+year 3.39 (1.00 + 2.39)
 Summer 1.00 (1.00 if 9.56 % 4 == 1)
+day_of_year 157.00 (1.00 + 956.00 % 400)
 catnip 5000.00/5000 24.26/s
 wood 12.63/200 0.19/s 16m22s to cap
 woodcutter 2.00
@@ -1733,8 +1865,9 @@ last input: s3
 ###
 skip 1781.00
 day 956.50 0.50/s
-day_of_year 157.00 (1.00 + 956.00 % 400)
+year 3.39 (1.00 + 2.39)
 Summer 1.00 (1.00 if 9.56 % 4 == 1)
+day_of_year 157.00 (1.00 + 956.00 % 400)
 catnip 5000.00/5000 24.26/s
 wood 0.32/200 0.19/s 17m26s to cap
 woodcutter 2.00
@@ -1752,8 +1885,9 @@ last input: 3
 ###
 skip 1800.00
 day 966.50 0.50/s
-day_of_year 167.00 (1.00 + 966.00 % 400)
+year 3.42 (1.00 + 2.42)
 Summer 1.00 (1.00 if 9.66 % 4 == 1)
+day_of_year 167.00 (1.00 + 966.00 % 400)
 catnip 5000.00/5000 20.01/s
 wood 4.13/200 0.19/s 17m26s to cap
 kitten 1.00/2 0.05/s 20s to cap
@@ -1772,8 +1906,9 @@ last input: s5
 ###
 skip 1800.00
 day 967.00 0.50/s
-day_of_year 168.00 (1.00 + 967.00 % 400)
+year 3.42 (1.00 + 2.42)
 Summer 1.00 (1.00 if 9.67 % 4 == 1)
+day_of_year 168.00 (1.00 + 967.00 % 400)
 catnip 5000.00/5000 20.01/s
 wood 4.32/200 0.28/s 11m36s to cap
 kitten 0.05/1 0.05/s 18s to cap
@@ -1792,8 +1927,9 @@ last input: 5
 ###
 skip 1818.00
 day 976.50 0.50/s
-day_of_year 177.00 (1.00 + 976.00 % 400)
+year 3.44 (1.00 + 2.44)
 Summer 1.00 (1.00 if 9.76 % 4 == 1)
+day_of_year 177.00 (1.00 + 976.00 % 400)
 catnip 5000.00/5000 15.76/s
 wood 9.66/200 0.28/s 11m31s to cap
 kitten 1.00/1 0.05/s
@@ -1812,8 +1948,9 @@ last input: s5
 ###
 skip 1818.00
 day 977.00 0.50/s
-day_of_year 178.00 (1.00 + 977.00 % 400)
+year 3.44 (1.00 + 2.44)
 Summer 1.00 (1.00 if 9.77 % 4 == 1)
+day_of_year 178.00 (1.00 + 977.00 % 400)
 catnip 5000.00/5000 15.76/s
 wood 9.93/200 0.37/s 8m37s to cap
 woodcutter 4.00
@@ -1831,8 +1968,9 @@ last input: 5
 ###
 skip 1876.00
 day 1006.50 0.50/s
-day_of_year 207.00 (1.00 + 1006.00 % 400)
+year 3.52 (1.00 + 2.52)
 Autumn 1.00 (1.00 if 10.06 % 4 == 2)
+day_of_year 207.00 (1.00 + 1006.00 % 400)
 catnip 5000.00/5000 15.76/s
 wood 31.60/200 0.37/s 7m38s to cap
 woodcutter 4.00
@@ -1850,8 +1988,9 @@ last input: s3
 ###
 skip 1876.00
 day 1007.00 0.50/s
-day_of_year 208.00 (1.00 + 1007.00 % 400)
+year 3.52 (1.00 + 2.52)
 Autumn 1.00 (1.00 if 10.07 % 4 == 2)
+day_of_year 208.00 (1.00 + 1007.00 % 400)
 catnip 5000.00/5000 15.76/s
 wood 0.71/200 0.37/s 9m2s to cap
 woodcutter 4.00
@@ -1869,8 +2008,9 @@ last input: 3
 ###
 skip 1895.00
 day 1017.00 0.50/s
-day_of_year 218.00 (1.00 + 1017.00 % 400)
+year 3.54 (1.00 + 2.54)
 Autumn 1.00 (1.00 if 10.17 % 4 == 2)
+day_of_year 218.00 (1.00 + 1017.00 % 400)
 catnip 5000.00/5000 11.51/s
 wood 8.06/200 0.36/s 8m53s to cap
 kitten 1.00/2 0.05/s 20s to cap
@@ -1889,8 +2029,9 @@ last input: s5
 ###
 skip 1895.00
 day 1017.50 0.50/s
-day_of_year 218.00 (1.00 + 1017.00 % 400)
+year 3.54 (1.00 + 2.54)
 Autumn 1.00 (1.00 if 10.17 % 4 == 2)
+day_of_year 218.00 (1.00 + 1017.00 % 400)
 catnip 5000.00/5000 11.51/s
 wood 8.42/200 0.45/s 7m5s to cap
 kitten 0.05/1 0.05/s 18s to cap
@@ -1909,8 +2050,9 @@ last input: 5
 ###
 skip 1913.00
 day 1027.00 0.50/s
-day_of_year 228.00 (1.00 + 1027.00 % 400)
+year 3.57 (1.00 + 2.57)
 Autumn 1.00 (1.00 if 10.27 % 4 == 2)
+day_of_year 228.00 (1.00 + 1027.00 % 400)
 catnip 5000.00/5000 7.26/s
 wood 16.97/200 0.44/s 6m55s to cap
 kitten 1.00/1 0.05/s
@@ -1929,8 +2071,9 @@ last input: s5
 ###
 skip 1913.00
 day 1027.50 0.50/s
-day_of_year 228.00 (1.00 + 1027.00 % 400)
+year 3.57 (1.00 + 2.57)
 Autumn 1.00 (1.00 if 10.27 % 4 == 2)
+day_of_year 228.00 (1.00 + 1027.00 % 400)
 catnip 5000.00/5000 7.26/s
 wood 17.41/200 0.53/s 5m45s to cap
 woodcutter 6.00
@@ -1948,8 +2091,9 @@ last input: 5
 ###
 skip 2027.00
 day 1085.00 0.50/s
-day_of_year 286.00 (1.00 + 1085.00 % 400)
+year 3.71 (1.00 + 2.71)
 Autumn 1.00 (1.00 if 10.85 % 4 == 2)
+day_of_year 286.00 (1.00 + 1085.00 % 400)
 catnip 5000.00/5000 7.26/s
 wood 78.27/200 0.53/s 3m50s to cap
 woodcutter 6.00
@@ -1967,8 +2111,9 @@ last input: s3
 ###
 skip 2027.00
 day 1085.50 0.50/s
-day_of_year 286.00 (1.00 + 1085.00 % 400)
+year 3.71 (1.00 + 2.71)
 Autumn 1.00 (1.00 if 10.85 % 4 == 2)
+day_of_year 286.00 (1.00 + 1085.00 % 400)
 catnip 5000.00/5000 7.26/s
 wood 0.67/200 0.53/s 6m16s to cap
 woodcutter 6.00
@@ -1986,8 +2131,9 @@ last input: 3
 ###
 skip 2046.00
 day 1095.50 0.50/s
-day_of_year 296.00 (1.00 + 1095.00 % 400)
+year 3.74 (1.00 + 2.74)
 Autumn 1.00 (1.00 if 10.95 % 4 == 2)
+day_of_year 296.00 (1.00 + 1095.00 % 400)
 catnip 5000.00/5000 3.01/s
 wood 11.25/200 0.52/s 6m4s to cap
 kitten 1.00/2 0.05/s 20s to cap
@@ -2006,8 +2152,9 @@ last input: s5
 ###
 skip 2046.00
 day 1096.00 0.50/s
-day_of_year 297.00 (1.00 + 1096.00 % 400)
+year 3.74 (1.00 + 2.74)
 Autumn 1.00 (1.00 if 10.96 % 4 == 2)
+day_of_year 297.00 (1.00 + 1096.00 % 400)
 catnip 5000.00/5000 3.01/s
 wood 11.77/200 0.60/s 5m11s to cap
 kitten 0.05/1 0.05/s 18s to cap
@@ -2026,8 +2173,9 @@ last input: 5
 ###
 skip 2064.00
 day 1105.50 0.50/s
-day_of_year 306.00 (1.00 + 1105.00 % 400)
+year 3.76 (1.00 + 2.76)
 Winter 1.00 (1.00 if 11.05 % 4 == 3)
+day_of_year 306.00 (1.00 + 1105.00 % 400)
 catnip 4611.92/5000 -25.81/s 2m58s to empty
 wood 23.26/200 0.59/s 4m58s to cap
 kitten 1.00/1 0.05/s
@@ -2046,8 +2194,9 @@ last input: s5
 ###
 skip 2064.00
 day 1106.00 0.50/s
-day_of_year 307.00 (1.00 + 1106.00 % 400)
+year 3.77 (1.00 + 2.77)
 Winter 1.00 (1.00 if 11.06 % 4 == 3)
+day_of_year 307.00 (1.00 + 1106.00 % 400)
 catnip 4586.11/5000 -25.81/s 2m57s to empty
 wood 23.86/200 0.68/s 4m20s to cap
 woodcutter 8.00
@@ -2065,8 +2214,9 @@ last input: 5
 ###
 skip 2317.00
 day 1233.00 0.50/s
-day_of_year 34.00 (1.00 + 1233.00 % 400)
+year 4.08 (1.00 + 3.08)
 Spring 1.00 (1.00 if 12.33 % 4 == 0)
+day_of_year 34.00 (1.00 + 1233.00 % 400)
 catnip 5000.00/5000 15.14/s
 wood 195.76/200 0.68/s 6s to cap
 woodcutter 8.00
@@ -2084,8 +2234,9 @@ last input: s3
 ###
 skip 2317.00
 day 1233.50 0.50/s
-day_of_year 34.00 (1.00 + 1233.00 % 400)
+year 4.08 (1.00 + 3.08)
 Spring 1.00 (1.00 if 12.33 % 4 == 0)
+day_of_year 34.00 (1.00 + 1233.00 % 400)
 catnip 5000.00/5000 15.14/s
 wood 1.13/200 0.68/s 4m53s to cap
 woodcutter 8.00
@@ -2103,8 +2254,9 @@ last input: 3
 ###
 skip 3036.00
 day 1593.50 0.50/s
-day_of_year 394.00 (1.00 + 1593.00 % 400)
+year 4.98 (1.00 + 3.98)
 Winter 1.00 (1.00 if 15.93 % 4 == 3)
+day_of_year 394.00 (1.00 + 1593.00 % 400)
 wood 200.00/200 0.57/s
 kitten 3.00/3 0.05/s
 gone kitten 1.00
@@ -2121,8 +2273,9 @@ last input: s3
 ###
 skip 3036.00
 day 1594.00 0.50/s
-day_of_year 395.00 (1.00 + 1594.00 % 400)
+year 4.98 (1.00 + 3.98)
 Winter 1.00 (1.00 if 15.94 % 4 == 3)
+day_of_year 395.00 (1.00 + 1594.00 % 400)
 wood 175.00/200 0.58/s 43s to cap
 kitten 2.05/3 0.05/s 19s to cap
 gone kitten 2.00
@@ -2142,8 +2295,9 @@ last input: 4
 ###
 skip 3036.00
 day 1594.50 0.50/s
-day_of_year 395.00 (1.00 + 1594.00 % 400)
+year 4.98 (1.00 + 3.98)
 Winter 1.00 (1.00 if 15.94 % 4 == 3)
+day_of_year 395.00 (1.00 + 1594.00 % 400)
 wood 146.83/200 0.59/s 1m29s to cap
 kitten 1.10/3 0.05/s 38s to cap
 gone kitten 3.00
@@ -2163,8 +2317,9 @@ last input: s4
 ###
 skip 3036.00
 day 1595.00 0.50/s
-day_of_year 396.00 (1.00 + 1595.00 % 400)
+year 4.99 (1.00 + 3.99)
 Winter 1.00 (1.00 if 15.95 % 4 == 3)
+day_of_year 396.00 (1.00 + 1595.00 % 400)
 wood 147.42/200 0.60/s 1m26s to cap
 kitten 0.15/3 0.05/s 57s to cap
 gone kitten 4.00
@@ -2185,8 +2340,9 @@ error: not enough kitten
 ###
 skip 3036.00
 day 1595.50 0.50/s
-day_of_year 396.00 (1.00 + 1595.00 % 400)
+year 4.99 (1.00 + 3.99)
 Winter 1.00 (1.00 if 15.95 % 4 == 3)
+day_of_year 396.00 (1.00 + 1595.00 % 400)
 wood 147.94/200 0.53/s 1m38s to cap
 kitten 0.20/4 0.05/s 1m16s to cap
 gone kitten 5.00
@@ -2207,8 +2363,9 @@ error: not enough kitten
 ###
 skip 3036.00
 day 1596.00 0.50/s
-day_of_year 397.00 (1.00 + 1596.00 % 400)
+year 4.99 (1.00 + 3.99)
 Winter 1.00 (1.00 if 15.96 % 4 == 3)
+day_of_year 397.00 (1.00 + 1596.00 % 400)
 wood 115.32/200 0.45/s 3m8s to cap
 kitten 0.25/5 0.05/s 1m35s to cap
 gone kitten 6.00
@@ -2228,8 +2385,9 @@ last input: 4
 ###
 skip 3036.00
 day 1596.50 0.50/s
-day_of_year 397.00 (1.00 + 1596.00 % 400)
+year 4.99 (1.00 + 3.99)
 Winter 1.00 (1.00 if 15.96 % 4 == 3)
+day_of_year 397.00 (1.00 + 1596.00 % 400)
 wood 77.66/200 0.37/s 5m33s to cap
 kitten 0.30/6 0.05/s 1m54s to cap
 gone kitten 7.00
@@ -2249,8 +2407,9 @@ last input: s4
 ###
 skip 3036.00
 day 1597.00 0.50/s
-day_of_year 398.00 (1.00 + 1597.00 % 400)
+year 4.99 (1.00 + 3.99)
 Winter 1.00 (1.00 if 15.97 % 4 == 3)
+day_of_year 398.00 (1.00 + 1597.00 % 400)
 wood 34.21/200 0.28/s 9m50s to cap
 kitten 0.35/7 0.05/s 2m13s to cap
 gone kitten 8.00
@@ -2270,8 +2429,9 @@ last input: 4
 ###
 skip 3120.00
 day 1639.50 0.50/s
-day_of_year 40.00 (1.00 + 1639.00 % 400)
+year 5.10 (1.00 + 4.10)
 Spring 1.00 (1.00 if 16.39 % 4 == 0)
+day_of_year 40.00 (1.00 + 1639.00 % 400)
 catnip 3413.76/5000 23.64/s 1m7s to cap
 wood 50.42/200 0.18/s 14m7s to cap
 kitten 4.60/8 0.05/s 1m8s to cap
@@ -2294,8 +2454,9 @@ last input: s4
 ###
 skip 3120.00
 day 1640.00 0.50/s
-day_of_year 41.00 (1.00 + 1640.00 % 400)
+year 5.10 (1.00 + 4.10)
 Spring 1.00 (1.00 if 16.40 % 4 == 0)
+day_of_year 41.00 (1.00 + 1640.00 % 400)
 catnip 3437.40/5000 23.64/s 1m6s to cap
 wood 0.31/200 0.18/s 18m52s to cap
 kitten 4.65/8 0.05/s 1m7s to cap
@@ -2318,8 +2479,9 @@ last input: 4
 ###
 skip 3446.00
 day 1803.50 0.50/s
-day_of_year 204.00 (1.00 + 1803.00 % 400)
+year 5.51 (1.00 + 4.51)
 Autumn 1.00 (1.00 if 18.03 % 4 == 2)
+day_of_year 204.00 (1.00 + 1803.00 % 400)
 catnip 5000.00/5000 -9.74/s 8m33s to empty
 wood 58.00/200 0.16/s 14m36s to cap
 kitten 8.00/8 0.05/s
@@ -2342,8 +2504,9 @@ last input: s4
 ###
 skip 3446.00
 day 1804.00 0.50/s
-day_of_year 205.00 (1.00 + 1804.00 % 400)
+year 5.51 (1.00 + 4.51)
 Autumn 1.00 (1.00 if 18.04 % 4 == 2)
+day_of_year 205.00 (1.00 + 1804.00 % 400)
 catnip 4990.26/5000 -9.74/s 8m32s to empty
 wood 0.33/200 0.16/s 20m32s to cap
 kitten 8.00/8 0.05/s
@@ -2366,8 +2529,9 @@ last input: 4
 ###
 skip 3854.00
 day 2008.50 0.50/s
-day_of_year 9.00 (1.00 + 2008.00 % 400)
+year 6.02 (1.00 + 5.02)
 Spring 1.00 (1.00 if 20.08 % 4 == 0)
+day_of_year 9.00 (1.00 + 2008.00 % 400)
 catnip 5000.00/5000 6.64/s
 wood 66.59/200 0.16/s 13m43s to cap
 kitten 8.00/8 0.05/s
@@ -2390,8 +2554,9 @@ last input: s4
 ###
 skip 3854.00
 day 2009.00 0.50/s
-day_of_year 10.00 (1.00 + 2009.00 % 400)
+year 6.02 (1.00 + 5.02)
 Spring 1.00 (1.00 if 20.09 % 4 == 0)
+day_of_year 10.00 (1.00 + 2009.00 % 400)
 catnip 5000.00/5000 6.64/s
 wood 0.25/200 0.16/s 20m33s to cap
 kitten 8.00/8 0.05/s
@@ -2414,8 +2579,9 @@ last input: 4
 ###
 skip 4324.00
 day 2244.50 0.50/s
-day_of_year 245.00 (1.00 + 2244.00 % 400)
+year 6.61 (1.00 + 5.61)
 Autumn 1.00 (1.00 if 22.44 % 4 == 2)
+day_of_year 245.00 (1.00 + 2244.00 % 400)
 catnip 422.20/5000 -9.74/s 43s to empty
 wood 76.55/200 0.16/s 12m42s to cap
 kitten 8.00/8 0.05/s
@@ -2438,8 +2604,9 @@ last input: s4
 ###
 skip 4324.00
 day 2245.00 0.50/s
-day_of_year 246.00 (1.00 + 2245.00 % 400)
+year 6.61 (1.00 + 5.61)
 Autumn 1.00 (1.00 if 22.45 % 4 == 2)
+day_of_year 246.00 (1.00 + 2245.00 % 400)
 catnip 412.46/5000 -9.74/s 42s to empty
 wood 0.24/200 0.16/s 20m33s to cap
 kitten 8.00/8 0.05/s
@@ -2462,8 +2629,9 @@ last input: 4
 ###
 skip 4865.00
 day 2516.00 0.50/s
-day_of_year 117.00 (1.00 + 2516.00 % 400)
+year 7.29 (1.00 + 6.29)
 Summer 1.00 (1.00 if 25.16 % 4 == 1)
+day_of_year 117.00 (1.00 + 2516.00 % 400)
 wood 88.04/200 0.16/s 11m31s to cap
 kitten 8.00/8 0.05/s
 gone kitten 10.00
@@ -2483,8 +2651,9 @@ last input: s4
 ###
 skip 4865.00
 day 2516.50 0.50/s
-day_of_year 117.00 (1.00 + 2516.00 % 400)
+year 7.29 (1.00 + 6.29)
 Summer 1.00 (1.00 if 25.16 % 4 == 1)
+day_of_year 117.00 (1.00 + 2516.00 % 400)
 wood 0.26/200 0.17/s 20m6s to cap
 kitten 7.05/8 0.05/s 19s to cap
 gone kitten 11.00
@@ -2504,8 +2673,9 @@ last input: 4
 ###
 skip 5461.00
 day 2815.00 0.50/s
-day_of_year 16.00 (1.00 + 2815.00 % 400)
+year 8.04 (1.00 + 7.04)
 Spring 1.00 (1.00 if 28.15 % 4 == 0)
+day_of_year 16.00 (1.00 + 2815.00 % 400)
 catnip 5000.00/5000 6.64/s
 wood 101.27/200 0.16/s 10m9s to cap
 kitten 8.00/8 0.05/s
@@ -2528,8 +2698,9 @@ last input: s4
 ###
 skip 5461.00
 day 2815.50 0.50/s
-day_of_year 16.00 (1.00 + 2815.00 % 400)
+year 8.04 (1.00 + 7.04)
 Spring 1.00 (1.00 if 28.15 % 4 == 0)
+day_of_year 16.00 (1.00 + 2815.00 % 400)
 catnip 5000.00/5000 6.64/s
 wood 0.29/200 0.16/s 20m32s to cap
 kitten 8.00/8 0.05/s
@@ -2552,8 +2723,9 @@ last input: 4
 ###
 skip 6177.00
 day 3174.00 0.50/s
-day_of_year 375.00 (1.00 + 3174.00 % 400)
+year 8.94 (1.00 + 7.94)
 Winter 1.00 (1.00 if 31.74 % 4 == 3)
+day_of_year 375.00 (1.00 + 3174.00 % 400)
 wood 116.45/200 0.16/s 8m35s to cap
 kitten 8.00/8 0.05/s
 gone kitten 13.00
@@ -2573,8 +2745,9 @@ last input: s4
 ###
 skip 6177.00
 day 3174.50 0.50/s
-day_of_year 375.00 (1.00 + 3174.00 % 400)
+year 8.94 (1.00 + 7.94)
 Winter 1.00 (1.00 if 31.74 % 4 == 3)
+day_of_year 375.00 (1.00 + 3174.00 % 400)
 wood 0.30/200 0.17/s 20m5s to cap
 kitten 7.05/8 0.05/s 19s to cap
 gone kitten 14.00
@@ -2594,8 +2767,9 @@ last input: 4
 ###
 skip 6965.00
 day 3569.00 0.50/s
-day_of_year 370.00 (1.00 + 3569.00 % 400)
+year 9.92 (1.00 + 8.92)
 Winter 1.00 (1.00 if 35.69 % 4 == 3)
+day_of_year 370.00 (1.00 + 3569.00 % 400)
 wood 133.79/200 0.16/s 6m48s to cap
 kitten 8.00/8 0.05/s
 gone kitten 16.00
@@ -2615,8 +2789,9 @@ last input: s4
 ###
 skip 6965.00
 day 3569.50 0.50/s
-day_of_year 370.00 (1.00 + 3569.00 % 400)
+year 9.92 (1.00 + 8.92)
 Winter 1.00 (1.00 if 35.69 % 4 == 3)
+day_of_year 370.00 (1.00 + 3569.00 % 400)
 wood 0.20/200 0.17/s 20m6s to cap
 kitten 7.05/8 0.05/s 19s to cap
 gone kitten 17.00
@@ -2636,8 +2811,9 @@ last input: 4
 ###
 skip 7872.00
 day 4023.50 0.50/s
-day_of_year 24.00 (1.00 + 4023.00 % 400)
+year 11.06 (1.00 + 10.06)
 Spring 1.00 (1.00 if 40.23 % 4 == 0)
+day_of_year 24.00 (1.00 + 4023.00 % 400)
 catnip 5000.00/5000 6.64/s
 wood 153.83/200 0.16/s 4m45s to cap
 kitten 8.00/8 0.05/s
@@ -2660,8 +2836,9 @@ last input: s4
 ###
 skip 7872.00
 day 4024.00 0.50/s
-day_of_year 25.00 (1.00 + 4024.00 % 400)
+year 11.06 (1.00 + 10.06)
 Spring 1.00 (1.00 if 40.24 % 4 == 0)
+day_of_year 25.00 (1.00 + 4024.00 % 400)
 catnip 5000.00/5000 6.64/s
 wood 0.17/200 0.16/s 20m33s to cap
 kitten 8.00/8 0.05/s
@@ -2684,8 +2861,9 @@ last input: 4
 ###
 skip 8962.00
 day 4569.50 0.50/s
-day_of_year 170.00 (1.00 + 4569.00 % 400)
+year 12.42 (1.00 + 11.42)
 Summer 1.00 (1.00 if 45.69 % 4 == 1)
+day_of_year 170.00 (1.00 + 4569.00 % 400)
 wood 176.91/200 0.16/s 2m22s to cap
 kitten 8.00/8 0.05/s
 gone kitten 19.00
@@ -2705,8 +2883,9 @@ last input: s4
 ###
 skip 8962.00
 day 4570.00 0.50/s
-day_of_year 171.00 (1.00 + 4570.00 % 400)
+year 12.43 (1.00 + 11.43)
 Summer 1.00 (1.00 if 45.70 % 4 == 1)
+day_of_year 171.00 (1.00 + 4570.00 % 400)
 wood 0.18/200 0.17/s 20m6s to cap
 kitten 7.05/8 0.05/s 19s to cap
 gone kitten 20.00
@@ -2726,8 +2905,9 @@ last input: 4
 ###
 skip 10163.00
 day 5171.00 0.50/s
-day_of_year 372.00 (1.00 + 5171.00 % 400)
+year 13.93 (1.00 + 12.93)
 Winter 1.00 (1.00 if 51.71 % 4 == 3)
+day_of_year 372.00 (1.00 + 5171.00 % 400)
 wood 200.00/200 0.16/s
 kitten 8.00/8 0.05/s
 gone kitten 22.00
@@ -2747,8 +2927,9 @@ last input: s4
 ###
 skip 10163.00
 day 5171.50 0.50/s
-day_of_year 372.00 (1.00 + 5171.00 % 400)
+year 13.93 (1.00 + 12.93)
 Winter 1.00 (1.00 if 51.71 % 4 == 3)
+day_of_year 372.00 (1.00 + 5171.00 % 400)
 wood 200.00/200 0.17/s
 kitten 7.05/8 0.05/s 19s to cap
 gone kitten 23.00
@@ -2769,8 +2950,9 @@ error: not enough wood
 ###
 skip 10163.00
 day 5172.00 0.50/s
-day_of_year 373.00 (1.00 + 5172.00 % 400)
+year 13.93 (1.00 + 12.93)
 Winter 1.00 (1.00 if 51.72 % 4 == 3)
+day_of_year 373.00 (1.00 + 5172.00 % 400)
 wood 200.00/200 0.17/s
 kitten 6.10/8 0.05/s 38s to cap
 gone kitten 24.00
@@ -2791,8 +2973,9 @@ error: not enough wood
 ###
 skip 10163.00
 day 5172.50 0.50/s
-day_of_year 373.00 (1.00 + 5172.00 % 400)
+year 13.93 (1.00 + 12.93)
 Winter 1.00 (1.00 if 51.72 % 4 == 3)
+day_of_year 373.00 (1.00 + 5172.00 % 400)
 wood 200.00/200 0.17/s
 kitten 5.15/8 0.05/s 57s to cap
 gone kitten 25.00
@@ -2813,8 +2996,9 @@ error: not enough science
 ###
 skip 10163.00
 day 5173.00 0.50/s
-day_of_year 374.00 (1.00 + 5173.00 % 400)
+year 13.93 (1.00 + 12.93)
 Winter 1.00 (1.00 if 51.73 % 4 == 3)
+day_of_year 374.00 (1.00 + 5173.00 % 400)
 wood 200.00/200 0.18/s
 kitten 4.20/8 0.05/s 1m16s to cap
 gone kitten 26.00

@@ -15,11 +15,9 @@ func NewGame(now game.Now) *game.Game {
 			Name: "", ProductionFactor: 0.5,
 		}},
 	}, {
-		Name: "day_of_year", Quantity: 1,
-		StartQuantity: 1, ProductionModulus: 400, ProductionModulusEquals: -1,
-		Capacity: -1,
+		Name: "year", Quantity: 1, StartQuantity: 1, Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "day", ProductionFactor: 1, ProductionFloor: true,
+			Name: "day", ProductionFactor: 0.0025, ProductionFloor: true,
 		}},
 	}, {
 		Name: "Spring", Quantity: 1,
@@ -41,6 +39,13 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Winter", StartQuantity: 1, ProductionModulus: 4, ProductionModulusEquals: 3, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "day", ProductionFactor: 0.01, ProductionFloor: true,
+		}},
+	}, {
+		Name: "day_of_year", Quantity: 1,
+		StartQuantity: 1, ProductionModulus: 400, ProductionModulusEquals: -1,
+		Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "day", ProductionFactor: 1, ProductionFloor: true,
 		}},
 	}, {
 		Name: "catnip", Capacity: 5000,

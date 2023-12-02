@@ -1,6 +1,7 @@
 ###
-day_of_year 1.00
+year 1.00
 Spring 1.00
+day_of_year 1.00
 catnip 1000.00/5000 -12.75/s 1m18s to empty
 kitten 3.00/3 0.05/s
 0: Gather catnip +(catnip 1)
@@ -9,8 +10,9 @@ kitten 3.00/3 0.05/s
 sX: time skip until action X is available
 last input: 
 ###
-day_of_year 1.00
+year 1.00
 Spring 1.00
+day_of_year 1.00
 catnip 1000.00/5000 -12.75/s 1m18s to empty
 kitten 3.00/3 0.05/s
 happiness 1.04 (1.10 + -0.06)
@@ -22,8 +24,9 @@ last input: 5
 error: action woodcutter is locked
 ###
 day 0.50 0.50/s
-day_of_year 1.00
+year 1.00
 Spring 1.00
+day_of_year 1.00
 catnip 987.25/5000 -12.75/s 1m17s to empty
 kitten 3.00/3 0.05/s
 happiness 1.04 (1.10 + -0.06)
@@ -35,8 +38,9 @@ last input:
 error: strconv.Atoi: parsing "": invalid syntax
 ###
 day 5.50 0.50/s
-day_of_year 6.00 (1.00 + 5.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
+day_of_year 6.00 (1.00 + 5.00 % 400)
 catnip 859.75/5000 -12.75/s 1m7s to empty
 kitten 3.00/3 0.05/s
 happiness 1.04 (1.10 + -0.06)
@@ -48,8 +52,9 @@ last input:
 error: strconv.Atoi: parsing "": invalid syntax
 ###
 day 5.50 0.50/s
-day_of_year 6.00 (1.00 + 5.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
+day_of_year 6.00 (1.00 + 5.00 % 400)
 catnip 859.75/5000 -12.75/s 1m7s to empty
 kitten 3.00/3 0.05/s
 happiness 1.04 (1.10 + -0.06)
@@ -61,8 +66,9 @@ last input: 6
 error: action scholar is locked
 ###
 day 6.00 0.50/s
-day_of_year 7.00 (1.00 + 6.00 % 400)
+year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.06 % 4 == 0)
+day_of_year 7.00 (1.00 + 6.00 % 400)
 catnip 847.00/5000 -12.75/s 1m6s to empty
 kitten 3.00/3 0.05/s
 happiness 1.04 (1.10 + -0.06)
@@ -74,8 +80,9 @@ last input:
 error: strconv.Atoi: parsing "": invalid syntax
 ###
 day 11.00 0.50/s
-day_of_year 12.00 (1.00 + 11.00 % 400)
+year 1.03 (1.00 + 0.03)
 Spring 1.00 (1.00 if 0.11 % 4 == 0)
+day_of_year 12.00 (1.00 + 11.00 % 400)
 catnip 719.50/5000 -12.75/s 56s to empty
 kitten 3.00/3 0.05/s
 happiness 1.04 (1.10 + -0.06)
@@ -87,8 +94,9 @@ last input:
 error: strconv.Atoi: parsing "": invalid syntax
 ###
 day 511.00 0.50/s
-day_of_year 112.00 (1.00 + 511.00 % 400)
+year 2.28 (1.00 + 1.28)
 Summer 1.00 (1.00 if 5.11 % 4 == 1)
+day_of_year 112.00 (1.00 + 511.00 % 400)
 kitten 3.00/3 0.05/s
 gone kitten 1.00
 happiness 1.04 (1.10 + -0.06)
