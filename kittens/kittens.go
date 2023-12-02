@@ -21,9 +21,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true,
 		}, {
-			Name: "woodcutter", ProductionFactor: -4.25, ProductionFloor: true,
+			Name: "woodcutter", ProductionFactor: -4.25,
 		}, {
-			Name: "scholar", ProductionFactor: -4.25, ProductionFloor: true,
+			Name: "scholar", ProductionFactor: -4.25,
 		}},
 	}, {
 		Name: "wood", Capacity: 200,
@@ -67,9 +67,9 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []game.Resource{{
 			Name: "kitten", ProductionFactor: -0.02, ProductionFloor: true,
 		}, {
-			Name: "woodcutter", ProductionFactor: -0.02, ProductionFloor: true,
+			Name: "woodcutter", ProductionFactor: -0.02,
 		}, {
-			Name: "scholar", ProductionFactor: -0.02, ProductionFloor: true,
+			Name: "scholar", ProductionFactor: -0.02,
 		}},
 	}, {
 		Name: "Catnip Field", Capacity: -1,

@@ -56,8 +56,6 @@ Faster solution:
 
 TODO
 
-- game.Resources not pointer
-- reduce ProductionFloor
 - remove end from kittens_test
 
 General features:
