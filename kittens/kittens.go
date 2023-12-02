@@ -3,19 +3,20 @@ package kittens
 import (
 	"time"
 
+	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
 func NewGame(now game.Now) *game.Game {
 	g := game.NewGame(now())
-	g.AddResources([]game.Resource{{
+	g.AddResources([]data.Resource{{
 		Name: "day", Quantity: 1, Capacity: -1,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.5,
 		}},
 	}, {
 		Name: "day_of_year", StartQuantity: 1, ProductionModulus: 400, Capacity: -1,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "day", ProductionFactor: 1,
 		}},
 	}, {
@@ -28,7 +29,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Winter", Capacity: -1,
 	}, {
 		Name: "catnip", Capacity: 5000,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "Catnip Field", ProductionFactor: 0.63 * (1 + 0.50), ProductionResourceFactor: "Spring",
 		}, {
 			Name: "Catnip Field", ProductionFactor: 0.63, ProductionResourceFactor: "Summer",
@@ -45,44 +46,44 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "wood", Capacity: 200,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "woodcutter", ProductionFactor: 0.09, ProductionResourceFactor: "happiness",
 		}},
 	}, {
 		Name: "science", Capacity: 250,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "scholar", ProductionFactor: 0.175, ProductionResourceFactor: "happiness",
 		}},
-		ProductionBonus: []game.Resource{{
+		ProductionBonus: []data.Resource{{
 			Name: "Library", ProductionFactor: 0.1,
 		}},
 	}, {
 		Name: "kitten", Capacity: 0,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.05,
 		}},
-		OnGone: []game.Resource{{
+		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
 		}},
 	}, {
 		Name: "gone kitten", Capacity: -1,
 	}, {
 		Name: "woodcutter", Capacity: -1,
-		OnGone: []game.Resource{{
+		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
 		Name: "scholar", Capacity: -1,
-		OnGone: []game.Resource{{
+		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
 		Name: "happiness", StartQuantity: 1.1, Capacity: -1,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "kitten", ProductionFactor: -0.02, ProductionFloor: true,
 		}, {
 			Name: "woodcutter", ProductionFactor: -0.02,
@@ -100,74 +101,74 @@ func NewGame(now game.Now) *game.Game {
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "catnip", Quantity: 1,
 		}},
 	}, {
 		Name:       "Refine catnip",
-		UnlockedBy: game.Resource{Name: "catnip"},
-		Costs: []game.Resource{{
+		UnlockedBy: data.Resource{Name: "catnip"},
+		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 100, CostExponentBase: 1,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "wood", Quantity: 1,
 		}},
 	}, {
 		Name:       "Catnip Field",
-		UnlockedBy: game.Resource{Name: "catnip"},
-		Costs: []game.Resource{{
+		UnlockedBy: data.Resource{Name: "catnip"},
+		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "Catnip Field", Quantity: 1,
 		}},
 	}, {
 		Name:       "Hut",
-		UnlockedBy: game.Resource{Name: "wood"},
-		Costs: []game.Resource{{
+		UnlockedBy: data.Resource{Name: "wood"},
+		Costs: []data.Resource{{
 			Name: "wood", Quantity: 5, CostExponentBase: 2.5,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "Hut", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 2,
 		}},
 	}, {
 		Name:       "Library",
-		UnlockedBy: game.Resource{Name: "wood"},
-		Costs: []game.Resource{{
+		UnlockedBy: data.Resource{Name: "wood"},
+		Costs: []data.Resource{{
 			Name: "wood", Quantity: 25, CostExponentBase: 1.15,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "Library", Quantity: 1,
 		}, {
 			Name: "science", Capacity: 250,
 		}},
 	}, {
 		Name:       "woodcutter",
-		UnlockedBy: game.Resource{Name: "Hut"},
-		Costs: []game.Resource{{
+		UnlockedBy: data.Resource{Name: "Hut"},
+		Costs: []data.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "woodcutter", Quantity: 1,
 		}},
 	}, {
 		Name:       "scholar",
-		UnlockedBy: game.Resource{Name: "Library"},
-		Costs: []game.Resource{{
+		UnlockedBy: data.Resource{Name: "Library"},
+		Costs: []data.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "scholar", Quantity: 1,
 		}},
 	}, {
 		Name:       "Calendar",
-		UnlockedBy: game.Resource{Name: "Library"},
-		Costs: []game.Resource{{
+		UnlockedBy: data.Resource{Name: "Library"},
+		Costs: []data.Resource{{
 			Name: "science", Quantity: 30, CostExponentBase: 1,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "Calendar", Quantity: 1,
 		}},
 	}}

@@ -6,6 +6,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/game"
 	"github.com/kssilveira/idle-game-engine/textui"
 	"github.com/kssilveira/idle-game-engine/ui"
@@ -13,9 +14,9 @@ import (
 
 func main() {
 	g := game.NewGame(time.Now())
-	g.AddResources([]game.Resource{{
+	g.AddResources([]data.Resource{{
 		Name: "catnip", Quantity: 10, Capacity: 100,
-		Producers: []game.Resource{{
+		Producers: []data.Resource{{
 			Name: "Catnip Field", ProductionFactor: 0.63,
 		}},
 	}, {
@@ -23,10 +24,10 @@ func main() {
 	}})
 	g.Actions = []game.Action{{
 		Name: "Catnip Field",
-		Costs: []game.Resource{{
+		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
 		}},
-		Adds: []game.Resource{{
+		Adds: []data.Resource{{
 			Name: "Catnip Field", Quantity: 1,
 		}},
 	}}

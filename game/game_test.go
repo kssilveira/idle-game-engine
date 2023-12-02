@@ -3,24 +3,26 @@ package game
 import (
 	"testing"
 	"time"
+
+	"github.com/kssilveira/idle-game-engine/data"
 )
 
 func TestAct(t *testing.T) {
 	inputs := []struct {
 		name         string
-		resources    []Resource
+		resources    []data.Resource
 		actions      []Action
 		inputs       []string
 		want         []int
 		wantCapacity int
 	}{{
 		name: "add 1",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Capacity: 2,
 		}},
 		actions: []Action{{
 			Name: "add 1",
-			Adds: []Resource{{
+			Adds: []data.Resource{{
 				Name: "resource", Quantity: 1,
 			}},
 		}},
@@ -28,17 +30,17 @@ func TestAct(t *testing.T) {
 		want:   []int{1, 2},
 	}, {
 		name: "cost",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Quantity: 100, Capacity: -1,
 		}, {
 			Name: "producer", Capacity: -1,
 		}},
 		actions: []Action{{
 			Name: "producer",
-			Costs: []Resource{{
+			Costs: []data.Resource{{
 				Name: "resource", Quantity: 1, CostExponentBase: 2,
 			}},
-			Adds: []Resource{{
+			Adds: []data.Resource{{
 				Name: "producer", Quantity: 1,
 			}},
 		}},
@@ -50,9 +52,9 @@ func TestAct(t *testing.T) {
 		},
 	}, {
 		name: "skip",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Quantity: 1, Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "producer", ProductionFactor: 1,
 			}},
 		}, {
@@ -62,10 +64,10 @@ func TestAct(t *testing.T) {
 		}},
 		actions: []Action{{
 			Name: "producer",
-			Costs: []Resource{{
+			Costs: []data.Resource{{
 				Name: "resource", Quantity: 1, CostExponentBase: 2,
 			}},
-			Adds: []Resource{{
+			Adds: []data.Resource{{
 				Name: "producer", Quantity: 1,
 			}},
 		}},
@@ -73,12 +75,12 @@ func TestAct(t *testing.T) {
 		want:   []int{0, 3, 1, 5, 1},
 	}, {
 		name: "add 1 capacity",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource",
 		}},
 		actions: []Action{{
 			Name: "add 1",
-			Adds: []Resource{{
+			Adds: []data.Resource{{
 				Name: "resource", Capacity: 1,
 			}},
 		}},
@@ -87,17 +89,17 @@ func TestAct(t *testing.T) {
 		wantCapacity: 2,
 	}, {
 		name: "cost 1 capacity",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Capacity: 4,
 		}, {
 			Name: "other", Capacity: -1,
 		}},
 		actions: []Action{{
 			Name: "cost 1",
-			Costs: []Resource{{
+			Costs: []data.Resource{{
 				Name: "resource", Capacity: 1,
 			}},
-			Adds: []Resource{{
+			Adds: []data.Resource{{
 				Name: "other", Quantity: 1,
 			}},
 		}},
@@ -132,15 +134,15 @@ func TestAct(t *testing.T) {
 func TestUpdate(t *testing.T) {
 	inputs := []struct {
 		name          string
-		resources     []Resource
+		resources     []data.Resource
 		times         []int64
 		want          []int
 		wantResources map[string]int
 	}{{
 		name: "one input",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: 2,
 			}},
 		}, {
@@ -154,9 +156,9 @@ func TestUpdate(t *testing.T) {
 		},
 	}, {
 		name: "over cap",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Capacity: 28,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: 2,
 			}},
 		}, {
@@ -170,9 +172,9 @@ func TestUpdate(t *testing.T) {
 		},
 	}, {
 		name: "two producers",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input 1", ProductionFactor: 2,
 			}, {
 				Name: "input 2", ProductionFactor: 3,
@@ -190,9 +192,9 @@ func TestUpdate(t *testing.T) {
 		},
 	}, {
 		name: "one resource factor",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: 2, ProductionResourceFactor: "resource factor",
 			}},
 		}, {
@@ -208,14 +210,14 @@ func TestUpdate(t *testing.T) {
 		},
 	}, {
 		name: "production floor",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: 2, ProductionFloor: true,
 			}},
 		}, {
 			Name: "input", Quantity: 0, Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "", ProductionFactor: 0.5,
 			}},
 		}},
@@ -229,14 +231,14 @@ func TestUpdate(t *testing.T) {
 		},
 	}, {
 		name: "negative production",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", Quantity: 2, Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: -0.2,
 			}},
 		}, {
 			Name: "input", Quantity: 5, Capacity: -1,
-			OnGone: []Resource{{
+			OnGone: []data.Resource{{
 				Name: "gone input", Quantity: 1,
 			}},
 		}, {
@@ -252,9 +254,9 @@ func TestUpdate(t *testing.T) {
 		},
 	}, {
 		name: "start quantity",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", StartQuantity: 10, Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: 2,
 			}},
 		}, {
@@ -268,9 +270,9 @@ func TestUpdate(t *testing.T) {
 		},
 	}, {
 		name: "start quantity modulus",
-		resources: []Resource{{
+		resources: []data.Resource{{
 			Name: "resource", StartQuantity: 10, ProductionModulus: 4, Capacity: -1,
-			Producers: []Resource{{
+			Producers: []data.Resource{{
 				Name: "input", ProductionFactor: 2,
 			}},
 		}, {

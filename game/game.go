@@ -7,49 +7,23 @@ import (
 	"strings"
 	"time"
 
+	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/ui"
 )
 
 type Game struct {
-	Resources []*Resource
+	Resources []*data.Resource
 	// maps resource name to index in Resources
 	ResourceToIndex map[string]int
 	Actions         []Action
 	Now             time.Time
 }
 
-type Resource struct {
-	Name     string
-	Quantity float64
-	Capacity float64
-
-	Producers []Resource
-
-	// quantity += producer.Quantity * ProductionFactor * elapsedTime
-	ProductionFactor float64
-	// quantity += producer.Quantity * ProductionFactor * elapsedTime * ProductionResourceFactor.Quantity
-	ProductionResourceFactor string
-	// quantity += floor(producer.Quantity) * ProductionFactor * elapsedTime
-	ProductionFloor bool
-	// quantity = StartQuantity + producer.Quantity * ProductionFactor
-	StartQuantity float64
-	// quantity = StartQuantity + (producer.Quantity * ProductionFactor) % ProductionModulus
-	ProductionModulus int
-
-	// production *= 1 + bonus
-	ProductionBonus []Resource
-
-	OnGone []Resource
-
-	// cost = Quantity * pow(CostExponentBase, add.Quantity)
-	CostExponentBase float64
-}
-
 type Action struct {
 	Name       string
-	UnlockedBy Resource
-	Costs      []Resource
-	Adds       []Resource
+	UnlockedBy data.Resource
+	Costs      []data.Resource
+	Adds       []data.Resource
 }
 
 type Input chan string
@@ -61,13 +35,13 @@ func NewGame(now time.Time) *Game {
 		Now:             now,
 		ResourceToIndex: map[string]int{},
 	}
-	g.AddResources([]Resource{{
+	g.AddResources([]data.Resource{{
 		Name: "skip", Capacity: -1,
 	}})
 	return g
 }
 
-func (g *Game) AddResources(resources []Resource) {
+func (g *Game) AddResources(resources []data.Resource) {
 	for _, resource := range resources {
 		g.ResourceToIndex[resource.Name] = len(g.Resources)
 		cp := resource
@@ -170,7 +144,7 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 	})
 }
 
-func (g *Game) GetDuration(r *Resource, quantity float64) time.Duration {
+func (g *Game) GetDuration(r *data.Resource, quantity float64) time.Duration {
 	return time.Duration(((quantity - r.Quantity) / g.GetRate(r))) * time.Second
 }
 
@@ -185,7 +159,7 @@ func (g *Game) Update(now time.Time) {
 		if resource.StartQuantity != 0 {
 			resource.Quantity = resource.StartQuantity + factor
 		} else {
-			resource.Add(Resource{Quantity: factor * elapsed.Seconds()})
+			resource.Add(data.Resource{Quantity: factor * elapsed.Seconds()})
 		}
 		if factor < 0 && resource.Quantity == 0 {
 			g.UpdateRate(resource)
@@ -286,7 +260,7 @@ func (g *Game) TimeSkip(skip time.Duration) {
 	g.Update(now)
 }
 
-func (g *Game) ValidateResource(r *Resource) error {
+func (g *Game) ValidateResource(r *data.Resource) error {
 	if r.Name != "" && !g.HasResource(r.Name) {
 		return fmt.Errorf("invalid resource name %s", r.Name)
 	}
@@ -306,18 +280,7 @@ func (g *Game) ValidateResource(r *Resource) error {
 	return nil
 }
 
-func (r *Resource) Add(add Resource) {
-	r.Capacity += add.Capacity
-	r.Quantity += add.Quantity
-	if r.Quantity > r.Capacity && r.Capacity >= 0 {
-		r.Quantity = r.Capacity
-	}
-	if r.Quantity < 0 {
-		r.Quantity = 0
-	}
-}
-
-func (g *Game) GetRate(resource *Resource) float64 {
+func (g *Game) GetRate(resource *data.Resource) float64 {
 	factor := 0.0
 	for _, p := range resource.Producers {
 		factor += g.GetOneRate(p)
@@ -329,7 +292,7 @@ func (g *Game) GetRate(resource *Resource) float64 {
 	return factor * bonus
 }
 
-func (g *Game) GetOneRate(p Resource) float64 {
+func (g *Game) GetOneRate(p data.Resource) float64 {
 	one := g.GetQuantityForRate(p) * p.ProductionFactor
 	if p.ProductionResourceFactor != "" {
 		one *= g.GetQuantityForRate(*g.GetResource(p.ProductionResourceFactor))
@@ -337,7 +300,7 @@ func (g *Game) GetOneRate(p Resource) float64 {
 	return one
 }
 
-func (g *Game) GetQuantityForRate(p Resource) float64 {
+func (g *Game) GetQuantityForRate(p data.Resource) float64 {
 	quantity := 1.0
 	if p.Name != "" {
 		quantity = g.GetResource(p.Name).Quantity
@@ -348,7 +311,7 @@ func (g *Game) GetQuantityForRate(p Resource) float64 {
 	return quantity
 }
 
-func (g *Game) UpdateRate(resource *Resource) {
+func (g *Game) UpdateRate(resource *data.Resource) {
 	for _, p := range resource.Producers {
 		one := g.GetOneRate(p)
 		if one < 0 {
@@ -364,11 +327,11 @@ func (g *Game) UpdateRate(resource *Resource) {
 	}
 }
 
-func (g *Game) GetResource(name string) *Resource {
+func (g *Game) GetResource(name string) *data.Resource {
 	return g.Resources[g.ResourceToIndex[name]]
 }
 
-func (g *Game) GetCost(a Action, c Resource) float64 {
+func (g *Game) GetCost(a Action, c data.Resource) float64 {
 	return c.Quantity * math.Pow(c.CostExponentBase, g.GetResource(a.Adds[0].Name).Quantity)
 }
 
