@@ -101,1154 +101,2367 @@ Spring 1.00
 sX: time skip until action X is available
 last input: 2
 ###
+skip 11.00
+catnip 11.34/5000 0.94/s 1h27m59s to cap
 happiness 1.10
 Catnip Field 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 11.34/100.00 1m33s) +(wood 1)
+2: Catnip Field -(catnip 11.20) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 11.00
+catnip 1.08/5000 1.89/s 44m4s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 1.08/100.00 52s) +(wood 1)
+2: Catnip Field -(catnip 1.08/12.54 6s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 17.00
+catnip 14.31/5000 1.89/s 43m57s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 14.31/100.00 45s) +(wood 1)
+2: Catnip Field -(catnip 12.54) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 17.00
+catnip 3.66/5000 2.83/s 29m22s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 3.66/100.00 33s) +(wood 1)
+2: Catnip Field -(catnip 3.66/14.05 3s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 20.00
+catnip 15.00/5000 2.83/s 29m18s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 15.00/100.00 29s) +(wood 1)
+2: Catnip Field -(catnip 14.05) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 20.00
+catnip 3.79/5000 3.78/s 22m1s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 3.79/100.00 25s) +(wood 1)
+2: Catnip Field -(catnip 3.79/15.74 3s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 23.00
+catnip 18.91/5000 3.78/s 21m57s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 18.91/100.00 21s) +(wood 1)
+2: Catnip Field -(catnip 15.74) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 23.00
+catnip 6.95/5000 4.72/s 17m36s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 5.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 6.95/100.00 19s) +(wood 1)
+2: Catnip Field -(catnip 6.95/17.62 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 25.00
+catnip 21.13/5000 4.72/s 17m33s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 5.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 21.13/100.00 16s) +(wood 1)
+2: Catnip Field -(catnip 17.62) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 25.00
+catnip 8.23/5000 5.67/s 14m40s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 6.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 8.23/100.00 16s) +(wood 1)
+2: Catnip Field -(catnip 8.23/19.74 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 27.00
+catnip 25.24/5000 5.67/s 14m37s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 6.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 25.24/100.00 13s) +(wood 1)
+2: Catnip Field -(catnip 19.74) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 27.00
+catnip 11.17/5000 6.61/s 12m34s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 7.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 11.17/100.00 13s) +(wood 1)
+2: Catnip Field -(catnip 11.17/22.11 1s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 28.00
+catnip 24.40/5000 6.61/s 12m32s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 7.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 24.40/100.00 11s) +(wood 1)
+2: Catnip Field -(catnip 22.11) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 28.00
+catnip 8.91/5000 7.56/s 11m0s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 8.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 8.91/100.00 12s) +(wood 1)
+2: Catnip Field -(catnip 8.91/24.76 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 30.00
+catnip 31.59/5000 7.56/s 10m57s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 8.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 31.59/100.00 9s) +(wood 1)
+2: Catnip Field -(catnip 24.76) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 30.00
+catnip 14.39/5000 8.50/s 9m46s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 9.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 14.39/100.00 10s) +(wood 1)
+2: Catnip Field -(catnip 14.39/27.73 1s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 31.00
+catnip 31.40/5000 8.50/s 9m44s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 9.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 31.40/100.00 8s) +(wood 1)
+2: Catnip Field -(catnip 27.73) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 31.00
+catnip 12.17/5000 9.45/s 8m47s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 10.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 12.17/100.00 9s) +(wood 1)
+2: Catnip Field -(catnip 12.17/31.06 1s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 32.00
+catnip 31.07/5000 9.45/s 8m45s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 10.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 31.07/100.00 7s) +(wood 1)
+2: Catnip Field -(catnip 31.06) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 32.00
+catnip 9.46/5000 10.39/s 8m0s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 11.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 9.46/100.00 8s) +(wood 1)
+2: Catnip Field -(catnip 9.46/34.79 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 34.00
+catnip 40.65/5000 10.39/s 7m57s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 11.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 40.65/100.00 5s) +(wood 1)
+2: Catnip Field -(catnip 34.79) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 34.00
+catnip 16.26/5000 11.34/s 7m19s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 12.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 16.26/100.00 7s) +(wood 1)
+2: Catnip Field -(catnip 16.26/38.96 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 36.00
+catnip 50.28/5000 11.34/s 7m16s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 12.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 50.28/100.00 4s) +(wood 1)
+2: Catnip Field -(catnip 38.96) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 36.00
+catnip 22.66/5000 12.29/s 6m45s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 13.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 22.66/100.00 6s) +(wood 1)
+2: Catnip Field -(catnip 22.66/43.63 1s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 37.00
+catnip 47.23/5000 12.29/s 6m43s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 13.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 47.23/100.00 4s) +(wood 1)
+2: Catnip Field -(catnip 43.63) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 37.00
+catnip 15.88/5000 13.23/s 6m16s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 14.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 15.88/100.00 6s) +(wood 1)
+2: Catnip Field -(catnip 15.88/48.87 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 39.00
+catnip 55.57/5000 13.23/s 6m13s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 14.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 55.57/100.00 3s) +(wood 1)
+2: Catnip Field -(catnip 48.87) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 39.00
+catnip 19.93/5000 14.17/s 5m51s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 15.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 19.93/100.00 5s) +(wood 1)
+2: Catnip Field -(catnip 19.93/54.74 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 41.00
+catnip 62.45/5000 14.17/s 5m48s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 15.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 62.45/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 54.74) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 41.00
+catnip 21.89/5000 15.12/s 5m29s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 16.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 21.89/100.00 5s) +(wood 1)
+2: Catnip Field -(catnip 21.89/61.30 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 43.00
+catnip 67.25/5000 15.12/s 5m26s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 16.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 67.25/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 61.30) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 43.00
+catnip 21.07/5000 16.06/s 5m9s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 17.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 21.07/100.00 4s) +(wood 1)
+2: Catnip Field -(catnip 21.07/68.66 2s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 45.00
+catnip 69.26/5000 16.06/s 5m6s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 17.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 69.26/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 68.66) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 45.00
+catnip 16.67/5000 17.01/s 4m52s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 18.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 16.67/100.00 4s) +(wood 1)
+2: Catnip Field -(catnip 16.67/76.90 3s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 48.00
+catnip 84.71/5000 17.01/s 4m48s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 18.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 84.71/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 76.90) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 48.00
+catnip 24.82/5000 17.95/s 4m37s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 19.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 24.82/100.00 4s) +(wood 1)
+2: Catnip Field -(catnip 24.82/86.13 3s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 51.00
+catnip 96.64/5000 17.95/s 4m33s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 19.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 96.64/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 86.13) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 51.00
+catnip 28.47/5000 18.90/s 4m23s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 20.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 28.47/100.00 3s) +(wood 1)
+2: Catnip Field -(catnip 28.47/96.46 3s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 54.00
+catnip 104.07/5000 18.90/s 4m19s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 20.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 96.46) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 54.00
+catnip 26.50/5000 19.84/s 4m10s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 21.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 26.50/100.00 3s) +(wood 1)
+2: Catnip Field -(catnip 26.50/108.04 4s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 58.00
+catnip 125.73/5000 19.84/s 4m5s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 21.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 108.04) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 58.00
+catnip 37.53/5000 20.79/s 3m58s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 22.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 37.53/100.00 3s) +(wood 1)
+2: Catnip Field -(catnip 37.53/121.00 4s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 62.00
+catnip 141.48/5000 20.79/s 3m53s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 22.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 121.00) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 62.00
+catnip 41.27/5000 21.73/s 3m48s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 23.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 41.27/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 41.27/135.52 4s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 66.00
+catnip 149.95/5000 21.73/s 3m43s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 23.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 135.52) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 66.00
+catnip 36.16/5000 22.68/s 3m38s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 24.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 36.16/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 36.16/151.79 5s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 71.00
+catnip 172.24/5000 22.68/s 3m32s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 24.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 151.79) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 71.00
+catnip 43.13/5000 23.62/s 3m29s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 25.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 43.13/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 43.13/170.00 5s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 76.00
+catnip 184.88/5000 23.62/s 3m23s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 25.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 170.00) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 76.00
+catnip 38.51/5000 24.57/s 3m21s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 26.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 38.51/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 38.51/190.40 6s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 82.00
+catnip 210.50/5000 24.57/s 3m14s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 26.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 190.40) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 82.00
+catnip 44.66/5000 25.51/s 3m14s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 27.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 44.66/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 44.66/213.25 6s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 88.00
+catnip 223.27/5000 25.51/s 3m7s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 27.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 213.25) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 88.00
+catnip 35.54/5000 26.46/s 3m7s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 28.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 35.54/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 35.54/238.84 7s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 95.00
+catnip 247.22/5000 26.46/s 2m59s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 28.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 238.84) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 95.00
+catnip 34.84/5000 27.40/s 3m1s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 29.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 34.84/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 34.84/267.50 8s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 103.00
+catnip 281.48/5000 27.40/s 2m52s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 29.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 267.50) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 103.00
+catnip 41.39/5000 28.35/s 2m54s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 30.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 41.39/100.00 2s) +(wood 1)
+2: Catnip Field -(catnip 41.39/299.60 9s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 112.00
+catnip 324.89/5000 28.35/s 2m44s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 30.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 299.60) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 112.00
+catnip 53.64/5000 29.29/s 2m48s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 31.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 53.64/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 53.64/335.55 9s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 121.00
+catnip 346.59/5000 29.29/s 2m38s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 31.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 335.55) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 121.00
+catnip 40.33/5000 30.24/s 2m44s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 32.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 40.33/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 40.33/375.82 11s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 132.00
+catnip 403.21/5000 30.24/s 2m32s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 32.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 375.82) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 132.00
+catnip 57.64/5000 31.18/s 2m38s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 33.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 57.64/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 57.64/420.92 11s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 143.00
+catnip 431.86/5000 31.18/s 2m26s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 33.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 420.92) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 143.00
+catnip 42.13/5000 32.13/s 2m34s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 34.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 42.13/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 42.13/471.43 13s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 156.00
+catnip 491.95/5000 32.13/s 2m20s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 34.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 471.43) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 156.00
+catnip 52.65/5000 33.07/s 2m29s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 35.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 52.65/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 52.65/528.00 14s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 170.00
+catnip 548.78/5000 33.07/s 2m14s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 35.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 528.00) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 170.00
+catnip 53.85/5000 34.02/s 2m25s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 36.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 53.85/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 53.85/591.36 15s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 185.00
+catnip 598.17/5000 34.02/s 2m9s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 36.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 591.36) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 185.00
+catnip 40.84/5000 34.96/s 2m21s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 37.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 40.84/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 40.84/662.32 17s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 202.00
+catnip 670.21/5000 34.96/s 2m3s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 37.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 662.32) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 202.00
+catnip 42.85/5000 35.91/s 2m18s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 38.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 42.85/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 42.85/741.80 19s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 221.00
+catnip 761.05/5000 35.91/s 1m58s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 38.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 741.80) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 221.00
+catnip 55.17/5000 36.85/s 2m14s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 39.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 55.17/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 55.17/830.81 21s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 242.00
+catnip 865.98/5000 36.85/s 1m52s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 39.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 830.81) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 242.00
+catnip 72.02/5000 37.80/s 2m10s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 40.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 72.02/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 72.02/930.51 22s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 264.00
+catnip 941.42/5000 37.80/s 1m47s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 40.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 930.51) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 264.00
+catnip 48.71/5000 38.74/s 2m7s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 41.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 48.71/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 48.71/1042.17 25s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 289.00
+catnip 1056.08/5000 38.74/s 1m41s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 41.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 1042.17) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 289.00
+catnip 52.66/5000 39.69/s 2m4s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 42.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 52.66/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 52.66/1167.23 28s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 317.00
+catnip 1203.67/5000 39.69/s 1m35s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 42.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 1167.23) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 317.00
+catnip 76.12/5000 40.63/s 2m1s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 43.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 76.12/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 76.12/1307.30 30s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 347.00
+catnip 1335.81/5000 40.63/s 1m30s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 43.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 1307.30) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 347.00
+catnip 69.14/5000 41.58/s 1m58s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 44.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 69.14/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 69.14/1464.18 33s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 380.00
+catnip 1482.86/5000 41.58/s 1m24s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 44.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 1464.18) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 380.00
+catnip 60.27/5000 42.52/s 1m56s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 45.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 60.27/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 60.27/1639.88 37s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 417.00
+catnip 1676.22/5000 42.52/s 1m18s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 45.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 1639.88) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 417.00
+catnip 78.87/5000 43.47/s 1m53s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 46.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 78.87/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 78.87/1836.66 40s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 457.00
+catnip 1861.14/5000 43.47/s 1m12s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 46.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 1836.66) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 457.00
+catnip 67.95/5000 44.41/s 1m51s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 47.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 67.95/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 67.95/2057.06 44s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 501.00
+catnip 2066.62/5000 44.41/s 1m6s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 47.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 2057.06) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 501.00
+catnip 53.98/5000 45.36/s 1m49s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 48.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 53.98/100.00 1s) +(wood 1)
+2: Catnip Field -(catnip 53.98/2303.91 49s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 550.00
+catnip 2321.98/5000 45.36/s 59s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 48.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 2303.91) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 550.00
+catnip 63.43/5000 46.30/s 1m46s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 49.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 63.43/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 63.43/2580.38 54s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 604.00
+catnip 2610.20/5000 46.30/s 51s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 49.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 2580.38) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 604.00
+catnip 76.13/5000 47.25/s 1m44s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 50.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 76.13/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 76.13/2890.02 59s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 663.00
+catnip 2911.13/5000 47.25/s 44s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 50.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 2890.02) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 663.00
+catnip 68.36/5000 48.20/s 1m42s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 51.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 68.36/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 68.36/3236.82 1m5s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 728.00
+catnip 3249.23/5000 48.20/s 36s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 51.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 3236.82) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 728.00
+catnip 60.60/5000 49.14/s 1m40s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 52.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 60.60/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 60.60/3625.24 1m12s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 800.00
+catnip 3647.82/5000 49.14/s 27s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 52.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 800.00
+catnip 71.72/5000 50.09/s 1m38s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 53.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 71.72/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 71.72/4060.27 1m19s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 879.00
+catnip 4078.52/5000 50.09/s 18s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 53.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4060.27) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 879.00
+catnip 68.33/5000 51.03/s 1m36s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 54.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 68.33/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 68.33/4547.51 1m27s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 966.00
+catnip 4558.97/5000 51.03/s 8s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 54.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4547.51) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 966.00
+catnip 62.49/5000 51.97/s 1m34s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 62.49/100.00 0s) +(wood 1)
+2: Catnip Field -(catnip 62.49/5093.21* 1m36s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 2
-error: action Catnip Field is locked
 ###
+skip 1062.00
+catnip 5000.00/5000 51.97/s
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 1s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: s2
-error: action Catnip Field is locked
 ###
+skip 1062.00
+catnip 4900.00/5000 51.97/s 1s to cap
+wood 1.00/200
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4900.00/5093.21* 3s) +(Catnip Field 1)
+3: Hut -(wood 1.00/5.00 0s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.00/25.00 0s) +(Library 1, science cap 250)
 sX: time skip until action X is available
 last input: 1
-error: action Refine catnip is locked
 ###
+skip 1062.00
+catnip 4851.98/5000 51.97/s 2s to cap
+wood 2.00/200
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4851.98/5093.21* 4s) +(Catnip Field 1)
+3: Hut -(wood 2.00/5.00 0s) +(Hut 1, kitten cap 2)
+4: Library -(wood 2.00/25.00 0s) +(Library 1, science cap 250)
 sX: time skip until action X is available
 last input: 1
-error: action Refine catnip is locked
 ###
+skip 1062.00
+catnip 4803.95/5000 51.97/s 3s to cap
+wood 3.00/200
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4803.95/5093.21* 5s) +(Catnip Field 1)
+3: Hut -(wood 3.00/5.00 0s) +(Hut 1, kitten cap 2)
+4: Library -(wood 3.00/25.00 0s) +(Library 1, science cap 250)
 sX: time skip until action X is available
 last input: 1
-error: action Refine catnip is locked
 ###
+skip 1062.00
+catnip 4755.93/5000 51.97/s 4s to cap
+wood 4.00/200
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4755.93/5093.21* 6s) +(Catnip Field 1)
+3: Hut -(wood 4.00/5.00 0s) +(Hut 1, kitten cap 2)
+4: Library -(wood 4.00/25.00 0s) +(Library 1, science cap 250)
 sX: time skip until action X is available
 last input: 1
-error: action Refine catnip is locked
 ###
+skip 1062.00
+catnip 4707.90/5000 51.97/s 5s to cap
+wood 5.00/200
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4707.90/5093.21* 7s) +(Catnip Field 1)
+3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
+4: Library -(wood 5.00/25.00 0s) +(Library 1, science cap 250)
 sX: time skip until action X is available
 last input: 1
-error: action Refine catnip is locked
 ###
+skip 1062.00
+catnip 4759.88/5000 51.97/s 4s to cap
 happiness 1.10
-Catnip Field 1.00
+Catnip Field 55.00
+Hut 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 4759.88/5093.21* 6s) +(Catnip Field 1)
+5: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1081.00
+catnip 5000.00/5000 47.72/s
+kitten 1.00/2 0.05/s 20s to cap
+happiness 1.08 (1.10 + -0.02)
+Catnip Field 55.00
+Hut 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 1s) +(Catnip Field 1)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1081.00
+catnip 5000.00/5000 47.72/s
+kitten 0.05/1 0.05/s 18s to cap
+woodcutter 1.00
+happiness 1.08 (1.10 + -0.02)
+Catnip Field 55.00
+Hut 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 1s) +(Catnip Field 1)
+5: woodcutter -(kitten 0.05/1.00 18s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1099.00
+catnip 5000.00/5000 43.47/s
+wood 1.85/200 0.10/s 34m37s to cap
+kitten 1.00/1 0.05/s
+woodcutter 1.00
+happiness 1.06 (1.10 + -0.04)
+Catnip Field 55.00
+Hut 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 1.85/12.50 1m51s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.85/25.00 4m2s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1099.00
+catnip 5000.00/5000 43.47/s
+wood 1.94/200 0.19/s 17m18s to cap
+woodcutter 2.00
+happiness 1.06 (1.10 + -0.04)
+Catnip Field 55.00
+Hut 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 1.94/12.50 55s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.94/25.00 2m0s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1154.00
+catnip 5000.00/5000 43.47/s
+wood 12.63/200 0.19/s 16m22s to cap
+woodcutter 2.00
+happiness 1.06 (1.10 + -0.04)
+Catnip Field 55.00
+Hut 1.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
+4: Library -(wood 12.63/25.00 1m4s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: s3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1154.00
+catnip 5000.00/5000 43.47/s
+wood 0.32/200 0.19/s 17m26s to cap
+woodcutter 2.00
+happiness 1.06 (1.10 + -0.04)
+Catnip Field 55.00
+Hut 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 0.32/31.25 2m42s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.32/25.00 2m9s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1173.00
+catnip 5000.00/5000 39.22/s
+wood 4.13/200 0.19/s 17m26s to cap
+kitten 1.00/2 0.05/s 20s to cap
+woodcutter 2.00
+happiness 1.04 (1.10 + -0.06)
+Catnip Field 55.00
+Hut 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 4.13/31.25 2m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 4.13/25.00 1m51s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1173.00
+catnip 5000.00/5000 39.22/s
+wood 4.32/200 0.28/s 11m36s to cap
+kitten 0.05/1 0.05/s 18s to cap
+woodcutter 3.00
+happiness 1.04 (1.10 + -0.06)
+Catnip Field 55.00
+Hut 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 4.32/31.25 1m35s) +(Hut 1, kitten cap 2)
+4: Library -(wood 4.32/25.00 1m13s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.05/1.00 18s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1191.00
+catnip 5000.00/5000 34.97/s
+wood 9.66/200 0.28/s 11m31s to cap
+kitten 1.00/1 0.05/s
+woodcutter 3.00
+happiness 1.02 (1.10 + -0.08)
+Catnip Field 55.00
+Hut 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 9.66/31.25 1m18s) +(Hut 1, kitten cap 2)
+4: Library -(wood 9.66/25.00 55s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1191.00
+catnip 5000.00/5000 34.97/s
+wood 9.93/200 0.37/s 8m37s to cap
+woodcutter 4.00
+happiness 1.02 (1.10 + -0.08)
+Catnip Field 55.00
+Hut 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 9.93/31.25 58s) +(Hut 1, kitten cap 2)
+4: Library -(wood 9.93/25.00 41s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1249.00
+catnip 5000.00/5000 34.97/s
+wood 31.60/200 0.37/s 7m38s to cap
+woodcutter 4.00
+happiness 1.02 (1.10 + -0.08)
+Catnip Field 55.00
+Hut 2.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 31.25) +(Hut 1, kitten cap 2)
+4: Library -(wood 25.00) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: s3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1249.00
+catnip 5000.00/5000 34.97/s
+wood 0.71/200 0.37/s 9m2s to cap
+woodcutter 4.00
+happiness 1.02 (1.10 + -0.08)
+Catnip Field 55.00
+Hut 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
+3: Hut -(wood 0.71/78.12 3m30s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.71/25.00 1m6s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1268.00
+catnip 5000.00/5000 30.72/s
+wood 8.06/200 0.36/s 8m53s to cap
+kitten 1.00/2 0.05/s 20s to cap
+woodcutter 4.00
+happiness 1.00 (1.10 + -0.10)
+Catnip Field 55.00
+Hut 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
+3: Hut -(wood 8.06/78.12 3m14s) +(Hut 1, kitten cap 2)
+4: Library -(wood 8.06/25.00 47s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1268.00
+catnip 5000.00/5000 30.72/s
+wood 8.42/200 0.45/s 7m5s to cap
+kitten 0.05/1 0.05/s 18s to cap
+woodcutter 5.00
+happiness 1.00 (1.10 + -0.10)
+Catnip Field 55.00
+Hut 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
+3: Hut -(wood 8.42/78.12 2m34s) +(Hut 1, kitten cap 2)
+4: Library -(wood 8.42/25.00 36s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.05/1.00 18s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1286.00
+catnip 5000.00/5000 26.47/s
+wood 16.97/200 0.44/s 6m55s to cap
+kitten 1.00/1 0.05/s
+woodcutter 5.00
+happiness 0.98 (1.10 + -0.12)
+Catnip Field 55.00
+Hut 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
+3: Hut -(wood 16.97/78.12 2m18s) +(Hut 1, kitten cap 2)
+4: Library -(wood 16.97/25.00 18s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1286.00
+catnip 5000.00/5000 26.47/s
+wood 17.41/200 0.53/s 5m45s to cap
+woodcutter 6.00
+happiness 0.98 (1.10 + -0.12)
+Catnip Field 55.00
+Hut 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
+3: Hut -(wood 17.41/78.12 1m54s) +(Hut 1, kitten cap 2)
+4: Library -(wood 17.41/25.00 14s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1400.00
+catnip 5000.00/5000 26.47/s
+wood 78.27/200 0.53/s 3m50s to cap
+woodcutter 6.00
+happiness 0.98 (1.10 + -0.12)
+Catnip Field 55.00
+Hut 3.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
+3: Hut -(wood 78.12) +(Hut 1, kitten cap 2)
+4: Library -(wood 25.00) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: s3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1400.00
+catnip 5000.00/5000 26.47/s
+wood 0.67/200 0.53/s 6m16s to cap
+woodcutter 6.00
+happiness 0.98 (1.10 + -0.12)
+Catnip Field 55.00
+Hut 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
+3: Hut -(wood 0.67/195.31 6m7s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.67/25.00 45s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1419.00
+catnip 5000.00/5000 22.22/s
+wood 11.25/200 0.52/s 6m4s to cap
+kitten 1.00/2 0.05/s 20s to cap
+woodcutter 6.00
+happiness 0.96 (1.10 + -0.14)
+Catnip Field 55.00
+Hut 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 4s) +(Catnip Field 1)
+3: Hut -(wood 11.25/195.31 5m55s) +(Hut 1, kitten cap 2)
+4: Library -(wood 11.25/25.00 26s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1419.00
+catnip 5000.00/5000 22.22/s
+wood 11.77/200 0.60/s 5m11s to cap
+kitten 0.05/1 0.05/s 18s to cap
+woodcutter 7.00
+happiness 0.96 (1.10 + -0.14)
+Catnip Field 55.00
+Hut 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 4s) +(Catnip Field 1)
+3: Hut -(wood 11.77/195.31 5m3s) +(Hut 1, kitten cap 2)
+4: Library -(wood 11.77/25.00 21s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.05/1.00 18s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1437.00
+catnip 5000.00/5000 17.97/s
+wood 23.26/200 0.59/s 4m58s to cap
+kitten 1.00/1 0.05/s
+woodcutter 7.00
+happiness 0.94 (1.10 + -0.16)
+Catnip Field 55.00
+Hut 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
+3: Hut -(wood 23.26/195.31 4m50s) +(Hut 1, kitten cap 2)
+4: Library -(wood 23.26/25.00 2s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
+last input: s5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1437.00
+catnip 5000.00/5000 17.97/s
+wood 23.86/200 0.68/s 4m20s to cap
+woodcutter 8.00
+happiness 0.94 (1.10 + -0.16)
+Catnip Field 55.00
+Hut 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
+3: Hut -(wood 23.86/195.31 4m13s) +(Hut 1, kitten cap 2)
+4: Library -(wood 23.86/25.00 1s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
+last input: 5
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1690.00
+catnip 5000.00/5000 17.97/s
+wood 195.76/200 0.68/s 6s to cap
+woodcutter 8.00
+happiness 0.94 (1.10 + -0.16)
+Catnip Field 55.00
+Hut 4.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
+3: Hut -(wood 195.31) +(Hut 1, kitten cap 2)
+4: Library -(wood 25.00) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: s3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 1690.00
+catnip 5000.00/5000 17.97/s
+wood 1.13/200 0.68/s 4m53s to cap
+woodcutter 8.00
+happiness 0.94 (1.10 + -0.16)
+Catnip Field 55.00
+Hut 5.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
+3: Hut -(wood 1.13/488.28* 11m59s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.13/25.00 35s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 3
-error: action Hut is locked
 ###
-happiness 1.10
-Catnip Field 1.00
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 200.00/200 0.65/s
+kitten 2.00/2 0.05/s
+woodcutter 8.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
 Spring 1.00
 0: Gather catnip +(catnip 1)
-sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
-###
-happiness 1.10
-Catnip Field 1.00
-Spring 1.00
-0: Gather catnip +(catnip 1)
-sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
-###
-happiness 1.10
-Catnip Field 1.00
-Spring 1.00
-0: Gather catnip +(catnip 1)
-sX: time skip until action X is available
-last input: s4
-error: action woodcutter is locked
-###
-happiness 1.10
-Catnip Field 1.00
-Spring 1.00
-0: Gather catnip +(catnip 1)
-sX: time skip until action X is available
-last input: 4
-error: action woodcutter is locked
-###
-happiness 1.10
-Catnip Field 1.00
-Spring 1.00
-0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 200.00/488.28* 7m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 25.00) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
 last input: s3
-error: action Hut is locked
+###
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 175.00/200 0.65/s 38s to cap
+kitten 2.00/2 0.05/s
+woodcutter 8.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 1.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 175.00/488.28* 8m3s) +(Hut 1, kitten cap 2)
+4: Library -(wood 28.75) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
+6: scholar -(kitten 1.00) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 146.90/200 0.65/s 1m21s to cap
+kitten 2.00/2 0.05/s
+woodcutter 8.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 2.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 146.90/488.28* 8m46s) +(Hut 1, kitten cap 2)
+4: Library -(wood 33.06) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
+6: scholar -(kitten 1.00) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 147.55/200 0.65/s 1m20s to cap
+kitten 1.00/1 0.05/s
+woodcutter 8.00
+scholar 1.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 2.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 147.55/488.28* 8m45s) +(Hut 1, kitten cap 2)
+4: Library -(wood 33.06) +(Library 1, science cap 250)
+5: woodcutter -(kitten 1.00) +(woodcutter 1)
+6: scholar -(kitten 1.00) +(scholar 1)
+sX: time skip until action X is available
+last input: 6
+###
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 148.19/200 0.65/s 1m19s to cap
+science 0.19/750 0.38/s 33m3s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 2.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 148.19/488.28* 8m44s) +(Hut 1, kitten cap 2)
+4: Library -(wood 33.06) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 6
+###
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 115.78/200 0.65/s 2m9s to cap
+science 0.57/1000 0.41/s 40m40s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 3.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 115.78/488.28* 9m34s) +(Hut 1, kitten cap 2)
+4: Library -(wood 38.02) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 78.41/200 0.65/s 3m7s to cap
+science 0.98/1250 0.44/s 47m12s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 4.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 78.41/488.28* 10m32s) +(Hut 1, kitten cap 2)
+4: Library -(wood 43.73) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 2409.00
+catnip 5000.00/5000 9.47/s
+wood 35.33/200 0.65/s 4m14s to cap
+science 1.42/1500 0.47/s 52m51s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 5.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 35.33/488.28* 11m39s) +(Hut 1, kitten cap 2)
+4: Library -(wood 35.33/50.28 23s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 2432.00
+catnip 5000.00/5000 9.47/s
+wood 50.88/200 0.65/s 3m50s to cap
+science 12.76/1500 0.47/s 52m27s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 5.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 50.88/488.28* 11m15s) +(Hut 1, kitten cap 2)
+4: Library -(wood 50.28) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 2432.00
+catnip 5000.00/5000 9.47/s
+wood 1.24/200 0.65/s 5m6s to cap
+science 13.23/1750 0.50/s 57m25s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 6.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 1.24/488.28* 12m31s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.24/57.83 1m27s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 2519.00
+catnip 5000.00/5000 9.47/s
+wood 58.27/200 0.65/s 3m38s to cap
+science 57.58/1750 0.50/s 55m57s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 6.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 58.27/488.28* 11m3s) +(Hut 1, kitten cap 2)
+4: Library -(wood 57.83) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 2519.00
+catnip 5000.00/5000 9.47/s
+wood 1.09/200 0.65/s 5m6s to cap
+science 58.09/2000 0.54/s 1h0m26s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 7.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 1.09/488.28* 12m31s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.09/66.50 1m40s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 2619.00
+catnip 5000.00/5000 9.47/s
+wood 66.54/200 0.65/s 3m25s to cap
+science 112.17/2000 0.54/s 58m45s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 7.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 66.54/488.28* 10m50s) +(Hut 1, kitten cap 2)
+4: Library -(wood 66.50) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 2619.00
+catnip 5000.00/5000 9.47/s
+wood 0.69/200 0.65/s 5m7s to cap
+science 112.71/2250 0.57/s 1h2m49s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 8.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 0.69/488.28* 12m32s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.69/76.48 1m56s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 2735.00
+catnip 5000.00/5000 9.47/s
+wood 76.50/200 0.65/s 3m10s to cap
+science 179.05/2250 0.57/s 1h0m52s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 8.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 76.50/488.28* 10m35s) +(Hut 1, kitten cap 2)
+4: Library -(wood 76.48) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 2735.00
+catnip 5000.00/5000 9.47/s
+wood 0.67/200 0.65/s 5m7s to cap
+science 179.61/2500 0.60/s 1h4m37s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 9.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 0.67/488.28* 12m32s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.67/87.95 2m14s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 2869.00
+catnip 5000.00/5000 9.47/s
+wood 88.15/200 0.65/s 2m52s to cap
+science 260.41/2500 0.60/s 1h2m22s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 9.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 88.15/488.28* 10m17s) +(Hut 1, kitten cap 2)
+4: Library -(wood 87.95) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 2869.00
+catnip 5000.00/5000 9.47/s
+wood 0.86/200 0.65/s 5m7s to cap
+science 261.01/2750 0.63/s 1h5m50s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 10.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 0.86/488.28* 12m32s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.86/101.14 2m34s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 3023.00
+catnip 5000.00/5000 9.47/s
+wood 101.30/200 0.65/s 2m32s to cap
+science 358.66/2750 0.63/s 1h3m15s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 10.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 101.30/488.28* 9m57s) +(Hut 1, kitten cap 2)
+4: Library -(wood 101.14) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 3023.00
+catnip 5000.00/5000 9.47/s
+wood 0.80/200 0.65/s 5m7s to cap
+science 359.29/3000 0.66/s 1h6m32s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 11.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 0.80/488.28* 12m32s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.80/116.31 2m58s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 3201.00
+catnip 5000.00/5000 9.47/s
+wood 116.80/200 0.65/s 2m8s to cap
+science 477.70/3000 0.66/s 1h3m33s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 11.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 116.80/488.28* 9m33s) +(Hut 1, kitten cap 2)
+4: Library -(wood 116.31) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 3201.00
+catnip 5000.00/5000 9.47/s
+wood 1.13/200 0.65/s 5m6s to cap
+science 478.36/3250 0.69/s 1h6m39s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 12.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 1.13/488.28* 12m31s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.13/133.76 3m24s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 3405.00
+catnip 5000.00/5000 9.47/s
+wood 133.97/200 0.65/s 1m41s to cap
+science 620.42/3250 0.69/s 1h3m14s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 12.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 133.97/488.28* 9m6s) +(Hut 1, kitten cap 2)
+4: Library -(wood 133.76) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 3405.00
+catnip 5000.00/5000 9.47/s
+wood 0.87/200 0.65/s 5m7s to cap
+science 621.12/3500 0.72/s 1h6m13s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 13.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 0.87/488.28* 12m32s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.87/153.82 3m56s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 3641.00
+catnip 5000.00/5000 9.47/s
+wood 154.44/200 0.65/s 1m10s to cap
+science 792.82/3500 0.72/s 1h2m16s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 13.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 154.44/488.28* 8m35s) +(Hut 1, kitten cap 2)
+4: Library -(wood 153.82) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 3641.00
+catnip 5000.00/5000 9.47/s
+wood 1.27/200 0.65/s 5m6s to cap
+science 793.55/3750 0.76/s 1h5m10s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 14.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 1.27/488.28* 12m31s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.27/176.89 4m31s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 3912.00
+catnip 5000.00/5000 9.47/s
+wood 177.53/200 0.65/s 34s to cap
+science 999.18/3750 0.76/s 1h0m38s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 14.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 177.53/488.28* 7m59s) +(Hut 1, kitten cap 2)
+4: Library -(wood 176.89) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 3912.00
+catnip 5000.00/5000 9.47/s
+wood 1.28/200 0.65/s 5m6s to cap
+science 999.94/4000 0.79/s 1h3m29s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 15.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 1.28/488.28* 12m31s) +(Hut 1, kitten cap 2)
+4: Library -(wood 1.28/203.43* 5m11s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+###
+skip 4223.00
+catnip 5000.00/5000 9.47/s
+wood 200.00/200 0.65/s
+science 1245.64/4000 0.79/s 58m17s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 15.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 200.00/488.28* 7m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+###
+skip 4223.00
+catnip 5000.00/5000 9.47/s
+wood 200.00/200 0.65/s
+science 1246.42/4000 0.79/s 58m16s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 15.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 200.00/488.28* 7m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: 4
+error: not enough wood
+###
+skip 4223.00
+catnip 5000.00/5000 9.47/s
+wood 200.00/200 0.65/s
+science 1247.21/4000 0.79/s 58m15s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 15.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 200.00/488.28* 7m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: s4
+error: not enough wood
+###
+skip 4223.00
+catnip 5000.00/5000 9.47/s
+wood 200.00/200 0.65/s
+science 1248.00/4000 0.79/s 58m14s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 15.00
+Spring 1.00
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 200.00/488.28* 7m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+sX: time skip until action X is available
+last input: done
+error: strconv.Atoi: parsing "done": invalid syntax

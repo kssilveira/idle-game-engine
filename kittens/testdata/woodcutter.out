@@ -16,7 +16,7 @@ Spring 1.00
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 4
+last input: 5
 error: action woodcutter is locked
 ###
 catnip 991.50/5000 -8.50/s 1m56s to empty
@@ -49,7 +49,7 @@ Spring 1.00
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 4
+last input: 5
 error: action woodcutter is locked
 ###
 catnip 898.00/5000 -8.50/s 1m45s to empty

@@ -91,7 +91,6 @@ func updateResources(g *game.Game, resourceMap string) error {
 func handleInput(input game.Input) {
 	if *auto {
 		kittens.Solve(input, *autoSleepMS)
-		return
 	}
 	for {
 		var got string

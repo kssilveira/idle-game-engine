@@ -94,22 +94,7 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "refine catnip 1",
-		resources: map[string]float64{
-			"catnip": 99,
-		},
-		iters: []iter{
-			// refine catnip, not enough catnip
-			{refine, 0},
-			// gather 100th catnip
-			{gather, 0},
-			// refine catnip
-			{refine, 0},
-			// end
-			{"999", 0},
-		},
-	}, {
-		name: "refine catnip 2",
+		name: "refine catnip",
 		resources: map[string]float64{
 			"catnip": 200,
 		},
@@ -122,25 +107,7 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "hut 1",
-		resources: map[string]float64{
-			"catnip": 100,
-			"wood":   4,
-		},
-		iters: []iter{
-			// buy hut, not enough wood
-			{hut, 0},
-			// refine 5th wood
-			{refine, 0},
-			// buy hut
-			{hut, 0},
-			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
-			// end
-			{"999", 0},
-		},
-	}, {
-		name: "hut 2",
+		name: "hut",
 		resources: map[string]float64{
 			"wood": 100,
 		},
@@ -157,7 +124,30 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "woodcutter 2",
+		name: "library",
+		resources: map[string]float64{
+			"catnip": 1000,
+			"wood":   100,
+			"kitten": 2,
+		},
+		iters: []iter{
+			// buy 1st library, assign 1st scholar
+			{library, 0}, {scholar, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// buy 2nd library
+			{library, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// assign 2nd scholar
+			{scholar, 0},
+			// wait 1 second and 10 seconds
+			{"", 1}, {"", 10},
+			// end
+			{"999", 0},
+		},
+	}, {
+		name: "woodcutter",
 		resources: map[string]float64{
 			"catnip": 1000,
 			"kitten": 2,
@@ -175,20 +165,22 @@ func TestRun(t *testing.T) {
 			{"999", 0},
 		},
 	}, {
-		name: "woodcutter 8",
+		name: "gone",
 		resources: map[string]float64{
 			"catnip": 1000,
-			"kitten": 8,
+			"kitten": 3,
 		},
 		iters: []iter{
-			// 1st woodcutter
+			// woodcutter
 			{woodcutter, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
-			// 2nd woodcutter
-			{woodcutter, 0},
+			// scholar
+			{scholar, 0},
 			// wait 1 second and 10 seconds
 			{"", 1}, {"", 10},
+			// wait 1000 seconds
+			{"", 1000},
 			// end
 			{"999", 0},
 		},
@@ -202,7 +194,7 @@ func TestRun(t *testing.T) {
 		go func() {
 			if len(in.iters) == 0 {
 				Solve(input, 0 /* sleepMS */)
-				return
+				input <- "999"
 			}
 			for _, one := range in.iters {
 				input <- one.input
@@ -213,7 +205,7 @@ func TestRun(t *testing.T) {
 		nowfn := func() time.Time {
 			res := now
 			if len(in.iters) == 0 {
-				now.Add(time.Second)
+				now = now.Add(time.Second)
 			} else {
 				now = now.Add(time.Duration(in.iters[timeIndex].elapsed) * time.Second)
 				timeIndex++

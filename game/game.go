@@ -24,7 +24,6 @@ type Resource struct {
 	Capacity float64
 
 	Producers []Resource
-	OnGone    []Resource
 
 	// quantity += producer.Quantity * ProductionFactor * elapsedTime
 	ProductionFactor float64
@@ -34,6 +33,12 @@ type Resource struct {
 	ProductionFloor bool
 	// quantity = StartQuantity + producer.Quantity * ProductionFactor
 	StartQuantity float64
+
+	// production *= 1 + bonus
+	ProductionBonus []Resource
+
+	OnGone []Resource
+
 	// cost = Quantity * pow(CostExponentBase, add.Quantity)
 	CostExponentBase float64
 }
@@ -309,13 +314,21 @@ func (r *Resource) Add(add Resource) {
 func (g *Game) GetRate(resource *Resource) float64 {
 	factor := 0.0
 	for _, p := range resource.Producers {
-		one := g.GetQuantityForRate(p) * p.ProductionFactor
-		if p.ProductionResourceFactor != "" {
-			one *= g.GetQuantityForRate(*g.GetResource(p.ProductionResourceFactor))
-		}
-		factor += one
+		factor += g.GetOneRate(p)
 	}
-	return factor
+	bonus := 1.0
+	for _, p := range resource.ProductionBonus {
+		bonus += g.GetOneRate(p)
+	}
+	return factor * bonus
+}
+
+func (g *Game) GetOneRate(p Resource) float64 {
+	one := g.GetQuantityForRate(p) * p.ProductionFactor
+	if p.ProductionResourceFactor != "" {
+		one *= g.GetQuantityForRate(*g.GetResource(p.ProductionResourceFactor))
+	}
+	return one
 }
 
 func (g *Game) GetQuantityForRate(p Resource) float64 {
@@ -331,7 +344,7 @@ func (g *Game) GetQuantityForRate(p Resource) float64 {
 
 func (g *Game) UpdateRate(resource *Resource) {
 	for _, p := range resource.Producers {
-		one := g.GetQuantityForRate(p) * p.ProductionFactor
+		one := g.GetOneRate(p)
 		if one < 0 {
 			r := g.GetResource(p.Name)
 			r.Quantity--

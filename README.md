@@ -54,6 +54,12 @@ Faster solution:
 
 ## Ideas
 
+TODO
+
+- game.Resources not pointer
+- reduce ProductionFloor
+- remove end from kittens_test
+
 General features:
 
 - shared web server
@@ -65,16 +71,8 @@ General features:
 
 Features from kittens game:
 
-- Library
-  - unlocked by wood
-  - cost wood 25 28.75 33.06 rate 1.15
-  - science production 10%
-  - science cap 250
-  - unlock scholar, Calendar
-- scholar
-  - science 0.175
-- science cap 250
 - Calendar
+  - unlocked by Library
   - cost science 30
   - show year and day
     - day 2 seconds
