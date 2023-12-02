@@ -71,8 +71,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "catnip", Quantity: 1,
 		}},
 	}, {
-		Name: "Refine catnip",
-		UnlockedBy: game.Resource{ Name: "catnip" },
+		Name:       "Refine catnip",
+		UnlockedBy: game.Resource{Name: "catnip"},
 		Costs: []game.Resource{{
 			Name: "catnip", Quantity: 100, CostExponentBase: 1,
 		}},
@@ -80,8 +80,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "wood", Quantity: 1,
 		}},
 	}, {
-		Name: "Catnip Field",
-		UnlockedBy: game.Resource{ Name: "catnip" },
+		Name:       "Catnip Field",
+		UnlockedBy: game.Resource{Name: "catnip"},
 		Costs: []game.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
 		}},
@@ -89,8 +89,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Catnip Field", Quantity: 1,
 		}},
 	}, {
-		Name: "Hut",
-		UnlockedBy: game.Resource{ Name: "wood" },
+		Name:       "Hut",
+		UnlockedBy: game.Resource{Name: "wood"},
 		Costs: []game.Resource{{
 			Name: "wood", Quantity: 5, CostExponentBase: 2.5,
 		}},
@@ -100,8 +100,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", Capacity: 2,
 		}},
 	}, {
-		Name: "woodcutter",
-		UnlockedBy: game.Resource{ Name: "Hut" },
+		Name:       "woodcutter",
+		UnlockedBy: game.Resource{Name: "Hut"},
 		Costs: []game.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
 		}},

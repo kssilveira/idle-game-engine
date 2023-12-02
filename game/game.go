@@ -39,10 +39,10 @@ type Resource struct {
 }
 
 type Action struct {
-	Name  string
+	Name       string
 	UnlockedBy Resource
-	Costs []Resource
-	Adds  []Resource
+	Costs      []Resource
+	Adds       []Resource
 }
 
 type Input chan string
@@ -134,7 +134,7 @@ func (g *Game) PopulateUIResources(data *ui.Data) {
 func (g *Game) PopulateUIActions(data *ui.Data) {
 	for _, a := range g.Actions {
 		action := ui.Action{
-			Name: a.Name,
+			Name:   a.Name,
 			Locked: g.IsLocked(a),
 		}
 		for _, c := range a.Costs {

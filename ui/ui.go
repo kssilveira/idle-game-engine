@@ -23,10 +23,10 @@ type Resource struct {
 }
 
 type Action struct {
-	Name  string
+	Name   string
 	Locked bool
-	Costs []Cost
-	Adds  []Add
+	Costs  []Cost
+	Adds   []Add
 }
 
 type Cost struct {
