@@ -101,14 +101,10 @@ func (g *Game) Run(now Now, input Input, output Output) {
 func (g *Game) PopulateUIResources(data *ui.Data) {
 	for _, r := range g.Resources {
 		data.Resources = append(data.Resources, ui.Resource{
-			Name:              r.Name,
-			Quantity:          r.Quantity,
-			Capacity:          r.Capacity,
-			Rate:              g.GetRate(r),
-			DurationToCap:     g.GetDuration(r, r.Capacity),
-			DurationToEmpty:   g.GetDuration(r, 0),
-			StartQuantity:     r.StartQuantity,
-			ProductionModulus: r.ProductionModulus,
+			Resource:        *r,
+			Rate:            g.GetRate(r),
+			DurationToCap:   g.GetDuration(r, r.Capacity),
+			DurationToEmpty: g.GetDuration(r, 0),
 		})
 	}
 }

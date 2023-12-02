@@ -2,6 +2,8 @@ package ui
 
 import (
 	"time"
+
+	"github.com/kssilveira/idle-game-engine/data"
 )
 
 type Data struct {
@@ -13,14 +15,10 @@ type Data struct {
 }
 
 type Resource struct {
-	Name              string
-	Quantity          float64
-	Capacity          float64
-	Rate              float64
-	DurationToCap     time.Duration
-	DurationToEmpty   time.Duration
-	StartQuantity     float64
-	ProductionModulus int
+	Resource        data.Resource
+	Rate            float64
+	DurationToCap   time.Duration
+	DurationToEmpty time.Duration
 }
 
 type Action struct {

@@ -21,7 +21,8 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML bool) {
 }
 
 func ShowResources(logger *log.Logger, data *ui.Data) {
-	for _, r := range data.Resources {
+	for _, d := range data.Resources {
+		r := d.Resource
 		if r.Quantity == 0 {
 			continue
 		}
@@ -30,13 +31,13 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 			capacity = fmt.Sprintf("/%.0f", r.Capacity)
 		}
 		extra := ""
-		if r.Rate != 0 {
+		if d.Rate != 0 {
 			capStr := ""
-			if r.DurationToCap > 0 && r.Capacity > 0 {
-				capStr = fmt.Sprintf(" %s to cap", r.DurationToCap)
+			if d.DurationToCap > 0 && r.Capacity > 0 {
+				capStr = fmt.Sprintf(" %s to cap", d.DurationToCap)
 			}
-			if r.DurationToEmpty > 0 && r.StartQuantity == 0 {
-				capStr = fmt.Sprintf(" %s to empty", r.DurationToEmpty)
+			if d.DurationToEmpty > 0 && r.StartQuantity == 0 {
+				capStr = fmt.Sprintf(" %s to empty", d.DurationToEmpty)
 			}
 			rateStr := ""
 			if r.StartQuantity > 0 {
@@ -44,9 +45,9 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 				if r.ProductionModulus > 0 {
 					extra = fmt.Sprintf(" %% %d", r.ProductionModulus)
 				}
-				rateStr = fmt.Sprintf("(%.2f + %.2f%s)", r.StartQuantity, r.Rate, extra)
+				rateStr = fmt.Sprintf("(%.2f + %.2f%s)", r.StartQuantity, d.Rate, extra)
 			} else {
-				rateStr = fmt.Sprintf("%.2f/s", r.Rate)
+				rateStr = fmt.Sprintf("%.2f/s", d.Rate)
 			}
 			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}
