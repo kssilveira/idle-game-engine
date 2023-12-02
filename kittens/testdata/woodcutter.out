@@ -1,17 +1,20 @@
 ###
+day 1.00 0.50/s
+Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 kitten 2.00/2 0.05/s
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 
 ###
+day 1.00 0.50/s
+day_of_year 2.00 (1.00 + 1.00 % 400)
+Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 kitten 2.00/2 0.05/s
 happiness 1.06 (1.10 + -0.04)
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
@@ -19,10 +22,12 @@ sX: time skip until action X is available
 last input: 5
 error: action woodcutter is locked
 ###
+day 1.50 0.50/s
+day_of_year 2.00 (1.00 + 1.50 % 400)
+Spring 1.00
 catnip 991.50/5000 -8.50/s 1m56s to empty
 kitten 2.00/2 0.05/s
 happiness 1.06 (1.10 + -0.04)
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
@@ -30,10 +35,12 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 6.50 0.50/s
+day_of_year 7.00 (1.00 + 6.50 % 400)
+Spring 1.00
 catnip 906.50/5000 -8.50/s 1m46s to empty
 kitten 2.00/2 0.05/s
 happiness 1.06 (1.10 + -0.04)
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
@@ -41,10 +48,12 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 6.50 0.50/s
+day_of_year 7.00 (1.00 + 6.50 % 400)
+Spring 1.00
 catnip 906.50/5000 -8.50/s 1m46s to empty
 kitten 2.00/2 0.05/s
 happiness 1.06 (1.10 + -0.04)
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
@@ -52,10 +61,12 @@ sX: time skip until action X is available
 last input: 5
 error: action woodcutter is locked
 ###
+day 7.00 0.50/s
+day_of_year 8.00 (1.00 + 7.00 % 400)
+Spring 1.00
 catnip 898.00/5000 -8.50/s 1m45s to empty
 kitten 2.00/2 0.05/s
 happiness 1.06 (1.10 + -0.04)
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
@@ -63,10 +74,12 @@ sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 12.00 0.50/s
+day_of_year 13.00 (1.00 + 12.00 % 400)
+Spring 1.00
 catnip 813.00/5000 -8.50/s 1m35s to empty
 kitten 2.00/2 0.05/s
 happiness 1.06 (1.10 + -0.04)
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)

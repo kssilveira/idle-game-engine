@@ -1,8 +1,9 @@
 ###
+day 1.00 0.50/s
+Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 wood 100.00/200
 kitten 2.00/2 0.05/s
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
@@ -11,37 +12,46 @@ Spring 1.00
 sX: time skip until action X is available
 last input: 
 ###
+day 1.00 0.50/s
+day_of_year 2.00 (1.00 + 1.00 % 400)
+Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 wood 75.00/200
 kitten 2.00/2 0.05/s
 happiness 1.06 (1.10 + -0.04)
 Library 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
+day 1.00 0.50/s
+day_of_year 2.00 (1.00 + 1.00 % 400)
+Spring 1.00
 catnip 1000.00/5000 -8.50/s 1m57s to empty
 wood 75.00/200
 kitten 1.00/1 0.05/s
 scholar 1.00
 happiness 1.06 (1.10 + -0.04)
 Library 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 0.00/30.00 2m27s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 6
 ###
+day 1.50 0.50/s
+day_of_year 2.00 (1.00 + 1.50 % 400)
+Spring 1.00
 catnip 991.50/5000 -8.50/s 1m56s to empty
 wood 75.00/200
 science 0.20/500 0.20/s 40m49s to cap
@@ -49,17 +59,20 @@ kitten 1.00/1 0.05/s
 scholar 1.00
 happiness 1.06 (1.10 + -0.04)
 Library 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 0.20/30.00 2m26s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 6.50 0.50/s
+day_of_year 7.00 (1.00 + 6.50 % 400)
+Spring 1.00
 catnip 906.50/5000 -8.50/s 1m46s to empty
 wood 75.00/200
 science 2.24/500 0.20/s 40m39s to cap
@@ -67,17 +80,20 @@ kitten 1.00/1 0.05/s
 scholar 1.00
 happiness 1.06 (1.10 + -0.04)
 Library 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 2.24/30.00 2m16s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 6.50 0.50/s
+day_of_year 7.00 (1.00 + 6.50 % 400)
+Spring 1.00
 catnip 906.50/5000 -8.50/s 1m46s to empty
 wood 46.25/200
 science 2.24/750 0.22/s 55m59s to cap
@@ -85,16 +101,19 @@ kitten 1.00/1 0.05/s
 scholar 1.00
 happiness 1.06 (1.10 + -0.04)
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 2.24/30.00 2m4s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
+day 7.00 0.50/s
+day_of_year 8.00 (1.00 + 7.00 % 400)
+Spring 1.00
 catnip 898.00/5000 -8.50/s 1m45s to empty
 wood 46.25/200
 science 2.47/750 0.22/s 55m58s to cap
@@ -102,17 +121,20 @@ kitten 1.00/1 0.05/s
 scholar 1.00
 happiness 1.06 (1.10 + -0.04)
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 2.47/30.00 2m3s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 12.00 0.50/s
+day_of_year 13.00 (1.00 + 12.00 % 400)
+Spring 1.00
 catnip 813.00/5000 -8.50/s 1m35s to empty
 wood 46.25/200
 science 4.69/750 0.22/s 55m48s to cap
@@ -120,63 +142,72 @@ kitten 1.00/1 0.05/s
 scholar 1.00
 happiness 1.06 (1.10 + -0.04)
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 4.69/30.00 1m53s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 12.00 0.50/s
+day_of_year 13.00 (1.00 + 12.00 % 400)
+Spring 1.00
 catnip 813.00/5000 -8.50/s 1m35s to empty
 wood 46.25/200
 science 4.69/750 0.45/s 27m54s to cap
 scholar 2.00
 happiness 1.06 (1.10 + -0.04)
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 4.69/30.00 56s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 6
 ###
+day 12.50 0.50/s
+day_of_year 13.00 (1.00 + 12.50 % 400)
+Spring 1.00
 catnip 804.50/5000 -8.50/s 1m34s to empty
 wood 46.25/200
 science 5.14/750 0.45/s 27m53s to cap
 scholar 2.00
 happiness 1.06 (1.10 + -0.04)
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 5.14/30.00 55s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax
 ###
+day 17.50 0.50/s
+day_of_year 18.00 (1.00 + 17.50 % 400)
+Spring 1.00
 catnip 719.50/5000 -8.50/s 1m24s to empty
 wood 46.25/200
 science 9.59/750 0.45/s 27m43s to cap
 scholar 2.00
 happiness 1.06 (1.10 + -0.04)
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 5.00) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 9.59/30.00 45s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 error: strconv.Atoi: parsing "": invalid syntax

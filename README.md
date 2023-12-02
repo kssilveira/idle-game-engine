@@ -54,6 +54,10 @@ Faster solution:
 
 ## Ideas
 
+TODO
+
+- Make ui.Resource have a game.Resource
+
 General features:
 
 - shared web server
@@ -66,14 +70,11 @@ General features:
 Features from kittens game:
 
 - Calendar
-  - unlocked by Library
-  - cost science 30
   - show year and day
-    - day 2 seconds
     - season 100 days
     - year 400 days
-  - unlock Agriculture
 - Agriculture
+  - unlocked by Calendar
   - cost science 100
   - unlock Archery, Mining, Barn, farmer
 - Archery

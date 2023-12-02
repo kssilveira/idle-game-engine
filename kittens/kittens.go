@@ -9,6 +9,24 @@ import (
 func NewGame(now game.Now) *game.Game {
 	g := game.NewGame(now())
 	g.AddResources([]game.Resource{{
+		Name: "day", Quantity: 1, Capacity: -1,
+		Producers: []game.Resource{{
+			Name: "", ProductionFactor: 0.5,
+		}},
+	}, {
+		Name: "day_of_year", StartQuantity: 1, ProductionModulus: 400, Capacity: -1,
+		Producers: []game.Resource{{
+			Name: "day", ProductionFactor: 1,
+		}},
+	}, {
+		Name: "Spring", Quantity: 1, Capacity: -1,
+	}, {
+		Name: "Summer", Capacity: -1,
+	}, {
+		Name: "Autumn", Capacity: -1,
+	}, {
+		Name: "Winter", Capacity: -1,
+	}, {
 		Name: "catnip", Capacity: 5000,
 		Producers: []game.Resource{{
 			Name: "Catnip Field", ProductionFactor: 0.63 * (1 + 0.50), ProductionResourceFactor: "Spring",
@@ -78,13 +96,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Library", Capacity: -1,
 	}, {
-		Name: "Spring", Quantity: 1, Capacity: -1,
-	}, {
-		Name: "Summer", Capacity: -1,
-	}, {
-		Name: "Autumn", Capacity: -1,
-	}, {
-		Name: "Winter", Capacity: -1,
+		Name: "Calendar", Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
@@ -149,6 +161,15 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []game.Resource{{
 			Name: "scholar", Quantity: 1,
 		}},
+	}, {
+		Name:       "Calendar",
+		UnlockedBy: game.Resource{Name: "Library"},
+		Costs: []game.Resource{{
+			Name: "science", Quantity: 30, CostExponentBase: 1,
+		}},
+		Adds: []game.Resource{{
+			Name: "Calendar", Quantity: 1,
+		}},
 	}}
 	return g
 }
@@ -166,6 +187,7 @@ const (
 	swoodcutter = "s5"
 	scholar     = "6"
 	sscholar    = "s6"
+	calendar    = "7"
 )
 
 func Solve(input chan string, sleepMS int) {
@@ -193,6 +215,8 @@ func Solve(input chan string, sleepMS int) {
 		{[]string{scholar}, 2},
 		// buy 14 library
 		{[]string{library, slibrary}, 13},
+		// buy calendar
+		{[]string{calendar}, 1},
 		// done
 		{[]string{"done"}, 1},
 	} {

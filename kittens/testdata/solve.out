@@ -1,111 +1,136 @@
 ###
+day 1.00 0.50/s
 Spring 1.00
 0: Gather catnip +(catnip 1)
 sX: time skip until action X is available
 last input: 
 ###
+day 1.50 0.50/s
+day_of_year 2.00 (1.00 + 1.50 % 400)
+Spring 1.00
 catnip 1.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 1.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 1.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 2.00 0.50/s
+day_of_year 3.00 (1.00 + 2.00 % 400)
+Spring 1.00
 catnip 2.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 2.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 2.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 2.50 0.50/s
+day_of_year 3.00 (1.00 + 2.50 % 400)
+Spring 1.00
 catnip 3.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 3.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 3.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 3.00 0.50/s
+day_of_year 4.00 (1.00 + 3.00 % 400)
+Spring 1.00
 catnip 4.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 4.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 4.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 3.50 0.50/s
+day_of_year 4.00 (1.00 + 3.50 % 400)
+Spring 1.00
 catnip 5.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 5.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 5.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 4.00 0.50/s
+day_of_year 5.00 (1.00 + 4.00 % 400)
+Spring 1.00
 catnip 6.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 6.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 6.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 4.50 0.50/s
+day_of_year 5.00 (1.00 + 4.50 % 400)
+Spring 1.00
 catnip 7.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 7.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 7.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 5.00 0.50/s
+day_of_year 6.00 (1.00 + 5.00 % 400)
+Spring 1.00
 catnip 8.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 8.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 8.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 5.50 0.50/s
+day_of_year 6.00 (1.00 + 5.50 % 400)
+Spring 1.00
 catnip 9.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 9.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 9.00/10.00 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 6.00 0.50/s
+day_of_year 7.00 (1.00 + 6.00 % 400)
+Spring 1.00
 catnip 10.00/5000
 happiness 1.10
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 10.00/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
+day 6.50 0.50/s
+day_of_year 7.00 (1.00 + 6.50 % 400)
+Spring 1.00
 happiness 1.10
 Catnip Field 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 sX: time skip until action X is available
 last input: 2
 ###
 skip 11.00
+day 12.50 0.50/s
+day_of_year 13.00 (1.00 + 12.50 % 400)
+Spring 1.00
 catnip 11.34/5000 0.94/s 1h27m59s to cap
 happiness 1.10
 Catnip Field 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 11.34/100.00 1m33s) +(wood 1)
 2: Catnip Field -(catnip 11.20) +(Catnip Field 1)
@@ -113,10 +138,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 11.00
+day 13.00 0.50/s
+day_of_year 14.00 (1.00 + 13.00 % 400)
+Spring 1.00
 catnip 1.08/5000 1.89/s 44m4s to cap
 happiness 1.10
 Catnip Field 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 1.08/100.00 52s) +(wood 1)
 2: Catnip Field -(catnip 1.08/12.54 6s) +(Catnip Field 1)
@@ -124,10 +151,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 17.00
+day 16.50 0.50/s
+day_of_year 17.00 (1.00 + 16.50 % 400)
+Spring 1.00
 catnip 14.31/5000 1.89/s 43m57s to cap
 happiness 1.10
 Catnip Field 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 14.31/100.00 45s) +(wood 1)
 2: Catnip Field -(catnip 12.54) +(Catnip Field 1)
@@ -135,10 +164,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 17.00
+day 17.00 0.50/s
+day_of_year 18.00 (1.00 + 17.00 % 400)
+Spring 1.00
 catnip 3.66/5000 2.83/s 29m22s to cap
 happiness 1.10
 Catnip Field 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 3.66/100.00 33s) +(wood 1)
 2: Catnip Field -(catnip 3.66/14.05 3s) +(Catnip Field 1)
@@ -146,10 +177,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 20.00
+day 19.00 0.50/s
+day_of_year 20.00 (1.00 + 19.00 % 400)
+Spring 1.00
 catnip 15.00/5000 2.83/s 29m18s to cap
 happiness 1.10
 Catnip Field 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 15.00/100.00 29s) +(wood 1)
 2: Catnip Field -(catnip 14.05) +(Catnip Field 1)
@@ -157,10 +190,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 20.00
+day 19.50 0.50/s
+day_of_year 20.00 (1.00 + 19.50 % 400)
+Spring 1.00
 catnip 3.79/5000 3.78/s 22m1s to cap
 happiness 1.10
 Catnip Field 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 3.79/100.00 25s) +(wood 1)
 2: Catnip Field -(catnip 3.79/15.74 3s) +(Catnip Field 1)
@@ -168,10 +203,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 23.00
+day 21.50 0.50/s
+day_of_year 22.00 (1.00 + 21.50 % 400)
+Spring 1.00
 catnip 18.91/5000 3.78/s 21m57s to cap
 happiness 1.10
 Catnip Field 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 18.91/100.00 21s) +(wood 1)
 2: Catnip Field -(catnip 15.74) +(Catnip Field 1)
@@ -179,10 +216,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 23.00
+day 22.00 0.50/s
+day_of_year 23.00 (1.00 + 22.00 % 400)
+Spring 1.00
 catnip 6.95/5000 4.72/s 17m36s to cap
 happiness 1.10
 Catnip Field 5.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 6.95/100.00 19s) +(wood 1)
 2: Catnip Field -(catnip 6.95/17.62 2s) +(Catnip Field 1)
@@ -190,10 +229,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 25.00
+day 23.50 0.50/s
+day_of_year 24.00 (1.00 + 23.50 % 400)
+Spring 1.00
 catnip 21.13/5000 4.72/s 17m33s to cap
 happiness 1.10
 Catnip Field 5.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 21.13/100.00 16s) +(wood 1)
 2: Catnip Field -(catnip 17.62) +(Catnip Field 1)
@@ -201,10 +242,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 25.00
+day 24.00 0.50/s
+day_of_year 25.00 (1.00 + 24.00 % 400)
+Spring 1.00
 catnip 8.23/5000 5.67/s 14m40s to cap
 happiness 1.10
 Catnip Field 6.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 8.23/100.00 16s) +(wood 1)
 2: Catnip Field -(catnip 8.23/19.74 2s) +(Catnip Field 1)
@@ -212,10 +255,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 27.00
+day 25.50 0.50/s
+day_of_year 26.00 (1.00 + 25.50 % 400)
+Spring 1.00
 catnip 25.24/5000 5.67/s 14m37s to cap
 happiness 1.10
 Catnip Field 6.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 25.24/100.00 13s) +(wood 1)
 2: Catnip Field -(catnip 19.74) +(Catnip Field 1)
@@ -223,10 +268,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 27.00
+day 26.00 0.50/s
+day_of_year 27.00 (1.00 + 26.00 % 400)
+Spring 1.00
 catnip 11.17/5000 6.61/s 12m34s to cap
 happiness 1.10
 Catnip Field 7.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 11.17/100.00 13s) +(wood 1)
 2: Catnip Field -(catnip 11.17/22.11 1s) +(Catnip Field 1)
@@ -234,10 +281,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 28.00
+day 27.00 0.50/s
+day_of_year 28.00 (1.00 + 27.00 % 400)
+Spring 1.00
 catnip 24.40/5000 6.61/s 12m32s to cap
 happiness 1.10
 Catnip Field 7.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 24.40/100.00 11s) +(wood 1)
 2: Catnip Field -(catnip 22.11) +(Catnip Field 1)
@@ -245,10 +294,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 28.00
+day 27.50 0.50/s
+day_of_year 28.00 (1.00 + 27.50 % 400)
+Spring 1.00
 catnip 8.91/5000 7.56/s 11m0s to cap
 happiness 1.10
 Catnip Field 8.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 8.91/100.00 12s) +(wood 1)
 2: Catnip Field -(catnip 8.91/24.76 2s) +(Catnip Field 1)
@@ -256,10 +307,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 30.00
+day 29.00 0.50/s
+day_of_year 30.00 (1.00 + 29.00 % 400)
+Spring 1.00
 catnip 31.59/5000 7.56/s 10m57s to cap
 happiness 1.10
 Catnip Field 8.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 31.59/100.00 9s) +(wood 1)
 2: Catnip Field -(catnip 24.76) +(Catnip Field 1)
@@ -267,10 +320,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 30.00
+day 29.50 0.50/s
+day_of_year 30.00 (1.00 + 29.50 % 400)
+Spring 1.00
 catnip 14.39/5000 8.50/s 9m46s to cap
 happiness 1.10
 Catnip Field 9.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 14.39/100.00 10s) +(wood 1)
 2: Catnip Field -(catnip 14.39/27.73 1s) +(Catnip Field 1)
@@ -278,10 +333,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 31.00
+day 30.50 0.50/s
+day_of_year 31.00 (1.00 + 30.50 % 400)
+Spring 1.00
 catnip 31.40/5000 8.50/s 9m44s to cap
 happiness 1.10
 Catnip Field 9.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 31.40/100.00 8s) +(wood 1)
 2: Catnip Field -(catnip 27.73) +(Catnip Field 1)
@@ -289,10 +346,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 31.00
+day 31.00 0.50/s
+day_of_year 32.00 (1.00 + 31.00 % 400)
+Spring 1.00
 catnip 12.17/5000 9.45/s 8m47s to cap
 happiness 1.10
 Catnip Field 10.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 12.17/100.00 9s) +(wood 1)
 2: Catnip Field -(catnip 12.17/31.06 1s) +(Catnip Field 1)
@@ -300,10 +359,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 32.00
+day 32.00 0.50/s
+day_of_year 33.00 (1.00 + 32.00 % 400)
+Spring 1.00
 catnip 31.07/5000 9.45/s 8m45s to cap
 happiness 1.10
 Catnip Field 10.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 31.07/100.00 7s) +(wood 1)
 2: Catnip Field -(catnip 31.06) +(Catnip Field 1)
@@ -311,10 +372,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 32.00
+day 32.50 0.50/s
+day_of_year 33.00 (1.00 + 32.50 % 400)
+Spring 1.00
 catnip 9.46/5000 10.39/s 8m0s to cap
 happiness 1.10
 Catnip Field 11.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 9.46/100.00 8s) +(wood 1)
 2: Catnip Field -(catnip 9.46/34.79 2s) +(Catnip Field 1)
@@ -322,10 +385,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 34.00
+day 34.00 0.50/s
+day_of_year 35.00 (1.00 + 34.00 % 400)
+Spring 1.00
 catnip 40.65/5000 10.39/s 7m57s to cap
 happiness 1.10
 Catnip Field 11.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 40.65/100.00 5s) +(wood 1)
 2: Catnip Field -(catnip 34.79) +(Catnip Field 1)
@@ -333,10 +398,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 34.00
+day 34.50 0.50/s
+day_of_year 35.00 (1.00 + 34.50 % 400)
+Spring 1.00
 catnip 16.26/5000 11.34/s 7m19s to cap
 happiness 1.10
 Catnip Field 12.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 16.26/100.00 7s) +(wood 1)
 2: Catnip Field -(catnip 16.26/38.96 2s) +(Catnip Field 1)
@@ -344,10 +411,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 36.00
+day 36.00 0.50/s
+day_of_year 37.00 (1.00 + 36.00 % 400)
+Spring 1.00
 catnip 50.28/5000 11.34/s 7m16s to cap
 happiness 1.10
 Catnip Field 12.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 50.28/100.00 4s) +(wood 1)
 2: Catnip Field -(catnip 38.96) +(Catnip Field 1)
@@ -355,10 +424,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 36.00
+day 36.50 0.50/s
+day_of_year 37.00 (1.00 + 36.50 % 400)
+Spring 1.00
 catnip 22.66/5000 12.29/s 6m45s to cap
 happiness 1.10
 Catnip Field 13.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 22.66/100.00 6s) +(wood 1)
 2: Catnip Field -(catnip 22.66/43.63 1s) +(Catnip Field 1)
@@ -366,10 +437,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 37.00
+day 37.50 0.50/s
+day_of_year 38.00 (1.00 + 37.50 % 400)
+Spring 1.00
 catnip 47.23/5000 12.29/s 6m43s to cap
 happiness 1.10
 Catnip Field 13.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 47.23/100.00 4s) +(wood 1)
 2: Catnip Field -(catnip 43.63) +(Catnip Field 1)
@@ -377,10 +450,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 37.00
+day 38.00 0.50/s
+day_of_year 39.00 (1.00 + 38.00 % 400)
+Spring 1.00
 catnip 15.88/5000 13.23/s 6m16s to cap
 happiness 1.10
 Catnip Field 14.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 15.88/100.00 6s) +(wood 1)
 2: Catnip Field -(catnip 15.88/48.87 2s) +(Catnip Field 1)
@@ -388,10 +463,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 39.00
+day 39.50 0.50/s
+day_of_year 40.00 (1.00 + 39.50 % 400)
+Spring 1.00
 catnip 55.57/5000 13.23/s 6m13s to cap
 happiness 1.10
 Catnip Field 14.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 55.57/100.00 3s) +(wood 1)
 2: Catnip Field -(catnip 48.87) +(Catnip Field 1)
@@ -399,10 +476,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 39.00
+day 40.00 0.50/s
+day_of_year 41.00 (1.00 + 40.00 % 400)
+Spring 1.00
 catnip 19.93/5000 14.17/s 5m51s to cap
 happiness 1.10
 Catnip Field 15.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 19.93/100.00 5s) +(wood 1)
 2: Catnip Field -(catnip 19.93/54.74 2s) +(Catnip Field 1)
@@ -410,10 +489,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 41.00
+day 41.50 0.50/s
+day_of_year 42.00 (1.00 + 41.50 % 400)
+Spring 1.00
 catnip 62.45/5000 14.17/s 5m48s to cap
 happiness 1.10
 Catnip Field 15.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 62.45/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 54.74) +(Catnip Field 1)
@@ -421,10 +502,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 41.00
+day 42.00 0.50/s
+day_of_year 43.00 (1.00 + 42.00 % 400)
+Spring 1.00
 catnip 21.89/5000 15.12/s 5m29s to cap
 happiness 1.10
 Catnip Field 16.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 21.89/100.00 5s) +(wood 1)
 2: Catnip Field -(catnip 21.89/61.30 2s) +(Catnip Field 1)
@@ -432,10 +515,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 43.00
+day 43.50 0.50/s
+day_of_year 44.00 (1.00 + 43.50 % 400)
+Spring 1.00
 catnip 67.25/5000 15.12/s 5m26s to cap
 happiness 1.10
 Catnip Field 16.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 67.25/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 61.30) +(Catnip Field 1)
@@ -443,10 +528,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 43.00
+day 44.00 0.50/s
+day_of_year 45.00 (1.00 + 44.00 % 400)
+Spring 1.00
 catnip 21.07/5000 16.06/s 5m9s to cap
 happiness 1.10
 Catnip Field 17.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 21.07/100.00 4s) +(wood 1)
 2: Catnip Field -(catnip 21.07/68.66 2s) +(Catnip Field 1)
@@ -454,10 +541,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 45.00
+day 45.50 0.50/s
+day_of_year 46.00 (1.00 + 45.50 % 400)
+Spring 1.00
 catnip 69.26/5000 16.06/s 5m6s to cap
 happiness 1.10
 Catnip Field 17.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 69.26/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 68.66) +(Catnip Field 1)
@@ -465,10 +554,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 45.00
+day 46.00 0.50/s
+day_of_year 47.00 (1.00 + 46.00 % 400)
+Spring 1.00
 catnip 16.67/5000 17.01/s 4m52s to cap
 happiness 1.10
 Catnip Field 18.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 16.67/100.00 4s) +(wood 1)
 2: Catnip Field -(catnip 16.67/76.90 3s) +(Catnip Field 1)
@@ -476,10 +567,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 48.00
+day 48.00 0.50/s
+day_of_year 49.00 (1.00 + 48.00 % 400)
+Spring 1.00
 catnip 84.71/5000 17.01/s 4m48s to cap
 happiness 1.10
 Catnip Field 18.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 84.71/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 76.90) +(Catnip Field 1)
@@ -487,10 +580,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 48.00
+day 48.50 0.50/s
+day_of_year 49.00 (1.00 + 48.50 % 400)
+Spring 1.00
 catnip 24.82/5000 17.95/s 4m37s to cap
 happiness 1.10
 Catnip Field 19.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 24.82/100.00 4s) +(wood 1)
 2: Catnip Field -(catnip 24.82/86.13 3s) +(Catnip Field 1)
@@ -498,10 +593,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 51.00
+day 50.50 0.50/s
+day_of_year 51.00 (1.00 + 50.50 % 400)
+Spring 1.00
 catnip 96.64/5000 17.95/s 4m33s to cap
 happiness 1.10
 Catnip Field 19.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 96.64/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 86.13) +(Catnip Field 1)
@@ -509,10 +606,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 51.00
+day 51.00 0.50/s
+day_of_year 52.00 (1.00 + 51.00 % 400)
+Spring 1.00
 catnip 28.47/5000 18.90/s 4m23s to cap
 happiness 1.10
 Catnip Field 20.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 28.47/100.00 3s) +(wood 1)
 2: Catnip Field -(catnip 28.47/96.46 3s) +(Catnip Field 1)
@@ -520,10 +619,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 54.00
+day 53.00 0.50/s
+day_of_year 54.00 (1.00 + 53.00 % 400)
+Spring 1.00
 catnip 104.07/5000 18.90/s 4m19s to cap
 happiness 1.10
 Catnip Field 20.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 96.46) +(Catnip Field 1)
@@ -531,10 +632,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 54.00
+day 53.50 0.50/s
+day_of_year 54.00 (1.00 + 53.50 % 400)
+Spring 1.00
 catnip 26.50/5000 19.84/s 4m10s to cap
 happiness 1.10
 Catnip Field 21.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 26.50/100.00 3s) +(wood 1)
 2: Catnip Field -(catnip 26.50/108.04 4s) +(Catnip Field 1)
@@ -542,10 +645,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 58.00
+day 56.00 0.50/s
+day_of_year 57.00 (1.00 + 56.00 % 400)
+Spring 1.00
 catnip 125.73/5000 19.84/s 4m5s to cap
 happiness 1.10
 Catnip Field 21.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 108.04) +(Catnip Field 1)
@@ -553,10 +658,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 58.00
+day 56.50 0.50/s
+day_of_year 57.00 (1.00 + 56.50 % 400)
+Spring 1.00
 catnip 37.53/5000 20.79/s 3m58s to cap
 happiness 1.10
 Catnip Field 22.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 37.53/100.00 3s) +(wood 1)
 2: Catnip Field -(catnip 37.53/121.00 4s) +(Catnip Field 1)
@@ -564,10 +671,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 62.00
+day 59.00 0.50/s
+day_of_year 60.00 (1.00 + 59.00 % 400)
+Spring 1.00
 catnip 141.48/5000 20.79/s 3m53s to cap
 happiness 1.10
 Catnip Field 22.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 121.00) +(Catnip Field 1)
@@ -575,10 +684,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 62.00
+day 59.50 0.50/s
+day_of_year 60.00 (1.00 + 59.50 % 400)
+Spring 1.00
 catnip 41.27/5000 21.73/s 3m48s to cap
 happiness 1.10
 Catnip Field 23.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 41.27/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 41.27/135.52 4s) +(Catnip Field 1)
@@ -586,10 +697,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 66.00
+day 62.00 0.50/s
+day_of_year 63.00 (1.00 + 62.00 % 400)
+Spring 1.00
 catnip 149.95/5000 21.73/s 3m43s to cap
 happiness 1.10
 Catnip Field 23.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 135.52) +(Catnip Field 1)
@@ -597,10 +710,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 66.00
+day 62.50 0.50/s
+day_of_year 63.00 (1.00 + 62.50 % 400)
+Spring 1.00
 catnip 36.16/5000 22.68/s 3m38s to cap
 happiness 1.10
 Catnip Field 24.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 36.16/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 36.16/151.79 5s) +(Catnip Field 1)
@@ -608,10 +723,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 71.00
+day 65.50 0.50/s
+day_of_year 66.00 (1.00 + 65.50 % 400)
+Spring 1.00
 catnip 172.24/5000 22.68/s 3m32s to cap
 happiness 1.10
 Catnip Field 24.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 151.79) +(Catnip Field 1)
@@ -619,10 +736,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 71.00
+day 66.00 0.50/s
+day_of_year 67.00 (1.00 + 66.00 % 400)
+Spring 1.00
 catnip 43.13/5000 23.62/s 3m29s to cap
 happiness 1.10
 Catnip Field 25.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 43.13/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 43.13/170.00 5s) +(Catnip Field 1)
@@ -630,10 +749,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 76.00
+day 69.00 0.50/s
+day_of_year 70.00 (1.00 + 69.00 % 400)
+Spring 1.00
 catnip 184.88/5000 23.62/s 3m23s to cap
 happiness 1.10
 Catnip Field 25.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 170.00) +(Catnip Field 1)
@@ -641,10 +762,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 76.00
+day 69.50 0.50/s
+day_of_year 70.00 (1.00 + 69.50 % 400)
+Spring 1.00
 catnip 38.51/5000 24.57/s 3m21s to cap
 happiness 1.10
 Catnip Field 26.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 38.51/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 38.51/190.40 6s) +(Catnip Field 1)
@@ -652,10 +775,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 82.00
+day 73.00 0.50/s
+day_of_year 74.00 (1.00 + 73.00 % 400)
+Spring 1.00
 catnip 210.50/5000 24.57/s 3m14s to cap
 happiness 1.10
 Catnip Field 26.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 190.40) +(Catnip Field 1)
@@ -663,10 +788,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 82.00
+day 73.50 0.50/s
+day_of_year 74.00 (1.00 + 73.50 % 400)
+Spring 1.00
 catnip 44.66/5000 25.51/s 3m14s to cap
 happiness 1.10
 Catnip Field 27.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 44.66/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 44.66/213.25 6s) +(Catnip Field 1)
@@ -674,10 +801,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 88.00
+day 77.00 0.50/s
+day_of_year 78.00 (1.00 + 77.00 % 400)
+Spring 1.00
 catnip 223.27/5000 25.51/s 3m7s to cap
 happiness 1.10
 Catnip Field 27.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 213.25) +(Catnip Field 1)
@@ -685,10 +814,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 88.00
+day 77.50 0.50/s
+day_of_year 78.00 (1.00 + 77.50 % 400)
+Spring 1.00
 catnip 35.54/5000 26.46/s 3m7s to cap
 happiness 1.10
 Catnip Field 28.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 35.54/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 35.54/238.84 7s) +(Catnip Field 1)
@@ -696,10 +827,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 95.00
+day 81.50 0.50/s
+day_of_year 82.00 (1.00 + 81.50 % 400)
+Spring 1.00
 catnip 247.22/5000 26.46/s 2m59s to cap
 happiness 1.10
 Catnip Field 28.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 238.84) +(Catnip Field 1)
@@ -707,10 +840,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 95.00
+day 82.00 0.50/s
+day_of_year 83.00 (1.00 + 82.00 % 400)
+Spring 1.00
 catnip 34.84/5000 27.40/s 3m1s to cap
 happiness 1.10
 Catnip Field 29.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 34.84/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 34.84/267.50 8s) +(Catnip Field 1)
@@ -718,10 +853,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 103.00
+day 86.50 0.50/s
+day_of_year 87.00 (1.00 + 86.50 % 400)
+Spring 1.00
 catnip 281.48/5000 27.40/s 2m52s to cap
 happiness 1.10
 Catnip Field 29.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 267.50) +(Catnip Field 1)
@@ -729,10 +866,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 103.00
+day 87.00 0.50/s
+day_of_year 88.00 (1.00 + 87.00 % 400)
+Spring 1.00
 catnip 41.39/5000 28.35/s 2m54s to cap
 happiness 1.10
 Catnip Field 30.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 41.39/100.00 2s) +(wood 1)
 2: Catnip Field -(catnip 41.39/299.60 9s) +(Catnip Field 1)
@@ -740,10 +879,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 112.00
+day 92.00 0.50/s
+day_of_year 93.00 (1.00 + 92.00 % 400)
+Spring 1.00
 catnip 324.89/5000 28.35/s 2m44s to cap
 happiness 1.10
 Catnip Field 30.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 299.60) +(Catnip Field 1)
@@ -751,10 +892,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 112.00
+day 92.50 0.50/s
+day_of_year 93.00 (1.00 + 92.50 % 400)
+Spring 1.00
 catnip 53.64/5000 29.29/s 2m48s to cap
 happiness 1.10
 Catnip Field 31.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 53.64/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 53.64/335.55 9s) +(Catnip Field 1)
@@ -762,10 +905,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 121.00
+day 97.50 0.50/s
+day_of_year 98.00 (1.00 + 97.50 % 400)
+Spring 1.00
 catnip 346.59/5000 29.29/s 2m38s to cap
 happiness 1.10
 Catnip Field 31.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 335.55) +(Catnip Field 1)
@@ -773,10 +918,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 121.00
+day 98.00 0.50/s
+day_of_year 99.00 (1.00 + 98.00 % 400)
+Spring 1.00
 catnip 40.33/5000 30.24/s 2m44s to cap
 happiness 1.10
 Catnip Field 32.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 40.33/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 40.33/375.82 11s) +(Catnip Field 1)
@@ -784,10 +931,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 132.00
+day 104.00 0.50/s
+day_of_year 105.00 (1.00 + 104.00 % 400)
+Spring 1.00
 catnip 403.21/5000 30.24/s 2m32s to cap
 happiness 1.10
 Catnip Field 32.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 375.82) +(Catnip Field 1)
@@ -795,10 +944,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 132.00
+day 104.50 0.50/s
+day_of_year 105.00 (1.00 + 104.50 % 400)
+Spring 1.00
 catnip 57.64/5000 31.18/s 2m38s to cap
 happiness 1.10
 Catnip Field 33.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 57.64/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 57.64/420.92 11s) +(Catnip Field 1)
@@ -806,10 +957,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 143.00
+day 110.50 0.50/s
+day_of_year 111.00 (1.00 + 110.50 % 400)
+Spring 1.00
 catnip 431.86/5000 31.18/s 2m26s to cap
 happiness 1.10
 Catnip Field 33.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 420.92) +(Catnip Field 1)
@@ -817,10 +970,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 143.00
+day 111.00 0.50/s
+day_of_year 112.00 (1.00 + 111.00 % 400)
+Spring 1.00
 catnip 42.13/5000 32.13/s 2m34s to cap
 happiness 1.10
 Catnip Field 34.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 42.13/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 42.13/471.43 13s) +(Catnip Field 1)
@@ -828,10 +983,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 156.00
+day 118.00 0.50/s
+day_of_year 119.00 (1.00 + 118.00 % 400)
+Spring 1.00
 catnip 491.95/5000 32.13/s 2m20s to cap
 happiness 1.10
 Catnip Field 34.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 471.43) +(Catnip Field 1)
@@ -839,10 +996,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 156.00
+day 118.50 0.50/s
+day_of_year 119.00 (1.00 + 118.50 % 400)
+Spring 1.00
 catnip 52.65/5000 33.07/s 2m29s to cap
 happiness 1.10
 Catnip Field 35.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 52.65/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 52.65/528.00 14s) +(Catnip Field 1)
@@ -850,10 +1009,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 170.00
+day 126.00 0.50/s
+day_of_year 127.00 (1.00 + 126.00 % 400)
+Spring 1.00
 catnip 548.78/5000 33.07/s 2m14s to cap
 happiness 1.10
 Catnip Field 35.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 528.00) +(Catnip Field 1)
@@ -861,10 +1022,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 170.00
+day 126.50 0.50/s
+day_of_year 127.00 (1.00 + 126.50 % 400)
+Spring 1.00
 catnip 53.85/5000 34.02/s 2m25s to cap
 happiness 1.10
 Catnip Field 36.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 53.85/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 53.85/591.36 15s) +(Catnip Field 1)
@@ -872,10 +1035,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 185.00
+day 134.50 0.50/s
+day_of_year 135.00 (1.00 + 134.50 % 400)
+Spring 1.00
 catnip 598.17/5000 34.02/s 2m9s to cap
 happiness 1.10
 Catnip Field 36.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 591.36) +(Catnip Field 1)
@@ -883,10 +1048,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 185.00
+day 135.00 0.50/s
+day_of_year 136.00 (1.00 + 135.00 % 400)
+Spring 1.00
 catnip 40.84/5000 34.96/s 2m21s to cap
 happiness 1.10
 Catnip Field 37.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 40.84/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 40.84/662.32 17s) +(Catnip Field 1)
@@ -894,10 +1061,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 202.00
+day 144.00 0.50/s
+day_of_year 145.00 (1.00 + 144.00 % 400)
+Spring 1.00
 catnip 670.21/5000 34.96/s 2m3s to cap
 happiness 1.10
 Catnip Field 37.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 662.32) +(Catnip Field 1)
@@ -905,10 +1074,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 202.00
+day 144.50 0.50/s
+day_of_year 145.00 (1.00 + 144.50 % 400)
+Spring 1.00
 catnip 42.85/5000 35.91/s 2m18s to cap
 happiness 1.10
 Catnip Field 38.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 42.85/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 42.85/741.80 19s) +(Catnip Field 1)
@@ -916,10 +1087,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 221.00
+day 154.50 0.50/s
+day_of_year 155.00 (1.00 + 154.50 % 400)
+Spring 1.00
 catnip 761.05/5000 35.91/s 1m58s to cap
 happiness 1.10
 Catnip Field 38.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 741.80) +(Catnip Field 1)
@@ -927,10 +1100,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 221.00
+day 155.00 0.50/s
+day_of_year 156.00 (1.00 + 155.00 % 400)
+Spring 1.00
 catnip 55.17/5000 36.85/s 2m14s to cap
 happiness 1.10
 Catnip Field 39.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 55.17/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 55.17/830.81 21s) +(Catnip Field 1)
@@ -938,10 +1113,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 242.00
+day 166.00 0.50/s
+day_of_year 167.00 (1.00 + 166.00 % 400)
+Spring 1.00
 catnip 865.98/5000 36.85/s 1m52s to cap
 happiness 1.10
 Catnip Field 39.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 830.81) +(Catnip Field 1)
@@ -949,10 +1126,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 242.00
+day 166.50 0.50/s
+day_of_year 167.00 (1.00 + 166.50 % 400)
+Spring 1.00
 catnip 72.02/5000 37.80/s 2m10s to cap
 happiness 1.10
 Catnip Field 40.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 72.02/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 72.02/930.51 22s) +(Catnip Field 1)
@@ -960,10 +1139,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 264.00
+day 178.00 0.50/s
+day_of_year 179.00 (1.00 + 178.00 % 400)
+Spring 1.00
 catnip 941.42/5000 37.80/s 1m47s to cap
 happiness 1.10
 Catnip Field 40.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 930.51) +(Catnip Field 1)
@@ -971,10 +1152,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 264.00
+day 178.50 0.50/s
+day_of_year 179.00 (1.00 + 178.50 % 400)
+Spring 1.00
 catnip 48.71/5000 38.74/s 2m7s to cap
 happiness 1.10
 Catnip Field 41.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 48.71/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 48.71/1042.17 25s) +(Catnip Field 1)
@@ -982,10 +1165,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 289.00
+day 191.50 0.50/s
+day_of_year 192.00 (1.00 + 191.50 % 400)
+Spring 1.00
 catnip 1056.08/5000 38.74/s 1m41s to cap
 happiness 1.10
 Catnip Field 41.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 1042.17) +(Catnip Field 1)
@@ -993,10 +1178,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 289.00
+day 192.00 0.50/s
+day_of_year 193.00 (1.00 + 192.00 % 400)
+Spring 1.00
 catnip 52.66/5000 39.69/s 2m4s to cap
 happiness 1.10
 Catnip Field 42.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 52.66/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 52.66/1167.23 28s) +(Catnip Field 1)
@@ -1004,10 +1191,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 317.00
+day 206.50 0.50/s
+day_of_year 207.00 (1.00 + 206.50 % 400)
+Spring 1.00
 catnip 1203.67/5000 39.69/s 1m35s to cap
 happiness 1.10
 Catnip Field 42.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 1167.23) +(Catnip Field 1)
@@ -1015,10 +1204,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 317.00
+day 207.00 0.50/s
+day_of_year 208.00 (1.00 + 207.00 % 400)
+Spring 1.00
 catnip 76.12/5000 40.63/s 2m1s to cap
 happiness 1.10
 Catnip Field 43.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 76.12/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 76.12/1307.30 30s) +(Catnip Field 1)
@@ -1026,10 +1217,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 347.00
+day 222.50 0.50/s
+day_of_year 223.00 (1.00 + 222.50 % 400)
+Spring 1.00
 catnip 1335.81/5000 40.63/s 1m30s to cap
 happiness 1.10
 Catnip Field 43.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 1307.30) +(Catnip Field 1)
@@ -1037,10 +1230,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 347.00
+day 223.00 0.50/s
+day_of_year 224.00 (1.00 + 223.00 % 400)
+Spring 1.00
 catnip 69.14/5000 41.58/s 1m58s to cap
 happiness 1.10
 Catnip Field 44.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 69.14/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 69.14/1464.18 33s) +(Catnip Field 1)
@@ -1048,10 +1243,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 380.00
+day 240.00 0.50/s
+day_of_year 241.00 (1.00 + 240.00 % 400)
+Spring 1.00
 catnip 1482.86/5000 41.58/s 1m24s to cap
 happiness 1.10
 Catnip Field 44.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 1464.18) +(Catnip Field 1)
@@ -1059,10 +1256,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 380.00
+day 240.50 0.50/s
+day_of_year 241.00 (1.00 + 240.50 % 400)
+Spring 1.00
 catnip 60.27/5000 42.52/s 1m56s to cap
 happiness 1.10
 Catnip Field 45.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 60.27/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 60.27/1639.88 37s) +(Catnip Field 1)
@@ -1070,10 +1269,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 417.00
+day 259.50 0.50/s
+day_of_year 260.00 (1.00 + 259.50 % 400)
+Spring 1.00
 catnip 1676.22/5000 42.52/s 1m18s to cap
 happiness 1.10
 Catnip Field 45.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 1639.88) +(Catnip Field 1)
@@ -1081,10 +1282,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 417.00
+day 260.00 0.50/s
+day_of_year 261.00 (1.00 + 260.00 % 400)
+Spring 1.00
 catnip 78.87/5000 43.47/s 1m53s to cap
 happiness 1.10
 Catnip Field 46.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 78.87/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 78.87/1836.66 40s) +(Catnip Field 1)
@@ -1092,10 +1295,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 457.00
+day 280.50 0.50/s
+day_of_year 281.00 (1.00 + 280.50 % 400)
+Spring 1.00
 catnip 1861.14/5000 43.47/s 1m12s to cap
 happiness 1.10
 Catnip Field 46.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 1836.66) +(Catnip Field 1)
@@ -1103,10 +1308,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 457.00
+day 281.00 0.50/s
+day_of_year 282.00 (1.00 + 281.00 % 400)
+Spring 1.00
 catnip 67.95/5000 44.41/s 1m51s to cap
 happiness 1.10
 Catnip Field 47.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 67.95/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 67.95/2057.06 44s) +(Catnip Field 1)
@@ -1114,10 +1321,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 501.00
+day 303.50 0.50/s
+day_of_year 304.00 (1.00 + 303.50 % 400)
+Spring 1.00
 catnip 2066.62/5000 44.41/s 1m6s to cap
 happiness 1.10
 Catnip Field 47.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 2057.06) +(Catnip Field 1)
@@ -1125,10 +1334,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 501.00
+day 304.00 0.50/s
+day_of_year 305.00 (1.00 + 304.00 % 400)
+Spring 1.00
 catnip 53.98/5000 45.36/s 1m49s to cap
 happiness 1.10
 Catnip Field 48.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 53.98/100.00 1s) +(wood 1)
 2: Catnip Field -(catnip 53.98/2303.91 49s) +(Catnip Field 1)
@@ -1136,10 +1347,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 550.00
+day 329.00 0.50/s
+day_of_year 330.00 (1.00 + 329.00 % 400)
+Spring 1.00
 catnip 2321.98/5000 45.36/s 59s to cap
 happiness 1.10
 Catnip Field 48.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 2303.91) +(Catnip Field 1)
@@ -1147,10 +1360,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 550.00
+day 329.50 0.50/s
+day_of_year 330.00 (1.00 + 329.50 % 400)
+Spring 1.00
 catnip 63.43/5000 46.30/s 1m46s to cap
 happiness 1.10
 Catnip Field 49.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 63.43/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 63.43/2580.38 54s) +(Catnip Field 1)
@@ -1158,10 +1373,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 604.00
+day 357.00 0.50/s
+day_of_year 358.00 (1.00 + 357.00 % 400)
+Spring 1.00
 catnip 2610.20/5000 46.30/s 51s to cap
 happiness 1.10
 Catnip Field 49.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 2580.38) +(Catnip Field 1)
@@ -1169,10 +1386,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 604.00
+day 357.50 0.50/s
+day_of_year 358.00 (1.00 + 357.50 % 400)
+Spring 1.00
 catnip 76.13/5000 47.25/s 1m44s to cap
 happiness 1.10
 Catnip Field 50.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 76.13/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 76.13/2890.02 59s) +(Catnip Field 1)
@@ -1180,10 +1399,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 663.00
+day 387.50 0.50/s
+day_of_year 388.00 (1.00 + 387.50 % 400)
+Spring 1.00
 catnip 2911.13/5000 47.25/s 44s to cap
 happiness 1.10
 Catnip Field 50.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 2890.02) +(Catnip Field 1)
@@ -1191,10 +1412,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 663.00
+day 388.00 0.50/s
+day_of_year 389.00 (1.00 + 388.00 % 400)
+Spring 1.00
 catnip 68.36/5000 48.20/s 1m42s to cap
 happiness 1.10
 Catnip Field 51.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 68.36/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 68.36/3236.82 1m5s) +(Catnip Field 1)
@@ -1202,10 +1425,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 728.00
+day 421.00 0.50/s
+day_of_year 22.00 (1.00 + 421.00 % 400)
+Spring 1.00
 catnip 3249.23/5000 48.20/s 36s to cap
 happiness 1.10
 Catnip Field 51.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 3236.82) +(Catnip Field 1)
@@ -1213,10 +1438,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 728.00
+day 421.50 0.50/s
+day_of_year 22.00 (1.00 + 421.50 % 400)
+Spring 1.00
 catnip 60.60/5000 49.14/s 1m40s to cap
 happiness 1.10
 Catnip Field 52.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 60.60/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 60.60/3625.24 1m12s) +(Catnip Field 1)
@@ -1224,10 +1451,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 800.00
+day 458.00 0.50/s
+day_of_year 59.00 (1.00 + 458.00 % 400)
+Spring 1.00
 catnip 3647.82/5000 49.14/s 27s to cap
 happiness 1.10
 Catnip Field 52.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
@@ -1235,10 +1464,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 800.00
+day 458.50 0.50/s
+day_of_year 59.00 (1.00 + 458.50 % 400)
+Spring 1.00
 catnip 71.72/5000 50.09/s 1m38s to cap
 happiness 1.10
 Catnip Field 53.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 71.72/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 71.72/4060.27 1m19s) +(Catnip Field 1)
@@ -1246,10 +1477,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 879.00
+day 498.50 0.50/s
+day_of_year 99.00 (1.00 + 498.50 % 400)
+Spring 1.00
 catnip 4078.52/5000 50.09/s 18s to cap
 happiness 1.10
 Catnip Field 53.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4060.27) +(Catnip Field 1)
@@ -1257,10 +1490,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 879.00
+day 499.00 0.50/s
+day_of_year 100.00 (1.00 + 499.00 % 400)
+Spring 1.00
 catnip 68.33/5000 51.03/s 1m36s to cap
 happiness 1.10
 Catnip Field 54.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 68.33/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 68.33/4547.51 1m27s) +(Catnip Field 1)
@@ -1268,10 +1503,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 966.00
+day 543.00 0.50/s
+day_of_year 144.00 (1.00 + 543.00 % 400)
+Spring 1.00
 catnip 4558.97/5000 51.03/s 8s to cap
 happiness 1.10
 Catnip Field 54.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4547.51) +(Catnip Field 1)
@@ -1279,10 +1516,12 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 966.00
+day 543.50 0.50/s
+day_of_year 144.00 (1.00 + 543.50 % 400)
+Spring 1.00
 catnip 62.49/5000 51.97/s 1m34s to cap
 happiness 1.10
 Catnip Field 55.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 62.49/100.00 0s) +(wood 1)
 2: Catnip Field -(catnip 62.49/5093.21* 1m36s) +(Catnip Field 1)
@@ -1290,10 +1529,12 @@ sX: time skip until action X is available
 last input: 2
 ###
 skip 1062.00
+day 592.00 0.50/s
+day_of_year 193.00 (1.00 + 592.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 51.97/s
 happiness 1.10
 Catnip Field 55.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 1s) +(Catnip Field 1)
@@ -1301,11 +1542,13 @@ sX: time skip until action X is available
 last input: s2
 ###
 skip 1062.00
+day 592.50 0.50/s
+day_of_year 193.00 (1.00 + 592.50 % 400)
+Spring 1.00
 catnip 4900.00/5000 51.97/s 1s to cap
 wood 1.00/200
 happiness 1.10
 Catnip Field 55.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4900.00/5093.21* 3s) +(Catnip Field 1)
@@ -1315,11 +1558,13 @@ sX: time skip until action X is available
 last input: 1
 ###
 skip 1062.00
+day 593.00 0.50/s
+day_of_year 194.00 (1.00 + 593.00 % 400)
+Spring 1.00
 catnip 4851.98/5000 51.97/s 2s to cap
 wood 2.00/200
 happiness 1.10
 Catnip Field 55.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4851.98/5093.21* 4s) +(Catnip Field 1)
@@ -1329,11 +1574,13 @@ sX: time skip until action X is available
 last input: 1
 ###
 skip 1062.00
+day 593.50 0.50/s
+day_of_year 194.00 (1.00 + 593.50 % 400)
+Spring 1.00
 catnip 4803.95/5000 51.97/s 3s to cap
 wood 3.00/200
 happiness 1.10
 Catnip Field 55.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4803.95/5093.21* 5s) +(Catnip Field 1)
@@ -1343,11 +1590,13 @@ sX: time skip until action X is available
 last input: 1
 ###
 skip 1062.00
+day 594.00 0.50/s
+day_of_year 195.00 (1.00 + 594.00 % 400)
+Spring 1.00
 catnip 4755.93/5000 51.97/s 4s to cap
 wood 4.00/200
 happiness 1.10
 Catnip Field 55.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4755.93/5093.21* 6s) +(Catnip Field 1)
@@ -1357,11 +1606,13 @@ sX: time skip until action X is available
 last input: 1
 ###
 skip 1062.00
+day 594.50 0.50/s
+day_of_year 195.00 (1.00 + 594.50 % 400)
+Spring 1.00
 catnip 4707.90/5000 51.97/s 5s to cap
 wood 5.00/200
 happiness 1.10
 Catnip Field 55.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4707.90/5093.21* 7s) +(Catnip Field 1)
@@ -1371,11 +1622,13 @@ sX: time skip until action X is available
 last input: 1
 ###
 skip 1062.00
+day 595.00 0.50/s
+day_of_year 196.00 (1.00 + 595.00 % 400)
+Spring 1.00
 catnip 4759.88/5000 51.97/s 4s to cap
 happiness 1.10
 Catnip Field 55.00
 Hut 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 4759.88/5093.21* 6s) +(Catnip Field 1)
@@ -1384,12 +1637,14 @@ sX: time skip until action X is available
 last input: 3
 ###
 skip 1081.00
+day 605.00 0.50/s
+day_of_year 206.00 (1.00 + 605.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 47.72/s
 kitten 1.00/2 0.05/s 20s to cap
 happiness 1.08 (1.10 + -0.02)
 Catnip Field 55.00
 Hut 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 1s) +(Catnip Field 1)
@@ -1398,13 +1653,15 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1081.00
+day 605.50 0.50/s
+day_of_year 206.00 (1.00 + 605.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 47.72/s
 kitten 0.05/1 0.05/s 18s to cap
 woodcutter 1.00
 happiness 1.08 (1.10 + -0.02)
 Catnip Field 55.00
 Hut 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 1s) +(Catnip Field 1)
@@ -1413,6 +1670,9 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1099.00
+day 615.00 0.50/s
+day_of_year 216.00 (1.00 + 615.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 43.47/s
 wood 1.85/200 0.10/s 34m37s to cap
 kitten 1.00/1 0.05/s
@@ -1420,7 +1680,6 @@ woodcutter 1.00
 happiness 1.06 (1.10 + -0.04)
 Catnip Field 55.00
 Hut 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1431,13 +1690,15 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1099.00
+day 615.50 0.50/s
+day_of_year 216.00 (1.00 + 615.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 43.47/s
 wood 1.94/200 0.19/s 17m18s to cap
 woodcutter 2.00
 happiness 1.06 (1.10 + -0.04)
 Catnip Field 55.00
 Hut 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1448,13 +1709,15 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1154.00
+day 643.50 0.50/s
+day_of_year 244.00 (1.00 + 643.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 43.47/s
 wood 12.63/200 0.19/s 16m22s to cap
 woodcutter 2.00
 happiness 1.06 (1.10 + -0.04)
 Catnip Field 55.00
 Hut 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1465,13 +1728,15 @@ sX: time skip until action X is available
 last input: s3
 ###
 skip 1154.00
+day 644.00 0.50/s
+day_of_year 245.00 (1.00 + 644.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 43.47/s
 wood 0.32/200 0.19/s 17m26s to cap
 woodcutter 2.00
 happiness 1.06 (1.10 + -0.04)
 Catnip Field 55.00
 Hut 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1482,6 +1747,9 @@ sX: time skip until action X is available
 last input: 3
 ###
 skip 1173.00
+day 654.00 0.50/s
+day_of_year 255.00 (1.00 + 654.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 39.22/s
 wood 4.13/200 0.19/s 17m26s to cap
 kitten 1.00/2 0.05/s 20s to cap
@@ -1489,7 +1757,6 @@ woodcutter 2.00
 happiness 1.04 (1.10 + -0.06)
 Catnip Field 55.00
 Hut 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1500,6 +1767,9 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1173.00
+day 654.50 0.50/s
+day_of_year 255.00 (1.00 + 654.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 39.22/s
 wood 4.32/200 0.28/s 11m36s to cap
 kitten 0.05/1 0.05/s 18s to cap
@@ -1507,7 +1777,6 @@ woodcutter 3.00
 happiness 1.04 (1.10 + -0.06)
 Catnip Field 55.00
 Hut 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1518,6 +1787,9 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1191.00
+day 664.00 0.50/s
+day_of_year 265.00 (1.00 + 664.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 34.97/s
 wood 9.66/200 0.28/s 11m31s to cap
 kitten 1.00/1 0.05/s
@@ -1525,7 +1797,6 @@ woodcutter 3.00
 happiness 1.02 (1.10 + -0.08)
 Catnip Field 55.00
 Hut 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1536,13 +1807,15 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1191.00
+day 664.50 0.50/s
+day_of_year 265.00 (1.00 + 664.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 34.97/s
 wood 9.93/200 0.37/s 8m37s to cap
 woodcutter 4.00
 happiness 1.02 (1.10 + -0.08)
 Catnip Field 55.00
 Hut 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1553,13 +1826,15 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1249.00
+day 694.00 0.50/s
+day_of_year 295.00 (1.00 + 694.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 34.97/s
 wood 31.60/200 0.37/s 7m38s to cap
 woodcutter 4.00
 happiness 1.02 (1.10 + -0.08)
 Catnip Field 55.00
 Hut 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1570,13 +1845,15 @@ sX: time skip until action X is available
 last input: s3
 ###
 skip 1249.00
+day 694.50 0.50/s
+day_of_year 295.00 (1.00 + 694.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 34.97/s
 wood 0.71/200 0.37/s 9m2s to cap
 woodcutter 4.00
 happiness 1.02 (1.10 + -0.08)
 Catnip Field 55.00
 Hut 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 2s) +(Catnip Field 1)
@@ -1587,6 +1864,9 @@ sX: time skip until action X is available
 last input: 3
 ###
 skip 1268.00
+day 704.50 0.50/s
+day_of_year 305.00 (1.00 + 704.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 30.72/s
 wood 8.06/200 0.36/s 8m53s to cap
 kitten 1.00/2 0.05/s 20s to cap
@@ -1594,7 +1874,6 @@ woodcutter 4.00
 happiness 1.00 (1.10 + -0.10)
 Catnip Field 55.00
 Hut 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
@@ -1605,6 +1884,9 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1268.00
+day 705.00 0.50/s
+day_of_year 306.00 (1.00 + 705.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 30.72/s
 wood 8.42/200 0.45/s 7m5s to cap
 kitten 0.05/1 0.05/s 18s to cap
@@ -1612,7 +1894,6 @@ woodcutter 5.00
 happiness 1.00 (1.10 + -0.10)
 Catnip Field 55.00
 Hut 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
@@ -1623,6 +1904,9 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1286.00
+day 714.50 0.50/s
+day_of_year 315.00 (1.00 + 714.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 26.47/s
 wood 16.97/200 0.44/s 6m55s to cap
 kitten 1.00/1 0.05/s
@@ -1630,7 +1914,6 @@ woodcutter 5.00
 happiness 0.98 (1.10 + -0.12)
 Catnip Field 55.00
 Hut 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
@@ -1641,13 +1924,15 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1286.00
+day 715.00 0.50/s
+day_of_year 316.00 (1.00 + 715.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 26.47/s
 wood 17.41/200 0.53/s 5m45s to cap
 woodcutter 6.00
 happiness 0.98 (1.10 + -0.12)
 Catnip Field 55.00
 Hut 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
@@ -1658,13 +1943,15 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1400.00
+day 772.50 0.50/s
+day_of_year 373.00 (1.00 + 772.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 26.47/s
 wood 78.27/200 0.53/s 3m50s to cap
 woodcutter 6.00
 happiness 0.98 (1.10 + -0.12)
 Catnip Field 55.00
 Hut 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
@@ -1675,13 +1962,15 @@ sX: time skip until action X is available
 last input: s3
 ###
 skip 1400.00
+day 773.00 0.50/s
+day_of_year 374.00 (1.00 + 773.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 26.47/s
 wood 0.67/200 0.53/s 6m16s to cap
 woodcutter 6.00
 happiness 0.98 (1.10 + -0.12)
 Catnip Field 55.00
 Hut 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 3s) +(Catnip Field 1)
@@ -1692,6 +1981,9 @@ sX: time skip until action X is available
 last input: 3
 ###
 skip 1419.00
+day 783.00 0.50/s
+day_of_year 384.00 (1.00 + 783.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 22.22/s
 wood 11.25/200 0.52/s 6m4s to cap
 kitten 1.00/2 0.05/s 20s to cap
@@ -1699,7 +1991,6 @@ woodcutter 6.00
 happiness 0.96 (1.10 + -0.14)
 Catnip Field 55.00
 Hut 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 4s) +(Catnip Field 1)
@@ -1710,6 +2001,9 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1419.00
+day 783.50 0.50/s
+day_of_year 384.00 (1.00 + 783.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 22.22/s
 wood 11.77/200 0.60/s 5m11s to cap
 kitten 0.05/1 0.05/s 18s to cap
@@ -1717,7 +2011,6 @@ woodcutter 7.00
 happiness 0.96 (1.10 + -0.14)
 Catnip Field 55.00
 Hut 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 4s) +(Catnip Field 1)
@@ -1728,6 +2021,9 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1437.00
+day 793.00 0.50/s
+day_of_year 394.00 (1.00 + 793.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 17.97/s
 wood 23.26/200 0.59/s 4m58s to cap
 kitten 1.00/1 0.05/s
@@ -1735,7 +2031,6 @@ woodcutter 7.00
 happiness 0.94 (1.10 + -0.16)
 Catnip Field 55.00
 Hut 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
@@ -1746,13 +2041,15 @@ sX: time skip until action X is available
 last input: s5
 ###
 skip 1437.00
+day 793.50 0.50/s
+day_of_year 394.00 (1.00 + 793.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 17.97/s
 wood 23.86/200 0.68/s 4m20s to cap
 woodcutter 8.00
 happiness 0.94 (1.10 + -0.16)
 Catnip Field 55.00
 Hut 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
@@ -1763,13 +2060,15 @@ sX: time skip until action X is available
 last input: 5
 ###
 skip 1690.00
+day 920.50 0.50/s
+day_of_year 121.00 (1.00 + 920.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 17.97/s
 wood 195.76/200 0.68/s 6s to cap
 woodcutter 8.00
 happiness 0.94 (1.10 + -0.16)
 Catnip Field 55.00
 Hut 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
@@ -1780,13 +2079,15 @@ sX: time skip until action X is available
 last input: s3
 ###
 skip 1690.00
+day 921.00 0.50/s
+day_of_year 122.00 (1.00 + 921.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 17.97/s
 wood 1.13/200 0.68/s 4m53s to cap
 woodcutter 8.00
 happiness 0.94 (1.10 + -0.16)
 Catnip Field 55.00
 Hut 5.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 5s) +(Catnip Field 1)
@@ -1797,6 +2098,9 @@ sX: time skip until action X is available
 last input: 3
 ###
 skip 2409.00
+day 1281.00 0.50/s
+day_of_year 82.00 (1.00 + 1281.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 200.00/200 0.65/s
 kitten 2.00/2 0.05/s
@@ -1804,7 +2108,6 @@ woodcutter 8.00
 happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1815,6 +2118,9 @@ sX: time skip until action X is available
 last input: s3
 ###
 skip 2409.00
+day 1281.50 0.50/s
+day_of_year 82.00 (1.00 + 1281.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 175.00/200 0.65/s 38s to cap
 kitten 2.00/2 0.05/s
@@ -1823,7 +2129,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 1.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1831,10 +2136,14 @@ Spring 1.00
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 5: woodcutter -(kitten 1.00) +(woodcutter 1)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 2409.00
+day 1282.00 0.50/s
+day_of_year 83.00 (1.00 + 1282.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 146.90/200 0.65/s 1m21s to cap
 kitten 2.00/2 0.05/s
@@ -1843,7 +2152,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1851,10 +2159,14 @@ Spring 1.00
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 5: woodcutter -(kitten 1.00) +(woodcutter 1)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 2409.00
+day 1282.50 0.50/s
+day_of_year 83.00 (1.00 + 1282.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 147.55/200 0.65/s 1m20s to cap
 kitten 1.00/1 0.05/s
@@ -1864,7 +2176,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1872,10 +2183,14 @@ Spring 1.00
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 5: woodcutter -(kitten 1.00) +(woodcutter 1)
 6: scholar -(kitten 1.00) +(scholar 1)
+7: Calendar -(science 0.00/30.00 2m38s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 6
 ###
 skip 2409.00
+day 1283.00 0.50/s
+day_of_year 84.00 (1.00 + 1283.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 148.19/200 0.65/s 1m19s to cap
 science 0.19/750 0.38/s 33m3s to cap
@@ -1885,7 +2200,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 2.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1893,10 +2207,14 @@ Spring 1.00
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 0.19/30.00 1m18s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 6
 ###
 skip 2409.00
+day 1283.50 0.50/s
+day_of_year 84.00 (1.00 + 1283.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 115.78/200 0.65/s 2m9s to cap
 science 0.57/1000 0.41/s 40m40s to cap
@@ -1906,7 +2224,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 3.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1914,10 +2231,14 @@ Spring 1.00
 4: Library -(wood 38.02) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 0.57/30.00 1m11s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 2409.00
+day 1284.00 0.50/s
+day_of_year 85.00 (1.00 + 1284.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 78.41/200 0.65/s 3m7s to cap
 science 0.98/1250 0.44/s 47m12s to cap
@@ -1927,7 +2248,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 4.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1935,10 +2255,14 @@ Spring 1.00
 4: Library -(wood 43.73) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 0.98/30.00 1m5s) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 2409.00
+day 1284.50 0.50/s
+day_of_year 85.00 (1.00 + 1284.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 35.33/200 0.65/s 4m14s to cap
 science 1.42/1500 0.47/s 52m51s to cap
@@ -1948,7 +2272,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 5.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1956,10 +2279,14 @@ Spring 1.00
 4: Library -(wood 35.33/50.28 23s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 1.42/30.00 1m0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 2432.00
+day 1296.50 0.50/s
+day_of_year 97.00 (1.00 + 1296.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 50.88/200 0.65/s 3m50s to cap
 science 12.76/1500 0.47/s 52m27s to cap
@@ -1969,7 +2296,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 5.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1977,10 +2303,14 @@ Spring 1.00
 4: Library -(wood 50.28) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 12.76/30.00 36s) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 2432.00
+day 1297.00 0.50/s
+day_of_year 98.00 (1.00 + 1297.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 1.24/200 0.65/s 5m6s to cap
 science 13.23/1750 0.50/s 57m25s to cap
@@ -1990,7 +2320,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 6.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -1998,10 +2327,14 @@ Spring 1.00
 4: Library -(wood 1.24/57.83 1m27s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 13.23/30.00 33s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 2519.00
+day 1341.00 0.50/s
+day_of_year 142.00 (1.00 + 1341.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 58.27/200 0.65/s 3m38s to cap
 science 57.58/1750 0.50/s 55m57s to cap
@@ -2011,7 +2344,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 6.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2019,10 +2351,14 @@ Spring 1.00
 4: Library -(wood 57.83) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 2519.00
+day 1341.50 0.50/s
+day_of_year 142.00 (1.00 + 1341.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 1.09/200 0.65/s 5m6s to cap
 science 58.09/2000 0.54/s 1h0m26s to cap
@@ -2032,7 +2368,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 7.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2040,10 +2375,14 @@ Spring 1.00
 4: Library -(wood 1.09/66.50 1m40s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 2619.00
+day 1392.00 0.50/s
+day_of_year 193.00 (1.00 + 1392.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 66.54/200 0.65/s 3m25s to cap
 science 112.17/2000 0.54/s 58m45s to cap
@@ -2053,7 +2392,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 7.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2061,10 +2399,14 @@ Spring 1.00
 4: Library -(wood 66.50) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 2619.00
+day 1392.50 0.50/s
+day_of_year 193.00 (1.00 + 1392.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 0.69/200 0.65/s 5m7s to cap
 science 112.71/2250 0.57/s 1h2m49s to cap
@@ -2074,7 +2416,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 8.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2082,10 +2423,14 @@ Spring 1.00
 4: Library -(wood 0.69/76.48 1m56s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 2735.00
+day 1451.00 0.50/s
+day_of_year 252.00 (1.00 + 1451.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 76.50/200 0.65/s 3m10s to cap
 science 179.05/2250 0.57/s 1h0m52s to cap
@@ -2095,7 +2440,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 8.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2103,10 +2447,14 @@ Spring 1.00
 4: Library -(wood 76.48) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 2735.00
+day 1451.50 0.50/s
+day_of_year 252.00 (1.00 + 1451.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 0.67/200 0.65/s 5m7s to cap
 science 179.61/2500 0.60/s 1h4m37s to cap
@@ -2116,7 +2464,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 9.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2124,10 +2471,14 @@ Spring 1.00
 4: Library -(wood 0.67/87.95 2m14s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 2869.00
+day 1519.00 0.50/s
+day_of_year 320.00 (1.00 + 1519.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 88.15/200 0.65/s 2m52s to cap
 science 260.41/2500 0.60/s 1h2m22s to cap
@@ -2137,7 +2488,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 9.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2145,10 +2495,14 @@ Spring 1.00
 4: Library -(wood 87.95) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 2869.00
+day 1519.50 0.50/s
+day_of_year 320.00 (1.00 + 1519.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 0.86/200 0.65/s 5m7s to cap
 science 261.01/2750 0.63/s 1h5m50s to cap
@@ -2158,7 +2512,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 10.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2166,10 +2519,14 @@ Spring 1.00
 4: Library -(wood 0.86/101.14 2m34s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 3023.00
+day 1597.00 0.50/s
+day_of_year 398.00 (1.00 + 1597.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 101.30/200 0.65/s 2m32s to cap
 science 358.66/2750 0.63/s 1h3m15s to cap
@@ -2179,7 +2536,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 10.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2187,10 +2543,14 @@ Spring 1.00
 4: Library -(wood 101.14) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 3023.00
+day 1597.50 0.50/s
+day_of_year 398.00 (1.00 + 1597.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 0.80/200 0.65/s 5m7s to cap
 science 359.29/3000 0.66/s 1h6m32s to cap
@@ -2200,7 +2560,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 11.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2208,10 +2567,14 @@ Spring 1.00
 4: Library -(wood 0.80/116.31 2m58s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 3201.00
+day 1687.00 0.50/s
+day_of_year 88.00 (1.00 + 1687.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 116.80/200 0.65/s 2m8s to cap
 science 477.70/3000 0.66/s 1h3m33s to cap
@@ -2221,7 +2584,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 11.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2229,10 +2591,14 @@ Spring 1.00
 4: Library -(wood 116.31) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 3201.00
+day 1687.50 0.50/s
+day_of_year 88.00 (1.00 + 1687.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 1.13/200 0.65/s 5m6s to cap
 science 478.36/3250 0.69/s 1h6m39s to cap
@@ -2242,7 +2608,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 12.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2250,10 +2615,14 @@ Spring 1.00
 4: Library -(wood 1.13/133.76 3m24s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 3405.00
+day 1790.00 0.50/s
+day_of_year 191.00 (1.00 + 1790.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 133.97/200 0.65/s 1m41s to cap
 science 620.42/3250 0.69/s 1h3m14s to cap
@@ -2263,7 +2632,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 12.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2271,10 +2639,14 @@ Spring 1.00
 4: Library -(wood 133.76) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 3405.00
+day 1790.50 0.50/s
+day_of_year 191.00 (1.00 + 1790.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 0.87/200 0.65/s 5m7s to cap
 science 621.12/3500 0.72/s 1h6m13s to cap
@@ -2284,7 +2656,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 13.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2292,10 +2663,14 @@ Spring 1.00
 4: Library -(wood 0.87/153.82 3m56s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 3641.00
+day 1909.00 0.50/s
+day_of_year 310.00 (1.00 + 1909.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 154.44/200 0.65/s 1m10s to cap
 science 792.82/3500 0.72/s 1h2m16s to cap
@@ -2305,7 +2680,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 13.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2313,10 +2687,14 @@ Spring 1.00
 4: Library -(wood 153.82) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 3641.00
+day 1909.50 0.50/s
+day_of_year 310.00 (1.00 + 1909.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 1.27/200 0.65/s 5m6s to cap
 science 793.55/3750 0.76/s 1h5m10s to cap
@@ -2326,7 +2704,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 14.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2334,10 +2711,14 @@ Spring 1.00
 4: Library -(wood 1.27/176.89 4m31s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 3912.00
+day 2045.50 0.50/s
+day_of_year 46.00 (1.00 + 2045.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 177.53/200 0.65/s 34s to cap
 science 999.18/3750 0.76/s 1h0m38s to cap
@@ -2347,7 +2728,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 14.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2355,10 +2735,14 @@ Spring 1.00
 4: Library -(wood 176.89) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 3912.00
+day 2046.00 0.50/s
+day_of_year 47.00 (1.00 + 2046.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 1.28/200 0.65/s 5m6s to cap
 science 999.94/4000 0.79/s 1h3m29s to cap
@@ -2368,7 +2752,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 15.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2376,10 +2759,14 @@ Spring 1.00
 4: Library -(wood 1.28/203.43* 5m11s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
 skip 4223.00
+day 2202.00 0.50/s
+day_of_year 203.00 (1.00 + 2202.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 200.00/200 0.65/s
 science 1245.64/4000 0.79/s 58m17s to cap
@@ -2389,7 +2776,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 15.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2397,10 +2783,14 @@ Spring 1.00
 4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
 skip 4223.00
+day 2202.50 0.50/s
+day_of_year 203.00 (1.00 + 2202.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 200.00/200 0.65/s
 science 1246.42/4000 0.79/s 58m16s to cap
@@ -2410,7 +2800,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 15.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2418,11 +2807,15 @@ Spring 1.00
 4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
 ###
 skip 4223.00
+day 2203.00 0.50/s
+day_of_year 204.00 (1.00 + 2203.00 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 200.00/200 0.65/s
 science 1247.21/4000 0.79/s 58m15s to cap
@@ -2432,7 +2825,6 @@ happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 15.00
-Spring 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2440,21 +2832,25 @@ Spring 1.00
 4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 error: not enough wood
 ###
 skip 4223.00
+day 2203.50 0.50/s
+day_of_year 204.00 (1.00 + 2203.50 % 400)
+Spring 1.00
 catnip 5000.00/5000 9.47/s
 wood 200.00/200 0.65/s
-science 1248.00/4000 0.79/s 58m14s to cap
+science 1218.00/4000 0.79/s 58m52s to cap
 woodcutter 8.00
 scholar 2.00
 happiness 0.90 (1.10 + -0.20)
 Catnip Field 55.00
 Hut 5.00
 Library 15.00
-Spring 1.00
+Calendar 1.00/1
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
@@ -2462,6 +2858,32 @@ Spring 1.00
 4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
 5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
+sX: time skip until action X is available
+last input: 7
+###
+skip 4223.00
+day 2204.00 0.50/s
+day_of_year 205.00 (1.00 + 2204.00 % 400)
+Spring 1.00
+catnip 5000.00/5000 9.47/s
+wood 200.00/200 0.65/s
+science 1218.79/4000 0.79/s 58m51s to cap
+woodcutter 8.00
+scholar 2.00
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 55.00
+Hut 5.00
+Library 15.00
+Calendar 1.00/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 5000.00/5093.21* 9s) +(Catnip Field 1)
+3: Hut -(wood 200.00/488.28* 7m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 200.00/203.43* 5s) +(Library 1, science cap 250)
+5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+7: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: done
 error: strconv.Atoi: parsing "done": invalid syntax
