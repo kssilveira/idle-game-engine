@@ -65,13 +65,8 @@ General features:
 
 Features from kittens game:
 
-- catnip
-  - unlock Catnip Field
-- wood
-  - unlock Hut, Library
-- Hut
-  - unlock woodcutter
 - Library
+  - unlocked by wood
   - cost wood 25 28.75 33.06 rate 1.15
   - science production 10%
   - science cap 250

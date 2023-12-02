@@ -52,6 +52,9 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 
 func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 	for i, a := range data.Actions {
+		if a.Locked {
+			continue
+		}
 		name := fmt.Sprintf("%d: %s", i, a.Name)
 		if isHTML {
 			name = fmt.Sprintf("%d: <a href='/%d'>%s</a> [<a href='/s%d'>skip</a>]", i, i, a.Name, i)

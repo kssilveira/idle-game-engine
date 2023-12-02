@@ -40,6 +40,7 @@ type Resource struct {
 
 type Action struct {
 	Name  string
+	UnlockedBy Resource
 	Costs []Resource
 	Adds  []Resource
 }
@@ -74,6 +75,14 @@ func (g *Game) Validate() error {
 		}
 	}
 	for _, a := range g.Actions {
+		if err := g.ValidateResource(&a.UnlockedBy); err != nil {
+			return err
+		}
+		for _, r := range a.Costs {
+			if err := g.ValidateResource(&r); err != nil {
+				return err
+			}
+		}
 		for _, r := range a.Adds {
 			if err := g.ValidateResource(&r); err != nil {
 				return err
@@ -126,6 +135,7 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 	for _, a := range g.Actions {
 		action := ui.Action{
 			Name: a.Name,
+			Locked: g.IsLocked(a),
 		}
 		for _, c := range a.Costs {
 			cost := g.GetCost(a, c)
@@ -177,6 +187,9 @@ func (g *Game) Act(input string) error {
 	if err != nil {
 		return err
 	}
+	if g.IsLocked(a) {
+		return fmt.Errorf("action %s is locked", a.Name)
+	}
 	if err := g.CheckMax(a); err != nil {
 		return err
 	}
@@ -214,6 +227,11 @@ func (g *Game) ParseInput(input string) (bool, Action, error) {
 		return false, Action{}, fmt.Errorf("invalid index %d", index)
 	}
 	return skip, g.Actions[index], nil
+}
+
+func (g *Game) IsLocked(a Action) bool {
+	name := a.UnlockedBy.Name
+	return name != "" && g.GetResource(a.UnlockedBy.Name).Quantity <= 0
 }
 
 func (g *Game) CheckMax(a Action) error {

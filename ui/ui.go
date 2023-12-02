@@ -24,6 +24,7 @@ type Resource struct {
 
 type Action struct {
 	Name  string
+	Locked bool
 	Costs []Cost
 	Adds  []Add
 }

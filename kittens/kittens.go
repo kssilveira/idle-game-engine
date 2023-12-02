@@ -72,6 +72,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Refine catnip",
+		UnlockedBy: game.Resource{ Name: "catnip" },
 		Costs: []game.Resource{{
 			Name: "catnip", Quantity: 100, CostExponentBase: 1,
 		}},
@@ -80,6 +81,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Catnip Field",
+		UnlockedBy: game.Resource{ Name: "catnip" },
 		Costs: []game.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
 		}},
@@ -88,6 +90,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Hut",
+		UnlockedBy: game.Resource{ Name: "wood" },
 		Costs: []game.Resource{{
 			Name: "wood", Quantity: 5, CostExponentBase: 2.5,
 		}},
@@ -98,6 +101,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "woodcutter",
+		UnlockedBy: game.Resource{ Name: "Hut" },
 		Costs: []game.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
 		}},

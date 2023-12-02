@@ -1,10 +1,6 @@
 ###
 Spring 1.00
 0: <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
-1: <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 0.00/100.00 0s) +(wood 1)
-2: <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 0.00/10.00 0s) +(Catnip Field 1)
-3: <a href='/3'>Hut</a> [<a href='/s3'>skip</a>] -(wood 0.00/5.00 0s) +(Hut 1, kitten cap 2)
-4: <a href='/4'>woodcutter</a> [<a href='/s4'>skip</a>] -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 
 ###
@@ -14,8 +10,6 @@ Spring 1.00
 0: <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
 1: <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 1.00/100.00 0s) +(wood 1)
 2: <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 1.00/10.00 0s) +(Catnip Field 1)
-3: <a href='/3'>Hut</a> [<a href='/s3'>skip</a>] -(wood 0.00/5.00 0s) +(Hut 1, kitten cap 2)
-4: <a href='/4'>woodcutter</a> [<a href='/s4'>skip</a>] -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -25,7 +19,5 @@ Spring 1.00
 0: <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
 1: <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 2.00/100.00 0s) +(wood 1)
 2: <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 2.00/10.00 0s) +(Catnip Field 1)
-3: <a href='/3'>Hut</a> [<a href='/s3'>skip</a>] -(wood 0.00/5.00 0s) +(Hut 1, kitten cap 2)
-4: <a href='/4'>woodcutter</a> [<a href='/s4'>skip</a>] -(kitten 0.00/1.00* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 0
