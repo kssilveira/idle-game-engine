@@ -22,6 +22,7 @@ type Game struct {
 type Action struct {
 	Name       string
 	UnlockedBy data.Resource
+	LockedBy   data.Resource
 	Costs      []data.Resource
 	Adds       []data.Resource
 }
@@ -222,8 +223,10 @@ func (g *Game) ParseInput(input string) (bool, Action, error) {
 }
 
 func (g *Game) IsLocked(a Action) bool {
-	name := a.UnlockedBy.Name
-	return name != "" && g.GetResource(a.UnlockedBy.Name).Quantity <= 0
+	unlocked := a.UnlockedBy.Name
+	locked := a.LockedBy.Name
+	return (unlocked != "" && g.GetResource(unlocked).Quantity <= 0) ||
+		(locked != "" && g.GetResource(locked).Quantity > 0)
 }
 
 func (g *Game) CheckMax(a Action) error {

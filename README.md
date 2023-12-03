@@ -56,8 +56,6 @@ Faster solution:
 
 TODO
 
-- show time
-- hide actions after use
 - review kittens/testdata
 
 General features:

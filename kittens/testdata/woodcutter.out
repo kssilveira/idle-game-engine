@@ -21,7 +21,6 @@ woodcutter 1.00
 happiness 1.06 (1.10 + -0.04)
 Hut 1.00
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 6: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
@@ -39,7 +38,6 @@ woodcutter 1.00
 happiness 1.06 (1.10 + -0.04)
 Hut 1.00
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.10/25.00 4m21s) +(Library 1, science cap 250)
@@ -59,7 +57,6 @@ woodcutter 1.00
 happiness 1.06 (1.10 + -0.04)
 Hut 1.00
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 1.05/12.50 2m0s) +(Hut 1, kitten cap 2)
 4: Library -(wood 1.05/25.00 4m11s) +(Library 1, science cap 250)
@@ -78,7 +75,6 @@ woodcutter 2.00
 happiness 1.06 (1.10 + -0.04)
 Hut 1.00
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 1.05/12.50 1m0s) +(Hut 1, kitten cap 2)
 4: Library -(wood 1.05/25.00 2m5s) +(Library 1, science cap 250)
@@ -97,7 +93,6 @@ woodcutter 2.00
 happiness 1.06 (1.10 + -0.04)
 Hut 1.00
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 1.24/12.50 59s) +(Hut 1, kitten cap 2)
 4: Library -(wood 1.24/25.00 2m4s) +(Library 1, science cap 250)
@@ -116,7 +111,6 @@ woodcutter 2.00
 happiness 1.06 (1.10 + -0.04)
 Hut 1.00
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
 3: Hut -(wood 3.15/12.50 49s) +(Hut 1, kitten cap 2)
 4: Library -(wood 3.15/25.00 1m54s) +(Library 1, science cap 250)
