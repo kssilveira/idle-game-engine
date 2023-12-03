@@ -25,6 +25,7 @@ Agriculture 1.00/1
 sX: time skip until action X is available
 last input: 5
 ###
+time 1.00
 day 0.50 0.50/s
 year 1.00
 Spring 1.00
@@ -43,6 +44,7 @@ Agriculture 1.00/1
 sX: time skip until action X is available
 last input: 0
 ###
+time 11.00
 day 5.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
@@ -61,6 +63,7 @@ Agriculture 1.00/1
 sX: time skip until action X is available
 last input: 0
 ###
+time 11.00
 day 5.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
@@ -80,6 +83,7 @@ sX: time skip until action X is available
 last input: 5
 error: not enough wood
 ###
+time 12.00
 day 6.00 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.06 % 4 == 0)
@@ -98,6 +102,7 @@ Agriculture 1.00/1
 sX: time skip until action X is available
 last input: 0
 ###
+time 22.00
 day 11.00 0.50/s
 year 1.03 (1.00 + 0.03)
 Spring 1.00 (1.00 if 0.11 % 4 == 0)

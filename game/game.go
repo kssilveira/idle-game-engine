@@ -36,6 +36,8 @@ func NewGame(now time.Time) *Game {
 		ResourceToIndex: map[string]int{},
 	}
 	g.AddResources([]data.Resource{{
+		Name: "time", Capacity: -1,
+	}, {
 		Name: "skip", Capacity: -1,
 	}})
 	return g
@@ -147,6 +149,7 @@ func (g *Game) GetDuration(r *data.Resource, quantity float64) time.Duration {
 func (g *Game) Update(now time.Time) {
 	elapsed := now.Sub(g.Now)
 	g.Now = now
+	g.GetResource("time").Quantity += float64(elapsed / time.Second)
 	for _, resource := range g.Resources {
 		factor := g.GetRate(resource)
 		if resource.ProductionModulus != 0 {

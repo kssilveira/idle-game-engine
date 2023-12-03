@@ -41,6 +41,7 @@ Catnip Field 1.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1.00
 day 0.50 0.50/s
 year 1.00
 Spring 1.00
@@ -54,6 +55,7 @@ Catnip Field 1.00
 sX: time skip until action X is available
 last input: 0
 ###
+time 11.00
 day 5.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)

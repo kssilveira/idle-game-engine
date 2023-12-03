@@ -6,6 +6,7 @@ day_of_year 1.00
 sX: time skip until action X is available
 last input: 
 ###
+time 1.00
 day 0.50 0.50/s
 year 1.00
 Spring 1.00
@@ -18,6 +19,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 2.00
 day 1.00 0.50/s
 year 1.00 (1.00 + 0.00)
 Spring 1.00 (1.00 if 0.01 % 4 == 0)
@@ -30,6 +32,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 3.00
 day 1.50 0.50/s
 year 1.00 (1.00 + 0.00)
 Spring 1.00 (1.00 if 0.01 % 4 == 0)
@@ -42,6 +45,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 4.00
 day 2.00 0.50/s
 year 1.00 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.02 % 4 == 0)
@@ -54,6 +58,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 5.00
 day 2.50 0.50/s
 year 1.00 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.02 % 4 == 0)
@@ -66,6 +71,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 6.00
 day 3.00 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.03 % 4 == 0)
@@ -78,6 +84,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 7.00
 day 3.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.03 % 4 == 0)
@@ -90,6 +97,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 8.00
 day 4.00 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.04 % 4 == 0)
@@ -102,6 +110,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 9.00
 day 4.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.04 % 4 == 0)
@@ -114,6 +123,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 10.00
 day 5.00 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
@@ -126,6 +136,7 @@ happiness 1.10
 sX: time skip until action X is available
 last input: 0
 ###
+time 11.00
 day 5.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
@@ -136,6 +147,7 @@ Catnip Field 1.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 23.00
 skip 11.00
 day 11.50 0.50/s
 year 1.03 (1.00 + 0.03)
@@ -150,6 +162,7 @@ Catnip Field 1.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 24.00
 skip 11.00
 day 12.00 0.50/s
 year 1.03 (1.00 + 0.03)
@@ -164,6 +177,7 @@ Catnip Field 2.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 31.00
 skip 17.00
 day 15.50 0.50/s
 year 1.04 (1.00 + 0.04)
@@ -178,6 +192,7 @@ Catnip Field 2.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 32.00
 skip 17.00
 day 16.00 0.50/s
 year 1.04 (1.00 + 0.04)
@@ -192,6 +207,7 @@ Catnip Field 3.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 36.00
 skip 20.00
 day 18.00 0.50/s
 year 1.04 (1.00 + 0.04)
@@ -206,6 +222,7 @@ Catnip Field 3.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 37.00
 skip 20.00
 day 18.50 0.50/s
 year 1.04 (1.00 + 0.04)
@@ -220,6 +237,7 @@ Catnip Field 4.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 41.00
 skip 23.00
 day 20.50 0.50/s
 year 1.05 (1.00 + 0.05)
@@ -234,6 +252,7 @@ Catnip Field 4.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 42.00
 skip 23.00
 day 21.00 0.50/s
 year 1.05 (1.00 + 0.05)
@@ -248,6 +267,7 @@ Catnip Field 5.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 45.00
 skip 25.00
 day 22.50 0.50/s
 year 1.05 (1.00 + 0.06)
@@ -262,6 +282,7 @@ Catnip Field 5.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 46.00
 skip 25.00
 day 23.00 0.50/s
 year 1.06 (1.00 + 0.06)
@@ -276,6 +297,7 @@ Catnip Field 6.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 49.00
 skip 27.00
 day 24.50 0.50/s
 year 1.06 (1.00 + 0.06)
@@ -290,6 +312,7 @@ Catnip Field 6.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 50.00
 skip 27.00
 day 25.00 0.50/s
 year 1.06 (1.00 + 0.06)
@@ -304,6 +327,7 @@ Catnip Field 7.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 52.00
 skip 28.00
 day 26.00 0.50/s
 year 1.06 (1.00 + 0.07)
@@ -318,6 +342,7 @@ Catnip Field 7.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 53.00
 skip 28.00
 day 26.50 0.50/s
 year 1.06 (1.00 + 0.07)
@@ -332,6 +357,7 @@ Catnip Field 8.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 56.00
 skip 30.00
 day 28.00 0.50/s
 year 1.07 (1.00 + 0.07)
@@ -346,6 +372,7 @@ Catnip Field 8.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 57.00
 skip 30.00
 day 28.50 0.50/s
 year 1.07 (1.00 + 0.07)
@@ -360,6 +387,7 @@ Catnip Field 9.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 59.00
 skip 31.00
 day 29.50 0.50/s
 year 1.07 (1.00 + 0.07)
@@ -374,6 +402,7 @@ Catnip Field 9.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 60.00
 skip 31.00
 day 30.00 0.50/s
 year 1.07 (1.00 + 0.07)
@@ -388,6 +417,7 @@ Catnip Field 10.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 62.00
 skip 32.00
 day 31.00 0.50/s
 year 1.08 (1.00 + 0.08)
@@ -402,6 +432,7 @@ Catnip Field 10.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 63.00
 skip 32.00
 day 31.50 0.50/s
 year 1.08 (1.00 + 0.08)
@@ -416,6 +447,7 @@ Catnip Field 11.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 66.00
 skip 34.00
 day 33.00 0.50/s
 year 1.08 (1.00 + 0.08)
@@ -430,6 +462,7 @@ Catnip Field 11.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 67.00
 skip 34.00
 day 33.50 0.50/s
 year 1.08 (1.00 + 0.08)
@@ -444,6 +477,7 @@ Catnip Field 12.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 70.00
 skip 36.00
 day 35.00 0.50/s
 year 1.09 (1.00 + 0.09)
@@ -458,6 +492,7 @@ Catnip Field 12.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 71.00
 skip 36.00
 day 35.50 0.50/s
 year 1.09 (1.00 + 0.09)
@@ -472,6 +507,7 @@ Catnip Field 13.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 73.00
 skip 37.00
 day 36.50 0.50/s
 year 1.09 (1.00 + 0.09)
@@ -486,6 +522,7 @@ Catnip Field 13.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 74.00
 skip 37.00
 day 37.00 0.50/s
 year 1.09 (1.00 + 0.09)
@@ -500,6 +537,7 @@ Catnip Field 14.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 77.00
 skip 39.00
 day 38.50 0.50/s
 year 1.09 (1.00 + 0.10)
@@ -514,6 +552,7 @@ Catnip Field 14.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 78.00
 skip 39.00
 day 39.00 0.50/s
 year 1.10 (1.00 + 0.10)
@@ -528,6 +567,7 @@ Catnip Field 15.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 81.00
 skip 41.00
 day 40.50 0.50/s
 year 1.10 (1.00 + 0.10)
@@ -542,6 +582,7 @@ Catnip Field 15.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 82.00
 skip 41.00
 day 41.00 0.50/s
 year 1.10 (1.00 + 0.10)
@@ -556,6 +597,7 @@ Catnip Field 16.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 85.00
 skip 43.00
 day 42.50 0.50/s
 year 1.10 (1.00 + 0.10)
@@ -570,6 +612,7 @@ Catnip Field 16.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 86.00
 skip 43.00
 day 43.00 0.50/s
 year 1.11 (1.00 + 0.11)
@@ -584,6 +627,7 @@ Catnip Field 17.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 89.00
 skip 45.00
 day 44.50 0.50/s
 year 1.11 (1.00 + 0.11)
@@ -598,6 +642,7 @@ Catnip Field 17.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 90.00
 skip 45.00
 day 45.00 0.50/s
 year 1.11 (1.00 + 0.11)
@@ -612,6 +657,7 @@ Catnip Field 18.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 94.00
 skip 48.00
 day 47.00 0.50/s
 year 1.12 (1.00 + 0.12)
@@ -626,6 +672,7 @@ Catnip Field 18.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 95.00
 skip 48.00
 day 47.50 0.50/s
 year 1.12 (1.00 + 0.12)
@@ -640,6 +687,7 @@ Catnip Field 19.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 99.00
 skip 51.00
 day 49.50 0.50/s
 year 1.12 (1.00 + 0.12)
@@ -654,6 +702,7 @@ Catnip Field 19.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 100.00
 skip 51.00
 day 50.00 0.50/s
 year 1.12 (1.00 + 0.12)
@@ -668,6 +717,7 @@ Catnip Field 20.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 104.00
 skip 54.00
 day 52.00 0.50/s
 year 1.13 (1.00 + 0.13)
@@ -682,6 +732,7 @@ Catnip Field 20.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 105.00
 skip 54.00
 day 52.50 0.50/s
 year 1.13 (1.00 + 0.13)
@@ -696,6 +747,7 @@ Catnip Field 21.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 110.00
 skip 58.00
 day 55.00 0.50/s
 year 1.14 (1.00 + 0.14)
@@ -710,6 +762,7 @@ Catnip Field 21.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 111.00
 skip 58.00
 day 55.50 0.50/s
 year 1.14 (1.00 + 0.14)
@@ -724,6 +777,7 @@ Catnip Field 22.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 116.00
 skip 62.00
 day 58.00 0.50/s
 year 1.15 (1.00 + 0.14)
@@ -738,6 +792,7 @@ Catnip Field 22.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 117.00
 skip 62.00
 day 58.50 0.50/s
 year 1.15 (1.00 + 0.14)
@@ -752,6 +807,7 @@ Catnip Field 23.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 122.00
 skip 66.00
 day 61.00 0.50/s
 year 1.15 (1.00 + 0.15)
@@ -766,6 +822,7 @@ Catnip Field 23.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 123.00
 skip 66.00
 day 61.50 0.50/s
 year 1.15 (1.00 + 0.15)
@@ -780,6 +837,7 @@ Catnip Field 24.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 129.00
 skip 71.00
 day 64.50 0.50/s
 year 1.16 (1.00 + 0.16)
@@ -794,6 +852,7 @@ Catnip Field 24.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 130.00
 skip 71.00
 day 65.00 0.50/s
 year 1.16 (1.00 + 0.16)
@@ -808,6 +867,7 @@ Catnip Field 25.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 136.00
 skip 76.00
 day 68.00 0.50/s
 year 1.17 (1.00 + 0.17)
@@ -822,6 +882,7 @@ Catnip Field 25.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 137.00
 skip 76.00
 day 68.50 0.50/s
 year 1.17 (1.00 + 0.17)
@@ -836,6 +897,7 @@ Catnip Field 26.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 144.00
 skip 82.00
 day 72.00 0.50/s
 year 1.18 (1.00 + 0.18)
@@ -850,6 +912,7 @@ Catnip Field 26.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 145.00
 skip 82.00
 day 72.50 0.50/s
 year 1.18 (1.00 + 0.18)
@@ -864,6 +927,7 @@ Catnip Field 27.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 152.00
 skip 88.00
 day 76.00 0.50/s
 year 1.19 (1.00 + 0.19)
@@ -878,6 +942,7 @@ Catnip Field 27.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 153.00
 skip 88.00
 day 76.50 0.50/s
 year 1.19 (1.00 + 0.19)
@@ -892,6 +957,7 @@ Catnip Field 28.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 161.00
 skip 95.00
 day 80.50 0.50/s
 year 1.20 (1.00 + 0.20)
@@ -906,6 +972,7 @@ Catnip Field 28.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 162.00
 skip 95.00
 day 81.00 0.50/s
 year 1.20 (1.00 + 0.20)
@@ -920,6 +987,7 @@ Catnip Field 29.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 171.00
 skip 103.00
 day 85.50 0.50/s
 year 1.21 (1.00 + 0.21)
@@ -934,6 +1002,7 @@ Catnip Field 29.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 172.00
 skip 103.00
 day 86.00 0.50/s
 year 1.22 (1.00 + 0.21)
@@ -948,6 +1017,7 @@ Catnip Field 30.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 182.00
 skip 112.00
 day 91.00 0.50/s
 year 1.23 (1.00 + 0.23)
@@ -962,6 +1032,7 @@ Catnip Field 30.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 183.00
 skip 112.00
 day 91.50 0.50/s
 year 1.23 (1.00 + 0.23)
@@ -976,6 +1047,7 @@ Catnip Field 31.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 193.00
 skip 121.00
 day 96.50 0.50/s
 year 1.24 (1.00 + 0.24)
@@ -990,6 +1062,7 @@ Catnip Field 31.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 194.00
 skip 121.00
 day 97.00 0.50/s
 year 1.24 (1.00 + 0.24)
@@ -1004,6 +1077,7 @@ Catnip Field 32.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 206.00
 skip 132.00
 day 103.00 0.50/s
 year 1.26 (1.00 + 0.26)
@@ -1018,6 +1092,7 @@ Catnip Field 32.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 207.00
 skip 132.00
 day 103.50 0.50/s
 year 1.26 (1.00 + 0.26)
@@ -1033,6 +1108,7 @@ sX: time skip until action X is available
 last input: 2
 error: not enough catnip
 ###
+time 211.00
 skip 135.00
 day 105.50 0.50/s
 year 1.26 (1.00 + 0.26)
@@ -1047,6 +1123,7 @@ Catnip Field 32.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 212.00
 skip 135.00
 day 106.00 0.50/s
 year 1.27 (1.00 + 0.27)
@@ -1061,6 +1138,7 @@ Catnip Field 33.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 231.00
 skip 153.00
 day 115.50 0.50/s
 year 1.29 (1.00 + 0.29)
@@ -1075,6 +1153,7 @@ Catnip Field 33.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 232.00
 skip 153.00
 day 116.00 0.50/s
 year 1.29 (1.00 + 0.29)
@@ -1089,6 +1168,7 @@ Catnip Field 34.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 253.00
 skip 173.00
 day 126.50 0.50/s
 year 1.31 (1.00 + 0.32)
@@ -1103,6 +1183,7 @@ Catnip Field 34.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 254.00
 skip 173.00
 day 127.00 0.50/s
 year 1.32 (1.00 + 0.32)
@@ -1117,6 +1198,7 @@ Catnip Field 35.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 277.00
 skip 195.00
 day 138.50 0.50/s
 year 1.34 (1.00 + 0.35)
@@ -1131,6 +1213,7 @@ Catnip Field 35.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 278.00
 skip 195.00
 day 139.00 0.50/s
 year 1.35 (1.00 + 0.35)
@@ -1145,6 +1228,7 @@ Catnip Field 36.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 303.00
 skip 219.00
 day 151.50 0.50/s
 year 1.38 (1.00 + 0.38)
@@ -1159,6 +1243,7 @@ Catnip Field 36.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 304.00
 skip 219.00
 day 152.00 0.50/s
 year 1.38 (1.00 + 0.38)
@@ -1173,6 +1258,7 @@ Catnip Field 37.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 332.00
 skip 246.00
 day 166.00 0.50/s
 year 1.42 (1.00 + 0.42)
@@ -1187,6 +1273,7 @@ Catnip Field 37.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 333.00
 skip 246.00
 day 166.50 0.50/s
 year 1.42 (1.00 + 0.42)
@@ -1201,6 +1288,7 @@ Catnip Field 38.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 363.00
 skip 275.00
 day 181.50 0.50/s
 year 1.45 (1.00 + 0.45)
@@ -1215,6 +1303,7 @@ Catnip Field 38.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 364.00
 skip 275.00
 day 182.00 0.50/s
 year 1.46 (1.00 + 0.46)
@@ -1229,6 +1318,7 @@ Catnip Field 39.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 396.00
 skip 306.00
 day 198.00 0.50/s
 year 1.50 (1.00 + 0.49)
@@ -1243,6 +1333,7 @@ Catnip Field 39.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 397.00
 skip 306.00
 day 198.50 0.50/s
 year 1.50 (1.00 + 0.49)
@@ -1257,6 +1348,7 @@ Catnip Field 40.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 433.00
 skip 341.00
 day 216.50 0.50/s
 year 1.54 (1.00 + 0.54)
@@ -1271,6 +1363,7 @@ Catnip Field 40.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 434.00
 skip 341.00
 day 217.00 0.50/s
 year 1.54 (1.00 + 0.54)
@@ -1285,6 +1378,7 @@ Catnip Field 41.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 474.00
 skip 380.00
 day 237.00 0.50/s
 year 1.59 (1.00 + 0.59)
@@ -1299,6 +1393,7 @@ Catnip Field 41.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 475.00
 skip 380.00
 day 237.50 0.50/s
 year 1.59 (1.00 + 0.59)
@@ -1313,6 +1408,7 @@ Catnip Field 42.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 518.00
 skip 422.00
 day 259.00 0.50/s
 year 1.65 (1.00 + 0.65)
@@ -1327,6 +1423,7 @@ Catnip Field 42.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 519.00
 skip 422.00
 day 259.50 0.50/s
 year 1.65 (1.00 + 0.65)
@@ -1341,6 +1438,7 @@ Catnip Field 43.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 566.00
 skip 468.00
 day 283.00 0.50/s
 year 1.71 (1.00 + 0.71)
@@ -1355,6 +1453,7 @@ Catnip Field 43.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 567.00
 skip 468.00
 day 283.50 0.50/s
 year 1.71 (1.00 + 0.71)
@@ -1369,6 +1468,7 @@ Catnip Field 44.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 619.00
 skip 519.00
 day 309.50 0.50/s
 year 1.77 (1.00 + 0.77)
@@ -1383,6 +1483,7 @@ Catnip Field 44.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 620.00
 skip 519.00
 day 310.00 0.50/s
 year 1.77 (1.00 + 0.78)
@@ -1398,6 +1499,7 @@ sX: time skip until action X is available
 last input: 2
 error: not enough catnip
 ###
+time 771.00
 skip 669.00
 day 385.50 0.50/s
 year 1.96 (1.00 + 0.96)
@@ -1412,6 +1514,7 @@ Catnip Field 44.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 772.00
 skip 669.00
 day 386.00 0.50/s
 year 1.96 (1.00 + 0.96)
@@ -1426,6 +1529,7 @@ Catnip Field 45.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1002.00
 skip 898.00
 day 501.00 0.50/s
 year 2.25 (1.00 + 1.25)
@@ -1440,6 +1544,7 @@ Catnip Field 45.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1003.00
 skip 898.00
 day 501.50 0.50/s
 year 2.25 (1.00 + 1.25)
@@ -1454,6 +1559,7 @@ Catnip Field 46.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1004.00
 skip 898.00
 day 502.00 0.50/s
 year 2.25 (1.00 + 1.26)
@@ -1468,6 +1574,7 @@ Catnip Field 47.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1005.00
 skip 898.00
 day 502.50 0.50/s
 year 2.25 (1.00 + 1.26)
@@ -1483,6 +1590,7 @@ sX: time skip until action X is available
 last input: 2
 error: not enough catnip
 ###
+time 1022.00
 skip 914.00
 day 511.00 0.50/s
 year 2.28 (1.00 + 1.28)
@@ -1497,6 +1605,7 @@ Catnip Field 47.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1023.00
 skip 914.00
 day 511.50 0.50/s
 year 2.28 (1.00 + 1.28)
@@ -1511,6 +1620,7 @@ Catnip Field 48.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1098.00
 skip 988.00
 day 549.00 0.50/s
 year 2.37 (1.00 + 1.37)
@@ -1525,6 +1635,7 @@ Catnip Field 48.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1099.00
 skip 988.00
 day 549.50 0.50/s
 year 2.37 (1.00 + 1.37)
@@ -1539,6 +1650,7 @@ Catnip Field 49.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1181.00
 skip 1069.00
 day 590.50 0.50/s
 year 2.48 (1.00 + 1.48)
@@ -1553,6 +1665,7 @@ Catnip Field 49.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1182.00
 skip 1069.00
 day 591.00 0.50/s
 year 2.48 (1.00 + 1.48)
@@ -1567,6 +1680,7 @@ Catnip Field 50.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1273.00
 skip 1159.00
 day 636.50 0.50/s
 year 2.59 (1.00 + 1.59)
@@ -1581,6 +1695,7 @@ Catnip Field 50.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1274.00
 skip 1159.00
 day 637.00 0.50/s
 year 2.59 (1.00 + 1.59)
@@ -1595,6 +1710,7 @@ Catnip Field 51.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1374.00
 skip 1258.00
 day 687.00 0.50/s
 year 2.72 (1.00 + 1.72)
@@ -1609,6 +1725,7 @@ Catnip Field 51.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1375.00
 skip 1258.00
 day 687.50 0.50/s
 year 2.72 (1.00 + 1.72)
@@ -1623,6 +1740,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: 2
 ###
+time 1485.00
 skip 1367.00
 day 742.50 0.50/s
 year 2.85 (1.00 + 1.85)
@@ -1637,6 +1755,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1486.00
 skip 1367.00
 day 743.00 0.50/s
 year 2.86 (1.00 + 1.86)
@@ -1652,6 +1771,7 @@ sX: time skip until action X is available
 last input: 2
 error: not enough catnip
 ###
+time 1809.00
 skip 1689.00
 day 904.50 0.50/s
 year 3.26 (1.00 + 2.26)
@@ -1666,6 +1786,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: s2
 ###
+time 1810.00
 skip 1689.00
 day 905.00 0.50/s
 year 3.26 (1.00 + 2.26)
@@ -1683,6 +1804,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: 1
 ###
+time 1811.00
 skip 1689.00
 day 905.50 0.50/s
 year 3.26 (1.00 + 2.26)
@@ -1700,6 +1822,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: 1
 ###
+time 1812.00
 skip 1689.00
 day 906.00 0.50/s
 year 3.27 (1.00 + 2.27)
@@ -1717,6 +1840,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: 1
 ###
+time 1813.00
 skip 1689.00
 day 906.50 0.50/s
 year 3.27 (1.00 + 2.27)
@@ -1734,6 +1858,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: 1
 ###
+time 1814.00
 skip 1689.00
 day 907.00 0.50/s
 year 3.27 (1.00 + 2.27)
@@ -1751,6 +1876,7 @@ Catnip Field 52.00
 sX: time skip until action X is available
 last input: 1
 ###
+time 1815.00
 skip 1689.00
 day 907.50 0.50/s
 year 3.27 (1.00 + 2.27)
@@ -1767,6 +1893,7 @@ Hut 1.00
 sX: time skip until action X is available
 last input: 3
 ###
+time 1835.00
 skip 1708.00
 day 917.50 0.50/s
 year 3.29 (1.00 + 2.29)
@@ -1784,6 +1911,7 @@ Hut 1.00
 sX: time skip until action X is available
 last input: s6
 ###
+time 1836.00
 skip 1708.00
 day 918.00 0.50/s
 year 3.29 (1.00 + 2.29)
@@ -1802,6 +1930,7 @@ Hut 1.00
 sX: time skip until action X is available
 last input: 6
 ###
+time 2094.00
 skip 1965.00
 day 1047.00 0.50/s
 year 3.62 (1.00 + 2.62)
@@ -1823,6 +1952,7 @@ Hut 1.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 2095.00
 skip 1965.00
 day 1047.50 0.50/s
 year 3.62 (1.00 + 2.62)
@@ -1847,6 +1977,7 @@ Library 1.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 2096.00
 skip 1965.00
 day 1048.00 0.50/s
 year 3.62 (1.00 + 2.62)
@@ -1871,6 +2002,7 @@ Library 1.00
 sX: time skip until action X is available
 last input: s7
 ###
+time 2097.00
 skip 1965.00
 day 1048.50 0.50/s
 year 3.62 (1.00 + 2.62)
@@ -1897,6 +2029,7 @@ sX: time skip until action X is available
 last input: 7
 error: not enough kitten
 ###
+time 2395.00
 skip 2262.00
 day 1197.50 0.50/s
 year 3.99 (1.00 + 2.99)
@@ -1922,6 +2055,7 @@ Library 1.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 2396.00
 skip 2262.00
 day 1198.00 0.50/s
 year 4.00 (1.00 + 3.00)
@@ -1947,6 +2081,7 @@ Library 2.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 2742.00
 skip 2607.00
 day 1371.00 0.50/s
 year 4.43 (1.00 + 3.43)
@@ -1972,6 +2107,7 @@ Library 2.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 2743.00
 skip 2607.00
 day 1371.50 0.50/s
 year 4.43 (1.00 + 3.43)
@@ -1997,6 +2133,7 @@ Library 3.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 3140.00
 skip 3003.00
 day 1570.00 0.50/s
 year 4.93 (1.00 + 3.93)
@@ -2022,6 +2159,7 @@ Library 3.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 3141.00
 skip 3003.00
 day 1570.50 0.50/s
 year 4.93 (1.00 + 3.93)
@@ -2047,6 +2185,7 @@ Library 4.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 3599.00
 skip 3460.00
 day 1799.50 0.50/s
 year 5.50 (1.00 + 4.50)
@@ -2072,6 +2211,7 @@ Library 4.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 3600.00
 skip 3460.00
 day 1800.00 0.50/s
 year 5.50 (1.00 + 4.50)
@@ -2097,6 +2237,7 @@ Library 5.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 4126.00
 skip 3985.00
 day 2063.00 0.50/s
 year 6.16 (1.00 + 5.16)
@@ -2122,6 +2263,7 @@ Library 5.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 4127.00
 skip 3985.00
 day 2063.50 0.50/s
 year 6.16 (1.00 + 5.16)
@@ -2147,6 +2289,7 @@ Library 6.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 4732.00
 skip 4589.00
 day 2366.00 0.50/s
 year 6.92 (1.00 + 5.92)
@@ -2172,6 +2315,7 @@ Library 6.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 4733.00
 skip 4589.00
 day 2366.50 0.50/s
 year 6.92 (1.00 + 5.92)
@@ -2197,6 +2341,7 @@ Library 7.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 5429.00
 skip 5284.00
 day 2714.50 0.50/s
 year 7.79 (1.00 + 6.79)
@@ -2222,6 +2367,7 @@ Library 7.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 5430.00
 skip 5284.00
 day 2715.00 0.50/s
 year 7.79 (1.00 + 6.79)
@@ -2247,6 +2393,7 @@ Library 8.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 6230.00
 skip 6083.00
 day 3115.00 0.50/s
 year 8.79 (1.00 + 7.79)
@@ -2272,6 +2419,7 @@ Library 8.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 6231.00
 skip 6083.00
 day 3115.50 0.50/s
 year 8.79 (1.00 + 7.79)
@@ -2297,6 +2445,7 @@ Library 9.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 7152.00
 skip 7003.00
 day 3576.00 0.50/s
 year 9.94 (1.00 + 8.94)
@@ -2322,6 +2471,7 @@ Library 9.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 7153.00
 skip 7003.00
 day 3576.50 0.50/s
 year 9.94 (1.00 + 8.94)
@@ -2347,6 +2497,7 @@ Library 10.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 8212.00
 skip 8061.00
 day 4106.00 0.50/s
 year 11.27 (1.00 + 10.27)
@@ -2372,6 +2523,7 @@ Library 10.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 8213.00
 skip 8061.00
 day 4106.50 0.50/s
 year 11.27 (1.00 + 10.27)
@@ -2397,6 +2549,7 @@ Library 11.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 9432.00
 skip 9279.00
 day 4716.00 0.50/s
 year 12.79 (1.00 + 11.79)
@@ -2422,6 +2575,7 @@ Library 11.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 9433.00
 skip 9279.00
 day 4716.50 0.50/s
 year 12.79 (1.00 + 11.79)
@@ -2447,6 +2601,7 @@ Library 12.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 10834.00
 skip 10679.00
 day 5417.00 0.50/s
 year 14.54 (1.00 + 13.54)
@@ -2472,6 +2627,7 @@ Library 12.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 10835.00
 skip 10679.00
 day 5417.50 0.50/s
 year 14.54 (1.00 + 13.54)
@@ -2497,6 +2653,7 @@ Library 13.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 12446.00
 skip 12289.00
 day 6223.00 0.50/s
 year 16.56 (1.00 + 15.56)
@@ -2522,6 +2679,7 @@ Library 13.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 12447.00
 skip 12289.00
 day 6223.50 0.50/s
 year 16.56 (1.00 + 15.56)
@@ -2547,6 +2705,7 @@ Library 14.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 14300.00
 skip 14141.00
 day 7150.00 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2572,6 +2731,7 @@ Library 14.00
 sX: time skip until action X is available
 last input: s4
 ###
+time 14301.00
 skip 14141.00
 day 7150.50 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2597,6 +2757,7 @@ Library 15.00
 sX: time skip until action X is available
 last input: 4
 ###
+time 14302.00
 skip 14141.00
 day 7151.00 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2626,6 +2787,7 @@ Calendar 1.00/1
 sX: time skip until action X is available
 last input: s8
 ###
+time 14303.00
 skip 14141.00
 day 7151.50 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2656,6 +2818,7 @@ sX: time skip until action X is available
 last input: 8
 error: added resources already at max
 ###
+time 14304.00
 skip 14141.00
 day 7152.00 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2687,6 +2850,7 @@ Agriculture 1.00/1
 sX: time skip until action X is available
 last input: s9
 ###
+time 14305.00
 skip 14141.00
 day 7152.50 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2719,6 +2883,7 @@ sX: time skip until action X is available
 last input: 9
 error: added resources already at max
 ###
+time 14306.00
 skip 14141.00
 day 7153.00 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2751,6 +2916,7 @@ Archery 1.00/1
 sX: time skip until action X is available
 last input: s10
 ###
+time 14307.00
 skip 14141.00
 day 7153.50 0.50/s
 year 18.88 (1.00 + 17.88)
@@ -2784,6 +2950,7 @@ sX: time skip until action X is available
 last input: 10
 error: added resources already at max
 ###
+time 14308.00
 skip 14141.00
 day 7154.00 0.50/s
 year 18.89 (1.00 + 17.89)
@@ -2817,6 +2984,7 @@ Mining 1.00/1
 sX: time skip until action X is available
 last input: s11
 ###
+time 14309.00
 skip 14141.00
 day 7154.50 0.50/s
 year 18.89 (1.00 + 17.89)
@@ -2851,6 +3019,7 @@ sX: time skip until action X is available
 last input: 11
 error: added resources already at max
 ###
+time 14824.00
 skip 14655.00
 day 7412.00 0.50/s
 year 19.53 (1.00 + 18.53)
@@ -2884,6 +3053,7 @@ Mining 1.00/1
 sX: time skip until action X is available
 last input: s5
 ###
+time 14825.00
 skip 14655.00
 day 7412.50 0.50/s
 year 19.53 (1.00 + 18.53)
