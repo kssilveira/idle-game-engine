@@ -54,6 +54,12 @@ Faster solution:
 
 ## Ideas
 
+TODO
+
+- show time
+- hide actions after use
+- review kittens/testdata
+
 General features:
 
 - shared web server
@@ -69,11 +75,6 @@ Features from kittens game:
   - TODO
 - Mining
   - TODO
-- Barn
-  - unlocked by Agriculture
-  - cost wood 50 87.50 TODO
-  - catnip cap 500
-  - wood cap 200
 - farmer
   - unlocked by Agriculture
   - catnip 5

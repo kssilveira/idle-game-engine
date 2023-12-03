@@ -1763,7 +1763,7 @@ Hut 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
-5: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
+6: woodcutter -(kitten 0.00/1.00 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 3
 ###
@@ -1780,9 +1780,9 @@ Hut 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
-5: woodcutter -(kitten 1.00) +(woodcutter 1)
+6: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
-last input: s5
+last input: s6
 ###
 skip 1708.00
 day 918.00 0.50/s
@@ -1798,9 +1798,9 @@ Hut 1.00
 0: Gather catnip +(catnip 1)
 1: Refine catnip -(catnip 100.00) +(wood 1)
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
-5: woodcutter -(kitten 0.05/1.00 18s) +(woodcutter 1)
+6: woodcutter -(kitten 0.05/1.00 18s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 5
+last input: 6
 ###
 skip 1965.00
 day 1047.00 0.50/s
@@ -1819,7 +1819,7 @@ Hut 1.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 25.00) +(Library 1, science cap 250)
-5: woodcutter -(kitten 1.00) +(woodcutter 1)
+6: woodcutter -(kitten 1.00) +(woodcutter 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -1841,9 +1841,9 @@ Library 1.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.17/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.17/28.75 4m59s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 1.00) +(woodcutter 1)
-6: scholar -(kitten 1.00) +(scholar 1)
-7: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
+6: woodcutter -(kitten 1.00) +(woodcutter 1)
+7: scholar -(kitten 1.00) +(scholar 1)
+8: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -1865,11 +1865,11 @@ Library 1.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.27/12.50 2m8s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.27/28.75 4m58s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 0.00/30.00 2m27s) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 0.00/30.00 2m27s) +(Calendar 1)
 sX: time skip until action X is available
-last input: s6
+last input: s7
 ###
 skip 1965.00
 day 1048.50 0.50/s
@@ -1890,11 +1890,11 @@ Library 1.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.36/12.50 2m7s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.36/28.75 4m57s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 0.20/30.00 2m26s) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 0.20/30.00 2m26s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 6
+last input: 7
 error: not enough kitten
 ###
 skip 2262.00
@@ -1916,9 +1916,9 @@ Library 1.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -1941,9 +1941,9 @@ Library 2.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.14/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.14/33.06 5m45s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -1966,9 +1966,9 @@ Library 2.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -1991,9 +1991,9 @@ Library 3.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.18/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.18/38.02 6m36s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2016,9 +2016,9 @@ Library 3.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 38.02) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2041,9 +2041,9 @@ Library 4.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.13/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.13/43.73 7m37s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2066,9 +2066,9 @@ Library 4.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 43.73) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2091,9 +2091,9 @@ Library 5.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.19/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.19/50.28 8m45s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2116,9 +2116,9 @@ Library 5.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 50.28) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2141,9 +2141,9 @@ Library 6.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.18/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.18/57.83 10m4s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2166,9 +2166,9 @@ Library 6.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 57.83) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2191,9 +2191,9 @@ Library 7.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.17/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.17/66.50 11m35s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2216,9 +2216,9 @@ Library 7.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 66.50) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2241,9 +2241,9 @@ Library 8.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.16/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.16/76.48 13m19s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2266,9 +2266,9 @@ Library 8.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 76.48) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2291,9 +2291,9 @@ Library 9.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.10/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.10/87.95 15m20s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2316,9 +2316,9 @@ Library 9.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 87.95) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2341,9 +2341,9 @@ Library 10.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.11/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.11/101.14 17m38s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2366,9 +2366,9 @@ Library 10.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 101.14) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2391,9 +2391,9 @@ Library 11.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.10/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.10/116.31 20m18s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2416,9 +2416,9 @@ Library 11.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 116.31) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2441,9 +2441,9 @@ Library 12.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.18/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.18/133.76 23m20s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2466,9 +2466,9 @@ Library 12.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 133.76) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2491,9 +2491,9 @@ Library 13.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.17/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.17/153.82 26m50s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2516,9 +2516,9 @@ Library 13.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 153.82) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2541,9 +2541,9 @@ Library 14.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.14/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.14/176.89 30m52s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2566,9 +2566,9 @@ Library 14.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
 4: Library -(wood 176.89) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2591,9 +2591,9 @@ Library 15.00
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.12/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.12/203.43* 35m31s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2617,14 +2617,14 @@ Calendar 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.21/12.50 2m8s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.21/203.43* 35m30s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: s7
+last input: s8
 ###
 skip 14141.00
 day 7151.50 0.50/s
@@ -2646,14 +2646,14 @@ Calendar 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.31/12.50 2m7s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.31/203.43* 35m29s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: 7
+last input: 8
 error: added resources already at max
 ###
 skip 14141.00
@@ -2677,14 +2677,15 @@ Agriculture 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.40/12.50 2m6s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.40/203.43* 35m28s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+5: Barn -(wood 0.40/50.00 8m39s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: s8
+last input: s9
 ###
 skip 14141.00
 day 7152.50 0.50/s
@@ -2707,14 +2708,15 @@ Agriculture 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.50/12.50 2m5s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.50/203.43* 35m27s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+5: Barn -(wood 0.50/50.00 8m38s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: 8
+last input: 9
 error: added resources already at max
 ###
 skip 14141.00
@@ -2739,14 +2741,15 @@ Archery 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.59/12.50 2m4s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.59/203.43* 35m26s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+5: Barn -(wood 0.59/50.00 8m37s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: s9
+last input: s10
 ###
 skip 14141.00
 day 7153.50 0.50/s
@@ -2770,14 +2773,15 @@ Archery 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.69/12.50 2m3s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.69/203.43* 35m25s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+5: Barn -(wood 0.69/50.00 8m36s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: 9
+last input: 10
 error: added resources already at max
 ###
 skip 14141.00
@@ -2803,14 +2807,15 @@ Mining 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.78/12.50 2m2s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.78/203.43* 35m24s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+5: Barn -(wood 0.78/50.00 8m35s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: s10
+last input: s11
 ###
 skip 14141.00
 day 7154.50 0.50/s
@@ -2835,12 +2840,80 @@ Mining 1.00/1
 2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
 3: Hut -(wood 0.88/12.50 2m1s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.88/203.43* 35m23s) +(Library 1, science cap 250)
-5: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
-6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
-7: Calendar -(science 30.00) +(Calendar 1)
-8: Agriculture -(science 100.00) +(Agriculture 1)
-9: Archery -(science 300.00) +(Archery 1)
-10: Mining -(science 500.00) +(Mining 1)
+5: Barn -(wood 0.88/50.00 8m34s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
 sX: time skip until action X is available
-last input: 10
+last input: 11
 error: added resources already at max
+###
+skip 14655.00
+day 7412.00 0.50/s
+year 19.53 (1.00 + 18.53)
+Autumn 1.00 (1.00 if 74.12 % 4 == 2)
+day_of_year 213.00 (1.00 + 7412.00 % 400)
+catnip 5000.00/5000 24.26/s
+wood 50.01/200 0.10/s 26m12s to cap
+science 3062.54/4000 0.46/s 33m41s to cap
+woodcutter 1.00
+scholar 1.00
+happiness 1.06 (1.10 + -0.04)
+Catnip Field 52.00
+Hut 1.00
+Library 15.00
+Calendar 1.00/1
+Agriculture 1.00/1
+Archery 1.00/1
+Mining 1.00/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
+3: Hut -(wood 12.50) +(Hut 1, kitten cap 2)
+4: Library -(wood 50.01/203.43* 26m48s) +(Library 1, science cap 250)
+5: Barn -(wood 50.00) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
+sX: time skip until action X is available
+last input: s5
+###
+skip 14655.00
+day 7412.50 0.50/s
+year 19.53 (1.00 + 18.53)
+Autumn 1.00 (1.00 if 74.12 % 4 == 2)
+day_of_year 213.00 (1.00 + 7412.00 % 400)
+catnip 5000.00/10000 24.26/s 3m26s to cap
+wood 0.10/400 0.10/s 1h9m51s to cap
+science 3063.00/4000 0.46/s 33m40s to cap
+woodcutter 1.00
+scholar 1.00
+happiness 1.06 (1.10 + -0.04)
+Catnip Field 52.00
+Hut 1.00
+Library 15.00
+Barn 1.00
+Calendar 1.00/1
+Agriculture 1.00/1
+Archery 1.00/1
+Mining 1.00/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 3625.24) +(Catnip Field 1)
+3: Hut -(wood 0.10/12.50 2m9s) +(Hut 1, kitten cap 2)
+4: Library -(wood 0.10/203.43 35m31s) +(Library 1, science cap 250)
+5: Barn -(wood 0.10/87.50 15m16s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+7: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
+8: Calendar -(science 30.00) +(Calendar 1)
+9: Agriculture -(science 100.00) +(Agriculture 1)
+10: Archery -(science 300.00) +(Archery 1)
+11: Mining -(science 500.00) +(Mining 1)
+sX: time skip until action X is available
+last input: 5

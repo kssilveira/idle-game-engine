@@ -118,6 +118,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Library", Capacity: -1,
 	}, {
+		Name: "Barn", Capacity: -1,
+	}, {
 		Name: "Calendar", Capacity: 1,
 	}, {
 		Name: "Agriculture", Capacity: 1,
@@ -170,6 +172,19 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Library", Quantity: 1,
 		}, {
 			Name: "science", Capacity: 250,
+		}},
+	}, {
+		Name:       "Barn",
+		UnlockedBy: data.Resource{Name: "Agriculture"},
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 50, CostExponentBase: 1.75,
+		}},
+		Adds: []data.Resource{{
+			Name: "Barn", Quantity: 1,
+		}, {
+			Name: "catnip", Capacity: 5000,
+		}, {
+			Name: "wood", Capacity: 200,
 		}},
 	}, {
 		Name:       "woodcutter",
@@ -235,6 +250,7 @@ const (
 	field
 	hut
 	library
+	barn
 	woodcutter
 	scholar
 	calendar
@@ -253,6 +269,7 @@ const (
 	sfield
 	shut
 	slibrary
+	sbarn
 	swoodcutter
 	sscholar
 	scalendar
@@ -276,6 +293,7 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{sagriculture, agriculture}, 1},
 		{[]int{sarchery, archery}, 1},
 		{[]int{smining, mining}, 1},
+		{[]int{sbarn, barn}, 1},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {

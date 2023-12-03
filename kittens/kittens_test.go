@@ -134,6 +134,7 @@ func TestRun(t *testing.T) {
 		resources: map[string]float64{
 			"catnip": 1000,
 			"kitten": 2,
+			"Hut":    1,
 		},
 		iters: []iter{
 			// 1st woodcutter
@@ -148,8 +149,10 @@ func TestRun(t *testing.T) {
 	}, {
 		name: "gone",
 		resources: map[string]float64{
-			"catnip": 1000,
-			"kitten": 3,
+			"catnip":  1000,
+			"kitten":  3,
+			"Hut":     1,
+			"Library": 1,
 		},
 		iters: []iter{
 			// woodcutter
@@ -165,6 +168,22 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "solve",
+	}, {
+		name: "barn",
+		resources: map[string]float64{
+			"wood":        100,
+			"Agriculture": 1,
+		},
+		iters: []iter{
+			// buy 1st barn
+			{barn, 0},
+			// wait 1 second and 10 seconds
+			{gather, 1}, {gather, 10},
+			// buy 2nd barn
+			{barn, 0},
+			// wait 1 second and 10 seconds
+			{gather, 1}, {gather, 10},
+		},
 	}}
 	for _, in := range inputs {
 		var buf bytes.Buffer
