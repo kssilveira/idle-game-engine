@@ -62,6 +62,9 @@ func (g *Game) Validate() error {
 		if err := g.ValidateResource(&a.UnlockedBy); err != nil {
 			return err
 		}
+		if err := g.ValidateResource(&a.LockedBy); err != nil {
+			return err
+		}
 		for _, r := range a.Costs {
 			if err := g.ValidateResource(&r); err != nil {
 				return err
