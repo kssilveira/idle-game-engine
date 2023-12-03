@@ -27,13 +27,11 @@ func TestRun(t *testing.T) {
 	}{{
 		name: "gather catnip",
 		iters: []iter{
-			// gather 2 catnip
 			{gather, 0}, {gather, 0},
 		},
 	}, {
 		name: "gather catnip html",
 		iters: []iter{
-			// gather 2 catnip
 			{gather, 0}, {gather, 0},
 		},
 		isHTML: true,
@@ -43,14 +41,9 @@ func TestRun(t *testing.T) {
 			"catnip": 9,
 		},
 		iters: []iter{
-			// buy catnip field, not enough catnip
-			{field, 0},
-			// gather 10th catnip
-			{gather, 0},
-			// buy catnip field
-			{field, 0},
-			// wait 1 second and 10 seconds
+			{field, 0}, {gather, 0}, {field, 0},
 			{gather, 1}, {gather, 10},
+			{gather, 200}, {gather, 200}, {gather, 200}, {gather, 200},
 		},
 	}, {
 		name: "catnip field 2",
@@ -58,14 +51,8 @@ func TestRun(t *testing.T) {
 			"catnip": 200,
 		},
 		iters: []iter{
-			// buy 1st catnip field
-			{field, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// buy 2nd catnip field
-			{field, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
+			{field, 0}, {gather, 1},
+			{field, 0}, {gather, 1},
 		},
 	}, {
 		name: "catnip field skip",
@@ -73,14 +60,9 @@ func TestRun(t *testing.T) {
 			"catnip": 10,
 		},
 		iters: []iter{
-			// buy catnip field
-			{field, 0},
-			// wait 1 second
-			{gather, 1},
-			// skip to buy catnip field and buy it
+			{field, 0}, {gather, 1},
 			{sfield, 0}, {field, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
+			{gather, 1},
 		},
 	}, {
 		name: "refine catnip",
@@ -88,25 +70,18 @@ func TestRun(t *testing.T) {
 			"catnip": 200,
 		},
 		iters: []iter{
-			// refine catnip
-			{refine, 0},
-			// refine catnip,
-			{refine, 0},
+			{refine, 0}, {refine, 0},
 		},
 	}, {
 		name: "hut",
 		resources: map[string]float64{
-			"wood": 100,
+			"catnip": 1000,
+			"wood":   100,
 		},
 		iters: []iter{
-			// buy 1st hut
-			{hut, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// buy 2nd hut
-			{hut, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
+			{hut, 0}, {gather, 1},
+			{hut, 0}, {gather, 1},
+			{gather, 100},
 		},
 	}, {
 		name: "library",
@@ -116,18 +91,9 @@ func TestRun(t *testing.T) {
 			"kitten": 2,
 		},
 		iters: []iter{
-			// buy 1st library, assign 1st scholar
-			{library, 0}, {scholar, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// buy 2nd library
-			{library, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// assign 2nd scholar
-			{scholar, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
+			{library, 0}, {scholar, 0}, {gather, 1},
+			{library, 0}, {gather, 1},
+			{scholar, 0}, {gather, 1},
 		},
 	}, {
 		name: "woodcutter",
@@ -137,14 +103,8 @@ func TestRun(t *testing.T) {
 			"Hut":    1,
 		},
 		iters: []iter{
-			// 1st woodcutter
-			{woodcutter, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// 2nd woodcutter
-			{woodcutter, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
+			{woodcutter, 0}, {gather, 1},
+			{woodcutter, 0}, {gather, 1},
 		},
 	}, {
 		name: "gone",
@@ -155,35 +115,24 @@ func TestRun(t *testing.T) {
 			"Library": 1,
 		},
 		iters: []iter{
-			// woodcutter
-			{woodcutter, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// scholar
-			{scholar, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// wait 1000 seconds
-			{gather, 1000},
+			{woodcutter, 0}, {refine, 1},
+			{scholar, 0}, {refine, 1},
+			{refine, 76},
+			{refine, 1}, {refine, 1}, {refine, 1}, {refine, 1},
 		},
-	}, {
-		name: "solve",
 	}, {
 		name: "barn",
 		resources: map[string]float64{
-			"wood":        100,
+			"catnip":      1,
+			"wood":        200,
 			"Agriculture": 1,
 		},
 		iters: []iter{
-			// buy 1st barn
-			{barn, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
-			// buy 2nd barn
-			{barn, 0},
-			// wait 1 second and 10 seconds
-			{gather, 1}, {gather, 10},
+			{barn, 0}, {gather, 1},
+			{barn, 0}, {gather, 1},
 		},
+	}, {
+		name: "solve",
 	}}
 	for _, in := range inputs {
 		var buf bytes.Buffer

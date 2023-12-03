@@ -67,3 +67,59 @@ Catnip Field 1.00
 sX: time skip until action X is available
 last input: 0
 error: action Gather catnip is locked
+###
+time 211.00
+day 105.50 0.50/s
+year 1.26 (1.00 + 0.26)
+Summer 1.00 (1.00 if 1.05 % 4 == 1)
+day_of_year 106.00 (1.00 + 105.00 % 400)
+catnip 136.40/5000 0.63/s 2h8m40s to cap
+happiness 1.10
+Catnip Field 1.00
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 11.20) +(Catnip Field 1)
+sX: time skip until action X is available
+last input: 0
+error: action Gather catnip is locked
+###
+time 411.00
+day 205.50 0.50/s
+year 1.51 (1.00 + 0.51)
+Autumn 1.00 (1.00 if 2.05 % 4 == 2)
+day_of_year 206.00 (1.00 + 205.00 % 400)
+catnip 262.39/5000 0.63/s 2h5m20s to cap
+happiness 1.10
+Catnip Field 1.00
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 11.20) +(Catnip Field 1)
+sX: time skip until action X is available
+last input: 0
+error: action Gather catnip is locked
+###
+time 611.00
+day 305.50 0.50/s
+year 1.76 (1.00 + 0.76)
+Winter 1.00 (1.00 if 3.05 % 4 == 3)
+day_of_year 306.00 (1.00 + 305.00 % 400)
+catnip 293.89/5000 0.16/s 8h18m0s to cap
+happiness 1.10
+Catnip Field 1.00
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 11.20) +(Catnip Field 1)
+sX: time skip until action X is available
+last input: 0
+error: action Gather catnip is locked
+###
+time 811.00
+day 405.50 0.50/s
+year 2.01 (1.00 + 1.01)
+Spring 1.00 (1.00 if 4.05 % 4 == 0)
+day_of_year 6.00 (1.00 + 405.00 % 400)
+catnip 482.89/5000 0.94/s 1h19m40s to cap
+happiness 1.10
+Catnip Field 1.00
+1: Refine catnip -(catnip 100.00) +(wood 1)
+2: Catnip Field -(catnip 11.20) +(Catnip Field 1)
+sX: time skip until action X is available
+last input: 0
+error: action Gather catnip is locked

@@ -290,7 +290,7 @@ func Solve(input chan string, sleepMS int) {
 		count int
 	}{
 		{[]int{gather}, 10},
-		{[]int{field, sfield}, 55},
+		{[]int{field, sfield}, 58},
 		{[]int{refine}, 5},
 		{[]int{hut, swoodcutter, woodcutter}, 1},
 		{[]int{slibrary, library, sscholar, scholar}, 1},
@@ -299,7 +299,10 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{sagriculture, agriculture}, 1},
 		{[]int{sarchery, archery}, 1},
 		{[]int{smining, mining}, 1},
-		{[]int{sbarn, barn}, 1},
+		{[]int{sbarn, barn}, 6},
+
+		{[]int{field, sfield}, 25},
+		{[]int{slibrary, library}, 15},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {

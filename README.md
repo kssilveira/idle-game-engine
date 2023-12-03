@@ -56,7 +56,8 @@ Faster solution:
 
 TODO
 
-- review kittens/testdata
+- review graph validate
+- hide '.00' from numbers
 
 General features:
 

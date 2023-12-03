@@ -73,18 +73,3 @@ Catnip Field 2.00
 sX: time skip until action X is available
 last input: 0
 error: action Gather catnip is locked
-###
-time 23.00
-skip 11.00
-day 11.50 0.50/s
-year 1.03 (1.00 + 0.03)
-Spring 1.00 (1.00 if 0.11 % 4 == 0)
-day_of_year 12.00 (1.00 + 11.00 % 400)
-catnip 20.93/5000 1.89/s 43m54s to cap
-happiness 1.10
-Catnip Field 2.00
-1: Refine catnip -(catnip 20.93/100.00 41s) +(wood 1)
-2: Catnip Field -(catnip 12.54) +(Catnip Field 1)
-sX: time skip until action X is available
-last input: 0
-error: action Gather catnip is locked

@@ -34,26 +34,12 @@ sX: time skip until action X is available
 last input: 0
 error: action Gather catnip is locked
 ###
-time 11.00
-day 5.50 0.50/s
-year 1.01 (1.00 + 0.01)
-Spring 1.00 (1.00 if 0.05 % 4 == 0)
-day_of_year 6.00 (1.00 + 5.00 % 400)
-catnip 200.39/5000 0.94/s 1h24m38s to cap
-happiness 1.10
-Catnip Field 1.00
-1: Refine catnip -(catnip 100.00) +(wood 1)
-2: Catnip Field -(catnip 11.20) +(Catnip Field 1)
-sX: time skip until action X is available
-last input: 0
-error: action Gather catnip is locked
-###
-time 11.00
-day 5.50 0.50/s
-year 1.01 (1.00 + 0.01)
-Spring 1.00 (1.00 if 0.05 % 4 == 0)
-day_of_year 6.00 (1.00 + 5.00 % 400)
-catnip 189.19/5000 1.89/s 42m25s to cap
+time 1.00
+day 0.50 0.50/s
+year 1.00
+Spring 1.00
+day_of_year 1.00
+catnip 179.75/5000 1.89/s 42m30s to cap
 happiness 1.10
 Catnip Field 2.00
 1: Refine catnip -(catnip 100.00) +(wood 1)
@@ -61,26 +47,12 @@ Catnip Field 2.00
 sX: time skip until action X is available
 last input: 2
 ###
-time 12.00
-day 6.00 0.50/s
-year 1.01 (1.00 + 0.01)
-Spring 1.00 (1.00 if 0.06 % 4 == 0)
-day_of_year 7.00 (1.00 + 6.00 % 400)
-catnip 191.08/5000 1.89/s 42m24s to cap
-happiness 1.10
-Catnip Field 2.00
-1: Refine catnip -(catnip 100.00) +(wood 1)
-2: Catnip Field -(catnip 12.54) +(Catnip Field 1)
-sX: time skip until action X is available
-last input: 0
-error: action Gather catnip is locked
-###
-time 22.00
-day 11.00 0.50/s
-year 1.03 (1.00 + 0.03)
-Spring 1.00 (1.00 if 0.11 % 4 == 0)
-day_of_year 12.00 (1.00 + 11.00 % 400)
-catnip 209.98/5000 1.89/s 42m14s to cap
+time 2.00
+day 1.00 0.50/s
+year 1.00 (1.00 + 0.00)
+Spring 1.00 (1.00 if 0.01 % 4 == 0)
+day_of_year 2.00 (1.00 + 1.00 % 400)
+catnip 181.63/5000 1.89/s 42m29s to cap
 happiness 1.10
 Catnip Field 2.00
 1: Refine catnip -(catnip 100.00) +(wood 1)
