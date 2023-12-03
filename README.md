@@ -5,6 +5,7 @@ Game engine for idle games like kittens game.
 ## Code
 
 - [game.go](game/game.go) general game engine
+- [data.go](data/data.go) representation of the data
 - [ui.go](ui/ui.go) representation of the UI
 - [textui.go](textui/textui.go) text UI
 - [simple.go](examples/simple/simple.go) run simple game
