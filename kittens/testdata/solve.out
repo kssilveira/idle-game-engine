@@ -1934,7 +1934,7 @@ Library 1
 4: Library -(wood 0.17/28.75 4m59s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 1) +(woodcutter 1)
 7: scholar -(kitten 1) +(scholar 1)
-8: Calendar -(science 0/30 0s) +(Calendar 1)
+9: Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -1957,7 +1957,7 @@ Library 1
 4: Library -(wood 0.27/28.75 4m58s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 0/30 2m27s) +(Calendar 1)
+9: Calendar -(science 0/30 2m27s) +(Calendar 1)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -1981,7 +1981,7 @@ Library 1
 4: Library -(wood 0.36/28.75 4m57s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 0.20/30 2m26s) +(Calendar 1)
+9: Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 7
 error: not enough kitten
@@ -2006,7 +2006,7 @@ Library 1
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2030,7 +2030,7 @@ Library 2
 4: Library -(wood 0.14/33.06 5m45s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2054,7 +2054,7 @@ Library 2
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2078,7 +2078,7 @@ Library 3
 4: Library -(wood 0.18/38.02 6m36s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2102,7 +2102,7 @@ Library 3
 4: Library -(wood 38.02) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2126,7 +2126,7 @@ Library 4
 4: Library -(wood 0.13/43.73 7m37s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2150,7 +2150,7 @@ Library 4
 4: Library -(wood 43.73) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2174,7 +2174,7 @@ Library 5
 4: Library -(wood 0.19/50.28 8m45s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2198,7 +2198,7 @@ Library 5
 4: Library -(wood 50.28) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2222,7 +2222,7 @@ Library 6
 4: Library -(wood 0.18/57.83 10m4s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2246,7 +2246,7 @@ Library 6
 4: Library -(wood 57.83) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2270,7 +2270,7 @@ Library 7
 4: Library -(wood 0.17/66.50 11m35s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2294,7 +2294,7 @@ Library 7
 4: Library -(wood 66.50) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2318,7 +2318,7 @@ Library 8
 4: Library -(wood 0.16/76.48 13m19s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2342,7 +2342,7 @@ Library 8
 4: Library -(wood 76.48) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2366,7 +2366,7 @@ Library 9
 4: Library -(wood 0.10/87.95 15m20s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2390,7 +2390,7 @@ Library 9
 4: Library -(wood 87.95) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2414,7 +2414,7 @@ Library 10
 4: Library -(wood 0.11/101.14 17m38s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2438,7 +2438,7 @@ Library 10
 4: Library -(wood 101.14) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2462,7 +2462,7 @@ Library 11
 4: Library -(wood 0.10/116.31 20m18s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2486,7 +2486,7 @@ Library 11
 4: Library -(wood 116.31) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2510,7 +2510,7 @@ Library 12
 4: Library -(wood 0.18/133.76 23m20s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2534,7 +2534,7 @@ Library 12
 4: Library -(wood 133.76) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2558,7 +2558,7 @@ Library 13
 4: Library -(wood 0.17/153.82 26m50s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2582,7 +2582,7 @@ Library 13
 4: Library -(wood 153.82) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2606,7 +2606,7 @@ Library 14
 4: Library -(wood 0.14/176.89 30m52s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2630,7 +2630,7 @@ Library 14
 4: Library -(wood 176.89) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2654,7 +2654,7 @@ Library 15
 4: Library -(wood 0.12/203.43* 35m31s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 30) +(Calendar 1)
+9: Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2679,11 +2679,11 @@ Calendar 1/1
 4: Library -(wood 0.21/203.43* 35m30s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-9: Agriculture -(science 100) +(Agriculture 1)
-10: Archery -(science 300) +(Archery 1)
-11: Mining -(science 500) +(Mining 1)
+10: Agriculture -(science 100) +(Agriculture 1)
+11: Archery -(science 300) +(Archery 1)
+12: Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: s8
+last input: s9
 ###
 time 14666
 skip 14498
@@ -2706,11 +2706,11 @@ Calendar 1/1
 4: Library -(wood 0.31/203.43* 35m29s) +(Library 1, science cap 250)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-9: Agriculture -(science 100) +(Agriculture 1)
-10: Archery -(science 300) +(Archery 1)
-11: Mining -(science 500) +(Mining 1)
+10: Agriculture -(science 100) +(Agriculture 1)
+11: Archery -(science 300) +(Archery 1)
+12: Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: 8
+last input: 9
 error: action Calendar is locked
 ###
 time 14667
@@ -2736,10 +2736,11 @@ Agriculture 1/1
 5: Barn -(wood 0.40/50 8m39s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-10: Archery -(science 300) +(Archery 1)
-11: Mining -(science 500) +(Mining 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
+11: Archery -(science 300) +(Archery 1)
+12: Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: s9
+last input: s10
 ###
 time 14668
 skip 14498
@@ -2764,10 +2765,11 @@ Agriculture 1/1
 5: Barn -(wood 0.50/50 8m38s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-10: Archery -(science 300) +(Archery 1)
-11: Mining -(science 500) +(Mining 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
+11: Archery -(science 300) +(Archery 1)
+12: Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: 9
+last input: 10
 error: action Agriculture is locked
 ###
 time 14669
@@ -2794,9 +2796,10 @@ Archery 1/1
 5: Barn -(wood 0.59/50 8m37s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-11: Mining -(science 500) +(Mining 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
+12: Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: s10
+last input: s11
 ###
 time 14670
 skip 14498
@@ -2822,9 +2825,10 @@ Archery 1/1
 5: Barn -(wood 0.69/50 8m36s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-11: Mining -(science 500) +(Mining 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
+12: Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: 10
+last input: 11
 error: action Archery is locked
 ###
 time 14671
@@ -2852,8 +2856,9 @@ Mining 1/1
 5: Barn -(wood 0.78/50 8m35s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
-last input: s11
+last input: s12
 ###
 time 14672
 skip 14498
@@ -2880,8 +2885,9 @@ Mining 1/1
 5: Barn -(wood 0.88/50 8m34s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
-last input: 11
+last input: 12
 error: action Mining is locked
 ###
 time 15187
@@ -2909,6 +2915,7 @@ Mining 1/1
 5: Barn -(wood 50) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2938,6 +2945,7 @@ Mining 1/1
 5: Barn -(wood 0.10/87.50 15m16s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -2967,6 +2975,7 @@ Mining 1/1
 5: Barn -(wood 87.50) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2996,6 +3005,7 @@ Mining 1/1
 5: Barn -(wood 0.18/153.12 26m43s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -3025,6 +3035,7 @@ Mining 1/1
 5: Barn -(wood 153.12) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -3054,6 +3065,7 @@ Mining 1/1
 5: Barn -(wood 0.17/267.97 46m47s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -3083,6 +3095,7 @@ Mining 1/1
 5: Barn -(wood 267.97) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -3112,6 +3125,7 @@ Mining 1/1
 5: Barn -(wood 0.18/468.95 1h21m53s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -3141,6 +3155,7 @@ Mining 1/1
 5: Barn -(wood 468.95) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -3170,6 +3185,7 @@ Mining 1/1
 5: Barn -(wood 0.13/820.65 2h23m20s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -3199,6 +3215,7 @@ Mining 1/1
 5: Barn -(wood 820.65) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -3228,6 +3245,7 @@ Mining 1/1
 5: Barn -(wood 0.11/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -3257,6 +3275,7 @@ Mining 1/1
 5: Barn -(wood 0.20/1436.15* 4h10m51s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3286,6 +3305,7 @@ Mining 1/1
 5: Barn -(wood 0.30/1436.15* 4h10m50s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3315,6 +3335,7 @@ Mining 1/1
 5: Barn -(wood 0.39/1436.15* 4h10m49s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3344,6 +3365,7 @@ Mining 1/1
 5: Barn -(wood 0.49/1436.15* 4h10m48s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3373,6 +3395,7 @@ Mining 1/1
 5: Barn -(wood 0.58/1436.15* 4h10m47s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3403,6 +3426,7 @@ Mining 1/1
 5: Barn -(wood 8.02/1436.15* 4h9m29s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3432,6 +3456,7 @@ Mining 1/1
 5: Barn -(wood 8.12/1436.15* 4h9m28s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3461,6 +3486,7 @@ Mining 1/1
 5: Barn -(wood 37.22/1436.15* 4h4m23s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3490,6 +3516,7 @@ Mining 1/1
 5: Barn -(wood 37.31/1436.15* 4h4m22s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3519,6 +3546,7 @@ Mining 1/1
 5: Barn -(wood 45.61/1436.15* 4h2m55s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3548,6 +3576,7 @@ Mining 1/1
 5: Barn -(wood 45.71/1436.15* 4h2m54s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3577,6 +3606,7 @@ Mining 1/1
 5: Barn -(wood 67.08/1436.15* 3h59m10s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3606,6 +3636,7 @@ Mining 1/1
 5: Barn -(wood 67.17/1436.15* 3h59m9s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3636,6 +3667,7 @@ Mining 1/1
 5: Barn -(wood 80.62/1436.15* 3h56m48s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3665,6 +3697,7 @@ Mining 1/1
 5: Barn -(wood 80.72/1436.15* 3h56m47s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3694,6 +3727,7 @@ Mining 1/1
 5: Barn -(wood 119.17/1436.15* 3h50m4s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3723,6 +3757,7 @@ Mining 1/1
 5: Barn -(wood 119.26/1436.15* 3h50m3s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3752,6 +3787,7 @@ Mining 1/1
 5: Barn -(wood 130.52/1436.15* 3h48m5s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3781,6 +3817,7 @@ Mining 1/1
 5: Barn -(wood 130.61/1436.15* 3h48m4s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3811,6 +3848,7 @@ Mining 1/1
 5: Barn -(wood 137.48/1436.15* 3h46m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3840,6 +3878,7 @@ Mining 1/1
 5: Barn -(wood 137.58/1436.15* 3h46m51s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3869,6 +3908,7 @@ Mining 1/1
 5: Barn -(wood 184.04/1436.15* 3h38m44s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3898,6 +3938,7 @@ Mining 1/1
 5: Barn -(wood 184.13/1436.15* 3h38m43s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3928,6 +3969,7 @@ Mining 1/1
 5: Barn -(wood 1002.28/1436.15* 1h15m47s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3957,6 +3999,7 @@ Mining 1/1
 5: Barn -(wood 1002.38/1436.15* 1h15m46s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3986,6 +4029,7 @@ Mining 1/1
 5: Barn -(wood 1002.47/1436.15* 1h15m45s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4015,6 +4059,7 @@ Mining 1/1
 5: Barn -(wood 1002.57/1436.15* 1h15m44s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -4045,6 +4090,7 @@ Mining 1/1
 5: Barn -(wood 1054.47/1436.15* 1h6m40s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4074,6 +4120,7 @@ Mining 1/1
 5: Barn -(wood 1054.56/1436.15* 1h6m39s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -4103,6 +4150,7 @@ Mining 1/1
 5: Barn -(wood 1116.19/1436.15* 55m53s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4132,6 +4180,7 @@ Mining 1/1
 5: Barn -(wood 1116.29/1436.15* 55m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -4161,6 +4210,7 @@ Mining 1/1
 5: Barn -(wood 1136.70/1436.15* 52m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4190,6 +4240,7 @@ Mining 1/1
 5: Barn -(wood 1136.80/1436.15* 52m17s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -4220,6 +4271,7 @@ Mining 1/1
 5: Barn -(wood 1149.29/1436.15* 50m6s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4249,6 +4301,7 @@ Mining 1/1
 5: Barn -(wood 1149.39/1436.15* 50m5s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -4278,6 +4331,7 @@ Mining 1/1
 5: Barn -(wood 1223.99/1436.15* 37m3s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4307,6 +4361,7 @@ Mining 1/1
 5: Barn -(wood 1224.09/1436.15* 37m2s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -4336,6 +4391,7 @@ Mining 1/1
 5: Barn -(wood 1306.23/1436.15* 22m41s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4365,6 +4421,7 @@ Mining 1/1
 5: Barn -(wood 1306.32/1436.15* 22m40s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -4394,6 +4451,7 @@ Mining 1/1
 5: Barn -(wood 1396.76/1436.15* 6m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4423,6 +4481,7 @@ Mining 1/1
 5: Barn -(wood 1396.86/1436.15* 6m51s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -4453,6 +4512,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4482,6 +4542,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -4511,6 +4572,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4540,6 +4602,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -4570,6 +4633,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -4599,6 +4663,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -4629,6 +4694,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 error: not enough catnip
@@ -4659,6 +4725,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -4689,6 +4756,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s2
 error: not enough catnip
@@ -4719,6 +4787,7 @@ Mining 1/1
 5: Barn -(wood 1196.57/1436.15* 41m51s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4748,6 +4817,7 @@ Mining 1/1
 5: Barn -(wood 962.73/1436.15* 1h22m42s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4777,6 +4847,7 @@ Mining 1/1
 5: Barn -(wood 693.79/1436.15* 2h9m41s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4806,6 +4877,7 @@ Mining 1/1
 5: Barn -(wood 384.50/1436.15* 3h3m43s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4835,6 +4907,7 @@ Mining 1/1
 5: Barn -(wood 28.80/1436.15* 4h5m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4864,6 +4937,7 @@ Mining 1/1
 5: Barn -(wood 28.90/1436.15* 4h5m51s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
@@ -4894,6 +4968,7 @@ Mining 1/1
 5: Barn -(wood 409.26/1436.15* 2h59m24s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4923,6 +4998,7 @@ Mining 1/1
 5: Barn -(wood 0.19/1436.15* 4h10m51s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4952,6 +5028,7 @@ Mining 1/1
 5: Barn -(wood 470.61/1436.15* 2h48m40s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4981,6 +5058,7 @@ Mining 1/1
 5: Barn -(wood 0.16/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5010,6 +5088,7 @@ Mining 1/1
 5: Barn -(wood 541.18/1436.15* 2h36m21s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5039,6 +5118,7 @@ Mining 1/1
 5: Barn -(wood 0.15/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5068,6 +5148,7 @@ Mining 1/1
 5: Barn -(wood 622.35/1436.15* 2h22m10s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5097,6 +5178,7 @@ Mining 1/1
 5: Barn -(wood 0.16/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5126,6 +5208,7 @@ Mining 1/1
 5: Barn -(wood 715.66/1436.15* 2h5m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5155,6 +5238,7 @@ Mining 1/1
 5: Barn -(wood 0.13/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5184,6 +5268,7 @@ Mining 1/1
 5: Barn -(wood 823.05/1436.15* 1h47m6s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5213,6 +5298,7 @@ Mining 1/1
 5: Barn -(wood 0.17/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5242,6 +5328,7 @@ Mining 1/1
 5: Barn -(wood 946.44/1436.15* 1h25m33s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5271,6 +5358,7 @@ Mining 1/1
 5: Barn -(wood 0.12/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5300,6 +5388,7 @@ Mining 1/1
 5: Barn -(wood 1088.44/1436.15* 1h0m44s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5329,6 +5418,7 @@ Mining 1/1
 5: Barn -(wood 0.15/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5358,6 +5448,7 @@ Mining 1/1
 5: Barn -(wood 1251.71/1436.15* 32m13s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5387,6 +5478,7 @@ Mining 1/1
 5: Barn -(wood 0.16/1436.15* 4h10m52s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -5416,6 +5508,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -5445,6 +5538,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
@@ -5475,6 +5569,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 error: not enough wood
@@ -5505,6 +5600,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
@@ -5535,6 +5631,7 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: s4
 error: not enough wood
@@ -5565,6 +5662,968 @@ Mining 1/1
 5: Barn -(wood 1400/1436.15* 6m18s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
+###
+time 159849
+skip 159582
+day 79924.50 0.50/s
+year 200.81 (1 + 199.81)
+Winter 1 (1 if 799.24 % 4 == 3)
+day_of_year 325 (1 + 79924 % 400)
+catnip 35000/35000 3/s
+wood 1387.50/1400 0.10/s 2m11s to cap
+science 7500/7500 0.72/s
+woodcutter 1
+scholar 1
+happiness 1.06 (1.10 + -0.04)
+Catnip Field 73
+Hut 2
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
+3: Hut -(wood 31.25) +(Hut 1, kitten cap 2)
+4: Library -(wood 1387.50/1439.39* 9m3s) +(Library 1, science cap 250)
+5: Barn -(wood 1387.50/1436.15* 8m29s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0/1 20s) +(woodcutter 1)
+7: scholar -(kitten 0/1 20s) +(scholar 1)
+8: farmer -(kitten 0/1 20s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+###
+time 159869
+skip 159601
+day 79934.50 0.50/s
+year 200.84 (1 + 199.84)
+Winter 1 (1 if 799.34 % 4 == 3)
+day_of_year 335 (1 + 79934 % 400)
+catnip 35000/35000 -1.25/s 7h45m44s to empty
+wood 1389.41/1400 0.09/s 1m53s to cap
+science 7500/7500 0.71/s
+kitten 1/2 0.05/s 20s to cap
+woodcutter 1
+scholar 1
+happiness 1.04 (1.10 + -0.06)
+Catnip Field 73
+Hut 2
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* -55m26s) +(Catnip Field 1)
+3: Hut -(wood 31.25) +(Hut 1, kitten cap 2)
+4: Library -(wood 1389.41/1439.39* 8m53s) +(Library 1, science cap 250)
+5: Barn -(wood 1389.41/1436.15* 8m19s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 159870
+skip 159601
+day 79935 0.50/s
+year 200.84 (1 + 199.84)
+Winter 1 (1 if 799.35 % 4 == 3)
+day_of_year 336 (1 + 79935 % 400)
+catnip 34998.75/35000 3.75/s
+wood 1389.50/1400 0.09/s 1m52s to cap
+science 7500/7500 0.71/s
+kitten 0.05/1 0.05/s 18s to cap
+woodcutter 1
+scholar 1
+farmer 1
+happiness 1.04 (1.10 + -0.06)
+Catnip Field 73
+Hut 2
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 34998.75/39166.58* 18m32s) +(Catnip Field 1)
+3: Hut -(wood 31.25) +(Hut 1, kitten cap 2)
+4: Library -(wood 1389.50/1439.39* 8m52s) +(Library 1, science cap 250)
+5: Barn -(wood 1389.50/1436.15* 8m18s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
+7: scholar -(kitten 0.05/1 18s) +(scholar 1)
+8: farmer -(kitten 0.05/1 18s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 159871
+skip 159601
+day 79935.50 0.50/s
+year 200.84 (1 + 199.84)
+Winter 1 (1 if 799.35 % 4 == 3)
+day_of_year 336 (1 + 79935 % 400)
+catnip 35000/35000 3.75/s
+wood 1358.35/1400 0.09/s 7m25s to cap
+science 7500/7500 0.71/s
+kitten 0.10/3 0.05/s 57s to cap
+woodcutter 1
+scholar 1
+farmer 1
+happiness 1.04 (1.10 + -0.06)
+Catnip Field 73
+Hut 3
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 18m31s) +(Catnip Field 1)
+3: Hut -(wood 78.12) +(Hut 1, kitten cap 2)
+4: Library -(wood 1358.35/1439.39* 14m25s) +(Library 1, science cap 250)
+5: Barn -(wood 1358.35/1436.15* 13m51s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+###
+time 159890
+skip 159619
+day 79945 0.50/s
+year 200.86 (1 + 199.86)
+Winter 1 (1 if 799.45 % 4 == 3)
+day_of_year 346 (1 + 79945 % 400)
+catnip 35000/35000 -0.50/s 19h20m51s to empty
+wood 1360.12/1400 0.09/s 7m14s to cap
+science 7500/7500 0.70/s
+kitten 1.05/3 0.05/s 39s to cap
+woodcutter 1
+scholar 1
+farmer 1
+happiness 1.02 (1.10 + -0.08)
+Catnip Field 73
+Hut 3
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* -2h18m11s) +(Catnip Field 1)
+3: Hut -(wood 78.12) +(Hut 1, kitten cap 2)
+4: Library -(wood 1360.12/1439.39* 14m23s) +(Library 1, science cap 250)
+5: Barn -(wood 1360.12/1436.15* 13m48s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 159891
+skip 159619
+day 79945.50 0.50/s
+year 200.86 (1 + 199.86)
+Winter 1 (1 if 799.45 % 4 == 3)
+day_of_year 346 (1 + 79945 % 400)
+catnip 34999.50/35000 4.50/s
+wood 1360.22/1400 0.09/s 7m13s to cap
+science 7500/7500 0.70/s
+kitten 0.10/2 0.05/s 37s to cap
+woodcutter 1
+scholar 1
+farmer 2
+happiness 1.02 (1.10 + -0.08)
+Catnip Field 73
+Hut 3
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 34999.50/39166.58* 15m26s) +(Catnip Field 1)
+3: Hut -(wood 78.12) +(Hut 1, kitten cap 2)
+4: Library -(wood 1360.22/1439.39* 14m22s) +(Library 1, science cap 250)
+5: Barn -(wood 1360.22/1436.15* 13m47s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 159892
+skip 159619
+day 79946 0.50/s
+year 200.87 (1 + 199.87)
+Winter 1 (1 if 799.46 % 4 == 3)
+day_of_year 347 (1 + 79946 % 400)
+catnip 35000/35000 4.50/s
+wood 1282.18/1400 0.09/s 21m23s to cap
+science 7500/7500 0.70/s
+kitten 0.15/4 0.05/s 1m17s to cap
+woodcutter 1
+scholar 1
+farmer 2
+happiness 1.02 (1.10 + -0.08)
+Catnip Field 73
+Hut 4
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 15m26s) +(Catnip Field 1)
+3: Hut -(wood 195.31) +(Hut 1, kitten cap 2)
+4: Library -(wood 1282.18/1439.39* 28m32s) +(Library 1, science cap 250)
+5: Barn -(wood 1282.18/1436.15* 27m57s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.15/1 16s) +(woodcutter 1)
+7: scholar -(kitten 0.15/1 16s) +(scholar 1)
+8: farmer -(kitten 0.15/1 16s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+###
+time 159909
+skip 159635
+day 79954.50 0.50/s
+year 200.88 (1 + 199.88)
+Winter 1 (1 if 799.54 % 4 == 3)
+day_of_year 355 (1 + 79954 % 400)
+catnip 35000/35000 0.25/s
+wood 1283.74/1400 0.09/s 21m31s to cap
+science 7500/7500 0.68/s
+kitten 1/4 0.05/s 1m0s to cap
+woodcutter 1
+scholar 1
+farmer 2
+happiness 1 (1.10 + -0.10)
+Catnip Field 73
+Hut 4
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 4h40m34s) +(Catnip Field 1)
+3: Hut -(wood 195.31) +(Hut 1, kitten cap 2)
+4: Library -(wood 1283.74/1439.39* 28m49s) +(Library 1, science cap 250)
+5: Barn -(wood 1283.74/1436.15* 28m13s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 159910
+skip 159635
+day 79955 0.50/s
+year 200.89 (1 + 199.89)
+Winter 1 (1 if 799.55 % 4 == 3)
+day_of_year 356 (1 + 79955 % 400)
+catnip 35000/35000 5.25/s
+wood 1283.83/1400 0.09/s 21m30s to cap
+science 7500/7500 0.68/s
+kitten 0.05/3 0.05/s 59s to cap
+woodcutter 1
+scholar 1
+farmer 3
+happiness 1 (1.10 + -0.10)
+Catnip Field 73
+Hut 4
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 13m14s) +(Catnip Field 1)
+3: Hut -(wood 195.31) +(Hut 1, kitten cap 2)
+4: Library -(wood 1283.83/1439.39* 28m48s) +(Library 1, science cap 250)
+5: Barn -(wood 1283.83/1436.15* 28m12s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
+7: scholar -(kitten 0.05/1 18s) +(scholar 1)
+8: farmer -(kitten 0.05/1 18s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 159911
+skip 159635
+day 79955.50 0.50/s
+year 200.89 (1 + 199.89)
+Winter 1 (1 if 799.55 % 4 == 3)
+day_of_year 356 (1 + 79955 % 400)
+catnip 35000/35000 5.25/s
+wood 1088.61/1400 0.09/s 57m39s to cap
+science 7500/7500 0.68/s
+kitten 0.10/5 0.05/s 1m38s to cap
+woodcutter 1
+scholar 1
+farmer 3
+happiness 1 (1.10 + -0.10)
+Catnip Field 73
+Hut 5
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 13m14s) +(Catnip Field 1)
+3: Hut -(wood 488.28) +(Hut 1, kitten cap 2)
+4: Library -(wood 1088.61/1439.39* 1h4m57s) +(Library 1, science cap 250)
+5: Barn -(wood 1088.61/1436.15* 1h4m21s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+###
+time 159930
+skip 159653
+day 79965 0.50/s
+year 200.91 (1 + 199.91)
+Winter 1 (1 if 799.65 % 4 == 3)
+day_of_year 366 (1 + 79965 % 400)
+catnip 35000/35000 1/s
+wood 1090.32/1400 0.09/s 58m31s to cap
+science 7500/7500 0.67/s
+kitten 1.05/5 0.05/s 1m19s to cap
+woodcutter 1
+scholar 1
+farmer 3
+happiness 0.98 (1.10 + -0.12)
+Catnip Field 73
+Hut 5
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1h9m37s) +(Catnip Field 1)
+3: Hut -(wood 488.28) +(Hut 1, kitten cap 2)
+4: Library -(wood 1090.32/1439.39* 1h5m57s) +(Library 1, science cap 250)
+5: Barn -(wood 1090.32/1436.15* 1h5m20s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 159931
+skip 159653
+day 79965.50 0.50/s
+year 200.91 (1 + 199.91)
+Winter 1 (1 if 799.65 % 4 == 3)
+day_of_year 366 (1 + 79965 % 400)
+catnip 35000/35000 6/s
+wood 1090.41/1400 0.09/s 58m30s to cap
+science 7500/7500 0.67/s
+kitten 0.10/4 0.05/s 1m18s to cap
+woodcutter 1
+scholar 1
+farmer 4
+happiness 0.98 (1.10 + -0.12)
+Catnip Field 73
+Hut 5
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 11m34s) +(Catnip Field 1)
+3: Hut -(wood 488.28) +(Hut 1, kitten cap 2)
+4: Library -(wood 1090.41/1439.39* 1h5m56s) +(Library 1, science cap 250)
+5: Barn -(wood 1090.41/1436.15* 1h5m19s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 159932
+skip 159653
+day 79966 0.50/s
+year 200.91 (1 + 199.91)
+Winter 1 (1 if 799.66 % 4 == 3)
+day_of_year 367 (1 + 79966 % 400)
+catnip 35000/35000 6/s
+wood 602.22/1400 0.09/s 2h30m45s to cap
+science 7500/7500 0.67/s
+kitten 0.15/6 0.05/s 1m56s to cap
+woodcutter 1
+scholar 1
+farmer 4
+happiness 0.98 (1.10 + -0.12)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 11m34s) +(Catnip Field 1)
+3: Hut -(wood 602.22/1220.70 1h56m52s) +(Hut 1, kitten cap 2)
+4: Library -(wood 602.22/1439.39* 2h38m11s) +(Library 1, science cap 250)
+5: Barn -(wood 602.22/1436.15* 2h37m34s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.15/1 16s) +(woodcutter 1)
+7: scholar -(kitten 0.15/1 16s) +(scholar 1)
+8: farmer -(kitten 0.15/1 16s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+###
+time 159949
+skip 159669
+day 79974.50 0.50/s
+year 200.94 (1 + 199.94)
+Winter 1 (1 if 799.74 % 4 == 3)
+day_of_year 375 (1 + 79974 % 400)
+catnip 35000/35000 1.75/s
+wood 603.71/1400 0.09/s 2h33m36s to cap
+science 7500/7500 0.66/s
+kitten 1/6 0.05/s 1m40s to cap
+woodcutter 1
+scholar 1
+farmer 4
+happiness 0.96 (1.10 + -0.14)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 39m44s) +(Catnip Field 1)
+3: Hut -(wood 603.71/1220.70 1h59m1s) +(Hut 1, kitten cap 2)
+4: Library -(wood 603.71/1439.39* 2h41m12s) +(Library 1, science cap 250)
+5: Barn -(wood 603.71/1436.15* 2h40m34s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 159950
+skip 159669
+day 79975 0.50/s
+year 200.94 (1 + 199.94)
+Winter 1 (1 if 799.75 % 4 == 3)
+day_of_year 376 (1 + 79975 % 400)
+catnip 35000/35000 6.75/s
+wood 603.80/1400 0.09/s 2h33m35s to cap
+science 7500/7500 0.66/s
+kitten 0.05/5 0.05/s 1m39s to cap
+woodcutter 1
+scholar 1
+farmer 5
+happiness 0.96 (1.10 + -0.14)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 10m17s) +(Catnip Field 1)
+3: Hut -(wood 603.80/1220.70 1h59m0s) +(Hut 1, kitten cap 2)
+4: Library -(wood 603.80/1439.39* 2h41m11s) +(Library 1, science cap 250)
+5: Barn -(wood 603.80/1436.15* 2h40m33s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
+7: scholar -(kitten 0.05/1 18s) +(scholar 1)
+8: farmer -(kitten 0.05/1 18s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 159951
+skip 159669
+day 79975.50 0.50/s
+year 200.94 (1 + 199.94)
+Winter 1 (1 if 799.75 % 4 == 3)
+day_of_year 376 (1 + 79975 % 400)
+catnip 35000/35000 6.75/s
+wood 603.89/1400 0.09/s 2h33m34s to cap
+science 7500/7500 0.66/s
+kitten 0.10/5 0.05/s 1m38s to cap
+woodcutter 1
+scholar 1
+farmer 5
+happiness 0.96 (1.10 + -0.14)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 10m17s) +(Catnip Field 1)
+3: Hut -(wood 603.89/1220.70 1h58m59s) +(Hut 1, kitten cap 2)
+4: Library -(wood 603.89/1439.39* 2h41m10s) +(Library 1, science cap 250)
+5: Barn -(wood 603.89/1436.15* 2h40m32s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+error: not enough wood
+###
+time 159970
+skip 159687
+day 79985 0.50/s
+year 200.96 (1 + 199.96)
+Winter 1 (1 if 799.85 % 4 == 3)
+day_of_year 386 (1 + 79985 % 400)
+catnip 35000/35000 2.50/s
+wood 605.53/1400 0.08/s 2h36m30s to cap
+science 7500/7500 0.64/s
+kitten 1.05/5 0.05/s 1m19s to cap
+woodcutter 1
+scholar 1
+farmer 5
+happiness 0.94 (1.10 + -0.16)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 27m48s) +(Catnip Field 1)
+3: Hut -(wood 605.53/1220.70 2h1m11s) +(Hut 1, kitten cap 2)
+4: Library -(wood 605.53/1439.39* 2h44m16s) +(Library 1, science cap 250)
+5: Barn -(wood 605.53/1436.15* 2h43m38s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 159971
+skip 159687
+day 79985.50 0.50/s
+year 200.96 (1 + 199.96)
+Winter 1 (1 if 799.85 % 4 == 3)
+day_of_year 386 (1 + 79985 % 400)
+catnip 35000/35000 7.50/s
+wood 605.61/1400 0.08/s 2h36m29s to cap
+science 7500/7500 0.64/s
+kitten 0.10/4 0.05/s 1m18s to cap
+woodcutter 1
+scholar 1
+farmer 6
+happiness 0.94 (1.10 + -0.16)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 9m15s) +(Catnip Field 1)
+3: Hut -(wood 605.61/1220.70 2h1m10s) +(Hut 1, kitten cap 2)
+4: Library -(wood 605.61/1439.39* 2h44m15s) +(Library 1, science cap 250)
+5: Barn -(wood 605.61/1436.15* 2h43m37s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 159972
+skip 159687
+day 79986 0.50/s
+year 200.97 (1 + 199.97)
+Winter 1 (1 if 799.86 % 4 == 3)
+day_of_year 387 (1 + 79986 % 400)
+catnip 35000/35000 7.50/s
+wood 605.70/1400 0.08/s 2h36m28s to cap
+science 7500/7500 0.64/s
+kitten 0.15/4 0.05/s 1m17s to cap
+woodcutter 1
+scholar 1
+farmer 6
+happiness 0.94 (1.10 + -0.16)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 9m15s) +(Catnip Field 1)
+3: Hut -(wood 605.70/1220.70 2h1m9s) +(Hut 1, kitten cap 2)
+4: Library -(wood 605.70/1439.39* 2h44m14s) +(Library 1, science cap 250)
+5: Barn -(wood 605.70/1436.15* 2h43m36s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.15/1 16s) +(woodcutter 1)
+7: scholar -(kitten 0.15/1 16s) +(scholar 1)
+8: farmer -(kitten 0.15/1 16s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+error: not enough wood
+###
+time 159989
+skip 159703
+day 79994.50 0.50/s
+year 200.99 (1 + 199.99)
+Winter 1 (1 if 799.94 % 4 == 3)
+day_of_year 395 (1 + 79994 % 400)
+catnip 35000/35000 3.25/s
+wood 607.14/1400 0.08/s 2h39m35s to cap
+science 7500/7500 0.63/s
+kitten 1/4 0.05/s 1m0s to cap
+woodcutter 1
+scholar 1
+farmer 6
+happiness 0.92 (1.10 + -0.18)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 21m23s) +(Catnip Field 1)
+3: Hut -(wood 607.14/1220.70 2h3m30s) +(Hut 1, kitten cap 2)
+4: Library -(wood 607.14/1439.39* 2h47m31s) +(Library 1, science cap 250)
+5: Barn -(wood 607.14/1436.15* 2h46m52s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 159990
+skip 159703
+day 79995 0.50/s
+year 200.99 (1 + 199.99)
+Winter 1 (1 if 799.95 % 4 == 3)
+day_of_year 396 (1 + 79995 % 400)
+catnip 35000/35000 8.25/s
+wood 607.22/1400 0.08/s 2h39m34s to cap
+science 7500/7500 0.63/s
+kitten 0.05/3 0.05/s 59s to cap
+woodcutter 1
+scholar 1
+farmer 7
+happiness 0.92 (1.10 + -0.18)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 8m25s) +(Catnip Field 1)
+3: Hut -(wood 607.22/1220.70 2h3m29s) +(Hut 1, kitten cap 2)
+4: Library -(wood 607.22/1439.39* 2h47m30s) +(Library 1, science cap 250)
+5: Barn -(wood 607.22/1436.15* 2h46m51s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
+7: scholar -(kitten 0.05/1 18s) +(scholar 1)
+8: farmer -(kitten 0.05/1 18s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 159991
+skip 159703
+day 79995.50 0.50/s
+year 200.99 (1 + 199.99)
+Winter 1 (1 if 799.95 % 4 == 3)
+day_of_year 396 (1 + 79995 % 400)
+catnip 35000/35000 8.25/s
+wood 607.30/1400 0.08/s 2h39m33s to cap
+science 7500/7500 0.63/s
+kitten 0.10/3 0.05/s 57s to cap
+woodcutter 1
+scholar 1
+farmer 7
+happiness 0.92 (1.10 + -0.18)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 8m25s) +(Catnip Field 1)
+3: Hut -(wood 607.30/1220.70 2h3m28s) +(Hut 1, kitten cap 2)
+4: Library -(wood 607.30/1439.39* 2h47m29s) +(Library 1, science cap 250)
+5: Barn -(wood 607.30/1436.15* 2h46m50s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+error: not enough wood
+###
+time 160010
+skip 159721
+day 80005 0.50/s
+year 201.01 (1 + 200.01)
+Spring 1 (1 if 800.05 % 4 == 0)
+day_of_year 6 (1 + 80005 % 400)
+catnip 35000/35000 61.48/s
+wood 608.88/1400 0.08/s 2h42m46s to cap
+science 7500/7500 0.61/s
+kitten 1.05/3 0.05/s 39s to cap
+woodcutter 1
+scholar 1
+farmer 7
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m7s) +(Catnip Field 1)
+3: Hut -(wood 608.88/1220.70 2h5m53s) +(Hut 1, kitten cap 2)
+4: Library -(wood 608.88/1439.39* 2h50m53s) +(Library 1, science cap 250)
+5: Barn -(wood 608.88/1436.15* 2h50m13s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 160011
+skip 159721
+day 80005.50 0.50/s
+year 201.01 (1 + 200.01)
+Spring 1 (1 if 800.05 % 4 == 0)
+day_of_year 6 (1 + 80005 % 400)
+catnip 35000/35000 66.48/s
+wood 608.96/1400 0.08/s 2h42m45s to cap
+science 7500/7500 0.61/s
+kitten 0.10/2 0.05/s 37s to cap
+woodcutter 1
+scholar 1
+farmer 8
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+3: Hut -(wood 608.96/1220.70 2h5m52s) +(Hut 1, kitten cap 2)
+4: Library -(wood 608.96/1439.39* 2h50m52s) +(Library 1, science cap 250)
+5: Barn -(wood 608.96/1436.15* 2h50m12s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 160012
+skip 159721
+day 80006 0.50/s
+year 201.02 (1 + 200.02)
+Spring 1 (1 if 800.06 % 4 == 0)
+day_of_year 7 (1 + 80006 % 400)
+catnip 35000/35000 66.48/s
+wood 609.04/1400 0.08/s 2h42m44s to cap
+science 7500/7500 0.61/s
+kitten 0.15/2 0.05/s 36s to cap
+woodcutter 1
+scholar 1
+farmer 8
+happiness 0.90 (1.10 + -0.20)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+3: Hut -(wood 609.04/1220.70 2h5m51s) +(Hut 1, kitten cap 2)
+4: Library -(wood 609.04/1439.39* 2h50m51s) +(Library 1, science cap 250)
+5: Barn -(wood 609.04/1436.15* 2h50m11s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.15/1 16s) +(woodcutter 1)
+7: scholar -(kitten 0.15/1 16s) +(scholar 1)
+8: farmer -(kitten 0.15/1 16s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+error: not enough wood
+###
+time 160029
+skip 159737
+day 80014.50 0.50/s
+year 201.03 (1 + 200.03)
+Spring 1 (1 if 800.14 % 4 == 0)
+day_of_year 15 (1 + 80014 % 400)
+catnip 35000/35000 62.23/s
+wood 610.41/1400 0.08/s 2h46m9s to cap
+science 7500/7500 0.60/s
+kitten 1/2 0.05/s 20s to cap
+woodcutter 1
+scholar 1
+farmer 8
+happiness 0.88 (1.10 + -0.22)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m6s) +(Catnip Field 1)
+3: Hut -(wood 610.41/1220.70 2h8m25s) +(Hut 1, kitten cap 2)
+4: Library -(wood 610.41/1439.39* 2h54m26s) +(Library 1, science cap 250)
+5: Barn -(wood 610.41/1436.15* 2h53m45s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 160030
+skip 159737
+day 80015 0.50/s
+year 201.04 (1 + 200.04)
+Spring 1 (1 if 800.15 % 4 == 0)
+day_of_year 16 (1 + 80015 % 400)
+catnip 35000/35000 67.23/s
+wood 610.49/1400 0.08/s 2h46m8s to cap
+science 7500/7500 0.60/s
+kitten 0.05/1 0.05/s 18s to cap
+woodcutter 1
+scholar 1
+farmer 9
+happiness 0.88 (1.10 + -0.22)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m1s) +(Catnip Field 1)
+3: Hut -(wood 610.49/1220.70 2h8m24s) +(Hut 1, kitten cap 2)
+4: Library -(wood 610.49/1439.39* 2h54m25s) +(Library 1, science cap 250)
+5: Barn -(wood 610.49/1436.15* 2h53m44s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
+7: scholar -(kitten 0.05/1 18s) +(scholar 1)
+8: farmer -(kitten 0.05/1 18s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 160031
+skip 159737
+day 80015.50 0.50/s
+year 201.04 (1 + 200.04)
+Spring 1 (1 if 800.15 % 4 == 0)
+day_of_year 16 (1 + 80015 % 400)
+catnip 35000/35000 67.23/s
+wood 610.57/1400 0.08/s 2h46m7s to cap
+science 7500/7500 0.60/s
+kitten 0.10/1 0.05/s 17s to cap
+woodcutter 1
+scholar 1
+farmer 9
+happiness 0.88 (1.10 + -0.22)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m1s) +(Catnip Field 1)
+3: Hut -(wood 610.57/1220.70 2h8m23s) +(Hut 1, kitten cap 2)
+4: Library -(wood 610.57/1439.39* 2h54m24s) +(Library 1, science cap 250)
+5: Barn -(wood 610.57/1436.15* 2h53m43s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0.10/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 17s) +(scholar 1)
+8: farmer -(kitten 0.10/1 17s) +(farmer 1)
+sX: time skip until action X is available
+last input: 3
+error: not enough wood
+###
+time 160050
+skip 159755
+day 80025 0.50/s
+year 201.06 (1 + 200.06)
+Spring 1 (1 if 800.25 % 4 == 0)
+day_of_year 26 (1 + 80025 % 400)
+catnip 35000/35000 62.98/s
+wood 612.08/1400 0.08/s 2h49m39s to cap
+science 7500/7500 0.59/s
+kitten 1/1 0.05/s
+woodcutter 1
+scholar 1
+farmer 9
+happiness 0.86 (1.10 + -0.24)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m6s) +(Catnip Field 1)
+3: Hut -(wood 612.08/1220.70 2h11m3s) +(Hut 1, kitten cap 2)
+4: Library -(wood 612.08/1439.39* 2h58m8s) +(Library 1, science cap 250)
+5: Barn -(wood 612.08/1436.15* 2h57m26s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: s8
+###
+time 160051
+skip 159755
+day 80025.50 0.50/s
+year 201.06 (1 + 200.06)
+Spring 1 (1 if 800.25 % 4 == 0)
+day_of_year 26 (1 + 80025 % 400)
+catnip 35000/35000 67.98/s
+wood 612.16/1400 0.08/s 2h49m38s to cap
+science 7500/7500 0.59/s
+woodcutter 1
+scholar 1
+farmer 10
+happiness 0.86 (1.10 + -0.24)
+Catnip Field 73
+Hut 6
+Library 29
+Barn 6
+Calendar 1/1
+Agriculture 1/1
+Archery 1/1
+Mining 1/1
+2: Catnip Field -(catnip 35000/39166.58* 1m1s) +(Catnip Field 1)
+3: Hut -(wood 612.16/1220.70 2h11m2s) +(Hut 1, kitten cap 2)
+4: Library -(wood 612.16/1439.39* 2h58m7s) +(Library 1, science cap 250)
+5: Barn -(wood 612.16/1436.15* 2h57m25s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
+7: scholar -(kitten 0/1* 20s) +(scholar 1)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8

@@ -27,7 +27,7 @@ Library 1
 3: Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 7: scholar -(kitten 1) +(scholar 1)
-8: Calendar -(science 0/30 0s) +(Calendar 1)
+9: Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -46,7 +46,7 @@ Library 1
 3: Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 7: scholar -(kitten 1) +(scholar 1)
-8: Calendar -(science 0/30 2m27s) +(Calendar 1)
+9: Calendar -(science 0/30 2m27s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -68,7 +68,7 @@ Library 1
 3: Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: Library -(wood 28.75) +(Library 1, science cap 250)
 7: scholar -(kitten 1) +(scholar 1)
-8: Calendar -(science 0.20/30 2m26s) +(Calendar 1)
+9: Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -90,7 +90,7 @@ Library 2
 3: Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 7: scholar -(kitten 1) +(scholar 1)
-8: Calendar -(science 0.20/30 2m13s) +(Calendar 1)
+9: Calendar -(science 0.20/30 2m13s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -112,7 +112,7 @@ Library 2
 3: Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 7: scholar -(kitten 1) +(scholar 1)
-8: Calendar -(science 0.43/30 2m12s) +(Calendar 1)
+9: Calendar -(science 0.43/30 2m12s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -133,7 +133,7 @@ Library 2
 3: Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 0.43/30 1m6s) +(Calendar 1)
+9: Calendar -(science 0.43/30 1m6s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -154,6 +154,6 @@ Library 2
 3: Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: Library -(wood 33.06) +(Library 1, science cap 250)
 7: scholar -(kitten 0/1* 20s) +(scholar 1)
-8: Calendar -(science 0.87/30 1m5s) +(Calendar 1)
+9: Calendar -(science 0.87/30 1m5s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0

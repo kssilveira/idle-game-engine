@@ -107,17 +107,30 @@ func TestRun(t *testing.T) {
 			{woodcutter, 0}, {gather, 1},
 		},
 	}, {
+		name: "farmer",
+		resources: map[string]float64{
+			"catnip":      1000,
+			"kitten":      2,
+			"Agriculture": 1,
+		},
+		iters: []iter{
+			{farmer, 0}, {gather, 1},
+			{farmer, 0}, {gather, 1},
+		},
+	}, {
 		name: "gone",
 		resources: map[string]float64{
-			"catnip":  1000,
-			"kitten":  3,
-			"Hut":     1,
-			"Library": 1,
+			"catnip":      1000,
+			"kitten":      4,
+			"Hut":         1,
+			"Library":     1,
+			"Agriculture": 1,
 		},
 		iters: []iter{
 			{woodcutter, 0}, {refine, 1},
 			{scholar, 0}, {refine, 1},
-			{refine, 76},
+			{farmer, 0}, {refine, 1},
+			{refine, 79},
 			{refine, 1}, {refine, 1}, {refine, 1}, {refine, 1},
 		},
 	}, {

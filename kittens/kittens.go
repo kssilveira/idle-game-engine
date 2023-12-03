@@ -64,6 +64,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "woodcutter", ProductionFactor: -4.25,
 		}, {
 			Name: "scholar", ProductionFactor: -4.25,
+		}, {
+			Name: "farmer", ProductionFactor: -4.25,
+		}, {
+			Name: "farmer", ProductionFactor: 5,
 		}},
 	}, {
 		Name: "wood", Capacity: 200,
@@ -103,6 +107,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
+		Name: "farmer", Capacity: -1,
+		OnGone: []data.Resource{{
+			Name: "gone kitten", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
+	}, {
 		Name: "happiness", StartQuantity: 1.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "kitten", ProductionFactor: -0.02, ProductionFloor: true,
@@ -110,6 +121,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "woodcutter", ProductionFactor: -0.02,
 		}, {
 			Name: "scholar", ProductionFactor: -0.02,
+		}, {
+			Name: "farmer", ProductionFactor: -0.02,
 		}},
 	}, {
 		Name: "Catnip Field", Capacity: -1,
@@ -207,6 +220,15 @@ func NewGame(now game.Now) *game.Game {
 			Name: "scholar", Quantity: 1,
 		}},
 	}, {
+		Name:       "farmer",
+		UnlockedBy: data.Resource{Name: "Agriculture"},
+		Costs: []data.Resource{{
+			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "farmer", Quantity: 1,
+		}},
+	}, {
 		Name:       "Calendar",
 		UnlockedBy: data.Resource{Name: "Library"},
 		LockedBy:   data.Resource{Name: "Calendar"},
@@ -259,6 +281,7 @@ const (
 	barn
 	woodcutter
 	scholar
+	farmer
 	calendar
 	agriculture
 	archery
@@ -278,6 +301,7 @@ const (
 	sbarn
 	swoodcutter
 	sscholar
+	sfarmer
 	scalendar
 	sagriculture
 	sarchery
@@ -303,6 +327,7 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{field, sfield}, 25},
 		{[]int{slibrary, library}, 15},
+		{[]int{hut, sfarmer, farmer}, 10},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {

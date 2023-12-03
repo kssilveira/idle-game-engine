@@ -1,0 +1,82 @@
+###
+year 1
+Spring 1
+day_of_year 1
+catnip 1000/5000 -8.50/s 1m57s to empty
+kitten 2/2 0.05/s
+Agriculture 1/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100) +(wood 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+5: Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: 
+###
+year 1
+Spring 1
+day_of_year 1
+catnip 1000/5000 -3.50/s 4m45s to empty
+kitten 1/1 0.05/s
+farmer 1
+happiness 1.06 (1.10 + -0.04)
+Agriculture 1/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100) +(wood 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+5: Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 1
+day 0.50 0.50/s
+year 1
+Spring 1
+day_of_year 1
+catnip 997.50/5000 -3.50/s 4m45s to empty
+kitten 1/1 0.05/s
+farmer 1
+happiness 1.06 (1.10 + -0.04)
+Agriculture 1/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100) +(wood 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+5: Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
+8: farmer -(kitten 1) +(farmer 1)
+sX: time skip until action X is available
+last input: 0
+###
+time 1
+day 0.50 0.50/s
+year 1
+Spring 1
+day_of_year 1
+catnip 997.50/5000 1.50/s 44m28s to cap
+farmer 2
+happiness 1.06 (1.10 + -0.04)
+Agriculture 1/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100) +(wood 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+5: Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
+sX: time skip until action X is available
+last input: 8
+###
+time 2
+day 1 0.50/s
+year 1 (1 + 0)
+Spring 1 (1 if 0.01 % 4 == 0)
+day_of_year 2 (1 + 1 % 400)
+catnip 1000/5000 1.50/s 44m26s to cap
+farmer 2
+happiness 1.06 (1.10 + -0.04)
+Agriculture 1/1
+0: Gather catnip +(catnip 1)
+1: Refine catnip -(catnip 100) +(wood 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+5: Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
+8: farmer -(kitten 0/1* 20s) +(farmer 1)
+sX: time skip until action X is available
+last input: 0

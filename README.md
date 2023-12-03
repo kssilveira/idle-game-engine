@@ -69,10 +69,8 @@ Features from kittens game:
   - TODO
 - Mining
   - TODO
-- farmer
-  - unlocked by Agriculture
-  - catnip 5
 - TODO
 - maybe
-  - sell building for half price
-  - unassign workers
+  - rX: revert action X
+    - sell building
+    - unassign worker
