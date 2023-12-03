@@ -28,7 +28,7 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 		}
 		capacity := ""
 		if r.Capacity > 0 {
-			capacity = fmt.Sprintf("/%.0f", r.Capacity)
+			capacity = fmt.Sprintf("/%s", toString(r.Capacity))
 		}
 		extra := ""
 		if d.Rate != 0 {
@@ -50,13 +50,13 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 						extra = fmt.Sprintf("%s == %d", extra, r.ProductionModulusEquals)
 					}
 				}
-				rateStr = fmt.Sprintf("(%.2f %s %.2f%s)", r.StartQuantity, operator, d.Rate, extra)
+				rateStr = fmt.Sprintf("(%s %s %s%s)", toString(r.StartQuantity), operator, toString(d.Rate), extra)
 			} else {
-				rateStr = fmt.Sprintf("%.2f/s", d.Rate)
+				rateStr = fmt.Sprintf("%s/s", toString(d.Rate))
 			}
 			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}
-		logger.Printf("%s %.2f%s%s\n", r.Name, r.Quantity, capacity, extra)
+		logger.Printf("%s %s%s%s\n", r.Name, toString(r.Quantity), capacity, extra)
 	}
 }
 
@@ -76,9 +76,9 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 			if c.Cost > c.Capacity && c.Capacity != -1 {
 				overCap = "*"
 			}
-			out := fmt.Sprintf("%.2f/%.2f%s %s", c.Quantity, c.Cost, overCap, c.Duration)
+			out := fmt.Sprintf("%s/%s%s %s", toString(c.Quantity), toString(c.Cost), overCap, c.Duration)
 			if c.Quantity >= c.Cost {
-				out = fmt.Sprintf("%.2f", c.Cost)
+				out = fmt.Sprintf("%s", toString(c.Cost))
 			}
 			costs = append(costs, fmt.Sprintf("%s %s", c.Name, out))
 		}
@@ -88,9 +88,9 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 		parts = append(parts, " +(")
 		adds := []string{}
 		for _, r := range a.Adds {
-			one := fmt.Sprintf("%s %.0f", r.Name, r.Quantity)
+			one := fmt.Sprintf("%s %s", r.Name, toString(r.Quantity))
 			if r.Quantity == 0 && r.Capacity > 0 {
-				one = fmt.Sprintf("%s cap %.0f", r.Name, r.Capacity)
+				one = fmt.Sprintf("%s cap %s", r.Name, toString(r.Capacity))
 			}
 			adds = append(adds, one)
 		}
@@ -100,4 +100,9 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 	for _, a := range data.CustomActions {
 		logger.Printf("%s\n", a.Name)
 	}
+}
+
+func toString(n float64) string {
+	res := fmt.Sprintf("%.2f", n)
+	return strings.TrimSuffix(res, ".00")
 }

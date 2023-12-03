@@ -1,220 +1,220 @@
 ###
-year 1.00
-Spring 1.00
-day_of_year 1.00
-catnip 1000.00/5000 -12.75/s 1m18s to empty
-kitten 3.00/3 0.05/s
-Hut 1.00
-Library 1.00
+year 1
+Spring 1
+day_of_year 1
+catnip 1000/5000 -12.75/s 1m18s to empty
+kitten 3/3 0.05/s
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
-7: scholar -(kitten 1.00) +(scholar 1)
-8: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
+1: Refine catnip -(catnip 100) +(wood 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 ###
-year 1.00
-Spring 1.00
-day_of_year 1.00
-catnip 1000.00/5000 -12.75/s 1m18s to empty
-kitten 2.00/2 0.05/s
-woodcutter 1.00
+year 1
+Spring 1
+day_of_year 1
+catnip 1000/5000 -12.75/s 1m18s to empty
+kitten 2/2 0.05/s
+woodcutter 1
 happiness 1.04 (1.10 + -0.06)
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
-7: scholar -(kitten 1.00) +(scholar 1)
-8: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 6
 ###
-time 1.00
+time 1
 day 0.50 0.50/s
-year 1.00
-Spring 1.00
-day_of_year 1.00
+year 1
+Spring 1
+day_of_year 1
 catnip 987.25/5000 -12.75/s 1m17s to empty
 wood 0.09/200 0.09/s 35m35s to cap
-kitten 2.00/2 0.05/s
-woodcutter 1.00
+kitten 2/2 0.05/s
+woodcutter 1
 happiness 1.04 (1.10 + -0.06)
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
 3: Hut -(wood 0.09/12.50 2m12s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.09/28.75 5m6s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
-7: scholar -(kitten 1.00) +(scholar 1)
-8: Calendar -(science 0.00/30.00 0s) +(Calendar 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
 ###
-time 1.00
+time 1
 day 0.50 0.50/s
-year 1.00
-Spring 1.00
-day_of_year 1.00
+year 1
+Spring 1
+day_of_year 1
 catnip 987.25/5000 -12.75/s 1m17s to empty
 wood 0.09/200 0.09/s 35m35s to cap
-kitten 1.00/1 0.05/s
-woodcutter 1.00
-scholar 1.00
+kitten 1/1 0.05/s
+woodcutter 1
+scholar 1
 happiness 1.04 (1.10 + -0.06)
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
 3: Hut -(wood 0.09/12.50 2m12s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.09/28.75 5m6s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
-7: scholar -(kitten 1.00) +(scholar 1)
-8: Calendar -(science 0.00/30.00 2m29s) +(Calendar 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: Calendar -(science 0/30 2m29s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 7
 ###
-time 2.00
-day 1.00 0.50/s
-year 1.00 (1.00 + 0.00)
-Spring 1.00 (1.00 if 0.01 % 4 == 0)
-day_of_year 2.00 (1.00 + 1.00 % 400)
+time 2
+day 1 0.50/s
+year 1 (1 + 0)
+Spring 1 (1 if 0.01 % 4 == 0)
+day_of_year 2 (1 + 1 % 400)
 catnip 974.50/5000 -12.75/s 1m16s to empty
 wood 0.19/200 0.09/s 35m34s to cap
 science 0.20/250 0.20/s 20m47s to cap
-kitten 1.00/1 0.05/s
-woodcutter 1.00
-scholar 1.00
+kitten 1/1 0.05/s
+woodcutter 1
+scholar 1
 happiness 1.04 (1.10 + -0.06)
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
 3: Hut -(wood 0.19/12.50 2m11s) +(Hut 1, kitten cap 2)
 4: Library -(wood 0.19/28.75 5m5s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
-7: scholar -(kitten 1.00) +(scholar 1)
-8: Calendar -(science 0.20/30.00 2m28s) +(Calendar 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: Calendar -(science 0.20/30 2m28s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
 ###
-time 78.00
-day 39.00 0.50/s
-year 1.10 (1.00 + 0.10)
-Spring 1.00 (1.00 if 0.39 % 4 == 0)
-day_of_year 40.00 (1.00 + 39.00 % 400)
+time 78
+day 39 0.50/s
+year 1.10 (1 + 0.10)
+Spring 1 (1 if 0.39 % 4 == 0)
+day_of_year 40 (1 + 39 % 400)
 catnip 5.50/5000 -12.75/s
 wood 7.30/200 0.09/s 34m18s to cap
 science 15.42/250 0.20/s 19m31s to cap
-kitten 1.00/1 0.05/s
-woodcutter 1.00
-scholar 1.00
+kitten 1/1 0.05/s
+woodcutter 1
+scholar 1
 happiness 1.04 (1.10 + -0.06)
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 5.50/10.00 0s) +(Catnip Field 1)
+2: Catnip Field -(catnip 5.50/10 0s) +(Catnip Field 1)
 3: Hut -(wood 7.30/12.50 55s) +(Hut 1, kitten cap 2)
 4: Library -(wood 7.30/28.75 3m49s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
-7: scholar -(kitten 1.00) +(scholar 1)
-8: Calendar -(science 15.42/30.00 1m12s) +(Calendar 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
+7: scholar -(kitten 1) +(scholar 1)
+8: Calendar -(science 15.42/30 1m12s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
 ###
-time 79.00
+time 79
 day 39.50 0.50/s
-year 1.10 (1.00 + 0.10)
-Spring 1.00 (1.00 if 0.39 % 4 == 0)
-day_of_year 40.00 (1.00 + 39.00 % 400)
+year 1.10 (1 + 0.10)
+Spring 1 (1 if 0.39 % 4 == 0)
+day_of_year 40 (1 + 39 % 400)
 wood 7.39/200 0.10/s 33m38s to cap
 science 15.62/250 0.20/s 19m8s to cap
 kitten 0.05/1 0.05/s 18s to cap
-gone kitten 1.00
-woodcutter 1.00
-scholar 1.00
+gone kitten 1
+woodcutter 1
+scholar 1
 happiness 1.06 (1.10 + -0.04)
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
 3: Hut -(wood 7.39/12.50 53s) +(Hut 1, kitten cap 2)
 4: Library -(wood 7.39/28.75 3m43s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 0.05/1.00 18s) +(woodcutter 1)
-7: scholar -(kitten 0.05/1.00 18s) +(scholar 1)
-8: Calendar -(science 15.62/30.00 1m10s) +(Calendar 1)
+6: woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
+7: scholar -(kitten 0.05/1 18s) +(scholar 1)
+8: Calendar -(science 15.62/30 1m10s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
 ###
-time 80.00
-day 40.00 0.50/s
-year 1.10 (1.00 + 0.10)
-Spring 1.00 (1.00 if 0.40 % 4 == 0)
-day_of_year 41.00 (1.00 + 40.00 % 400)
+time 80
+day 40 0.50/s
+year 1.10 (1 + 0.10)
+Spring 1 (1 if 0.40 % 4 == 0)
+day_of_year 41 (1 + 40 % 400)
 wood 7.39/200
 science 15.82/250 0.21/s 18m46s to cap
 kitten 0.10/2 0.05/s 37s to cap
-gone kitten 2.00
-scholar 1.00
+gone kitten 2
+scholar 1
 happiness 1.08 (1.10 + -0.02)
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
 3: Hut -(wood 7.39/12.50 0s) +(Hut 1, kitten cap 2)
 4: Library -(wood 7.39/28.75 0s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 0.10/1.00 18s) +(woodcutter 1)
-7: scholar -(kitten 0.10/1.00 18s) +(scholar 1)
-8: Calendar -(science 15.82/30.00 1m8s) +(Calendar 1)
+6: woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
+7: scholar -(kitten 0.10/1 18s) +(scholar 1)
+8: Calendar -(science 15.82/30 1m8s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
 ###
-time 81.00
+time 81
 day 40.50 0.50/s
-year 1.10 (1.00 + 0.10)
-Spring 1.00 (1.00 if 0.40 % 4 == 0)
-day_of_year 41.00 (1.00 + 40.00 % 400)
+year 1.10 (1 + 0.10)
+Spring 1 (1 if 0.40 % 4 == 0)
+day_of_year 41 (1 + 40 % 400)
 wood 7.39/200
 science 15.82/250
 kitten 0.15/3 0.05/s 57s to cap
-gone kitten 3.00
+gone kitten 3
 happiness 1.10
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
 3: Hut -(wood 7.39/12.50 0s) +(Hut 1, kitten cap 2)
 4: Library -(wood 7.39/28.75 0s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 0.15/1.00 17s) +(woodcutter 1)
-7: scholar -(kitten 0.15/1.00 17s) +(scholar 1)
-8: Calendar -(science 15.82/30.00 0s) +(Calendar 1)
+6: woodcutter -(kitten 0.15/1 17s) +(woodcutter 1)
+7: scholar -(kitten 0.15/1 17s) +(scholar 1)
+8: Calendar -(science 15.82/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
 ###
-time 82.00
-day 41.00 0.50/s
-year 1.10 (1.00 + 0.10)
-Spring 1.00 (1.00 if 0.41 % 4 == 0)
-day_of_year 42.00 (1.00 + 41.00 % 400)
+time 82
+day 41 0.50/s
+year 1.10 (1 + 0.10)
+Spring 1 (1 if 0.41 % 4 == 0)
+day_of_year 42 (1 + 41 % 400)
 wood 7.39/200
 science 15.82/250
 kitten 0.20/3 0.05/s 55s to cap
-gone kitten 3.00
+gone kitten 3
 happiness 1.10
-Hut 1.00
-Library 1.00
+Hut 1
+Library 1
 0: Gather catnip +(catnip 1)
 3: Hut -(wood 7.39/12.50 0s) +(Hut 1, kitten cap 2)
 4: Library -(wood 7.39/28.75 0s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 0.20/1.00 16s) +(woodcutter 1)
-7: scholar -(kitten 0.20/1.00 16s) +(scholar 1)
-8: Calendar -(science 15.82/30.00 0s) +(Calendar 1)
+6: woodcutter -(kitten 0.20/1 16s) +(woodcutter 1)
+7: scholar -(kitten 0.20/1 16s) +(scholar 1)
+8: Calendar -(science 15.82/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked

@@ -1,29 +1,29 @@
 ###
-year 1.00
-Spring 1.00
-day_of_year 1.00
+year 1
+Spring 1
+day_of_year 1
 0: <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
 sX: time skip until action X is available
 last input: 
 ###
-year 1.00
-Spring 1.00
-day_of_year 1.00
-catnip 1.00/5000
+year 1
+Spring 1
+day_of_year 1
+catnip 1/5000
 happiness 1.10
 0: <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
-1: <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 1.00/100.00 0s) +(wood 1)
-2: <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 1.00/10.00 0s) +(Catnip Field 1)
+1: <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 1/100 0s) +(wood 1)
+2: <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 1/10 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
-year 1.00
-Spring 1.00
-day_of_year 1.00
-catnip 2.00/5000
+year 1
+Spring 1
+day_of_year 1
+catnip 2/5000
 happiness 1.10
 0: <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
-1: <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 2.00/100.00 0s) +(wood 1)
-2: <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 2.00/10.00 0s) +(Catnip Field 1)
+1: <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 2/100 0s) +(wood 1)
+2: <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 2/10 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0

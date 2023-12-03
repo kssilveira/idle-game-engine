@@ -54,11 +54,6 @@ Faster solution:
 
 ## Ideas
 
-TODO
-
-- review graph validate
-- hide '.00' from numbers
-
 General features:
 
 - shared web server

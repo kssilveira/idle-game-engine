@@ -1,82 +1,82 @@
 ###
-year 1.00
-Spring 1.00
-day_of_year 1.00
-catnip 1000.00/5000 -8.50/s 1m57s to empty
-kitten 2.00/2 0.05/s
-Hut 1.00
+year 1
+Spring 1
+day_of_year 1
+catnip 1000/5000 -8.50/s 1m57s to empty
+kitten 2/2 0.05/s
+Hut 1
 0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 100.00) +(wood 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
+1: Refine catnip -(catnip 100) +(wood 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 
 ###
-year 1.00
-Spring 1.00
-day_of_year 1.00
-catnip 1000.00/5000 -8.50/s 1m57s to empty
-kitten 1.00/1 0.05/s
-woodcutter 1.00
+year 1
+Spring 1
+day_of_year 1
+catnip 1000/5000 -8.50/s 1m57s to empty
+kitten 1/1 0.05/s
+woodcutter 1
 happiness 1.06 (1.10 + -0.04)
-Hut 1.00
+Hut 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
+6: woodcutter -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 6
 ###
-time 1.00
+time 1
 day 0.50 0.50/s
-year 1.00
-Spring 1.00
-day_of_year 1.00
+year 1
+Spring 1
+day_of_year 1
 catnip 992.50/5000 -8.50/s 1m56s to empty
 wood 0.10/200 0.10/s 34m55s to cap
-kitten 1.00/1 0.05/s
-woodcutter 1.00
+kitten 1/1 0.05/s
+woodcutter 1
 happiness 1.06 (1.10 + -0.04)
-Hut 1.00
+Hut 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
 3: Hut -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
-4: Library -(wood 0.10/25.00 4m21s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 1.00) +(woodcutter 1)
+4: Library -(wood 0.10/25 4m21s) +(Library 1, science cap 250)
+6: woodcutter -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 0
 ###
-time 1.00
+time 1
 day 0.50 0.50/s
-year 1.00
-Spring 1.00
-day_of_year 1.00
+year 1
+Spring 1
+day_of_year 1
 catnip 992.50/5000 -8.50/s 1m56s to empty
 wood 0.10/200 0.19/s 17m27s to cap
-woodcutter 2.00
+woodcutter 2
 happiness 1.06 (1.10 + -0.04)
-Hut 1.00
+Hut 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
 3: Hut -(wood 0.10/12.50 1m5s) +(Hut 1, kitten cap 2)
-4: Library -(wood 0.10/25.00 2m10s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+4: Library -(wood 0.10/25 2m10s) +(Library 1, science cap 250)
+6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 6
 ###
-time 2.00
-day 1.00 0.50/s
-year 1.00 (1.00 + 0.00)
-Spring 1.00 (1.00 if 0.01 % 4 == 0)
-day_of_year 2.00 (1.00 + 1.00 % 400)
-catnip 985.00/5000 -8.50/s 1m55s to empty
+time 2
+day 1 0.50/s
+year 1 (1 + 0)
+Spring 1 (1 if 0.01 % 4 == 0)
+day_of_year 2 (1 + 1 % 400)
+catnip 985/5000 -8.50/s 1m55s to empty
 wood 0.29/200 0.19/s 17m26s to cap
-woodcutter 2.00
+woodcutter 2
 happiness 1.06 (1.10 + -0.04)
-Hut 1.00
+Hut 1
 0: Gather catnip +(catnip 1)
-2: Catnip Field -(catnip 10.00) +(Catnip Field 1)
+2: Catnip Field -(catnip 10) +(Catnip Field 1)
 3: Hut -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
-4: Library -(wood 0.29/25.00 2m9s) +(Library 1, science cap 250)
-6: woodcutter -(kitten 0.00/1.00* 20s) +(woodcutter 1)
+4: Library -(wood 0.29/25 2m9s) +(Library 1, science cap 250)
+6: woodcutter -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 0
