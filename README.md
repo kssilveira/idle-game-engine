@@ -69,7 +69,6 @@ Features from kittens game:
 - Animal Husbandry
   - unlocked by Archery
   - science 500
-  - TODO
 - hunter
   - unlocked by Archery
   - catpower 0.3
@@ -78,7 +77,6 @@ Features from kittens game:
 - Metal Working
   - unlocked by Mining
   - science 900
-  - TODO
 - Mine
   - unlocked by Mining
   - wood 100 115 132.25 rate 1.15
@@ -90,10 +88,9 @@ Features from kittens game:
   - cap 750
 - Workshop
   - unlocked by miner
-  - wood 100
-  - minerals 400
+  - wood 100 115 rate 1.15
+  - minerals 400 460
   - craft 6%
-  - TODO
 - Send hunters
   - unlocked by hunter
   - catpower 100
@@ -114,6 +111,76 @@ Features from kittens game:
   - unlocked by hunter
   - catpower 1000
   - TODO
+- Mineral Hoes
+  - unlocked by Workshop
+  - minerals 275
+  - science 100
+  - farmer 50%
+    - before 2 * 5 * 0.98 = 9.8
+    - after 2 * 5 * 0.98 * (1 + 0.5) = 14.7
+- Iron Hoes
+  - unlocked by Workshop
+  - iron 25
+  - science 200
+  - farmer 30%
+- Mineral Axe
+  - unlocked by Workshop
+  - minerals 500
+  - science 100
+  - woodcutter 70%
+- Iron Axe
+  - unlocked by Workshop
+  - iron 50
+  - science 200
+  - woodcutter 50%
+- Expanded Barns
+  - unlocked by Workshop
+  - wood 1000
+  - minerals 750
+  - iron 50
+  - science 500
+  - barn 75%
+- Reinforced Barns
+  - unlocked by Workshop
+  - iron 100
+  - science 800
+  - beam 25
+  - slab 10
+  - barn 80%
+- Bolas
+  - unlocked by Workshop
+  - wood 50
+  - minerals 250
+  - science 1000
+  - hunter 100%
+- Smelter
+  - unlocked by Metal Working
+  - minerals 200 230 rate 1.15
+  - wood -0.25/s
+  - mineral -0.5/s
+  - iron 0.1/s
+- Hunting Armor
+  - unlocked by Metal Working
+  - iron 750
+  - science 2000
+  - hunter 200%
+- Civil Service
+  - unlocked by Animal Husbandry
+  - science 1500
+  - TODO
+- Mathematics
+  - unlocked by Animal Husbandry
+  - science 1000
+  - TODO
+- Construction
+  - unlocked by Animal Husbandry
+  - science 1300
+  - TODO
+- Pasture
+  - unlocked by Animal Husbandry
+  - catnip 100 115 rate 1.15
+  - wood 10 11.5
+  - catnip demand -0.5%
 - TODO
 - maybe
   - rX: revert action X
