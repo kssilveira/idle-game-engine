@@ -54,6 +54,10 @@ Faster solution:
 
 ## Ideas
 
+TODO
+
+- change kittens.Solve to use iota
+
 General features:
 
 - shared web server
@@ -66,12 +70,8 @@ General features:
 Features from kittens game:
 
 - Archery
-  - unlocked by Agriculture
-  - cost science 300
   - TODO
 - Mining
-  - unlocked by Agriculture
-  - cost science 500
   - TODO
 - Barn
   - unlocked by Agriculture

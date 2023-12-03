@@ -120,6 +120,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Calendar", Capacity: 1,
 	}, {
 		Name: "Agriculture", Capacity: 1,
+	}, {
+		Name: "Archery", Capacity: 1,
+	}, {
+		Name: "Mining", Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
@@ -202,25 +206,49 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{
 			Name: "Agriculture", Quantity: 1,
 		}},
+	}, {
+		Name:       "Archery",
+		UnlockedBy: data.Resource{Name: "Calendar"},
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 300, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "Archery", Quantity: 1,
+		}},
+	}, {
+		Name:       "Mining",
+		UnlockedBy: data.Resource{Name: "Calendar"},
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 500, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "Mining", Quantity: 1,
+		}},
 	}}
 	return g
 }
 
 const (
-	gather      = "0"
-	refine      = "1"
-	field       = "2"
-	sfield      = "s2"
-	hut         = "3"
-	shut        = "s3"
-	library     = "4"
-	slibrary    = "s4"
-	woodcutter  = "5"
-	swoodcutter = "s5"
-	scholar     = "6"
-	sscholar    = "s6"
-	calendar    = "7"
-	agriculture = "8"
+	gather       = "0"
+	refine       = "1"
+	field        = "2"
+	sfield       = "s2"
+	hut          = "3"
+	shut         = "s3"
+	library      = "4"
+	slibrary     = "s4"
+	woodcutter   = "5"
+	swoodcutter  = "s5"
+	scholar      = "6"
+	sscholar     = "s6"
+	calendar     = "7"
+	scalendar    = "s7"
+	agriculture  = "8"
+	sagriculture = "s8"
+	archery      = "9"
+	sarchery     = "s9"
+	mining       = "10"
+	smining      = "s10"
 )
 
 func Solve(input chan string, sleepMS int) {
@@ -234,8 +262,10 @@ func Solve(input chan string, sleepMS int) {
 		{[]string{hut, swoodcutter, woodcutter}, 1},
 		{[]string{slibrary, library, sscholar, scholar}, 1},
 		{[]string{slibrary, library}, 14},
-		{[]string{calendar}, 1},
-		{[]string{agriculture}, 1},
+		{[]string{scalendar, calendar}, 1},
+		{[]string{sagriculture, agriculture}, 1},
+		{[]string{sarchery, archery}, 1},
+		{[]string{smining, mining}, 1},
 		{[]string{"done"}, 1},
 	} {
 		for i := 0; i < one.count; i++ {
