@@ -1,29 +1,29 @@
 ###
-year 1
-Spring 1
-day_of_year 1
-0: Gather catnip +(catnip 1)
+[Calendar] year 1
+[Calendar] Spring 1
+[Calendar] day_of_year 1
+0: [Bonfire] Gather catnip +(catnip 1)
 sX: time skip until action X is available
 last input: 
 ###
-year 1
-Spring 1
-day_of_year 1
-catnip 1/5000
-happiness 1.10
-0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 1/100 0s) +(wood 1)
-2: Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
+[Calendar] year 1
+[Calendar] Spring 1
+[Calendar] day_of_year 1
+[Resource] catnip 1/5000
+[Village] happiness 1.10
+0: [Bonfire] Gather catnip +(catnip 1)
+1: [Bonfire] Refine catnip -(catnip 1/100 0s) +(wood 1)
+2: [Bonfire] Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0
 ###
-year 1
-Spring 1
-day_of_year 1
-catnip 2/5000
-happiness 1.10
-0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 2/100 0s) +(wood 1)
-2: Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
+[Calendar] year 1
+[Calendar] Spring 1
+[Calendar] day_of_year 1
+[Resource] catnip 2/5000
+[Village] happiness 1.10
+0: [Bonfire] Gather catnip +(catnip 1)
+1: [Bonfire] Refine catnip -(catnip 2/100 0s) +(wood 1)
+2: [Bonfire] Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 0

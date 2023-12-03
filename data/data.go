@@ -2,6 +2,7 @@ package data
 
 type Resource struct {
 	Name     string
+	Type     string
 	Quantity float64
 	Capacity float64
 

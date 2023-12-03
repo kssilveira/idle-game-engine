@@ -21,6 +21,7 @@ type Game struct {
 
 type Action struct {
 	Name       string
+	Type       string
 	UnlockedBy data.Resource
 	LockedBy   data.Resource
 	Costs      []data.Resource
@@ -37,9 +38,9 @@ func NewGame(now time.Time) *Game {
 		ResourceToIndex: map[string]int{},
 	}
 	g.AddResources([]data.Resource{{
-		Name: "time", Capacity: -1,
+		Name: "time", Type: "Calendar", Capacity: -1,
 	}, {
-		Name: "skip", Capacity: -1,
+		Name: "skip", Type: "Calendar", Capacity: -1,
 	}})
 	return g
 }
@@ -119,6 +120,7 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 	for _, a := range g.Actions {
 		action := ui.Action{
 			Name:   a.Name,
+			Type:   a.Type,
 			Locked: g.IsLocked(a),
 		}
 		for _, c := range a.Costs {

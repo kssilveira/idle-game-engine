@@ -56,7 +56,7 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 			}
 			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}
-		logger.Printf("%s %s%s%s\n", r.Name, toString(r.Quantity), capacity, extra)
+		logger.Printf("[%s] %s %s%s%s\n", r.Type, r.Name, toString(r.Quantity), capacity, extra)
 	}
 }
 
@@ -65,9 +65,9 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 		if a.Locked {
 			continue
 		}
-		name := fmt.Sprintf("%d: %s", i, a.Name)
+		name := fmt.Sprintf("%d: [%s] %s", i, a.Type, a.Name)
 		if isHTML {
-			name = fmt.Sprintf("%d: <a href='/%d'>%s</a> [<a href='/s%d'>skip</a>]", i, i, a.Name, i)
+			name = fmt.Sprintf("%d: [%s] <a href='/%d'>%s</a> [<a href='/s%d'>skip</a>]", i, a.Type, i, a.Name, i)
 		}
 		parts := []string{name}
 		costs := []string{}

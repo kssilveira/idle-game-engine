@@ -1,94 +1,94 @@
 ###
-year 1
-Spring 1
-day_of_year 1
-catnip 1/5000
-wood 200/200
-Agriculture 1/1
-0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 1/100 0s) +(wood 1)
-2: Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
-3: Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: Library -(wood 25) +(Library 1, science cap 250)
-5: Barn -(wood 50) +(Barn 1, catnip cap 5000, wood cap 200)
-8: farmer -(kitten 0/1* 20s) +(farmer 1)
+[Calendar] year 1
+[Calendar] Spring 1
+[Calendar] day_of_year 1
+[Resource] catnip 1/5000
+[Resource] wood 200/200
+[Science] Agriculture 1/1
+0: [Bonfire] Gather catnip +(catnip 1)
+1: [Bonfire] Refine catnip -(catnip 1/100 0s) +(wood 1)
+2: [Bonfire] Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
+3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
+5: [Bonfire] Barn -(wood 50) +(Barn 1, catnip cap 5000, wood cap 200)
+8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 
 ###
-year 1
-Spring 1
-day_of_year 1
-catnip 1/10000
-wood 150/400
-happiness 1.10
-Barn 1
-Agriculture 1/1
-0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 1/100 0s) +(wood 1)
-2: Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
-3: Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: Library -(wood 25) +(Library 1, science cap 250)
-5: Barn -(wood 87.50) +(Barn 1, catnip cap 5000, wood cap 200)
-8: farmer -(kitten 0/1* 20s) +(farmer 1)
+[Calendar] year 1
+[Calendar] Spring 1
+[Calendar] day_of_year 1
+[Resource] catnip 1/10000
+[Resource] wood 150/400
+[Bonfire] Barn 1
+[Village] happiness 1.10
+[Science] Agriculture 1/1
+0: [Bonfire] Gather catnip +(catnip 1)
+1: [Bonfire] Refine catnip -(catnip 1/100 0s) +(wood 1)
+2: [Bonfire] Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
+3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
+5: [Bonfire] Barn -(wood 87.50) +(Barn 1, catnip cap 5000, wood cap 200)
+8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
-time 1
-day 0.50 0.50/s
-year 1
-Spring 1
-day_of_year 1
-catnip 2/10000
-wood 150/400
-happiness 1.10
-Barn 1
-Agriculture 1/1
-0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 2/100 0s) +(wood 1)
-2: Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
-3: Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: Library -(wood 25) +(Library 1, science cap 250)
-5: Barn -(wood 87.50) +(Barn 1, catnip cap 5000, wood cap 200)
-8: farmer -(kitten 0/1* 20s) +(farmer 1)
+[Calendar] time 1
+[Calendar] day 0.50 0.50/s
+[Calendar] year 1
+[Calendar] Spring 1
+[Calendar] day_of_year 1
+[Resource] catnip 2/10000
+[Resource] wood 150/400
+[Bonfire] Barn 1
+[Village] happiness 1.10
+[Science] Agriculture 1/1
+0: [Bonfire] Gather catnip +(catnip 1)
+1: [Bonfire] Refine catnip -(catnip 2/100 0s) +(wood 1)
+2: [Bonfire] Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
+3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
+5: [Bonfire] Barn -(wood 87.50) +(Barn 1, catnip cap 5000, wood cap 200)
+8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 0
 ###
-time 1
-day 0.50 0.50/s
-year 1
-Spring 1
-day_of_year 1
-catnip 2/15000
-wood 62.50/600
-happiness 1.10
-Barn 2
-Agriculture 1/1
-0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 2/100 0s) +(wood 1)
-2: Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
-3: Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: Library -(wood 25) +(Library 1, science cap 250)
-5: Barn -(wood 62.50/153.12 0s) +(Barn 1, catnip cap 5000, wood cap 200)
-8: farmer -(kitten 0/1* 20s) +(farmer 1)
+[Calendar] time 1
+[Calendar] day 0.50 0.50/s
+[Calendar] year 1
+[Calendar] Spring 1
+[Calendar] day_of_year 1
+[Resource] catnip 2/15000
+[Resource] wood 62.50/600
+[Bonfire] Barn 2
+[Village] happiness 1.10
+[Science] Agriculture 1/1
+0: [Bonfire] Gather catnip +(catnip 1)
+1: [Bonfire] Refine catnip -(catnip 2/100 0s) +(wood 1)
+2: [Bonfire] Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
+3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
+5: [Bonfire] Barn -(wood 62.50/153.12 0s) +(Barn 1, catnip cap 5000, wood cap 200)
+8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 5
 ###
-time 2
-day 1 0.50/s
-year 1 (1 + 0)
-Spring 1 (1 if 0.01 % 4 == 0)
-day_of_year 2 (1 + 1 % 400)
-catnip 3/15000
-wood 62.50/600
-happiness 1.10
-Barn 2
-Agriculture 1/1
-0: Gather catnip +(catnip 1)
-1: Refine catnip -(catnip 3/100 0s) +(wood 1)
-2: Catnip Field -(catnip 3/10 0s) +(Catnip Field 1)
-3: Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: Library -(wood 25) +(Library 1, science cap 250)
-5: Barn -(wood 62.50/153.12 0s) +(Barn 1, catnip cap 5000, wood cap 200)
-8: farmer -(kitten 0/1* 20s) +(farmer 1)
+[Calendar] time 2
+[Calendar] day 1 0.50/s
+[Calendar] year 1 (1 + 0)
+[Calendar] Spring 1 (1 if 0.01 % 4 == 0)
+[Calendar] day_of_year 2 (1 + 1 % 400)
+[Resource] catnip 3/15000
+[Resource] wood 62.50/600
+[Bonfire] Barn 2
+[Village] happiness 1.10
+[Science] Agriculture 1/1
+0: [Bonfire] Gather catnip +(catnip 1)
+1: [Bonfire] Refine catnip -(catnip 3/100 0s) +(wood 1)
+2: [Bonfire] Catnip Field -(catnip 3/10 0s) +(Catnip Field 1)
+3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
+5: [Bonfire] Barn -(wood 62.50/153.12 0s) +(Barn 1, catnip cap 5000, wood cap 200)
+8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 0
