@@ -25,7 +25,7 @@ last input:
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library -(wood 28.75) +(Library 1, science cap 250)
+4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
 7: [Village] scholar -(kitten 1) +(scholar 1)
 9: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
@@ -44,8 +44,8 @@ last input: 4
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library -(wood 28.75) +(Library 1, science cap 250)
-7: [Village] scholar -(kitten 1) +(scholar 1)
+4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
+7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 9: [Science] Calendar -(science 0/30 2m27s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 7
@@ -66,8 +66,8 @@ last input: 7
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library -(wood 28.75) +(Library 1, science cap 250)
-7: [Village] scholar -(kitten 1) +(scholar 1)
+4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
+7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 9: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0
@@ -88,8 +88,8 @@ last input: 0
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library -(wood 33.06) +(Library 1, science cap 250)
-7: [Village] scholar -(kitten 1) +(scholar 1)
+4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
+7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 9: [Science] Calendar -(science 0.20/30 2m13s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
@@ -110,8 +110,8 @@ last input: 4
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library -(wood 33.06) +(Library 1, science cap 250)
-7: [Village] scholar -(kitten 1) +(scholar 1)
+4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
+7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 9: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0
@@ -131,8 +131,8 @@ last input: 0
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library -(wood 33.06) +(Library 1, science cap 250)
-7: [Village] scholar -(kitten 0/1* 20s) +(scholar 1)
+4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
+7: [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 9: [Science] Calendar -(science 0.43/30 1m6s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 7
@@ -152,8 +152,8 @@ last input: 7
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library -(wood 33.06) +(Library 1, science cap 250)
-7: [Village] scholar -(kitten 0/1* 20s) +(scholar 1)
+4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
+7: [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 9: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0

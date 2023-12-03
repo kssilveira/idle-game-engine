@@ -22,7 +22,7 @@ last input:
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-3: [Bonfire] Hut -(wood 12.50) +(Hut 1, kitten cap 2)
+3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
 6: [Village] woodcutter -(kitten 0/1 20s) +(woodcutter 1)
 sX: time skip until action X is available
@@ -41,7 +41,7 @@ last input: 3
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-3: [Bonfire] Hut -(wood 12.50) +(Hut 1, kitten cap 2)
+3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
 6: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 sX: time skip until action X is available
@@ -60,7 +60,7 @@ last input: 0
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-3: [Bonfire] Hut -(wood 31.25) +(Hut 1, kitten cap 2)
+3: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
 6: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 sX: time skip until action X is available
@@ -79,7 +79,7 @@ last input: 3
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-3: [Bonfire] Hut -(wood 31.25) +(Hut 1, kitten cap 2)
+3: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
 6: [Village] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
 sX: time skip until action X is available
@@ -98,7 +98,7 @@ last input: 0
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-3: [Bonfire] Hut -(wood 31.25) +(Hut 1, kitten cap 2)
+3: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library -(wood 25) +(Library 1, science cap 250)
 6: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available

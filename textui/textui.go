@@ -65,9 +65,13 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 		if a.Locked {
 			continue
 		}
-		name := fmt.Sprintf("%d: [%s] %s", i, a.Type, a.Name)
+		quantity := ""
+		if a.Quantity > 0 {
+			quantity = fmt.Sprintf(" (%s)", toString(a.Quantity))
+		}
+		name := fmt.Sprintf("%d: [%s] %s%s", i, a.Type, a.Name, quantity)
 		if isHTML {
-			name = fmt.Sprintf("%d: [%s] <a href='/%d'>%s</a> [<a href='/s%d'>skip</a>]", i, a.Type, i, a.Name, i)
+			name = fmt.Sprintf("%d: [%s] <a href='/%d'>%s%s</a> [<a href='/s%d'>skip</a>]", i, a.Type, i, a.Name, quantity, i)
 		}
 		parts := []string{name}
 		costs := []string{}

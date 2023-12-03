@@ -123,6 +123,9 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 			Type:   a.Type,
 			Locked: g.IsLocked(a),
 		}
+		if g.HasResource(a.Name) {
+			action.Quantity = g.GetResource(a.Name).Quantity
+		}
 		for _, c := range a.Costs {
 			cost := g.GetCost(a, c)
 			r := g.GetResource(c.Name)
