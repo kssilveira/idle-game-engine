@@ -65,9 +65,53 @@ General features:
 
 Features from kittens game:
 
-- Archery
+- Animal Husbandry
+  - unlocked by Archery
+  - science 500
   - TODO
-- Mining
+- hunter
+  - unlocked by Archery
+  - catpower 0.3
+- catpower
+  - cap 250
+- Metal Working
+  - unlocked by Mining
+  - science 900
+  - TODO
+- Mine
+  - unlocked by Mining
+  - wood 100 115 132.25 rate 1.15
+  - minerals 20%
+- miner
+  - unlocked by Mine
+  - minerals 0.25
+- minerals
+  - cap 750
+- Workshop
+  - unlocked by miner
+  - wood 100
+  - minerals 400
+  - craft 6%
+  - TODO
+- Send hunters
+  - unlocked by hunter
+  - catpower 100
+  - random furs ivory TODO
+- furs
+  - demand 0.1 TODO
+  - happiness TODO
+- ivory
+  - demand 0.07 TODO
+  - happiness TODO
+- Lizards
+  - unlocked by hunter
+  - catpower 50
+  - gold 15
+  - minerals 1000
+  - wood 648 - 702
+- Send explorers
+  - unlocked by hunter
+  - catpower 1000
   - TODO
 - TODO
 - maybe
