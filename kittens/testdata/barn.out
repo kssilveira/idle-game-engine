@@ -4,7 +4,6 @@
 [Calendar] day_of_year 1
 [Resource] catnip 1/5000
 [Resource] wood 200/200
-[Science] Agriculture 1/1
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 1/100 0s) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
@@ -20,9 +19,7 @@ last input:
 [Calendar] day_of_year 1
 [Resource] catnip 1/10000
 [Resource] wood 150/400
-[Bonfire] Barn 1
 [Village] happiness 1.10
-[Science] Agriculture 1/1
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 1/100 0s) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 1/10 0s) +(Catnip Field 1)
@@ -40,9 +37,7 @@ last input: 5
 [Calendar] day_of_year 1
 [Resource] catnip 2/10000
 [Resource] wood 150/400
-[Bonfire] Barn 1
 [Village] happiness 1.10
-[Science] Agriculture 1/1
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 2/100 0s) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
@@ -60,9 +55,7 @@ last input: 0
 [Calendar] day_of_year 1
 [Resource] catnip 2/15000
 [Resource] wood 62.50/600
-[Bonfire] Barn 2
 [Village] happiness 1.10
-[Science] Agriculture 1/1
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 2/100 0s) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 2/10 0s) +(Catnip Field 1)
@@ -80,9 +73,7 @@ last input: 5
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] catnip 3/15000
 [Resource] wood 62.50/600
-[Bonfire] Barn 2
 [Village] happiness 1.10
-[Science] Agriculture 1/1
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 3/100 0s) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 3/10 0s) +(Catnip Field 1)

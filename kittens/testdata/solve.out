@@ -141,7 +141,6 @@ last input: 0
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
-[Bonfire] Catnip Field 1
 [Village] happiness 1.10
 sX: time skip until action X is available
 last input: 2
@@ -153,7 +152,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.11 % 4 == 0)
 [Calendar] day_of_year 12 (1 + 11 % 400)
 [Resource] catnip 11.34/5000 0.94/s 1h27m59s to cap
-[Bonfire] Catnip Field 1
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 11.34/100 1m33s) +(wood 1)
 2: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
@@ -167,7 +165,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.12 % 4 == 0)
 [Calendar] day_of_year 13 (1 + 12 % 400)
 [Resource] catnip 1.08/5000 1.89/s 44m4s to cap
-[Bonfire] Catnip Field 2
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 1.08/100 52s) +(wood 1)
 2: [Bonfire] Catnip Field (2) -(catnip 1.08/12.54 6s) +(Catnip Field 1)
@@ -181,7 +178,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.15 % 4 == 0)
 [Calendar] day_of_year 16 (1 + 15 % 400)
 [Resource] catnip 14.31/5000 1.89/s 43m57s to cap
-[Bonfire] Catnip Field 2
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 14.31/100 45s) +(wood 1)
 2: [Bonfire] Catnip Field (2) -(catnip 12.54) +(Catnip Field 1)
@@ -195,7 +191,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.16 % 4 == 0)
 [Calendar] day_of_year 17 (1 + 16 % 400)
 [Resource] catnip 3.66/5000 2.83/s 29m22s to cap
-[Bonfire] Catnip Field 3
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 3.66/100 33s) +(wood 1)
 2: [Bonfire] Catnip Field (3) -(catnip 3.66/14.05 3s) +(Catnip Field 1)
@@ -209,7 +204,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.18 % 4 == 0)
 [Calendar] day_of_year 19 (1 + 18 % 400)
 [Resource] catnip 15/5000 2.83/s 29m18s to cap
-[Bonfire] Catnip Field 3
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 15/100 29s) +(wood 1)
 2: [Bonfire] Catnip Field (3) -(catnip 14.05) +(Catnip Field 1)
@@ -223,7 +217,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.18 % 4 == 0)
 [Calendar] day_of_year 19 (1 + 18 % 400)
 [Resource] catnip 3.79/5000 3.78/s 22m1s to cap
-[Bonfire] Catnip Field 4
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 3.79/100 25s) +(wood 1)
 2: [Bonfire] Catnip Field (4) -(catnip 3.79/15.74 3s) +(Catnip Field 1)
@@ -237,7 +230,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.20 % 4 == 0)
 [Calendar] day_of_year 21 (1 + 20 % 400)
 [Resource] catnip 18.91/5000 3.78/s 21m57s to cap
-[Bonfire] Catnip Field 4
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 18.91/100 21s) +(wood 1)
 2: [Bonfire] Catnip Field (4) -(catnip 15.74) +(Catnip Field 1)
@@ -251,7 +243,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.21 % 4 == 0)
 [Calendar] day_of_year 22 (1 + 21 % 400)
 [Resource] catnip 6.95/5000 4.72/s 17m36s to cap
-[Bonfire] Catnip Field 5
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 6.95/100 19s) +(wood 1)
 2: [Bonfire] Catnip Field (5) -(catnip 6.95/17.62 2s) +(Catnip Field 1)
@@ -265,7 +256,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.22 % 4 == 0)
 [Calendar] day_of_year 23 (1 + 22 % 400)
 [Resource] catnip 21.13/5000 4.72/s 17m33s to cap
-[Bonfire] Catnip Field 5
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 21.13/100 16s) +(wood 1)
 2: [Bonfire] Catnip Field (5) -(catnip 17.62) +(Catnip Field 1)
@@ -279,7 +269,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.23 % 4 == 0)
 [Calendar] day_of_year 24 (1 + 23 % 400)
 [Resource] catnip 8.23/5000 5.67/s 14m40s to cap
-[Bonfire] Catnip Field 6
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 8.23/100 16s) +(wood 1)
 2: [Bonfire] Catnip Field (6) -(catnip 8.23/19.74 2s) +(Catnip Field 1)
@@ -293,7 +282,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.24 % 4 == 0)
 [Calendar] day_of_year 25 (1 + 24 % 400)
 [Resource] catnip 25.24/5000 5.67/s 14m37s to cap
-[Bonfire] Catnip Field 6
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 25.24/100 13s) +(wood 1)
 2: [Bonfire] Catnip Field (6) -(catnip 19.74) +(Catnip Field 1)
@@ -307,7 +295,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.25 % 4 == 0)
 [Calendar] day_of_year 26 (1 + 25 % 400)
 [Resource] catnip 11.17/5000 6.61/s 12m34s to cap
-[Bonfire] Catnip Field 7
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 11.17/100 13s) +(wood 1)
 2: [Bonfire] Catnip Field (7) -(catnip 11.17/22.11 1s) +(Catnip Field 1)
@@ -321,7 +308,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.26 % 4 == 0)
 [Calendar] day_of_year 27 (1 + 26 % 400)
 [Resource] catnip 24.40/5000 6.61/s 12m32s to cap
-[Bonfire] Catnip Field 7
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 24.40/100 11s) +(wood 1)
 2: [Bonfire] Catnip Field (7) -(catnip 22.11) +(Catnip Field 1)
@@ -335,7 +321,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.26 % 4 == 0)
 [Calendar] day_of_year 27 (1 + 26 % 400)
 [Resource] catnip 8.91/5000 7.56/s 11m0s to cap
-[Bonfire] Catnip Field 8
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 8.91/100 12s) +(wood 1)
 2: [Bonfire] Catnip Field (8) -(catnip 8.91/24.76 2s) +(Catnip Field 1)
@@ -349,7 +334,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.28 % 4 == 0)
 [Calendar] day_of_year 29 (1 + 28 % 400)
 [Resource] catnip 31.59/5000 7.56/s 10m57s to cap
-[Bonfire] Catnip Field 8
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 31.59/100 9s) +(wood 1)
 2: [Bonfire] Catnip Field (8) -(catnip 24.76) +(Catnip Field 1)
@@ -363,7 +347,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.28 % 4 == 0)
 [Calendar] day_of_year 29 (1 + 28 % 400)
 [Resource] catnip 14.39/5000 8.50/s 9m46s to cap
-[Bonfire] Catnip Field 9
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 14.39/100 10s) +(wood 1)
 2: [Bonfire] Catnip Field (9) -(catnip 14.39/27.73 1s) +(Catnip Field 1)
@@ -377,7 +360,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.29 % 4 == 0)
 [Calendar] day_of_year 30 (1 + 29 % 400)
 [Resource] catnip 31.40/5000 8.50/s 9m44s to cap
-[Bonfire] Catnip Field 9
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 31.40/100 8s) +(wood 1)
 2: [Bonfire] Catnip Field (9) -(catnip 27.73) +(Catnip Field 1)
@@ -391,7 +373,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.30 % 4 == 0)
 [Calendar] day_of_year 31 (1 + 30 % 400)
 [Resource] catnip 12.17/5000 9.45/s 8m47s to cap
-[Bonfire] Catnip Field 10
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 12.17/100 9s) +(wood 1)
 2: [Bonfire] Catnip Field (10) -(catnip 12.17/31.06 1s) +(Catnip Field 1)
@@ -405,7 +386,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.31 % 4 == 0)
 [Calendar] day_of_year 32 (1 + 31 % 400)
 [Resource] catnip 31.07/5000 9.45/s 8m45s to cap
-[Bonfire] Catnip Field 10
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 31.07/100 7s) +(wood 1)
 2: [Bonfire] Catnip Field (10) -(catnip 31.06) +(Catnip Field 1)
@@ -419,7 +399,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.31 % 4 == 0)
 [Calendar] day_of_year 32 (1 + 31 % 400)
 [Resource] catnip 9.46/5000 10.39/s 8m0s to cap
-[Bonfire] Catnip Field 11
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 9.46/100 8s) +(wood 1)
 2: [Bonfire] Catnip Field (11) -(catnip 9.46/34.79 2s) +(Catnip Field 1)
@@ -433,7 +412,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.33 % 4 == 0)
 [Calendar] day_of_year 34 (1 + 33 % 400)
 [Resource] catnip 40.65/5000 10.39/s 7m57s to cap
-[Bonfire] Catnip Field 11
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 40.65/100 5s) +(wood 1)
 2: [Bonfire] Catnip Field (11) -(catnip 34.79) +(Catnip Field 1)
@@ -447,7 +425,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.33 % 4 == 0)
 [Calendar] day_of_year 34 (1 + 33 % 400)
 [Resource] catnip 16.26/5000 11.34/s 7m19s to cap
-[Bonfire] Catnip Field 12
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 16.26/100 7s) +(wood 1)
 2: [Bonfire] Catnip Field (12) -(catnip 16.26/38.96 2s) +(Catnip Field 1)
@@ -461,7 +438,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.35 % 4 == 0)
 [Calendar] day_of_year 36 (1 + 35 % 400)
 [Resource] catnip 50.28/5000 11.34/s 7m16s to cap
-[Bonfire] Catnip Field 12
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 50.28/100 4s) +(wood 1)
 2: [Bonfire] Catnip Field (12) -(catnip 38.96) +(Catnip Field 1)
@@ -475,7 +451,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.35 % 4 == 0)
 [Calendar] day_of_year 36 (1 + 35 % 400)
 [Resource] catnip 22.66/5000 12.29/s 6m45s to cap
-[Bonfire] Catnip Field 13
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 22.66/100 6s) +(wood 1)
 2: [Bonfire] Catnip Field (13) -(catnip 22.66/43.63 1s) +(Catnip Field 1)
@@ -489,7 +464,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.36 % 4 == 0)
 [Calendar] day_of_year 37 (1 + 36 % 400)
 [Resource] catnip 47.23/5000 12.29/s 6m43s to cap
-[Bonfire] Catnip Field 13
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 47.23/100 4s) +(wood 1)
 2: [Bonfire] Catnip Field (13) -(catnip 43.63) +(Catnip Field 1)
@@ -503,7 +477,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.37 % 4 == 0)
 [Calendar] day_of_year 38 (1 + 37 % 400)
 [Resource] catnip 15.88/5000 13.23/s 6m16s to cap
-[Bonfire] Catnip Field 14
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 15.88/100 6s) +(wood 1)
 2: [Bonfire] Catnip Field (14) -(catnip 15.88/48.87 2s) +(Catnip Field 1)
@@ -517,7 +490,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.38 % 4 == 0)
 [Calendar] day_of_year 39 (1 + 38 % 400)
 [Resource] catnip 55.57/5000 13.23/s 6m13s to cap
-[Bonfire] Catnip Field 14
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 55.57/100 3s) +(wood 1)
 2: [Bonfire] Catnip Field (14) -(catnip 48.87) +(Catnip Field 1)
@@ -531,7 +503,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.39 % 4 == 0)
 [Calendar] day_of_year 40 (1 + 39 % 400)
 [Resource] catnip 19.93/5000 14.17/s 5m51s to cap
-[Bonfire] Catnip Field 15
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 19.93/100 5s) +(wood 1)
 2: [Bonfire] Catnip Field (15) -(catnip 19.93/54.74 2s) +(Catnip Field 1)
@@ -545,7 +516,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.40 % 4 == 0)
 [Calendar] day_of_year 41 (1 + 40 % 400)
 [Resource] catnip 62.45/5000 14.17/s 5m48s to cap
-[Bonfire] Catnip Field 15
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 62.45/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (15) -(catnip 54.74) +(Catnip Field 1)
@@ -559,7 +529,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 41 % 400)
 [Resource] catnip 21.89/5000 15.12/s 5m29s to cap
-[Bonfire] Catnip Field 16
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 21.89/100 5s) +(wood 1)
 2: [Bonfire] Catnip Field (16) -(catnip 21.89/61.30 2s) +(Catnip Field 1)
@@ -573,7 +542,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
 [Resource] catnip 67.25/5000 15.12/s 5m26s to cap
-[Bonfire] Catnip Field 16
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 67.25/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (16) -(catnip 61.30) +(Catnip Field 1)
@@ -587,7 +555,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
 [Resource] catnip 21.07/5000 16.06/s 5m9s to cap
-[Bonfire] Catnip Field 17
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 21.07/100 4s) +(wood 1)
 2: [Bonfire] Catnip Field (17) -(catnip 21.07/68.66 2s) +(Catnip Field 1)
@@ -601,7 +568,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.44 % 4 == 0)
 [Calendar] day_of_year 45 (1 + 44 % 400)
 [Resource] catnip 69.26/5000 16.06/s 5m6s to cap
-[Bonfire] Catnip Field 17
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 69.26/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (17) -(catnip 68.66) +(Catnip Field 1)
@@ -615,7 +581,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.45 % 4 == 0)
 [Calendar] day_of_year 46 (1 + 45 % 400)
 [Resource] catnip 16.67/5000 17.01/s 4m52s to cap
-[Bonfire] Catnip Field 18
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 16.67/100 4s) +(wood 1)
 2: [Bonfire] Catnip Field (18) -(catnip 16.67/76.90 3s) +(Catnip Field 1)
@@ -629,7 +594,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.47 % 4 == 0)
 [Calendar] day_of_year 48 (1 + 47 % 400)
 [Resource] catnip 84.71/5000 17.01/s 4m48s to cap
-[Bonfire] Catnip Field 18
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 84.71/100 0s) +(wood 1)
 2: [Bonfire] Catnip Field (18) -(catnip 76.90) +(Catnip Field 1)
@@ -643,7 +607,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.47 % 4 == 0)
 [Calendar] day_of_year 48 (1 + 47 % 400)
 [Resource] catnip 24.82/5000 17.95/s 4m37s to cap
-[Bonfire] Catnip Field 19
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 24.82/100 4s) +(wood 1)
 2: [Bonfire] Catnip Field (19) -(catnip 24.82/86.13 3s) +(Catnip Field 1)
@@ -657,7 +620,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.49 % 4 == 0)
 [Calendar] day_of_year 50 (1 + 49 % 400)
 [Resource] catnip 96.64/5000 17.95/s 4m33s to cap
-[Bonfire] Catnip Field 19
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 96.64/100 0s) +(wood 1)
 2: [Bonfire] Catnip Field (19) -(catnip 86.13) +(Catnip Field 1)
@@ -671,7 +633,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.50 % 4 == 0)
 [Calendar] day_of_year 51 (1 + 50 % 400)
 [Resource] catnip 28.47/5000 18.90/s 4m23s to cap
-[Bonfire] Catnip Field 20
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 28.47/100 3s) +(wood 1)
 2: [Bonfire] Catnip Field (20) -(catnip 28.47/96.46 3s) +(Catnip Field 1)
@@ -685,7 +646,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.52 % 4 == 0)
 [Calendar] day_of_year 53 (1 + 52 % 400)
 [Resource] catnip 104.07/5000 18.90/s 4m19s to cap
-[Bonfire] Catnip Field 20
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (20) -(catnip 96.46) +(Catnip Field 1)
@@ -699,7 +659,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.52 % 4 == 0)
 [Calendar] day_of_year 53 (1 + 52 % 400)
 [Resource] catnip 26.50/5000 19.84/s 4m10s to cap
-[Bonfire] Catnip Field 21
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 26.50/100 3s) +(wood 1)
 2: [Bonfire] Catnip Field (21) -(catnip 26.50/108.04 4s) +(Catnip Field 1)
@@ -713,7 +672,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.55 % 4 == 0)
 [Calendar] day_of_year 56 (1 + 55 % 400)
 [Resource] catnip 125.73/5000 19.84/s 4m5s to cap
-[Bonfire] Catnip Field 21
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (21) -(catnip 108.04) +(Catnip Field 1)
@@ -727,7 +685,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.55 % 4 == 0)
 [Calendar] day_of_year 56 (1 + 55 % 400)
 [Resource] catnip 37.53/5000 20.79/s 3m58s to cap
-[Bonfire] Catnip Field 22
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 37.53/100 3s) +(wood 1)
 2: [Bonfire] Catnip Field (22) -(catnip 37.53/121 4s) +(Catnip Field 1)
@@ -741,7 +698,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.58 % 4 == 0)
 [Calendar] day_of_year 59 (1 + 58 % 400)
 [Resource] catnip 141.48/5000 20.79/s 3m53s to cap
-[Bonfire] Catnip Field 22
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (22) -(catnip 121) +(Catnip Field 1)
@@ -755,7 +711,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.58 % 4 == 0)
 [Calendar] day_of_year 59 (1 + 58 % 400)
 [Resource] catnip 41.27/5000 21.73/s 3m48s to cap
-[Bonfire] Catnip Field 23
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 41.27/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (23) -(catnip 41.27/135.52 4s) +(Catnip Field 1)
@@ -769,7 +724,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.61 % 4 == 0)
 [Calendar] day_of_year 62 (1 + 61 % 400)
 [Resource] catnip 149.95/5000 21.73/s 3m43s to cap
-[Bonfire] Catnip Field 23
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (23) -(catnip 135.52) +(Catnip Field 1)
@@ -783,7 +737,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.61 % 4 == 0)
 [Calendar] day_of_year 62 (1 + 61 % 400)
 [Resource] catnip 36.16/5000 22.68/s 3m38s to cap
-[Bonfire] Catnip Field 24
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 36.16/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (24) -(catnip 36.16/151.79 5s) +(Catnip Field 1)
@@ -797,7 +750,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.64 % 4 == 0)
 [Calendar] day_of_year 65 (1 + 64 % 400)
 [Resource] catnip 172.24/5000 22.68/s 3m32s to cap
-[Bonfire] Catnip Field 24
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (24) -(catnip 151.79) +(Catnip Field 1)
@@ -811,7 +763,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.65 % 4 == 0)
 [Calendar] day_of_year 66 (1 + 65 % 400)
 [Resource] catnip 43.13/5000 23.62/s 3m29s to cap
-[Bonfire] Catnip Field 25
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 43.13/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (25) -(catnip 43.13/170 5s) +(Catnip Field 1)
@@ -825,7 +776,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.68 % 4 == 0)
 [Calendar] day_of_year 69 (1 + 68 % 400)
 [Resource] catnip 184.88/5000 23.62/s 3m23s to cap
-[Bonfire] Catnip Field 25
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (25) -(catnip 170) +(Catnip Field 1)
@@ -839,7 +789,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.68 % 4 == 0)
 [Calendar] day_of_year 69 (1 + 68 % 400)
 [Resource] catnip 38.51/5000 24.57/s 3m21s to cap
-[Bonfire] Catnip Field 26
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 38.51/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (26) -(catnip 38.51/190.40 6s) +(Catnip Field 1)
@@ -853,7 +802,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.72 % 4 == 0)
 [Calendar] day_of_year 73 (1 + 72 % 400)
 [Resource] catnip 210.50/5000 24.57/s 3m14s to cap
-[Bonfire] Catnip Field 26
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (26) -(catnip 190.40) +(Catnip Field 1)
@@ -867,7 +815,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.72 % 4 == 0)
 [Calendar] day_of_year 73 (1 + 72 % 400)
 [Resource] catnip 44.66/5000 25.51/s 3m14s to cap
-[Bonfire] Catnip Field 27
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 44.66/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (27) -(catnip 44.66/213.25 6s) +(Catnip Field 1)
@@ -881,7 +828,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.76 % 4 == 0)
 [Calendar] day_of_year 77 (1 + 76 % 400)
 [Resource] catnip 223.27/5000 25.51/s 3m7s to cap
-[Bonfire] Catnip Field 27
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (27) -(catnip 213.25) +(Catnip Field 1)
@@ -895,7 +841,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.76 % 4 == 0)
 [Calendar] day_of_year 77 (1 + 76 % 400)
 [Resource] catnip 35.54/5000 26.46/s 3m7s to cap
-[Bonfire] Catnip Field 28
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 35.54/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (28) -(catnip 35.54/238.84 7s) +(Catnip Field 1)
@@ -909,7 +854,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.80 % 4 == 0)
 [Calendar] day_of_year 81 (1 + 80 % 400)
 [Resource] catnip 247.22/5000 26.46/s 2m59s to cap
-[Bonfire] Catnip Field 28
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (28) -(catnip 238.84) +(Catnip Field 1)
@@ -923,7 +867,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.81 % 4 == 0)
 [Calendar] day_of_year 82 (1 + 81 % 400)
 [Resource] catnip 34.84/5000 27.40/s 3m1s to cap
-[Bonfire] Catnip Field 29
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 34.84/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (29) -(catnip 34.84/267.50 8s) +(Catnip Field 1)
@@ -937,7 +880,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.85 % 4 == 0)
 [Calendar] day_of_year 86 (1 + 85 % 400)
 [Resource] catnip 281.48/5000 27.40/s 2m52s to cap
-[Bonfire] Catnip Field 29
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (29) -(catnip 267.50) +(Catnip Field 1)
@@ -951,7 +893,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.86 % 4 == 0)
 [Calendar] day_of_year 87 (1 + 86 % 400)
 [Resource] catnip 41.39/5000 28.35/s 2m54s to cap
-[Bonfire] Catnip Field 30
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 41.39/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (30) -(catnip 41.39/299.60 9s) +(Catnip Field 1)
@@ -965,7 +906,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.91 % 4 == 0)
 [Calendar] day_of_year 92 (1 + 91 % 400)
 [Resource] catnip 324.89/5000 28.35/s 2m44s to cap
-[Bonfire] Catnip Field 30
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (30) -(catnip 299.60) +(Catnip Field 1)
@@ -979,7 +919,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.91 % 4 == 0)
 [Calendar] day_of_year 92 (1 + 91 % 400)
 [Resource] catnip 53.64/5000 29.29/s 2m48s to cap
-[Bonfire] Catnip Field 31
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 53.64/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (31) -(catnip 53.64/335.55 9s) +(Catnip Field 1)
@@ -993,7 +932,6 @@ last input: 2
 [Calendar] Spring 1 (1 if 0.96 % 4 == 0)
 [Calendar] day_of_year 97 (1 + 96 % 400)
 [Resource] catnip 346.59/5000 29.29/s 2m38s to cap
-[Bonfire] Catnip Field 31
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (31) -(catnip 335.55) +(Catnip Field 1)
@@ -1007,7 +945,6 @@ last input: s2
 [Calendar] Spring 1 (1 if 0.97 % 4 == 0)
 [Calendar] day_of_year 98 (1 + 97 % 400)
 [Resource] catnip 40.33/5000 30.24/s 2m44s to cap
-[Bonfire] Catnip Field 32
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 40.33/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (32) -(catnip 40.33/375.82 11s) +(Catnip Field 1)
@@ -1021,7 +958,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.03 % 4 == 1)
 [Calendar] day_of_year 104 (1 + 103 % 400)
 [Resource] catnip 292.33/5000 20.16/s 3m53s to cap
-[Bonfire] Catnip Field 32
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (32) -(catnip 292.33/375.82 4s) +(Catnip Field 1)
@@ -1035,7 +971,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.03 % 4 == 1)
 [Calendar] day_of_year 104 (1 + 103 % 400)
 [Resource] catnip 312.49/5000 20.16/s 3m52s to cap
-[Bonfire] Catnip Field 32
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (32) -(catnip 312.49/375.82 3s) +(Catnip Field 1)
@@ -1050,7 +985,6 @@ error: not enough catnip
 [Calendar] Summer 1 (1 if 1.05 % 4 == 1)
 [Calendar] day_of_year 106 (1 + 105 % 400)
 [Resource] catnip 393.13/5000 20.16/s 3m48s to cap
-[Bonfire] Catnip Field 32
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (32) -(catnip 375.82) +(Catnip Field 1)
@@ -1064,7 +998,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.06 % 4 == 1)
 [Calendar] day_of_year 107 (1 + 106 % 400)
 [Resource] catnip 37.48/5000 20.79/s 3m58s to cap
-[Bonfire] Catnip Field 33
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 37.48/100 3s) +(wood 1)
 2: [Bonfire] Catnip Field (33) -(catnip 37.48/420.92 18s) +(Catnip Field 1)
@@ -1078,7 +1011,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.15 % 4 == 1)
 [Calendar] day_of_year 116 (1 + 115 % 400)
 [Resource] catnip 432.49/5000 20.79/s 3m39s to cap
-[Bonfire] Catnip Field 33
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (33) -(catnip 420.92) +(Catnip Field 1)
@@ -1092,7 +1024,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.16 % 4 == 1)
 [Calendar] day_of_year 117 (1 + 116 % 400)
 [Resource] catnip 32.36/5000 21.42/s 3m51s to cap
-[Bonfire] Catnip Field 34
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 32.36/100 3s) +(wood 1)
 2: [Bonfire] Catnip Field (34) -(catnip 32.36/471.43 20s) +(Catnip Field 1)
@@ -1106,7 +1037,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.26 % 4 == 1)
 [Calendar] day_of_year 127 (1 + 126 % 400)
 [Resource] catnip 482.18/5000 21.42/s 3m30s to cap
-[Bonfire] Catnip Field 34
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (34) -(catnip 471.43) +(Catnip Field 1)
@@ -1120,7 +1050,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.27 % 4 == 1)
 [Calendar] day_of_year 128 (1 + 127 % 400)
 [Resource] catnip 32.18/5000 22.05/s 3m45s to cap
-[Bonfire] Catnip Field 35
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 32.18/100 3s) +(wood 1)
 2: [Bonfire] Catnip Field (35) -(catnip 32.18/528 22s) +(Catnip Field 1)
@@ -1134,7 +1063,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.38 % 4 == 1)
 [Calendar] day_of_year 139 (1 + 138 % 400)
 [Resource] catnip 539.33/5000 22.05/s 3m22s to cap
-[Bonfire] Catnip Field 35
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (35) -(catnip 528) +(Catnip Field 1)
@@ -1148,7 +1076,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.39 % 4 == 1)
 [Calendar] day_of_year 140 (1 + 139 % 400)
 [Resource] catnip 33.38/5000 22.68/s 3m38s to cap
-[Bonfire] Catnip Field 36
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 33.38/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (36) -(catnip 33.38/591.36 24s) +(Catnip Field 1)
@@ -1162,7 +1089,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.51 % 4 == 1)
 [Calendar] day_of_year 152 (1 + 151 % 400)
 [Resource] catnip 600.38/5000 22.68/s 3m13s to cap
-[Bonfire] Catnip Field 36
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (36) -(catnip 591.36) +(Catnip Field 1)
@@ -1176,7 +1102,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.52 % 4 == 1)
 [Calendar] day_of_year 153 (1 + 152 % 400)
 [Resource] catnip 31.70/5000 23.31/s 3m33s to cap
-[Bonfire] Catnip Field 37
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 31.70/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (37) -(catnip 31.70/662.32 27s) +(Catnip Field 1)
@@ -1190,7 +1115,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.66 % 4 == 1)
 [Calendar] day_of_year 167 (1 + 166 % 400)
 [Resource] catnip 684.38/5000 23.31/s 3m5s to cap
-[Bonfire] Catnip Field 37
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (37) -(catnip 662.32) +(Catnip Field 1)
@@ -1204,7 +1128,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.66 % 4 == 1)
 [Calendar] day_of_year 167 (1 + 166 % 400)
 [Resource] catnip 45.37/5000 23.94/s 3m26s to cap
-[Bonfire] Catnip Field 38
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 45.37/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (38) -(catnip 45.37/741.80 29s) +(Catnip Field 1)
@@ -1218,7 +1141,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.81 % 4 == 1)
 [Calendar] day_of_year 182 (1 + 181 % 400)
 [Resource] catnip 763.57/5000 23.94/s 2m56s to cap
-[Bonfire] Catnip Field 38
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (38) -(catnip 741.80) +(Catnip Field 1)
@@ -1232,7 +1154,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.82 % 4 == 1)
 [Calendar] day_of_year 183 (1 + 182 % 400)
 [Resource] catnip 45.72/5000 24.57/s 3m21s to cap
-[Bonfire] Catnip Field 39
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 45.72/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (39) -(catnip 45.72/830.81 31s) +(Catnip Field 1)
@@ -1246,7 +1167,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 1.98 % 4 == 1)
 [Calendar] day_of_year 199 (1 + 198 % 400)
 [Resource] catnip 831.96/5000 24.57/s 2m49s to cap
-[Bonfire] Catnip Field 39
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (39) -(catnip 830.81) +(Catnip Field 1)
@@ -1260,7 +1180,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 1.98 % 4 == 1)
 [Calendar] day_of_year 199 (1 + 198 % 400)
 [Resource] catnip 25.72/5000 25.20/s 3m17s to cap
-[Bonfire] Catnip Field 40
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 25.72/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (40) -(catnip 25.72/930.51 35s) +(Catnip Field 1)
@@ -1274,7 +1193,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 2.16 % 4 == 2)
 [Calendar] day_of_year 217 (1 + 216 % 400)
 [Resource] catnip 932.92/5000 25.20/s 2m41s to cap
-[Bonfire] Catnip Field 40
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (40) -(catnip 930.51) +(Catnip Field 1)
@@ -1288,7 +1206,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 2.17 % 4 == 2)
 [Calendar] day_of_year 218 (1 + 217 % 400)
 [Resource] catnip 27.61/5000 25.83/s 3m12s to cap
-[Bonfire] Catnip Field 41
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 27.61/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (41) -(catnip 27.61/1042.17 39s) +(Catnip Field 1)
@@ -1302,7 +1219,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 2.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 237 % 400)
 [Resource] catnip 1060.81/5000 25.83/s 2m32s to cap
-[Bonfire] Catnip Field 41
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (41) -(catnip 1042.17) +(Catnip Field 1)
@@ -1316,7 +1232,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 2.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 237 % 400)
 [Resource] catnip 44.47/5000 26.46/s 3m7s to cap
-[Bonfire] Catnip Field 42
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 44.47/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (42) -(catnip 44.47/1167.23 42s) +(Catnip Field 1)
@@ -1330,7 +1245,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 2.59 % 4 == 2)
 [Calendar] day_of_year 260 (1 + 259 % 400)
 [Resource] catnip 1182.25/5000 26.46/s 2m24s to cap
-[Bonfire] Catnip Field 42
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (42) -(catnip 1167.23) +(Catnip Field 1)
@@ -1344,7 +1258,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 2.59 % 4 == 2)
 [Calendar] day_of_year 260 (1 + 259 % 400)
 [Resource] catnip 41.47/5000 27.09/s 3m3s to cap
-[Bonfire] Catnip Field 43
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 41.47/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (43) -(catnip 41.47/1307.30 46s) +(Catnip Field 1)
@@ -1358,7 +1271,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 2.83 % 4 == 2)
 [Calendar] day_of_year 284 (1 + 283 % 400)
 [Resource] catnip 1314.70/5000 27.09/s 2m16s to cap
-[Bonfire] Catnip Field 43
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (43) -(catnip 1307.30) +(Catnip Field 1)
@@ -1372,7 +1284,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 2.83 % 4 == 2)
 [Calendar] day_of_year 284 (1 + 283 % 400)
 [Resource] catnip 34.49/5000 27.72/s 2m59s to cap
-[Bonfire] Catnip Field 44
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 34.49/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (44) -(catnip 34.49/1464.18 51s) +(Catnip Field 1)
@@ -1386,7 +1297,6 @@ last input: 2
 [Calendar] Winter 1 (1 if 3.09 % 4 == 3)
 [Calendar] day_of_year 310 (1 + 309 % 400)
 [Resource] catnip 415.64/5000 6.93/s 11m1s to cap
-[Bonfire] Catnip Field 44
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (44) -(catnip 415.64/1464.18 2m31s) +(Catnip Field 1)
@@ -1400,7 +1310,6 @@ last input: s2
 [Calendar] Winter 1 (1 if 3.10 % 4 == 3)
 [Calendar] day_of_year 311 (1 + 310 % 400)
 [Resource] catnip 422.57/5000 6.93/s 11m0s to cap
-[Bonfire] Catnip Field 44
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (44) -(catnip 422.57/1464.18 2m30s) +(Catnip Field 1)
@@ -1415,7 +1324,6 @@ error: not enough catnip
 [Calendar] Winter 1 (1 if 3.85 % 4 == 3)
 [Calendar] day_of_year 386 (1 + 385 % 400)
 [Resource] catnip 1469/5000 6.93/s 8m29s to cap
-[Bonfire] Catnip Field 44
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (44) -(catnip 1464.18) +(Catnip Field 1)
@@ -1429,7 +1337,6 @@ last input: s2
 [Calendar] Winter 1 (1 if 3.86 % 4 == 3)
 [Calendar] day_of_year 387 (1 + 386 % 400)
 [Resource] catnip 11.76/5000 7.09/s 11m43s to cap
-[Bonfire] Catnip Field 45
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 11.76/100 12s) +(wood 1)
 2: [Bonfire] Catnip Field (45) -(catnip 11.76/1639.88 3m49s) +(Catnip Field 1)
@@ -1443,7 +1350,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 5.01 % 4 == 1)
 [Calendar] day_of_year 102 (1 + 501 % 400)
 [Resource] catnip 5000/5000 28.35/s
-[Bonfire] Catnip Field 45
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (45) -(catnip 1639.88) +(Catnip Field 1)
@@ -1457,7 +1363,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 5.01 % 4 == 1)
 [Calendar] day_of_year 102 (1 + 501 % 400)
 [Resource] catnip 3360.12/5000 28.98/s 56s to cap
-[Bonfire] Catnip Field 46
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (46) -(catnip 1836.66) +(Catnip Field 1)
@@ -1471,7 +1376,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 5.02 % 4 == 1)
 [Calendar] day_of_year 103 (1 + 502 % 400)
 [Resource] catnip 1552.44/5000 29.61/s 1m56s to cap
-[Bonfire] Catnip Field 47
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (47) -(catnip 1552.44/2057.06 17s) +(Catnip Field 1)
@@ -1485,7 +1389,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 5.02 % 4 == 1)
 [Calendar] day_of_year 103 (1 + 502 % 400)
 [Resource] catnip 1582.05/5000 29.61/s 1m55s to cap
-[Bonfire] Catnip Field 47
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (47) -(catnip 1582.05/2057.06 16s) +(Catnip Field 1)
@@ -1500,7 +1403,6 @@ error: not enough catnip
 [Calendar] Summer 1 (1 if 5.11 % 4 == 1)
 [Calendar] day_of_year 112 (1 + 511 % 400)
 [Resource] catnip 2085.42/5000 29.61/s 1m38s to cap
-[Bonfire] Catnip Field 47
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (47) -(catnip 2057.06) +(Catnip Field 1)
@@ -1514,7 +1416,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 5.11 % 4 == 1)
 [Calendar] day_of_year 112 (1 + 511 % 400)
 [Resource] catnip 57.97/5000 30.24/s 2m43s to cap
-[Bonfire] Catnip Field 48
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 57.97/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (48) -(catnip 57.97/2303.91 1m14s) +(Catnip Field 1)
@@ -1528,7 +1429,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 5.49 % 4 == 1)
 [Calendar] day_of_year 150 (1 + 549 % 400)
 [Resource] catnip 2325.97/5000 30.24/s 1m28s to cap
-[Bonfire] Catnip Field 48
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (48) -(catnip 2303.91) +(Catnip Field 1)
@@ -1542,7 +1442,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 5.49 % 4 == 1)
 [Calendar] day_of_year 150 (1 + 549 % 400)
 [Resource] catnip 52.30/5000 30.87/s 2m40s to cap
-[Bonfire] Catnip Field 49
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 52.30/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (49) -(catnip 52.30/2580.38 1m21s) +(Catnip Field 1)
@@ -1556,7 +1455,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 5.90 % 4 == 1)
 [Calendar] day_of_year 191 (1 + 590 % 400)
 [Resource] catnip 2583.64/5000 30.87/s 1m18s to cap
-[Bonfire] Catnip Field 49
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (49) -(catnip 2580.38) +(Catnip Field 1)
@@ -1570,7 +1468,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 5.91 % 4 == 1)
 [Calendar] day_of_year 192 (1 + 591 % 400)
 [Resource] catnip 34.14/5000 31.50/s 2m37s to cap
-[Bonfire] Catnip Field 50
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 34.14/100 2s) +(wood 1)
 2: [Bonfire] Catnip Field (50) -(catnip 34.14/2890.02 1m30s) +(Catnip Field 1)
@@ -1584,7 +1481,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 6.36 % 4 == 2)
 [Calendar] day_of_year 237 (1 + 636 % 400)
 [Resource] catnip 2900.64/5000 31.50/s 1m6s to cap
-[Bonfire] Catnip Field 50
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (50) -(catnip 2890.02) +(Catnip Field 1)
@@ -1598,7 +1494,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 6.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 637 % 400)
 [Resource] catnip 42.12/5000 32.13/s 2m34s to cap
-[Bonfire] Catnip Field 51
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 42.12/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (51) -(catnip 42.12/3236.82 1m39s) +(Catnip Field 1)
@@ -1612,7 +1507,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 6.87 % 4 == 2)
 [Calendar] day_of_year 288 (1 + 687 % 400)
 [Resource] catnip 3255.12/5000 32.13/s 54s to cap
-[Bonfire] Catnip Field 51
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (51) -(catnip 3236.82) +(Catnip Field 1)
@@ -1626,7 +1520,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 6.87 % 4 == 2)
 [Calendar] day_of_year 288 (1 + 687 % 400)
 [Resource] catnip 50.42/5000 32.76/s 2m31s to cap
-[Bonfire] Catnip Field 52
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 50.42/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (52) -(catnip 50.42/3625.24 1m49s) +(Catnip Field 1)
@@ -1640,7 +1533,6 @@ last input: 2
 [Calendar] Winter 1 (1 if 7.42 % 4 == 3)
 [Calendar] day_of_year 343 (1 + 742 % 400)
 [Resource] catnip 975.89/5000 8.19/s 8m11s to cap
-[Bonfire] Catnip Field 52
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (52) -(catnip 975.89/3625.24 5m23s) +(Catnip Field 1)
@@ -1654,7 +1546,6 @@ last input: s2
 [Calendar] Winter 1 (1 if 7.43 % 4 == 3)
 [Calendar] day_of_year 344 (1 + 743 % 400)
 [Resource] catnip 984.08/5000 8.19/s 8m10s to cap
-[Bonfire] Catnip Field 52
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (52) -(catnip 984.08/3625.24 5m22s) +(Catnip Field 1)
@@ -1669,7 +1560,6 @@ error: not enough catnip
 [Calendar] Summer 1 (1 if 9.04 % 4 == 1)
 [Calendar] day_of_year 105 (1 + 904 % 400)
 [Resource] catnip 5000/5000 32.76/s
-[Bonfire] Catnip Field 52
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (52) -(catnip 3625.24) +(Catnip Field 1)
@@ -1683,7 +1573,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 9.05 % 4 == 1)
 [Calendar] day_of_year 106 (1 + 905 % 400)
 [Resource] catnip 1374.76/5000 33.39/s 1m48s to cap
-[Bonfire] Catnip Field 53
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (53) -(catnip 1374.76/4060.27 1m20s) +(Catnip Field 1)
@@ -1697,7 +1586,6 @@ last input: 2
 [Calendar] Summer 1 (1 if 9.45 % 4 == 1)
 [Calendar] day_of_year 146 (1 + 945 % 400)
 [Resource] catnip 4079.35/5000 33.39/s 27s to cap
-[Bonfire] Catnip Field 53
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (53) -(catnip 4060.27) +(Catnip Field 1)
@@ -1711,7 +1599,6 @@ last input: s2
 [Calendar] Summer 1 (1 if 9.46 % 4 == 1)
 [Calendar] day_of_year 147 (1 + 946 % 400)
 [Resource] catnip 52.46/5000 34.02/s 2m25s to cap
-[Bonfire] Catnip Field 54
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 52.46/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (54) -(catnip 52.46/4547.51 2m12s) +(Catnip Field 1)
@@ -1725,7 +1612,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 10.12 % 4 == 2)
 [Calendar] day_of_year 213 (1 + 1012 % 400)
 [Resource] catnip 4577.12/5000 34.02/s 12s to cap
-[Bonfire] Catnip Field 54
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (54) -(catnip 4547.51) +(Catnip Field 1)
@@ -1739,7 +1625,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 10.13 % 4 == 2)
 [Calendar] day_of_year 214 (1 + 1013 % 400)
 [Resource] catnip 63.64/5000 34.65/s 2m22s to cap
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 63.64/100 1s) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 63.64/5093.21* 2m25s) +(Catnip Field 1)
@@ -1753,7 +1638,6 @@ last input: 2
 [Calendar] Autumn 1 (1 if 10.86 % 4 == 2)
 [Calendar] day_of_year 287 (1 + 1086 % 400)
 [Resource] catnip 5000/5000 34.65/s
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -1767,7 +1651,6 @@ last input: s2
 [Calendar] Autumn 1 (1 if 10.86 % 4 == 2)
 [Calendar] day_of_year 287 (1 + 1086 % 400)
 [Resource] catnip 5000/5000 34.65/s
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -1783,7 +1666,6 @@ error: not enough catnip
 [Calendar] day_of_year 288 (1 + 1087 % 400)
 [Resource] catnip 4900/5000 34.65/s 2s to cap
 [Resource] wood 1/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4900/5093.21* 5s) +(Catnip Field 1)
@@ -1800,7 +1682,6 @@ last input: s1
 [Calendar] day_of_year 288 (1 + 1087 % 400)
 [Resource] catnip 4834.65/5000 34.65/s 4s to cap
 [Resource] wood 2/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4834.65/5093.21* 7s) +(Catnip Field 1)
@@ -1817,7 +1698,6 @@ last input: 1
 [Calendar] day_of_year 289 (1 + 1088 % 400)
 [Resource] catnip 4769.30/5000 34.65/s 6s to cap
 [Resource] wood 3/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4769.30/5093.21* 9s) +(Catnip Field 1)
@@ -1834,7 +1714,6 @@ last input: s1
 [Calendar] day_of_year 289 (1 + 1088 % 400)
 [Resource] catnip 4703.95/5000 34.65/s 8s to cap
 [Resource] wood 4/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4703.95/5093.21* 11s) +(Catnip Field 1)
@@ -1851,7 +1730,6 @@ last input: 1
 [Calendar] day_of_year 290 (1 + 1089 % 400)
 [Resource] catnip 4638.60/5000 34.65/s 10s to cap
 [Resource] wood 5/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4638.60/5093.21* 13s) +(Catnip Field 1)
@@ -1868,7 +1746,6 @@ last input: s1
 [Calendar] day_of_year 290 (1 + 1089 % 400)
 [Resource] catnip 4573.25/5000 34.65/s 12s to cap
 [Resource] wood 6/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4573.25/5093.21* 15s) +(Catnip Field 1)
@@ -1885,7 +1762,6 @@ last input: 1
 [Calendar] day_of_year 291 (1 + 1090 % 400)
 [Resource] catnip 4507.90/5000 34.65/s 14s to cap
 [Resource] wood 7/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4507.90/5093.21* 16s) +(Catnip Field 1)
@@ -1902,7 +1778,6 @@ last input: s1
 [Calendar] day_of_year 291 (1 + 1090 % 400)
 [Resource] catnip 4442.55/5000 34.65/s 16s to cap
 [Resource] wood 8/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4442.55/5093.21* 18s) +(Catnip Field 1)
@@ -1919,7 +1794,6 @@ last input: 1
 [Calendar] day_of_year 292 (1 + 1091 % 400)
 [Resource] catnip 4377.20/5000 34.65/s 17s to cap
 [Resource] wood 9/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4377.20/5093.21* 20s) +(Catnip Field 1)
@@ -1936,7 +1810,6 @@ last input: s1
 [Calendar] day_of_year 292 (1 + 1091 % 400)
 [Resource] catnip 4311.85/5000 34.65/s 19s to cap
 [Resource] wood 10/200
-[Bonfire] Catnip Field 55
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4311.85/5093.21* 22s) +(Catnip Field 1)
@@ -1953,8 +1826,6 @@ last input: 1
 [Calendar] day_of_year 293 (1 + 1092 % 400)
 [Resource] catnip 4346.50/5000 34.65/s 18s to cap
 [Resource] wood 5/200
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4346.50/5093.21* 21s) +(Catnip Field 1)
@@ -1973,8 +1844,6 @@ last input: 3
 [Resource] catnip 4545.74/5000 4.41/s 1m42s to cap
 [Resource] wood 5/200
 [Resource] kitten 1/2 0.05/s 20s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
 [Village] happiness 1.08 (1.10 + -0.02)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (55) -(catnip 4545.74/5093.21* 2m4s) +(Catnip Field 1)
@@ -1993,9 +1862,6 @@ last input: s6
 [Resource] catnip 4550.15/5000 4.41/s 1m41s to cap
 [Resource] wood 5/200 0.10/s 33m26s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Village] woodcutter 1
 [Village] happiness 1.08 (1.10 + -0.02)
 2: [Bonfire] Catnip Field (55) -(catnip 4550.15/5093.21* 2m3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 5/12.50 1m17s) +(Hut 1, kitten cap 2)
@@ -2013,9 +1879,6 @@ last input: 6
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 25.02/200 0.10/s 30m34s to cap
 [Resource] kitten 1/1 0.05/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Village] woodcutter 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2033,10 +1896,6 @@ last input: s4
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 0.12/200 0.10/s 34m55s to cap
 [Resource] kitten 1/1 0.05/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 1
-[Village] woodcutter 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.12/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2055,11 +1914,6 @@ last input: 4
 [Calendar] day_of_year 7 (1 + 1206 % 400)
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 0.21/200 0.10/s 34m54s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 1
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.21/12.50 2m8s) +(Hut 1, kitten cap 2)
@@ -2079,11 +1933,6 @@ last input: s7
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 0.31/200 0.10/s 34m53s to cap
 [Resource] science 0.20/500 0.20/s 40m49s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 1
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.31/12.50 2m7s) +(Hut 1, kitten cap 2)
@@ -2104,11 +1953,6 @@ error: not enough kitten
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 28.83/200 0.10/s 29m54s to cap
 [Resource] science 61.22/500 0.20/s 35m50s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 1
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2128,11 +1972,6 @@ last input: s4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.18/200 0.10/s 34m54s to cap
 [Resource] science 61.42/750 0.22/s 51m33s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 2
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.18/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2152,11 +1991,6 @@ last input: 4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 33.09/200 0.10/s 29m9s to cap
 [Resource] science 138.22/750 0.22/s 45m48s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 2
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2176,11 +2010,6 @@ last input: s4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 0.13/200 0.10/s 34m55s to cap
 [Resource] science 138.44/1000 0.24/s 59m32s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 3
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.13/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2200,11 +2029,6 @@ last input: 4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 38.09/200 0.10/s 28m17s to cap
 [Resource] science 234.42/1000 0.24/s 52m54s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 3
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2224,11 +2048,6 @@ last input: s4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.17/200 0.10/s 34m54s to cap
 [Resource] science 234.66/1250 0.26/s 1h5m9s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 4
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.17/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2248,11 +2067,6 @@ last input: 4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 43.77/200 0.10/s 27m17s to cap
 [Resource] science 353.34/1250 0.26/s 57m32s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 4
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2272,11 +2086,6 @@ last input: s4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 0.14/200 0.10/s 34m55s to cap
 [Resource] science 353.60/1500 0.28/s 1h8m40s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 5
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.14/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2296,11 +2105,6 @@ last input: 4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 50.32/200 0.10/s 26m9s to cap
 [Resource] science 499.96/1500 0.28/s 59m54s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 5
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2320,11 +2124,6 @@ last input: s4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.13/200 0.10/s 34m55s to cap
 [Resource] science 500.24/1750 0.30/s 1h10m10s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.13/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2344,11 +2143,6 @@ last input: 4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 57.84/200 0.10/s 24m50s to cap
 [Resource] science 679.80/1750 0.30/s 1h0m5s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2368,11 +2162,6 @@ last input: s4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.11/200 0.10/s 34m55s to cap
 [Resource] science 680.10/2000 0.32/s 1h9m45s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 7
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.11/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2392,11 +2181,6 @@ last input: 4
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 66.51/200 0.10/s 23m19s to cap
 [Resource] science 899.58/2000 0.32/s 58m9s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 7
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2416,11 +2200,6 @@ last input: s4
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 0.11/200 0.10/s 34m55s to cap
 [Resource] science 899.90/2250 0.33/s 1h7m23s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 8
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.11/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2440,11 +2219,6 @@ last input: 4
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 76.52/200 0.10/s 21m34s to cap
 [Resource] science 1167.35/2250 0.33/s 54m2s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 8
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2464,11 +2238,6 @@ last input: s4
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 0.14/200 0.10/s 34m54s to cap
 [Resource] science 1167.69/2500 0.35/s 1h3m0s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 9
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.14/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2488,11 +2257,6 @@ last input: 4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 88.01/200 0.10/s 19m33s to cap
 [Resource] science 1492.29/2500 0.35/s 47m39s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 9
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2512,11 +2276,6 @@ last input: s4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.15/200 0.10/s 34m54s to cap
 [Resource] science 1492.64/2750 0.37/s 56m29s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 10
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.15/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2536,11 +2295,6 @@ last input: 4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 101.18/200 0.10/s 17m15s to cap
 [Resource] science 1885.53/2750 0.37/s 38m50s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 10
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2560,11 +2314,6 @@ last input: s4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.14/200 0.10/s 34m54s to cap
 [Resource] science 1885.90/3000 0.39/s 47m39s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 11
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.14/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2584,11 +2333,6 @@ last input: 4
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 116.34/200 0.10/s 14m36s to cap
 [Resource] science 2360.38/3000 0.39/s 27m21s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 11
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2608,11 +2352,6 @@ last input: s4
 [Resource] catnip 5000/5000 43.47/s
 [Resource] wood 0.12/200 0.10/s 34m55s to cap
 [Resource] science 2360.77/3250 0.41/s 36m18s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 12
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.12/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2632,11 +2371,6 @@ last input: 4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 133.78/200 0.10/s 11m34s to cap
 [Resource] science 2932.51/3250 0.41/s 12m57s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 12
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2656,11 +2390,6 @@ last input: s4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 0.12/200 0.10/s 34m55s to cap
 [Resource] science 2932.92/3500 0.43/s 22m9s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 13
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.12/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2680,11 +2409,6 @@ last input: 4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 153.90/200 0.10/s 8m3s to cap
 [Resource] science 3500/3500 0.43/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 13
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2704,11 +2428,6 @@ last input: s4
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 0.18/200 0.10/s 34m54s to cap
 [Resource] science 3500/3750 0.45/s 9m21s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 14
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.18/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2728,11 +2447,6 @@ last input: 4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 176.95/200 0.10/s 4m1s to cap
 [Resource] science 3750/3750 0.45/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 14
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -2752,11 +2466,6 @@ last input: s4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.16/200 0.10/s 34m54s to cap
 [Resource] science 3750/4000 0.46/s 8m59s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.16/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -2776,13 +2485,7 @@ last input: 4
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.25/200 0.10/s 34m53s to cap
 [Resource] science 3720.46/4000 0.46/s 10m2s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.25/12.50 2m8s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.25/203.43* 35m29s) +(Library 1, science cap 250)
@@ -2803,13 +2506,7 @@ last input: s9
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.35/200 0.10/s 34m52s to cap
 [Resource] science 3720.93/4000 0.46/s 10m1s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.35/12.50 2m7s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.35/203.43* 35m28s) +(Library 1, science cap 250)
@@ -2831,14 +2528,7 @@ error: action Calendar is locked
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.44/200 0.10/s 34m51s to cap
 [Resource] science 3621.39/4000 0.46/s 13m36s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.44/12.50 2m6s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.44/203.43* 35m27s) +(Library 1, science cap 250)
@@ -2860,14 +2550,7 @@ last input: s10
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.54/200 0.10/s 34m50s to cap
 [Resource] science 3621.85/4000 0.46/s 13m35s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.54/12.50 2m5s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.54/203.43* 35m26s) +(Library 1, science cap 250)
@@ -2890,15 +2573,7 @@ error: action Agriculture is locked
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.63/200 0.10/s 34m49s to cap
 [Resource] science 3322.32/4000 0.46/s 24m21s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.63/12.50 2m4s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.63/203.43* 35m25s) +(Library 1, science cap 250)
@@ -2919,15 +2594,7 @@ last input: s11
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.73/200 0.10/s 34m48s to cap
 [Resource] science 3322.78/4000 0.46/s 24m20s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.73/12.50 2m3s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.73/203.43* 35m24s) +(Library 1, science cap 250)
@@ -2949,16 +2616,7 @@ error: action Archery is locked
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.82/200 0.10/s 34m47s to cap
 [Resource] science 2823.25/4000 0.46/s 42m17s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.82/12.50 2m2s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.82/203.43* 35m23s) +(Library 1, science cap 250)
@@ -2978,16 +2636,7 @@ last input: s12
 [Resource] catnip 5000/5000 26.15/s
 [Resource] wood 0.92/200 0.10/s 34m46s to cap
 [Resource] science 2823.71/4000 0.46/s 42m16s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.92/12.50 2m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.92/203.43* 35m22s) +(Library 1, science cap 250)
@@ -3008,16 +2657,7 @@ error: action Mining is locked
 [Resource] catnip 5000/5000 0.16/s
 [Resource] wood 50.05/200 0.10/s 26m11s to cap
 [Resource] science 3062.54/4000 0.46/s 33m41s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 50.05/203.43* 26m47s) +(Library 1, science cap 250)
@@ -3037,17 +2677,7 @@ last input: s5
 [Resource] catnip 5000/10000 0.16/s 8h32m49s to cap
 [Resource] wood 0.15/400 0.10/s 1h9m51s to cap
 [Resource] science 3063/4000 0.46/s 33m40s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 1
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5000/5093.21 9m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.15/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.15/203.43 35m30s) +(Library 1, science cap 250)
@@ -3067,17 +2697,7 @@ last input: 5
 [Resource] catnip 10000/10000 43.47/s
 [Resource] wood 87.53/400 0.10/s 54m35s to cap
 [Resource] science 3487.80/4000 0.46/s 18m24s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 1
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 87.53/203.43 20m14s) +(Library 1, science cap 250)
@@ -3097,17 +2717,7 @@ last input: s5
 [Resource] catnip 10000/15000 43.47/s 1m55s to cap
 [Resource] wood 0.13/600 0.10/s 1h44m47s to cap
 [Resource] science 3488.26/4000 0.46/s 18m23s to cap
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 2
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.13/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.13/203.43 35m31s) +(Library 1, science cap 250)
@@ -3127,17 +2737,7 @@ last input: 5
 [Resource] catnip 15000/15000 43.47/s
 [Resource] wood 153.15/600 0.10/s 1h18m3s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 2
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 153.15/203.43 8m47s) +(Library 1, science cap 250)
@@ -3157,17 +2757,7 @@ last input: s5
 [Resource] catnip 15000/20000 43.47/s 1m55s to cap
 [Resource] wood 0.12/800 0.10/s 2h19m44s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 3
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.12/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.12/203.43 35m31s) +(Library 1, science cap 250)
@@ -3187,17 +2777,7 @@ last input: 5
 [Resource] catnip 20000/20000 26.15/s
 [Resource] wood 268/800 0.10/s 1h32m56s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 3
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3217,17 +2797,7 @@ last input: s5
 [Resource] catnip 20000/25000 26.15/s 3m11s to cap
 [Resource] wood 0.13/1000 0.10/s 2h54m40s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 4
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.13/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.13/203.43 35m30s) +(Library 1, science cap 250)
@@ -3247,17 +2817,7 @@ last input: 5
 [Resource] catnip 25000/25000 26.15/s
 [Resource] wood 469.02/1000 0.10/s 1h32m45s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 4
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3277,17 +2837,7 @@ last input: s5
 [Resource] catnip 25000/30000 26.15/s 3m11s to cap
 [Resource] wood 0.17/1200 0.10/s 3h29m36s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 5
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.17/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.17/203.43 35m30s) +(Library 1, science cap 250)
@@ -3307,17 +2857,7 @@ last input: 5
 [Resource] catnip 30000/30000 26.15/s
 [Resource] wood 820.71/1200 0.10/s 1h6m15s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 5
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3337,17 +2877,7 @@ last input: s5
 [Resource] catnip 30000/35000 26.15/s 3m11s to cap
 [Resource] wood 0.15/1400 0.10/s 4h4m33s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 55
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.15/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.15/203.43 35m30s) +(Library 1, science cap 250)
@@ -3367,17 +2897,7 @@ last input: 5
 [Resource] catnip 24932.94/35000 26.78/s 6m15s to cap
 [Resource] wood 0.24/1400 0.10/s 4h4m32s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 56
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (56) -(catnip 5704.39) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.24/12.50 2m8s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.24/203.43 35m29s) +(Library 1, science cap 250)
@@ -3397,17 +2917,7 @@ last input: s2
 [Resource] catnip 19255.33/35000 27.41/s 9m34s to cap
 [Resource] wood 0.34/1400 0.10/s 4h4m31s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 57
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (57) -(catnip 6388.92) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.34/12.50 2m7s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.34/203.43 35m28s) +(Library 1, science cap 250)
@@ -3427,17 +2937,7 @@ last input: 2
 [Resource] catnip 12893.83/35000 28.04/s 13m8s to cap
 [Resource] wood 0.43/1400 0.10/s 4h4m30s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 58
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (58) -(catnip 7155.59) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.43/12.50 2m6s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.43/203.43 35m27s) +(Library 1, science cap 250)
@@ -3457,17 +2957,7 @@ last input: s2
 [Resource] catnip 5766.28/35000 28.67/s 16m59s to cap
 [Resource] wood 0.53/1400 0.10/s 4h4m29s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 59
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (59) -(catnip 5766.28/8014.26 1m18s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.53/12.50 2m5s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 0.53/203.43 35m26s) +(Library 1, science cap 250)
@@ -3487,17 +2977,7 @@ last input: 2
 [Resource] catnip 8031.21/35000 28.67/s 15m40s to cap
 [Resource] wood 8.07/1400 0.10/s 4h3m10s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 59
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (59) -(catnip 8014.26) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 8.07/12.50 46s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 8.07/203.43 34m7s) +(Library 1, science cap 250)
@@ -3517,17 +2997,7 @@ last input: s2
 [Resource] catnip 45.62/35000 29.30/s 19m52s to cap
 [Resource] wood 8.16/1400 0.10/s 4h3m9s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 60
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (60) -(catnip 45.62/8975.97 5m4s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 8.16/12.50 45s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 8.16/203.43 34m6s) +(Library 1, science cap 250)
@@ -3547,17 +3017,7 @@ last input: 2
 [Resource] catnip 363.72/35000 0.95/s 10h7m39s to cap
 [Resource] wood 37.26/1400 0.10/s 3h58m4s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 60
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (60) -(catnip 363.72/8975.97 2h31m5s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 37.26/203.43 29m1s) +(Library 1, science cap 250)
@@ -3577,17 +3037,7 @@ last input: s2
 [Resource] catnip 364.67/35000 0.95/s 10h7m38s to cap
 [Resource] wood 37.35/1400 0.10/s 3h58m3s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 60
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (60) -(catnip 364.67/8975.97 2h31m4s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 37.35/203.43 29m0s) +(Library 1, science cap 250)
@@ -3608,17 +3058,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 29.30/s
 [Resource] wood 902.15/1400 0.10/s 1h26m58s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 60
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (60) -(catnip 8975.97) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3638,17 +3078,7 @@ last input: s2
 [Resource] catnip 26024.03/35000 29.93/s 4m59s to cap
 [Resource] wood 902.25/1400 0.10/s 1h26m57s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 61
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (61) -(catnip 10053.09) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3668,17 +3098,7 @@ last input: 2
 [Resource] catnip 16000.88/35000 30.56/s 10m21s to cap
 [Resource] wood 902.34/1400 0.10/s 1h26m56s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 62
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (62) -(catnip 11259.46) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3698,17 +3118,7 @@ last input: s2
 [Resource] catnip 4771.98/35000 31.19/s 16m9s to cap
 [Resource] wood 902.44/1400 0.10/s 1h26m55s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 63
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (63) -(catnip 4771.98/12610.59 4m11s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3728,17 +3138,7 @@ last input: 2
 [Resource] catnip 12631.86/35000 31.19/s 11m57s to cap
 [Resource] wood 926.48/1400 0.10/s 1h22m43s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 63
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (63) -(catnip 12610.59) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3758,17 +3158,7 @@ last input: s2
 [Resource] catnip 52.46/35000 31.82/s 18m18s to cap
 [Resource] wood 926.58/1400 0.10/s 1h22m42s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 64
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (64) -(catnip 52.46/14123.86 7m22s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3788,17 +3178,7 @@ last input: 2
 [Resource] catnip 23059.44/35000 51.98/s 3m49s to cap
 [Resource] wood 968.84/1400 0.10/s 1h15m19s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 64
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (64) -(catnip 14123.86) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3818,17 +3198,7 @@ last input: s2
 [Resource] catnip 8987.56/35000 52.92/s 8m11s to cap
 [Resource] wood 968.93/1400 0.10/s 1h15m18s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 65
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (65) -(catnip 8987.56/15818.72 2m9s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3848,17 +3218,7 @@ last input: 2
 [Resource] catnip 13226.53/35000 32.45/s 11m10s to cap
 [Resource] wood 981.34/1400 0.10/s 1h13m8s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 65
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (65) -(catnip 13226.53/15818.72 1m19s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3878,17 +3238,7 @@ last input: s2
 [Resource] catnip 13258.98/35000 32.45/s 11m9s to cap
 [Resource] wood 981.43/1400 0.10/s 1h13m7s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 65
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (65) -(catnip 13258.98/15818.72 1m18s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3909,17 +3259,7 @@ error: not enough catnip
 [Resource] catnip 15822.53/35000 32.45/s 9m50s to cap
 [Resource] wood 988.97/1400 0.10/s 1h11m48s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 65
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (65) -(catnip 15818.72) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3939,17 +3279,7 @@ last input: s2
 [Resource] catnip 36.26/35000 33.08/s 17m36s to cap
 [Resource] wood 989.06/1400 0.10/s 1h11m47s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 66
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (66) -(catnip 36.26/17716.97 8m54s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3969,17 +3299,7 @@ last input: 2
 [Resource] catnip 28835.92/35000 53.87/s 1m54s to cap
 [Resource] wood 1040.10/1400 0.10/s 1h2m52s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 66
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (66) -(catnip 17716.97) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -3999,17 +3319,7 @@ last input: s2
 [Resource] catnip 11172.82/35000 54.81/s 7m14s to cap
 [Resource] wood 1040.20/1400 0.10/s 1h2m51s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 67
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (67) -(catnip 11172.82/19843.01 2m38s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4029,17 +3339,7 @@ last input: 2
 [Resource] catnip 16553.81/35000 33.71/s 9m7s to cap
 [Resource] wood 1055.37/1400 0.10/s 1h0m12s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 67
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (67) -(catnip 16553.81/19843.01 1m37s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4059,17 +3359,7 @@ last input: s2
 [Resource] catnip 16587.52/35000 33.71/s 9m6s to cap
 [Resource] wood 1055.46/1400 0.10/s 1h0m11s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 67
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (67) -(catnip 16587.52/19843.01 1m36s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4090,17 +3380,7 @@ error: not enough catnip
 [Resource] catnip 19857.39/35000 33.71/s 7m29s to cap
 [Resource] wood 1064.72/1400 0.10/s 58m34s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 67
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (67) -(catnip 19843.01) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4120,17 +3400,7 @@ last input: s2
 [Resource] catnip 48.09/35000 34.34/s 16m57s to cap
 [Resource] wood 1064.81/1400 0.10/s 58m33s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 68
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (68) -(catnip 48.09/22224.17 10m45s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4150,17 +3420,7 @@ last input: 2
 [Resource] catnip 35000/35000 55.76/s
 [Resource] wood 1126.44/1400 0.10/s 47m47s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 68
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (68) -(catnip 22224.17) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4180,17 +3440,7 @@ last input: s2
 [Resource] catnip 12775.83/35000 56.70/s 6m31s to cap
 [Resource] wood 1126.53/1400 0.10/s 47m46s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 69
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (69) -(catnip 12775.83/24891.07 3m33s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4210,17 +3460,7 @@ last input: 2
 [Resource] catnip 24910.42/35000 34.97/s 4m48s to cap
 [Resource] wood 1159.64/1400 0.10/s 41m59s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 69
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (69) -(catnip 24891.07) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4240,17 +3480,7 @@ last input: s2
 [Resource] catnip 54.32/35000 35.60/s 16m21s to cap
 [Resource] wood 1159.73/1400 0.10/s 41m58s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 70
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (70) -(catnip 54.32/27878 13m1s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4270,17 +3500,7 @@ last input: 2
 [Resource] catnip 27893.52/35000 35.60/s 3m19s to cap
 [Resource] wood 1234.34/1400 0.10/s 28m56s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 70
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (70) -(catnip 27878) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4300,17 +3520,7 @@ last input: s2
 [Resource] catnip 51.12/35000 36.23/s 16m4s to cap
 [Resource] wood 1234.43/1400 0.10/s 28m55s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 71
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (71) -(catnip 51.12/31223.36 14m20s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4330,17 +3540,7 @@ last input: 2
 [Resource] catnip 31245.15/35000 36.23/s 1m43s to cap
 [Resource] wood 1316.57/1400 0.10/s 14m34s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 71
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (71) -(catnip 31223.36) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4360,17 +3560,7 @@ last input: s2
 [Resource] catnip 58.02/35000 36.86/s 15m47s to cap
 [Resource] wood 1316.67/1400 0.10/s 14m33s to cap
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 72
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (72) -(catnip 58.02/34970.16 15m47s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4390,17 +3580,7 @@ last input: 2
 [Resource] catnip 2784.36/35000 2.84/s 3h9m3s to cap
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 72
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (72) -(catnip 2784.36/34970.16 3h8m53s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4420,17 +3600,7 @@ last input: s2
 [Resource] catnip 2787.20/35000 2.84/s 3h9m2s to cap
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 72
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (72) -(catnip 2787.20/34970.16 3h8m52s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4451,17 +3621,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 59.54/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 72
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (72) -(catnip 34970.16) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4481,17 +3641,7 @@ last input: s2
 [Resource] catnip 29.84/35000 60.48/s 9m38s to cap
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 29.84/39166.58* 10m47s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4511,17 +3661,7 @@ last input: 2
 [Resource] catnip 2029.71/35000 3/s 3h3m19s to cap
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 2029.71/39166.58* 3h26m29s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4541,17 +3681,7 @@ last input: s2
 [Resource] catnip 2032.70/35000 3/s 3h3m18s to cap
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 2032.70/39166.58* 3h26m28s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4572,17 +3702,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4602,17 +3722,7 @@ last input: s2
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4633,17 +3743,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4664,17 +3764,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4695,17 +3785,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4726,17 +3806,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4757,17 +3827,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4788,17 +3848,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4819,17 +3869,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4850,17 +3890,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 4000/4000 0.46/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 15
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (15) -(wood 203.43) +(Library 1, science cap 250)
@@ -4881,17 +3911,7 @@ error: not enough catnip
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1196.57/1400 0.10/s 35m32s to cap
 [Resource] science 4000/4250 0.48/s 8m38s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 16
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (16) -(wood 233.94) +(Library 1, science cap 250)
@@ -4911,17 +3931,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 962.73/1400 0.10/s 1h16m23s to cap
 [Resource] science 4000.48/4500 0.50/s 16m37s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 17
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (17) -(wood 269.03) +(Library 1, science cap 250)
@@ -4941,17 +3951,7 @@ last input: 4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 693.79/1400 0.10/s 2h3m22s to cap
 [Resource] science 4000.98/4750 0.52/s 24m2s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 18
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (18) -(wood 309.39) +(Library 1, science cap 250)
@@ -4971,17 +3971,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 384.50/1400 0.10/s 2h57m24s to cap
 [Resource] science 4001.50/5000 0.54/s 30m56s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 19
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (19) -(wood 355.79) +(Library 1, science cap 250)
@@ -5001,17 +3991,7 @@ last input: 4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 28.80/1400 0.10/s 3h59m33s to cap
 [Resource] science 4002.04/5250 0.56/s 37m22s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 20
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (20) -(wood 28.80/409.16 1h6m27s) +(Library 1, science cap 250)
@@ -5031,17 +4011,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 28.90/1400 0.10/s 3h59m32s to cap
 [Resource] science 4002.60/5250 0.56/s 37m21s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 20
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (20) -(wood 28.90/409.16 1h6m26s) +(Library 1, science cap 250)
@@ -5062,17 +4032,7 @@ error: not enough wood
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 409.26/1400 0.10/s 2h53m5s to cap
 [Resource] science 5250/5250 0.56/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 20
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (20) -(wood 409.16) +(Library 1, science cap 250)
@@ -5092,17 +4052,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 0.19/1400 0.10/s 4h4m33s to cap
 [Resource] science 5250/5500 0.58/s 7m14s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 21
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.19/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (21) -(wood 0.19/470.54 1h22m10s) +(Library 1, science cap 250)
@@ -5122,17 +4072,7 @@ last input: 4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 470.61/1400 0.10/s 2h42m22s to cap
 [Resource] science 5500/5500 0.58/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 21
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (21) -(wood 470.54) +(Library 1, science cap 250)
@@ -5152,17 +4092,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 0.16/1400 0.10/s 4h4m33s to cap
 [Resource] science 5500/5750 0.59/s 7m1s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 22
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.16/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (22) -(wood 0.16/541.12 1h34m30s) +(Library 1, science cap 250)
@@ -5182,17 +4112,7 @@ last input: 4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 541.18/1400 0.10/s 2h30m2s to cap
 [Resource] science 5750/5750 0.59/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 22
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (22) -(wood 541.12) +(Library 1, science cap 250)
@@ -5212,17 +4132,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 0.15/1400 0.10/s 4h4m33s to cap
 [Resource] science 5750/6000 0.61/s 6m48s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 23
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.15/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (23) -(wood 0.15/622.29 1h48m41s) +(Library 1, science cap 250)
@@ -5242,17 +4152,7 @@ last input: 4
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 622.35/1400 0.10/s 2h15m51s to cap
 [Resource] science 6000/6000 0.61/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 23
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (23) -(wood 622.29) +(Library 1, science cap 250)
@@ -5272,17 +4172,7 @@ last input: s4
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 0.16/1400 0.10/s 4h4m33s to cap
 [Resource] science 6000/6250 0.63/s 6m36s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 24
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.16/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (24) -(wood 0.16/715.63 2h4m59s) +(Library 1, science cap 250)
@@ -5302,17 +4192,7 @@ last input: 4
 [Resource] catnip 35000/35000 60.48/s
 [Resource] wood 715.66/1400 0.10/s 1h59m33s to cap
 [Resource] science 6250/6250 0.63/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 24
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m8s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (24) -(wood 715.63) +(Library 1, science cap 250)
@@ -5332,17 +4212,7 @@ last input: s4
 [Resource] catnip 35000/35000 60.48/s
 [Resource] wood 0.13/1400 0.10/s 4h4m33s to cap
 [Resource] science 6250/6500 0.65/s 6m25s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 25
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m8s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.13/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (25) -(wood 0.13/822.97 2h23m45s) +(Library 1, science cap 250)
@@ -5362,17 +4232,7 @@ last input: 4
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 823.05/1400 0.10/s 1h40m47s to cap
 [Resource] science 6500/6500 0.65/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 25
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (25) -(wood 822.97) +(Library 1, science cap 250)
@@ -5392,17 +4252,7 @@ last input: s4
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 0.17/1400 0.10/s 4h4m33s to cap
 [Resource] science 6500/6750 0.67/s 6m14s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 26
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.17/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (26) -(wood 0.17/946.42 2h45m18s) +(Library 1, science cap 250)
@@ -5422,17 +4272,7 @@ last input: 4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 946.44/1400 0.10/s 1h19m14s to cap
 [Resource] science 6750/6750 0.67/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 26
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (26) -(wood 946.42) +(Library 1, science cap 250)
@@ -5452,17 +4292,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 0.12/1400 0.10/s 4h4m33s to cap
 [Resource] science 6750/7000 0.69/s 6m4s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 27
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.12/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (27) -(wood 0.12/1088.38 3h10m7s) +(Library 1, science cap 250)
@@ -5482,17 +4312,7 @@ last input: 4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 1088.44/1400 0.10/s 54m25s to cap
 [Resource] science 7000/7000 0.69/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 27
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (27) -(wood 1088.38) +(Library 1, science cap 250)
@@ -5512,17 +4332,7 @@ last input: s4
 [Resource] catnip 35000/35000 37.49/s
 [Resource] wood 0.15/1400 0.10/s 4h4m33s to cap
 [Resource] science 7000/7250 0.70/s 5m54s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 28
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m51s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.15/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (28) -(wood 0.15/1251.64 3h38m38s) +(Library 1, science cap 250)
@@ -5542,17 +4352,7 @@ last input: 4
 [Resource] catnip 35000/35000 60.48/s
 [Resource] wood 1251.71/1400 0.10/s 25m54s to cap
 [Resource] science 7250/7250 0.70/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 28
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m8s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (28) -(wood 1251.64) +(Library 1, science cap 250)
@@ -5572,17 +4372,7 @@ last input: s4
 [Resource] catnip 35000/35000 60.48/s
 [Resource] wood 0.16/1400 0.10/s 4h4m33s to cap
 [Resource] science 7250/7500 0.72/s 5m45s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m8s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.16/12.50 2m9s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 0.16/1439.39* 4h11m26s) +(Library 1, science cap 250)
@@ -5602,17 +4392,7 @@ last input: 4
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 7500/7500 0.72/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 6m52s) +(Library 1, science cap 250)
@@ -5632,17 +4412,7 @@ last input: s4
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 7500/7500 0.72/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 6m52s) +(Library 1, science cap 250)
@@ -5663,17 +4433,7 @@ error: not enough wood
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 7500/7500 0.72/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 6m52s) +(Library 1, science cap 250)
@@ -5694,17 +4454,7 @@ error: not enough wood
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 7500/7500 0.72/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 6m52s) +(Library 1, science cap 250)
@@ -5725,17 +4475,7 @@ error: not enough wood
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 7500/7500 0.72/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 6m52s) +(Library 1, science cap 250)
@@ -5756,17 +4496,7 @@ error: not enough wood
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 1400/1400 0.10/s
 [Resource] science 7500/7500 0.72/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 1
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 6m52s) +(Library 1, science cap 250)
@@ -5787,17 +4517,7 @@ error: not enough wood
 [Resource] catnip 35000/35000 3/s
 [Resource] wood 1387.50/1400 0.10/s 2m11s to cap
 [Resource] science 7500/7500 0.72/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 2
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1387.50/1439.39* 9m3s) +(Library 1, science cap 250)
@@ -5818,17 +4538,7 @@ last input: s3
 [Resource] wood 1356.35/1400 0.10/s 7m37s to cap
 [Resource] science 7500/7500 0.72/s
 [Resource] kitten 0.05/4 0.05/s 1m19s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 3
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 23m10s) +(Catnip Field 1)
 3: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1356.35/1439.39* 14m30s) +(Library 1, science cap 250)
@@ -5849,17 +4559,7 @@ last input: 3
 [Resource] wood 1358.25/1400 0.09/s 7m26s to cap
 [Resource] science 7500/7500 0.71/s
 [Resource] kitten 1.05/4 0.05/s 59s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 3
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
 [Village] happiness 1.04 (1.10 + -0.06)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* -55m26s) +(Catnip Field 1)
 3: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1358.25/1439.39* 14m26s) +(Library 1, science cap 250)
@@ -5880,18 +4580,7 @@ last input: s8
 [Resource] wood 1358.35/1400 0.09/s 7m25s to cap
 [Resource] science 7500/7500 0.71/s
 [Resource] kitten 0.10/3 0.05/s 57s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 3
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 1
 [Village] happiness 1.04 (1.10 + -0.06)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 34998.75/39166.58* 18m32s) +(Catnip Field 1)
 3: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1358.35/1439.39* 14m25s) +(Library 1, science cap 250)
@@ -5912,18 +4601,7 @@ last input: 8
 [Resource] wood 1280.32/1400 0.09/s 21m18s to cap
 [Resource] science 7500/7500 0.71/s
 [Resource] kitten 0.15/5 0.05/s 1m36s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 4
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 1
 [Village] happiness 1.04 (1.10 + -0.06)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 18m31s) +(Catnip Field 1)
 3: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1280.32/1439.39* 28m19s) +(Library 1, science cap 250)
@@ -5944,18 +4622,7 @@ last input: s3
 [Resource] wood 1085.10/1400 0.09/s 56m4s to cap
 [Resource] science 7500/7500 0.71/s
 [Resource] kitten 0.20/7 0.05/s 2m16s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 5
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 1
 [Village] happiness 1.04 (1.10 + -0.06)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 18m31s) +(Catnip Field 1)
 3: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1085.10/1439.39* 1h3m5s) +(Library 1, science cap 250)
@@ -5976,18 +4643,7 @@ last input: 3
 [Resource] wood 1086.69/1400 0.09/s 56m52s to cap
 [Resource] science 7500/7500 0.70/s
 [Resource] kitten 1.05/7 0.05/s 1m59s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 5
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 1
 [Village] happiness 1.02 (1.10 + -0.08)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* -2h18m11s) +(Catnip Field 1)
 3: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1086.69/1439.39* 1h4m2s) +(Library 1, science cap 250)
@@ -6008,18 +4664,7 @@ last input: s8
 [Resource] wood 1086.78/1400 0.09/s 56m51s to cap
 [Resource] science 7500/7500 0.70/s
 [Resource] kitten 0.10/6 0.05/s 1m58s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 5
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 2
 [Village] happiness 1.02 (1.10 + -0.08)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 34999.50/39166.58* 15m26s) +(Catnip Field 1)
 3: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1086.78/1439.39* 1h4m1s) +(Library 1, science cap 250)
@@ -6040,18 +4685,7 @@ last input: 8
 [Resource] wood 598.59/1400 0.09/s 2h25m29s to cap
 [Resource] science 7500/7500 0.70/s
 [Resource] kitten 0.15/8 0.05/s 2m36s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 6
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 2
 [Village] happiness 1.02 (1.10 + -0.08)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 15m26s) +(Catnip Field 1)
 3: [Bonfire] Hut (6) -(wood 598.59/1220.70 1h52m56s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 598.59/1439.39* 2h32m38s) +(Library 1, science cap 250)
@@ -6072,18 +4706,7 @@ last input: s3
 [Resource] wood 598.68/1400 0.09/s 2h25m28s to cap
 [Resource] science 7500/7500 0.70/s
 [Resource] kitten 0.20/8 0.05/s 2m36s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 6
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 2
 [Village] happiness 1.02 (1.10 + -0.08)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 15m26s) +(Catnip Field 1)
 3: [Bonfire] Hut (6) -(wood 598.68/1220.70 1h52m55s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 598.68/1439.39* 2h32m37s) +(Library 1, science cap 250)
@@ -6105,18 +4728,7 @@ error: not enough wood
 [Resource] wood 600.24/1400 0.09/s 2h28m6s to cap
 [Resource] science 7500/7500 0.68/s
 [Resource] kitten 1.05/8 0.05/s 2m19s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 6
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 2
 [Village] happiness 1 (1.10 + -0.10)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 4h40m34s) +(Catnip Field 1)
 3: [Bonfire] Hut (6) -(wood 600.24/1220.70 1h54m54s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 600.24/1439.39* 2h35m23s) +(Library 1, science cap 250)
@@ -6137,18 +4749,7 @@ last input: s8
 [Resource] wood 600.33/1400 0.09/s 2h28m5s to cap
 [Resource] science 7500/7500 0.68/s
 [Resource] kitten 0.10/7 0.05/s 2m18s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 6
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 3
 [Village] happiness 1 (1.10 + -0.10)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 13m14s) +(Catnip Field 1)
 3: [Bonfire] Hut (6) -(wood 600.33/1220.70 1h54m53s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 600.33/1439.39* 2h35m22s) +(Library 1, science cap 250)
@@ -6169,18 +4770,7 @@ last input: 8
 [Resource] wood 1220.79/1400 0.08/s 38m35s to cap
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 7/7 0.05/s
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 6
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 3
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 6m57s) +(Catnip Field 1)
 3: [Bonfire] Hut (6) -(wood 1220.70) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1220.79/1439.39* 47m4s) +(Library 1, science cap 250)
@@ -6201,18 +4791,7 @@ last input: s3
 [Resource] wood 0.17/1400 0.08/s 5h1m25s to cap
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 7/9 0.05/s 40s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 3
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 6m57s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 0.17/3051.76* 10h57m6s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 0.17/1439.39* 5h9m54s) +(Library 1, science cap 250)
@@ -6233,18 +4812,7 @@ last input: 3
 [Resource] wood 0.24/1400 0.08/s 5h1m24s to cap
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 6.05/8 0.05/s 39s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 4
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 4m37s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 0.24/3051.76* 10h57m5s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 0.24/1439.39* 5h9m53s) +(Library 1, science cap 250)
@@ -6265,18 +4833,7 @@ last input: s8
 [Resource] wood 0.32/1400 0.08/s 5h1m23s to cap
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 5.10/7 0.05/s 38s to cap
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 5
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 3m28s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 0.32/3051.76* 10h57m4s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 0.32/1439.39* 5h9m52s) +(Library 1, science cap 250)
@@ -6297,18 +4854,7 @@ last input: 8
 [Resource] science 7500/7500 0.56/s
 [Resource] kitten 7/7 0.05/s
 [Resource] gone kitten 1
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 5
 [Village] happiness 0.82 (1.10 + -0.28)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
@@ -6328,18 +4874,7 @@ last input: s3
 [Resource] science 7500/7500 0.57/s
 [Resource] kitten 6.05/7 0.05/s 19s to cap
 [Resource] gone kitten 2
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 5
 [Village] happiness 0.84 (1.10 + -0.26)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h4m8s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m40s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 7m58s) +(Barn 1, catnip cap 5000, wood cap 200)
@@ -6360,18 +4895,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 4.10/6 0.05/s 38s to cap
 [Resource] gone kitten 3
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 6
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h55m40s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m28s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 7m46s) +(Barn 1, catnip cap 5000, wood cap 200)
@@ -6391,18 +4915,7 @@ last input: s8
 [Resource] science 7500/7500 0.60/s
 [Resource] kitten 2.15/5 0.05/s 57s to cap
 [Resource] gone kitten 4
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 7
 [Village] happiness 0.88 (1.10 + -0.22)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h47m35s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m17s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 7m36s) +(Barn 1, catnip cap 5000, wood cap 200)
@@ -6422,18 +4935,7 @@ last input: 8
 [Resource] science 7500/7500 0.61/s
 [Resource] kitten 1.20/5 0.05/s 1m16s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 7
 [Village] happiness 0.90 (1.10 + -0.20)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h39m52s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m6s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 7m26s) +(Barn 1, catnip cap 5000, wood cap 200)
@@ -6455,18 +4957,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.61/s
 [Resource] kitten 1.25/5 0.05/s 1m15s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 7
 [Village] happiness 0.90 (1.10 + -0.20)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 4/39166.58* 2h43m16s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h39m52s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m6s) +(Library 1, science cap 250)
@@ -6489,18 +4980,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.61/s
 [Resource] kitten 0.30/4 0.05/s 1m14s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 8
 [Village] happiness 0.90 (1.10 + -0.20)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 8/39166.58* 1h12m32s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h39m52s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m6s) +(Library 1, science cap 250)
@@ -6522,18 +5002,7 @@ last input: s8
 [Resource] science 7500/7500 0.61/s
 [Resource] kitten 0.35/4 0.05/s 1m13s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 8
 [Village] happiness 0.90 (1.10 + -0.20)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 16.99/39166.58* 1h12m31s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h39m52s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m6s) +(Library 1, science cap 250)
@@ -6556,18 +5025,7 @@ error: not enough kitten
 [Resource] science 7500/7500 0.61/s
 [Resource] kitten 0.40/4 0.05/s 1m12s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 8
 [Village] happiness 0.90 (1.10 + -0.20)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 25.99/39166.58* 1h12m30s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h39m52s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m6s) +(Library 1, science cap 250)
@@ -6590,18 +5048,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.61/s
 [Resource] kitten 0.45/4 0.05/s 1m11s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 8
 [Village] happiness 0.90 (1.10 + -0.20)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 34.99/39166.58* 1h12m29s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h39m52s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m6s) +(Library 1, science cap 250)
@@ -6624,18 +5071,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.60/s
 [Resource] kitten 1.05/4 0.05/s 59s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 8
 [Village] happiness 0.88 (1.10 + -0.22)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 142.96/39166.58* 2h16m59s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h47m35s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m17s) +(Library 1, science cap 250)
@@ -6657,18 +5093,7 @@ last input: s8
 [Resource] science 7500/7500 0.60/s
 [Resource] kitten 0.10/3 0.05/s 58s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 9
 [Village] happiness 0.88 (1.10 + -0.22)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 147.71/39166.58* 1h6m42s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h47m35s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m17s) +(Library 1, science cap 250)
@@ -6690,18 +5115,7 @@ last input: 8
 [Resource] science 7500/7500 0.60/s
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 9
 [Village] happiness 0.88 (1.10 + -0.22)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 157.45/39166.58* 1h6m41s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h47m35s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m17s) +(Library 1, science cap 250)
@@ -6724,18 +5138,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.60/s
 [Resource] kitten 0.20/3 0.05/s 56s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 9
 [Village] happiness 0.88 (1.10 + -0.22)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 167.20/39166.58* 1h6m40s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h47m35s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m17s) +(Library 1, science cap 250)
@@ -6758,18 +5161,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 1.05/3 0.05/s 39s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 9
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 332.91/39166.58* 1h57m43s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h55m40s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m28s) +(Library 1, science cap 250)
@@ -6791,18 +5183,7 @@ last input: s8
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 0.10/2 0.05/s 38s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 10
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 338.41/39166.58* 1h1m38s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h55m40s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m28s) +(Library 1, science cap 250)
@@ -6824,18 +5205,7 @@ last input: 8
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 0.15/2 0.05/s 37s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 10
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 348.90/39166.58* 1h1m37s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h55m40s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m28s) +(Library 1, science cap 250)
@@ -6858,18 +5228,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.59/s
 [Resource] kitten 0.20/2 0.05/s 36s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 10
 [Village] happiness 0.86 (1.10 + -0.24)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 359.40/39166.58* 1h1m36s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 5h55m40s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m28s) +(Library 1, science cap 250)
@@ -6892,18 +5251,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.57/s
 [Resource] kitten 1.05/2 0.05/s 19s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 10
 [Village] happiness 0.84 (1.10 + -0.26)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 537.86/39166.58* 1h43m3s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h4m8s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m40s) +(Library 1, science cap 250)
@@ -6925,18 +5273,7 @@ last input: s8
 [Resource] science 7500/7500 0.57/s
 [Resource] kitten 0.10/1 0.05/s 18s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 11
 [Village] happiness 0.84 (1.10 + -0.26)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 544.11/39166.58* 57m13s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h4m8s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m40s) +(Library 1, science cap 250)
@@ -6958,18 +5295,7 @@ last input: 8
 [Resource] science 7500/7500 0.57/s
 [Resource] kitten 0.15/1 0.05/s 17s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 11
 [Village] happiness 0.84 (1.10 + -0.26)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 555.35/39166.58* 57m12s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h4m8s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m40s) +(Library 1, science cap 250)
@@ -6992,18 +5318,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.57/s
 [Resource] kitten 0.20/1 0.05/s 16s to cap
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 11
 [Village] happiness 0.84 (1.10 + -0.26)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 566.60/39166.58* 57m11s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h4m8s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m40s) +(Library 1, science cap 250)
@@ -7026,18 +5341,7 @@ error: not enough wood
 [Resource] science 7500/7500 0.56/s
 [Resource] kitten 1/1 0.05/s
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 11
 [Village] happiness 0.82 (1.10 + -0.28)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 757.81/39166.58* 1h31m28s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
@@ -7058,18 +5362,7 @@ last input: s8
 [Resource] wood 1400/1400 0.07/s
 [Resource] science 7500/7500 0.56/s
 [Resource] gone kitten 5
-[Bonfire] Catnip Field 73
-[Bonfire] Hut 7
-[Bonfire] Library 29
-[Bonfire] Barn 6
-[Village] woodcutter 1
-[Village] scholar 1
-[Village] farmer 12
 [Village] happiness 0.82 (1.10 + -0.28)
-[Science] Calendar 1/1
-[Science] Agriculture 1/1
-[Science] Archery 1/1
-[Science] Mining 1/1
 2: [Bonfire] Catnip Field (73) -(catnip 764.80/39166.58* 53m20s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)

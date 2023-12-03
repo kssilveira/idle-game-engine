@@ -23,7 +23,7 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML bool) {
 func ShowResources(logger *log.Logger, data *ui.Data) {
 	for _, d := range data.Resources {
 		r := d.Resource
-		if r.Quantity == 0 {
+		if r.IsHidden || r.Quantity == 0 {
 			continue
 		}
 		capacity := ""

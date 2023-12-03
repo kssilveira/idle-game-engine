@@ -19,7 +19,6 @@ last input:
 [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] wood 75/200
 [Resource] kitten 2/2 0.05/s
-[Bonfire] Library 1
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -37,8 +36,6 @@ last input: 4
 [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] wood 75/200
 [Resource] kitten 1/1 0.05/s
-[Bonfire] Library 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -59,8 +56,6 @@ last input: 7
 [Resource] wood 75/200
 [Resource] science 0.20/500 0.20/s 40m49s to cap
 [Resource] kitten 1/1 0.05/s
-[Bonfire] Library 1
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -81,8 +76,6 @@ last input: 0
 [Resource] wood 46.25/200
 [Resource] science 0.20/750 0.22/s 56m8s to cap
 [Resource] kitten 1/1 0.05/s
-[Bonfire] Library 2
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -103,8 +96,6 @@ last input: 4
 [Resource] wood 46.25/200
 [Resource] science 0.43/750 0.22/s 56m7s to cap
 [Resource] kitten 1/1 0.05/s
-[Bonfire] Library 2
-[Village] scholar 1
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -124,8 +115,6 @@ last input: 0
 [Resource] catnip 985/5000 -8.50/s 1m55s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.43/750 0.45/s 28m3s to cap
-[Bonfire] Library 2
-[Village] scholar 2
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -145,8 +134,6 @@ last input: 7
 [Resource] catnip 977.50/5000 -8.50/s 1m55s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.87/750 0.45/s 28m2s to cap
-[Bonfire] Library 2
-[Village] scholar 2
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)

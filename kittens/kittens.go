@@ -96,29 +96,29 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "Catnip Field", Type: "Bonfire", Capacity: -1,
+		Name: "Catnip Field", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
-		Name: "Hut", Type: "Bonfire", Capacity: -1,
+		Name: "Hut", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
-		Name: "Library", Type: "Bonfire", Capacity: -1,
+		Name: "Library", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
-		Name: "Barn", Type: "Bonfire", Capacity: -1,
+		Name: "Barn", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
-		Name: "woodcutter", Type: "Village", Capacity: -1,
+		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
-		Name: "scholar", Type: "Village", Capacity: -1,
+		Name: "scholar", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
-		Name: "farmer", Type: "Village", Capacity: -1,
+		Name: "farmer", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
 		}, {
@@ -136,13 +136,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "farmer", ProductionFactor: -0.02,
 		}},
 	}, {
-		Name: "Calendar", Type: "Science", Capacity: 1,
+		Name: "Calendar", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
-		Name: "Agriculture", Type: "Science", Capacity: 1,
+		Name: "Agriculture", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
-		Name: "Archery", Type: "Science", Capacity: 1,
+		Name: "Archery", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
-		Name: "Mining", Type: "Science", Capacity: 1,
+		Name: "Mining", Type: "Science", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",

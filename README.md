@@ -55,11 +55,6 @@ Faster solution:
 
 ## Ideas
 
-TODO
-
-- action show resource count
-- hide science resources
-
 General features:
 
 - shared web server
