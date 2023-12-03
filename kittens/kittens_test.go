@@ -2,7 +2,6 @@ package kittens
 
 import (
 	"bytes"
-	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -15,7 +14,7 @@ import (
 )
 
 type iter struct {
-	input   string
+	input   int
 	elapsed int64
 }
 
@@ -51,7 +50,7 @@ func TestRun(t *testing.T) {
 			// buy catnip field
 			{field, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 		},
 	}, {
 		name: "catnip field 2",
@@ -62,11 +61,11 @@ func TestRun(t *testing.T) {
 			// buy 1st catnip field
 			{field, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 			// buy 2nd catnip field
 			{field, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 		},
 	}, {
 		name: "catnip field skip",
@@ -77,11 +76,11 @@ func TestRun(t *testing.T) {
 			// buy catnip field
 			{field, 0},
 			// wait 1 second
-			{"", 1},
+			{gather, 1},
 			// skip to buy catnip field and buy it
 			{sfield, 0}, {field, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 		},
 	}, {
 		name: "refine catnip",
@@ -103,11 +102,11 @@ func TestRun(t *testing.T) {
 			// buy 1st hut
 			{hut, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 			// buy 2nd hut
 			{hut, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 		},
 	}, {
 		name: "library",
@@ -120,15 +119,15 @@ func TestRun(t *testing.T) {
 			// buy 1st library, assign 1st scholar
 			{library, 0}, {scholar, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 			// buy 2nd library
 			{library, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 			// assign 2nd scholar
 			{scholar, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 		},
 	}, {
 		name: "woodcutter",
@@ -140,11 +139,11 @@ func TestRun(t *testing.T) {
 			// 1st woodcutter
 			{woodcutter, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 			// 2nd woodcutter
 			{woodcutter, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 		},
 	}, {
 		name: "gone",
@@ -156,13 +155,13 @@ func TestRun(t *testing.T) {
 			// woodcutter
 			{woodcutter, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 			// scholar
 			{scholar, 0},
 			// wait 1 second and 10 seconds
-			{"", 1}, {"", 10},
+			{gather, 1}, {gather, 10},
 			// wait 1000 seconds
-			{"", 1000},
+			{gather, 1000},
 		},
 	}, {
 		name: "solve",
@@ -176,7 +175,7 @@ func TestRun(t *testing.T) {
 				Solve(input, 0 /* sleepMS */)
 			}
 			for _, one := range in.iters {
-				input <- one.input
+				input <- toInput(one.input)
 			}
 			input <- "999"
 		}()
@@ -187,7 +186,7 @@ func TestRun(t *testing.T) {
 			if len(in.iters) == 0 {
 				now = now.Add(time.Second)
 			} else {
-				now = now.Add(time.Duration(append(in.iters, iter{"", 0})[timeIndex].elapsed) * time.Second)
+				now = now.Add(time.Duration(append(in.iters, iter{0, 0})[timeIndex].elapsed) * time.Second)
 				timeIndex++
 			}
 			return res
@@ -230,18 +229,6 @@ func join(iters ...[]iter) []iter {
 	res := []iter{}
 	for _, iter := range iters {
 		res = append(res, iter...)
-	}
-	return res
-}
-
-func all() []iter {
-	res := []iter{}
-	n := len(NewGame(func() time.Time { return time.Unix(0, 0) }).Actions)
-	for i := 0; i < n; i++ {
-		res = append(res, []iter{
-			{fmt.Sprintf("s%d", i), 1},
-			{fmt.Sprintf("%d", i), 1},
-		}...)
 	}
 	return res
 }

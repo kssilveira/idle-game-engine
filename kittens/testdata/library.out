@@ -54,7 +54,7 @@ day 0.50 0.50/s
 year 1.00
 Spring 1.00
 day_of_year 1.00
-catnip 991.50/5000 -8.50/s 1m56s to empty
+catnip 992.50/5000 -8.50/s 1m56s to empty
 wood 75.00/200
 science 0.20/500 0.20/s 40m49s to cap
 kitten 1.00/1 0.05/s
@@ -69,14 +69,13 @@ Library 1.00
 6: scholar -(kitten 1.00) +(scholar 1)
 7: Calendar -(science 0.20/30.00 2m26s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 
-error: strconv.Atoi: parsing "": invalid syntax
+last input: 0
 ###
 day 5.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
 day_of_year 6.00 (1.00 + 5.00 % 400)
-catnip 906.50/5000 -8.50/s 1m46s to empty
+catnip 908.50/5000 -8.50/s 1m46s to empty
 wood 75.00/200
 science 2.24/500 0.20/s 40m39s to cap
 kitten 1.00/1 0.05/s
@@ -91,14 +90,13 @@ Library 1.00
 6: scholar -(kitten 1.00) +(scholar 1)
 7: Calendar -(science 2.24/30.00 2m16s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 
-error: strconv.Atoi: parsing "": invalid syntax
+last input: 0
 ###
 day 5.50 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.05 % 4 == 0)
 day_of_year 6.00 (1.00 + 5.00 % 400)
-catnip 906.50/5000 -8.50/s 1m46s to empty
+catnip 908.50/5000 -8.50/s 1m46s to empty
 wood 46.25/200
 science 2.24/750 0.22/s 55m59s to cap
 kitten 1.00/1 0.05/s
@@ -119,7 +117,7 @@ day 6.00 0.50/s
 year 1.01 (1.00 + 0.01)
 Spring 1.00 (1.00 if 0.06 % 4 == 0)
 day_of_year 7.00 (1.00 + 6.00 % 400)
-catnip 898.00/5000 -8.50/s 1m45s to empty
+catnip 901.00/5000 -8.50/s 1m46s to empty
 wood 46.25/200
 science 2.47/750 0.22/s 55m58s to cap
 kitten 1.00/1 0.05/s
@@ -134,14 +132,13 @@ Library 2.00
 6: scholar -(kitten 1.00) +(scholar 1)
 7: Calendar -(science 2.47/30.00 2m3s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 
-error: strconv.Atoi: parsing "": invalid syntax
+last input: 0
 ###
 day 11.00 0.50/s
 year 1.03 (1.00 + 0.03)
 Spring 1.00 (1.00 if 0.11 % 4 == 0)
 day_of_year 12.00 (1.00 + 11.00 % 400)
-catnip 813.00/5000 -8.50/s 1m35s to empty
+catnip 817.00/5000 -8.50/s 1m36s to empty
 wood 46.25/200
 science 4.69/750 0.22/s 55m48s to cap
 kitten 1.00/1 0.05/s
@@ -156,14 +153,13 @@ Library 2.00
 6: scholar -(kitten 1.00) +(scholar 1)
 7: Calendar -(science 4.69/30.00 1m53s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 
-error: strconv.Atoi: parsing "": invalid syntax
+last input: 0
 ###
 day 11.00 0.50/s
 year 1.03 (1.00 + 0.03)
 Spring 1.00 (1.00 if 0.11 % 4 == 0)
 day_of_year 12.00 (1.00 + 11.00 % 400)
-catnip 813.00/5000 -8.50/s 1m35s to empty
+catnip 817.00/5000 -8.50/s 1m36s to empty
 wood 46.25/200
 science 4.69/750 0.45/s 27m54s to cap
 scholar 2.00
@@ -183,7 +179,7 @@ day 11.50 0.50/s
 year 1.03 (1.00 + 0.03)
 Spring 1.00 (1.00 if 0.11 % 4 == 0)
 day_of_year 12.00 (1.00 + 11.00 % 400)
-catnip 804.50/5000 -8.50/s 1m34s to empty
+catnip 809.50/5000 -8.50/s 1m35s to empty
 wood 46.25/200
 science 5.14/750 0.45/s 27m53s to cap
 scholar 2.00
@@ -197,14 +193,13 @@ Library 2.00
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
 7: Calendar -(science 5.14/30.00 55s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 
-error: strconv.Atoi: parsing "": invalid syntax
+last input: 0
 ###
 day 16.50 0.50/s
 year 1.04 (1.00 + 0.04)
 Spring 1.00 (1.00 if 0.16 % 4 == 0)
 day_of_year 17.00 (1.00 + 16.00 % 400)
-catnip 719.50/5000 -8.50/s 1m24s to empty
+catnip 725.50/5000 -8.50/s 1m25s to empty
 wood 46.25/200
 science 9.59/750 0.45/s 27m43s to cap
 scholar 2.00
@@ -218,5 +213,4 @@ Library 2.00
 6: scholar -(kitten 0.00/1.00* 20s) +(scholar 1)
 7: Calendar -(science 9.59/30.00 45s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 
-error: strconv.Atoi: parsing "": invalid syntax
+last input: 0

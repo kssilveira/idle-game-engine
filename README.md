@@ -54,10 +54,6 @@ Faster solution:
 
 ## Ideas
 
-TODO
-
-- change kittens.Solve to use iota
-
 General features:
 
 - shared web server

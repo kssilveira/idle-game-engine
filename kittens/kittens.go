@@ -1,6 +1,7 @@
 package kittens
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/data"
@@ -229,50 +230,67 @@ func NewGame(now game.Now) *game.Game {
 }
 
 const (
-	gather       = "0"
-	refine       = "1"
-	field        = "2"
-	sfield       = "s2"
-	hut          = "3"
-	shut         = "s3"
-	library      = "4"
-	slibrary     = "s4"
-	woodcutter   = "5"
-	swoodcutter  = "s5"
-	scholar      = "6"
-	sscholar     = "s6"
-	calendar     = "7"
-	scalendar    = "s7"
-	agriculture  = "8"
-	sagriculture = "s8"
-	archery      = "9"
-	sarchery     = "s9"
-	mining       = "10"
-	smining      = "s10"
+	gather = iota
+	refine
+	field
+	hut
+	library
+	woodcutter
+	scholar
+	calendar
+	agriculture
+	archery
+	mining
+)
+
+const (
+	sdelta = 100
+)
+
+const (
+	_ = iota + sdelta
+	srefine
+	sfield
+	shut
+	slibrary
+	swoodcutter
+	sscholar
+	scalendar
+	sagriculture
+	sarchery
+	smining
 )
 
 func Solve(input chan string, sleepMS int) {
 	for _, one := range []struct {
-		cmds  []string
+		cmds  []int
 		count int
 	}{
-		{[]string{gather}, 10},
-		{[]string{field, sfield}, 55},
-		{[]string{refine}, 5},
-		{[]string{hut, swoodcutter, woodcutter}, 1},
-		{[]string{slibrary, library, sscholar, scholar}, 1},
-		{[]string{slibrary, library}, 14},
-		{[]string{scalendar, calendar}, 1},
-		{[]string{sagriculture, agriculture}, 1},
-		{[]string{sarchery, archery}, 1},
-		{[]string{smining, mining}, 1},
-		{[]string{"done"}, 1},
+		{[]int{gather}, 10},
+		{[]int{field, sfield}, 55},
+		{[]int{refine}, 5},
+		{[]int{hut, swoodcutter, woodcutter}, 1},
+		{[]int{slibrary, library, sscholar, scholar}, 1},
+		{[]int{slibrary, library}, 14},
+		{[]int{scalendar, calendar}, 1},
+		{[]int{sagriculture, agriculture}, 1},
+		{[]int{sarchery, archery}, 1},
+		{[]int{smining, mining}, 1},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {
-				input <- cmd
+				input <- toInput(cmd)
 				time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
 			}
 		}
 	}
+}
+
+func toInput(cmd int) string {
+	prefix := ""
+	if cmd >= sdelta {
+		prefix = "s"
+		cmd -= sdelta
+	}
+	return fmt.Sprintf("%s%d", prefix, cmd)
 }
