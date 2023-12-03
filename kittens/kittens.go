@@ -118,6 +118,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Library", Capacity: -1,
 	}, {
 		Name: "Calendar", Capacity: 1,
+	}, {
+		Name: "Agriculture", Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip",
@@ -191,6 +193,15 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{
 			Name: "Calendar", Quantity: 1,
 		}},
+	}, {
+		Name:       "Agriculture",
+		UnlockedBy: data.Resource{Name: "Calendar"},
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "Agriculture", Quantity: 1,
+		}},
 	}}
 	return g
 }
@@ -209,6 +220,7 @@ const (
 	scholar     = "6"
 	sscholar    = "s6"
 	calendar    = "7"
+	agriculture = "8"
 )
 
 func Solve(input chan string, sleepMS int) {
@@ -216,29 +228,14 @@ func Solve(input chan string, sleepMS int) {
 		cmds  []string
 		count int
 	}{
-		// gather 10 catnip
 		{[]string{gather}, 10},
-		// buy 55 catnip field
 		{[]string{field, sfield}, 55},
-		// refine 5 wood
 		{[]string{refine}, 5},
-		// buy 4 hut, assign 8 woodcutter
-		{[]string{
-			hut,
-			swoodcutter, woodcutter,
-			swoodcutter, woodcutter,
-			shut}, 4},
-		// buy 1 hut
-		{[]string{hut, shut}, 1},
-		// buy 1 library
-		{[]string{library, slibrary}, 1},
-		// assign 2 scholar
-		{[]string{scholar}, 2},
-		// buy 14 library
-		{[]string{library, slibrary}, 13},
-		// buy calendar
+		{[]string{hut, swoodcutter, woodcutter}, 1},
+		{[]string{slibrary, library, sscholar, scholar}, 1},
+		{[]string{slibrary, library}, 14},
 		{[]string{calendar}, 1},
-		// done
+		{[]string{agriculture}, 1},
 		{[]string{"done"}, 1},
 	} {
 		for i := 0; i < one.count; i++ {

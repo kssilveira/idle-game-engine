@@ -65,24 +65,21 @@ General features:
 
 Features from kittens game:
 
-- Calendar
-  - show year and day
-    - year 400 days
-- Agriculture
-  - unlocked by Calendar
-  - cost science 100
-  - unlock Archery, Mining, Barn, farmer
 - Archery
+  - unlocked by Agriculture
   - cost science 300
   - TODO
 - Mining
+  - unlocked by Agriculture
   - cost science 500
   - TODO
 - Barn
+  - unlocked by Agriculture
   - cost wood 50 87.50 TODO
   - catnip cap 500
   - wood cap 200
 - farmer
+  - unlocked by Agriculture
   - catnip 5
 - TODO
 - maybe
