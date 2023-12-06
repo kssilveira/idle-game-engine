@@ -433,7 +433,7 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{shut, hut, shunter, hunter}, 1},
 
 		{[]int{smining, mining}, 1},
-		{[]int{smine, mine}, 10},
+		{[]int{smine, mine}, 20},
 		{[]int{shut, hut, sminer, miner}, 1},
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
