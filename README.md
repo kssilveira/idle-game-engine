@@ -66,14 +66,6 @@ General features:
 
 Features from kittens game:
 
-- Animal Husbandry
-  - unlocked by Archery
-  - science 500
-- hunter
-  - unlocked by Archery
-  - catpower 0.3
-- catpower
-  - cap 250
 - Metal Working
   - unlocked by Mining
   - science 900

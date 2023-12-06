@@ -1902,7 +1902,7 @@ last input: s4
 4: [Bonfire] Library (1) -(wood 0.12/28.75 5m0s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar -(kitten 1) +(scholar 1)
-9: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
+10: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -1920,7 +1920,7 @@ last input: 4
 4: [Bonfire] Library (1) -(wood 0.21/28.75 4m59s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 0/30 2m27s) +(Calendar 1)
+10: [Science] Calendar -(science 0/30 2m27s) +(Calendar 1)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -1939,7 +1939,7 @@ last input: s7
 4: [Bonfire] Library (1) -(wood 0.31/28.75 4m58s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
+10: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 7
 error: not enough kitten
@@ -1959,7 +1959,7 @@ error: not enough kitten
 4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -1978,7 +1978,7 @@ last input: s4
 4: [Bonfire] Library (2) -(wood 0.18/33.06 5m44s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -1997,7 +1997,7 @@ last input: 4
 4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2016,7 +2016,7 @@ last input: s4
 4: [Bonfire] Library (3) -(wood 0.13/38.02 6m37s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2035,7 +2035,7 @@ last input: 4
 4: [Bonfire] Library (3) -(wood 38.02) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2054,7 +2054,7 @@ last input: s4
 4: [Bonfire] Library (4) -(wood 0.17/43.73 7m36s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2073,7 +2073,7 @@ last input: 4
 4: [Bonfire] Library (4) -(wood 43.73) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2092,7 +2092,7 @@ last input: s4
 4: [Bonfire] Library (5) -(wood 0.14/50.28 8m45s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2111,7 +2111,7 @@ last input: 4
 4: [Bonfire] Library (5) -(wood 50.28) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2130,7 +2130,7 @@ last input: s4
 4: [Bonfire] Library (6) -(wood 0.13/57.83 10m4s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2149,7 +2149,7 @@ last input: 4
 4: [Bonfire] Library (6) -(wood 57.83) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2168,7 +2168,7 @@ last input: s4
 4: [Bonfire] Library (7) -(wood 0.11/66.50 11m35s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2187,7 +2187,7 @@ last input: 4
 4: [Bonfire] Library (7) -(wood 66.50) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2206,7 +2206,7 @@ last input: s4
 4: [Bonfire] Library (8) -(wood 0.11/76.48 13m20s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2225,7 +2225,7 @@ last input: 4
 4: [Bonfire] Library (8) -(wood 76.48) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2244,7 +2244,7 @@ last input: s4
 4: [Bonfire] Library (9) -(wood 0.14/87.95 15m20s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2263,7 +2263,7 @@ last input: 4
 4: [Bonfire] Library (9) -(wood 87.95) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2282,7 +2282,7 @@ last input: s4
 4: [Bonfire] Library (10) -(wood 0.15/101.14 17m38s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2301,7 +2301,7 @@ last input: 4
 4: [Bonfire] Library (10) -(wood 101.14) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2320,7 +2320,7 @@ last input: s4
 4: [Bonfire] Library (11) -(wood 0.14/116.31 20m17s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2339,7 +2339,7 @@ last input: 4
 4: [Bonfire] Library (11) -(wood 116.31) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2358,7 +2358,7 @@ last input: s4
 4: [Bonfire] Library (12) -(wood 0.12/133.76 23m20s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2377,7 +2377,7 @@ last input: 4
 4: [Bonfire] Library (12) -(wood 133.76) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2396,7 +2396,7 @@ last input: s4
 4: [Bonfire] Library (13) -(wood 0.12/153.82 26m51s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2415,7 +2415,7 @@ last input: 4
 4: [Bonfire] Library (13) -(wood 153.82) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2434,7 +2434,7 @@ last input: s4
 4: [Bonfire] Library (14) -(wood 0.18/176.89 30m52s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2453,7 +2453,7 @@ last input: 4
 4: [Bonfire] Library (14) -(wood 176.89) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -2472,7 +2472,7 @@ last input: s4
 4: [Bonfire] Library (15) -(wood 0.16/203.43* 35m30s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-9: [Science] Calendar -(science 30) +(Calendar 1)
+10: [Science] Calendar -(science 30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -2491,11 +2491,11 @@ last input: 4
 4: [Bonfire] Library (15) -(wood 0.25/203.43* 35m29s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-10: [Science] Agriculture -(science 100) +(Agriculture 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+11: [Science] Agriculture -(science 100) +(Agriculture 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: s9
+last input: s10
 ###
 [Calendar] time 14621
 [Calendar] skip 14447
@@ -2512,11 +2512,11 @@ last input: s9
 4: [Bonfire] Library (15) -(wood 0.35/203.43* 35m28s) +(Library 1, science cap 250)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-10: [Science] Agriculture -(science 100) +(Agriculture 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+11: [Science] Agriculture -(science 100) +(Agriculture 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: 9
+last input: 10
 error: action Calendar is locked
 ###
 [Calendar] time 14622
@@ -2536,10 +2536,10 @@ error: action Calendar is locked
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: s10
+last input: s11
 ###
 [Calendar] time 14623
 [Calendar] skip 14447
@@ -2558,10 +2558,10 @@ last input: s10
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
-last input: 10
+last input: 11
 error: action Agriculture is locked
 ###
 [Calendar] time 15142
@@ -2581,8 +2581,8 @@ error: action Agriculture is locked
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2603,8 +2603,8 @@ last input: s5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -2625,8 +2625,8 @@ last input: 5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2647,8 +2647,8 @@ last input: s5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -2669,8 +2669,8 @@ last input: 5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2691,8 +2691,8 @@ last input: s5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -2713,8 +2713,8 @@ last input: 5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2735,8 +2735,8 @@ last input: s5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -2757,8 +2757,8 @@ last input: 5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2779,8 +2779,8 @@ last input: s5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -2801,8 +2801,8 @@ last input: 5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s5
 ###
@@ -2823,8 +2823,8 @@ last input: s5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 5
 ###
@@ -2845,8 +2845,8 @@ last input: 5
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -2867,8 +2867,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -2889,8 +2889,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -2911,8 +2911,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -2933,8 +2933,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -2955,8 +2955,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -2977,8 +2977,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -2999,8 +2999,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3022,8 +3022,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3044,8 +3044,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3066,8 +3066,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3088,8 +3088,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3110,8 +3110,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3132,8 +3132,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3154,8 +3154,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3176,8 +3176,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3198,8 +3198,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3220,8 +3220,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3243,8 +3243,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3265,8 +3265,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3287,8 +3287,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3309,8 +3309,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3331,8 +3331,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3353,8 +3353,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3376,8 +3376,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3398,8 +3398,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3420,8 +3420,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3442,8 +3442,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3464,8 +3464,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3486,8 +3486,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3508,8 +3508,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3530,8 +3530,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3552,8 +3552,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3574,8 +3574,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3596,8 +3596,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3618,8 +3618,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3641,8 +3641,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3663,8 +3663,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 ###
@@ -3685,8 +3685,8 @@ last input: 2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3707,8 +3707,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3730,8 +3730,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 ###
@@ -3752,8 +3752,8 @@ last input: s2
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3775,8 +3775,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 error: not enough catnip
@@ -3798,8 +3798,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3821,8 +3821,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 error: not enough catnip
@@ -3844,8 +3844,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3867,8 +3867,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 error: not enough catnip
@@ -3890,8 +3890,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3913,8 +3913,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s2
 error: not enough catnip
@@ -3936,8 +3936,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 2
 error: not enough catnip
@@ -3959,8 +3959,8 @@ error: not enough catnip
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -3981,8 +3981,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4003,8 +4003,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4025,8 +4025,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4047,8 +4047,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4069,8 +4069,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
@@ -4092,8 +4092,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4114,8 +4114,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4136,8 +4136,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4158,8 +4158,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4180,8 +4180,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4202,8 +4202,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4224,8 +4224,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4246,8 +4246,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4268,8 +4268,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4290,8 +4290,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4312,8 +4312,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4334,8 +4334,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4356,8 +4356,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4378,8 +4378,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4400,8 +4400,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4422,8 +4422,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4444,8 +4444,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4466,8 +4466,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -4488,8 +4488,8 @@ last input: 4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 ###
@@ -4510,8 +4510,8 @@ last input: s4
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
@@ -4533,8 +4533,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 error: not enough wood
@@ -4556,8 +4556,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
@@ -4579,8 +4579,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s4
 error: not enough wood
@@ -4602,8 +4602,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 4
 error: not enough wood
@@ -4625,8 +4625,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0/1 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1 20s) +(scholar 1)
 8: [Village] farmer -(kitten 0/1 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 ###
@@ -4648,8 +4648,8 @@ last input: s3
 6: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
 8: [Village] farmer -(kitten 0.05/1 18s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 ###
@@ -4671,8 +4671,8 @@ last input: 3
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -4694,8 +4694,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 0.10/1 17s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.10/1 17s) +(scholar 1)
 8: [Village] farmer (1) -(kitten 0.10/1 17s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -4717,8 +4717,8 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 0.15/1 16s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.15/1 16s) +(scholar 1)
 8: [Village] farmer (1) -(kitten 0.15/1 16s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 ###
@@ -4740,8 +4740,8 @@ last input: s3
 6: [Village] woodcutter (1) -(kitten 0.20/1 15s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.20/1 15s) +(scholar 1)
 8: [Village] farmer (1) -(kitten 0.20/1 15s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 ###
@@ -4763,8 +4763,8 @@ last input: 3
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (1) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -4786,8 +4786,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 0.10/1 17s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.10/1 17s) +(scholar 1)
 8: [Village] farmer (2) -(kitten 0.10/1 17s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -4809,8 +4809,8 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 0.15/1 16s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.15/1 16s) +(scholar 1)
 8: [Village] farmer (2) -(kitten 0.15/1 16s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 ###
@@ -4832,8 +4832,8 @@ last input: s3
 6: [Village] woodcutter (1) -(kitten 0.20/1 15s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.20/1 15s) +(scholar 1)
 8: [Village] farmer (2) -(kitten 0.20/1 15s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -4856,8 +4856,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (2) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -4879,8 +4879,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 0.10/1 17s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.10/1 17s) +(scholar 1)
 8: [Village] farmer (3) -(kitten 0.10/1 17s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -4902,8 +4902,8 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (3) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 ###
@@ -4925,8 +4925,8 @@ last input: s3
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (3) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 ###
@@ -4948,8 +4948,8 @@ last input: 3
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (4) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -4971,8 +4971,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (5) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -4993,8 +4993,8 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (5) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 ###
@@ -5015,8 +5015,8 @@ last input: s3
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (5) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -5038,8 +5038,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (6) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -5060,8 +5060,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (7) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -5082,8 +5082,8 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (7) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -5107,8 +5107,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (7) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -5132,8 +5132,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0.30/1 14s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.30/1 14s) +(scholar 1)
 8: [Village] farmer (8) -(kitten 0.30/1 14s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -5156,8 +5156,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 0.35/1 13s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.35/1 13s) +(scholar 1)
 8: [Village] farmer (8) -(kitten 0.35/1 13s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 error: not enough kitten
@@ -5181,8 +5181,8 @@ error: not enough kitten
 6: [Village] woodcutter (1) -(kitten 0.40/1 12s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.40/1 12s) +(scholar 1)
 8: [Village] farmer (8) -(kitten 0.40/1 12s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -5206,8 +5206,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0.45/1 11s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.45/1 11s) +(scholar 1)
 8: [Village] farmer (8) -(kitten 0.45/1 11s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -5231,8 +5231,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (8) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -5255,8 +5255,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 0.10/1 18s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.10/1 18s) +(scholar 1)
 8: [Village] farmer (9) -(kitten 0.10/1 18s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -5279,8 +5279,8 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 0.15/1 17s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.15/1 17s) +(scholar 1)
 8: [Village] farmer (9) -(kitten 0.15/1 17s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -5304,8 +5304,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0.20/1 16s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.20/1 16s) +(scholar 1)
 8: [Village] farmer (9) -(kitten 0.20/1 16s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -5329,8 +5329,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (9) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -5353,8 +5353,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 0.10/1 18s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.10/1 18s) +(scholar 1)
 8: [Village] farmer (10) -(kitten 0.10/1 18s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -5377,8 +5377,8 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 0.15/1 17s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.15/1 17s) +(scholar 1)
 8: [Village] farmer (10) -(kitten 0.15/1 17s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -5402,8 +5402,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0.20/1 16s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.20/1 16s) +(scholar 1)
 8: [Village] farmer (10) -(kitten 0.20/1 16s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -5427,8 +5427,8 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (10) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: s8
 ###
@@ -5451,8 +5451,8 @@ last input: s8
 6: [Village] woodcutter (1) -(kitten 0.10/1 18s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.10/1 18s) +(scholar 1)
 8: [Village] farmer (11) -(kitten 0.10/1 18s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+12: [Science] Archery -(science 300) +(Archery 1)
+13: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -5464,7 +5464,7 @@ last input: 8
 [Calendar] day_of_year 381 (1 + 103180 % 400)
 [Resource] catnip 555.35/35000 11.25/s 51m2s to cap
 [Resource] wood 1400/1400 0.08/s
-[Resource] science 7500/7500 0.57/s
+[Resource] science 7200/7500 0.57/s 8m43s to cap
 [Resource] kitten 0.15/1 0.05/s 17s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.84 (1.10 + -0.26)
@@ -5475,11 +5475,11 @@ last input: 8
 6: [Village] woodcutter (1) -(kitten 0.15/1 17s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.15/1 17s) +(scholar 1)
 8: [Village] farmer (11) -(kitten 0.15/1 17s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+9: [Village] hunter -(kitten 0.15/1 17s) +(hunter 1)
+13: [Science] Mining -(science 500) +(Mining 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 sX: time skip until action X is available
-last input: s3
-error: not enough wood
+last input: s12
 ###
 [Calendar] time 206361
 [Calendar] skip 206055
@@ -5489,7 +5489,7 @@ error: not enough wood
 [Calendar] day_of_year 381 (1 + 103180 % 400)
 [Resource] catnip 566.60/35000 11.25/s 51m1s to cap
 [Resource] wood 1400/1400 0.08/s
-[Resource] science 7500/7500 0.57/s
+[Resource] science 7200.57/7500 0.57/s 8m42s to cap
 [Resource] kitten 0.20/1 0.05/s 16s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.84 (1.10 + -0.26)
@@ -5500,21 +5500,74 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 0.20/1 16s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0.20/1 16s) +(scholar 1)
 8: [Village] farmer (11) -(kitten 0.20/1 16s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+9: [Village] hunter -(kitten 0.20/1 16s) +(hunter 1)
+13: [Science] Mining -(science 500) +(Mining 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+sX: time skip until action X is available
+last input: 12
+error: action Archery is locked
+###
+[Calendar] time 206362
+[Calendar] skip 206055
+[Calendar] day 103181 0.50/s
+[Calendar] year 258.95 (1 + 257.95)
+[Calendar] Winter 1 (1 if 1031.81 % 4 == 3)
+[Calendar] day_of_year 382 (1 + 103181 % 400)
+[Resource] catnip 577.85/35000 11.25/s 51m0s to cap
+[Resource] wood 1400/1400 0.08/s
+[Resource] science 7201.15/7500 0.57/s 8m41s to cap
+[Resource] kitten 0.25/1 0.05/s 15s to cap
+[Resource] gone kitten 5
+[Village] happiness 0.84 (1.10 + -0.26)
+2: [Bonfire] Catnip Field (73) -(catnip 577.85/39166.58* 57m10s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h4m8s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m40s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 1400/1436.15* 7m58s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: [Village] woodcutter (1) -(kitten 0.25/1 15s) +(woodcutter 1)
+7: [Village] scholar (1) -(kitten 0.25/1 15s) +(scholar 1)
+8: [Village] farmer (11) -(kitten 0.25/1 15s) +(farmer 1)
+9: [Village] hunter -(kitten 0.25/1 15s) +(hunter 1)
+13: [Science] Mining -(science 500) +(Mining 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+sX: time skip until action X is available
+last input: s3
+error: not enough wood
+###
+[Calendar] time 206363
+[Calendar] skip 206055
+[Calendar] day 103181.50 0.50/s
+[Calendar] year 258.95 (1 + 257.95)
+[Calendar] Winter 1 (1 if 1031.81 % 4 == 3)
+[Calendar] day_of_year 382 (1 + 103181 % 400)
+[Resource] catnip 589.09/35000 11.25/s 50m59s to cap
+[Resource] wood 1400/1400 0.08/s
+[Resource] science 7201.72/7500 0.57/s 8m40s to cap
+[Resource] kitten 0.30/1 0.05/s 14s to cap
+[Resource] gone kitten 5
+[Village] happiness 0.84 (1.10 + -0.26)
+2: [Bonfire] Catnip Field (73) -(catnip 589.09/39166.58* 57m9s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h4m8s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m40s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 1400/1436.15* 7m58s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: [Village] woodcutter (1) -(kitten 0.30/1 14s) +(woodcutter 1)
+7: [Village] scholar (1) -(kitten 0.30/1 14s) +(scholar 1)
+8: [Village] farmer (11) -(kitten 0.30/1 14s) +(farmer 1)
+9: [Village] hunter -(kitten 0.30/1 14s) +(hunter 1)
+13: [Science] Mining -(science 500) +(Mining 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
 ###
 [Calendar] time 206378
-[Calendar] skip 206071
+[Calendar] skip 206069
 [Calendar] day 103189 0.50/s
 [Calendar] year 258.97 (1 + 257.97)
 [Calendar] Winter 1 (1 if 1031.89 % 4 == 3)
 [Calendar] day_of_year 390 (1 + 103189 % 400)
 [Resource] catnip 757.81/35000 7/s 1h21m33s to cap
 [Resource] wood 1400/1400 0.07/s
-[Resource] science 7500/7500 0.56/s
+[Resource] science 7210.32/7500 0.56/s 8m37s to cap
 [Resource] kitten 1/1 0.05/s
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
@@ -5525,165 +5578,128 @@ error: not enough wood
 6: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 1) +(scholar 1)
 8: [Village] farmer (11) -(kitten 1) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+9: [Village] hunter -(kitten 1) +(hunter 1)
+13: [Science] Mining -(science 500) +(Mining 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 sX: time skip until action X is available
-last input: s8
+last input: s9
 ###
 [Calendar] time 206379
-[Calendar] skip 206071
+[Calendar] skip 206069
 [Calendar] day 103189.50 0.50/s
 [Calendar] year 258.97 (1 + 257.97)
 [Calendar] Winter 1 (1 if 1031.89 % 4 == 3)
 [Calendar] day_of_year 390 (1 + 103189 % 400)
-[Resource] catnip 764.80/35000 12/s 47m33s to cap
+[Resource] catnip 764.80/35000 7/s 1h21m32s to cap
 [Resource] wood 1400/1400 0.07/s
-[Resource] science 7500/7500 0.56/s
+[Resource] science 7210.88/7500 0.56/s 8m36s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 764.80/39166.58* 53m20s) +(Catnip Field 1)
+2: [Bonfire] Catnip Field (73) -(catnip 764.80/39166.58* 1h31m27s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-8: [Village] farmer (12) -(kitten 0/1* 20s) +(farmer 1)
-11: [Science] Archery -(science 300) +(Archery 1)
-12: [Science] Mining -(science 500) +(Mining 1)
+8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+13: [Science] Mining -(science 500) +(Mining 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 sX: time skip until action X is available
-last input: 8
+last input: 9
 ###
 [Calendar] time 206380
-[Calendar] skip 206071
+[Calendar] skip 206069
 [Calendar] day 103190 0.50/s
 [Calendar] year 258.98 (1 + 257.98)
 [Calendar] Winter 1 (1 if 1031.90 % 4 == 3)
 [Calendar] day_of_year 391 (1 + 103190 % 400)
-[Resource] catnip 776.80/35000 12/s 47m32s to cap
+[Resource] catnip 771.80/35000 7/s 1h21m31s to cap
 [Resource] wood 1400/1400 0.07/s
-[Resource] science 7200/7500 0.56/s 8m56s to cap
+[Resource] science 6711.44/7500 0.56/s 23m29s to cap
+[Resource] catpower 0.25/250 0.25/s 16m55s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 776.80/39166.58* 53m19s) +(Catnip Field 1)
+2: [Bonfire] Catnip Field (73) -(catnip 771.80/39166.58* 1h31m26s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-8: [Village] farmer (12) -(kitten 0/1* 20s) +(farmer 1)
-12: [Science] Mining -(science 500) +(Mining 1)
-13: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 sX: time skip until action X is available
-last input: s11
+last input: s13
 ###
 [Calendar] time 206381
-[Calendar] skip 206071
+[Calendar] skip 206069
 [Calendar] day 103190.50 0.50/s
 [Calendar] year 258.98 (1 + 257.98)
 [Calendar] Winter 1 (1 if 1031.90 % 4 == 3)
 [Calendar] day_of_year 391 (1 + 103190 % 400)
-[Resource] catnip 788.80/35000 12/s 47m31s to cap
+[Resource] catnip 778.80/35000 7/s 1h21m30s to cap
 [Resource] wood 1400/1400 0.07/s
-[Resource] science 7200.56/7500 0.56/s 8m55s to cap
+[Resource] science 6712/7500 0.56/s 23m28s to cap
+[Resource] catpower 0.49/250 0.25/s 16m54s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 788.80/39166.58* 53m18s) +(Catnip Field 1)
+2: [Bonfire] Catnip Field (73) -(catnip 778.80/39166.58* 1h31m25s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-8: [Village] farmer (12) -(kitten 0/1* 20s) +(farmer 1)
-12: [Science] Mining -(science 500) +(Mining 1)
-13: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 sX: time skip until action X is available
-last input: 11
-error: action Archery is locked
+last input: 13
+error: action Mining is locked
 ###
 [Calendar] time 206382
-[Calendar] skip 206071
+[Calendar] skip 206069
 [Calendar] day 103191 0.50/s
 [Calendar] year 258.98 (1 + 257.98)
 [Calendar] Winter 1 (1 if 1031.91 % 4 == 3)
 [Calendar] day_of_year 392 (1 + 103191 % 400)
-[Resource] catnip 800.80/35000 12/s 47m30s to cap
+[Resource] catnip 785.80/35000 7/s 1h21m29s to cap
 [Resource] wood 1400/1400 0.07/s
-[Resource] science 6701.12/7500 0.56/s 23m47s to cap
+[Resource] science 6212.56/7500 0.56/s 38m20s to cap
+[Resource] catpower 0.74/250 0.25/s 16m53s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 800.80/39166.58* 53m17s) +(Catnip Field 1)
+2: [Bonfire] Catnip Field (73) -(catnip 785.80/39166.58* 1h31m24s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-8: [Village] farmer (12) -(kitten 0/1* 20s) +(farmer 1)
-13: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 sX: time skip until action X is available
-last input: s12
+last input: s14
 ###
 [Calendar] time 206383
-[Calendar] skip 206071
+[Calendar] skip 206069
 [Calendar] day 103191.50 0.50/s
 [Calendar] year 258.98 (1 + 257.98)
 [Calendar] Winter 1 (1 if 1031.91 % 4 == 3)
 [Calendar] day_of_year 392 (1 + 103191 % 400)
-[Resource] catnip 812.79/35000 12/s 47m29s to cap
+[Resource] catnip 792.79/35000 7/s 1h21m28s to cap
 [Resource] wood 1400/1400 0.07/s
-[Resource] science 6701.68/7500 0.56/s 23m46s to cap
+[Resource] science 6213.12/7500 0.56/s 38m19s to cap
+[Resource] catpower 0.98/250 0.25/s 16m52s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 812.79/39166.58* 53m16s) +(Catnip Field 1)
+2: [Bonfire] Catnip Field (73) -(catnip 792.79/39166.58* 1h31m23s) +(Catnip Field 1)
 3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
 5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
 6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-8: [Village] farmer (12) -(kitten 0/1* 20s) +(farmer 1)
-13: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 sX: time skip until action X is available
-last input: 12
-error: action Mining is locked
-###
-[Calendar] time 206384
-[Calendar] skip 206071
-[Calendar] day 103192 0.50/s
-[Calendar] year 258.98 (1 + 257.98)
-[Calendar] Winter 1 (1 if 1031.92 % 4 == 3)
-[Calendar] day_of_year 393 (1 + 103192 % 400)
-[Resource] catnip 824.79/35000 12/s 47m28s to cap
-[Resource] wood 1400/1400 0.07/s
-[Resource] science 6202.24/7500 0.56/s 38m38s to cap
-[Resource] gone kitten 5
-[Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 824.79/39166.58* 53m15s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
-6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
-7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-8: [Village] farmer (12) -(kitten 0/1* 20s) +(farmer 1)
-sX: time skip until action X is available
-last input: s13
-###
-[Calendar] time 206385
-[Calendar] skip 206071
-[Calendar] day 103192.50 0.50/s
-[Calendar] year 258.98 (1 + 257.98)
-[Calendar] Winter 1 (1 if 1031.92 % 4 == 3)
-[Calendar] day_of_year 393 (1 + 103192 % 400)
-[Resource] catnip 836.79/35000 12/s 47m27s to cap
-[Resource] wood 1400/1400 0.07/s
-[Resource] science 6202.80/7500 0.56/s 38m37s to cap
-[Resource] gone kitten 5
-[Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 836.79/39166.58* 53m14s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
-6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
-7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-8: [Village] farmer (12) -(kitten 0/1* 20s) +(farmer 1)
-sX: time skip until action X is available
-last input: 13
+last input: 14
 error: action Animal Husbandry is locked

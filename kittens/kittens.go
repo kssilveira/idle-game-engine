@@ -70,6 +70,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "farmer", ProductionFactor: -4.25,
 		}, {
+			Name: "hunter", ProductionFactor: -4.25,
+		}, {
 			Name: "farmer", ProductionFactor: 5,
 		}},
 	}, {
@@ -84,6 +86,11 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		ProductionBonus: []data.Resource{{
 			Name: "Library", ProductionFactor: 0.1,
+		}},
+	}, {
+		Name: "catpower", Type: "Resource", Capacity: 250,
+		Producers: []data.Resource{{
+			Name: "hunter", ProductionFactor: 0.3, ProductionResourceFactor: "happiness",
 		}},
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
@@ -125,6 +132,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
+		Name: "hunter", Type: "Village", IsHidden: true, Capacity: -1,
+		OnGone: []data.Resource{{
+			Name: "gone kitten", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
+	}, {
 		Name: "happiness", Type: "Village", StartQuantity: 1.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "kitten", ProductionFactor: -0.02, ProductionFloor: true,
@@ -134,6 +148,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "scholar", ProductionFactor: -0.02,
 		}, {
 			Name: "farmer", ProductionFactor: -0.02,
+		}, {
+			Name: "hunter", ProductionFactor: -0.02,
 		}},
 	}, {
 		Name: "Calendar", Type: "Science", IsHidden: true, Capacity: 1,
@@ -234,6 +250,15 @@ func NewGame(now game.Now) *game.Game {
 			Name: "farmer", Quantity: 1,
 		}},
 	}, {
+		Name: "hunter", Type: "Village",
+		UnlockedBy: data.Resource{Name: "Archery"},
+		Costs: []data.Resource{{
+			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "hunter", Quantity: 1,
+		}},
+	}, {
 		Name: "Calendar", Type: "Science",
 		UnlockedBy: data.Resource{Name: "Library"},
 		LockedBy:   data.Resource{Name: "Calendar"},
@@ -297,6 +322,7 @@ const (
 	woodcutter
 	scholar
 	farmer
+	hunter
 	calendar
 	agriculture
 	archery
@@ -318,6 +344,7 @@ const (
 	swoodcutter
 	sscholar
 	sfarmer
+	shunter
 	scalendar
 	sagriculture
 	sarchery
@@ -343,9 +370,11 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{sbarn, barn}, 6},
 		{[]int{sfield, field}, 25},
 		{[]int{slibrary, library}, 15},
-		{[]int{shut, hut, sfarmer, farmer}, 10},
+		{[]int{shut, hut, sfarmer, farmer}, 9},
 
 		{[]int{sarchery, archery}, 1},
+		{[]int{shut, hut, shunter, hunter}, 1},
+
 		{[]int{smining, mining}, 1},
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 	} {
