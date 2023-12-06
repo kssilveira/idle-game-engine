@@ -161,6 +161,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Mining", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Animal Husbandry", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Metal Working", Type: "Science", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -308,6 +310,16 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{
 			Name: "Animal Husbandry", Quantity: 1,
 		}},
+	}, {
+		Name: "Metal Working", Type: "Science",
+		UnlockedBy: data.Resource{Name: "Mining"},
+		LockedBy:   data.Resource{Name: "Metal Working"},
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 900, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "Metal Working", Quantity: 1,
+		}},
 	}}
 	return g
 }
@@ -328,6 +340,7 @@ const (
 	archery
 	mining
 	animalhusbandry
+	metalworking
 )
 
 const (
@@ -350,6 +363,7 @@ const (
 	sarchery
 	smining
 	sanimalhusbandry
+	smetalworking
 )
 
 func Solve(input chan string, sleepMS int) {
@@ -377,6 +391,7 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{smining, mining}, 1},
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
+		{[]int{smetalworking, metalworking}, 1},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {

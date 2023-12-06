@@ -5629,6 +5629,7 @@ last input: 9
 8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
 9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+15: [Science] Metal Working -(science 900) +(Metal Working 1)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -5653,6 +5654,7 @@ last input: s13
 8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
 9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 14: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+15: [Science] Metal Working -(science 900) +(Metal Working 1)
 sX: time skip until action X is available
 last input: 13
 error: action Mining is locked
@@ -5677,6 +5679,7 @@ error: action Mining is locked
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
 9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+15: [Science] Metal Working -(science 900) +(Metal Working 1)
 sX: time skip until action X is available
 last input: s14
 ###
@@ -5700,6 +5703,54 @@ last input: s14
 7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
 9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+15: [Science] Metal Working -(science 900) +(Metal Working 1)
 sX: time skip until action X is available
 last input: 14
 error: action Animal Husbandry is locked
+###
+[Calendar] time 206384
+[Calendar] skip 206069
+[Calendar] day 103192 0.50/s
+[Calendar] year 258.98 (1 + 257.98)
+[Calendar] Winter 1 (1 if 1031.92 % 4 == 3)
+[Calendar] day_of_year 393 (1 + 103192 % 400)
+[Resource] catnip 799.79/35000 7/s 1h21m27s to cap
+[Resource] wood 1400/1400 0.07/s
+[Resource] science 5313.68/7500 0.56/s 1h5m6s to cap
+[Resource] catpower 1.23/250 0.25/s 16m51s to cap
+[Resource] gone kitten 5
+[Village] happiness 0.82 (1.10 + -0.28)
+2: [Bonfire] Catnip Field (73) -(catnip 799.79/39166.58* 1h31m22s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+sX: time skip until action X is available
+last input: s15
+###
+[Calendar] time 206385
+[Calendar] skip 206069
+[Calendar] day 103192.50 0.50/s
+[Calendar] year 258.98 (1 + 257.98)
+[Calendar] Winter 1 (1 if 1031.92 % 4 == 3)
+[Calendar] day_of_year 393 (1 + 103192 % 400)
+[Resource] catnip 806.79/35000 7/s 1h21m26s to cap
+[Resource] wood 1400/1400 0.07/s
+[Resource] science 5314.24/7500 0.56/s 1h5m5s to cap
+[Resource] catpower 1.48/250 0.25/s 16m50s to cap
+[Resource] gone kitten 5
+[Village] happiness 0.82 (1.10 + -0.28)
+2: [Bonfire] Catnip Field (73) -(catnip 806.79/39166.58* 1h31m21s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 1400/3051.76* 6h13m1s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 1400/1439.39* 8m53s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 1400/1436.15* 8m9s) +(Barn 1, catnip cap 5000, wood cap 200)
+6: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+7: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+8: [Village] farmer (11) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+sX: time skip until action X is available
+last input: 15
+error: action Metal Working is locked

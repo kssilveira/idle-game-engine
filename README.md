@@ -66,9 +66,6 @@ General features:
 
 Features from kittens game:
 
-- Metal Working
-  - unlocked by Mining
-  - science 900
 - Mine
   - unlocked by Mining
   - wood 100 115 132.25 rate 1.15
