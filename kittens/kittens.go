@@ -72,6 +72,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "hunter", ProductionFactor: -4.25,
 		}, {
+			Name: "miner", ProductionFactor: -4.25,
+		}, {
 			Name: "farmer", ProductionFactor: 5,
 		}},
 	}, {
@@ -93,6 +95,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "hunter", ProductionFactor: 0.3, ProductionResourceFactor: "happiness",
 		}},
 	}, {
+		Name: "minerals", Type: "Resource", Capacity: 750,
+		Producers: []data.Resource{{
+			Name: "miner", ProductionFactor: 0.25, ProductionResourceFactor: "happiness",
+		}},
+		ProductionBonus: []data.Resource{{
+			Name: "Mine", ProductionFactor: 0.2,
+		}},
+	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.05,
@@ -110,6 +120,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Library", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Barn", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Mine", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -139,6 +151,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
+		Name: "miner", Type: "Village", IsHidden: true, Capacity: -1,
+		OnGone: []data.Resource{{
+			Name: "gone kitten", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
+	}, {
 		Name: "happiness", Type: "Village", StartQuantity: 1.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "kitten", ProductionFactor: -0.02, ProductionFloor: true,
@@ -150,6 +169,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "farmer", ProductionFactor: -0.02,
 		}, {
 			Name: "hunter", ProductionFactor: -0.02,
+		}, {
+			Name: "miner", ProductionFactor: -0.02,
 		}},
 	}, {
 		Name: "Calendar", Type: "Science", IsHidden: true, Capacity: 1,
@@ -225,6 +246,15 @@ func NewGame(now game.Now) *game.Game {
 			Name: "wood", Capacity: 200,
 		}},
 	}, {
+		Name: "Mine", Type: "Bonfire",
+		UnlockedBy: data.Resource{Name: "Mining"},
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{
+			Name: "Mine", Quantity: 1,
+		}},
+	}, {
 		Name: "woodcutter", Type: "Village",
 		UnlockedBy: data.Resource{Name: "Hut"},
 		Costs: []data.Resource{{
@@ -259,6 +289,15 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "hunter", Quantity: 1,
+		}},
+	}, {
+		Name: "miner", Type: "Village",
+		UnlockedBy: data.Resource{Name: "Mine"},
+		Costs: []data.Resource{{
+			Name: "kitten", Quantity: 1, Capacity: 1, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "miner", Quantity: 1,
 		}},
 	}, {
 		Name: "Calendar", Type: "Science",
@@ -331,10 +370,12 @@ const (
 	hut
 	library
 	barn
+	mine
 	woodcutter
 	scholar
 	farmer
 	hunter
+	miner
 	calendar
 	agriculture
 	archery
@@ -354,10 +395,12 @@ const (
 	shut
 	slibrary
 	sbarn
+	smine
 	swoodcutter
 	sscholar
 	sfarmer
 	shunter
+	sminer
 	scalendar
 	sagriculture
 	sarchery
@@ -384,12 +427,15 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{sbarn, barn}, 6},
 		{[]int{sfield, field}, 25},
 		{[]int{slibrary, library}, 15},
-		{[]int{shut, hut, sfarmer, farmer}, 9},
+		{[]int{shut, hut, sfarmer, farmer}, 8},
 
 		{[]int{sarchery, archery}, 1},
 		{[]int{shut, hut, shunter, hunter}, 1},
 
 		{[]int{smining, mining}, 1},
+		{[]int{smine, mine}, 10},
+		{[]int{shut, hut, sminer, miner}, 1},
+
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{smetalworking, metalworking}, 1},
 	} {

@@ -8,7 +8,7 @@
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 5: [Bonfire] Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
-8: [Village] farmer -(kitten 1) +(farmer 1)
+9: [Village] farmer -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
 last input: 
 ###
@@ -22,9 +22,9 @@ last input:
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 5: [Bonfire] Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
-8: [Village] farmer (1) -(kitten 1) +(farmer 1)
+9: [Village] farmer (1) -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
-last input: 8
+last input: 9
 ###
 [Calendar] time 1
 [Calendar] day 0.50 0.50/s
@@ -38,7 +38,7 @@ last input: 8
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 5: [Bonfire] Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
-8: [Village] farmer (1) -(kitten 1) +(farmer 1)
+9: [Village] farmer (1) -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -53,9 +53,9 @@ last input: 0
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 5: [Bonfire] Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
-8: [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
-last input: 8
+last input: 9
 ###
 [Calendar] time 2
 [Calendar] day 1 0.50/s
@@ -68,6 +68,6 @@ last input: 8
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 5: [Bonfire] Barn -(wood 0/50 0s) +(Barn 1, catnip cap 5000, wood cap 200)
-8: [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+9: [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 0

@@ -66,15 +66,6 @@ General features:
 
 Features from kittens game:
 
-- Mine
-  - unlocked by Mining
-  - wood 100 115 132.25 rate 1.15
-  - minerals 20%
-- miner
-  - unlocked by Mine
-  - minerals 0.25
-- minerals
-  - cap 750
 - Workshop
   - unlocked by miner
   - wood 100 115 rate 1.15
