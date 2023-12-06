@@ -95,7 +95,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "hunter", ProductionFactor: 0.3, ProductionResourceFactor: "happiness",
 		}},
 	}, {
-		Name: "minerals", Type: "Resource", Capacity: 750,
+		Name: "minerals", Type: "Resource", Capacity: 250,
 		Producers: []data.Resource{{
 			Name: "miner", ProductionFactor: 0.25, ProductionResourceFactor: "happiness",
 		}},
@@ -244,6 +244,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "catnip", Capacity: 5000,
 		}, {
 			Name: "wood", Capacity: 200,
+		}, {
+			Name: "minerals", Capacity: 250,
 		}},
 	}, {
 		Name: "Mine", Type: "Bonfire",

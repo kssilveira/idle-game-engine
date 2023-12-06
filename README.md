@@ -139,6 +139,9 @@ Features from kittens game:
   - wood -0.25/s
   - mineral -0.5/s
   - iron 0.1/s
+- iron
+  - cap 50
+  - barn cap 50
 - Hunting Armor
   - unlocked by Metal Working
   - iron 750
