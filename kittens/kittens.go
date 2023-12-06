@@ -11,7 +11,7 @@ import (
 func NewGame(now game.Now) *game.Game {
 	g := game.NewGame(now())
 	g.AddResources([]data.Resource{{
-		Name: "day", Type: "Calendar", Quantity: 0, Capacity: -1,
+		Name: "day", Type: "Calendar", IsHidden: true, Quantity: 0, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.5,
 		}},

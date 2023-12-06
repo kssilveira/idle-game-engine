@@ -40,7 +40,6 @@ sX: time skip until action X is available
 last input: 2
 ###
 [Calendar] time 1
-[Calendar] day 0.50 0.50/s
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
@@ -53,7 +52,6 @@ last input: 0
 error: action Gather catnip is locked
 ###
 [Calendar] time 11
-[Calendar] day 5.50 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
@@ -66,7 +64,6 @@ last input: 0
 error: action Gather catnip is locked
 ###
 [Calendar] time 211
-[Calendar] day 105.50 0.50/s
 [Calendar] year 1.26 (1 + 0.26)
 [Calendar] Summer 1 (1 if 1.05 % 4 == 1)
 [Calendar] day_of_year 106 (1 + 105 % 400)
@@ -79,7 +76,6 @@ last input: 0
 error: action Gather catnip is locked
 ###
 [Calendar] time 411
-[Calendar] day 205.50 0.50/s
 [Calendar] year 1.51 (1 + 0.51)
 [Calendar] Autumn 1 (1 if 2.05 % 4 == 2)
 [Calendar] day_of_year 206 (1 + 205 % 400)
@@ -92,7 +88,6 @@ last input: 0
 error: action Gather catnip is locked
 ###
 [Calendar] time 611
-[Calendar] day 305.50 0.50/s
 [Calendar] year 1.76 (1 + 0.76)
 [Calendar] Winter 1 (1 if 3.05 % 4 == 3)
 [Calendar] day_of_year 306 (1 + 305 % 400)
@@ -105,7 +100,6 @@ last input: 0
 error: action Gather catnip is locked
 ###
 [Calendar] time 811
-[Calendar] day 405.50 0.50/s
 [Calendar] year 2.01 (1 + 1.01)
 [Calendar] Spring 1 (1 if 4.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 405 % 400)

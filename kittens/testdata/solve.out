@@ -7,7 +7,6 @@ sX: time skip until action X is available
 last input: 
 ###
 [Calendar] time 1
-[Calendar] day 0.50 0.50/s
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
@@ -20,7 +19,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 2
-[Calendar] day 1 0.50/s
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -33,7 +31,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 3
-[Calendar] day 1.50 0.50/s
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -46,7 +43,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 4
-[Calendar] day 2 0.50/s
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
@@ -59,7 +55,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 5
-[Calendar] day 2.50 0.50/s
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
@@ -72,7 +67,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 6
-[Calendar] day 3 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
@@ -85,7 +79,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 7
-[Calendar] day 3.50 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
@@ -98,7 +91,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 8
-[Calendar] day 4 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
@@ -111,7 +103,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 9
-[Calendar] day 4.50 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
@@ -124,7 +115,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 10
-[Calendar] day 5 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
@@ -137,7 +127,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 11
-[Calendar] day 5.50 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
@@ -147,7 +136,6 @@ last input: 2
 ###
 [Calendar] time 23
 [Calendar] skip 11
-[Calendar] day 11.50 0.50/s
 [Calendar] year 1.03 (1 + 0.03)
 [Calendar] Spring 1 (1 if 0.11 % 4 == 0)
 [Calendar] day_of_year 12 (1 + 11 % 400)
@@ -160,7 +148,6 @@ last input: s2
 ###
 [Calendar] time 24
 [Calendar] skip 11
-[Calendar] day 12 0.50/s
 [Calendar] year 1.03 (1 + 0.03)
 [Calendar] Spring 1 (1 if 0.12 % 4 == 0)
 [Calendar] day_of_year 13 (1 + 12 % 400)
@@ -173,7 +160,6 @@ last input: 2
 ###
 [Calendar] time 31
 [Calendar] skip 17
-[Calendar] day 15.50 0.50/s
 [Calendar] year 1.04 (1 + 0.04)
 [Calendar] Spring 1 (1 if 0.15 % 4 == 0)
 [Calendar] day_of_year 16 (1 + 15 % 400)
@@ -186,7 +172,6 @@ last input: s2
 ###
 [Calendar] time 32
 [Calendar] skip 17
-[Calendar] day 16 0.50/s
 [Calendar] year 1.04 (1 + 0.04)
 [Calendar] Spring 1 (1 if 0.16 % 4 == 0)
 [Calendar] day_of_year 17 (1 + 16 % 400)
@@ -199,7 +184,6 @@ last input: 2
 ###
 [Calendar] time 36
 [Calendar] skip 20
-[Calendar] day 18 0.50/s
 [Calendar] year 1.04 (1 + 0.04)
 [Calendar] Spring 1 (1 if 0.18 % 4 == 0)
 [Calendar] day_of_year 19 (1 + 18 % 400)
@@ -212,7 +196,6 @@ last input: s2
 ###
 [Calendar] time 37
 [Calendar] skip 20
-[Calendar] day 18.50 0.50/s
 [Calendar] year 1.04 (1 + 0.04)
 [Calendar] Spring 1 (1 if 0.18 % 4 == 0)
 [Calendar] day_of_year 19 (1 + 18 % 400)
@@ -225,7 +208,6 @@ last input: 2
 ###
 [Calendar] time 41
 [Calendar] skip 23
-[Calendar] day 20.50 0.50/s
 [Calendar] year 1.05 (1 + 0.05)
 [Calendar] Spring 1 (1 if 0.20 % 4 == 0)
 [Calendar] day_of_year 21 (1 + 20 % 400)
@@ -238,7 +220,6 @@ last input: s2
 ###
 [Calendar] time 42
 [Calendar] skip 23
-[Calendar] day 21 0.50/s
 [Calendar] year 1.05 (1 + 0.05)
 [Calendar] Spring 1 (1 if 0.21 % 4 == 0)
 [Calendar] day_of_year 22 (1 + 21 % 400)
@@ -251,7 +232,6 @@ last input: 2
 ###
 [Calendar] time 45
 [Calendar] skip 25
-[Calendar] day 22.50 0.50/s
 [Calendar] year 1.05 (1 + 0.06)
 [Calendar] Spring 1 (1 if 0.22 % 4 == 0)
 [Calendar] day_of_year 23 (1 + 22 % 400)
@@ -264,7 +244,6 @@ last input: s2
 ###
 [Calendar] time 46
 [Calendar] skip 25
-[Calendar] day 23 0.50/s
 [Calendar] year 1.06 (1 + 0.06)
 [Calendar] Spring 1 (1 if 0.23 % 4 == 0)
 [Calendar] day_of_year 24 (1 + 23 % 400)
@@ -277,7 +256,6 @@ last input: 2
 ###
 [Calendar] time 49
 [Calendar] skip 27
-[Calendar] day 24.50 0.50/s
 [Calendar] year 1.06 (1 + 0.06)
 [Calendar] Spring 1 (1 if 0.24 % 4 == 0)
 [Calendar] day_of_year 25 (1 + 24 % 400)
@@ -290,7 +268,6 @@ last input: s2
 ###
 [Calendar] time 50
 [Calendar] skip 27
-[Calendar] day 25 0.50/s
 [Calendar] year 1.06 (1 + 0.06)
 [Calendar] Spring 1 (1 if 0.25 % 4 == 0)
 [Calendar] day_of_year 26 (1 + 25 % 400)
@@ -303,7 +280,6 @@ last input: 2
 ###
 [Calendar] time 52
 [Calendar] skip 28
-[Calendar] day 26 0.50/s
 [Calendar] year 1.06 (1 + 0.07)
 [Calendar] Spring 1 (1 if 0.26 % 4 == 0)
 [Calendar] day_of_year 27 (1 + 26 % 400)
@@ -316,7 +292,6 @@ last input: s2
 ###
 [Calendar] time 53
 [Calendar] skip 28
-[Calendar] day 26.50 0.50/s
 [Calendar] year 1.06 (1 + 0.07)
 [Calendar] Spring 1 (1 if 0.26 % 4 == 0)
 [Calendar] day_of_year 27 (1 + 26 % 400)
@@ -329,7 +304,6 @@ last input: 2
 ###
 [Calendar] time 56
 [Calendar] skip 30
-[Calendar] day 28 0.50/s
 [Calendar] year 1.07 (1 + 0.07)
 [Calendar] Spring 1 (1 if 0.28 % 4 == 0)
 [Calendar] day_of_year 29 (1 + 28 % 400)
@@ -342,7 +316,6 @@ last input: s2
 ###
 [Calendar] time 57
 [Calendar] skip 30
-[Calendar] day 28.50 0.50/s
 [Calendar] year 1.07 (1 + 0.07)
 [Calendar] Spring 1 (1 if 0.28 % 4 == 0)
 [Calendar] day_of_year 29 (1 + 28 % 400)
@@ -355,7 +328,6 @@ last input: 2
 ###
 [Calendar] time 59
 [Calendar] skip 31
-[Calendar] day 29.50 0.50/s
 [Calendar] year 1.07 (1 + 0.07)
 [Calendar] Spring 1 (1 if 0.29 % 4 == 0)
 [Calendar] day_of_year 30 (1 + 29 % 400)
@@ -368,7 +340,6 @@ last input: s2
 ###
 [Calendar] time 60
 [Calendar] skip 31
-[Calendar] day 30 0.50/s
 [Calendar] year 1.07 (1 + 0.07)
 [Calendar] Spring 1 (1 if 0.30 % 4 == 0)
 [Calendar] day_of_year 31 (1 + 30 % 400)
@@ -381,7 +352,6 @@ last input: 2
 ###
 [Calendar] time 62
 [Calendar] skip 32
-[Calendar] day 31 0.50/s
 [Calendar] year 1.08 (1 + 0.08)
 [Calendar] Spring 1 (1 if 0.31 % 4 == 0)
 [Calendar] day_of_year 32 (1 + 31 % 400)
@@ -394,7 +364,6 @@ last input: s2
 ###
 [Calendar] time 63
 [Calendar] skip 32
-[Calendar] day 31.50 0.50/s
 [Calendar] year 1.08 (1 + 0.08)
 [Calendar] Spring 1 (1 if 0.31 % 4 == 0)
 [Calendar] day_of_year 32 (1 + 31 % 400)
@@ -407,7 +376,6 @@ last input: 2
 ###
 [Calendar] time 66
 [Calendar] skip 34
-[Calendar] day 33 0.50/s
 [Calendar] year 1.08 (1 + 0.08)
 [Calendar] Spring 1 (1 if 0.33 % 4 == 0)
 [Calendar] day_of_year 34 (1 + 33 % 400)
@@ -420,7 +388,6 @@ last input: s2
 ###
 [Calendar] time 67
 [Calendar] skip 34
-[Calendar] day 33.50 0.50/s
 [Calendar] year 1.08 (1 + 0.08)
 [Calendar] Spring 1 (1 if 0.33 % 4 == 0)
 [Calendar] day_of_year 34 (1 + 33 % 400)
@@ -433,7 +400,6 @@ last input: 2
 ###
 [Calendar] time 70
 [Calendar] skip 36
-[Calendar] day 35 0.50/s
 [Calendar] year 1.09 (1 + 0.09)
 [Calendar] Spring 1 (1 if 0.35 % 4 == 0)
 [Calendar] day_of_year 36 (1 + 35 % 400)
@@ -446,7 +412,6 @@ last input: s2
 ###
 [Calendar] time 71
 [Calendar] skip 36
-[Calendar] day 35.50 0.50/s
 [Calendar] year 1.09 (1 + 0.09)
 [Calendar] Spring 1 (1 if 0.35 % 4 == 0)
 [Calendar] day_of_year 36 (1 + 35 % 400)
@@ -459,7 +424,6 @@ last input: 2
 ###
 [Calendar] time 73
 [Calendar] skip 37
-[Calendar] day 36.50 0.50/s
 [Calendar] year 1.09 (1 + 0.09)
 [Calendar] Spring 1 (1 if 0.36 % 4 == 0)
 [Calendar] day_of_year 37 (1 + 36 % 400)
@@ -472,7 +436,6 @@ last input: s2
 ###
 [Calendar] time 74
 [Calendar] skip 37
-[Calendar] day 37 0.50/s
 [Calendar] year 1.09 (1 + 0.09)
 [Calendar] Spring 1 (1 if 0.37 % 4 == 0)
 [Calendar] day_of_year 38 (1 + 37 % 400)
@@ -485,7 +448,6 @@ last input: 2
 ###
 [Calendar] time 77
 [Calendar] skip 39
-[Calendar] day 38.50 0.50/s
 [Calendar] year 1.09 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.38 % 4 == 0)
 [Calendar] day_of_year 39 (1 + 38 % 400)
@@ -498,7 +460,6 @@ last input: s2
 ###
 [Calendar] time 78
 [Calendar] skip 39
-[Calendar] day 39 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.39 % 4 == 0)
 [Calendar] day_of_year 40 (1 + 39 % 400)
@@ -511,7 +472,6 @@ last input: 2
 ###
 [Calendar] time 81
 [Calendar] skip 41
-[Calendar] day 40.50 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.40 % 4 == 0)
 [Calendar] day_of_year 41 (1 + 40 % 400)
@@ -524,7 +484,6 @@ last input: s2
 ###
 [Calendar] time 82
 [Calendar] skip 41
-[Calendar] day 41 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 41 % 400)
@@ -537,7 +496,6 @@ last input: 2
 ###
 [Calendar] time 85
 [Calendar] skip 43
-[Calendar] day 42.50 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
@@ -550,7 +508,6 @@ last input: s2
 ###
 [Calendar] time 86
 [Calendar] skip 43
-[Calendar] day 43 0.50/s
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
@@ -563,7 +520,6 @@ last input: 2
 ###
 [Calendar] time 89
 [Calendar] skip 45
-[Calendar] day 44.50 0.50/s
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.44 % 4 == 0)
 [Calendar] day_of_year 45 (1 + 44 % 400)
@@ -576,7 +532,6 @@ last input: s2
 ###
 [Calendar] time 90
 [Calendar] skip 45
-[Calendar] day 45 0.50/s
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.45 % 4 == 0)
 [Calendar] day_of_year 46 (1 + 45 % 400)
@@ -589,7 +544,6 @@ last input: 2
 ###
 [Calendar] time 94
 [Calendar] skip 48
-[Calendar] day 47 0.50/s
 [Calendar] year 1.12 (1 + 0.12)
 [Calendar] Spring 1 (1 if 0.47 % 4 == 0)
 [Calendar] day_of_year 48 (1 + 47 % 400)
@@ -602,7 +556,6 @@ last input: s2
 ###
 [Calendar] time 95
 [Calendar] skip 48
-[Calendar] day 47.50 0.50/s
 [Calendar] year 1.12 (1 + 0.12)
 [Calendar] Spring 1 (1 if 0.47 % 4 == 0)
 [Calendar] day_of_year 48 (1 + 47 % 400)
@@ -615,7 +568,6 @@ last input: 2
 ###
 [Calendar] time 99
 [Calendar] skip 51
-[Calendar] day 49.50 0.50/s
 [Calendar] year 1.12 (1 + 0.12)
 [Calendar] Spring 1 (1 if 0.49 % 4 == 0)
 [Calendar] day_of_year 50 (1 + 49 % 400)
@@ -628,7 +580,6 @@ last input: s2
 ###
 [Calendar] time 100
 [Calendar] skip 51
-[Calendar] day 50 0.50/s
 [Calendar] year 1.12 (1 + 0.12)
 [Calendar] Spring 1 (1 if 0.50 % 4 == 0)
 [Calendar] day_of_year 51 (1 + 50 % 400)
@@ -641,7 +592,6 @@ last input: 2
 ###
 [Calendar] time 104
 [Calendar] skip 54
-[Calendar] day 52 0.50/s
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.52 % 4 == 0)
 [Calendar] day_of_year 53 (1 + 52 % 400)
@@ -654,7 +604,6 @@ last input: s2
 ###
 [Calendar] time 105
 [Calendar] skip 54
-[Calendar] day 52.50 0.50/s
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.52 % 4 == 0)
 [Calendar] day_of_year 53 (1 + 52 % 400)
@@ -667,7 +616,6 @@ last input: 2
 ###
 [Calendar] time 110
 [Calendar] skip 58
-[Calendar] day 55 0.50/s
 [Calendar] year 1.14 (1 + 0.14)
 [Calendar] Spring 1 (1 if 0.55 % 4 == 0)
 [Calendar] day_of_year 56 (1 + 55 % 400)
@@ -680,7 +628,6 @@ last input: s2
 ###
 [Calendar] time 111
 [Calendar] skip 58
-[Calendar] day 55.50 0.50/s
 [Calendar] year 1.14 (1 + 0.14)
 [Calendar] Spring 1 (1 if 0.55 % 4 == 0)
 [Calendar] day_of_year 56 (1 + 55 % 400)
@@ -693,7 +640,6 @@ last input: 2
 ###
 [Calendar] time 116
 [Calendar] skip 62
-[Calendar] day 58 0.50/s
 [Calendar] year 1.15 (1 + 0.14)
 [Calendar] Spring 1 (1 if 0.58 % 4 == 0)
 [Calendar] day_of_year 59 (1 + 58 % 400)
@@ -706,7 +652,6 @@ last input: s2
 ###
 [Calendar] time 117
 [Calendar] skip 62
-[Calendar] day 58.50 0.50/s
 [Calendar] year 1.15 (1 + 0.14)
 [Calendar] Spring 1 (1 if 0.58 % 4 == 0)
 [Calendar] day_of_year 59 (1 + 58 % 400)
@@ -719,7 +664,6 @@ last input: 2
 ###
 [Calendar] time 122
 [Calendar] skip 66
-[Calendar] day 61 0.50/s
 [Calendar] year 1.15 (1 + 0.15)
 [Calendar] Spring 1 (1 if 0.61 % 4 == 0)
 [Calendar] day_of_year 62 (1 + 61 % 400)
@@ -732,7 +676,6 @@ last input: s2
 ###
 [Calendar] time 123
 [Calendar] skip 66
-[Calendar] day 61.50 0.50/s
 [Calendar] year 1.15 (1 + 0.15)
 [Calendar] Spring 1 (1 if 0.61 % 4 == 0)
 [Calendar] day_of_year 62 (1 + 61 % 400)
@@ -745,7 +688,6 @@ last input: 2
 ###
 [Calendar] time 129
 [Calendar] skip 71
-[Calendar] day 64.50 0.50/s
 [Calendar] year 1.16 (1 + 0.16)
 [Calendar] Spring 1 (1 if 0.64 % 4 == 0)
 [Calendar] day_of_year 65 (1 + 64 % 400)
@@ -758,7 +700,6 @@ last input: s2
 ###
 [Calendar] time 130
 [Calendar] skip 71
-[Calendar] day 65 0.50/s
 [Calendar] year 1.16 (1 + 0.16)
 [Calendar] Spring 1 (1 if 0.65 % 4 == 0)
 [Calendar] day_of_year 66 (1 + 65 % 400)
@@ -771,7 +712,6 @@ last input: 2
 ###
 [Calendar] time 136
 [Calendar] skip 76
-[Calendar] day 68 0.50/s
 [Calendar] year 1.17 (1 + 0.17)
 [Calendar] Spring 1 (1 if 0.68 % 4 == 0)
 [Calendar] day_of_year 69 (1 + 68 % 400)
@@ -784,7 +724,6 @@ last input: s2
 ###
 [Calendar] time 137
 [Calendar] skip 76
-[Calendar] day 68.50 0.50/s
 [Calendar] year 1.17 (1 + 0.17)
 [Calendar] Spring 1 (1 if 0.68 % 4 == 0)
 [Calendar] day_of_year 69 (1 + 68 % 400)
@@ -797,7 +736,6 @@ last input: 2
 ###
 [Calendar] time 144
 [Calendar] skip 82
-[Calendar] day 72 0.50/s
 [Calendar] year 1.18 (1 + 0.18)
 [Calendar] Spring 1 (1 if 0.72 % 4 == 0)
 [Calendar] day_of_year 73 (1 + 72 % 400)
@@ -810,7 +748,6 @@ last input: s2
 ###
 [Calendar] time 145
 [Calendar] skip 82
-[Calendar] day 72.50 0.50/s
 [Calendar] year 1.18 (1 + 0.18)
 [Calendar] Spring 1 (1 if 0.72 % 4 == 0)
 [Calendar] day_of_year 73 (1 + 72 % 400)
@@ -823,7 +760,6 @@ last input: 2
 ###
 [Calendar] time 152
 [Calendar] skip 88
-[Calendar] day 76 0.50/s
 [Calendar] year 1.19 (1 + 0.19)
 [Calendar] Spring 1 (1 if 0.76 % 4 == 0)
 [Calendar] day_of_year 77 (1 + 76 % 400)
@@ -836,7 +772,6 @@ last input: s2
 ###
 [Calendar] time 153
 [Calendar] skip 88
-[Calendar] day 76.50 0.50/s
 [Calendar] year 1.19 (1 + 0.19)
 [Calendar] Spring 1 (1 if 0.76 % 4 == 0)
 [Calendar] day_of_year 77 (1 + 76 % 400)
@@ -849,7 +784,6 @@ last input: 2
 ###
 [Calendar] time 161
 [Calendar] skip 95
-[Calendar] day 80.50 0.50/s
 [Calendar] year 1.20 (1 + 0.20)
 [Calendar] Spring 1 (1 if 0.80 % 4 == 0)
 [Calendar] day_of_year 81 (1 + 80 % 400)
@@ -862,7 +796,6 @@ last input: s2
 ###
 [Calendar] time 162
 [Calendar] skip 95
-[Calendar] day 81 0.50/s
 [Calendar] year 1.20 (1 + 0.20)
 [Calendar] Spring 1 (1 if 0.81 % 4 == 0)
 [Calendar] day_of_year 82 (1 + 81 % 400)
@@ -875,7 +808,6 @@ last input: 2
 ###
 [Calendar] time 171
 [Calendar] skip 103
-[Calendar] day 85.50 0.50/s
 [Calendar] year 1.21 (1 + 0.21)
 [Calendar] Spring 1 (1 if 0.85 % 4 == 0)
 [Calendar] day_of_year 86 (1 + 85 % 400)
@@ -888,7 +820,6 @@ last input: s2
 ###
 [Calendar] time 172
 [Calendar] skip 103
-[Calendar] day 86 0.50/s
 [Calendar] year 1.22 (1 + 0.21)
 [Calendar] Spring 1 (1 if 0.86 % 4 == 0)
 [Calendar] day_of_year 87 (1 + 86 % 400)
@@ -901,7 +832,6 @@ last input: 2
 ###
 [Calendar] time 182
 [Calendar] skip 112
-[Calendar] day 91 0.50/s
 [Calendar] year 1.23 (1 + 0.23)
 [Calendar] Spring 1 (1 if 0.91 % 4 == 0)
 [Calendar] day_of_year 92 (1 + 91 % 400)
@@ -914,7 +844,6 @@ last input: s2
 ###
 [Calendar] time 183
 [Calendar] skip 112
-[Calendar] day 91.50 0.50/s
 [Calendar] year 1.23 (1 + 0.23)
 [Calendar] Spring 1 (1 if 0.91 % 4 == 0)
 [Calendar] day_of_year 92 (1 + 91 % 400)
@@ -927,7 +856,6 @@ last input: 2
 ###
 [Calendar] time 193
 [Calendar] skip 121
-[Calendar] day 96.50 0.50/s
 [Calendar] year 1.24 (1 + 0.24)
 [Calendar] Spring 1 (1 if 0.96 % 4 == 0)
 [Calendar] day_of_year 97 (1 + 96 % 400)
@@ -940,7 +868,6 @@ last input: s2
 ###
 [Calendar] time 194
 [Calendar] skip 121
-[Calendar] day 97 0.50/s
 [Calendar] year 1.24 (1 + 0.24)
 [Calendar] Spring 1 (1 if 0.97 % 4 == 0)
 [Calendar] day_of_year 98 (1 + 97 % 400)
@@ -953,7 +880,6 @@ last input: 2
 ###
 [Calendar] time 206
 [Calendar] skip 132
-[Calendar] day 103 0.50/s
 [Calendar] year 1.26 (1 + 0.26)
 [Calendar] Summer 1 (1 if 1.03 % 4 == 1)
 [Calendar] day_of_year 104 (1 + 103 % 400)
@@ -966,7 +892,6 @@ last input: s2
 ###
 [Calendar] time 207
 [Calendar] skip 132
-[Calendar] day 103.50 0.50/s
 [Calendar] year 1.26 (1 + 0.26)
 [Calendar] Summer 1 (1 if 1.03 % 4 == 1)
 [Calendar] day_of_year 104 (1 + 103 % 400)
@@ -980,7 +905,6 @@ error: not enough catnip
 ###
 [Calendar] time 211
 [Calendar] skip 135
-[Calendar] day 105.50 0.50/s
 [Calendar] year 1.26 (1 + 0.26)
 [Calendar] Summer 1 (1 if 1.05 % 4 == 1)
 [Calendar] day_of_year 106 (1 + 105 % 400)
@@ -993,7 +917,6 @@ last input: s2
 ###
 [Calendar] time 212
 [Calendar] skip 135
-[Calendar] day 106 0.50/s
 [Calendar] year 1.27 (1 + 0.27)
 [Calendar] Summer 1 (1 if 1.06 % 4 == 1)
 [Calendar] day_of_year 107 (1 + 106 % 400)
@@ -1006,7 +929,6 @@ last input: 2
 ###
 [Calendar] time 231
 [Calendar] skip 153
-[Calendar] day 115.50 0.50/s
 [Calendar] year 1.29 (1 + 0.29)
 [Calendar] Summer 1 (1 if 1.15 % 4 == 1)
 [Calendar] day_of_year 116 (1 + 115 % 400)
@@ -1019,7 +941,6 @@ last input: s2
 ###
 [Calendar] time 232
 [Calendar] skip 153
-[Calendar] day 116 0.50/s
 [Calendar] year 1.29 (1 + 0.29)
 [Calendar] Summer 1 (1 if 1.16 % 4 == 1)
 [Calendar] day_of_year 117 (1 + 116 % 400)
@@ -1032,7 +953,6 @@ last input: 2
 ###
 [Calendar] time 253
 [Calendar] skip 173
-[Calendar] day 126.50 0.50/s
 [Calendar] year 1.31 (1 + 0.32)
 [Calendar] Summer 1 (1 if 1.26 % 4 == 1)
 [Calendar] day_of_year 127 (1 + 126 % 400)
@@ -1045,7 +965,6 @@ last input: s2
 ###
 [Calendar] time 254
 [Calendar] skip 173
-[Calendar] day 127 0.50/s
 [Calendar] year 1.32 (1 + 0.32)
 [Calendar] Summer 1 (1 if 1.27 % 4 == 1)
 [Calendar] day_of_year 128 (1 + 127 % 400)
@@ -1058,7 +977,6 @@ last input: 2
 ###
 [Calendar] time 277
 [Calendar] skip 195
-[Calendar] day 138.50 0.50/s
 [Calendar] year 1.34 (1 + 0.35)
 [Calendar] Summer 1 (1 if 1.38 % 4 == 1)
 [Calendar] day_of_year 139 (1 + 138 % 400)
@@ -1071,7 +989,6 @@ last input: s2
 ###
 [Calendar] time 278
 [Calendar] skip 195
-[Calendar] day 139 0.50/s
 [Calendar] year 1.35 (1 + 0.35)
 [Calendar] Summer 1 (1 if 1.39 % 4 == 1)
 [Calendar] day_of_year 140 (1 + 139 % 400)
@@ -1084,7 +1001,6 @@ last input: 2
 ###
 [Calendar] time 303
 [Calendar] skip 219
-[Calendar] day 151.50 0.50/s
 [Calendar] year 1.38 (1 + 0.38)
 [Calendar] Summer 1 (1 if 1.51 % 4 == 1)
 [Calendar] day_of_year 152 (1 + 151 % 400)
@@ -1097,7 +1013,6 @@ last input: s2
 ###
 [Calendar] time 304
 [Calendar] skip 219
-[Calendar] day 152 0.50/s
 [Calendar] year 1.38 (1 + 0.38)
 [Calendar] Summer 1 (1 if 1.52 % 4 == 1)
 [Calendar] day_of_year 153 (1 + 152 % 400)
@@ -1110,7 +1025,6 @@ last input: 2
 ###
 [Calendar] time 332
 [Calendar] skip 246
-[Calendar] day 166 0.50/s
 [Calendar] year 1.42 (1 + 0.42)
 [Calendar] Summer 1 (1 if 1.66 % 4 == 1)
 [Calendar] day_of_year 167 (1 + 166 % 400)
@@ -1123,7 +1037,6 @@ last input: s2
 ###
 [Calendar] time 333
 [Calendar] skip 246
-[Calendar] day 166.50 0.50/s
 [Calendar] year 1.42 (1 + 0.42)
 [Calendar] Summer 1 (1 if 1.66 % 4 == 1)
 [Calendar] day_of_year 167 (1 + 166 % 400)
@@ -1136,7 +1049,6 @@ last input: 2
 ###
 [Calendar] time 363
 [Calendar] skip 275
-[Calendar] day 181.50 0.50/s
 [Calendar] year 1.45 (1 + 0.45)
 [Calendar] Summer 1 (1 if 1.81 % 4 == 1)
 [Calendar] day_of_year 182 (1 + 181 % 400)
@@ -1149,7 +1061,6 @@ last input: s2
 ###
 [Calendar] time 364
 [Calendar] skip 275
-[Calendar] day 182 0.50/s
 [Calendar] year 1.46 (1 + 0.46)
 [Calendar] Summer 1 (1 if 1.82 % 4 == 1)
 [Calendar] day_of_year 183 (1 + 182 % 400)
@@ -1162,7 +1073,6 @@ last input: 2
 ###
 [Calendar] time 396
 [Calendar] skip 306
-[Calendar] day 198 0.50/s
 [Calendar] year 1.50 (1 + 0.49)
 [Calendar] Summer 1 (1 if 1.98 % 4 == 1)
 [Calendar] day_of_year 199 (1 + 198 % 400)
@@ -1175,7 +1085,6 @@ last input: s2
 ###
 [Calendar] time 397
 [Calendar] skip 306
-[Calendar] day 198.50 0.50/s
 [Calendar] year 1.50 (1 + 0.49)
 [Calendar] Summer 1 (1 if 1.98 % 4 == 1)
 [Calendar] day_of_year 199 (1 + 198 % 400)
@@ -1188,7 +1097,6 @@ last input: 2
 ###
 [Calendar] time 433
 [Calendar] skip 341
-[Calendar] day 216.50 0.50/s
 [Calendar] year 1.54 (1 + 0.54)
 [Calendar] Autumn 1 (1 if 2.16 % 4 == 2)
 [Calendar] day_of_year 217 (1 + 216 % 400)
@@ -1201,7 +1109,6 @@ last input: s2
 ###
 [Calendar] time 434
 [Calendar] skip 341
-[Calendar] day 217 0.50/s
 [Calendar] year 1.54 (1 + 0.54)
 [Calendar] Autumn 1 (1 if 2.17 % 4 == 2)
 [Calendar] day_of_year 218 (1 + 217 % 400)
@@ -1214,7 +1121,6 @@ last input: 2
 ###
 [Calendar] time 474
 [Calendar] skip 380
-[Calendar] day 237 0.50/s
 [Calendar] year 1.59 (1 + 0.59)
 [Calendar] Autumn 1 (1 if 2.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 237 % 400)
@@ -1227,7 +1133,6 @@ last input: s2
 ###
 [Calendar] time 475
 [Calendar] skip 380
-[Calendar] day 237.50 0.50/s
 [Calendar] year 1.59 (1 + 0.59)
 [Calendar] Autumn 1 (1 if 2.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 237 % 400)
@@ -1240,7 +1145,6 @@ last input: 2
 ###
 [Calendar] time 518
 [Calendar] skip 422
-[Calendar] day 259 0.50/s
 [Calendar] year 1.65 (1 + 0.65)
 [Calendar] Autumn 1 (1 if 2.59 % 4 == 2)
 [Calendar] day_of_year 260 (1 + 259 % 400)
@@ -1253,7 +1157,6 @@ last input: s2
 ###
 [Calendar] time 519
 [Calendar] skip 422
-[Calendar] day 259.50 0.50/s
 [Calendar] year 1.65 (1 + 0.65)
 [Calendar] Autumn 1 (1 if 2.59 % 4 == 2)
 [Calendar] day_of_year 260 (1 + 259 % 400)
@@ -1266,7 +1169,6 @@ last input: 2
 ###
 [Calendar] time 566
 [Calendar] skip 468
-[Calendar] day 283 0.50/s
 [Calendar] year 1.71 (1 + 0.71)
 [Calendar] Autumn 1 (1 if 2.83 % 4 == 2)
 [Calendar] day_of_year 284 (1 + 283 % 400)
@@ -1279,7 +1181,6 @@ last input: s2
 ###
 [Calendar] time 567
 [Calendar] skip 468
-[Calendar] day 283.50 0.50/s
 [Calendar] year 1.71 (1 + 0.71)
 [Calendar] Autumn 1 (1 if 2.83 % 4 == 2)
 [Calendar] day_of_year 284 (1 + 283 % 400)
@@ -1292,7 +1193,6 @@ last input: 2
 ###
 [Calendar] time 619
 [Calendar] skip 519
-[Calendar] day 309.50 0.50/s
 [Calendar] year 1.77 (1 + 0.77)
 [Calendar] Winter 1 (1 if 3.09 % 4 == 3)
 [Calendar] day_of_year 310 (1 + 309 % 400)
@@ -1305,7 +1205,6 @@ last input: s2
 ###
 [Calendar] time 620
 [Calendar] skip 519
-[Calendar] day 310 0.50/s
 [Calendar] year 1.77 (1 + 0.78)
 [Calendar] Winter 1 (1 if 3.10 % 4 == 3)
 [Calendar] day_of_year 311 (1 + 310 % 400)
@@ -1319,7 +1218,6 @@ error: not enough catnip
 ###
 [Calendar] time 771
 [Calendar] skip 669
-[Calendar] day 385.50 0.50/s
 [Calendar] year 1.96 (1 + 0.96)
 [Calendar] Winter 1 (1 if 3.85 % 4 == 3)
 [Calendar] day_of_year 386 (1 + 385 % 400)
@@ -1332,7 +1230,6 @@ last input: s2
 ###
 [Calendar] time 772
 [Calendar] skip 669
-[Calendar] day 386 0.50/s
 [Calendar] year 1.96 (1 + 0.96)
 [Calendar] Winter 1 (1 if 3.86 % 4 == 3)
 [Calendar] day_of_year 387 (1 + 386 % 400)
@@ -1345,7 +1242,6 @@ last input: 2
 ###
 [Calendar] time 1002
 [Calendar] skip 898
-[Calendar] day 501 0.50/s
 [Calendar] year 2.25 (1 + 1.25)
 [Calendar] Summer 1 (1 if 5.01 % 4 == 1)
 [Calendar] day_of_year 102 (1 + 501 % 400)
@@ -1358,7 +1254,6 @@ last input: s2
 ###
 [Calendar] time 1003
 [Calendar] skip 898
-[Calendar] day 501.50 0.50/s
 [Calendar] year 2.25 (1 + 1.25)
 [Calendar] Summer 1 (1 if 5.01 % 4 == 1)
 [Calendar] day_of_year 102 (1 + 501 % 400)
@@ -1371,7 +1266,6 @@ last input: 2
 ###
 [Calendar] time 1004
 [Calendar] skip 898
-[Calendar] day 502 0.50/s
 [Calendar] year 2.25 (1 + 1.26)
 [Calendar] Summer 1 (1 if 5.02 % 4 == 1)
 [Calendar] day_of_year 103 (1 + 502 % 400)
@@ -1384,7 +1278,6 @@ last input: s2
 ###
 [Calendar] time 1005
 [Calendar] skip 898
-[Calendar] day 502.50 0.50/s
 [Calendar] year 2.25 (1 + 1.26)
 [Calendar] Summer 1 (1 if 5.02 % 4 == 1)
 [Calendar] day_of_year 103 (1 + 502 % 400)
@@ -1398,7 +1291,6 @@ error: not enough catnip
 ###
 [Calendar] time 1022
 [Calendar] skip 914
-[Calendar] day 511 0.50/s
 [Calendar] year 2.28 (1 + 1.28)
 [Calendar] Summer 1 (1 if 5.11 % 4 == 1)
 [Calendar] day_of_year 112 (1 + 511 % 400)
@@ -1411,7 +1303,6 @@ last input: s2
 ###
 [Calendar] time 1023
 [Calendar] skip 914
-[Calendar] day 511.50 0.50/s
 [Calendar] year 2.28 (1 + 1.28)
 [Calendar] Summer 1 (1 if 5.11 % 4 == 1)
 [Calendar] day_of_year 112 (1 + 511 % 400)
@@ -1424,7 +1315,6 @@ last input: 2
 ###
 [Calendar] time 1098
 [Calendar] skip 988
-[Calendar] day 549 0.50/s
 [Calendar] year 2.37 (1 + 1.37)
 [Calendar] Summer 1 (1 if 5.49 % 4 == 1)
 [Calendar] day_of_year 150 (1 + 549 % 400)
@@ -1437,7 +1327,6 @@ last input: s2
 ###
 [Calendar] time 1099
 [Calendar] skip 988
-[Calendar] day 549.50 0.50/s
 [Calendar] year 2.37 (1 + 1.37)
 [Calendar] Summer 1 (1 if 5.49 % 4 == 1)
 [Calendar] day_of_year 150 (1 + 549 % 400)
@@ -1450,7 +1339,6 @@ last input: 2
 ###
 [Calendar] time 1181
 [Calendar] skip 1069
-[Calendar] day 590.50 0.50/s
 [Calendar] year 2.48 (1 + 1.48)
 [Calendar] Summer 1 (1 if 5.90 % 4 == 1)
 [Calendar] day_of_year 191 (1 + 590 % 400)
@@ -1463,7 +1351,6 @@ last input: s2
 ###
 [Calendar] time 1182
 [Calendar] skip 1069
-[Calendar] day 591 0.50/s
 [Calendar] year 2.48 (1 + 1.48)
 [Calendar] Summer 1 (1 if 5.91 % 4 == 1)
 [Calendar] day_of_year 192 (1 + 591 % 400)
@@ -1476,7 +1363,6 @@ last input: 2
 ###
 [Calendar] time 1273
 [Calendar] skip 1159
-[Calendar] day 636.50 0.50/s
 [Calendar] year 2.59 (1 + 1.59)
 [Calendar] Autumn 1 (1 if 6.36 % 4 == 2)
 [Calendar] day_of_year 237 (1 + 636 % 400)
@@ -1489,7 +1375,6 @@ last input: s2
 ###
 [Calendar] time 1274
 [Calendar] skip 1159
-[Calendar] day 637 0.50/s
 [Calendar] year 2.59 (1 + 1.59)
 [Calendar] Autumn 1 (1 if 6.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 637 % 400)
@@ -1502,7 +1387,6 @@ last input: 2
 ###
 [Calendar] time 1374
 [Calendar] skip 1258
-[Calendar] day 687 0.50/s
 [Calendar] year 2.72 (1 + 1.72)
 [Calendar] Autumn 1 (1 if 6.87 % 4 == 2)
 [Calendar] day_of_year 288 (1 + 687 % 400)
@@ -1515,7 +1399,6 @@ last input: s2
 ###
 [Calendar] time 1375
 [Calendar] skip 1258
-[Calendar] day 687.50 0.50/s
 [Calendar] year 2.72 (1 + 1.72)
 [Calendar] Autumn 1 (1 if 6.87 % 4 == 2)
 [Calendar] day_of_year 288 (1 + 687 % 400)
@@ -1528,7 +1411,6 @@ last input: 2
 ###
 [Calendar] time 1485
 [Calendar] skip 1367
-[Calendar] day 742.50 0.50/s
 [Calendar] year 2.85 (1 + 1.85)
 [Calendar] Winter 1 (1 if 7.42 % 4 == 3)
 [Calendar] day_of_year 343 (1 + 742 % 400)
@@ -1541,7 +1423,6 @@ last input: s2
 ###
 [Calendar] time 1486
 [Calendar] skip 1367
-[Calendar] day 743 0.50/s
 [Calendar] year 2.86 (1 + 1.86)
 [Calendar] Winter 1 (1 if 7.43 % 4 == 3)
 [Calendar] day_of_year 344 (1 + 743 % 400)
@@ -1555,7 +1436,6 @@ error: not enough catnip
 ###
 [Calendar] time 1809
 [Calendar] skip 1689
-[Calendar] day 904.50 0.50/s
 [Calendar] year 3.26 (1 + 2.26)
 [Calendar] Summer 1 (1 if 9.04 % 4 == 1)
 [Calendar] day_of_year 105 (1 + 904 % 400)
@@ -1568,7 +1448,6 @@ last input: s2
 ###
 [Calendar] time 1810
 [Calendar] skip 1689
-[Calendar] day 905 0.50/s
 [Calendar] year 3.26 (1 + 2.26)
 [Calendar] Summer 1 (1 if 9.05 % 4 == 1)
 [Calendar] day_of_year 106 (1 + 905 % 400)
@@ -1581,7 +1460,6 @@ last input: 2
 ###
 [Calendar] time 1891
 [Calendar] skip 1769
-[Calendar] day 945.50 0.50/s
 [Calendar] year 3.36 (1 + 2.36)
 [Calendar] Summer 1 (1 if 9.45 % 4 == 1)
 [Calendar] day_of_year 146 (1 + 945 % 400)
@@ -1594,7 +1472,6 @@ last input: s2
 ###
 [Calendar] time 1892
 [Calendar] skip 1769
-[Calendar] day 946 0.50/s
 [Calendar] year 3.37 (1 + 2.37)
 [Calendar] Summer 1 (1 if 9.46 % 4 == 1)
 [Calendar] day_of_year 147 (1 + 946 % 400)
@@ -1607,7 +1484,6 @@ last input: 2
 ###
 [Calendar] time 2025
 [Calendar] skip 1901
-[Calendar] day 1012.50 0.50/s
 [Calendar] year 3.53 (1 + 2.53)
 [Calendar] Autumn 1 (1 if 10.12 % 4 == 2)
 [Calendar] day_of_year 213 (1 + 1012 % 400)
@@ -1620,7 +1496,6 @@ last input: s2
 ###
 [Calendar] time 2026
 [Calendar] skip 1901
-[Calendar] day 1013 0.50/s
 [Calendar] year 3.53 (1 + 2.53)
 [Calendar] Autumn 1 (1 if 10.13 % 4 == 2)
 [Calendar] day_of_year 214 (1 + 1013 % 400)
@@ -1633,7 +1508,6 @@ last input: 2
 ###
 [Calendar] time 2172
 [Calendar] skip 2046
-[Calendar] day 1086 0.50/s
 [Calendar] year 3.71 (1 + 2.71)
 [Calendar] Autumn 1 (1 if 10.86 % 4 == 2)
 [Calendar] day_of_year 287 (1 + 1086 % 400)
@@ -1646,7 +1520,6 @@ last input: s2
 ###
 [Calendar] time 2173
 [Calendar] skip 2046
-[Calendar] day 1086.50 0.50/s
 [Calendar] year 3.71 (1 + 2.71)
 [Calendar] Autumn 1 (1 if 10.86 % 4 == 2)
 [Calendar] day_of_year 287 (1 + 1086 % 400)
@@ -1660,7 +1533,6 @@ error: not enough catnip
 ###
 [Calendar] time 2174
 [Calendar] skip 2046
-[Calendar] day 1087 0.50/s
 [Calendar] year 3.72 (1 + 2.72)
 [Calendar] Autumn 1 (1 if 10.87 % 4 == 2)
 [Calendar] day_of_year 288 (1 + 1087 % 400)
@@ -1676,7 +1548,6 @@ last input: s1
 ###
 [Calendar] time 2175
 [Calendar] skip 2046
-[Calendar] day 1087.50 0.50/s
 [Calendar] year 3.72 (1 + 2.72)
 [Calendar] Autumn 1 (1 if 10.87 % 4 == 2)
 [Calendar] day_of_year 288 (1 + 1087 % 400)
@@ -1692,7 +1563,6 @@ last input: 1
 ###
 [Calendar] time 2176
 [Calendar] skip 2046
-[Calendar] day 1088 0.50/s
 [Calendar] year 3.72 (1 + 2.72)
 [Calendar] Autumn 1 (1 if 10.88 % 4 == 2)
 [Calendar] day_of_year 289 (1 + 1088 % 400)
@@ -1708,7 +1578,6 @@ last input: s1
 ###
 [Calendar] time 2177
 [Calendar] skip 2046
-[Calendar] day 1088.50 0.50/s
 [Calendar] year 3.72 (1 + 2.72)
 [Calendar] Autumn 1 (1 if 10.88 % 4 == 2)
 [Calendar] day_of_year 289 (1 + 1088 % 400)
@@ -1724,7 +1593,6 @@ last input: 1
 ###
 [Calendar] time 2178
 [Calendar] skip 2046
-[Calendar] day 1089 0.50/s
 [Calendar] year 3.72 (1 + 2.72)
 [Calendar] Autumn 1 (1 if 10.89 % 4 == 2)
 [Calendar] day_of_year 290 (1 + 1089 % 400)
@@ -1740,7 +1608,6 @@ last input: s1
 ###
 [Calendar] time 2179
 [Calendar] skip 2046
-[Calendar] day 1089.50 0.50/s
 [Calendar] year 3.72 (1 + 2.72)
 [Calendar] Autumn 1 (1 if 10.89 % 4 == 2)
 [Calendar] day_of_year 290 (1 + 1089 % 400)
@@ -1756,7 +1623,6 @@ last input: 1
 ###
 [Calendar] time 2180
 [Calendar] skip 2046
-[Calendar] day 1090 0.50/s
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.90 % 4 == 2)
 [Calendar] day_of_year 291 (1 + 1090 % 400)
@@ -1772,7 +1638,6 @@ last input: s1
 ###
 [Calendar] time 2181
 [Calendar] skip 2046
-[Calendar] day 1090.50 0.50/s
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.90 % 4 == 2)
 [Calendar] day_of_year 291 (1 + 1090 % 400)
@@ -1788,7 +1653,6 @@ last input: 1
 ###
 [Calendar] time 2182
 [Calendar] skip 2046
-[Calendar] day 1091 0.50/s
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.91 % 4 == 2)
 [Calendar] day_of_year 292 (1 + 1091 % 400)
@@ -1804,7 +1668,6 @@ last input: s1
 ###
 [Calendar] time 2183
 [Calendar] skip 2046
-[Calendar] day 1091.50 0.50/s
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.91 % 4 == 2)
 [Calendar] day_of_year 292 (1 + 1091 % 400)
@@ -1820,7 +1683,6 @@ last input: 1
 ###
 [Calendar] time 2184
 [Calendar] skip 2046
-[Calendar] day 1092 0.50/s
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.92 % 4 == 2)
 [Calendar] day_of_year 293 (1 + 1092 % 400)
@@ -1837,7 +1699,6 @@ last input: 3
 ###
 [Calendar] time 2204
 [Calendar] skip 2065
-[Calendar] day 1102 0.50/s
 [Calendar] year 3.75 (1 + 2.75)
 [Calendar] Winter 1 (1 if 11.02 % 4 == 3)
 [Calendar] day_of_year 303 (1 + 1102 % 400)
@@ -1855,7 +1716,6 @@ last input: s7
 ###
 [Calendar] time 2205
 [Calendar] skip 2065
-[Calendar] day 1102.50 0.50/s
 [Calendar] year 3.75 (1 + 2.75)
 [Calendar] Winter 1 (1 if 11.02 % 4 == 3)
 [Calendar] day_of_year 303 (1 + 1102 % 400)
@@ -1872,7 +1732,6 @@ last input: 7
 ###
 [Calendar] time 2411
 [Calendar] skip 2270
-[Calendar] day 1205.50 0.50/s
 [Calendar] year 4.01 (1 + 3.01)
 [Calendar] Spring 1 (1 if 12.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 1205 % 400)
@@ -1889,7 +1748,6 @@ last input: s4
 ###
 [Calendar] time 2412
 [Calendar] skip 2270
-[Calendar] day 1206 0.50/s
 [Calendar] year 4.02 (1 + 3.02)
 [Calendar] Spring 1 (1 if 12.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 1206 % 400)
@@ -1908,7 +1766,6 @@ last input: 4
 ###
 [Calendar] time 2413
 [Calendar] skip 2270
-[Calendar] day 1206.50 0.50/s
 [Calendar] year 4.02 (1 + 3.02)
 [Calendar] Spring 1 (1 if 12.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 1206 % 400)
@@ -1926,7 +1783,6 @@ last input: s8
 ###
 [Calendar] time 2414
 [Calendar] skip 2270
-[Calendar] day 1207 0.50/s
 [Calendar] year 4.02 (1 + 3.02)
 [Calendar] Spring 1 (1 if 12.07 % 4 == 0)
 [Calendar] day_of_year 8 (1 + 1207 % 400)
@@ -1946,7 +1802,6 @@ error: not enough kitten
 ###
 [Calendar] time 2713
 [Calendar] skip 2568
-[Calendar] day 1356.50 0.50/s
 [Calendar] year 4.39 (1 + 3.39)
 [Calendar] Summer 1 (1 if 13.56 % 4 == 1)
 [Calendar] day_of_year 157 (1 + 1356 % 400)
@@ -1965,7 +1820,6 @@ last input: s4
 ###
 [Calendar] time 2714
 [Calendar] skip 2568
-[Calendar] day 1357 0.50/s
 [Calendar] year 4.39 (1 + 3.39)
 [Calendar] Summer 1 (1 if 13.57 % 4 == 1)
 [Calendar] day_of_year 158 (1 + 1357 % 400)
@@ -1984,7 +1838,6 @@ last input: 4
 ###
 [Calendar] time 3059
 [Calendar] skip 2912
-[Calendar] day 1529.50 0.50/s
 [Calendar] year 4.82 (1 + 3.82)
 [Calendar] Winter 1 (1 if 15.29 % 4 == 3)
 [Calendar] day_of_year 330 (1 + 1529 % 400)
@@ -2003,7 +1856,6 @@ last input: s4
 ###
 [Calendar] time 3060
 [Calendar] skip 2912
-[Calendar] day 1530 0.50/s
 [Calendar] year 4.83 (1 + 3.83)
 [Calendar] Winter 1 (1 if 15.30 % 4 == 3)
 [Calendar] day_of_year 331 (1 + 1530 % 400)
@@ -2022,7 +1874,6 @@ last input: 4
 ###
 [Calendar] time 3458
 [Calendar] skip 3309
-[Calendar] day 1729 0.50/s
 [Calendar] year 5.32 (1 + 4.32)
 [Calendar] Summer 1 (1 if 17.29 % 4 == 1)
 [Calendar] day_of_year 130 (1 + 1729 % 400)
@@ -2041,7 +1892,6 @@ last input: s4
 ###
 [Calendar] time 3459
 [Calendar] skip 3309
-[Calendar] day 1729.50 0.50/s
 [Calendar] year 5.32 (1 + 4.32)
 [Calendar] Summer 1 (1 if 17.29 % 4 == 1)
 [Calendar] day_of_year 130 (1 + 1729 % 400)
@@ -2060,7 +1910,6 @@ last input: 4
 ###
 [Calendar] time 3916
 [Calendar] skip 3765
-[Calendar] day 1958 0.50/s
 [Calendar] year 5.90 (1 + 4.90)
 [Calendar] Winter 1 (1 if 19.58 % 4 == 3)
 [Calendar] day_of_year 359 (1 + 1958 % 400)
@@ -2079,7 +1928,6 @@ last input: s4
 ###
 [Calendar] time 3917
 [Calendar] skip 3765
-[Calendar] day 1958.50 0.50/s
 [Calendar] year 5.90 (1 + 4.90)
 [Calendar] Winter 1 (1 if 19.58 % 4 == 3)
 [Calendar] day_of_year 359 (1 + 1958 % 400)
@@ -2098,7 +1946,6 @@ last input: 4
 ###
 [Calendar] time 4443
 [Calendar] skip 4290
-[Calendar] day 2221.50 0.50/s
 [Calendar] year 6.55 (1 + 5.55)
 [Calendar] Autumn 1 (1 if 22.21 % 4 == 2)
 [Calendar] day_of_year 222 (1 + 2221 % 400)
@@ -2117,7 +1964,6 @@ last input: s4
 ###
 [Calendar] time 4444
 [Calendar] skip 4290
-[Calendar] day 2222 0.50/s
 [Calendar] year 6.55 (1 + 5.55)
 [Calendar] Autumn 1 (1 if 22.22 % 4 == 2)
 [Calendar] day_of_year 223 (1 + 2222 % 400)
@@ -2136,7 +1982,6 @@ last input: 4
 ###
 [Calendar] time 5049
 [Calendar] skip 4894
-[Calendar] day 2524.50 0.50/s
 [Calendar] year 7.31 (1 + 6.31)
 [Calendar] Summer 1 (1 if 25.24 % 4 == 1)
 [Calendar] day_of_year 125 (1 + 2524 % 400)
@@ -2155,7 +2000,6 @@ last input: s4
 ###
 [Calendar] time 5050
 [Calendar] skip 4894
-[Calendar] day 2525 0.50/s
 [Calendar] year 7.31 (1 + 6.31)
 [Calendar] Summer 1 (1 if 25.25 % 4 == 1)
 [Calendar] day_of_year 126 (1 + 2525 % 400)
@@ -2174,7 +2018,6 @@ last input: 4
 ###
 [Calendar] time 5746
 [Calendar] skip 5589
-[Calendar] day 2873 0.50/s
 [Calendar] year 8.18 (1 + 7.18)
 [Calendar] Spring 1 (1 if 28.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 2873 % 400)
@@ -2193,7 +2036,6 @@ last input: s4
 ###
 [Calendar] time 5747
 [Calendar] skip 5589
-[Calendar] day 2873.50 0.50/s
 [Calendar] year 8.18 (1 + 7.18)
 [Calendar] Spring 1 (1 if 28.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 2873 % 400)
@@ -2212,7 +2054,6 @@ last input: 4
 ###
 [Calendar] time 6548
 [Calendar] skip 6389
-[Calendar] day 3274 0.50/s
 [Calendar] year 9.19 (1 + 8.19)
 [Calendar] Spring 1 (1 if 32.74 % 4 == 0)
 [Calendar] day_of_year 75 (1 + 3274 % 400)
@@ -2231,7 +2072,6 @@ last input: s4
 ###
 [Calendar] time 6549
 [Calendar] skip 6389
-[Calendar] day 3274.50 0.50/s
 [Calendar] year 9.19 (1 + 8.19)
 [Calendar] Spring 1 (1 if 32.74 % 4 == 0)
 [Calendar] day_of_year 75 (1 + 3274 % 400)
@@ -2250,7 +2090,6 @@ last input: 4
 ###
 [Calendar] time 7470
 [Calendar] skip 7309
-[Calendar] day 3735 0.50/s
 [Calendar] year 10.34 (1 + 9.34)
 [Calendar] Summer 1 (1 if 37.35 % 4 == 1)
 [Calendar] day_of_year 136 (1 + 3735 % 400)
@@ -2269,7 +2108,6 @@ last input: s4
 ###
 [Calendar] time 7471
 [Calendar] skip 7309
-[Calendar] day 3735.50 0.50/s
 [Calendar] year 10.34 (1 + 9.34)
 [Calendar] Summer 1 (1 if 37.35 % 4 == 1)
 [Calendar] day_of_year 136 (1 + 3735 % 400)
@@ -2288,7 +2126,6 @@ last input: 4
 ###
 [Calendar] time 8530
 [Calendar] skip 8367
-[Calendar] day 4265 0.50/s
 [Calendar] year 11.66 (1 + 10.66)
 [Calendar] Autumn 1 (1 if 42.65 % 4 == 2)
 [Calendar] day_of_year 266 (1 + 4265 % 400)
@@ -2307,7 +2144,6 @@ last input: s4
 ###
 [Calendar] time 8531
 [Calendar] skip 8367
-[Calendar] day 4265.50 0.50/s
 [Calendar] year 11.66 (1 + 10.66)
 [Calendar] Autumn 1 (1 if 42.65 % 4 == 2)
 [Calendar] day_of_year 266 (1 + 4265 % 400)
@@ -2326,7 +2162,6 @@ last input: 4
 ###
 [Calendar] time 9749
 [Calendar] skip 9584
-[Calendar] day 4874.50 0.50/s
 [Calendar] year 13.19 (1 + 12.19)
 [Calendar] Spring 1 (1 if 48.74 % 4 == 0)
 [Calendar] day_of_year 75 (1 + 4874 % 400)
@@ -2345,7 +2180,6 @@ last input: s4
 ###
 [Calendar] time 9750
 [Calendar] skip 9584
-[Calendar] day 4875 0.50/s
 [Calendar] year 13.19 (1 + 12.19)
 [Calendar] Spring 1 (1 if 48.75 % 4 == 0)
 [Calendar] day_of_year 76 (1 + 4875 % 400)
@@ -2364,7 +2198,6 @@ last input: 4
 ###
 [Calendar] time 11151
 [Calendar] skip 10984
-[Calendar] day 5575.50 0.50/s
 [Calendar] year 14.94 (1 + 13.94)
 [Calendar] Winter 1 (1 if 55.75 % 4 == 3)
 [Calendar] day_of_year 376 (1 + 5575 % 400)
@@ -2383,7 +2216,6 @@ last input: s4
 ###
 [Calendar] time 11152
 [Calendar] skip 10984
-[Calendar] day 5576 0.50/s
 [Calendar] year 14.94 (1 + 13.94)
 [Calendar] Winter 1 (1 if 55.76 % 4 == 3)
 [Calendar] day_of_year 377 (1 + 5576 % 400)
@@ -2402,7 +2234,6 @@ last input: 4
 ###
 [Calendar] time 12764
 [Calendar] skip 12595
-[Calendar] day 6382 0.50/s
 [Calendar] year 16.95 (1 + 15.96)
 [Calendar] Winter 1 (1 if 63.82 % 4 == 3)
 [Calendar] day_of_year 383 (1 + 6382 % 400)
@@ -2421,7 +2252,6 @@ last input: s4
 ###
 [Calendar] time 12765
 [Calendar] skip 12595
-[Calendar] day 6382.50 0.50/s
 [Calendar] year 16.95 (1 + 15.96)
 [Calendar] Winter 1 (1 if 63.82 % 4 == 3)
 [Calendar] day_of_year 383 (1 + 6382 % 400)
@@ -2440,7 +2270,6 @@ last input: 4
 ###
 [Calendar] time 14618
 [Calendar] skip 14447
-[Calendar] day 7309 0.50/s
 [Calendar] year 19.27 (1 + 18.27)
 [Calendar] Summer 1 (1 if 73.09 % 4 == 1)
 [Calendar] day_of_year 110 (1 + 7309 % 400)
@@ -2459,7 +2288,6 @@ last input: s4
 ###
 [Calendar] time 14619
 [Calendar] skip 14447
-[Calendar] day 7309.50 0.50/s
 [Calendar] year 19.27 (1 + 18.27)
 [Calendar] Summer 1 (1 if 73.09 % 4 == 1)
 [Calendar] day_of_year 110 (1 + 7309 % 400)
@@ -2478,7 +2306,6 @@ last input: 4
 ###
 [Calendar] time 14620
 [Calendar] skip 14447
-[Calendar] day 7310 0.50/s
 [Calendar] year 19.28 (1 + 18.28)
 [Calendar] Summer 1 (1 if 73.10 % 4 == 1)
 [Calendar] day_of_year 111 (1 + 7310 % 400)
@@ -2499,7 +2326,6 @@ last input: s12
 ###
 [Calendar] time 14621
 [Calendar] skip 14447
-[Calendar] day 7310.50 0.50/s
 [Calendar] year 19.28 (1 + 18.28)
 [Calendar] Summer 1 (1 if 73.10 % 4 == 1)
 [Calendar] day_of_year 111 (1 + 7310 % 400)
@@ -2521,7 +2347,6 @@ error: action Calendar is locked
 ###
 [Calendar] time 14622
 [Calendar] skip 14447
-[Calendar] day 7311 0.50/s
 [Calendar] year 19.28 (1 + 18.28)
 [Calendar] Summer 1 (1 if 73.11 % 4 == 1)
 [Calendar] day_of_year 112 (1 + 7311 % 400)
@@ -2543,7 +2368,6 @@ last input: s13
 ###
 [Calendar] time 14623
 [Calendar] skip 14447
-[Calendar] day 7311.50 0.50/s
 [Calendar] year 19.28 (1 + 18.28)
 [Calendar] Summer 1 (1 if 73.11 % 4 == 1)
 [Calendar] day_of_year 112 (1 + 7311 % 400)
@@ -2566,7 +2390,6 @@ error: action Agriculture is locked
 ###
 [Calendar] time 15142
 [Calendar] skip 14965
-[Calendar] day 7571 0.50/s
 [Calendar] year 19.93 (1 + 18.93)
 [Calendar] Winter 1 (1 if 75.71 % 4 == 3)
 [Calendar] day_of_year 372 (1 + 7571 % 400)
@@ -2588,7 +2411,6 @@ last input: s5
 ###
 [Calendar] time 15143
 [Calendar] skip 14965
-[Calendar] day 7571.50 0.50/s
 [Calendar] year 19.93 (1 + 18.93)
 [Calendar] Winter 1 (1 if 75.71 % 4 == 3)
 [Calendar] day_of_year 372 (1 + 7571 % 400)
@@ -2610,7 +2432,6 @@ last input: 5
 ###
 [Calendar] time 16059
 [Calendar] skip 15880
-[Calendar] day 8029.50 0.50/s
 [Calendar] year 21.07 (1 + 20.07)
 [Calendar] Spring 1 (1 if 80.29 % 4 == 0)
 [Calendar] day_of_year 30 (1 + 8029 % 400)
@@ -2632,7 +2453,6 @@ last input: s5
 ###
 [Calendar] time 16060
 [Calendar] skip 15880
-[Calendar] day 8030 0.50/s
 [Calendar] year 21.07 (1 + 20.07)
 [Calendar] Spring 1 (1 if 80.30 % 4 == 0)
 [Calendar] day_of_year 31 (1 + 8030 % 400)
@@ -2654,7 +2474,6 @@ last input: 5
 ###
 [Calendar] time 17664
 [Calendar] skip 17483
-[Calendar] day 8832 0.50/s
 [Calendar] year 23.08 (1 + 22.08)
 [Calendar] Spring 1 (1 if 88.32 % 4 == 0)
 [Calendar] day_of_year 33 (1 + 8832 % 400)
@@ -2676,7 +2495,6 @@ last input: s5
 ###
 [Calendar] time 17665
 [Calendar] skip 17483
-[Calendar] day 8832.50 0.50/s
 [Calendar] year 23.08 (1 + 22.08)
 [Calendar] Spring 1 (1 if 88.32 % 4 == 0)
 [Calendar] day_of_year 33 (1 + 8832 % 400)
@@ -2698,7 +2516,6 @@ last input: 5
 ###
 [Calendar] time 20473
 [Calendar] skip 20290
-[Calendar] day 10236.50 0.50/s
 [Calendar] year 26.59 (1 + 25.59)
 [Calendar] Autumn 1 (1 if 102.36 % 4 == 2)
 [Calendar] day_of_year 237 (1 + 10236 % 400)
@@ -2720,7 +2537,6 @@ last input: s5
 ###
 [Calendar] time 20474
 [Calendar] skip 20290
-[Calendar] day 10237 0.50/s
 [Calendar] year 26.59 (1 + 25.59)
 [Calendar] Autumn 1 (1 if 102.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 10237 % 400)
@@ -2742,7 +2558,6 @@ last input: 5
 ###
 [Calendar] time 25389
 [Calendar] skip 25204
-[Calendar] day 12694.50 0.50/s
 [Calendar] year 32.73 (1 + 31.73)
 [Calendar] Autumn 1 (1 if 126.94 % 4 == 2)
 [Calendar] day_of_year 295 (1 + 12694 % 400)
@@ -2764,7 +2579,6 @@ last input: s5
 ###
 [Calendar] time 25390
 [Calendar] skip 25204
-[Calendar] day 12695 0.50/s
 [Calendar] year 32.74 (1 + 31.74)
 [Calendar] Autumn 1 (1 if 126.95 % 4 == 2)
 [Calendar] day_of_year 296 (1 + 12695 % 400)
@@ -2786,7 +2600,6 @@ last input: 5
 ###
 [Calendar] time 33991
 [Calendar] skip 33804
-[Calendar] day 16995.50 0.50/s
 [Calendar] year 43.49 (1 + 42.49)
 [Calendar] Summer 1 (1 if 169.95 % 4 == 1)
 [Calendar] day_of_year 196 (1 + 16995 % 400)
@@ -2808,7 +2621,6 @@ last input: s5
 ###
 [Calendar] time 33992
 [Calendar] skip 33804
-[Calendar] day 16996 0.50/s
 [Calendar] year 43.49 (1 + 42.49)
 [Calendar] Summer 1 (1 if 169.96 % 4 == 1)
 [Calendar] day_of_year 197 (1 + 16996 % 400)
@@ -2830,7 +2642,6 @@ last input: 5
 ###
 [Calendar] time 33993
 [Calendar] skip 33804
-[Calendar] day 16996.50 0.50/s
 [Calendar] year 43.49 (1 + 42.49)
 [Calendar] Summer 1 (1 if 169.96 % 4 == 1)
 [Calendar] day_of_year 197 (1 + 16996 % 400)
@@ -2852,7 +2663,6 @@ last input: s2
 ###
 [Calendar] time 33994
 [Calendar] skip 33804
-[Calendar] day 16997 0.50/s
 [Calendar] year 43.49 (1 + 42.49)
 [Calendar] Summer 1 (1 if 169.97 % 4 == 1)
 [Calendar] day_of_year 198 (1 + 16997 % 400)
@@ -2874,7 +2684,6 @@ last input: 2
 ###
 [Calendar] time 33995
 [Calendar] skip 33804
-[Calendar] day 16997.50 0.50/s
 [Calendar] year 43.49 (1 + 42.49)
 [Calendar] Summer 1 (1 if 169.97 % 4 == 1)
 [Calendar] day_of_year 198 (1 + 16997 % 400)
@@ -2896,7 +2705,6 @@ last input: s2
 ###
 [Calendar] time 33996
 [Calendar] skip 33804
-[Calendar] day 16998 0.50/s
 [Calendar] year 43.49 (1 + 42.49)
 [Calendar] Summer 1 (1 if 169.98 % 4 == 1)
 [Calendar] day_of_year 199 (1 + 16998 % 400)
@@ -2918,7 +2726,6 @@ last input: 2
 ###
 [Calendar] time 34075
 [Calendar] skip 33882
-[Calendar] day 17037.50 0.50/s
 [Calendar] year 43.59 (1 + 42.59)
 [Calendar] Autumn 1 (1 if 170.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 17037 % 400)
@@ -2940,7 +2747,6 @@ last input: s2
 ###
 [Calendar] time 34076
 [Calendar] skip 33882
-[Calendar] day 17038 0.50/s
 [Calendar] year 43.59 (1 + 42.59)
 [Calendar] Autumn 1 (1 if 170.38 % 4 == 2)
 [Calendar] day_of_year 239 (1 + 17038 % 400)
@@ -2962,7 +2768,6 @@ last input: 2
 ###
 [Calendar] time 34381
 [Calendar] skip 34186
-[Calendar] day 17190.50 0.50/s
 [Calendar] year 43.98 (1 + 42.98)
 [Calendar] Winter 1 (1 if 171.90 % 4 == 3)
 [Calendar] day_of_year 391 (1 + 17190 % 400)
@@ -2984,7 +2789,6 @@ last input: s2
 ###
 [Calendar] time 34382
 [Calendar] skip 34186
-[Calendar] day 17191 0.50/s
 [Calendar] year 43.98 (1 + 42.98)
 [Calendar] Winter 1 (1 if 171.91 % 4 == 3)
 [Calendar] day_of_year 392 (1 + 17191 % 400)
@@ -3007,7 +2811,6 @@ error: not enough catnip
 ###
 [Calendar] time 43447
 [Calendar] skip 43250
-[Calendar] day 21723.50 0.50/s
 [Calendar] year 55.31 (1 + 54.31)
 [Calendar] Summer 1 (1 if 217.23 % 4 == 1)
 [Calendar] day_of_year 124 (1 + 21723 % 400)
@@ -3029,7 +2832,6 @@ last input: s2
 ###
 [Calendar] time 43448
 [Calendar] skip 43250
-[Calendar] day 21724 0.50/s
 [Calendar] year 55.31 (1 + 54.31)
 [Calendar] Summer 1 (1 if 217.24 % 4 == 1)
 [Calendar] day_of_year 125 (1 + 21724 % 400)
@@ -3051,7 +2853,6 @@ last input: 2
 ###
 [Calendar] time 43449
 [Calendar] skip 43250
-[Calendar] day 21724.50 0.50/s
 [Calendar] year 55.31 (1 + 54.31)
 [Calendar] Summer 1 (1 if 217.24 % 4 == 1)
 [Calendar] day_of_year 125 (1 + 21724 % 400)
@@ -3073,7 +2874,6 @@ last input: s2
 ###
 [Calendar] time 43450
 [Calendar] skip 43250
-[Calendar] day 21725 0.50/s
 [Calendar] year 55.31 (1 + 54.31)
 [Calendar] Summer 1 (1 if 217.25 % 4 == 1)
 [Calendar] day_of_year 126 (1 + 21725 % 400)
@@ -3095,7 +2895,6 @@ last input: 2
 ###
 [Calendar] time 43702
 [Calendar] skip 43501
-[Calendar] day 21851 0.50/s
 [Calendar] year 55.63 (1 + 54.63)
 [Calendar] Autumn 1 (1 if 218.51 % 4 == 2)
 [Calendar] day_of_year 252 (1 + 21851 % 400)
@@ -3117,7 +2916,6 @@ last input: s2
 ###
 [Calendar] time 43703
 [Calendar] skip 43501
-[Calendar] day 21851.50 0.50/s
 [Calendar] year 55.63 (1 + 54.63)
 [Calendar] Autumn 1 (1 if 218.51 % 4 == 2)
 [Calendar] day_of_year 252 (1 + 21851 % 400)
@@ -3139,7 +2937,6 @@ last input: 2
 ###
 [Calendar] time 44146
 [Calendar] skip 43943
-[Calendar] day 22073 0.50/s
 [Calendar] year 56.18 (1 + 55.18)
 [Calendar] Spring 1 (1 if 220.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 22073 % 400)
@@ -3161,7 +2958,6 @@ last input: s2
 ###
 [Calendar] time 44147
 [Calendar] skip 43943
-[Calendar] day 22073.50 0.50/s
 [Calendar] year 56.18 (1 + 55.18)
 [Calendar] Spring 1 (1 if 220.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 22073 % 400)
@@ -3183,7 +2979,6 @@ last input: 2
 ###
 [Calendar] time 44277
 [Calendar] skip 44072
-[Calendar] day 22138.50 0.50/s
 [Calendar] year 56.34 (1 + 55.34)
 [Calendar] Summer 1 (1 if 221.38 % 4 == 1)
 [Calendar] day_of_year 139 (1 + 22138 % 400)
@@ -3205,7 +3000,6 @@ last input: s2
 ###
 [Calendar] time 44278
 [Calendar] skip 44072
-[Calendar] day 22139 0.50/s
 [Calendar] year 56.35 (1 + 55.35)
 [Calendar] Summer 1 (1 if 221.39 % 4 == 1)
 [Calendar] day_of_year 140 (1 + 22139 % 400)
@@ -3228,7 +3022,6 @@ error: not enough catnip
 ###
 [Calendar] time 44357
 [Calendar] skip 44150
-[Calendar] day 22178.50 0.50/s
 [Calendar] year 56.45 (1 + 55.45)
 [Calendar] Summer 1 (1 if 221.78 % 4 == 1)
 [Calendar] day_of_year 179 (1 + 22178 % 400)
@@ -3250,7 +3043,6 @@ last input: s2
 ###
 [Calendar] time 44358
 [Calendar] skip 44150
-[Calendar] day 22179 0.50/s
 [Calendar] year 56.45 (1 + 55.45)
 [Calendar] Summer 1 (1 if 221.79 % 4 == 1)
 [Calendar] day_of_year 180 (1 + 22179 % 400)
@@ -3272,7 +3064,6 @@ last input: 2
 ###
 [Calendar] time 44893
 [Calendar] skip 44684
-[Calendar] day 22446.50 0.50/s
 [Calendar] year 57.12 (1 + 56.12)
 [Calendar] Spring 1 (1 if 224.46 % 4 == 0)
 [Calendar] day_of_year 47 (1 + 22446 % 400)
@@ -3294,7 +3085,6 @@ last input: s2
 ###
 [Calendar] time 44894
 [Calendar] skip 44684
-[Calendar] day 22447 0.50/s
 [Calendar] year 57.12 (1 + 56.12)
 [Calendar] Spring 1 (1 if 224.47 % 4 == 0)
 [Calendar] day_of_year 48 (1 + 22447 % 400)
@@ -3316,7 +3106,6 @@ last input: 2
 ###
 [Calendar] time 45053
 [Calendar] skip 44842
-[Calendar] day 22526.50 0.50/s
 [Calendar] year 57.31 (1 + 56.31)
 [Calendar] Summer 1 (1 if 225.26 % 4 == 1)
 [Calendar] day_of_year 127 (1 + 22526 % 400)
@@ -3338,7 +3127,6 @@ last input: s2
 ###
 [Calendar] time 45054
 [Calendar] skip 44842
-[Calendar] day 22527 0.50/s
 [Calendar] year 57.32 (1 + 56.32)
 [Calendar] Summer 1 (1 if 225.27 % 4 == 1)
 [Calendar] day_of_year 128 (1 + 22527 % 400)
@@ -3361,7 +3149,6 @@ error: not enough catnip
 ###
 [Calendar] time 45151
 [Calendar] skip 44938
-[Calendar] day 22575.50 0.50/s
 [Calendar] year 57.44 (1 + 56.44)
 [Calendar] Summer 1 (1 if 225.75 % 4 == 1)
 [Calendar] day_of_year 176 (1 + 22575 % 400)
@@ -3383,7 +3170,6 @@ last input: s2
 ###
 [Calendar] time 45152
 [Calendar] skip 44938
-[Calendar] day 22576 0.50/s
 [Calendar] year 57.44 (1 + 56.44)
 [Calendar] Summer 1 (1 if 225.76 % 4 == 1)
 [Calendar] day_of_year 177 (1 + 22576 % 400)
@@ -3405,7 +3191,6 @@ last input: 2
 ###
 [Calendar] time 45798
 [Calendar] skip 45583
-[Calendar] day 22899 0.50/s
 [Calendar] year 58.25 (1 + 57.25)
 [Calendar] Spring 1 (1 if 228.99 % 4 == 0)
 [Calendar] day_of_year 100 (1 + 22899 % 400)
@@ -3427,7 +3212,6 @@ last input: s2
 ###
 [Calendar] time 45799
 [Calendar] skip 45583
-[Calendar] day 22899.50 0.50/s
 [Calendar] year 58.25 (1 + 57.25)
 [Calendar] Spring 1 (1 if 228.99 % 4 == 0)
 [Calendar] day_of_year 100 (1 + 22899 % 400)
@@ -3449,7 +3233,6 @@ last input: 2
 ###
 [Calendar] time 46146
 [Calendar] skip 45929
-[Calendar] day 23073 0.50/s
 [Calendar] year 58.68 (1 + 57.68)
 [Calendar] Autumn 1 (1 if 230.73 % 4 == 2)
 [Calendar] day_of_year 274 (1 + 23073 % 400)
@@ -3471,7 +3254,6 @@ last input: s2
 ###
 [Calendar] time 46147
 [Calendar] skip 45929
-[Calendar] day 23073.50 0.50/s
 [Calendar] year 58.68 (1 + 57.68)
 [Calendar] Autumn 1 (1 if 230.73 % 4 == 2)
 [Calendar] day_of_year 274 (1 + 23073 % 400)
@@ -3493,7 +3275,6 @@ last input: 2
 ###
 [Calendar] time 46929
 [Calendar] skip 46710
-[Calendar] day 23464.50 0.50/s
 [Calendar] year 59.66 (1 + 58.66)
 [Calendar] Autumn 1 (1 if 234.64 % 4 == 2)
 [Calendar] day_of_year 265 (1 + 23464 % 400)
@@ -3515,7 +3296,6 @@ last input: s2
 ###
 [Calendar] time 46930
 [Calendar] skip 46710
-[Calendar] day 23465 0.50/s
 [Calendar] year 59.66 (1 + 58.66)
 [Calendar] Autumn 1 (1 if 234.65 % 4 == 2)
 [Calendar] day_of_year 266 (1 + 23465 % 400)
@@ -3537,7 +3317,6 @@ last input: 2
 ###
 [Calendar] time 47791
 [Calendar] skip 47570
-[Calendar] day 23895.50 0.50/s
 [Calendar] year 60.74 (1 + 59.74)
 [Calendar] Autumn 1 (1 if 238.95 % 4 == 2)
 [Calendar] day_of_year 296 (1 + 23895 % 400)
@@ -3559,7 +3338,6 @@ last input: s2
 ###
 [Calendar] time 47792
 [Calendar] skip 47570
-[Calendar] day 23896 0.50/s
 [Calendar] year 60.74 (1 + 59.74)
 [Calendar] Autumn 1 (1 if 238.96 % 4 == 2)
 [Calendar] day_of_year 297 (1 + 23896 % 400)
@@ -3581,7 +3359,6 @@ last input: 2
 ###
 [Calendar] time 48740
 [Calendar] skip 48517
-[Calendar] day 24370 0.50/s
 [Calendar] year 61.93 (1 + 60.93)
 [Calendar] Winter 1 (1 if 243.70 % 4 == 3)
 [Calendar] day_of_year 371 (1 + 24370 % 400)
@@ -3603,7 +3380,6 @@ last input: s2
 ###
 [Calendar] time 48741
 [Calendar] skip 48517
-[Calendar] day 24370.50 0.50/s
 [Calendar] year 61.93 (1 + 60.93)
 [Calendar] Winter 1 (1 if 243.70 % 4 == 3)
 [Calendar] day_of_year 371 (1 + 24370 % 400)
@@ -3626,7 +3402,6 @@ error: not enough catnip
 ###
 [Calendar] time 60074
 [Calendar] skip 59849
-[Calendar] day 30037 0.50/s
 [Calendar] year 76.09 (1 + 75.09)
 [Calendar] Spring 1 (1 if 300.37 % 4 == 0)
 [Calendar] day_of_year 38 (1 + 30037 % 400)
@@ -3648,7 +3423,6 @@ last input: s2
 ###
 [Calendar] time 60075
 [Calendar] skip 59849
-[Calendar] day 30037.50 0.50/s
 [Calendar] year 76.09 (1 + 75.09)
 [Calendar] Spring 1 (1 if 300.37 % 4 == 0)
 [Calendar] day_of_year 38 (1 + 30037 % 400)
@@ -3670,7 +3444,6 @@ last input: 2
 ###
 [Calendar] time 60723
 [Calendar] skip 60496
-[Calendar] day 30361.50 0.50/s
 [Calendar] year 76.90 (1 + 75.90)
 [Calendar] Winter 1 (1 if 303.61 % 4 == 3)
 [Calendar] day_of_year 362 (1 + 30361 % 400)
@@ -3692,7 +3465,6 @@ last input: s2
 ###
 [Calendar] time 60724
 [Calendar] skip 60496
-[Calendar] day 30362 0.50/s
 [Calendar] year 76.91 (1 + 75.91)
 [Calendar] Winter 1 (1 if 303.62 % 4 == 3)
 [Calendar] day_of_year 363 (1 + 30362 % 400)
@@ -3715,7 +3487,6 @@ error: not enough catnip
 ###
 [Calendar] time 73113
 [Calendar] skip 72884
-[Calendar] day 36556.50 0.50/s
 [Calendar] year 92.39 (1 + 91.39)
 [Calendar] Summer 1 (1 if 365.56 % 4 == 1)
 [Calendar] day_of_year 157 (1 + 36556 % 400)
@@ -3737,7 +3508,6 @@ last input: s2
 ###
 [Calendar] time 73114
 [Calendar] skip 72884
-[Calendar] day 36557 0.50/s
 [Calendar] year 92.39 (1 + 91.39)
 [Calendar] Summer 1 (1 if 365.57 % 4 == 1)
 [Calendar] day_of_year 158 (1 + 36557 % 400)
@@ -3760,7 +3530,6 @@ error: not enough catnip
 ###
 [Calendar] time 73115
 [Calendar] skip 72884
-[Calendar] day 36557.50 0.50/s
 [Calendar] year 92.39 (1 + 91.39)
 [Calendar] Summer 1 (1 if 365.57 % 4 == 1)
 [Calendar] day_of_year 158 (1 + 36557 % 400)
@@ -3783,7 +3552,6 @@ error: not enough catnip
 ###
 [Calendar] time 73116
 [Calendar] skip 72884
-[Calendar] day 36558 0.50/s
 [Calendar] year 92.39 (1 + 91.39)
 [Calendar] Summer 1 (1 if 365.58 % 4 == 1)
 [Calendar] day_of_year 159 (1 + 36558 % 400)
@@ -3806,7 +3574,6 @@ error: not enough catnip
 ###
 [Calendar] time 73117
 [Calendar] skip 72884
-[Calendar] day 36558.50 0.50/s
 [Calendar] year 92.39 (1 + 91.39)
 [Calendar] Summer 1 (1 if 365.58 % 4 == 1)
 [Calendar] day_of_year 159 (1 + 36558 % 400)
@@ -3829,7 +3596,6 @@ error: not enough catnip
 ###
 [Calendar] time 73118
 [Calendar] skip 72884
-[Calendar] day 36559 0.50/s
 [Calendar] year 92.40 (1 + 91.40)
 [Calendar] Summer 1 (1 if 365.59 % 4 == 1)
 [Calendar] day_of_year 160 (1 + 36559 % 400)
@@ -3852,7 +3618,6 @@ error: not enough catnip
 ###
 [Calendar] time 73119
 [Calendar] skip 72884
-[Calendar] day 36559.50 0.50/s
 [Calendar] year 92.40 (1 + 91.40)
 [Calendar] Summer 1 (1 if 365.59 % 4 == 1)
 [Calendar] day_of_year 160 (1 + 36559 % 400)
@@ -3875,7 +3640,6 @@ error: not enough catnip
 ###
 [Calendar] time 73120
 [Calendar] skip 72884
-[Calendar] day 36560 0.50/s
 [Calendar] year 92.40 (1 + 91.40)
 [Calendar] Summer 1 (1 if 365.60 % 4 == 1)
 [Calendar] day_of_year 161 (1 + 36560 % 400)
@@ -3898,7 +3662,6 @@ error: not enough catnip
 ###
 [Calendar] time 73121
 [Calendar] skip 72884
-[Calendar] day 36560.50 0.50/s
 [Calendar] year 92.40 (1 + 91.40)
 [Calendar] Summer 1 (1 if 365.60 % 4 == 1)
 [Calendar] day_of_year 161 (1 + 36560 % 400)
@@ -3921,7 +3684,6 @@ error: not enough catnip
 ###
 [Calendar] time 73122
 [Calendar] skip 72884
-[Calendar] day 36561 0.50/s
 [Calendar] year 92.40 (1 + 91.40)
 [Calendar] Summer 1 (1 if 365.61 % 4 == 1)
 [Calendar] day_of_year 162 (1 + 36561 % 400)
@@ -3944,7 +3706,6 @@ error: not enough catnip
 ###
 [Calendar] time 73123
 [Calendar] skip 72884
-[Calendar] day 36561.50 0.50/s
 [Calendar] year 92.40 (1 + 91.40)
 [Calendar] Summer 1 (1 if 365.61 % 4 == 1)
 [Calendar] day_of_year 162 (1 + 36561 % 400)
@@ -3966,7 +3727,6 @@ last input: s4
 ###
 [Calendar] time 73124
 [Calendar] skip 72884
-[Calendar] day 36562 0.50/s
 [Calendar] year 92.41 (1 + 91.41)
 [Calendar] Summer 1 (1 if 365.62 % 4 == 1)
 [Calendar] day_of_year 163 (1 + 36562 % 400)
@@ -3988,7 +3748,6 @@ last input: 4
 ###
 [Calendar] time 73125
 [Calendar] skip 72884
-[Calendar] day 36562.50 0.50/s
 [Calendar] year 92.41 (1 + 91.41)
 [Calendar] Summer 1 (1 if 365.62 % 4 == 1)
 [Calendar] day_of_year 163 (1 + 36562 % 400)
@@ -4010,7 +3769,6 @@ last input: s4
 ###
 [Calendar] time 73126
 [Calendar] skip 72884
-[Calendar] day 36563 0.50/s
 [Calendar] year 92.41 (1 + 91.41)
 [Calendar] Summer 1 (1 if 365.63 % 4 == 1)
 [Calendar] day_of_year 164 (1 + 36563 % 400)
@@ -4032,7 +3790,6 @@ last input: 4
 ###
 [Calendar] time 73127
 [Calendar] skip 72884
-[Calendar] day 36563.50 0.50/s
 [Calendar] year 92.41 (1 + 91.41)
 [Calendar] Summer 1 (1 if 365.63 % 4 == 1)
 [Calendar] day_of_year 164 (1 + 36563 % 400)
@@ -4054,7 +3811,6 @@ last input: s4
 ###
 [Calendar] time 73128
 [Calendar] skip 72884
-[Calendar] day 36564 0.50/s
 [Calendar] year 92.41 (1 + 91.41)
 [Calendar] Summer 1 (1 if 365.64 % 4 == 1)
 [Calendar] day_of_year 165 (1 + 36564 % 400)
@@ -4077,7 +3833,6 @@ error: not enough wood
 ###
 [Calendar] time 77115
 [Calendar] skip 76870
-[Calendar] day 38557.50 0.50/s
 [Calendar] year 97.39 (1 + 96.39)
 [Calendar] Summer 1 (1 if 385.57 % 4 == 1)
 [Calendar] day_of_year 158 (1 + 38557 % 400)
@@ -4099,7 +3854,6 @@ last input: s4
 ###
 [Calendar] time 77116
 [Calendar] skip 76870
-[Calendar] day 38558 0.50/s
 [Calendar] year 97.39 (1 + 96.39)
 [Calendar] Summer 1 (1 if 385.58 % 4 == 1)
 [Calendar] day_of_year 159 (1 + 38558 % 400)
@@ -4121,7 +3875,6 @@ last input: 4
 ###
 [Calendar] time 82047
 [Calendar] skip 81800
-[Calendar] day 41023.50 0.50/s
 [Calendar] year 103.56 (1 + 102.56)
 [Calendar] Autumn 1 (1 if 410.23 % 4 == 2)
 [Calendar] day_of_year 224 (1 + 41023 % 400)
@@ -4143,7 +3896,6 @@ last input: s4
 ###
 [Calendar] time 82048
 [Calendar] skip 81800
-[Calendar] day 41024 0.50/s
 [Calendar] year 103.56 (1 + 102.56)
 [Calendar] Autumn 1 (1 if 410.24 % 4 == 2)
 [Calendar] day_of_year 225 (1 + 41024 % 400)
@@ -4165,7 +3917,6 @@ last input: 4
 ###
 [Calendar] time 87719
 [Calendar] skip 87470
-[Calendar] day 43859.50 0.50/s
 [Calendar] year 110.65 (1 + 109.65)
 [Calendar] Autumn 1 (1 if 438.59 % 4 == 2)
 [Calendar] day_of_year 260 (1 + 43859 % 400)
@@ -4187,7 +3938,6 @@ last input: s4
 ###
 [Calendar] time 87720
 [Calendar] skip 87470
-[Calendar] day 43860 0.50/s
 [Calendar] year 110.65 (1 + 109.65)
 [Calendar] Autumn 1 (1 if 438.60 % 4 == 2)
 [Calendar] day_of_year 261 (1 + 43860 % 400)
@@ -4209,7 +3959,6 @@ last input: 4
 ###
 [Calendar] time 94242
 [Calendar] skip 93991
-[Calendar] day 47121 0.50/s
 [Calendar] year 118.80 (1 + 117.80)
 [Calendar] Winter 1 (1 if 471.21 % 4 == 3)
 [Calendar] day_of_year 322 (1 + 47121 % 400)
@@ -4231,7 +3980,6 @@ last input: s4
 ###
 [Calendar] time 94243
 [Calendar] skip 93991
-[Calendar] day 47121.50 0.50/s
 [Calendar] year 118.80 (1 + 117.80)
 [Calendar] Winter 1 (1 if 471.21 % 4 == 3)
 [Calendar] day_of_year 322 (1 + 47121 % 400)
@@ -4253,7 +4001,6 @@ last input: 4
 ###
 [Calendar] time 101743
 [Calendar] skip 101490
-[Calendar] day 50871.50 0.50/s
 [Calendar] year 128.18 (1 + 127.18)
 [Calendar] Spring 1 (1 if 508.71 % 4 == 0)
 [Calendar] day_of_year 72 (1 + 50871 % 400)
@@ -4275,7 +4022,6 @@ last input: s4
 ###
 [Calendar] time 101744
 [Calendar] skip 101490
-[Calendar] day 50872 0.50/s
 [Calendar] year 128.18 (1 + 127.18)
 [Calendar] Spring 1 (1 if 508.72 % 4 == 0)
 [Calendar] day_of_year 73 (1 + 50872 % 400)
@@ -4297,7 +4043,6 @@ last input: 4
 ###
 [Calendar] time 110370
 [Calendar] skip 110115
-[Calendar] day 55185 0.50/s
 [Calendar] year 138.96 (1 + 137.96)
 [Calendar] Winter 1 (1 if 551.85 % 4 == 3)
 [Calendar] day_of_year 386 (1 + 55185 % 400)
@@ -4319,7 +4064,6 @@ last input: s4
 ###
 [Calendar] time 110371
 [Calendar] skip 110115
-[Calendar] day 55185.50 0.50/s
 [Calendar] year 138.96 (1 + 137.96)
 [Calendar] Winter 1 (1 if 551.85 % 4 == 3)
 [Calendar] day_of_year 386 (1 + 55185 % 400)
@@ -4341,7 +4085,6 @@ last input: 4
 ###
 [Calendar] time 120290
 [Calendar] skip 120033
-[Calendar] day 60145 0.50/s
 [Calendar] year 151.36 (1 + 150.36)
 [Calendar] Summer 1 (1 if 601.45 % 4 == 1)
 [Calendar] day_of_year 146 (1 + 60145 % 400)
@@ -4363,7 +4106,6 @@ last input: s4
 ###
 [Calendar] time 120291
 [Calendar] skip 120033
-[Calendar] day 60145.50 0.50/s
 [Calendar] year 151.36 (1 + 150.36)
 [Calendar] Summer 1 (1 if 601.45 % 4 == 1)
 [Calendar] day_of_year 146 (1 + 60145 % 400)
@@ -4385,7 +4127,6 @@ last input: 4
 ###
 [Calendar] time 131699
 [Calendar] skip 131440
-[Calendar] day 65849.50 0.50/s
 [Calendar] year 165.62 (1 + 164.62)
 [Calendar] Autumn 1 (1 if 658.49 % 4 == 2)
 [Calendar] day_of_year 250 (1 + 65849 % 400)
@@ -4407,7 +4148,6 @@ last input: s4
 ###
 [Calendar] time 131700
 [Calendar] skip 131440
-[Calendar] day 65850 0.50/s
 [Calendar] year 165.62 (1 + 164.62)
 [Calendar] Autumn 1 (1 if 658.50 % 4 == 2)
 [Calendar] day_of_year 251 (1 + 65850 % 400)
@@ -4429,7 +4169,6 @@ last input: 4
 ###
 [Calendar] time 144819
 [Calendar] skip 144558
-[Calendar] day 72409.50 0.50/s
 [Calendar] year 182.02 (1 + 181.02)
 [Calendar] Spring 1 (1 if 724.09 % 4 == 0)
 [Calendar] day_of_year 10 (1 + 72409 % 400)
@@ -4451,7 +4190,6 @@ last input: s4
 ###
 [Calendar] time 144820
 [Calendar] skip 144558
-[Calendar] day 72410 0.50/s
 [Calendar] year 182.03 (1 + 181.03)
 [Calendar] Spring 1 (1 if 724.10 % 4 == 0)
 [Calendar] day_of_year 11 (1 + 72410 % 400)
@@ -4473,7 +4211,6 @@ last input: 4
 ###
 [Calendar] time 159907
 [Calendar] skip 159644
-[Calendar] day 79953.50 0.50/s
 [Calendar] year 200.88 (1 + 199.88)
 [Calendar] Winter 1 (1 if 799.53 % 4 == 3)
 [Calendar] day_of_year 354 (1 + 79953 % 400)
@@ -4495,7 +4232,6 @@ last input: s4
 ###
 [Calendar] time 159908
 [Calendar] skip 159644
-[Calendar] day 79954 0.50/s
 [Calendar] year 200.88 (1 + 199.88)
 [Calendar] Winter 1 (1 if 799.54 % 4 == 3)
 [Calendar] day_of_year 355 (1 + 79954 % 400)
@@ -4518,7 +4254,6 @@ error: not enough wood
 ###
 [Calendar] time 159909
 [Calendar] skip 159644
-[Calendar] day 79954.50 0.50/s
 [Calendar] year 200.88 (1 + 199.88)
 [Calendar] Winter 1 (1 if 799.54 % 4 == 3)
 [Calendar] day_of_year 355 (1 + 79954 % 400)
@@ -4541,7 +4276,6 @@ error: not enough wood
 ###
 [Calendar] time 159910
 [Calendar] skip 159644
-[Calendar] day 79955 0.50/s
 [Calendar] year 200.89 (1 + 199.89)
 [Calendar] Winter 1 (1 if 799.55 % 4 == 3)
 [Calendar] day_of_year 356 (1 + 79955 % 400)
@@ -4564,7 +4298,6 @@ error: not enough wood
 ###
 [Calendar] time 159911
 [Calendar] skip 159644
-[Calendar] day 79955.50 0.50/s
 [Calendar] year 200.89 (1 + 199.89)
 [Calendar] Winter 1 (1 if 799.55 % 4 == 3)
 [Calendar] day_of_year 356 (1 + 79955 % 400)
@@ -4587,7 +4320,6 @@ error: not enough wood
 ###
 [Calendar] time 159912
 [Calendar] skip 159644
-[Calendar] day 79956 0.50/s
 [Calendar] year 200.89 (1 + 199.89)
 [Calendar] Winter 1 (1 if 799.56 % 4 == 3)
 [Calendar] day_of_year 357 (1 + 79956 % 400)
@@ -4610,7 +4342,6 @@ error: not enough wood
 ###
 [Calendar] time 159913
 [Calendar] skip 159644
-[Calendar] day 79956.50 0.50/s
 [Calendar] year 200.89 (1 + 199.89)
 [Calendar] Winter 1 (1 if 799.56 % 4 == 3)
 [Calendar] day_of_year 357 (1 + 79956 % 400)
@@ -4632,7 +4363,6 @@ last input: s3
 ###
 [Calendar] time 159914
 [Calendar] skip 159644
-[Calendar] day 79957 0.50/s
 [Calendar] year 200.89 (1 + 199.89)
 [Calendar] Winter 1 (1 if 799.57 % 4 == 3)
 [Calendar] day_of_year 358 (1 + 79957 % 400)
@@ -4655,7 +4385,6 @@ last input: 3
 ###
 [Calendar] time 159934
 [Calendar] skip 159663
-[Calendar] day 79967 0.50/s
 [Calendar] year 200.92 (1 + 199.92)
 [Calendar] Winter 1 (1 if 799.67 % 4 == 3)
 [Calendar] day_of_year 368 (1 + 79967 % 400)
@@ -4678,7 +4407,6 @@ last input: s9
 ###
 [Calendar] time 159935
 [Calendar] skip 159663
-[Calendar] day 79967.50 0.50/s
 [Calendar] year 200.92 (1 + 199.92)
 [Calendar] Winter 1 (1 if 799.67 % 4 == 3)
 [Calendar] day_of_year 368 (1 + 79967 % 400)
@@ -4701,7 +4429,6 @@ last input: 9
 ###
 [Calendar] time 159936
 [Calendar] skip 159663
-[Calendar] day 79968 0.50/s
 [Calendar] year 200.92 (1 + 199.92)
 [Calendar] Winter 1 (1 if 799.68 % 4 == 3)
 [Calendar] day_of_year 369 (1 + 79968 % 400)
@@ -4724,7 +4451,6 @@ last input: s3
 ###
 [Calendar] time 159937
 [Calendar] skip 159663
-[Calendar] day 79968.50 0.50/s
 [Calendar] year 200.92 (1 + 199.92)
 [Calendar] Winter 1 (1 if 799.68 % 4 == 3)
 [Calendar] day_of_year 369 (1 + 79968 % 400)
@@ -4747,7 +4473,6 @@ last input: 3
 ###
 [Calendar] time 159954
 [Calendar] skip 159679
-[Calendar] day 79977 0.50/s
 [Calendar] year 200.94 (1 + 199.94)
 [Calendar] Winter 1 (1 if 799.77 % 4 == 3)
 [Calendar] day_of_year 378 (1 + 79977 % 400)
@@ -4770,7 +4495,6 @@ last input: s9
 ###
 [Calendar] time 159955
 [Calendar] skip 159679
-[Calendar] day 79977.50 0.50/s
 [Calendar] year 200.94 (1 + 199.94)
 [Calendar] Winter 1 (1 if 799.77 % 4 == 3)
 [Calendar] day_of_year 378 (1 + 79977 % 400)
@@ -4793,7 +4517,6 @@ last input: 9
 ###
 [Calendar] time 159956
 [Calendar] skip 159679
-[Calendar] day 79978 0.50/s
 [Calendar] year 200.94 (1 + 199.94)
 [Calendar] Winter 1 (1 if 799.78 % 4 == 3)
 [Calendar] day_of_year 379 (1 + 79978 % 400)
@@ -4816,7 +4539,6 @@ last input: s3
 ###
 [Calendar] time 159957
 [Calendar] skip 159679
-[Calendar] day 79978.50 0.50/s
 [Calendar] year 200.94 (1 + 199.94)
 [Calendar] Winter 1 (1 if 799.78 % 4 == 3)
 [Calendar] day_of_year 379 (1 + 79978 % 400)
@@ -4840,7 +4562,6 @@ error: not enough wood
 ###
 [Calendar] time 159974
 [Calendar] skip 159695
-[Calendar] day 79987 0.50/s
 [Calendar] year 200.97 (1 + 199.97)
 [Calendar] Winter 1 (1 if 799.87 % 4 == 3)
 [Calendar] day_of_year 388 (1 + 79987 % 400)
@@ -4863,7 +4584,6 @@ last input: s9
 ###
 [Calendar] time 159975
 [Calendar] skip 159695
-[Calendar] day 79987.50 0.50/s
 [Calendar] year 200.97 (1 + 199.97)
 [Calendar] Winter 1 (1 if 799.87 % 4 == 3)
 [Calendar] day_of_year 388 (1 + 79987 % 400)
@@ -4886,7 +4606,6 @@ last input: 9
 ###
 [Calendar] time 166869
 [Calendar] skip 166588
-[Calendar] day 83434.50 0.50/s
 [Calendar] year 209.59 (1 + 208.59)
 [Calendar] Autumn 1 (1 if 834.34 % 4 == 2)
 [Calendar] day_of_year 235 (1 + 83434 % 400)
@@ -4909,7 +4628,6 @@ last input: s3
 ###
 [Calendar] time 166870
 [Calendar] skip 166588
-[Calendar] day 83435 0.50/s
 [Calendar] year 209.59 (1 + 208.59)
 [Calendar] Autumn 1 (1 if 834.35 % 4 == 2)
 [Calendar] day_of_year 236 (1 + 83435 % 400)
@@ -4932,7 +4650,6 @@ last input: 3
 ###
 [Calendar] time 166871
 [Calendar] skip 166588
-[Calendar] day 83435.50 0.50/s
 [Calendar] year 209.59 (1 + 208.59)
 [Calendar] Autumn 1 (1 if 834.35 % 4 == 2)
 [Calendar] day_of_year 236 (1 + 83435 % 400)
@@ -4955,7 +4672,6 @@ last input: s9
 ###
 [Calendar] time 166872
 [Calendar] skip 166588
-[Calendar] day 83436 0.50/s
 [Calendar] year 209.59 (1 + 208.59)
 [Calendar] Autumn 1 (1 if 834.36 % 4 == 2)
 [Calendar] day_of_year 237 (1 + 83436 % 400)
@@ -4978,7 +4694,6 @@ last input: 9
 ###
 [Calendar] time 206297
 [Calendar] skip 206012
-[Calendar] day 103148.50 0.50/s
 [Calendar] year 258.87 (1 + 257.87)
 [Calendar] Winter 1 (1 if 1031.48 % 4 == 3)
 [Calendar] day_of_year 349 (1 + 103148 % 400)
@@ -5000,7 +4715,6 @@ last input: s3
 ###
 [Calendar] time 206298
 [Calendar] skip 206012
-[Calendar] day 103149 0.50/s
 [Calendar] year 258.87 (1 + 257.87)
 [Calendar] Winter 1 (1 if 1031.49 % 4 == 3)
 [Calendar] day_of_year 350 (1 + 103149 % 400)
@@ -5023,7 +4737,6 @@ error: not enough wood
 ###
 [Calendar] time 206299
 [Calendar] skip 206012
-[Calendar] day 103149.50 0.50/s
 [Calendar] year 258.87 (1 + 257.87)
 [Calendar] Winter 1 (1 if 1031.49 % 4 == 3)
 [Calendar] day_of_year 350 (1 + 103149 % 400)
@@ -5045,7 +4758,6 @@ last input: s9
 ###
 [Calendar] time 206300
 [Calendar] skip 206012
-[Calendar] day 103150 0.50/s
 [Calendar] year 258.88 (1 + 257.88)
 [Calendar] Winter 1 (1 if 1031.50 % 4 == 3)
 [Calendar] day_of_year 351 (1 + 103150 % 400)
@@ -5067,7 +4779,6 @@ last input: 9
 ###
 [Calendar] time 206301
 [Calendar] skip 206012
-[Calendar] day 103150.50 0.50/s
 [Calendar] year 258.88 (1 + 257.88)
 [Calendar] Winter 1 (1 if 1031.50 % 4 == 3)
 [Calendar] day_of_year 351 (1 + 103150 % 400)
@@ -5090,7 +4801,6 @@ error: not enough wood
 ###
 [Calendar] time 206302
 [Calendar] skip 206012
-[Calendar] day 103151 0.50/s
 [Calendar] year 258.88 (1 + 257.88)
 [Calendar] Winter 1 (1 if 1031.51 % 4 == 3)
 [Calendar] day_of_year 352 (1 + 103151 % 400)
@@ -5115,7 +4825,6 @@ error: not enough wood
 ###
 [Calendar] time 206303
 [Calendar] skip 206012
-[Calendar] day 103151.50 0.50/s
 [Calendar] year 258.88 (1 + 257.88)
 [Calendar] Winter 1 (1 if 1031.51 % 4 == 3)
 [Calendar] day_of_year 352 (1 + 103151 % 400)
@@ -5139,7 +4848,6 @@ last input: s9
 ###
 [Calendar] time 206304
 [Calendar] skip 206012
-[Calendar] day 103152 0.50/s
 [Calendar] year 258.88 (1 + 257.88)
 [Calendar] Winter 1 (1 if 1031.52 % 4 == 3)
 [Calendar] day_of_year 353 (1 + 103152 % 400)
@@ -5164,7 +4872,6 @@ error: not enough kitten
 ###
 [Calendar] time 206305
 [Calendar] skip 206012
-[Calendar] day 103152.50 0.50/s
 [Calendar] year 258.88 (1 + 257.88)
 [Calendar] Winter 1 (1 if 1031.52 % 4 == 3)
 [Calendar] day_of_year 353 (1 + 103152 % 400)
@@ -5189,7 +4896,6 @@ error: not enough wood
 ###
 [Calendar] time 206306
 [Calendar] skip 206012
-[Calendar] day 103153 0.50/s
 [Calendar] year 258.88 (1 + 257.88)
 [Calendar] Winter 1 (1 if 1031.53 % 4 == 3)
 [Calendar] day_of_year 354 (1 + 103153 % 400)
@@ -5214,7 +4920,6 @@ error: not enough wood
 ###
 [Calendar] time 206318
 [Calendar] skip 206023
-[Calendar] day 103159 0.50/s
 [Calendar] year 258.90 (1 + 257.90)
 [Calendar] Winter 1 (1 if 1031.59 % 4 == 3)
 [Calendar] day_of_year 360 (1 + 103159 % 400)
@@ -5238,7 +4943,6 @@ last input: s9
 ###
 [Calendar] time 206319
 [Calendar] skip 206023
-[Calendar] day 103159.50 0.50/s
 [Calendar] year 258.90 (1 + 257.90)
 [Calendar] Winter 1 (1 if 1031.59 % 4 == 3)
 [Calendar] day_of_year 360 (1 + 103159 % 400)
@@ -5262,7 +4966,6 @@ last input: 9
 ###
 [Calendar] time 206320
 [Calendar] skip 206023
-[Calendar] day 103160 0.50/s
 [Calendar] year 258.90 (1 + 257.90)
 [Calendar] Winter 1 (1 if 1031.60 % 4 == 3)
 [Calendar] day_of_year 361 (1 + 103160 % 400)
@@ -5287,7 +4990,6 @@ error: not enough wood
 ###
 [Calendar] time 206321
 [Calendar] skip 206023
-[Calendar] day 103160.50 0.50/s
 [Calendar] year 258.90 (1 + 257.90)
 [Calendar] Winter 1 (1 if 1031.60 % 4 == 3)
 [Calendar] day_of_year 361 (1 + 103160 % 400)
@@ -5312,7 +5014,6 @@ error: not enough wood
 ###
 [Calendar] time 206338
 [Calendar] skip 206039
-[Calendar] day 103169 0.50/s
 [Calendar] year 258.92 (1 + 257.92)
 [Calendar] Winter 1 (1 if 1031.69 % 4 == 3)
 [Calendar] day_of_year 370 (1 + 103169 % 400)
@@ -5336,7 +5037,6 @@ last input: s9
 ###
 [Calendar] time 206339
 [Calendar] skip 206039
-[Calendar] day 103169.50 0.50/s
 [Calendar] year 258.92 (1 + 257.92)
 [Calendar] Winter 1 (1 if 1031.69 % 4 == 3)
 [Calendar] day_of_year 370 (1 + 103169 % 400)
@@ -5360,7 +5060,6 @@ last input: 9
 ###
 [Calendar] time 206340
 [Calendar] skip 206039
-[Calendar] day 103170 0.50/s
 [Calendar] year 258.93 (1 + 257.93)
 [Calendar] Winter 1 (1 if 1031.70 % 4 == 3)
 [Calendar] day_of_year 371 (1 + 103170 % 400)
@@ -5385,7 +5084,6 @@ last input: s14
 ###
 [Calendar] time 206341
 [Calendar] skip 206039
-[Calendar] day 103170.50 0.50/s
 [Calendar] year 258.93 (1 + 257.93)
 [Calendar] Winter 1 (1 if 1031.70 % 4 == 3)
 [Calendar] day_of_year 371 (1 + 103170 % 400)
@@ -5411,7 +5109,6 @@ error: action Archery is locked
 ###
 [Calendar] time 206342
 [Calendar] skip 206039
-[Calendar] day 103171 0.50/s
 [Calendar] year 258.93 (1 + 257.93)
 [Calendar] Winter 1 (1 if 1031.71 % 4 == 3)
 [Calendar] day_of_year 372 (1 + 103171 % 400)
@@ -5437,7 +5134,6 @@ error: not enough wood
 ###
 [Calendar] time 206343
 [Calendar] skip 206039
-[Calendar] day 103171.50 0.50/s
 [Calendar] year 258.93 (1 + 257.93)
 [Calendar] Winter 1 (1 if 1031.71 % 4 == 3)
 [Calendar] day_of_year 372 (1 + 103171 % 400)
@@ -5463,7 +5159,6 @@ error: not enough wood
 ###
 [Calendar] time 206358
 [Calendar] skip 206053
-[Calendar] day 103179 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.79 % 4 == 3)
 [Calendar] day_of_year 380 (1 + 103179 % 400)
@@ -5488,7 +5183,6 @@ last input: s10
 ###
 [Calendar] time 206359
 [Calendar] skip 206053
-[Calendar] day 103179.50 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.79 % 4 == 3)
 [Calendar] day_of_year 380 (1 + 103179 % 400)
@@ -5513,7 +5207,6 @@ last input: 10
 ###
 [Calendar] time 206360
 [Calendar] skip 206053
-[Calendar] day 103180 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.80 % 4 == 3)
 [Calendar] day_of_year 381 (1 + 103180 % 400)
@@ -5540,7 +5233,6 @@ last input: s15
 ###
 [Calendar] time 206361
 [Calendar] skip 206053
-[Calendar] day 103180.50 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.80 % 4 == 3)
 [Calendar] day_of_year 381 (1 + 103180 % 400)
@@ -5568,7 +5260,6 @@ error: action Mining is locked
 ###
 [Calendar] time 206362
 [Calendar] skip 206053
-[Calendar] day 103181 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.81 % 4 == 3)
 [Calendar] day_of_year 382 (1 + 103181 % 400)
@@ -5596,7 +5287,6 @@ last input: s6
 ###
 [Calendar] time 206363
 [Calendar] skip 206053
-[Calendar] day 103181.50 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.81 % 4 == 3)
 [Calendar] day_of_year 382 (1 + 103181 % 400)
@@ -5624,7 +5314,6 @@ last input: 6
 ###
 [Calendar] time 206364
 [Calendar] skip 206053
-[Calendar] day 103182 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.82 % 4 == 3)
 [Calendar] day_of_year 383 (1 + 103182 % 400)
@@ -5652,7 +5341,6 @@ last input: s6
 ###
 [Calendar] time 206365
 [Calendar] skip 206053
-[Calendar] day 103182.50 0.50/s
 [Calendar] year 258.95 (1 + 257.95)
 [Calendar] Winter 1 (1 if 1031.82 % 4 == 3)
 [Calendar] day_of_year 383 (1 + 103182 % 400)
@@ -5680,7 +5368,6 @@ last input: 6
 ###
 [Calendar] time 206366
 [Calendar] skip 206053
-[Calendar] day 103183 0.50/s
 [Calendar] year 258.96 (1 + 257.96)
 [Calendar] Winter 1 (1 if 1031.83 % 4 == 3)
 [Calendar] day_of_year 384 (1 + 103183 % 400)
@@ -5708,7 +5395,6 @@ last input: s6
 ###
 [Calendar] time 206367
 [Calendar] skip 206053
-[Calendar] day 103183.50 0.50/s
 [Calendar] year 258.96 (1 + 257.96)
 [Calendar] Winter 1 (1 if 1031.83 % 4 == 3)
 [Calendar] day_of_year 384 (1 + 103183 % 400)
@@ -5736,7 +5422,6 @@ last input: 6
 ###
 [Calendar] time 206368
 [Calendar] skip 206053
-[Calendar] day 103184 0.50/s
 [Calendar] year 258.96 (1 + 257.96)
 [Calendar] Winter 1 (1 if 1031.84 % 4 == 3)
 [Calendar] day_of_year 385 (1 + 103184 % 400)
@@ -5764,7 +5449,6 @@ last input: s6
 ###
 [Calendar] time 206369
 [Calendar] skip 206053
-[Calendar] day 103184.50 0.50/s
 [Calendar] year 258.96 (1 + 257.96)
 [Calendar] Winter 1 (1 if 1031.84 % 4 == 3)
 [Calendar] day_of_year 385 (1 + 103184 % 400)
@@ -5792,7 +5476,6 @@ last input: 6
 ###
 [Calendar] time 210047
 [Calendar] skip 209730
-[Calendar] day 105023.50 0.50/s
 [Calendar] year 263.56 (1 + 262.56)
 [Calendar] Autumn 1 (1 if 1050.23 % 4 == 2)
 [Calendar] day_of_year 224 (1 + 105023 % 400)
@@ -5820,7 +5503,6 @@ last input: s6
 ###
 [Calendar] time 210048
 [Calendar] skip 209730
-[Calendar] day 105024 0.50/s
 [Calendar] year 263.56 (1 + 262.56)
 [Calendar] Autumn 1 (1 if 1050.24 % 4 == 2)
 [Calendar] day_of_year 225 (1 + 105024 % 400)
@@ -5848,7 +5530,6 @@ last input: 6
 ###
 [Calendar] time 214814
 [Calendar] skip 214495
-[Calendar] day 107407 0.50/s
 [Calendar] year 269.52 (1 + 268.52)
 [Calendar] Autumn 1 (1 if 1074.07 % 4 == 2)
 [Calendar] day_of_year 208 (1 + 107407 % 400)
@@ -5876,7 +5557,6 @@ last input: s6
 ###
 [Calendar] time 214815
 [Calendar] skip 214495
-[Calendar] day 107407.50 0.50/s
 [Calendar] year 269.52 (1 + 268.52)
 [Calendar] Autumn 1 (1 if 1074.07 % 4 == 2)
 [Calendar] day_of_year 208 (1 + 107407 % 400)
@@ -5904,7 +5584,6 @@ last input: 6
 ###
 [Calendar] time 220296
 [Calendar] skip 219975
-[Calendar] day 110148 0.50/s
 [Calendar] year 276.37 (1 + 275.37)
 [Calendar] Summer 1 (1 if 1101.48 % 4 == 1)
 [Calendar] day_of_year 149 (1 + 110148 % 400)
@@ -5932,7 +5611,6 @@ last input: s6
 ###
 [Calendar] time 220297
 [Calendar] skip 219975
-[Calendar] day 110148.50 0.50/s
 [Calendar] year 276.37 (1 + 275.37)
 [Calendar] Summer 1 (1 if 1101.48 % 4 == 1)
 [Calendar] day_of_year 149 (1 + 110148 % 400)
@@ -5960,7 +5638,6 @@ last input: 6
 ###
 [Calendar] time 226600
 [Calendar] skip 226277
-[Calendar] day 113300 0.50/s
 [Calendar] year 284.25 (1 + 283.25)
 [Calendar] Summer 1 (1 if 1133 % 4 == 1)
 [Calendar] day_of_year 101 (1 + 113300 % 400)
@@ -5988,7 +5665,6 @@ last input: s6
 ###
 [Calendar] time 226601
 [Calendar] skip 226277
-[Calendar] day 113300.50 0.50/s
 [Calendar] year 284.25 (1 + 283.25)
 [Calendar] Summer 1 (1 if 1133 % 4 == 1)
 [Calendar] day_of_year 101 (1 + 113300 % 400)
@@ -6016,7 +5692,6 @@ last input: 6
 ###
 [Calendar] time 233850
 [Calendar] skip 233525
-[Calendar] day 116925 0.50/s
 [Calendar] year 293.31 (1 + 292.31)
 [Calendar] Summer 1 (1 if 1169.25 % 4 == 1)
 [Calendar] day_of_year 126 (1 + 116925 % 400)
@@ -6044,7 +5719,6 @@ last input: s6
 ###
 [Calendar] time 233851
 [Calendar] skip 233525
-[Calendar] day 116925.50 0.50/s
 [Calendar] year 293.31 (1 + 292.31)
 [Calendar] Summer 1 (1 if 1169.25 % 4 == 1)
 [Calendar] day_of_year 126 (1 + 116925 % 400)
@@ -6072,7 +5746,6 @@ last input: 6
 ###
 [Calendar] time 242187
 [Calendar] skip 241860
-[Calendar] day 121093.50 0.50/s
 [Calendar] year 303.73 (1 + 302.73)
 [Calendar] Autumn 1 (1 if 1210.93 % 4 == 2)
 [Calendar] day_of_year 294 (1 + 121093 % 400)
@@ -6100,7 +5773,6 @@ last input: s6
 ###
 [Calendar] time 242188
 [Calendar] skip 241860
-[Calendar] day 121094 0.50/s
 [Calendar] year 303.74 (1 + 302.74)
 [Calendar] Autumn 1 (1 if 1210.94 % 4 == 2)
 [Calendar] day_of_year 295 (1 + 121094 % 400)
@@ -6128,7 +5800,6 @@ last input: 6
 ###
 [Calendar] time 283539
 [Calendar] skip 283210
-[Calendar] day 141769.50 0.50/s
 [Calendar] year 355.42 (1 + 354.42)
 [Calendar] Summer 1 (1 if 1417.69 % 4 == 1)
 [Calendar] day_of_year 170 (1 + 141769 % 400)
@@ -6156,7 +5827,6 @@ last input: s3
 ###
 [Calendar] time 283540
 [Calendar] skip 283210
-[Calendar] day 141770 0.50/s
 [Calendar] year 355.43 (1 + 354.43)
 [Calendar] Summer 1 (1 if 1417.70 % 4 == 1)
 [Calendar] day_of_year 171 (1 + 141770 % 400)
@@ -6185,7 +5855,6 @@ error: not enough wood
 ###
 [Calendar] time 283541
 [Calendar] skip 283210
-[Calendar] day 141770.50 0.50/s
 [Calendar] year 355.43 (1 + 354.43)
 [Calendar] Summer 1 (1 if 1417.70 % 4 == 1)
 [Calendar] day_of_year 171 (1 + 141770 % 400)
@@ -6212,7 +5881,6 @@ last input: s11
 ###
 [Calendar] time 283542
 [Calendar] skip 283210
-[Calendar] day 141771 0.50/s
 [Calendar] year 355.43 (1 + 354.43)
 [Calendar] Summer 1 (1 if 1417.71 % 4 == 1)
 [Calendar] day_of_year 172 (1 + 141771 % 400)
@@ -6241,7 +5909,6 @@ error: not enough kitten
 ###
 [Calendar] time 283543
 [Calendar] skip 283210
-[Calendar] day 141771.50 0.50/s
 [Calendar] year 355.43 (1 + 354.43)
 [Calendar] Summer 1 (1 if 1417.71 % 4 == 1)
 [Calendar] day_of_year 172 (1 + 141771 % 400)
@@ -6268,7 +5935,6 @@ last input: s16
 ###
 [Calendar] time 283544
 [Calendar] skip 283210
-[Calendar] day 141772 0.50/s
 [Calendar] year 355.43 (1 + 354.43)
 [Calendar] Summer 1 (1 if 1417.72 % 4 == 1)
 [Calendar] day_of_year 173 (1 + 141772 % 400)
@@ -6296,7 +5962,6 @@ error: action Animal Husbandry is locked
 ###
 [Calendar] time 283545
 [Calendar] skip 283210
-[Calendar] day 141772.50 0.50/s
 [Calendar] year 355.43 (1 + 354.43)
 [Calendar] Summer 1 (1 if 1417.72 % 4 == 1)
 [Calendar] day_of_year 173 (1 + 141772 % 400)
@@ -6322,7 +5987,6 @@ last input: s17
 ###
 [Calendar] time 283546
 [Calendar] skip 283210
-[Calendar] day 141773 0.50/s
 [Calendar] year 355.43 (1 + 354.43)
 [Calendar] Summer 1 (1 if 1417.73 % 4 == 1)
 [Calendar] day_of_year 174 (1 + 141773 % 400)

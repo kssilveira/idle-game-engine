@@ -17,7 +17,6 @@ sX: time skip until action X is available
 last input: 2
 ###
 [Calendar] time 1
-[Calendar] day 0.50 0.50/s
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
@@ -31,7 +30,6 @@ error: action Gather catnip is locked
 ###
 [Calendar] time 12
 [Calendar] skip 11
-[Calendar] day 6 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
@@ -44,7 +42,6 @@ last input: s2
 ###
 [Calendar] time 12
 [Calendar] skip 11
-[Calendar] day 6 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
@@ -57,7 +54,6 @@ last input: 2
 ###
 [Calendar] time 13
 [Calendar] skip 11
-[Calendar] day 6.50 0.50/s
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)

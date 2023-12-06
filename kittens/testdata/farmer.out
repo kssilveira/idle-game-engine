@@ -27,7 +27,6 @@ sX: time skip until action X is available
 last input: 9
 ###
 [Calendar] time 1
-[Calendar] day 0.50 0.50/s
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
@@ -43,7 +42,6 @@ sX: time skip until action X is available
 last input: 0
 ###
 [Calendar] time 1
-[Calendar] day 0.50 0.50/s
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
@@ -58,7 +56,6 @@ sX: time skip until action X is available
 last input: 9
 ###
 [Calendar] time 2
-[Calendar] day 1 0.50/s
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)

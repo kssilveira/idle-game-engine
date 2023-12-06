@@ -32,7 +32,6 @@ sX: time skip until action X is available
 last input: 7
 ###
 [Calendar] time 1
-[Calendar] day 0.50 0.50/s
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
@@ -54,7 +53,6 @@ last input: 1
 error: action Refine catnip is locked
 ###
 [Calendar] time 1
-[Calendar] day 0.50 0.50/s
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
@@ -75,7 +73,6 @@ sX: time skip until action X is available
 last input: 8
 ###
 [Calendar] time 2
-[Calendar] day 1 0.50/s
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -98,7 +95,6 @@ last input: 1
 error: action Refine catnip is locked
 ###
 [Calendar] time 2
-[Calendar] day 1 0.50/s
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -120,7 +116,6 @@ sX: time skip until action X is available
 last input: 9
 ###
 [Calendar] time 3
-[Calendar] day 1.50 0.50/s
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -143,7 +138,6 @@ last input: 1
 error: action Refine catnip is locked
 ###
 [Calendar] time 82
-[Calendar] day 41 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 41 % 400)
@@ -166,7 +160,6 @@ last input: 1
 error: action Refine catnip is locked
 ###
 [Calendar] time 83
-[Calendar] day 41.50 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 41 % 400)
@@ -188,7 +181,6 @@ last input: 1
 error: action Refine catnip is locked
 ###
 [Calendar] time 84
-[Calendar] day 42 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
@@ -210,7 +202,6 @@ last input: 1
 error: action Refine catnip is locked
 ###
 [Calendar] time 85
-[Calendar] day 42.50 0.50/s
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
@@ -232,7 +223,6 @@ last input: 1
 error: action Refine catnip is locked
 ###
 [Calendar] time 86
-[Calendar] day 43 0.50/s
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
