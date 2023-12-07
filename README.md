@@ -12,6 +12,7 @@ Game engine for idle games like kittens game.
 - [kittens.go](kittens/kittens.go) kittens game
 - [main.go](main.go) run kittens game
 - [solve.out](kittens/testdata/solve.out) text UI output for kittens game solution
+- [graph.svg](kittens/testdata/graph.svg) graph of kittens game dependencies
 
 ## Special Actions
 
@@ -53,9 +54,7 @@ Faster solution:
 ./idle-game-engine --auto --auto_sleep_ms=100
 ```
 
-## Ideas
-
-General features:
+## General Ideas
 
 - shared web server
 - configurable game rules at runtime
@@ -64,7 +63,15 @@ General features:
   - least skipped time
 - competition of bots
 
-Features from kittens game:
+## Kittens
+
+Graph of current features:
+
+![graph](kittens/testdata/graph.svg)
+![graph nodes](kittens/testdata/graph_nodes.svg)
+![graph arrows](kittens/testdata/graph_arrows.svg)
+
+More features from kittens game:
 
 - Workshop
   - unlocked by miner
