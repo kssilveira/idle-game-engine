@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"log"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strings"
 	"testing"
@@ -212,4 +213,20 @@ func join(iters ...[]iter) []iter {
 		res = append(res, iter...)
 	}
 	return res
+}
+
+func TestGraph(t *testing.T) {
+	var buf bytes.Buffer
+	logger := log.New(&buf, "", 0 /* flags */)
+	g := NewGame(func() time.Time { return time.Unix(0, 0) })
+	Graph(logger, g)
+	dot := filepath.Join("testdata", "graph.dot")
+	svg := filepath.Join("testdata", "graph.svg")
+	if err := os.WriteFile(dot, buf.Bytes(), 0644); err != nil {
+		t.Errorf("TestGraph.Graph got err %v", err)
+	}
+	cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
+	if err := cmd.Run(); err != nil {
+		t.Errorf("TestGraph.Graph.Dot got err %v", err)
+	}
 }

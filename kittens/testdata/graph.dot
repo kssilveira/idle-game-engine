@@ -1,0 +1,120 @@
+digraph {
+  "catnip" [shape="cylinder"];
+  "wood" [shape="cylinder"];
+  "science" [shape="cylinder"];
+  "catpower" [shape="cylinder"];
+  "minerals" [shape="cylinder"];
+  "kitten" [shape="cylinder"];
+  "Catnip Field" [shape="box3d"];
+  "Hut" [shape="box3d"];
+  "Library" [shape="box3d"];
+  "Barn" [shape="box3d"];
+  "Mine" [shape="box3d"];
+  "woodcutter" [shape="house"];
+  "scholar" [shape="house"];
+  "farmer" [shape="house"];
+  "hunter" [shape="house"];
+  "miner" [shape="house"];
+  "happiness" [shape="house"];
+  "Calendar" [shape="diamond"];
+  "Agriculture" [shape="diamond"];
+  "Archery" [shape="diamond"];
+  "Mining" [shape="diamond"];
+  "Animal Husbandry" [shape="diamond"];
+  "Metal Working" [shape="diamond"];
+  "Gather catnip" [shape="box3d"];
+  "Refine catnip" [shape="box3d"];
+  "Catnip Field" [shape="box3d"];
+  "Hut" [shape="box3d"];
+  "Library" [shape="box3d"];
+  "Barn" [shape="box3d"];
+  "Mine" [shape="box3d"];
+  "woodcutter" [shape="house"];
+  "scholar" [shape="house"];
+  "farmer" [shape="house"];
+  "hunter" [shape="house"];
+  "miner" [shape="house"];
+  "Calendar" [shape="diamond"];
+  "Agriculture" [shape="diamond"];
+  "Archery" [shape="diamond"];
+  "Mining" [shape="diamond"];
+  "Animal Husbandry" [shape="diamond"];
+  "Metal Working" [shape="diamond"];
+  "Catnip Field" -> "catnip" [color="green"];
+  "catnip" -> "kitten" [color="red"];
+  "catnip" -> "woodcutter" [color="red"];
+  "catnip" -> "scholar" [color="red"];
+  "catnip" -> "farmer" [color="red"];
+  "catnip" -> "hunter" [color="red"];
+  "catnip" -> "miner" [color="red"];
+  "farmer" -> "catnip" [color="green"];
+  "woodcutter" -> "wood" [color="green"];
+  "scholar" -> "science" [color="green"];
+  "hunter" -> "catpower" [color="green"];
+  "miner" -> "minerals" [color="green"];
+  "happiness" -> "kitten" [color="red"];
+  "happiness" -> "woodcutter" [color="red"];
+  "happiness" -> "scholar" [color="red"];
+  "happiness" -> "farmer" [color="red"];
+  "happiness" -> "hunter" [color="red"];
+  "happiness" -> "miner" [color="red"];
+  "Gather catnip" -> "catnip" [color="limegreen"];
+  "catnip" -> "Refine catnip" [color="orange"];
+  "Refine catnip" -> "wood" [color="limegreen"];
+  "catnip" -> "Refine catnip" [color="blue"];
+  "catnip" -> "Catnip Field" [color="orange"];
+  "catnip" -> "Catnip Field" [color="blue"];
+  "wood" -> "Hut" [color="orange"];
+  "Hut" -> "kitten" [color="limegreen"];
+  "wood" -> "Hut" [color="blue"];
+  "wood" -> "Library" [color="orange"];
+  "Library" -> "science" [color="limegreen"];
+  "wood" -> "Library" [color="blue"];
+  "wood" -> "Barn" [color="orange"];
+  "Barn" -> "catnip" [color="limegreen"];
+  "Barn" -> "wood" [color="limegreen"];
+  "Barn" -> "minerals" [color="limegreen"];
+  "Agriculture" -> "Barn" [color="blue"];
+  "wood" -> "Mine" [color="orange"];
+  "Mining" -> "Mine" [color="blue"];
+  "kitten" -> "woodcutter" [color="orange"];
+  "Hut" -> "woodcutter" [color="blue"];
+  "kitten" -> "scholar" [color="orange"];
+  "Library" -> "scholar" [color="blue"];
+  "kitten" -> "farmer" [color="orange"];
+  "Agriculture" -> "farmer" [color="blue"];
+  "kitten" -> "hunter" [color="orange"];
+  "Archery" -> "hunter" [color="blue"];
+  "kitten" -> "miner" [color="orange"];
+  "Mine" -> "miner" [color="blue"];
+  "science" -> "Calendar" [color="orange"];
+  "Library" -> "Calendar" [color="blue"];
+  "science" -> "Agriculture" [color="orange"];
+  "Calendar" -> "Agriculture" [color="blue"];
+  "science" -> "Archery" [color="orange"];
+  "Calendar" -> "Archery" [color="blue"];
+  "science" -> "Mining" [color="orange"];
+  "Calendar" -> "Mining" [color="blue"];
+  "science" -> "Animal Husbandry" [color="orange"];
+  "Archery" -> "Animal Husbandry" [color="blue"];
+  "science" -> "Metal Working" [color="orange"];
+  "Mining" -> "Metal Working" [color="blue"];
+
+subgraph cluster_01 {
+  label = "Arrows";
+  node [shape=point, style=invis]
+  n0 -> n1 [color="red" label="consumes"]
+  n2 -> n3 [color="green" label="produces"]
+  n4 -> n5 [color="orange" label="costs"]
+  n6 -> n7 [color="limegreen" label="adds"]
+  n8 -> n9 [color="blue" label="unlocks"]
+}
+
+subgraph cluster_02 {
+  label = "Shapes";
+  "Resource" [shape="cylinder"];
+  "Bonfire" [shape="box3d"];
+  "Village" [shape="house"];
+  "Science" [shape="diamond"];
+}
+}

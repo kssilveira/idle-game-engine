@@ -2,6 +2,7 @@ package kittens
 
 import (
 	"fmt"
+	"log"
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/data"
@@ -457,4 +458,72 @@ func toInput(cmd int) string {
 		cmd -= sdelta
 	}
 	return fmt.Sprintf("%s%d", prefix, cmd)
+}
+
+func Graph(logger *log.Logger, g *game.Game) error {
+	logger.Printf("digraph {\n")
+	typeToShape := map[string]string{
+		"Resource": "cylinder",
+		"Bonfire":  "box3d",
+		"Village":  "house",
+		"Science":  "diamond",
+	}
+	for _, r := range g.Resources {
+		if r.Type == "Calendar" || r.Name == "gone kitten" {
+			continue
+		}
+		logger.Printf(`  "%s" [shape="%s"];`+"\n", r.Name, typeToShape[r.Type])
+	}
+	for _, a := range g.Actions {
+		logger.Printf(`  "%s" [shape="%s"];`+"\n", a.Name, typeToShape[a.Type])
+	}
+	for _, r := range g.Resources {
+		last := ""
+		for _, p := range r.Producers {
+			if p.Name == "" || p.Name == "day" || p.Name == last {
+				continue
+			}
+			last = p.Name
+			if p.ProductionFactor < 0 {
+				logger.Printf(`  "%s" -> "%s" [color="red"];`+"\n", r.Name, p.Name)
+			} else {
+				logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", p.Name, r.Name)
+			}
+		}
+	}
+	for _, a := range g.Actions {
+		for _, c := range a.Costs {
+			logger.Printf(`  "%s" -> "%s" [color="orange"];`+"\n", c.Name, a.Name)
+		}
+		for _, add := range a.Adds {
+			if a.Name == add.Name {
+				continue
+			}
+			logger.Printf(`  "%s" -> "%s" [color="limegreen"];`+"\n", a.Name, add.Name)
+		}
+		if a.UnlockedBy.Name != "" {
+			logger.Printf(`  "%s" -> "%s" [color="blue"];`+"\n", a.UnlockedBy.Name, a.Name)
+		}
+	}
+	logger.Printf(`
+subgraph cluster_01 {
+  label = "Arrows";
+  node [shape=point, style=invis]
+  n0 -> n1 [color="red" label="consumes"]
+  n2 -> n3 [color="green" label="produces"]
+  n4 -> n5 [color="orange" label="costs"]
+  n6 -> n7 [color="limegreen" label="adds"]
+  n8 -> n9 [color="blue" label="unlocks"]
+}
+
+subgraph cluster_02 {
+  label = "Shapes";
+  "Resource" [shape="cylinder"];
+  "Bonfire" [shape="box3d"];
+  "Village" [shape="house"];
+  "Science" [shape="diamond"];
+}
+`)
+	logger.Printf("}\n")
+	return nil
 }
