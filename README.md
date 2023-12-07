@@ -77,10 +77,6 @@ Edges:
 
 ![graph edges](kittens/testdata/graph_edges.svg)
 
-TODO
-
-- try to have single kitten count
-
 More features from kittens game:
 
 - Workshop

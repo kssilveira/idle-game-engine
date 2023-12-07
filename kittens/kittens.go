@@ -104,38 +104,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mine", ProductionFactor: 0.2,
 		}},
 	}, {
-		Name: "furs", Type: "Resource", Capacity: -1,
-		Producers: []data.Resource{{
-			Name: "kitten", ProductionFactor: -0.05, ProductionFloor: true,
-		}, {
-			Name: "woodcutter", ProductionFactor: -0.05,
-		}, {
-			Name: "scholar", ProductionFactor: -0.05,
-		}, {
-			Name: "farmer", ProductionFactor: -0.05,
-		}, {
-			Name: "hunter", ProductionFactor: -0.05,
-		}, {
-			Name: "miner", ProductionFactor: -0.05,
-		}},
-	}, {
-		Name: "ivory", Type: "Resource", Capacity: -1,
-		Producers: []data.Resource{{
-			Name: "kitten", ProductionFactor: -0.035, ProductionFloor: true,
-		}, {
-			Name: "woodcutter", ProductionFactor: -0.035,
-		}, {
-			Name: "scholar", ProductionFactor: -0.035,
-		}, {
-			Name: "farmer", ProductionFactor: -0.035,
-		}, {
-			Name: "hunter", ProductionFactor: -0.035,
-		}, {
-			Name: "miner", ProductionFactor: -0.035,
-		}},
-	}, {
-		Name: "unicorns", Type: "Resource", Capacity: -1,
-	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.05,
@@ -143,6 +111,35 @@ func NewGame(now game.Now) *game.Game {
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
 		}},
+	}, {
+		Name: "all kittens", Type: "Resource", IsHidden: true, Capacity: -1, StartQuantity: 1,
+		Producers: []data.Resource{{
+			Name: "", ProductionFactor: -1,
+		}, {
+			Name: "kitten", ProductionFactor: 1, ProductionFloor: true,
+		}, {
+			Name: "woodcutter", ProductionFactor: 1,
+		}, {
+			Name: "scholar", ProductionFactor: 1,
+		}, {
+			Name: "farmer", ProductionFactor: 1,
+		}, {
+			Name: "hunter", ProductionFactor: 1,
+		}, {
+			Name: "miner", ProductionFactor: 1,
+		}},
+	}, {
+		Name: "furs", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "all kittens", ProductionFactor: -0.05,
+		}},
+	}, {
+		Name: "ivory", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "all kittens", ProductionFactor: -0.035,
+		}},
+	}, {
+		Name: "unicorns", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
@@ -195,17 +192,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "happiness", Type: "Village", StartQuantity: 1.1, Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "kitten", ProductionFactor: -0.02, ProductionFloor: true,
-		}, {
-			Name: "woodcutter", ProductionFactor: -0.02,
-		}, {
-			Name: "scholar", ProductionFactor: -0.02,
-		}, {
-			Name: "farmer", ProductionFactor: -0.02,
-		}, {
-			Name: "hunter", ProductionFactor: -0.02,
-		}, {
-			Name: "miner", ProductionFactor: -0.02,
+			Name: "all kittens", ProductionFactor: -0.02,
 		}, {
 			Name: "ivory", ProductionFactor: 0.1, ProductionBoolean: true,
 		}, {
