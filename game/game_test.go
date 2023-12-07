@@ -230,7 +230,45 @@ func TestUpdate(t *testing.T) {
 			2 + 2 + 4,
 		},
 	}, {
+		name: "production boolean",
+		resources: []data.Resource{{
+			Name: "resource", Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "input", ProductionFactor: 1, ProductionBoolean: true,
+			}},
+		}, {
+			Name: "input", Quantity: 0, Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "", ProductionFactor: 0.25,
+			}},
+		}},
+		times: []int64{1, 3, 4, 5, 7, 8, 9},
+		want:  []int{0, 2, 3, 4, 6, 7, 8},
+	}, {
 		name: "negative production",
+		resources: []data.Resource{{
+			Name: "resource", Quantity: 2, Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "input", ProductionFactor: -0.2, ProductionOnGone: true,
+			}},
+		}, {
+			Name: "input", Quantity: 5, Capacity: -1,
+			OnGone: []data.Resource{{
+				Name: "gone input", Quantity: 1,
+			}},
+		}, {
+			Name: "gone input", Capacity: -1,
+		}},
+		times: []int64{0, 1, 2, 3},
+		want: []int{
+			2, 1, 0, 0,
+		},
+		wantResources: map[string]int{
+			"input":      3,
+			"gone input": 2,
+		},
+	}, {
+		name: "negative production not ongone",
 		resources: []data.Resource{{
 			Name: "resource", Quantity: 2, Capacity: -1,
 			Producers: []data.Resource{{
@@ -249,8 +287,8 @@ func TestUpdate(t *testing.T) {
 			2, 1, 0, 0,
 		},
 		wantResources: map[string]int{
-			"input":      3,
-			"gone input": 2,
+			"input":      5,
+			"gone input": 0,
 		},
 	}, {
 		name: "start quantity",

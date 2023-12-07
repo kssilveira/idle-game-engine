@@ -11,7 +11,7 @@
 8: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 9: [Village] scholar -(kitten 1) +(scholar 1)
 10: [Village] farmer -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
+14: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 
 ###
@@ -27,7 +27,7 @@ last input:
 8: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 9: [Village] scholar -(kitten 1) +(scholar 1)
 10: [Village] farmer -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
+14: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 8
 ###
@@ -47,7 +47,7 @@ last input: 8
 8: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 9: [Village] scholar -(kitten 1) +(scholar 1)
 10: [Village] farmer -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
+14: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
@@ -68,7 +68,7 @@ error: action Refine catnip is locked
 8: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
 10: [Village] farmer -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 0/30 2m32s) +(Calendar 1)
+14: [Science] Calendar -(science 0/30 2m32s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 9
 ###
@@ -89,7 +89,7 @@ last input: 9
 8: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
 10: [Village] farmer -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
+14: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
@@ -111,7 +111,7 @@ error: action Refine catnip is locked
 8: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
 10: [Village] farmer (1) -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
+14: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 10
 ###
@@ -132,7 +132,7 @@ last input: 10
 8: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
 10: [Village] farmer (1) -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 0.39/30 2m30s) +(Calendar 1)
+14: [Science] Calendar -(science 0.39/30 2m30s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
@@ -154,7 +154,7 @@ error: action Refine catnip is locked
 8: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
 10: [Village] farmer (1) -(kitten 1) +(farmer 1)
-13: [Science] Calendar -(science 15.90/30 1m11s) +(Calendar 1)
+14: [Science] Calendar -(science 15.90/30 1m11s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
@@ -175,7 +175,7 @@ error: action Refine catnip is locked
 8: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
 10: [Village] farmer (1) -(kitten 0.05/1 18s) +(farmer 1)
-13: [Science] Calendar -(science 16.10/30 1m9s) +(Calendar 1)
+14: [Science] Calendar -(science 16.10/30 1m9s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
@@ -196,7 +196,7 @@ error: action Refine catnip is locked
 8: [Village] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0.10/1 18s) +(scholar 1)
 10: [Village] farmer (1) -(kitten 0.10/1 18s) +(farmer 1)
-13: [Science] Calendar -(science 16.30/30 1m7s) +(Calendar 1)
+14: [Science] Calendar -(science 16.30/30 1m7s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
@@ -217,7 +217,7 @@ error: action Refine catnip is locked
 8: [Village] woodcutter -(kitten 0.15/1 17s) +(woodcutter 1)
 9: [Village] scholar -(kitten 0.15/1 17s) +(scholar 1)
 10: [Village] farmer (1) -(kitten 0.15/1 17s) +(farmer 1)
-13: [Science] Calendar -(science 16.30/30 0s) +(Calendar 1)
+14: [Science] Calendar -(science 16.30/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: action Refine catnip is locked
@@ -241,7 +241,7 @@ error: action Refine catnip is locked
 8: [Village] woodcutter -(kitten 0.20/1 16s) +(woodcutter 1)
 9: [Village] scholar -(kitten 0.20/1 16s) +(scholar 1)
 10: [Village] farmer (1) -(kitten 0.20/1 16s) +(farmer 1)
-13: [Science] Calendar -(science 16.30/30 0s) +(Calendar 1)
+14: [Science] Calendar -(science 16.30/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 1
 error: not enough catnip

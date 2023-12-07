@@ -26,7 +26,7 @@ last input:
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
 9: [Village] scholar -(kitten 1) +(scholar 1)
-13: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
+14: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -43,7 +43,7 @@ last input: 4
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
-13: [Science] Calendar -(science 0/30 2m27s) +(Calendar 1)
+14: [Science] Calendar -(science 0/30 2m27s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 9
 ###
@@ -62,7 +62,7 @@ last input: 9
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
-13: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
+14: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -81,7 +81,7 @@ last input: 0
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
-13: [Science] Calendar -(science 0.20/30 2m13s) +(Calendar 1)
+14: [Science] Calendar -(science 0.20/30 2m13s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###
@@ -100,7 +100,7 @@ last input: 4
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
 9: [Village] scholar (1) -(kitten 1) +(scholar 1)
-13: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
+14: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0
 ###
@@ -118,7 +118,7 @@ last input: 0
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
 9: [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
-13: [Science] Calendar -(science 0.43/30 1m6s) +(Calendar 1)
+14: [Science] Calendar -(science 0.43/30 1m6s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 9
 ###
@@ -136,6 +136,6 @@ last input: 9
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (2) -(wood 33.06) +(Library 1, science cap 250)
 9: [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
-13: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
+14: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
 sX: time skip until action X is available
 last input: 0

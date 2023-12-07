@@ -77,20 +77,15 @@ Edges:
 
 ![graph edges](kittens/testdata/graph_edges.svg)
 
+TODO
+
+- separate cost text
+- try to have single kitten count
+
 More features from kittens game:
 
 - Workshop
   - craft 6%
-- Send hunters
-  - unlocked by hunter
-  - catpower 100
-  - random furs ivory TODO
-- furs
-  - demand 0.1 TODO
-  - happiness TODO
-- ivory
-  - demand 0.07 TODO
-  - happiness TODO
 - Lizards
   - unlocked by hunter
   - catpower 50
@@ -174,6 +169,11 @@ More features from kittens game:
   - catnip 100 115 rate 1.15
   - wood 10 11.5
   - catnip demand -0.5%
+- Unic. Pasture
+  - unlocked by Animal Husbandry
+  - unicorns 2 TODO
+  - unicorns 0.005/s
+  - capnip consumption -0.15%
 - TODO
 - maybe
   - rX: revert action X

@@ -15,6 +15,8 @@ type Resource struct {
 	ProductionResourceFactor string
 	// quantity += floor(producer.Quantity) * ProductionFactor * elapsedTime
 	ProductionFloor bool
+	// quantity += (producer.Quantity > 0 ? 1 : 0) * ProductionFactor * elapsedTime
+	ProductionBoolean bool
 	// quantity = StartQuantity + producer.Quantity * ProductionFactor
 	StartQuantity float64
 	// quantity = StartQuantity + (producer.Quantity * ProductionFactor) % ProductionModulus
@@ -25,7 +27,9 @@ type Resource struct {
 	// production *= 1 + bonus
 	ProductionBonus []Resource
 
-	OnGone []Resource
+	// negative production reduces consumers
+	ProductionOnGone bool
+	OnGone           []Resource
 
 	// cost = Quantity * pow(CostExponentBase, add.Quantity)
 	CostExponentBase float64

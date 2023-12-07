@@ -326,11 +326,19 @@ func (g *Game) GetQuantityForRate(p data.Resource) float64 {
 	if p.ProductionFloor {
 		quantity = math.Floor(quantity)
 	}
+	if p.ProductionBoolean {
+		if quantity > 0 {
+			quantity = 1
+		}
+	}
 	return quantity
 }
 
 func (g *Game) UpdateRate(resource *data.Resource) {
 	for _, p := range resource.Producers {
+		if !p.ProductionOnGone {
+			continue
+		}
 		one := g.GetOneRate(p)
 		if one < 0 {
 			r := g.GetResource(p.Name)

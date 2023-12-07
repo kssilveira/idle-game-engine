@@ -63,17 +63,17 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Catnip Field", ProductionFactor: 0.63 * (1 - 0.75), ProductionResourceFactor: "Winter",
 		}, {
-			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true,
+			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true, ProductionOnGone: true,
 		}, {
-			Name: "woodcutter", ProductionFactor: -4.25,
+			Name: "woodcutter", ProductionFactor: -4.25, ProductionOnGone: true,
 		}, {
-			Name: "scholar", ProductionFactor: -4.25,
+			Name: "scholar", ProductionFactor: -4.25, ProductionOnGone: true,
 		}, {
-			Name: "farmer", ProductionFactor: -4.25,
+			Name: "farmer", ProductionFactor: -4.25, ProductionOnGone: true,
 		}, {
-			Name: "hunter", ProductionFactor: -4.25,
+			Name: "hunter", ProductionFactor: -4.25, ProductionOnGone: true,
 		}, {
-			Name: "miner", ProductionFactor: -4.25,
+			Name: "miner", ProductionFactor: -4.25, ProductionOnGone: true,
 		}, {
 			Name: "farmer", ProductionFactor: 5,
 		}},
@@ -103,6 +103,38 @@ func NewGame(now game.Now) *game.Game {
 		ProductionBonus: []data.Resource{{
 			Name: "Mine", ProductionFactor: 0.2,
 		}},
+	}, {
+		Name: "furs", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "kitten", ProductionFactor: -0.05, ProductionFloor: true,
+		}, {
+			Name: "woodcutter", ProductionFactor: -0.05,
+		}, {
+			Name: "scholar", ProductionFactor: -0.05,
+		}, {
+			Name: "farmer", ProductionFactor: -0.05,
+		}, {
+			Name: "hunter", ProductionFactor: -0.05,
+		}, {
+			Name: "miner", ProductionFactor: -0.05,
+		}},
+	}, {
+		Name: "ivory", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "kitten", ProductionFactor: -0.035, ProductionFloor: true,
+		}, {
+			Name: "woodcutter", ProductionFactor: -0.035,
+		}, {
+			Name: "scholar", ProductionFactor: -0.035,
+		}, {
+			Name: "farmer", ProductionFactor: -0.035,
+		}, {
+			Name: "hunter", ProductionFactor: -0.035,
+		}, {
+			Name: "miner", ProductionFactor: -0.035,
+		}},
+	}, {
+		Name: "unicorns", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
@@ -174,6 +206,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "hunter", ProductionFactor: -0.02,
 		}, {
 			Name: "miner", ProductionFactor: -0.02,
+		}, {
+			Name: "ivory", ProductionFactor: 0.1, ProductionBoolean: true,
+		}, {
+			Name: "furs", ProductionFactor: 0.1, ProductionBoolean: true,
+		}, {
+			Name: "unicorns", ProductionFactor: 0.1, ProductionBoolean: true,
 		}},
 	}, {
 		Name: "Calendar", Type: "Science", IsHidden: true, Capacity: 1,
@@ -316,6 +354,19 @@ func NewGame(now game.Now) *game.Game {
 			Name: "miner", Quantity: 1,
 		}},
 	}, {
+		Name: "Send hunters", Type: "Village",
+		UnlockedBy: data.Resource{Name: "Archery"},
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 100, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "furs", Quantity: 39.5,
+		}, {
+			Name: "ivory", Quantity: 10.78,
+		}, {
+			Name: "unicorns", Quantity: 0.05,
+		}},
+	}, {
 		Name: "Calendar", Type: "Science",
 		UnlockedBy: data.Resource{Name: "Library"},
 		LockedBy:   data.Resource{Name: "Calendar"},
@@ -393,6 +444,7 @@ const (
 	farmer
 	hunter
 	miner
+	sendhunters
 	calendar
 	agriculture
 	archery
@@ -419,6 +471,7 @@ const (
 	sfarmer
 	shunter
 	sminer
+	ssendhunters
 	scalendar
 	sagriculture
 	sarchery
@@ -458,6 +511,8 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{smetalworking, metalworking}, 1},
+
+		{[]int{ssendhunters, sendhunters}, 10},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {
