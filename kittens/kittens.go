@@ -469,7 +469,7 @@ func Graph(logger *log.Logger, g *game.Game) {
 		"Science":  "diamond",
 	}
 	for _, r := range g.Resources {
-		if r.Type == "Calendar" || r.Name == "gone kitten" {
+		if r.Type == "Calendar" || r.Name == "gone kitten" || r.Name == "happiness" {
 			continue
 		}
 		logger.Printf(`  "%s" [shape="%s"];`+"\n", r.Name, typeToShape[r.Type])
@@ -478,6 +478,9 @@ func Graph(logger *log.Logger, g *game.Game) {
 		logger.Printf(`  "%s" [shape="%s"];`+"\n", a.Name, typeToShape[a.Type])
 	}
 	for _, r := range g.Resources {
+		if r.Name == "happiness" {
+			continue
+		}
 		last := ""
 		for _, p := range r.Producers {
 			if p.Name == "" || p.Name == "day" || p.Name == last {
@@ -513,9 +516,9 @@ func GraphEdges(logger *log.Logger, g *game.Game) {
 digraph {
   node [label="" width=0 style=invis];
   { rank="same"; n0; n1; n2; n3; n4; n5; n6; n7; n8; n9; }
-  n0 -> n1 [color="red" label="consumes"];
+  n0 -> n1 [color="red" label="feeds"];
   n2 -> n3 [color="green" label="produces"];
-  n4 -> n5 [color="orange" label="costs"];
+  n4 -> n5 [color="orange" label="buys"];
   n6 -> n7 [color="limegreen" label="adds"];
   n8 -> n9 [color="blue" label="unlocks"];
 }

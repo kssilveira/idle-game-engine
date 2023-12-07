@@ -15,7 +15,6 @@ digraph {
   "farmer" [shape="house"];
   "hunter" [shape="house"];
   "miner" [shape="house"];
-  "happiness" [shape="house"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
   "Archery" [shape="diamond"];
@@ -52,12 +51,6 @@ digraph {
   "scholar" -> "science" [color="green"];
   "hunter" -> "catpower" [color="green"];
   "miner" -> "minerals" [color="green"];
-  "happiness" -> "kitten" [color="red"];
-  "happiness" -> "woodcutter" [color="red"];
-  "happiness" -> "scholar" [color="red"];
-  "happiness" -> "farmer" [color="red"];
-  "happiness" -> "hunter" [color="red"];
-  "happiness" -> "miner" [color="red"];
   "Gather catnip" -> "catnip" [color="limegreen"];
   "catnip" -> "Refine catnip" [color="orange"];
   "Refine catnip" -> "wood" [color="limegreen"];
