@@ -511,7 +511,7 @@ func Graph(logger *log.Logger, g *game.Game) {
 func GraphEdges(logger *log.Logger, g *game.Game) {
 	logger.Printf(`
 digraph {
-  node [style="invis"];
+  node [label="" width=0 style=invis];
   { rank="same"; n0; n1; n2; n3; n4; n5; n6; n7; n8; n9; }
   n0 -> n1 [color="red" label="consumes"];
   n2 -> n3 [color="green" label="produces"];
