@@ -21,6 +21,7 @@ var (
 	auto        = flag.Bool("auto", false, "automatically trigger all actions")
 	autoSleepMS = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
 	resourceMap = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
+	graph        = flag.Bool("graph", false, "show graph")
 )
 
 func main() {
@@ -36,6 +37,10 @@ func all() error {
 	g, err := newGame(now)
 	if err != nil {
 		return err
+	}
+
+	if *graph {
+		return showGraph(g)
 	}
 
 	input := make(chan string)
@@ -142,4 +147,72 @@ func handleHTTP(last *string, input game.Input, auto bool, autoSleepMS int, wait
 </html>
 `, float64(autoSleepMS)/1000, strings.Replace(*last, "\n", "<br>\n", -1))
 	}
+}
+
+func showGraph(g *game.Game) error {
+	fmt.Printf("digraph {\n")
+	typeToShape := map[string]string{
+		"Resource": "cylinder",
+		"Bonfire": "box3d",
+		"Village": "house",
+		"Science": "diamond",
+	}
+	for _, r := range g.Resources {
+		if r.Type == "Calendar" || r.Name == "gone kitten" {
+			continue
+		}
+		fmt.Printf(`  "%s" [shape="%s"];` + "\n", r.Name, typeToShape[r.Type])
+	}
+	for _, a := range g.Actions {
+		fmt.Printf(`  "%s" [shape="%s"];` + "\n", a.Name, typeToShape[a.Type])
+	}
+	for _, r := range g.Resources {
+		last := ""
+		for _, p := range r.Producers {
+			if p.Name == "" || p.Name == "day" || p.Name == last {
+				continue
+			}
+			last = p.Name
+			if p.ProductionFactor < 0 {
+				fmt.Printf(`  "%s" -> "%s" [color="red"];` + "\n", r.Name, p.Name)
+			} else {
+				fmt.Printf(`  "%s" -> "%s" [color="green"];` + "\n", p.Name, r.Name)
+			}
+		}
+	}
+	for _, a := range g.Actions {
+		for _, c := range a.Costs {
+			fmt.Printf(`  "%s" -> "%s" [color="orange"];` + "\n", c.Name, a.Name)
+		}
+		for _, add := range a.Adds {
+			if a.Name == add.Name {
+				continue
+			}
+			fmt.Printf(`  "%s" -> "%s" [color="limegreen"];` + "\n", a.Name, add.Name)
+		}
+		if a.UnlockedBy.Name != "" {
+				fmt.Printf(`  "%s" -> "%s" [color="blue"];` + "\n", a.UnlockedBy.Name, a.Name)
+		}
+	}
+	fmt.Printf(`
+subgraph cluster_01 {
+  label = "Arrows";
+  node [shape=point, style=invis]
+  n0 -> n1 [color="red" label="consumes"]
+  n2 -> n3 [color="green" label="produces"]
+  n4 -> n5 [color="orange" label="costs"]
+  n6 -> n7 [color="limegreen" label="adds"]
+  n8 -> n9 [color="blue" label="unlocks"]
+}
+
+subgraph cluster_02 {
+  label = "Shapes";
+  "Resource" [shape="cylinder"];
+  "Bonfire" [shape="box3d"];
+  "Village" [shape="house"];
+  "Science" [shape="diamond"];
+}
+`)
+	fmt.Printf("}\n")
+	return nil
 }
