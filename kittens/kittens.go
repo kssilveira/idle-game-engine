@@ -460,7 +460,7 @@ func toInput(cmd int) string {
 	return fmt.Sprintf("%s%d", prefix, cmd)
 }
 
-func Graph(logger *log.Logger, g *game.Game) error {
+func Graph(logger *log.Logger, g *game.Game) {
 	logger.Printf("digraph {\n")
 	typeToShape := map[string]string{
 		"Resource": "cylinder",
@@ -505,25 +505,29 @@ func Graph(logger *log.Logger, g *game.Game) error {
 			logger.Printf(`  "%s" -> "%s" [color="blue"];`+"\n", a.UnlockedBy.Name, a.Name)
 		}
 	}
+	logger.Printf("}\n")
+}
+
+func GraphEdges(logger *log.Logger, g *game.Game) {
 	logger.Printf(`
-subgraph cluster_01 {
-  label = "Arrows";
-  node [shape=point, style=invis]
+digraph {
+  node [style=invis]
   n0 -> n1 [color="red" label="consumes"]
   n2 -> n3 [color="green" label="produces"]
   n4 -> n5 [color="orange" label="costs"]
   n6 -> n7 [color="limegreen" label="adds"]
   n8 -> n9 [color="blue" label="unlocks"]
 }
+`)
+}
 
-subgraph cluster_02 {
-  label = "Shapes";
+func GraphNodes(logger *log.Logger, g *game.Game) {
+	logger.Printf(`
+digraph {
   "Resource" [shape="cylinder"];
   "Bonfire" [shape="box3d"];
   "Village" [shape="house"];
   "Science" [shape="diamond"];
 }
 `)
-	logger.Printf("}\n")
-	return nil
 }

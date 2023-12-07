@@ -10,6 +10,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/kssilveira/idle-game-engine/game"
 	"github.com/kssilveira/idle-game-engine/textui"
 	"github.com/kssilveira/idle-game-engine/ui"
 )
@@ -216,17 +217,33 @@ func join(iters ...[]iter) []iter {
 }
 
 func TestGraph(t *testing.T) {
-	var buf bytes.Buffer
-	logger := log.New(&buf, "", 0 /* flags */)
-	g := NewGame(func() time.Time { return time.Unix(0, 0) })
-	Graph(logger, g)
-	dot := filepath.Join("testdata", "graph.dot")
-	svg := filepath.Join("testdata", "graph.svg")
-	if err := os.WriteFile(dot, buf.Bytes(), 0644); err != nil {
-		t.Errorf("TestGraph.Graph got err %v", err)
-	}
-	cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
-	if err := cmd.Run(); err != nil {
-		t.Errorf("TestGraph.Graph.Dot got err %v", err)
+	inputs := []struct {
+		name string
+		fn   func(*log.Logger, *game.Game)
+	}{{
+		name: "graph",
+		fn:   Graph,
+	}, {
+		name: "graph edges",
+		fn:   GraphEdges,
+	}, {
+		name: "graph nodes",
+		fn:   GraphNodes,
+	}}
+	for _, in := range inputs {
+		var buf bytes.Buffer
+		logger := log.New(&buf, "", 0 /* flags */)
+		g := NewGame(func() time.Time { return time.Unix(0, 0) })
+		in.fn(logger, g)
+		name := strings.Replace(in.name, " ", "_", -1)
+		dot := filepath.Join("testdata", name+".dot")
+		svg := filepath.Join("testdata", name+".svg")
+		if err := os.WriteFile(dot, buf.Bytes(), 0644); err != nil {
+			t.Errorf("TestGraph.Graph got err %v", err)
+		}
+		cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
+		if err := cmd.Run(); err != nil {
+			t.Errorf("[%s] got err %v", in.name, err)
+		}
 	}
 }

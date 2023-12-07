@@ -1,0 +1,7 @@
+
+digraph {
+  "Resource" [shape="cylinder"];
+  "Bonfire" [shape="box3d"];
+  "Village" [shape="house"];
+  "Science" [shape="diamond"];
+}
