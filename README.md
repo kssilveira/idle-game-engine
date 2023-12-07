@@ -69,7 +69,7 @@ Graph of current features:
 
 ![graph](kittens/testdata/graph.svg)
 ![graph nodes](kittens/testdata/graph_nodes.svg)
-![graph arrows](kittens/testdata/graph_arrows.svg)
+![graph edges](kittens/testdata/graph_edges.svg)
 
 More features from kittens game:
 
