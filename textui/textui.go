@@ -87,7 +87,7 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 			costs = append(costs, fmt.Sprintf("%s %s", c.Name, out))
 		}
 		if len(costs) > 0 {
-			parts = append(parts, fmt.Sprintf(" -(%s)", strings.Join(costs, "")))
+			parts = append(parts, fmt.Sprintf(" -(%s)", strings.Join(costs, ", ")))
 		}
 		parts = append(parts, " +(")
 		adds := []string{}

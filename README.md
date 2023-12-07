@@ -79,7 +79,6 @@ Edges:
 
 TODO
 
-- separate cost text
 - try to have single kitten count
 
 More features from kittens game:
