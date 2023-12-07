@@ -68,7 +68,13 @@ Faster solution:
 Graph of current features:
 
 ![graph](kittens/testdata/graph.svg)
+
+Nodes:
+
 ![graph nodes](kittens/testdata/graph_nodes.svg)
+
+Edges:
+
 ![graph edges](kittens/testdata/graph_edges.svg)
 
 More features from kittens game:
