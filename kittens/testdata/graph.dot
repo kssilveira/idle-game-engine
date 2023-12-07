@@ -10,6 +10,7 @@ digraph {
   "Library" [shape="box3d"];
   "Barn" [shape="box3d"];
   "Mine" [shape="box3d"];
+  "Workshop" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -28,6 +29,7 @@ digraph {
   "Library" [shape="box3d"];
   "Barn" [shape="box3d"];
   "Mine" [shape="box3d"];
+  "Workshop" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -70,6 +72,9 @@ digraph {
   "Agriculture" -> "Barn" [color="blue"];
   "wood" -> "Mine" [color="orange"];
   "Mining" -> "Mine" [color="blue"];
+  "wood" -> "Workshop" [color="orange"];
+  "minerals" -> "Workshop" [color="orange"];
+  "Mining" -> "Workshop" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];

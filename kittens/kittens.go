@@ -124,6 +124,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Mine", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
+		Name: "Workshop", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -258,6 +260,17 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mine", Quantity: 1,
 		}},
 	}, {
+		Name: "Workshop", Type: "Bonfire",
+		UnlockedBy: data.Resource{Name: "Mining"},
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
+		}, {
+			Name: "minerals", Quantity: 400, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{
+			Name: "Workshop", Quantity: 1,
+		}},
+	}, {
 		Name: "woodcutter", Type: "Village",
 		UnlockedBy: data.Resource{Name: "Hut"},
 		Costs: []data.Resource{{
@@ -374,6 +387,7 @@ const (
 	library
 	barn
 	mine
+	workshop
 	woodcutter
 	scholar
 	farmer
@@ -399,6 +413,7 @@ const (
 	slibrary
 	sbarn
 	smine
+	sworkshop
 	swoodcutter
 	sscholar
 	sfarmer
@@ -438,6 +453,8 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{smining, mining}, 1},
 		{[]int{smine, mine}, 20},
 		{[]int{shut, hut, sminer, miner}, 1},
+
+		{[]int{sworkshop, workshop}, 20},
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{smetalworking, metalworking}, 1},

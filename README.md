@@ -80,9 +80,6 @@ Edges:
 More features from kittens game:
 
 - Workshop
-  - unlocked by miner
-  - wood 100 115 rate 1.15
-  - minerals 400 460
   - craft 6%
 - Send hunters
   - unlocked by hunter
