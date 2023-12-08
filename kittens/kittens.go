@@ -88,6 +88,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "woodcutter", ProductionFactor: 0.09, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Mineral Axe", ProductionFactor: 0.7,
+			}, {
+				Name: "Iron Axe", ProductionFactor: 0.5,
 			}},
 		}},
 	}, {
@@ -239,6 +241,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Iron Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Iron Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -477,6 +481,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mineral Axe", Quantity: 1,
 		}},
 	}, {
+		Name: "Iron Axe", Type: "Workshop",
+		UnlockedBy: data.Resource{Name: "Workshop"},
+		LockedBy:   data.Resource{Name: "Iron Axe"},
+		Costs: []data.Resource{{
+			Name: "iron", Quantity: 50,
+		}, {
+			Name: "science", Quantity: 200,
+		}},
+		Adds: []data.Resource{{
+			Name: "Iron Axe", Quantity: 1,
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade",
 		UnlockedBy: data.Resource{Name: "Archery"},
 		Costs: []data.Resource{{
@@ -521,6 +537,7 @@ const (
 	mineralhoes
 	ironhoes
 	mineralaxe
+	ironaxe
 )
 
 const (
@@ -551,6 +568,7 @@ const (
 	smineralhoes
 	sironhoes
 	smineralaxe
+	sironaxe
 )
 
 func Solve(input chan string, sleepMS int) {

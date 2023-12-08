@@ -5080,7 +5080,7 @@ last input: 10
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-23: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s16
 ###
@@ -5106,7 +5106,7 @@ last input: s16
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-23: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 16
 error: action Archery is locked
@@ -5133,7 +5133,7 @@ error: action Archery is locked
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-23: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -5160,7 +5160,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-23: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -5187,7 +5187,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-23: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s11
 ###
@@ -5213,7 +5213,7 @@ last input: s11
 13: [Village] Send hunters -(catpower 0/100 6m36s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-23: [Trade] Lizards -(catpower 0/50 3m18s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0/50 3m18s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 11
 ###
@@ -5242,7 +5242,7 @@ last input: 11
 13: [Village] Send hunters -(catpower 0.25/100 6m35s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 0.25/50 3m17s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0.25/50 3m17s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s17
 ###
@@ -5271,7 +5271,7 @@ last input: s17
 13: [Village] Send hunters -(catpower 0.50/100 6m34s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 0.50/50 3m16s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0.50/50 3m16s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 17
 error: action Mining is locked
@@ -5302,7 +5302,7 @@ error: action Mining is locked
 13: [Village] Send hunters -(catpower 0.76/100 6m33s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 0.76/50 3m15s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 0.76/50 3m15s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5332,7 +5332,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 1.01/100 6m32s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 1.01/50 3m14s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 1.01/50 3m14s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5362,7 +5362,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 1.26/100 6m31s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 1.26/50 3m13s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 1.26/50 3m13s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5392,7 +5392,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 1.51/100 6m30s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 1.51/50 3m12s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 1.51/50 3m12s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5422,7 +5422,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 1.76/100 6m29s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 1.76/50 3m11s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 1.76/50 3m11s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5452,7 +5452,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 2.02/100 6m28s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 2.02/50 3m10s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 2.02/50 3m10s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5482,7 +5482,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 2.27/100 6m27s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 2.27/50 3m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 2.27/50 3m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5512,7 +5512,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 2.52/100 6m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 2.52/50 3m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 2.52/50 3m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5542,7 +5542,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5572,7 +5572,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5602,7 +5602,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5632,7 +5632,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5662,7 +5662,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5692,7 +5692,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5722,7 +5722,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5752,7 +5752,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5782,7 +5782,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5812,7 +5812,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5842,7 +5842,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5872,7 +5872,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5902,7 +5902,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5932,7 +5932,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5962,7 +5962,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5992,7 +5992,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6022,7 +6022,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6052,7 +6052,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6082,7 +6082,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6112,7 +6112,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6142,7 +6142,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6172,7 +6172,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6202,7 +6202,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6232,7 +6232,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6263,7 +6263,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6294,7 +6294,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6325,7 +6325,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6356,7 +6356,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6387,7 +6387,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6418,7 +6418,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6449,7 +6449,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6480,7 +6480,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6511,7 +6511,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -6542,7 +6542,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -6572,7 +6572,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000 16m56s) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000 16m56s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s12
 ###
@@ -6602,7 +6602,7 @@ last input: s12
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0.98/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0.98/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 12
 error: not enough kitten
@@ -6633,7 +6633,7 @@ error: not enough kitten
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 400.49/1000 10m9s) +(wood 500, blueprint 0.10, spice 8.75)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 400.49/1000 10m9s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6666,7 +6666,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.47/275 4m37s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.47/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.47/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.47/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6699,7 +6700,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 460.02/500 40s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 460.02/1000 9m8s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 460.02/1000 9m8s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6732,7 +6734,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1/275 4m38s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1/500 8m27s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6765,7 +6768,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 529.41/1000 7m58s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 529.41/1000 7m58s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6798,7 +6802,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.39/275 4m38s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.39/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.39/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.39/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6831,7 +6836,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 608.52/1000 6m37s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 608.52/1000 6m37s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6864,7 +6870,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.15/275 4m38s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.15/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.15/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.15/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6897,7 +6904,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 699.79/1000 5m5s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 699.79/1000 5m5s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6930,7 +6938,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.18/275 4m38s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.18/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.18/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.18/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6963,7 +6972,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 805.10/1000 3m18s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 805.10/1000 3m18s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6996,7 +7006,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.54/275 4m37s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.54/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.54/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.54/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7029,7 +7040,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 925.52/1000 1m15s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 925.52/1000 1m15s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7062,7 +7074,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.28/275 4m38s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.28/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.28/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.28/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7095,7 +7108,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7128,7 +7142,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.96/275 4m37s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.96/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.96/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.96/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7161,7 +7176,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7194,7 +7210,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 1.46/275 4m37s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 1.46/500 8m26s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.46/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.46/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7227,7 +7244,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7260,7 +7278,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 342.85/500 2m39s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 342.85/1000 11m7s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 342.85/1000 11m7s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7293,7 +7312,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7326,7 +7346,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 131.78/275 2m25s, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 131.78/500 6m14s, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 131.78/1000 14m42s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 131.78/1000 14m42s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7359,7 +7380,8 @@ last input: 7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7392,7 +7414,8 @@ last input: s7
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7426,7 +7449,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7460,7 +7484,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7494,7 +7519,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7528,7 +7554,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7562,7 +7589,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7596,7 +7624,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7630,7 +7659,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7664,7 +7694,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7698,7 +7729,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7732,7 +7764,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7766,7 +7799,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7800,7 +7834,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7834,7 +7869,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7868,7 +7904,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7902,7 +7939,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7936,7 +7974,8 @@ error: not enough minerals
 20: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7969,7 +8008,8 @@ error: not enough minerals
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s20
 ###
@@ -8001,7 +8041,8 @@ last input: s20
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 22: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 20
 error: action Mineral Hoes is locked
@@ -8033,7 +8074,8 @@ error: action Mineral Hoes is locked
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 976.97/1000 23s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 976.97/1000 23s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s22
 ###
@@ -8064,7 +8106,8 @@ last input: s22
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 977.95/1000 22s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 977.95/1000 22s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 22
 error: action Mineral Axe is locked
@@ -8095,7 +8138,8 @@ error: action Mineral Axe is locked
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 978.94/1000 21s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 978.94/1000 21s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s18
 ###
@@ -8125,7 +8169,8 @@ last input: s18
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 979.92/1000 20s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 979.92/1000 20s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 18
 error: action Animal Husbandry is locked
@@ -8155,7 +8200,8 @@ error: action Animal Husbandry is locked
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 980.90/1000 19s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 980.90/1000 19s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s19
 ###
@@ -8184,7 +8230,8 @@ last input: s19
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 981.89/1000 18s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 981.89/1000 18s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 19
 error: action Metal Working is locked
@@ -8217,7 +8264,8 @@ error: action Metal Working is locked
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 982.87/1000 17s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 982.87/1000 17s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8249,7 +8297,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 50.25/100 2m28s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 983.86/1000 12s) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 983.86/1000 12s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8279,7 +8328,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8311,7 +8361,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.59/100 6m0s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.59/50 2m59s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.59/50 2m59s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8341,7 +8392,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8373,7 +8425,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.59/100 6m0s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.59/50 2m59s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.59/50 2m59s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8403,7 +8456,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8435,7 +8489,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.60/100 6m0s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.60/50 2m58s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.60/50 2m58s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8465,7 +8520,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8497,7 +8553,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.61/100 6m0s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.61/50 2m58s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.61/50 2m58s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8527,7 +8584,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8559,7 +8617,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.28/100 6m1s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.28/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.28/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8589,7 +8648,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8621,7 +8681,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.29/100 6m1s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.29/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.29/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8651,7 +8712,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8683,7 +8745,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.30/100 6m1s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.30/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.30/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8713,7 +8776,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8745,7 +8809,8 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.31/100 6m1s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.31/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.31/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
@@ -8775,7 +8840,8 @@ last input: 13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
@@ -8807,6 +8873,7 @@ last input: s13
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 0.31/100 6m1s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Trade] Lizards -(catpower 0.31/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Trade] Lizards -(catpower 0.31/50 3m0s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
