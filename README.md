@@ -81,11 +81,6 @@ More features from kittens game:
 
 - Workshop
   - craft 6%
-- Mineral Axe
-  - unlocked by Workshop
-  - minerals 500
-  - science 100
-  - woodcutter 70%
 - Iron Axe
   - unlocked by Workshop
   - iron 50

@@ -86,6 +86,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "wood", Type: "Resource", Capacity: 200,
 		Producers: []data.Resource{{
 			Name: "woodcutter", ProductionFactor: 0.09, ProductionResourceFactor: "happiness",
+			ProductionBonus: []data.Resource{{
+				Name: "Mineral Axe", ProductionFactor: 0.7,
+			}},
 		}},
 	}, {
 		Name: "science", Type: "Resource", Capacity: 250,
@@ -234,6 +237,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Iron Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Mineral Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -460,6 +465,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Iron Hoes", Quantity: 1,
 		}},
 	}, {
+		Name: "Mineral Axe", Type: "Workshop",
+		UnlockedBy: data.Resource{Name: "Workshop"},
+		LockedBy:   data.Resource{Name: "Mineral Axe"},
+		Costs: []data.Resource{{
+			Name: "minerals", Quantity: 500,
+		}, {
+			Name: "science", Quantity: 100,
+		}},
+		Adds: []data.Resource{{
+			Name: "Mineral Axe", Quantity: 1,
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade",
 		UnlockedBy: data.Resource{Name: "Archery"},
 		Costs: []data.Resource{{
@@ -503,6 +520,7 @@ const (
 	metalworking
 	mineralhoes
 	ironhoes
+	mineralaxe
 )
 
 const (
@@ -532,6 +550,7 @@ const (
 	smetalworking
 	smineralhoes
 	sironhoes
+	smineralaxe
 )
 
 func Solve(input chan string, sleepMS int) {
@@ -563,6 +582,7 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{sworkshop, workshop}, 20},
 		{[]int{smineralhoes, mineralhoes}, 1},
+		{[]int{smineralaxe, mineralaxe}, 1},
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{smetalworking, metalworking}, 1},
