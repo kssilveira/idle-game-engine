@@ -53,7 +53,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "day", ProductionFactor: 1, ProductionFloor: true,
 		}},
 	}, {
-		Name: "catnip", Type: "Resource", Capacity: 5000,
+		Name: "catnip", Type: "Resource", StartCapacity: 5000,
 		Producers: []data.Resource{{
 			Name: "Catnip Field", ProductionFactor: 0.63 * (1 + 0.50), ProductionResourceFactor: "Spring",
 		}, {
@@ -81,6 +81,9 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Iron Hoes", ProductionFactor: 0.3,
 			}},
+		}},
+		CapacityProducers: []data.Resource{{
+			Name: "Barn", ProductionFactor: 5000,
 		}},
 	}, {
 		Name: "wood", Type: "Resource", Capacity: 200,
@@ -299,8 +302,6 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "Barn", Quantity: 1,
-		}, {
-			Name: "catnip", Capacity: 5000,
 		}, {
 			Name: "wood", Capacity: 200,
 		}, {

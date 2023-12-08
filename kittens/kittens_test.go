@@ -169,7 +169,7 @@ func TestRun(t *testing.T) {
 			if len(in.iters) == 0 {
 				now = now.Add(time.Second)
 			} else {
-				now = now.Add(time.Duration(append(in.iters, iter{0, 0})[timeIndex].elapsed) * time.Second)
+				now = now.Add(time.Duration(append(in.iters, iter{0, 0}, iter{0, 0})[timeIndex].elapsed) * time.Second)
 				timeIndex++
 			}
 			return res

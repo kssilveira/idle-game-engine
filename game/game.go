@@ -76,6 +76,7 @@ func (g *Game) Run(now Now, input Input, output Output) {
 	var in string
 	var err error
 	for {
+		g.Update(now())
 		data := &ui.Data{
 			LastInput: in,
 			Error:     err,
@@ -89,10 +90,8 @@ func (g *Game) Run(now Now, input Input, output Output) {
 				close(output)
 				return
 			}
-			g.Update(now())
 			err = g.Act(in)
 		case <-time.After(1 * time.Second):
-			g.Update(now())
 		}
 	}
 }
@@ -152,6 +151,9 @@ func (g *Game) Update(now time.Time) {
 	g.Now = now
 	g.GetResource("time").Quantity += float64(elapsed / time.Second)
 	for _, resource := range g.Resources {
+		if resource.StartCapacity > 0 {
+			resource.Capacity = resource.StartCapacity + g.GetCapacityRate(resource)
+		}
 		factor := g.GetRate(resource)
 		if resource.ProductionModulus != 0 {
 			factor = float64(int(factor) % resource.ProductionModulus)
@@ -277,7 +279,7 @@ func (g *Game) ValidateResource(r *data.Resource) error {
 		}
 	}
 	for _, list := range append(
-		[][]data.Resource{}, r.Producers, r.ProductionBonus, r.OnGone) {
+		[][]data.Resource{}, r.Producers, r.CapacityProducers, r.ProductionBonus, r.OnGone) {
 		for _, r := range list {
 			if err := g.ValidateResource(&r); err != nil {
 				return err
@@ -297,6 +299,14 @@ func (g *Game) GetRate(resource *data.Resource) float64 {
 		bonus += g.GetOneRate(p)
 	}
 	return factor * bonus
+}
+
+func (g *Game) GetCapacityRate(resource *data.Resource) float64 {
+	factor := 0.0
+	for _, p := range resource.CapacityProducers {
+		factor += g.GetOneRate(p)
+	}
+	return factor
 }
 
 func (g *Game) GetOneRate(resource data.Resource) float64 {

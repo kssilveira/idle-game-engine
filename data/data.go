@@ -8,20 +8,19 @@ type Resource struct {
 	Capacity float64
 
 	Producers []Resource
-
-	// quantity += producer.Quantity * ProductionFactor * elapsedTime
+	// Quantity += Producer.Quantity * ProductionFactor * elapsedTime
 	ProductionFactor float64
-	// quantity += producer.Quantity * ProductionFactor * elapsedTime * ProductionResourceFactor.Quantity
+	// Quantity += Producer.Quantity * ProductionFactor * elapsedTime * ProductionResourceFactor.Quantity
 	ProductionResourceFactor string
-	// quantity += floor(producer.Quantity) * ProductionFactor * elapsedTime
+	// Quantity += floor(Producer.Quantity) * ProductionFactor * elapsedTime
 	ProductionFloor bool
-	// quantity += (producer.Quantity > 0 ? 1 : 0) * ProductionFactor * elapsedTime
+	// Quantity += (Producer.Quantity > 0 ? 1 : 0) * ProductionFactor * elapsedTime
 	ProductionBoolean bool
-	// quantity = StartQuantity + producer.Quantity * ProductionFactor
+	// Quantity = StartQuantity + Producer.Quantity * ProductionFactor
 	StartQuantity float64
-	// quantity = StartQuantity + (producer.Quantity * ProductionFactor) % ProductionModulus
+	// Quantity = StartQuantity + (Producer.Quantity * ProductionFactor) % ProductionModulus
 	ProductionModulus int
-	// quantity = StartQuantity if (producer.Quantity * ProductionFactor) % ProductionModulus == ProductionModulusEquals else 0
+	// Quantity = StartQuantity if (Producer.Quantity * ProductionFactor) % ProductionModulus == ProductionModulusEquals else 0
 	ProductionModulusEquals int
 
 	// production *= 1 + bonus
@@ -30,6 +29,10 @@ type Resource struct {
 	// negative production reduces consumers
 	ProductionOnGone bool
 	OnGone           []Resource
+
+	CapacityProducers []Resource
+	// Capacity = StartCapacity + CapacityProducer.Quantity * ProductionFactor
+	StartCapacity float64
 
 	// cost = Quantity * pow(CostExponentBase, add.Quantity)
 	CostExponentBase float64

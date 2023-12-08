@@ -3,6 +3,7 @@
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [Resource] catnip 200/5000
+[Village] happiness 1.10
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)

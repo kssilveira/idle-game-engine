@@ -3,6 +3,7 @@
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [Resource] catnip 9/5000
+[Village] happiness 1.10
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 9/100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 9/10) +(Catnip Field 1)
@@ -32,13 +33,6 @@ error: not enough catnip
 sX: time skip until action X is available
 last input: 0
 ###
-[Calendar] year 1
-[Calendar] Spring 1
-[Calendar] day_of_year 1
-[Village] happiness 1.10
-sX: time skip until action X is available
-last input: 2
-###
 [Calendar] time 1
 [Calendar] year 1
 [Calendar] Spring 1
@@ -48,8 +42,7 @@ last input: 2
 1: [Bonfire] Refine catnip -(catnip 0.94/100 1m44s) +(wood 1)
 2: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 0
-error: action Gather catnip is locked
+last input: 2
 ###
 [Calendar] time 11
 [Calendar] year 1.01 (1 + 0.01)
@@ -92,6 +85,18 @@ error: action Gather catnip is locked
 [Calendar] Winter 1 (1 if 3.05 % 4 == 3)
 [Calendar] day_of_year 306 (1 + 305 % 400)
 [Resource] catnip 293.89/5000 0.16/s 8h18m0s to cap
+[Village] happiness 1.10
+1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
+2: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
+sX: time skip until action X is available
+last input: 0
+error: action Gather catnip is locked
+###
+[Calendar] time 811
+[Calendar] year 2.01 (1 + 1.01)
+[Calendar] Spring 1 (1 if 4.05 % 4 == 0)
+[Calendar] day_of_year 6 (1 + 405 % 400)
+[Resource] catnip 482.89/5000 0.94/s 1h19m40s to cap
 [Village] happiness 1.10
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)

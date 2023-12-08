@@ -99,7 +99,6 @@ digraph {
   "Library" -> "science" [color="limegreen"];
   "wood" -> "Library" [color="blue"];
   "wood" -> "Barn" [color="orange"];
-  "Barn" -> "catnip" [color="limegreen"];
   "Barn" -> "wood" [color="limegreen"];
   "Barn" -> "minerals" [color="limegreen"];
   "Agriculture" -> "Barn" [color="blue"];

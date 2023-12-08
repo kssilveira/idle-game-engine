@@ -2,6 +2,7 @@
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
+[Village] happiness 1.10
 0: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
 sX: time skip until action X is available
 last input: 
