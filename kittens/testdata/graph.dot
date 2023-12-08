@@ -11,6 +11,8 @@ digraph {
   "furs" [shape="cylinder"];
   "ivory" [shape="cylinder"];
   "spice" [shape="cylinder"];
+  "beam" [shape="cylinder"];
+  "slab" [shape="cylinder"];
   "unicorns" [shape="cylinder"];
   "blueprint" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
@@ -35,6 +37,7 @@ digraph {
   "Mineral Axe" [shape="hexagon"];
   "Iron Axe" [shape="hexagon"];
   "Expanded Barns" [shape="hexagon"];
+  "Reinforced Barns" [shape="hexagon"];
   "Gather catnip" [shape="box3d"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
@@ -60,6 +63,7 @@ digraph {
   "Mineral Axe" [shape="hexagon"];
   "Iron Axe" [shape="hexagon"];
   "Expanded Barns" [shape="hexagon"];
+  "Reinforced Barns" [shape="hexagon"];
   "Lizards" [shape="cds"];
   "Catnip Field" -> "catnip" [color="green"];
   "catnip" -> "kitten" [color="red"];
@@ -77,6 +81,7 @@ digraph {
   "Iron Axe" -> "woodcutter" [color="green"];
   "Barn" -> "wood" [color="limegreen"];
   "Expanded Barns" -> "Barn" [color="green"];
+  "Reinforced Barns" -> "Barn" [color="green"];
   "scholar" -> "science" [color="green"];
   "Library" -> "science" [color="green"];
   "hunter" -> "catpower" [color="green"];
@@ -84,8 +89,10 @@ digraph {
   "Mine" -> "minerals" [color="green"];
   "Barn" -> "minerals" [color="limegreen"];
   "Expanded Barns" -> "Barn" [color="green"];
+  "Reinforced Barns" -> "Barn" [color="green"];
   "Barn" -> "iron" [color="limegreen"];
   "Expanded Barns" -> "Barn" [color="green"];
+  "Reinforced Barns" -> "Barn" [color="green"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -158,6 +165,11 @@ digraph {
   "iron" -> "Expanded Barns" [color="orange"];
   "science" -> "Expanded Barns" [color="orange"];
   "Workshop" -> "Expanded Barns" [color="blue"];
+  "iron" -> "Reinforced Barns" [color="orange"];
+  "science" -> "Reinforced Barns" [color="orange"];
+  "beam" -> "Reinforced Barns" [color="orange"];
+  "slab" -> "Reinforced Barns" [color="orange"];
+  "Workshop" -> "Reinforced Barns" [color="blue"];
   "catpower" -> "Lizards" [color="orange"];
   "gold" -> "Lizards" [color="orange"];
   "minerals" -> "Lizards" [color="orange"];

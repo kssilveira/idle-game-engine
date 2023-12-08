@@ -79,15 +79,10 @@ Edges:
 
 More features from kittens game:
 
+- remove duplicate graph edges
+
 - Workshop
   - craft 6%
-- Reinforced Barns
-  - unlocked by Workshop
-  - iron 100
-  - science 800
-  - beam 25
-  - slab 10
-  - barn 80%
 - Bolas
   - unlocked by Workshop
   - wood 50
@@ -100,9 +95,6 @@ More features from kittens game:
   - wood -0.25/s
   - mineral -0.5/s
   - iron 0.1/s
-- iron
-  - cap 50
-  - barn cap 50
 - Hunting Armor
   - unlocked by Metal Working
   - iron 750

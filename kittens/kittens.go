@@ -99,6 +99,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Barn", ProductionFactor: 200,
 			ProductionBonus: []data.Resource{{
 				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
 		}},
 	}, {
@@ -126,14 +128,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Barn", ProductionFactor: 250,
 			ProductionBonus: []data.Resource{{
 				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
 		}},
 	}, {
-		Name: "iron", Type: "Resource", Capacity: 100,
+		Name: "iron", Type: "Resource", Capacity: 50,
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 50,
 			ProductionBonus: []data.Resource{{
 				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
 		}},
 	}, {
@@ -178,6 +184,10 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.005,
 		}},
+	}, {
+		Name: "beam", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "slab", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
 	}, {
@@ -266,6 +276,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Iron Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Expanded Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Reinforced Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -526,6 +538,22 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Expanded Barns", Quantity: 1,
 		}},
 	}, {
+		Name: "Reinforced Barns", Type: "Workshop",
+		UnlockedBy: data.Resource{Name: "Workshop"},
+		LockedBy:   data.Resource{Name: "Reinforced Barns"},
+		Costs: []data.Resource{{
+			Name: "iron", Quantity: 100,
+		}, {
+			Name: "science", Quantity: 800,
+		}, {
+			Name: "beam", Quantity: 25,
+		}, {
+			Name: "slab", Quantity: 10,
+		}},
+		Adds: []data.Resource{{
+			Name: "Reinforced Barns", Quantity: 1,
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade",
 		UnlockedBy: data.Resource{Name: "Archery"},
 		Costs: []data.Resource{{
@@ -572,6 +600,8 @@ const (
 	mineralaxe
 	ironaxe
 	expandedbarns
+	reinforcedbarns
+	lizards
 )
 
 const (
@@ -604,6 +634,8 @@ const (
 	smineralaxe
 	sironaxe
 	sexpandedbarns
+	sreinforcedbarns
+	slizards
 )
 
 func Solve(input chan string, sleepMS int) {
