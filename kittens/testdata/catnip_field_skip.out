@@ -4,7 +4,7 @@
 [Calendar] day_of_year 1
 [Resource] catnip 10/5000
 0: [Bonfire] Gather catnip +(catnip 1)
-1: [Bonfire] Refine catnip -(catnip 10/100 0s) +(wood 1)
+1: [Bonfire] Refine catnip -(catnip 10/100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 sX: time skip until action X is available
 last input: 

@@ -80,7 +80,11 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 			if c.Cost > c.Capacity && c.Capacity != -1 {
 				overCap = "*"
 			}
-			out := fmt.Sprintf("%s/%s%s %s", toString(c.Quantity), toString(c.Cost), overCap, c.Duration)
+			duration := ""
+			if c.Duration != 0 {
+				duration = fmt.Sprintf(" %s", c.Duration)
+			}
+			out := fmt.Sprintf("%s/%s%s%s", toString(c.Quantity), toString(c.Cost), overCap, duration)
 			if c.Quantity >= c.Cost {
 				out = fmt.Sprintf("%s", toString(c.Cost))
 			}

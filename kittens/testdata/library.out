@@ -26,7 +26,7 @@ last input:
 3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library (1) -(wood 28.75) +(Library 1, science cap 250)
 9: [Village] scholar -(kitten 1) +(scholar 1)
-14: [Science] Calendar -(science 0/30 0s) +(Calendar 1)
+14: [Science] Calendar -(science 0/30) +(Calendar 1)
 sX: time skip until action X is available
 last input: 4
 ###

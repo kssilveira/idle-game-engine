@@ -79,9 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- make CostExponentBase default to 1
-- textui hide duration when rate is 0
-
 - Workshop
   - craft 6%
 - Mineral Hoes
