@@ -352,6 +352,95 @@ func TestUpdate(t *testing.T) {
 			1 + 5,
 			1 + 6,
 		},
+	}, {
+		name: "production bonus",
+		resources: []data.Resource{{
+			Name: "resource", Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "input", ProductionFactor: 2,
+			}},
+			ProductionBonus: []data.Resource{{
+				Name: "input", ProductionFactor: 7,
+			}},
+		}, {
+			Name: "input", Quantity: 3, Capacity: -1,
+		}},
+		times: []int64{4, 5, 6},
+		want: []int{
+			2 * 3 * 4 * (1 + 3*7),
+			2 * 3 * 5 * (1 + 3*7),
+			2 * 3 * 6 * (1 + 3*7),
+		},
+	}, {
+		name: "production bonus inside producer",
+		resources: []data.Resource{{
+			Name: "resource", Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "input", ProductionFactor: 2,
+				ProductionBonus: []data.Resource{{
+					Name: "input", ProductionFactor: 7,
+				}},
+			}},
+		}, {
+			Name: "input", Quantity: 3, Capacity: -1,
+		}},
+		times: []int64{4, 5, 6},
+		want: []int{
+			2 * 3 * 4 * (1 + 3*7),
+			2 * 3 * 5 * (1 + 3*7),
+			2 * 3 * 6 * (1 + 3*7),
+		},
+	}, {
+		name: "two producers production bonus",
+		resources: []data.Resource{{
+			Name: "resource", Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "input 1", ProductionFactor: 2,
+			}, {
+				Name: "input 2", ProductionFactor: 3,
+			}},
+			ProductionBonus: []data.Resource{{
+				Name: "input 1", ProductionFactor: 9,
+			}, {
+				Name: "input 2", ProductionFactor: 10,
+			}},
+		}, {
+			Name: "input 1", Quantity: 4, Capacity: -1,
+		}, {
+			Name: "input 2", Quantity: 5, Capacity: -1,
+		}},
+		times: []int64{6, 7, 8},
+		want: []int{
+			(2*4 + 3*5) * (1 + 4*9 + 5*10) * 6,
+			(2*4 + 3*5) * (1 + 4*9 + 5*10) * 7,
+			(2*4 + 3*5) * (1 + 4*9 + 5*10) * 8,
+		},
+	}, {
+		name: "two producers production bonus inside producers",
+		resources: []data.Resource{{
+			Name: "resource", Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "input 1", ProductionFactor: 2,
+				ProductionBonus: []data.Resource{{
+					Name: "input 2", ProductionFactor: 10,
+				}},
+			}, {
+				Name: "input 2", ProductionFactor: 3,
+				ProductionBonus: []data.Resource{{
+					Name: "input 1", ProductionFactor: 9,
+				}},
+			}},
+		}, {
+			Name: "input 1", Quantity: 4, Capacity: -1,
+		}, {
+			Name: "input 2", Quantity: 5, Capacity: -1,
+		}},
+		times: []int64{6, 7, 8},
+		want: []int{
+			(2*4*(1+5*10) + 3*5*(1+4*9)) * 6,
+			(2*4*(1+5*10) + 3*5*(1+4*9)) * 7,
+			(2*4*(1+5*10) + 3*5*(1+4*9)) * 8,
+		},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))

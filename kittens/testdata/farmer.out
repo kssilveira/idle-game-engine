@@ -15,7 +15,7 @@ last input:
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Resource] catnip 1000/5000 -3.50/s 4m45s to empty
+[Resource] catnip 1000/5000 -3.20/s 5m12s to empty
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
@@ -30,7 +30,7 @@ last input: 10
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Resource] catnip 997.50/5000 -3.50/s 4m45s to empty
+[Resource] catnip 997.80/5000 -3.20/s 5m11s to empty
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
@@ -45,7 +45,7 @@ last input: 0
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Resource] catnip 997.50/5000 1.50/s 44m28s to cap
+[Resource] catnip 997.80/5000 2.10/s 31m45s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -59,7 +59,7 @@ last input: 10
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] catnip 1000/5000 1.50/s 44m26s to cap
+[Resource] catnip 1000.90/5000 2.10/s 31m44s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
 0: [Bonfire] Gather catnip +(catnip 1)
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)

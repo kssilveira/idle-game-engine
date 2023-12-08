@@ -4,5 +4,6 @@ digraph {
   "Bonfire" [shape="box3d"];
   "Village" [shape="house"];
   "Science" [shape="diamond"];
+  "Workshop" [shape="hexagon"];
   "Trade" [shape="cds"];
 }

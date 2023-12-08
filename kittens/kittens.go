@@ -75,7 +75,10 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "miner", ProductionFactor: -4.25, ProductionOnGone: true,
 		}, {
-			Name: "farmer", ProductionFactor: 5,
+			Name: "farmer", ProductionFactor: 5, ProductionResourceFactor: "happiness",
+			ProductionBonus: []data.Resource{{
+				Name: "Mineral Hoes", ProductionFactor: 0.5,
+			}},
 		}},
 	}, {
 		Name: "wood", Type: "Resource", Capacity: 200,
@@ -223,6 +226,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Animal Husbandry", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Metal Working", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -425,6 +430,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Metal Working", Quantity: 1,
 		}},
 	}, {
+		Name: "Mineral Hoes", Type: "Workshop",
+		UnlockedBy: data.Resource{Name: "Workshop"},
+		LockedBy:   data.Resource{Name: "Mineral Hoes"},
+		Costs: []data.Resource{{
+			Name: "minerals", Quantity: 275, CostExponentBase: 1,
+		}, {
+			Name: "science", Quantity: 100, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "Mineral Hoes", Quantity: 1,
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade",
 		UnlockedBy: data.Resource{Name: "Archery"},
 		Costs: []data.Resource{{
@@ -466,6 +483,7 @@ const (
 	mining
 	animalhusbandry
 	metalworking
+	mineralhoes
 )
 
 const (
@@ -493,6 +511,7 @@ const (
 	smining
 	sanimalhusbandry
 	smetalworking
+	smineralhoes
 )
 
 func Solve(input chan string, sleepMS int) {
@@ -523,6 +542,7 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{shut, hut, sminer, miner}, 1},
 
 		{[]int{sworkshop, workshop}, 20},
+		{[]int{smineralhoes, mineralhoes}, 1},
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{smetalworking, metalworking}, 1},
@@ -554,6 +574,7 @@ func Graph(logger *log.Logger, g *game.Game) {
 		"Bonfire":  "box3d",
 		"Village":  "house",
 		"Science":  "diamond",
+		"Workshop": "hexagon",
 		"Trade":    "cds",
 	}
 	for _, r := range g.Resources {
@@ -580,6 +601,12 @@ func Graph(logger *log.Logger, g *game.Game) {
 			} else {
 				logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", p.Name, r.Name)
 			}
+			for _, b := range p.ProductionBonus {
+				logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", b.Name, p.Name)
+			}
+		}
+		for _, b := range r.ProductionBonus {
+			logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", b.Name, r.Name)
 		}
 	}
 	for _, a := range g.Actions {
@@ -620,6 +647,7 @@ digraph {
   "Bonfire" [shape="box3d"];
   "Village" [shape="house"];
   "Science" [shape="diamond"];
+  "Workshop" [shape="hexagon"];
   "Trade" [shape="cds"];
 }
 `)

@@ -310,12 +310,16 @@ func (g *Game) GetRate(resource *data.Resource) float64 {
 	return factor * bonus
 }
 
-func (g *Game) GetOneRate(p data.Resource) float64 {
-	one := g.GetQuantityForRate(p) * p.ProductionFactor
-	if p.ProductionResourceFactor != "" {
-		one *= g.GetQuantityForRate(*g.GetResource(p.ProductionResourceFactor))
+func (g *Game) GetOneRate(resource data.Resource) float64 {
+	one := g.GetQuantityForRate(resource) * resource.ProductionFactor
+	if resource.ProductionResourceFactor != "" {
+		one *= g.GetQuantityForRate(*g.GetResource(resource.ProductionResourceFactor))
 	}
-	return one
+	bonus := 1.0
+	for _, p := range resource.ProductionBonus {
+		bonus += g.GetOneRate(p)
+	}
+	return one * bonus
 }
 
 func (g *Game) GetQuantityForRate(p data.Resource) float64 {
