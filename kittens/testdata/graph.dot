@@ -79,6 +79,7 @@ digraph {
   "hunter" -> "catpower" [color="green"];
   "miner" -> "minerals" [color="green"];
   "Mine" -> "minerals" [color="green"];
+  "Barn" -> "minerals" [color="limegreen"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -101,7 +102,6 @@ digraph {
   "Library" -> "science" [color="limegreen"];
   "wood" -> "Library" [color="blue"];
   "wood" -> "Barn" [color="orange"];
-  "Barn" -> "minerals" [color="limegreen"];
   "Agriculture" -> "Barn" [color="blue"];
   "wood" -> "Mine" [color="orange"];
   "Mining" -> "Mine" [color="blue"];

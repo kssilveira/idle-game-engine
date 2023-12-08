@@ -39,13 +39,13 @@
 <text text-anchor="middle" x="1407.97" y="-1022.3" font-family="Times,serif" font-size="14.00">Catnip Field</text>
 </g>
 <!-- catnip&#45;&gt;Catnip Field -->
-<g id="edge34" class="edge">
+<g id="edge35" class="edge">
 <title>catnip&#45;&gt;Catnip Field</title>
 <path fill="none" stroke="orange" d="M1163.04,-1087.78C1201.87,-1077.69 1273.09,-1060.7 1333.97,-1044 1340.99,-1042.08 1348.46,-1039.9 1355.98,-1037.76"/>
 <polygon fill="orange" stroke="orange" points="1357.17,-1041.06 1365.86,-1034.99 1355.29,-1034.32 1357.17,-1041.06"/>
 </g>
 <!-- catnip&#45;&gt;Catnip Field -->
-<g id="edge35" class="edge">
+<g id="edge36" class="edge">
 <title>catnip&#45;&gt;Catnip Field</title>
 <path fill="none" stroke="blue" d="M1163.21,-1093.06C1206.14,-1085.05 1288.44,-1066.01 1359.58,-1046.83"/>
 <polygon fill="blue" stroke="blue" points="1360.81,-1050.12 1369.54,-1044.12 1358.97,-1043.36 1360.81,-1050.12"/>
@@ -120,13 +120,13 @@
 <text text-anchor="middle" x="990.97" y="-1022.3" font-family="Times,serif" font-size="14.00">Refine catnip</text>
 </g>
 <!-- catnip&#45;&gt;Refine catnip -->
-<g id="edge31" class="edge">
+<g id="edge32" class="edge">
 <title>catnip&#45;&gt;Refine catnip</title>
 <path fill="none" stroke="orange" d="M1108.94,-1086.37C1086.53,-1076.4 1054.6,-1061.19 1029.55,-1048.66"/>
 <polygon fill="orange" stroke="orange" points="1030.82,-1045.38 1020.32,-1044.01 1027.67,-1051.63 1030.82,-1045.38"/>
 </g>
 <!-- catnip&#45;&gt;Refine catnip -->
-<g id="edge33" class="edge">
+<g id="edge34" class="edge">
 <title>catnip&#45;&gt;Refine catnip</title>
 <path fill="none" stroke="blue" d="M1109.17,-1081.29C1090.13,-1071.55 1064.12,-1058.91 1041.3,-1048.27"/>
 <polygon fill="blue" stroke="blue" points="1042.62,-1045.03 1032.08,-1044 1039.68,-1051.38 1042.62,-1045.03"/>
@@ -148,13 +148,13 @@
 <text text-anchor="middle" x="1118.97" y="-806.3" font-family="Times,serif" font-size="14.00">Hut</text>
 </g>
 <!-- wood&#45;&gt;Hut -->
-<g id="edge36" class="edge">
+<g id="edge37" class="edge">
 <title>wood&#45;&gt;Hut</title>
 <path fill="none" stroke="orange" d="M1035.3,-864.41C1048.64,-854.52 1066.93,-841.88 1083.07,-831.38"/>
 <polygon fill="orange" stroke="orange" points="1085.24,-834.15 1091.77,-825.8 1081.46,-828.26 1085.24,-834.15"/>
 </g>
 <!-- wood&#45;&gt;Hut -->
-<g id="edge38" class="edge">
+<g id="edge39" class="edge">
 <title>wood&#45;&gt;Hut</title>
 <path fill="none" stroke="blue" d="M1044.24,-866.15C1059,-856.83 1077.06,-844.61 1091.79,-834.04"/>
 <polygon fill="blue" stroke="blue" points="1094,-836.75 1100.03,-828.04 1089.89,-831.09 1094,-836.75"/>
@@ -169,13 +169,13 @@
 <text text-anchor="middle" x="725.97" y="-806.3" font-family="Times,serif" font-size="14.00">Library</text>
 </g>
 <!-- wood&#45;&gt;Library -->
-<g id="edge39" class="edge">
+<g id="edge40" class="edge">
 <title>wood&#45;&gt;Library</title>
 <path fill="none" stroke="orange" d="M989.77,-875.39C937.65,-863.67 824.13,-836.45 764.35,-821.43"/>
 <polygon fill="orange" stroke="orange" points="765.09,-818.01 754.54,-818.95 763.38,-824.79 765.09,-818.01"/>
 </g>
 <!-- wood&#45;&gt;Library -->
-<g id="edge41" class="edge">
+<g id="edge42" class="edge">
 <title>wood&#45;&gt;Library</title>
 <path fill="none" stroke="blue" d="M989.94,-873.44C937.89,-860.17 824.17,-832.81 764.33,-819.14"/>
 <polygon fill="blue" stroke="blue" points="765.04,-815.71 754.51,-816.91 763.49,-822.54 765.04,-815.71"/>
@@ -190,7 +190,7 @@
 <text text-anchor="middle" x="1096.97" y="-446.3" font-family="Times,serif" font-size="14.00">Barn</text>
 </g>
 <!-- wood&#45;&gt;Barn -->
-<g id="edge42" class="edge">
+<g id="edge43" class="edge">
 <title>wood&#45;&gt;Barn</title>
 <path fill="none" stroke="orange" d="M1017.3,-863.88C1024.63,-797.8 1068.82,-559.08 1088.43,-478.1"/>
 <polygon fill="orange" stroke="orange" points="1091.88,-478.72 1090.92,-468.17 1085.09,-477.02 1091.88,-478.72"/>
@@ -454,7 +454,7 @@
 <text text-anchor="middle" x="227.97" y="-14.3" font-family="Times,serif" font-size="14.00">all kittens</text>
 </g>
 <!-- kitten&#45;&gt;all kittens -->
-<g id="edge21" class="edge">
+<g id="edge22" class="edge">
 <title>kitten&#45;&gt;all kittens</title>
 <path fill="none" stroke="green" d="M1108.05,-1022.17C1164.21,-1015.82 1290.86,-998.86 1323.97,-972 1357.65,-944.68 1363.97,-926.37 1363.97,-883 1363.97,-883 1363.97,-883 1363.97,-665 1363.97,-566.69 1419.97,-549.31 1419.97,-451 1419.97,-451 1419.97,-451 1419.97,-161 1419.97,-126.57 1563.72,-152.54 1242.97,-72 1055.43,-24.91 445.1,-19.6 273.33,-19.05"/>
 <polygon fill="green" stroke="green" points="273.13,-15.55 263.12,-19.02 273.11,-22.55 273.13,-15.55"/>
@@ -497,7 +497,7 @@
 <text text-anchor="middle" x="227.97" y="-86.3" font-family="Times,serif" font-size="14.00">furs</text>
 </g>
 <!-- furs&#45;&gt;all kittens -->
-<g id="edge27" class="edge">
+<g id="edge28" class="edge">
 <title>furs&#45;&gt;all kittens</title>
 <path fill="none" stroke="red" d="M227.97,-71.7C227.97,-63.98 227.97,-54.71 227.97,-46.11"/>
 <polygon fill="red" stroke="red" points="231.47,-46.1 227.97,-36.1 224.47,-46.1 231.47,-46.1"/>
@@ -510,7 +510,7 @@
 <text text-anchor="middle" x="151.97" y="-86.3" font-family="Times,serif" font-size="14.00">ivory</text>
 </g>
 <!-- ivory&#45;&gt;all kittens -->
-<g id="edge28" class="edge">
+<g id="edge29" class="edge">
 <title>ivory&#45;&gt;all kittens</title>
 <path fill="none" stroke="red" d="M170.37,-72.05C179.82,-63.35 191.5,-52.59 201.87,-43.04"/>
 <polygon fill="red" stroke="red" points="204.5,-45.38 209.48,-36.03 199.75,-40.23 204.5,-45.38"/>
@@ -523,7 +523,7 @@
 <text text-anchor="middle" x="299.97" y="-86.3" font-family="Times,serif" font-size="14.00">spice</text>
 </g>
 <!-- spice&#45;&gt;all kittens -->
-<g id="edge29" class="edge">
+<g id="edge30" class="edge">
 <title>spice&#45;&gt;all kittens</title>
 <path fill="none" stroke="red" d="M282.54,-72.05C273.59,-63.35 262.52,-52.59 252.7,-43.04"/>
 <polygon fill="red" stroke="red" points="255.1,-40.49 245.49,-36.03 250.22,-45.51 255.1,-40.49"/>
@@ -549,7 +549,7 @@
 <polygon fill="green" stroke="green" points="1171.99,-1085.2 1163.03,-1090.86 1173.56,-1092.02 1171.99,-1085.2"/>
 </g>
 <!-- Hut&#45;&gt;kitten -->
-<g id="edge37" class="edge">
+<g id="edge38" class="edge">
 <title>Hut&#45;&gt;kitten</title>
 <path fill="none" stroke="limegreen" d="M1115.91,-828.23C1109.31,-865.4 1093.69,-953.35 1085.77,-998"/>
 <polygon fill="limegreen" stroke="limegreen" points="1082.32,-997.39 1084.02,-1007.85 1089.21,-998.62 1082.32,-997.39"/>
@@ -567,7 +567,7 @@
 <polygon fill="green" stroke="green" points="724.02,-694.45 721.38,-684.19 717.05,-693.86 724.02,-694.45"/>
 </g>
 <!-- Library&#45;&gt;science -->
-<g id="edge40" class="edge">
+<g id="edge41" class="edge">
 <title>Library&#45;&gt;science</title>
 <path fill="none" stroke="limegreen" d="M730.56,-791.87C733.11,-767.67 733.41,-723.21 731.43,-694.39"/>
 <polygon fill="limegreen" stroke="limegreen" points="734.9,-693.86 730.56,-684.19 727.92,-694.45 734.9,-693.86"/>
@@ -597,7 +597,7 @@
 <polygon fill="limegreen" stroke="limegreen" points="1022.05,-853.33 1023.01,-863.88 1028.84,-855.03 1022.05,-853.33"/>
 </g>
 <!-- Barn&#45;&gt;minerals -->
-<g id="edge43" class="edge">
+<g id="edge21" class="edge">
 <title>Barn&#45;&gt;minerals</title>
 <path fill="none" stroke="limegreen" d="M1069.91,-435.13C1020.9,-410.01 917.27,-356.88 860.04,-327.54"/>
 <polygon fill="limegreen" stroke="limegreen" points="861.42,-324.32 850.93,-322.87 858.23,-330.55 861.42,-324.32"/>
@@ -645,7 +645,7 @@
 <polygon fill="green" stroke="green" points="1054.63,-891.92 1044.04,-892.07 1052.41,-898.56 1054.63,-891.92"/>
 </g>
 <!-- woodcutter&#45;&gt;all kittens -->
-<g id="edge22" class="edge">
+<g id="edge23" class="edge">
 <title>woodcutter&#45;&gt;all kittens</title>
 <path fill="none" stroke="green" d="M1236.49,-939.36C1254.18,-915.01 1287.97,-861.84 1287.97,-811 1287.97,-811 1287.97,-811 1287.97,-449 1287.97,-345.12 1381.97,-338.88 1381.97,-235 1381.97,-235 1381.97,-235 1381.97,-161 1381.97,-107.62 1724.55,-184.15 1142.97,-72 973.46,-39.31 433.94,-23.96 273.44,-20.04"/>
 <polygon fill="green" stroke="green" points="273.5,-16.54 263.42,-19.8 273.33,-23.54 273.5,-16.54"/>
@@ -657,7 +657,7 @@
 <polygon fill="green" stroke="green" points="688.51,-675.79 697.92,-670.93 687.54,-668.86 688.51,-675.79"/>
 </g>
 <!-- scholar&#45;&gt;all kittens -->
-<g id="edge23" class="edge">
+<g id="edge24" class="edge">
 <title>scholar&#45;&gt;all kittens</title>
 <path fill="none" stroke="green" d="M220.54,-723C188.96,-654.13 51.97,-352.64 51.97,-307 51.97,-307 51.97,-307 51.97,-161 51.97,-117.81 59.77,-101.86 90.97,-72 116.11,-47.95 153.35,-34.48 182.67,-27.14"/>
 <polygon fill="green" stroke="green" points="183.74,-30.49 192.68,-24.8 182.14,-23.67 183.74,-30.49"/>
@@ -669,7 +669,7 @@
 <polygon fill="green" stroke="green" points="1172.06,-1085.43 1163.28,-1091.36 1173.84,-1092.2 1172.06,-1085.43"/>
 </g>
 <!-- farmer&#45;&gt;all kittens -->
-<g id="edge24" class="edge">
+<g id="edge25" class="edge">
 <title>farmer&#45;&gt;all kittens</title>
 <path fill="none" stroke="green" d="M1048.18,-85.53C902.04,-73.67 423.51,-34.86 273.42,-22.69"/>
 <polygon fill="green" stroke="green" points="273.44,-19.18 263.19,-21.86 272.88,-26.15 273.44,-19.18"/>
@@ -681,7 +681,7 @@
 <polygon fill="green" stroke="green" points="133.79,-334.13 137.28,-324.13 128.31,-329.77 133.79,-334.13"/>
 </g>
 <!-- hunter&#45;&gt;all kittens -->
-<g id="edge25" class="edge">
+<g id="edge26" class="edge">
 <title>hunter&#45;&gt;all kittens</title>
 <path fill="none" stroke="green" d="M36.51,-435.06C28.84,-409.8 13.97,-354.68 13.97,-307 13.97,-307 13.97,-307 13.97,-161 13.97,-120.03 9.13,-101.09 37.97,-72 76.06,-33.58 139.49,-22.4 182.49,-19.46"/>
 <polygon fill="green" stroke="green" points="182.89,-22.95 192.68,-18.89 182.5,-15.96 182.89,-22.95"/>
@@ -693,7 +693,7 @@
 <polygon fill="green" stroke="green" points="778.31,-314.92 787.88,-310.39 777.57,-307.96 778.31,-314.92"/>
 </g>
 <!-- miner&#45;&gt;all kittens -->
-<g id="edge26" class="edge">
+<g id="edge27" class="edge">
 <title>miner&#45;&gt;all kittens</title>
 <path fill="none" stroke="green" d="M140.75,-363.32C130.12,-353.46 116.78,-339.25 108.97,-324 90.54,-288 89.97,-275.45 89.97,-235 89.97,-235 89.97,-235 89.97,-161 89.97,-119.79 89.22,-103.34 115.97,-72 133.32,-51.67 160.22,-38.59 183.3,-30.51"/>
 <polygon fill="green" stroke="green" points="184.51,-33.8 192.92,-27.35 182.33,-27.15 184.51,-33.8"/>
@@ -804,13 +804,13 @@
 <text text-anchor="middle" x="1135.97" y="-1166.3" font-family="Times,serif" font-size="14.00">Gather catnip</text>
 </g>
 <!-- Gather catnip&#45;&gt;catnip -->
-<g id="edge30" class="edge">
+<g id="edge31" class="edge">
 <title>Gather catnip&#45;&gt;catnip</title>
 <path fill="none" stroke="limegreen" d="M1135.97,-1151.7C1135.97,-1143.98 1135.97,-1134.71 1135.97,-1126.11"/>
 <polygon fill="limegreen" stroke="limegreen" points="1139.47,-1126.1 1135.97,-1116.1 1132.47,-1126.1 1139.47,-1126.1"/>
 </g>
 <!-- Refine catnip&#45;&gt;wood -->
-<g id="edge32" class="edge">
+<g id="edge33" class="edge">
 <title>Refine catnip&#45;&gt;wood</title>
 <path fill="none" stroke="limegreen" d="M994.11,-1007.87C998.54,-983.67 1006.68,-939.21 1011.96,-910.39"/>
 <polygon fill="limegreen" stroke="limegreen" points="1015.47,-910.66 1013.82,-900.19 1008.58,-909.4 1015.47,-910.66"/>
