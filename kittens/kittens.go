@@ -86,7 +86,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Barn", ProductionFactor: 5000,
 		}},
 	}, {
-		Name: "wood", Type: "Resource", Capacity: 200,
+		Name: "wood", Type: "Resource", StartCapacity: 200,
 		Producers: []data.Resource{{
 			Name: "woodcutter", ProductionFactor: 0.09, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
@@ -94,6 +94,9 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Iron Axe", ProductionFactor: 0.5,
 			}},
+		}},
+		CapacityProducers: []data.Resource{{
+			Name: "Barn", ProductionFactor: 200,
 		}},
 	}, {
 		Name: "science", Type: "Resource", Capacity: 250,
@@ -302,8 +305,6 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "Barn", Quantity: 1,
-		}, {
-			Name: "wood", Capacity: 200,
 		}, {
 			Name: "minerals", Capacity: 250,
 		}},
@@ -666,6 +667,12 @@ func Graph(logger *log.Logger, g *game.Game) {
 		}
 		for _, b := range r.ProductionBonus {
 			logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", b.Name, r.Name)
+		}
+		for _, p := range r.CapacityProducers {
+			logger.Printf(`  "%s" -> "%s" [color="limegreen"];`+"\n", p.Name, r.Name)
+			for _, b := range p.ProductionBonus {
+				logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", b.Name, p.Name)
+			}
 		}
 	}
 	for _, a := range g.Actions {
