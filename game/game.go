@@ -60,20 +60,12 @@ func (g *Game) Validate() error {
 		}
 	}
 	for _, a := range g.Actions {
-		if err := g.ValidateResource(&a.UnlockedBy); err != nil {
-			return err
-		}
-		if err := g.ValidateResource(&a.LockedBy); err != nil {
-			return err
-		}
-		for _, r := range a.Costs {
-			if err := g.ValidateResource(&r); err != nil {
-				return err
-			}
-		}
-		for _, r := range a.Adds {
-			if err := g.ValidateResource(&r); err != nil {
-				return err
+		for _, list := range append(
+			[][]data.Resource{{a.UnlockedBy, a.LockedBy}}, a.Costs, a.Adds) {
+			for _, r := range list {
+				if err := g.ValidateResource(&r); err != nil {
+					return err
+				}
 			}
 		}
 	}
@@ -279,20 +271,17 @@ func (g *Game) TimeSkip(skip time.Duration) {
 }
 
 func (g *Game) ValidateResource(r *data.Resource) error {
-	if r.Name != "" && !g.HasResource(r.Name) {
-		return fmt.Errorf("invalid resource name %s", r.Name)
-	}
-	if r.ProductionResourceFactor != "" && !g.HasResource(r.ProductionResourceFactor) {
-		return fmt.Errorf("invalid resource name %s", r.ProductionResourceFactor)
-	}
-	for _, r := range r.Producers {
-		if err := g.ValidateResource(&r); err != nil {
-			return err
+	for _, name := range []string{r.Name, r.ProductionResourceFactor} {
+		if name != "" && !g.HasResource(name) {
+			return fmt.Errorf("invalid resource name %s", name)
 		}
 	}
-	for _, r := range r.OnGone {
-		if err := g.ValidateResource(&r); err != nil {
-			return err
+	for _, list := range append(
+		[][]data.Resource{}, r.Producers, r.ProductionBonus, r.OnGone) {
+		for _, r := range list {
+			if err := g.ValidateResource(&r); err != nil {
+				return err
+			}
 		}
 	}
 	return nil
