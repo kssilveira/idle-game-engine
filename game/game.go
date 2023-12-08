@@ -362,7 +362,11 @@ func (g *Game) GetResource(name string) *data.Resource {
 }
 
 func (g *Game) GetCost(a Action, c data.Resource) float64 {
-	return c.Quantity * math.Pow(c.CostExponentBase, g.GetResource(a.Adds[0].Name).Quantity)
+	base := c.CostExponentBase
+	if base == 0 {
+		base = 1
+	}
+	return c.Quantity * math.Pow(base, g.GetResource(a.Adds[0].Name).Quantity)
 }
 
 func (g *Game) HasResource(name string) bool {
