@@ -81,18 +81,6 @@ More features from kittens game:
 
 - Workshop
   - craft 6%
-- Mineral Hoes
-  - unlocked by Workshop
-  - minerals 275
-  - science 100
-  - farmer 50%
-    - before 2 * 5 * 0.98 = 9.8
-    - after 2 * 5 * 0.98 * (1 + 0.5) = 14.7
-- Iron Hoes
-  - unlocked by Workshop
-  - iron 25
-  - science 200
-  - farmer 30%
 - Mineral Axe
   - unlocked by Workshop
   - minerals 500
