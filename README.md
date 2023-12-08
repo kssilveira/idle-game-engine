@@ -81,13 +81,6 @@ More features from kittens game:
 
 - Workshop
   - craft 6%
-- Expanded Barns
-  - unlocked by Workshop
-  - wood 1000
-  - minerals 750
-  - iron 50
-  - science 500
-  - barn 75%
 - Reinforced Barns
   - unlocked by Workshop
   - iron 100

@@ -34,6 +34,7 @@ digraph {
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
   "Iron Axe" [shape="hexagon"];
+  "Expanded Barns" [shape="hexagon"];
   "Gather catnip" [shape="box3d"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
@@ -58,6 +59,7 @@ digraph {
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
   "Iron Axe" [shape="hexagon"];
+  "Expanded Barns" [shape="hexagon"];
   "Lizards" [shape="cds"];
   "Catnip Field" -> "catnip" [color="green"];
   "catnip" -> "kitten" [color="red"];
@@ -74,12 +76,16 @@ digraph {
   "Mineral Axe" -> "woodcutter" [color="green"];
   "Iron Axe" -> "woodcutter" [color="green"];
   "Barn" -> "wood" [color="limegreen"];
+  "Expanded Barns" -> "Barn" [color="green"];
   "scholar" -> "science" [color="green"];
   "Library" -> "science" [color="green"];
   "hunter" -> "catpower" [color="green"];
   "miner" -> "minerals" [color="green"];
   "Mine" -> "minerals" [color="green"];
   "Barn" -> "minerals" [color="limegreen"];
+  "Expanded Barns" -> "Barn" [color="green"];
+  "Barn" -> "iron" [color="limegreen"];
+  "Expanded Barns" -> "Barn" [color="green"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -147,6 +153,11 @@ digraph {
   "iron" -> "Iron Axe" [color="orange"];
   "science" -> "Iron Axe" [color="orange"];
   "Workshop" -> "Iron Axe" [color="blue"];
+  "wood" -> "Expanded Barns" [color="orange"];
+  "minerals" -> "Expanded Barns" [color="orange"];
+  "iron" -> "Expanded Barns" [color="orange"];
+  "science" -> "Expanded Barns" [color="orange"];
+  "Workshop" -> "Expanded Barns" [color="blue"];
   "catpower" -> "Lizards" [color="orange"];
   "gold" -> "Lizards" [color="orange"];
   "minerals" -> "Lizards" [color="orange"];

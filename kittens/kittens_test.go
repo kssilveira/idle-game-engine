@@ -25,7 +25,7 @@ func TestRun(t *testing.T) {
 		name      string
 		iters     []iter
 		isHTML    bool
-		resources map[string]float64
+		resources map[string]int
 	}{{
 		name: "gather catnip",
 		iters: []iter{
@@ -39,7 +39,7 @@ func TestRun(t *testing.T) {
 		isHTML: true,
 	}, {
 		name: "catnip field 1",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip": 9,
 		},
 		iters: []iter{
@@ -49,7 +49,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "catnip field 2",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip": 200,
 		},
 		iters: []iter{
@@ -58,7 +58,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "catnip field skip",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip": 10,
 		},
 		iters: []iter{
@@ -68,7 +68,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "refine catnip",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip": 200,
 		},
 		iters: []iter{
@@ -76,7 +76,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "hut",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip": 1000,
 			"wood":   100,
 		},
@@ -87,7 +87,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "library",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip": 1000,
 			"wood":   100,
 			"kitten": 2,
@@ -99,7 +99,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "woodcutter",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip": 1000,
 			"kitten": 2,
 			"Hut":    1,
@@ -110,7 +110,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "farmer",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip":      1000,
 			"kitten":      2,
 			"Agriculture": 1,
@@ -121,7 +121,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "gone",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip":      1000,
 			"kitten":      4,
 			"Hut":         1,
@@ -137,7 +137,7 @@ func TestRun(t *testing.T) {
 		},
 	}, {
 		name: "barn",
-		resources: map[string]float64{
+		resources: map[string]int{
 			"catnip":      1,
 			"wood":        200,
 			"Agriculture": 1,
@@ -180,9 +180,9 @@ func TestRun(t *testing.T) {
 				t.Errorf("[%s] missing resource %s", in.name, name)
 			}
 			r := g.GetResource(name)
-			r.Quantity = quantity
-			if r.Capacity != -1 && r.Capacity < quantity {
-				r.Capacity = quantity
+			r.Quantity = float64(quantity)
+			if r.Capacity != -1 && r.Capacity < r.Quantity {
+				r.Capacity = r.Quantity
 			}
 		}
 		if err := g.Validate(); err != nil {

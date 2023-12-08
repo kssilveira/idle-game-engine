@@ -97,6 +97,9 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 200,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}},
 		}},
 	}, {
 		Name: "science", Type: "Resource", Capacity: 250,
@@ -121,9 +124,18 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 250,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}},
 		}},
 	}, {
 		Name: "iron", Type: "Resource", Capacity: 100,
+		CapacityProducers: []data.Resource{{
+			Name: "Barn", ProductionFactor: 50,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}},
+		}},
 	}, {
 		Name: "gold", Type: "Resource", Capacity: 20,
 	}, {
@@ -252,6 +264,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Mineral Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Iron Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Expanded Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -496,6 +510,22 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Iron Axe", Quantity: 1,
 		}},
 	}, {
+		Name: "Expanded Barns", Type: "Workshop",
+		UnlockedBy: data.Resource{Name: "Workshop"},
+		LockedBy:   data.Resource{Name: "Expanded Barns"},
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 1000,
+		}, {
+			Name: "minerals", Quantity: 750,
+		}, {
+			Name: "iron", Quantity: 50,
+		}, {
+			Name: "science", Quantity: 500,
+		}},
+		Adds: []data.Resource{{
+			Name: "Expanded Barns", Quantity: 1,
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade",
 		UnlockedBy: data.Resource{Name: "Archery"},
 		Costs: []data.Resource{{
@@ -541,6 +571,7 @@ const (
 	ironhoes
 	mineralaxe
 	ironaxe
+	expandedbarns
 )
 
 const (
@@ -572,6 +603,7 @@ const (
 	sironhoes
 	smineralaxe
 	sironaxe
+	sexpandedbarns
 )
 
 func Solve(input chan string, sleepMS int) {
