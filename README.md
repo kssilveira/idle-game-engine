@@ -81,16 +81,6 @@ More features from kittens game:
 
 - Workshop
   - craft 6%
-- Lizards
-  - unlocked by hunter
-  - catpower 50
-  - gold 15
-  - minerals 1000
-  - wood 648 - 702
-- Send explorers
-  - unlocked by hunter
-  - catpower 1000
-  - TODO
 - Mineral Hoes
   - unlocked by Workshop
   - minerals 275

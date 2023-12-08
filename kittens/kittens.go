@@ -104,6 +104,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mine", ProductionFactor: 0.2,
 		}},
 	}, {
+		Name: "gold", Type: "Resource", Capacity: 20,
+	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.05,
@@ -139,7 +141,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "all kittens", ProductionFactor: -0.035,
 		}},
 	}, {
+		Name: "spice", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "all kittens", ProductionFactor: -0.005,
+		}},
+	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "blueprint", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
@@ -197,6 +206,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "ivory", ProductionFactor: 0.1, ProductionBoolean: true,
 		}, {
 			Name: "furs", ProductionFactor: 0.1, ProductionBoolean: true,
+		}, {
+			Name: "spice", ProductionFactor: 0.1, ProductionBoolean: true,
 		}, {
 			Name: "unicorns", ProductionFactor: 0.1, ProductionBoolean: true,
 		}},
@@ -413,6 +424,23 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{
 			Name: "Metal Working", Quantity: 1,
 		}},
+	}, {
+		Name: "Lizards", Type: "Trade",
+		UnlockedBy: data.Resource{Name: "Archery"},
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50, CostExponentBase: 1,
+		}, {
+			Name: "gold", Quantity: 15, CostExponentBase: 1,
+		}, {
+			Name: "minerals", Quantity: 1000, CostExponentBase: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "wood", Quantity: 500,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
 	}}
 	return g
 }
@@ -526,6 +554,7 @@ func Graph(logger *log.Logger, g *game.Game) {
 		"Bonfire":  "box3d",
 		"Village":  "house",
 		"Science":  "diamond",
+		"Trade":    "cds",
 	}
 	for _, r := range g.Resources {
 		if r.Type == "Calendar" || r.Name == "gone kitten" || r.Name == "happiness" {
@@ -591,6 +620,7 @@ digraph {
   "Bonfire" [shape="box3d"];
   "Village" [shape="house"];
   "Science" [shape="diamond"];
+  "Trade" [shape="cds"];
 }
 `)
 }
