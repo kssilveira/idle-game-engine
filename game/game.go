@@ -22,8 +22,8 @@ type Game struct {
 type Action struct {
 	Name       string
 	Type       string
-	UnlockedBy data.Resource
-	LockedBy   data.Resource
+	UnlockedBy string
+	LockedBy   string
 	Costs      []data.Resource
 	Adds       []data.Resource
 }
@@ -60,10 +60,14 @@ func (g *Game) Validate() error {
 		}
 	}
 	for _, a := range g.Actions {
-		for _, list := range append(
-			[][]data.Resource{{a.UnlockedBy, a.LockedBy}}, a.Costs, a.Adds) {
+		for _, list := range append([][]data.Resource{}, a.Costs, a.Adds) {
 			for _, r := range list {
 				if err := g.ValidateResource(&r); err != nil {
+					return err
+				}
+			}
+			for _, name := range []string{a.UnlockedBy, a.LockedBy} {
+				if err := g.ValidateResourceName(name); err != nil {
 					return err
 				}
 			}
@@ -225,10 +229,8 @@ func (g *Game) ParseInput(input string) (bool, Action, error) {
 }
 
 func (g *Game) IsLocked(a Action) bool {
-	unlocked := a.UnlockedBy.Name
-	locked := a.LockedBy.Name
-	return (unlocked != "" && g.GetResource(unlocked).Quantity <= 0) ||
-		(locked != "" && g.GetResource(locked).Quantity > 0)
+	return (a.UnlockedBy != "" && g.GetResource(a.UnlockedBy).Quantity <= 0) ||
+		(a.LockedBy != "" && g.GetResource(a.LockedBy).Quantity > 0)
 }
 
 func (g *Game) CheckMax(a Action) error {
@@ -274,8 +276,8 @@ func (g *Game) TimeSkip(skip time.Duration) {
 
 func (g *Game) ValidateResource(r *data.Resource) error {
 	for _, name := range []string{r.Name, r.ProductionResourceFactor} {
-		if name != "" && !g.HasResource(name) {
-			return fmt.Errorf("invalid resource name %s", name)
+		if err := g.ValidateResourceName(name); err != nil {
+			return err
 		}
 	}
 	for _, list := range append(
@@ -285,6 +287,13 @@ func (g *Game) ValidateResource(r *data.Resource) error {
 				return err
 			}
 		}
+	}
+	return nil
+}
+
+func (g *Game) ValidateResourceName(name string) error {
+	if name != "" && !g.HasResource(name) {
+		return fmt.Errorf("invalid resource name %s", name)
 	}
 	return nil
 }

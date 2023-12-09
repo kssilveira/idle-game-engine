@@ -79,8 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- change LockedBy / UnlockedBy to string
-
 - Workshop
   - craft 6%
 - Smelter

@@ -286,14 +286,14 @@ func NewGame(now game.Now) *game.Game {
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
-		LockedBy: data.Resource{Name: "Catnip Field"},
+		LockedBy: "Catnip Field",
 		Adds: []data.Resource{{
 			Name: "catnip", Quantity: 1,
 		}},
 	}, {
 		Name: "Refine catnip", Type: "Bonfire",
-		UnlockedBy: data.Resource{Name: "catnip"},
-		LockedBy:   data.Resource{Name: "woodcutter"},
+		UnlockedBy: "catnip",
+		LockedBy:   "woodcutter",
 		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 100,
 		}},
@@ -302,7 +302,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Catnip Field", Type: "Bonfire",
-		UnlockedBy: data.Resource{Name: "catnip"},
+		UnlockedBy: "catnip",
 		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
 		}},
@@ -311,7 +311,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Hut", Type: "Bonfire",
-		UnlockedBy: data.Resource{Name: "wood"},
+		UnlockedBy: "wood",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 5, CostExponentBase: 2.5,
 		}},
@@ -322,7 +322,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Library", Type: "Bonfire",
-		UnlockedBy: data.Resource{Name: "wood"},
+		UnlockedBy: "wood",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 25, CostExponentBase: 1.15,
 		}},
@@ -333,7 +333,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Barn", Type: "Bonfire",
-		UnlockedBy: data.Resource{Name: "Agriculture"},
+		UnlockedBy: "Agriculture",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50, CostExponentBase: 1.75,
 		}},
@@ -342,7 +342,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Mine", Type: "Bonfire",
-		UnlockedBy: data.Resource{Name: "Mining"},
+		UnlockedBy: "Mining",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
 		}},
@@ -351,7 +351,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Workshop", Type: "Bonfire",
-		UnlockedBy: data.Resource{Name: "Mining"},
+		UnlockedBy: "Mining",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
 		}, {
@@ -362,7 +362,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "woodcutter", Type: "Village",
-		UnlockedBy: data.Resource{Name: "Hut"},
+		UnlockedBy: "Hut",
 		Costs: []data.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1,
 		}},
@@ -371,7 +371,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "scholar", Type: "Village",
-		UnlockedBy: data.Resource{Name: "Library"},
+		UnlockedBy: "Library",
 		Costs: []data.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1,
 		}},
@@ -380,7 +380,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "farmer", Type: "Village",
-		UnlockedBy: data.Resource{Name: "Agriculture"},
+		UnlockedBy: "Agriculture",
 		Costs: []data.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1,
 		}},
@@ -389,7 +389,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "hunter", Type: "Village",
-		UnlockedBy: data.Resource{Name: "Archery"},
+		UnlockedBy: "Archery",
 		Costs: []data.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1,
 		}},
@@ -398,7 +398,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "miner", Type: "Village",
-		UnlockedBy: data.Resource{Name: "Mine"},
+		UnlockedBy: "Mine",
 		Costs: []data.Resource{{
 			Name: "kitten", Quantity: 1, Capacity: 1,
 		}},
@@ -407,7 +407,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Send hunters", Type: "Village",
-		UnlockedBy: data.Resource{Name: "Archery"},
+		UnlockedBy: "Archery",
 		Costs: []data.Resource{{
 			Name: "catpower", Quantity: 100,
 		}},
@@ -420,8 +420,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Calendar", Type: "Science",
-		UnlockedBy: data.Resource{Name: "Library"},
-		LockedBy:   data.Resource{Name: "Calendar"},
+		UnlockedBy: "Library",
+		LockedBy:   "Calendar",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 30,
 		}},
@@ -430,8 +430,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Agriculture", Type: "Science",
-		UnlockedBy: data.Resource{Name: "Calendar"},
-		LockedBy:   data.Resource{Name: "Agriculture"},
+		UnlockedBy: "Calendar",
+		LockedBy:   "Agriculture",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 100,
 		}},
@@ -440,8 +440,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Archery", Type: "Science",
-		UnlockedBy: data.Resource{Name: "Calendar"},
-		LockedBy:   data.Resource{Name: "Archery"},
+		UnlockedBy: "Calendar",
+		LockedBy:   "Archery",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 300,
 		}},
@@ -450,8 +450,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Mining", Type: "Science",
-		UnlockedBy: data.Resource{Name: "Calendar"},
-		LockedBy:   data.Resource{Name: "Mining"},
+		UnlockedBy: "Calendar",
+		LockedBy:   "Mining",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 500,
 		}},
@@ -460,8 +460,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Animal Husbandry", Type: "Science",
-		UnlockedBy: data.Resource{Name: "Archery"},
-		LockedBy:   data.Resource{Name: "Animal Husbandry"},
+		UnlockedBy: "Archery",
+		LockedBy:   "Animal Husbandry",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 500,
 		}},
@@ -470,8 +470,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Metal Working", Type: "Science",
-		UnlockedBy: data.Resource{Name: "Mining"},
-		LockedBy:   data.Resource{Name: "Metal Working"},
+		UnlockedBy: "Mining",
+		LockedBy:   "Metal Working",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 900,
 		}},
@@ -480,8 +480,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop",
-		UnlockedBy: data.Resource{Name: "Workshop"},
-		LockedBy:   data.Resource{Name: "Mineral Hoes"},
+		UnlockedBy: "Workshop",
+		LockedBy:   "Mineral Hoes",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 275,
 		}, {
@@ -492,8 +492,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Iron Hoes", Type: "Workshop",
-		UnlockedBy: data.Resource{Name: "Workshop"},
-		LockedBy:   data.Resource{Name: "Iron Hoes"},
+		UnlockedBy: "Workshop",
+		LockedBy:   "Iron Hoes",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 25,
 		}, {
@@ -504,8 +504,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Mineral Axe", Type: "Workshop",
-		UnlockedBy: data.Resource{Name: "Workshop"},
-		LockedBy:   data.Resource{Name: "Mineral Axe"},
+		UnlockedBy: "Workshop",
+		LockedBy:   "Mineral Axe",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 500,
 		}, {
@@ -516,8 +516,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Iron Axe", Type: "Workshop",
-		UnlockedBy: data.Resource{Name: "Workshop"},
-		LockedBy:   data.Resource{Name: "Iron Axe"},
+		UnlockedBy: "Workshop",
+		LockedBy:   "Iron Axe",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 50,
 		}, {
@@ -528,8 +528,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Expanded Barns", Type: "Workshop",
-		UnlockedBy: data.Resource{Name: "Workshop"},
-		LockedBy:   data.Resource{Name: "Expanded Barns"},
+		UnlockedBy: "Workshop",
+		LockedBy:   "Expanded Barns",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 1000,
 		}, {
@@ -544,8 +544,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Reinforced Barns", Type: "Workshop",
-		UnlockedBy: data.Resource{Name: "Workshop"},
-		LockedBy:   data.Resource{Name: "Reinforced Barns"},
+		UnlockedBy: "Workshop",
+		LockedBy:   "Reinforced Barns",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 100,
 		}, {
@@ -560,8 +560,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Bolas", Type: "Workshop",
-		UnlockedBy: data.Resource{Name: "Workshop"},
-		LockedBy:   data.Resource{Name: "Bolas"},
+		UnlockedBy: "Workshop",
+		LockedBy:   "Bolas",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50,
 		}, {
@@ -574,7 +574,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Lizards", Type: "Trade",
-		UnlockedBy: data.Resource{Name: "Archery"},
+		UnlockedBy: "Archery",
 		Costs: []data.Resource{{
 			Name: "catpower", Quantity: 50,
 		}, {
@@ -773,8 +773,8 @@ func Graph(logger *log.Logger, g *game.Game) {
 			}
 			edge(logger, edges, a.Name, add.Name, "limegreen")
 		}
-		if a.UnlockedBy.Name != "" {
-			edge(logger, edges, a.UnlockedBy.Name, a.Name, "blue")
+		if a.UnlockedBy != "" {
+			edge(logger, edges, a.UnlockedBy, a.Name, "blue")
 		}
 	}
 	logger.Printf("}\n")
