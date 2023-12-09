@@ -107,7 +107,7 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 			adds = append(adds, one)
 		}
 		parts = append(parts, strings.Join(adds, ", "))
-		logger.Printf("%d: %s[%s] %s)\n", i, status, a.Type, strings.Join(parts, ""))
+		logger.Printf("%2d: %s[%s] %s)\n", i, status, a.Type, strings.Join(parts, ""))
 	}
 	for _, a := range data.CustomActions {
 		logger.Printf("%s\n", a.Name)

@@ -5,10 +5,10 @@
 [-] [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] kitten 2/2 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
-0: [Bonfire] Gather catnip +(catnip 1)
-1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
+ 0: [Bonfire] Gather catnip +(catnip 1)
+ 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
+ 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+ 5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 12: [Village] farmer -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
 last input: 
@@ -20,10 +20,10 @@ last input:
 [-] [Resource] catnip 996.80/5000 -3.20/s 5m11s to empty
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
-0: [Bonfire] Gather catnip +(catnip 1)
-1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
+ 0: [Bonfire] Gather catnip +(catnip 1)
+ 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
+ 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+ 5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 12: [Village] farmer (1) -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
 last input: 12
@@ -35,10 +35,10 @@ last input: 12
 [-] [Resource] catnip 997.80/5000 -3.20/s 5m11s to empty
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
-0: [Bonfire] Gather catnip +(catnip 1)
-1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
+ 0: [Bonfire] Gather catnip +(catnip 1)
+ 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
+ 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+ 5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 12: [Village] farmer (1) -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
 last input: 0
@@ -49,10 +49,10 @@ last input: 0
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] catnip 999.90/5000 2.10/s 31m44s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
-0: [Bonfire] Gather catnip +(catnip 1)
-1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
+ 0: [Bonfire] Gather catnip +(catnip 1)
+ 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
+ 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+ 5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 12: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 12
@@ -63,10 +63,10 @@ last input: 12
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] catnip 1000.90/5000 2.10/s 31m44s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
-0: [Bonfire] Gather catnip +(catnip 1)
-1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
+ 0: [Bonfire] Gather catnip +(catnip 1)
+ 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
+ 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+ 5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 12: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 0

@@ -79,9 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- textui mark action over cap
-- textui action number two digits
-
 - Workshop
   - craft 6%
 - Hunting Armor
