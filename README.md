@@ -79,14 +79,12 @@ Edges:
 
 More features from kittens game:
 
+- textui mark negative production
+- textui mark action over cap
+- textui action number two digits
+
 - Workshop
   - craft 6%
-- Smelter
-  - unlocked by Metal Working
-  - minerals 200 230 rate 1.15
-  - wood -0.25/s
-  - mineral -0.5/s
-  - iron 0.1/s
 - Hunting Armor
   - unlocked by Metal Working
   - iron 750

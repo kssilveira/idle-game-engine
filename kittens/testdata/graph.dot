@@ -21,6 +21,9 @@ digraph {
   "Barn" [shape="box3d"];
   "Mine" [shape="box3d"];
   "Workshop" [shape="box3d"];
+  "Smelter" [shape="box3d"];
+  "Idle Smelter" [shape="box3d"];
+  "Active Smelter" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -47,6 +50,8 @@ digraph {
   "Barn" [shape="box3d"];
   "Mine" [shape="box3d"];
   "Workshop" [shape="box3d"];
+  "Smelter" [shape="box3d"];
+  "Active Smelter" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -81,6 +86,7 @@ digraph {
   "woodcutter" -> "wood" [color="green"];
   "Mineral Axe" -> "woodcutter" [color="green"];
   "Iron Axe" -> "woodcutter" [color="green"];
+  "wood" -> "Active Smelter" [color="red"];
   "Barn" -> "wood" [color="limegreen"];
   "Expanded Barns" -> "Barn" [color="green"];
   "Reinforced Barns" -> "Barn" [color="green"];
@@ -89,8 +95,10 @@ digraph {
   "hunter" -> "catpower" [color="green"];
   "Bolas" -> "hunter" [color="green"];
   "miner" -> "minerals" [color="green"];
-  "Mine" -> "minerals" [color="green"];
+  "Mine" -> "miner" [color="green"];
+  "minerals" -> "Active Smelter" [color="red"];
   "Barn" -> "minerals" [color="limegreen"];
+  "Active Smelter" -> "iron" [color="green"];
   "Barn" -> "iron" [color="limegreen"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
@@ -101,6 +109,8 @@ digraph {
   "furs" -> "all kittens" [color="red"];
   "ivory" -> "all kittens" [color="red"];
   "spice" -> "all kittens" [color="red"];
+  "Smelter" -> "Idle Smelter" [color="green"];
+  "Idle Smelter" -> "Active Smelter" [color="red"];
   "Gather catnip" -> "catnip" [color="limegreen"];
   "catnip" -> "Refine catnip" [color="orange"];
   "Refine catnip" -> "wood" [color="limegreen"];
@@ -120,6 +130,10 @@ digraph {
   "wood" -> "Workshop" [color="orange"];
   "minerals" -> "Workshop" [color="orange"];
   "Mining" -> "Workshop" [color="blue"];
+  "minerals" -> "Smelter" [color="orange"];
+  "Metal Working" -> "Smelter" [color="blue"];
+  "Idle Smelter" -> "Active Smelter" [color="orange"];
+  "Smelter" -> "Active Smelter" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];

@@ -94,6 +94,8 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Iron Axe", ProductionFactor: 0.5,
 			}},
+		}, {
+			Name: "Active Smelter", ProductionFactor: -0.25,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 200,
@@ -123,9 +125,11 @@ func NewGame(now game.Now) *game.Game {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "miner", ProductionFactor: 0.25, ProductionResourceFactor: "happiness",
-		}},
-		ProductionBonus: []data.Resource{{
-			Name: "Mine", ProductionFactor: 0.2,
+			ProductionBonus: []data.Resource{{
+				Name: "Mine", ProductionFactor: 0.2,
+			}},
+		}, {
+			Name: "Active Smelter", ProductionFactor: -0.5,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 250,
@@ -136,7 +140,10 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 	}, {
-		Name: "iron", Type: "Resource", Capacity: 50,
+		Name: "iron", Type: "Resource", StartCapacity: 50,
+		Producers: []data.Resource{{
+			Name: "Active Smelter", ProductionFactor: 0.1,
+		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 50,
 			ProductionBonus: []data.Resource{{
@@ -209,6 +216,19 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Mine", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Workshop", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Smelter", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Idle Smelter", Type: "Bonfire", Capacity: -1, StartQuantity: 1,
+		Producers: []data.Resource{{
+			Name: "", ProductionFactor: -1,
+		}, {
+			Name: "Smelter", ProductionFactor: 1,
+		}, {
+			Name: "Active Smelter", ProductionFactor: -1,
+		}},
+	}, {
+		Name: "Active Smelter", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -359,6 +379,24 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "Workshop", Quantity: 1,
+		}},
+	}, {
+		Name: "Smelter", Type: "Bonfire",
+		UnlockedBy: "Metal Working",
+		Costs: []data.Resource{{
+			Name: "minerals", Quantity: 200, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{
+			Name: "Smelter", Quantity: 1,
+		}},
+	}, {
+		Name: "Active Smelter", Type: "Bonfire",
+		UnlockedBy: "Smelter",
+		Costs: []data.Resource{{
+			Name: "Idle Smelter", Quantity: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "Active Smelter", Quantity: 1,
 		}},
 	}, {
 		Name: "woodcutter", Type: "Village",
@@ -602,6 +640,8 @@ const (
 	barn
 	mine
 	workshop
+	smelter
+	activesmelter
 	woodcutter
 	scholar
 	farmer
@@ -637,6 +677,8 @@ const (
 	sbarn
 	smine
 	sworkshop
+	ssmelter
+	sactivesmelter
 	swoodcutter
 	sscholar
 	sfarmer
@@ -677,22 +719,37 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{sbarn, barn}, 6},
 		{[]int{sfield, field}, 25},
 		{[]int{slibrary, library}, 15},
-		{[]int{shut, hut, sfarmer, farmer}, 8},
+		{[]int{shut, hut, sfarmer, farmer}, 4},
+		{[]int{sfarmer, farmer}, 2},
 
 		{[]int{sarchery, archery}, 1},
-		{[]int{shut, hut, shunter, hunter}, 1},
+		{[]int{hunter}, 1}, // hut
 
 		{[]int{smining, mining}, 1},
 		{[]int{smine, mine}, 20},
-		{[]int{shut, hut, sminer, miner}, 1},
+		{[]int{miner}, 1}, // hut
 
 		{[]int{sworkshop, workshop}, 20},
 		{[]int{smineralhoes, mineralhoes}, 1},
 		{[]int{smineralaxe, mineralaxe}, 1},
 		{[]int{sbolas, bolas}, 1},
 
-		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{smetalworking, metalworking}, 1},
+		{[]int{ssmelter, smelter}, 20},
+		{[]int{activesmelter}, 1},
+		{[]int{woodcutter}, 1}, // hut
+		{[]int{sironhoes, ironhoes}, 1},
+		{[]int{sironaxe, ironaxe}, 1},
+		{[]int{sexpandedbarns, expandedbarns}, 1},
+
+		{[]int{sbarn, barn}, 10},
+		{[]int{sfield, field}, 10},
+		{[]int{slibrary, library}, 10},
+		{[]int{smine, mine}, 10},
+		{[]int{sworkshop, workshop}, 10},
+		{[]int{ssmelter, smelter}, 10},
+
+		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 
 		{[]int{ssendhunters, sendhunters}, 10},
 	} {
