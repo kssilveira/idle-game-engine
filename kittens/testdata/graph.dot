@@ -25,6 +25,7 @@ digraph {
   "Idle Smelter" [shape="box3d"];
   "Active Smelter" [shape="box3d"];
   "Pasture" [shape="box3d"];
+  "Unic. Pasture" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -55,6 +56,7 @@ digraph {
   "Smelter" [shape="box3d"];
   "Active Smelter" [shape="box3d"];
   "Pasture" [shape="box3d"];
+  "Unic. Pasture" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -79,16 +81,22 @@ digraph {
   "Catnip Field" -> "catnip" [color="green"];
   "catnip" -> "kitten" [color="red"];
   "Pasture" -> "kitten" [color="red"];
+  "Unic. Pasture" -> "kitten" [color="red"];
   "catnip" -> "woodcutter" [color="red"];
   "Pasture" -> "woodcutter" [color="red"];
+  "Unic. Pasture" -> "woodcutter" [color="red"];
   "catnip" -> "scholar" [color="red"];
   "Pasture" -> "scholar" [color="red"];
+  "Unic. Pasture" -> "scholar" [color="red"];
   "catnip" -> "farmer" [color="red"];
   "Pasture" -> "farmer" [color="red"];
+  "Unic. Pasture" -> "farmer" [color="red"];
   "catnip" -> "hunter" [color="red"];
   "Pasture" -> "hunter" [color="red"];
+  "Unic. Pasture" -> "hunter" [color="red"];
   "catnip" -> "miner" [color="red"];
   "Pasture" -> "miner" [color="red"];
+  "Unic. Pasture" -> "miner" [color="red"];
   "farmer" -> "catnip" [color="green"];
   "Mineral Hoes" -> "farmer" [color="green"];
   "Iron Hoes" -> "farmer" [color="green"];
@@ -120,6 +128,7 @@ digraph {
   "furs" -> "all kittens" [color="red"];
   "ivory" -> "all kittens" [color="red"];
   "spice" -> "all kittens" [color="red"];
+  "Unic. Pasture" -> "unicorns" [color="green"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Gather catnip" -> "catnip" [color="limegreen"];
@@ -148,6 +157,8 @@ digraph {
   "catnip" -> "Pasture" [color="orange"];
   "wood" -> "Pasture" [color="orange"];
   "Animal Husbandry" -> "Pasture" [color="blue"];
+  "unicorns" -> "Unic. Pasture" [color="orange"];
+  "Animal Husbandry" -> "Unic. Pasture" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];

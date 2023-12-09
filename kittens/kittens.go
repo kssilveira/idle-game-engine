@@ -66,31 +66,43 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.015,
 			}},
 		}, {
 			Name: "woodcutter", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.015,
 			}},
 		}, {
 			Name: "scholar", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.015,
 			}},
 		}, {
 			Name: "farmer", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.015,
 			}},
 		}, {
 			Name: "hunter", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.015,
 			}},
 		}, {
 			Name: "miner", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.015,
 			}},
 		}, {
 			Name: "farmer", ProductionFactor: 5, ProductionResourceFactor: "happiness",
@@ -220,6 +232,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "slab", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "Unic. Pasture", ProductionFactor: 0.005,
+		}},
 	}, {
 		Name: "blueprint", Type: "Resource", Capacity: -1,
 	}, {
@@ -251,6 +266,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Active Smelter", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Pasture", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Unic. Pasture", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -432,6 +449,15 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "Pasture", Quantity: 1,
+		}},
+	}, {
+		Name: "Unic. Pasture", Type: "Bonfire",
+		UnlockedBy: "Animal Husbandry",
+		Costs: []data.Resource{{
+			Name: "unicorns", Quantity: 2, CostExponentBase: 1.75,
+		}},
+		Adds: []data.Resource{{
+			Name: "Unic. Pasture", Quantity: 1,
 		}},
 	}, {
 		Name: "woodcutter", Type: "Village",
@@ -690,6 +716,7 @@ const (
 	smelter
 	activesmelter
 	pasture
+	unicpasture
 	woodcutter
 	scholar
 	farmer
@@ -729,6 +756,7 @@ const (
 	ssmelter
 	sactivesmelter
 	spasture
+	sunicpasture
 	swoodcutter
 	sscholar
 	sfarmer
@@ -778,6 +806,9 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{spasture, pasture}, 40},
+		{[]int{ssendhunters, sendhunters}, 40},
+		{[]int{unicpasture}, 1},
+		{[]int{sunicpasture, unicpasture}, 10},
 
 		{[]int{smining, mining}, 1},
 		{[]int{smine, mine}, 20},
@@ -804,8 +835,6 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{ssmelter, smelter}, 10},
 		{[]int{spasture, pasture}, 10},
 		{[]int{shuntingarmor, huntingarmor}, 1},
-
-		{[]int{ssendhunters, sendhunters}, 10},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {
