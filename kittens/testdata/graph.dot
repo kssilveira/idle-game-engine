@@ -88,11 +88,7 @@ digraph {
   "miner" -> "minerals" [color="green"];
   "Mine" -> "minerals" [color="green"];
   "Barn" -> "minerals" [color="limegreen"];
-  "Expanded Barns" -> "Barn" [color="green"];
-  "Reinforced Barns" -> "Barn" [color="green"];
   "Barn" -> "iron" [color="limegreen"];
-  "Expanded Barns" -> "Barn" [color="green"];
-  "Reinforced Barns" -> "Barn" [color="green"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];

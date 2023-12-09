@@ -711,6 +711,7 @@ func Graph(logger *log.Logger, g *game.Game) {
 	for _, a := range g.Actions {
 		logger.Printf(`  "%s" [shape="%s"];`+"\n", a.Name, typeToShape[a.Type])
 	}
+	edges := map[string]bool{}
 	for _, r := range g.Resources {
 		if r.Name == "happiness" {
 			continue
@@ -722,36 +723,36 @@ func Graph(logger *log.Logger, g *game.Game) {
 			}
 			last = p.Name
 			if p.ProductionFactor < 0 {
-				logger.Printf(`  "%s" -> "%s" [color="red"];`+"\n", r.Name, p.Name)
+				edge(logger, edges, r.Name, p.Name, "red")
 			} else {
-				logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", p.Name, r.Name)
+				edge(logger, edges, p.Name, r.Name, "green")
 			}
 			for _, b := range p.ProductionBonus {
-				logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", b.Name, p.Name)
+				edge(logger, edges, b.Name, p.Name, "green")
 			}
 		}
 		for _, b := range r.ProductionBonus {
-			logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", b.Name, r.Name)
+			edge(logger, edges, b.Name, r.Name, "green")
 		}
 		for _, p := range r.CapacityProducers {
-			logger.Printf(`  "%s" -> "%s" [color="limegreen"];`+"\n", p.Name, r.Name)
+			edge(logger, edges, p.Name, r.Name, "limegreen")
 			for _, b := range p.ProductionBonus {
-				logger.Printf(`  "%s" -> "%s" [color="green"];`+"\n", b.Name, p.Name)
+				edge(logger, edges, b.Name, p.Name, "green")
 			}
 		}
 	}
 	for _, a := range g.Actions {
 		for _, c := range a.Costs {
-			logger.Printf(`  "%s" -> "%s" [color="orange"];`+"\n", c.Name, a.Name)
+			edge(logger, edges, c.Name, a.Name, "orange")
 		}
 		for _, add := range a.Adds {
 			if a.Name == add.Name {
 				continue
 			}
-			logger.Printf(`  "%s" -> "%s" [color="limegreen"];`+"\n", a.Name, add.Name)
+			edge(logger, edges, a.Name, add.Name, "limegreen")
 		}
 		if a.UnlockedBy.Name != "" {
-			logger.Printf(`  "%s" -> "%s" [color="blue"];`+"\n", a.UnlockedBy.Name, a.Name)
+			edge(logger, edges, a.UnlockedBy.Name, a.Name, "blue")
 		}
 	}
 	logger.Printf("}\n")
@@ -782,4 +783,13 @@ digraph {
   "Trade" [shape="cds"];
 }
 `)
+}
+
+func edge(logger *log.Logger, edges map[string]bool, from, to, color string) {
+	key := fmt.Sprintf("%s+%s+%s", from, to, color)
+	if edges[key] {
+		return
+	}
+	edges[key] = true
+	logger.Printf(`  "%s" -> "%s" [color="%s"];`+"\n", from, to, color)
 }
