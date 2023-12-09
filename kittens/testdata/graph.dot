@@ -24,6 +24,7 @@ digraph {
   "Smelter" [shape="box3d"];
   "Idle Smelter" [shape="box3d"];
   "Active Smelter" [shape="box3d"];
+  "Pasture" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -53,6 +54,7 @@ digraph {
   "Workshop" [shape="box3d"];
   "Smelter" [shape="box3d"];
   "Active Smelter" [shape="box3d"];
+  "Pasture" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -76,11 +78,17 @@ digraph {
   "Lizards" [shape="cds"];
   "Catnip Field" -> "catnip" [color="green"];
   "catnip" -> "kitten" [color="red"];
+  "Pasture" -> "kitten" [color="green"];
   "catnip" -> "woodcutter" [color="red"];
+  "Pasture" -> "woodcutter" [color="green"];
   "catnip" -> "scholar" [color="red"];
+  "Pasture" -> "scholar" [color="green"];
   "catnip" -> "farmer" [color="red"];
+  "Pasture" -> "farmer" [color="green"];
   "catnip" -> "hunter" [color="red"];
+  "Pasture" -> "hunter" [color="green"];
   "catnip" -> "miner" [color="red"];
+  "Pasture" -> "miner" [color="green"];
   "farmer" -> "catnip" [color="green"];
   "Mineral Hoes" -> "farmer" [color="green"];
   "Iron Hoes" -> "farmer" [color="green"];
@@ -137,6 +145,9 @@ digraph {
   "Metal Working" -> "Smelter" [color="blue"];
   "Idle Smelter" -> "Active Smelter" [color="orange"];
   "Smelter" -> "Active Smelter" [color="blue"];
+  "catnip" -> "Pasture" [color="orange"];
+  "wood" -> "Pasture" [color="orange"];
+  "Animal Husbandry" -> "Pasture" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
