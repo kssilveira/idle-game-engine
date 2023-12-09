@@ -68,7 +68,7 @@ last input: 3
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.51 % 4 == 0)
 [Calendar] day_of_year 52 (1 + 51 % 400)
-[Resource] catnip 1002/5000 -17/s 58s to empty
+[-] [Resource] catnip 1002/5000 -17/s 58s to empty
 [Resource] wood 82.50/200
 [Resource] kitten 4/4 0.05/s
 [Village] happiness 1.02 (1.10 + -0.08)
@@ -85,7 +85,7 @@ last input: 0
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.51 % 4 == 0)
 [Calendar] day_of_year 52 (1 + 51 % 400)
-[Resource] catnip 1003/5000 -17/s 59s to empty
+[-] [Resource] catnip 1003/5000 -17/s 59s to empty
 [Resource] wood 82.50/200
 [Resource] kitten 4/4 0.05/s
 [Village] happiness 1.02 (1.10 + -0.08)

@@ -79,7 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- textui mark negative production
 - textui mark action over cap
 - textui action number two digits
 

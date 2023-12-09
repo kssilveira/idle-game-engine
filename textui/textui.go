@@ -26,6 +26,7 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 		if r.IsHidden || r.Quantity == 0 {
 			continue
 		}
+		status := ""
 		capacity := ""
 		if r.Capacity > 0 {
 			capacity = fmt.Sprintf("/%s", toString(r.Capacity))
@@ -38,6 +39,7 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 			}
 			if d.DurationToEmpty > 0 && r.StartQuantity == 0 {
 				capStr = fmt.Sprintf(" %s to empty", d.DurationToEmpty)
+				status = "[-] "
 			}
 			rateStr := ""
 			operator := "+"
@@ -56,7 +58,7 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 			}
 			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}
-		logger.Printf("[%s] %s %s%s%s\n", r.Type, r.Name, toString(r.Quantity), capacity, extra)
+		logger.Printf("%s[%s] %s %s%s%s\n", status, r.Type, r.Name, toString(r.Quantity), capacity, extra)
 	}
 }
 

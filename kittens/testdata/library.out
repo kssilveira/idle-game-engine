@@ -2,7 +2,7 @@
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Resource] catnip 1000/5000 -8.50/s 1m57s to empty
+[-] [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] wood 100/200
 [Resource] kitten 2/2 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
@@ -17,7 +17,7 @@ last input:
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Resource] catnip 1000/5000 -8.50/s 1m57s to empty
+[-] [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] wood 75/200
 [Resource] kitten 2/2 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
@@ -35,7 +35,7 @@ last input: 4
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Resource] catnip 991.50/5000 -8.50/s 1m56s to empty
+[-] [Resource] catnip 991.50/5000 -8.50/s 1m56s to empty
 [Resource] wood 75/200
 [Resource] science 0.20/500 0.20/s 40m49s to cap
 [Resource] kitten 1/1 0.05/s
@@ -54,7 +54,7 @@ last input: 11
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Resource] catnip 992.50/5000 -8.50/s 1m56s to empty
+[-] [Resource] catnip 992.50/5000 -8.50/s 1m56s to empty
 [Resource] wood 75/200
 [Resource] science 0.20/500 0.20/s 40m49s to cap
 [Resource] kitten 1/1 0.05/s
@@ -73,7 +73,7 @@ last input: 0
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] catnip 984/5000 -8.50/s 1m55s to empty
+[-] [Resource] catnip 984/5000 -8.50/s 1m55s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.43/750 0.22/s 56m7s to cap
 [Resource] kitten 1/1 0.05/s
@@ -92,7 +92,7 @@ last input: 4
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] catnip 985/5000 -8.50/s 1m55s to empty
+[-] [Resource] catnip 985/5000 -8.50/s 1m55s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.43/750 0.22/s 56m7s to cap
 [Resource] kitten 1/1 0.05/s
@@ -111,7 +111,7 @@ last input: 0
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] catnip 976.50/5000 -8.50/s 1m54s to empty
+[-] [Resource] catnip 976.50/5000 -8.50/s 1m54s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.87/750 0.45/s 28m2s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
@@ -129,7 +129,7 @@ last input: 11
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] catnip 977.50/5000 -8.50/s 1m55s to empty
+[-] [Resource] catnip 977.50/5000 -8.50/s 1m55s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.87/750 0.45/s 28m2s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
