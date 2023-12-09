@@ -218,8 +218,8 @@ func join(iters ...[]iter) []iter {
 
 func TestGraph(t *testing.T) {
 	inputs := []struct {
-		name string
-		fn   func(*log.Logger, *game.Game, map[string]bool)
+		name   string
+		fn     func(*log.Logger, *game.Game, map[string]bool)
 		colors map[string]bool
 	}{{
 		name: "graph",
