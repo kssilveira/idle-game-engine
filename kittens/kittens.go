@@ -119,6 +119,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "hunter", ProductionFactor: 0.3, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Bolas", ProductionFactor: 1,
+			}, {
+				Name: "Hunting Armor", ProductionFactor: 2,
 			}},
 		}},
 	}, {
@@ -303,6 +305,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Reinforced Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Bolas", Type: "Workshop", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Hunting Armor", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -611,6 +615,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Bolas", Quantity: 1,
 		}},
 	}, {
+		Name: "Hunting Armor", Type: "Workshop",
+		UnlockedBy: "Metal Working",
+		LockedBy:   "Hunting Armor",
+		Costs: []data.Resource{{
+			Name: "iron", Quantity: 750,
+		}, {
+			Name: "science", Quantity: 2000,
+		}},
+		Adds: []data.Resource{{
+			Name: "Hunting Armor", Quantity: 1,
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade",
 		UnlockedBy: "Archery",
 		Costs: []data.Resource{{
@@ -661,6 +677,7 @@ const (
 	expandedbarns
 	reinforcedbarns
 	bolas
+	huntingarmor
 	lizards
 )
 
@@ -698,6 +715,7 @@ const (
 	sexpandedbarns
 	sreinforcedbarns
 	sbolas
+	shuntingarmor
 	slizards
 )
 
@@ -748,6 +766,7 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{smine, mine}, 10},
 		{[]int{sworkshop, workshop}, 10},
 		{[]int{ssmelter, smelter}, 10},
+		{[]int{shuntingarmor, huntingarmor}, 1},
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 

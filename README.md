@@ -81,11 +81,6 @@ More features from kittens game:
 
 - Workshop
   - craft 6%
-- Hunting Armor
-  - unlocked by Metal Working
-  - iron 750
-  - science 2000
-  - hunter 200%
 - Civil Service
   - unlocked by Animal Husbandry
   - science 1500
