@@ -861,7 +861,11 @@ func Graph(logger *log.Logger, g *game.Game) {
 				edge(logger, edges, p.Name, r.Name, "green")
 			}
 			for _, b := range p.ProductionBonus {
-				edge(logger, edges, b.Name, p.Name, "green")
+				if p.ProductionFactor < 0 {
+					edge(logger, edges, b.Name, p.Name, "red")
+				} else {
+					edge(logger, edges, b.Name, p.Name, "green")
+				}
 			}
 		}
 		for _, b := range r.ProductionBonus {
