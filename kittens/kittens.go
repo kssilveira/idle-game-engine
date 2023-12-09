@@ -854,7 +854,7 @@ func toInput(cmd int) string {
 	return fmt.Sprintf("%s%d", prefix, cmd)
 }
 
-func Graph(logger *log.Logger, g *game.Game) {
+func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 	logger.Printf("digraph {\n")
 	typeToShape := map[string]string{
 		"Resource": "cylinder",
@@ -864,16 +864,11 @@ func Graph(logger *log.Logger, g *game.Game) {
 		"Workshop": "hexagon",
 		"Trade":    "cds",
 	}
-	for _, r := range g.Resources {
-		if r.Type == "Calendar" || r.Name == "gone kitten" || r.Name == "happiness" {
-			continue
-		}
-		logger.Printf(`  "%s" [shape="%s"];`+"\n", r.Name, typeToShape[r.Type])
-	}
-	for _, a := range g.Actions {
-		logger.Printf(`  "%s" [shape="%s"];`+"\n", a.Name, typeToShape[a.Type])
-	}
+	nodes := map[string]bool{}
 	edges := map[string]bool{}
+	edgefn := func(from, to, color string) {
+		edge(logger, nodes, edges, colors, from, to, color)
+	}
 	for _, r := range g.Resources {
 		if r.Name == "happiness" {
 			continue
@@ -885,46 +880,61 @@ func Graph(logger *log.Logger, g *game.Game) {
 			}
 			last = p.Name
 			if p.ProductionFactor < 0 {
-				edge(logger, edges, r.Name, p.Name, "red")
+				edgefn(r.Name, p.Name, "red")
 			} else {
-				edge(logger, edges, p.Name, r.Name, "green")
+				edgefn(p.Name, r.Name, "green")
 			}
 			for _, b := range p.ProductionBonus {
 				if p.ProductionFactor < 0 {
-					edge(logger, edges, b.Name, p.Name, "red")
+					edgefn(b.Name, p.Name, "red")
 				} else {
-					edge(logger, edges, b.Name, p.Name, "green")
+					edgefn(b.Name, p.Name, "green")
 				}
 			}
 		}
 		for _, b := range r.ProductionBonus {
-			edge(logger, edges, b.Name, r.Name, "green")
+			edgefn(b.Name, r.Name, "green")
 		}
 		for _, p := range r.CapacityProducers {
-			edge(logger, edges, p.Name, r.Name, "limegreen")
+			edgefn(p.Name, r.Name, "limegreen")
 			for _, b := range p.ProductionBonus {
-				edge(logger, edges, b.Name, p.Name, "green")
+				edgefn(b.Name, p.Name, "green")
 			}
 		}
 	}
 	for _, a := range g.Actions {
 		for _, c := range a.Costs {
-			edge(logger, edges, c.Name, a.Name, "orange")
+			edgefn(c.Name, a.Name, "orange")
 		}
 		for _, add := range a.Adds {
 			if a.Name == add.Name {
 				continue
 			}
-			edge(logger, edges, a.Name, add.Name, "limegreen")
+			edgefn(a.Name, add.Name, "limegreen")
 		}
 		if a.UnlockedBy != "" {
-			edge(logger, edges, a.UnlockedBy, a.Name, "blue")
+			edgefn(a.UnlockedBy, a.Name, "blue")
 		}
+	}
+	for _, r := range g.Resources {
+		if r.Type == "Calendar" || r.Name == "gone kitten" || r.Name == "happiness" {
+			continue
+		}
+		if !nodes[r.Name] {
+			continue
+		}
+		logger.Printf(`  "%s" [shape="%s"];`+"\n", r.Name, typeToShape[r.Type])
+	}
+	for _, a := range g.Actions {
+		if !nodes[a.Name] {
+			continue
+		}
+		logger.Printf(`  "%s" [shape="%s"];`+"\n", a.Name, typeToShape[a.Type])
 	}
 	logger.Printf("}\n")
 }
 
-func GraphEdges(logger *log.Logger, g *game.Game) {
+func GraphEdges(logger *log.Logger, g *game.Game, colors map[string]bool) {
 	logger.Printf(`
 digraph {
   node [label="" width=0 style=invis];
@@ -938,7 +948,7 @@ digraph {
 `)
 }
 
-func GraphNodes(logger *log.Logger, g *game.Game) {
+func GraphNodes(logger *log.Logger, g *game.Game, colors map[string]bool) {
 	logger.Printf(`
 digraph {
   "Resource" [shape="cylinder"];
@@ -951,11 +961,16 @@ digraph {
 `)
 }
 
-func edge(logger *log.Logger, edges map[string]bool, from, to, color string) {
+func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colors map[string]bool, from, to, color string) {
+	if len(colors) > 0 && !colors[color] {
+		return
+	}
 	key := fmt.Sprintf("%s+%s+%s", from, to, color)
 	if edges[key] {
 		return
 	}
 	edges[key] = true
+	nodes[from] = true
+	nodes[to] = true
 	logger.Printf(`  "%s" -> "%s" [color="%s"];`+"\n", from, to, color)
 }

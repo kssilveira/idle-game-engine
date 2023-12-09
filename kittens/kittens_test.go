@@ -219,7 +219,8 @@ func join(iters ...[]iter) []iter {
 func TestGraph(t *testing.T) {
 	inputs := []struct {
 		name string
-		fn   func(*log.Logger, *game.Game)
+		fn   func(*log.Logger, *game.Game, map[string]bool)
+		colors map[string]bool
 	}{{
 		name: "graph",
 		fn:   Graph,
@@ -229,12 +230,18 @@ func TestGraph(t *testing.T) {
 	}, {
 		name: "graph nodes",
 		fn:   GraphNodes,
+	}, {
+		name: "graph_blue",
+		fn:   Graph,
+		colors: map[string]bool{
+			"blue": true,
+		},
 	}}
 	for _, in := range inputs {
 		var buf bytes.Buffer
 		logger := log.New(&buf, "", 0 /* flags */)
 		g := NewGame(func() time.Time { return time.Unix(0, 0) })
-		in.fn(logger, g)
+		in.fn(logger, g, in.colors)
 		name := strings.Replace(in.name, " ", "_", -1)
 		dot := filepath.Join("testdata", name+".dot")
 		svg := filepath.Join("testdata", name+".svg")
