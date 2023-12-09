@@ -53,7 +53,7 @@ last input: 0
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
-12: [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+12: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 12
 ###
@@ -67,6 +67,6 @@ last input: 12
 1: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
-12: [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+12: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
 last input: 0

@@ -55,7 +55,7 @@ last input: 0
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1, science cap 250)
-10: [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+10: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 10
 ###
@@ -70,6 +70,6 @@ last input: 10
 2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 3: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
 4: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1, science cap 250)
-10: [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+10: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 last input: 0

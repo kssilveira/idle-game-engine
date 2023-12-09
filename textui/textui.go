@@ -67,13 +67,14 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 		if a.Locked {
 			continue
 		}
+		status := ""
 		quantity := ""
 		if a.Quantity > 0 {
 			quantity = fmt.Sprintf(" (%s)", toString(a.Quantity))
 		}
-		name := fmt.Sprintf("%d: [%s] %s%s", i, a.Type, a.Name, quantity)
+		name := fmt.Sprintf("%s%s", a.Name, quantity)
 		if isHTML {
-			name = fmt.Sprintf("%d: [%s] <a href='/%d'>%s%s</a> [<a href='/s%d'>skip</a>]", i, a.Type, i, a.Name, quantity, i)
+			name = fmt.Sprintf("<a href='/%d'>%s%s</a> [<a href='/s%d'>skip</a>]", i, a.Name, quantity, i)
 		}
 		parts := []string{name}
 		costs := []string{}
@@ -81,6 +82,7 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 			overCap := ""
 			if c.Cost > c.Capacity && c.Capacity != -1 {
 				overCap = "*"
+				status = "[*] "
 			}
 			duration := ""
 			if c.Duration != 0 {
@@ -105,7 +107,7 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 			adds = append(adds, one)
 		}
 		parts = append(parts, strings.Join(adds, ", "))
-		logger.Printf("%s)\n", strings.Join(parts, ""))
+		logger.Printf("%d: %s[%s] %s)\n", i, status, a.Type, strings.Join(parts, ""))
 	}
 	for _, a := range data.CustomActions {
 		logger.Printf("%s\n", a.Name)
