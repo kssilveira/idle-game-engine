@@ -5090,7 +5090,7 @@ last input: 10
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-26: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s16
 ###
@@ -5116,7 +5116,7 @@ last input: s16
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-26: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 16
 error: action Archery is locked
@@ -5143,7 +5143,7 @@ error: action Archery is locked
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-26: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -5170,7 +5170,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-26: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -5197,7 +5197,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-26: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s11
 ###
@@ -5224,7 +5224,7 @@ last input: s11
 13: [Village] Send hunters -(catpower 0.25/100 6m35s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 17: [Science] Mining -(science 500) +(Mining 1)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-26: [Trade] Lizards -(catpower 0.25/50 3m17s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0.25/50 3m17s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 11
 ###
@@ -5253,7 +5253,7 @@ last input: 11
 13: [Village] Send hunters -(catpower 0.50/100 6m34s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 0.50/50 3m16s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0.50/50 3m16s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s17
 ###
@@ -5282,7 +5282,7 @@ last input: s17
 13: [Village] Send hunters -(catpower 0.76/100 6m33s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 0.76/50 3m15s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 0.76/50 3m15s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 17
 error: action Mining is locked
@@ -5313,7 +5313,7 @@ error: action Mining is locked
 13: [Village] Send hunters -(catpower 1.01/100 6m32s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 1.01/50 3m14s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.01/50 3m14s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5343,7 +5343,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 1.26/100 6m31s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 1.26/50 3m13s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.26/50 3m13s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5373,7 +5373,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 1.51/100 6m30s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 1.51/50 3m12s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.51/50 3m12s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5403,7 +5403,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 1.76/100 6m29s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 1.76/50 3m11s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.76/50 3m11s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5433,7 +5433,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 2.02/100 6m28s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 2.02/50 3m10s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 2.02/50 3m10s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5463,7 +5463,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 2.27/100 6m27s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 2.27/50 3m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 2.27/50 3m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5493,7 +5493,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 2.52/100 6m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 2.52/50 3m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 2.52/50 3m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5523,7 +5523,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 2.77/100 6m25s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 2.77/50 3m7s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 2.77/50 3m7s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5553,7 +5553,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5583,7 +5583,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5613,7 +5613,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5643,7 +5643,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5673,7 +5673,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5703,7 +5703,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5733,7 +5733,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5763,7 +5763,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5793,7 +5793,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5823,7 +5823,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5853,7 +5853,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5883,7 +5883,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5913,7 +5913,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -5943,7 +5943,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -5973,7 +5973,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6003,7 +6003,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6033,7 +6033,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6063,7 +6063,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6093,7 +6093,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6123,7 +6123,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6153,7 +6153,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6183,7 +6183,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 ###
@@ -6213,7 +6213,7 @@ last input: 6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 ###
@@ -6243,7 +6243,7 @@ last input: s6
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6274,7 +6274,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6305,7 +6305,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6336,7 +6336,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6367,7 +6367,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6398,7 +6398,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6429,7 +6429,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6460,7 +6460,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s6
 error: not enough wood
@@ -6491,7 +6491,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 6
 error: not enough wood
@@ -6522,7 +6522,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s3
 error: not enough wood
@@ -6553,7 +6553,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 3
 error: not enough wood
@@ -6584,7 +6584,7 @@ error: not enough wood
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0.98/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0.98/1000 16m55s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s12
 ###
@@ -6614,7 +6614,7 @@ last input: s12
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.97/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.97/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 12
 error: not enough kitten
@@ -6645,7 +6645,7 @@ error: not enough kitten
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 401.47/1000 10m8s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 401.47/1000 10m8s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6681,7 +6681,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 2.46/750 12m39s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.46/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.46/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.46/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6717,7 +6718,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 461/750 4m53s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 461/1000 9m7s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 461/1000 9m7s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6753,7 +6755,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 1.98/750 12m40s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.98/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 1.98/250 4m12s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1.98/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6789,7 +6792,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 530.39/750 3m43s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 530.39/1000 7m57s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 530.39/1000 7m57s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6825,7 +6829,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 2.38/750 12m39s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.38/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.38/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.38/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6861,7 +6866,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 609.50/750 2m22s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 609.50/1000 6m36s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 609.50/1000 6m36s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6897,7 +6903,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 2.14/750 12m40s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.14/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.14/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.14/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -6933,7 +6940,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 1000, minerals 700.78/750 50s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 700.78/1000 5m4s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 700.78/1000 5m4s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -6969,7 +6977,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 898.08/1000 23m0s, minerals 2.16/750 12m40s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.16/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.16/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.16/1000 16m54s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7005,7 +7014,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 958.38/1000 9m23s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 806.09/1000 3m17s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 806.09/1000 3m17s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7041,7 +7051,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 757.32/1000 54m48s, minerals 2.53/750 12m39s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.53/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.53/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.53/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7077,7 +7088,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 826.62/1000 39m9s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 926.50/1000 1m14s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 926.50/1000 1m14s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7113,7 +7125,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 595.38/1000 1h31m22s, minerals 2.26/750 12m39s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.26/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.26/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.26/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7149,7 +7162,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 675.16/1000 1h13m21s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7185,7 +7199,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 409.23/1000 2h13m24s, minerals 2.94/750 12m39s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.94/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.94/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.94/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7221,7 +7236,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 500.89/1000 1h52m42s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7257,7 +7273,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 195.06/1000 3h1m46s, minerals 2.45/750 12m39s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.45/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 2.45/250 4m11s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 2.45/1000 16m53s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7293,7 +7310,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 351.89/1000 2h26m21s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7329,7 +7347,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 0.18/1000 3h45m47s, minerals 343.83/750 6m52s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 343.83/1000 11m6s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 0.18/50 11m15s, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 343.83/1000 11m6s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7365,7 +7384,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 404.67/1000 2h14m26s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7401,7 +7421,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 0.19/1000 3h45m47s, minerals 132.76/750 10m27s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 132.76/1000 14m41s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 0.19/50 11m14s, minerals 132.76/250 1m59s, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 132.76/1000 14m41s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 ###
@@ -7437,7 +7458,8 @@ last input: 7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.35/1000 2h0m44s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 ###
@@ -7473,7 +7495,8 @@ last input: s7
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.43/1000 2h0m43s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7510,7 +7533,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.50/1000 2h0m42s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7547,7 +7571,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.57/1000 2h0m41s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7584,7 +7609,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.65/1000 2h0m40s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7621,7 +7647,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.72/1000 2h0m39s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7658,7 +7685,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.80/1000 2h0m38s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7695,7 +7723,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.87/1000 2h0m37s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7732,7 +7761,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 465.94/1000 2h0m36s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7769,7 +7799,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.02/1000 2h0m35s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7806,7 +7837,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.09/1000 2h0m34s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7843,7 +7875,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.16/1000 2h0m33s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7880,7 +7913,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.24/1000 2h0m32s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7917,7 +7951,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.31/1000 2h0m31s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -7954,7 +7989,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.39/1000 2h0m30s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -7991,7 +8027,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.46/1000 2h0m29s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -8028,7 +8065,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.53/1000 2h0m28s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s7
 error: not enough minerals
@@ -8065,7 +8103,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.61/1000 2h0m27s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 7
 error: not enough minerals
@@ -8101,7 +8140,8 @@ error: not enough minerals
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.68/1000 2h0m26s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s20
 ###
@@ -8136,7 +8176,8 @@ last input: s20
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.75/1000 2h0m25s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 20
 error: action Mineral Hoes is locked
@@ -8171,7 +8212,8 @@ error: action Mineral Hoes is locked
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 466.88/1000 1h10m49s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 977.95/1000 22s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 977.95/1000 22s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s22
 ###
@@ -8205,7 +8247,8 @@ last input: s22
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 24: [Workshop] Expanded Barns -(wood 467.01/1000 1h10m48s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 978.94/1000 21s) +(wood 500, blueprint 0.10, spice 8.75)
+26: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 978.94/1000 21s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 22
 error: action Mineral Axe is locked
@@ -8216,32 +8259,33 @@ error: action Mineral Axe is locked
 [Calendar] Autumn 1 (1 if 1734.43 % 4 == 2)
 [Calendar] day_of_year 244 (1 + 173443 % 400)
 [Resource] catnip 35000/35000 47.99/s
-[Resource] wood 467.13/1400 0.13/s 2h3m55s to cap
-[Resource] science 6802.80/7500 0.56/s 20m45s to cap
-[Resource] catpower 250/250 0.25/s
-[Resource] minerals 979.92/1750 0.98/s 13m2s to cap
+[Resource] wood 417.13/1400 0.13/s 2h10m34s to cap
+[Resource] science 6302.80/7500 0.56/s 35m39s to cap
+[Resource] catpower 250/250 0.49/s
+[Resource] minerals 729.92/1750 0.98/s 17m16s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m26s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 467.13/3051.76* 5h43m21s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 467.13/1439.39* 2h9m9s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 467.13/1436.15* 2h8m43s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 467.13/1423.18* 2h7m0s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 979.92/1860.96* 14m55s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 417.13/3051.76* 5h49m59s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 417.13/1439.39* 2h15m48s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 417.13/1436.15* 2h15m22s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 417.13/1423.18* 2h13m38s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 417.13/465.24 6m23s, minerals 729.92/1860.96* 19m9s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 467.13/1000 1h10m47s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 417.13/1000 1h17m25s, minerals 729.92/750 20s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 979.92/1000 20s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 729.92/1000 4m34s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
-last input: s18
+last input: s26
 ###
 [Calendar] time 346887
 [Calendar] skip 346488
@@ -8249,18 +8293,53 @@ last input: s18
 [Calendar] Autumn 1 (1 if 1734.43 % 4 == 2)
 [Calendar] day_of_year 244 (1 + 173443 % 400)
 [Resource] catnip 35000/35000 47.99/s
-[Resource] wood 467.26/1400 0.13/s 2h3m54s to cap
-[Resource] science 6803.36/7500 0.56/s 20m44s to cap
-[Resource] catpower 250/250 0.25/s
-[Resource] minerals 980.90/1750 0.98/s 13m1s to cap
+[Resource] wood 417.26/1400 0.13/s 2h10m33s to cap
+[Resource] science 6303.36/7500 0.56/s 35m38s to cap
+[Resource] catpower 250/250 0.49/s
+[Resource] minerals 730.90/1750 0.98/s 17m15s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m26s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 467.26/3051.76* 5h43m20s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 467.26/1439.39* 2h9m8s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 467.26/1436.15* 2h8m42s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 467.26/1423.18* 2h6m59s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 980.90/1860.96* 14m54s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 417.26/3051.76* 5h49m58s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 417.26/1439.39* 2h15m47s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 417.26/1436.15* 2h15m21s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 417.26/1423.18* 2h13m37s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 417.26/465.24 6m22s, minerals 730.90/1860.96* 19m8s) +(Workshop 1)
+8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
+11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+18: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+19: [Science] Metal Working -(science 900) +(Metal Working 1)
+21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Workshop] Expanded Barns -(wood 417.26/1000 1h17m24s, minerals 730.90/750 19s, iron 0/50, science 500) +(Expanded Barns 1)
+25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 730.90/1000 4m33s) +(wood 500, blueprint 0.10, spice 8.75)
+sX: time skip until action X is available
+last input: 26
+error: action Bolas is locked
+###
+[Calendar] time 346888
+[Calendar] skip 346488
+[Calendar] year 434.61 (1 + 433.61)
+[Calendar] Autumn 1 (1 if 1734.44 % 4 == 2)
+[Calendar] day_of_year 245 (1 + 173444 % 400)
+[Resource] catnip 35000/35000 47.99/s
+[Resource] wood 417.38/1400 0.13/s 2h10m32s to cap
+[Resource] science 5803.92/7500 0.56/s 50m30s to cap
+[Resource] catpower 250/250 0.49/s
+[Resource] minerals 731.89/1750 0.98/s 17m14s to cap
+[Resource] gone kitten 5
+[Village] happiness 0.82 (1.10 + -0.28)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m26s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 417.38/3051.76* 5h49m57s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 417.38/1439.39* 2h15m46s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 417.38/1436.15* 2h15m20s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 417.38/1423.18* 2h13m36s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 417.38/465.24 6m21s, minerals 731.89/1860.96* 19m7s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
@@ -8270,44 +8349,11 @@ last input: s18
 19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 467.26/1000 1h10m46s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 417.38/1000 1h17m23s, minerals 731.89/750 18s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 980.90/1000 19s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 731.89/1000 4m32s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
-last input: 18
-error: action Animal Husbandry is locked
-###
-[Calendar] time 346888
-[Calendar] skip 346488
-[Calendar] year 434.61 (1 + 433.61)
-[Calendar] Autumn 1 (1 if 1734.44 % 4 == 2)
-[Calendar] day_of_year 245 (1 + 173444 % 400)
-[Resource] catnip 35000/35000 47.99/s
-[Resource] wood 467.38/1400 0.13/s 2h3m53s to cap
-[Resource] science 5903.92/7500 0.56/s 47m31s to cap
-[Resource] catpower 250/250 0.25/s
-[Resource] minerals 981.89/1750 0.98/s 13m0s to cap
-[Resource] gone kitten 5
-[Village] happiness 0.82 (1.10 + -0.28)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m26s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 467.38/3051.76* 5h43m19s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 467.38/1439.39* 2h9m7s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 467.38/1436.15* 2h8m41s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 467.38/1423.18* 2h6m58s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 981.89/1860.96* 14m53s) +(Workshop 1)
-8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
-9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
-11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
-12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
-21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 467.38/1000 1h10m45s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
-25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 981.89/1000 18s) +(wood 500, blueprint 0.10, spice 8.75)
-sX: time skip until action X is available
-last input: s19
+last input: s18
 ###
 [Calendar] time 346889
 [Calendar] skip 346488
@@ -8315,54 +8361,52 @@ last input: s19
 [Calendar] Autumn 1 (1 if 1734.44 % 4 == 2)
 [Calendar] day_of_year 245 (1 + 173444 % 400)
 [Resource] catnip 35000/35000 47.99/s
-[Resource] wood 467.51/1400 0.13/s 2h3m52s to cap
-[Resource] science 5904.48/7500 0.56/s 47m30s to cap
-[Resource] catpower 250/250 0.25/s
-[Resource] minerals 982.87/1750 0.98/s 12m59s to cap
+[Resource] wood 417.51/1400 0.13/s 2h10m31s to cap
+[Resource] science 5804.48/7500 0.56/s 50m29s to cap
+[Resource] catpower 250/250 0.49/s
+[Resource] minerals 732.87/1750 0.98/s 17m13s to cap
 [Resource] gone kitten 5
 [Village] happiness 0.82 (1.10 + -0.28)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m26s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 467.51/3051.76* 5h43m18s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 467.51/1439.39* 2h9m6s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 467.51/1436.15* 2h8m40s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 467.51/1423.18* 2h6m57s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 982.87/1860.96* 14m52s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 417.51/3051.76* 5h49m56s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 417.51/1439.39* 2h15m45s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 417.51/1436.15* 2h15m19s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 417.51/1423.18* 2h13m35s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 417.51/465.24 6m20s, minerals 732.87/1860.96* 19m6s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+19: [Science] Metal Working -(science 900) +(Metal Working 1)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 467.51/1000 1h10m44s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 417.51/1000 1h17m22s, minerals 732.87/750 17s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 982.87/1000 17s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 732.87/1000 4m31s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
-last input: 19
-error: action Metal Working is locked
+last input: 18
+error: action Animal Husbandry is locked
 ###
 [Calendar] time 346890
 [Calendar] skip 346488
 [Calendar] year 434.61 (1 + 433.61)
 [Calendar] Autumn 1 (1 if 1734.45 % 4 == 2)
 [Calendar] day_of_year 246 (1 + 173445 % 400)
-[Resource] catnip 35000/35000 70.49/s
-[Resource] wood 467.63/1400 0.17/s 1h30m40s to cap
-[Resource] science 5905.04/7500 0.76/s 34m46s to cap
-[Resource] catpower 150.25/250 0.34/s 4m56s to cap
-[Resource] minerals 983.86/1750 1.34/s 9m30s to cap
-[Resource] furs 38.80 -0.70/s 55s to empty
-[Resource] ivory 10.29 -0.49/s 20s to empty
-[Resource] unicorns 0.05
+[Resource] catnip 35000/35000 47.99/s
+[Resource] wood 417.63/1400 0.13/s 2h10m30s to cap
+[Resource] science 4905.04/7500 0.56/s 1h17m16s to cap
+[Resource] catpower 250/250 0.49/s
+[Resource] minerals 733.86/1750 0.98/s 17m12s to cap
 [Resource] gone kitten 5
-[Village] happiness 1.12 (1.10 + 0.02)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 467.63/3051.76* 4h11m20s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 467.63/1439.39* 1h34m30s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 467.63/1436.15* 1h34m11s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 467.63/1423.18* 1h32m56s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 983.86/1860.96* 10m52s) +(Workshop 1)
+[Village] happiness 0.82 (1.10 + -0.28)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m26s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 417.63/3051.76* 5h49m55s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 417.63/1439.39* 2h15m44s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 417.63/1436.15* 2h15m18s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 417.63/1423.18* 2h13m34s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 417.63/465.24 6m19s, minerals 733.86/1860.96* 19m5s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
@@ -8371,66 +8415,135 @@ error: action Metal Working is locked
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 467.63/1000 51m46s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 417.63/1000 1h17m21s, minerals 733.86/750 16s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 983.86/1000 12s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 733.86/1000 4m30s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
-last input: s13
+last input: s19
 ###
 [Calendar] time 346891
 [Calendar] skip 346488
 [Calendar] year 434.61 (1 + 433.61)
 [Calendar] Autumn 1 (1 if 1734.45 % 4 == 2)
 [Calendar] day_of_year 246 (1 + 173445 % 400)
+[Resource] catnip 35000/35000 47.99/s
+[Resource] wood 417.76/1400 0.13/s 2h10m29s to cap
+[Resource] science 4905.60/7500 0.56/s 1h17m15s to cap
+[Resource] catpower 250/250 0.49/s
+[Resource] minerals 734.84/1750 0.98/s 17m11s to cap
+[Resource] gone kitten 5
+[Village] happiness 0.82 (1.10 + -0.28)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m26s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 417.76/3051.76* 5h49m54s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 417.76/1439.39* 2h15m43s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 417.76/1436.15* 2h15m17s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 417.76/1423.18* 2h13m33s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 417.76/465.24 6m18s, minerals 734.84/1860.96* 19m4s) +(Workshop 1)
+8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
+11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Workshop] Expanded Barns -(wood 417.76/1000 1h17m20s, minerals 734.84/750 15s, iron 0/50, science 500) +(Expanded Barns 1)
+25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 734.84/1000 4m29s) +(wood 500, blueprint 0.10, spice 8.75)
+sX: time skip until action X is available
+last input: 19
+error: action Metal Working is locked
+###
+[Calendar] time 346892
+[Calendar] skip 346488
+[Calendar] year 434.62 (1 + 433.62)
+[Calendar] Autumn 1 (1 if 1734.46 % 4 == 2)
+[Calendar] day_of_year 247 (1 + 173446 % 400)
 [Resource] catnip 35000/35000 70.49/s
-[Resource] wood 467.80/1400 0.17/s 1h30m39s to cap
-[Resource] science 5905.80/7500 0.76/s 34m45s to cap
-[Resource] catpower 50.58/250 0.34/s 9m53s to cap
-[Resource] minerals 985.20/1750 1.34/s 9m29s to cap
+[Resource] wood 417.88/1400 0.17/s 1h35m31s to cap
+[Resource] science 4906.16/7500 0.76/s 56m33s to cap
+[Resource] catpower 150.49/250 0.67/s 2m28s to cap
+[Resource] minerals 735.82/1750 1.34/s 12m34s to cap
+[Resource] furs 38.80 -0.70/s 55s to empty
+[Resource] ivory 10.29 -0.49/s 20s to empty
+[Resource] unicorns 0.05
+[Resource] gone kitten 5
+[Village] happiness 1.12 (1.10 + 0.02)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 417.88/3051.76* 4h16m10s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 417.88/1439.39* 1h39m21s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 417.88/1436.15* 1h39m2s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 417.88/1423.18* 1h37m46s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 417.88/465.24 4m36s, minerals 735.82/1860.96* 13m57s) +(Workshop 1)
+8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
+11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Workshop] Expanded Barns -(wood 417.88/1000 56m37s, minerals 735.82/750 10s, iron 0/50, science 500) +(Expanded Barns 1)
+25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 735.82/1000 3m16s) +(wood 500, blueprint 0.10, spice 8.75)
+sX: time skip until action X is available
+last input: s13
+###
+[Calendar] time 346893
+[Calendar] skip 346488
+[Calendar] year 434.62 (1 + 433.62)
+[Calendar] Autumn 1 (1 if 1734.46 % 4 == 2)
+[Calendar] day_of_year 247 (1 + 173446 % 400)
+[Resource] catnip 35000/35000 70.49/s
+[Resource] wood 418.06/1400 0.17/s 1h35m30s to cap
+[Resource] science 4906.92/7500 0.76/s 56m32s to cap
+[Resource] catpower 51.16/250 0.67/s 4m55s to cap
+[Resource] minerals 737.17/1750 1.34/s 12m33s to cap
 [Resource] furs 77.60 -0.70/s 1m50s to empty
 [Resource] ivory 20.58 -0.49/s 42s to empty
 [Resource] unicorns 0.10
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 467.80/3051.76* 4h11m19s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 467.80/1439.39* 1h34m29s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 467.80/1436.15* 1h34m10s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 467.80/1423.18* 1h32m55s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 985.20/1860.96* 10m51s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 418.06/3051.76* 4h16m9s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 418.06/1439.39* 1h39m20s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 418.06/1436.15* 1h39m1s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 418.06/1423.18* 1h37m45s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 418.06/465.24 4m35s, minerals 737.17/1860.96* 13m56s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 50.58/100 2m27s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 51.16/100 1m12s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 467.80/1000 51m45s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 418.06/1000 56m36s, minerals 737.17/750 9s, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 985.20/1000 11s) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 737.17/1000 3m15s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
-[Calendar] time 347040
-[Calendar] skip 346636
-[Calendar] year 434.80 (1 + 433.80)
-[Calendar] Winter 1 (1 if 1735.20 % 4 == 3)
-[Calendar] day_of_year 321 (1 + 173520 % 400)
-[Resource] catnip 35000/35000 21/s
-[Resource] wood 493.31/1400 0.14/s 1h47m21s to cap
-[Resource] science 6019.56/7500 0.63/s 39m17s to cap
-[Resource] catpower 100.59/250 0.28/s 9m1s to cap
-[Resource] minerals 1185.22/1750 1.10/s 8m31s to cap
+[Calendar] time 346967
+[Calendar] skip 346561
+[Calendar] year 434.71 (1 + 433.71)
+[Calendar] Autumn 1 (1 if 1734.83 % 4 == 2)
+[Calendar] day_of_year 284 (1 + 173483 % 400)
+[Resource] catnip 35000/35000 62.99/s
+[Resource] wood 430.72/1400 0.16/s 1h43m30s to cap
+[Resource] science 4963.42/7500 0.70/s 1h0m43s to cap
+[Resource] catpower 100.83/250 0.61/s 4m3s to cap
+[Resource] minerals 836.50/1750 1.22/s 12m26s to cap
+[Resource] furs 25.80 -0.70/s 36s to empty
 [Resource] unicorns 0.10
 [Resource] gone kitten 5
-[Village] happiness 0.92 (1.10 + -0.18)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 3m18s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 493.31/3051.76* 5h2m55s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 493.31/1439.39* 1h52m1s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 493.31/1436.15* 1h51m38s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 493.31/1423.18* 1h50m6s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1185.22/1860.96* 10m12s) +(Workshop 1)
+[Village] happiness 1.02 (1.10 + -0.08)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m6s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 430.72/3051.76* 4h39m55s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 430.72/1439.39* 1h47m43s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 430.72/1436.15* 1h47m22s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 430.72/1423.18* 1h45m59s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 430.72/465.24 3m41s, minerals 836.50/1860.96* 13m56s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
@@ -8439,66 +8552,134 @@ last input: 13
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 493.31/1000 59m59s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 430.72/1000 1h0m47s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 836.50/1000 2m13s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
-[Calendar] time 347041
-[Calendar] skip 346636
-[Calendar] year 434.80 (1 + 433.80)
-[Calendar] Winter 1 (1 if 1735.20 % 4 == 3)
-[Calendar] day_of_year 321 (1 + 173520 % 400)
-[Resource] catnip 35000/35000 36/s
-[Resource] wood 493.45/1400 0.17/s 1h28m10s to cap
-[Resource] science 6020.19/7500 0.76/s 32m15s to cap
-[Resource] catpower 0.86/250 0.34/s 12m21s to cap
-[Resource] minerals 1186.32/1750 1.34/s 6m59s to cap
-[Resource] furs 38.80 -0.70/s 55s to empty
+[Calendar] time 346968
+[Calendar] skip 346561
+[Calendar] year 434.71 (1 + 433.71)
+[Calendar] Autumn 1 (1 if 1734.84 % 4 == 2)
+[Calendar] day_of_year 285 (1 + 173484 % 400)
+[Resource] catnip 35000/35000 70.49/s
+[Resource] wood 430.88/1400 0.17/s 1h34m15s to cap
+[Resource] science 4964.11/7500 0.76/s 55m17s to cap
+[Resource] catpower 1.44/250 0.67/s 6m9s to cap
+[Resource] minerals 837.73/1750 1.34/s 11m18s to cap
+[Resource] furs 64.60 -0.70/s 1m32s to empty
 [Resource] ivory 10.29 -0.49/s 20s to empty
 [Resource] unicorns 0.15
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m55s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 493.45/3051.76* 4h8m49s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 493.45/1439.39* 1h32m0s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 493.45/1436.15* 1h31m41s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 493.45/1423.18* 1h30m25s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1186.32/1860.96* 8m21s) +(Workshop 1)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 430.88/3051.76* 4h14m54s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 430.88/1439.39* 1h38m5s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 430.88/1436.15* 1h37m46s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 430.88/1423.18* 1h36m30s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 430.88/465.24 3m20s, minerals 837.73/1860.96* 12m41s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.86/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 1.44/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 493.45/1000 49m16s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 430.88/1000 55m21s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.86/50 2m26s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.44/50 1m12s, gold 0/15, minerals 837.73/1000 2m0s) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
-[Calendar] time 347338
-[Calendar] skip 346932
-[Calendar] year 435.17 (1 + 434.17)
-[Calendar] Spring 1 (1 if 1736.69 % 4 == 0)
-[Calendar] day_of_year 70 (1 + 173669 % 400)
-[Resource] catnip 35000/35000 78.48/s
-[Resource] wood 544.31/1400 0.14/s 1h41m19s to cap
-[Resource] science 6247.08/7500 0.63/s 33m15s to cap
-[Resource] catpower 100.59/250 0.28/s 9m1s to cap
-[Resource] minerals 1585.25/1750 1.10/s 2m29s to cap
+[Calendar] time 347116
+[Calendar] skip 346708
+[Calendar] year 434.89 (1 + 433.89)
+[Calendar] Winter 1 (1 if 1735.58 % 4 == 3)
+[Calendar] day_of_year 359 (1 + 173558 % 400)
+[Resource] catnip 35000/35000 21/s
+[Resource] wood 456.21/1400 0.14/s 1h51m44s to cap
+[Resource] science 5077.11/7500 0.63/s 1h4m18s to cap
+[Resource] catpower 100.78/250 0.55/s 4m30s to cap
+[Resource] minerals 1036.40/1750 1.10/s 10m46s to cap
 [Resource] unicorns 0.15
+[Resource] gone kitten 5
+[Village] happiness 0.92 (1.10 + -0.18)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 3m18s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 456.21/3051.76* 5h7m19s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 456.21/1439.39* 1h56m24s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 456.21/1436.15* 1h56m1s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 456.21/1423.18* 1h54m29s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 456.21/465.24 1m4s, minerals 1036.40/1860.96* 12m26s) +(Workshop 1)
+8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
+11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Workshop] Expanded Barns -(wood 456.21/1000 1h4m23s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+sX: time skip until action X is available
+last input: s13
+###
+[Calendar] time 347117
+[Calendar] skip 346708
+[Calendar] year 434.89 (1 + 433.89)
+[Calendar] Winter 1 (1 if 1735.58 % 4 == 3)
+[Calendar] day_of_year 359 (1 + 173558 % 400)
+[Resource] catnip 35000/35000 36/s
+[Resource] wood 456.35/1400 0.17/s 1h31m46s to cap
+[Resource] science 5077.74/7500 0.76/s 52m48s to cap
+[Resource] catpower 1.33/250 0.67/s 6m10s to cap
+[Resource] minerals 1037.50/1750 1.34/s 8m50s to cap
+[Resource] furs 38.80 -0.70/s 55s to empty
+[Resource] ivory 10.29 -0.49/s 20s to empty
+[Resource] unicorns 0.20
+[Resource] gone kitten 5
+[Village] happiness 1.12 (1.10 + 0.02)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m55s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 456.35/3051.76* 4h12m25s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 456.35/1439.39* 1h35m36s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 456.35/1436.15* 1h35m17s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 456.35/1423.18* 1h34m2s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 456.35/465.24 51s, minerals 1037.50/1860.96* 10m12s) +(Workshop 1)
+8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
+11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+13: [Village] Send hunters -(catpower 1.33/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Workshop] Expanded Barns -(wood 456.35/1000 52m52s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+27: [Trade] Lizards -(catpower 1.33/50 1m12s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+sX: time skip until action X is available
+last input: 13
+###
+[Calendar] time 347265
+[Calendar] skip 346855
+[Calendar] year 435.08 (1 + 434.08)
+[Calendar] Spring 1 (1 if 1736.32 % 4 == 0)
+[Calendar] day_of_year 33 (1 + 173632 % 400)
+[Resource] catnip 35000/35000 78.48/s
+[Resource] wood 481.68/1400 0.14/s 1h48m44s to cap
+[Resource] science 5190.73/7500 0.63/s 1h1m17s to cap
+[Resource] catpower 100.67/250 0.55/s 4m30s to cap
+[Resource] minerals 1236.18/1750 1.10/s 7m45s to cap
+[Resource] unicorns 0.20
 [Resource] gone kitten 5
 [Village] happiness 0.92 (1.10 + -0.18)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 53s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 544.31/3051.76* 4h56m53s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 544.31/1439.39* 1h45m58s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 544.31/1436.15* 1h45m35s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 544.31/1423.18* 1h44m3s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1585.25/1860.96* 4m9s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 481.68/3051.76* 5h4m18s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 481.68/1439.39* 1h53m23s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 481.68/1436.15* 1h53m0s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 481.68/1423.18* 1h51m28s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1236.18/1860.96* 9m25s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
@@ -8507,66 +8688,66 @@ last input: 13
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 544.31/1000 53m57s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 481.68/1000 1h1m22s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
-[Calendar] time 347339
-[Calendar] skip 346932
-[Calendar] year 435.17 (1 + 434.17)
-[Calendar] Spring 1 (1 if 1736.69 % 4 == 0)
-[Calendar] day_of_year 70 (1 + 173669 % 400)
+[Calendar] time 347266
+[Calendar] skip 346855
+[Calendar] year 435.08 (1 + 434.08)
+[Calendar] Spring 1 (1 if 1736.33 % 4 == 0)
+[Calendar] day_of_year 34 (1 + 173633 % 400)
 [Resource] catnip 35000/35000 93.49/s
-[Resource] wood 544.45/1400 0.17/s 1h23m12s to cap
-[Resource] science 6247.71/7500 0.76/s 27m18s to cap
-[Resource] catpower 0.87/250 0.34/s 12m21s to cap
-[Resource] minerals 1586.35/1750 1.34/s 2m1s to cap
+[Resource] wood 481.82/1400 0.17/s 1h29m18s to cap
+[Resource] science 5191.36/7500 0.76/s 50m20s to cap
+[Resource] catpower 1.22/250 0.67/s 6m10s to cap
+[Resource] minerals 1237.28/1750 1.34/s 6m21s to cap
 [Resource] furs 38.80 -0.70/s 55s to empty
 [Resource] ivory 10.29 -0.49/s 20s to empty
-[Resource] unicorns 0.20
+[Resource] unicorns 0.25
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 44s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 544.45/3051.76* 4h3m51s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 544.45/1439.39* 1h27m2s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 544.45/1436.15* 1h26m43s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 544.45/1423.18* 1h25m27s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1586.35/1860.96* 3m24s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 481.82/3051.76* 4h9m57s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 481.82/1439.39* 1h33m8s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 481.82/1436.15* 1h32m49s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 481.82/1423.18* 1h31m33s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1237.28/1860.96* 7m44s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.87/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 1.22/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 544.45/1000 44m18s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 481.82/1000 50m23s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.87/50 2m26s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.22/50 1m12s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
-[Calendar] time 347636
-[Calendar] skip 347228
-[Calendar] year 435.55 (1 + 434.55)
-[Calendar] Autumn 1 (1 if 1738.18 % 4 == 2)
-[Calendar] day_of_year 219 (1 + 173818 % 400)
+[Calendar] time 347414
+[Calendar] skip 347002
+[Calendar] year 435.27 (1 + 434.27)
+[Calendar] Summer 1 (1 if 1737.07 % 4 == 1)
+[Calendar] day_of_year 108 (1 + 173707 % 400)
 [Resource] catnip 35000/35000 55.49/s
-[Resource] wood 595.31/1400 0.14/s 1h35m16s to cap
-[Resource] science 6474.60/7500 0.63/s 27m13s to cap
-[Resource] catpower 100.60/250 0.28/s 9m1s to cap
-[Resource] minerals 1750/1750 1.10/s
-[Resource] unicorns 0.20
+[Resource] wood 507.15/1400 0.14/s 1h45m43s to cap
+[Resource] science 5304.35/7500 0.63/s 58m16s to cap
+[Resource] catpower 100.56/250 0.55/s 4m30s to cap
+[Resource] minerals 1435.95/1750 1.10/s 4m44s to cap
+[Resource] unicorns 0.25
 [Resource] gone kitten 5
 [Village] happiness 0.92 (1.10 + -0.18)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m15s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 595.31/3051.76* 4h50m51s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 595.31/1439.39* 1h39m56s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 595.31/1436.15* 1h39m33s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 595.31/1423.18* 1h38m1s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 507.15/3051.76* 5h1m17s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 507.15/1439.39* 1h50m22s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 507.15/1436.15* 1h49m59s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 507.15/1423.18* 1h48m27s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1435.95/1860.96* 6m24s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
@@ -8575,134 +8756,66 @@ last input: 13
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 595.31/1000 47m55s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 507.15/1000 58m21s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
-[Calendar] time 347637
-[Calendar] skip 347228
-[Calendar] year 435.55 (1 + 434.55)
-[Calendar] Autumn 1 (1 if 1738.18 % 4 == 2)
-[Calendar] day_of_year 219 (1 + 173818 % 400)
+[Calendar] time 347415
+[Calendar] skip 347002
+[Calendar] year 435.27 (1 + 434.27)
+[Calendar] Summer 1 (1 if 1737.07 % 4 == 1)
+[Calendar] day_of_year 108 (1 + 173707 % 400)
 [Resource] catnip 35000/35000 70.49/s
-[Resource] wood 595.46/1400 0.17/s 1h18m15s to cap
-[Resource] science 6475.22/7500 0.76/s 22m20s to cap
-[Resource] catpower 0.88/250 0.34/s 12m21s to cap
-[Resource] minerals 1750/1750 1.34/s
+[Resource] wood 507.29/1400 0.17/s 1h26m49s to cap
+[Resource] science 5304.98/7500 0.76/s 47m51s to cap
+[Resource] catpower 1.11/250 0.67/s 6m10s to cap
+[Resource] minerals 1437.06/1750 1.34/s 3m52s to cap
 [Resource] furs 38.80 -0.70/s 55s to empty
 [Resource] ivory 10.29 -0.49/s 20s to empty
-[Resource] unicorns 0.25
+[Resource] unicorns 0.30
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 595.46/3051.76* 3h58m54s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 595.46/1439.39* 1h22m4s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 595.46/1436.15* 1h21m45s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 595.46/1423.18* 1h20m30s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 507.29/3051.76* 4h7m28s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 507.29/1439.39* 1h30m39s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 507.29/1436.15* 1h30m20s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 507.29/1423.18* 1h29m4s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1437.06/1860.96* 5m15s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.88/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 1.11/100 2m27s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 595.46/1000 39m20s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 507.29/1000 47m55s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.88/50 2m26s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.11/50 1m12s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
-[Calendar] time 347934
-[Calendar] skip 347524
-[Calendar] year 435.92 (1 + 434.92)
-[Calendar] Winter 1 (1 if 1739.67 % 4 == 3)
-[Calendar] day_of_year 368 (1 + 173967 % 400)
-[Resource] catnip 35000/35000 21/s
-[Resource] wood 646.32/1400 0.14/s 1h29m14s to cap
-[Resource] science 6702.11/7500 0.63/s 21m10s to cap
-[Resource] catpower 100.61/250 0.28/s 9m1s to cap
-[Resource] minerals 1750/1750 1.10/s
-[Resource] unicorns 0.25
-[Resource] gone kitten 5
-[Village] happiness 0.92 (1.10 + -0.18)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 3m18s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 646.32/3051.76* 4h44m48s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 646.32/1439.39* 1h33m54s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 646.32/1436.15* 1h33m31s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 646.32/1423.18* 1h31m59s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
-8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
-9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
-11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
-12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
-21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 646.32/1000 41m52s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
-25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
-sX: time skip until action X is available
-last input: s13
-###
-[Calendar] time 347935
-[Calendar] skip 347524
-[Calendar] year 435.92 (1 + 434.92)
-[Calendar] Winter 1 (1 if 1739.67 % 4 == 3)
-[Calendar] day_of_year 368 (1 + 173967 % 400)
-[Resource] catnip 35000/35000 36/s
-[Resource] wood 646.46/1400 0.17/s 1h13m17s to cap
-[Resource] science 6702.74/7500 0.76/s 17m22s to cap
-[Resource] catpower 0.89/250 0.34/s 12m21s to cap
-[Resource] minerals 1750/1750 1.34/s
-[Resource] furs 38.80 -0.70/s 55s to empty
-[Resource] ivory 10.29 -0.49/s 20s to empty
-[Resource] unicorns 0.30
-[Resource] gone kitten 5
-[Village] happiness 1.12 (1.10 + 0.02)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m55s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 646.46/3051.76* 3h53m56s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 646.46/1439.39* 1h17m7s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 646.46/1436.15* 1h16m48s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 646.46/1423.18* 1h15m32s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
-8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
-9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
-11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
-12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.89/100 4m54s) +(furs 39.50, ivory 10.78, unicorns 0.05)
-21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 646.46/1000 34m23s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
-25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.89/50 2m26s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
-sX: time skip until action X is available
-last input: 13
-###
-[Calendar] time 348231
-[Calendar] skip 347819
-[Calendar] year 436.29 (1 + 435.29)
-[Calendar] Summer 1 (1 if 1741.15 % 4 == 1)
-[Calendar] day_of_year 116 (1 + 174115 % 400)
+[Calendar] time 347564
+[Calendar] skip 347150
+[Calendar] year 435.45 (1 + 434.45)
+[Calendar] Summer 1 (1 if 1737.82 % 4 == 1)
+[Calendar] day_of_year 183 (1 + 173782 % 400)
 [Resource] catnip 35000/35000 55.49/s
-[Resource] wood 697.15/1400 0.14/s 1h23m13s to cap
-[Resource] science 6928.87/7500 0.63/s 15m9s to cap
-[Resource] catpower 100.28/250 0.28/s 9m2s to cap
-[Resource] minerals 1750/1750 1.10/s
+[Resource] wood 532.79/1400 0.14/s 1h42m40s to cap
+[Resource] science 5418.74/7500 0.63/s 55m14s to cap
+[Resource] catpower 101.12/250 0.55/s 4m29s to cap
+[Resource] minerals 1637.07/1750 1.10/s 1m42s to cap
 [Resource] unicorns 0.30
 [Resource] gone kitten 5
 [Village] happiness 0.92 (1.10 + -0.18)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m15s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 697.15/3051.76* 4h38m47s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 697.15/1439.39* 1h27m53s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 697.15/1436.15* 1h27m30s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 697.15/1423.18* 1h25m57s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 532.79/3051.76* 4h58m15s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 532.79/1439.39* 1h47m20s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 532.79/1436.15* 1h46m57s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 532.79/1423.18* 1h45m25s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1637.07/1860.96* 3m22s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
@@ -8711,65 +8824,65 @@ last input: 13
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 697.15/1000 35m51s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 532.79/1000 55m19s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
-[Calendar] time 348232
-[Calendar] skip 347819
-[Calendar] year 436.29 (1 + 435.29)
-[Calendar] Summer 1 (1 if 1741.16 % 4 == 1)
-[Calendar] day_of_year 117 (1 + 174116 % 400)
+[Calendar] time 347565
+[Calendar] skip 347150
+[Calendar] year 435.45 (1 + 434.45)
+[Calendar] Summer 1 (1 if 1737.82 % 4 == 1)
+[Calendar] day_of_year 183 (1 + 173782 % 400)
 [Resource] catnip 35000/35000 70.49/s
-[Resource] wood 697.29/1400 0.17/s 1h8m20s to cap
-[Resource] science 6929.50/7500 0.76/s 12m26s to cap
-[Resource] catpower 0.56/250 0.34/s 12m22s to cap
-[Resource] minerals 1750/1750 1.34/s
+[Resource] wood 532.93/1400 0.17/s 1h24m19s to cap
+[Resource] science 5419.37/7500 0.76/s 45m21s to cap
+[Resource] catpower 1.67/250 0.67/s 6m9s to cap
+[Resource] minerals 1638.18/1750 1.34/s 1m23s to cap
 [Resource] furs 38.80 -0.70/s 55s to empty
 [Resource] ivory 10.29 -0.49/s 20s to empty
 [Resource] unicorns 0.35
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 697.29/3051.76* 3h48m59s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 697.29/1439.39* 1h12m10s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 697.29/1436.15* 1h11m51s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 697.29/1423.18* 1h10m36s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
+3: [Bonfire] Hut (7) -(wood 532.93/3051.76* 4h4m59s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 532.93/1439.39* 1h28m9s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 532.93/1436.15* 1h27m50s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 532.93/1423.18* 1h26m35s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1638.18/1860.96* 2m45s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.56/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 1.67/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 697.29/1000 29m26s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 532.93/1000 45m25s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.56/50 2m27s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.67/50 1m11s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
-[Calendar] time 348529
-[Calendar] skip 348115
-[Calendar] year 436.66 (1 + 435.66)
-[Calendar] Autumn 1 (1 if 1742.64 % 4 == 2)
-[Calendar] day_of_year 265 (1 + 174264 % 400)
+[Calendar] time 347713
+[Calendar] skip 347297
+[Calendar] year 435.64 (1 + 434.64)
+[Calendar] Autumn 1 (1 if 1738.56 % 4 == 2)
+[Calendar] day_of_year 257 (1 + 173856 % 400)
 [Resource] catnip 35000/35000 55.49/s
-[Resource] wood 748.16/1400 0.14/s 1h17m10s to cap
-[Resource] science 7156.39/7500 0.63/s 9m7s to cap
-[Resource] catpower 100.29/250 0.28/s 9m2s to cap
+[Resource] wood 558.26/1400 0.14/s 1h39m39s to cap
+[Resource] science 5532.36/7500 0.63/s 52m13s to cap
+[Resource] catpower 101/250 0.55/s 4m29s to cap
 [Resource] minerals 1750/1750 1.10/s
 [Resource] unicorns 0.35
 [Resource] gone kitten 5
 [Village] happiness 0.92 (1.10 + -0.18)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m15s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 748.16/3051.76* 4h32m45s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 748.16/1439.39* 1h21m50s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 748.16/1436.15* 1h21m27s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 748.16/1423.18* 1h19m55s) +(Mine 1)
+3: [Bonfire] Hut (7) -(wood 558.26/3051.76* 4h55m14s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 558.26/1439.39* 1h44m19s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 558.26/1436.15* 1h43m56s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 558.26/1423.18* 1h42m24s) +(Mine 1)
 7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
@@ -8779,21 +8892,21 @@ last input: 13
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 748.16/1000 29m49s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 558.26/1000 52m18s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
-[Calendar] time 348530
-[Calendar] skip 348115
-[Calendar] year 436.66 (1 + 435.66)
-[Calendar] Autumn 1 (1 if 1742.65 % 4 == 2)
-[Calendar] day_of_year 266 (1 + 174265 % 400)
+[Calendar] time 347714
+[Calendar] skip 347297
+[Calendar] year 435.64 (1 + 434.64)
+[Calendar] Autumn 1 (1 if 1738.57 % 4 == 2)
+[Calendar] day_of_year 258 (1 + 173857 % 400)
 [Resource] catnip 35000/35000 70.49/s
-[Resource] wood 748.30/1400 0.17/s 1h3m23s to cap
-[Resource] science 7157.01/7500 0.76/s 7m28s to cap
-[Resource] catpower 0.57/250 0.34/s 12m22s to cap
+[Resource] wood 558.41/1400 0.17/s 1h21m51s to cap
+[Resource] science 5532.99/7500 0.76/s 42m53s to cap
+[Resource] catpower 1.56/250 0.67/s 6m9s to cap
 [Resource] minerals 1750/1750 1.34/s
 [Resource] furs 38.80 -0.70/s 55s to empty
 [Resource] ivory 10.29 -0.49/s 20s to empty
@@ -8801,43 +8914,43 @@ last input: s13
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 748.30/3051.76* 3h44m2s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 748.30/1439.39* 1h7m12s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 748.30/1436.15* 1h6m54s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 748.30/1423.18* 1h5m38s) +(Mine 1)
+3: [Bonfire] Hut (7) -(wood 558.41/3051.76* 4h2m30s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 558.41/1439.39* 1h25m41s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 558.41/1436.15* 1h25m22s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 558.41/1423.18* 1h24m6s) +(Mine 1)
 7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.57/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 1.56/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 748.30/1000 24m28s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 558.41/1000 42m57s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.57/50 2m27s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.56/50 1m12s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
-[Calendar] time 348827
-[Calendar] skip 348411
-[Calendar] year 437.03 (1 + 436.03)
-[Calendar] Spring 1 (1 if 1744.13 % 4 == 0)
-[Calendar] day_of_year 14 (1 + 174413 % 400)
-[Resource] catnip 35000/35000 78.48/s
-[Resource] wood 799.16/1400 0.14/s 1h11m8s to cap
-[Resource] science 7383.91/7500 0.63/s 3m4s to cap
-[Resource] catpower 100.30/250 0.28/s 9m2s to cap
+[Calendar] time 347862
+[Calendar] skip 347444
+[Calendar] year 435.83 (1 + 434.83)
+[Calendar] Winter 1 (1 if 1739.31 % 4 == 3)
+[Calendar] day_of_year 332 (1 + 173931 % 400)
+[Resource] catnip 35000/35000 21/s
+[Resource] wood 583.74/1400 0.14/s 1h36m38s to cap
+[Resource] science 5645.99/7500 0.63/s 49m12s to cap
+[Resource] catpower 100.89/250 0.55/s 4m30s to cap
 [Resource] minerals 1750/1750 1.10/s
 [Resource] unicorns 0.40
 [Resource] gone kitten 5
 [Village] happiness 0.92 (1.10 + -0.18)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 53s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 799.16/3051.76* 4h26m43s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 799.16/1439.39* 1h15m48s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 799.16/1436.15* 1h15m25s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 799.16/1423.18* 1h13m53s) +(Mine 1)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 3m18s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 583.74/3051.76* 4h52m13s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 583.74/1439.39* 1h41m18s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 583.74/1436.15* 1h40m55s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 583.74/1423.18* 1h39m23s) +(Mine 1)
 7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
@@ -8847,65 +8960,133 @@ last input: 13
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 799.16/1000 23m46s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 583.74/1000 49m17s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
-[Calendar] time 348828
-[Calendar] skip 348411
-[Calendar] year 437.04 (1 + 436.04)
-[Calendar] Spring 1 (1 if 1744.14 % 4 == 0)
-[Calendar] day_of_year 15 (1 + 174414 % 400)
-[Resource] catnip 35000/35000 93.49/s
-[Resource] wood 799.30/1400 0.17/s 58m25s to cap
-[Resource] science 7384.53/7500 0.76/s 2m31s to cap
-[Resource] catpower 0.57/250 0.34/s 12m22s to cap
+[Calendar] time 347863
+[Calendar] skip 347444
+[Calendar] year 435.83 (1 + 434.83)
+[Calendar] Winter 1 (1 if 1739.31 % 4 == 3)
+[Calendar] day_of_year 332 (1 + 173931 % 400)
+[Resource] catnip 35000/35000 36/s
+[Resource] wood 583.88/1400 0.17/s 1h19m22s to cap
+[Resource] science 5646.61/7500 0.76/s 40m24s to cap
+[Resource] catpower 1.44/250 0.67/s 6m9s to cap
 [Resource] minerals 1750/1750 1.34/s
 [Resource] furs 38.80 -0.70/s 55s to empty
 [Resource] ivory 10.29 -0.49/s 20s to empty
 [Resource] unicorns 0.45
+[Resource] gone kitten 5
+[Village] happiness 1.12 (1.10 + 0.02)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m55s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 583.88/3051.76* 4h0m1s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 583.88/1439.39* 1h23m12s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 583.88/1436.15* 1h22m53s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 583.88/1423.18* 1h21m37s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
+8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
+11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+13: [Village] Send hunters -(catpower 1.44/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Workshop] Expanded Barns -(wood 583.88/1000 40m28s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+27: [Trade] Lizards -(catpower 1.44/50 1m12s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+sX: time skip until action X is available
+last input: 13
+###
+[Calendar] time 348011
+[Calendar] skip 347591
+[Calendar] year 436.01 (1 + 435.01)
+[Calendar] Spring 1 (1 if 1740.05 % 4 == 0)
+[Calendar] day_of_year 6 (1 + 174005 % 400)
+[Resource] catnip 35000/35000 78.48/s
+[Resource] wood 609.21/1400 0.14/s 1h33m38s to cap
+[Resource] science 5759.61/7500 0.63/s 46m11s to cap
+[Resource] catpower 100.78/250 0.55/s 4m30s to cap
+[Resource] minerals 1750/1750 1.10/s
+[Resource] unicorns 0.45
+[Resource] gone kitten 5
+[Village] happiness 0.92 (1.10 + -0.18)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 53s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 609.21/3051.76* 4h49m12s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 609.21/1439.39* 1h38m17s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 609.21/1436.15* 1h37m54s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 609.21/1423.18* 1h36m22s) +(Mine 1)
+7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
+8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
+11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+24: [Workshop] Expanded Barns -(wood 609.21/1000 46m16s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+sX: time skip until action X is available
+last input: s13
+###
+[Calendar] time 348012
+[Calendar] skip 347591
+[Calendar] year 436.01 (1 + 435.01)
+[Calendar] Spring 1 (1 if 1740.06 % 4 == 0)
+[Calendar] day_of_year 7 (1 + 174006 % 400)
+[Resource] catnip 35000/35000 93.49/s
+[Resource] wood 609.35/1400 0.17/s 1h16m53s to cap
+[Resource] science 5760.24/7500 0.76/s 37m55s to cap
+[Resource] catpower 1.33/250 0.67/s 6m10s to cap
+[Resource] minerals 1750/1750 1.34/s
+[Resource] furs 38.80 -0.70/s 55s to empty
+[Resource] ivory 10.29 -0.49/s 20s to empty
+[Resource] unicorns 0.50
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
 2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 44s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 799.30/3051.76* 3h39m4s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 799.30/1439.39* 1h2m15s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 799.30/1436.15* 1h1m56s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 799.30/1423.18* 1h0m40s) +(Mine 1)
+3: [Bonfire] Hut (7) -(wood 609.35/3051.76* 3h57m33s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 609.35/1439.39* 1h20m43s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 609.35/1436.15* 1h20m24s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 609.35/1423.18* 1h19m9s) +(Mine 1)
 7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.57/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 1.33/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 799.30/1000 19m31s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 609.35/1000 37m59s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.57/50 2m27s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.33/50 1m12s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13
 ###
-[Calendar] time 349125
-[Calendar] skip 348707
-[Calendar] year 437.41 (1 + 436.41)
-[Calendar] Summer 1 (1 if 1745.62 % 4 == 1)
-[Calendar] day_of_year 163 (1 + 174562 % 400)
-[Resource] catnip 35000/35000 55.49/s
-[Resource] wood 850.16/1400 0.14/s 1h5m6s to cap
-[Resource] science 7500/7500 0.63/s
-[Resource] catpower 100.31/250 0.28/s 9m2s to cap
+[Calendar] time 348160
+[Calendar] skip 347738
+[Calendar] year 436.20 (1 + 435.20)
+[Calendar] Spring 1 (1 if 1740.80 % 4 == 0)
+[Calendar] day_of_year 81 (1 + 174080 % 400)
+[Resource] catnip 35000/35000 78.48/s
+[Resource] wood 634.68/1400 0.14/s 1h30m37s to cap
+[Resource] science 5873.23/7500 0.63/s 43m10s to cap
+[Resource] catpower 100.67/250 0.55/s 4m30s to cap
 [Resource] minerals 1750/1750 1.10/s
-[Resource] unicorns 0.45
+[Resource] unicorns 0.50
 [Resource] gone kitten 5
 [Village] happiness 0.92 (1.10 + -0.18)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m15s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 850.16/3051.76* 4h20m40s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 850.16/1439.39* 1h9m46s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 850.16/1436.15* 1h9m22s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 850.16/1423.18* 1h7m50s) +(Mine 1)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 53s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 634.68/3051.76* 4h46m11s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 634.68/1439.39* 1h35m16s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 634.68/1436.15* 1h34m53s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 634.68/1423.18* 1h33m21s) +(Mine 1)
 7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
@@ -8915,111 +9096,43 @@ last input: 13
 13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 850.16/1000 17m44s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 634.68/1000 43m15s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: s13
 ###
-[Calendar] time 349126
-[Calendar] skip 348707
-[Calendar] year 437.41 (1 + 436.41)
-[Calendar] Summer 1 (1 if 1745.63 % 4 == 1)
-[Calendar] day_of_year 164 (1 + 174563 % 400)
-[Resource] catnip 35000/35000 70.49/s
-[Resource] wood 850.30/1400 0.17/s 53m27s to cap
-[Resource] science 7500/7500 0.76/s
-[Resource] catpower 0.58/250 0.34/s 12m22s to cap
-[Resource] minerals 1750/1750 1.34/s
-[Resource] furs 38.80 -0.70/s 55s to empty
-[Resource] ivory 10.29 -0.49/s 20s to empty
-[Resource] unicorns 0.50
-[Resource] gone kitten 5
-[Village] happiness 1.12 (1.10 + 0.02)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 59s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 850.30/3051.76* 3h34m6s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 850.30/1439.39* 57m17s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 850.30/1436.15* 56m58s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 850.30/1423.18* 55m43s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
-8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
-9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
-11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
-12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.58/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
-21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 850.30/1000 14m33s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
-25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.58/50 2m27s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
-sX: time skip until action X is available
-last input: 13
-###
-[Calendar] time 349423
-[Calendar] skip 349003
-[Calendar] year 437.78 (1 + 436.78)
-[Calendar] Winter 1 (1 if 1747.11 % 4 == 3)
-[Calendar] day_of_year 312 (1 + 174711 % 400)
-[Resource] catnip 35000/35000 21/s
-[Resource] wood 901.17/1400 0.14/s 59m3s to cap
-[Resource] science 7500/7500 0.63/s
-[Resource] catpower 100.31/250 0.28/s 9m2s to cap
-[Resource] minerals 1750/1750 1.10/s
-[Resource] unicorns 0.50
-[Resource] gone kitten 5
-[Village] happiness 0.92 (1.10 + -0.18)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 3m18s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 901.17/3051.76* 4h14m38s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 901.17/1439.39* 1h3m43s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 901.17/1436.15* 1h3m20s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 901.17/1423.18* 1h1m48s) +(Mine 1)
-7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m40s) +(Workshop 1)
-8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
-9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
-11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
-12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
-21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
-23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 901.17/1000 11m42s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
-25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
-sX: time skip until action X is available
-last input: s13
-###
-[Calendar] time 349424
-[Calendar] skip 349003
-[Calendar] year 437.78 (1 + 436.78)
-[Calendar] Winter 1 (1 if 1747.12 % 4 == 3)
-[Calendar] day_of_year 313 (1 + 174712 % 400)
-[Resource] catnip 35000/35000 36/s
-[Resource] wood 901.31/1400 0.17/s 48m30s to cap
-[Resource] science 7500/7500 0.76/s
-[Resource] catpower 0.59/250 0.34/s 12m22s to cap
+[Calendar] time 348161
+[Calendar] skip 347738
+[Calendar] year 436.20 (1 + 435.20)
+[Calendar] Spring 1 (1 if 1740.80 % 4 == 0)
+[Calendar] day_of_year 81 (1 + 174080 % 400)
+[Resource] catnip 35000/35000 93.49/s
+[Resource] wood 634.82/1400 0.17/s 1h14m25s to cap
+[Resource] science 5873.86/7500 0.76/s 35m27s to cap
+[Resource] catpower 1.22/250 0.67/s 6m10s to cap
 [Resource] minerals 1750/1750 1.34/s
 [Resource] furs 38.80 -0.70/s 55s to empty
 [Resource] ivory 10.29 -0.49/s 20s to empty
 [Resource] unicorns 0.55
 [Resource] gone kitten 5
 [Village] happiness 1.12 (1.10 + 0.02)
-2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m55s) +(Catnip Field 1)
-3: [Bonfire] Hut (7) -(wood 901.31/3051.76* 3h29m9s) +(Hut 1, kitten cap 2)
-4: [Bonfire] Library (29) -(wood 901.31/1439.39* 52m20s) +(Library 1, science cap 250)
-5: [Bonfire] Barn (6) -(wood 901.31/1436.15* 52m1s) +(Barn 1)
-6: [Bonfire] Mine (19) -(wood 901.31/1423.18* 50m45s) +(Mine 1)
+2: [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 44s) +(Catnip Field 1)
+3: [Bonfire] Hut (7) -(wood 634.82/3051.76* 3h55m4s) +(Hut 1, kitten cap 2)
+4: [Bonfire] Library (29) -(wood 634.82/1439.39* 1h18m15s) +(Library 1, science cap 250)
+5: [Bonfire] Barn (6) -(wood 634.82/1436.15* 1h17m56s) +(Barn 1)
+6: [Bonfire] Mine (19) -(wood 634.82/1423.18* 1h16m40s) +(Mine 1)
 7: [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m22s) +(Workshop 1)
 8: [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 9: [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 10: [Village] farmer (10) -(kitten 0/1* 20s) +(farmer 1)
 11: [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 12: [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-13: [Village] Send hunters -(catpower 0.59/100 4m55s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+13: [Village] Send hunters -(catpower 1.22/100 2m26s) +(furs 39.50, ivory 10.78, unicorns 0.05)
 21: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 23: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
-24: [Workshop] Expanded Barns -(wood 901.31/1000 9m35s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+24: [Workshop] Expanded Barns -(wood 634.82/1000 35m31s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 25: [Workshop] Reinforced Barns -(iron 0/100*, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-26: [Trade] Lizards -(catpower 0.59/50 2m27s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+27: [Trade] Lizards -(catpower 1.22/50 1m12s, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 sX: time skip until action X is available
 last input: 13

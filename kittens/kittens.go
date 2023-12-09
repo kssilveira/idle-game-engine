@@ -115,6 +115,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "catpower", Type: "Resource", Capacity: 250,
 		Producers: []data.Resource{{
 			Name: "hunter", ProductionFactor: 0.3, ProductionResourceFactor: "happiness",
+			ProductionBonus: []data.Resource{{
+				Name: "Bolas", ProductionFactor: 1,
+			}},
 		}},
 	}, {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
@@ -278,6 +281,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Expanded Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Reinforced Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Bolas", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire",
@@ -554,6 +559,20 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Reinforced Barns", Quantity: 1,
 		}},
 	}, {
+		Name: "Bolas", Type: "Workshop",
+		UnlockedBy: data.Resource{Name: "Workshop"},
+		LockedBy:   data.Resource{Name: "Bolas"},
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 50,
+		}, {
+			Name: "minerals", Quantity: 250,
+		}, {
+			Name: "science", Quantity: 1000,
+		}},
+		Adds: []data.Resource{{
+			Name: "Bolas", Quantity: 1,
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade",
 		UnlockedBy: data.Resource{Name: "Archery"},
 		Costs: []data.Resource{{
@@ -601,6 +620,7 @@ const (
 	ironaxe
 	expandedbarns
 	reinforcedbarns
+	bolas
 	lizards
 )
 
@@ -635,6 +655,7 @@ const (
 	sironaxe
 	sexpandedbarns
 	sreinforcedbarns
+	sbolas
 	slizards
 )
 
@@ -668,6 +689,7 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{sworkshop, workshop}, 20},
 		{[]int{smineralhoes, mineralhoes}, 1},
 		{[]int{smineralaxe, mineralaxe}, 1},
+		{[]int{sbolas, bolas}, 1},
 
 		{[]int{sanimalhusbandry, animalhusbandry}, 1},
 		{[]int{smetalworking, metalworking}, 1},

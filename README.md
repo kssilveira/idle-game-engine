@@ -79,16 +79,10 @@ Edges:
 
 More features from kittens game:
 
-- remove duplicate graph edges
+- change LockedBy / UnlockedBy to string
 
 - Workshop
   - craft 6%
-- Bolas
-  - unlocked by Workshop
-  - wood 50
-  - minerals 250
-  - science 1000
-  - hunter 100%
 - Smelter
   - unlocked by Metal Working
   - minerals 200 230 rate 1.15
