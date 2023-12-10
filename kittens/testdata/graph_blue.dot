@@ -21,6 +21,11 @@ digraph {
   "Archery" -> "Send hunters" [color="blue"];
   "Construction" -> "@beam" [color="blue"];
   "Construction" -> "@slab" [color="blue"];
+  "Construction" -> "@plate" [color="blue"];
+  "Construction" -> "@gear" [color="blue"];
+  "Construction" -> "@scaffold" [color="blue"];
+  "Construction" -> "@manuscript" [color="blue"];
+  "Construction" -> "@megalith" [color="blue"];
   "Archery" -> "Lizards" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
@@ -110,6 +115,11 @@ digraph {
   "Send hunters" [shape="house"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];
+  "@plate" [shape="cds"];
+  "@gear" [shape="cds"];
+  "@scaffold" [shape="cds"];
+  "@manuscript" [shape="cds"];
+  "@megalith" [shape="cds"];
   "Lizards" [shape="cds"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];

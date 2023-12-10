@@ -79,28 +79,10 @@ Edges:
 
 More features from kittens game:
 
-- Bonfire Workshop
-  - craft 6%
+- ui craft count - current
+
 - Workshop Reinforced Saw
   - lumber mill 20%
-- Craft plate
-  - unlocked by Construction
-  - iron 125
-- Craft gear
-  - unlocked by Construction
-  - steel 15
-- Craft scaffold
-  - unlocked by Construction
-  - beam 50
-- Craft manuscript
-  - unlocked by Construction
-  - culture 400
-  - parchment 25
-- Craft megalith
-  - unlocked by Construction
-  - beam 25
-  - slab 50
-  - plate 5
 - TODO
 - maybe
   - rX: revert action X

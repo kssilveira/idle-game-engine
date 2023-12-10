@@ -262,18 +262,39 @@ func NewGame(now game.Now) *game.Game {
 			Name: "all kittens", ProductionFactor: -0.005,
 		}},
 	}, {
+		Name: "unicorns", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "Unic. Pasture", ProductionFactor: 0.005,
+		}},
+	}, {
+		Name: "culture", Type: "Resource", Capacity: 575,
+	}, {
 		Name: "beam", Type: "Resource", Capacity: -1,
 		ProducerAction: "@beam",
 	}, {
 		Name: "slab", Type: "Resource", Capacity: -1,
 		ProducerAction: "@slab",
 	}, {
-		Name: "unicorns", Type: "Resource", Capacity: -1,
-		Producers: []data.Resource{{
-			Name: "Unic. Pasture", ProductionFactor: 0.005,
-		}},
+		Name: "plate", Type: "Resource", Capacity: -1,
+		ProducerAction: "@plate",
+	}, {
+		Name: "steel", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "gear", Type: "Resource", Capacity: -1,
+		ProducerAction: "@gear",
+	}, {
+		Name: "scaffold", Type: "Resource", Capacity: -1,
+		ProducerAction: "@scaffold",
+	}, {
+		Name: "parchment", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "manuscript", Type: "Resource", Capacity: -1,
+		ProducerAction: "@manuscript",
 	}, {
 		Name: "blueprint", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "megalith", Type: "Resource", Capacity: -1,
+		ProducerAction: "@megalith",
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
@@ -540,6 +561,51 @@ func NewGame(now game.Now) *game.Game {
 			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
 		}},
 	}, {
+		Name: "@plate", Type: "Craft", UnlockedBy: "Construction",
+		Costs: []data.Resource{{Name: "iron", Quantity: 125}},
+		Adds: []data.Resource{{
+			Name: "plate", Quantity: 1,
+			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+		}},
+	}, {
+		Name: "@gear", Type: "Craft", UnlockedBy: "Construction",
+		Costs: []data.Resource{{Name: "steel", Quantity: 15}},
+		Adds: []data.Resource{{
+			Name: "gear", Quantity: 1,
+			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+		}},
+	}, {
+		Name: "@scaffold", Type: "Craft", UnlockedBy: "Construction",
+		Costs: []data.Resource{{Name: "beam", Quantity: 50}},
+		Adds: []data.Resource{{
+			Name: "scaffold", Quantity: 1,
+			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+		}},
+	}, {
+		Name: "@manuscript", Type: "Craft", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "culture", Quantity: 400,
+		}, {
+			Name: "parchment", Quantity: 25,
+		}},
+		Adds: []data.Resource{{
+			Name: "manuscript", Quantity: 1,
+			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+		}},
+	}, {
+		Name: "@megalith", Type: "Craft", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "beam", Quantity: 25,
+		}, {
+			Name: "slab", Quantity: 50,
+		}, {
+			Name: "plate", Quantity: 5,
+		}},
+		Adds: []data.Resource{{
+			Name: "megalith", Quantity: 1,
+			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+		}},
+	}, {
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
 			Name: "catpower", Quantity: 50,
@@ -731,6 +797,11 @@ const (
 	sendhunters
 	beam
 	slab
+	plate
+	gear
+	scaffold
+	manuscript
+	megalith
 	lizards
 	calendar
 	agriculture
@@ -844,8 +915,6 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{s + huntingarmor, huntingarmor}, 1},
 		{[]int{s + reinforcedsaw, m + reinforcedsaw, reinforcedsaw}, 1},
-		/*
-			//*/
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {
