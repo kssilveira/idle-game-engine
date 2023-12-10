@@ -35,6 +35,7 @@ digraph {
   "hunter" -> "catpower" [color="green"];
   "Bolas" -> "hunter" [color="green"];
   "Hunting Armor" -> "hunter" [color="green"];
+  "Hut" -> "catpower" [color="limegreen"];
   "miner" -> "minerals" [color="green"];
   "Mine" -> "miner" [color="green"];
   "minerals" -> "Active Smelter" [color="red"];
