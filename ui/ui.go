@@ -7,9 +7,7 @@ import (
 )
 
 type Data struct {
-	LastSkip      bool
-	LastMake      bool
-	LastAction    string
+	LastInput     data.ParsedInput
 	Error         error
 	Resources     []Resource
 	Actions       []Action

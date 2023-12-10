@@ -15,14 +15,14 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActio
 	ShowResources(logger, data)
 	ShowActions(logger, data, isHTML, showActionNumber)
 	skip := ""
-	if data.LastSkip {
+	if data.LastInput.IsSkip {
 		skip = "skip "
 	}
 	isMake := ""
-	if data.LastMake {
+	if data.LastInput.IsMake {
 		isMake = "make "
 	}
-	logger.Printf("last action: %s%s%s\n", skip, isMake, data.LastAction)
+	logger.Printf("last action: %s%s%s\n", skip, isMake, data.LastInput.Action.Name)
 	if data.Error != nil {
 		logger.Printf("error: %v\n", data.Error)
 	}

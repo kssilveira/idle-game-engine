@@ -22,7 +22,7 @@ func main() {
 	}, {
 		Name: "Catnip Field", Capacity: -1,
 	}})
-	g.AddActions([]game.Action{{
+	g.AddActions([]data.Action{{
 		Name: "Catnip Field",
 		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,

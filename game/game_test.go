@@ -11,7 +11,7 @@ func TestAct(t *testing.T) {
 	inputs := []struct {
 		name         string
 		resources    []data.Resource
-		actions      []Action
+		actions      []data.Action
 		inputs       []string
 		want         []int
 		wantCapacity int
@@ -20,7 +20,7 @@ func TestAct(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: 2,
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "add 1",
 			Adds: []data.Resource{{
 				Name: "resource", Quantity: 1,
@@ -35,7 +35,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "producer", Capacity: -1,
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "producer",
 			Costs: []data.Resource{{
 				Name: "resource", Quantity: 1, CostExponentBase: 2,
@@ -62,7 +62,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "skip", Capacity: -1,
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "producer",
 			Costs: []data.Resource{{
 				Name: "resource", Quantity: 1, CostExponentBase: 2,
@@ -88,7 +88,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "skip", Capacity: -1,
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "producer",
 			Costs: []data.Resource{{
 				Name: "resource", Quantity: 1,
@@ -122,7 +122,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "skip", Capacity: -1,
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "producer",
 			Costs: []data.Resource{{
 				Name: "resource", Quantity: 1, CostExponentBase: 2,
@@ -146,7 +146,7 @@ func TestAct(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource",
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "add 1",
 			Adds: []data.Resource{{
 				Name: "resource", Capacity: 1,
@@ -162,7 +162,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "other", Capacity: -1,
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "cost 1",
 			Costs: []data.Resource{{
 				Name: "resource", Capacity: 1,
@@ -179,7 +179,7 @@ func TestAct(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Quantity: 2, Capacity: -1,
 		}},
-		actions: []Action{{
+		actions: []data.Action{{
 			Name: "add",
 			Adds: []data.Resource{{
 				Name: "resource", Quantity: 3,
@@ -202,7 +202,7 @@ func TestAct(t *testing.T) {
 			t.Errorf("[%s] Validate got err %v", in.name, err)
 		}
 		for index, input := range in.inputs {
-			if _, _, _, err := g.Act(input); err != nil {
+			if _, err := g.Act(input); err != nil {
 				t.Errorf("[%s] index %d got err %v", in.name, index, err)
 			}
 			want := in.want[index]

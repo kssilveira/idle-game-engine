@@ -40,6 +40,21 @@ type Resource struct {
 	ProducerAction string
 }
 
+type Action struct {
+	Name       string
+	Type       string
+	UnlockedBy string
+	LockedBy   string
+	Costs      []Resource
+	Adds       []Resource
+}
+
+type ParsedInput struct {
+	IsSkip bool
+	IsMake bool
+	Action Action
+}
+
 func (r *Resource) Add(add Resource) {
 	r.Capacity += add.Capacity
 	r.Quantity += add.Quantity

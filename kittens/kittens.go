@@ -406,7 +406,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Catnip Enrichment", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
-	g.AddActions([]game.Action{{
+	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
 		Adds: []data.Resource{{Name: "catnip", Quantity: 1}},
 	}, {
