@@ -319,9 +319,8 @@ func (g *Game) GetSkipTime(a data.Action) (time.Duration, error) {
 			continue
 		}
 		if r.ProducerAction != "" {
-			nested, err := g.GetSkipTime(g.GetNestedAction(a, c))
+			duration, err := g.GetSkipTime(g.GetNestedAction(a, c))
 			if err == nil {
-				duration := nested + time.Second
 				if duration > skipTime {
 					skipTime = duration
 				}
