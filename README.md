@@ -79,15 +79,8 @@ Edges:
 
 More features from kittens game:
 
-- use more capacity producers
-
-- Bonfire Hut
-  - catpower cap 75
 - Bonfire Workshop
   - craft 6%
-- Science Civil Service
-  - unlocked by Animal Husbandry
-  - science 1500
 - Science Mathematics
   - unlocked by Animal Husbandry
   - science 1000
