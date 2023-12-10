@@ -79,10 +79,7 @@ Edges:
 
 More features from kittens game:
 
-- move trade before single use actions
-- rename types
-  - Village to Job and Management
-  - Workshop to Upgrade
+- use more capacity producers
 
 - Bonfire Hut
   - catpower cap 75

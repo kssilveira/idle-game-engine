@@ -136,12 +136,15 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 	}, {
-		Name: "science", Type: "Resource", Capacity: 250,
+		Name: "science", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "scholar", ProductionFactor: 0.175, ProductionResourceFactor: "happiness",
 		}},
 		ProductionBonus: []data.Resource{{
 			Name: "Library", ProductionFactor: 0.1,
+		}},
+		CapacityProducers: []data.Resource{{
+			Name: "Library", ProductionFactor: 250,
 		}},
 	}, {
 		Name: "catpower", Type: "Resource", Capacity: 250,
@@ -389,8 +392,6 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "Library", Quantity: 1,
-		}, {
-			Name: "science", Capacity: 250,
 		}},
 	}, {
 		Name: "Barn", Type: "Bonfire",

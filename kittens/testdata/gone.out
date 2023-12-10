@@ -27,7 +27,7 @@ last input:
  0: [Bonfire] Gather catnip +(catnip 1)
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
  3: [Bonfire] Hut (1) -(wood 0.09/12.50 2m15s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 0.09/28.75 5m12s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 0.09/28.75 5m12s) +(Library 1)
  5: [Bonfire] Barn -(wood 0.09/50 9m3s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 13: [Village] scholar -(kitten 1) +(scholar 1)
@@ -47,7 +47,7 @@ last input: 12
  0: [Bonfire] Gather catnip +(catnip 1)
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
  3: [Bonfire] Hut (1) -(wood 0.09/12.50 2m15s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 0.09/28.75 5m12s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 0.09/28.75 5m12s) +(Library 1)
  5: [Bonfire] Barn -(wood 0.09/50 9m3s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 13: [Village] scholar -(kitten 1) +(scholar 1)
@@ -63,13 +63,13 @@ error: action Refine catnip is locked
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [-] [Resource] catnip 966/5000 -17/s 56s to empty
 [Resource] wood 0.18/200 0.09/s 36m16s to cap
-[Resource] science 0.20/250 0.20/s 21m12s to cap
+[Resource] science 0.20/500 0.20/s 42m25s to cap
 [Resource] kitten 2/2 0.05/s
 [Village] happiness 1.02 (1.10 + -0.08)
  0: [Bonfire] Gather catnip +(catnip 1)
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
  3: [Bonfire] Hut (1) -(wood 0.18/12.50 2m14s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 0.18/28.75 5m11s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 0.18/28.75 5m11s) +(Library 1)
  5: [Bonfire] Barn -(wood 0.18/50 9m2s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 13: [Village] scholar (1) -(kitten 1) +(scholar 1)
@@ -84,13 +84,13 @@ last input: 13
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [-] [Resource] catnip 966/5000 -17/s 56s to empty
 [Resource] wood 0.18/200 0.09/s 36m16s to cap
-[Resource] science 0.20/250 0.20/s 21m12s to cap
+[Resource] science 0.20/500 0.20/s 42m25s to cap
 [Resource] kitten 2/2 0.05/s
 [Village] happiness 1.02 (1.10 + -0.08)
  0: [Bonfire] Gather catnip +(catnip 1)
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
  3: [Bonfire] Hut (1) -(wood 0.18/12.50 2m14s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 0.18/28.75 5m11s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 0.18/28.75 5m11s) +(Library 1)
  5: [Bonfire] Barn -(wood 0.18/50 9m2s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 13: [Village] scholar (1) -(kitten 1) +(scholar 1)
@@ -106,13 +106,13 @@ error: action Refine catnip is locked
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [-] [Resource] catnip 954.10/5000 -11.90/s 1m20s to empty
 [Resource] wood 0.28/200 0.09/s 36m15s to cap
-[Resource] science 0.39/250 0.20/s 21m11s to cap
+[Resource] science 0.39/500 0.20/s 42m24s to cap
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.02 (1.10 + -0.08)
  0: [Bonfire] Gather catnip +(catnip 1)
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
  3: [Bonfire] Hut (1) -(wood 0.28/12.50 2m13s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 0.28/28.75 5m10s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 0.28/28.75 5m10s) +(Library 1)
  5: [Bonfire] Barn -(wood 0.28/50 9m1s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 13: [Village] scholar (1) -(kitten 1) +(scholar 1)
@@ -127,13 +127,13 @@ last input: 14
 [Calendar] day_of_year 42 (1 + 41 % 400)
 [-] [Resource] catnip 14/5000 -11.90/s 1s to empty
 [Resource] wood 7.53/200 0.09/s 34m56s to cap
-[Resource] science 15.90/250 0.20/s 19m52s to cap
+[Resource] science 15.90/500 0.20/s 41m5s to cap
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.02 (1.10 + -0.08)
  0: [Bonfire] Gather catnip +(catnip 1)
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
  3: [Bonfire] Hut (1) -(wood 7.53/12.50 54s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 7.53/28.75 3m51s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 7.53/28.75 3m51s) +(Library 1)
  5: [Bonfire] Barn -(wood 7.53/50 7m42s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 13: [Village] scholar (1) -(kitten 1) +(scholar 1)
@@ -149,13 +149,13 @@ error: action Refine catnip is locked
 [Calendar] day_of_year 42 (1 + 41 % 400)
 [Resource] catnip 2.10/5000 -11.90/s
 [Resource] wood 7.62/200 0.09/s 34m55s to cap
-[Resource] science 16.10/250 0.20/s 19m51s to cap
+[Resource] science 16.10/500 0.20/s 41m4s to cap
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.02 (1.10 + -0.08)
  0: [Bonfire] Gather catnip +(catnip 1)
  2: [Bonfire] Catnip Field -(catnip 2.10/10) +(Catnip Field 1)
  3: [Bonfire] Hut (1) -(wood 7.62/12.50 53s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 7.62/28.75 3m50s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 7.62/28.75 3m50s) +(Library 1)
  5: [Bonfire] Barn -(wood 7.62/50 7m41s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 13: [Village] scholar (1) -(kitten 1) +(scholar 1)
@@ -170,13 +170,13 @@ error: action Refine catnip is locked
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
 [Resource] wood 7.71/200 0.09/s 34m14s to cap
-[Resource] science 16.30/250 0.20/s 19m27s to cap
+[Resource] science 16.30/500 0.20/s 40m16s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] gone kitten 1
 [Village] happiness 1.04 (1.10 + -0.06)
  0: [Bonfire] Gather catnip +(catnip 1)
  3: [Bonfire] Hut (1) -(wood 7.71/12.50 51s) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 7.71/28.75 3m44s) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 7.71/28.75 3m44s) +(Library 1)
  5: [Bonfire] Barn -(wood 7.71/50 7m31s) +(Barn 1)
 12: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
 13: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
@@ -191,13 +191,13 @@ error: action Refine catnip is locked
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
 [Resource] wood 7.71/200
-[Resource] science 16.50/250 0.20/s 19m4s to cap
+[Resource] science 16.50/500 0.20/s 39m29s to cap
 [Resource] kitten 0.10/2 0.05/s 37s to cap
 [Resource] gone kitten 2
 [Village] happiness 1.06 (1.10 + -0.04)
  0: [Bonfire] Gather catnip +(catnip 1)
  3: [Bonfire] Hut (1) -(wood 7.71/12.50) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 7.71/28.75) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 7.71/28.75) +(Library 1)
  5: [Bonfire] Barn -(wood 7.71/50) +(Barn 1)
 12: [Village] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
 13: [Village] scholar (1) -(kitten 0.10/1 18s) +(scholar 1)
@@ -212,13 +212,13 @@ error: action Refine catnip is locked
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
 [Resource] wood 7.71/200
-[Resource] science 16.50/250
+[Resource] science 16.50/500
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] gone kitten 3
 [Village] happiness 1.08 (1.10 + -0.02)
  0: [Bonfire] Gather catnip +(catnip 1)
  3: [Bonfire] Hut (1) -(wood 7.71/12.50) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 7.71/28.75) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 7.71/28.75) +(Library 1)
  5: [Bonfire] Barn -(wood 7.71/50) +(Barn 1)
 12: [Village] woodcutter -(kitten 0.15/1 17s) +(woodcutter 1)
 13: [Village] scholar -(kitten 0.15/1 17s) +(scholar 1)
@@ -233,13 +233,13 @@ error: action Refine catnip is locked
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
 [Resource] wood 7.71/200
-[Resource] science 16.50/250
+[Resource] science 16.50/500
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] gone kitten 3
 [Village] happiness 1.08 (1.10 + -0.02)
  0: [Bonfire] Gather catnip +(catnip 1)
  3: [Bonfire] Hut (1) -(wood 7.71/12.50) +(Hut 1, kitten cap 2)
- 4: [Bonfire] Library (1) -(wood 7.71/28.75) +(Library 1, science cap 250)
+ 4: [Bonfire] Library (1) -(wood 7.71/28.75) +(Library 1)
  5: [Bonfire] Barn -(wood 7.71/50) +(Barn 1)
 12: [Village] woodcutter -(kitten 0.15/1 17s) +(woodcutter 1)
 13: [Village] scholar -(kitten 0.15/1 17s) +(scholar 1)

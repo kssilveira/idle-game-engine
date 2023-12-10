@@ -31,6 +31,7 @@ digraph {
   "Reinforced Barns" -> "Barn" [color="green"];
   "scholar" -> "science" [color="green"];
   "Library" -> "science" [color="green"];
+  "Library" -> "science" [color="limegreen"];
   "hunter" -> "catpower" [color="green"];
   "Bolas" -> "hunter" [color="green"];
   "Hunting Armor" -> "hunter" [color="green"];
@@ -62,7 +63,6 @@ digraph {
   "Hut" -> "kitten" [color="limegreen"];
   "wood" -> "Hut" [color="blue"];
   "wood" -> "Library" [color="orange"];
-  "Library" -> "science" [color="limegreen"];
   "wood" -> "Library" [color="blue"];
   "wood" -> "Barn" [color="orange"];
   "Agriculture" -> "Barn" [color="blue"];
