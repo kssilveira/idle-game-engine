@@ -10,7 +10,7 @@
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 13: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 
+last action: 
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -26,7 +26,7 @@ last input:
  4: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
 13: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 13
+last action: woodcutter
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -42,7 +42,7 @@ last input: 13
  4: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
 13: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip
 ###
 [Calendar] time 2
 [Calendar] year 1 (1 + 0)
@@ -57,7 +57,7 @@ last input: 0
  4: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
 13: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 13
+last action: woodcutter
 ###
 [Calendar] time 2
 [Calendar] year 1 (1 + 0)
@@ -72,4 +72,4 @@ last input: 13
  4: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
 13: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip

@@ -8,7 +8,7 @@
  1: [Bonfire] Refine catnip -(catnip 10/100) +(wood 1)
  2: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 
+last action: 
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -19,7 +19,7 @@ last input:
  1: [Bonfire] Refine catnip -(catnip 0.94/100 1m44s) +(wood 1)
  2: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 2
+last action: Catnip Field
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -30,7 +30,7 @@ last input: 2
  1: [Bonfire] Refine catnip -(catnip 0.94/100 1m44s) +(wood 1)
  2: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip
 error: action Gather catnip is locked
 ###
 [Calendar] time 12
@@ -43,7 +43,7 @@ error: action Gather catnip is locked
  1: [Bonfire] Refine catnip -(catnip 11.34/100 1m33s) +(wood 1)
  2: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: s2
+last action: skip Catnip Field
 ###
 [Calendar] time 13
 [Calendar] skip 11
@@ -55,7 +55,7 @@ last input: s2
  1: [Bonfire] Refine catnip -(catnip 2.03/100 51s) +(wood 1)
  2: [Bonfire] Catnip Field (2) -(catnip 2.03/12.54 5s) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 2
+last action: Catnip Field
 ###
 [Calendar] time 13
 [Calendar] skip 11
@@ -67,5 +67,5 @@ last input: 2
  1: [Bonfire] Refine catnip -(catnip 2.03/100 51s) +(wood 1)
  2: [Bonfire] Catnip Field (2) -(catnip 2.03/12.54 5s) +(Catnip Field 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip
 error: action Gather catnip is locked

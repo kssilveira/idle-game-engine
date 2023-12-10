@@ -11,7 +11,7 @@
  5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 15: [Village] farmer -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
-last input: 
+last action: 
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -26,7 +26,7 @@ last input:
  5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 15: [Village] farmer (1) -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
-last input: 15
+last action: farmer
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -41,7 +41,7 @@ last input: 15
  5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 15: [Village] farmer (1) -(kitten 1) +(farmer 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip
 ###
 [Calendar] time 2
 [Calendar] year 1 (1 + 0)
@@ -55,7 +55,7 @@ last input: 0
  5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 15: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
-last input: 15
+last action: farmer
 ###
 [Calendar] time 2
 [Calendar] year 1 (1 + 0)
@@ -69,4 +69,4 @@ last input: 15
  5: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 15: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip

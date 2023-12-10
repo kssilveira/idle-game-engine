@@ -14,7 +14,11 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML bool) {
 	}
 	ShowResources(logger, data)
 	ShowActions(logger, data, isHTML)
-	logger.Printf("last input: %s\n", data.LastInput)
+	skip := ""
+	if data.LastSkip {
+		skip = "skip "
+	}
+	logger.Printf("last action: %s%s\n", skip, data.LastAction)
 	if data.Error != nil {
 		logger.Printf("error: %v\n", data.Error)
 	}

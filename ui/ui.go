@@ -7,7 +7,8 @@ import (
 )
 
 type Data struct {
-	LastInput     string
+	LastSkip      bool
+	LastAction    string
 	Error         error
 	Resources     []Resource
 	Actions       []Action

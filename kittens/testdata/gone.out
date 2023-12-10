@@ -14,7 +14,7 @@
 15: [Village] farmer -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 0/30) +(Calendar 1)
 sX: time skip until action X is available
-last input: 
+last action: 
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -34,7 +34,7 @@ last input:
 15: [Village] farmer -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 0/30) +(Calendar 1)
 sX: time skip until action X is available
-last input: 13
+last action: woodcutter
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -54,7 +54,7 @@ last input: 13
 15: [Village] farmer -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 0/30) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked
 ###
 [Calendar] time 2
@@ -76,7 +76,7 @@ error: action Refine catnip is locked
 15: [Village] farmer -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 14
+last action: scholar
 ###
 [Calendar] time 2
 [Calendar] year 1 (1 + 0)
@@ -97,7 +97,7 @@ last input: 14
 15: [Village] farmer -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked
 ###
 [Calendar] time 3
@@ -119,7 +119,7 @@ error: action Refine catnip is locked
 15: [Village] farmer (1) -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 0.39/30 2m30s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 15
+last action: farmer
 ###
 [Calendar] time 82
 [Calendar] year 1.10 (1 + 0.10)
@@ -140,7 +140,7 @@ last input: 15
 15: [Village] farmer (1) -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 15.90/30 1m11s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked
 ###
 [Calendar] time 83
@@ -162,7 +162,7 @@ error: action Refine catnip is locked
 15: [Village] farmer (1) -(kitten 1) +(farmer 1)
 20: [Science] Calendar -(science 16.10/30 1m10s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked
 ###
 [Calendar] time 84
@@ -183,7 +183,7 @@ error: action Refine catnip is locked
 15: [Village] farmer (1) -(kitten 0.05/1 18s) +(farmer 1)
 20: [Science] Calendar -(science 16.30/30 1m8s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked
 ###
 [Calendar] time 85
@@ -204,7 +204,7 @@ error: action Refine catnip is locked
 15: [Village] farmer (1) -(kitten 0.10/1 18s) +(farmer 1)
 20: [Science] Calendar -(science 16.50/30 1m6s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked
 ###
 [Calendar] time 86
@@ -225,7 +225,7 @@ error: action Refine catnip is locked
 15: [Village] farmer (1) -(kitten 0.15/1 17s) +(farmer 1)
 20: [Science] Calendar -(science 16.50/30) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked
 ###
 [Calendar] time 86
@@ -246,5 +246,5 @@ error: action Refine catnip is locked
 15: [Village] farmer (1) -(kitten 0.15/1 17s) +(farmer 1)
 20: [Science] Calendar -(science 16.50/30) +(Calendar 1)
 sX: time skip until action X is available
-last input: 1
+last action: Refine catnip
 error: action Refine catnip is locked

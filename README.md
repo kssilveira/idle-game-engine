@@ -79,6 +79,8 @@ Edges:
 
 More features from kittens game:
 
+- hide action numbers from test output
+
 - Bonfire Workshop
   - craft 6%
 - Bonfire Warehouse

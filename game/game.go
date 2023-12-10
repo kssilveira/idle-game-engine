@@ -78,12 +78,15 @@ func (g *Game) Validate() error {
 
 func (g *Game) Run(now Now, input Input, output Output) {
 	var in string
+	var skip bool
+	var a Action
 	var err error
 	for {
 		g.Update(now())
 		data := &ui.Data{
-			LastInput: in,
-			Error:     err,
+			LastSkip:   skip,
+			LastAction: a.Name,
+			Error:      err,
 		}
 		g.PopulateUIResources(data)
 		g.PopulateUIActions(data)
@@ -94,7 +97,7 @@ func (g *Game) Run(now Now, input Input, output Output) {
 				close(output)
 				return
 			}
-			err = g.Act(in)
+			skip, a, err = g.Act(in)
 		case <-time.After(1 * time.Second):
 		}
 	}
@@ -181,24 +184,24 @@ func (g *Game) Update(now time.Time) {
 	}
 }
 
-func (g *Game) Act(input string) error {
+func (g *Game) Act(input string) (bool, Action, error) {
 	skip, a, err := g.ParseInput(input)
 	if err != nil {
-		return err
+		return skip, a, err
 	}
 	if g.IsLocked(a) {
-		return fmt.Errorf("action %s is locked", a.Name)
+		return skip, a, fmt.Errorf("action %s is locked", a.Name)
 	}
 	if err := g.CheckMax(a); err != nil {
-		return err
+		return skip, a, err
 	}
 	skipTime, err := g.GetSkipTime(a, skip)
 	if err != nil {
-		return err
+		return skip, a, err
 	}
 	if skip && skipTime > 0 {
 		g.TimeSkip(skipTime)
-		return nil
+		return skip, a, nil
 	}
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
@@ -209,7 +212,7 @@ func (g *Game) Act(input string) error {
 		r := g.GetResource(add.Name)
 		r.Add(add)
 	}
-	return nil
+	return skip, a, nil
 }
 
 func (g *Game) ParseInput(input string) (bool, Action, error) {
@@ -220,10 +223,10 @@ func (g *Game) ParseInput(input string) (bool, Action, error) {
 	}
 	index, err := strconv.Atoi(input)
 	if err != nil {
-		return false, Action{}, err
+		return skip, Action{}, err
 	}
 	if index < 0 || index >= len(g.Actions) {
-		return false, Action{}, fmt.Errorf("invalid index %d", index)
+		return skip, Action{}, fmt.Errorf("invalid index %d", index)
 	}
 	return skip, g.Actions[index], nil
 }

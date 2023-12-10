@@ -115,7 +115,7 @@ func TestAct(t *testing.T) {
 			t.Errorf("[%s] Validate got err %v", in.name, err)
 		}
 		for index, input := range in.inputs {
-			if err := g.Act(input); err != nil {
+			if _, _, err := g.Act(input); err != nil {
 				t.Errorf("[%s] index %d got err %v", in.name, index, err)
 			}
 			want := in.want[index]

@@ -12,7 +12,7 @@
  3: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
  4: [Bonfire] Library -(wood 25) +(Library 1)
 sX: time skip until action X is available
-last input: 
+last action: 
 ###
 [Calendar] year 1
 [Calendar] Spring 1
@@ -29,7 +29,7 @@ last input:
 14: [Village] scholar -(kitten 1) +(scholar 1)
 20: [Science] Calendar -(science 0/30) +(Calendar 1)
 sX: time skip until action X is available
-last input: 4
+last action: Library
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -48,7 +48,7 @@ last input: 4
 14: [Village] scholar (1) -(kitten 1) +(scholar 1)
 20: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 14
+last action: scholar
 ###
 [Calendar] time 1
 [Calendar] year 1
@@ -67,7 +67,7 @@ last input: 14
 14: [Village] scholar (1) -(kitten 1) +(scholar 1)
 20: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip
 ###
 [Calendar] time 2
 [Calendar] year 1 (1 + 0)
@@ -86,7 +86,7 @@ last input: 0
 14: [Village] scholar (1) -(kitten 1) +(scholar 1)
 20: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 4
+last action: Library
 ###
 [Calendar] time 2
 [Calendar] year 1 (1 + 0)
@@ -105,7 +105,7 @@ last input: 4
 14: [Village] scholar (1) -(kitten 1) +(scholar 1)
 20: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip
 ###
 [Calendar] time 3
 [Calendar] year 1 (1 + 0)
@@ -123,7 +123,7 @@ last input: 0
 14: [*] [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 20: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 14
+last action: scholar
 ###
 [Calendar] time 3
 [Calendar] year 1 (1 + 0)
@@ -141,4 +141,4 @@ last input: 14
 14: [*] [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 20: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
 sX: time skip until action X is available
-last input: 0
+last action: Gather catnip
