@@ -113,6 +113,9 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 func getCosts(costs []ui.Cost, status *string) string {
 	res := []string{}
 	for _, c := range costs {
+		if c.Cost == 0 {
+			continue
+		}
 		overCap := ""
 		if c.Cost > c.Capacity && c.Capacity != -1 {
 			overCap = "*"
