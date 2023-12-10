@@ -81,9 +81,6 @@ More features from kittens game:
 
 - Bonfire Workshop
   - craft 6%
-- Upgrade Celestial Mechanics
-  - unlocked by Mathematics
-  - science 250
 - Science Engineering
   - unlocked by Construction
   - science 1500
