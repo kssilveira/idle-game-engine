@@ -5,5 +5,6 @@ digraph {
   "Village" [shape="house"];
   "Science" [shape="diamond"];
   "Workshop" [shape="hexagon"];
+  "Craft" [shape="cds"];
   "Trade" [shape="cds"];
 }

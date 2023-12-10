@@ -524,6 +524,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unicorns", Quantity: 0.05,
 		}},
 	}, {
+		Name: "beam", Type: "Craft", UnlockedBy: "Construction",
+		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
+		Adds:  []data.Resource{{Name: "beam", Quantity: 1}},
+	}, {
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
 			Name: "catpower", Quantity: 50,
@@ -713,6 +717,7 @@ const (
 	hunter
 	miner
 	sendhunters
+	beam
 	lizards
 	calendar
 	agriculture
@@ -765,6 +770,7 @@ const (
 	shunter
 	sminer
 	ssendhunters
+	sbeam
 	slizards
 	scalendar
 	sagriculture
@@ -888,6 +894,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 		"Village":  "house",
 		"Science":  "diamond",
 		"Workshop": "hexagon",
+		"Craft":    "cds",
 		"Trade":    "cds",
 	}
 	nodes := map[string]bool{}
@@ -982,6 +989,7 @@ digraph {
   "Village" [shape="house"];
   "Science" [shape="diamond"];
   "Workshop" [shape="hexagon"];
+  "Craft" [shape="cds"];
   "Trade" [shape="cds"];
 }
 `)
