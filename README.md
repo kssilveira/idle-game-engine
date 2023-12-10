@@ -80,6 +80,7 @@ Edges:
 More features from kittens game:
 
 - minimize solution
+- remove +1 from nested skip
 - craft partial action
 
 - Bonfire Workshop

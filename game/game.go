@@ -227,7 +227,8 @@ func (g *Game) Act(in string) (data.ParsedInput, error) {
 				continue
 			}
 			nested := fmt.Sprintf("%d", g.ActionToIndex[r.ProducerAction])
-			for i := 0; i < int(g.GetNeededNestedAction(input.Action, c)); i++ {
+			need := int(g.GetNeededNestedAction(input.Action, c))
+			for i := 0; i < need; i++ {
 				if _, err := g.Act(nested); err != nil {
 					return input, err
 				}
@@ -357,9 +358,13 @@ func (g *Game) GetNeededNestedAction(a data.Action, c data.Resource) float64 {
 	if r.ProducerAction == "" {
 		return 0
 	}
-	cost := g.GetCost(a, c)
+	cost := g.GetCost(a, c) - r.Quantity
+	if cost < 0 {
+		return 0
+	}
 	action := g.GetAction(r.ProducerAction)
-	return math.Ceil(cost / g.GetActionAdd(action.Adds[0]).Quantity)
+	res := math.Ceil(cost / g.GetActionAdd(action.Adds[0]).Quantity)
+	return res
 }
 
 func (g *Game) TimeSkip(skip time.Duration) {

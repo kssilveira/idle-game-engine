@@ -740,10 +740,10 @@ const (
 	metalworking
 	civilservice
 	mathematics
-	celestialmechanics
-	engineering
 	construction
 	currency
+	celestialmechanics
+	engineering
 	mineralhoes
 	ironhoes
 	mineralaxe
@@ -774,22 +774,21 @@ func Solve(input chan string, sleepMS int) {
 	}{
 		{[]int{gather}, 10},
 		{[]int{field}, 1},
-		{[]int{s + field, field}, 58},
+		{[]int{s + field, field}, 55},
 		{[]int{s + refine, refine}, 5},
 		{[]int{hut, s + woodcutter, woodcutter}, 1},
 		{[]int{s + library, library, s + scholar, scholar}, 1},
-		{[]int{s + library, library}, 14},
+		{[]int{s + library, library}, 15},
 		{[]int{s + calendar, calendar}, 1},
 		{[]int{s + agriculture, agriculture}, 1},
 
-		{[]int{s + barn, barn}, 6},
+		{[]int{s + barn, barn}, 10},
 		{[]int{s + field, field}, 25},
 		{[]int{s + library, library}, 15},
-		{[]int{s + hut, hut, s + farmer, farmer}, 4},
-		{[]int{s + farmer, farmer}, 2},
+		{[]int{s + hut, hut, s + farmer, farmer}, 9},
 
 		{[]int{s + archery, archery}, 1},
-		{[]int{hunter}, 1}, // hut
+		{[]int{s + hunter, hunter}, 1}, // hut
 
 		{[]int{s + animalhusbandry, animalhusbandry}, 1},
 		{[]int{s + pasture, pasture}, 40},
@@ -800,9 +799,9 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{s + mathematics, mathematics}, 1},
 		{[]int{s + celestialmechanics, celestialmechanics}, 1},
-		{[]int{s + engineering, engineering}, 1},
 
 		{[]int{s + construction, construction}, 1},
+		{[]int{s + engineering, engineering}, 1},
 		{[]int{s + currency, currency}, 1},
 		{[]int{s + catnipenrichment, catnipenrichment}, 1},
 
@@ -810,14 +809,15 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{s + mine, mine}, 20},
 		{[]int{miner}, 1}, // hut
 
-		{[]int{s + academy, academy}, 30},
-		{[]int{s + workshop, workshop}, 20},
+		{[]int{s + academy, academy}, 25},
+		{[]int{s + workshop, workshop}, 15},
 		{[]int{s + mineralhoes, mineralhoes}, 1},
 		{[]int{s + mineralaxe, mineralaxe}, 1},
 		{[]int{s + bolas, bolas}, 1},
 		{[]int{woodcutter}, 1}, // hut
-		{[]int{s + loghouse, loghouse, s + woodcutter, woodcutter}, 5},
-		{[]int{s + loghouse, loghouse, s + farmer, farmer}, 20},
+		{[]int{s + loghouse, loghouse, s + woodcutter, woodcutter}, 7},
+		{[]int{s + loghouse, loghouse, s + miner, miner}, 1},
+		{[]int{s + loghouse, loghouse, s + farmer, farmer}, 10},
 
 		{[]int{s + metalworking, metalworking}, 1},
 		{[]int{s + smelter, smelter}, 20},
@@ -831,19 +831,21 @@ func Solve(input chan string, sleepMS int) {
 			s + reinforcedbarns, m + reinforcedbarns, reinforcedbarns}, 1},
 		{[]int{s + warehouse, m + warehouse, warehouse}, 11},
 
-		{[]int{s + barn, barn}, 10},
-		{[]int{s + field, field}, 10},
-		{[]int{s + hut, hut, s + farmer, farmer}, 10},
+		{[]int{s + barn, barn}, 5},
+		{[]int{s + field, field}, 5},
+		{[]int{s + hut, hut, s + farmer, farmer}, 5},
 		{[]int{s + library, library}, 20},
 		{[]int{s + mine, mine}, 20},
 		{[]int{s + workshop, workshop}, 20},
 		{[]int{s + smelter, smelter}, 20},
-		{[]int{s + pasture, pasture}, 20},
+		{[]int{s + pasture, pasture}, 50},
 		{[]int{s + academy, academy}, 20},
 		{[]int{s + loghouse, loghouse, s + farmer, farmer}, 20},
 
 		{[]int{s + huntingarmor, huntingarmor}, 1},
 		{[]int{s + reinforcedsaw, m + reinforcedsaw, reinforcedsaw}, 1},
+		/*
+			//*/
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {
