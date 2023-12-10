@@ -95,6 +95,13 @@ digraph {
   "Send hunters" -> "ivory" [color="limegreen"];
   "Send hunters" -> "unicorns" [color="limegreen"];
   "Archery" -> "Send hunters" [color="blue"];
+  "catpower" -> "Lizards" [color="orange"];
+  "gold" -> "Lizards" [color="orange"];
+  "minerals" -> "Lizards" [color="orange"];
+  "Lizards" -> "wood" [color="limegreen"];
+  "Lizards" -> "blueprint" [color="limegreen"];
+  "Lizards" -> "spice" [color="limegreen"];
+  "Archery" -> "Lizards" [color="blue"];
   "science" -> "Calendar" [color="orange"];
   "Library" -> "Calendar" [color="blue"];
   "science" -> "Agriculture" [color="orange"];
@@ -136,13 +143,6 @@ digraph {
   "iron" -> "Hunting Armor" [color="orange"];
   "science" -> "Hunting Armor" [color="orange"];
   "Metal Working" -> "Hunting Armor" [color="blue"];
-  "catpower" -> "Lizards" [color="orange"];
-  "gold" -> "Lizards" [color="orange"];
-  "minerals" -> "Lizards" [color="orange"];
-  "Lizards" -> "wood" [color="limegreen"];
-  "Lizards" -> "blueprint" [color="limegreen"];
-  "Lizards" -> "spice" [color="limegreen"];
-  "Archery" -> "Lizards" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
   "science" [shape="cylinder"];
@@ -207,6 +207,7 @@ digraph {
   "hunter" [shape="house"];
   "miner" [shape="house"];
   "Send hunters" [shape="house"];
+  "Lizards" [shape="cds"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
   "Archery" [shape="diamond"];
@@ -221,5 +222,4 @@ digraph {
   "Reinforced Barns" [shape="hexagon"];
   "Bolas" [shape="hexagon"];
   "Hunting Armor" [shape="hexagon"];
-  "Lizards" [shape="cds"];
 }

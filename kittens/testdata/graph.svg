@@ -475,7 +475,7 @@
 <text text-anchor="middle" x="1764" y="-1022.3" font-family="Times,serif" font-size="14.00">Expanded Barns</text>
 </g>
 <!-- wood&#45;&gt;Expanded Barns -->
-<g id="edge121" class="edge">
+<g id="edge128" class="edge">
 <title>wood&#45;&gt;Expanded Barns</title>
 <path fill="none" stroke="orange" d="M1266.07,-1455.49C1372.44,-1448.81 1756,-1417.62 1756,-1315 1756,-1315 1756,-1315 1756,-1169 1756,-1128.93 1759.21,-1082.61 1761.57,-1054.05"/>
 <polygon fill="orange" stroke="orange" points="1765.06,-1054.29 1762.42,-1044.03 1758.09,-1053.7 1765.06,-1054.29"/>
@@ -508,7 +508,7 @@
 <text text-anchor="middle" x="962" y="-158.3" font-family="Times,serif" font-size="14.00">Bolas</text>
 </g>
 <!-- wood&#45;&gt;Bolas -->
-<g id="edge131" class="edge">
+<g id="edge138" class="edge">
 <title>wood&#45;&gt;Bolas</title>
 <path fill="none" stroke="orange" d="M1211.77,-1455.03C1109.21,-1446.88 752,-1411.55 752,-1315 752,-1315 752,-1315 752,-1097 752,-1024.95 703.53,-1001.75 733,-936 786.82,-815.93 954,-870.58 954,-739 954,-739 954,-739 954,-305 954,-264.93 957.21,-218.61 959.57,-190.05"/>
 <polygon fill="orange" stroke="orange" points="963.06,-190.29 960.42,-180.03 956.09,-189.7 963.06,-190.29"/>
@@ -613,43 +613,43 @@
 <polygon fill="green" stroke="green" points="1881.99,-925.32 1880.12,-935.75 1888.09,-928.76 1881.99,-925.32"/>
 </g>
 <!-- science&#45;&gt;Mineral Hoes -->
-<g id="edge110" class="edge">
+<g id="edge117" class="edge">
 <title>science&#45;&gt;Mineral Hoes</title>
 <path fill="none" stroke="orange" d="M1226.26,-1151.6C1219.44,-1141.6 1211.36,-1128.56 1206,-1116 1167.14,-1024.88 1163.32,-998.29 1151,-900 1141.05,-820.62 1143.03,-799.6 1151,-720 1166.41,-566.14 1220,-533.63 1220,-379 1220,-379 1220,-379 1220,-305 1220,-263.91 1218.23,-247.17 1245,-216 1260.76,-197.65 1284.16,-185.34 1305.91,-177.24"/>
 <polygon fill="orange" stroke="orange" points="1307.13,-180.52 1315.42,-173.92 1304.83,-173.91 1307.13,-180.52"/>
 </g>
 <!-- science&#45;&gt;Iron Hoes -->
-<g id="edge113" class="edge">
+<g id="edge120" class="edge">
 <title>science&#45;&gt;Iron Hoes</title>
 <path fill="none" stroke="orange" d="M1210.96,-1157.59C1192.43,-1148.75 1168.89,-1134.82 1154,-1116 1109.61,-1059.9 1051,-882.54 1051,-811 1051,-811 1051,-811 1051,-665 1051,-482.83 1087.23,-265.67 1100.88,-190.33"/>
 <polygon fill="orange" stroke="orange" points="1104.37,-190.73 1102.72,-180.27 1097.48,-189.47 1104.37,-190.73"/>
 </g>
 <!-- science&#45;&gt;Mineral Axe -->
-<g id="edge116" class="edge">
+<g id="edge123" class="edge">
 <title>science&#45;&gt;Mineral Axe</title>
 <path fill="none" stroke="orange" d="M1235.21,-1151.73C1224.48,-1101.86 1194.03,-953.23 1184,-828 1170.35,-657.71 1259,-621.84 1259,-451 1259,-451 1259,-451 1259,-305 1259,-258.38 1390.72,-205.43 1464.82,-179.32"/>
 <polygon fill="orange" stroke="orange" points="1466.14,-182.57 1474.44,-175.97 1463.84,-175.96 1466.14,-182.57"/>
 </g>
 <!-- science&#45;&gt;Iron Axe -->
-<g id="edge119" class="edge">
+<g id="edge126" class="edge">
 <title>science&#45;&gt;Iron Axe</title>
 <path fill="none" stroke="orange" d="M1210.67,-1154.11C1195.9,-1144.97 1178.72,-1131.96 1168,-1116 1165.56,-1112.37 1089,-815.38 1089,-811 1089,-811 1089,-811 1089,-665 1089,-566.8 1144,-549.2 1144,-451 1144,-451 1144,-451 1144,-377 1144,-304.99 1184.99,-227.84 1209.01,-188.8"/>
 <polygon fill="orange" stroke="orange" points="1212.07,-190.5 1214.43,-180.17 1206.14,-186.78 1212.07,-190.5"/>
 </g>
 <!-- science&#45;&gt;Expanded Barns -->
-<g id="edge124" class="edge">
+<g id="edge131" class="edge">
 <title>science&#45;&gt;Expanded Barns</title>
 <path fill="none" stroke="orange" d="M1267,-1167.83C1350.74,-1163.99 1597.88,-1149.97 1670,-1116 1700.87,-1101.46 1728.19,-1072.86 1745.31,-1051.99"/>
 <polygon fill="orange" stroke="orange" points="1748.07,-1054.14 1751.57,-1044.14 1742.6,-1049.77 1748.07,-1054.14"/>
 </g>
 <!-- science&#45;&gt;Reinforced Barns -->
-<g id="edge127" class="edge">
+<g id="edge134" class="edge">
 <title>science&#45;&gt;Reinforced Barns</title>
 <path fill="none" stroke="orange" d="M1267.27,-1167.2C1319.3,-1163.14 1433.07,-1150.73 1522,-1116 1588.6,-1090 1656,-1098.49 1656,-1027 1656,-1027 1656,-1027 1656,-953 1656,-793.62 1635,-754.38 1635,-595 1635,-595 1635,-595 1635,-521 1635,-367.72 1699.79,-335.33 1796,-216 1804.72,-205.18 1815.9,-194.94 1826.42,-186.39"/>
 <polygon fill="orange" stroke="orange" points="1828.59,-189.14 1834.28,-180.2 1824.26,-183.64 1828.59,-189.14"/>
 </g>
 <!-- science&#45;&gt;Bolas -->
-<g id="edge133" class="edge">
+<g id="edge140" class="edge">
 <title>science&#45;&gt;Bolas</title>
 <path fill="none" stroke="orange" d="M1210.8,-1167.4C1149.24,-1162.15 1004.54,-1139.68 957,-1044 949.88,-1029.67 953.68,-1023.65 957,-1008 960.63,-990.87 967.59,-988.65 973,-972 985.5,-933.53 992,-923.45 992,-883 992,-883 992,-883 992,-305 992,-264.16 979.97,-218.11 971.15,-189.82"/>
 <polygon fill="orange" stroke="orange" points="974.46,-188.69 968.07,-180.24 967.8,-190.83 974.46,-188.69"/>
@@ -661,7 +661,7 @@
 <text text-anchor="middle" x="1269" y="-806.3" font-family="Times,serif" font-size="14.00">Hunting Armor</text>
 </g>
 <!-- science&#45;&gt;Hunting Armor -->
-<g id="edge136" class="edge">
+<g id="edge143" class="edge">
 <title>science&#45;&gt;Hunting Armor</title>
 <path fill="none" stroke="orange" d="M1240.37,-1151.88C1243.1,-1113.1 1247.82,-1015.73 1234,-936 1228.46,-904.04 1210.49,-894.33 1222,-864 1225.97,-853.54 1233.05,-843.83 1240.53,-835.65"/>
 <polygon fill="orange" stroke="orange" points="1243.23,-837.89 1247.73,-828.3 1238.23,-832.99 1243.23,-837.89"/>
@@ -673,7 +673,7 @@
 <text text-anchor="middle" x="1555" y="-1022.3" font-family="Times,serif" font-size="14.00">Agriculture</text>
 </g>
 <!-- science&#45;&gt;Agriculture -->
-<g id="edge99" class="edge">
+<g id="edge106" class="edge">
 <title>science&#45;&gt;Agriculture</title>
 <path fill="none" stroke="orange" d="M1267.2,-1169.49C1316.58,-1169.03 1420.2,-1162.12 1491,-1116 1515.09,-1100.31 1533.04,-1072.14 1543.7,-1051.69"/>
 <polygon fill="orange" stroke="orange" points="1546.89,-1053.14 1548.21,-1042.63 1540.62,-1050.02 1546.89,-1053.14"/>
@@ -685,7 +685,7 @@
 <text text-anchor="middle" x="1401" y="-950.3" font-family="Times,serif" font-size="14.00">Mining</text>
 </g>
 <!-- science&#45;&gt;Mining -->
-<g id="edge103" class="edge">
+<g id="edge110" class="edge">
 <title>science&#45;&gt;Mining</title>
 <path fill="none" stroke="orange" d="M1265.42,-1153.13C1279.79,-1143.61 1297.19,-1130.55 1310,-1116 1347.5,-1073.42 1376.59,-1012.9 1391.01,-979.51"/>
 <polygon fill="orange" stroke="orange" points="1394.33,-980.64 1395.01,-970.06 1387.89,-977.91 1394.33,-980.64"/>
@@ -697,7 +697,7 @@
 <text text-anchor="middle" x="1323" y="-878.3" font-family="Times,serif" font-size="14.00">Metal Working</text>
 </g>
 <!-- science&#45;&gt;Metal Working -->
-<g id="edge107" class="edge">
+<g id="edge114" class="edge">
 <title>science&#45;&gt;Metal Working</title>
 <path fill="none" stroke="orange" d="M1251.91,-1151.67C1258.78,-1141.69 1266.86,-1128.65 1272,-1116 1301.03,-1044.59 1314.81,-953.83 1320.17,-909.62"/>
 <polygon fill="orange" stroke="orange" points="1323.64,-910.01 1321.32,-899.67 1316.69,-909.2 1323.64,-910.01"/>
@@ -709,7 +709,7 @@
 <text text-anchor="middle" x="853" y="-950.3" font-family="Times,serif" font-size="14.00">Animal Husbandry</text>
 </g>
 <!-- science&#45;&gt;Animal Husbandry -->
-<g id="edge105" class="edge">
+<g id="edge112" class="edge">
 <title>science&#45;&gt;Animal Husbandry</title>
 <path fill="none" stroke="orange" d="M1210.82,-1167.63C1142.17,-1163.76 968.65,-1150.73 924,-1116 881.2,-1082.71 863.62,-1018.2 856.86,-981.75"/>
 <polygon fill="orange" stroke="orange" points="860.3,-981.1 855.16,-971.84 853.4,-982.29 860.3,-981.1"/>
@@ -721,19 +721,19 @@
 <text text-anchor="middle" x="1022" y="-1022.3" font-family="Times,serif" font-size="14.00">Archery</text>
 </g>
 <!-- science&#45;&gt;Archery -->
-<g id="edge101" class="edge">
+<g id="edge108" class="edge">
 <title>science&#45;&gt;Archery</title>
 <path fill="none" stroke="orange" d="M1210.81,-1163.73C1179.48,-1156.82 1128.52,-1142.36 1092,-1116 1067.78,-1098.52 1047.65,-1070.44 1035.29,-1050.5"/>
 <polygon fill="orange" stroke="orange" points="1038.16,-1048.48 1030.02,-1041.71 1032.16,-1052.09 1038.16,-1048.48"/>
 </g>
 <!-- Calendar -->
-<g id="node45" class="node">
+<g id="node48" class="node">
 <title>Calendar</title>
 <polygon fill="none" stroke="black" points="1422,-1116 1362.01,-1098 1422,-1080 1481.99,-1098 1422,-1116"/>
 <text text-anchor="middle" x="1422" y="-1094.3" font-family="Times,serif" font-size="14.00">Calendar</text>
 </g>
 <!-- science&#45;&gt;Calendar -->
-<g id="edge97" class="edge">
+<g id="edge104" class="edge">
 <title>science&#45;&gt;Calendar</title>
 <path fill="none" stroke="orange" d="M1267.19,-1158.22C1299.5,-1145.86 1352.45,-1125.6 1387.27,-1112.29"/>
 <polygon fill="orange" stroke="orange" points="1388.92,-1115.4 1397.01,-1108.56 1386.42,-1108.86 1388.92,-1115.4"/>
@@ -757,7 +757,7 @@
 <polygon fill="limegreen" stroke="limegreen" points="1247.93,-1197.86 1243.59,-1188.19 1240.95,-1198.45 1247.93,-1197.86"/>
 </g>
 <!-- Library&#45;&gt;Calendar -->
-<g id="edge98" class="edge">
+<g id="edge105" class="edge">
 <title>Library&#45;&gt;Calendar</title>
 <path fill="none" stroke="blue" d="M1253.67,-1295.85C1286.82,-1257.08 1367.49,-1162.75 1403.78,-1120.31"/>
 <polygon fill="blue" stroke="blue" points="1406.58,-1122.42 1410.42,-1112.54 1401.26,-1117.87 1406.58,-1122.42"/>
@@ -775,13 +775,13 @@
 <polygon fill="orange" stroke="orange" points="796.4,-608.14 805.72,-603.09 795.29,-601.23 796.4,-608.14"/>
 </g>
 <!-- Lizards -->
-<g id="node48" class="node">
+<g id="node45" class="node">
 <title>Lizards</title>
 <polygon fill="none" stroke="black" points="2048.5,-246 2003.5,-246 2003.5,-222 2048.5,-222 2060.5,-234 2048.5,-246"/>
 <text text-anchor="middle" x="2032" y="-230.3" font-family="Times,serif" font-size="14.00">Lizards</text>
 </g>
 <!-- catpower&#45;&gt;Lizards -->
-<g id="edge138" class="edge">
+<g id="edge97" class="edge">
 <title>catpower&#45;&gt;Lizards</title>
 <path fill="none" stroke="orange" d="M411.57,-647.56C396.79,-617.97 371.11,-556.06 384,-504 392.7,-468.88 396.07,-457.23 422,-432 447.93,-406.77 464.69,-415.75 495,-396 515.88,-382.39 514.71,-368.89 538,-360 654.53,-315.53 1536.3,-340.01 1660,-324 1784.03,-307.94 1926.9,-267.34 1993.76,-247"/>
 <polygon fill="orange" stroke="orange" points="1994.91,-250.31 2003.45,-244.04 1992.86,-243.62 1994.91,-250.31"/>
@@ -799,13 +799,13 @@
 <polygon fill="green" stroke="green" points="461.21,-739.66 450.96,-742.34 460.64,-746.64 461.21,-739.66"/>
 </g>
 <!-- minerals&#45;&gt;Mineral Hoes -->
-<g id="edge109" class="edge">
+<g id="edge116" class="edge">
 <title>minerals&#45;&gt;Mineral Hoes</title>
 <path fill="none" stroke="orange" d="M1600.3,-288.05C1589.06,-277.76 1574.56,-264.28 1562,-252 1546.05,-236.4 1545.96,-227.76 1527,-216 1508.28,-204.39 1456.99,-188.72 1416.52,-177.44"/>
 <polygon fill="orange" stroke="orange" points="1417.32,-174.03 1406.75,-174.74 1415.46,-180.77 1417.32,-174.03"/>
 </g>
 <!-- minerals&#45;&gt;Mineral Axe -->
-<g id="edge115" class="edge">
+<g id="edge122" class="edge">
 <title>minerals&#45;&gt;Mineral Axe</title>
 <path fill="none" stroke="orange" d="M1609.09,-287.7C1598.31,-269.34 1580.17,-239.76 1562,-216 1554.54,-206.24 1545.67,-196.1 1537.59,-187.34"/>
 <polygon fill="orange" stroke="orange" points="1540.15,-184.94 1530.76,-180.03 1535.04,-189.73 1540.15,-184.94"/>
@@ -817,13 +817,13 @@
 <polygon fill="red" stroke="red" points="1771.92,-92.55 1761.61,-95.02 1771.21,-99.52 1771.92,-92.55"/>
 </g>
 <!-- minerals&#45;&gt;Expanded Barns -->
-<g id="edge122" class="edge">
+<g id="edge129" class="edge">
 <title>minerals&#45;&gt;Expanded Barns</title>
 <path fill="none" stroke="orange" d="M1628.8,-324.47C1646.55,-356.18 1682.59,-420.99 1687,-432 1702.23,-470.03 1711,-480.03 1711,-521 1711,-595 1711,-595 1711,-595 1711,-715.62 1732.67,-744.23 1747,-864 1752.61,-910.89 1758.18,-965.58 1761.34,-997.63"/>
 <polygon fill="orange" stroke="orange" points="1757.86,-997.98 1762.32,-1007.59 1764.83,-997.3 1757.86,-997.98"/>
 </g>
 <!-- minerals&#45;&gt;Bolas -->
-<g id="edge132" class="edge">
+<g id="edge139" class="edge">
 <title>minerals&#45;&gt;Bolas</title>
 <path fill="none" stroke="orange" d="M1586.87,-298.05C1477.33,-274.38 1118.82,-196.89 1000.37,-171.29"/>
 <polygon fill="orange" stroke="orange" points="1000.83,-167.81 990.31,-169.12 999.35,-174.65 1000.83,-167.81"/>
@@ -850,7 +850,7 @@
 <polygon fill="orange" stroke="orange" points="1525.27,-253.53 1514.77,-252.13 1522.1,-259.77 1525.27,-253.53"/>
 </g>
 <!-- minerals&#45;&gt;Lizards -->
-<g id="edge140" class="edge">
+<g id="edge99" class="edge">
 <title>minerals&#45;&gt;Lizards</title>
 <path fill="none" stroke="orange" d="M1651.18,-302.93C1716.03,-298.22 1866.69,-284.46 1989,-252 1990.45,-251.61 1991.93,-251.19 1993.41,-250.75"/>
 <polygon fill="orange" stroke="orange" points="1994.8,-253.97 2003.17,-247.46 1992.57,-247.33 1994.8,-253.97"/>
@@ -868,31 +868,31 @@
 <polygon fill="blue" stroke="blue" points="618.75,-390.44 608.23,-389.2 615.68,-396.73 618.75,-390.44"/>
 </g>
 <!-- iron&#45;&gt;Iron Hoes -->
-<g id="edge112" class="edge">
+<g id="edge119" class="edge">
 <title>iron&#45;&gt;Iron Hoes</title>
 <path fill="none" stroke="orange" d="M1692.09,-864.28C1625.61,-804.91 1398.33,-597 1245,-396 1191.5,-325.87 1141.9,-233.67 1119.11,-189.21"/>
 <polygon fill="orange" stroke="orange" points="1122.19,-187.55 1114.54,-180.22 1115.95,-190.72 1122.19,-187.55"/>
 </g>
 <!-- iron&#45;&gt;Iron Axe -->
-<g id="edge118" class="edge">
+<g id="edge125" class="edge">
 <title>iron&#45;&gt;Iron Axe</title>
 <path fill="none" stroke="orange" d="M1702.9,-863.84C1676.89,-809.34 1592.01,-636.02 1503,-504 1418.27,-378.32 1298.17,-242.28 1248.67,-187.7"/>
 <polygon fill="orange" stroke="orange" points="1251.21,-185.29 1241.89,-180.24 1246.03,-190 1251.21,-185.29"/>
 </g>
 <!-- iron&#45;&gt;Expanded Barns -->
-<g id="edge123" class="edge">
+<g id="edge130" class="edge">
 <title>iron&#45;&gt;Expanded Barns</title>
 <path fill="none" stroke="orange" d="M1717.42,-900.19C1726.54,-924.64 1743.35,-969.67 1754.09,-998.44"/>
 <polygon fill="orange" stroke="orange" points="1750.83,-999.73 1757.61,-1007.87 1757.39,-997.28 1750.83,-999.73"/>
 </g>
 <!-- iron&#45;&gt;Reinforced Barns -->
-<g id="edge126" class="edge">
+<g id="edge133" class="edge">
 <title>iron&#45;&gt;Reinforced Barns</title>
 <path fill="none" stroke="orange" d="M1723.2,-863.89C1752.61,-820.91 1825,-704.04 1825,-595 1825,-595 1825,-595 1825,-521 1825,-385.32 1763.86,-342.85 1812,-216 1815.97,-205.54 1823.05,-195.83 1830.53,-187.65"/>
 <polygon fill="orange" stroke="orange" points="1833.23,-189.89 1837.73,-180.3 1828.23,-184.99 1833.23,-189.89"/>
 </g>
 <!-- iron&#45;&gt;Hunting Armor -->
-<g id="edge135" class="edge">
+<g id="edge142" class="edge">
 <title>iron&#45;&gt;Hunting Armor</title>
 <path fill="none" stroke="orange" d="M1683.68,-876.67C1614.88,-865.78 1432.93,-836.96 1334.48,-821.37"/>
 <polygon fill="orange" stroke="orange" points="1334.77,-817.87 1324.35,-819.77 1333.68,-824.79 1334.77,-817.87"/>
@@ -1033,55 +1033,55 @@
 <polygon fill="blue" stroke="blue" points="1486.51,-261.9 1482.32,-252.17 1479.52,-262.39 1486.51,-261.9"/>
 </g>
 <!-- Mining&#45;&gt;Metal Working -->
-<g id="edge108" class="edge">
+<g id="edge115" class="edge">
 <title>Mining&#45;&gt;Metal Working</title>
 <path fill="none" stroke="blue" d="M1387.06,-940.49C1375.81,-930.39 1359.73,-915.97 1346.5,-904.09"/>
 <polygon fill="blue" stroke="blue" points="1348.48,-901.16 1338.7,-897.09 1343.81,-906.37 1348.48,-901.16"/>
 </g>
 <!-- Workshop&#45;&gt;Mineral Hoes -->
-<g id="edge111" class="edge">
+<g id="edge118" class="edge">
 <title>Workshop&#45;&gt;Mineral Hoes</title>
 <path fill="none" stroke="blue" d="M1451.89,-215.88C1436.33,-206.72 1416.98,-195.34 1400.22,-185.48"/>
 <polygon fill="blue" stroke="blue" points="1401.62,-182.24 1391.22,-180.19 1398.07,-188.28 1401.62,-182.24"/>
 </g>
 <!-- Workshop&#45;&gt;Iron Hoes -->
-<g id="edge114" class="edge">
+<g id="edge121" class="edge">
 <title>Workshop&#45;&gt;Iron Hoes</title>
 <path fill="none" stroke="blue" d="M1444.15,-227.98C1385.39,-219.7 1267.02,-201.9 1168,-180 1162.89,-178.87 1157.56,-177.58 1152.28,-176.23"/>
 <polygon fill="blue" stroke="blue" points="1152.8,-172.75 1142.24,-173.59 1151.02,-179.52 1152.8,-172.75"/>
 </g>
 <!-- Workshop&#45;&gt;Mineral Axe -->
-<g id="edge117" class="edge">
+<g id="edge124" class="edge">
 <title>Workshop&#45;&gt;Mineral Axe</title>
 <path fill="none" stroke="blue" d="M1489.16,-215.7C1492.91,-207.73 1497.45,-198.1 1501.62,-189.26"/>
 <polygon fill="blue" stroke="blue" points="1504.84,-190.64 1505.94,-180.1 1498.51,-187.66 1504.84,-190.64"/>
 </g>
 <!-- Workshop&#45;&gt;Iron Axe -->
-<g id="edge120" class="edge">
+<g id="edge127" class="edge">
 <title>Workshop&#45;&gt;Iron Axe</title>
 <path fill="none" stroke="blue" d="M1444.49,-221.19C1438.66,-219.39 1432.67,-217.61 1427,-216 1363.94,-198.15 1347.24,-197.22 1284,-180 1279.31,-178.72 1274.42,-177.35 1269.55,-175.96"/>
 <polygon fill="blue" stroke="blue" points="1270.25,-172.52 1259.67,-173.11 1268.31,-179.25 1270.25,-172.52"/>
 </g>
 <!-- Workshop&#45;&gt;Expanded Barns -->
-<g id="edge125" class="edge">
+<g id="edge132" class="edge">
 <title>Workshop&#45;&gt;Expanded Barns</title>
 <path fill="none" stroke="blue" d="M1489.09,-252.05C1500.78,-278.28 1521,-330.39 1521,-377 1521,-523 1521,-523 1521,-523 1521,-724.44 1681.48,-930.01 1741.61,-999.96"/>
 <polygon fill="blue" stroke="blue" points="1739.23,-1002.55 1748.43,-1007.81 1744.51,-997.96 1739.23,-1002.55"/>
 </g>
 <!-- Workshop&#45;&gt;Reinforced Barns -->
-<g id="edge130" class="edge">
+<g id="edge137" class="edge">
 <title>Workshop&#45;&gt;Reinforced Barns</title>
 <path fill="none" stroke="blue" d="M1517.59,-226.22C1580.84,-214.51 1711.54,-190.31 1791.61,-175.48"/>
 <polygon fill="blue" stroke="blue" points="1792.4,-178.89 1801.6,-173.63 1791.13,-172.01 1792.4,-178.89"/>
 </g>
 <!-- Workshop&#45;&gt;Bolas -->
-<g id="edge134" class="edge">
+<g id="edge141" class="edge">
 <title>Workshop&#45;&gt;Bolas</title>
 <path fill="none" stroke="blue" d="M1444.31,-229.6C1369,-222.38 1191.63,-204.21 1044,-180 1029.59,-177.64 1013.88,-174.51 1000.09,-171.59"/>
 <polygon fill="blue" stroke="blue" points="1000.49,-168.09 989.98,-169.41 999.01,-174.94 1000.49,-168.09"/>
 </g>
 <!-- Metal Working&#45;&gt;Hunting Armor -->
-<g id="edge137" class="edge">
+<g id="edge144" class="edge">
 <title>Metal Working&#45;&gt;Hunting Armor</title>
 <path fill="none" stroke="blue" d="M1311.55,-866.15C1304.82,-857.44 1296.15,-846.19 1288.39,-836.13"/>
 <polygon fill="blue" stroke="blue" points="1291.02,-833.82 1282.15,-828.04 1285.48,-838.1 1291.02,-833.82"/>
@@ -1111,7 +1111,7 @@
 <polygon fill="blue" stroke="blue" points="461.39,-741.08 451.02,-743.29 460.5,-748.03 461.39,-741.08"/>
 </g>
 <!-- Archery&#45;&gt;Animal Husbandry -->
-<g id="edge106" class="edge">
+<g id="edge113" class="edge">
 <title>Archery&#45;&gt;Animal Husbandry</title>
 <path fill="none" stroke="blue" d="M998.86,-1015.41C971.37,-1004.03 925.11,-984.87 892.05,-971.18"/>
 <polygon fill="blue" stroke="blue" points="893.26,-967.89 882.68,-967.29 890.58,-974.35 893.26,-967.89"/>
@@ -1123,7 +1123,7 @@
 <polygon fill="blue" stroke="blue" points="871.15,-618.12 863.65,-610.64 864.85,-621.16 871.15,-618.12"/>
 </g>
 <!-- Archery&#45;&gt;Lizards -->
-<g id="edge144" class="edge">
+<g id="edge103" class="edge">
 <title>Archery&#45;&gt;Lizards</title>
 <path fill="none" stroke="blue" d="M1063.99,-1021.36C1200.06,-1009 1627.01,-965.76 1747,-900 1838.54,-849.83 1918,-843.38 1918,-739 1918,-739 1918,-739 1918,-377 1918,-336.55 1912.97,-320.54 1937,-288 1950.98,-269.07 1973.86,-256.01 1993.66,-247.59"/>
 <polygon fill="blue" stroke="blue" points="1995.1,-250.79 2003.08,-243.83 1992.5,-244.29 1995.1,-250.79"/>
@@ -1146,87 +1146,87 @@
 <path fill="none" stroke="limegreen" d="M815.4,-579.34C779.09,-567.12 726.11,-549.29 689.52,-536.97"/>
 <polygon fill="limegreen" stroke="limegreen" points="690.26,-533.53 679.66,-533.66 688.02,-540.16 690.26,-533.53"/>
 </g>
-<!-- Calendar&#45;&gt;Agriculture -->
-<g id="edge100" class="edge">
-<title>Calendar&#45;&gt;Agriculture</title>
-<path fill="none" stroke="blue" d="M1442.78,-1086.06C1464.42,-1074.67 1498.57,-1056.7 1523.52,-1043.57"/>
-<polygon fill="blue" stroke="blue" points="1525.37,-1046.55 1532.59,-1038.8 1522.11,-1040.36 1525.37,-1046.55"/>
-</g>
-<!-- Calendar&#45;&gt;Mining -->
-<g id="edge104" class="edge">
-<title>Calendar&#45;&gt;Mining</title>
-<path fill="none" stroke="blue" d="M1419.59,-1080.71C1416,-1056.45 1409.21,-1010.55 1404.91,-981.43"/>
-<polygon fill="blue" stroke="blue" points="1408.37,-980.92 1403.45,-971.54 1401.45,-981.94 1408.37,-980.92"/>
-</g>
-<!-- Calendar&#45;&gt;Archery -->
-<g id="edge102" class="edge">
-<title>Calendar&#45;&gt;Archery</title>
-<path fill="none" stroke="blue" d="M1386.15,-1090.73C1313.02,-1077.93 1146.79,-1048.84 1066.73,-1034.83"/>
-<polygon fill="blue" stroke="blue" points="1066.94,-1031.31 1056.49,-1033.03 1065.73,-1038.21 1066.94,-1031.31"/>
-</g>
-<!-- beam -->
-<g id="node46" class="node">
-<title>beam</title>
-<path fill="none" stroke="black" d="M1875,-248.73C1875,-250.53 1862.9,-252 1848,-252 1833.1,-252 1821,-250.53 1821,-248.73 1821,-248.73 1821,-219.27 1821,-219.27 1821,-217.47 1833.1,-216 1848,-216 1862.9,-216 1875,-217.47 1875,-219.27 1875,-219.27 1875,-248.73 1875,-248.73"/>
-<path fill="none" stroke="black" d="M1875,-248.73C1875,-246.92 1862.9,-245.45 1848,-245.45 1833.1,-245.45 1821,-246.92 1821,-248.73"/>
-<text text-anchor="middle" x="1848" y="-230.3" font-family="Times,serif" font-size="14.00">beam</text>
-</g>
-<!-- beam&#45;&gt;Reinforced Barns -->
-<g id="edge128" class="edge">
-<title>beam&#45;&gt;Reinforced Barns</title>
-<path fill="none" stroke="orange" d="M1850.72,-215.7C1851.93,-207.98 1853.39,-198.71 1854.74,-190.11"/>
-<polygon fill="orange" stroke="orange" points="1858.22,-190.53 1856.31,-180.1 1851.3,-189.44 1858.22,-190.53"/>
-</g>
-<!-- slab -->
-<g id="node47" class="node">
-<title>slab</title>
-<path fill="none" stroke="black" d="M1947,-248.73C1947,-250.53 1934.9,-252 1920,-252 1905.1,-252 1893,-250.53 1893,-248.73 1893,-248.73 1893,-219.27 1893,-219.27 1893,-217.47 1905.1,-216 1920,-216 1934.9,-216 1947,-217.47 1947,-219.27 1947,-219.27 1947,-248.73 1947,-248.73"/>
-<path fill="none" stroke="black" d="M1947,-248.73C1947,-246.92 1934.9,-245.45 1920,-245.45 1905.1,-245.45 1893,-246.92 1893,-248.73"/>
-<text text-anchor="middle" x="1920" y="-230.3" font-family="Times,serif" font-size="14.00">slab</text>
-</g>
-<!-- slab&#45;&gt;Reinforced Barns -->
-<g id="edge129" class="edge">
-<title>slab&#45;&gt;Reinforced Barns</title>
-<path fill="none" stroke="orange" d="M1904.92,-215.7C1897.61,-207.3 1888.69,-197.07 1880.66,-187.86"/>
-<polygon fill="orange" stroke="orange" points="1883.11,-185.34 1873.91,-180.1 1877.84,-189.94 1883.11,-185.34"/>
-</g>
 <!-- Lizards&#45;&gt;wood -->
-<g id="edge141" class="edge">
+<g id="edge100" class="edge">
 <title>Lizards&#45;&gt;wood</title>
 <path fill="none" stroke="limegreen" d="M2031.21,-252.04C2030.04,-278.7 2028,-331.87 2028,-377 2028,-1315 2028,-1315 2028,-1315 2028,-1386.12 1962.17,-1380.6 1895,-1404 1779.39,-1444.27 1397.7,-1454.26 1276.37,-1456.44"/>
 <polygon fill="limegreen" stroke="limegreen" points="1276.05,-1452.95 1266.11,-1456.62 1276.17,-1459.95 1276.05,-1452.95"/>
 </g>
 <!-- Lizards&#45;&gt;spice -->
-<g id="edge143" class="edge">
+<g id="edge102" class="edge">
 <title>Lizards&#45;&gt;spice</title>
 <path fill="none" stroke="limegreen" d="M2050.42,-215.67C2067.64,-197.27 2088.69,-167.66 2074,-144 2058.82,-119.54 2028.62,-106.02 2004.17,-98.77"/>
 <polygon fill="limegreen" stroke="limegreen" points="2005.01,-95.37 1994.44,-96.12 2003.17,-102.13 2005.01,-95.37"/>
 </g>
 <!-- blueprint -->
-<g id="node50" class="node">
+<g id="node47" class="node">
 <title>blueprint</title>
 <path fill="none" stroke="black" d="M2064.5,-176.73C2064.5,-178.53 2049.93,-180 2032,-180 2014.07,-180 1999.5,-178.53 1999.5,-176.73 1999.5,-176.73 1999.5,-147.27 1999.5,-147.27 1999.5,-145.47 2014.07,-144 2032,-144 2049.93,-144 2064.5,-145.47 2064.5,-147.27 2064.5,-147.27 2064.5,-176.73 2064.5,-176.73"/>
 <path fill="none" stroke="black" d="M2064.5,-176.73C2064.5,-174.92 2049.93,-173.45 2032,-173.45 2014.07,-173.45 1999.5,-174.92 1999.5,-176.73"/>
 <text text-anchor="middle" x="2032" y="-158.3" font-family="Times,serif" font-size="14.00">blueprint</text>
 </g>
 <!-- Lizards&#45;&gt;blueprint -->
-<g id="edge142" class="edge">
+<g id="edge101" class="edge">
 <title>Lizards&#45;&gt;blueprint</title>
 <path fill="none" stroke="limegreen" d="M2032,-215.7C2032,-207.98 2032,-198.71 2032,-190.11"/>
 <polygon fill="limegreen" stroke="limegreen" points="2035.5,-190.1 2032,-180.1 2028.5,-190.1 2035.5,-190.1"/>
 </g>
 <!-- gold -->
-<g id="node49" class="node">
+<g id="node46" class="node">
 <title>gold</title>
 <path fill="none" stroke="black" d="M2000,-320.73C2000,-322.53 1987.9,-324 1973,-324 1958.1,-324 1946,-322.53 1946,-320.73 1946,-320.73 1946,-291.27 1946,-291.27 1946,-289.47 1958.1,-288 1973,-288 1987.9,-288 2000,-289.47 2000,-291.27 2000,-291.27 2000,-320.73 2000,-320.73"/>
 <path fill="none" stroke="black" d="M2000,-320.73C2000,-318.92 1987.9,-317.45 1973,-317.45 1958.1,-317.45 1946,-318.92 1946,-320.73"/>
 <text text-anchor="middle" x="1973" y="-302.3" font-family="Times,serif" font-size="14.00">gold</text>
 </g>
 <!-- gold&#45;&gt;Lizards -->
-<g id="edge139" class="edge">
+<g id="edge98" class="edge">
 <title>gold&#45;&gt;Lizards</title>
 <path fill="none" stroke="orange" d="M1987.58,-287.7C1994.66,-279.3 2003.28,-269.07 2011.05,-259.86"/>
 <polygon fill="orange" stroke="orange" points="2013.81,-262.01 2017.58,-252.1 2008.46,-257.49 2013.81,-262.01"/>
+</g>
+<!-- Calendar&#45;&gt;Agriculture -->
+<g id="edge107" class="edge">
+<title>Calendar&#45;&gt;Agriculture</title>
+<path fill="none" stroke="blue" d="M1442.78,-1086.06C1464.42,-1074.67 1498.57,-1056.7 1523.52,-1043.57"/>
+<polygon fill="blue" stroke="blue" points="1525.37,-1046.55 1532.59,-1038.8 1522.11,-1040.36 1525.37,-1046.55"/>
+</g>
+<!-- Calendar&#45;&gt;Mining -->
+<g id="edge111" class="edge">
+<title>Calendar&#45;&gt;Mining</title>
+<path fill="none" stroke="blue" d="M1419.59,-1080.71C1416,-1056.45 1409.21,-1010.55 1404.91,-981.43"/>
+<polygon fill="blue" stroke="blue" points="1408.37,-980.92 1403.45,-971.54 1401.45,-981.94 1408.37,-980.92"/>
+</g>
+<!-- Calendar&#45;&gt;Archery -->
+<g id="edge109" class="edge">
+<title>Calendar&#45;&gt;Archery</title>
+<path fill="none" stroke="blue" d="M1386.15,-1090.73C1313.02,-1077.93 1146.79,-1048.84 1066.73,-1034.83"/>
+<polygon fill="blue" stroke="blue" points="1066.94,-1031.31 1056.49,-1033.03 1065.73,-1038.21 1066.94,-1031.31"/>
+</g>
+<!-- beam -->
+<g id="node49" class="node">
+<title>beam</title>
+<path fill="none" stroke="black" d="M1875,-248.73C1875,-250.53 1862.9,-252 1848,-252 1833.1,-252 1821,-250.53 1821,-248.73 1821,-248.73 1821,-219.27 1821,-219.27 1821,-217.47 1833.1,-216 1848,-216 1862.9,-216 1875,-217.47 1875,-219.27 1875,-219.27 1875,-248.73 1875,-248.73"/>
+<path fill="none" stroke="black" d="M1875,-248.73C1875,-246.92 1862.9,-245.45 1848,-245.45 1833.1,-245.45 1821,-246.92 1821,-248.73"/>
+<text text-anchor="middle" x="1848" y="-230.3" font-family="Times,serif" font-size="14.00">beam</text>
+</g>
+<!-- beam&#45;&gt;Reinforced Barns -->
+<g id="edge135" class="edge">
+<title>beam&#45;&gt;Reinforced Barns</title>
+<path fill="none" stroke="orange" d="M1850.72,-215.7C1851.93,-207.98 1853.39,-198.71 1854.74,-190.11"/>
+<polygon fill="orange" stroke="orange" points="1858.22,-190.53 1856.31,-180.1 1851.3,-189.44 1858.22,-190.53"/>
+</g>
+<!-- slab -->
+<g id="node50" class="node">
+<title>slab</title>
+<path fill="none" stroke="black" d="M1947,-248.73C1947,-250.53 1934.9,-252 1920,-252 1905.1,-252 1893,-250.53 1893,-248.73 1893,-248.73 1893,-219.27 1893,-219.27 1893,-217.47 1905.1,-216 1920,-216 1934.9,-216 1947,-217.47 1947,-219.27 1947,-219.27 1947,-248.73 1947,-248.73"/>
+<path fill="none" stroke="black" d="M1947,-248.73C1947,-246.92 1934.9,-245.45 1920,-245.45 1905.1,-245.45 1893,-246.92 1893,-248.73"/>
+<text text-anchor="middle" x="1920" y="-230.3" font-family="Times,serif" font-size="14.00">slab</text>
+</g>
+<!-- slab&#45;&gt;Reinforced Barns -->
+<g id="edge136" class="edge">
+<title>slab&#45;&gt;Reinforced Barns</title>
+<path fill="none" stroke="orange" d="M1904.92,-215.7C1897.61,-207.3 1888.69,-197.07 1880.66,-187.86"/>
+<polygon fill="orange" stroke="orange" points="1883.11,-185.34 1873.91,-180.1 1877.84,-189.94 1883.11,-185.34"/>
 </g>
 </g>
 </svg>

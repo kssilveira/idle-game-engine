@@ -518,6 +518,23 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unicorns", Quantity: 0.05,
 		}},
 	}, {
+		Name: "Lizards", Type: "Trade",
+		UnlockedBy: "Archery",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "minerals", Quantity: 1000,
+		}},
+		Adds: []data.Resource{{
+			Name: "wood", Quantity: 500,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
 		Name: "Calendar", Type: "Science",
 		UnlockedBy: "Library",
 		LockedBy:   "Calendar",
@@ -683,23 +700,6 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{
 			Name: "Hunting Armor", Quantity: 1,
 		}},
-	}, {
-		Name: "Lizards", Type: "Trade",
-		UnlockedBy: "Archery",
-		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
-		}, {
-			Name: "gold", Quantity: 15,
-		}, {
-			Name: "minerals", Quantity: 1000,
-		}},
-		Adds: []data.Resource{{
-			Name: "wood", Quantity: 500,
-		}, {
-			Name: "blueprint", Quantity: 0.1,
-		}, {
-			Name: "spice", Quantity: 8.75,
-		}},
 	}}
 	return g
 }
@@ -723,6 +723,7 @@ const (
 	hunter
 	miner
 	sendhunters
+	lizards
 	calendar
 	agriculture
 	archery
@@ -737,7 +738,6 @@ const (
 	reinforcedbarns
 	bolas
 	huntingarmor
-	lizards
 )
 
 const (
@@ -763,6 +763,7 @@ const (
 	shunter
 	sminer
 	ssendhunters
+	slizards
 	scalendar
 	sagriculture
 	sarchery
@@ -777,7 +778,6 @@ const (
 	sreinforcedbarns
 	sbolas
 	shuntingarmor
-	slizards
 )
 
 func Solve(input chan string, sleepMS int) {
