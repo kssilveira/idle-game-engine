@@ -79,8 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- change craft emoji to ascii
-- use nested action for ui data
 - make action craft
 
 - Bonfire Workshop

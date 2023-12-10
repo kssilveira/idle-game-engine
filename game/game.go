@@ -135,33 +135,7 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 		if g.HasResource(a.Name) {
 			action.Quantity = g.GetResource(a.Name).Quantity
 		}
-		for _, c := range a.Costs {
-			cost := g.GetCost(a, c)
-			r := g.GetResource(c.Name)
-			uicost := ui.Cost{
-				Name:     c.Name,
-				Quantity: r.Quantity,
-				Capacity: r.Capacity,
-				Cost:     cost,
-				Duration: g.GetDuration(r, cost),
-			}
-			if r.ProducerAction != "" {
-				action := g.GetAction(r.ProducerAction)
-				need := math.Ceil(cost / g.GetActionAdd(action.Adds[0]).Quantity)
-				for _, c := range action.Costs {
-					cost := g.GetCost(action, c) * need
-					r := g.GetResource(c.Name)
-					uicost.Costs = append(uicost.Costs, ui.Cost{
-						Name:     c.Name,
-						Quantity: r.Quantity,
-						Capacity: -1,
-						Cost:     cost,
-						Duration: g.GetDuration(r, cost),
-					})
-				}
-			}
-			action.Costs = append(action.Costs, uicost)
-		}
+		action.Costs = g.PopulateUICosts(a, false /* isNested */)
 		for _, r := range a.Adds {
 			action.Adds = append(action.Adds, ui.Add{
 				Name:     r.Name,
@@ -174,6 +148,29 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 	data.CustomActions = append(data.CustomActions, ui.CustomAction{
 		Name: "sX: time skip until action X is available",
 	})
+}
+
+func (g *Game) PopulateUICosts(a Action, isNested bool) []ui.Cost {
+	res := []ui.Cost{}
+	for _, c := range a.Costs {
+		cost := g.GetCost(a, c)
+		r := g.GetResource(c.Name)
+		one := ui.Cost{
+			Name:     c.Name,
+			Quantity: r.Quantity,
+			Capacity: r.Capacity,
+			Cost:     cost,
+			Duration: g.GetDuration(r, cost),
+		}
+		if isNested {
+			one.Capacity = -1
+		}
+		if r.ProducerAction != "" {
+			one.Costs = g.PopulateUICosts(g.GetNestedAction(a, c), true /* isNested */)
+		}
+		res = append(res, one)
+	}
+	return res
 }
 
 func (g *Game) GetDuration(r *data.Resource, quantity float64) time.Duration {
