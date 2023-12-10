@@ -210,6 +210,11 @@ func (g *Game) Act(input string) (bool, Action, error) {
 	}
 	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
+		bonus := 1.0
+		for _, p := range add.ProductionBonus {
+			bonus += g.GetOneRate(p)
+		}
+		add.Quantity *= bonus
 		r.Add(add)
 	}
 	return skip, a, nil
