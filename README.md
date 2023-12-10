@@ -79,8 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- craft partial action
-
 - Bonfire Workshop
   - craft 6%
 - Workshop Reinforced Saw

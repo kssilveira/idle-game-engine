@@ -23198,7 +23198,6 @@ XX: [*] [Workshop] Reinforced Saw -(iron 269.90/1000* 2h1m40s, science 2500) +(R
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: make Reinforced Barns
-error: not enough wood
 ###
 [Calendar] time 511686
 [Calendar] skip 510920

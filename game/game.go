@@ -230,7 +230,7 @@ func (g *Game) Act(in string) (data.ParsedInput, error) {
 			need := int(g.GetNeededNestedAction(input.Action, c))
 			for i := 0; i < need; i++ {
 				if _, err := g.Act(nested); err != nil {
-					return input, err
+					return input, nil
 				}
 			}
 		}
