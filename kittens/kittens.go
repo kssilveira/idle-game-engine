@@ -354,168 +354,87 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Hunting Armor", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
-		Name: "Gather catnip", Type: "Bonfire",
-		LockedBy: "Catnip Field",
-		Adds: []data.Resource{{
-			Name: "catnip", Quantity: 1,
-		}},
+		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
+		Adds: []data.Resource{{Name: "catnip", Quantity: 1}},
 	}, {
-		Name: "Refine catnip", Type: "Bonfire",
-		UnlockedBy: "catnip",
-		LockedBy:   "woodcutter",
-		Costs: []data.Resource{{
-			Name: "catnip", Quantity: 100,
-		}},
-		Adds: []data.Resource{{
-			Name: "wood", Quantity: 1,
-		}},
+		Name: "Refine catnip", Type: "Bonfire", UnlockedBy: "catnip", LockedBy: "woodcutter",
+		Costs: []data.Resource{{Name: "catnip", Quantity: 100}},
+		Adds:  []data.Resource{{Name: "wood", Quantity: 1}},
 	}, {
-		Name: "Catnip Field", Type: "Bonfire",
-		UnlockedBy: "catnip",
-		Costs: []data.Resource{{
-			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
-		}},
-		Adds: []data.Resource{{
-			Name: "Catnip Field", Quantity: 1,
-		}},
+		Name: "Catnip Field", Type: "Bonfire", UnlockedBy: "catnip",
+		Costs: []data.Resource{{Name: "catnip", Quantity: 10, CostExponentBase: 1.12}},
+		Adds:  []data.Resource{{Name: "Catnip Field", Quantity: 1}},
 	}, {
-		Name: "Hut", Type: "Bonfire",
-		UnlockedBy: "wood",
-		Costs: []data.Resource{{
-			Name: "wood", Quantity: 5, CostExponentBase: 2.5,
-		}},
+		Name: "Hut", Type: "Bonfire", UnlockedBy: "wood",
+		Costs: []data.Resource{{Name: "wood", Quantity: 5, CostExponentBase: 2.5}},
 		Adds: []data.Resource{{
 			Name: "Hut", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 2,
 		}},
 	}, {
-		Name: "Library", Type: "Bonfire",
-		UnlockedBy: "wood",
-		Costs: []data.Resource{{
-			Name: "wood", Quantity: 25, CostExponentBase: 1.15,
-		}},
-		Adds: []data.Resource{{
-			Name: "Library", Quantity: 1,
-		}},
+		Name: "Library", Type: "Bonfire", UnlockedBy: "wood",
+		Costs: []data.Resource{{Name: "wood", Quantity: 25, CostExponentBase: 1.15}},
+		Adds:  []data.Resource{{Name: "Library", Quantity: 1}},
 	}, {
-		Name: "Barn", Type: "Bonfire",
-		UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{
-			Name: "wood", Quantity: 50, CostExponentBase: 1.75,
-		}},
-		Adds: []data.Resource{{
-			Name: "Barn", Quantity: 1,
-		}},
+		Name: "Barn", Type: "Bonfire", UnlockedBy: "Agriculture",
+		Costs: []data.Resource{{Name: "wood", Quantity: 50, CostExponentBase: 1.75}},
+		Adds:  []data.Resource{{Name: "Barn", Quantity: 1}},
 	}, {
-		Name: "Mine", Type: "Bonfire",
-		UnlockedBy: "Mining",
-		Costs: []data.Resource{{
-			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
-		}},
-		Adds: []data.Resource{{
-			Name: "Mine", Quantity: 1,
-		}},
+		Name: "Mine", Type: "Bonfire", UnlockedBy: "Mining",
+		Costs: []data.Resource{{Name: "wood", Quantity: 100, CostExponentBase: 1.15}},
+		Adds:  []data.Resource{{Name: "Mine", Quantity: 1}},
 	}, {
-		Name: "Workshop", Type: "Bonfire",
-		UnlockedBy: "Mining",
+		Name: "Workshop", Type: "Bonfire", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
 		}, {
 			Name: "minerals", Quantity: 400, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{
-			Name: "Workshop", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Workshop", Quantity: 1}},
 	}, {
-		Name: "Smelter", Type: "Bonfire",
-		UnlockedBy: "Metal Working",
-		Costs: []data.Resource{{
-			Name: "minerals", Quantity: 200, CostExponentBase: 1.15,
-		}},
-		Adds: []data.Resource{{
-			Name: "Smelter", Quantity: 1,
-		}},
+		Name: "Smelter", Type: "Bonfire", UnlockedBy: "Metal Working",
+		Costs: []data.Resource{{Name: "minerals", Quantity: 200, CostExponentBase: 1.15}},
+		Adds:  []data.Resource{{Name: "Smelter", Quantity: 1}},
 	}, {
-		Name: "Active Smelter", Type: "Bonfire",
-		UnlockedBy: "Smelter",
-		Costs: []data.Resource{{
-			Name: "Idle Smelter", Quantity: 1,
-		}},
-		Adds: []data.Resource{{
-			Name: "Active Smelter", Quantity: 1,
-		}},
+		Name: "Active Smelter", Type: "Bonfire", UnlockedBy: "Smelter",
+		Costs: []data.Resource{{Name: "Idle Smelter", Quantity: 1}},
+		Adds:  []data.Resource{{Name: "Active Smelter", Quantity: 1}},
 	}, {
-		Name: "Pasture", Type: "Bonfire",
-		UnlockedBy: "Animal Husbandry",
+		Name: "Pasture", Type: "Bonfire", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 100, CostExponentBase: 1.15,
 		}, {
 			Name: "wood", Quantity: 10, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{
-			Name: "Pasture", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Pasture", Quantity: 1}},
 	}, {
-		Name: "Unic. Pasture", Type: "Bonfire",
-		UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{
-			Name: "unicorns", Quantity: 2, CostExponentBase: 1.75,
-		}},
-		Adds: []data.Resource{{
-			Name: "Unic. Pasture", Quantity: 1,
-		}},
+		Name: "Unic. Pasture", Type: "Bonfire", UnlockedBy: "Animal Husbandry",
+		Costs: []data.Resource{{Name: "unicorns", Quantity: 2, CostExponentBase: 1.75}},
+		Adds:  []data.Resource{{Name: "Unic. Pasture", Quantity: 1}},
 	}, {
-		Name: "woodcutter", Type: "Village",
-		UnlockedBy: "Hut",
-		Costs: []data.Resource{{
-			Name: "kitten", Quantity: 1, Capacity: 1,
-		}},
-		Adds: []data.Resource{{
-			Name: "woodcutter", Quantity: 1,
-		}},
+		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
+		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
+		Adds:  []data.Resource{{Name: "woodcutter", Quantity: 1}},
 	}, {
-		Name: "scholar", Type: "Village",
-		UnlockedBy: "Library",
-		Costs: []data.Resource{{
-			Name: "kitten", Quantity: 1, Capacity: 1,
-		}},
-		Adds: []data.Resource{{
-			Name: "scholar", Quantity: 1,
-		}},
+		Name: "scholar", Type: "Village", UnlockedBy: "Library",
+		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
+		Adds:  []data.Resource{{Name: "scholar", Quantity: 1}},
 	}, {
-		Name: "farmer", Type: "Village",
-		UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{
-			Name: "kitten", Quantity: 1, Capacity: 1,
-		}},
-		Adds: []data.Resource{{
-			Name: "farmer", Quantity: 1,
-		}},
+		Name: "farmer", Type: "Village", UnlockedBy: "Agriculture",
+		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
+		Adds:  []data.Resource{{Name: "farmer", Quantity: 1}},
 	}, {
-		Name: "hunter", Type: "Village",
-		UnlockedBy: "Archery",
-		Costs: []data.Resource{{
-			Name: "kitten", Quantity: 1, Capacity: 1,
-		}},
-		Adds: []data.Resource{{
-			Name: "hunter", Quantity: 1,
-		}},
+		Name: "hunter", Type: "Village", UnlockedBy: "Archery",
+		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
+		Adds:  []data.Resource{{Name: "hunter", Quantity: 1}},
 	}, {
-		Name: "miner", Type: "Village",
-		UnlockedBy: "Mine",
-		Costs: []data.Resource{{
-			Name: "kitten", Quantity: 1, Capacity: 1,
-		}},
-		Adds: []data.Resource{{
-			Name: "miner", Quantity: 1,
-		}},
+		Name: "miner", Type: "Village", UnlockedBy: "Mine",
+		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
+		Adds:  []data.Resource{{Name: "miner", Quantity: 1}},
 	}, {
-		Name: "Send hunters", Type: "Village",
-		UnlockedBy: "Archery",
-		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 100,
-		}},
+		Name: "Send hunters", Type: "Village", UnlockedBy: "Archery",
+		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
 		Adds: []data.Resource{{
 			Name: "furs", Quantity: 39.5,
 		}, {
@@ -524,8 +443,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unicorns", Quantity: 0.05,
 		}},
 	}, {
-		Name: "Lizards", Type: "Trade",
-		UnlockedBy: "Archery",
+		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
 			Name: "catpower", Quantity: 50,
 		}, {
@@ -541,127 +459,67 @@ func NewGame(now game.Now) *game.Game {
 			Name: "spice", Quantity: 8.75,
 		}},
 	}, {
-		Name: "Calendar", Type: "Science",
-		UnlockedBy: "Library",
-		LockedBy:   "Calendar",
-		Costs: []data.Resource{{
-			Name: "science", Quantity: 30,
-		}},
-		Adds: []data.Resource{{
-			Name: "Calendar", Quantity: 1,
-		}},
+		Name: "Calendar", Type: "Science", UnlockedBy: "Library", LockedBy: "Calendar",
+		Costs: []data.Resource{{Name: "science", Quantity: 30}},
+		Adds:  []data.Resource{{Name: "Calendar", Quantity: 1}},
 	}, {
-		Name: "Agriculture", Type: "Science",
-		UnlockedBy: "Calendar",
-		LockedBy:   "Agriculture",
-		Costs: []data.Resource{{
-			Name: "science", Quantity: 100,
-		}},
-		Adds: []data.Resource{{
-			Name: "Agriculture", Quantity: 1,
-		}},
+		Name: "Agriculture", Type: "Science", UnlockedBy: "Calendar", LockedBy: "Agriculture",
+		Costs: []data.Resource{{Name: "science", Quantity: 100}},
+		Adds:  []data.Resource{{Name: "Agriculture", Quantity: 1}},
 	}, {
-		Name: "Archery", Type: "Science",
-		UnlockedBy: "Calendar",
-		LockedBy:   "Archery",
-		Costs: []data.Resource{{
-			Name: "science", Quantity: 300,
-		}},
-		Adds: []data.Resource{{
-			Name: "Archery", Quantity: 1,
-		}},
+		Name: "Archery", Type: "Science", UnlockedBy: "Calendar", LockedBy: "Archery",
+		Costs: []data.Resource{{Name: "science", Quantity: 300}},
+		Adds:  []data.Resource{{Name: "Archery", Quantity: 1}},
 	}, {
-		Name: "Mining", Type: "Science",
-		UnlockedBy: "Calendar",
-		LockedBy:   "Mining",
-		Costs: []data.Resource{{
-			Name: "science", Quantity: 500,
-		}},
-		Adds: []data.Resource{{
-			Name: "Mining", Quantity: 1,
-		}},
+		Name: "Mining", Type: "Science", UnlockedBy: "Calendar", LockedBy: "Mining",
+		Costs: []data.Resource{{Name: "science", Quantity: 500}},
+		Adds:  []data.Resource{{Name: "Mining", Quantity: 1}},
 	}, {
-		Name: "Animal Husbandry", Type: "Science",
-		UnlockedBy: "Archery",
-		LockedBy:   "Animal Husbandry",
-		Costs: []data.Resource{{
-			Name: "science", Quantity: 500,
-		}},
-		Adds: []data.Resource{{
-			Name: "Animal Husbandry", Quantity: 1,
-		}},
+		Name: "Animal Husbandry", Type: "Science", UnlockedBy: "Archery", LockedBy: "Animal Husbandry",
+		Costs: []data.Resource{{Name: "science", Quantity: 500}},
+		Adds:  []data.Resource{{Name: "Animal Husbandry", Quantity: 1}},
 	}, {
-		Name: "Metal Working", Type: "Science",
-		UnlockedBy: "Mining",
-		LockedBy:   "Metal Working",
-		Costs: []data.Resource{{
-			Name: "science", Quantity: 900,
-		}},
-		Adds: []data.Resource{{
-			Name: "Metal Working", Quantity: 1,
-		}},
+		Name: "Metal Working", Type: "Science", UnlockedBy: "Mining", LockedBy: "Metal Working",
+		Costs: []data.Resource{{Name: "science", Quantity: 900}},
+		Adds:  []data.Resource{{Name: "Metal Working", Quantity: 1}},
 	}, {
-		Name: "Civil Service", Type: "Science",
-		UnlockedBy: "Animal Husbandry",
-		LockedBy:   "Civil Service",
-		Costs: []data.Resource{{
-			Name: "science", Quantity: 1500,
-		}},
-		Adds: []data.Resource{{
-			Name: "Civil Service", Quantity: 1,
-		}},
+		Name: "Civil Service", Type: "Science", UnlockedBy: "Animal Husbandry", LockedBy: "Civil Service",
+		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
+		Adds:  []data.Resource{{Name: "Civil Service", Quantity: 1}},
 	}, {
-		Name: "Mineral Hoes", Type: "Workshop",
-		UnlockedBy: "Workshop",
-		LockedBy:   "Mineral Hoes",
+		Name: "Mineral Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Hoes",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 275,
 		}, {
 			Name: "science", Quantity: 100,
 		}},
-		Adds: []data.Resource{{
-			Name: "Mineral Hoes", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Mineral Hoes", Quantity: 1}},
 	}, {
-		Name: "Iron Hoes", Type: "Workshop",
-		UnlockedBy: "Workshop",
-		LockedBy:   "Iron Hoes",
+		Name: "Iron Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Iron Hoes",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 25,
 		}, {
 			Name: "science", Quantity: 200,
 		}},
-		Adds: []data.Resource{{
-			Name: "Iron Hoes", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Iron Hoes", Quantity: 1}},
 	}, {
-		Name: "Mineral Axe", Type: "Workshop",
-		UnlockedBy: "Workshop",
-		LockedBy:   "Mineral Axe",
+		Name: "Mineral Axe", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Axe",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 500,
 		}, {
 			Name: "science", Quantity: 100,
 		}},
-		Adds: []data.Resource{{
-			Name: "Mineral Axe", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Mineral Axe", Quantity: 1}},
 	}, {
-		Name: "Iron Axe", Type: "Workshop",
-		UnlockedBy: "Workshop",
-		LockedBy:   "Iron Axe",
+		Name: "Iron Axe", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Iron Axe",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 50,
 		}, {
 			Name: "science", Quantity: 200,
 		}},
-		Adds: []data.Resource{{
-			Name: "Iron Axe", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Iron Axe", Quantity: 1}},
 	}, {
-		Name: "Expanded Barns", Type: "Workshop",
-		UnlockedBy: "Workshop",
-		LockedBy:   "Expanded Barns",
+		Name: "Expanded Barns", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Expanded Barns",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 1000,
 		}, {
@@ -671,13 +529,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 500,
 		}},
-		Adds: []data.Resource{{
-			Name: "Expanded Barns", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Expanded Barns", Quantity: 1}},
 	}, {
-		Name: "Reinforced Barns", Type: "Workshop",
-		UnlockedBy: "Workshop",
-		LockedBy:   "Reinforced Barns",
+		Name: "Reinforced Barns", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Reinforced Barns",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 100,
 		}, {
@@ -687,13 +541,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "slab", Quantity: 10,
 		}},
-		Adds: []data.Resource{{
-			Name: "Reinforced Barns", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Reinforced Barns", Quantity: 1}},
 	}, {
-		Name: "Bolas", Type: "Workshop",
-		UnlockedBy: "Workshop",
-		LockedBy:   "Bolas",
+		Name: "Bolas", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Bolas",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50,
 		}, {
@@ -701,21 +551,15 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 1000,
 		}},
-		Adds: []data.Resource{{
-			Name: "Bolas", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Bolas", Quantity: 1}},
 	}, {
-		Name: "Hunting Armor", Type: "Workshop",
-		UnlockedBy: "Metal Working",
-		LockedBy:   "Hunting Armor",
+		Name: "Hunting Armor", Type: "Workshop", UnlockedBy: "Metal Working", LockedBy: "Hunting Armor",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 750,
 		}, {
 			Name: "science", Quantity: 2000,
 		}},
-		Adds: []data.Resource{{
-			Name: "Hunting Armor", Quantity: 1,
-		}},
+		Adds: []data.Resource{{Name: "Hunting Armor", Quantity: 1}},
 	}}
 	return g
 }
