@@ -81,10 +81,6 @@ More features from kittens game:
 
 - Bonfire Workshop
   - craft 6%
-- Science Engineering
-  - unlocked by Construction
-  - science 1500
-  - TODO
 - Bonfire Warehouse
   - unlocked by Construction
   - beam 1.5 TODO

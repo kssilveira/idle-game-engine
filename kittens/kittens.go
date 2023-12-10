@@ -351,6 +351,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Celestial Mechanics", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
+		Name: "Engineering", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Iron Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
@@ -527,6 +529,10 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "science", Quantity: 250}},
 		Adds:  []data.Resource{{Name: "Celestial Mechanics", Quantity: 1}},
 	}, {
+		Name: "Engineering", Type: "Science", UnlockedBy: "Construction", LockedBy: "Engineering",
+		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
+		Adds:  []data.Resource{{Name: "Engineering", Quantity: 1}},
+	}, {
 		Name: "Mineral Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Hoes",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 275,
@@ -634,6 +640,7 @@ const (
 	civilservice
 	mathematics
 	celestialmechanics
+	engineering
 	construction
 	currency
 	mineralhoes
@@ -680,6 +687,7 @@ const (
 	scivilservice
 	smathematics
 	scelestialmechanics
+	sengineering
 	sconstruction
 	scurrency
 	smineralhoes
@@ -725,6 +733,7 @@ func Solve(input chan string, sleepMS int) {
 
 		{[]int{smathematics, mathematics}, 1},
 		{[]int{scelestialmechanics, celestialmechanics}, 1},
+		{[]int{sengineering, engineering}, 1},
 
 		{[]int{sconstruction, construction}, 1},
 		{[]int{scurrency, currency}, 1},
