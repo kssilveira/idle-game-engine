@@ -20,6 +20,7 @@ digraph {
   "Mine" -> "miner" [color="blue"];
   "Archery" -> "Send hunters" [color="blue"];
   "Construction" -> "#beam" [color="blue"];
+  "Construction" -> "#slab" [color="blue"];
   "Archery" -> "Lizards" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
@@ -108,6 +109,7 @@ digraph {
   "miner" [shape="house"];
   "Send hunters" [shape="house"];
   "#beam" [shape="cds"];
+  "#slab" [shape="cds"];
   "Lizards" [shape="cds"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];

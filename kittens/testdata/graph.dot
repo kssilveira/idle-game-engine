@@ -119,6 +119,9 @@ digraph {
   "wood" -> "#beam" [color="orange"];
   "#beam" -> "beam" [color="limegreen"];
   "Construction" -> "#beam" [color="blue"];
+  "minerals" -> "#slab" [color="orange"];
+  "#slab" -> "slab" [color="limegreen"];
+  "Construction" -> "#slab" [color="blue"];
   "catpower" -> "Lizards" [color="orange"];
   "gold" -> "Lizards" [color="orange"];
   "minerals" -> "Lizards" [color="orange"];
@@ -269,6 +272,7 @@ digraph {
   "miner" [shape="house"];
   "Send hunters" [shape="house"];
   "#beam" [shape="cds"];
+  "#slab" [shape="cds"];
   "Lizards" [shape="cds"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];

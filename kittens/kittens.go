@@ -266,6 +266,7 @@ func NewGame(now game.Now) *game.Game {
 		ProducerAction: "#beam",
 	}, {
 		Name: "slab", Type: "Resource", Capacity: -1,
+		ProducerAction: "#slab",
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
@@ -529,9 +530,14 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
 		Adds: []data.Resource{{
 			Name: "beam", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}},
+			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+		}},
+	}, {
+		Name: "#slab", Type: "Craft", UnlockedBy: "Construction",
+		Costs: []data.Resource{{Name: "minerals", Quantity: 250}},
+		Adds: []data.Resource{{
+			Name: "slab", Quantity: 1,
+			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
 		}},
 	}, {
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
@@ -724,6 +730,7 @@ const (
 	miner
 	sendhunters
 	beam
+	slab
 	lizards
 	calendar
 	agriculture
@@ -751,56 +758,13 @@ const (
 )
 
 const (
-	sdelta = 100
+	delta = 100
 )
 
 const (
-	_ = iota + sdelta
-	srefine
-	sfield
-	shut
-	slibrary
-	sbarn
-	smine
-	sworkshop
-	ssmelter
-	sactivesmelter
-	spasture
-	sunicpasture
-	sacademy
-	swarehouse
-	sloghouse
-	swoodcutter
-	sscholar
-	sfarmer
-	shunter
-	sminer
-	ssendhunters
-	sbeam
-	slizards
-	scalendar
-	sagriculture
-	sarchery
-	smining
-	sanimalhusbandry
-	smetalworking
-	scivilservice
-	smathematics
-	scelestialmechanics
-	sengineering
-	sconstruction
-	scurrency
-	smineralhoes
-	sironhoes
-	smineralaxe
-	sironaxe
-	sexpandedbarns
-	sreinforcedbarns
-	sbolas
-	shuntingarmor
-	sreinforcedsaw
-	scompositebow
-	scatnipenrichment
+	_ = iota * delta
+	s
+	m
 )
 
 func Solve(input chan string, sleepMS int) {
@@ -810,69 +774,69 @@ func Solve(input chan string, sleepMS int) {
 	}{
 		{[]int{gather}, 10},
 		{[]int{field}, 1},
-		{[]int{sfield, field}, 58},
-		{[]int{srefine, refine}, 5},
-		{[]int{hut, swoodcutter, woodcutter}, 1},
-		{[]int{slibrary, library, sscholar, scholar}, 1},
-		{[]int{slibrary, library}, 14},
-		{[]int{scalendar, calendar}, 1},
-		{[]int{sagriculture, agriculture}, 1},
+		{[]int{s + field, field}, 58},
+		{[]int{s + refine, refine}, 5},
+		{[]int{hut, s + woodcutter, woodcutter}, 1},
+		{[]int{s + library, library, s + scholar, scholar}, 1},
+		{[]int{s + library, library}, 14},
+		{[]int{s + calendar, calendar}, 1},
+		{[]int{s + agriculture, agriculture}, 1},
 
-		{[]int{sbarn, barn}, 6},
-		{[]int{sfield, field}, 25},
-		{[]int{slibrary, library}, 15},
-		{[]int{shut, hut, sfarmer, farmer}, 4},
-		{[]int{sfarmer, farmer}, 2},
+		{[]int{s + barn, barn}, 6},
+		{[]int{s + field, field}, 25},
+		{[]int{s + library, library}, 15},
+		{[]int{s + hut, hut, s + farmer, farmer}, 4},
+		{[]int{s + farmer, farmer}, 2},
 
-		{[]int{sarchery, archery}, 1},
+		{[]int{s + archery, archery}, 1},
 		{[]int{hunter}, 1}, // hut
 
-		{[]int{sanimalhusbandry, animalhusbandry}, 1},
-		{[]int{spasture, pasture}, 40},
-		{[]int{ssendhunters, sendhunters}, 40},
+		{[]int{s + animalhusbandry, animalhusbandry}, 1},
+		{[]int{s + pasture, pasture}, 40},
+		{[]int{s + sendhunters, sendhunters}, 40},
 		{[]int{unicpasture}, 1},
-		{[]int{sunicpasture, unicpasture}, 10},
-		{[]int{scivilservice, civilservice}, 1},
+		{[]int{s + unicpasture, unicpasture}, 10},
+		{[]int{s + civilservice, civilservice}, 1},
 
-		{[]int{smathematics, mathematics}, 1},
-		{[]int{scelestialmechanics, celestialmechanics}, 1},
-		{[]int{sengineering, engineering}, 1},
+		{[]int{s + mathematics, mathematics}, 1},
+		{[]int{s + celestialmechanics, celestialmechanics}, 1},
+		{[]int{s + engineering, engineering}, 1},
 
-		{[]int{sconstruction, construction}, 1},
-		{[]int{scurrency, currency}, 1},
-		{[]int{scatnipenrichment, catnipenrichment}, 1},
+		{[]int{s + construction, construction}, 1},
+		{[]int{s + currency, currency}, 1},
+		{[]int{s + catnipenrichment, catnipenrichment}, 1},
 
-		{[]int{smining, mining}, 1},
-		{[]int{smine, mine}, 20},
+		{[]int{s + mining, mining}, 1},
+		{[]int{s + mine, mine}, 20},
 		{[]int{miner}, 1}, // hut
 
-		{[]int{sacademy, academy}, 30},
-		{[]int{sworkshop, workshop}, 20},
-		{[]int{smineralhoes, mineralhoes}, 1},
-		{[]int{smineralaxe, mineralaxe}, 1},
-		{[]int{sbolas, bolas}, 1},
+		{[]int{s + academy, academy}, 30},
+		{[]int{s + workshop, workshop}, 20},
+		{[]int{s + mineralhoes, mineralhoes}, 1},
+		{[]int{s + mineralaxe, mineralaxe}, 1},
+		{[]int{s + bolas, bolas}, 1},
 		{[]int{woodcutter}, 1}, // hut
-		{[]int{sloghouse, loghouse, swoodcutter, woodcutter}, 1},
-		{[]int{sloghouse, loghouse, sfarmer, farmer}, 20},
+		{[]int{s + loghouse, loghouse, s + woodcutter, woodcutter}, 1},
+		{[]int{s + loghouse, loghouse, s + farmer, farmer}, 20},
 
-		{[]int{smetalworking, metalworking}, 1},
-		{[]int{ssmelter, smelter}, 20},
+		{[]int{s + metalworking, metalworking}, 1},
+		{[]int{s + smelter, smelter}, 20},
 		{[]int{activesmelter}, 1},
-		{[]int{sironhoes, ironhoes}, 1},
-		{[]int{sironaxe, ironaxe}, 1},
-		{[]int{scompositebow, compositebow}, 1},
-		{[]int{sexpandedbarns, expandedbarns}, 1},
+		{[]int{s + ironhoes, ironhoes}, 1},
+		{[]int{s + ironaxe, ironaxe}, 1},
+		{[]int{s + compositebow, compositebow}, 1},
+		{[]int{s + expandedbarns, expandedbarns}, 1},
 
-		{[]int{sbarn, barn}, 10},
-		{[]int{sfield, field}, 10},
-		{[]int{slibrary, library}, 10},
-		{[]int{smine, mine}, 10},
-		{[]int{sacademy, academy}, 10},
-		{[]int{sworkshop, workshop}, 10},
-		{[]int{ssmelter, smelter}, 10},
-		{[]int{spasture, pasture}, 10},
-		{[]int{sloghouse, loghouse, sfarmer, farmer}, 10},
-		{[]int{shuntingarmor, huntingarmor}, 1},
+		{[]int{s + barn, barn}, 10},
+		{[]int{s + field, field}, 10},
+		{[]int{s + library, library}, 10},
+		{[]int{s + mine, mine}, 10},
+		{[]int{s + academy, academy}, 10},
+		{[]int{s + workshop, workshop}, 10},
+		{[]int{s + smelter, smelter}, 10},
+		{[]int{s + pasture, pasture}, 10},
+		{[]int{s + loghouse, loghouse, s + farmer, farmer}, 10},
+		{[]int{s + huntingarmor, huntingarmor}, 1},
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {
@@ -885,9 +849,13 @@ func Solve(input chan string, sleepMS int) {
 
 func toInput(cmd int) string {
 	prefix := ""
-	if cmd >= sdelta {
+	if cmd >= m {
+		prefix = "m"
+		cmd -= m
+	}
+	if cmd >= s {
 		prefix = "s"
-		cmd -= sdelta
+		cmd -= s
 	}
 	return fmt.Sprintf("%s%d", prefix, cmd)
 }

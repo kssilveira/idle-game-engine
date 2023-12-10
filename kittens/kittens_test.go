@@ -63,7 +63,7 @@ func TestRun(t *testing.T) {
 		},
 		iters: []iter{
 			{field, 0}, {gather, 1},
-			{sfield, 0}, {field, 0},
+			{s + field, 0}, {field, 0},
 			{gather, 1},
 		},
 	}, {
