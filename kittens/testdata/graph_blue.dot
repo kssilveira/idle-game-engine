@@ -42,6 +42,7 @@ digraph {
   "Metal Working" -> "Hunting Armor" [color="blue"];
   "Construction" -> "Reinforced Saw" [color="blue"];
   "Construction" -> "Composite Bow" [color="blue"];
+  "Construction" -> "Catnip Enrichment" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
@@ -84,6 +85,7 @@ digraph {
   "Hunting Armor" [shape="hexagon"];
   "Reinforced Saw" [shape="hexagon"];
   "Composite Bow" [shape="hexagon"];
+  "Catnip Enrichment" [shape="hexagon"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
@@ -127,4 +129,5 @@ digraph {
   "Hunting Armor" [shape="hexagon"];
   "Reinforced Saw" [shape="hexagon"];
   "Composite Bow" [shape="hexagon"];
+  "Catnip Enrichment" [shape="hexagon"];
 }
