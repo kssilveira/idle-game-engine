@@ -85,10 +85,7 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 			name = fmt.Sprintf("<a href='/%d'>%s%s</a> [<a href='/s%d'>skip</a>]", i, a.Name, quantity, i)
 		}
 		parts := []string{name}
-		costs := []string{}
-		for _, c := range a.Costs {
-			costs = append(costs, getCost(c, &status))
-		}
+		costs := getCosts(a.Costs, &status)
 		if len(costs) > 0 {
 			parts = append(parts, fmt.Sprintf(" -(%s)", strings.Join(costs, ", ")))
 		}
@@ -113,30 +110,31 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 	}
 }
 
-func getCost(c ui.Cost, status *string) string {
-	overCap := ""
-	if c.Cost > c.Capacity && c.Capacity != -1 {
-		overCap = "*"
-		*status = "[*] "
-	}
-	duration := ""
-	if c.Duration != 0 {
-		duration = fmt.Sprintf(" %s", c.Duration)
-	}
-	out := fmt.Sprintf("%s/%s%s%s", toString(c.Quantity), toString(c.Cost), overCap, duration)
-	if c.Quantity >= c.Cost {
-		out = fmt.Sprintf("%s", toString(c.Cost))
-	}
-	costs := []string{}
-	for _, c := range c.Costs {
+func getCosts(costs []ui.Cost, status *string) []string {
+	res := []string{}
+	for _, c := range costs {
+		overCap := ""
+		if c.Cost > c.Capacity && c.Capacity != -1 {
+			overCap = "*"
+			*status = "[*] "
+		}
+		duration := ""
+		if c.Duration != 0 {
+			duration = fmt.Sprintf(" %s", c.Duration)
+		}
+		out := fmt.Sprintf("%s/%s%s%s", toString(c.Quantity), toString(c.Cost), overCap, duration)
+		if c.Quantity >= c.Cost {
+			out = fmt.Sprintf("%s", toString(c.Cost))
+		}
 		var status string
-		costs = append(costs, getCost(c, &status))
+		nested := getCosts(c.Costs, &status)
+		extra := ""
+		if len(nested) > 0 {
+			extra = fmt.Sprintf(" (%s)", strings.Join(nested, ", "))
+		}
+		res = append(res, fmt.Sprintf("%s %s%s", c.Name, out, extra))
 	}
-	extra := ""
-	if len(costs) > 0 {
-		extra = fmt.Sprintf(" (%s)", strings.Join(costs, ", "))
-	}
-	return fmt.Sprintf("%s %s%s", c.Name, out, extra)
+	return res
 }
 
 func toString(n float64) string {

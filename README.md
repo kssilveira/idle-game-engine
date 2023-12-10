@@ -79,7 +79,7 @@ Edges:
 
 More features from kittens game:
 
-- ui craft count - current
+- ui hide craft count 0
 
 - Workshop Reinforced Saw
   - lumber mill 20%
