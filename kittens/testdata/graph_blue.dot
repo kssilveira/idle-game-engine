@@ -25,6 +25,7 @@ digraph {
   "Mining" -> "Metal Working" [color="blue"];
   "Animal Husbandry" -> "Civil Service" [color="blue"];
   "Animal Husbandry" -> "Mathematics" [color="blue"];
+  "Animal Husbandry" -> "Construction" [color="blue"];
   "Workshop" -> "Mineral Hoes" [color="blue"];
   "Workshop" -> "Iron Hoes" [color="blue"];
   "Workshop" -> "Mineral Axe" [color="blue"];
@@ -58,6 +59,7 @@ digraph {
   "Metal Working" [shape="diamond"];
   "Civil Service" [shape="diamond"];
   "Mathematics" [shape="diamond"];
+  "Construction" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -92,6 +94,7 @@ digraph {
   "Metal Working" [shape="diamond"];
   "Civil Service" [shape="diamond"];
   "Mathematics" [shape="diamond"];
+  "Construction" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
