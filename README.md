@@ -81,9 +81,6 @@ More features from kittens game:
 
 - Bonfire Workshop
   - craft 6%
-- Science Mathematics
-  - unlocked by Animal Husbandry
-  - science 1000
 - Science Construction
   - unlocked by Animal Husbandry
   - science 1300

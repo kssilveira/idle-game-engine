@@ -337,6 +337,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Civil Service", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
+		Name: "Mathematics", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Iron Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
@@ -487,6 +489,10 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
 		Adds:  []data.Resource{{Name: "Civil Service", Quantity: 1}},
 	}, {
+		Name: "Mathematics", Type: "Science", UnlockedBy: "Animal Husbandry", LockedBy: "Mathematics",
+		Costs: []data.Resource{{Name: "science", Quantity: 1000}},
+		Adds:  []data.Resource{{Name: "Mathematics", Quantity: 1}},
+	}, {
 		Name: "Mineral Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Hoes",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 275,
@@ -591,6 +597,7 @@ const (
 	animalhusbandry
 	metalworking
 	civilservice
+	mathematics
 	mineralhoes
 	ironhoes
 	mineralaxe
@@ -632,6 +639,7 @@ const (
 	sanimalhusbandry
 	smetalworking
 	scivilservice
+	smathematics
 	smineralhoes
 	sironhoes
 	smineralaxe
@@ -672,6 +680,7 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{unicpasture}, 1},
 		{[]int{sunicpasture, unicpasture}, 10},
 		{[]int{scivilservice, civilservice}, 1},
+		{[]int{smathematics, mathematics}, 1},
 
 		{[]int{smining, mining}, 1},
 		{[]int{smine, mine}, 20},
