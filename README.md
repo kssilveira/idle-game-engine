@@ -82,9 +82,6 @@ More features from kittens game:
 - Bonfire Workshop
   - craft 6%
 - Workshop Reinforced Saw
-  - unlocked by Construction
-  - iron 1000
-  - science 2500
   - lumber mill 20%
 - Workshop Composite Bow
   - unlocked by Construction

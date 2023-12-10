@@ -395,6 +395,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Bolas", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Hunting Armor", Type: "Workshop", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Reinforced Saw", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
 	g.Actions = []game.Action{{
 		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
@@ -653,6 +655,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Quantity: 2000,
 		}},
 		Adds: []data.Resource{{Name: "Hunting Armor", Quantity: 1}},
+	}, {
+		Name: "Reinforced Saw", Type: "Workshop", UnlockedBy: "Construction", LockedBy: "Reinforced Saw",
+		Costs: []data.Resource{{
+			Name: "iron", Quantity: 1000,
+		}, {
+			Name: "science", Quantity: 2500,
+		}},
+		Adds: []data.Resource{{Name: "Reinforced Saw", Quantity: 1}},
 	}}
 	return g
 }
@@ -700,6 +710,7 @@ const (
 	reinforcedbarns
 	bolas
 	huntingarmor
+	reinforcedsaw
 )
 
 const (
@@ -749,6 +760,7 @@ const (
 	sreinforcedbarns
 	sbolas
 	shuntingarmor
+	sreinforcedsaw
 )
 
 func Solve(input chan string, sleepMS int) {

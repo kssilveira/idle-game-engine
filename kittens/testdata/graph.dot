@@ -175,6 +175,9 @@ digraph {
   "iron" -> "Hunting Armor" [color="orange"];
   "science" -> "Hunting Armor" [color="orange"];
   "Metal Working" -> "Hunting Armor" [color="blue"];
+  "iron" -> "Reinforced Saw" [color="orange"];
+  "science" -> "Reinforced Saw" [color="orange"];
+  "Construction" -> "Reinforced Saw" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
   "science" [shape="cylinder"];
@@ -230,6 +233,7 @@ digraph {
   "Reinforced Barns" [shape="hexagon"];
   "Bolas" [shape="hexagon"];
   "Hunting Armor" [shape="hexagon"];
+  "Reinforced Saw" [shape="hexagon"];
   "Gather catnip" [shape="box3d"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
@@ -272,4 +276,5 @@ digraph {
   "Reinforced Barns" [shape="hexagon"];
   "Bolas" [shape="hexagon"];
   "Hunting Armor" [shape="hexagon"];
+  "Reinforced Saw" [shape="hexagon"];
 }
