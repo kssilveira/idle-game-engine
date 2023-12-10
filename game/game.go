@@ -89,13 +89,14 @@ func (g *Game) Validate() error {
 
 func (g *Game) Run(now Now, input Input, output Output) {
 	var in string
-	var skip bool
+	var skip, isMake bool
 	var a Action
 	var err error
 	for {
 		g.Update(now())
 		data := &ui.Data{
 			LastSkip:   skip,
+			LastMake:   isMake,
 			LastAction: a.Name,
 			Error:      err,
 		}
@@ -108,7 +109,7 @@ func (g *Game) Run(now Now, input Input, output Output) {
 				close(output)
 				return
 			}
-			skip, a, err = g.Act(in)
+			skip, isMake, a, err = g.Act(in)
 		case <-time.After(1 * time.Second):
 		}
 	}
@@ -145,9 +146,11 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 		}
 		data.Actions = append(data.Actions, action)
 	}
-	data.CustomActions = append(data.CustomActions, ui.CustomAction{
+	data.CustomActions = []ui.CustomAction{{
 		Name: "sX: time skip until action X is available",
-	})
+	}, {
+		Name: "mX: make inputs for action X",
+	}}
 }
 
 func (g *Game) PopulateUICosts(a Action, isNested bool) []ui.Cost {
@@ -208,24 +211,39 @@ func (g *Game) Update(now time.Time) {
 	}
 }
 
-func (g *Game) Act(input string) (bool, Action, error) {
-	skip, a, err := g.ParseInput(input)
+func (g *Game) Act(input string) (bool, bool, Action, error) {
+	skip, isMake, a, err := g.ParseInput(input)
 	if err != nil {
-		return skip, a, err
+		return skip, isMake, a, err
 	}
 	if g.IsLocked(a) {
-		return skip, a, fmt.Errorf("action %s is locked", a.Name)
+		return skip, isMake, a, fmt.Errorf("action %s is locked", a.Name)
 	}
 	if err := g.CheckMax(a); err != nil {
-		return skip, a, err
+		return skip, isMake, a, err
 	}
-	skipTime, err := g.GetSkipTime(a, skip)
+	skipTime, err := g.GetSkipTime(a, skip, isMake)
 	if err != nil {
-		return skip, a, err
+		return skip, isMake, a, err
 	}
 	if skip && skipTime > 0 {
 		g.TimeSkip(skipTime)
-		return skip, a, nil
+		return skip, isMake, a, nil
+	}
+	if isMake {
+		for _, c := range a.Costs {
+			r := g.GetResource(c.Name)
+			if r.ProducerAction == "" {
+				continue
+			}
+			nested := fmt.Sprintf("%d", g.ActionToIndex[r.ProducerAction])
+			for i := 0; i < int(g.GetNeededNestedAction(a, c)); i++ {
+				if _, _, _, err := g.Act(nested); err != nil {
+					return skip, isMake, a, err
+				}
+			}
+		}
+		return skip, isMake, a, nil
 	}
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
@@ -236,7 +254,7 @@ func (g *Game) Act(input string) (bool, Action, error) {
 		r := g.GetResource(add.Name)
 		r.Add(g.GetActionAdd(add))
 	}
-	return skip, a, nil
+	return skip, isMake, a, nil
 }
 
 func (g *Game) GetActionAdd(add data.Resource) data.Resource {
@@ -248,20 +266,25 @@ func (g *Game) GetActionAdd(add data.Resource) data.Resource {
 	return add
 }
 
-func (g *Game) ParseInput(input string) (bool, Action, error) {
+func (g *Game) ParseInput(input string) (bool, bool, Action, error) {
 	skip := false
+	isMake := false
 	if strings.HasPrefix(input, "s") {
 		skip = true
 		input = input[1:]
 	}
+	if strings.HasPrefix(input, "m") {
+		isMake = true
+		input = input[1:]
+	}
 	index, err := strconv.Atoi(input)
 	if err != nil {
-		return skip, Action{}, err
+		return skip, isMake, Action{}, err
 	}
 	if index < 0 || index >= len(g.Actions) {
-		return skip, Action{}, fmt.Errorf("invalid index %d", index)
+		return skip, isMake, Action{}, fmt.Errorf("invalid index %d", index)
 	}
-	return skip, g.Actions[index], nil
+	return skip, isMake, g.Actions[index], nil
 }
 
 func (g *Game) IsLocked(a Action) bool {
@@ -284,7 +307,7 @@ func (g *Game) CheckMax(a Action) error {
 	return nil
 }
 
-func (g *Game) GetSkipTime(a Action, skip bool) (time.Duration, error) {
+func (g *Game) GetSkipTime(a Action, skip, isMake bool) (time.Duration, error) {
 	var skipTime time.Duration
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
@@ -299,12 +322,14 @@ func (g *Game) GetSkipTime(a Action, skip bool) (time.Duration, error) {
 			}
 			continue
 		}
-		if skip && r.ProducerAction != "" {
-			nested, err := g.GetSkipTime(g.GetNestedAction(a, c), skip)
+		if (skip || isMake) && r.ProducerAction != "" {
+			nested, err := g.GetSkipTime(g.GetNestedAction(a, c), skip, isMake)
 			if err == nil {
-				duration := nested + time.Second
-				if duration > skipTime {
-					skipTime = duration
+				if skip {
+					duration := nested + time.Second
+					if duration > skipTime {
+						skipTime = duration
+					}
 				}
 				continue
 			}
@@ -319,12 +344,11 @@ func (g *Game) GetNestedAction(a Action, c data.Resource) Action {
 	if r.ProducerAction == "" {
 		return Action{}
 	}
-	cost := g.GetCost(a, c)
-	action := g.GetAction(r.ProducerAction)
-	need := math.Ceil(cost / g.GetActionAdd(action.Adds[0]).Quantity)
+	need := g.GetNeededNestedAction(a, c)
 	res := Action{
 		Adds: []data.Resource{{}},
 	}
+	action := g.GetAction(r.ProducerAction)
 	for _, c := range action.Costs {
 		cost := g.GetCost(action, c) * need
 		res.Costs = append(res.Costs, data.Resource{
@@ -333,6 +357,16 @@ func (g *Game) GetNestedAction(a Action, c data.Resource) Action {
 		})
 	}
 	return res
+}
+
+func (g *Game) GetNeededNestedAction(a Action, c data.Resource) float64 {
+	r := g.GetResource(c.Name)
+	if r.ProducerAction == "" {
+		return 0
+	}
+	cost := g.GetCost(a, c)
+	action := g.GetAction(r.ProducerAction)
+	return math.Ceil(cost / g.GetActionAdd(action.Adds[0]).Quantity)
 }
 
 func (g *Game) TimeSkip(skip time.Duration) {

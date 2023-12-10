@@ -108,6 +108,40 @@ func TestAct(t *testing.T) {
 		inputs: []string{"0", "s0", "1", "0", "s0", "1", "0"},
 		want:   []int{0, 0, 1, 0, 0, 1, 0},
 	}, {
+		name: "make producer action",
+		resources: []data.Resource{{
+			Name: "resource", Quantity: 1, Capacity: -1,
+			ProducerAction: "make resource",
+		}, {
+			Name: "nested", Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "producer", ProductionFactor: 1,
+			}},
+		}, {
+			Name: "producer", Capacity: -1,
+		}, {
+			Name: "skip", Capacity: -1,
+		}},
+		actions: []Action{{
+			Name: "producer",
+			Costs: []data.Resource{{
+				Name: "resource", Quantity: 1, CostExponentBase: 2,
+			}},
+			Adds: []data.Resource{{
+				Name: "producer", Quantity: 1,
+			}},
+		}, {
+			Name: "make resource",
+			Costs: []data.Resource{{
+				Name: "nested", Quantity: 1,
+			}},
+			Adds: []data.Resource{{
+				Name: "resource", Quantity: 1,
+			}},
+		}},
+		inputs: []string{"0", "s0", "m0", "0", "s0", "m0", "0"},
+		want:   []int{0, 0, 2, 0, 0, 4, 0},
+	}, {
 		name: "add 1 capacity",
 		resources: []data.Resource{{
 			Name: "resource",
@@ -168,7 +202,7 @@ func TestAct(t *testing.T) {
 			t.Errorf("[%s] Validate got err %v", in.name, err)
 		}
 		for index, input := range in.inputs {
-			if _, _, err := g.Act(input); err != nil {
+			if _, _, _, err := g.Act(input); err != nil {
 				t.Errorf("[%s] index %d got err %v", in.name, index, err)
 			}
 			want := in.want[index]

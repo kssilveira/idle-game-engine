@@ -8,6 +8,7 @@ import (
 
 type Data struct {
 	LastSkip      bool
+	LastMake      bool
 	LastAction    string
 	Error         error
 	Resources     []Resource

@@ -13,6 +13,7 @@ XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Bonfire] Barn -(wood 50) +(Barn 1)
 XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
+mX: make inputs for action X
 last action: 
 ###
 [Calendar] time 1
@@ -30,6 +31,7 @@ XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Bonfire] Barn (1) -(wood 87.50) +(Barn 1)
 XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
+mX: make inputs for action X
 last action: Barn
 ###
 [Calendar] time 1
@@ -47,6 +49,7 @@ XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Bonfire] Barn (1) -(wood 87.50) +(Barn 1)
 XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
+mX: make inputs for action X
 last action: Gather catnip
 ###
 [Calendar] time 2
@@ -64,6 +67,7 @@ XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Bonfire] Barn (2) -(wood 62.50/153.12) +(Barn 1)
 XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
+mX: make inputs for action X
 last action: Barn
 ###
 [Calendar] time 2
@@ -81,4 +85,5 @@ XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Bonfire] Barn (2) -(wood 62.50/153.12) +(Barn 1)
 XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 sX: time skip until action X is available
+mX: make inputs for action X
 last action: Gather catnip
