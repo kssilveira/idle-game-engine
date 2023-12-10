@@ -165,7 +165,7 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 		for _, r := range a.Adds {
 			action.Adds = append(action.Adds, ui.Add{
 				Name:     r.Name,
-				Quantity: r.Quantity,
+				Quantity: g.GetActionAdd(r).Quantity,
 				Capacity: r.Capacity,
 			})
 		}

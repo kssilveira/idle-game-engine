@@ -79,7 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- make action show craft bonus
 - make action skip craft time
 - make action craft
 
