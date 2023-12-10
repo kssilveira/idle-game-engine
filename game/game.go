@@ -210,12 +210,14 @@ func (g *Game) Act(in string) (data.ParsedInput, error) {
 	if err := g.CheckMax(input.Action); err != nil {
 		return input, err
 	}
-	skipTime, err := g.GetSkipTime(input.Action, input)
-	if err != nil {
-		return input, err
-	}
-	if input.IsSkip && skipTime > 0 {
-		g.TimeSkip(skipTime)
+	if input.IsSkip {
+		skipTime, err := g.GetSkipTime(input.Action)
+		if err != nil {
+			return input, err
+		}
+		if skipTime > 0 {
+			g.TimeSkip(skipTime)
+		}
 		return input, nil
 	}
 	if input.IsMake {
@@ -232,6 +234,11 @@ func (g *Game) Act(in string) (data.ParsedInput, error) {
 			}
 		}
 		return input, nil
+	}
+	for _, c := range input.Action.Costs {
+		if g.GetResource(c.Name).Quantity < g.GetCost(input.Action, c) {
+			return input, fmt.Errorf("not enough %s", c.Name)
+		}
 	}
 	for _, c := range input.Action.Costs {
 		r := g.GetResource(c.Name)
@@ -295,7 +302,7 @@ func (g *Game) CheckMax(a data.Action) error {
 	return nil
 }
 
-func (g *Game) GetSkipTime(a data.Action, input data.ParsedInput) (time.Duration, error) {
+func (g *Game) GetSkipTime(a data.Action) (time.Duration, error) {
 	var skipTime time.Duration
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
@@ -303,21 +310,19 @@ func (g *Game) GetSkipTime(a data.Action, input data.ParsedInput) (time.Duration
 		if r.Quantity >= cost {
 			continue
 		}
-		if input.IsSkip && g.GetRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
+		if g.GetRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
 			duration := g.GetDuration(r, cost) + time.Second
 			if duration > skipTime {
 				skipTime = duration
 			}
 			continue
 		}
-		if (input.IsSkip || input.IsMake) && r.ProducerAction != "" {
-			nested, err := g.GetSkipTime(g.GetNestedAction(a, c), input)
+		if r.ProducerAction != "" {
+			nested, err := g.GetSkipTime(g.GetNestedAction(a, c))
 			if err == nil {
-				if input.IsSkip {
-					duration := nested + time.Second
-					if duration > skipTime {
-						skipTime = duration
-					}
+				duration := nested + time.Second
+				if duration > skipTime {
+					skipTime = duration
 				}
 				continue
 			}

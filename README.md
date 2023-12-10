@@ -79,7 +79,6 @@ Edges:
 
 More features from kittens game:
 
-- change skip to not act
 - minimize solution
 - craft partial action
 
