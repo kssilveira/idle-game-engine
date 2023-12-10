@@ -292,18 +292,50 @@ func (g *Game) GetSkipTime(a Action, skip bool) (time.Duration, error) {
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
 		cost := g.GetCost(a, c)
-		if r.Quantity < cost {
-			if skip && g.GetRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
-				duration := g.GetDuration(r, cost) + time.Second
+		if r.Quantity >= cost {
+			continue
+		}
+		if skip && g.GetRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
+			duration := g.GetDuration(r, cost) + time.Second
+			if duration > skipTime {
+				skipTime = duration
+			}
+			continue
+		}
+		if skip && r.ProducerAction != "" {
+			nested, err := g.GetSkipTime(g.GetNestedAction(a, c), skip)
+			if err == nil {
+				duration := nested + time.Second
 				if duration > skipTime {
 					skipTime = duration
 				}
-			} else {
-				return 0, fmt.Errorf("not enough %s", c.Name)
+				continue
 			}
 		}
+		return 0, fmt.Errorf("not enough %s", c.Name)
 	}
 	return skipTime, nil
+}
+
+func (g *Game) GetNestedAction(a Action, c data.Resource) Action {
+	r := g.GetResource(c.Name)
+	if r.ProducerAction == "" {
+		return Action{}
+	}
+	cost := g.GetCost(a, c)
+	action := g.GetAction(r.ProducerAction)
+	need := math.Ceil(cost / g.GetActionAdd(action.Adds[0]).Quantity)
+	res := Action{
+		Adds: []data.Resource{{}},
+	}
+	for _, c := range action.Costs {
+		cost := g.GetCost(action, c) * need
+		res.Costs = append(res.Costs, data.Resource{
+			Name:     c.Name,
+			Quantity: cost,
+		})
+	}
+	return res
 }
 
 func (g *Game) TimeSkip(skip time.Duration) {

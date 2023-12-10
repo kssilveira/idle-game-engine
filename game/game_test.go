@@ -74,6 +74,40 @@ func TestAct(t *testing.T) {
 		inputs: []string{"0", "s0", "0", "s0", "0"},
 		want:   []int{0, 3, 1, 5, 1},
 	}, {
+		name: "skip producer action",
+		resources: []data.Resource{{
+			Name: "resource", Quantity: 1, Capacity: -1,
+			ProducerAction: "make resource",
+		}, {
+			Name: "nested", Capacity: -1,
+			Producers: []data.Resource{{
+				Name: "producer", ProductionFactor: 1,
+			}},
+		}, {
+			Name: "producer", Capacity: -1,
+		}, {
+			Name: "skip", Capacity: -1,
+		}},
+		actions: []Action{{
+			Name: "producer",
+			Costs: []data.Resource{{
+				Name: "resource", Quantity: 1,
+			}},
+			Adds: []data.Resource{{
+				Name: "producer", Quantity: 1,
+			}},
+		}, {
+			Name: "make resource",
+			Costs: []data.Resource{{
+				Name: "nested", Quantity: 1,
+			}},
+			Adds: []data.Resource{{
+				Name: "resource", Quantity: 1,
+			}},
+		}},
+		inputs: []string{"0", "s0", "1", "0", "s0", "1", "0"},
+		want:   []int{0, 0, 1, 0, 0, 1, 0},
+	}, {
 		name: "add 1 capacity",
 		resources: []data.Resource{{
 			Name: "resource",
@@ -129,7 +163,7 @@ func TestAct(t *testing.T) {
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))
 		g.AddResources(in.resources)
-		g.Actions = in.actions
+		g.AddActions(in.actions)
 		if err := g.Validate(); err != nil {
 			t.Errorf("[%s] Validate got err %v", in.name, err)
 		}
