@@ -169,6 +169,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Hut", ProductionFactor: 75,
+		}, {
+			Name: "Log House", ProductionFactor: 50,
 		}},
 	}, {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
@@ -303,6 +305,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Academy", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Warehouse", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Log House", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -469,6 +473,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "slab", Quantity: 2, CostExponentBase: 1.15,
 		}},
 		Adds: []data.Resource{{Name: "Warehouse", Quantity: 1}},
+	}, {
+		Name: "Log House", Type: "Bonfire", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
+		}, {
+			Name: "minerals", Quantity: 250, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{
+			Name: "Log House", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
 	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
@@ -656,6 +672,7 @@ const (
 	unicpasture
 	academy
 	warehouse
+	loghouse
 	woodcutter
 	scholar
 	farmer
@@ -704,6 +721,7 @@ const (
 	sunicpasture
 	sacademy
 	swarehouse
+	sloghouse
 	swoodcutter
 	sscholar
 	sfarmer
@@ -780,11 +798,13 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{smineralhoes, mineralhoes}, 1},
 		{[]int{smineralaxe, mineralaxe}, 1},
 		{[]int{sbolas, bolas}, 1},
+		{[]int{woodcutter}, 1}, // hut
+		{[]int{sloghouse, loghouse, swoodcutter, woodcutter}, 1},
+		{[]int{sloghouse, loghouse, sfarmer, farmer}, 20},
 
 		{[]int{smetalworking, metalworking}, 1},
 		{[]int{ssmelter, smelter}, 20},
 		{[]int{activesmelter}, 1},
-		{[]int{woodcutter}, 1}, // hut
 		{[]int{sironhoes, ironhoes}, 1},
 		{[]int{sironaxe, ironaxe}, 1},
 		{[]int{sexpandedbarns, expandedbarns}, 1},
@@ -797,6 +817,7 @@ func Solve(input chan string, sleepMS int) {
 		{[]int{sworkshop, workshop}, 10},
 		{[]int{ssmelter, smelter}, 10},
 		{[]int{spasture, pasture}, 10},
+		{[]int{sloghouse, loghouse, sfarmer, farmer}, 10},
 		{[]int{shuntingarmor, huntingarmor}, 1},
 	} {
 		for i := 0; i < one.count; i++ {

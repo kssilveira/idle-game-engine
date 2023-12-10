@@ -41,6 +41,7 @@ digraph {
   "Bolas" -> "hunter" [color="green"];
   "Hunting Armor" -> "hunter" [color="green"];
   "Hut" -> "catpower" [color="limegreen"];
+  "Log House" -> "catpower" [color="limegreen"];
   "miner" -> "minerals" [color="green"];
   "Mine" -> "miner" [color="green"];
   "minerals" -> "Active Smelter" [color="red"];
@@ -95,6 +96,10 @@ digraph {
   "beam" -> "Warehouse" [color="orange"];
   "slab" -> "Warehouse" [color="orange"];
   "Construction" -> "Warehouse" [color="blue"];
+  "wood" -> "Log House" [color="orange"];
+  "minerals" -> "Log House" [color="orange"];
+  "Log House" -> "kitten" [color="limegreen"];
+  "Construction" -> "Log House" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
@@ -199,6 +204,7 @@ digraph {
   "Unic. Pasture" [shape="box3d"];
   "Academy" [shape="box3d"];
   "Warehouse" [shape="box3d"];
+  "Log House" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -238,6 +244,7 @@ digraph {
   "Unic. Pasture" [shape="box3d"];
   "Academy" [shape="box3d"];
   "Warehouse" [shape="box3d"];
+  "Log House" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

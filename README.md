@@ -81,11 +81,6 @@ More features from kittens game:
 
 - Bonfire Workshop
   - craft 6%
-- Bonfire Log House
-  - wood 200 230 rate 1.15
-  - minerals 250 287.5
-  - catpower cap 50
-  - kittens cap 1
 - Workshop Reinforced Saw
   - unlocked by Construction
   - iron 1000
