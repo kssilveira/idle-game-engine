@@ -134,6 +134,13 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
+		}, {
+			Name: "Warehouse", ProductionFactor: 262.5,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
+			}},
 		}},
 	}, {
 		Name: "science", Type: "Resource", StartCapacity: 250,
@@ -180,6 +187,13 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
+		}, {
+			Name: "Warehouse", ProductionFactor: 350,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
+			}},
 		}},
 	}, {
 		Name: "iron", Type: "Resource", StartCapacity: 50,
@@ -188,6 +202,13 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 50,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
+			}},
+		}, {
+			Name: "Warehouse", ProductionFactor: 43.75,
 			ProductionBonus: []data.Resource{{
 				Name: "Expanded Barns", ProductionFactor: 0.75,
 			}, {
@@ -280,6 +301,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Unic. Pasture", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Academy", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Warehouse", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -438,6 +461,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Quantity: 100, CostExponentBase: 1.15,
 		}},
 		Adds: []data.Resource{{Name: "Academy", Quantity: 1}},
+	}, {
+		Name: "Warehouse", Type: "Bonfire", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "beam", Quantity: 1.5, CostExponentBase: 1.15,
+		}, {
+			Name: "slab", Quantity: 2, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Warehouse", Quantity: 1}},
 	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
@@ -624,6 +655,7 @@ const (
 	pasture
 	unicpasture
 	academy
+	warehouse
 	woodcutter
 	scholar
 	farmer
@@ -671,6 +703,7 @@ const (
 	spasture
 	sunicpasture
 	sacademy
+	swarehouse
 	swoodcutter
 	sscholar
 	sfarmer

@@ -11,6 +11,7 @@ digraph {
   "Animal Husbandry" -> "Pasture" [color="blue"];
   "Animal Husbandry" -> "Unic. Pasture" [color="blue"];
   "Mathematics" -> "Academy" [color="blue"];
+  "Construction" -> "Warehouse" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -51,6 +52,7 @@ digraph {
   "Pasture" [shape="box3d"];
   "Unic. Pasture" [shape="box3d"];
   "Academy" [shape="box3d"];
+  "Warehouse" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -88,6 +90,7 @@ digraph {
   "Pasture" [shape="box3d"];
   "Unic. Pasture" [shape="box3d"];
   "Academy" [shape="box3d"];
+  "Warehouse" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

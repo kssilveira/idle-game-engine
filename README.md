@@ -81,30 +81,23 @@ More features from kittens game:
 
 - Bonfire Workshop
   - craft 6%
-- Bonfire Warehouse
-  - unlocked by Construction
-  - beam 1.5 TODO
-  - slab 2
-  - wood cap 262.5
-  - minerals cap 350
-  - iron cap 43.75
 - Bonfire Log House
-  - wood 200 TODO
-  - minerals 250
+  - wood 200 230 rate 1.15
+  - minerals 250 287.5
   - catpower cap 50
   - kittens cap 1
-- Upgrade Reinforced Saw
+- Workshop Reinforced Saw
   - unlocked by Construction
   - iron 1000
   - science 2500
   - lumber mill 20%
-- Upgrade Composite Bow
+- Workshop Composite Bow
   - unlocked by Construction
   - wood 200
   - iron 100
   - science 500
   - hunter 50%
-- Upgrade Catnip Enrichment
+- Workshop Catnip Enrichment
   - unlocked by Construction
   - catnip 5000
   - science 500

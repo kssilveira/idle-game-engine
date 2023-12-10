@@ -29,6 +29,9 @@ digraph {
   "Barn" -> "wood" [color="limegreen"];
   "Expanded Barns" -> "Barn" [color="green"];
   "Reinforced Barns" -> "Barn" [color="green"];
+  "Warehouse" -> "wood" [color="limegreen"];
+  "Expanded Barns" -> "Warehouse" [color="green"];
+  "Reinforced Barns" -> "Warehouse" [color="green"];
   "scholar" -> "science" [color="green"];
   "Library" -> "science" [color="green"];
   "Academy" -> "science" [color="green"];
@@ -42,8 +45,10 @@ digraph {
   "Mine" -> "miner" [color="green"];
   "minerals" -> "Active Smelter" [color="red"];
   "Barn" -> "minerals" [color="limegreen"];
+  "Warehouse" -> "minerals" [color="limegreen"];
   "Active Smelter" -> "iron" [color="green"];
   "Barn" -> "iron" [color="limegreen"];
+  "Warehouse" -> "iron" [color="limegreen"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -87,6 +92,9 @@ digraph {
   "minerals" -> "Academy" [color="orange"];
   "science" -> "Academy" [color="orange"];
   "Mathematics" -> "Academy" [color="blue"];
+  "beam" -> "Warehouse" [color="orange"];
+  "slab" -> "Warehouse" [color="orange"];
+  "Construction" -> "Warehouse" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
@@ -190,6 +198,7 @@ digraph {
   "Pasture" [shape="box3d"];
   "Unic. Pasture" [shape="box3d"];
   "Academy" [shape="box3d"];
+  "Warehouse" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -228,6 +237,7 @@ digraph {
   "Pasture" [shape="box3d"];
   "Unic. Pasture" [shape="box3d"];
   "Academy" [shape="box3d"];
+  "Warehouse" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
