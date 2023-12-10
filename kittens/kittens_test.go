@@ -191,7 +191,7 @@ func TestRun(t *testing.T) {
 		output := make(chan *ui.Data)
 		go g.Run(nowfn, input, output)
 		for data := range output {
-			textui.Show(logger, "###", data, in.isHTML)
+			textui.Show(logger, "###", data, in.isHTML, false /* showActionNumber */)
 		}
 		name := filepath.Join("testdata", strings.Replace(in.name, " ", "_", -1)+".out")
 		if err := os.WriteFile(name, buf.Bytes(), 0644); err != nil {

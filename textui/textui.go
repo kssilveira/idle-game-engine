@@ -8,12 +8,12 @@ import (
 	"github.com/kssilveira/idle-game-engine/ui"
 )
 
-func Show(logger *log.Logger, separator string, data *ui.Data, isHTML bool) {
+func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActionNumber bool) {
 	if separator != "" {
 		logger.Printf("%s", separator)
 	}
 	ShowResources(logger, data)
-	ShowActions(logger, data, isHTML)
+	ShowActions(logger, data, isHTML, showActionNumber)
 	skip := ""
 	if data.LastSkip {
 		skip = "skip "
@@ -66,7 +66,7 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 	}
 }
 
-func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
+func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber bool) {
 	for i, a := range data.Actions {
 		if a.Locked {
 			continue
@@ -111,7 +111,11 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML bool) {
 			adds = append(adds, one)
 		}
 		parts = append(parts, strings.Join(adds, ", "))
-		logger.Printf("%2d: %s[%s] %s)\n", i, status, a.Type, strings.Join(parts, ""))
+		number := "XX"
+		if showActionNumber {
+			number = fmt.Sprintf("%2d", i)
+		}
+		logger.Printf("%s: %s[%s] %s)\n", number, status, a.Type, strings.Join(parts, ""))
 	}
 	for _, a := range data.CustomActions {
 		logger.Printf("%s\n", a.Name)

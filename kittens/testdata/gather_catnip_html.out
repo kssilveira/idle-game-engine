@@ -3,7 +3,7 @@
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [Village] happiness 1.10
- 0: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
+XX: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
 sX: time skip until action X is available
 last action: 
 ###
@@ -12,9 +12,9 @@ last action:
 [Calendar] day_of_year 1
 [Resource] catnip 1/5000
 [Village] happiness 1.10
- 0: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
- 1: [Bonfire] <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 1/100) +(wood 1)
- 2: [Bonfire] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 1/10) +(Catnip Field 1)
+XX: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
+XX: [Bonfire] <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 1/100) +(wood 1)
+XX: [Bonfire] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 1/10) +(Catnip Field 1)
 sX: time skip until action X is available
 last action: Gather catnip
 ###
@@ -23,8 +23,8 @@ last action: Gather catnip
 [Calendar] day_of_year 1
 [Resource] catnip 2/5000
 [Village] happiness 1.10
- 0: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
- 1: [Bonfire] <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 2/100) +(wood 1)
- 2: [Bonfire] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 2/10) +(Catnip Field 1)
+XX: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
+XX: [Bonfire] <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 2/100) +(wood 1)
+XX: [Bonfire] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 2/10) +(Catnip Field 1)
 sX: time skip until action X is available
 last action: Gather catnip

@@ -103,10 +103,10 @@ func handleOutput(output game.Output, last *string, waiting chan bool, refreshed
 	logger := log.New(os.Stdout, "" /* prefix */, 0 /* flags */)
 	separator := "\033[H\033[2J"
 	for data := range output {
-		textui.Show(logger, separator, data, false /* isHTML */)
+		textui.Show(logger, separator, data, false /* isHTML */, true /* showActionNumber */)
 		var buf bytes.Buffer
 		buflogger := log.New(&buf, "" /* prefix */, 0 /* flags */)
-		textui.Show(buflogger, "" /* separator */, data, true /* isHTML */)
+		textui.Show(buflogger, "" /* separator */, data, true /* isHTML */, true /* showActionNumber */)
 		*last = buf.String()
 		select {
 		case <-waiting:
