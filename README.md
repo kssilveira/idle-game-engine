@@ -79,10 +79,9 @@ Edges:
 
 More features from kittens game:
 
-- craft partial action
 - change skip to not act
-- change craft to symbol
 - minimize solution
+- craft partial action
 
 - Bonfire Workshop
   - craft 6%

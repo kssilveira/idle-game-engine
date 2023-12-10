@@ -263,10 +263,10 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "beam", Type: "Resource", Capacity: -1,
-		ProducerAction: "#beam",
+		ProducerAction: "@beam",
 	}, {
 		Name: "slab", Type: "Resource", Capacity: -1,
-		ProducerAction: "#slab",
+		ProducerAction: "@slab",
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
@@ -526,14 +526,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unicorns", Quantity: 0.05,
 		}},
 	}, {
-		Name: "#beam", Type: "Craft", UnlockedBy: "Construction",
+		Name: "@beam", Type: "Craft", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
 		Adds: []data.Resource{{
 			Name: "beam", Quantity: 1,
 			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
 		}},
 	}, {
-		Name: "#slab", Type: "Craft", UnlockedBy: "Construction",
+		Name: "@slab", Type: "Craft", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "minerals", Quantity: 250}},
 		Adds: []data.Resource{{
 			Name: "slab", Quantity: 1,
