@@ -81,10 +81,6 @@ More features from kittens game:
 
 - Bonfire Workshop
   - craft 6%
-- Science Currency
-  - unlocked by Civil Service
-  - science 2200
-  - TODO
 - Bonfire Academy
   - unlocked by Mathematics
   - wood 50 57.5 rate 1.15
