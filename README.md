@@ -81,13 +81,6 @@ More features from kittens game:
 
 - Bonfire Workshop
   - craft 6%
-- Bonfire Academy
-  - unlocked by Mathematics
-  - wood 50 57.5 rate 1.15
-  - minerals 70 80.5
-  - science 100 115
-  - science bonus 20%
-  - science cap 500
 - Upgrade Celestial Mechanics
   - unlocked by Mathematics
   - science 250

@@ -10,6 +10,7 @@ digraph {
   "Smelter" -> "Active Smelter" [color="blue"];
   "Animal Husbandry" -> "Pasture" [color="blue"];
   "Animal Husbandry" -> "Unic. Pasture" [color="blue"];
+  "Mathematics" -> "Academy" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -47,6 +48,7 @@ digraph {
   "Active Smelter" [shape="box3d"];
   "Pasture" [shape="box3d"];
   "Unic. Pasture" [shape="box3d"];
+  "Academy" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -81,6 +83,7 @@ digraph {
   "Active Smelter" [shape="box3d"];
   "Pasture" [shape="box3d"];
   "Unic. Pasture" [shape="box3d"];
+  "Academy" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
