@@ -86,8 +86,8 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 		}
 		parts := []string{name}
 		costs := getCosts(a.Costs, &status)
-		if len(costs) > 0 {
-			parts = append(parts, fmt.Sprintf(" -(%s)", strings.Join(costs, ", ")))
+		if costs != "" {
+			parts = append(parts, fmt.Sprintf(" -(%s)", costs))
 		}
 		parts = append(parts, " +(")
 		adds := []string{}
@@ -110,7 +110,7 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 	}
 }
 
-func getCosts(costs []ui.Cost, status *string) []string {
+func getCosts(costs []ui.Cost, status *string) string {
 	res := []string{}
 	for _, c := range costs {
 		overCap := ""
@@ -129,12 +129,12 @@ func getCosts(costs []ui.Cost, status *string) []string {
 		var status string
 		nested := getCosts(c.Costs, &status)
 		extra := ""
-		if len(nested) > 0 {
-			extra = fmt.Sprintf(" (%s)", strings.Join(nested, ", "))
+		if nested != "" {
+			extra = fmt.Sprintf(" (%s)", nested)
 		}
 		res = append(res, fmt.Sprintf("%s %s%s", c.Name, out, extra))
 	}
-	return res
+	return strings.Join(res, ", ")
 }
 
 func toString(n float64) string {
