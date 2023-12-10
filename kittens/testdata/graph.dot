@@ -116,9 +116,9 @@ digraph {
   "Send hunters" -> "ivory" [color="limegreen"];
   "Send hunters" -> "unicorns" [color="limegreen"];
   "Archery" -> "Send hunters" [color="blue"];
-  "wood" -> "🛠️  beam" [color="orange"];
-  "🛠️  beam" -> "beam" [color="limegreen"];
-  "Construction" -> "🛠️  beam" [color="blue"];
+  "wood" -> "#beam" [color="orange"];
+  "#beam" -> "beam" [color="limegreen"];
+  "Construction" -> "#beam" [color="blue"];
   "catpower" -> "Lizards" [color="orange"];
   "gold" -> "Lizards" [color="orange"];
   "minerals" -> "Lizards" [color="orange"];
@@ -268,7 +268,7 @@ digraph {
   "hunter" [shape="house"];
   "miner" [shape="house"];
   "Send hunters" [shape="house"];
-  "🛠️  beam" [shape="cds"];
+  "#beam" [shape="cds"];
   "Lizards" [shape="cds"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
