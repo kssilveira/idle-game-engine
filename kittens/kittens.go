@@ -524,7 +524,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unicorns", Quantity: 0.05,
 		}},
 	}, {
-		Name: "beam", Type: "Craft", UnlockedBy: "Construction",
+		Name: "🛠️  beam", Type: "Craft", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
 		Adds:  []data.Resource{{Name: "beam", Quantity: 1}},
 	}, {
