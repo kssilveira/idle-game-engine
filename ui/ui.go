@@ -37,6 +37,7 @@ type Cost struct {
 	Capacity float64
 	Cost     float64
 	Duration time.Duration
+	Costs    []Cost
 }
 
 type Add struct {

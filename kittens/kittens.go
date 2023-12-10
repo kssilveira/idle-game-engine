@@ -263,6 +263,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "beam", Type: "Resource", Capacity: -1,
+		ProducerAction: "🛠️  beam",
 	}, {
 		Name: "slab", Type: "Resource", Capacity: -1,
 	}, {
@@ -404,7 +405,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Catnip Enrichment", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}})
-	g.Actions = []game.Action{{
+	g.AddActions([]game.Action{{
 		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
 		Adds: []data.Resource{{Name: "catnip", Quantity: 1}},
 	}, {
@@ -696,7 +697,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Quantity: 500,
 		}},
 		Adds: []data.Resource{{Name: "Catnip Enrichment", Quantity: 1}},
-	}}
+	}})
 	return g
 }
 

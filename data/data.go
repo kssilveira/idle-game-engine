@@ -36,6 +36,8 @@ type Resource struct {
 
 	// cost = Quantity * pow(CostExponentBase, add.Quantity)
 	CostExponentBase float64
+
+	ProducerAction string
 }
 
 func (r *Resource) Add(add Resource) {

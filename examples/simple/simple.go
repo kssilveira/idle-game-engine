@@ -22,7 +22,7 @@ func main() {
 	}, {
 		Name: "Catnip Field", Capacity: -1,
 	}})
-	g.Actions = []game.Action{{
+	g.AddActions([]game.Action{{
 		Name: "Catnip Field",
 		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
@@ -30,7 +30,7 @@ func main() {
 		Adds: []data.Resource{{
 			Name: "Catnip Field", Quantity: 1,
 		}},
-	}}
+	}})
 	if err := g.Validate(); err != nil {
 		log.Fatal(err)
 	}

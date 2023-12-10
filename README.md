@@ -79,13 +79,15 @@ Edges:
 
 More features from kittens game:
 
+- make action show craft bonus
+- make action skip craft time
+- make action craft
+
 - Bonfire Workshop
   - craft 6%
 - Workshop Reinforced Saw
   - lumber mill 20%
 - Craft beam
-  - unlocked by Construction
-  - wood 175
 - Craft slab
   - unlocked by Construction
   - minerals 250

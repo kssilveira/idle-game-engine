@@ -16,7 +16,9 @@ type Game struct {
 	// maps resource name to index in Resources
 	ResourceToIndex map[string]int
 	Actions         []Action
-	Now             time.Time
+	// maps action name to index in Actions
+	ActionToIndex map[string]int
+	Now           time.Time
 }
 
 type Action struct {
@@ -36,6 +38,7 @@ func NewGame(now time.Time) *Game {
 	g := &Game{
 		Now:             now,
 		ResourceToIndex: map[string]int{},
+		ActionToIndex:   map[string]int{},
 	}
 	g.AddResources([]data.Resource{{
 		Name: "time", Type: "Calendar", Capacity: -1,
@@ -50,6 +53,14 @@ func (g *Game) AddResources(resources []data.Resource) {
 		g.ResourceToIndex[resource.Name] = len(g.Resources)
 		cp := resource
 		g.Resources = append(g.Resources, &cp)
+	}
+}
+
+func (g *Game) AddActions(actions []Action) {
+	for _, action := range actions {
+		g.ActionToIndex[action.Name] = len(g.Actions)
+		cp := action
+		g.Actions = append(g.Actions, cp)
 	}
 }
 
@@ -127,13 +138,29 @@ func (g *Game) PopulateUIActions(data *ui.Data) {
 		for _, c := range a.Costs {
 			cost := g.GetCost(a, c)
 			r := g.GetResource(c.Name)
-			action.Costs = append(action.Costs, ui.Cost{
+			uicost := ui.Cost{
 				Name:     c.Name,
 				Quantity: r.Quantity,
 				Capacity: r.Capacity,
 				Cost:     cost,
 				Duration: g.GetDuration(r, cost),
-			})
+			}
+			if r.ProducerAction != "" {
+				action := g.GetAction(r.ProducerAction)
+				need := math.Ceil(cost / g.GetActionAdd(action.Adds[0]).Quantity)
+				for _, c := range action.Costs {
+					cost := g.GetCost(action, c) * need
+					r := g.GetResource(c.Name)
+					uicost.Costs = append(uicost.Costs, ui.Cost{
+						Name:     c.Name,
+						Quantity: r.Quantity,
+						Capacity: -1,
+						Cost:     cost,
+						Duration: g.GetDuration(r, cost),
+					})
+				}
+			}
+			action.Costs = append(action.Costs, uicost)
 		}
 		for _, r := range a.Adds {
 			action.Adds = append(action.Adds, ui.Add{
@@ -210,14 +237,18 @@ func (g *Game) Act(input string) (bool, Action, error) {
 	}
 	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
-		bonus := 1.0
-		for _, p := range add.ProductionBonus {
-			bonus += g.GetOneRate(p)
-		}
-		add.Quantity *= bonus
-		r.Add(add)
+		r.Add(g.GetActionAdd(add))
 	}
 	return skip, a, nil
+}
+
+func (g *Game) GetActionAdd(add data.Resource) data.Resource {
+	bonus := 1.0
+	for _, p := range add.ProductionBonus {
+		bonus += g.GetOneRate(p)
+	}
+	add.Quantity *= bonus
+	return add
 }
 
 func (g *Game) ParseInput(input string) (bool, Action, error) {
@@ -288,6 +319,11 @@ func (g *Game) ValidateResource(r *data.Resource) error {
 			return err
 		}
 	}
+	for _, name := range []string{r.ProducerAction} {
+		if err := g.ValidateActionName(name); err != nil {
+			return err
+		}
+	}
 	for _, list := range append(
 		[][]data.Resource{}, r.Producers, r.CapacityProducers, r.ProductionBonus, r.OnGone) {
 		for _, r := range list {
@@ -302,6 +338,13 @@ func (g *Game) ValidateResource(r *data.Resource) error {
 func (g *Game) ValidateResourceName(name string) error {
 	if name != "" && !g.HasResource(name) {
 		return fmt.Errorf("invalid resource name %s", name)
+	}
+	return nil
+}
+
+func (g *Game) ValidateActionName(name string) error {
+	if name != "" && !g.HasAction(name) {
+		return fmt.Errorf("invalid action name %s", name)
 	}
 	return nil
 }
@@ -377,6 +420,10 @@ func (g *Game) GetResource(name string) *data.Resource {
 	return g.Resources[g.ResourceToIndex[name]]
 }
 
+func (g *Game) GetAction(name string) Action {
+	return g.Actions[g.ActionToIndex[name]]
+}
+
 func (g *Game) GetCost(a Action, c data.Resource) float64 {
 	base := c.CostExponentBase
 	if base == 0 {
@@ -387,5 +434,10 @@ func (g *Game) GetCost(a Action, c data.Resource) float64 {
 
 func (g *Game) HasResource(name string) bool {
 	_, ok := g.ResourceToIndex[name]
+	return ok
+}
+
+func (g *Game) HasAction(name string) bool {
+	_, ok := g.ActionToIndex[name]
 	return ok
 }

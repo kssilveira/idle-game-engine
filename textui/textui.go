@@ -83,20 +83,7 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 		parts := []string{name}
 		costs := []string{}
 		for _, c := range a.Costs {
-			overCap := ""
-			if c.Cost > c.Capacity && c.Capacity != -1 {
-				overCap = "*"
-				status = "[*] "
-			}
-			duration := ""
-			if c.Duration != 0 {
-				duration = fmt.Sprintf(" %s", c.Duration)
-			}
-			out := fmt.Sprintf("%s/%s%s%s", toString(c.Quantity), toString(c.Cost), overCap, duration)
-			if c.Quantity >= c.Cost {
-				out = fmt.Sprintf("%s", toString(c.Cost))
-			}
-			costs = append(costs, fmt.Sprintf("%s %s", c.Name, out))
+			costs = append(costs, getCost(c, &status))
 		}
 		if len(costs) > 0 {
 			parts = append(parts, fmt.Sprintf(" -(%s)", strings.Join(costs, ", ")))
@@ -120,6 +107,32 @@ func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 	for _, a := range data.CustomActions {
 		logger.Printf("%s\n", a.Name)
 	}
+}
+
+func getCost(c ui.Cost, status *string) string {
+	overCap := ""
+	if c.Cost > c.Capacity && c.Capacity != -1 {
+		overCap = "*"
+		*status = "[*] "
+	}
+	duration := ""
+	if c.Duration != 0 {
+		duration = fmt.Sprintf(" %s", c.Duration)
+	}
+	out := fmt.Sprintf("%s/%s%s%s", toString(c.Quantity), toString(c.Cost), overCap, duration)
+	if c.Quantity >= c.Cost {
+		out = fmt.Sprintf("%s", toString(c.Cost))
+	}
+	costs := []string{}
+	for _, c := range c.Costs {
+		var status string
+		costs = append(costs, getCost(c, &status))
+	}
+	extra := ""
+	if len(costs) > 0 {
+		extra = fmt.Sprintf(" (%s)", strings.Join(costs, ", "))
+	}
+	return fmt.Sprintf("%s %s%s", c.Name, out, extra)
 }
 
 func toString(n float64) string {
