@@ -18,6 +18,12 @@ digraph {
   "catnip" -> "miner" [color="red"];
   "Pasture" -> "miner" [color="red"];
   "Unic. Pasture" -> "miner" [color="red"];
+  "catnip" -> "priest" [color="red"];
+  "Pasture" -> "priest" [color="red"];
+  "Unic. Pasture" -> "priest" [color="red"];
+  "catnip" -> "geologist" [color="red"];
+  "Pasture" -> "geologist" [color="red"];
+  "Unic. Pasture" -> "geologist" [color="red"];
   "farmer" -> "catnip" [color="green"];
   "Mineral Hoes" -> "farmer" [color="green"];
   "Iron Hoes" -> "farmer" [color="green"];
@@ -67,6 +73,7 @@ digraph {
   "Barn" -> "iron" [color="limegreen"];
   "Warehouse" -> "iron" [color="limegreen"];
   "Harbour" -> "iron" [color="limegreen"];
+  "geologist" -> "coal" [color="green"];
   "Quarry" -> "coal" [color="green"];
   "Barn" -> "coal" [color="limegreen"];
   "Warehouse" -> "coal" [color="limegreen"];
@@ -94,6 +101,8 @@ digraph {
   "farmer" -> "all kittens" [color="green"];
   "hunter" -> "all kittens" [color="green"];
   "miner" -> "all kittens" [color="green"];
+  "priest" -> "all kittens" [color="green"];
+  "geologist" -> "all kittens" [color="green"];
   "furs" -> "all kittens" [color="red"];
   "Tradepost" -> "all kittens" [color="red"];
   "ivory" -> "all kittens" [color="red"];
@@ -113,6 +122,7 @@ digraph {
   "Ziggurat" -> "Chapel" [color="green"];
   "Data Center" -> "culture" [color="limegreen"];
   "Ziggurat" -> "Data Center" [color="green"];
+  "priest" -> "faith" [color="green"];
   "Chapel" -> "faith" [color="green"];
   "Temple" -> "faith" [color="limegreen"];
   "AI Core" -> "gigaflops" [color="green"];
@@ -272,6 +282,10 @@ digraph {
   "Archery" -> "hunter" [color="blue"];
   "kitten" -> "miner" [color="orange"];
   "Mine" -> "miner" [color="blue"];
+  "kitten" -> "priest" [color="orange"];
+  "Theology" -> "priest" [color="blue"];
+  "kitten" -> "geologist" [color="orange"];
+  "Geology" -> "geologist" [color="blue"];
   "catpower" -> "Send hunters" [color="orange"];
   "Send hunters" -> "furs" [color="limegreen"];
   "Send hunters" -> "ivory" [color="limegreen"];
@@ -452,6 +466,8 @@ digraph {
   "farmer" [shape="house"];
   "hunter" [shape="house"];
   "miner" [shape="house"];
+  "priest" [shape="house"];
+  "geologist" [shape="house"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
   "Archery" [shape="diamond"];
@@ -483,6 +499,7 @@ digraph {
   "Ecology" [shape="diamond"];
   "Robotics" [shape="diamond"];
   "Electronics" [shape="diamond"];
+  "Theology" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -541,6 +558,8 @@ digraph {
   "farmer" [shape="house"];
   "hunter" [shape="house"];
   "miner" [shape="house"];
+  "priest" [shape="house"];
+  "geologist" [shape="house"];
   "Send hunters" [shape="house"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];

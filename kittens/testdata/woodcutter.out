@@ -18,13 +18,13 @@ last action:
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [-] [Resource] catnip 991.50/5000 -8.50/s 1m56s to empty
-[Resource] wood 0.10/200 0.10/s 34m55s to cap
+[Resource] wood 0.01/200 0.01/s 5h49m23s to cap
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
+XX: [Bonfire] Hut (1) -(wood 0.01/12.50 21m49s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library -(wood 0.01/25 43m39s) +(Library 1)
 XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
 mX: make inputs for action X
@@ -35,13 +35,13 @@ last action: woodcutter
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [-] [Resource] catnip 992.50/5000 -8.50/s 1m56s to empty
-[Resource] wood 0.10/200 0.10/s 34m55s to cap
+[Resource] wood 0.01/200 0.01/s 5h49m23s to cap
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 1.06 (1.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
+XX: [Bonfire] Hut (1) -(wood 0.01/12.50 21m49s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library -(wood 0.01/25 43m39s) +(Library 1)
 XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
 mX: make inputs for action X
@@ -52,12 +52,12 @@ last action: Gather catnip
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [-] [Resource] catnip 984/5000 -8.50/s 1m55s to empty
-[Resource] wood 0.29/200 0.19/s 17m26s to cap
+[Resource] wood 0.03/200 0.02/s 2h54m40s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
+XX: [Bonfire] Hut (1) -(wood 0.03/12.50 10m53s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library -(wood 0.03/25 21m48s) +(Library 1)
 XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 mX: make inputs for action X
@@ -68,12 +68,12 @@ last action: woodcutter
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [-] [Resource] catnip 985/5000 -8.50/s 1m55s to empty
-[Resource] wood 0.29/200 0.19/s 17m26s to cap
+[Resource] wood 0.03/200 0.02/s 2h54m40s to cap
 [Village] happiness 1.06 (1.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
+XX: [Bonfire] Hut (1) -(wood 0.03/12.50 10m53s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library -(wood 0.03/25 21m48s) +(Library 1)
 XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 sX: time skip until action X is available
 mX: make inputs for action X

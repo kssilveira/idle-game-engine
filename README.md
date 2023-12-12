@@ -91,9 +91,10 @@ More features from kittens game:
 - Bonfire effects for
   - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
 - Bonfire active buildings
+- Job engineer
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/bonfire
+  - https://wiki.kittensgame.com/en/game-tabs/outpost
     - TODO
 
 - maybe

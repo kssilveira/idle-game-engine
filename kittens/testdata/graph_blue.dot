@@ -45,6 +45,8 @@ digraph {
   "Agriculture" -> "farmer" [color="blue"];
   "Archery" -> "hunter" [color="blue"];
   "Mine" -> "miner" [color="blue"];
+  "Theology" -> "priest" [color="blue"];
+  "Geology" -> "geologist" [color="blue"];
   "Archery" -> "Send hunters" [color="blue"];
   "Construction" -> "@beam" [color="blue"];
   "Construction" -> "@slab" [color="blue"];
@@ -124,6 +126,8 @@ digraph {
   "farmer" [shape="house"];
   "hunter" [shape="house"];
   "miner" [shape="house"];
+  "priest" [shape="house"];
+  "geologist" [shape="house"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
   "Archery" [shape="diamond"];
@@ -155,6 +159,7 @@ digraph {
   "Ecology" [shape="diamond"];
   "Robotics" [shape="diamond"];
   "Electronics" [shape="diamond"];
+  "Theology" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -212,6 +217,8 @@ digraph {
   "farmer" [shape="house"];
   "hunter" [shape="house"];
   "miner" [shape="house"];
+  "priest" [shape="house"];
+  "geologist" [shape="house"];
   "Send hunters" [shape="house"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];

@@ -105,7 +105,21 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, {
-			Name: "farmer", ProductionFactor: 5, ProductionResourceFactor: "happiness",
+			Name: "priest", ProductionFactor: -4.25, ProductionOnGone: true,
+			ProductionBonus: []data.Resource{{
+				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
+			}},
+		}, {
+			Name: "geologist", ProductionFactor: -4.25, ProductionOnGone: true,
+			ProductionBonus: []data.Resource{{
+				Name: "Pasture", ProductionFactor: -0.005,
+			}, {
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
+			}},
+		}, {
+			Name: "farmer", ProductionFactor: 1 * 5, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Mineral Hoes", ProductionFactor: 0.5,
 			}, {
@@ -125,7 +139,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
 		Producers: []data.Resource{{
-			Name: "woodcutter", ProductionFactor: 0.09, ProductionResourceFactor: "happiness",
+			Name: "woodcutter", ProductionFactor: 0.0018 * 5, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Mineral Axe", ProductionFactor: 0.7,
 			}, {
@@ -152,7 +166,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "science", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "scholar", ProductionFactor: 0.175, ProductionResourceFactor: "happiness",
+			Name: "scholar", ProductionFactor: 0.035 * 5, ProductionResourceFactor: "happiness",
 		}},
 		ProductionBonus: []data.Resource{{
 			Name: "Library", ProductionFactor: 0.1,
@@ -179,7 +193,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "hunter", ProductionFactor: 0.3, ProductionResourceFactor: "happiness",
+			Name: "hunter", ProductionFactor: 0.06 * 5, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Bolas", ProductionFactor: 1,
 			}, {
@@ -200,7 +214,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "miner", ProductionFactor: 0.25, ProductionResourceFactor: "happiness",
+			Name: "miner", ProductionFactor: 0.05 * 5, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Mine", ProductionFactor: 0.2,
 			}, {
@@ -245,6 +259,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "coal", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
+			Name: "geologist", ProductionFactor: 0.015 * 5,
+		}, {
 			Name: "Quarry", ProductionFactor: 0.015 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
@@ -349,6 +365,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "hunter", ProductionFactor: 1,
 		}, {
 			Name: "miner", ProductionFactor: 1,
+		}, {
+			Name: "priest", ProductionFactor: 1,
+		}, {
+			Name: "geologist", ProductionFactor: 1,
 		}},
 	}, {
 		Name: "furs", Type: "Resource", Capacity: -1,
@@ -409,6 +429,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
+			Name: "priest", ProductionFactor: 0.0015 * 5,
+		}, {
 			Name: "Chapel", ProductionFactor: 0.005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
@@ -577,6 +599,20 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", Capacity: 1,
 		}},
 	}, {
+		Name: "priest", Type: "Village", IsHidden: true, Capacity: -1,
+		OnGone: []data.Resource{{
+			Name: "gone kitten", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
+	}, {
+		Name: "geologist", Type: "Village", IsHidden: true, Capacity: -1,
+		OnGone: []data.Resource{{
+			Name: "gone kitten", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
+	}, {
 		Name: "happiness", Type: "Village", StartQuantity: 1.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.02,
@@ -655,6 +691,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Robotics", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Electronics", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Theology", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -1054,6 +1092,14 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
 		Adds:  []data.Resource{{Name: "miner", Quantity: 1}},
 	}, {
+		Name: "priest", Type: "Village", UnlockedBy: "Theology",
+		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
+		Adds:  []data.Resource{{Name: "priest", Quantity: 1}},
+	}, {
+		Name: "geologist", Type: "Village", UnlockedBy: "Geology",
+		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
+		Adds:  []data.Resource{{Name: "geologist", Quantity: 1}},
+	}, {
 		Name: "Send hunters", Type: "Village", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
 		Adds: []data.Resource{{
@@ -1366,6 +1412,8 @@ const (
 	farmer
 	hunter
 	miner
+	priest
+	geologist
 	sendhunters
 	beam
 	slab
