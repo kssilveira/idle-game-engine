@@ -67,42 +67,42 @@ func NewGame(now game.Now) *game.Game {
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
 			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.015,
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, {
 			Name: "woodcutter", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
 			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.015,
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, {
 			Name: "scholar", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
 			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.015,
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, {
 			Name: "farmer", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
 			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.015,
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, {
 			Name: "hunter", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
 			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.015,
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, {
 			Name: "miner", ProductionFactor: -4.25, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
 			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.015,
+				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, {
 			Name: "farmer", ProductionFactor: 5, ProductionResourceFactor: "happiness",
@@ -111,6 +111,8 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Iron Hoes", ProductionFactor: 0.3,
 			}},
+		}, {
+			Name: "Brewery", ProductionFactor: -1 * 5,
 		}},
 		ProductionBonus: []data.Resource{{
 			Name: "Aqueduct", ProductionFactor: 0.03,
@@ -181,6 +183,8 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Composite Bow", ProductionFactor: 0.5,
 			}},
+		}, {
+			Name: "Mint", ProductionFactor: -0.75 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Hut", ProductionFactor: 75,
@@ -253,6 +257,9 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "gold", Type: "Resource", StartCapacity: 20,
+		Producers: []data.Resource{{
+			Name: "Mint", ProductionFactor: -0.005 * 5,
+		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 10,
 			ProductionBonus: []data.Resource{{
@@ -264,6 +271,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Warehouse", ProductionFactor: 5,
 		}, {
 			Name: "Harbour", ProductionFactor: 25,
+		}, {
+			Name: "Mint", ProductionFactor: 100,
 		}},
 	}, {
 		Name: "titanium", Type: "Resource", StartCapacity: 1,
@@ -335,28 +344,58 @@ func NewGame(now game.Now) *game.Game {
 		Name: "furs", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.05,
+			ProductionBonus: []data.Resource{{
+				Name: "Tradepost", ProductionFactor: -0.04,
+			}},
 		}},
 	}, {
 		Name: "ivory", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.035,
+			ProductionBonus: []data.Resource{{
+				Name: "Tradepost", ProductionFactor: -0.04,
+			}},
 		}},
 	}, {
 		Name: "spice", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.005,
+			ProductionBonus: []data.Resource{{
+				Name: "Tradepost", ProductionFactor: -0.04,
+			}},
+		}, {
+			Name: "Brewery", ProductionFactor: -0.1 * 5,
 		}},
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "Unic. Pasture", ProductionFactor: 0.005,
+			Name: "Unic. Pasture", ProductionFactor: 0.001 * 5,
 		}},
 	}, {
-		Name: "culture", Type: "Resource", Capacity: 575,
+		Name: "culture", Type: "Resource", StartCapacity: 575,
+		Producers: []data.Resource{{
+			Name: "Amphitheatre", ProductionFactor: 0.005 * 5,
+		}, {
+			Name: "Chapel", ProductionFactor: 0.05 * 5,
+		}, {
+			Name: "Temple", ProductionFactor: 0.1 * 5,
+		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Library", ProductionFactor: 10,
 		}, {
 			Name: "Academy", ProductionFactor: 25,
+		}, {
+			Name: "Amphitheatre", ProductionFactor: 50,
+		}, {
+			Name: "Chapel", ProductionFactor: 200,
+		}},
+	}, {
+		Name: "faith", Type: "Resource", StartCapacity: 1,
+		Producers: []data.Resource{{
+			Name: "Chapel", ProductionFactor: 0.005 * 5,
+		}},
+		CapacityProducers: []data.Resource{{
+			Name: "Temple", ProductionFactor: 100,
 		}},
 	}, {
 		Name: "beam", Type: "Resource", Capacity: -1,
@@ -455,6 +494,18 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Reactor", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
+		Name: "Amphitheatre", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Chapel", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Temple", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Tradepost", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Mint", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Brewery", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -501,6 +552,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "spice", ProductionFactor: 0.1, ProductionBoolean: true,
 		}, {
 			Name: "unicorns", ProductionFactor: 0.1, ProductionBoolean: true,
+		}, {
+			Name: "Amphitheatre", ProductionFactor: -0.048,
 		}},
 	}, {
 		Name: "Calendar", Type: "Science", IsHidden: true, Capacity: 1,
@@ -548,6 +601,12 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Mechanization", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Nuclear Fission", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Writing", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Acoustics", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Philosophy", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -802,6 +861,70 @@ func NewGame(now game.Now) *game.Game {
 			Name: "blueprint", Quantity: 25, CostExponentBase: 1.15,
 		}},
 		Adds: []data.Resource{{Name: "Reactor", Quantity: 1}},
+	}, {
+		Name: "Amphitheatre", Type: "Bonfire", UnlockedBy: "Writing",
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
+		}, {
+			Name: "minerals", Quantity: 1200, CostExponentBase: 1.15,
+		}, {
+			Name: "parchment", Quantity: 3, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Amphitheatre", Quantity: 1}},
+	}, {
+		Name: "Chapel", Type: "Bonfire", UnlockedBy: "Acoustics",
+		Costs: []data.Resource{{
+			Name: "minerals", Quantity: 2000, CostExponentBase: 1.15,
+		}, {
+			Name: "culture", Quantity: 250, CostExponentBase: 1.15,
+		}, {
+			Name: "parchment", Quantity: 250, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Chapel", Quantity: 1}},
+	}, {
+		Name: "Temple", Type: "Bonfire", UnlockedBy: "Philosophy",
+		Costs: []data.Resource{{
+			Name: "slab", Quantity: 25, CostExponentBase: 1.15,
+		}, {
+			Name: "plate", Quantity: 15, CostExponentBase: 1.15,
+		}, {
+			Name: "gold", Quantity: 50, CostExponentBase: 1.15,
+		}, {
+			Name: "manuscript", Quantity: 10, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Temple", Quantity: 1}},
+	}, {
+		Name: "Tradepost", Type: "Bonfire", UnlockedBy: "Currency",
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 500, CostExponentBase: 1.15,
+		}, {
+			Name: "minerals", Quantity: 200, CostExponentBase: 1.15,
+		}, {
+			Name: "gold", Quantity: 10, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Tradepost", Quantity: 1}},
+	}, {
+		Name: "Mint", Type: "Bonfire", UnlockedBy: "Architecture",
+		Costs: []data.Resource{{
+			Name: "minerals", Quantity: 5000, CostExponentBase: 1.15,
+		}, {
+			Name: "plate", Quantity: 200, CostExponentBase: 1.15,
+		}, {
+			Name: "gold", Quantity: 500, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Mint", Quantity: 1}},
+	}, {
+		Name: "Brewery", Type: "Bonfire", UnlockedBy: "Architecture",
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 1000, CostExponentBase: 1.5,
+		}, {
+			Name: "culture", Quantity: 750, CostExponentBase: 1.5,
+		}, {
+			Name: "spice", Quantity: 5, CostExponentBase: 1.5,
+		}, {
+			Name: "parchment", Quantity: 375, CostExponentBase: 1.5,
+		}},
+		Adds: []data.Resource{{Name: "Brewery", Quantity: 1}},
 	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
@@ -1117,6 +1240,12 @@ const (
 	calciner
 	factory
 	reactor
+	amphitheatre
+	chapel
+	temple
+	tradepost
+	mint
+	brewery
 	woodcutter
 	scholar
 	farmer

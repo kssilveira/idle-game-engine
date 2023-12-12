@@ -83,9 +83,12 @@ More features from kittens game:
 - change 'make' command to also make other resources (remove premature return)
 - change production resource factor to production bonus
 - create m command that skips and buys the max
+- validate capacityproducers with startcapacity and without capacity
+- change production factor to just factor
+- change production bonus to bonus
 
 - Bonfire building upgrades
-- Bonfire effects Steamworks Magneto Reactor
+- Bonfire effects for Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery
 - Bonfire active buildings
 
 - https://wiki.kittensgame.com/en/home
