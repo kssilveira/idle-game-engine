@@ -94,8 +94,8 @@ More features from kittens game:
 - Job engineer
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/outpost
-    - TODO
+  - https://wiki.kittensgame.com/en/game-tabs/science/technologies
+    - TODO from Astronomy
 
 - maybe
   - rX: revert action X

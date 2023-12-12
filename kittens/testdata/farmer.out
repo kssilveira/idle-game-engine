@@ -10,6 +10,8 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [Village] farmer -(kitten 1) +(farmer 1)
+XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: 
@@ -26,6 +28,8 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: farmer
@@ -42,6 +46,8 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: Gather catnip
@@ -57,6 +63,8 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: farmer
@@ -72,6 +80,8 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: Gather catnip

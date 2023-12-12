@@ -654,6 +654,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Engineering", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
+		Name: "Steel", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
 		Name: "Architecture", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Astronomy", Type: "Science", IsHidden: true, Capacity: 1,
@@ -1221,11 +1223,11 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "science", Quantity: 100}},
 		Adds:  []data.Resource{{Name: "Agriculture", Quantity: 1}},
 	}, {
-		Name: "Archery", Type: "Science", UnlockedBy: "Calendar", LockedBy: "Archery",
+		Name: "Archery", Type: "Science", UnlockedBy: "Agriculture", LockedBy: "Archery",
 		Costs: []data.Resource{{Name: "science", Quantity: 300}},
 		Adds:  []data.Resource{{Name: "Archery", Quantity: 1}},
 	}, {
-		Name: "Mining", Type: "Science", UnlockedBy: "Calendar", LockedBy: "Mining",
+		Name: "Mining", Type: "Science", UnlockedBy: "Agriculture", LockedBy: "Mining",
 		Costs: []data.Resource{{Name: "science", Quantity: 500}},
 		Adds:  []data.Resource{{Name: "Mining", Quantity: 1}},
 	}, {
@@ -1249,7 +1251,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "science", Quantity: 1300}},
 		Adds:  []data.Resource{{Name: "Construction", Quantity: 1}},
 	}, {
-		Name: "Currency", Type: "Science", UnlockedBy: "Animal Husbandry", LockedBy: "Currency",
+		Name: "Currency", Type: "Science", UnlockedBy: "Civil Service", LockedBy: "Currency",
 		Costs: []data.Resource{{Name: "science", Quantity: 2200}},
 		Adds:  []data.Resource{{Name: "Currency", Quantity: 1}},
 	}, {
@@ -1260,6 +1262,30 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Engineering", Type: "Science", UnlockedBy: "Construction", LockedBy: "Engineering",
 		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
 		Adds:  []data.Resource{{Name: "Engineering", Quantity: 1}},
+	}, {
+		Name: "Writing", Type: "Science", UnlockedBy: "Engineering", LockedBy: "Writing",
+		Costs: []data.Resource{{Name: "science", Quantity: 3600}},
+		Adds:  []data.Resource{{Name: "Writing", Quantity: 1}},
+	}, {
+		Name: "Philosophy", Type: "Science", UnlockedBy: "Writing", LockedBy: "Philosophy",
+		Costs: []data.Resource{{Name: "science", Quantity: 9500}},
+		Adds:  []data.Resource{{Name: "Philosophy", Quantity: 1}},
+	}, {
+		Name: "Steel", Type: "Science", UnlockedBy: "Writing", LockedBy: "Steel",
+		Costs: []data.Resource{{Name: "science", Quantity: 12000}},
+		Adds:  []data.Resource{{Name: "Steel", Quantity: 1}},
+	}, {
+		Name: "Machinery", Type: "Science", UnlockedBy: "Writing", LockedBy: "Machinery",
+		Costs: []data.Resource{{Name: "science", Quantity: 15000}},
+		Adds:  []data.Resource{{Name: "Machinery", Quantity: 1}},
+	}, {
+		Name: "Theology", Type: "Science", UnlockedBy: "Philosophy", LockedBy: "Theology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 20000,
+		}, {
+			Name: "manuscript", Quantity: 35,
+		}},
+		Adds: []data.Resource{{Name: "Theology", Quantity: 1}},
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Hoes",
 		Costs: []data.Resource{{
@@ -1317,7 +1343,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{Name: "Reinforced Barns", Quantity: 1}},
 	}, {
-		Name: "Bolas", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Bolas",
+		Name: "Bolas", Type: "Workshop", UnlockedBy: "Mining", LockedBy: "Bolas",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50,
 		}, {
@@ -1435,6 +1461,11 @@ const (
 	currency
 	celestialmechanics
 	engineering
+	writing
+	philosophy
+	steel
+	machinery
+	theology
 	mineralhoes
 	ironhoes
 	mineralaxe
