@@ -176,6 +176,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Hut", ProductionFactor: 75,
 		}, {
 			Name: "Log House", ProductionFactor: 50,
+		}, {
+			Name: "Mansion", ProductionFactor: 50,
 		}},
 	}, {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
@@ -224,6 +226,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "gold", Type: "Resource", Capacity: 20,
+	}, {
+		Name: "titanium", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
@@ -338,6 +342,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Aqueduct", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
+		Name: "Mansion", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -409,6 +415,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Celestial Mechanics", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Engineering", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Architecture", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -524,8 +532,18 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Aqueduct", Type: "Bonfire", UnlockedBy: "Engineering",
 		Costs: []data.Resource{{Name: "minerals", Quantity: 75, CostExponentBase: 1.12}},
+		Adds:  []data.Resource{{Name: "Aqueduct", Quantity: 1}},
+	}, {
+		Name: "Mansion", Type: "Bonfire", UnlockedBy: "Architecture",
+		Costs: []data.Resource{{
+			Name: "slab", Quantity: 185, CostExponentBase: 1.15,
+		}, {
+			Name: "steel", Quantity: 75, CostExponentBase: 1.15,
+		}, {
+			Name: "titanium", Quantity: 25, CostExponentBase: 1.15,
+		}},
 		Adds: []data.Resource{{
-			Name: "Log House", Quantity: 1,
+			Name: "Mansion", Quantity: 1,
 		}, {
 			Name: "kitten", Capacity: 1,
 		}},
@@ -803,6 +821,7 @@ const (
 	warehouse
 	loghouse
 	aqueduct
+	mansion
 	woodcutter
 	scholar
 	farmer

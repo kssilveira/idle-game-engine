@@ -14,6 +14,7 @@ digraph {
   "Construction" -> "Warehouse" [color="blue"];
   "Construction" -> "Log House" [color="blue"];
   "Engineering" -> "Aqueduct" [color="blue"];
+  "Architecture" -> "Mansion" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -67,6 +68,7 @@ digraph {
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
   "Aqueduct" [shape="box3d"];
+  "Mansion" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -84,6 +86,7 @@ digraph {
   "Currency" [shape="diamond"];
   "Celestial Mechanics" [shape="diamond"];
   "Engineering" [shape="diamond"];
+  "Architecture" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -110,6 +113,7 @@ digraph {
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
   "Aqueduct" [shape="box3d"];
+  "Mansion" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

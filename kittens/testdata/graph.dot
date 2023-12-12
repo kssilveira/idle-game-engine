@@ -44,6 +44,7 @@ digraph {
   "Composite Bow" -> "hunter" [color="green"];
   "Hut" -> "catpower" [color="limegreen"];
   "Log House" -> "catpower" [color="limegreen"];
+  "Mansion" -> "catpower" [color="limegreen"];
   "miner" -> "minerals" [color="green"];
   "Mine" -> "miner" [color="green"];
   "minerals" -> "Active Smelter" [color="red"];
@@ -103,9 +104,12 @@ digraph {
   "Log House" -> "kitten" [color="limegreen"];
   "Construction" -> "Log House" [color="blue"];
   "minerals" -> "Aqueduct" [color="orange"];
-  "Aqueduct" -> "Log House" [color="limegreen"];
-  "Aqueduct" -> "kitten" [color="limegreen"];
   "Engineering" -> "Aqueduct" [color="blue"];
+  "slab" -> "Mansion" [color="orange"];
+  "steel" -> "Mansion" [color="orange"];
+  "titanium" -> "Mansion" [color="orange"];
+  "Mansion" -> "kitten" [color="limegreen"];
+  "Architecture" -> "Mansion" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
@@ -222,6 +226,7 @@ digraph {
   "minerals" [shape="cylinder"];
   "iron" [shape="cylinder"];
   "gold" [shape="cylinder"];
+  "titanium" [shape="cylinder"];
   "kitten" [shape="cylinder"];
   "all kittens" [shape="cylinder"];
   "furs" [shape="cylinder"];
@@ -254,6 +259,7 @@ digraph {
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
   "Aqueduct" [shape="box3d"];
+  "Mansion" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -271,6 +277,7 @@ digraph {
   "Currency" [shape="diamond"];
   "Celestial Mechanics" [shape="diamond"];
   "Engineering" [shape="diamond"];
+  "Architecture" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -298,6 +305,7 @@ digraph {
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
   "Aqueduct" [shape="box3d"];
+  "Mansion" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
