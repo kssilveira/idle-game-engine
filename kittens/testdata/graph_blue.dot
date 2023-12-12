@@ -33,6 +33,9 @@ digraph {
   "Currency" -> "Tradepost" [color="blue"];
   "Architecture" -> "Mint" [color="blue"];
   "Architecture" -> "Brewery" [color="blue"];
+  "Construction" -> "Ziggurat" [color="blue"];
+  "Chronophysics" -> "Chronosphere" [color="blue"];
+  "Artificial Intelligence" -> "AI Core" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -105,6 +108,9 @@ digraph {
   "Tradepost" [shape="box3d"];
   "Mint" [shape="box3d"];
   "Brewery" [shape="box3d"];
+  "Ziggurat" [shape="box3d"];
+  "Chronosphere" [shape="box3d"];
+  "AI Core" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -136,6 +142,8 @@ digraph {
   "Writing" [shape="diamond"];
   "Acoustics" [shape="diamond"];
   "Philosophy" [shape="diamond"];
+  "Chronophysics" [shape="diamond"];
+  "Artificial Intelligence" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -181,6 +189,9 @@ digraph {
   "Tradepost" [shape="box3d"];
   "Mint" [shape="box3d"];
   "Brewery" [shape="box3d"];
+  "Ziggurat" [shape="box3d"];
+  "Chronosphere" [shape="box3d"];
+  "AI Core" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

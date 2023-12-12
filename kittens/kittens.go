@@ -316,6 +316,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Reactor", ProductionFactor: 250,
 		}},
 	}, {
+		Name: "unobtainium", Type: "Resource", StartCapacity: 1,
+	}, {
+		Name: "time crystal", Type: "Resource", StartCapacity: 1,
+	}, {
+		Name: "antimatter", Type: "Resource", StartCapacity: 1,
+	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.05,
@@ -382,12 +388,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Library", ProductionFactor: 10,
+			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
 		}, {
 			Name: "Academy", ProductionFactor: 25,
+			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
 		}, {
 			Name: "Amphitheatre", ProductionFactor: 50,
+			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
 		}, {
 			Name: "Chapel", ProductionFactor: 200,
+			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
 		}},
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
@@ -428,6 +438,11 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "megalith", Type: "Resource", Capacity: -1,
 		ProducerAction: "@megalith",
+	}, {
+		Name: "gigaflops", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "AI Core", ProductionFactor: 0.02 * 5,
+		}},
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
@@ -505,6 +520,12 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Mint", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Brewery", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Ziggurat", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Chronosphere", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "AI Core", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -607,6 +628,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Acoustics", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Philosophy", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Chronophysics", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Artificial Intelligence", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -925,6 +950,36 @@ func NewGame(now game.Now) *game.Game {
 			Name: "parchment", Quantity: 375, CostExponentBase: 1.5,
 		}},
 		Adds: []data.Resource{{Name: "Brewery", Quantity: 1}},
+	}, {
+		Name: "Ziggurat", Type: "Bonfire", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "megalith", Quantity: 50, CostExponentBase: 1.25,
+		}, {
+			Name: "scaffold", Quantity: 50, CostExponentBase: 1.25,
+		}, {
+			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
+		}},
+		Adds: []data.Resource{{Name: "Ziggurat", Quantity: 1}},
+	}, {
+		Name: "Chronosphere", Type: "Bonfire", UnlockedBy: "Chronophysics",
+		Costs: []data.Resource{{
+			Name: "unobtainium", Quantity: 2500, CostExponentBase: 1.25,
+		}, {
+			Name: "time crystal", Quantity: 1, CostExponentBase: 1.25,
+		}, {
+			Name: "blueprint", Quantity: 100, CostExponentBase: 1.25,
+		}, {
+			Name: "science", Quantity: 250000, CostExponentBase: 1.25,
+		}},
+		Adds: []data.Resource{{Name: "Chronosphere", Quantity: 1}},
+	}, {
+		Name: "AI Core", Type: "Bonfire", UnlockedBy: "Artificial Intelligence",
+		Costs: []data.Resource{{
+			Name: "antimatter", Quantity: 125, CostExponentBase: 1.15,
+		}, {
+			Name: "science", Quantity: 500000, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "AI Core", Quantity: 1}},
 	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
@@ -1246,6 +1301,9 @@ const (
 	tradepost
 	mint
 	brewery
+	ziggurat
+	chronosphere
+	aicore
 	woodcutter
 	scholar
 	farmer
