@@ -23,6 +23,7 @@ digraph {
   "Iron Hoes" -> "farmer" [color="green"];
   "Aqueduct" -> "catnip" [color="green"];
   "Barn" -> "catnip" [color="limegreen"];
+  "Harbour" -> "catnip" [color="limegreen"];
   "woodcutter" -> "wood" [color="green"];
   "Mineral Axe" -> "woodcutter" [color="green"];
   "Iron Axe" -> "woodcutter" [color="green"];
@@ -31,8 +32,7 @@ digraph {
   "Expanded Barns" -> "Barn" [color="green"];
   "Reinforced Barns" -> "Barn" [color="green"];
   "Warehouse" -> "wood" [color="limegreen"];
-  "Expanded Barns" -> "Warehouse" [color="green"];
-  "Reinforced Barns" -> "Warehouse" [color="green"];
+  "Harbour" -> "wood" [color="limegreen"];
   "scholar" -> "science" [color="green"];
   "Library" -> "science" [color="green"];
   "Academy" -> "science" [color="green"];
@@ -54,9 +54,20 @@ digraph {
   "minerals" -> "Active Smelter" [color="red"];
   "Barn" -> "minerals" [color="limegreen"];
   "Warehouse" -> "minerals" [color="limegreen"];
+  "Harbour" -> "minerals" [color="limegreen"];
   "Active Smelter" -> "iron" [color="green"];
   "Barn" -> "iron" [color="limegreen"];
   "Warehouse" -> "iron" [color="limegreen"];
+  "Harbour" -> "iron" [color="limegreen"];
+  "Barn" -> "coal" [color="limegreen"];
+  "Warehouse" -> "coal" [color="limegreen"];
+  "Harbour" -> "coal" [color="limegreen"];
+  "Barn" -> "gold" [color="limegreen"];
+  "Warehouse" -> "gold" [color="limegreen"];
+  "Harbour" -> "gold" [color="limegreen"];
+  "Barn" -> "titanium" [color="limegreen"];
+  "Warehouse" -> "titanium" [color="limegreen"];
+  "Harbour" -> "titanium" [color="limegreen"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -125,6 +136,10 @@ digraph {
   "alloy" -> "Bio Lab" [color="orange"];
   "science" -> "Bio Lab" [color="orange"];
   "Biology" -> "Bio Lab" [color="blue"];
+  "scaffold" -> "Harbour" [color="orange"];
+  "slab" -> "Harbour" [color="orange"];
+  "plate" -> "Harbour" [color="orange"];
+  "Navigation" -> "Harbour" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
@@ -240,6 +255,7 @@ digraph {
   "catpower" [shape="cylinder"];
   "minerals" [shape="cylinder"];
   "iron" [shape="cylinder"];
+  "coal" [shape="cylinder"];
   "gold" [shape="cylinder"];
   "titanium" [shape="cylinder"];
   "kitten" [shape="cylinder"];
@@ -278,6 +294,7 @@ digraph {
   "Mansion" [shape="box3d"];
   "Observatory" [shape="box3d"];
   "Bio Lab" [shape="box3d"];
+  "Harbour" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -298,6 +315,7 @@ digraph {
   "Architecture" [shape="diamond"];
   "Astronomy" [shape="diamond"];
   "Biology" [shape="diamond"];
+  "Navigation" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -328,6 +346,7 @@ digraph {
   "Mansion" [shape="box3d"];
   "Observatory" [shape="box3d"];
   "Bio Lab" [shape="box3d"];
+  "Harbour" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

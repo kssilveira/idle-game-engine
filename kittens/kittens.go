@@ -117,6 +117,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 5000,
+		}, {
+			Name: "Harbour", ProductionFactor: 2500,
 		}},
 	}, {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
@@ -138,12 +140,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
 		}, {
-			Name: "Warehouse", ProductionFactor: 262.5,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Warehouse", ProductionFactor: 150,
+		}, {
+			Name: "Harbour", ProductionFactor: 700,
 		}},
 	}, {
 		Name: "science", Type: "Resource", StartCapacity: 250,
@@ -205,12 +204,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
 		}, {
-			Name: "Warehouse", ProductionFactor: 350,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Warehouse", ProductionFactor: 200,
+		}, {
+			Name: "Harbour", ProductionFactor: 950,
 		}},
 	}, {
 		Name: "iron", Type: "Resource", StartCapacity: 50,
@@ -225,17 +221,52 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
 		}, {
-			Name: "Warehouse", ProductionFactor: 43.75,
+			Name: "Warehouse", ProductionFactor: 25,
+		}, {
+			Name: "Harbour", ProductionFactor: 150,
+		}},
+	}, {
+		Name: "coal", Type: "Resource", StartCapacity: 1,
+		CapacityProducers: []data.Resource{{
+			Name: "Barn", ProductionFactor: 60,
 			ProductionBonus: []data.Resource{{
 				Name: "Expanded Barns", ProductionFactor: 0.75,
 			}, {
 				Name: "Reinforced Barns", ProductionFactor: 0.80,
 			}},
+		}, {
+			Name: "Warehouse", ProductionFactor: 30,
+		}, {
+			Name: "Harbour", ProductionFactor: 100,
 		}},
 	}, {
-		Name: "gold", Type: "Resource", Capacity: 20,
+		Name: "gold", Type: "Resource", StartCapacity: 20,
+		CapacityProducers: []data.Resource{{
+			Name: "Barn", ProductionFactor: 10,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
+			}},
+		}, {
+			Name: "Warehouse", ProductionFactor: 5,
+		}, {
+			Name: "Harbour", ProductionFactor: 25,
+		}},
 	}, {
-		Name: "titanium", Type: "Resource", Capacity: -1,
+		Name: "titanium", Type: "Resource", StartCapacity: 1,
+		CapacityProducers: []data.Resource{{
+			Name: "Barn", ProductionFactor: 2,
+			ProductionBonus: []data.Resource{{
+				Name: "Expanded Barns", ProductionFactor: 0.75,
+			}, {
+				Name: "Reinforced Barns", ProductionFactor: 0.80,
+			}},
+		}, {
+			Name: "Warehouse", ProductionFactor: 10,
+		}, {
+			Name: "Harbour", ProductionFactor: 50,
+		}},
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
@@ -363,6 +394,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Bio Lab", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
+		Name: "Harbour", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -440,6 +473,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Astronomy", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Biology", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Navigation", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -592,6 +627,16 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Quantity: 1500, CostExponentBase: 1.1,
 		}},
 		Adds: []data.Resource{{Name: "Bio Lab", Quantity: 1}},
+	}, {
+		Name: "Harbour", Type: "Bonfire", UnlockedBy: "Navigation",
+		Costs: []data.Resource{{
+			Name: "scaffold", Quantity: 5, CostExponentBase: 1.15,
+		}, {
+			Name: "slab", Quantity: 50, CostExponentBase: 1.15,
+		}, {
+			Name: "plate", Quantity: 75, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Harbour", Quantity: 1}},
 	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
@@ -869,6 +914,7 @@ const (
 	mansion
 	observatory
 	biolab
+	harbour
 	woodcutter
 	scholar
 	farmer
