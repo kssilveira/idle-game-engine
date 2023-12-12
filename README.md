@@ -80,10 +80,10 @@ Edges:
 
 More features from kittens game:
 
+- change 'make' command to also make other resources (remove premature return)
 - change production resource factor to production bonus
+- create m command that skips and buys the max
 
-- Workshop Reinforced Saw
-  - lumber mill 20%
 - Bonfire building upgrades
 
 - https://wiki.kittensgame.com/en/home
@@ -94,3 +94,4 @@ More features from kittens game:
     - sell building
     - unassign worker
     - deactivate building
+  - energy

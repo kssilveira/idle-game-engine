@@ -18,6 +18,10 @@ digraph {
   "Astronomy" -> "Observatory" [color="blue"];
   "Biology" -> "Bio Lab" [color="blue"];
   "Navigation" -> "Harbour" [color="blue"];
+  "Geology" -> "Quarry" [color="blue"];
+  "Construction" -> "Lumber Mill" [color="blue"];
+  "Chemistry" -> "Oil Well" [color="blue"];
+  "Particle Physics" -> "Accelerator" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -75,6 +79,10 @@ digraph {
   "Observatory" [shape="box3d"];
   "Bio Lab" [shape="box3d"];
   "Harbour" [shape="box3d"];
+  "Quarry" [shape="box3d"];
+  "Lumber Mill" [shape="box3d"];
+  "Oil Well" [shape="box3d"];
+  "Accelerator" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -96,6 +104,9 @@ digraph {
   "Astronomy" [shape="diamond"];
   "Biology" [shape="diamond"];
   "Navigation" [shape="diamond"];
+  "Geology" [shape="diamond"];
+  "Chemistry" [shape="diamond"];
+  "Particle Physics" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -126,6 +137,10 @@ digraph {
   "Observatory" [shape="box3d"];
   "Bio Lab" [shape="box3d"];
   "Harbour" [shape="box3d"];
+  "Quarry" [shape="box3d"];
+  "Lumber Mill" [shape="box3d"];
+  "Oil Well" [shape="box3d"];
+  "Accelerator" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

@@ -132,6 +132,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Smelter", ProductionFactor: -0.25,
 		}},
+		ProductionBonus: []data.Resource{{
+			Name: "Lumber Mill", ProductionFactor: 0.10,
+		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 200,
 			ProductionBonus: []data.Resource{{
@@ -192,6 +195,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "miner", ProductionFactor: 0.25, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Mine", ProductionFactor: 0.2,
+			}, {
+				Name: "Quarry", ProductionFactor: 0.35,
 			}},
 		}, {
 			Name: "Active Smelter", ProductionFactor: -0.5,
@@ -227,6 +232,9 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "coal", Type: "Resource", StartCapacity: 1,
+		Producers: []data.Resource{{
+			Name: "Quarry", ProductionFactor: 0.015 * 5,
+		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 60,
 			ProductionBonus: []data.Resource{{
@@ -255,6 +263,9 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "titanium", Type: "Resource", StartCapacity: 1,
+		Producers: []data.Resource{{
+			Name: "Accelerator", ProductionFactor: -0.015 * 5,
+		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 2,
 			ProductionBonus: []data.Resource{{
@@ -266,6 +277,19 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Warehouse", ProductionFactor: 10,
 		}, {
 			Name: "Harbour", ProductionFactor: 50,
+		}},
+	}, {
+		Name: "oil", Type: "Resource", StartCapacity: 1,
+		Producers: []data.Resource{{
+			Name: "Oil Well", ProductionFactor: 0.02 * 5,
+		}},
+		CapacityProducers: []data.Resource{{
+			Name: "Oil Well", ProductionFactor: 1500,
+		}},
+	}, {
+		Name: "uranium", Type: "Resource", StartCapacity: 1,
+		Producers: []data.Resource{{
+			Name: "Accelerator", ProductionFactor: 0.0025 * 5,
 		}},
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
@@ -334,6 +358,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "gear", Type: "Resource", Capacity: -1,
 		ProducerAction: "@gear",
 	}, {
+		Name: "concrete", Type: "Resource", Capacity: -1,
+	}, {
 		Name: "scaffold", Type: "Resource", Capacity: -1,
 		ProducerAction: "@scaffold",
 	}, {
@@ -395,6 +421,14 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Bio Lab", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Harbour", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Quarry", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Lumber Mill", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Oil Well", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Accelerator", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -475,6 +509,12 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Biology", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Navigation", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Geology", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Chemistry", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Particle Physics", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -637,6 +677,46 @@ func NewGame(now game.Now) *game.Game {
 			Name: "plate", Quantity: 75, CostExponentBase: 1.15,
 		}},
 		Adds: []data.Resource{{Name: "Harbour", Quantity: 1}},
+	}, {
+		Name: "Quarry", Type: "Bonfire", UnlockedBy: "Geology",
+		Costs: []data.Resource{{
+			Name: "scaffold", Quantity: 50, CostExponentBase: 1.15,
+		}, {
+			Name: "steel", Quantity: 125, CostExponentBase: 1.15,
+		}, {
+			Name: "slab", Quantity: 1000, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Quarry", Quantity: 1}},
+	}, {
+		Name: "Lumber Mill", Type: "Bonfire", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
+		}, {
+			Name: "iron", Quantity: 50, CostExponentBase: 1.15,
+		}, {
+			Name: "minerals", Quantity: 250, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Lumber Mill", Quantity: 1}},
+	}, {
+		Name: "Oil Well", Type: "Bonfire", UnlockedBy: "Chemistry",
+		Costs: []data.Resource{{
+			Name: "steel", Quantity: 50, CostExponentBase: 1.15,
+		}, {
+			Name: "gear", Quantity: 25, CostExponentBase: 1.15,
+		}, {
+			Name: "scaffold", Quantity: 25, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Oil Well", Quantity: 1}},
+	}, {
+		Name: "Accelerator", Type: "Bonfire", UnlockedBy: "Particle Physics",
+		Costs: []data.Resource{{
+			Name: "titanium", Quantity: 7500, CostExponentBase: 1.15,
+		}, {
+			Name: "concrete", Quantity: 125, CostExponentBase: 1.15,
+		}, {
+			Name: "uranium", Quantity: 25, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Accelerator", Quantity: 1}},
 	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
@@ -915,6 +995,10 @@ const (
 	observatory
 	biolab
 	harbour
+	quarry
+	lumbermill
+	oilwell
+	accelerator
 	woodcutter
 	scholar
 	farmer
