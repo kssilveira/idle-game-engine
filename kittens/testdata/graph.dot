@@ -21,6 +21,7 @@ digraph {
   "farmer" -> "catnip" [color="green"];
   "Mineral Hoes" -> "farmer" [color="green"];
   "Iron Hoes" -> "farmer" [color="green"];
+  "Aqueduct" -> "catnip" [color="green"];
   "Barn" -> "catnip" [color="limegreen"];
   "woodcutter" -> "wood" [color="green"];
   "Mineral Axe" -> "woodcutter" [color="green"];
@@ -101,6 +102,10 @@ digraph {
   "minerals" -> "Log House" [color="orange"];
   "Log House" -> "kitten" [color="limegreen"];
   "Construction" -> "Log House" [color="blue"];
+  "minerals" -> "Aqueduct" [color="orange"];
+  "Aqueduct" -> "Log House" [color="limegreen"];
+  "Aqueduct" -> "kitten" [color="limegreen"];
+  "Engineering" -> "Aqueduct" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
@@ -248,6 +253,7 @@ digraph {
   "Academy" [shape="box3d"];
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
+  "Aqueduct" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -291,6 +297,7 @@ digraph {
   "Academy" [shape="box3d"];
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
+  "Aqueduct" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

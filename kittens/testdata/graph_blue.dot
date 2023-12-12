@@ -13,6 +13,7 @@ digraph {
   "Mathematics" -> "Academy" [color="blue"];
   "Construction" -> "Warehouse" [color="blue"];
   "Construction" -> "Log House" [color="blue"];
+  "Engineering" -> "Aqueduct" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -65,6 +66,7 @@ digraph {
   "Academy" [shape="box3d"];
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
+  "Aqueduct" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -107,6 +109,7 @@ digraph {
   "Academy" [shape="box3d"];
   "Warehouse" [shape="box3d"];
   "Log House" [shape="box3d"];
+  "Aqueduct" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

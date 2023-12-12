@@ -55,13 +55,13 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "catnip", Type: "Resource", StartCapacity: 5000,
 		Producers: []data.Resource{{
-			Name: "Catnip Field", ProductionFactor: 0.63 * (1 + 0.50), ProductionResourceFactor: "Spring",
+			Name: "Catnip Field", ProductionFactor: 0.125 * 5 * (1 + 0.50), ProductionResourceFactor: "Spring",
 		}, {
-			Name: "Catnip Field", ProductionFactor: 0.63, ProductionResourceFactor: "Summer",
+			Name: "Catnip Field", ProductionFactor: 0.125 * 5, ProductionResourceFactor: "Summer",
 		}, {
-			Name: "Catnip Field", ProductionFactor: 0.63, ProductionResourceFactor: "Autumn",
+			Name: "Catnip Field", ProductionFactor: 0.125 * 5, ProductionResourceFactor: "Autumn",
 		}, {
-			Name: "Catnip Field", ProductionFactor: 0.63 * (1 - 0.75), ProductionResourceFactor: "Winter",
+			Name: "Catnip Field", ProductionFactor: 0.125 * 5 * (1 - 0.75), ProductionResourceFactor: "Winter",
 		}, {
 			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
@@ -111,6 +111,9 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Iron Hoes", ProductionFactor: 0.3,
 			}},
+		}},
+		ProductionBonus: []data.Resource{{
+			Name: "Aqueduct", ProductionFactor: 0.03,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 5000,
@@ -333,6 +336,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Log House", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
+		Name: "Aqueduct", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -511,6 +516,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "minerals", Quantity: 250, CostExponentBase: 1.15,
 		}},
+		Adds: []data.Resource{{
+			Name: "Log House", Quantity: 1,
+		}, {
+			Name: "kitten", Capacity: 1,
+		}},
+	}, {
+		Name: "Aqueduct", Type: "Bonfire", UnlockedBy: "Engineering",
+		Costs: []data.Resource{{Name: "minerals", Quantity: 75, CostExponentBase: 1.12}},
 		Adds: []data.Resource{{
 			Name: "Log House", Quantity: 1,
 		}, {
@@ -789,6 +802,7 @@ const (
 	academy
 	warehouse
 	loghouse
+	aqueduct
 	woodcutter
 	scholar
 	farmer

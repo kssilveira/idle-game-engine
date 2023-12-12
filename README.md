@@ -17,6 +17,7 @@ Game engine for idle games like kittens game.
 ## Special Actions
 
 - Time skip until a game action is available
+- Make all the inputs for an action
 
 ## Dev
 
@@ -79,11 +80,13 @@ Edges:
 
 More features from kittens game:
 
-- ui hide craft count 0
+- change production resource factor to production bonus
 
 - Workshop Reinforced Saw
   - lumber mill 20%
-- TODO
+- https://wiki.kittensgame.com/en/home
+  - https://wiki.kittensgame.com/en/game-tabs/bonfire
+    - TODO
 - maybe
   - rX: revert action X
     - sell building
