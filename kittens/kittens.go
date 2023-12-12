@@ -154,11 +154,19 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Library", ProductionFactor: 0.1,
 		}, {
 			Name: "Academy", ProductionFactor: 0.2,
+		}, {
+			Name: "Observatory", ProductionFactor: 0.25,
+		}, {
+			Name: "Bio Lab", ProductionFactor: 0.35,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Library", ProductionFactor: 250,
 		}, {
 			Name: "Academy", ProductionFactor: 500,
+		}, {
+			Name: "Observatory", ProductionFactor: 1000,
+		}, {
+			Name: "Bio Lab", ProductionFactor: 1500,
 		}},
 	}, {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
@@ -275,6 +283,11 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "culture", Type: "Resource", Capacity: 575,
+		CapacityProducers: []data.Resource{{
+			Name: "Library", ProductionFactor: 10,
+		}, {
+			Name: "Academy", ProductionFactor: 25,
+		}},
 	}, {
 		Name: "beam", Type: "Resource", Capacity: -1,
 		ProducerAction: "@beam",
@@ -292,6 +305,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "scaffold", Type: "Resource", Capacity: -1,
 		ProducerAction: "@scaffold",
+	}, {
+		Name: "alloy", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "parchment", Type: "Resource", Capacity: -1,
 	}, {
@@ -343,6 +358,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Aqueduct", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "Mansion", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Observatory", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Bio Lab", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
@@ -417,6 +436,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Engineering", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Architecture", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Astronomy", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Biology", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -547,6 +570,28 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "kitten", Capacity: 1,
 		}},
+	}, {
+		Name: "Observatory", Type: "Bonfire", UnlockedBy: "Astronomy",
+		Costs: []data.Resource{{
+			Name: "scaffold", Quantity: 50, CostExponentBase: 1.1,
+		}, {
+			Name: "slab", Quantity: 35, CostExponentBase: 1.1,
+		}, {
+			Name: "iron", Quantity: 750, CostExponentBase: 1.1,
+		}, {
+			Name: "science", Quantity: 1000, CostExponentBase: 1.1,
+		}},
+		Adds: []data.Resource{{Name: "Observatory", Quantity: 1}},
+	}, {
+		Name: "Bio Lab", Type: "Bonfire", UnlockedBy: "Biology",
+		Costs: []data.Resource{{
+			Name: "slab", Quantity: 100, CostExponentBase: 1.1,
+		}, {
+			Name: "alloy", Quantity: 25, CostExponentBase: 1.1,
+		}, {
+			Name: "science", Quantity: 1500, CostExponentBase: 1.1,
+		}},
+		Adds: []data.Resource{{Name: "Bio Lab", Quantity: 1}},
 	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
@@ -822,6 +867,8 @@ const (
 	loghouse
 	aqueduct
 	mansion
+	observatory
+	biolab
 	woodcutter
 	scholar
 	farmer

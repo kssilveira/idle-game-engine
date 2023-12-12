@@ -36,8 +36,12 @@ digraph {
   "scholar" -> "science" [color="green"];
   "Library" -> "science" [color="green"];
   "Academy" -> "science" [color="green"];
+  "Observatory" -> "science" [color="green"];
+  "Bio Lab" -> "science" [color="green"];
   "Library" -> "science" [color="limegreen"];
   "Academy" -> "science" [color="limegreen"];
+  "Observatory" -> "science" [color="limegreen"];
+  "Bio Lab" -> "science" [color="limegreen"];
   "hunter" -> "catpower" [color="green"];
   "Bolas" -> "hunter" [color="green"];
   "Hunting Armor" -> "hunter" [color="green"];
@@ -63,6 +67,8 @@ digraph {
   "ivory" -> "all kittens" [color="red"];
   "spice" -> "all kittens" [color="red"];
   "Unic. Pasture" -> "unicorns" [color="green"];
+  "Library" -> "culture" [color="limegreen"];
+  "Academy" -> "culture" [color="limegreen"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Gather catnip" -> "catnip" [color="limegreen"];
@@ -110,6 +116,15 @@ digraph {
   "titanium" -> "Mansion" [color="orange"];
   "Mansion" -> "kitten" [color="limegreen"];
   "Architecture" -> "Mansion" [color="blue"];
+  "scaffold" -> "Observatory" [color="orange"];
+  "slab" -> "Observatory" [color="orange"];
+  "iron" -> "Observatory" [color="orange"];
+  "science" -> "Observatory" [color="orange"];
+  "Astronomy" -> "Observatory" [color="blue"];
+  "slab" -> "Bio Lab" [color="orange"];
+  "alloy" -> "Bio Lab" [color="orange"];
+  "science" -> "Bio Lab" [color="orange"];
+  "Biology" -> "Bio Lab" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
@@ -240,6 +255,7 @@ digraph {
   "steel" [shape="cylinder"];
   "gear" [shape="cylinder"];
   "scaffold" [shape="cylinder"];
+  "alloy" [shape="cylinder"];
   "parchment" [shape="cylinder"];
   "manuscript" [shape="cylinder"];
   "blueprint" [shape="cylinder"];
@@ -260,6 +276,8 @@ digraph {
   "Log House" [shape="box3d"];
   "Aqueduct" [shape="box3d"];
   "Mansion" [shape="box3d"];
+  "Observatory" [shape="box3d"];
+  "Bio Lab" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -278,6 +296,8 @@ digraph {
   "Celestial Mechanics" [shape="diamond"];
   "Engineering" [shape="diamond"];
   "Architecture" [shape="diamond"];
+  "Astronomy" [shape="diamond"];
+  "Biology" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -306,6 +326,8 @@ digraph {
   "Log House" [shape="box3d"];
   "Aqueduct" [shape="box3d"];
   "Mansion" [shape="box3d"];
+  "Observatory" [shape="box3d"];
+  "Bio Lab" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

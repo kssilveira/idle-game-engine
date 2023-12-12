@@ -84,7 +84,7 @@ More features from kittens game:
 
 - Workshop Reinforced Saw
   - lumber mill 20%
-- Bonfire Hut upgrades
+- Bonfire building upgrades
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/bonfire
