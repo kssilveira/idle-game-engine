@@ -162,6 +162,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Observatory", ProductionFactor: 0.25,
 		}, {
 			Name: "Bio Lab", ProductionFactor: 0.35,
+		}, {
+			Name: "Data Center", ProductionFactor: 0.10,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Library", ProductionFactor: 250,
@@ -171,6 +173,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Observatory", ProductionFactor: 1000,
 		}, {
 			Name: "Bio Lab", ProductionFactor: 1500,
+		}, {
+			Name: "Data Center", ProductionFactor: 750,
 		}},
 	}, {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
@@ -398,6 +402,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Chapel", ProductionFactor: 200,
 			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
+		}, {
+			Name: "Data Center", ProductionFactor: 250,
+			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
 		}},
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
@@ -527,6 +534,14 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "AI Core", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
+		Name: "Solar Farm", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Hydro Plant", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Data Center", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Broadcast Tower", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -575,6 +590,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unicorns", ProductionFactor: 0.1, ProductionBoolean: true,
 		}, {
 			Name: "Amphitheatre", ProductionFactor: -0.048,
+		}, {
+			Name: "Broadcast Tower", ProductionFactor: -0.75,
 		}},
 	}, {
 		Name: "Calendar", Type: "Science", IsHidden: true, Capacity: 1,
@@ -632,6 +649,12 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Chronophysics", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Artificial Intelligence", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Ecology", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Robotics", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Electronics", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -981,6 +1004,36 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{Name: "AI Core", Quantity: 1}},
 	}, {
+		Name: "Solar Farm", Type: "Bonfire", UnlockedBy: "Ecology",
+		Costs: []data.Resource{{
+			Name: "titanium", Quantity: 250, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Solar Farm", Quantity: 1}},
+	}, {
+		Name: "Hydro Plant", Type: "Bonfire", UnlockedBy: "Robotics",
+		Costs: []data.Resource{{
+			Name: "concrete", Quantity: 100, CostExponentBase: 1.15,
+		}, {
+			Name: "titanium", Quantity: 2500, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Hydro Plant", Quantity: 1}},
+	}, {
+		Name: "Data Center", Type: "Bonfire", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "concrete", Quantity: 10, CostExponentBase: 1.15,
+		}, {
+			Name: "steel", Quantity: 100, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Data Center", Quantity: 1}},
+	}, {
+		Name: "Broadcast Tower", Type: "Bonfire", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "iron", Quantity: 1250, CostExponentBase: 1.18,
+		}, {
+			Name: "titanium", Quantity: 75, CostExponentBase: 1.18,
+		}},
+		Adds: []data.Resource{{Name: "Broadcast Tower", Quantity: 1}},
+	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
 		Adds:  []data.Resource{{Name: "woodcutter", Quantity: 1}},
@@ -1304,6 +1357,10 @@ const (
 	ziggurat
 	chronosphere
 	aicore
+	solarfarm
+	hydroplant
+	datacenter
+	broadcasttower
 	woodcutter
 	scholar
 	farmer

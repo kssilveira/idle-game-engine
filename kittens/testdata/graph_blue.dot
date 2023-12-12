@@ -36,6 +36,10 @@ digraph {
   "Construction" -> "Ziggurat" [color="blue"];
   "Chronophysics" -> "Chronosphere" [color="blue"];
   "Artificial Intelligence" -> "AI Core" [color="blue"];
+  "Ecology" -> "Solar Farm" [color="blue"];
+  "Robotics" -> "Hydro Plant" [color="blue"];
+  "Electronics" -> "Data Center" [color="blue"];
+  "Electronics" -> "Broadcast Tower" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -111,6 +115,10 @@ digraph {
   "Ziggurat" [shape="box3d"];
   "Chronosphere" [shape="box3d"];
   "AI Core" [shape="box3d"];
+  "Solar Farm" [shape="box3d"];
+  "Hydro Plant" [shape="box3d"];
+  "Data Center" [shape="box3d"];
+  "Broadcast Tower" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -144,6 +152,9 @@ digraph {
   "Philosophy" [shape="diamond"];
   "Chronophysics" [shape="diamond"];
   "Artificial Intelligence" [shape="diamond"];
+  "Ecology" [shape="diamond"];
+  "Robotics" [shape="diamond"];
+  "Electronics" [shape="diamond"];
   "Mineral Hoes" [shape="hexagon"];
   "Iron Hoes" [shape="hexagon"];
   "Mineral Axe" [shape="hexagon"];
@@ -192,6 +203,10 @@ digraph {
   "Ziggurat" [shape="box3d"];
   "Chronosphere" [shape="box3d"];
   "AI Core" [shape="box3d"];
+  "Solar Farm" [shape="box3d"];
+  "Hydro Plant" [shape="box3d"];
+  "Data Center" [shape="box3d"];
+  "Broadcast Tower" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

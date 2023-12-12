@@ -88,12 +88,14 @@ More features from kittens game:
 - change production bonus to bonus
 
 - Bonfire building upgrades
-- Bonfire effects for Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere
+- Bonfire effects for
+  - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
 - Bonfire active buildings
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/bonfire
     - TODO
+
 - maybe
   - rX: revert action X
     - sell building
