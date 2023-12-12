@@ -84,37 +84,37 @@
 <polygon fill="blue" stroke="blue" points="502.41,-478.02 506.57,-468.28 497.24,-473.29 502.41,-478.02"/>
 </g>
 <!-- woodcutter -->
-<g id="node40" class="node">
+<g id="node49" class="node">
 <title>woodcutter</title>
 <polygon fill="none" stroke="black" points="459.09,-383.56 397.37,-396 335.65,-383.56 335.7,-363.44 459.03,-363.44 459.09,-383.56"/>
 <text text-anchor="middle" x="397.37" y="-374.3" font-family="Times,serif" font-size="14.00">woodcutter</text>
 </g>
 <!-- Hut&#45;&gt;woodcutter -->
-<g id="edge24" class="edge">
+<g id="edge29" class="edge">
 <title>Hut&#45;&gt;woodcutter</title>
 <path fill="none" stroke="blue" d="M412.42,-431.7C410.1,-423.58 407.29,-413.74 404.73,-404.76"/>
 <polygon fill="blue" stroke="blue" points="408.09,-403.8 401.98,-395.14 401.36,-405.72 408.09,-403.8"/>
 </g>
 <!-- scholar -->
-<g id="node41" class="node">
+<g id="node50" class="node">
 <title>scholar</title>
 <polygon fill="none" stroke="black" points="567.34,-383.56 522.37,-396 477.39,-383.56 477.43,-363.44 567.3,-363.44 567.34,-383.56"/>
 <text text-anchor="middle" x="522.37" y="-374.3" font-family="Times,serif" font-size="14.00">scholar</text>
 </g>
 <!-- Library&#45;&gt;scholar -->
-<g id="edge25" class="edge">
+<g id="edge30" class="edge">
 <title>Library&#45;&gt;scholar</title>
 <path fill="none" stroke="blue" d="M522.37,-431.7C522.37,-423.98 522.37,-414.71 522.37,-406.11"/>
 <polygon fill="blue" stroke="blue" points="525.87,-406.1 522.37,-396.1 518.87,-406.1 525.87,-406.1"/>
 </g>
 <!-- Calendar -->
-<g id="node55" class="node">
+<g id="node64" class="node">
 <title>Calendar</title>
 <polygon fill="none" stroke="black" points="645.37,-396 585.37,-378 645.37,-360 705.36,-378 645.37,-396"/>
 <text text-anchor="middle" x="645.37" y="-374.3" font-family="Times,serif" font-size="14.00">Calendar</text>
 </g>
 <!-- Library&#45;&gt;Calendar -->
-<g id="edge38" class="edge">
+<g id="edge43" class="edge">
 <title>Library&#45;&gt;Calendar</title>
 <path fill="none" stroke="blue" d="M550.89,-432.76C570.62,-421.54 596.77,-406.65 616.56,-395.39"/>
 <polygon fill="blue" stroke="blue" points="618.47,-398.33 625.43,-390.34 615.01,-392.25 618.47,-398.33"/>
@@ -141,13 +141,13 @@
 <polygon fill="blue" stroke="blue" points="418.84,-255.57 408.84,-252.08 414.49,-261.05 418.84,-255.57"/>
 </g>
 <!-- farmer -->
-<g id="node42" class="node">
+<g id="node51" class="node">
 <title>farmer</title>
 <polygon fill="none" stroke="black" points="518.02,-239.56 475.37,-252 432.71,-239.56 432.75,-219.44 517.98,-219.44 518.02,-239.56"/>
 <text text-anchor="middle" x="475.37" y="-230.3" font-family="Times,serif" font-size="14.00">farmer</text>
 </g>
 <!-- Agriculture&#45;&gt;farmer -->
-<g id="edge26" class="edge">
+<g id="edge31" class="edge">
 <title>Agriculture&#45;&gt;farmer</title>
 <path fill="none" stroke="blue" d="M475.37,-287.7C475.37,-279.98 475.37,-270.71 475.37,-262.11"/>
 <polygon fill="blue" stroke="blue" points="478.87,-262.1 475.37,-252.1 471.87,-262.1 478.87,-262.1"/>
@@ -195,103 +195,103 @@
 <text text-anchor="middle" x="1120.37" y="-230.3" font-family="Times,serif" font-size="14.00">Metal Working</text>
 </g>
 <!-- Mining&#45;&gt;Metal Working -->
-<g id="edge43" class="edge">
+<g id="edge48" class="edge">
 <title>Mining&#45;&gt;Metal Working</title>
 <path fill="none" stroke="blue" d="M680.29,-299.85C760.87,-287.98 960.51,-258.56 1060.83,-243.77"/>
 <polygon fill="blue" stroke="blue" points="1061.42,-247.22 1070.8,-242.3 1060.4,-240.3 1061.42,-247.22"/>
 </g>
 <!-- miner -->
-<g id="node45" class="node">
+<g id="node54" class="node">
 <title>miner</title>
 <polygon fill="none" stroke="black" points="78.6,-167.56 39.37,-180 0.13,-167.56 0.17,-147.44 78.56,-147.44 78.6,-167.56"/>
 <text text-anchor="middle" x="39.37" y="-158.3" font-family="Times,serif" font-size="14.00">miner</text>
 </g>
 <!-- Mine&#45;&gt;miner -->
-<g id="edge28" class="edge">
+<g id="edge33" class="edge">
 <title>Mine&#45;&gt;miner</title>
 <path fill="none" stroke="blue" d="M536.23,-218.95C533.29,-217.8 530.3,-216.79 527.37,-216 337.82,-165.29 279.22,-221.1 87.37,-180 82.54,-178.97 77.54,-177.58 72.66,-176.03"/>
 <polygon fill="blue" stroke="blue" points="73.54,-172.63 62.94,-172.72 71.28,-179.26 73.54,-172.63"/>
 </g>
 <!-- Mineral Hoes -->
-<g id="node59" class="node">
+<g id="node68" class="node">
 <title>Mineral Hoes</title>
 <polygon fill="none" stroke="black" points="234.46,-162 199.91,-180 130.82,-180 96.28,-162 130.82,-144 199.91,-144 234.46,-162"/>
 <text text-anchor="middle" x="165.37" y="-158.3" font-family="Times,serif" font-size="14.00">Mineral Hoes</text>
 </g>
 <!-- Workshop&#45;&gt;Mineral Hoes -->
-<g id="edge50" class="edge">
+<g id="edge55" class="edge">
 <title>Workshop&#45;&gt;Mineral Hoes</title>
 <path fill="none" stroke="blue" d="M608.71,-218.52C605.58,-217.57 602.43,-216.71 599.37,-216 444.43,-180.15 400.42,-204.97 243.37,-180 236.31,-178.88 228.93,-177.52 221.64,-176.06"/>
 <polygon fill="blue" stroke="blue" points="222.31,-172.63 211.81,-174.03 220.89,-179.48 222.31,-172.63"/>
 </g>
 <!-- Iron Hoes -->
-<g id="node60" class="node">
+<g id="node69" class="node">
 <title>Iron Hoes</title>
 <polygon fill="none" stroke="black" points="358.44,-162 331.9,-180 278.83,-180 252.3,-162 278.83,-144 331.9,-144 358.44,-162"/>
 <text text-anchor="middle" x="305.37" y="-158.3" font-family="Times,serif" font-size="14.00">Iron Hoes</text>
 </g>
 <!-- Workshop&#45;&gt;Iron Hoes -->
-<g id="edge51" class="edge">
+<g id="edge56" class="edge">
 <title>Workshop&#45;&gt;Iron Hoes</title>
 <path fill="none" stroke="blue" d="M608.66,-218.7C605.54,-217.71 602.41,-216.79 599.37,-216 498.37,-189.78 469.4,-201.83 367.37,-180 362.24,-178.9 356.92,-177.64 351.63,-176.3"/>
 <polygon fill="blue" stroke="blue" points="352.15,-172.82 341.59,-173.67 350.37,-179.59 352.15,-172.82"/>
 </g>
 <!-- Mineral Axe -->
-<g id="node61" class="node">
+<g id="node70" class="node">
 <title>Mineral Axe</title>
 <polygon fill="none" stroke="black" points="505.95,-162 473.66,-180 409.07,-180 376.78,-162 409.07,-144 473.66,-144 505.95,-162"/>
 <text text-anchor="middle" x="441.37" y="-158.3" font-family="Times,serif" font-size="14.00">Mineral Axe</text>
 </g>
 <!-- Workshop&#45;&gt;Mineral Axe -->
-<g id="edge52" class="edge">
+<g id="edge57" class="edge">
 <title>Workshop&#45;&gt;Mineral Axe</title>
 <path fill="none" stroke="blue" d="M608.74,-219.35C605.58,-218.21 602.42,-217.08 599.37,-216 563.17,-203.24 522.06,-189.48 490.85,-179.17"/>
 <polygon fill="blue" stroke="blue" points="491.68,-175.76 481.09,-175.95 489.49,-182.41 491.68,-175.76"/>
 </g>
 <!-- Iron Axe -->
-<g id="node62" class="node">
+<g id="node71" class="node">
 <title>Iron Axe</title>
 <polygon fill="none" stroke="black" points="620.93,-162 596.65,-180 548.08,-180 523.8,-162 548.08,-144 596.65,-144 620.93,-162"/>
 <text text-anchor="middle" x="572.37" y="-158.3" font-family="Times,serif" font-size="14.00">Iron Axe</text>
 </g>
 <!-- Workshop&#45;&gt;Iron Axe -->
-<g id="edge53" class="edge">
+<g id="edge58" class="edge">
 <title>Workshop&#45;&gt;Iron Axe</title>
 <path fill="none" stroke="blue" d="M627.32,-215.7C618.3,-207.05 607.25,-196.45 597.42,-187.03"/>
 <polygon fill="blue" stroke="blue" points="599.84,-184.5 590.2,-180.1 595,-189.55 599.84,-184.5"/>
 </g>
 <!-- Expanded Barns -->
-<g id="node63" class="node">
+<g id="node72" class="node">
 <title>Expanded Barns</title>
 <polygon fill="none" stroke="black" points="797.97,-162 758.17,-180 678.56,-180 638.76,-162 678.56,-144 758.17,-144 797.97,-162"/>
 <text text-anchor="middle" x="718.37" y="-158.3" font-family="Times,serif" font-size="14.00">Expanded Barns</text>
 </g>
 <!-- Workshop&#45;&gt;Expanded Barns -->
-<g id="edge54" class="edge">
+<g id="edge59" class="edge">
 <title>Workshop&#45;&gt;Expanded Barns</title>
 <path fill="none" stroke="blue" d="M663.41,-215.7C672.43,-207.05 683.48,-196.45 693.31,-187.03"/>
 <polygon fill="blue" stroke="blue" points="695.73,-189.55 700.53,-180.1 690.89,-184.5 695.73,-189.55"/>
 </g>
 <!-- Reinforced Barns -->
-<g id="node64" class="node">
+<g id="node73" class="node">
 <title>Reinforced Barns</title>
 <polygon fill="none" stroke="black" points="984.47,-162 942.42,-180 858.31,-180 816.26,-162 858.31,-144 942.42,-144 984.47,-162"/>
 <text text-anchor="middle" x="900.37" y="-158.3" font-family="Times,serif" font-size="14.00">Reinforced Barns</text>
 </g>
 <!-- Workshop&#45;&gt;Reinforced Barns -->
-<g id="edge55" class="edge">
+<g id="edge60" class="edge">
 <title>Workshop&#45;&gt;Reinforced Barns</title>
 <path fill="none" stroke="blue" d="M681.9,-222.97C723.26,-211.62 791.26,-192.95 840.42,-179.46"/>
 <polygon fill="blue" stroke="blue" points="841.58,-182.77 850.3,-176.74 839.73,-176.02 841.58,-182.77"/>
 </g>
 <!-- Bolas -->
-<g id="node65" class="node">
+<g id="node74" class="node">
 <title>Bolas</title>
 <polygon fill="none" stroke="black" points="1072.41,-162 1054.89,-180 1019.84,-180 1002.32,-162 1019.84,-144 1054.89,-144 1072.41,-162"/>
 <text text-anchor="middle" x="1037.37" y="-158.3" font-family="Times,serif" font-size="14.00">Bolas</text>
 </g>
 <!-- Workshop&#45;&gt;Bolas -->
-<g id="edge56" class="edge">
+<g id="edge61" class="edge">
 <title>Workshop&#45;&gt;Bolas</title>
 <path fill="none" stroke="blue" d="M681.97,-230.06C745.98,-224.35 882.04,-209.61 993.37,-180 996.71,-179.11 1000.15,-178.05 1003.57,-176.9"/>
 <polygon fill="blue" stroke="blue" points="1004.79,-180.18 1013.01,-173.49 1002.42,-173.6 1004.79,-180.18"/>
@@ -312,13 +312,13 @@
 <polygon fill="blue" stroke="blue" points="1123.87,-190.1 1120.37,-180.1 1116.87,-190.1 1123.87,-190.1"/>
 </g>
 <!-- Hunting Armor -->
-<g id="node66" class="node">
+<g id="node75" class="node">
 <title>Hunting Armor</title>
 <polygon fill="none" stroke="black" points="1318.96,-162 1281.16,-180 1205.57,-180 1167.77,-162 1205.57,-144 1281.16,-144 1318.96,-162"/>
 <text text-anchor="middle" x="1243.37" y="-158.3" font-family="Times,serif" font-size="14.00">Hunting Armor</text>
 </g>
 <!-- Metal Working&#45;&gt;Hunting Armor -->
-<g id="edge57" class="edge">
+<g id="edge62" class="edge">
 <title>Metal Working&#45;&gt;Hunting Armor</title>
 <path fill="none" stroke="blue" d="M1142.64,-220.32C1159.89,-210.51 1184.2,-196.67 1204.62,-185.05"/>
 <polygon fill="blue" stroke="blue" points="1206.43,-188.05 1213.39,-180.06 1202.97,-181.96 1206.43,-188.05"/>
@@ -381,7 +381,7 @@
 <text text-anchor="middle" x="1759.37" y="-158.3" font-family="Times,serif" font-size="14.00">Mathematics</text>
 </g>
 <!-- Animal Husbandry&#45;&gt;Mathematics -->
-<g id="edge45" class="edge">
+<g id="edge50" class="edge">
 <title>Animal Husbandry&#45;&gt;Mathematics</title>
 <path fill="none" stroke="blue" d="M1759.37,-215.7C1759.37,-207.98 1759.37,-198.71 1759.37,-190.11"/>
 <polygon fill="blue" stroke="blue" points="1762.87,-190.1 1759.37,-180.1 1755.87,-190.1 1762.87,-190.1"/>
@@ -393,31 +393,31 @@
 <text text-anchor="middle" x="2017.37" y="-158.3" font-family="Times,serif" font-size="14.00">Construction</text>
 </g>
 <!-- Animal Husbandry&#45;&gt;Construction -->
-<g id="edge46" class="edge">
+<g id="edge51" class="edge">
 <title>Animal Husbandry&#45;&gt;Construction</title>
 <path fill="none" stroke="blue" d="M1798.83,-222.29C1845.98,-209.5 1924.61,-188.17 1973.58,-174.88"/>
 <polygon fill="blue" stroke="blue" points="1974.53,-178.25 1983.26,-172.25 1972.69,-171.49 1974.53,-178.25"/>
 </g>
 <!-- Civil Service -->
-<g id="node56" class="node">
+<g id="node65" class="node">
 <title>Civil Service</title>
 <polygon fill="none" stroke="black" points="2195.37,-180 2114.59,-162 2195.37,-144 2276.14,-162 2195.37,-180"/>
 <text text-anchor="middle" x="2195.37" y="-158.3" font-family="Times,serif" font-size="14.00">Civil Service</text>
 </g>
 <!-- Animal Husbandry&#45;&gt;Civil Service -->
-<g id="edge44" class="edge">
+<g id="edge49" class="edge">
 <title>Animal Husbandry&#45;&gt;Civil Service</title>
 <path fill="none" stroke="blue" d="M1815.49,-225.01C1884.02,-215.12 2003.38,-197.44 2105.37,-180 2118.1,-177.82 2131.83,-175.31 2144.62,-172.9"/>
 <polygon fill="blue" stroke="blue" points="2145.48,-176.3 2154.65,-171 2144.17,-169.43 2145.48,-176.3"/>
 </g>
 <!-- Currency -->
-<g id="node57" class="node">
+<g id="node66" class="node">
 <title>Currency</title>
 <polygon fill="none" stroke="black" points="2355.37,-180 2293.7,-162 2355.37,-144 2417.03,-162 2355.37,-180"/>
 <text text-anchor="middle" x="2355.37" y="-158.3" font-family="Times,serif" font-size="14.00">Currency</text>
 </g>
 <!-- Animal Husbandry&#45;&gt;Currency -->
-<g id="edge47" class="edge">
+<g id="edge52" class="edge">
 <title>Animal Husbandry&#45;&gt;Currency</title>
 <path fill="none" stroke="blue" d="M1813.65,-224.7C1834.2,-221.71 1857.83,-218.48 1879.37,-216 2059.33,-195.29 2106.62,-209.46 2285.37,-180 2295.16,-178.38 2305.62,-176.14 2315.38,-173.8"/>
 <polygon fill="blue" stroke="blue" points="2316.38,-177.16 2325.25,-171.36 2314.7,-170.37 2316.38,-177.16"/>
@@ -438,13 +438,13 @@
 <polygon fill="blue" stroke="blue" points="1187.82,-104.61 1177.29,-105.8 1186.27,-111.43 1187.82,-104.61"/>
 </g>
 <!-- Celestial Mechanics -->
-<g id="node58" class="node">
+<g id="node67" class="node">
 <title>Celestial Mechanics</title>
 <polygon fill="none" stroke="black" points="1311.37,-108 1194.4,-90 1311.37,-72 1428.33,-90 1311.37,-108"/>
 <text text-anchor="middle" x="1311.37" y="-86.3" font-family="Times,serif" font-size="14.00">Celestial Mechanics</text>
 </g>
 <!-- Mathematics&#45;&gt;Celestial Mechanics -->
-<g id="edge48" class="edge">
+<g id="edge53" class="edge">
 <title>Mathematics&#45;&gt;Celestial Mechanics</title>
 <path fill="none" stroke="blue" d="M1718.66,-152.96C1703.24,-150 1685.52,-146.72 1669.37,-144 1569.27,-127.14 1452.93,-110.46 1380.72,-100.44"/>
 <polygon fill="blue" stroke="blue" points="1380.78,-96.91 1370.39,-99.01 1379.82,-103.84 1380.78,-96.91"/>
@@ -461,8 +461,8 @@
 <!-- Construction&#45;&gt;Warehouse -->
 <g id="edge13" class="edge">
 <title>Construction&#45;&gt;Warehouse</title>
-<path fill="none" stroke="blue" d="M1965.86,-155.7C1853.77,-144.11 1593.51,-116.97 1533.05,-107.38"/>
-<polygon fill="blue" stroke="blue" points="1533.38,-103.88 1522.91,-105.52 1532.11,-110.76 1533.38,-103.88"/>
+<path fill="none" stroke="blue" d="M1965.75,-155.71C1853.42,-144.14 1592.62,-117.05 1532.84,-107.58"/>
+<polygon fill="blue" stroke="blue" points="1533.34,-104.12 1522.87,-105.75 1532.08,-111 1533.34,-104.12"/>
 </g>
 <!-- Log House -->
 <g id="node22" class="node">
@@ -486,7 +486,7 @@
 <text text-anchor="middle" x="1712.37" y="-86.3" font-family="Times,serif" font-size="14.00">Engineering</text>
 </g>
 <!-- Construction&#45;&gt;Engineering -->
-<g id="edge49" class="edge">
+<g id="edge54" class="edge">
 <title>Construction&#45;&gt;Engineering</title>
 <path fill="none" stroke="blue" d="M1979.97,-152.42C1924.33,-139.65 1819.82,-115.66 1759.18,-101.75"/>
 <polygon fill="blue" stroke="blue" points="1759.65,-98.26 1749.12,-99.43 1758.08,-105.08 1759.65,-98.26"/>
@@ -507,121 +507,121 @@
 <polygon fill="blue" stroke="blue" points="1901.61,-108.68 1891.03,-108.05 1898.9,-115.14 1901.61,-108.68"/>
 </g>
 <!-- @beam -->
-<g id="node47" class="node">
+<g id="node56" class="node">
 <title>@beam</title>
 <polygon fill="none" stroke="black" points="1959.87,-102 1912.87,-102 1912.87,-78 1959.87,-78 1971.87,-90 1959.87,-102"/>
 <text text-anchor="middle" x="1942.37" y="-86.3" font-family="Times,serif" font-size="14.00">@beam</text>
 </g>
 <!-- Construction&#45;&gt;@beam -->
-<g id="edge30" class="edge">
+<g id="edge35" class="edge">
 <title>Construction&#45;&gt;@beam</title>
 <path fill="none" stroke="blue" d="M2002.55,-147.17C1992.77,-138.04 1979.69,-125.83 1968.22,-115.13"/>
 <polygon fill="blue" stroke="blue" points="1970.3,-112.28 1960.6,-108.02 1965.52,-117.4 1970.3,-112.28"/>
 </g>
 <!-- @slab -->
-<g id="node48" class="node">
+<g id="node57" class="node">
 <title>@slab</title>
 <polygon fill="none" stroke="black" points="2032.37,-102 1990.37,-102 1990.37,-78 2032.37,-78 2044.37,-90 2032.37,-102"/>
 <text text-anchor="middle" x="2017.37" y="-86.3" font-family="Times,serif" font-size="14.00">@slab</text>
 </g>
 <!-- Construction&#45;&gt;@slab -->
-<g id="edge31" class="edge">
+<g id="edge36" class="edge">
 <title>Construction&#45;&gt;@slab</title>
 <path fill="none" stroke="blue" d="M2017.37,-143.7C2017.37,-135.98 2017.37,-126.71 2017.37,-118.11"/>
 <polygon fill="blue" stroke="blue" points="2020.87,-118.1 2017.37,-108.1 2013.87,-118.1 2020.87,-118.1"/>
 </g>
 <!-- @plate -->
-<g id="node49" class="node">
+<g id="node58" class="node">
 <title>@plate</title>
 <polygon fill="none" stroke="black" points="2106.37,-102 2062.37,-102 2062.37,-78 2106.37,-78 2118.37,-90 2106.37,-102"/>
 <text text-anchor="middle" x="2090.37" y="-86.3" font-family="Times,serif" font-size="14.00">@plate</text>
 </g>
 <!-- Construction&#45;&gt;@plate -->
-<g id="edge32" class="edge">
+<g id="edge37" class="edge">
 <title>Construction&#45;&gt;@plate</title>
 <path fill="none" stroke="blue" d="M2031.79,-147.17C2041.31,-138.04 2054.04,-125.83 2065.2,-115.13"/>
 <polygon fill="blue" stroke="blue" points="2067.82,-117.47 2072.62,-108.02 2062.98,-112.41 2067.82,-117.47"/>
 </g>
 <!-- @gear -->
-<g id="node50" class="node">
+<g id="node59" class="node">
 <title>@gear</title>
 <polygon fill="none" stroke="black" points="2178.37,-102 2136.37,-102 2136.37,-78 2178.37,-78 2190.37,-90 2178.37,-102"/>
 <text text-anchor="middle" x="2163.37" y="-86.3" font-family="Times,serif" font-size="14.00">@gear</text>
 </g>
 <!-- Construction&#45;&gt;@gear -->
-<g id="edge33" class="edge">
+<g id="edge38" class="edge">
 <title>Construction&#45;&gt;@gear</title>
 <path fill="none" stroke="blue" d="M2041.47,-149.44C2064.8,-138.26 2100.46,-121.16 2127.19,-108.34"/>
 <polygon fill="blue" stroke="blue" points="2128.74,-111.48 2136.24,-104 2125.71,-105.17 2128.74,-111.48"/>
 </g>
 <!-- @scaffold -->
-<g id="node51" class="node">
+<g id="node60" class="node">
 <title>@scaffold</title>
 <polygon fill="none" stroke="black" points="2269.87,-102 2208.87,-102 2208.87,-78 2269.87,-78 2281.87,-90 2269.87,-102"/>
 <text text-anchor="middle" x="2245.37" y="-86.3" font-family="Times,serif" font-size="14.00">@scaffold</text>
 </g>
 <!-- Construction&#45;&gt;@scaffold -->
-<g id="edge34" class="edge">
+<g id="edge39" class="edge">
 <title>Construction&#45;&gt;@scaffold</title>
 <path fill="none" stroke="blue" d="M2051.8,-151.75C2086.63,-142.23 2142.17,-126.57 2199.25,-107.92"/>
 <polygon fill="blue" stroke="blue" points="2200.38,-111.23 2208.79,-104.78 2198.2,-104.58 2200.38,-111.23"/>
 </g>
 <!-- @manuscript -->
-<g id="node52" class="node">
+<g id="node61" class="node">
 <title>@manuscript</title>
 <polygon fill="none" stroke="black" points="2378.37,-102 2300.37,-102 2300.37,-78 2378.37,-78 2390.37,-90 2378.37,-102"/>
 <text text-anchor="middle" x="2345.37" y="-86.3" font-family="Times,serif" font-size="14.00">@manuscript</text>
 </g>
 <!-- Construction&#45;&gt;@manuscript -->
-<g id="edge35" class="edge">
+<g id="edge40" class="edge">
 <title>Construction&#45;&gt;@manuscript</title>
 <path fill="none" stroke="blue" d="M2057.96,-153.15C2124.56,-140.28 2252.77,-115.5 2290.1,-107.82"/>
 <polygon fill="blue" stroke="blue" points="2291.06,-111.2 2300.1,-105.66 2289.59,-104.35 2291.06,-111.2"/>
 </g>
 <!-- @megalith -->
-<g id="node53" class="node">
+<g id="node62" class="node">
 <title>@megalith</title>
 <polygon fill="none" stroke="black" points="2473.87,-102 2408.87,-102 2408.87,-78 2473.87,-78 2485.87,-90 2473.87,-102"/>
 <text text-anchor="middle" x="2447.37" y="-86.3" font-family="Times,serif" font-size="14.00">@megalith</text>
 </g>
 <!-- Construction&#45;&gt;@megalith -->
-<g id="edge36" class="edge">
+<g id="edge41" class="edge">
 <title>Construction&#45;&gt;@megalith</title>
 <path fill="none" stroke="blue" d="M2056.69,-152.8C2071.86,-149.8 2089.38,-146.52 2105.37,-144 2232.23,-124 2269.42,-137.46 2398.91,-107.78"/>
 <polygon fill="blue" stroke="blue" points="2399.87,-111.15 2408.81,-105.47 2398.28,-104.34 2399.87,-111.15"/>
 </g>
 <!-- Reinforced Saw -->
-<g id="node67" class="node">
+<g id="node76" class="node">
 <title>Reinforced Saw</title>
 <polygon fill="none" stroke="black" points="2660.47,-90 2621.42,-108 2543.31,-108 2504.26,-90 2543.31,-72 2621.42,-72 2660.47,-90"/>
 <text text-anchor="middle" x="2582.37" y="-86.3" font-family="Times,serif" font-size="14.00">Reinforced Saw</text>
 </g>
 <!-- Construction&#45;&gt;Reinforced Saw -->
-<g id="edge58" class="edge">
+<g id="edge63" class="edge">
 <title>Construction&#45;&gt;Reinforced Saw</title>
 <path fill="none" stroke="blue" d="M2055.78,-152.72C2071.14,-149.64 2089.04,-146.33 2105.37,-144 2277.7,-119.46 2323.06,-132.72 2495.37,-108 2503.38,-106.85 2511.77,-105.45 2520.05,-103.96"/>
 <polygon fill="blue" stroke="blue" points="2520.87,-107.37 2530.06,-102.11 2519.59,-100.49 2520.87,-107.37"/>
 </g>
 <!-- Composite Bow -->
-<g id="node68" class="node">
+<g id="node77" class="node">
 <title>Composite Bow</title>
 <polygon fill="none" stroke="black" points="2835.97,-90 2796.67,-108 2718.06,-108 2678.76,-90 2718.06,-72 2796.67,-72 2835.97,-90"/>
 <text text-anchor="middle" x="2757.37" y="-86.3" font-family="Times,serif" font-size="14.00">Composite Bow</text>
 </g>
 <!-- Construction&#45;&gt;Composite Bow -->
-<g id="edge59" class="edge">
+<g id="edge64" class="edge">
 <title>Construction&#45;&gt;Composite Bow</title>
 <path fill="none" stroke="blue" d="M2055.31,-152.57C2070.77,-149.43 2088.85,-146.11 2105.37,-144 2354.51,-112.11 2420.22,-139.89 2669.37,-108 2677.69,-106.94 2686.4,-105.57 2694.98,-104.07"/>
 <polygon fill="blue" stroke="blue" points="2695.74,-107.48 2704.96,-102.26 2694.49,-100.6 2695.74,-107.48"/>
 </g>
 <!-- Catnip Enrichment -->
-<g id="node69" class="node">
+<g id="node78" class="node">
 <title>Catnip Enrichment</title>
 <polygon fill="none" stroke="black" points="3034.48,-90 2989.42,-108 2899.31,-108 2854.25,-90 2899.31,-72 2989.42,-72 3034.48,-90"/>
 <text text-anchor="middle" x="2944.37" y="-86.3" font-family="Times,serif" font-size="14.00">Catnip Enrichment</text>
 </g>
 <!-- Construction&#45;&gt;Catnip Enrichment -->
-<g id="edge60" class="edge">
+<g id="edge65" class="edge">
 <title>Construction&#45;&gt;Catnip Enrichment</title>
 <path fill="none" stroke="blue" d="M2055.3,-152.45C2070.75,-149.28 2088.83,-145.99 2105.37,-144 2432.29,-104.67 2518.05,-143.93 2845.37,-108 2855.05,-106.94 2865.23,-105.53 2875.21,-103.97"/>
 <polygon fill="blue" stroke="blue" points="2875.8,-107.43 2885.11,-102.38 2874.68,-100.51 2875.8,-107.43"/>
@@ -755,17 +755,32 @@
 <!-- Oil Well -->
 <g id="node37" class="node">
 <title>Oil Well</title>
-<polygon fill="none" stroke="black" points="1379.87,-468 1320.87,-468 1316.87,-464 1316.87,-432 1375.87,-432 1379.87,-436 1379.87,-468"/>
-<polyline fill="none" stroke="black" points="1375.87,-464 1316.87,-464 "/>
-<polyline fill="none" stroke="black" points="1375.87,-464 1375.87,-432 "/>
-<polyline fill="none" stroke="black" points="1375.87,-464 1379.87,-468 "/>
-<text text-anchor="middle" x="1348.37" y="-446.3" font-family="Times,serif" font-size="14.00">Oil Well</text>
+<polygon fill="none" stroke="black" points="1346.87,-468 1287.87,-468 1283.87,-464 1283.87,-432 1342.87,-432 1346.87,-436 1346.87,-468"/>
+<polyline fill="none" stroke="black" points="1342.87,-464 1283.87,-464 "/>
+<polyline fill="none" stroke="black" points="1342.87,-464 1342.87,-432 "/>
+<polyline fill="none" stroke="black" points="1342.87,-464 1346.87,-468 "/>
+<text text-anchor="middle" x="1315.37" y="-446.3" font-family="Times,serif" font-size="14.00">Oil Well</text>
 </g>
 <!-- Chemistry&#45;&gt;Oil Well -->
 <g id="edge22" class="edge">
 <title>Chemistry&#45;&gt;Oil Well</title>
-<path fill="none" stroke="blue" d="M1348.37,-503.7C1348.37,-495.98 1348.37,-486.71 1348.37,-478.11"/>
-<polygon fill="blue" stroke="blue" points="1351.87,-478.1 1348.37,-468.1 1344.87,-478.1 1351.87,-478.1"/>
+<path fill="none" stroke="blue" d="M1341.2,-505.81C1337.28,-497.49 1332.31,-486.94 1327.77,-477.32"/>
+<polygon fill="blue" stroke="blue" points="1330.87,-475.68 1323.44,-468.13 1324.54,-478.66 1330.87,-475.68"/>
+</g>
+<!-- Calciner -->
+<g id="node44" class="node">
+<title>Calciner</title>
+<polygon fill="none" stroke="black" points="1427.37,-468 1369.37,-468 1365.37,-464 1365.37,-432 1423.37,-432 1427.37,-436 1427.37,-468"/>
+<polyline fill="none" stroke="black" points="1423.37,-464 1365.37,-464 "/>
+<polyline fill="none" stroke="black" points="1423.37,-464 1423.37,-432 "/>
+<polyline fill="none" stroke="black" points="1423.37,-464 1427.37,-468 "/>
+<text text-anchor="middle" x="1396.37" y="-446.3" font-family="Times,serif" font-size="14.00">Calciner</text>
+</g>
+<!-- Chemistry&#45;&gt;Calciner -->
+<g id="edge26" class="edge">
+<title>Chemistry&#45;&gt;Calciner</title>
+<path fill="none" stroke="blue" d="M1358.31,-506.5C1364.22,-497.89 1371.87,-486.72 1378.77,-476.66"/>
+<polygon fill="blue" stroke="blue" points="1381.8,-478.43 1384.57,-468.2 1376.03,-474.47 1381.8,-478.43"/>
 </g>
 <!-- Particle Physics -->
 <g id="node38" class="node">
@@ -788,68 +803,152 @@
 <path fill="none" stroke="blue" d="M1529.37,-503.7C1529.37,-495.98 1529.37,-486.71 1529.37,-478.11"/>
 <polygon fill="blue" stroke="blue" points="1532.87,-478.1 1529.37,-468.1 1525.87,-478.1 1532.87,-478.1"/>
 </g>
-<!-- Archery -->
+<!-- Machinery -->
+<g id="node40" class="node">
+<title>Machinery</title>
+<polygon fill="none" stroke="black" points="1712.37,-540 1642.65,-522 1712.37,-504 1782.08,-522 1712.37,-540"/>
+<text text-anchor="middle" x="1712.37" y="-518.3" font-family="Times,serif" font-size="14.00">Machinery</text>
+</g>
+<!-- Steamworks -->
+<g id="node41" class="node">
+<title>Steamworks</title>
+<polygon fill="none" stroke="black" points="1754.37,-468 1674.37,-468 1670.37,-464 1670.37,-432 1750.37,-432 1754.37,-436 1754.37,-468"/>
+<polyline fill="none" stroke="black" points="1750.37,-464 1670.37,-464 "/>
+<polyline fill="none" stroke="black" points="1750.37,-464 1750.37,-432 "/>
+<polyline fill="none" stroke="black" points="1750.37,-464 1754.37,-468 "/>
+<text text-anchor="middle" x="1712.37" y="-446.3" font-family="Times,serif" font-size="14.00">Steamworks</text>
+</g>
+<!-- Machinery&#45;&gt;Steamworks -->
+<g id="edge24" class="edge">
+<title>Machinery&#45;&gt;Steamworks</title>
+<path fill="none" stroke="blue" d="M1712.37,-503.7C1712.37,-495.98 1712.37,-486.71 1712.37,-478.11"/>
+<polygon fill="blue" stroke="blue" points="1715.87,-478.1 1712.37,-468.1 1708.87,-478.1 1715.87,-478.1"/>
+</g>
+<!-- Electricity -->
+<g id="node42" class="node">
+<title>Electricity</title>
+<polygon fill="none" stroke="black" points="1867.37,-540 1800.17,-522 1867.37,-504 1934.56,-522 1867.37,-540"/>
+<text text-anchor="middle" x="1867.37" y="-518.3" font-family="Times,serif" font-size="14.00">Electricity</text>
+</g>
+<!-- Magneto -->
 <g id="node43" class="node">
+<title>Magneto</title>
+<polygon fill="none" stroke="black" points="1899.87,-468 1838.87,-468 1834.87,-464 1834.87,-432 1895.87,-432 1899.87,-436 1899.87,-468"/>
+<polyline fill="none" stroke="black" points="1895.87,-464 1834.87,-464 "/>
+<polyline fill="none" stroke="black" points="1895.87,-464 1895.87,-432 "/>
+<polyline fill="none" stroke="black" points="1895.87,-464 1899.87,-468 "/>
+<text text-anchor="middle" x="1867.37" y="-446.3" font-family="Times,serif" font-size="14.00">Magneto</text>
+</g>
+<!-- Electricity&#45;&gt;Magneto -->
+<g id="edge25" class="edge">
+<title>Electricity&#45;&gt;Magneto</title>
+<path fill="none" stroke="blue" d="M1867.37,-503.7C1867.37,-495.98 1867.37,-486.71 1867.37,-478.11"/>
+<polygon fill="blue" stroke="blue" points="1870.87,-478.1 1867.37,-468.1 1863.87,-478.1 1870.87,-478.1"/>
+</g>
+<!-- Mechanization -->
+<g id="node45" class="node">
+<title>Mechanization</title>
+<polygon fill="none" stroke="black" points="2042.37,-540 1952.21,-522 2042.37,-504 2132.52,-522 2042.37,-540"/>
+<text text-anchor="middle" x="2042.37" y="-518.3" font-family="Times,serif" font-size="14.00">Mechanization</text>
+</g>
+<!-- Factory -->
+<g id="node46" class="node">
+<title>Factory</title>
+<polygon fill="none" stroke="black" points="2071.37,-468 2017.37,-468 2013.37,-464 2013.37,-432 2067.37,-432 2071.37,-436 2071.37,-468"/>
+<polyline fill="none" stroke="black" points="2067.37,-464 2013.37,-464 "/>
+<polyline fill="none" stroke="black" points="2067.37,-464 2067.37,-432 "/>
+<polyline fill="none" stroke="black" points="2067.37,-464 2071.37,-468 "/>
+<text text-anchor="middle" x="2042.37" y="-446.3" font-family="Times,serif" font-size="14.00">Factory</text>
+</g>
+<!-- Mechanization&#45;&gt;Factory -->
+<g id="edge27" class="edge">
+<title>Mechanization&#45;&gt;Factory</title>
+<path fill="none" stroke="blue" d="M2042.37,-503.7C2042.37,-495.98 2042.37,-486.71 2042.37,-478.11"/>
+<polygon fill="blue" stroke="blue" points="2045.87,-478.1 2042.37,-468.1 2038.87,-478.1 2045.87,-478.1"/>
+</g>
+<!-- Nuclear Fission -->
+<g id="node47" class="node">
+<title>Nuclear Fission</title>
+<polygon fill="none" stroke="black" points="2244.37,-540 2150.86,-522 2244.37,-504 2337.87,-522 2244.37,-540"/>
+<text text-anchor="middle" x="2244.37" y="-518.3" font-family="Times,serif" font-size="14.00">Nuclear Fission</text>
+</g>
+<!-- Reactor -->
+<g id="node48" class="node">
+<title>Reactor</title>
+<polygon fill="none" stroke="black" points="2273.87,-468 2218.87,-468 2214.87,-464 2214.87,-432 2269.87,-432 2273.87,-436 2273.87,-468"/>
+<polyline fill="none" stroke="black" points="2269.87,-464 2214.87,-464 "/>
+<polyline fill="none" stroke="black" points="2269.87,-464 2269.87,-432 "/>
+<polyline fill="none" stroke="black" points="2269.87,-464 2273.87,-468 "/>
+<text text-anchor="middle" x="2244.37" y="-446.3" font-family="Times,serif" font-size="14.00">Reactor</text>
+</g>
+<!-- Nuclear Fission&#45;&gt;Reactor -->
+<g id="edge28" class="edge">
+<title>Nuclear Fission&#45;&gt;Reactor</title>
+<path fill="none" stroke="blue" d="M2244.37,-503.7C2244.37,-495.98 2244.37,-486.71 2244.37,-478.11"/>
+<polygon fill="blue" stroke="blue" points="2247.87,-478.1 2244.37,-468.1 2240.87,-478.1 2247.87,-478.1"/>
+</g>
+<!-- Archery -->
+<g id="node52" class="node">
 <title>Archery</title>
 <polygon fill="none" stroke="black" points="1929.37,-324 1873.23,-306 1929.37,-288 1985.5,-306 1929.37,-324"/>
 <text text-anchor="middle" x="1929.37" y="-302.3" font-family="Times,serif" font-size="14.00">Archery</text>
 </g>
 <!-- Archery&#45;&gt;Animal Husbandry -->
-<g id="edge42" class="edge">
+<g id="edge47" class="edge">
 <title>Archery&#45;&gt;Animal Husbandry</title>
 <path fill="none" stroke="blue" d="M1906.08,-295.41C1878.44,-284.03 1831.9,-264.87 1798.65,-251.18"/>
 <polygon fill="blue" stroke="blue" points="1799.8,-247.87 1789.22,-247.29 1797.14,-254.34 1799.8,-247.87"/>
 </g>
 <!-- hunter -->
-<g id="node44" class="node">
+<g id="node53" class="node">
 <title>hunter</title>
 <polygon fill="none" stroke="black" points="1970.31,-239.56 1929.37,-252 1888.42,-239.56 1888.46,-219.44 1970.27,-219.44 1970.31,-239.56"/>
 <text text-anchor="middle" x="1929.37" y="-230.3" font-family="Times,serif" font-size="14.00">hunter</text>
 </g>
 <!-- Archery&#45;&gt;hunter -->
-<g id="edge27" class="edge">
+<g id="edge32" class="edge">
 <title>Archery&#45;&gt;hunter</title>
 <path fill="none" stroke="blue" d="M1929.37,-287.7C1929.37,-279.98 1929.37,-270.71 1929.37,-262.11"/>
 <polygon fill="blue" stroke="blue" points="1932.87,-262.1 1929.37,-252.1 1925.87,-262.1 1932.87,-262.1"/>
 </g>
 <!-- Send hunters -->
-<g id="node46" class="node">
+<g id="node55" class="node">
 <title>Send hunters</title>
 <polygon fill="none" stroke="black" points="2128.15,-239.56 2058.37,-252 1988.58,-239.56 1988.64,-219.44 2128.09,-219.44 2128.15,-239.56"/>
 <text text-anchor="middle" x="2058.37" y="-230.3" font-family="Times,serif" font-size="14.00">Send hunters</text>
 </g>
 <!-- Archery&#45;&gt;Send hunters -->
-<g id="edge29" class="edge">
+<g id="edge34" class="edge">
 <title>Archery&#45;&gt;Send hunters</title>
 <path fill="none" stroke="blue" d="M1949.24,-294.22C1969.67,-283.13 2001.82,-265.69 2025.94,-252.6"/>
 <polygon fill="blue" stroke="blue" points="2027.63,-255.66 2034.75,-247.82 2024.29,-249.51 2027.63,-255.66"/>
 </g>
 <!-- Lizards -->
-<g id="node54" class="node">
+<g id="node63" class="node">
 <title>Lizards</title>
 <polygon fill="none" stroke="black" points="2190.87,-246 2145.87,-246 2145.87,-222 2190.87,-222 2202.87,-234 2190.87,-246"/>
 <text text-anchor="middle" x="2174.37" y="-230.3" font-family="Times,serif" font-size="14.00">Lizards</text>
 </g>
 <!-- Archery&#45;&gt;Lizards -->
-<g id="edge37" class="edge">
+<g id="edge42" class="edge">
 <title>Archery&#45;&gt;Lizards</title>
 <path fill="none" stroke="blue" d="M1962.34,-298.53C2001.87,-290.36 2070.15,-274.92 2135.82,-252.26"/>
 <polygon fill="blue" stroke="blue" points="2137.21,-255.49 2145.49,-248.87 2134.89,-248.88 2137.21,-255.49"/>
 </g>
 <!-- Calendar&#45;&gt;Agriculture -->
-<g id="edge39" class="edge">
+<g id="edge44" class="edge">
 <title>Calendar&#45;&gt;Agriculture</title>
 <path fill="none" stroke="blue" d="M621.37,-367.12C592.46,-355.22 543.66,-335.12 510.51,-321.47"/>
 <polygon fill="blue" stroke="blue" points="511.77,-318.2 501.19,-317.63 509.1,-324.68 511.77,-318.2"/>
 </g>
 <!-- Calendar&#45;&gt;Mining -->
-<g id="edge41" class="edge">
+<g id="edge46" class="edge">
 <title>Calendar&#45;&gt;Mining</title>
 <path fill="none" stroke="blue" d="M645.37,-359.7C645.37,-351.98 645.37,-342.71 645.37,-334.11"/>
 <polygon fill="blue" stroke="blue" points="648.87,-334.1 645.37,-324.1 641.87,-334.1 648.87,-334.1"/>
 </g>
 <!-- Calendar&#45;&gt;Archery -->
-<g id="edge40" class="edge">
+<g id="edge45" class="edge">
 <title>Calendar&#45;&gt;Archery</title>
 <path fill="none" stroke="blue" d="M693.36,-374.38C893.36,-363.48 1660.09,-321.68 1873.79,-310.03"/>
 <polygon fill="blue" stroke="blue" points="1874.04,-313.52 1883.84,-309.48 1873.66,-306.53 1874.04,-313.52"/>

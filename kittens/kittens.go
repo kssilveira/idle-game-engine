@@ -130,7 +130,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Iron Axe", ProductionFactor: 0.5,
 			}},
 		}, {
-			Name: "Active Smelter", ProductionFactor: -0.25,
+			Name: "Active Smelter", ProductionFactor: -0.05 * 5,
 		}},
 		ProductionBonus: []data.Resource{{
 			Name: "Lumber Mill", ProductionFactor: 0.10,
@@ -199,7 +199,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Quarry", ProductionFactor: 0.35,
 			}},
 		}, {
-			Name: "Active Smelter", ProductionFactor: -0.5,
+			Name: "Active Smelter", ProductionFactor: -0.1 * 5,
+		}, {
+			Name: "Calciner", ProductionFactor: -1.5 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 250,
@@ -216,7 +218,9 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "iron", Type: "Resource", StartCapacity: 50,
 		Producers: []data.Resource{{
-			Name: "Active Smelter", ProductionFactor: 0.1,
+			Name: "Active Smelter", ProductionFactor: 0.02 * 5,
+		}, {
+			Name: "Calciner", ProductionFactor: 0.15 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 50,
@@ -265,6 +269,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "titanium", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "Accelerator", ProductionFactor: -0.015 * 5,
+		}, {
+			Name: "Calciner", ProductionFactor: 0.0005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", ProductionFactor: 2,
@@ -282,6 +288,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "oil", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "Oil Well", ProductionFactor: 0.02 * 5,
+		}, {
+			Name: "Magneto", ProductionFactor: -0.05 * 5,
+		}, {
+			Name: "Calciner", ProductionFactor: -0.024 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Oil Well", ProductionFactor: 1500,
@@ -290,6 +300,11 @@ func NewGame(now game.Now) *game.Game {
 		Name: "uranium", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "Accelerator", ProductionFactor: 0.0025 * 5,
+		}, {
+			Name: "Reactor", ProductionFactor: -0.001 * 5,
+		}},
+		CapacityProducers: []data.Resource{{
+			Name: "Reactor", ProductionFactor: 250,
 		}},
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
@@ -430,6 +445,16 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Accelerator", Type: "Bonfire", IsHidden: true, Capacity: -1,
 	}, {
+		Name: "Steamworks", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Magneto", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Calciner", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Factory", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
+		Name: "Reactor", Type: "Bonfire", IsHidden: true, Capacity: -1,
+	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -515,6 +540,14 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Chemistry", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Particle Physics", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Machinery", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Electricity", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Mechanization", Type: "Science", IsHidden: true, Capacity: 1,
+	}, {
+		Name: "Nuclear Fission", Type: "Science", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
@@ -718,6 +751,58 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{Name: "Accelerator", Quantity: 1}},
 	}, {
+		Name: "Steamworks", Type: "Bonfire", UnlockedBy: "Machinery",
+		Costs: []data.Resource{{
+			Name: "steel", Quantity: 65, CostExponentBase: 1.25,
+		}, {
+			Name: "gear", Quantity: 20, CostExponentBase: 1.25,
+		}, {
+			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
+		}},
+		Adds: []data.Resource{{Name: "Steamworks", Quantity: 1}},
+	}, {
+		Name: "Magneto", Type: "Bonfire", UnlockedBy: "Electricity",
+		Costs: []data.Resource{{
+			Name: "alloy", Quantity: 10, CostExponentBase: 1.25,
+		}, {
+			Name: "gear", Quantity: 5, CostExponentBase: 1.25,
+		}, {
+			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
+		}},
+		Adds: []data.Resource{{Name: "Magneto", Quantity: 1}},
+	}, {
+		Name: "Calciner", Type: "Bonfire", UnlockedBy: "Chemistry",
+		Costs: []data.Resource{{
+			Name: "steel", Quantity: 100, CostExponentBase: 1.15,
+		}, {
+			Name: "titanium", Quantity: 15, CostExponentBase: 1.15,
+		}, {
+			Name: "blueprint", Quantity: 1, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Calciner", Quantity: 1}},
+	}, {
+		Name: "Factory", Type: "Bonfire", UnlockedBy: "Mechanization",
+		Costs: []data.Resource{{
+			Name: "titanium", Quantity: 2000, CostExponentBase: 1.15,
+		}, {
+			Name: "plate", Quantity: 25000, CostExponentBase: 1.15,
+		}, {
+			Name: "concrete", Quantity: 15, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Factory", Quantity: 1}},
+	}, {
+		Name: "Reactor", Type: "Bonfire", UnlockedBy: "Nuclear Fission",
+		Costs: []data.Resource{{
+			Name: "titanium", Quantity: 3500, CostExponentBase: 1.15,
+		}, {
+			Name: "plate", Quantity: 5000, CostExponentBase: 1.15,
+		}, {
+			Name: "concrete", Quantity: 50, CostExponentBase: 1.15,
+		}, {
+			Name: "blueprint", Quantity: 25, CostExponentBase: 1.15,
+		}},
+		Adds: []data.Resource{{Name: "Reactor", Quantity: 1}},
+	}, {
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
 		Adds:  []data.Resource{{Name: "woodcutter", Quantity: 1}},
@@ -752,35 +837,55 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
 		Adds: []data.Resource{{
 			Name: "beam", Quantity: 1,
-			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
 		}},
 	}, {
 		Name: "@slab", Type: "Craft", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "minerals", Quantity: 250}},
 		Adds: []data.Resource{{
 			Name: "slab", Quantity: 1,
-			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
 		}},
 	}, {
 		Name: "@plate", Type: "Craft", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "iron", Quantity: 125}},
 		Adds: []data.Resource{{
 			Name: "plate", Quantity: 1,
-			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
 		}},
 	}, {
 		Name: "@gear", Type: "Craft", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "steel", Quantity: 15}},
 		Adds: []data.Resource{{
 			Name: "gear", Quantity: 1,
-			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
 		}},
 	}, {
 		Name: "@scaffold", Type: "Craft", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "beam", Quantity: 50}},
 		Adds: []data.Resource{{
 			Name: "scaffold", Quantity: 1,
-			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
 		}},
 	}, {
 		Name: "@manuscript", Type: "Craft", UnlockedBy: "Construction",
@@ -791,7 +896,11 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "manuscript", Quantity: 1,
-			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
 		}},
 	}, {
 		Name: "@megalith", Type: "Craft", UnlockedBy: "Construction",
@@ -804,7 +913,11 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "megalith", Quantity: 1,
-			ProductionBonus: []data.Resource{{Name: "Workshop", ProductionFactor: 0.06}},
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
 		}},
 	}, {
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
@@ -999,6 +1112,11 @@ const (
 	lumbermill
 	oilwell
 	accelerator
+	steamworks
+	magneto
+	calciner
+	factory
+	reactor
 	woodcutter
 	scholar
 	farmer

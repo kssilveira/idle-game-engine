@@ -85,6 +85,8 @@ More features from kittens game:
 - create m command that skips and buys the max
 
 - Bonfire building upgrades
+- Bonfire effects Steamworks Magneto Reactor
+- Bonfire active buildings
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/bonfire
