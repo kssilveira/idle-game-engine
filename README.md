@@ -86,16 +86,19 @@ More features from kittens game:
 - validate capacityproducers with startcapacity and without capacity
 - change production factor to just factor
 - change production bonus to bonus
+- change solve commands to string
+- fix test performance
 
 - Bonfire building upgrades
 - Bonfire effects for
   - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
 - Bonfire active buildings
 - Job engineer
+- Metaphysics
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/science/technologies
-    - TODO from Astronomy
+  - https://wiki.kittensgame.com/en/game-tabs/workshop
+    - TODO
 
 - maybe
   - rX: revert action X
