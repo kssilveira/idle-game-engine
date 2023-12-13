@@ -15,6 +15,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Reinforced Barns", ProductionFactor: 0.80,
 	}}
+	CultureCapacityProductionBonus := []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}}
 
 	g := game.NewGame(now())
 	g.AddResources(join([]data.Resource{{
@@ -275,33 +276,25 @@ func NewGame(now game.Now) *game.Game {
 		Name: "furs", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.05,
-			ProductionBonus: []data.Resource{{
-				Name: "Tradepost", ProductionFactor: -0.04,
-			}},
+			ProductionBonus: []data.Resource{{Name: "Tradepost", ProductionFactor: -0.04}},
 		}},
 	}, {
 		Name: "ivory", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.035,
-			ProductionBonus: []data.Resource{{
-				Name: "Tradepost", ProductionFactor: -0.04,
-			}},
+			ProductionBonus: []data.Resource{{Name: "Tradepost", ProductionFactor: -0.04}},
 		}},
 	}, {
 		Name: "spice", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.005,
-			ProductionBonus: []data.Resource{{
-				Name: "Tradepost", ProductionFactor: -0.04,
-			}},
+			ProductionBonus: []data.Resource{{Name: "Tradepost", ProductionFactor: -0.04}},
 		}, {
 			Name: "Brewery", ProductionFactor: -0.1 * 5,
 		}},
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
-		Producers: []data.Resource{{
-			Name: "Unic. Pasture", ProductionFactor: 0.001 * 5,
-		}},
+		Producers: []data.Resource{{Name: "Unic. Pasture", ProductionFactor: 0.001 * 5}},
 	}, {
 		Name: "culture", Type: "Resource", StartCapacity: 575,
 		Producers: []data.Resource{{
@@ -312,20 +305,15 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Temple", ProductionFactor: 0.1 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Library", ProductionFactor: 10,
-			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
+			Name: "Library", ProductionFactor: 10, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Academy", ProductionFactor: 25,
-			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
+			Name: "Academy", ProductionFactor: 25, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Amphitheatre", ProductionFactor: 50,
-			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
+			Name: "Amphitheatre", ProductionFactor: 50, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Chapel", ProductionFactor: 200,
-			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
+			Name: "Chapel", ProductionFactor: 200, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Data Center", ProductionFactor: 250,
-			ProductionBonus: []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}},
+			Name: "Data Center", ProductionFactor: 250, ProductionBonus: CultureCapacityProductionBonus,
 		}},
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
