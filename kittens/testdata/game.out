@@ -756,31 +756,38 @@
         },
         {
           "Name": "woodcutter",
-          "ProductionFactor": 1
+          "ProductionFactor": 1,
+          "ProductionFloor": true
         },
         {
           "Name": "scholar",
-          "ProductionFactor": 1
+          "ProductionFactor": 1,
+          "ProductionFloor": true
         },
         {
           "Name": "farmer",
-          "ProductionFactor": 1
+          "ProductionFactor": 1,
+          "ProductionFloor": true
         },
         {
           "Name": "hunter",
-          "ProductionFactor": 1
+          "ProductionFactor": 1,
+          "ProductionFloor": true
         },
         {
           "Name": "miner",
-          "ProductionFactor": 1
+          "ProductionFactor": 1,
+          "ProductionFloor": true
         },
         {
           "Name": "priest",
-          "ProductionFactor": 1
+          "ProductionFactor": 1,
+          "ProductionFloor": true
         },
         {
           "Name": "geologist",
-          "ProductionFactor": 1
+          "ProductionFactor": 1,
+          "ProductionFloor": true
         }
       ],
       "StartQuantity": 1

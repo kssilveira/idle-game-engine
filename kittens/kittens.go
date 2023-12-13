@@ -17,6 +17,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Reinforced Barns", ProductionFactor: 0.80,
 	}}
 	CultureCapacityProductionBonus := []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}}
+	kittenNames := []string{
+		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
+	}
 
 	g := game.NewGame(now())
 	g.AddResources(join([]data.Resource{{
@@ -28,7 +31,8 @@ func NewGame(now game.Now) *game.Game {
 	}}, resourceWithModulus(data.Resource{
 		Type: "Calendar", StartQuantity: 1, Capacity: -1,
 		Producers: []data.Resource{{Name: "day", ProductionFactor: 0.01, ProductionFloor: true}},
-	}, []string{"Spring", "Summer", "Autumn", "Winter"}), []data.Resource{{
+	}, []string{
+		"Spring", "Summer", "Autumn", "Winter"}), []data.Resource{{
 		Name: "day_of_year", Type: "Calendar", StartQuantity: 1, Capacity: -1,
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []data.Resource{{Name: "day", ProductionFactor: 1, ProductionFloor: true}},
@@ -49,9 +53,7 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
-		}, []string{
-			"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
-		}), []data.Resource{{
+		}, kittenNames), []data.Resource{{
 			Name: "farmer", ProductionFactor: 1 * 5, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Mineral Hoes", ProductionFactor: 0.5,
@@ -254,25 +256,11 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "all kittens", Type: "Resource", IsHidden: true, Capacity: -1, StartQuantity: 1,
-		Producers: []data.Resource{{
+		Producers: join([]data.Resource{{
 			Name: "", ProductionFactor: -1,
-		}, {
+		}}, resourceWithName(data.Resource{
 			Name: "kitten", ProductionFactor: 1, ProductionFloor: true,
-		}, {
-			Name: "woodcutter", ProductionFactor: 1,
-		}, {
-			Name: "scholar", ProductionFactor: 1,
-		}, {
-			Name: "farmer", ProductionFactor: 1,
-		}, {
-			Name: "hunter", ProductionFactor: 1,
-		}, {
-			Name: "miner", ProductionFactor: 1,
-		}, {
-			Name: "priest", ProductionFactor: 1,
-		}, {
-			Name: "geologist", ProductionFactor: 1,
-		}},
+		}, kittenNames)),
 	}, {
 		Name: "furs", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
