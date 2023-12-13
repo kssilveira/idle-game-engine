@@ -363,78 +363,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Broadcast Tower", ProductionFactor: -0.75,
 		}},
 	}, {
-		Name: "Calendar", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Agriculture", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Archery", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Mining", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Animal Husbandry", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Metal Working", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Civil Service", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Mathematics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Construction", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Currency", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Celestial Mechanics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Engineering", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Steel", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Architecture", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Astronomy", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Biology", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Navigation", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Geology", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Chemistry", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Particle Physics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Machinery", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Electricity", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Mechanization", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Nuclear Fission", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Writing", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Acoustics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Philosophy", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Chronophysics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Artificial Intelligence", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Ecology", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Robotics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Electronics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Theology", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Physics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Metaphysics", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Chemistry", Type: "Science", IsHidden: true, Capacity: 1,
-	}, {
 		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Iron Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
@@ -836,396 +764,340 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "spice", Quantity: 8.75,
 		}},
-	}, {
-		Name: "Calendar", Type: "Science", UnlockedBy: "Library", LockedBy: "Calendar",
+	}})
+	addSciences(g, []data.Action{{
+		Name: "Calendar", UnlockedBy: "Library",
 		Costs: []data.Resource{{Name: "science", Quantity: 30}},
-		Adds:  []data.Resource{{Name: "Calendar", Quantity: 1}},
 	}, {
-		Name: "Agriculture", Type: "Science", UnlockedBy: "Calendar", LockedBy: "Agriculture",
+		Name: "Agriculture", UnlockedBy: "Calendar",
 		Costs: []data.Resource{{Name: "science", Quantity: 100}},
-		Adds:  []data.Resource{{Name: "Agriculture", Quantity: 1}},
 	}, {
-		Name: "Archery", Type: "Science", UnlockedBy: "Agriculture", LockedBy: "Archery",
+		Name: "Archery", UnlockedBy: "Agriculture",
 		Costs: []data.Resource{{Name: "science", Quantity: 300}},
-		Adds:  []data.Resource{{Name: "Archery", Quantity: 1}},
 	}, {
-		Name: "Mining", Type: "Science", UnlockedBy: "Agriculture", LockedBy: "Mining",
+		Name: "Mining", UnlockedBy: "Agriculture",
 		Costs: []data.Resource{{Name: "science", Quantity: 500}},
-		Adds:  []data.Resource{{Name: "Mining", Quantity: 1}},
 	}, {
-		Name: "Animal Husbandry", Type: "Science", UnlockedBy: "Archery", LockedBy: "Animal Husbandry",
+		Name: "Animal Husbandry", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "science", Quantity: 500}},
-		Adds:  []data.Resource{{Name: "Animal Husbandry", Quantity: 1}},
 	}, {
-		Name: "Metal Working", Type: "Science", UnlockedBy: "Mining", LockedBy: "Metal Working",
+		Name: "Metal Working", UnlockedBy: "Mining",
 		Costs: []data.Resource{{Name: "science", Quantity: 900}},
-		Adds:  []data.Resource{{Name: "Metal Working", Quantity: 1}},
 	}, {
-		Name: "Civil Service", Type: "Science", UnlockedBy: "Animal Husbandry", LockedBy: "Civil Service",
+		Name: "Civil Service", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
-		Adds:  []data.Resource{{Name: "Civil Service", Quantity: 1}},
 	}, {
-		Name: "Mathematics", Type: "Science", UnlockedBy: "Animal Husbandry", LockedBy: "Mathematics",
+		Name: "Mathematics", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{Name: "science", Quantity: 1000}},
-		Adds:  []data.Resource{{Name: "Mathematics", Quantity: 1}},
 	}, {
-		Name: "Construction", Type: "Science", UnlockedBy: "Animal Husbandry", LockedBy: "Construction",
+		Name: "Construction", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{Name: "science", Quantity: 1300}},
-		Adds:  []data.Resource{{Name: "Construction", Quantity: 1}},
 	}, {
-		Name: "Currency", Type: "Science", UnlockedBy: "Civil Service", LockedBy: "Currency",
+		Name: "Currency", UnlockedBy: "Civil Service",
 		Costs: []data.Resource{{Name: "science", Quantity: 2200}},
-		Adds:  []data.Resource{{Name: "Currency", Quantity: 1}},
 	}, {
-		Name: "Celestial Mechanics", Type: "Science", UnlockedBy: "Mathematics", LockedBy: "Celestial Mechanics",
+		Name: "Celestial Mechanics", UnlockedBy: "Mathematics",
 		Costs: []data.Resource{{Name: "science", Quantity: 250}},
-		Adds:  []data.Resource{{Name: "Celestial Mechanics", Quantity: 1}},
 	}, {
-		Name: "Engineering", Type: "Science", UnlockedBy: "Construction", LockedBy: "Engineering",
+		Name: "Engineering", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
-		Adds:  []data.Resource{{Name: "Engineering", Quantity: 1}},
 	}, {
-		Name: "Writing", Type: "Science", UnlockedBy: "Engineering", LockedBy: "Writing",
+		Name: "Writing", UnlockedBy: "Engineering",
 		Costs: []data.Resource{{Name: "science", Quantity: 3600}},
-		Adds:  []data.Resource{{Name: "Writing", Quantity: 1}},
 	}, {
-		Name: "Philosophy", Type: "Science", UnlockedBy: "Writing", LockedBy: "Philosophy",
+		Name: "Philosophy", UnlockedBy: "Writing",
 		Costs: []data.Resource{{Name: "science", Quantity: 9500}},
-		Adds:  []data.Resource{{Name: "Philosophy", Quantity: 1}},
 	}, {
-		Name: "Steel", Type: "Science", UnlockedBy: "Writing", LockedBy: "Steel",
+		Name: "Steel", UnlockedBy: "Writing",
 		Costs: []data.Resource{{Name: "science", Quantity: 12000}},
-		Adds:  []data.Resource{{Name: "Steel", Quantity: 1}},
 	}, {
-		Name: "Machinery", Type: "Science", UnlockedBy: "Writing", LockedBy: "Machinery",
+		Name: "Machinery", UnlockedBy: "Writing",
 		Costs: []data.Resource{{Name: "science", Quantity: 15000}},
-		Adds:  []data.Resource{{Name: "Machinery", Quantity: 1}},
 	}, {
-		Name: "Theology", Type: "Science", UnlockedBy: "Philosophy", LockedBy: "Theology",
+		Name: "Theology", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 20000,
 		}, {
 			Name: "manuscript", Quantity: 35,
 		}},
-		Adds: []data.Resource{{Name: "Theology", Quantity: 1}},
 	}, {
-		Name: "Astronomy", Type: "Science", UnlockedBy: "Theology", LockedBy: "Astronomy",
+		Name: "Astronomy", UnlockedBy: "Theology",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 28000,
 		}, {
 			Name: "manuscript", Quantity: 65,
 		}},
-		Adds: []data.Resource{{Name: "Astronomy", Quantity: 1}},
 	}, {
-		Name: "Navigation", Type: "Science", UnlockedBy: "Astronomy", LockedBy: "Navigation",
+		Name: "Navigation", UnlockedBy: "Astronomy",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 35000,
 		}, {
 			Name: "manuscript", Quantity: 100,
 		}},
-		Adds: []data.Resource{{Name: "Navigation", Quantity: 1}},
 	}, {
-		Name: "Architecture", Type: "Science", UnlockedBy: "Navigation", LockedBy: "Architecture",
+		Name: "Architecture", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 42000,
 		}, {
 			Name: "compendium", Quantity: 10,
 		}},
-		Adds: []data.Resource{{Name: "Architecture", Quantity: 1}},
 	}, {
-		Name: "Physics", Type: "Science", UnlockedBy: "Navigation", LockedBy: "Physics",
+		Name: "Physics", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 50000,
 		}, {
 			Name: "compendium", Quantity: 35,
 		}},
-		Adds: []data.Resource{{Name: "Physics", Quantity: 1}},
 	}, {
-		Name: "Metaphysics", Type: "Science", UnlockedBy: "Physics", LockedBy: "Metaphysics",
+		Name: "Metaphysics", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 55000,
 		}, {
 			Name: "unobtainium", Quantity: 5,
 		}},
-		Adds: []data.Resource{{Name: "Metaphysics", Quantity: 1}},
 	}, {
-		Name: "Chemistry", Type: "Science", UnlockedBy: "Physics", LockedBy: "Chemistry",
+		Name: "Chemistry", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 60000,
 		}, {
 			Name: "compendium", Quantity: 50,
 		}},
-		Adds: []data.Resource{{Name: "Chemistry", Quantity: 1}},
 	}, {
-		Name: "Acoustics", Type: "Science", UnlockedBy: "Architecture", LockedBy: "Acoustics",
+		Name: "Acoustics", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 60000,
 		}, {
 			Name: "compendium", Quantity: 60,
 		}},
-		Adds: []data.Resource{{Name: "Acoustics", Quantity: 1}},
 	}, {
-		Name: "Geology", Type: "Science", UnlockedBy: "Navigation", LockedBy: "Geology",
+		Name: "Geology", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 65000,
 		}, {
 			Name: "compendium", Quantity: 65,
 		}},
-		Adds: []data.Resource{{Name: "Geology", Quantity: 1}},
 	}, {
-		Name: "Drama and Poetry", Type: "Science", UnlockedBy: "Acoustics", LockedBy: "Drama and Poetry",
+		Name: "Drama and Poetry", UnlockedBy: "Acoustics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 90000,
 		}, {
 			Name: "parchment", Quantity: 5000,
 		}},
-		Adds: []data.Resource{{Name: "Drama and Poetry", Quantity: 1}},
 	}, {
-		Name: "Electricity", Type: "Science", UnlockedBy: "Physics", LockedBy: "Electricity",
+		Name: "Electricity", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 75000,
 		}, {
 			Name: "compendium", Quantity: 85,
 		}},
-		Adds: []data.Resource{{Name: "Electricity", Quantity: 1}},
 	}, {
-		Name: "Biology", Type: "Science", UnlockedBy: "Geology", LockedBy: "Biology",
+		Name: "Biology", UnlockedBy: "Geology",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 85000,
 		}, {
 			Name: "compendium", Quantity: 100,
 		}},
-		Adds: []data.Resource{{Name: "Biology", Quantity: 1}},
 	}, {
-		Name: "Biochemistry", Type: "Science", UnlockedBy: "Biology", LockedBy: "Biochemistry",
+		Name: "Biochemistry", UnlockedBy: "Biology",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 145000,
 		}, {
 			Name: "compendium", Quantity: 500,
 		}},
-		Adds: []data.Resource{{Name: "Biochemistry", Quantity: 1}},
 	}, {
-		Name: "Genetics", Type: "Science", UnlockedBy: "Biochemistry", LockedBy: "Genetics",
+		Name: "Genetics", UnlockedBy: "Biochemistry",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 190000,
 		}, {
 			Name: "compendium", Quantity: 1500,
 		}},
-		Adds: []data.Resource{{Name: "Genetics", Quantity: 1}},
 	}, {
-		Name: "Industrialization", Type: "Science", UnlockedBy: "Electricity", LockedBy: "Industrialization",
+		Name: "Industrialization", UnlockedBy: "Electricity",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 10000,
 		}, {
 			Name: "blueprint", Quantity: 25,
 		}},
-		Adds: []data.Resource{{Name: "Industrialization", Quantity: 1}},
 	}, {
-		Name: "Mechanization", Type: "Science", UnlockedBy: "Industrialization", LockedBy: "Mechanization",
+		Name: "Mechanization", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 115000,
 		}, {
 			Name: "blueprint", Quantity: 45,
 		}},
-		Adds: []data.Resource{{Name: "Mechanization", Quantity: 1}},
 	}, {
-		Name: "Combustion", Type: "Science", UnlockedBy: "Industrialization", LockedBy: "Combustion",
+		Name: "Combustion", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 115000,
 		}, {
 			Name: "blueprint", Quantity: 45,
 		}},
-		Adds: []data.Resource{{Name: "Combustion", Quantity: 1}},
 	}, {
-		Name: "Metallurgy", Type: "Science", UnlockedBy: "Industrialization", LockedBy: "Metallurgy",
+		Name: "Metallurgy", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 125000,
 		}, {
 			Name: "blueprint", Quantity: 60,
 		}},
-		Adds: []data.Resource{{Name: "Metallurgy", Quantity: 1}},
 	}, {
-		Name: "Ecology", Type: "Science", UnlockedBy: "Combustion", LockedBy: "Ecology",
+		Name: "Ecology", UnlockedBy: "Combustion",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 125000,
 		}, {
 			Name: "blueprint", Quantity: 55,
 		}},
-		Adds: []data.Resource{{Name: "Ecology", Quantity: 1}},
 	}, {
-		Name: "Electronics", Type: "Science", UnlockedBy: "Mechanization", LockedBy: "Electronics",
+		Name: "Electronics", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 135000,
 		}, {
 			Name: "blueprint", Quantity: 70,
 		}},
-		Adds: []data.Resource{{Name: "Electronics", Quantity: 1}},
 	}, {
-		Name: "Robotics", Type: "Science", UnlockedBy: "Electronics", LockedBy: "Robotics",
+		Name: "Robotics", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 140000,
 		}, {
 			Name: "blueprint", Quantity: 80,
 		}},
-		Adds: []data.Resource{{Name: "Robotics", Quantity: 1}},
 	}, {
-		Name: "Artificial Intelligence", Type: "Science", UnlockedBy: "Robotics", LockedBy: "Artificial Intelligence",
+		Name: "Artificial Intelligence", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 250000,
 		}, {
 			Name: "blueprint", Quantity: 150,
 		}},
-		Adds: []data.Resource{{Name: "Artificial Intelligence", Quantity: 1}},
 	}, {
-		Name: "Quantum Cryptography", Type: "Science", UnlockedBy: "Artificial Intelligence", LockedBy: "Quantum Cryptography",
+		Name: "Quantum Cryptography", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 1250000,
 		}, {
 			Name: "relic", Quantity: 1024,
 		}},
-		Adds: []data.Resource{{Name: "Quantum Cryptography", Quantity: 1}},
 	}, {
-		Name: "Blackchain", Type: "Science", UnlockedBy: "Quantum Cryptography", LockedBy: "Blackchain",
+		Name: "Blackchain", UnlockedBy: "Quantum Cryptography",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 5000000,
 		}, {
 			Name: "relic", Quantity: 4096,
 		}},
-		Adds: []data.Resource{{Name: "Blackchain", Quantity: 1}},
 	}, {
-		Name: "Nuclear Fission", Type: "Science", UnlockedBy: "Electronics", LockedBy: "Nuclear Fission",
+		Name: "Nuclear Fission", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 150000,
 		}, {
 			Name: "blueprint", Quantity: 100,
 		}},
-		Adds: []data.Resource{{Name: "Nuclear Fission", Quantity: 1}},
 	}, {
-		Name: "Rocketry", Type: "Science", UnlockedBy: "Electronics", LockedBy: "Rocketry",
+		Name: "Rocketry", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 175000,
 		}, {
 			Name: "blueprint", Quantity: 125,
 		}},
-		Adds: []data.Resource{{Name: "Rocketry", Quantity: 1}},
 	}, {
-		Name: "Oil Processing", Type: "Science", UnlockedBy: "Rocketry", LockedBy: "Oil Processing",
+		Name: "Oil Processing", UnlockedBy: "Rocketry",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 215000,
 		}, {
 			Name: "blueprint", Quantity: 150,
 		}},
-		Adds: []data.Resource{{Name: "Oil Processing", Quantity: 1}},
 	}, {
-		Name: "Satellites", Type: "Science", UnlockedBy: "Rocketry", LockedBy: "Satellites",
+		Name: "Satellites", UnlockedBy: "Rocketry",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 190000,
 		}, {
 			Name: "blueprint", Quantity: 125,
 		}},
-		Adds: []data.Resource{{Name: "Satellites", Quantity: 1}},
 	}, {
-		Name: "Orbital Engineering", Type: "Science", UnlockedBy: "Satellites", LockedBy: "Orbital Engineering",
+		Name: "Orbital Engineering", UnlockedBy: "Satellites",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 250000,
 		}, {
 			Name: "blueprint", Quantity: 250,
 		}},
-		Adds: []data.Resource{{Name: "Orbital Engineering", Quantity: 1}},
 	}, {
-		Name: "Thorium", Type: "Science", UnlockedBy: "Orbital Engineering", LockedBy: "Thorium",
+		Name: "Thorium", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 375000,
 		}, {
 			Name: "blueprint", Quantity: 375,
 		}},
-		Adds: []data.Resource{{Name: "Thorium", Quantity: 1}},
 	}, {
-		Name: "Exogeology", Type: "Science", UnlockedBy: "Orbital Engineering", LockedBy: "Exogeology",
+		Name: "Exogeology", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 275000,
 		}, {
 			Name: "blueprint", Quantity: 250,
 		}},
-		Adds: []data.Resource{{Name: "Exogeology", Quantity: 1}},
 	}, {
-		Name: "Advanced Exogeology", Type: "Science", UnlockedBy: "Exogeology", LockedBy: "Advanced Exogeology",
+		Name: "Advanced Exogeology", UnlockedBy: "Exogeology",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 325000,
 		}, {
 			Name: "blueprint", Quantity: 350,
 		}},
-		Adds: []data.Resource{{Name: "Advanced Exogeology", Quantity: 1}},
 	}, {
-		Name: "Nanotechnology", Type: "Science", UnlockedBy: "Nuclear Fission", LockedBy: "Nanotechnology",
+		Name: "Nanotechnology", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 200000,
 		}, {
 			Name: "blueprint", Quantity: 150,
 		}},
-		Adds: []data.Resource{{Name: "Nanotechnology", Quantity: 1}},
 	}, {
-		Name: "Superconductors", Type: "Science", UnlockedBy: "Nanotechnology", LockedBy: "Superconductors",
+		Name: "Superconductors", UnlockedBy: "Nanotechnology",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 225000,
 		}, {
 			Name: "blueprint", Quantity: 175,
 		}},
-		Adds: []data.Resource{{Name: "Superconductors", Quantity: 1}},
 	}, {
-		Name: "Antimatter", Type: "Science", UnlockedBy: "Superconductors", LockedBy: "Antimatter",
+		Name: "Antimatter", UnlockedBy: "Superconductors",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 500000,
 		}, {
 			Name: "relic", Quantity: 1,
 		}},
-		Adds: []data.Resource{{Name: "Antimatter", Quantity: 1}},
 	}, {
-		Name: "Terraformation", Type: "Science", UnlockedBy: "Antimatter", LockedBy: "Terraformation",
+		Name: "Terraformation", UnlockedBy: "Antimatter",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 750000,
 		}, {
 			Name: "relic", Quantity: 5,
 		}},
-		Adds: []data.Resource{{Name: "Terraformation", Quantity: 1}},
 	}, {
-		Name: "Hydroponics", Type: "Science", UnlockedBy: "Terraformation", LockedBy: "Hydroponics",
+		Name: "Hydroponics", UnlockedBy: "Terraformation",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 1000000,
 		}, {
 			Name: "relic", Quantity: 25,
 		}},
-		Adds: []data.Resource{{Name: "Hydroponics", Quantity: 1}},
 	}, {
-		Name: "Exophysics", Type: "Science", UnlockedBy: "Hydroponics", LockedBy: "Exophysics",
+		Name: "Exophysics", UnlockedBy: "Hydroponics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 25000000,
 		}, {
 			Name: "relic", Quantity: 500,
 		}},
-		Adds: []data.Resource{{Name: "Exophysics", Quantity: 1}},
 	}, {
-		Name: "Particle Physics", Type: "Science", UnlockedBy: "Nuclear Fission", LockedBy: "Particle Physics",
+		Name: "Particle Physics", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 185000,
 		}, {
 			Name: "blueprint", Quantity: 135,
 		}},
-		Adds: []data.Resource{{Name: "Particle Physics", Quantity: 1}},
 	}, {
-		Name: "Dimensional Physics", Type: "Science", UnlockedBy: "Particle Physics", LockedBy: "Dimensional Physics",
+		Name: "Dimensional Physics", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{Name: "science", Quantity: 235000}},
-		Adds:  []data.Resource{{Name: "Dimensional Physics", Quantity: 1}},
 	}, {
-		Name: "Chronophysics", Type: "Science", UnlockedBy: "Particle Physics", LockedBy: "Chronophysics",
+		Name: "Chronophysics", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 250000,
 		}, {
 			Name: "time crystal", Quantity: 5,
 		}},
-		Adds: []data.Resource{{Name: "Chronophysics", Quantity: 1}},
 	}, {
-		Name: "Tachyon Theory", Type: "Science", UnlockedBy: "Chronophysics", LockedBy: "Tachyon Theory",
+		Name: "Tachyon Theory", UnlockedBy: "Chronophysics",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 750000,
 		}, {
@@ -1233,17 +1105,15 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "relic", Quantity: 1,
 		}},
-		Adds: []data.Resource{{Name: "Tachyon Theory", Quantity: 1}},
 	}, {
-		Name: "Cryptotheology", Type: "Science", UnlockedBy: "Theology", LockedBy: "Cryptotheology",
+		Name: "Cryptotheology", UnlockedBy: "Theology",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 650000,
 		}, {
 			Name: "relic", Quantity: 5,
 		}},
-		Adds: []data.Resource{{Name: "Cryptotheology", Quantity: 1}},
 	}, {
-		Name: "Void Space", Type: "Science", UnlockedBy: "Tachyon Theory", LockedBy: "Void Space",
+		Name: "Void Space", UnlockedBy: "Tachyon Theory",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 800000,
 		}, {
@@ -1251,9 +1121,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "void", Quantity: 100,
 		}},
-		Adds: []data.Resource{{Name: "Void Space", Quantity: 1}},
 	}, {
-		Name: "Paradox Theory", Type: "Science", UnlockedBy: "Void Space", LockedBy: "Paradox Theory",
+		Name: "Paradox Theory", UnlockedBy: "Void Space",
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 1000000,
 		}, {
@@ -1261,8 +1130,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "void", Quantity: 250,
 		}},
-		Adds: []data.Resource{{Name: "Paradox Theory", Quantity: 1}},
-	}, {
+	}})
+	g.AddActions([]data.Action{{
 		Name: "Mineral Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Hoes",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 275,
@@ -1471,6 +1340,18 @@ func addJobs(g *game.Game, actions []data.Action) {
 			}, {
 				Name: "kitten", Capacity: 1,
 			}},
+		})
+	}
+}
+
+func addSciences(g *game.Game, actions []data.Action) {
+	for _, action := range actions {
+		action.Type = "Science"
+		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
+		action.LockedBy = action.Name
+		g.AddAction(action)
+		g.AddResource(data.Resource{
+			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: 1,
 		})
 	}
 }

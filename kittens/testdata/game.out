@@ -1030,222 +1030,6 @@
       "StartQuantity": 1.1
     },
     {
-      "Name": "Calendar",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Agriculture",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Archery",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Mining",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Animal Husbandry",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Metal Working",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Civil Service",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Mathematics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Construction",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Currency",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Celestial Mechanics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Engineering",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Steel",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Architecture",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Astronomy",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Biology",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Navigation",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Geology",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Chemistry",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Particle Physics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Machinery",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Electricity",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Mechanization",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Nuclear Fission",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Writing",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Acoustics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Philosophy",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Chronophysics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Artificial Intelligence",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Ecology",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Robotics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Electronics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Theology",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Physics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Metaphysics",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Chemistry",
-      "Type": "Science",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
       "Name": "Mineral Hoes",
       "Type": "Workshop",
       "IsHidden": true,
@@ -1723,6 +1507,372 @@
       "Type": "Resource",
       "Capacity": -1,
       "ProducerAction": "@megalith"
+    },
+    {
+      "Name": "Calendar",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Agriculture",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Archery",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mining",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Animal Husbandry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Metal Working",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Civil Service",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mathematics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Construction",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Currency",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Celestial Mechanics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Engineering",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Writing",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Philosophy",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Steel",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Machinery",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Theology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Astronomy",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Navigation",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Architecture",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Physics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Metaphysics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chemistry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Acoustics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Geology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Drama and Poetry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Electricity",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Biology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Biochemistry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Genetics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Industrialization",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mechanization",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Combustion",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Metallurgy",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Ecology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Electronics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Robotics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Artificial Intelligence",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Quantum Cryptography",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Blackchain",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Nuclear Fission",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Rocketry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Oil Processing",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Satellites",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Orbital Engineering",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Thorium",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Exogeology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Advanced Exogeology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Nanotechnology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Superconductors",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Antimatter",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Terraformation",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Hydroponics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Exophysics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Particle Physics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Dimensional Physics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chronophysics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Tachyon Theory",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Cryptotheology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Void Space",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Paradox Theory",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
     }
   ],
   "Actions": [

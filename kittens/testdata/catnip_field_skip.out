@@ -19,8 +19,6 @@ last action:
 [Village] happiness 1.10
 XX: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
-XX: [*] [Science] Mechanization -(science 0/115000*, blueprint 0/45) +(Mechanization 1)
-XX: [*] [Science] Ecology -(science 0/125000*, blueprint 0/55) +(Ecology 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: Catnip Field
@@ -33,8 +31,6 @@ last action: Catnip Field
 [Village] happiness 1.10
 XX: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
-XX: [*] [Science] Mechanization -(science 0/115000*, blueprint 0/45) +(Mechanization 1)
-XX: [*] [Science] Ecology -(science 0/125000*, blueprint 0/55) +(Ecology 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: Gather catnip
@@ -49,8 +45,6 @@ error: action Gather catnip is locked
 [Village] happiness 1.10
 XX: [Bonfire] Refine catnip -(catnip 11.25/100 1m34s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
-XX: [*] [Science] Mechanization -(science 0/115000*, blueprint 0/45) +(Mechanization 1)
-XX: [*] [Science] Ecology -(science 0/125000*, blueprint 0/55) +(Ecology 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: skip Catnip Field
@@ -64,8 +58,6 @@ last action: skip Catnip Field
 [Village] happiness 1.10
 XX: [Bonfire] Refine catnip -(catnip 1.92/100 52s) +(wood 1)
 XX: [Bonfire] Catnip Field (2) -(catnip 1.92/12.54 5s) +(Catnip Field 1)
-XX: [*] [Science] Mechanization -(science 0/115000*, blueprint 0/45) +(Mechanization 1)
-XX: [*] [Science] Ecology -(science 0/125000*, blueprint 0/55) +(Ecology 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: Catnip Field
@@ -79,8 +71,6 @@ last action: Catnip Field
 [Village] happiness 1.10
 XX: [Bonfire] Refine catnip -(catnip 1.92/100 52s) +(wood 1)
 XX: [Bonfire] Catnip Field (2) -(catnip 1.92/12.54 5s) +(Catnip Field 1)
-XX: [*] [Science] Mechanization -(science 0/115000*, blueprint 0/45) +(Mechanization 1)
-XX: [*] [Science] Ecology -(science 0/125000*, blueprint 0/55) +(Ecology 1)
 sX: time skip until action X is available
 mX: make inputs for action X
 last action: Gather catnip
