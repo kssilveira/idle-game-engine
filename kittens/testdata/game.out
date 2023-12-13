@@ -990,265 +990,6 @@
       "Capacity": -1
     },
     {
-      "Name": "Catnip Field",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Hut",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Library",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Barn",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Mine",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Workshop",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Smelter",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Idle Smelter",
-      "Type": "Bonfire",
-      "Capacity": -1,
-      "Producers": [
-        {
-          "ProductionFactor": -1
-        },
-        {
-          "Name": "Smelter",
-          "ProductionFactor": 1
-        },
-        {
-          "Name": "Active Smelter",
-          "ProductionFactor": -1
-        }
-      ],
-      "StartQuantity": 1
-    },
-    {
-      "Name": "Active Smelter",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Pasture",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Unic. Pasture",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Academy",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Warehouse",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Log House",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Aqueduct",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Mansion",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Observatory",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Bio Lab",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Harbour",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Quarry",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Lumber Mill",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Oil Well",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Accelerator",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Steamworks",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Magneto",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Calciner",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Factory",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Reactor",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Amphitheatre",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Chapel",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Temple",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Tradepost",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Mint",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Brewery",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Ziggurat",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Chronosphere",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "AI Core",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Solar Farm",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Hydro Plant",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Data Center",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
-      "Name": "Broadcast Tower",
-      "Type": "Bonfire",
-      "IsHidden": true,
-      "Capacity": -1
-    },
-    {
       "Name": "woodcutter",
       "Type": "Village",
       "IsHidden": true,
@@ -1683,6 +1424,265 @@
       "Capacity": 1
     },
     {
+      "Name": "Catnip Field",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Hut",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Library",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Barn",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Mine",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Workshop",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Smelter",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Active Smelter",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Idle Smelter",
+      "Type": "Bonfire",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "ProductionFactor": -1
+        },
+        {
+          "Name": "Smelter",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "Active Smelter",
+          "ProductionFactor": -1
+        }
+      ],
+      "StartQuantity": 1
+    },
+    {
+      "Name": "Pasture",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Unic. Pasture",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Academy",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Warehouse",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Log House",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Aqueduct",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Mansion",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Observatory",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Bio Lab",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Harbour",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Quarry",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Lumber Mill",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Oil Well",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Accelerator",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Steamworks",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Magneto",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Calciner",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Factory",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Reactor",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Amphitheatre",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Chapel",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Temple",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Tradepost",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Mint",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Brewery",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Ziggurat",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Chronosphere",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "AI Core",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Solar Farm",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Hydro Plant",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Data Center",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Broadcast Tower",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
       "Name": "beam",
       "Type": "Resource",
       "Capacity": -1,
@@ -1786,12 +1786,12 @@
       ],
       "Adds": [
         {
-          "Name": "Hut",
-          "Quantity": 1
-        },
-        {
           "Name": "kitten",
           "Capacity": 2
+        },
+        {
+          "Name": "Hut",
+          "Quantity": 1
         }
       ]
     },
@@ -2017,12 +2017,12 @@
       ],
       "Adds": [
         {
-          "Name": "Log House",
-          "Quantity": 1
-        },
-        {
           "Name": "kitten",
           "Capacity": 1
+        },
+        {
+          "Name": "Log House",
+          "Quantity": 1
         }
       ]
     },
@@ -2067,12 +2067,12 @@
       ],
       "Adds": [
         {
-          "Name": "Mansion",
-          "Quantity": 1
-        },
-        {
           "Name": "kitten",
           "Capacity": 1
+        },
+        {
+          "Name": "Mansion",
+          "Quantity": 1
         }
       ]
     },

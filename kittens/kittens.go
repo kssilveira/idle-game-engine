@@ -3,6 +3,7 @@ package kittens
 import (
 	"fmt"
 	"log"
+	"strings"
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/data"
@@ -345,95 +346,6 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "Catnip Field", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Hut", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Library", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Barn", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Mine", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Workshop", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Smelter", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Idle Smelter", Type: "Bonfire", Capacity: -1, StartQuantity: 1,
-		Producers: []data.Resource{{
-			Name: "", ProductionFactor: -1,
-		}, {
-			Name: "Smelter", ProductionFactor: 1,
-		}, {
-			Name: "Active Smelter", ProductionFactor: -1,
-		}},
-	}, {
-		Name: "Active Smelter", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Pasture", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Unic. Pasture", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Academy", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Warehouse", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Log House", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Aqueduct", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Mansion", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Observatory", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Bio Lab", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Harbour", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Quarry", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Lumber Mill", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Oil Well", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Accelerator", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Steamworks", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Magneto", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Calciner", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Factory", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Reactor", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Amphitheatre", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Chapel", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Temple", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Tradepost", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Mint", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Brewery", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Ziggurat", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Chronosphere", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "AI Core", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Solar Farm", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Hydro Plant", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Data Center", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
-		Name: "Broadcast Tower", Type: "Bonfire", IsHidden: true, Capacity: -1,
-	}, {
 		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -601,60 +513,45 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Refine catnip", Type: "Bonfire", UnlockedBy: "catnip", LockedBy: "woodcutter",
 		Costs: []data.Resource{{Name: "catnip", Quantity: 100}},
 		Adds:  []data.Resource{{Name: "wood", Quantity: 1}},
-	}, {
-		Name: "Catnip Field", Type: "Bonfire", UnlockedBy: "catnip",
+	}})
+	addBuildings(g, []data.Action{{
+		Name: "Catnip Field", UnlockedBy: "catnip",
 		Costs: []data.Resource{{Name: "catnip", Quantity: 10, CostExponentBase: 1.12}},
-		Adds:  []data.Resource{{Name: "Catnip Field", Quantity: 1}},
 	}, {
-		Name: "Hut", Type: "Bonfire", UnlockedBy: "wood",
+		Name: "Hut", UnlockedBy: "wood",
 		Costs: []data.Resource{{Name: "wood", Quantity: 5, CostExponentBase: 2.5}},
-		Adds: []data.Resource{{
-			Name: "Hut", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 2,
-		}},
+		Adds:  []data.Resource{{Name: "kitten", Capacity: 2}},
 	}, {
-		Name: "Library", Type: "Bonfire", UnlockedBy: "wood",
+		Name: "Library", UnlockedBy: "wood",
 		Costs: []data.Resource{{Name: "wood", Quantity: 25, CostExponentBase: 1.15}},
-		Adds:  []data.Resource{{Name: "Library", Quantity: 1}},
 	}, {
-		Name: "Barn", Type: "Bonfire", UnlockedBy: "Agriculture",
+		Name: "Barn", UnlockedBy: "Agriculture",
 		Costs: []data.Resource{{Name: "wood", Quantity: 50, CostExponentBase: 1.75}},
-		Adds:  []data.Resource{{Name: "Barn", Quantity: 1}},
 	}, {
-		Name: "Mine", Type: "Bonfire", UnlockedBy: "Mining",
+		Name: "Mine", UnlockedBy: "Mining",
 		Costs: []data.Resource{{Name: "wood", Quantity: 100, CostExponentBase: 1.15}},
-		Adds:  []data.Resource{{Name: "Mine", Quantity: 1}},
 	}, {
-		Name: "Workshop", Type: "Bonfire", UnlockedBy: "Mining",
+		Name: "Workshop", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
 		}, {
 			Name: "minerals", Quantity: 400, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Workshop", Quantity: 1}},
 	}, {
-		Name: "Smelter", Type: "Bonfire", UnlockedBy: "Metal Working",
+		Name: "Active Smelter", UnlockedBy: "Metal Working",
 		Costs: []data.Resource{{Name: "minerals", Quantity: 200, CostExponentBase: 1.15}},
-		Adds:  []data.Resource{{Name: "Smelter", Quantity: 1}},
 	}, {
-		Name: "Active Smelter", Type: "Bonfire", UnlockedBy: "Smelter",
-		Costs: []data.Resource{{Name: "Idle Smelter", Quantity: 1}},
-		Adds:  []data.Resource{{Name: "Active Smelter", Quantity: 1}},
-	}, {
-		Name: "Pasture", Type: "Bonfire", UnlockedBy: "Animal Husbandry",
+		Name: "Pasture", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 100, CostExponentBase: 1.15,
 		}, {
 			Name: "wood", Quantity: 10, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Pasture", Quantity: 1}},
 	}, {
-		Name: "Unic. Pasture", Type: "Bonfire", UnlockedBy: "Animal Husbandry",
+		Name: "Unic. Pasture", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{Name: "unicorns", Quantity: 2, CostExponentBase: 1.75}},
-		Adds:  []data.Resource{{Name: "Unic. Pasture", Quantity: 1}},
 	}, {
-		Name: "Academy", Type: "Bonfire", UnlockedBy: "Mathematics",
+		Name: "Academy", UnlockedBy: "Mathematics",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50, CostExponentBase: 1.15,
 		}, {
@@ -662,33 +559,26 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 100, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Academy", Quantity: 1}},
 	}, {
-		Name: "Warehouse", Type: "Bonfire", UnlockedBy: "Construction",
+		Name: "Warehouse", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "beam", Quantity: 1.5, CostExponentBase: 1.15,
 		}, {
 			Name: "slab", Quantity: 2, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Warehouse", Quantity: 1}},
 	}, {
-		Name: "Log House", Type: "Bonfire", UnlockedBy: "Construction",
+		Name: "Log House", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
 		}, {
 			Name: "minerals", Quantity: 250, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{
-			Name: "Log House", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
+		Adds: []data.Resource{{Name: "kitten", Capacity: 1}},
 	}, {
-		Name: "Aqueduct", Type: "Bonfire", UnlockedBy: "Engineering",
+		Name: "Aqueduct", UnlockedBy: "Engineering",
 		Costs: []data.Resource{{Name: "minerals", Quantity: 75, CostExponentBase: 1.12}},
-		Adds:  []data.Resource{{Name: "Aqueduct", Quantity: 1}},
 	}, {
-		Name: "Mansion", Type: "Bonfire", UnlockedBy: "Architecture",
+		Name: "Mansion", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
 			Name: "slab", Quantity: 185, CostExponentBase: 1.15,
 		}, {
@@ -696,13 +586,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "titanium", Quantity: 25, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{
-			Name: "Mansion", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
+		Adds: []data.Resource{{Name: "kitten", Capacity: 1}},
 	}, {
-		Name: "Observatory", Type: "Bonfire", UnlockedBy: "Astronomy",
+		Name: "Observatory", UnlockedBy: "Astronomy",
 		Costs: []data.Resource{{
 			Name: "scaffold", Quantity: 50, CostExponentBase: 1.1,
 		}, {
@@ -712,9 +598,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 1000, CostExponentBase: 1.1,
 		}},
-		Adds: []data.Resource{{Name: "Observatory", Quantity: 1}},
 	}, {
-		Name: "Bio Lab", Type: "Bonfire", UnlockedBy: "Biology",
+		Name: "Bio Lab", UnlockedBy: "Biology",
 		Costs: []data.Resource{{
 			Name: "slab", Quantity: 100, CostExponentBase: 1.1,
 		}, {
@@ -722,9 +607,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 1500, CostExponentBase: 1.1,
 		}},
-		Adds: []data.Resource{{Name: "Bio Lab", Quantity: 1}},
 	}, {
-		Name: "Harbour", Type: "Bonfire", UnlockedBy: "Navigation",
+		Name: "Harbour", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
 			Name: "scaffold", Quantity: 5, CostExponentBase: 1.15,
 		}, {
@@ -732,9 +616,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "plate", Quantity: 75, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Harbour", Quantity: 1}},
 	}, {
-		Name: "Quarry", Type: "Bonfire", UnlockedBy: "Geology",
+		Name: "Quarry", UnlockedBy: "Geology",
 		Costs: []data.Resource{{
 			Name: "scaffold", Quantity: 50, CostExponentBase: 1.15,
 		}, {
@@ -742,9 +625,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "slab", Quantity: 1000, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Quarry", Quantity: 1}},
 	}, {
-		Name: "Lumber Mill", Type: "Bonfire", UnlockedBy: "Construction",
+		Name: "Lumber Mill", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
 		}, {
@@ -752,9 +634,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "minerals", Quantity: 250, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Lumber Mill", Quantity: 1}},
 	}, {
-		Name: "Oil Well", Type: "Bonfire", UnlockedBy: "Chemistry",
+		Name: "Oil Well", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
 			Name: "steel", Quantity: 50, CostExponentBase: 1.15,
 		}, {
@@ -762,9 +643,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "scaffold", Quantity: 25, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Oil Well", Quantity: 1}},
 	}, {
-		Name: "Accelerator", Type: "Bonfire", UnlockedBy: "Particle Physics",
+		Name: "Accelerator", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{
 			Name: "titanium", Quantity: 7500, CostExponentBase: 1.15,
 		}, {
@@ -772,9 +652,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "uranium", Quantity: 25, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Accelerator", Quantity: 1}},
 	}, {
-		Name: "Steamworks", Type: "Bonfire", UnlockedBy: "Machinery",
+		Name: "Steamworks", UnlockedBy: "Machinery",
 		Costs: []data.Resource{{
 			Name: "steel", Quantity: 65, CostExponentBase: 1.25,
 		}, {
@@ -782,9 +661,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
 		}},
-		Adds: []data.Resource{{Name: "Steamworks", Quantity: 1}},
 	}, {
-		Name: "Magneto", Type: "Bonfire", UnlockedBy: "Electricity",
+		Name: "Magneto", UnlockedBy: "Electricity",
 		Costs: []data.Resource{{
 			Name: "alloy", Quantity: 10, CostExponentBase: 1.25,
 		}, {
@@ -792,9 +670,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
 		}},
-		Adds: []data.Resource{{Name: "Magneto", Quantity: 1}},
 	}, {
-		Name: "Calciner", Type: "Bonfire", UnlockedBy: "Chemistry",
+		Name: "Calciner", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
 			Name: "steel", Quantity: 100, CostExponentBase: 1.15,
 		}, {
@@ -802,9 +679,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "blueprint", Quantity: 1, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Calciner", Quantity: 1}},
 	}, {
-		Name: "Factory", Type: "Bonfire", UnlockedBy: "Mechanization",
+		Name: "Factory", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
 			Name: "titanium", Quantity: 2000, CostExponentBase: 1.15,
 		}, {
@@ -812,9 +688,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "concrete", Quantity: 15, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Factory", Quantity: 1}},
 	}, {
-		Name: "Reactor", Type: "Bonfire", UnlockedBy: "Nuclear Fission",
+		Name: "Reactor", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
 			Name: "titanium", Quantity: 3500, CostExponentBase: 1.15,
 		}, {
@@ -824,9 +699,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "blueprint", Quantity: 25, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Reactor", Quantity: 1}},
 	}, {
-		Name: "Amphitheatre", Type: "Bonfire", UnlockedBy: "Writing",
+		Name: "Amphitheatre", UnlockedBy: "Writing",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
 		}, {
@@ -834,9 +708,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "parchment", Quantity: 3, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Amphitheatre", Quantity: 1}},
 	}, {
-		Name: "Chapel", Type: "Bonfire", UnlockedBy: "Acoustics",
+		Name: "Chapel", UnlockedBy: "Acoustics",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 2000, CostExponentBase: 1.15,
 		}, {
@@ -844,9 +717,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "parchment", Quantity: 250, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Chapel", Quantity: 1}},
 	}, {
-		Name: "Temple", Type: "Bonfire", UnlockedBy: "Philosophy",
+		Name: "Temple", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "slab", Quantity: 25, CostExponentBase: 1.15,
 		}, {
@@ -856,9 +728,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "manuscript", Quantity: 10, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Temple", Quantity: 1}},
 	}, {
-		Name: "Tradepost", Type: "Bonfire", UnlockedBy: "Currency",
+		Name: "Tradepost", UnlockedBy: "Currency",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 500, CostExponentBase: 1.15,
 		}, {
@@ -866,9 +737,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "gold", Quantity: 10, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Tradepost", Quantity: 1}},
 	}, {
-		Name: "Mint", Type: "Bonfire", UnlockedBy: "Architecture",
+		Name: "Mint", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 5000, CostExponentBase: 1.15,
 		}, {
@@ -876,9 +746,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "gold", Quantity: 500, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Mint", Quantity: 1}},
 	}, {
-		Name: "Brewery", Type: "Bonfire", UnlockedBy: "Architecture",
+		Name: "Brewery", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 1000, CostExponentBase: 1.5,
 		}, {
@@ -888,9 +757,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "parchment", Quantity: 375, CostExponentBase: 1.5,
 		}},
-		Adds: []data.Resource{{Name: "Brewery", Quantity: 1}},
 	}, {
-		Name: "Ziggurat", Type: "Bonfire", UnlockedBy: "Construction",
+		Name: "Ziggurat", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "megalith", Quantity: 50, CostExponentBase: 1.25,
 		}, {
@@ -898,9 +766,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
 		}},
-		Adds: []data.Resource{{Name: "Ziggurat", Quantity: 1}},
 	}, {
-		Name: "Chronosphere", Type: "Bonfire", UnlockedBy: "Chronophysics",
+		Name: "Chronosphere", UnlockedBy: "Chronophysics",
 		Costs: []data.Resource{{
 			Name: "unobtainium", Quantity: 2500, CostExponentBase: 1.25,
 		}, {
@@ -910,46 +777,41 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 250000, CostExponentBase: 1.25,
 		}},
-		Adds: []data.Resource{{Name: "Chronosphere", Quantity: 1}},
 	}, {
-		Name: "AI Core", Type: "Bonfire", UnlockedBy: "Artificial Intelligence",
+		Name: "AI Core", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
 			Name: "antimatter", Quantity: 125, CostExponentBase: 1.15,
 		}, {
 			Name: "science", Quantity: 500000, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "AI Core", Quantity: 1}},
 	}, {
-		Name: "Solar Farm", Type: "Bonfire", UnlockedBy: "Ecology",
+		Name: "Solar Farm", UnlockedBy: "Ecology",
 		Costs: []data.Resource{{
 			Name: "titanium", Quantity: 250, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Solar Farm", Quantity: 1}},
 	}, {
-		Name: "Hydro Plant", Type: "Bonfire", UnlockedBy: "Robotics",
+		Name: "Hydro Plant", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
 			Name: "concrete", Quantity: 100, CostExponentBase: 1.15,
 		}, {
 			Name: "titanium", Quantity: 2500, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Hydro Plant", Quantity: 1}},
 	}, {
-		Name: "Data Center", Type: "Bonfire", UnlockedBy: "Electronics",
+		Name: "Data Center", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
 			Name: "concrete", Quantity: 10, CostExponentBase: 1.15,
 		}, {
 			Name: "steel", Quantity: 100, CostExponentBase: 1.15,
 		}},
-		Adds: []data.Resource{{Name: "Data Center", Quantity: 1}},
 	}, {
-		Name: "Broadcast Tower", Type: "Bonfire", UnlockedBy: "Electronics",
+		Name: "Broadcast Tower", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 1250, CostExponentBase: 1.18,
 		}, {
 			Name: "titanium", Quantity: 75, CostExponentBase: 1.18,
 		}},
-		Adds: []data.Resource{{Name: "Broadcast Tower", Quantity: 1}},
-	}, {
+	}})
+	g.AddActions([]data.Action{{
 		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
 		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
 		Adds:  []data.Resource{{Name: "woodcutter", Quantity: 1}},
@@ -1610,6 +1472,54 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		g.AddAction(action)
 		g.AddResource(data.Resource{
 			Name: name, Type: "Resource", Capacity: -1, ProducerAction: action.Name,
+		})
+	}
+}
+
+func addBuildings(g *game.Game, actions []data.Action) {
+	for _, action := range actions {
+		name := action.Name
+		isActive := false
+		if strings.HasPrefix(action.Name, "Active ") {
+			name = strings.TrimPrefix(action.Name, "Active ")
+			isActive = true
+		}
+		action.Name = name
+		action.Type = "Bonfire"
+		action.Adds = append(action.Adds, data.Resource{
+			Name: action.Name, Quantity: 1,
+		})
+		g.AddAction(action)
+		g.AddResource(data.Resource{
+			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: -1,
+		})
+
+		if !isActive {
+			continue
+		}
+
+		action.Name = "Active " + name
+		action.Costs = []data.Resource{{
+			Name: "Idle " + name, Quantity: 1,
+		}}
+		action.Adds = []data.Resource{{
+			Name: action.Name, Quantity: 1,
+		}}
+		action.UnlockedBy = name
+		g.AddAction(action)
+		g.AddResource(data.Resource{
+			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: -1,
+		})
+
+		g.AddResource(data.Resource{
+			Name: "Idle " + name, Type: "Bonfire", Capacity: -1, StartQuantity: 1,
+			Producers: []data.Resource{{
+				Name: "", ProductionFactor: -1,
+			}, {
+				Name: name, ProductionFactor: 1,
+			}, {
+				Name: "Active " + name, ProductionFactor: -1,
+			}},
 		})
 	}
 }
