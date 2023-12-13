@@ -11,21 +11,22 @@ import (
 
 func NewGame(now game.Now) *game.Game {
 	g := game.NewGame(now())
-	g.AddResources([]data.Resource{{
+	g.AddResources(join([]data.Resource{{
 		Name: "day", Type: "Calendar", IsHidden: true, Quantity: 0, Capacity: -1,
-		Producers: []data.Resource{{Name: "", ProductionFactor: 0.5}},
+		Producers: []data.Resource{{ProductionFactor: 0.5}},
 	}, {
 		Name: "year", Type: "Calendar", StartQuantity: 1, Capacity: -1,
 		Producers: []data.Resource{{Name: "day", ProductionFactor: 0.0025, ProductionFloor: true}},
-	}})
-	addSeasons(g, []string{"Spring", "Summer", "Autumn", "Winter"})
-	g.AddResources([]data.Resource{{
+	}}, resourceWithModulus(data.Resource{
+		Type: "Calendar", StartQuantity: 1, Capacity: -1,
+		Producers: []data.Resource{{Name: "day", ProductionFactor: 0.01, ProductionFloor: true}},
+	}, []string{"Spring", "Summer", "Autumn", "Winter"}), []data.Resource{{
 		Name: "day_of_year", Type: "Calendar", StartQuantity: 1, Capacity: -1,
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []data.Resource{{Name: "day", ProductionFactor: 1, ProductionFloor: true}},
 	}, {
 		Name: "catnip", Type: "Resource", StartCapacity: 5000,
-		Producers: []data.Resource{{
+		Producers: join([]data.Resource{{
 			Name: "Catnip Field", ProductionFactor: 0.125 * 5 * (1 + 0.50), ProductionResourceFactor: "Spring",
 		}, {
 			Name: "Catnip Field", ProductionFactor: 0.125 * 5, ProductionResourceFactor: "Summer",
@@ -33,63 +34,16 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Catnip Field", ProductionFactor: 0.125 * 5, ProductionResourceFactor: "Autumn",
 		}, {
 			Name: "Catnip Field", ProductionFactor: 0.125 * 5 * (1 - 0.75), ProductionResourceFactor: "Winter",
-		}, {
-			Name: "kitten", ProductionFactor: -4.25, ProductionFloor: true, ProductionOnGone: true,
+		}}, resourceWithName(data.Resource{
+			ProductionFactor: -4.25, ProductionFloor: true, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
 				Name: "Pasture", ProductionFactor: -0.005,
 			}, {
 				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
-		}, {
-			Name: "woodcutter", ProductionFactor: -4.25, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
-			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
-			}},
-		}, {
-			Name: "scholar", ProductionFactor: -4.25, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
-			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
-			}},
-		}, {
-			Name: "farmer", ProductionFactor: -4.25, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
-			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
-			}},
-		}, {
-			Name: "hunter", ProductionFactor: -4.25, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
-			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
-			}},
-		}, {
-			Name: "miner", ProductionFactor: -4.25, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
-			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
-			}},
-		}, {
-			Name: "priest", ProductionFactor: -4.25, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
-			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
-			}},
-		}, {
-			Name: "geologist", ProductionFactor: -4.25, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
-			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
-			}},
-		}, {
+		}, []string{
+			"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
+		}), []data.Resource{{
 			Name: "farmer", ProductionFactor: 1 * 5, ProductionResourceFactor: "happiness",
 			ProductionBonus: []data.Resource{{
 				Name: "Mineral Hoes", ProductionFactor: 0.5,
@@ -98,7 +52,7 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Brewery", ProductionFactor: -1 * 5,
-		}},
+		}}),
 		ProductionBonus: []data.Resource{{
 			Name: "Aqueduct", ProductionFactor: 0.03,
 		}},
@@ -695,7 +649,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Composite Bow", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}, {
 		Name: "Catnip Enrichment", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}})
+	}}))
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
 		Adds: []data.Resource{{Name: "catnip", Quantity: 1}},
@@ -1722,14 +1676,32 @@ func NewGame(now game.Now) *game.Game {
 	return g
 }
 
-func addSeasons(g *game.Game, seasons []string) {
-	for i, season := range seasons {
-		g.AddResource(data.Resource{
-			Name: season, Type: "Calendar", StartQuantity: 1, Capacity: -1,
-			ProductionModulus: len(seasons), ProductionModulusEquals: i,
-			Producers: []data.Resource{{Name: "day", ProductionFactor: 0.01, ProductionFloor: true}},
-		})
+func join[T any](slices ...[]T) []T {
+	res := []T{}
+	for _, slice := range slices {
+		res = append(res, slice...)
 	}
+	return res
+}
+
+func resourceWithModulus(resource data.Resource, names []string) []data.Resource {
+	res := []data.Resource{}
+	resource.ProductionModulus = len(names)
+	for i, name := range names {
+		resource.Name = name
+		resource.ProductionModulusEquals = i
+		res = append(res, resource)
+	}
+	return res
+}
+
+func resourceWithName(resource data.Resource, names []string) []data.Resource {
+	res := []data.Resource{}
+	for _, name := range names {
+		resource.Name = name
+		res = append(res, resource)
+	}
+	return res
 }
 
 const (

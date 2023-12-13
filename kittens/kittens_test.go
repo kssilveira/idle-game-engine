@@ -215,14 +215,6 @@ func repeat(iters []iter, count int) []iter {
 	return res
 }
 
-func join(iters ...[]iter) []iter {
-	res := []iter{}
-	for _, iter := range iters {
-		res = append(res, iter...)
-	}
-	return res
-}
-
 func TestGraph(t *testing.T) {
 	inputs := []struct {
 		name   string

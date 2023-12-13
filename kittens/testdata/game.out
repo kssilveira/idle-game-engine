@@ -151,6 +151,7 @@
         {
           "Name": "woodcutter",
           "ProductionFactor": -4.25,
+          "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
@@ -166,6 +167,7 @@
         {
           "Name": "scholar",
           "ProductionFactor": -4.25,
+          "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
@@ -181,6 +183,7 @@
         {
           "Name": "farmer",
           "ProductionFactor": -4.25,
+          "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
@@ -196,6 +199,7 @@
         {
           "Name": "hunter",
           "ProductionFactor": -4.25,
+          "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
@@ -211,6 +215,7 @@
         {
           "Name": "miner",
           "ProductionFactor": -4.25,
+          "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
@@ -226,6 +231,7 @@
         {
           "Name": "priest",
           "ProductionFactor": -4.25,
+          "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
@@ -241,6 +247,7 @@
         {
           "Name": "geologist",
           "ProductionFactor": -4.25,
+          "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
