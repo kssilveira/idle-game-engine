@@ -990,118 +990,6 @@
       "Capacity": -1
     },
     {
-      "Name": "woodcutter",
-      "Type": "Village",
-      "IsHidden": true,
-      "Capacity": -1,
-      "OnGone": [
-        {
-          "Name": "gone kitten",
-          "Quantity": 1
-        },
-        {
-          "Name": "kitten",
-          "Capacity": 1
-        }
-      ]
-    },
-    {
-      "Name": "scholar",
-      "Type": "Village",
-      "IsHidden": true,
-      "Capacity": -1,
-      "OnGone": [
-        {
-          "Name": "gone kitten",
-          "Quantity": 1
-        },
-        {
-          "Name": "kitten",
-          "Capacity": 1
-        }
-      ]
-    },
-    {
-      "Name": "farmer",
-      "Type": "Village",
-      "IsHidden": true,
-      "Capacity": -1,
-      "OnGone": [
-        {
-          "Name": "gone kitten",
-          "Quantity": 1
-        },
-        {
-          "Name": "kitten",
-          "Capacity": 1
-        }
-      ]
-    },
-    {
-      "Name": "hunter",
-      "Type": "Village",
-      "IsHidden": true,
-      "Capacity": -1,
-      "OnGone": [
-        {
-          "Name": "gone kitten",
-          "Quantity": 1
-        },
-        {
-          "Name": "kitten",
-          "Capacity": 1
-        }
-      ]
-    },
-    {
-      "Name": "miner",
-      "Type": "Village",
-      "IsHidden": true,
-      "Capacity": -1,
-      "OnGone": [
-        {
-          "Name": "gone kitten",
-          "Quantity": 1
-        },
-        {
-          "Name": "kitten",
-          "Capacity": 1
-        }
-      ]
-    },
-    {
-      "Name": "priest",
-      "Type": "Village",
-      "IsHidden": true,
-      "Capacity": -1,
-      "OnGone": [
-        {
-          "Name": "gone kitten",
-          "Quantity": 1
-        },
-        {
-          "Name": "kitten",
-          "Capacity": 1
-        }
-      ]
-    },
-    {
-      "Name": "geologist",
-      "Type": "Village",
-      "IsHidden": true,
-      "Capacity": -1,
-      "OnGone": [
-        {
-          "Name": "gone kitten",
-          "Quantity": 1
-        },
-        {
-          "Name": "kitten",
-          "Capacity": 1
-        }
-      ]
-    },
-    {
       "Name": "happiness",
       "Type": "Village",
       "Capacity": -1,
@@ -1681,6 +1569,118 @@
       "Type": "Bonfire",
       "IsHidden": true,
       "Capacity": -1
+    },
+    {
+      "Name": "woodcutter",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "scholar",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "farmer",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "hunter",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "miner",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "priest",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "geologist",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
     },
     {
       "Name": "beam",

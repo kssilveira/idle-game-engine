@@ -559,13 +559,6 @@ digraph {
   "compendium" [shape="cylinder"];
   "blueprint" [shape="cylinder"];
   "gigaflops" [shape="cylinder"];
-  "woodcutter" [shape="house"];
-  "scholar" [shape="house"];
-  "farmer" [shape="house"];
-  "hunter" [shape="house"];
-  "miner" [shape="house"];
-  "priest" [shape="house"];
-  "geologist" [shape="house"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
   "Archery" [shape="diamond"];
@@ -654,6 +647,13 @@ digraph {
   "Hydro Plant" [shape="box3d"];
   "Data Center" [shape="box3d"];
   "Broadcast Tower" [shape="box3d"];
+  "woodcutter" [shape="house"];
+  "scholar" [shape="house"];
+  "farmer" [shape="house"];
+  "hunter" [shape="house"];
+  "miner" [shape="house"];
+  "priest" [shape="house"];
+  "geologist" [shape="house"];
   "beam" [shape="cylinder"];
   "slab" [shape="cylinder"];
   "plate" [shape="cylinder"];

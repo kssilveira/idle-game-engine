@@ -130,13 +130,6 @@ digraph {
   "Construction" -> "Catnip Enrichment" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
-  "woodcutter" [shape="house"];
-  "scholar" [shape="house"];
-  "farmer" [shape="house"];
-  "hunter" [shape="house"];
-  "miner" [shape="house"];
-  "priest" [shape="house"];
-  "geologist" [shape="house"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
   "Archery" [shape="diamond"];
@@ -224,6 +217,13 @@ digraph {
   "Hydro Plant" [shape="box3d"];
   "Data Center" [shape="box3d"];
   "Broadcast Tower" [shape="box3d"];
+  "woodcutter" [shape="house"];
+  "scholar" [shape="house"];
+  "farmer" [shape="house"];
+  "hunter" [shape="house"];
+  "miner" [shape="house"];
+  "priest" [shape="house"];
+  "geologist" [shape="house"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];

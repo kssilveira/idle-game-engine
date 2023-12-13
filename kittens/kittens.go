@@ -346,55 +346,6 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "woodcutter", Type: "Village", IsHidden: true, Capacity: -1,
-		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
-	}, {
-		Name: "scholar", Type: "Village", IsHidden: true, Capacity: -1,
-		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
-	}, {
-		Name: "farmer", Type: "Village", IsHidden: true, Capacity: -1,
-		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
-	}, {
-		Name: "hunter", Type: "Village", IsHidden: true, Capacity: -1,
-		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
-	}, {
-		Name: "miner", Type: "Village", IsHidden: true, Capacity: -1,
-		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
-	}, {
-		Name: "priest", Type: "Village", IsHidden: true, Capacity: -1,
-		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
-	}, {
-		Name: "geologist", Type: "Village", IsHidden: true, Capacity: -1,
-		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
-		}, {
-			Name: "kitten", Capacity: 1,
-		}},
-	}, {
 		Name: "happiness", Type: "Village", StartQuantity: 1.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.02,
@@ -811,35 +762,22 @@ func NewGame(now game.Now) *game.Game {
 			Name: "titanium", Quantity: 75, CostExponentBase: 1.18,
 		}},
 	}})
+	addJobs(g, []data.Action{{
+		Name: "woodcutter", UnlockedBy: "Hut",
+	}, {
+		Name: "scholar", UnlockedBy: "Library",
+	}, {
+		Name: "farmer", UnlockedBy: "Agriculture",
+	}, {
+		Name: "hunter", UnlockedBy: "Archery",
+	}, {
+		Name: "miner", UnlockedBy: "Mine",
+	}, {
+		Name: "priest", UnlockedBy: "Theology",
+	}, {
+		Name: "geologist", UnlockedBy: "Geology",
+	}})
 	g.AddActions([]data.Action{{
-		Name: "woodcutter", Type: "Village", UnlockedBy: "Hut",
-		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
-		Adds:  []data.Resource{{Name: "woodcutter", Quantity: 1}},
-	}, {
-		Name: "scholar", Type: "Village", UnlockedBy: "Library",
-		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
-		Adds:  []data.Resource{{Name: "scholar", Quantity: 1}},
-	}, {
-		Name: "farmer", Type: "Village", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
-		Adds:  []data.Resource{{Name: "farmer", Quantity: 1}},
-	}, {
-		Name: "hunter", Type: "Village", UnlockedBy: "Archery",
-		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
-		Adds:  []data.Resource{{Name: "hunter", Quantity: 1}},
-	}, {
-		Name: "miner", Type: "Village", UnlockedBy: "Mine",
-		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
-		Adds:  []data.Resource{{Name: "miner", Quantity: 1}},
-	}, {
-		Name: "priest", Type: "Village", UnlockedBy: "Theology",
-		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
-		Adds:  []data.Resource{{Name: "priest", Quantity: 1}},
-	}, {
-		Name: "geologist", Type: "Village", UnlockedBy: "Geology",
-		Costs: []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}},
-		Adds:  []data.Resource{{Name: "geologist", Quantity: 1}},
-	}, {
 		Name: "Send hunters", Type: "Village", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
 		Adds: []data.Resource{{
@@ -1499,12 +1437,8 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		}
 
 		action.Name = "Active " + name
-		action.Costs = []data.Resource{{
-			Name: "Idle " + name, Quantity: 1,
-		}}
-		action.Adds = []data.Resource{{
-			Name: action.Name, Quantity: 1,
-		}}
+		action.Costs = []data.Resource{{Name: "Idle " + name, Quantity: 1}}
+		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
 		action.UnlockedBy = name
 		g.AddAction(action)
 		g.AddResource(data.Resource{
@@ -1519,6 +1453,23 @@ func addBuildings(g *game.Game, actions []data.Action) {
 				Name: name, ProductionFactor: 1,
 			}, {
 				Name: "Active " + name, ProductionFactor: -1,
+			}},
+		})
+	}
+}
+
+func addJobs(g *game.Game, actions []data.Action) {
+	for _, action := range actions {
+		action.Type = "Village"
+		action.Costs = []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}}
+		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
+		g.AddAction(action)
+		g.AddResource(data.Resource{
+			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: -1,
+			OnGone: []data.Resource{{
+				Name: "gone kitten", Quantity: 1,
+			}, {
+				Name: "kitten", Capacity: 1,
 			}},
 		})
 	}
