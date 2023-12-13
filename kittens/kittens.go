@@ -362,28 +362,6 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Broadcast Tower", ProductionFactor: -0.75,
 		}},
-	}, {
-		Name: "Mineral Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Iron Hoes", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Mineral Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Iron Axe", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Expanded Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Reinforced Barns", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Bolas", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Hunting Armor", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Reinforced Saw", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Composite Bow", Type: "Workshop", IsHidden: true, Capacity: 1,
-	}, {
-		Name: "Catnip Enrichment", Type: "Workshop", IsHidden: true, Capacity: 1,
 	}}))
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
@@ -1131,40 +1109,36 @@ func NewGame(now game.Now) *game.Game {
 			Name: "void", Quantity: 250,
 		}},
 	}})
-	g.AddActions([]data.Action{{
-		Name: "Mineral Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Hoes",
+	addWorkshops(g, []data.Action{{
+		Name: "Mineral Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 275,
 		}, {
 			Name: "science", Quantity: 100,
 		}},
-		Adds: []data.Resource{{Name: "Mineral Hoes", Quantity: 1}},
 	}, {
-		Name: "Iron Hoes", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Iron Hoes",
+		Name: "Iron Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 25,
 		}, {
 			Name: "science", Quantity: 200,
 		}},
-		Adds: []data.Resource{{Name: "Iron Hoes", Quantity: 1}},
 	}, {
-		Name: "Mineral Axe", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Mineral Axe",
+		Name: "Mineral Axe", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "minerals", Quantity: 500,
 		}, {
 			Name: "science", Quantity: 100,
 		}},
-		Adds: []data.Resource{{Name: "Mineral Axe", Quantity: 1}},
 	}, {
-		Name: "Iron Axe", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Iron Axe",
+		Name: "Iron Axe", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 50,
 		}, {
 			Name: "science", Quantity: 200,
 		}},
-		Adds: []data.Resource{{Name: "Iron Axe", Quantity: 1}},
 	}, {
-		Name: "Expanded Barns", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Expanded Barns",
+		Name: "Expanded Barns", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 1000,
 		}, {
@@ -1174,9 +1148,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 500,
 		}},
-		Adds: []data.Resource{{Name: "Expanded Barns", Quantity: 1}},
 	}, {
-		Name: "Reinforced Barns", Type: "Workshop", UnlockedBy: "Workshop", LockedBy: "Reinforced Barns",
+		Name: "Reinforced Barns", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 100,
 		}, {
@@ -1186,9 +1159,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "slab", Quantity: 10,
 		}},
-		Adds: []data.Resource{{Name: "Reinforced Barns", Quantity: 1}},
 	}, {
-		Name: "Bolas", Type: "Workshop", UnlockedBy: "Mining", LockedBy: "Bolas",
+		Name: "Bolas", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50,
 		}, {
@@ -1196,25 +1168,22 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 1000,
 		}},
-		Adds: []data.Resource{{Name: "Bolas", Quantity: 1}},
 	}, {
-		Name: "Hunting Armor", Type: "Workshop", UnlockedBy: "Metal Working", LockedBy: "Hunting Armor",
+		Name: "Hunting Armor", UnlockedBy: "Metal Working",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 750,
 		}, {
 			Name: "science", Quantity: 2000,
 		}},
-		Adds: []data.Resource{{Name: "Hunting Armor", Quantity: 1}},
 	}, {
-		Name: "Reinforced Saw", Type: "Workshop", UnlockedBy: "Construction", LockedBy: "Reinforced Saw",
+		Name: "Reinforced Saw", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 1000,
 		}, {
 			Name: "science", Quantity: 2500,
 		}},
-		Adds: []data.Resource{{Name: "Reinforced Saw", Quantity: 1}},
 	}, {
-		Name: "Composite Bow", Type: "Workshop", UnlockedBy: "Construction", LockedBy: "Composite Bow",
+		Name: "Composite Bow", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 200,
 		}, {
@@ -1222,15 +1191,13 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 500,
 		}},
-		Adds: []data.Resource{{Name: "Composite Bow", Quantity: 1}},
 	}, {
-		Name: "Catnip Enrichment", Type: "Workshop", UnlockedBy: "Construction", LockedBy: "Catnip Enrichment",
+		Name: "Catnip Enrichment", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "catnip", Quantity: 5000,
 		}, {
 			Name: "science", Quantity: 500,
 		}},
-		Adds: []data.Resource{{Name: "Catnip Enrichment", Quantity: 1}},
 	}})
 	return g
 }
@@ -1347,6 +1314,18 @@ func addJobs(g *game.Game, actions []data.Action) {
 func addSciences(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
 		action.Type = "Science"
+		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
+		action.LockedBy = action.Name
+		g.AddAction(action)
+		g.AddResource(data.Resource{
+			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: 1,
+		})
+	}
+}
+
+func addWorkshops(g *game.Game, actions []data.Action) {
+	for _, action := range actions {
+		action.Type = "Workshop"
 		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
 		action.LockedBy = action.Name
 		g.AddAction(action)

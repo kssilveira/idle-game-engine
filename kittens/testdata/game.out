@@ -1030,72 +1030,6 @@
       "StartQuantity": 1.1
     },
     {
-      "Name": "Mineral Hoes",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Iron Hoes",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Mineral Axe",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Iron Axe",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Expanded Barns",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Reinforced Barns",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Bolas",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Hunting Armor",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Reinforced Saw",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Composite Bow",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Catnip Enrichment",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
       "Name": "Catnip Field",
       "Type": "Bonfire",
       "IsHidden": true,
@@ -1871,6 +1805,72 @@
     {
       "Name": "Paradox Theory",
       "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mineral Hoes",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Iron Hoes",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mineral Axe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Iron Axe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Expanded Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Reinforced Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Bolas",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Hunting Armor",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Reinforced Saw",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Composite Bow",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Catnip Enrichment",
+      "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
     }
