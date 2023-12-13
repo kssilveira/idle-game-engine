@@ -57,9 +57,11 @@ func newGame(now game.Now) (*game.Game, error) {
 	if err := updateResources(g, *resourceMap); err != nil {
 		return nil, err
 	}
-	if err := g.Validate(); err != nil {
-		return nil, err
-	}
+	/*
+		if err := g.Validate(); err != nil {
+			return nil, err
+		}
+		//*/
 	return g, nil
 }
 

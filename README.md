@@ -88,6 +88,9 @@ More features from kittens game:
 - change production bonus to bonus
 - change solve commands to string
 - fix test performance
+- dont set quantity and startquantity
+- split kittens file
+- make functions and attributes private
 
 - Bonfire building upgrades
 - Bonfire effects for

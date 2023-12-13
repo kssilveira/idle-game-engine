@@ -41,10 +41,14 @@ func NewGame(now time.Time) *Game {
 
 func (g *Game) AddResources(resources []data.Resource) {
 	for _, resource := range resources {
-		g.ResourceToIndex[resource.Name] = len(g.Resources)
-		cp := resource
-		g.Resources = append(g.Resources, &cp)
+		g.AddResource(resource)
 	}
+}
+
+func (g *Game) AddResource(resource data.Resource) {
+	g.ResourceToIndex[resource.Name] = len(g.Resources)
+	cp := resource
+	g.Resources = append(g.Resources, &cp)
 }
 
 func (g *Game) AddActions(actions []data.Action) {

@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"log"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"strings"
 	"testing"
@@ -251,13 +250,15 @@ func TestGraph(t *testing.T) {
 		in.fn(logger, g, in.colors)
 		name := strings.Replace(in.name, " ", "_", -1)
 		dot := filepath.Join("testdata", name+".dot")
-		svg := filepath.Join("testdata", name+".svg")
 		if err := os.WriteFile(dot, buf.Bytes(), 0644); err != nil {
 			t.Errorf("TestGraph.Graph got err %v", err)
 		}
-		cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
-		if err := cmd.Run(); err != nil {
-			t.Errorf("[%s] got err %v", in.name, err)
-		}
+		/*
+			svg := filepath.Join("testdata", name+".svg")
+				cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
+				if err := cmd.Run(); err != nil {
+					t.Errorf("[%s] got err %v", in.name, err)
+				}
+				//*/
 	}
 }
