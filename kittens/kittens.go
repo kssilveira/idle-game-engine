@@ -326,37 +326,17 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Temple", ProductionFactor: 100,
 		}},
 	}, {
-		Name: "beam", Type: "Resource", Capacity: -1, ProducerAction: "@beam",
-	}, {
-		Name: "slab", Type: "Resource", Capacity: -1,
-		ProducerAction: "@slab",
-	}, {
-		Name: "plate", Type: "Resource", Capacity: -1,
-		ProducerAction: "@plate",
-	}, {
 		Name: "steel", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "gear", Type: "Resource", Capacity: -1,
-		ProducerAction: "@gear",
-	}, {
 		Name: "concrete", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "scaffold", Type: "Resource", Capacity: -1,
-		ProducerAction: "@scaffold",
 	}, {
 		Name: "alloy", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "parchment", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "manuscript", Type: "Resource", Capacity: -1,
-		ProducerAction: "@manuscript",
-	}, {
 		Name: "compendium", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "blueprint", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "megalith", Type: "Resource", Capacity: -1,
-		ProducerAction: "@megalith",
 	}, {
 		Name: "gigaflops", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
@@ -1007,78 +987,31 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "unicorns", Quantity: 0.05,
 		}},
-	}, {
-		Name: "@beam", Type: "Craft", UnlockedBy: "Construction",
+	}})
+	addCrafts(g, []data.Action{{
+		Name: "beam", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
-		Adds: []data.Resource{{
-			Name: "beam", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}, {
-				Name: "Factory", ProductionFactor: 0.05,
-			}},
-		}},
 	}, {
-		Name: "@slab", Type: "Craft", UnlockedBy: "Construction",
+		Name: "slab", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "minerals", Quantity: 250}},
-		Adds: []data.Resource{{
-			Name: "slab", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}, {
-				Name: "Factory", ProductionFactor: 0.05,
-			}},
-		}},
 	}, {
-		Name: "@plate", Type: "Craft", UnlockedBy: "Construction",
+		Name: "plate", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "iron", Quantity: 125}},
-		Adds: []data.Resource{{
-			Name: "plate", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}, {
-				Name: "Factory", ProductionFactor: 0.05,
-			}},
-		}},
 	}, {
-		Name: "@gear", Type: "Craft", UnlockedBy: "Construction",
+		Name: "gear", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "steel", Quantity: 15}},
-		Adds: []data.Resource{{
-			Name: "gear", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}, {
-				Name: "Factory", ProductionFactor: 0.05,
-			}},
-		}},
 	}, {
-		Name: "@scaffold", Type: "Craft", UnlockedBy: "Construction",
+		Name: "scaffold", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "beam", Quantity: 50}},
-		Adds: []data.Resource{{
-			Name: "scaffold", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}, {
-				Name: "Factory", ProductionFactor: 0.05,
-			}},
-		}},
 	}, {
-		Name: "@manuscript", Type: "Craft", UnlockedBy: "Construction",
+		Name: "manuscript", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "culture", Quantity: 400,
 		}, {
 			Name: "parchment", Quantity: 25,
 		}},
-		Adds: []data.Resource{{
-			Name: "manuscript", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}, {
-				Name: "Factory", ProductionFactor: 0.05,
-			}},
-		}},
 	}, {
-		Name: "@megalith", Type: "Craft", UnlockedBy: "Construction",
+		Name: "megalith", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
 			Name: "beam", Quantity: 25,
 		}, {
@@ -1086,15 +1019,8 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "plate", Quantity: 5,
 		}},
-		Adds: []data.Resource{{
-			Name: "megalith", Quantity: 1,
-			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
-			}, {
-				Name: "Factory", ProductionFactor: 0.05,
-			}},
-		}},
-	}, {
+	}})
+	g.AddActions([]data.Action{{
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
 			Name: "catpower", Quantity: 50,
@@ -1666,6 +1592,26 @@ func resourceWithName(resource data.Resource, names []string) []data.Resource {
 		res = append(res, resource)
 	}
 	return res
+}
+
+func addCrafts(g *game.Game, actions []data.Action) {
+	for _, action := range actions {
+		name := action.Name
+		action.Name = "@" + name
+		action.Type = "Craft"
+		action.Adds = []data.Resource{{
+			Name: name, Quantity: 1,
+			ProductionBonus: []data.Resource{{
+				Name: "Workshop", ProductionFactor: 0.06,
+			}, {
+				Name: "Factory", ProductionFactor: 0.05,
+			}},
+		}}
+		g.AddAction(action)
+		g.AddResource(data.Resource{
+			Name: name, Type: "Resource", Capacity: -1, ProducerAction: action.Name,
+		})
+	}
 }
 
 const (

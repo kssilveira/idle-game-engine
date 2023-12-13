@@ -14,10 +14,10 @@ import (
 type Game struct {
 	Resources []*data.Resource `json:",omitempty"`
 	// maps resource name to index in Resources
-	ResourceToIndex map[string]int `json:",omitempty"`
+	ResourceToIndex map[string]int `json:"-"`
 	Actions         []data.Action  `json:",omitempty"`
 	// maps action name to index in Actions
-	ActionToIndex map[string]int `json:",omitempty"`
+	ActionToIndex map[string]int `json:"-"`
 	Now           time.Time      `json:",omitempty"`
 }
 
@@ -53,10 +53,14 @@ func (g *Game) AddResource(resource data.Resource) {
 
 func (g *Game) AddActions(actions []data.Action) {
 	for _, action := range actions {
-		g.ActionToIndex[action.Name] = len(g.Actions)
-		cp := action
-		g.Actions = append(g.Actions, cp)
+		g.AddAction(action)
 	}
+}
+
+func (g *Game) AddAction(action data.Action) {
+	g.ActionToIndex[action.Name] = len(g.Actions)
+	cp := action
+	g.Actions = append(g.Actions, cp)
 }
 
 func (g *Game) Validate() error {
