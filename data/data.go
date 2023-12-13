@@ -1,52 +1,52 @@
 package data
 
 type Resource struct {
-	Name     string
-	Type     string
-	IsHidden bool
-	Quantity float64
-	Capacity float64
+	Name     string  `json:",omitempty"`
+	Type     string  `json:",omitempty"`
+	IsHidden bool    `json:",omitempty"`
+	Quantity float64 `json:",omitempty"`
+	Capacity float64 `json:",omitempty"`
 
-	Producers []Resource
+	Producers []Resource `json:",omitempty"`
 	// Quantity += Producer.Quantity * ProductionFactor * elapsedTime
-	ProductionFactor float64
+	ProductionFactor float64 `json:",omitempty"`
 	// Quantity += Producer.Quantity * ProductionFactor * elapsedTime * ProductionResourceFactor.Quantity
-	ProductionResourceFactor string
+	ProductionResourceFactor string `json:",omitempty"`
 	// Quantity += floor(Producer.Quantity) * ProductionFactor * elapsedTime
-	ProductionFloor bool
+	ProductionFloor bool `json:",omitempty"`
 	// Quantity += (Producer.Quantity > 0 ? 1 : 0) * ProductionFactor * elapsedTime
-	ProductionBoolean bool
+	ProductionBoolean bool `json:",omitempty"`
 	// Quantity = StartQuantity + Producer.Quantity * ProductionFactor
-	StartQuantity float64
+	StartQuantity float64 `json:",omitempty"`
 	// Quantity = StartQuantity + (Producer.Quantity * ProductionFactor) % ProductionModulus
-	ProductionModulus int
+	ProductionModulus int `json:",omitempty"`
 	// Quantity = StartQuantity if (Producer.Quantity * ProductionFactor) % ProductionModulus == ProductionModulusEquals else 0
-	ProductionModulusEquals int
+	ProductionModulusEquals int `json:",omitempty"`
 
 	// production *= 1 + bonus
-	ProductionBonus []Resource
+	ProductionBonus []Resource `json:",omitempty"`
 
 	// negative production reduces consumers
-	ProductionOnGone bool
-	OnGone           []Resource
+	ProductionOnGone bool       `json:",omitempty"`
+	OnGone           []Resource `json:",omitempty"`
 
-	CapacityProducers []Resource
+	CapacityProducers []Resource `json:",omitempty"`
 	// Capacity = StartCapacity + CapacityProducer.Quantity * ProductionFactor
-	StartCapacity float64
+	StartCapacity float64 `json:",omitempty"`
 
 	// cost = Quantity * pow(CostExponentBase, add.Quantity)
-	CostExponentBase float64
+	CostExponentBase float64 `json:",omitempty"`
 
-	ProducerAction string
+	ProducerAction string `json:",omitempty"`
 }
 
 type Action struct {
-	Name       string
-	Type       string
-	UnlockedBy string
-	LockedBy   string
-	Costs      []Resource
-	Adds       []Resource
+	Name       string     `json:",omitempty"`
+	Type       string     `json:",omitempty"`
+	UnlockedBy string     `json:",omitempty"`
+	LockedBy   string     `json:",omitempty"`
+	Costs      []Resource `json:",omitempty"`
+	Adds       []Resource `json:",omitempty"`
 }
 
 type ParsedInput struct {

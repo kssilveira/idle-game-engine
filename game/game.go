@@ -12,13 +12,13 @@ import (
 )
 
 type Game struct {
-	Resources []*data.Resource
+	Resources []*data.Resource `json:",omitempty"`
 	// maps resource name to index in Resources
-	ResourceToIndex map[string]int
-	Actions         []data.Action
+	ResourceToIndex map[string]int `json:",omitempty"`
+	Actions         []data.Action  `json:",omitempty"`
 	// maps action name to index in Actions
-	ActionToIndex map[string]int
-	Now           time.Time
+	ActionToIndex map[string]int `json:",omitempty"`
+	Now           time.Time      `json:",omitempty"`
 }
 
 type Input chan string

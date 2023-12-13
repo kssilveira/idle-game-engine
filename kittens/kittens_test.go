@@ -2,6 +2,7 @@ package kittens
 
 import (
 	"bytes"
+	"encoding/json"
 	"log"
 	"os"
 	"path/filepath"
@@ -260,5 +261,16 @@ func TestGraph(t *testing.T) {
 					t.Errorf("[%s] got err %v", in.name, err)
 				}
 				//*/
+	}
+}
+
+func TestNew(t *testing.T) {
+	g := NewGame(func() time.Time { return time.Unix(0, 0) })
+	content, err := json.MarshalIndent(g, "", "  ")
+	if err != nil {
+		t.Errorf("TestNew got err %v", err)
+	}
+	if err := os.WriteFile(filepath.Join("testdata", "game.out"), content, 0644); err != nil {
+		t.Errorf("TestNew got err %v", err)
 	}
 }

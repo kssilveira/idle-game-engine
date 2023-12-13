@@ -1,0 +1,4981 @@
+{
+  "Resources": [
+    {
+      "Name": "time",
+      "Type": "Calendar",
+      "Capacity": -1
+    },
+    {
+      "Name": "skip",
+      "Type": "Calendar",
+      "Capacity": -1
+    },
+    {
+      "Name": "day",
+      "Type": "Calendar",
+      "IsHidden": true,
+      "Capacity": -1,
+      "Producers": [
+        {
+          "ProductionFactor": 0.5
+        }
+      ]
+    },
+    {
+      "Name": "year",
+      "Type": "Calendar",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "ProductionFactor": 0.0025,
+          "ProductionFloor": true
+        }
+      ],
+      "StartQuantity": 1
+    },
+    {
+      "Name": "Spring",
+      "Type": "Calendar",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "ProductionFactor": 0.01,
+          "ProductionFloor": true
+        }
+      ],
+      "StartQuantity": 1,
+      "ProductionModulus": 4
+    },
+    {
+      "Name": "Summer",
+      "Type": "Calendar",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "ProductionFactor": 0.01,
+          "ProductionFloor": true
+        }
+      ],
+      "StartQuantity": 1,
+      "ProductionModulus": 4,
+      "ProductionModulusEquals": 1
+    },
+    {
+      "Name": "Autumn",
+      "Type": "Calendar",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "ProductionFactor": 0.01,
+          "ProductionFloor": true
+        }
+      ],
+      "StartQuantity": 1,
+      "ProductionModulus": 4,
+      "ProductionModulusEquals": 2
+    },
+    {
+      "Name": "Winter",
+      "Type": "Calendar",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "ProductionFactor": 0.01,
+          "ProductionFloor": true
+        }
+      ],
+      "StartQuantity": 1,
+      "ProductionModulus": 4,
+      "ProductionModulusEquals": 3
+    },
+    {
+      "Name": "day_of_year",
+      "Type": "Calendar",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "ProductionFactor": 1,
+          "ProductionFloor": true
+        }
+      ],
+      "StartQuantity": 1,
+      "ProductionModulus": 400,
+      "ProductionModulusEquals": -1
+    },
+    {
+      "Name": "catnip",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Catnip Field",
+          "ProductionFactor": 0.9375,
+          "ProductionResourceFactor": "Spring"
+        },
+        {
+          "Name": "Catnip Field",
+          "ProductionFactor": 0.625,
+          "ProductionResourceFactor": "Summer"
+        },
+        {
+          "Name": "Catnip Field",
+          "ProductionFactor": 0.625,
+          "ProductionResourceFactor": "Autumn"
+        },
+        {
+          "Name": "Catnip Field",
+          "ProductionFactor": 0.15625,
+          "ProductionResourceFactor": "Winter"
+        },
+        {
+          "Name": "kitten",
+          "ProductionFactor": -4.25,
+          "ProductionFloor": true,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "woodcutter",
+          "ProductionFactor": -4.25,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "scholar",
+          "ProductionFactor": -4.25,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "farmer",
+          "ProductionFactor": -4.25,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "hunter",
+          "ProductionFactor": -4.25,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "miner",
+          "ProductionFactor": -4.25,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "priest",
+          "ProductionFactor": -4.25,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "geologist",
+          "ProductionFactor": -4.25,
+          "ProductionBonus": [
+            {
+              "Name": "Pasture",
+              "ProductionFactor": -0.005
+            },
+            {
+              "Name": "Unic. Pasture",
+              "ProductionFactor": -0.0015
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "farmer",
+          "ProductionFactor": 5,
+          "ProductionResourceFactor": "happiness",
+          "ProductionBonus": [
+            {
+              "Name": "Mineral Hoes",
+              "ProductionFactor": 0.5
+            },
+            {
+              "Name": "Iron Hoes",
+              "ProductionFactor": 0.3
+            }
+          ]
+        },
+        {
+          "Name": "Brewery",
+          "ProductionFactor": -5
+        }
+      ],
+      "ProductionBonus": [
+        {
+          "Name": "Aqueduct",
+          "ProductionFactor": 0.03
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Barn",
+          "ProductionFactor": 5000
+        },
+        {
+          "Name": "Harbour",
+          "ProductionFactor": 2500
+        }
+      ],
+      "StartCapacity": 5000
+    },
+    {
+      "Name": "wood",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "woodcutter",
+          "ProductionFactor": 0.009,
+          "ProductionResourceFactor": "happiness",
+          "ProductionBonus": [
+            {
+              "Name": "Mineral Axe",
+              "ProductionFactor": 0.7
+            },
+            {
+              "Name": "Iron Axe",
+              "ProductionFactor": 0.5
+            }
+          ]
+        },
+        {
+          "Name": "Active Smelter",
+          "ProductionFactor": -0.25
+        }
+      ],
+      "ProductionBonus": [
+        {
+          "Name": "Lumber Mill",
+          "ProductionFactor": 0.1
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Barn",
+          "ProductionFactor": 200,
+          "ProductionBonus": [
+            {
+              "Name": "Expanded Barns",
+              "ProductionFactor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "ProductionFactor": 0.8
+            }
+          ]
+        },
+        {
+          "Name": "Warehouse",
+          "ProductionFactor": 150
+        },
+        {
+          "Name": "Harbour",
+          "ProductionFactor": 700
+        }
+      ],
+      "StartCapacity": 200
+    },
+    {
+      "Name": "science",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "scholar",
+          "ProductionFactor": 0.175,
+          "ProductionResourceFactor": "happiness"
+        }
+      ],
+      "ProductionBonus": [
+        {
+          "Name": "Library",
+          "ProductionFactor": 0.1
+        },
+        {
+          "Name": "Academy",
+          "ProductionFactor": 0.2
+        },
+        {
+          "Name": "Observatory",
+          "ProductionFactor": 0.25
+        },
+        {
+          "Name": "Bio Lab",
+          "ProductionFactor": 0.35
+        },
+        {
+          "Name": "Data Center",
+          "ProductionFactor": 0.1
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Library",
+          "ProductionFactor": 250
+        },
+        {
+          "Name": "Academy",
+          "ProductionFactor": 500
+        },
+        {
+          "Name": "Observatory",
+          "ProductionFactor": 1000
+        },
+        {
+          "Name": "Bio Lab",
+          "ProductionFactor": 1500
+        },
+        {
+          "Name": "Data Center",
+          "ProductionFactor": 750
+        }
+      ],
+      "StartCapacity": 250
+    },
+    {
+      "Name": "catpower",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "hunter",
+          "ProductionFactor": 0.3,
+          "ProductionResourceFactor": "happiness",
+          "ProductionBonus": [
+            {
+              "Name": "Bolas",
+              "ProductionFactor": 1
+            },
+            {
+              "Name": "Hunting Armor",
+              "ProductionFactor": 2
+            },
+            {
+              "Name": "Composite Bow",
+              "ProductionFactor": 0.5
+            }
+          ]
+        },
+        {
+          "Name": "Mint",
+          "ProductionFactor": -3.75
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Hut",
+          "ProductionFactor": 75
+        },
+        {
+          "Name": "Log House",
+          "ProductionFactor": 50
+        },
+        {
+          "Name": "Mansion",
+          "ProductionFactor": 50
+        }
+      ],
+      "StartCapacity": 250
+    },
+    {
+      "Name": "minerals",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "miner",
+          "ProductionFactor": 0.25,
+          "ProductionResourceFactor": "happiness",
+          "ProductionBonus": [
+            {
+              "Name": "Mine",
+              "ProductionFactor": 0.2
+            },
+            {
+              "Name": "Quarry",
+              "ProductionFactor": 0.35
+            }
+          ]
+        },
+        {
+          "Name": "Active Smelter",
+          "ProductionFactor": -0.5
+        },
+        {
+          "Name": "Calciner",
+          "ProductionFactor": -7.5
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Barn",
+          "ProductionFactor": 250,
+          "ProductionBonus": [
+            {
+              "Name": "Expanded Barns",
+              "ProductionFactor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "ProductionFactor": 0.8
+            }
+          ]
+        },
+        {
+          "Name": "Warehouse",
+          "ProductionFactor": 200
+        },
+        {
+          "Name": "Harbour",
+          "ProductionFactor": 950
+        }
+      ],
+      "StartCapacity": 250
+    },
+    {
+      "Name": "iron",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Active Smelter",
+          "ProductionFactor": 0.1
+        },
+        {
+          "Name": "Calciner",
+          "ProductionFactor": 0.75
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Barn",
+          "ProductionFactor": 50,
+          "ProductionBonus": [
+            {
+              "Name": "Expanded Barns",
+              "ProductionFactor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "ProductionFactor": 0.8
+            }
+          ]
+        },
+        {
+          "Name": "Warehouse",
+          "ProductionFactor": 25
+        },
+        {
+          "Name": "Harbour",
+          "ProductionFactor": 150
+        }
+      ],
+      "StartCapacity": 50
+    },
+    {
+      "Name": "coal",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "geologist",
+          "ProductionFactor": 0.075
+        },
+        {
+          "Name": "Quarry",
+          "ProductionFactor": 0.075
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Barn",
+          "ProductionFactor": 60,
+          "ProductionBonus": [
+            {
+              "Name": "Expanded Barns",
+              "ProductionFactor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "ProductionFactor": 0.8
+            }
+          ]
+        },
+        {
+          "Name": "Warehouse",
+          "ProductionFactor": 30
+        },
+        {
+          "Name": "Harbour",
+          "ProductionFactor": 100
+        }
+      ],
+      "StartCapacity": 1
+    },
+    {
+      "Name": "gold",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Mint",
+          "ProductionFactor": -0.025
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Barn",
+          "ProductionFactor": 10,
+          "ProductionBonus": [
+            {
+              "Name": "Expanded Barns",
+              "ProductionFactor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "ProductionFactor": 0.8
+            }
+          ]
+        },
+        {
+          "Name": "Warehouse",
+          "ProductionFactor": 5
+        },
+        {
+          "Name": "Harbour",
+          "ProductionFactor": 25
+        },
+        {
+          "Name": "Mint",
+          "ProductionFactor": 100
+        }
+      ],
+      "StartCapacity": 20
+    },
+    {
+      "Name": "titanium",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Accelerator",
+          "ProductionFactor": -0.075
+        },
+        {
+          "Name": "Calciner",
+          "ProductionFactor": 0.0025
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Barn",
+          "ProductionFactor": 2,
+          "ProductionBonus": [
+            {
+              "Name": "Expanded Barns",
+              "ProductionFactor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "ProductionFactor": 0.8
+            }
+          ]
+        },
+        {
+          "Name": "Warehouse",
+          "ProductionFactor": 10
+        },
+        {
+          "Name": "Harbour",
+          "ProductionFactor": 50
+        }
+      ],
+      "StartCapacity": 1
+    },
+    {
+      "Name": "oil",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Oil Well",
+          "ProductionFactor": 0.1
+        },
+        {
+          "Name": "Magneto",
+          "ProductionFactor": -0.25
+        },
+        {
+          "Name": "Calciner",
+          "ProductionFactor": -0.12
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Oil Well",
+          "ProductionFactor": 1500
+        }
+      ],
+      "StartCapacity": 1
+    },
+    {
+      "Name": "uranium",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Accelerator",
+          "ProductionFactor": 0.0125
+        },
+        {
+          "Name": "Reactor",
+          "ProductionFactor": -0.005
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Reactor",
+          "ProductionFactor": 250
+        }
+      ],
+      "StartCapacity": 1
+    },
+    {
+      "Name": "unobtainium",
+      "Type": "Resource",
+      "StartCapacity": 1
+    },
+    {
+      "Name": "time crystal",
+      "Type": "Resource",
+      "StartCapacity": 1
+    },
+    {
+      "Name": "antimatter",
+      "Type": "Resource",
+      "StartCapacity": 1
+    },
+    {
+      "Name": "kitten",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "ProductionFactor": 0.05
+        }
+      ],
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "all kittens",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "Producers": [
+        {
+          "ProductionFactor": -1
+        },
+        {
+          "Name": "kitten",
+          "ProductionFactor": 1,
+          "ProductionFloor": true
+        },
+        {
+          "Name": "woodcutter",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "scholar",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "farmer",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "hunter",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "miner",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "priest",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "geologist",
+          "ProductionFactor": 1
+        }
+      ],
+      "StartQuantity": 1
+    },
+    {
+      "Name": "furs",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "all kittens",
+          "ProductionFactor": -0.05,
+          "ProductionBonus": [
+            {
+              "Name": "Tradepost",
+              "ProductionFactor": -0.04
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "ivory",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "all kittens",
+          "ProductionFactor": -0.035,
+          "ProductionBonus": [
+            {
+              "Name": "Tradepost",
+              "ProductionFactor": -0.04
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "spice",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "all kittens",
+          "ProductionFactor": -0.005,
+          "ProductionBonus": [
+            {
+              "Name": "Tradepost",
+              "ProductionFactor": -0.04
+            }
+          ]
+        },
+        {
+          "Name": "Brewery",
+          "ProductionFactor": -0.5
+        }
+      ]
+    },
+    {
+      "Name": "unicorns",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "Unic. Pasture",
+          "ProductionFactor": 0.005
+        }
+      ]
+    },
+    {
+      "Name": "culture",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Amphitheatre",
+          "ProductionFactor": 0.025
+        },
+        {
+          "Name": "Chapel",
+          "ProductionFactor": 0.25
+        },
+        {
+          "Name": "Temple",
+          "ProductionFactor": 0.5
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Library",
+          "ProductionFactor": 10,
+          "ProductionBonus": [
+            {
+              "Name": "Ziggurat",
+              "ProductionFactor": 0.08
+            }
+          ]
+        },
+        {
+          "Name": "Academy",
+          "ProductionFactor": 25,
+          "ProductionBonus": [
+            {
+              "Name": "Ziggurat",
+              "ProductionFactor": 0.08
+            }
+          ]
+        },
+        {
+          "Name": "Amphitheatre",
+          "ProductionFactor": 50,
+          "ProductionBonus": [
+            {
+              "Name": "Ziggurat",
+              "ProductionFactor": 0.08
+            }
+          ]
+        },
+        {
+          "Name": "Chapel",
+          "ProductionFactor": 200,
+          "ProductionBonus": [
+            {
+              "Name": "Ziggurat",
+              "ProductionFactor": 0.08
+            }
+          ]
+        },
+        {
+          "Name": "Data Center",
+          "ProductionFactor": 250,
+          "ProductionBonus": [
+            {
+              "Name": "Ziggurat",
+              "ProductionFactor": 0.08
+            }
+          ]
+        }
+      ],
+      "StartCapacity": 575
+    },
+    {
+      "Name": "faith",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "priest",
+          "ProductionFactor": 0.0075
+        },
+        {
+          "Name": "Chapel",
+          "ProductionFactor": 0.025
+        }
+      ],
+      "CapacityProducers": [
+        {
+          "Name": "Temple",
+          "ProductionFactor": 100
+        }
+      ],
+      "StartCapacity": 1
+    },
+    {
+      "Name": "beam",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@beam"
+    },
+    {
+      "Name": "slab",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@slab"
+    },
+    {
+      "Name": "plate",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@plate"
+    },
+    {
+      "Name": "steel",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "gear",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@gear"
+    },
+    {
+      "Name": "concrete",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "scaffold",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@scaffold"
+    },
+    {
+      "Name": "alloy",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "parchment",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "manuscript",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@manuscript"
+    },
+    {
+      "Name": "compendium",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "blueprint",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "megalith",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@megalith"
+    },
+    {
+      "Name": "gigaflops",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "AI Core",
+          "ProductionFactor": 0.1
+        }
+      ]
+    },
+    {
+      "Name": "gone kitten",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "Catnip Field",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Hut",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Library",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Barn",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Mine",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Workshop",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Smelter",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Idle Smelter",
+      "Type": "Bonfire",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "ProductionFactor": -1
+        },
+        {
+          "Name": "Smelter",
+          "ProductionFactor": 1
+        },
+        {
+          "Name": "Active Smelter",
+          "ProductionFactor": -1
+        }
+      ],
+      "StartQuantity": 1
+    },
+    {
+      "Name": "Active Smelter",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Pasture",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Unic. Pasture",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Academy",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Warehouse",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Log House",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Aqueduct",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Mansion",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Observatory",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Bio Lab",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Harbour",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Quarry",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Lumber Mill",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Oil Well",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Accelerator",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Steamworks",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Magneto",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Calciner",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Factory",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Reactor",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Amphitheatre",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Chapel",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Temple",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Tradepost",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Mint",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Brewery",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Ziggurat",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Chronosphere",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "AI Core",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Solar Farm",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Hydro Plant",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Data Center",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Broadcast Tower",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "woodcutter",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "scholar",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "farmer",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "hunter",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "miner",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "priest",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "geologist",
+      "Type": "Village",
+      "IsHidden": true,
+      "Capacity": -1,
+      "OnGone": [
+        {
+          "Name": "gone kitten",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "happiness",
+      "Type": "Village",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "all kittens",
+          "ProductionFactor": -0.02
+        },
+        {
+          "Name": "ivory",
+          "ProductionFactor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "furs",
+          "ProductionFactor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "spice",
+          "ProductionFactor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "unicorns",
+          "ProductionFactor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "Amphitheatre",
+          "ProductionFactor": -0.048
+        },
+        {
+          "Name": "Broadcast Tower",
+          "ProductionFactor": -0.75
+        }
+      ],
+      "StartQuantity": 1.1
+    },
+    {
+      "Name": "Calendar",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Agriculture",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Archery",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mining",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Animal Husbandry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Metal Working",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Civil Service",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mathematics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Construction",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Currency",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Celestial Mechanics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Engineering",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Steel",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Architecture",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Astronomy",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Biology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Navigation",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Geology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chemistry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Particle Physics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Machinery",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Electricity",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mechanization",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Nuclear Fission",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Writing",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Acoustics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Philosophy",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chronophysics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Artificial Intelligence",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Ecology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Robotics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Electronics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Theology",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Physics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Metaphysics",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chemistry",
+      "Type": "Science",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mineral Hoes",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Iron Hoes",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mineral Axe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Iron Axe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Expanded Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Reinforced Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Bolas",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Hunting Armor",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Reinforced Saw",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Composite Bow",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Catnip Enrichment",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    }
+  ],
+  "ResourceToIndex": {
+    "AI Core": 82,
+    "Academy": 57,
+    "Accelerator": 68,
+    "Acoustics": 120,
+    "Active Smelter": 54,
+    "Agriculture": 96,
+    "Amphitheatre": 74,
+    "Animal Husbandry": 99,
+    "Aqueduct": 60,
+    "Archery": 97,
+    "Architecture": 108,
+    "Artificial Intelligence": 123,
+    "Astronomy": 109,
+    "Autumn": 6,
+    "Barn": 49,
+    "Bio Lab": 63,
+    "Biology": 110,
+    "Bolas": 137,
+    "Brewery": 79,
+    "Broadcast Tower": 86,
+    "Calciner": 71,
+    "Calendar": 95,
+    "Catnip Enrichment": 141,
+    "Catnip Field": 46,
+    "Celestial Mechanics": 105,
+    "Chapel": 75,
+    "Chemistry": 130,
+    "Chronophysics": 122,
+    "Chronosphere": 81,
+    "Civil Service": 101,
+    "Composite Bow": 140,
+    "Construction": 103,
+    "Currency": 104,
+    "Data Center": 85,
+    "Ecology": 124,
+    "Electricity": 116,
+    "Electronics": 126,
+    "Engineering": 106,
+    "Expanded Barns": 135,
+    "Factory": 72,
+    "Geology": 112,
+    "Harbour": 64,
+    "Hunting Armor": 138,
+    "Hut": 47,
+    "Hydro Plant": 84,
+    "Idle Smelter": 53,
+    "Iron Axe": 134,
+    "Iron Hoes": 132,
+    "Library": 48,
+    "Log House": 59,
+    "Lumber Mill": 66,
+    "Machinery": 115,
+    "Magneto": 70,
+    "Mansion": 61,
+    "Mathematics": 102,
+    "Mechanization": 117,
+    "Metal Working": 100,
+    "Metaphysics": 129,
+    "Mine": 50,
+    "Mineral Axe": 133,
+    "Mineral Hoes": 131,
+    "Mining": 98,
+    "Mint": 78,
+    "Navigation": 111,
+    "Nuclear Fission": 118,
+    "Observatory": 62,
+    "Oil Well": 67,
+    "Particle Physics": 114,
+    "Pasture": 55,
+    "Philosophy": 121,
+    "Physics": 128,
+    "Quarry": 65,
+    "Reactor": 73,
+    "Reinforced Barns": 136,
+    "Reinforced Saw": 139,
+    "Robotics": 125,
+    "Smelter": 52,
+    "Solar Farm": 83,
+    "Spring": 4,
+    "Steamworks": 69,
+    "Steel": 107,
+    "Summer": 5,
+    "Temple": 76,
+    "Theology": 127,
+    "Tradepost": 77,
+    "Unic. Pasture": 56,
+    "Warehouse": 58,
+    "Winter": 7,
+    "Workshop": 51,
+    "Writing": 119,
+    "Ziggurat": 80,
+    "all kittens": 24,
+    "alloy": 38,
+    "antimatter": 22,
+    "beam": 31,
+    "blueprint": 42,
+    "catnip": 9,
+    "catpower": 12,
+    "coal": 15,
+    "compendium": 41,
+    "concrete": 36,
+    "culture": 29,
+    "day": 2,
+    "day_of_year": 8,
+    "faith": 30,
+    "farmer": 89,
+    "furs": 25,
+    "gear": 35,
+    "geologist": 93,
+    "gigaflops": 44,
+    "gold": 16,
+    "gone kitten": 45,
+    "happiness": 94,
+    "hunter": 90,
+    "iron": 14,
+    "ivory": 26,
+    "kitten": 23,
+    "manuscript": 40,
+    "megalith": 43,
+    "miner": 91,
+    "minerals": 13,
+    "oil": 18,
+    "parchment": 39,
+    "plate": 33,
+    "priest": 92,
+    "scaffold": 37,
+    "scholar": 88,
+    "science": 11,
+    "skip": 1,
+    "slab": 32,
+    "spice": 27,
+    "steel": 34,
+    "time": 0,
+    "time crystal": 21,
+    "titanium": 17,
+    "unicorns": 28,
+    "unobtainium": 20,
+    "uranium": 19,
+    "wood": 10,
+    "woodcutter": 87,
+    "year": 3
+  },
+  "Actions": [
+    {
+      "Name": "Gather catnip",
+      "Type": "Bonfire",
+      "LockedBy": "Catnip Field",
+      "Adds": [
+        {
+          "Name": "catnip",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Refine catnip",
+      "Type": "Bonfire",
+      "UnlockedBy": "catnip",
+      "LockedBy": "woodcutter",
+      "Costs": [
+        {
+          "Name": "catnip",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "wood",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Catnip Field",
+      "Type": "Bonfire",
+      "UnlockedBy": "catnip",
+      "Costs": [
+        {
+          "Name": "catnip",
+          "Quantity": 10,
+          "CostExponentBase": 1.12
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Catnip Field",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hut",
+      "Type": "Bonfire",
+      "UnlockedBy": "wood",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 5,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hut",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 2
+        }
+      ]
+    },
+    {
+      "Name": "Library",
+      "Type": "Bonfire",
+      "UnlockedBy": "wood",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Library",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Barn",
+      "Type": "Bonfire",
+      "UnlockedBy": "Agriculture",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 50,
+          "CostExponentBase": 1.75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Barn",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mine",
+      "Type": "Bonfire",
+      "UnlockedBy": "Mining",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mine",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Workshop",
+      "Type": "Bonfire",
+      "UnlockedBy": "Mining",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 400,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Workshop",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Smelter",
+      "Type": "Bonfire",
+      "UnlockedBy": "Metal Working",
+      "Costs": [
+        {
+          "Name": "minerals",
+          "Quantity": 200,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Smelter",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Active Smelter",
+      "Type": "Bonfire",
+      "UnlockedBy": "Smelter",
+      "Costs": [
+        {
+          "Name": "Idle Smelter",
+          "Quantity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Smelter",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Pasture",
+      "Type": "Bonfire",
+      "UnlockedBy": "Animal Husbandry",
+      "Costs": [
+        {
+          "Name": "catnip",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "wood",
+          "Quantity": 10,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Pasture",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unic. Pasture",
+      "Type": "Bonfire",
+      "UnlockedBy": "Animal Husbandry",
+      "Costs": [
+        {
+          "Name": "unicorns",
+          "Quantity": 2,
+          "CostExponentBase": 1.75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unic. Pasture",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Academy",
+      "Type": "Bonfire",
+      "UnlockedBy": "Mathematics",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 70,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "science",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Academy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Warehouse",
+      "Type": "Bonfire",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "beam",
+          "Quantity": 1.5,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "slab",
+          "Quantity": 2,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Warehouse",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Log House",
+      "Type": "Bonfire",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 200,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 250,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Log House",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Aqueduct",
+      "Type": "Bonfire",
+      "UnlockedBy": "Engineering",
+      "Costs": [
+        {
+          "Name": "minerals",
+          "Quantity": 75,
+          "CostExponentBase": 1.12
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Aqueduct",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mansion",
+      "Type": "Bonfire",
+      "UnlockedBy": "Architecture",
+      "Costs": [
+        {
+          "Name": "slab",
+          "Quantity": 185,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "steel",
+          "Quantity": 75,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mansion",
+          "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Observatory",
+      "Type": "Bonfire",
+      "UnlockedBy": "Astronomy",
+      "Costs": [
+        {
+          "Name": "scaffold",
+          "Quantity": 50,
+          "CostExponentBase": 1.1
+        },
+        {
+          "Name": "slab",
+          "Quantity": 35,
+          "CostExponentBase": 1.1
+        },
+        {
+          "Name": "iron",
+          "Quantity": 750,
+          "CostExponentBase": 1.1
+        },
+        {
+          "Name": "science",
+          "Quantity": 1000,
+          "CostExponentBase": 1.1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Observatory",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Bio Lab",
+      "Type": "Bonfire",
+      "UnlockedBy": "Biology",
+      "Costs": [
+        {
+          "Name": "slab",
+          "Quantity": 100,
+          "CostExponentBase": 1.1
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 25,
+          "CostExponentBase": 1.1
+        },
+        {
+          "Name": "science",
+          "Quantity": 1500,
+          "CostExponentBase": 1.1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Bio Lab",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Harbour",
+      "Type": "Bonfire",
+      "UnlockedBy": "Navigation",
+      "Costs": [
+        {
+          "Name": "scaffold",
+          "Quantity": 5,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "slab",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "plate",
+          "Quantity": 75,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Harbour",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Quarry",
+      "Type": "Bonfire",
+      "UnlockedBy": "Geology",
+      "Costs": [
+        {
+          "Name": "scaffold",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "steel",
+          "Quantity": 125,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "slab",
+          "Quantity": 1000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Quarry",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Lumber Mill",
+      "Type": "Bonfire",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "iron",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 250,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Lumber Mill",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Oil Well",
+      "Type": "Bonfire",
+      "UnlockedBy": "Chemistry",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "gear",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Oil Well",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Accelerator",
+      "Type": "Bonfire",
+      "UnlockedBy": "Particle Physics",
+      "Costs": [
+        {
+          "Name": "titanium",
+          "Quantity": 7500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 125,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Accelerator",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Steamworks",
+      "Type": "Bonfire",
+      "UnlockedBy": "Machinery",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 65,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "gear",
+          "Quantity": 20,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 1,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Steamworks",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Magneto",
+      "Type": "Bonfire",
+      "UnlockedBy": "Electricity",
+      "Costs": [
+        {
+          "Name": "alloy",
+          "Quantity": 10,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "gear",
+          "Quantity": 5,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 1,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Magneto",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Calciner",
+      "Type": "Bonfire",
+      "UnlockedBy": "Chemistry",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 15,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 1,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Calciner",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Factory",
+      "Type": "Bonfire",
+      "UnlockedBy": "Mechanization",
+      "Costs": [
+        {
+          "Name": "titanium",
+          "Quantity": 2000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "plate",
+          "Quantity": 25000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 15,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Factory",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Reactor",
+      "Type": "Bonfire",
+      "UnlockedBy": "Nuclear Fission",
+      "Costs": [
+        {
+          "Name": "titanium",
+          "Quantity": 3500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "plate",
+          "Quantity": 5000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Reactor",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Amphitheatre",
+      "Type": "Bonfire",
+      "UnlockedBy": "Writing",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 200,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 1200,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "parchment",
+          "Quantity": 3,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Amphitheatre",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chapel",
+      "Type": "Bonfire",
+      "UnlockedBy": "Acoustics",
+      "Costs": [
+        {
+          "Name": "minerals",
+          "Quantity": 2000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "culture",
+          "Quantity": 250,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "parchment",
+          "Quantity": 250,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chapel",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Temple",
+      "Type": "Bonfire",
+      "UnlockedBy": "Philosophy",
+      "Costs": [
+        {
+          "Name": "slab",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "plate",
+          "Quantity": 15,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "gold",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "manuscript",
+          "Quantity": 10,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Temple",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Tradepost",
+      "Type": "Bonfire",
+      "UnlockedBy": "Currency",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 200,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "gold",
+          "Quantity": 10,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Tradepost",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mint",
+      "Type": "Bonfire",
+      "UnlockedBy": "Architecture",
+      "Costs": [
+        {
+          "Name": "minerals",
+          "Quantity": 5000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "plate",
+          "Quantity": 200,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "gold",
+          "Quantity": 500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mint",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Brewery",
+      "Type": "Bonfire",
+      "UnlockedBy": "Architecture",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 1000,
+          "CostExponentBase": 1.5
+        },
+        {
+          "Name": "culture",
+          "Quantity": 750,
+          "CostExponentBase": 1.5
+        },
+        {
+          "Name": "spice",
+          "Quantity": 5,
+          "CostExponentBase": 1.5
+        },
+        {
+          "Name": "parchment",
+          "Quantity": 375,
+          "CostExponentBase": 1.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Brewery",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Ziggurat",
+      "Type": "Bonfire",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "megalith",
+          "Quantity": 50,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 50,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 1,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Ziggurat",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chronosphere",
+      "Type": "Bonfire",
+      "UnlockedBy": "Chronophysics",
+      "Costs": [
+        {
+          "Name": "unobtainium",
+          "Quantity": 2500,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 1,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 100,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "science",
+          "Quantity": 250000,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chronosphere",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "AI Core",
+      "Type": "Bonfire",
+      "UnlockedBy": "Artificial Intelligence",
+      "Costs": [
+        {
+          "Name": "antimatter",
+          "Quantity": 125,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "science",
+          "Quantity": 500000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "AI Core",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Solar Farm",
+      "Type": "Bonfire",
+      "UnlockedBy": "Ecology",
+      "Costs": [
+        {
+          "Name": "titanium",
+          "Quantity": 250,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Solar Farm",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hydro Plant",
+      "Type": "Bonfire",
+      "UnlockedBy": "Robotics",
+      "Costs": [
+        {
+          "Name": "concrete",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 2500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hydro Plant",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Data Center",
+      "Type": "Bonfire",
+      "UnlockedBy": "Electronics",
+      "Costs": [
+        {
+          "Name": "concrete",
+          "Quantity": 10,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "steel",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Data Center",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Broadcast Tower",
+      "Type": "Bonfire",
+      "UnlockedBy": "Electronics",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 1250,
+          "CostExponentBase": 1.18
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 75,
+          "CostExponentBase": 1.18
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Broadcast Tower",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "woodcutter",
+      "Type": "Village",
+      "UnlockedBy": "Hut",
+      "Costs": [
+        {
+          "Name": "kitten",
+          "Quantity": 1,
+          "Capacity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "woodcutter",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "scholar",
+      "Type": "Village",
+      "UnlockedBy": "Library",
+      "Costs": [
+        {
+          "Name": "kitten",
+          "Quantity": 1,
+          "Capacity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "scholar",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "farmer",
+      "Type": "Village",
+      "UnlockedBy": "Agriculture",
+      "Costs": [
+        {
+          "Name": "kitten",
+          "Quantity": 1,
+          "Capacity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "farmer",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "hunter",
+      "Type": "Village",
+      "UnlockedBy": "Archery",
+      "Costs": [
+        {
+          "Name": "kitten",
+          "Quantity": 1,
+          "Capacity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "hunter",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "miner",
+      "Type": "Village",
+      "UnlockedBy": "Mine",
+      "Costs": [
+        {
+          "Name": "kitten",
+          "Quantity": 1,
+          "Capacity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "miner",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "priest",
+      "Type": "Village",
+      "UnlockedBy": "Theology",
+      "Costs": [
+        {
+          "Name": "kitten",
+          "Quantity": 1,
+          "Capacity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "priest",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "geologist",
+      "Type": "Village",
+      "UnlockedBy": "Geology",
+      "Costs": [
+        {
+          "Name": "kitten",
+          "Quantity": 1,
+          "Capacity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "geologist",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Send hunters",
+      "Type": "Village",
+      "UnlockedBy": "Archery",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "furs",
+          "Quantity": 39.5
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 10.78
+        },
+        {
+          "Name": "unicorns",
+          "Quantity": 0.05
+        }
+      ]
+    },
+    {
+      "Name": "@beam",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 175
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "beam",
+          "Quantity": 1,
+          "ProductionBonus": [
+            {
+              "Name": "Workshop",
+              "ProductionFactor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "ProductionFactor": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "@slab",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "minerals",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "slab",
+          "Quantity": 1,
+          "ProductionBonus": [
+            {
+              "Name": "Workshop",
+              "ProductionFactor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "ProductionFactor": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "@plate",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "plate",
+          "Quantity": 1,
+          "ProductionBonus": [
+            {
+              "Name": "Workshop",
+              "ProductionFactor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "ProductionFactor": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "@gear",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "gear",
+          "Quantity": 1,
+          "ProductionBonus": [
+            {
+              "Name": "Workshop",
+              "ProductionFactor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "ProductionFactor": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "@scaffold",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "beam",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "scaffold",
+          "Quantity": 1,
+          "ProductionBonus": [
+            {
+              "Name": "Workshop",
+              "ProductionFactor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "ProductionFactor": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "@manuscript",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "culture",
+          "Quantity": 400
+        },
+        {
+          "Name": "parchment",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "manuscript",
+          "Quantity": 1,
+          "ProductionBonus": [
+            {
+              "Name": "Workshop",
+              "ProductionFactor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "ProductionFactor": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "@megalith",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "beam",
+          "Quantity": 25
+        },
+        {
+          "Name": "slab",
+          "Quantity": 50
+        },
+        {
+          "Name": "plate",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "megalith",
+          "Quantity": 1,
+          "ProductionBonus": [
+            {
+              "Name": "Workshop",
+              "ProductionFactor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "ProductionFactor": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Lizards",
+      "Type": "Trade",
+      "UnlockedBy": "Archery",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "wood",
+          "Quantity": 500
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Calendar",
+      "Type": "Science",
+      "UnlockedBy": "Library",
+      "LockedBy": "Calendar",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 30
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Calendar",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Agriculture",
+      "Type": "Science",
+      "UnlockedBy": "Calendar",
+      "LockedBy": "Agriculture",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Agriculture",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Archery",
+      "Type": "Science",
+      "UnlockedBy": "Agriculture",
+      "LockedBy": "Archery",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 300
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Archery",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mining",
+      "Type": "Science",
+      "UnlockedBy": "Agriculture",
+      "LockedBy": "Mining",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mining",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Animal Husbandry",
+      "Type": "Science",
+      "UnlockedBy": "Archery",
+      "LockedBy": "Animal Husbandry",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Animal Husbandry",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Metal Working",
+      "Type": "Science",
+      "UnlockedBy": "Mining",
+      "LockedBy": "Metal Working",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 900
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Metal Working",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Civil Service",
+      "Type": "Science",
+      "UnlockedBy": "Animal Husbandry",
+      "LockedBy": "Civil Service",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Civil Service",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mathematics",
+      "Type": "Science",
+      "UnlockedBy": "Animal Husbandry",
+      "LockedBy": "Mathematics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mathematics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Construction",
+      "Type": "Science",
+      "UnlockedBy": "Animal Husbandry",
+      "LockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1300
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Construction",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Currency",
+      "Type": "Science",
+      "UnlockedBy": "Civil Service",
+      "LockedBy": "Currency",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 2200
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Currency",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Celestial Mechanics",
+      "Type": "Science",
+      "UnlockedBy": "Mathematics",
+      "LockedBy": "Celestial Mechanics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Celestial Mechanics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Engineering",
+      "Type": "Science",
+      "UnlockedBy": "Construction",
+      "LockedBy": "Engineering",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Engineering",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Writing",
+      "Type": "Science",
+      "UnlockedBy": "Engineering",
+      "LockedBy": "Writing",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 3600
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Writing",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Philosophy",
+      "Type": "Science",
+      "UnlockedBy": "Writing",
+      "LockedBy": "Philosophy",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 9500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Philosophy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Steel",
+      "Type": "Science",
+      "UnlockedBy": "Writing",
+      "LockedBy": "Steel",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 12000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Steel",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Machinery",
+      "Type": "Science",
+      "UnlockedBy": "Writing",
+      "LockedBy": "Machinery",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 15000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Machinery",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Theology",
+      "Type": "Science",
+      "UnlockedBy": "Philosophy",
+      "LockedBy": "Theology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 20000
+        },
+        {
+          "Name": "manuscript",
+          "Quantity": 35
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Theology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Astronomy",
+      "Type": "Science",
+      "UnlockedBy": "Theology",
+      "LockedBy": "Astronomy",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 28000
+        },
+        {
+          "Name": "manuscript",
+          "Quantity": 65
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Astronomy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Navigation",
+      "Type": "Science",
+      "UnlockedBy": "Astronomy",
+      "LockedBy": "Navigation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 35000
+        },
+        {
+          "Name": "manuscript",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Navigation",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Type": "Science",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Architecture",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 42000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Architecture",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Physics",
+      "Type": "Science",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Physics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 50000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 35
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Physics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Metaphysics",
+      "Type": "Science",
+      "UnlockedBy": "Physics",
+      "LockedBy": "Metaphysics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 55000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Metaphysics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chemistry",
+      "Type": "Science",
+      "UnlockedBy": "Physics",
+      "LockedBy": "Chemistry",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 60000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chemistry",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Acoustics",
+      "Type": "Science",
+      "UnlockedBy": "Architecture",
+      "LockedBy": "Acoustics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 60000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 60
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Acoustics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Geology",
+      "Type": "Science",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Geology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 65000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 65
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Geology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Drama and Poetry",
+      "Type": "Science",
+      "UnlockedBy": "Acoustics",
+      "LockedBy": "Drama and Poetry",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 90000
+        },
+        {
+          "Name": "parchment",
+          "Quantity": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Drama and Poetry",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Electricity",
+      "Type": "Science",
+      "UnlockedBy": "Physics",
+      "LockedBy": "Electricity",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 75000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 85
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Electricity",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Biology",
+      "Type": "Science",
+      "UnlockedBy": "Geology",
+      "LockedBy": "Biology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 85000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Biology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Biochemistry",
+      "Type": "Science",
+      "UnlockedBy": "Biology",
+      "LockedBy": "Biochemistry",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 145000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Biochemistry",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Genetics",
+      "Type": "Science",
+      "UnlockedBy": "Biochemistry",
+      "LockedBy": "Genetics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 190000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 1500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Genetics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Industrialization",
+      "Type": "Science",
+      "UnlockedBy": "Electricity",
+      "LockedBy": "Industrialization",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 10000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Industrialization",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mechanization",
+      "Type": "Science",
+      "UnlockedBy": "Industrialization",
+      "LockedBy": "Mechanization",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 115000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 45
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mechanization",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Combustion",
+      "Type": "Science",
+      "UnlockedBy": "Industrialization",
+      "LockedBy": "Combustion",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 115000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 45
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Combustion",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Metallurgy",
+      "Type": "Science",
+      "UnlockedBy": "Industrialization",
+      "LockedBy": "Metallurgy",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 60
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Metallurgy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Ecology",
+      "Type": "Science",
+      "UnlockedBy": "Combustion",
+      "LockedBy": "Ecology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 55
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Ecology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Electronics",
+      "Type": "Science",
+      "UnlockedBy": "Mechanization",
+      "LockedBy": "Electronics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 135000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 70
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Electronics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Robotics",
+      "Type": "Science",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "Robotics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 140000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 80
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Robotics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Artificial Intelligence",
+      "Type": "Science",
+      "UnlockedBy": "Robotics",
+      "LockedBy": "Artificial Intelligence",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 150
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Artificial Intelligence",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Quantum Cryptography",
+      "Type": "Science",
+      "UnlockedBy": "Artificial Intelligence",
+      "LockedBy": "Quantum Cryptography",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1250000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 1024
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Quantum Cryptography",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Blackchain",
+      "Type": "Science",
+      "UnlockedBy": "Quantum Cryptography",
+      "LockedBy": "Blackchain",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 5000000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 4096
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Blackchain",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Nuclear Fission",
+      "Type": "Science",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "Nuclear Fission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 150000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Nuclear Fission",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Rocketry",
+      "Type": "Science",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "Rocketry",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Rocketry",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Oil Processing",
+      "Type": "Science",
+      "UnlockedBy": "Rocketry",
+      "LockedBy": "Oil Processing",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 215000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 150
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Oil Processing",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Satellites",
+      "Type": "Science",
+      "UnlockedBy": "Rocketry",
+      "LockedBy": "Satellites",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 190000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Satellites",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Orbital Engineering",
+      "Type": "Science",
+      "UnlockedBy": "Satellites",
+      "LockedBy": "Orbital Engineering",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Orbital Engineering",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Thorium",
+      "Type": "Science",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Thorium",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 375000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 375
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Thorium",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Exogeology",
+      "Type": "Science",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Exogeology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 275000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Exogeology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Advanced Exogeology",
+      "Type": "Science",
+      "UnlockedBy": "Exogeology",
+      "LockedBy": "Advanced Exogeology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 325000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 350
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Advanced Exogeology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Nanotechnology",
+      "Type": "Science",
+      "UnlockedBy": "Nuclear Fission",
+      "LockedBy": "Nanotechnology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 200000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 150
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Nanotechnology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Superconductors",
+      "Type": "Science",
+      "UnlockedBy": "Nanotechnology",
+      "LockedBy": "Superconductors",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 225000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 175
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Superconductors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Antimatter",
+      "Type": "Science",
+      "UnlockedBy": "Superconductors",
+      "LockedBy": "Antimatter",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Antimatter",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Terraformation",
+      "Type": "Science",
+      "UnlockedBy": "Antimatter",
+      "LockedBy": "Terraformation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 750000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Terraformation",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hydroponics",
+      "Type": "Science",
+      "UnlockedBy": "Terraformation",
+      "LockedBy": "Hydroponics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1000000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hydroponics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Exophysics",
+      "Type": "Science",
+      "UnlockedBy": "Hydroponics",
+      "LockedBy": "Exophysics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 25000000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Exophysics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Particle Physics",
+      "Type": "Science",
+      "UnlockedBy": "Nuclear Fission",
+      "LockedBy": "Particle Physics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 185000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 135
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Particle Physics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Dimensional Physics",
+      "Type": "Science",
+      "UnlockedBy": "Particle Physics",
+      "LockedBy": "Dimensional Physics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 235000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Dimensional Physics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chronophysics",
+      "Type": "Science",
+      "UnlockedBy": "Particle Physics",
+      "LockedBy": "Chronophysics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chronophysics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Tachyon Theory",
+      "Type": "Science",
+      "UnlockedBy": "Chronophysics",
+      "LockedBy": "Tachyon Theory",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 750000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 25
+        },
+        {
+          "Name": "relic",
+          "Quantity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Tachyon Theory",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Cryptotheology",
+      "Type": "Science",
+      "UnlockedBy": "Theology",
+      "LockedBy": "Cryptotheology",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 650000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Cryptotheology",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Void Space",
+      "Type": "Science",
+      "UnlockedBy": "Tachyon Theory",
+      "LockedBy": "Void Space",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 800000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 30
+        },
+        {
+          "Name": "void",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Void Space",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Paradox Theory",
+      "Type": "Science",
+      "UnlockedBy": "Void Space",
+      "LockedBy": "Paradox Theory",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1000000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 40
+        },
+        {
+          "Name": "void",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Paradox Theory",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mineral Hoes",
+      "Type": "Workshop",
+      "UnlockedBy": "Workshop",
+      "LockedBy": "Mineral Hoes",
+      "Costs": [
+        {
+          "Name": "minerals",
+          "Quantity": 275
+        },
+        {
+          "Name": "science",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mineral Hoes",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Iron Hoes",
+      "Type": "Workshop",
+      "UnlockedBy": "Workshop",
+      "LockedBy": "Iron Hoes",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 25
+        },
+        {
+          "Name": "science",
+          "Quantity": 200
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Iron Hoes",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mineral Axe",
+      "Type": "Workshop",
+      "UnlockedBy": "Workshop",
+      "LockedBy": "Mineral Axe",
+      "Costs": [
+        {
+          "Name": "minerals",
+          "Quantity": 500
+        },
+        {
+          "Name": "science",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mineral Axe",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Iron Axe",
+      "Type": "Workshop",
+      "UnlockedBy": "Workshop",
+      "LockedBy": "Iron Axe",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 50
+        },
+        {
+          "Name": "science",
+          "Quantity": 200
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Iron Axe",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Expanded Barns",
+      "Type": "Workshop",
+      "UnlockedBy": "Workshop",
+      "LockedBy": "Expanded Barns",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 1000
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 750
+        },
+        {
+          "Name": "iron",
+          "Quantity": 50
+        },
+        {
+          "Name": "science",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Expanded Barns",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Reinforced Barns",
+      "Type": "Workshop",
+      "UnlockedBy": "Workshop",
+      "LockedBy": "Reinforced Barns",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 100
+        },
+        {
+          "Name": "science",
+          "Quantity": 800
+        },
+        {
+          "Name": "beam",
+          "Quantity": 25
+        },
+        {
+          "Name": "slab",
+          "Quantity": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Reinforced Barns",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Bolas",
+      "Type": "Workshop",
+      "UnlockedBy": "Mining",
+      "LockedBy": "Bolas",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 50
+        },
+        {
+          "Name": "minerals",
+          "Quantity": 250
+        },
+        {
+          "Name": "science",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Bolas",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hunting Armor",
+      "Type": "Workshop",
+      "UnlockedBy": "Metal Working",
+      "LockedBy": "Hunting Armor",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 750
+        },
+        {
+          "Name": "science",
+          "Quantity": 2000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hunting Armor",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Reinforced Saw",
+      "Type": "Workshop",
+      "UnlockedBy": "Construction",
+      "LockedBy": "Reinforced Saw",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 1000
+        },
+        {
+          "Name": "science",
+          "Quantity": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Reinforced Saw",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Composite Bow",
+      "Type": "Workshop",
+      "UnlockedBy": "Construction",
+      "LockedBy": "Composite Bow",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 200
+        },
+        {
+          "Name": "iron",
+          "Quantity": 100
+        },
+        {
+          "Name": "science",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Composite Bow",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Catnip Enrichment",
+      "Type": "Workshop",
+      "UnlockedBy": "Construction",
+      "LockedBy": "Catnip Enrichment",
+      "Costs": [
+        {
+          "Name": "catnip",
+          "Quantity": 5000
+        },
+        {
+          "Name": "science",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Catnip Enrichment",
+          "Quantity": 1
+        }
+      ]
+    }
+  ],
+  "ActionToIndex": {
+    "@beam": 50,
+    "@gear": 53,
+    "@manuscript": 55,
+    "@megalith": 56,
+    "@plate": 52,
+    "@scaffold": 54,
+    "@slab": 51,
+    "AI Core": 37,
+    "Academy": 12,
+    "Accelerator": 23,
+    "Acoustics": 81,
+    "Active Smelter": 9,
+    "Advanced Exogeology": 105,
+    "Agriculture": 59,
+    "Amphitheatre": 29,
+    "Animal Husbandry": 62,
+    "Antimatter": 108,
+    "Aqueduct": 15,
+    "Archery": 60,
+    "Architecture": 77,
+    "Artificial Intelligence": 95,
+    "Astronomy": 75,
+    "Barn": 5,
+    "Bio Lab": 18,
+    "Biochemistry": 86,
+    "Biology": 85,
+    "Blackchain": 97,
+    "Bolas": 125,
+    "Brewery": 34,
+    "Broadcast Tower": 41,
+    "Calciner": 26,
+    "Calendar": 58,
+    "Catnip Enrichment": 129,
+    "Catnip Field": 2,
+    "Celestial Mechanics": 68,
+    "Chapel": 30,
+    "Chemistry": 80,
+    "Chronophysics": 114,
+    "Chronosphere": 36,
+    "Civil Service": 64,
+    "Combustion": 90,
+    "Composite Bow": 128,
+    "Construction": 66,
+    "Cryptotheology": 116,
+    "Currency": 67,
+    "Data Center": 40,
+    "Dimensional Physics": 113,
+    "Drama and Poetry": 83,
+    "Ecology": 92,
+    "Electricity": 84,
+    "Electronics": 93,
+    "Engineering": 69,
+    "Exogeology": 104,
+    "Exophysics": 111,
+    "Expanded Barns": 123,
+    "Factory": 27,
+    "Gather catnip": 0,
+    "Genetics": 87,
+    "Geology": 82,
+    "Harbour": 19,
+    "Hunting Armor": 126,
+    "Hut": 3,
+    "Hydro Plant": 39,
+    "Hydroponics": 110,
+    "Industrialization": 88,
+    "Iron Axe": 122,
+    "Iron Hoes": 120,
+    "Library": 4,
+    "Lizards": 57,
+    "Log House": 14,
+    "Lumber Mill": 21,
+    "Machinery": 73,
+    "Magneto": 25,
+    "Mansion": 16,
+    "Mathematics": 65,
+    "Mechanization": 89,
+    "Metal Working": 63,
+    "Metallurgy": 91,
+    "Metaphysics": 79,
+    "Mine": 6,
+    "Mineral Axe": 121,
+    "Mineral Hoes": 119,
+    "Mining": 61,
+    "Mint": 33,
+    "Nanotechnology": 106,
+    "Navigation": 76,
+    "Nuclear Fission": 98,
+    "Observatory": 17,
+    "Oil Processing": 100,
+    "Oil Well": 22,
+    "Orbital Engineering": 102,
+    "Paradox Theory": 118,
+    "Particle Physics": 112,
+    "Pasture": 10,
+    "Philosophy": 71,
+    "Physics": 78,
+    "Quantum Cryptography": 96,
+    "Quarry": 20,
+    "Reactor": 28,
+    "Refine catnip": 1,
+    "Reinforced Barns": 124,
+    "Reinforced Saw": 127,
+    "Robotics": 94,
+    "Rocketry": 99,
+    "Satellites": 101,
+    "Send hunters": 49,
+    "Smelter": 8,
+    "Solar Farm": 38,
+    "Steamworks": 24,
+    "Steel": 72,
+    "Superconductors": 107,
+    "Tachyon Theory": 115,
+    "Temple": 31,
+    "Terraformation": 109,
+    "Theology": 74,
+    "Thorium": 103,
+    "Tradepost": 32,
+    "Unic. Pasture": 11,
+    "Void Space": 117,
+    "Warehouse": 13,
+    "Workshop": 7,
+    "Writing": 70,
+    "Ziggurat": 35,
+    "farmer": 44,
+    "geologist": 48,
+    "hunter": 45,
+    "miner": 46,
+    "priest": 47,
+    "scholar": 43,
+    "woodcutter": 42
+  },
+  "Now": "1970-01-01T01:00:00+01:00"
+}
