@@ -80,6 +80,7 @@ Edges:
 
 More features from kittens game:
 
+- remove duplication from kittens.NewGame
 - change 'make' command to also make other resources (remove premature return)
 - change production resource factor to production bonus
 - create m command that skips and buys the max

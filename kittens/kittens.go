@@ -10,6 +10,12 @@ import (
 )
 
 func NewGame(now game.Now) *game.Game {
+	BarnProductionBonus := []data.Resource{{
+		Name: "Expanded Barns", ProductionFactor: 0.75,
+	}, {
+		Name: "Reinforced Barns", ProductionFactor: 0.80,
+	}}
+
 	g := game.NewGame(now())
 	g.AddResources(join([]data.Resource{{
 		Name: "day", Type: "Calendar", IsHidden: true, Quantity: 0, Capacity: -1,
@@ -77,12 +83,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Lumber Mill", ProductionFactor: 0.10,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 200,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Barn", ProductionFactor: 200, ProductionBonus: BarnProductionBonus,
 		}, {
 			Name: "Warehouse", ProductionFactor: 150,
 		}, {
@@ -151,12 +152,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", ProductionFactor: -1.5 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 250,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Barn", ProductionFactor: 250, ProductionBonus: BarnProductionBonus,
 		}, {
 			Name: "Warehouse", ProductionFactor: 200,
 		}, {
@@ -170,12 +166,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", ProductionFactor: 0.15 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 50,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Barn", ProductionFactor: 50, ProductionBonus: BarnProductionBonus,
 		}, {
 			Name: "Warehouse", ProductionFactor: 25,
 		}, {
@@ -189,12 +180,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Quarry", ProductionFactor: 0.015 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 60,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Barn", ProductionFactor: 60, ProductionBonus: BarnProductionBonus,
 		}, {
 			Name: "Warehouse", ProductionFactor: 30,
 		}, {
@@ -206,12 +192,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mint", ProductionFactor: -0.005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 10,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Barn", ProductionFactor: 10, ProductionBonus: BarnProductionBonus,
 		}, {
 			Name: "Warehouse", ProductionFactor: 5,
 		}, {
@@ -227,12 +208,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", ProductionFactor: 0.0005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 2,
-			ProductionBonus: []data.Resource{{
-				Name: "Expanded Barns", ProductionFactor: 0.75,
-			}, {
-				Name: "Reinforced Barns", ProductionFactor: 0.80,
-			}},
+			Name: "Barn", ProductionFactor: 2, ProductionBonus: BarnProductionBonus,
 		}, {
 			Name: "Warehouse", ProductionFactor: 10,
 		}, {
