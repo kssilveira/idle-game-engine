@@ -4227,25 +4227,26 @@
 <!-- relic -->
 <g id="node147" class="node">
 <title>relic</title>
-<ellipse fill="none" stroke="black" cx="227" cy="-378" rx="27" ry="18"/>
+<path fill="none" stroke="black" d="M254,-392.73C254,-394.53 241.9,-396 227,-396 212.1,-396 200,-394.53 200,-392.73 200,-392.73 200,-363.27 200,-363.27 200,-361.47 212.1,-360 227,-360 241.9,-360 254,-361.47 254,-363.27 254,-363.27 254,-392.73 254,-392.73"/>
+<path fill="none" stroke="black" d="M254,-392.73C254,-390.92 241.9,-389.45 227,-389.45 212.1,-389.45 200,-390.92 200,-392.73"/>
 <text text-anchor="middle" x="227" y="-374.3" font-family="Times,serif" font-size="14.00">relic</text>
 </g>
 <!-- relic&#45;&gt;Quantum Cryptography -->
 <g id="edge423" class="edge">
 <title>relic&#45;&gt;Quantum Cryptography</title>
-<path fill="none" stroke="orange" d="M253.17,-373.31C277.87,-369.84 315.95,-364.51 349,-360 461.21,-344.67 591.36,-327.34 670.93,-316.79"/>
+<path fill="none" stroke="orange" d="M254.13,-373.18C278.85,-369.7 316.37,-364.46 349,-360 461.21,-344.67 591.36,-327.34 670.93,-316.79"/>
 <polygon fill="orange" stroke="orange" points="671.4,-320.26 680.86,-315.48 670.48,-313.32 671.4,-320.26"/>
 </g>
 <!-- relic&#45;&gt;Blackchain -->
 <g id="edge426" class="edge">
 <title>relic&#45;&gt;Blackchain</title>
-<path fill="none" stroke="orange" d="M241.38,-362.49C264.12,-339.83 307.79,-297.65 327,-288 387.58,-257.56 464.62,-244.6 518.29,-239.08"/>
+<path fill="none" stroke="orange" d="M244.05,-359.83C267.39,-336.69 308.52,-297.29 327,-288 387.58,-257.56 464.62,-244.6 518.29,-239.08"/>
 <polygon fill="orange" stroke="orange" points="518.75,-242.55 528.36,-238.1 518.07,-235.58 518.75,-242.55"/>
 </g>
 <!-- relic&#45;&gt;Antimatter -->
 <g id="edge459" class="edge">
 <title>relic&#45;&gt;Antimatter</title>
-<path fill="none" stroke="orange" d="M221.42,-360.02C218.31,-349.73 214.73,-336.25 213,-324 210.08,-303.34 209.68,-279.73 209.96,-262.01"/>
+<path fill="none" stroke="orange" d="M221.28,-359.55C218.2,-349.31 214.7,-336.06 213,-324 210.08,-303.34 209.68,-279.73 209.96,-262.01"/>
 <polygon fill="orange" stroke="orange" points="213.47,-261.91 210.2,-251.83 206.47,-261.74 213.47,-261.91"/>
 </g>
 <!-- relic&#45;&gt;Terraformation -->
@@ -4257,25 +4258,25 @@
 <!-- relic&#45;&gt;Hydroponics -->
 <g id="edge465" class="edge">
 <title>relic&#45;&gt;Hydroponics</title>
-<path fill="none" stroke="orange" d="M211.87,-362.96C189.85,-341.47 149.68,-298.06 132,-252 114.77,-207.12 110.46,-189.49 126,-144 129.97,-132.37 137.65,-121.31 145.3,-112.33"/>
+<path fill="none" stroke="orange" d="M208.85,-359.98C186.34,-337.63 148.9,-296.02 132,-252 114.77,-207.12 110.46,-189.49 126,-144 129.97,-132.37 137.65,-121.31 145.3,-112.33"/>
 <polygon fill="orange" stroke="orange" points="148.08,-114.48 152.21,-104.72 142.89,-109.77 148.08,-114.48"/>
 </g>
 <!-- relic&#45;&gt;Exophysics -->
 <g id="edge468" class="edge">
 <title>relic&#45;&gt;Exophysics</title>
-<path fill="none" stroke="orange" d="M235.88,-360.93C246.03,-342.86 263.38,-312.8 280,-288 291.13,-271.38 298.06,-269.89 307,-252 341.17,-183.66 346.8,-91.51 347.32,-46.31"/>
+<path fill="none" stroke="orange" d="M236.44,-359.94C246.66,-341.78 263.68,-312.35 280,-288 291.13,-271.38 298.06,-269.89 307,-252 341.17,-183.66 346.8,-91.51 347.32,-46.31"/>
 <polygon fill="orange" stroke="orange" points="350.82,-46.14 347.36,-36.13 343.82,-46.11 350.82,-46.14"/>
 </g>
 <!-- relic&#45;&gt;Tachyon Theory -->
 <g id="edge480" class="edge">
 <title>relic&#45;&gt;Tachyon Theory</title>
-<path fill="none" stroke="orange" d="M248.1,-366.63C267.48,-356.74 296.65,-340.86 320,-324 339.39,-310 337.72,-296.7 360,-288 411.07,-268.04 3960.33,-240.54 4601.34,-235.73"/>
+<path fill="none" stroke="orange" d="M254.4,-363.38C273.44,-353.45 299.06,-339.12 320,-324 339.39,-310 337.72,-296.7 360,-288 411.07,-268.04 3960.33,-240.54 4601.34,-235.73"/>
 <polygon fill="orange" stroke="orange" points="4601.5,-239.23 4611.47,-235.66 4601.45,-232.23 4601.5,-239.23"/>
 </g>
 <!-- relic&#45;&gt;Cryptotheology -->
 <g id="edge483" class="edge">
 <title>relic&#45;&gt;Cryptotheology</title>
-<path fill="none" stroke="orange" d="M248.93,-367.31C255.05,-364.77 261.73,-362.15 268,-360 316.32,-343.46 372.75,-328.52 412.26,-318.75"/>
+<path fill="none" stroke="orange" d="M254.16,-365.17C258.74,-363.34 263.48,-361.55 268,-360 316.32,-343.46 372.75,-328.52 412.26,-318.75"/>
 <polygon fill="orange" stroke="orange" points="413.29,-322.1 422.17,-316.32 411.62,-315.3 413.29,-322.1"/>
 </g>
 <!-- Rocketry&#45;&gt;Oil Processing -->
@@ -4359,14 +4360,15 @@
 <!-- void -->
 <g id="node166" class="node">
 <title>void</title>
-<ellipse fill="none" stroke="black" cx="5105" cy="-234" rx="27" ry="18"/>
+<path fill="none" stroke="black" d="M5132,-248.73C5132,-250.53 5119.9,-252 5105,-252 5090.1,-252 5078,-250.53 5078,-248.73 5078,-248.73 5078,-219.27 5078,-219.27 5078,-217.47 5090.1,-216 5105,-216 5119.9,-216 5132,-217.47 5132,-219.27 5132,-219.27 5132,-248.73 5132,-248.73"/>
+<path fill="none" stroke="black" d="M5132,-248.73C5132,-246.92 5119.9,-245.45 5105,-245.45 5090.1,-245.45 5078,-246.92 5078,-248.73"/>
 <text text-anchor="middle" x="5105" y="-230.3" font-family="Times,serif" font-size="14.00">void</text>
 </g>
 <!-- void&#45;&gt;Void Space -->
 <g id="edge487" class="edge">
 <title>void&#45;&gt;Void Space</title>
-<path fill="none" stroke="orange" d="M5087.12,-220.49C5071.72,-209.7 5049.26,-193.98 5031.72,-181.7"/>
-<polygon fill="orange" stroke="orange" points="5033.26,-178.51 5023.06,-175.64 5029.25,-184.24 5033.26,-178.51"/>
+<path fill="none" stroke="orange" d="M5081.81,-216.76C5066.72,-206.2 5047,-192.4 5031.32,-181.42"/>
+<polygon fill="orange" stroke="orange" points="5033.28,-178.52 5023.08,-175.66 5029.27,-184.26 5033.28,-178.52"/>
 </g>
 <!-- void&#45;&gt;Paradox Theory -->
 <g id="edge491" class="edge">
