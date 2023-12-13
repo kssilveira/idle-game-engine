@@ -80,18 +80,19 @@ Edges:
 
 More features from kittens game:
 
-- remove duplication from kittens.NewGame
-- change 'make' command to also make other resources (remove premature return)
 - change production resource factor to production bonus
-- create m command that skips and buys the max
 - validate capacityproducers with startcapacity and without capacity
+- dont set quantity and startquantity
 - change production factor to just factor
 - change production bonus to bonus
-- change solve commands to string
-- fix test performance
-- dont set quantity and startquantity
-- split kittens file
 - make functions and attributes private
+
+- split kittens file
+- change solve commands to string
+
+- rename 'make' to 'create'
+- change 'make' command to also make other resources (remove premature return)
+- create 'max' command that skips and buys the max
 
 - Bonfire building upgrades
 - Bonfire effects for
