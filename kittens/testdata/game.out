@@ -726,6 +726,16 @@
       "StartCapacity": 1
     },
     {
+      "Name": "relic",
+      "Type": "Resource",
+      "StartCapacity": 1
+    },
+    {
+      "Name": "void",
+      "Type": "Resource",
+      "StartCapacity": 1
+    },
+    {
       "Name": "kitten",
       "Type": "Resource",
       "Producers": [

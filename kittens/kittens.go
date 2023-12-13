@@ -22,6 +22,7 @@ func NewGame(now game.Now) *game.Game {
 	}
 
 	g := game.NewGame(now())
+
 	g.AddResources(join([]data.Resource{{
 		Name: "day", Type: "Calendar", IsHidden: true, Quantity: 0, Capacity: -1,
 		Producers: []data.Resource{{ProductionFactor: 0.5}},
@@ -247,6 +248,10 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "antimatter", Type: "Resource", StartCapacity: 1,
 	}, {
+		Name: "relic", Type: "Resource", StartCapacity: 1,
+	}, {
+		Name: "void", Type: "Resource", StartCapacity: 1,
+	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
 			Name: "", ProductionFactor: 0.05,
@@ -351,6 +356,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Broadcast Tower", ProductionFactor: -0.75,
 		}},
 	}}))
+
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
 		Adds: []data.Resource{{Name: "catnip", Quantity: 1}},
@@ -359,6 +365,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "catnip", Quantity: 100}},
 		Adds:  []data.Resource{{Name: "wood", Quantity: 1}},
 	}})
+
 	addBuildings(g, []data.Action{{
 		Name: "Catnip Field", UnlockedBy: "catnip",
 		Costs: []data.Resource{{Name: "catnip", Quantity: 10, CostExponentBase: 1.12}},
@@ -656,6 +663,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "titanium", Quantity: 75, CostExponentBase: 1.18,
 		}},
 	}})
+
 	addJobs(g, []data.Action{{
 		Name: "woodcutter", UnlockedBy: "Hut",
 	}, {
@@ -671,6 +679,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "geologist", UnlockedBy: "Geology",
 	}})
+
 	g.AddActions([]data.Action{{
 		Name: "Send hunters", Type: "Village", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
@@ -682,6 +691,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unicorns", Quantity: 0.05,
 		}},
 	}})
+
 	addCrafts(g, []data.Action{{
 		Name: "beam", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
@@ -714,6 +724,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "plate", Quantity: 5,
 		}},
 	}})
+
 	g.AddActions([]data.Action{{
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
@@ -731,6 +742,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "spice", Quantity: 8.75,
 		}},
 	}})
+
 	addSciences(g, []data.Action{{
 		Name: "Calendar", UnlockedBy: "Library",
 		Costs: []data.Resource{{Name: "science", Quantity: 30}},
@@ -1097,6 +1109,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "void", Quantity: 250,
 		}},
 	}})
+
 	addWorkshops(g, []data.Action{{
 		Name: "Mineral Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
@@ -1187,6 +1200,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Quantity: 500,
 		}},
 	}})
+
 	return g
 }
 

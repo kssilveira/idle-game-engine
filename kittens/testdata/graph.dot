@@ -544,6 +544,8 @@ digraph {
   "unobtainium" [shape="cylinder"];
   "time crystal" [shape="cylinder"];
   "antimatter" [shape="cylinder"];
+  "relic" [shape="cylinder"];
+  "void" [shape="cylinder"];
   "kitten" [shape="cylinder"];
   "all kittens" [shape="cylinder"];
   "furs" [shape="cylinder"];
