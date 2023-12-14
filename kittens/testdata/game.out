@@ -115,7 +115,7 @@
         {
           "Name": "Catnip Field",
           "Factor": 0.625,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Spring",
               "Factor": 0.5
@@ -130,7 +130,7 @@
           "Name": "kitten",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -146,7 +146,7 @@
           "Name": "woodcutter",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -162,7 +162,7 @@
           "Name": "scholar",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -178,7 +178,7 @@
           "Name": "farmer",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -194,7 +194,7 @@
           "Name": "hunter",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -210,7 +210,7 @@
           "Name": "miner",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -226,7 +226,7 @@
           "Name": "priest",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -242,7 +242,7 @@
           "Name": "geologist",
           "Factor": -4.25,
           "ProductionFloor": true,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Pasture",
               "Factor": -0.005
@@ -257,7 +257,7 @@
         {
           "Name": "farmer",
           "Factor": 5,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
@@ -277,7 +277,7 @@
           "Factor": -5
         }
       ],
-      "ProductionBonus": [
+      "Bonus": [
         {
           "Name": "Aqueduct",
           "Factor": 0.03
@@ -302,7 +302,7 @@
         {
           "Name": "woodcutter",
           "Factor": 0.009,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
@@ -322,7 +322,7 @@
           "Factor": -0.25
         }
       ],
-      "ProductionBonus": [
+      "Bonus": [
         {
           "Name": "Lumber Mill",
           "Factor": 0.1
@@ -332,7 +332,7 @@
         {
           "Name": "Barn",
           "Factor": 200,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Expanded Barns",
               "Factor": 0.75
@@ -361,7 +361,7 @@
         {
           "Name": "scholar",
           "Factor": 0.175,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
@@ -369,7 +369,7 @@
           ]
         }
       ],
-      "ProductionBonus": [
+      "Bonus": [
         {
           "Name": "Library",
           "Factor": 0.1
@@ -422,7 +422,7 @@
         {
           "Name": "hunter",
           "Factor": 0.3,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
@@ -469,7 +469,7 @@
         {
           "Name": "miner",
           "Factor": 0.25,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
@@ -497,7 +497,7 @@
         {
           "Name": "Barn",
           "Factor": 250,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Expanded Barns",
               "Factor": 0.75
@@ -536,7 +536,7 @@
         {
           "Name": "Barn",
           "Factor": 50,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Expanded Barns",
               "Factor": 0.75
@@ -565,7 +565,7 @@
         {
           "Name": "geologist",
           "Factor": 0.075,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
@@ -581,7 +581,7 @@
         {
           "Name": "Barn",
           "Factor": 60,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Expanded Barns",
               "Factor": 0.75
@@ -616,7 +616,7 @@
         {
           "Name": "Barn",
           "Factor": 10,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Expanded Barns",
               "Factor": 0.75
@@ -659,7 +659,7 @@
         {
           "Name": "Barn",
           "Factor": 2,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Expanded Barns",
               "Factor": 0.75
@@ -827,7 +827,7 @@
         {
           "Name": "all kittens",
           "Factor": -0.05,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Tradepost",
               "Factor": -0.04
@@ -844,7 +844,7 @@
         {
           "Name": "all kittens",
           "Factor": -0.035,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Tradepost",
               "Factor": -0.04
@@ -861,7 +861,7 @@
         {
           "Name": "all kittens",
           "Factor": -0.005,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Tradepost",
               "Factor": -0.04
@@ -906,7 +906,7 @@
         {
           "Name": "Library",
           "Factor": 10,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Ziggurat",
               "Factor": 0.08
@@ -916,7 +916,7 @@
         {
           "Name": "Academy",
           "Factor": 25,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Ziggurat",
               "Factor": 0.08
@@ -926,7 +926,7 @@
         {
           "Name": "Amphitheatre",
           "Factor": 50,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Ziggurat",
               "Factor": 0.08
@@ -936,7 +936,7 @@
         {
           "Name": "Chapel",
           "Factor": 200,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Ziggurat",
               "Factor": 0.08
@@ -946,7 +946,7 @@
         {
           "Name": "Data Center",
           "Factor": 250,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Ziggurat",
               "Factor": 0.08
@@ -963,7 +963,7 @@
         {
           "Name": "priest",
           "Factor": 0.0075,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
@@ -3126,7 +3126,7 @@
         {
           "Name": "beam",
           "Quantity": 1,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Workshop",
               "Factor": 0.06
@@ -3153,7 +3153,7 @@
         {
           "Name": "slab",
           "Quantity": 1,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Workshop",
               "Factor": 0.06
@@ -3180,7 +3180,7 @@
         {
           "Name": "plate",
           "Quantity": 1,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Workshop",
               "Factor": 0.06
@@ -3207,7 +3207,7 @@
         {
           "Name": "gear",
           "Quantity": 1,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Workshop",
               "Factor": 0.06
@@ -3234,7 +3234,7 @@
         {
           "Name": "scaffold",
           "Quantity": 1,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Workshop",
               "Factor": 0.06
@@ -3265,7 +3265,7 @@
         {
           "Name": "manuscript",
           "Quantity": 1,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Workshop",
               "Factor": 0.06
@@ -3300,7 +3300,7 @@
         {
           "Name": "megalith",
           "Quantity": 1,
-          "ProductionBonus": [
+          "Bonus": [
             {
               "Name": "Workshop",
               "Factor": 0.06

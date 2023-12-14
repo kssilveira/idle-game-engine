@@ -11,12 +11,12 @@ import (
 )
 
 func NewGame(now game.Now) *game.Game {
-	BarnProductionBonus := []data.Resource{{
+	BarnBonus := []data.Resource{{
 		Name: "Expanded Barns", Factor: 0.75,
 	}, {
 		Name: "Reinforced Barns", Factor: 0.80,
 	}}
-	CultureCapacityProductionBonus := []data.Resource{{Name: "Ziggurat", Factor: 0.08}}
+	CultureCapacityBonus := []data.Resource{{Name: "Ziggurat", Factor: 0.08}}
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
 	}
@@ -41,21 +41,21 @@ func NewGame(now game.Now) *game.Game {
 		Name: "catnip", Type: "Resource", StartCapacity: 5000,
 		Producers: join([]data.Resource{{
 			Name: "Catnip Field", Factor: 0.125 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "Spring", Factor: 0.50,
 			}, {
 				Name: "Winter", Factor: -0.75,
 			}},
 		}}, resourceWithName(data.Resource{
 			Factor: -4.25, ProductionFloor: true, ProductionOnGone: true,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "Pasture", Factor: -0.005,
 			}, {
 				Name: "Unic. Pasture", Factor: -0.0015,
 			}},
 		}, kittenNames), []data.Resource{{
 			Name: "farmer", Factor: 1 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}, {
 				Name: "Mineral Hoes", Factor: 0.5,
@@ -65,7 +65,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Brewery", Factor: -1 * 5,
 		}}),
-		ProductionBonus: []data.Resource{{
+		Bonus: []data.Resource{{
 			Name: "Aqueduct", Factor: 0.03,
 		}},
 		CapacityProducers: []data.Resource{{
@@ -77,7 +77,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
 		Producers: []data.Resource{{
 			Name: "woodcutter", Factor: 0.0018 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}, {
 				Name: "Mineral Axe", Factor: 0.7,
@@ -87,11 +87,11 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Smelter", Factor: -0.05 * 5,
 		}},
-		ProductionBonus: []data.Resource{{
+		Bonus: []data.Resource{{
 			Name: "Lumber Mill", Factor: 0.10,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 200, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 200, Bonus: BarnBonus,
 		}, {
 			Name: "Warehouse", Factor: 150,
 		}, {
@@ -101,11 +101,11 @@ func NewGame(now game.Now) *game.Game {
 		Name: "science", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "scholar", Factor: 0.035 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}},
 		}},
-		ProductionBonus: []data.Resource{{
+		Bonus: []data.Resource{{
 			Name: "Library", Factor: 0.1,
 		}, {
 			Name: "Academy", Factor: 0.2,
@@ -131,7 +131,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "hunter", Factor: 0.06 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}, {
 				Name: "Bolas", Factor: 1,
@@ -154,7 +154,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "miner", Factor: 0.05 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}, {
 				Name: "Mine", Factor: 0.2,
@@ -167,7 +167,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", Factor: -1.5 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 250, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 250, Bonus: BarnBonus,
 		}, {
 			Name: "Warehouse", Factor: 200,
 		}, {
@@ -181,7 +181,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", Factor: 0.15 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 50, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 50, Bonus: BarnBonus,
 		}, {
 			Name: "Warehouse", Factor: 25,
 		}, {
@@ -191,14 +191,14 @@ func NewGame(now game.Now) *game.Game {
 		Name: "coal", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "geologist", Factor: 0.015 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}},
 		}, {
 			Name: "Quarry", Factor: 0.015 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 60, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 60, Bonus: BarnBonus,
 		}, {
 			Name: "Warehouse", Factor: 30,
 		}, {
@@ -210,7 +210,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mint", Factor: -0.005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 10, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 10, Bonus: BarnBonus,
 		}, {
 			Name: "Warehouse", Factor: 5,
 		}, {
@@ -226,7 +226,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", Factor: 0.0005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 2, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 2, Bonus: BarnBonus,
 		}, {
 			Name: "Warehouse", Factor: 10,
 		}, {
@@ -283,19 +283,19 @@ func NewGame(now game.Now) *game.Game {
 		Name: "furs", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.05,
-			ProductionBonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}},
 	}, {
 		Name: "ivory", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.035,
-			ProductionBonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}},
 	}, {
 		Name: "spice", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.005,
-			ProductionBonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Brewery", Factor: -0.1 * 5,
 		}},
@@ -312,21 +312,21 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Temple", Factor: 0.1 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Library", Factor: 10, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Library", Factor: 10, Bonus: CultureCapacityBonus,
 		}, {
-			Name: "Academy", Factor: 25, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Academy", Factor: 25, Bonus: CultureCapacityBonus,
 		}, {
-			Name: "Amphitheatre", Factor: 50, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Amphitheatre", Factor: 50, Bonus: CultureCapacityBonus,
 		}, {
-			Name: "Chapel", Factor: 200, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Chapel", Factor: 200, Bonus: CultureCapacityBonus,
 		}, {
-			Name: "Data Center", Factor: 250, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Data Center", Factor: 250, Bonus: CultureCapacityBonus,
 		}},
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "priest", Factor: 0.0015 * 5,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}},
 		}, {
@@ -1255,7 +1255,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		action.Type = "Craft"
 		action.Adds = []data.Resource{{
 			Name: name, Quantity: 1,
-			ProductionBonus: []data.Resource{{
+			Bonus: []data.Resource{{
 				Name: "Workshop", Factor: 0.06,
 			}, {
 				Name: "Factory", Factor: 0.05,
@@ -1502,7 +1502,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 			} else {
 				edgefn(p.Name, r.Name, "green")
 			}
-			for _, b := range p.ProductionBonus {
+			for _, b := range p.Bonus {
 				if b.Name == "Spring" || b.Name == "Winter" || b.Name == "happiness" {
 					continue
 				}
@@ -1513,12 +1513,12 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 				}
 			}
 		}
-		for _, b := range r.ProductionBonus {
+		for _, b := range r.Bonus {
 			edgefn(b.Name, r.Name, "green")
 		}
 		for _, p := range r.CapacityProducers {
 			edgefn(p.Name, r.Name, "limegreen")
-			for _, b := range p.ProductionBonus {
+			for _, b := range p.Bonus {
 				edgefn(b.Name, p.Name, "green")
 			}
 		}

@@ -263,7 +263,7 @@ func (g *Game) Act(in string) (data.ParsedInput, error) {
 
 func (g *Game) GetActionAdd(add data.Resource) data.Resource {
 	bonus := 1.0
-	for _, p := range add.ProductionBonus {
+	for _, p := range add.Bonus {
 		bonus += g.GetOneRate(p)
 	}
 	add.Quantity *= bonus
@@ -393,7 +393,7 @@ func (g *Game) ValidateResource(r *data.Resource) error {
 		}
 	}
 	for _, list := range append(
-		[][]data.Resource{}, r.Producers, r.CapacityProducers, r.ProductionBonus, r.OnGone) {
+		[][]data.Resource{}, r.Producers, r.CapacityProducers, r.Bonus, r.OnGone) {
 		for _, r := range list {
 			if err := g.ValidateResource(&r); err != nil {
 				return err
@@ -439,7 +439,7 @@ func (g *Game) GetRate(resource *data.Resource) float64 {
 		factor += g.GetOneRate(p)
 	}
 	bonus := 1.0
-	for _, p := range resource.ProductionBonus {
+	for _, p := range resource.Bonus {
 		bonus += g.GetOneRate(p)
 	}
 	return factor * bonus
@@ -456,7 +456,7 @@ func (g *Game) GetCapacityRate(resource *data.Resource) float64 {
 func (g *Game) GetOneRate(resource data.Resource) float64 {
 	one := g.GetQuantityForRate(resource) * resource.Factor
 	bonus := 1.0
-	for _, p := range resource.ProductionBonus {
+	for _, p := range resource.Bonus {
 		bonus += g.GetOneRate(p)
 	}
 	return one * bonus

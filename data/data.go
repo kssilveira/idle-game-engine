@@ -22,7 +22,7 @@ type Resource struct {
 	ProductionModulusEquals int `json:",omitempty"`
 
 	// production *= 1 + bonus
-	ProductionBonus []Resource `json:",omitempty"`
+	Bonus []Resource `json:",omitempty"`
 
 	// negative production reduces consumers
 	ProductionOnGone bool       `json:",omitempty"`
