@@ -2678,7 +2678,7 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 465.26/1000 15h52m10s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
-XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25 (wood 465.26/2800 69h17m18s), slab 0/10 (minerals 1750)) +(Reinforced Barns 1)
+XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
 sX: time skip and buy action X
 cX: create inputs for action X

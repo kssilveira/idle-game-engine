@@ -375,6 +375,9 @@ func (g *Game) getNestedAction(a data.Action, c data.Resource) data.Action {
 		Adds: []data.Resource{{}},
 	}
 	action := g.GetAction(r.ProducerAction)
+	if g.isLocked(action) {
+		return data.Action{}
+	}
 	for _, c := range action.Costs {
 		cost := g.getCost(action, c) * need
 		res.Costs = append(res.Costs, data.Resource{
