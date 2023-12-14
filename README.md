@@ -18,6 +18,7 @@ Game engine for idle games like kittens game.
 
 - Time skip until a game action is available
 - Create all the inputs for an action
+- Max an action (skip, create, buy)
 
 ## Dev
 
@@ -80,7 +81,6 @@ Edges:
 
 More features from kittens game:
 
-- change 'create' command to also make other resources (remove premature return)
 - create 'max' command that skips and buys the max
 
 - change solve commands to string

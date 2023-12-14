@@ -50,6 +50,8 @@ type Action struct {
 type ParsedInput struct {
 	IsSkip   bool
 	IsCreate bool
+	IsMax    bool
+	Index    int
 	Action   Action
 }
 

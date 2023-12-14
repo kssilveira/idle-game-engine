@@ -9,12 +9,13 @@ import (
 
 func TestAct(t *testing.T) {
 	inputs := []struct {
-		name         string
-		resources    []data.Resource
-		actions      []data.Action
-		inputs       []string
-		want         []int
-		wantCapacity int
+		name          string
+		resources     []data.Resource
+		actions       []data.Action
+		inputs        []string
+		want          []int
+		wantCapacity  int
+		wantResources map[string]int
 	}{{
 		name: "add 1",
 		resources: []data.Resource{{
@@ -227,6 +228,32 @@ func TestAct(t *testing.T) {
 			2 + 3*(1+2*4),
 			2 + 3*(1+2*4) + 3*(1+(2+3*(1+2*4))*4),
 		},
+	}, {
+		name: "max",
+		resources: []data.Resource{{
+			Name: "resource", Quantity: 1, Capacity: 10,
+			Producers: []data.Resource{{
+				Name: "producer", Factor: 1,
+			}},
+		}, {
+			Name: "producer", Capacity: -1,
+		}, {
+			Name: "skip", Capacity: -1,
+		}},
+		actions: []data.Action{{
+			Name: "producer",
+			Costs: []data.Resource{{
+				Name: "resource", Quantity: 1, CostExponentBase: 2,
+			}},
+			Adds: []data.Resource{{
+				Name: "producer", Quantity: 1,
+			}},
+		}},
+		inputs: []string{"0", "m0"},
+		want:   []int{0, 10},
+		wantResources: map[string]int{
+			"producer": 4, // cost 1, 2, 4, 8, 16
+		},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))
@@ -248,6 +275,12 @@ func TestAct(t *testing.T) {
 		got := int(g.GetResource("resource").Capacity)
 		if got != in.wantCapacity && in.wantCapacity != 0 {
 			t.Errorf("[%s] capacity want %d got %d", in.name, in.wantCapacity, got)
+		}
+		for name, want := range in.wantResources {
+			got := int(g.GetResource(name).Quantity)
+			if got != want {
+				t.Errorf("[%s] resource %s want %d got %d", in.name, name, want, got)
+			}
 		}
 	}
 }

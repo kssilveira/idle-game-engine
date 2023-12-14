@@ -9,6 +9,7 @@ XX: [Bonfire] Refine catnip -(catnip 9/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 9/10) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] year 1
@@ -21,6 +22,7 @@ XX: [Bonfire] Refine catnip -(catnip 9/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 9/10) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Catnip Field
 error: not enough catnip
 ###
@@ -34,6 +36,7 @@ XX: [Bonfire] Refine catnip -(catnip 10/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 1
@@ -46,6 +49,7 @@ XX: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Catnip Field
 ###
 [Calendar] time 11
@@ -58,6 +62,7 @@ XX: [Bonfire] Refine catnip -(catnip 10.31/100 1m35s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 10.31/11.20) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
@@ -71,6 +76,7 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
@@ -84,6 +90,7 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
@@ -97,6 +104,7 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
@@ -110,6 +118,7 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
@@ -123,5 +132,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
 sX: time skip until action X is available
 cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
