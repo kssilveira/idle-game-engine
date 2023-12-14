@@ -1361,21 +1361,21 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		{[]string{"Gather catnip"}, 10},
 		{[]string{"Catnip Field"}, 1},
 		{[]string{"m Catnip Field"}, 1},
+
 		{[]string{"s Refine catnip"}, 5},
 		{[]string{"Hut", "s woodcutter"}, 1},
 		{[]string{"s Library"}, 1},
 		{[]string{"s scholar"}, 1},
 		{[]string{"m Library"}, 1},
+
+		{[]string{"s Calendar"}, 1},
+		{[]string{"s Agriculture"}, 1},
+		{[]string{"s Hut", "s farmer"}, 1},
+
+		{[]string{"m Barn"}, 1},
+		{[]string{"m Catnip Field"}, 1},
+		{[]string{"m Library"}, 1},
 		/*
-			{[]string{s + library, library}, 15},
-			{[]string{s + calendar, calendar}, 1},
-			{[]string{s + agriculture, agriculture}, 1},
-
-			{[]string{s + barn, barn}, 10},
-			{[]string{s + "Catnip Field", "Catnip Field"}, 25},
-			{[]string{s + library, library}, 15},
-			{[]string{s + hut, hut, s + farmer, farmer}, 9},
-
 			{[]string{s + archery, archery}, 1},
 			{[]string{s + hunter, hunter}, 1}, // hut
 

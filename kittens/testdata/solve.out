@@ -355,3 +355,167 @@ sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: max Library
+###
+[Calendar] time 148183
+[Calendar] skip 148159
+[Calendar] year 186.23 (1 + 185.23)
+[Calendar] Spring 1 (1 if 740.91 % 4 == 0)
+[Calendar] day_of_year 92 (1 + 74091 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 200/200 0.01/s
+[Resource] science 3970.46/4000 0.46/s 1m3s to cap
+[Village] happiness 0.06 (0.10 + -0.04)
+XX: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (15) -(wood 200/203.43* 5m59s) +(Library 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [Science] Agriculture -(science 100) +(Agriculture 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Calendar
+###
+[Calendar] time 148184
+[Calendar] skip 148159
+[Calendar] year 186.23 (1 + 185.23)
+[Calendar] Spring 1 (1 if 740.92 % 4 == 0)
+[Calendar] day_of_year 93 (1 + 74092 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 200/200 0.01/s
+[Resource] science 3870.93/4000 0.46/s 4m38s to cap
+[Village] happiness 0.06 (0.10 + -0.04)
+XX: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (15) -(wood 200/203.43* 5m59s) +(Library 1)
+XX: [Bonfire] Barn -(wood 50) +(Barn 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
+XX: [Science] Archery -(science 300) +(Archery 1)
+XX: [Science] Mining -(science 500) +(Mining 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Agriculture
+###
+[Calendar] time 148185
+[Calendar] skip 148159
+[Calendar] year 186.23 (1 + 185.23)
+[Calendar] Spring 1 (1 if 740.92 % 4 == 0)
+[Calendar] day_of_year 93 (1 + 74092 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 187.51/200 0.01/s 21m49s to cap
+[Resource] science 3871.39/4000 0.46/s 4m37s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
+[Village] happiness 0.06 (0.10 + -0.04)
+XX: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (15) -(wood 187.51/203.43* 27m48s) +(Library 1)
+XX: [Bonfire] Barn -(wood 50) +(Barn 1)
+XX: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
+XX: [Village] farmer -(kitten 0.05/1 18s) +(farmer 1)
+XX: [Science] Archery -(science 300) +(Archery 1)
+XX: [Science] Mining -(science 500) +(Mining 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Hut
+###
+[Calendar] time 148205
+[Calendar] skip 148178
+[Calendar] year 186.25 (1 + 185.25)
+[Calendar] Summer 1 (1 if 741.02 % 4 == 1)
+[Calendar] day_of_year 103 (1 + 74102 % 400)
+[Resource] catnip 5000/5000 26.82/s
+[Resource] wood 187.70/200 0.01/s 21m54s to cap
+[Resource] science 3880.66/4000 0.45/s 4m22s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
+[Village] happiness 0.04 (0.10 + -0.06)
+XX: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
+XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (15) -(wood 187.70/203.43* 28m0s) +(Library 1)
+XX: [Bonfire] Barn -(wood 50) +(Barn 1)
+XX: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
+XX: [Village] farmer (1) -(kitten 0.05/1 18s) +(farmer 1)
+XX: [Science] Archery -(science 300) +(Archery 1)
+XX: [Science] Mining -(science 500) +(Mining 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip farmer
+###
+[Calendar] time 485315
+[Calendar] skip 485287
+[Calendar] year 607.64 (1 + 606.64)
+[Calendar] Autumn 1 (1 if 2426.57 % 4 == 2)
+[Calendar] day_of_year 258 (1 + 242657 % 400)
+[Resource] catnip 35000/35000 22.48/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 4000/4000 0.45/s
+[Resource] kitten 1/1 0.05/s
+[Village] happiness 0.02 (0.10 + -0.08)
+XX: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
+XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (15) -(wood 203.43) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h5m37s) +(Barn 1)
+XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
+XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [Science] Archery -(science 300) +(Archery 1)
+XX: [Science] Mining -(science 500) +(Mining 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: max Barn
+###
+[Calendar] time 485564
+[Calendar] skip 485535
+[Calendar] year 607.96 (1 + 606.96)
+[Calendar] Winter 1 (1 if 2427.82 % 4 == 3)
+[Calendar] day_of_year 383 (1 + 242782 % 400)
+[-] [Resource] catnip 2014.91/35000 -2.53/s 13m17s to empty
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 4000/4000 0.45/s
+[Resource] kitten 1/1 0.05/s
+[Village] happiness 0.02 (0.10 + -0.08)
+XX: [Bonfire] Catnip Field (60) -(catnip 2014.91/8975.97 -45m56s) +(Catnip Field 1)
+XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (15) -(wood 203.43) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h5m37s) +(Barn 1)
+XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
+XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [Science] Archery -(science 300) +(Archery 1)
+XX: [Science] Mining -(science 500) +(Mining 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: max Catnip Field
+###
+[Calendar] time 1387430
+[Calendar] skip 1387400
+[Calendar] year 1735.29 (1 + 1734.29)
+[Calendar] Summer 1 (1 if 6937.15 % 4 == 1)
+[Calendar] day_of_year 116 (1 + 693715 % 400)
+[Resource] catnip 35000/35000 25.60/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.70/s
+[Resource] kitten 1/1 0.05/s
+[Resource] gone kitten 4
+[Village] happiness 0.02 (0.10 + -0.08)
+XX: [Bonfire] Catnip Field (60) -(catnip 8975.97) +(Catnip Field 1)
+XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h11m30s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h5m37s) +(Barn 1)
+XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
+XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [Science] Archery -(science 300) +(Archery 1)
+XX: [Science] Mining -(science 500) +(Mining 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: max Library
