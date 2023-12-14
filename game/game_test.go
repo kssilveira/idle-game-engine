@@ -236,7 +236,7 @@ func TestAct(t *testing.T) {
 			t.Errorf("[%s] Validate got err %v", in.name, err)
 		}
 		for index, input := range in.inputs {
-			if _, err := g.Act(input); err != nil {
+			if _, err := g.act(input); err != nil {
 				t.Errorf("[%s] index %d got err %v", in.name, index, err)
 			}
 			want := in.want[index]
@@ -586,7 +586,7 @@ func TestUpdate(t *testing.T) {
 			t.Errorf("[%s] Validate got err %v", in.name, err)
 		}
 		for index, one := range in.times {
-			g.Update(time.Unix(int64(one), 0))
+			g.update(time.Unix(int64(one), 0))
 			if len(in.want) > 0 {
 				want := in.want[index]
 				got := int(g.GetResource("resource").Quantity)
