@@ -146,7 +146,7 @@ func (g *Game) populateUIActions(data *ui.Data) {
 	data.CustomActions = []ui.CustomAction{{
 		Name: "sX: time skip until action X is available",
 	}, {
-		Name: "mX: make inputs for action X",
+		Name: "cX: create inputs for action X",
 	}}
 }
 
@@ -229,7 +229,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		}
 		return input, nil
 	}
-	if input.IsMake {
+	if input.IsCreate {
 		for _, c := range input.Action.Costs {
 			r := g.GetResource(c.Name)
 			if r.ProducerAction == "" {
@@ -277,8 +277,8 @@ func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 		res.IsSkip = true
 		in = in[1:]
 	}
-	if strings.HasPrefix(in, "m") {
-		res.IsMake = true
+	if strings.HasPrefix(in, "c") {
+		res.IsCreate = true
 		in = in[1:]
 	}
 	index, err := strconv.Atoi(in)

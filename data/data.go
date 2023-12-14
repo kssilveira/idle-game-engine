@@ -48,9 +48,9 @@ type Action struct {
 }
 
 type ParsedInput struct {
-	IsSkip bool
-	IsMake bool
-	Action Action
+	IsSkip   bool
+	IsCreate bool
+	Action   Action
 }
 
 func (r *Resource) Add(add Resource) {

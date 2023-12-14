@@ -18,11 +18,11 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActio
 	if data.LastInput.IsSkip {
 		skip = "skip "
 	}
-	isMake := ""
-	if data.LastInput.IsMake {
-		isMake = "make "
+	isCreate := ""
+	if data.LastInput.IsCreate {
+		isCreate = "create "
 	}
-	logger.Printf("last action: %s%s%s\n", skip, isMake, data.LastInput.Action.Name)
+	logger.Printf("last action: %s%s%s\n", skip, isCreate, data.LastInput.Action.Name)
 	if data.Error != nil {
 		logger.Printf("error: %v\n", data.Error)
 	}

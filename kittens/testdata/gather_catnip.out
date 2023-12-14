@@ -5,7 +5,7 @@
 [Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
 last action: 
 ###
 [Calendar] year 1
@@ -17,7 +17,7 @@ XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
 last action: Gather catnip
 ###
 [Calendar] year 1
@@ -29,5 +29,5 @@ XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
 last action: Gather catnip

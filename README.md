@@ -17,7 +17,7 @@ Game engine for idle games like kittens game.
 ## Special Actions
 
 - Time skip until a game action is available
-- Make all the inputs for an action
+- Create all the inputs for an action
 
 ## Dev
 
@@ -80,14 +80,11 @@ Edges:
 
 More features from kittens game:
 
-- make functions and attributes private
-
-- split kittens file
-- change solve commands to string
-
-- rename 'make' to 'create'
-- change 'make' command to also make other resources (remove premature return)
+- change 'create' command to also make other resources (remove premature return)
 - create 'max' command that skips and buys the max
+
+- change solve commands to string
+- split kittens file
 
 - Bonfire building upgrades
 - Bonfire effects for
