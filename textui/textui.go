@@ -14,15 +14,17 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActio
 	}
 	showResources(logger, data)
 	showActions(logger, data, isHTML, showActionNumber)
-	skip := ""
+	prefix := ""
 	if data.LastInput.IsSkip {
-		skip = "skip "
+		prefix = "skip "
 	}
-	isCreate := ""
 	if data.LastInput.IsCreate {
-		isCreate = "create "
+		prefix = "create "
 	}
-	logger.Printf("last action: %s%s%s\n", skip, isCreate, data.LastInput.Action.Name)
+	if data.LastInput.IsMax {
+		prefix = "max "
+	}
+	logger.Printf("last action: %s%s\n", prefix, data.LastInput.Action.Name)
 	if data.Error != nil {
 		logger.Printf("error: %v\n", data.Error)
 	}
