@@ -2,7 +2,7 @@
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 sX: time skip until action X is available
 mX: make inputs for action X
@@ -12,7 +12,7 @@ last action:
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [Resource] catnip 1/5000
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
@@ -24,7 +24,7 @@ last action: Gather catnip
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [Resource] catnip 2/5000
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)

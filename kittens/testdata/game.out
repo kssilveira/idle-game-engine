@@ -257,8 +257,11 @@
         {
           "Name": "farmer",
           "ProductionFactor": 5,
-          "ProductionResourceFactor": "happiness",
           "ProductionBonus": [
+            {
+              "Name": "happiness",
+              "ProductionFactor": 1
+            },
             {
               "Name": "Mineral Hoes",
               "ProductionFactor": 0.5
@@ -299,8 +302,11 @@
         {
           "Name": "woodcutter",
           "ProductionFactor": 0.009,
-          "ProductionResourceFactor": "happiness",
           "ProductionBonus": [
+            {
+              "Name": "happiness",
+              "ProductionFactor": 1
+            },
             {
               "Name": "Mineral Axe",
               "ProductionFactor": 0.7
@@ -355,7 +361,12 @@
         {
           "Name": "scholar",
           "ProductionFactor": 0.175,
-          "ProductionResourceFactor": "happiness"
+          "ProductionBonus": [
+            {
+              "Name": "happiness",
+              "ProductionFactor": 1
+            }
+          ]
         }
       ],
       "ProductionBonus": [
@@ -411,8 +422,11 @@
         {
           "Name": "hunter",
           "ProductionFactor": 0.3,
-          "ProductionResourceFactor": "happiness",
           "ProductionBonus": [
+            {
+              "Name": "happiness",
+              "ProductionFactor": 1
+            },
             {
               "Name": "Bolas",
               "ProductionFactor": 1
@@ -455,8 +469,11 @@
         {
           "Name": "miner",
           "ProductionFactor": 0.25,
-          "ProductionResourceFactor": "happiness",
           "ProductionBonus": [
+            {
+              "Name": "happiness",
+              "ProductionFactor": 1
+            },
             {
               "Name": "Mine",
               "ProductionFactor": 0.2
@@ -547,7 +564,13 @@
       "Producers": [
         {
           "Name": "geologist",
-          "ProductionFactor": 0.075
+          "ProductionFactor": 0.075,
+          "ProductionBonus": [
+            {
+              "Name": "happiness",
+              "ProductionFactor": 1
+            }
+          ]
         },
         {
           "Name": "Quarry",
@@ -939,7 +962,13 @@
       "Producers": [
         {
           "Name": "priest",
-          "ProductionFactor": 0.0075
+          "ProductionFactor": 0.0075,
+          "ProductionBonus": [
+            {
+              "Name": "happiness",
+              "ProductionFactor": 1
+            }
+          ]
         },
         {
           "Name": "Chapel",
@@ -1031,14 +1060,14 @@
         },
         {
           "Name": "Amphitheatre",
-          "ProductionFactor": -0.048
+          "ProductionFactor": 0.048
         },
         {
           "Name": "Broadcast Tower",
-          "ProductionFactor": -0.75
+          "ProductionFactor": 0.75
         }
       ],
-      "StartQuantity": 1.1
+      "StartQuantity": 0.1
     },
     {
       "Name": "Catnip Field",

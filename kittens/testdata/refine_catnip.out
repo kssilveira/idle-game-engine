@@ -3,7 +3,7 @@
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [Resource] catnip 200/5000
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -16,7 +16,7 @@ last action:
 [Calendar] day_of_year 1
 [Resource] catnip 100/5000
 [Resource] wood 1/200
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -30,7 +30,7 @@ last action: Refine catnip
 [Calendar] Spring 1
 [Calendar] day_of_year 1
 [Resource] wood 2/200
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Hut -(wood 2/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 2/25) +(Library 1)

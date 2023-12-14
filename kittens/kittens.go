@@ -54,8 +54,10 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Unic. Pasture", ProductionFactor: -0.0015,
 			}},
 		}, kittenNames), []data.Resource{{
-			Name: "farmer", ProductionFactor: 1 * 5, ProductionResourceFactor: "happiness",
+			Name: "farmer", ProductionFactor: 1 * 5,
 			ProductionBonus: []data.Resource{{
+				Name: "happiness", ProductionFactor: 1,
+			}, {
 				Name: "Mineral Hoes", ProductionFactor: 0.5,
 			}, {
 				Name: "Iron Hoes", ProductionFactor: 0.3,
@@ -74,8 +76,10 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
 		Producers: []data.Resource{{
-			Name: "woodcutter", ProductionFactor: 0.0018 * 5, ProductionResourceFactor: "happiness",
+			Name: "woodcutter", ProductionFactor: 0.0018 * 5,
 			ProductionBonus: []data.Resource{{
+				Name: "happiness", ProductionFactor: 1,
+			}, {
 				Name: "Mineral Axe", ProductionFactor: 0.7,
 			}, {
 				Name: "Iron Axe", ProductionFactor: 0.5,
@@ -96,7 +100,10 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "science", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "scholar", ProductionFactor: 0.035 * 5, ProductionResourceFactor: "happiness",
+			Name: "scholar", ProductionFactor: 0.035 * 5,
+			ProductionBonus: []data.Resource{{
+				Name: "happiness", ProductionFactor: 1,
+			}},
 		}},
 		ProductionBonus: []data.Resource{{
 			Name: "Library", ProductionFactor: 0.1,
@@ -123,8 +130,10 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "hunter", ProductionFactor: 0.06 * 5, ProductionResourceFactor: "happiness",
+			Name: "hunter", ProductionFactor: 0.06 * 5,
 			ProductionBonus: []data.Resource{{
+				Name: "happiness", ProductionFactor: 1,
+			}, {
 				Name: "Bolas", ProductionFactor: 1,
 			}, {
 				Name: "Hunting Armor", ProductionFactor: 2,
@@ -144,8 +153,10 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "miner", ProductionFactor: 0.05 * 5, ProductionResourceFactor: "happiness",
+			Name: "miner", ProductionFactor: 0.05 * 5,
 			ProductionBonus: []data.Resource{{
+				Name: "happiness", ProductionFactor: 1,
+			}, {
 				Name: "Mine", ProductionFactor: 0.2,
 			}, {
 				Name: "Quarry", ProductionFactor: 0.35,
@@ -180,6 +191,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "coal", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "geologist", ProductionFactor: 0.015 * 5,
+			ProductionBonus: []data.Resource{{
+				Name: "happiness", ProductionFactor: 1,
+			}},
 		}, {
 			Name: "Quarry", ProductionFactor: 0.015 * 5,
 		}},
@@ -312,6 +326,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "priest", ProductionFactor: 0.0015 * 5,
+			ProductionBonus: []data.Resource{{
+				Name: "happiness", ProductionFactor: 1,
+			}},
 		}, {
 			Name: "Chapel", ProductionFactor: 0.005 * 5,
 		}},
@@ -338,7 +355,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "happiness", Type: "Village", StartQuantity: 1.1, Capacity: -1,
+		Name: "happiness", Type: "Village", StartQuantity: 0.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", ProductionFactor: -0.02,
 		}, {
@@ -350,9 +367,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "unicorns", ProductionFactor: 0.1, ProductionBoolean: true,
 		}, {
-			Name: "Amphitheatre", ProductionFactor: -0.048,
+			Name: "Amphitheatre", ProductionFactor: 0.048,
 		}, {
-			Name: "Broadcast Tower", ProductionFactor: -0.75,
+			Name: "Broadcast Tower", ProductionFactor: 0.75,
 		}},
 	}}))
 
@@ -1486,7 +1503,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 				edgefn(p.Name, r.Name, "green")
 			}
 			for _, b := range p.ProductionBonus {
-				if b.Name == "Spring" || b.Name == "Winter" {
+				if b.Name == "Spring" || b.Name == "Winter" || b.Name == "happiness" {
 					continue
 				}
 				if p.ProductionFactor < 0 {

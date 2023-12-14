@@ -10,8 +10,6 @@ type Resource struct {
 	Producers []Resource `json:",omitempty"`
 	// Quantity += Producer.Quantity * ProductionFactor * elapsedTime
 	ProductionFactor float64 `json:",omitempty"`
-	// Quantity += Producer.Quantity * ProductionFactor * elapsedTime * ProductionResourceFactor.Quantity
-	ProductionResourceFactor string `json:",omitempty"`
 	// Quantity += floor(Producer.Quantity) * ProductionFactor * elapsedTime
 	ProductionFloor bool `json:",omitempty"`
 	// Quantity += (Producer.Quantity > 0 ? 1 : 0) * ProductionFactor * elapsedTime

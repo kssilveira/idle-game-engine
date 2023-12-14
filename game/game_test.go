@@ -313,24 +313,6 @@ func TestUpdate(t *testing.T) {
 			(2*4 + 3*5) * 8,
 		},
 	}, {
-		name: "one resource factor",
-		resources: []data.Resource{{
-			Name: "resource", Capacity: -1,
-			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2, ProductionResourceFactor: "resource factor",
-			}},
-		}, {
-			Name: "input", Quantity: 3, Capacity: -1,
-		}, {
-			Name: "resource factor", Quantity: 4, Capacity: -1,
-		}},
-		times: []int{5, 6, 7},
-		want: []int{
-			2 * 3 * 4 * 5,
-			2 * 3 * 4 * 6,
-			2 * 3 * 4 * 7,
-		},
-	}, {
 		name: "production floor",
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,

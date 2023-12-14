@@ -382,7 +382,7 @@ func (g *Game) TimeSkip(skip time.Duration) {
 }
 
 func (g *Game) ValidateResource(r *data.Resource) error {
-	for _, name := range []string{r.Name, r.ProductionResourceFactor} {
+	for _, name := range []string{r.Name} {
 		if err := g.ValidateResourceName(name); err != nil {
 			return err
 		}
@@ -439,9 +439,6 @@ func (g *Game) GetCapacityRate(resource *data.Resource) float64 {
 
 func (g *Game) GetOneRate(resource data.Resource) float64 {
 	one := g.GetQuantityForRate(resource) * resource.ProductionFactor
-	if resource.ProductionResourceFactor != "" {
-		one *= g.GetQuantityForRate(*g.GetResource(resource.ProductionResourceFactor))
-	}
 	bonus := 1.0
 	for _, p := range resource.ProductionBonus {
 		bonus += g.GetOneRate(p)
