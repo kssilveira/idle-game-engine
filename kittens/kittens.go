@@ -1354,97 +1354,82 @@ func addWorkshops(g *game.Game, actions []data.Action) {
 }
 
 func Solve(g *game.Game, input chan string, sleepMS int) error {
-	for _, one := range []struct {
-		cmds  []string
-		count int
-	}{
-		{[]string{"Gather catnip"}, 10},
-		{[]string{"Catnip Field"}, 1},
-		{[]string{"m Catnip Field"}, 1},
-
-		{[]string{"s Refine catnip"}, 5},
-		{[]string{"Hut", "s woodcutter"}, 1},
-		{[]string{"s Library"}, 1},
-		{[]string{"s scholar"}, 1},
-		{[]string{"m Library"}, 1},
-
-		{[]string{"s Calendar"}, 1},
-		{[]string{"s Agriculture"}, 1},
-		{[]string{"s Hut", "s farmer"}, 1},
-
-		{[]string{"m Barn"}, 1},
-		{[]string{"m Catnip Field"}, 1},
-		{[]string{"m Library"}, 1},
+	cmds := []string{
+		"Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip",
+		"Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip",
+		"Catnip Field", "m Catnip Field",
+		"s Refine catnip", "s Refine catnip", "s Refine catnip", "s Refine catnip", "s Refine catnip",
+		"Hut", "s woodcutter",
+		"s Library", "s scholar", "m Library",
+		"s Calendar", "s Agriculture", "s Hut", "s farmer",
+		"m Barn", "m Catnip Field", "m Library",
 		/*
-			{[]string{s + archery, archery}, 1},
-			{[]string{s + hunter, hunter}, 1}, // hut
+			"s Archery",
+			"s Hunter",
 
-			{[]string{s + animalhusbandry, animalhusbandry}, 1},
-			{[]string{s + pasture, pasture}, 40},
-			{[]string{s + sendhunters, sendhunters}, 40},
+			"s Animalhusbandry",
+			"s Pasture",
+			"s Sendhunters",
 			{[]string{unicpasture}, 1},
-			{[]string{s + unicpasture, unicpasture}, 10},
-			{[]string{s + civilservice, civilservice}, 1},
+			"s Unicpasture",
+			"s Civilservice",
 
-			{[]string{s + mathematics, mathematics}, 1},
-			{[]string{s + celestialmechanics, celestialmechanics}, 1},
+			"s Mathematics",
+			"s Celestialmechanics",
 
-			{[]string{s + construction, construction}, 1},
-			{[]string{s + engineering, engineering}, 1},
-			{[]string{s + currency, currency}, 1},
-			{[]string{s + catnipenrichment, catnipenrichment}, 1},
+			"s Construction",
+			"s Engineering",
+			"s Currency",
+			"s Catnipenrichment",
 
-			{[]string{s + mining, mining}, 1},
-			{[]string{s + mine, mine}, 20},
+			"s Mining",
+			"s Mine",
 			{[]string{miner}, 1}, // hut
 
-			{[]string{s + academy, academy}, 25},
-			{[]string{s + workshop, workshop}, 15},
-			{[]string{s + mineralhoes, mineralhoes}, 1},
-			{[]string{s + mineralaxe, mineralaxe}, 1},
-			{[]string{s + bolas, bolas}, 1},
+			"s Academy",
+			"s Workshop",
+			"s Mineralhoes",
+			"s Mineralaxe",
+			"s Bolas",
 			{[]string{woodcutter}, 1}, // hut
 			{[]string{s + loghouse, loghouse, s + woodcutter, woodcutter}, 7},
 			{[]string{s + loghouse, loghouse, s + miner, miner}, 1},
 			{[]string{s + loghouse, loghouse, s + farmer, farmer}, 10},
 
-			{[]string{s + metalworking, metalworking}, 1},
-			{[]string{s + smelter, smelter}, 20},
+			"s Metalworking",
+			"s Smelter",
 			{[]string{activesmelter}, 1},
-			{[]string{s + ironhoes, ironhoes}, 1},
-			{[]string{s + ironaxe, ironaxe}, 1},
-			{[]string{s + compositebow, compositebow}, 1},
-			{[]string{s + expandedbarns, expandedbarns}, 1},
+			"s Ironhoes",
+			"s Ironaxe",
+			"s Compositebow",
+			"s Expandedbarns",
 			{[]string{
 				s + reinforcedbarns, m + reinforcedbarns,
 				s + reinforcedbarns, m + reinforcedbarns, reinforcedbarns}, 1},
 			{[]string{s + warehouse, m + warehouse, warehouse}, 11},
 
-			{[]string{s + barn, barn}, 5},
-			{[]string{s + "Catnip Field", "Catnip Field"}, 5},
+			"s Barn",
+			"s "Catnip Field"",
 			{[]string{s + hut, hut, s + farmer, farmer}, 5},
-			{[]string{s + library, library}, 20},
-			{[]string{s + mine, mine}, 20},
-			{[]string{s + workshop, workshop}, 20},
-			{[]string{s + smelter, smelter}, 20},
-			{[]string{s + pasture, pasture}, 50},
-			{[]string{s + academy, academy}, 20},
+			"s Library",
+			"s Mine",
+			"s Workshop",
+			"s Smelter",
+			"s Pasture",
+			"s Academy",
 			{[]string{s + loghouse, loghouse, s + farmer, farmer}, 20},
 
-			{[]string{s + huntingarmor, huntingarmor}, 1},
-			{[]string{s + reinforcedsaw, m + reinforcedsaw, reinforcedsaw}, 1},
+			"s Huntingarmor",
+			"s Reinforcedsaw",
 			//*/
-	} {
-		for i := 0; i < one.count; i++ {
-			for _, cmd := range one.cmds {
-				in, err := toInput(g, cmd)
-				if err != nil {
-					return err
-				}
-				input <- in
-				time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
-			}
+	}
+	for _, cmd := range cmds {
+		in, err := toInput(g, cmd)
+		if err != nil {
+			return err
 		}
+		input <- in
+		time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
 	}
 	return nil
 }
