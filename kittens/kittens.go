@@ -40,13 +40,12 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "catnip", Type: "Resource", StartCapacity: 5000,
 		Producers: join([]data.Resource{{
-			Name: "Catnip Field", ProductionFactor: 0.125 * 5 * (1 + 0.50), ProductionResourceFactor: "Spring",
-		}, {
-			Name: "Catnip Field", ProductionFactor: 0.125 * 5, ProductionResourceFactor: "Summer",
-		}, {
-			Name: "Catnip Field", ProductionFactor: 0.125 * 5, ProductionResourceFactor: "Autumn",
-		}, {
-			Name: "Catnip Field", ProductionFactor: 0.125 * 5 * (1 - 0.75), ProductionResourceFactor: "Winter",
+			Name: "Catnip Field", ProductionFactor: 0.125 * 5,
+			ProductionBonus: []data.Resource{{
+				Name: "Spring", ProductionFactor: 0.50,
+			}, {
+				Name: "Winter", ProductionFactor: -0.75,
+			}},
 		}}, resourceWithName(data.Resource{
 			ProductionFactor: -4.25, ProductionFloor: true, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
@@ -1487,6 +1486,9 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 				edgefn(p.Name, r.Name, "green")
 			}
 			for _, b := range p.ProductionBonus {
+				if b.Name == "Spring" || b.Name == "Winter" {
+					continue
+				}
 				if p.ProductionFactor < 0 {
 					edgefn(b.Name, p.Name, "red")
 				} else {
