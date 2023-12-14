@@ -1449,17 +1449,17 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 
 func toInput(g *game.Game, cmd string) (string, error) {
 	prefix := ""
-	if strings.HasPrefix(cmd, "s") {
+	if strings.HasPrefix(cmd, "s ") {
 		prefix = "s"
-		cmd = cmd[1:]
+		cmd = cmd[2:]
 	}
-	if strings.HasPrefix(cmd, "c") {
+	if strings.HasPrefix(cmd, "c ") {
 		prefix = "c"
-		cmd = cmd[1:]
+		cmd = cmd[2:]
 	}
-	if strings.HasPrefix(cmd, "m") {
+	if strings.HasPrefix(cmd, "m ") {
 		prefix = "m"
-		cmd = cmd[1:]
+		cmd = cmd[2:]
 	}
 	if !g.HasAction(cmd) {
 		return "", fmt.Errorf("invalid action %s", cmd)

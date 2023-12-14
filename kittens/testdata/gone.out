@@ -4,7 +4,7 @@
 [Calendar] day_of_year 1
 [-] [Resource] catnip 1000/5000 -17/s 58s to empty
 [Resource] kitten 4/4 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -16,7 +16,8 @@ XX: [Science] Calendar -(science 0/30) +(Calendar 1)
 XX: [Science] Archery -(science 0/300) +(Archery 1)
 XX: [Science] Mining -(science 0/500) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] time 1
@@ -26,7 +27,7 @@ last action:
 [-] [Resource] catnip 983/5000 -17/s 57s to empty
 [Resource] wood 0.01/200 0.01/s 6h3m5s to cap
 [Resource] kitten 3/3 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.01/12.50 22m40s) +(Hut 1, kitten cap 2)
@@ -39,7 +40,8 @@ XX: [Science] Calendar -(science 0/30) +(Calendar 1)
 XX: [Science] Archery -(science 0/300) +(Archery 1)
 XX: [Science] Mining -(science 0/500) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: woodcutter
 ###
 [Calendar] time 1
@@ -49,7 +51,7 @@ last action: woodcutter
 [-] [Resource] catnip 983/5000 -17/s 57s to empty
 [Resource] wood 0.01/200 0.01/s 6h3m5s to cap
 [Resource] kitten 3/3 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.01/12.50 22m40s) +(Hut 1, kitten cap 2)
@@ -62,7 +64,8 @@ XX: [Science] Calendar -(science 0/30) +(Calendar 1)
 XX: [Science] Archery -(science 0/300) +(Archery 1)
 XX: [Science] Mining -(science 0/500) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -74,7 +77,7 @@ error: action Refine catnip is locked
 [Resource] wood 0.02/200 0.01/s 6h3m4s to cap
 [Resource] science 0.20/500 0.20/s 42m25s to cap
 [Resource] kitten 2/2 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.02/12.50 22m39s) +(Hut 1, kitten cap 2)
@@ -87,7 +90,8 @@ XX: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 XX: [Science] Archery -(science 0.20/300 25m26s) +(Archery 1)
 XX: [Science] Mining -(science 0.20/500 42m25s) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: scholar
 ###
 [Calendar] time 2
@@ -98,7 +102,7 @@ last action: scholar
 [Resource] wood 0.02/200 0.01/s 6h3m4s to cap
 [Resource] science 0.20/500 0.20/s 42m25s to cap
 [Resource] kitten 2/2 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.02/12.50 22m39s) +(Hut 1, kitten cap 2)
@@ -111,7 +115,8 @@ XX: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 XX: [Science] Archery -(science 0.20/300 25m26s) +(Archery 1)
 XX: [Science] Mining -(science 0.20/500 42m25s) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -123,7 +128,7 @@ error: action Refine catnip is locked
 [Resource] wood 0.03/200 0.01/s 6h3m3s to cap
 [Resource] science 0.39/500 0.20/s 42m24s to cap
 [Resource] kitten 1/1 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.03/12.50 22m38s) +(Hut 1, kitten cap 2)
@@ -136,7 +141,8 @@ XX: [Science] Calendar -(science 0.39/30 2m30s) +(Calendar 1)
 XX: [Science] Archery -(science 0.39/300 25m25s) +(Archery 1)
 XX: [Science] Mining -(science 0.39/500 42m24s) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: farmer
 ###
 [Calendar] time 82
@@ -147,7 +153,7 @@ last action: farmer
 [Resource] wood 0.75/200 0.01/s 6h1m44s to cap
 [Resource] science 15.90/500 0.20/s 41m5s to cap
 [Resource] kitten 1/1 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.75/12.50 21m19s) +(Hut 1, kitten cap 2)
@@ -160,7 +166,8 @@ XX: [Science] Calendar -(science 15.90/30 1m11s) +(Calendar 1)
 XX: [Science] Archery -(science 15.90/300 24m6s) +(Archery 1)
 XX: [Science] Mining -(science 15.90/500 41m5s) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -172,7 +179,7 @@ error: action Refine catnip is locked
 [Resource] wood 0.76/200 0.01/s 6h1m43s to cap
 [Resource] science 16.10/500 0.20/s 41m4s to cap
 [Resource] kitten 1/1 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Catnip Field -(catnip 2.10/10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.76/12.50 21m18s) +(Hut 1, kitten cap 2)
@@ -185,7 +192,8 @@ XX: [Science] Calendar -(science 16.10/30 1m10s) +(Calendar 1)
 XX: [Science] Archery -(science 16.10/300 24m5s) +(Archery 1)
 XX: [Science] Mining -(science 16.10/500 41m4s) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -197,7 +205,7 @@ error: action Refine catnip is locked
 [Resource] science 16.30/500 0.20/s 40m16s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] gone kitten 1
-[Village] happiness 1.04 (1.10 + -0.06)
+[Village] happiness 0.04 (0.10 + -0.06)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Hut (1) -(wood 0.77/12.50 20m53s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (1) -(wood 0.77/28.75 49m49s) +(Library 1)
@@ -209,7 +217,8 @@ XX: [Science] Calendar -(science 16.30/30 1m8s) +(Calendar 1)
 XX: [Science] Archery -(science 16.30/300 23m37s) +(Archery 1)
 XX: [Science] Mining -(science 16.30/500 40m16s) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -221,7 +230,7 @@ error: action Refine catnip is locked
 [Resource] science 16.50/500 0.20/s 39m29s to cap
 [Resource] kitten 0.10/2 0.05/s 37s to cap
 [Resource] gone kitten 2
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Hut (1) -(wood 0.77/12.50) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (1) -(wood 0.77/28.75) +(Library 1)
@@ -233,7 +242,8 @@ XX: [Science] Calendar -(science 16.50/30 1m6s) +(Calendar 1)
 XX: [Science] Archery -(science 16.50/300 23m9s) +(Archery 1)
 XX: [Science] Mining -(science 16.50/500 39m29s) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -245,7 +255,7 @@ error: action Refine catnip is locked
 [Resource] science 16.50/500
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] gone kitten 3
-[Village] happiness 1.08 (1.10 + -0.02)
+[Village] happiness 0.08 (0.10 + -0.02)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Hut (1) -(wood 0.77/12.50) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (1) -(wood 0.77/28.75) +(Library 1)
@@ -257,7 +267,8 @@ XX: [Science] Calendar -(science 16.50/30) +(Calendar 1)
 XX: [Science] Archery -(science 16.50/300) +(Archery 1)
 XX: [Science] Mining -(science 16.50/500) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -269,7 +280,7 @@ error: action Refine catnip is locked
 [Resource] science 16.50/500
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] gone kitten 3
-[Village] happiness 1.08 (1.10 + -0.02)
+[Village] happiness 0.08 (0.10 + -0.02)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Hut (1) -(wood 0.77/12.50) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (1) -(wood 0.77/28.75) +(Library 1)
@@ -281,6 +292,7 @@ XX: [Science] Calendar -(science 16.50/30) +(Calendar 1)
 XX: [Science] Archery -(science 16.50/300) +(Archery 1)
 XX: [Science] Mining -(science 16.50/500) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Refine catnip
 error: action Refine catnip is locked

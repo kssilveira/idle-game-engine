@@ -4,7 +4,7 @@
 [Calendar] day_of_year 1
 [Resource] catnip 1/5000
 [Resource] wood 200/200
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
@@ -15,7 +15,8 @@ XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] time 1
@@ -24,7 +25,7 @@ last action:
 [Calendar] day_of_year 1
 [Resource] catnip 1/10000
 [Resource] wood 150/400
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
@@ -35,7 +36,8 @@ XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Barn
 ###
 [Calendar] time 1
@@ -44,7 +46,7 @@ last action: Barn
 [Calendar] day_of_year 1
 [Resource] catnip 2/10000
 [Resource] wood 150/400
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
@@ -55,7 +57,8 @@ XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 2
@@ -64,7 +67,7 @@ last action: Gather catnip
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] catnip 2/15000
 [Resource] wood 62.50/600
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
@@ -75,7 +78,8 @@ XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Barn
 ###
 [Calendar] time 2
@@ -84,7 +88,7 @@ last action: Barn
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] catnip 3/15000
 [Resource] wood 62.50/600
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 3/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 3/10) +(Catnip Field 1)
@@ -95,5 +99,6 @@ XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip

@@ -63,7 +63,7 @@ func TestRun(t *testing.T) {
 		},
 		iters: []iter{
 			{"Catnip Field", 0}, {"Gather catnip", 1},
-			{"sCatnip Field", 0}, {"Catnip Field", 0},
+			{"s Catnip Field", 0}, {"Catnip Field", 0},
 			{"Gather catnip", 1},
 		},
 	}, {
@@ -74,82 +74,80 @@ func TestRun(t *testing.T) {
 		iters: []iter{
 			{"Refine catnip", 0}, {"Refine catnip", 0},
 		},
-		/*
-					}, {
-						name: "hut",
-						resources: map[string]int{
-							"catnip": 1000,
-							"wood":   100,
-						},
-						iters: []iter{
-							{hut, 0}, {"Gather catnip", 1},
-							{hut, 0}, {"Gather catnip", 1},
-							{"Gather catnip", 100},
-						},
-					}, {
-						name: "library",
-						resources: map[string]int{
-							"catnip": 1000,
-							"wood":   100,
-							"kitten": 2,
-						},
-						iters: []iter{
-							{library, 0}, {scholar, 0}, {"Gather catnip", 1},
-							{library, 0}, {"Gather catnip", 1},
-							{scholar, 0}, {"Gather catnip", 1},
-						},
-					}, {
-						name: "woodcutter",
-						resources: map[string]int{
-							"catnip": 1000,
-							"kitten": 2,
-							"Hut":    1,
-						},
-						iters: []iter{
-							{woodcutter, 0}, {"Gather catnip", 1},
-							{woodcutter, 0}, {"Gather catnip", 1},
-						},
-					}, {
-						name: "farmer",
-						resources: map[string]int{
-							"catnip":      1000,
-							"kitten":      2,
-							"Agriculture": 1,
-						},
-						iters: []iter{
-							{farmer, 0}, {"Gather catnip", 1},
-							{farmer, 0}, {"Gather catnip", 1},
-						},
-					}, {
-						name: "gone",
-						resources: map[string]int{
-							"catnip":      1000,
-							"kitten":      4,
-							"Hut":         1,
-							"Library":     1,
-							"Agriculture": 1,
-						},
-						iters: []iter{
-							{woodcutter, 0}, {"Refine catnip", 1},
-							{scholar, 0}, {"Refine catnip", 1},
-							{farmer, 0}, {"Refine catnip", 1},
-							{"Refine catnip", 79},
-							{"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1},
-						},
-					}, {
-						name: "barn",
-						resources: map[string]int{
-							"catnip":      1,
-							"wood":        200,
-							"Agriculture": 1,
-						},
-						iters: []iter{
-							{barn, 0}, {"Gather catnip", 1},
-							{barn, 0}, {"Gather catnip", 1},
-						},
-			}, {
-				name: "solve",
-						//*/
+	}, {
+		name: "hut",
+		resources: map[string]int{
+			"catnip": 1000,
+			"wood":   100,
+		},
+		iters: []iter{
+			{"Hut", 0}, {"Gather catnip", 1},
+			{"Hut", 0}, {"Gather catnip", 1},
+			{"Gather catnip", 100},
+		},
+	}, {
+		name: "library",
+		resources: map[string]int{
+			"catnip": 1000,
+			"wood":   100,
+			"kitten": 2,
+		},
+		iters: []iter{
+			{"Library", 0}, {"scholar", 0}, {"Gather catnip", 1},
+			{"Library", 0}, {"Gather catnip", 1},
+			{"scholar", 0}, {"Gather catnip", 1},
+		},
+	}, {
+		name: "woodcutter",
+		resources: map[string]int{
+			"catnip": 1000,
+			"kitten": 2,
+			"Hut":    1,
+		},
+		iters: []iter{
+			{"woodcutter", 0}, {"Gather catnip", 1},
+			{"woodcutter", 0}, {"Gather catnip", 1},
+		},
+	}, {
+		name: "farmer",
+		resources: map[string]int{
+			"catnip":      1000,
+			"kitten":      2,
+			"Agriculture": 1,
+		},
+		iters: []iter{
+			{"farmer", 0}, {"Gather catnip", 1},
+			{"farmer", 0}, {"Gather catnip", 1},
+		},
+	}, {
+		name: "gone",
+		resources: map[string]int{
+			"catnip":      1000,
+			"kitten":      4,
+			"Hut":         1,
+			"Library":     1,
+			"Agriculture": 1,
+		},
+		iters: []iter{
+			{"woodcutter", 0}, {"Refine catnip", 1},
+			{"scholar", 0}, {"Refine catnip", 1},
+			{"farmer", 0}, {"Refine catnip", 1},
+			{"Refine catnip", 79},
+			{"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1},
+		},
+	}, {
+		name: "barn",
+		resources: map[string]int{
+			"catnip":      1,
+			"wood":        200,
+			"Agriculture": 1,
+		},
+		iters: []iter{
+			{"Barn", 0}, {"Gather catnip", 1},
+			{"Barn", 0}, {"Gather catnip", 1},
+		},
+	}, {
+		name: "solve",
 	}}
 	{
 		g := NewGame(func() time.Time { return time.Unix(0, 0) })

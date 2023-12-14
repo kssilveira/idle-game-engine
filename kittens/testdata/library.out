@@ -5,14 +5,15 @@
 [-] [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] wood 100/200
 [Resource] kitten 2/2 0.05/s
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] year 1
@@ -21,7 +22,7 @@ last action:
 [-] [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] wood 75/200
 [Resource] kitten 2/2 0.05/s
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -30,7 +31,8 @@ XX: [Bonfire] Library (1) -(wood 28.75) +(Library 1)
 XX: [Village] scholar -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0/30) +(Calendar 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Library
 ###
 [Calendar] time 1
@@ -41,7 +43,7 @@ last action: Library
 [Resource] wood 75/200
 [Resource] science 0.20/500 0.20/s 40m49s to cap
 [Resource] kitten 1/1 0.05/s
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -50,7 +52,8 @@ XX: [Bonfire] Library (1) -(wood 28.75) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: scholar
 ###
 [Calendar] time 1
@@ -61,7 +64,7 @@ last action: scholar
 [Resource] wood 75/200
 [Resource] science 0.20/500 0.20/s 40m49s to cap
 [Resource] kitten 1/1 0.05/s
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -70,7 +73,8 @@ XX: [Bonfire] Library (1) -(wood 28.75) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 2
@@ -81,7 +85,7 @@ last action: Gather catnip
 [Resource] wood 46.25/200
 [Resource] science 0.43/750 0.22/s 56m7s to cap
 [Resource] kitten 1/1 0.05/s
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -90,7 +94,8 @@ XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Library
 ###
 [Calendar] time 2
@@ -101,7 +106,7 @@ last action: Library
 [Resource] wood 46.25/200
 [Resource] science 0.43/750 0.22/s 56m7s to cap
 [Resource] kitten 1/1 0.05/s
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -110,7 +115,8 @@ XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 3
@@ -120,7 +126,7 @@ last action: Gather catnip
 [-] [Resource] catnip 976.50/5000 -8.50/s 1m54s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.87/750 0.45/s 28m2s to cap
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -129,7 +135,8 @@ XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [*] [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 XX: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: scholar
 ###
 [Calendar] time 3
@@ -139,7 +146,7 @@ last action: scholar
 [-] [Resource] catnip 977.50/5000 -8.50/s 1m55s to empty
 [Resource] wood 46.25/200
 [Resource] science 0.87/750 0.45/s 28m2s to cap
-[Village] happiness 1.06 (1.10 + -0.04)
+[Village] happiness 0.06 (0.10 + -0.04)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -148,5 +155,6 @@ XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [*] [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 XX: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip

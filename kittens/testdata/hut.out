@@ -4,14 +4,15 @@
 [Calendar] day_of_year 1
 [Resource] catnip 1000/5000
 [Resource] wood 100/200
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] time 1
@@ -21,7 +22,7 @@ last action:
 [Resource] catnip 1000/5000
 [Resource] wood 95/200
 [Resource] kitten 0.05/2 0.05/s 39s to cap
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -29,7 +30,8 @@ XX: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Hut
 ###
 [Calendar] time 1
@@ -39,7 +41,7 @@ last action: Hut
 [Resource] catnip 1001/5000
 [Resource] wood 95/200
 [Resource] kitten 0.05/2 0.05/s 39s to cap
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -47,7 +49,8 @@ XX: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 2
@@ -57,7 +60,7 @@ last action: Gather catnip
 [Resource] catnip 1001/5000
 [Resource] wood 82.50/200
 [Resource] kitten 0.10/4 0.05/s 1m18s to cap
-[Village] happiness 1.10
+[Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -65,7 +68,8 @@ XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Hut
 ###
 [Calendar] time 102
@@ -75,7 +79,7 @@ last action: Hut
 [-] [Resource] catnip 1002/5000 -17/s 58s to empty
 [Resource] wood 82.50/200
 [Resource] kitten 4/4 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -83,7 +87,8 @@ XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 102
@@ -93,7 +98,7 @@ last action: Gather catnip
 [-] [Resource] catnip 1003/5000 -17/s 59s to empty
 [Resource] wood 82.50/200
 [Resource] kitten 4/4 0.05/s
-[Village] happiness 1.02 (1.10 + -0.08)
+[Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -101,5 +106,6 @@ XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 sX: time skip until action X is available
-mX: make inputs for action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
 last action: Gather catnip
