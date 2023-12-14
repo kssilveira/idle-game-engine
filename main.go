@@ -42,7 +42,11 @@ func all() error {
 	output := make(chan *ui.Data)
 	go g.Run(now, input, output)
 
-	go handleInput(input)
+	go func() {
+		if err := handleInput(g, input); err != nil {
+			log.Fatal(err)
+		}
+	}()
 	var last string
 	waiting := make(chan bool)
 	refreshed := make(chan bool)
@@ -88,15 +92,18 @@ func updateResources(g *game.Game, resourceMap string) error {
 	return nil
 }
 
-func handleInput(input game.Input) {
+func handleInput(g *game.Game, input game.Input) error {
 	if *auto {
-		kittens.Solve(input, *autoSleepMS)
+		if err := kittens.Solve(g, input, *autoSleepMS); err != nil {
+			return err
+		}
 	}
 	for {
 		var got string
 		fmt.Scanln(&got)
 		input <- got
 	}
+	return nil
 }
 
 func handleOutput(output game.Output, last *string, waiting chan bool, refreshed chan bool) {

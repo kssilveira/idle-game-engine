@@ -1353,31 +1353,15 @@ func addWorkshops(g *game.Game, actions []data.Action) {
 	}
 }
 
-const (
-	gather = iota
-	refine
-	field
-)
-
-const (
-	delta = 100
-)
-
-const (
-	_ = iota * delta
-	s
-	m
-)
-
-func Solve(input chan string, sleepMS int) {
+func Solve(g *game.Game, input chan string, sleepMS int) error {
 	for _, one := range []struct {
-		cmds  []int
+		cmds  []string
 		count int
 	}{
-		{[]int{gather}, 10},
-		{[]int{field}, 1},
+		{[]string{"Gather catnip"}, 10},
+		{[]string{"Catnip Field"}, 1},
 		/*
-			{[]int{s + field, field}, 55},
+			{[]int{s + "Catnip Field", "Catnip Field"}, 55},
 			{[]int{s + refine, refine}, 5},
 			{[]int{hut, s + woodcutter, woodcutter}, 1},
 			{[]int{s + library, library, s + scholar, scholar}, 1},
@@ -1386,7 +1370,7 @@ func Solve(input chan string, sleepMS int) {
 			{[]int{s + agriculture, agriculture}, 1},
 
 			{[]int{s + barn, barn}, 10},
-			{[]int{s + field, field}, 25},
+			{[]int{s + "Catnip Field", "Catnip Field"}, 25},
 			{[]int{s + library, library}, 15},
 			{[]int{s + hut, hut, s + farmer, farmer}, 9},
 
@@ -1435,7 +1419,7 @@ func Solve(input chan string, sleepMS int) {
 			{[]int{s + warehouse, m + warehouse, warehouse}, 11},
 
 			{[]int{s + barn, barn}, 5},
-			{[]int{s + field, field}, 5},
+			{[]int{s + "Catnip Field", "Catnip Field"}, 5},
 			{[]int{s + hut, hut, s + farmer, farmer}, 5},
 			{[]int{s + library, library}, 20},
 			{[]int{s + mine, mine}, 20},
@@ -1451,24 +1435,36 @@ func Solve(input chan string, sleepMS int) {
 	} {
 		for i := 0; i < one.count; i++ {
 			for _, cmd := range one.cmds {
-				input <- toInput(cmd)
+				in, err := toInput(g, cmd)
+				if err != nil {
+					return err
+				}
+				input <- in
 				time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
 			}
 		}
 	}
+	return nil
 }
 
-func toInput(cmd int) string {
+func toInput(g *game.Game, cmd string) (string, error) {
 	prefix := ""
-	if cmd >= m {
-		prefix = "m"
-		cmd -= m
-	}
-	if cmd >= s {
+	if strings.HasPrefix(cmd, "s") {
 		prefix = "s"
-		cmd -= s
+		cmd = cmd[1:]
 	}
-	return fmt.Sprintf("%s%d", prefix, cmd)
+	if strings.HasPrefix(cmd, "c") {
+		prefix = "c"
+		cmd = cmd[1:]
+	}
+	if strings.HasPrefix(cmd, "m") {
+		prefix = "m"
+		cmd = cmd[1:]
+	}
+	if !g.HasAction(cmd) {
+		return "", fmt.Errorf("invalid action %s", cmd)
+	}
+	return fmt.Sprintf("%s%d", prefix, g.GetActionIndex(cmd)), nil
 }
 
 func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {

@@ -81,8 +81,6 @@ Edges:
 
 More features from kittens game:
 
-- create 'max' command that skips and buys the max
-
 - change solve commands to string
 - split kittens file
 

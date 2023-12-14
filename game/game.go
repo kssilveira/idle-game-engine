@@ -367,7 +367,7 @@ func (g *Game) getNestedAction(a data.Action, c data.Resource) data.Action {
 	res := data.Action{
 		Adds: []data.Resource{{}},
 	}
-	action := g.getAction(r.ProducerAction)
+	action := g.GetAction(r.ProducerAction)
 	for _, c := range action.Costs {
 		cost := g.getCost(action, c) * need
 		res.Costs = append(res.Costs, data.Resource{
@@ -387,7 +387,7 @@ func (g *Game) getNeededNestedAction(a data.Action, c data.Resource) float64 {
 	if cost < 0 {
 		return 0
 	}
-	action := g.getAction(r.ProducerAction)
+	action := g.GetAction(r.ProducerAction)
 	res := math.Ceil(cost / g.getActionAdd(action.Adds[0]).Quantity)
 	return res
 }
@@ -445,7 +445,7 @@ func (g *Game) validateResourceName(name string) error {
 }
 
 func (g *Game) validateActionName(name string) error {
-	if name != "" && !g.hasAction(name) {
+	if name != "" && !g.HasAction(name) {
 		return fmt.Errorf("invalid action name %s", name)
 	}
 	return nil
@@ -519,8 +519,12 @@ func (g *Game) GetResource(name string) *data.Resource {
 	return g.Resources[g.resourceToIndex[name]]
 }
 
-func (g *Game) getAction(name string) data.Action {
+func (g *Game) GetAction(name string) data.Action {
 	return g.Actions[g.actionToIndex[name]]
+}
+
+func (g *Game) GetActionIndex(name string) int {
+	return g.actionToIndex[name]
 }
 
 func (g *Game) getCost(a data.Action, c data.Resource) float64 {
@@ -536,7 +540,7 @@ func (g *Game) HasResource(name string) bool {
 	return ok
 }
 
-func (g *Game) hasAction(name string) bool {
+func (g *Game) HasAction(name string) bool {
 	_, ok := g.actionToIndex[name]
 	return ok
 }

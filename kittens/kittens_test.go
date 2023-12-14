@@ -16,7 +16,7 @@ import (
 )
 
 type iter struct {
-	input   int
+	input   string
 	elapsed int64
 }
 
@@ -29,12 +29,12 @@ func TestRun(t *testing.T) {
 	}{{
 		name: "gather catnip",
 		iters: []iter{
-			{gather, 0}, {gather, 0},
+			{"Gather catnip", 0}, {"Gather catnip", 0},
 		},
 	}, {
 		name: "gather catnip html",
 		iters: []iter{
-			{gather, 0}, {gather, 0},
+			{"Gather catnip", 0}, {"Gather catnip", 0},
 		},
 		isHTML: true,
 	}, {
@@ -43,9 +43,9 @@ func TestRun(t *testing.T) {
 			"catnip": 9,
 		},
 		iters: []iter{
-			{field, 0}, {gather, 0}, {field, 0},
-			{gather, 1}, {gather, 10},
-			{gather, 200}, {gather, 200}, {gather, 200}, {gather, 200},
+			{"Catnip Field", 0}, {"Gather catnip", 0}, {"Catnip Field", 0},
+			{"Gather catnip", 1}, {"Gather catnip", 10},
+			{"Gather catnip", 200}, {"Gather catnip", 200}, {"Gather catnip", 200}, {"Gather catnip", 200},
 		},
 	}, {
 		name: "catnip field 2",
@@ -53,8 +53,8 @@ func TestRun(t *testing.T) {
 			"catnip": 200,
 		},
 		iters: []iter{
-			{field, 0}, {gather, 1},
-			{field, 0}, {gather, 1},
+			{"Catnip Field", 0}, {"Gather catnip", 1},
+			{"Catnip Field", 0}, {"Gather catnip", 1},
 		},
 	}, {
 		name: "catnip field skip",
@@ -62,9 +62,9 @@ func TestRun(t *testing.T) {
 			"catnip": 10,
 		},
 		iters: []iter{
-			{field, 0}, {gather, 1},
-			{s + field, 0}, {field, 0},
-			{gather, 1},
+			{"Catnip Field", 0}, {"Gather catnip", 1},
+			{"sCatnip Field", 0}, {"Catnip Field", 0},
+			{"Gather catnip", 1},
 		},
 	}, {
 		name: "refine catnip",
@@ -72,7 +72,7 @@ func TestRun(t *testing.T) {
 			"catnip": 200,
 		},
 		iters: []iter{
-			{refine, 0}, {refine, 0},
+			{"Refine catnip", 0}, {"Refine catnip", 0},
 		},
 		/*
 					}, {
@@ -82,9 +82,9 @@ func TestRun(t *testing.T) {
 							"wood":   100,
 						},
 						iters: []iter{
-							{hut, 0}, {gather, 1},
-							{hut, 0}, {gather, 1},
-							{gather, 100},
+							{hut, 0}, {"Gather catnip", 1},
+							{hut, 0}, {"Gather catnip", 1},
+							{"Gather catnip", 100},
 						},
 					}, {
 						name: "library",
@@ -94,9 +94,9 @@ func TestRun(t *testing.T) {
 							"kitten": 2,
 						},
 						iters: []iter{
-							{library, 0}, {scholar, 0}, {gather, 1},
-							{library, 0}, {gather, 1},
-							{scholar, 0}, {gather, 1},
+							{library, 0}, {scholar, 0}, {"Gather catnip", 1},
+							{library, 0}, {"Gather catnip", 1},
+							{scholar, 0}, {"Gather catnip", 1},
 						},
 					}, {
 						name: "woodcutter",
@@ -106,8 +106,8 @@ func TestRun(t *testing.T) {
 							"Hut":    1,
 						},
 						iters: []iter{
-							{woodcutter, 0}, {gather, 1},
-							{woodcutter, 0}, {gather, 1},
+							{woodcutter, 0}, {"Gather catnip", 1},
+							{woodcutter, 0}, {"Gather catnip", 1},
 						},
 					}, {
 						name: "farmer",
@@ -117,8 +117,8 @@ func TestRun(t *testing.T) {
 							"Agriculture": 1,
 						},
 						iters: []iter{
-							{farmer, 0}, {gather, 1},
-							{farmer, 0}, {gather, 1},
+							{farmer, 0}, {"Gather catnip", 1},
+							{farmer, 0}, {"Gather catnip", 1},
 						},
 					}, {
 						name: "gone",
@@ -130,11 +130,11 @@ func TestRun(t *testing.T) {
 							"Agriculture": 1,
 						},
 						iters: []iter{
-							{woodcutter, 0}, {refine, 1},
-							{scholar, 0}, {refine, 1},
-							{farmer, 0}, {refine, 1},
-							{refine, 79},
-							{refine, 1}, {refine, 1}, {refine, 1}, {refine, 1},
+							{woodcutter, 0}, {"Refine catnip", 1},
+							{scholar, 0}, {"Refine catnip", 1},
+							{farmer, 0}, {"Refine catnip", 1},
+							{"Refine catnip", 79},
+							{"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1},
 						},
 					}, {
 						name: "barn",
@@ -144,8 +144,8 @@ func TestRun(t *testing.T) {
 							"Agriculture": 1,
 						},
 						iters: []iter{
-							{barn, 0}, {gather, 1},
-							{barn, 0}, {gather, 1},
+							{barn, 0}, {"Gather catnip", 1},
+							{barn, 0}, {"Gather catnip", 1},
 						},
 			}, {
 				name: "solve",
@@ -161,15 +161,6 @@ func TestRun(t *testing.T) {
 		var buf bytes.Buffer
 		logger := log.New(&buf, "", 0 /* flags */)
 		input := make(chan string)
-		go func() {
-			if len(in.iters) == 0 {
-				Solve(input, 0 /* sleepMS */)
-			}
-			for _, one := range in.iters {
-				input <- toInput(one.input)
-			}
-			input <- "999"
-		}()
 		timeIndex := 0
 		now := time.Unix(0, 0)
 		nowfn := func() time.Time {
@@ -177,12 +168,25 @@ func TestRun(t *testing.T) {
 			if len(in.iters) == 0 {
 				now = now.Add(time.Second)
 			} else {
-				now = now.Add(time.Duration(append(in.iters, iter{0, 0}, iter{0, 0})[timeIndex].elapsed) * time.Second)
+				now = now.Add(time.Duration(append(in.iters, iter{"Gather catnip", 0}, iter{"Gather catnip", 0})[timeIndex].elapsed) * time.Second)
 				timeIndex++
 			}
 			return res
 		}
 		g := NewGame(nowfn)
+		go func() {
+			if len(in.iters) == 0 {
+				Solve(g, input, 0 /* sleepMS */)
+			}
+			for _, one := range in.iters {
+				cmd, err := toInput(g, one.input)
+				if err != nil {
+					t.Errorf("[%s] got input err %v", in.name, err)
+				}
+				input <- cmd
+			}
+			input <- "999"
+		}()
 		for name, quantity := range in.resources {
 			if !g.HasResource(name) {
 				t.Errorf("[%s] missing resource %s", in.name, name)
