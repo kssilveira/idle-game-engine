@@ -13,12 +13,13 @@ import (
 
 type Game struct {
 	Resources []*data.Resource `json:",omitempty"`
+	Actions   []data.Action    `json:",omitempty"`
+
 	// maps resource name to index in Resources
-	ResourceToIndex map[string]int `json:"-"`
-	Actions         []data.Action  `json:",omitempty"`
+	resourceToIndex map[string]int
 	// maps action name to index in Actions
-	ActionToIndex map[string]int `json:"-"`
-	Now           time.Time      `json:",omitempty"`
+	actionToIndex map[string]int
+	now           time.Time
 }
 
 type Input chan string
@@ -27,9 +28,9 @@ type Now func() time.Time
 
 func NewGame(now time.Time) *Game {
 	g := &Game{
-		Now:             now,
-		ResourceToIndex: map[string]int{},
-		ActionToIndex:   map[string]int{},
+		now:             now,
+		resourceToIndex: map[string]int{},
+		actionToIndex:   map[string]int{},
 	}
 	g.AddResources([]data.Resource{{
 		Name: "time", Type: "Calendar", Capacity: -1,
@@ -46,7 +47,7 @@ func (g *Game) AddResources(resources []data.Resource) {
 }
 
 func (g *Game) AddResource(resource data.Resource) {
-	g.ResourceToIndex[resource.Name] = len(g.Resources)
+	g.resourceToIndex[resource.Name] = len(g.Resources)
 	cp := resource
 	g.Resources = append(g.Resources, &cp)
 }
@@ -58,7 +59,7 @@ func (g *Game) AddActions(actions []data.Action) {
 }
 
 func (g *Game) AddAction(action data.Action) {
-	g.ActionToIndex[action.Name] = len(g.Actions)
+	g.actionToIndex[action.Name] = len(g.Actions)
 	cp := action
 	g.Actions = append(g.Actions, cp)
 }
@@ -177,8 +178,8 @@ func (g *Game) GetDuration(r *data.Resource, quantity float64) time.Duration {
 }
 
 func (g *Game) Update(now time.Time) {
-	elapsed := now.Sub(g.Now)
-	g.Now = now
+	elapsed := now.Sub(g.now)
+	g.now = now
 	g.GetResource("time").Quantity += float64(elapsed / time.Second)
 	for _, resource := range g.Resources {
 		if resource.StartCapacity > 0 {
@@ -234,7 +235,7 @@ func (g *Game) Act(in string) (data.ParsedInput, error) {
 			if r.ProducerAction == "" {
 				continue
 			}
-			nested := fmt.Sprintf("%d", g.ActionToIndex[r.ProducerAction])
+			nested := fmt.Sprintf("%d", g.actionToIndex[r.ProducerAction])
 			need := int(g.GetNeededNestedAction(input.Action, c))
 			for i := 0; i < need; i++ {
 				if _, err := g.Act(nested); err != nil {
@@ -376,8 +377,8 @@ func (g *Game) GetNeededNestedAction(a data.Action, c data.Resource) float64 {
 
 func (g *Game) TimeSkip(skip time.Duration) {
 	g.GetResource("skip").Quantity += float64(skip / time.Second)
-	now := g.Now
-	g.Now = time.Time(now.Add(-skip))
+	now := g.now
+	g.now = time.Time(now.Add(-skip))
 	g.Update(now)
 }
 
@@ -498,11 +499,11 @@ func (g *Game) UpdateRate(resource *data.Resource) {
 }
 
 func (g *Game) GetResource(name string) *data.Resource {
-	return g.Resources[g.ResourceToIndex[name]]
+	return g.Resources[g.resourceToIndex[name]]
 }
 
 func (g *Game) GetAction(name string) data.Action {
-	return g.Actions[g.ActionToIndex[name]]
+	return g.Actions[g.actionToIndex[name]]
 }
 
 func (g *Game) GetCost(a data.Action, c data.Resource) float64 {
@@ -514,11 +515,11 @@ func (g *Game) GetCost(a data.Action, c data.Resource) float64 {
 }
 
 func (g *Game) HasResource(name string) bool {
-	_, ok := g.ResourceToIndex[name]
+	_, ok := g.resourceToIndex[name]
 	return ok
 }
 
 func (g *Game) HasAction(name string) bool {
-	_, ok := g.ActionToIndex[name]
+	_, ok := g.actionToIndex[name]
 	return ok
 }
