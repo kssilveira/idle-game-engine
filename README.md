@@ -81,8 +81,8 @@ Edges:
 
 More features from kittens game:
 
-- change solve commands to string
 - split kittens file
+- hide custom actions from test output
 
 - Bonfire building upgrades
 - Bonfire effects for

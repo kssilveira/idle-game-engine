@@ -301,7 +301,7 @@
       "Producers": [
         {
           "Name": "woodcutter",
-          "Factor": 0.009,
+          "Factor": 0.09,
           "Bonus": [
             {
               "Name": "happiness",

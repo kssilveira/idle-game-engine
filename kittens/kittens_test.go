@@ -174,7 +174,9 @@ func TestRun(t *testing.T) {
 		g := NewGame(nowfn)
 		go func() {
 			if len(in.iters) == 0 {
-				Solve(g, input, 0 /* sleepMS */)
+				if err := Solve(g, input, 0 /* sleepMS */); err != nil {
+					t.Errorf("[%s] Solve err %v", in.name, err)
+				}
 			}
 			for _, one := range in.iters {
 				cmd, err := toInput(g, one.input)

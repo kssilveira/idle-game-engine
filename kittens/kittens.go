@@ -76,7 +76,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
 		Producers: []data.Resource{{
-			Name: "woodcutter", Factor: 0.0018 * 5,
+			Name: "woodcutter", Factor: 0.018 * 5,
 			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}, {
@@ -1379,53 +1379,31 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture",
 
 		"s Mining", "s Mine", "s Hut", "s miner", "s farmer", "m Mine",
-		"m Workshop",
+		"m Workshop", "s Mineral Hoes", "s Mineral Axe", "s Bolas",
+		"s Metal Working",
 
-		/*
-			"s Civil Service",
-			"s Mathematics",
-			"s Celestial Mechanics",
+		"s Smelter", "s Hut", "s woodcutter", "s farmer", "Active Smelter",
+		"s Iron Hoes", "s Iron Axe",
 
-				"s Construction",
-				"s Engineering",
-				"s Currency",
-				"s Catnipenrichment",
+		"s Expanded Barns",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
+		"s Hunting Armor",
 
-				"s Academy",
-				"s Mineralhoes",
-				"s Mineralaxe",
-				"s Bolas",
-				{[]string{woodcutter}, 1}, // hut
-				{[]string{s + loghouse, loghouse, s + woodcutter, woodcutter}, 7},
-				{[]string{s + loghouse, loghouse, s + miner, miner}, 1},
-				{[]string{s + loghouse, loghouse, s + farmer, farmer}, 10},
+		"s Civil Service", "s Mathematics",
+		"m Academy",
+		"s Celestial Mechanics",
 
-				"s Metalworking",
-				"s Smelter",
-				{[]string{activesmelter}, 1},
-				"s Ironhoes",
-				"s Ironaxe",
-				"s Compositebow",
-				"s Expandedbarns",
-				{[]string{
-					s + reinforcedbarns, m + reinforcedbarns,
-					s + reinforcedbarns, m + reinforcedbarns, reinforcedbarns}, 1},
-				{[]string{s + warehouse, m + warehouse, warehouse}, 11},
+		"s Construction", "s Catnip Enrichment", "s Composite Bow",
+		"m Reinforced Barns",
+		"s Warehouse",
+		"s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse",
+		"s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
+		"m Academy", "m Lumber Mill",
+		"s Reinforced Saw",
 
-				"s Barn",
-				"s "Catnip Field"",
-				{[]string{s + hut, hut, s + farmer, farmer}, 5},
-				"s Library",
-				"s Mine",
-				"s Workshop",
-				"s Smelter",
-				"s Pasture",
-				"s Academy",
-				{[]string{s + loghouse, loghouse, s + farmer, farmer}, 20},
-
-				"s Huntingarmor",
-				"s Reinforcedsaw",
-				//*/
+		"s Engineering", "m Aqueduct",
+		"s Currency",
 	}
 	for _, cmd := range cmds {
 		in, err := toInput(g, cmd)

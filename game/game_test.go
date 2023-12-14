@@ -143,8 +143,11 @@ func TestAct(t *testing.T) {
 				Name: "resource", Quantity: 1,
 			}},
 		}},
-		inputs: []string{"0", "s0", "c0", "0", "s0", "c0", "0"},
-		want:   []int{0, 0, 2, 0, 0, 4, 0},
+		inputs: []string{"0", "s0", "s0"},
+		want:   []int{0, 0, 0},
+		wantResources: map[string]int{
+			"producer": 3,
+		},
 	}, {
 		name: "make partial producer action",
 		resources: []data.Resource{{
@@ -177,8 +180,11 @@ func TestAct(t *testing.T) {
 				Name: "resource", Quantity: 1,
 			}},
 		}},
-		inputs: []string{"0", "s0", "c0", "0", "s0", "c0", "s0", "c0", "0"},
-		want:   []int{0, 0, 2, 0, 0, 2, 2, 4, 0},
+		inputs: []string{"0", "s0", "s0", "s0"},
+		want:   []int{0, 0, 2, 0},
+		wantResources: map[string]int{
+			"producer": 3,
+		},
 	}, {
 		name: "add 1 capacity",
 		resources: []data.Resource{{

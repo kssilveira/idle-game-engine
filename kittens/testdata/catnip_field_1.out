@@ -7,8 +7,8 @@
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 9/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 9/10) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: 
 ###
@@ -20,8 +20,8 @@ last action:
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 9/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 9/10) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Catnip Field
 error: not enough catnip
@@ -34,8 +34,8 @@ error: not enough catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 10/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
@@ -47,8 +47,8 @@ last action: Gather catnip
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Catnip Field
 ###
@@ -60,8 +60,8 @@ last action: Catnip Field
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 10.31/100 1m35s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 10.31/11.20) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
@@ -74,8 +74,8 @@ error: action Gather catnip is locked
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
@@ -88,8 +88,8 @@ error: action Gather catnip is locked
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
@@ -102,8 +102,8 @@ error: action Gather catnip is locked
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
@@ -116,8 +116,8 @@ error: action Gather catnip is locked
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
@@ -130,8 +130,8 @@ error: action Gather catnip is locked
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
-sX: time skip and buy action X
-cX: create inputs for action X
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
