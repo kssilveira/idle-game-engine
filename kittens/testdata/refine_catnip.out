@@ -20,7 +20,7 @@ last action:
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut -(wood 1/5) +(kitten cap 2, Hut 1)
+XX: [Bonfire] Hut -(wood 1/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 1/25) +(Library 1)
 sX: time skip until action X is available
 mX: make inputs for action X
@@ -32,7 +32,7 @@ last action: Refine catnip
 [Resource] wood 2/200
 [Village] happiness 1.10
 XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Hut -(wood 2/5) +(kitten cap 2, Hut 1)
+XX: [Bonfire] Hut -(wood 2/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 2/25) +(Library 1)
 sX: time skip until action X is available
 mX: make inputs for action X

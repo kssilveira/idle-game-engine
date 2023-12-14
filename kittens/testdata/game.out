@@ -1953,12 +1953,12 @@
       ],
       "Adds": [
         {
-          "Name": "kitten",
-          "Capacity": 2
-        },
-        {
           "Name": "Hut",
           "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 2
         }
       ]
     },
@@ -2184,12 +2184,12 @@
       ],
       "Adds": [
         {
-          "Name": "kitten",
-          "Capacity": 1
-        },
-        {
           "Name": "Log House",
           "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
         }
       ]
     },
@@ -2234,12 +2234,12 @@
       ],
       "Adds": [
         {
-          "Name": "kitten",
-          "Capacity": 1
-        },
-        {
           "Name": "Mansion",
           "Quantity": 1
+        },
+        {
+          "Name": "kitten",
+          "Capacity": 1
         }
       ]
     },

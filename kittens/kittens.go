@@ -1262,9 +1262,9 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		}
 		action.Name = name
 		action.Type = "Bonfire"
-		action.Adds = append(action.Adds, data.Resource{
+		action.Adds = append([]data.Resource{{
 			Name: action.Name, Quantity: 1,
-		})
+		}}, action.Adds...)
 		g.AddAction(action)
 		g.AddResource(data.Resource{
 			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: -1,
