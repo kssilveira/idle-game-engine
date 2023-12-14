@@ -255,15 +255,15 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Reactor", ProductionFactor: 250,
 		}},
 	}, {
-		Name: "unobtainium", Type: "Resource", StartCapacity: 1,
+		Name: "unobtainium", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "time crystal", Type: "Resource", StartCapacity: 1,
+		Name: "time crystal", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "antimatter", Type: "Resource", StartCapacity: 1,
+		Name: "antimatter", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "relic", Type: "Resource", StartCapacity: 1,
+		Name: "relic", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "void", Type: "Resource", StartCapacity: 1,
+		Name: "void", Type: "Resource", Capacity: 1,
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{

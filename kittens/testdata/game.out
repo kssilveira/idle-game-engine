@@ -730,27 +730,27 @@
     {
       "Name": "unobtainium",
       "Type": "Resource",
-      "StartCapacity": 1
+      "Capacity": 1
     },
     {
       "Name": "time crystal",
       "Type": "Resource",
-      "StartCapacity": 1
+      "Capacity": 1
     },
     {
       "Name": "antimatter",
       "Type": "Resource",
-      "StartCapacity": 1
+      "Capacity": 1
     },
     {
       "Name": "relic",
       "Type": "Resource",
-      "StartCapacity": 1
+      "Capacity": 1
     },
     {
       "Name": "void",
       "Type": "Resource",
-      "StartCapacity": 1
+      "Capacity": 1
     },
     {
       "Name": "kitten",

@@ -400,6 +400,22 @@ func (g *Game) ValidateResource(r *data.Resource) error {
 			}
 		}
 	}
+	if r.StartQuantity != 0 {
+		if r.Quantity != 0 {
+			return fmt.Errorf("resource %s has StartQuantity and Quantity", r.Name)
+		}
+		if len(r.Producers) == 0 {
+			return fmt.Errorf("resource %s has StartQuantity and no Producers", r.Name)
+		}
+	}
+	if r.StartCapacity != 0 || len(r.CapacityProducers) > 0 {
+		if r.Capacity != 0 {
+			return fmt.Errorf("resource %s should not set Capacity", r.Name)
+		}
+		if r.StartCapacity == 0 || len(r.CapacityProducers) == 0 {
+			return fmt.Errorf("resource %s should set StartCapacity and CapacityProducers", r.Name)
+		}
+	}
 	return nil
 }
 

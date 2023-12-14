@@ -80,9 +80,6 @@ Edges:
 
 More features from kittens game:
 
-- change production resource factor to production bonus
-- validate capacityproducers with startcapacity and without capacity
-- dont set quantity and startquantity
 - change production factor to just factor
 - change production bonus to bonus
 - make functions and attributes private
