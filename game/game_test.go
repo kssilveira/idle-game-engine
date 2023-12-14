@@ -72,8 +72,11 @@ func TestAct(t *testing.T) {
 				Name: "producer", Quantity: 1,
 			}},
 		}},
-		inputs: []string{"0", "s0", "0", "s0", "0"},
-		want:   []int{0, 3, 1, 5, 1},
+		inputs: []string{"0", "s0", "s0"},
+		want:   []int{0, 1, 1},
+		wantResources: map[string]int{
+			"producer": 3,
+		},
 	}, {
 		name: "skip producer action",
 		resources: []data.Resource{{

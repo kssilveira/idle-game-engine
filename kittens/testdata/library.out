@@ -11,7 +11,7 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: 
@@ -30,7 +30,7 @@ XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (1) -(wood 28.75) +(Library 1)
 XX: [Village] scholar -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0/30) +(Calendar 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Library
@@ -51,7 +51,7 @@ XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (1) -(wood 28.75) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: scholar
@@ -72,7 +72,7 @@ XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (1) -(wood 28.75) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
@@ -93,7 +93,7 @@ XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Library
@@ -114,7 +114,7 @@ XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0.43/30 2m12s) +(Calendar 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
@@ -134,7 +134,7 @@ XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [*] [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 XX: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: scholar
@@ -154,7 +154,7 @@ XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (2) -(wood 33.06) +(Library 1)
 XX: [*] [Village] scholar (2) -(kitten 0/1* 20s) +(scholar 1)
 XX: [Science] Calendar -(science 0.87/30 1m5s) +(Calendar 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip

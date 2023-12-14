@@ -63,7 +63,7 @@ func TestRun(t *testing.T) {
 		},
 		iters: []iter{
 			{"Catnip Field", 0}, {"Gather catnip", 1},
-			{"s Catnip Field", 0}, {"Catnip Field", 0},
+			{"s Catnip Field", 0},
 			{"Gather catnip", 1},
 		},
 	}, {

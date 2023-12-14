@@ -144,7 +144,7 @@ func (g *Game) populateUIActions(data *ui.Data) {
 		data.Actions = append(data.Actions, action)
 	}
 	data.CustomActions = []ui.CustomAction{{
-		Name: "sX: time skip until action X is available",
+		Name: "sX: time skip and buy action X",
 	}, {
 		Name: "cX: create inputs for action X",
 	}, {
@@ -229,7 +229,6 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		if skipTime > 0 {
 			g.timeSkip(skipTime)
 		}
-		return input, nil
 	}
 	if input.IsCreate {
 		for _, c := range input.Action.Costs {
@@ -248,17 +247,25 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		return input, nil
 	}
 	if input.IsMax {
+		prefixes := []string{"s", "s", "c", ""}
 		for {
+			errors := 0
 			for _, prefix := range []string{"s", "s", "c", ""} {
 				if _, err := g.act(fmt.Sprintf("%s%d", prefix, input.Index)); err != nil {
-					return input, nil
+					errors++
 				}
+			}
+			if errors == len(prefixes)-1 {
+				break
 			}
 		}
 		return input, nil
 	}
 	for _, c := range input.Action.Costs {
 		if g.GetResource(c.Name).Quantity < g.getCost(input.Action, c) {
+			if input.IsSkip {
+				return input, nil
+			}
 			return input, fmt.Errorf("not enough %s", c.Name)
 		}
 	}

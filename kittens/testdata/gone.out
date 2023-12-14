@@ -15,7 +15,7 @@ XX: [Village] farmer -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 0/30) +(Calendar 1)
 XX: [Science] Archery -(science 0/300) +(Archery 1)
 XX: [Science] Mining -(science 0/500) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: 
@@ -39,7 +39,7 @@ XX: [Village] farmer -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 0/30) +(Calendar 1)
 XX: [Science] Archery -(science 0/300) +(Archery 1)
 XX: [Science] Mining -(science 0/500) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: woodcutter
@@ -63,7 +63,7 @@ XX: [Village] farmer -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 0/30) +(Calendar 1)
 XX: [Science] Archery -(science 0/300) +(Archery 1)
 XX: [Science] Mining -(science 0/500) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip
@@ -89,7 +89,7 @@ XX: [Village] farmer -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 XX: [Science] Archery -(science 0.20/300 25m26s) +(Archery 1)
 XX: [Science] Mining -(science 0.20/500 42m25s) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: scholar
@@ -114,7 +114,7 @@ XX: [Village] farmer -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 0.20/30 2m31s) +(Calendar 1)
 XX: [Science] Archery -(science 0.20/300 25m26s) +(Archery 1)
 XX: [Science] Mining -(science 0.20/500 42m25s) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip
@@ -140,7 +140,7 @@ XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 0.39/30 2m30s) +(Calendar 1)
 XX: [Science] Archery -(science 0.39/300 25m25s) +(Archery 1)
 XX: [Science] Mining -(science 0.39/500 42m24s) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: farmer
@@ -165,7 +165,7 @@ XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 15.90/30 1m11s) +(Calendar 1)
 XX: [Science] Archery -(science 15.90/300 24m6s) +(Archery 1)
 XX: [Science] Mining -(science 15.90/500 41m5s) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip
@@ -191,7 +191,7 @@ XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
 XX: [Science] Calendar -(science 16.10/30 1m10s) +(Calendar 1)
 XX: [Science] Archery -(science 16.10/300 24m5s) +(Archery 1)
 XX: [Science] Mining -(science 16.10/500 41m4s) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip
@@ -216,7 +216,7 @@ XX: [Village] farmer (1) -(kitten 0.05/1 18s) +(farmer 1)
 XX: [Science] Calendar -(science 16.30/30 1m8s) +(Calendar 1)
 XX: [Science] Archery -(science 16.30/300 23m37s) +(Archery 1)
 XX: [Science] Mining -(science 16.30/500 40m16s) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip
@@ -241,7 +241,7 @@ XX: [Village] farmer (1) -(kitten 0.10/1 18s) +(farmer 1)
 XX: [Science] Calendar -(science 16.50/30 1m6s) +(Calendar 1)
 XX: [Science] Archery -(science 16.50/300 23m9s) +(Archery 1)
 XX: [Science] Mining -(science 16.50/500 39m29s) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip
@@ -266,7 +266,7 @@ XX: [Village] farmer (1) -(kitten 0.15/1 17s) +(farmer 1)
 XX: [Science] Calendar -(science 16.50/30) +(Calendar 1)
 XX: [Science] Archery -(science 16.50/300) +(Archery 1)
 XX: [Science] Mining -(science 16.50/500) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip
@@ -291,7 +291,7 @@ XX: [Village] farmer (1) -(kitten 0.15/1 17s) +(farmer 1)
 XX: [Science] Calendar -(science 16.50/30) +(Calendar 1)
 XX: [Science] Archery -(science 16.50/300) +(Archery 1)
 XX: [Science] Mining -(science 16.50/500) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Refine catnip

@@ -4,7 +4,7 @@
 [Calendar] day_of_year 1
 [Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: 
@@ -17,7 +17,7 @@ last action:
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
@@ -30,7 +30,7 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip

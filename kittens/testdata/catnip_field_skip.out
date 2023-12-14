@@ -7,7 +7,7 @@
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 10/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: 
@@ -20,7 +20,7 @@ last action:
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Catnip Field
@@ -33,22 +33,22 @@ last action: Catnip Field
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
-[Calendar] time 12
+[Calendar] time 13
 [Calendar] skip 11
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
-[Resource] catnip 11.25/5000 0.94/s 1h28m41s to cap
+[Resource] catnip 1.92/5000 1.88/s 44m25s to cap
 [Village] happiness 0.10
-XX: [Bonfire] Refine catnip -(catnip 11.25/100 1m34s) +(wood 1)
-XX: [Bonfire] Catnip Field (1) -(catnip 11.20) +(Catnip Field 1)
-sX: time skip until action X is available
+XX: [Bonfire] Refine catnip -(catnip 1.92/100 52s) +(wood 1)
+XX: [Bonfire] Catnip Field (2) -(catnip 1.92/12.54 5s) +(Catnip Field 1)
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: skip Catnip Field
@@ -62,21 +62,7 @@ last action: skip Catnip Field
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 1.92/100 52s) +(wood 1)
 XX: [Bonfire] Catnip Field (2) -(catnip 1.92/12.54 5s) +(Catnip Field 1)
-sX: time skip until action X is available
-cX: create inputs for action X
-mX: max action X (skip, create, buy)
-last action: Catnip Field
-###
-[Calendar] time 13
-[Calendar] skip 11
-[Calendar] year 1.01 (1 + 0.01)
-[Calendar] Spring 1 (1 if 0.06 % 4 == 0)
-[Calendar] day_of_year 7 (1 + 6 % 400)
-[Resource] catnip 1.92/5000 1.88/s 44m25s to cap
-[Village] happiness 0.10
-XX: [Bonfire] Refine catnip -(catnip 1.92/100 52s) +(wood 1)
-XX: [Bonfire] Catnip Field (2) -(catnip 1.92/12.54 5s) +(Catnip Field 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip

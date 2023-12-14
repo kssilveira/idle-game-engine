@@ -12,7 +12,7 @@ XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [Village] farmer -(kitten 1) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: 
@@ -31,7 +31,7 @@ XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: farmer
@@ -50,7 +50,7 @@ XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
@@ -68,7 +68,7 @@ XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: farmer
@@ -86,7 +86,7 @@ XX: [Bonfire] Barn -(wood 0/50) +(Barn 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip

@@ -9,7 +9,7 @@ XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Village] woodcutter -(kitten 1) +(woodcutter 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: 
@@ -27,7 +27,7 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.01/12.50 21m49s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 0.01/25 43m39s) +(Library 1)
 XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: woodcutter
@@ -45,7 +45,7 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.01/12.50 21m49s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 0.01/25 43m39s) +(Library 1)
 XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
@@ -62,7 +62,7 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.03/12.50 10m53s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 0.03/25 21m48s) +(Library 1)
 XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: woodcutter
@@ -79,7 +79,7 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 0.03/12.50 10m53s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 0.03/25 21m48s) +(Library 1)
 XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
-sX: time skip until action X is available
+sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: Gather catnip
