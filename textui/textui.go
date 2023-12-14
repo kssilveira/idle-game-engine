@@ -12,8 +12,8 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActio
 	if separator != "" {
 		logger.Printf("%s", separator)
 	}
-	ShowResources(logger, data)
-	ShowActions(logger, data, isHTML, showActionNumber)
+	showResources(logger, data)
+	showActions(logger, data, isHTML, showActionNumber)
 	skip := ""
 	if data.LastInput.IsSkip {
 		skip = "skip "
@@ -28,7 +28,7 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActio
 	}
 }
 
-func ShowResources(logger *log.Logger, data *ui.Data) {
+func showResources(logger *log.Logger, data *ui.Data) {
 	for _, d := range data.Resources {
 		r := d.Resource
 		if r.IsHidden || r.Quantity == 0 {
@@ -70,7 +70,7 @@ func ShowResources(logger *log.Logger, data *ui.Data) {
 	}
 }
 
-func ShowActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber bool) {
+func showActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber bool) {
 	for i, a := range data.Actions {
 		if a.Locked {
 			continue
