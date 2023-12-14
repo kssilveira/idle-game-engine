@@ -3862,3 +3862,1250 @@ sX: time skip, create inputs and buy action X
 cX: create inputs and buy action X
 mX: max action X (skip, create, buy)
 last action: max Reinforced Barns
+###
+[Calendar] time 902022
+[Calendar] skip 901898
+[Calendar] year 1128.53 (1 + 1127.53)
+[Calendar] Autumn 1 (1 if 4510.11 % 4 == 2)
+[Calendar] day_of_year 212 (1 + 451011 % 400)
+[Resource] catnip 40235.15/45000 58.79/s 1m21s to cap
+[Resource] wood 229.89/4430 0.15/s 7h59m27s to cap
+[Resource] science 20160.82/23500 1.80/s 30m52s to cap
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 2252/5550 1/s 54m58s to cap
+[Resource] iron 550.30/1095 0.10/s 1h30m46s to cap
+[Resource] unicorns 32677.07 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.78
+[Resource] slab 0.12
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 40235.15/49130.56* 2m31s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 229.89/488.28 29m29s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 229.89/3329.39 5h53m49s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 229.89/4398.19 7h55m50s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 229.89/3291.90 5h49m32s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 229.89/1076.13 1h36m36s, minerals 2252/4304.51 34m12s) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 2252/3764.30 25m12s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 229.89/3080.43 5h25m24s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 229.89/2878.77 5h2m23s, minerals 2252/4030.28 29m38s, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (1) -(beam 1.72, slab 0.12/2.30 (minerals 500)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.78/625 (wood 229.89/54075 102h26m42s), slab 0.12/1250 (minerals 2252/154750 42h21m38s), plate 0/125 (iron 550.30/7750 19h59m57s)), scaffold 0/50 (beam 1.78/1250 (wood 229.89/108150 205h19m38s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.78/50 (wood 229.89/4200 7h33m12s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.78/25 (wood 229.89/2100 3h33m29s), slab 0.12/50 (minerals 2252/6250 1h6m38s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 550.30/1000 1h14m56s, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 902023
+[Calendar] skip 901898
+[Calendar] year 1128.53 (1 + 1127.53)
+[Calendar] Autumn 1 (1 if 4510.11 % 4 == 2)
+[Calendar] day_of_year 212 (1 + 451011 % 400)
+[Resource] catnip 40293.94/45000 58.79/s 1m20s to cap
+[Resource] wood 230.03/4580 0.15/s 8h16m34s to cap
+[Resource] science 20162.62/23500 1.80/s 30m51s to cap
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 1753/5750 1/s 1h6m37s to cap
+[Resource] iron 550.40/1120 0.10/s 1h34m55s to cap
+[Resource] unicorns 32677.13 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 0.05
+[Resource] slab 1.86
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 40293.94/49130.56* 2m30s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 230.03/488.28 29m28s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 230.03/3329.39 5h53m48s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 230.03/4398.19 7h55m49s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 230.03/3291.90 5h49m31s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 230.03/1076.13 1h36m35s, minerals 1753/4304.51 42m31s) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 1753/3764.30 33m31s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 230.03/3080.43 5h25m23s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 230.03/2878.77 5h2m22s, minerals 1753/4030.28 37m57s, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (2) -(beam 0.05/1.98 (wood 175), slab 1.86/2.64 (minerals 250)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 0.05/625 (wood 230.03/54250 102h46m39s), slab 1.86/1250 (minerals 1753/154500 42h25m47s), plate 0/125 (iron 550.40/7750 19h59m56s)), scaffold 0/50 (beam 0.05/1250 (wood 230.03/108325 205h39m36s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 0.05/50 (wood 230.03/4375 7h53m10s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 0.05/25 (wood 230.03/2275 3h53m26s), slab 1.86/50 (minerals 1753/6000 1h10m47s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 550.40/1000 1h14m55s, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 902024
+[Calendar] skip 901898
+[Calendar] year 1128.53 (1 + 1127.53)
+[Calendar] Autumn 1 (1 if 4510.12 % 4 == 2)
+[Calendar] day_of_year 213 (1 + 451012 % 400)
+[Resource] catnip 40352.73/45000 58.79/s 1m19s to cap
+[Resource] wood 55.18/4730 0.15/s 8h53m39s to cap
+[Resource] science 20164.42/23500 1.80/s 30m50s to cap
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 1504/5950 1/s 1h14m6s to cap
+[Resource] iron 550.50/1145 0.10/s 1h39m4s to cap
+[Resource] unicorns 32677.18 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 0.09
+[Resource] slab 1.24
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 40352.73/49130.56* 2m29s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 55.18/488.28 49m26s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 55.18/3329.39 6h13m46s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 55.18/4398.19 8h15m46s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 55.18/3291.90 6h9m29s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 55.18/1076.13 1h56m32s, minerals 1504/4304.51 46m40s) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 1504/3764.30 37m40s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 55.18/3080.43 5h45m20s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 55.18/2878.77 5h22m19s, minerals 1504/4030.28 42m6s, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (3) -(beam 0.09/2.28 (wood 55.18/350 33m39s), slab 1.24/3.04 (minerals 250)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 55.18/200 16m31s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 55.18/100 5m7s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 0.09/625 (wood 55.18/54250 103h6m37s), slab 1.24/1250 (minerals 1504/154750 42h34m6s), plate 0/125 (iron 550.50/7750 19h59m55s)), scaffold 0/50 (beam 0.09/1250 (wood 55.18/108325 205h59m34s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 55.18/175 13m40s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 0.09/50 (wood 55.18/4375 8h13m7s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 0.09/25 (wood 55.18/2275 4h13m24s), slab 1.24/50 (minerals 1504/6250 1h19m6s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 550.50/1000 1h14m54s, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 904045
+[Calendar] skip 903918
+[Calendar] year 1131.06 (1 + 1130.06)
+[Calendar] Spring 1 (1 if 4520.22 % 4 == 0)
+[Calendar] day_of_year 23 (1 + 452022 % 400)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.24/4880 0.15/s 9h17m2s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 3275/6150 1/s 47m55s to cap
+[Resource] iron 752.60/1170 0.10/s 1h9m33s to cap
+[Resource] unicorns 32788.34 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.85
+[Resource] slab 0.21
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.24/488.28 55m42s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.24/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.24/4398.19 8h22m2s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.24/3291.90 6h15m45s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.24/1076.13 2h2m49s, minerals 3275/4304.51 17m9s) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3275/3764.30 8m9s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.24/3080.43 5h51m37s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.24/2878.77 5h28m35s, minerals 3275/4030.28 12m35s, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (4) -(beam 1.85/2.62 (wood 0.24/175 19m56s), slab 0.21/3.50 (minerals 500)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.24/200 22m48s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.24/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.85/625 (wood 0.24/54075 102h52m55s), slab 0.21/1250 (minerals 3275/154750 42h4m35s), plate 0/125 (iron 752.60/7750 19h26m13s)), scaffold 0/50 (beam 1.85/1250 (wood 0.24/108150 205h45m51s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.24/175 19m56s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.85/50 (wood 0.24/4200 7h59m25s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.85/25 (wood 0.24/2100 3h59m41s), slab 0.21/50 (minerals 3275/6250 49m35s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 752.60/1000 41m13s, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 905243
+[Calendar] skip 905115
+[Calendar] year 1132.55 (1 + 1131.55)
+[Calendar] Autumn 1 (1 if 4526.21 % 4 == 2)
+[Calendar] day_of_year 222 (1 + 452621 % 400)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 0.15/5030 0.15/s 9h34m11s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 3973/6350 1/s 39m37s to cap
+[Resource] iron 872.40/1195 0.10/s 53m45s to cap
+[Resource] unicorns 32854.23 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.25
+[Resource] slab 0.76
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.15/488.28 55m43s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.15/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.15/4398.19 8h22m3s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.15/3291.90 6h15m46s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.15/1076.13 2h2m49s, minerals 3973/4304.51 5m31s) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.15/3080.43 5h51m37s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.15/2878.77 5h28m36s, minerals 3973/4030.28 57s, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (5) -(beam 1.25/3.02 (wood 0.15/175 19m57s), slab 0.76/4.02 (minerals 500)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.15/200 22m48s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.15/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.25/625 (wood 0.15/54075 102h52m55s), slab 0.76/1250 (minerals 3973/154750 41h52m57s), plate 0/125 (iron 872.40/7750 19h6m15s)), scaffold 0/50 (beam 1.25/1250 (wood 0.15/108325 206h5m51s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.15/175 19m57s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.25/50 (wood 0.15/4375 8h19m24s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.25/25 (wood 0.15/2100 3h59m42s), slab 0.76/50 (minerals 3973/6250 37m57s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 872.40/1000 21m15s, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 906442
+[Calendar] skip 906313
+[Calendar] year 1134.05 (1 + 1133.05)
+[Calendar] Spring 1 (1 if 4532.21 % 4 == 0)
+[Calendar] day_of_year 22 (1 + 453221 % 400)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.21/5180 0.15/s 9h51m18s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 4672/6550 1/s 31m18s to cap
+[Resource] iron 992.30/1220 0.10/s 37m56s to cap
+[Resource] unicorns 32920.17 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 0.25
+[Resource] slab 0.77
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.21/488.28 55m42s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.21/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.21/4398.19 8h22m3s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.21/3291.90 6h15m45s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.21/1076.13 2h2m49s, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.21/3080.43 5h51m37s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.21/2878.77 5h28m36s, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (6) -(beam 0.25/3.47 (wood 0.21/350 39m55s), slab 0.77/4.63 (minerals 500)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.21/200 22m48s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.21/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 0.25/625 (wood 0.21/54250 103h12m53s), slab 0.77/1250 (minerals 4672/154750 41h41m18s), plate 0/125 (iron 992.30/7750 18h46m17s)), scaffold 0/50 (beam 0.25/1250 (wood 0.21/108325 206h5m50s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.21/175 19m57s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 0.25/50 (wood 0.21/4375 8h19m24s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 0.25/25 (wood 0.21/2275 4h19m40s), slab 0.77/50 (minerals 4672/6250 26m18s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 992.30/1000 1m16s, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 908839
+[Calendar] skip 908709
+[Calendar] year 1137.05 (1 + 1136.05)
+[Calendar] Spring 1 (1 if 4544.19 % 4 == 0)
+[Calendar] day_of_year 20 (1 + 454419 % 400)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.17/5330 0.15/s 10h8m25s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 6051/6750 1/s 11m39s to cap
+[Resource] iron 1220.10/1245 0.10/s 4m9s to cap
+[Resource] unicorns 33052.01 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 0.82
+[Resource] slab 0.19
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.17/488.28 55m43s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.17/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.17/4398.19 8h22m3s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.17/3291.90 6h15m46s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.17/1076.13 2h2m49s, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.17/3080.43 5h51m37s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.17/2878.77 5h28m36s, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (7) -(beam 0.82/3.99 (wood 0.17/350 39m56s), slab 0.19/5.32 (minerals 750)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.17/200 22m48s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.17/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 0.82/625 (wood 0.17/54250 103h12m54s), slab 0.19/1250 (minerals 6051/154750 41h18m19s), plate 0/125 (iron 1220.10/7750 18h8m18s)), scaffold 0/50 (beam 0.82/1250 (wood 0.17/108325 206h5m50s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.17/175 19m57s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 0.82/50 (wood 0.17/4375 8h19m24s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 0.82/25 (wood 0.17/2100 3h59m42s), slab 0.19/50 (minerals 6051/6250 3m19s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 911237
+[Calendar] skip 911106
+[Calendar] year 1140.05 (1 + 1139.05)
+[Calendar] Spring 1 (1 if 4556.18 % 4 == 0)
+[Calendar] day_of_year 19 (1 + 455618 % 400)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.28/5480 0.15/s 10h25m32s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 6001/6950 1/s 15m49s to cap
+[Resource] iron 1245.10/1270 0.10/s 4m9s to cap
+[Resource] unicorns 33183.90 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 0.87
+[Resource] slab 0.93
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.28/488.28 55m42s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.28/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.28/4398.19 8h22m2s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.28/3291.90 6h15m45s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.28/1076.13 2h2m48s, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.28/3080.43 5h51m36s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.28/2878.77 5h28m35s, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (8) -(beam 0.87/4.59 (wood 0.28/350 39m55s), slab 0.93/6.12 (minerals 750)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.28/200 22m47s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.28/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 0.87/625 (wood 0.28/54075 102h52m54s), slab 0.93/1250 (minerals 6001/154750 41h19m9s), plate 0/125 (iron 1245.10/7750 18h4m8s)), scaffold 0/50 (beam 0.87/1250 (wood 0.28/108325 206h5m50s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.28/175 19m56s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 0.87/50 (wood 0.28/4375 8h19m23s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 0.87/25 (wood 0.28/2100 3h59m41s), slab 0.93/50 (minerals 6001/6250 4m9s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 913634
+[Calendar] skip 913502
+[Calendar] year 1143.04 (1 + 1142.04)
+[Calendar] Spring 1 (1 if 4568.17 % 4 == 0)
+[Calendar] day_of_year 18 (1 + 456817 % 400)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.24/5630 0.15/s 10h42m40s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 6201/7150 1/s 15m49s to cap
+[Resource] iron 1270.10/1295 0.10/s 4m9s to cap
+[Resource] unicorns 33315.73 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 0.32
+[Resource] slab 0.87
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.24/488.28 55m42s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.24/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.24/4398.19 8h22m2s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.24/3291.90 6h15m45s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.24/1076.13 2h2m49s, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.24/3080.43 5h51m37s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.24/2878.77 5h28m35s, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (9) -(beam 0.32/5.28 (wood 0.24/525 59m54s), slab 0.87/7.04 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.24/200 22m48s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.24/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 0.32/625 (wood 0.24/54250 103h12m53s), slab 0.87/1250 (minerals 6201/154750 41h15m49s), plate 0/125 (iron 1270.10/7750 17h59m58s)), scaffold 0/50 (beam 0.32/1250 (wood 0.24/108325 206h5m50s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.24/175 19m57s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 0.32/50 (wood 0.24/4375 8h19m24s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 0.32/25 (wood 0.24/2275 4h19m40s), slab 0.87/50 (minerals 6201/6250 49s), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 917230
+[Calendar] skip 917097
+[Calendar] year 1147.54 (1 + 1146.54)
+[Calendar] Autumn 1 (1 if 4586.15 % 4 == 2)
+[Calendar] day_of_year 216 (1 + 458615 % 400)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 0.25/5780 0.15/s 10h59m47s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 6151/7350 1/s 19m59s to cap
+[Resource] iron 1295.10/1320 0.10/s 4m9s to cap
+[Resource] unicorns 33513.51 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.91
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.25/488.28 55m42s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.25/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.25/4398.19 8h22m2s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.25/3291.90 6h15m45s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.25/1076.13 2h2m48s, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.25/3080.43 5h51m37s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.25/2878.77 5h28m35s, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (10) -(beam 1.10/6.07 (wood 0.25/525 59m54s), slab 1.91/8.09 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.25/200 22m48s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.25/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/625 (wood 0.25/54075 102h52m54s), slab 1.91/1250 (minerals 6151/154500 41h12m29s), plate 0/125 (iron 1295.10/7750 17h55m48s)), scaffold 0/50 (beam 1.10/1250 (wood 0.25/108325 206h5m50s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.25/175 19m56s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 0.25/4375 8h19m24s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 0.25/2100 3h59m41s), slab 1.91/50 (minerals 6000), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 920826
+[Calendar] skip 920692
+[Calendar] year 1152.03 (1 + 1151.03)
+[Calendar] Spring 1 (1 if 4604.13 % 4 == 0)
+[Calendar] day_of_year 14 (1 + 460413 % 400)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.27/5930 0.15/s 11h16m54s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 6351/7550 1/s 19m59s to cap
+[Resource] iron 1320.10/1345 0.10/s 4m9s to cap
+[Resource] unicorns 33711.29 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 0.27/488.28 55m42s) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 0.27/3329.39 6h20m2s) +(Library 1)
+XX: [Bonfire] Barn (8) -(wood 0.27/4398.19 8h22m2s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 0.27/3291.90 6h15m45s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 0.27/1076.13 2h2m48s, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 0.27/3080.43 5h51m36s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 0.27/2878.77 5h28m35s, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 0.27/525 59m54s), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 0.27/200 22m48s, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 0.27/100 11m23s, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/625 (wood 0.27/54075 102h52m54s), slab 1.90/1250 (minerals 6351/154500 41h9m9s), plate 0/125 (iron 1320.10/7750 17h51m38s)), scaffold 0/50 (beam 1.10/1250 (wood 0.27/108325 206h5m50s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 0.27/175 19m56s) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 0.27/4375 8h19m23s)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 0.27/2100 3h59m41s), slab 1.90/50 (minerals 6000), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Warehouse
+###
+[Calendar] time 1003668
+[Calendar] skip 1003533
+[Calendar] year 1255.59 (1 + 1254.59)
+[Calendar] Autumn 1 (1 if 5018.34 % 4 == 2)
+[Calendar] day_of_year 235 (1 + 501834 % 400)
+[Resource] catnip 50000/50000 58.79/s
+[Resource] wood 6440/6440 0.15/s
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 38267.60 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [Bonfire] Catnip Field (75) -(catnip 49130.56) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 3329.39) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 2h23m28s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 3291.90) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 1076.13, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 3080.43) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 2878.77, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/625 (wood 6440/54075 90h37m47s), slab 1.90/1250 (minerals 8187.50/154500 40h38m32s), plate 0/125 (iron 1472.50/7750 17h26m15s)), scaffold 0/50 (beam 1.10/1250 (wood 6440/108325 193h50m42s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 4375)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 2100), slab 1.90/50 (minerals 6000), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Barn
+###
+[Calendar] time 1004581
+[Calendar] skip 1004445
+[Calendar] year 1256.73 (1 + 1255.73)
+[Calendar] Autumn 1 (1 if 5022.90 % 4 == 2)
+[Calendar] day_of_year 291 (1 + 502290 % 400)
+[Resource] catnip 50000/50000 59.41/s
+[Resource] wood 6440/6440 0.15/s
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 38317.82 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 1m24s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [Bonfire] Library (35) -(wood 3329.39) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 2h23m28s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 3291.90) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 1076.13, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 3080.43) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 2878.77, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/625 (wood 6440/54075 90h37m47s), slab 1.90/1250 (minerals 8187.50/154500 40h38m32s), plate 0/125 (iron 1472.50/7750 17h26m15s)), scaffold 0/50 (beam 1.10/1250 (wood 6440/108325 193h50m42s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 4375)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 2100), slab 1.90/50 (minerals 6000), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Catnip Field
+###
+[Calendar] time 1160093
+[Calendar] skip 1159956
+[Calendar] year 1451.12 (1 + 1450.12)
+[Calendar] Spring 1 (1 if 5800.46 % 4 == 0)
+[Calendar] day_of_year 47 (1 + 580046 % 400)
+[Resource] catnip 50000/50000 83.16/s
+[Resource] wood 6440/6440 0.15/s
+[Resource] science 24750/24750 1.89/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 46870.98 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 1m0s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 29m17s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 2h23m28s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 3291.90) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 1076.13, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [Bonfire] Pasture (41) -(catnip 30804.31, wood 3080.43) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 2878.77, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/625 (wood 6440/54075 90h37m47s), slab 1.90/1250 (minerals 8187.50/154500 40h38m32s), plate 0/125 (iron 1472.50/7750 17h26m15s)), scaffold 0/50 (beam 1.10/1250 (wood 6440/108325 193h50m42s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 4375)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 2100), slab 1.90/50 (minerals 6000), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Library
+###
+[Calendar] time 1258241
+[Calendar] skip 1258103
+[Calendar] year 1573.80 (1 + 1572.80)
+[Calendar] Winter 1 (1 if 6291.20 % 4 == 3)
+[Calendar] day_of_year 321 (1 + 629120 % 400)
+[Resource] catnip 50000/50000 24.64/s
+[Resource] wood 5387.86/6440 0.15/s 2h0m6s to cap
+[Resource] science 24750/24750 1.89/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 52269.12 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 3m23s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 5387.86/6696.59* 2h29m23s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 5387.86/7696.84* 4h23m34s) +(Barn 1)
+XX: [Bonfire] Mine (25) -(wood 3291.90) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 1076.13, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 2m37s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 2878.77, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/625 (wood 5387.86/54075 92h37m53s), slab 1.90/1250 (minerals 8187.50/154500 40h38m32s), plate 0/125 (iron 1472.50/7750 17h26m15s)), scaffold 0/50 (beam 1.10/1250 (wood 5387.86/108325 195h50m48s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 4375)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 2100), slab 1.90/50 (minerals 6000), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Pasture
+###
+[Calendar] time 1418712
+[Calendar] skip 1418573
+[Calendar] year 1774.39 (1 + 1773.39)
+[Calendar] Summer 1 (1 if 7093.56 % 4 == 1)
+[Calendar] day_of_year 157 (1 + 709356 % 400)
+[Resource] catnip 50000/50000 60.26/s
+[Resource] wood 6440/6440 0.15/s
+[Resource] science 24750/24750 1.89/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 61095.02 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 1m23s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 29m17s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 2h23m28s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 20m40s) +(Mine 1)
+XX: [Bonfire] Workshop (17) -(wood 1076.13, minerals 4304.51) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 1m4s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 2878.77, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/625 (wood 6440/54075 90h37m47s), slab 1.90/1250 (minerals 8187.50/154500 32h30m50s), plate 0/125 (iron 1472.50/7750 17h26m15s)), scaffold 0/50 (beam 1.10/1250 (wood 6440/108325 193h50m42s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.02)
+XX: [Craft] @slab -(minerals 250) +(slab 2.02)
+XX: [Craft] @plate -(iron 125) +(plate 2.02)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.02)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 4375)) +(scaffold 2.02)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.02)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 2100), slab 1.90/50 (minerals 6000), plate 0/5 (iron 375)) +(megalith 2.02)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Mine
+###
+[Calendar] time 1442308
+[Calendar] skip 1442168
+[Calendar] year 1803.88 (1 + 1802.88)
+[Calendar] Winter 1 (1 if 7211.54 % 4 == 3)
+[Calendar] day_of_year 355 (1 + 721154 % 400)
+[Resource] catnip 50000/50000 24.64/s
+[Resource] wood 2629.36/6440 0.15/s 7h15m0s to cap
+[Resource] science 24750/24750 1.89/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 62392.80 0.06/s
+[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 3m23s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 2629.36/6696.59* 7h44m17s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 2629.36/7696.84* 9h38m28s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 2629.36/6621.18* 7h35m41s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [Bonfire] Smelter (21) -(minerals 3764.30) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 2m37s, wood 2629.36/5387.69 5h14m52s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 2629.36/2878.77 28m28s, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 2629.36/41475 73h54m26s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 1472.50/6000 12h34m35s)), scaffold 0/50 (beam 1.10/1100 (wood 2629.36/82950 152h49m1s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 2629.36/3850 2h19m20s)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Workshop
+###
+[Calendar] time 1469087
+[Calendar] skip 1468946
+[Calendar] year 1837.36 (1 + 1836.36)
+[Calendar] Summer 1 (1 if 7345.43 % 4 == 1)
+[Calendar] day_of_year 144 (1 + 734543 % 400)
+[Resource] catnip 50000/50000 60.26/s
+[Resource] wood 6440/6440 0.15/s
+[Resource] science 24750/24750 1.89/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 63865.65 0.06/s
+[Bonfire] Idle Smelter 26 (1 + 25)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 1m23s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 29m17s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 2h23m28s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 20m40s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [*] [Bonfire] Smelter (27) -(minerals 8187.50/8707.06* 6m55s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 1m4s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [Bonfire] Academy (29) -(wood 2878.77, minerals 4030.28, science 5757.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 6440/41475 66h39m25s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 1472.50/6000 12h34m35s)), scaffold 0/50 (beam 1.10/1100 (wood 6440/82950 145h34m1s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 3850)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Smelter
+###
+[Calendar] time 1643190
+[Calendar] skip 1643048
+[Calendar] year 2054.99 (1 + 2053.99)
+[Calendar] Winter 1 (1 if 8215.95 % 4 == 3)
+[Calendar] day_of_year 396 (1 + 821595 % 400)
+[Resource] catnip 50000/50000 24.64/s
+[Resource] wood 6440/6440 0.15/s
+[Resource] science 27750/27750 2.10/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 73441.31 0.06/s
+[Bonfire] Idle Smelter 26 (1 + 25)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 3m23s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 29m17s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 2h23m28s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 20m40s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [*] [Bonfire] Smelter (27) -(minerals 8187.50/8707.06* 6m55s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 2m37s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Bonfire] Academy (35) -(wood 6440/6658.78* 24m58s, minerals 8187.50/9322.29* 15m7s, science 13317.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Lumber Mill -(wood 100, iron 50, minerals 250) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 6440/41475 66h39m25s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 1472.50/6000 12h34m35s)), scaffold 0/50 (beam 1.10/1100 (wood 6440/82950 145h34m1s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 3850)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Academy
+###
+[Calendar] time 1751322
+[Calendar] skip 1751179
+[Calendar] year 2190.15 (1 + 2189.15)
+[Calendar] Spring 1 (1 if 8756.61 % 4 == 0)
+[Calendar] day_of_year 62 (1 + 875661 % 400)
+[Resource] catnip 50000/50000 84.01/s
+[Resource] wood 6440/6440 0.51/s
+[Resource] science 27750/27750 2.10/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 79388.57 0.06/s
+[Bonfire] Idle Smelter 26 (1 + 25)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 59s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 8m22s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 40m59s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 5m54s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [*] [Bonfire] Smelter (27) -(minerals 8187.50/8707.06* 6m55s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 46s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Bonfire] Academy (35) -(wood 6440/6658.78* 7m8s, minerals 8187.50/9322.29* 15m7s, science 13317.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [*] [Bonfire] Lumber Mill (25) -(wood 3291.90, iron 1472.50/1645.95* 28m54s, minerals 8187.50/8229.74* 33s) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 6440/41475 19h2m41s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 1472.50/6000 12h34m35s)), scaffold 0/50 (beam 1.10/1100 (wood 6440/82950 41h35m26s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 3850)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Lumber Mill
+###
+[Calendar] time 1751323
+[Calendar] skip 1751179
+[Calendar] year 2190.15 (1 + 2189.15)
+[Calendar] Spring 1 (1 if 8756.61 % 4 == 0)
+[Calendar] day_of_year 62 (1 + 875661 % 400)
+[Resource] catnip 50000/50000 84.01/s
+[Resource] wood 6440/6440 0.51/s
+[Resource] science 25252.10/27750 2.10/s 19m49s to cap
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 472.60/1472.50 0.10/s 2h46m39s to cap
+[Resource] unicorns 79388.63 0.06/s
+[Bonfire] Idle Smelter 26 (1 + 25)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 59s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 8m22s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 40m59s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 5m54s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [*] [Bonfire] Smelter (27) -(minerals 8187.50/8707.06* 6m55s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 46s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Bonfire] Academy (35) -(wood 6440/6658.78* 7m8s, minerals 8187.50/9322.29* 15m7s, science 13317.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [*] [Bonfire] Lumber Mill (25) -(wood 3291.90, iron 472.60/1645.95* 3h15m33s, minerals 8187.50/8229.74* 33s) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 6440/41475 19h2m41s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 472.60/6000 15h21m13s)), scaffold 0/50 (beam 1.10/1100 (wood 6440/82950 41h35m26s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 3850)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Engineering -(science 1500) +(Engineering 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Reinforced Saw
+###
+[Calendar] time 1751324
+[Calendar] skip 1751179
+[Calendar] year 2190.16 (1 + 2189.16)
+[Calendar] Spring 1 (1 if 8756.62 % 4 == 0)
+[Calendar] day_of_year 63 (1 + 875662 % 400)
+[Resource] catnip 50000/50000 84.01/s
+[Resource] wood 6440/6440 0.51/s
+[Resource] science 23754.20/27750 2.10/s 31m42s to cap
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 472.70/1472.50 0.10/s 2h46m37s to cap
+[Resource] unicorns 79388.68 0.06/s
+[Bonfire] Idle Smelter 26 (1 + 25)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 59s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 8m22s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 40m59s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 5m54s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [*] [Bonfire] Smelter (27) -(minerals 8187.50/8707.06* 6m55s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 46s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Bonfire] Academy (35) -(wood 6440/6658.78* 7m8s, minerals 8187.50/9322.29* 15m7s, science 13317.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [Bonfire] Aqueduct -(minerals 75) +(Aqueduct 1)
+XX: [*] [Bonfire] Lumber Mill (25) -(wood 3291.90, iron 472.70/1645.95* 3h15m32s, minerals 8187.50/8229.74* 33s) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 6440/41475 19h2m41s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 472.70/6000 15h21m13s)), scaffold 0/50 (beam 1.10/1100 (wood 6440/82950 41h35m26s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 3850)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Writing -(science 3600) +(Writing 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Engineering
+###
+[Calendar] time 1809640
+[Calendar] skip 1809494
+[Calendar] year 2263.05 (1 + 2262.05)
+[Calendar] Spring 1 (1 if 9048.20 % 4 == 0)
+[Calendar] day_of_year 21 (1 + 904820 % 400)
+[Resource] catnip 50000/50000 189.87/s
+[Resource] wood 6440/6440 0.51/s
+[Resource] science 27750/27750 2.10/s
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 82596.06 0.06/s
+[Bonfire] Idle Smelter 26 (1 + 25)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 26s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 8m22s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 40m59s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 5m54s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [*] [Bonfire] Smelter (27) -(minerals 8187.50/8707.06* 6m55s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 20s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Bonfire] Academy (35) -(wood 6440/6658.78* 7m8s, minerals 8187.50/9322.29* 15m7s, science 13317.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [*] [Bonfire] Aqueduct (42) -(minerals 8187.50/8754.24* 7m33s) +(Aqueduct 1)
+XX: [*] [Bonfire] Lumber Mill (25) -(wood 3291.90, iron 1472.50/1645.95* 28m54s, minerals 8187.50/8229.74* 33s) +(Lumber Mill 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 6440/41475 19h2m41s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 1472.50/6000 12h34m35s)), scaffold 0/50 (beam 1.10/1100 (wood 6440/82950 41h35m26s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 3850)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Currency -(science 2200) +(Currency 1)
+XX: [Science] Writing -(science 3600) +(Writing 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: max Aqueduct
+###
+[Calendar] time 1809641
+[Calendar] skip 1809494
+[Calendar] year 2263.05 (1 + 2262.05)
+[Calendar] Spring 1 (1 if 9048.20 % 4 == 0)
+[Calendar] day_of_year 21 (1 + 904820 % 400)
+[Resource] catnip 50000/50000 189.87/s
+[Resource] wood 6440/6440 0.51/s
+[Resource] science 25552.10/27750 2.10/s 17m26s to cap
+[Resource] catpower 625/625 1.35/s
+[Resource] minerals 8187.50/8187.50 1.25/s
+[Resource] iron 1472.50/1472.50 0.10/s
+[Resource] unicorns 82596.12 0.06/s
+[Bonfire] Idle Smelter 26 (1 + 25)
+[Resource] beam 1.10
+[Resource] slab 1.90
+XX: [*] [Bonfire] Catnip Field (76) -(catnip 50000/55026.23* 26s) +(Catnip Field 1)
+XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (40) -(wood 6440/6696.59* 8m22s) +(Library 1)
+XX: [*] [Bonfire] Barn (9) -(wood 6440/7696.84* 40m59s) +(Barn 1)
+XX: [*] [Bonfire] Mine (30) -(wood 6440/6621.18* 5m54s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (22) -(wood 2164.47, minerals 8187.50/8657.90* 6m16s) +(Workshop 1)
+XX: [*] [Bonfire] Smelter (27) -(minerals 8187.50/8707.06* 6m55s) +(Smelter 1)
+XX: [Bonfire] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
+XX: [*] [Bonfire] Pasture (45) -(catnip 50000/53876.93* 20s, wood 5387.69) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Bonfire] Academy (35) -(wood 6440/6658.78* 7m8s, minerals 8187.50/9322.29* 15m7s, science 13317.55) +(Academy 1)
+XX: [Bonfire] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minerals 1000)) +(Warehouse 1)
+XX: [Bonfire] Log House -(wood 200, minerals 250) +(Log House 1, kitten cap 1)
+XX: [*] [Bonfire] Aqueduct (42) -(minerals 8187.50/8754.24* 7m33s) +(Aqueduct 1)
+XX: [*] [Bonfire] Lumber Mill (25) -(wood 3291.90, iron 1472.50/1645.95* 28m54s, minerals 8187.50/8229.74* 33s) +(Lumber Mill 1)
+XX: [Bonfire] Tradepost -(wood 500, minerals 200, gold 0/10) +(Tradepost 1)
+XX: [Bonfire] Ziggurat -(megalith 0/50 (beam 1.10/550 (wood 6440/41475 19h2m41s), slab 1.90/1100 (minerals 8187.50/118500 24h30m50s), plate 0/110 (iron 1472.50/6000 12h34m35s)), scaffold 0/50 (beam 1.10/1100 (wood 6440/82950 41h35m26s)), blueprint 0/1) +(Ziggurat 1)
+XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Craft] @beam -(wood 175) +(beam 2.32)
+XX: [Craft] @slab -(minerals 250) +(slab 2.32)
+XX: [Craft] @plate -(iron 125) +(plate 2.32)
+XX: [Craft] @gear -(steel 0/15) +(gear 2.32)
+XX: [Craft] @scaffold -(beam 1.10/50 (wood 3850)) +(scaffold 2.32)
+XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
+XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Writing -(science 3600) +(Writing 1)
+sX: time skip, create inputs and buy action X
+cX: create inputs and buy action X
+mX: max action X (skip, create, buy)
+last action: skip Currency
