@@ -447,23 +447,45 @@ cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: skip farmer
 ###
-[Calendar] time 485315
-[Calendar] skip 485287
-[Calendar] year 607.64 (1 + 606.64)
-[Calendar] Autumn 1 (1 if 2426.57 % 4 == 2)
-[Calendar] day_of_year 258 (1 + 242657 % 400)
-[Resource] catnip 35000/35000 22.48/s
+[Calendar] time 148225
+[Calendar] skip 148197
+[Calendar] year 186.28 (1 + 185.28)
+[Calendar] Summer 1 (1 if 741.12 % 4 == 1)
+[Calendar] day_of_year 113 (1 + 74112 % 400)
+[Resource] catnip 5000/5000 27.57/s
+[Resource] wood 187.89/200 0.01/s 21m59s to cap
+[Resource] science 3889.75/4000 0.45/s 4m7s to cap
+[Village] happiness 0.02 (0.10 + -0.08)
+XX: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 3s) +(Catnip Field 1)
+XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (15) -(wood 187.89/203.43* 28m12s) +(Library 1)
+XX: [Bonfire] Barn -(wood 50) +(Barn 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+XX: [Science] Archery -(science 300) +(Archery 1)
+XX: [Science] Mining -(science 500) +(Mining 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip farmer
+###
+[Calendar] time 485531
+[Calendar] skip 485502
+[Calendar] year 607.91 (1 + 606.91)
+[Calendar] Winter 1 (1 if 2427.65 % 4 == 3)
+[Calendar] day_of_year 366 (1 + 242765 % 400)
+[Resource] catnip 35000/35000 1.79/s
 [Resource] wood 1400/1400 0.01/s
 [Resource] science 4000/4000 0.45/s
-[Resource] kitten 1/1 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 XX: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (15) -(wood 203.43) +(Library 1)
 XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h5m37s) +(Barn 1)
-XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
-XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
-XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip and buy action X
@@ -471,23 +493,22 @@ cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: max Barn
 ###
-[Calendar] time 485564
-[Calendar] skip 485535
-[Calendar] year 607.96 (1 + 606.96)
-[Calendar] Winter 1 (1 if 2427.82 % 4 == 3)
-[Calendar] day_of_year 383 (1 + 242782 % 400)
-[-] [Resource] catnip 2014.91/35000 -2.53/s 13m17s to empty
+[Calendar] time 512089
+[Calendar] skip 512059
+[Calendar] year 641.11 (1 + 640.11)
+[Calendar] Spring 1 (1 if 2560.44 % 4 == 0)
+[Calendar] day_of_year 45 (1 + 256044 % 400)
+[Resource] catnip 35000/35000 61.64/s
 [Resource] wood 1400/1400 0.01/s
 [Resource] science 4000/4000 0.45/s
-[Resource] kitten 1/1 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
-XX: [Bonfire] Catnip Field (60) -(catnip 2014.91/8975.97 -45m56s) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m7s) +(Catnip Field 1)
 XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (15) -(wood 203.43) +(Library 1)
 XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h5m37s) +(Barn 1)
-XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
-XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
-XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip and buy action X
@@ -495,27 +516,2171 @@ cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: max Catnip Field
 ###
-[Calendar] time 1387430
-[Calendar] skip 1387400
-[Calendar] year 1735.29 (1 + 1734.29)
-[Calendar] Summer 1 (1 if 6937.15 % 4 == 1)
-[Calendar] day_of_year 116 (1 + 693715 % 400)
-[Resource] catnip 35000/35000 25.60/s
+[Calendar] time 1413955
+[Calendar] skip 1413924
+[Calendar] year 1768.44 (1 + 1767.44)
+[Calendar] Summer 1 (1 if 7069.77 % 4 == 1)
+[Calendar] day_of_year 178 (1 + 706977 % 400)
+[Resource] catnip 35000/35000 38.83/s
 [Resource] wood 1400/1400 0.01/s
 [Resource] science 7500/7500 0.70/s
-[Resource] kitten 1/1 0.05/s
-[Resource] gone kitten 4
 [Village] happiness 0.02 (0.10 + -0.08)
-XX: [Bonfire] Catnip Field (60) -(catnip 8975.97) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m47s) +(Catnip Field 1)
 XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h11m30s) +(Library 1)
 XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h5m37s) +(Barn 1)
-XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
-XX: [Village] scholar (1) -(kitten 1) +(scholar 1)
-XX: [Village] farmer (1) -(kitten 1) +(farmer 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
 sX: time skip and buy action X
 cX: create inputs for action X
 mX: max action X (skip, create, buy)
 last action: max Library
+###
+[Calendar] time 1413956
+[Calendar] skip 1413924
+[Calendar] year 1768.44 (1 + 1767.44)
+[Calendar] Summer 1 (1 if 7069.78 % 4 == 1)
+[Calendar] day_of_year 179 (1 + 706978 % 400)
+[Resource] catnip 35000/35000 38.83/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7200.70/7500 0.70/s 7m9s to cap
+[Village] happiness 0.02 (0.10 + -0.08)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m47s) +(Catnip Field 1)
+XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h11m30s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h5m37s) +(Barn 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Archery
+###
+[Calendar] time 1413957
+[Calendar] skip 1413924
+[Calendar] year 1768.44 (1 + 1767.44)
+[Calendar] Summer 1 (1 if 7069.78 % 4 == 1)
+[Calendar] day_of_year 179 (1 + 706978 % 400)
+[Resource] catnip 35000/35000 38.83/s
+[Resource] wood 1368.76/1400 0.01/s 56m43s to cap
+[Resource] science 7201.39/7500 0.70/s 7m8s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
+[Village] happiness 0.02 (0.10 + -0.08)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m47s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1368.76/1439.39* 2h8m13s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1368.76/1436.15* 2h2m20s) +(Barn 1)
+XX: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
+XX: [Village] farmer (2) -(kitten 0.05/1 18s) +(farmer 1)
+XX: [Village] hunter -(kitten 0.05/1 18s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Hut
+###
+[Calendar] time 1413977
+[Calendar] skip 1413943
+[Calendar] year 1768.47 (1 + 1767.47)
+[Calendar] Summer 1 (1 if 7069.88 % 4 == 1)
+[Calendar] day_of_year 189 (1 + 706988 % 400)
+[Resource] catnip 35000/35000 34.38/s
+[Resource] wood 1368.94/1400 0.01/s 57m30s to cap
+[Resource] science 7215.30/7500 0.68/s 6m57s to cap
+[Resource] catpower 0.30/475 0.30/s 26m22s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 2m1s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1368.94/1439.39* 2h10m27s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1368.94/1436.15* 2h4m26s) +(Barn 1)
+XX: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
+XX: [Village] farmer (2) -(kitten 0.05/1 18s) +(farmer 1)
+XX: [Village] hunter (1) -(kitten 0.05/1 18s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.30/100 5m32s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.30/50 2m45s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip hunter
+###
+[Calendar] time 1413997
+[Calendar] skip 1413962
+[Calendar] year 1768.50 (1 + 1767.50)
+[Calendar] Summer 1 (1 if 7069.98 % 4 == 1)
+[Calendar] day_of_year 199 (1 + 706998 % 400)
+[Resource] catnip 35000/35000 34.83/s
+[Resource] wood 1369.12/1400 0.01/s 58m20s to cap
+[Resource] science 7228.94/7500 0.67/s 6m45s to cap
+[Resource] catpower 6.29/475 0.29/s 26m34s to cap
+[Village] happiness -0.02 (0.10 + -0.12)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m59s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1369.12/1439.39* 2h12m46s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1369.12/1436.15* 2h6m38s) +(Barn 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 6.29/100 5m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 6.29/50 2m28s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip farmer
+###
+[Calendar] time 1413998
+[Calendar] skip 1413962
+[Calendar] year 1768.50 (1 + 1767.50)
+[Calendar] Summer 1 (1 if 7069.99 % 4 == 1)
+[Calendar] day_of_year 200 (1 + 706999 % 400)
+[Resource] catnip 35000/35000 34.83/s
+[Resource] wood 1369.13/1400 0.01/s 58m19s to cap
+[Resource] science 6729.61/7500 0.67/s 19m11s to cap
+[Resource] catpower 6.59/475 0.29/s 26m33s to cap
+[Village] happiness -0.02 (0.10 + -0.12)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m59s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1369.13/1439.39* 2h12m45s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1369.13/1436.15* 2h6m37s) +(Barn 1)
+XX: [Bonfire] Pasture -(catnip 100, wood 10) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 6.59/100 5m17s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 6.59/50 2m27s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Animal Husbandry
+###
+[Calendar] time 2582463
+[Calendar] skip 2582426
+[Calendar] year 3229.08 (1 + 3228.08)
+[Calendar] Spring 1 (1 if 12912.31 % 4 == 0)
+[Calendar] day_of_year 32 (1 + 1291231 % 400)
+[Resource] catnip 35000/35000 62.23/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.67/s
+[Resource] catpower 475/475 0.29/s
+[Village] happiness -0.02 (0.10 + -0.12)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m6s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h14m25s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h8m18s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 4h8m31s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: max Pasture
+###
+[Calendar] time 2582464
+[Calendar] skip 2582426
+[Calendar] year 3229.08 (1 + 3228.08)
+[Calendar] Spring 1 (1 if 12912.32 % 4 == 0)
+[Calendar] day_of_year 33 (1 + 1291232 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 375.29/475 0.38/s 4m19s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.05
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.05/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2582465
+[Calendar] skip 2582426
+[Calendar] year 3229.08 (1 + 3228.08)
+[Calendar] Spring 1 (1 if 12912.32 % 4 == 0)
+[Calendar] day_of_year 33 (1 + 1291232 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 275.68/475 0.38/s 8m39s to cap
+[-] [Resource] furs 78.40 -0.30/s 4m21s to empty
+[-] [Resource] ivory 21.14 -0.21/s 1m40s to empty
+[Resource] unicorns 0.10
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.10/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2582466
+[Calendar] skip 2582426
+[Calendar] year 3229.08 (1 + 3228.08)
+[Calendar] Spring 1 (1 if 12912.33 % 4 == 0)
+[Calendar] day_of_year 34 (1 + 1291233 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 176.06/475 0.38/s 12m58s to cap
+[-] [Resource] furs 117.60 -0.30/s 6m31s to empty
+[-] [Resource] ivory 31.71 -0.21/s 2m30s to empty
+[Resource] unicorns 0.15
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.15/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2582467
+[Calendar] skip 2582426
+[Calendar] year 3229.08 (1 + 3228.08)
+[Calendar] Spring 1 (1 if 12912.33 % 4 == 0)
+[Calendar] day_of_year 34 (1 + 1291233 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 76.45/475 0.38/s 17m17s to cap
+[-] [Resource] furs 156.80 -0.30/s 8m42s to empty
+[-] [Resource] ivory 42.28 -0.21/s 3m21s to empty
+[Resource] unicorns 0.20
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.20/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 76.45/100 1m1s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2582530
+[Calendar] skip 2582488
+[Calendar] year 3229.16 (1 + 3228.16)
+[Calendar] Spring 1 (1 if 12912.65 % 4 == 0)
+[Calendar] day_of_year 66 (1 + 1291265 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.64/475 0.38/s 20m35s to cap
+[-] [Resource] furs 177.40 -0.30/s 9m51s to empty
+[-] [Resource] ivory 39.83 -0.21/s 3m9s to empty
+[Resource] unicorns 0.25
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.25/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.64/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.64/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2582790
+[Calendar] skip 2582747
+[Calendar] year 3229.49 (1 + 3228.49)
+[Calendar] Summer 1 (1 if 12913.95 % 4 == 1)
+[Calendar] day_of_year 196 (1 + 1291395 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.45/475 0.38/s 20m35s to cap
+[-] [Resource] furs 138.90 -0.30/s 7m42s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.30
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.30/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.45/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.45/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2583051
+[Calendar] skip 2583007
+[Calendar] year 3229.81 (1 + 3228.81)
+[Calendar] Winter 1 (1 if 12915.25 % 4 == 3)
+[Calendar] day_of_year 326 (1 + 1291525 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.64/475 0.38/s 20m35s to cap
+[-] [Resource] furs 100.10 -0.30/s 5m33s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.35
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.35/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.64/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.64/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2583311
+[Calendar] skip 2583266
+[Calendar] year 3230.14 (1 + 3229.14)
+[Calendar] Spring 1 (1 if 12916.55 % 4 == 0)
+[Calendar] day_of_year 56 (1 + 1291655 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.45/475 0.38/s 20m35s to cap
+[-] [Resource] furs 61.60 -0.30/s 3m25s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.40
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.40/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.45/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.45/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2583572
+[Calendar] skip 2583526
+[Calendar] year 3230.47 (1 + 3229.47)
+[Calendar] Summer 1 (1 if 12917.86 % 4 == 1)
+[Calendar] day_of_year 187 (1 + 1291786 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.62/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.45
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.45/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.62/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.62/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2583832
+[Calendar] skip 2583785
+[Calendar] year 3230.79 (1 + 3229.79)
+[Calendar] Winter 1 (1 if 12919.16 % 4 == 3)
+[Calendar] day_of_year 317 (1 + 1291916 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.40/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.50
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.50/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.40/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.40/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2584093
+[Calendar] skip 2584045
+[Calendar] year 3231.12 (1 + 3230.12)
+[Calendar] Spring 1 (1 if 12920.46 % 4 == 0)
+[Calendar] day_of_year 47 (1 + 1292046 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.56/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.55
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.55/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.56/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.56/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2584353
+[Calendar] skip 2584304
+[Calendar] year 3231.44 (1 + 3230.44)
+[Calendar] Summer 1 (1 if 12921.76 % 4 == 1)
+[Calendar] day_of_year 177 (1 + 1292176 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.34/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.60
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.60/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.34/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.34/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2584614
+[Calendar] skip 2584564
+[Calendar] year 3231.77 (1 + 3230.77)
+[Calendar] Winter 1 (1 if 12923.07 % 4 == 3)
+[Calendar] day_of_year 308 (1 + 1292307 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.50/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.65
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.65/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.50/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.50/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2584875
+[Calendar] skip 2584824
+[Calendar] year 3232.09 (1 + 3231.09)
+[Calendar] Spring 1 (1 if 12924.37 % 4 == 0)
+[Calendar] day_of_year 38 (1 + 1292437 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.67/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.70
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.70/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.67/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.67/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2585135
+[Calendar] skip 2585083
+[Calendar] year 3232.42 (1 + 3231.42)
+[Calendar] Summer 1 (1 if 12925.67 % 4 == 1)
+[Calendar] day_of_year 168 (1 + 1292567 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.45/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.75
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.75/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.45/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.45/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2585396
+[Calendar] skip 2585343
+[Calendar] year 3232.74 (1 + 3231.74)
+[Calendar] Autumn 1 (1 if 12926.98 % 4 == 2)
+[Calendar] day_of_year 299 (1 + 1292698 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.61/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.80
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.80/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.61/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.61/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2585656
+[Calendar] skip 2585602
+[Calendar] year 3233.07 (1 + 3232.07)
+[Calendar] Spring 1 (1 if 12928.28 % 4 == 0)
+[Calendar] day_of_year 29 (1 + 1292828 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.39/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.85
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.85/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.39/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.39/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2585917
+[Calendar] skip 2585862
+[Calendar] year 3233.39 (1 + 3232.39)
+[Calendar] Summer 1 (1 if 12929.58 % 4 == 1)
+[Calendar] day_of_year 159 (1 + 1292958 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.56/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.90
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.90/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.56/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.56/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2586177
+[Calendar] skip 2586121
+[Calendar] year 3233.72 (1 + 3232.72)
+[Calendar] Autumn 1 (1 if 12930.88 % 4 == 2)
+[Calendar] day_of_year 289 (1 + 1293088 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.34/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 0.95
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 0.95/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.34/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.34/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2586438
+[Calendar] skip 2586381
+[Calendar] year 3234.05 (1 + 3233.05)
+[Calendar] Spring 1 (1 if 12932.19 % 4 == 0)
+[Calendar] day_of_year 20 (1 + 1293219 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.50/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.50/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.50/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2586699
+[Calendar] skip 2586641
+[Calendar] year 3234.37 (1 + 3233.37)
+[Calendar] Summer 1 (1 if 12933.49 % 4 == 1)
+[Calendar] day_of_year 150 (1 + 1293349 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.66/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.05
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.05/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.66/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.66/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2586959
+[Calendar] skip 2586900
+[Calendar] year 3234.70 (1 + 3233.70)
+[Calendar] Autumn 1 (1 if 12934.79 % 4 == 2)
+[Calendar] day_of_year 280 (1 + 1293479 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.44/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.10
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.10/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.44/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.44/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2587220
+[Calendar] skip 2587160
+[Calendar] year 3235.03 (1 + 3234.03)
+[Calendar] Spring 1 (1 if 12936.10 % 4 == 0)
+[Calendar] day_of_year 11 (1 + 1293610 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.61/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.15
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.15/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.61/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.61/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2587480
+[Calendar] skip 2587419
+[Calendar] year 3235.35 (1 + 3234.35)
+[Calendar] Summer 1 (1 if 12937.40 % 4 == 1)
+[Calendar] day_of_year 141 (1 + 1293740 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.39/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.20
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.20/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.39/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.39/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2587741
+[Calendar] skip 2587679
+[Calendar] year 3235.68 (1 + 3234.68)
+[Calendar] Autumn 1 (1 if 12938.70 % 4 == 2)
+[Calendar] day_of_year 271 (1 + 1293870 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.55/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.25
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.25/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.55/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.55/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2588001
+[Calendar] skip 2587938
+[Calendar] year 3236 (1 + 3235)
+[Calendar] Spring 1 (1 if 12940 % 4 == 0)
+[Calendar] day_of_year 1 (1 + 1294000 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.33/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.30
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.30/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.33/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.33/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2588262
+[Calendar] skip 2588198
+[Calendar] year 3236.33 (1 + 3235.33)
+[Calendar] Summer 1 (1 if 12941.31 % 4 == 1)
+[Calendar] day_of_year 132 (1 + 1294131 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.50/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.35
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.35/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.50/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.50/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2588523
+[Calendar] skip 2588458
+[Calendar] year 3236.65 (1 + 3235.65)
+[Calendar] Autumn 1 (1 if 12942.61 % 4 == 2)
+[Calendar] day_of_year 262 (1 + 1294261 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.66/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.40
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.40/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.66/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.66/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2588783
+[Calendar] skip 2588717
+[Calendar] year 3236.98 (1 + 3235.98)
+[Calendar] Winter 1 (1 if 12943.91 % 4 == 3)
+[Calendar] day_of_year 392 (1 + 1294391 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.44/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.45
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.45/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.44/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.44/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2589044
+[Calendar] skip 2588977
+[Calendar] year 3237.31 (1 + 3236.31)
+[Calendar] Summer 1 (1 if 12945.22 % 4 == 1)
+[Calendar] day_of_year 123 (1 + 1294522 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.60/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.50
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.50/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.60/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.60/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2589304
+[Calendar] skip 2589236
+[Calendar] year 3237.63 (1 + 3236.63)
+[Calendar] Autumn 1 (1 if 12946.52 % 4 == 2)
+[Calendar] day_of_year 253 (1 + 1294652 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.38/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.55
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.55/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.38/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.38/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2589565
+[Calendar] skip 2589496
+[Calendar] year 3237.95 (1 + 3236.95)
+[Calendar] Winter 1 (1 if 12947.82 % 4 == 3)
+[Calendar] day_of_year 383 (1 + 1294782 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.55/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.60
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.60/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.55/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.55/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2589825
+[Calendar] skip 2589755
+[Calendar] year 3238.28 (1 + 3237.28)
+[Calendar] Summer 1 (1 if 12949.12 % 4 == 1)
+[Calendar] day_of_year 113 (1 + 1294912 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.33/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.65
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.65/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.33/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.33/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2590086
+[Calendar] skip 2590015
+[Calendar] year 3238.61 (1 + 3237.61)
+[Calendar] Autumn 1 (1 if 12950.43 % 4 == 2)
+[Calendar] day_of_year 244 (1 + 1295043 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.49/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.70
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.70/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.49/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.49/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2590347
+[Calendar] skip 2590275
+[Calendar] year 3238.93 (1 + 3237.93)
+[Calendar] Winter 1 (1 if 12951.73 % 4 == 3)
+[Calendar] day_of_year 374 (1 + 1295173 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.66/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.75
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.75/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.66/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.66/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2590607
+[Calendar] skip 2590534
+[Calendar] year 3239.26 (1 + 3238.26)
+[Calendar] Summer 1 (1 if 12953.03 % 4 == 1)
+[Calendar] day_of_year 104 (1 + 1295303 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.44/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.80
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.80/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.44/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.44/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2590868
+[Calendar] skip 2590794
+[Calendar] year 3239.59 (1 + 3238.59)
+[Calendar] Autumn 1 (1 if 12954.34 % 4 == 2)
+[Calendar] day_of_year 235 (1 + 1295434 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.60/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.85
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.85/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.60/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.60/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2591128
+[Calendar] skip 2591053
+[Calendar] year 3239.91 (1 + 3238.91)
+[Calendar] Winter 1 (1 if 12955.64 % 4 == 3)
+[Calendar] day_of_year 365 (1 + 1295564 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.38/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.90
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.90/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.38/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.38/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2591389
+[Calendar] skip 2591313
+[Calendar] year 3240.24 (1 + 3239.24)
+[Calendar] Spring 1 (1 if 12956.94 % 4 == 0)
+[Calendar] day_of_year 95 (1 + 1295694 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.54/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 1.95
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 1.95/2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.54/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.54/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2591649
+[Calendar] skip 2591572
+[Calendar] year 3240.56 (1 + 3239.56)
+[Calendar] Autumn 1 (1 if 12958.24 % 4 == 2)
+[Calendar] day_of_year 225 (1 + 1295824 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.32/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
+[Resource] unicorns 2
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture -(unicorns 2) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.32/100 4m19s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.32/50 2m9s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Send hunters
+###
+[Calendar] time 2591650
+[Calendar] skip 2591572
+[Calendar] year 3240.56 (1 + 3239.56)
+[Calendar] Autumn 1 (1 if 12958.25 % 4 == 2)
+[Calendar] day_of_year 226 (1 + 1295825 % 400)
+[Resource] catnip 35000/35000 43.95/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.71/475 0.38/s 20m35s to cap
+[-] [Resource] furs 38.90 -0.30/s 2m9s to empty
+[-] [Resource] ivory 10.36 -0.21/s 49s to empty
+[Resource] unicorns 0.01 0.01/s
+[Village] happiness 0.28 (0.10 + 0.18)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 56m58s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 52m17s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h10m16s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (1) -(unicorns 0.01/3.50 11m38s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 0.71/100 4m18s) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 0.71/50 2m8s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: Unic. Pasture
+###
+[Calendar] time 2592350
+[Calendar] skip 2592271
+[Calendar] year 3241.44 (1 + 3240.44)
+[Calendar] Summer 1 (1 if 12961.75 % 4 == 1)
+[Calendar] day_of_year 176 (1 + 1296175 % 400)
+[Resource] catnip 35000/35000 40.99/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 269.45/475 0.32/s 10m34s to cap
+[Resource] unicorns 0.01 0.01/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (2) -(unicorns 0.01/6.12 10m11s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2592963
+[Calendar] skip 2592883
+[Calendar] year 3242.20 (1 + 3241.20)
+[Calendar] Spring 1 (1 if 12964.81 % 4 == 0)
+[Calendar] day_of_year 82 (1 + 1296481 % 400)
+[Resource] catnip 35000/35000 63.84/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 468.06/475 0.32/s 21s to cap
+[Resource] unicorns 0.02 0.01/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m5s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (3) -(unicorns 0.02/10.72 11m53s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2593678
+[Calendar] skip 2593597
+[Calendar] year 3243.10 (1 + 3242.10)
+[Calendar] Spring 1 (1 if 12968.39 % 4 == 0)
+[Calendar] day_of_year 40 (1 + 1296839 % 400)
+[Resource] catnip 35000/35000 63.88/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.03 0.02/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m5s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (4) -(unicorns 0.03/18.76 15m36s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2594616
+[Calendar] skip 2594534
+[Calendar] year 3244.27 (1 + 3243.27)
+[Calendar] Summer 1 (1 if 12973.08 % 4 == 1)
+[Calendar] day_of_year 109 (1 + 1297308 % 400)
+[Resource] catnip 35000/35000 41.11/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.04 0.03/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (5) -(unicorns 0.04/32.83 21m51s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2595929
+[Calendar] skip 2595846
+[Calendar] year 3245.91 (1 + 3244.91)
+[Calendar] Winter 1 (1 if 12979.64 % 4 == 3)
+[Calendar] day_of_year 365 (1 + 1297964 % 400)
+[Resource] catnip 35000/35000 6.93/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.04 0.03/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 10m1s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (6) -(unicorns 0.04/57.45 31m53s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2597844
+[Calendar] skip 2597760
+[Calendar] year 3248.31 (1 + 3247.31)
+[Calendar] Summer 1 (1 if 12989.22 % 4 == 1)
+[Calendar] day_of_year 123 (1 + 1298922 % 400)
+[Resource] catnip 35000/35000 41.18/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.05 0.04/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (7) -(unicorns 0.05/100.53 47m50s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2600716
+[Calendar] skip 2600631
+[Calendar] year 3251.89 (1 + 3250.89)
+[Calendar] Winter 1 (1 if 13003.58 % 4 == 3)
+[Calendar] day_of_year 359 (1 + 1300358 % 400)
+[Resource] catnip 35000/35000 7/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.05 0.04/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m55s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (8) -(unicorns 0.05/175.93 1h13m17s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2605115
+[Calendar] skip 2605029
+[Calendar] year 3257.39 (1 + 3256.39)
+[Calendar] Summer 1 (1 if 13025.57 % 4 == 1)
+[Calendar] day_of_year 158 (1 + 1302557 % 400)
+[Resource] catnip 35000/35000 41.26/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.08 0.04/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m40s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (9) -(unicorns 0.08/307.87 1h53m59s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2611956
+[Calendar] skip 2611869
+[Calendar] year 3265.95 (1 + 3264.95)
+[Calendar] Winter 1 (1 if 13059.78 % 4 == 3)
+[Calendar] day_of_year 379 (1 + 1305978 % 400)
+[Resource] catnip 35000/35000 7.08/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.06 0.05/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m48s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (10) -(unicorns 0.06/538.78 2h59m34s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2622732
+[Calendar] skip 2622644
+[Calendar] year 3279.41 (1 + 3278.41)
+[Calendar] Summer 1 (1 if 13113.66 % 4 == 1)
+[Calendar] day_of_year 167 (1 + 1311366 % 400)
+[Resource] catnip 35000/35000 41.34/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.09 0.06/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m40s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 0.09/942.86 4h45m41s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Mining -(science 500) +(Mining 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Unic. Pasture
+###
+[Calendar] time 2622733
+[Calendar] skip 2622644
+[Calendar] year 3279.41 (1 + 3278.41)
+[Calendar] Summer 1 (1 if 13113.66 % 4 == 1)
+[Calendar] day_of_year 167 (1 + 1311366 % 400)
+[Resource] catnip 35000/35000 41.34/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7000.74/7500 0.74/s 11m17s to cap
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.14 0.06/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m40s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h7m32s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h1m58s) +(Barn 1)
+XX: [Bonfire] Mine -(wood 100) +(Mine 1)
+XX: [Bonfire] Workshop -(wood 100, minerals 0/400) +(Workshop 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h45m30s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 0.14/942.86 4h45m40s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Metal Working -(science 900) +(Metal Working 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+XX: [Workshop] Bolas -(wood 50, minerals 0/250, science 1000) +(Bolas 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Mining
+###
+[Calendar] time 2622734
+[Calendar] skip 2622644
+[Calendar] year 3279.42 (1 + 3278.42)
+[Calendar] Summer 1 (1 if 13113.67 % 4 == 1)
+[Calendar] day_of_year 168 (1 + 1311367 % 400)
+[Resource] catnip 35000/35000 41.34/s
+[Resource] wood 1300.01/1400 0.01/s 2h51m27s to cap
+[Resource] science 7001.47/7500 0.74/s 11m16s to cap
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.20 0.06/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m40s) +(Catnip Field 1)
+XX: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1300.01/1439.39* 3h58m59s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1300.01/1436.15* 3h53m25s) +(Barn 1)
+XX: [Bonfire] Mine (1) -(wood 115) +(Mine 1)
+XX: [Bonfire] Workshop -(wood 100, minerals 0/400) +(Workshop 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1300.01/1531.52* 6h36m57s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 0.20/942.86 4h45m39s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (3) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Metal Working -(science 900) +(Metal Working 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+XX: [Workshop] Bolas -(wood 50, minerals 0/250, science 1000) +(Bolas 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Mine
+###
+[Calendar] time 2622735
+[Calendar] skip 2622644
+[Calendar] year 3279.42 (1 + 3278.42)
+[Calendar] Summer 1 (1 if 13113.67 % 4 == 1)
+[Calendar] day_of_year 168 (1 + 1311367 % 400)
+[Resource] catnip 35000/35000 41.34/s
+[Resource] wood 1221.89/1400 0.01/s 5h5m23s to cap
+[Resource] science 7002.21/7500 0.74/s 11m15s to cap
+[Resource] catpower 475.32/550 0.32/s 3m50s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
+[Resource] unicorns 0.25 0.06/s
+[Village] happiness 0.08 (0.10 + -0.02)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m40s) +(Catnip Field 1)
+XX: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1221.89/1439.39* 6h12m55s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1221.89/1436.15* 6h7m22s) +(Barn 1)
+XX: [Bonfire] Mine (1) -(wood 115) +(Mine 1)
+XX: [Bonfire] Workshop -(wood 100, minerals 0/400) +(Workshop 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1221.89/1531.52* 8h50m54s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 0.25/942.86 4h45m38s) +(Unic. Pasture 1)
+XX: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
+XX: [Village] farmer (3) -(kitten 0.05/1 18s) +(farmer 1)
+XX: [Village] hunter (1) -(kitten 0.05/1 18s) +(hunter 1)
+XX: [Village] miner -(kitten 0.05/1 18s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Metal Working -(science 900) +(Metal Working 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+XX: [Workshop] Bolas -(wood 50, minerals 0/250, science 1000) +(Bolas 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip Hut
+###
+[Calendar] time 2622755
+[Calendar] skip 2622663
+[Calendar] year 3279.44 (1 + 3278.44)
+[Calendar] Summer 1 (1 if 13113.77 % 4 == 1)
+[Calendar] day_of_year 178 (1 + 1311377 % 400)
+[Resource] catnip 35000/35000 37.62/s
+[Resource] wood 1222.09/1400 0.01/s 5h10m48s to cap
+[Resource] science 7016.94/7500 0.72/s 11m7s to cap
+[Resource] catpower 481.80/550 0.32/s 3m34s to cap
+[Resource] minerals 0.32/1750 0.32/s 1h32m34s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
+[Resource] unicorns 1.35 0.06/s
+[Village] happiness 0.06 (0.10 + -0.04)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m50s) +(Catnip Field 1)
+XX: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1222.09/1439.39* 6h19m37s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1222.09/1436.15* 6h13m57s) +(Barn 1)
+XX: [Bonfire] Mine (1) -(wood 115) +(Mine 1)
+XX: [Bonfire] Workshop -(wood 100, minerals 0.32/400 21m8s) +(Workshop 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1222.09/1531.52* 9h0m34s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 1.35/942.86 4h45m18s) +(Unic. Pasture 1)
+XX: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
+XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
+XX: [Village] farmer (3) -(kitten 0.05/1 18s) +(farmer 1)
+XX: [Village] hunter (1) -(kitten 0.05/1 18s) +(hunter 1)
+XX: [Village] miner (1) -(kitten 0.05/1 18s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 0.32/1000 52m53s) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Metal Working -(science 900) +(Metal Working 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+XX: [Workshop] Bolas -(wood 50, minerals 0.32/250 13m12s, science 1000) +(Bolas 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip miner
+###
+[Calendar] time 2622775
+[Calendar] skip 2622682
+[Calendar] year 3279.47 (1 + 3278.47)
+[Calendar] Summer 1 (1 if 13113.87 % 4 == 1)
+[Calendar] day_of_year 188 (1 + 1311387 % 400)
+[Resource] catnip 35000/35000 39.11/s
+[Resource] wood 1222.28/1400 0.01/s 5h16m27s to cap
+[Resource] science 7031.40/7500 0.71/s 11m0s to cap
+[Resource] catpower 488.15/550 0.31/s 3m18s to cap
+[Resource] minerals 6.61/1750 0.31/s 1h33m43s to cap
+[Resource] unicorns 2.45 0.06/s
+[Village] happiness 0.04 (0.10 + -0.06)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m46s) +(Catnip Field 1)
+XX: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1222.28/1439.39* 6h26m35s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1222.28/1436.15* 6h20m48s) +(Barn 1)
+XX: [Bonfire] Mine (1) -(wood 115) +(Mine 1)
+XX: [Bonfire] Workshop -(wood 100, minerals 6.61/400 21m9s) +(Workshop 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1222.28/1531.52* 9h10m38s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 2.45/942.86 4h44m58s) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (4) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 6.61/1000 53m24s) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Metal Working -(science 900) +(Metal Working 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+XX: [Workshop] Bolas -(wood 50, minerals 6.61/250 13m5s, science 1000) +(Bolas 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: skip farmer
+###
+[Calendar] time 3575990
+[Calendar] skip 3575896
+[Calendar] year 4470.99 (1 + 4469.99)
+[Calendar] Winter 1 (1 if 17879.95 % 4 == 3)
+[Calendar] day_of_year 396 (1 + 1787995 % 400)
+[Resource] catnip 35000/35000 4.89/s
+[Resource] wood 1400/1400 0.01/s
+[Resource] science 7500/7500 0.71/s
+[Resource] catpower 550/550 0.31/s
+[Resource] minerals 1750/1750 1.21/s
+[Resource] unicorns 52429.28 0.06/s
+[Village] happiness 0.04 (0.10 + -0.06)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 14m12s) +(Catnip Field 1)
+XX: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 1400/1439.39* 1h10m7s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 1400/1436.15* 1h4m21s) +(Barn 1)
+XX: [*] [Bonfire] Mine (19) -(wood 1400/1423.18* 41m16s) +(Mine 1)
+XX: [Bonfire] Workshop -(wood 100, minerals 400) +(Workshop 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 1400/1531.52* 3h54m11s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (4) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Metal Working -(science 900) +(Metal Working 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+XX: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: max Mine
+###
+[Calendar] time 3736266
+[Calendar] skip 3736171
+[Calendar] year 4671.33 (1 + 4670.33)
+[Calendar] Summer 1 (1 if 18681.33 % 4 == 1)
+[Calendar] day_of_year 134 (1 + 1868133 % 400)
+[Resource] catnip 35000/35000 39.11/s
+[Resource] wood 465.26/1400 0.01/s 27h44m25s to cap
+[Resource] science 7500/7500 0.71/s
+[Resource] catpower 550/550 0.31/s
+[Resource] minerals 1750/1750 1.21/s
+[Resource] unicorns 61244.46 0.06/s
+[Village] happiness 0.04 (0.10 + -0.06)
+XX: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m46s) +(Catnip Field 1)
+XX: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
+XX: [*] [Bonfire] Library (29) -(wood 465.26/1439.39* 28h54m33s) +(Library 1)
+XX: [*] [Bonfire] Barn (6) -(wood 465.26/1436.15* 28h48m47s) +(Barn 1)
+XX: [*] [Bonfire] Mine (19) -(wood 465.26/1423.18* 28h25m42s) +(Mine 1)
+XX: [*] [Bonfire] Workshop (11) -(wood 465.24, minerals 1750/1860.96* 1m31s) +(Workshop 1)
+XX: [*] [Bonfire] Pasture (36) -(catnip 15315.19, wood 465.26/1531.52* 31h38m36s) +(Pasture 1)
+XX: [Bonfire] Unic. Pasture (11) -(unicorns 942.86) +(Unic. Pasture 1)
+XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
+XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
+XX: [*] [Village] farmer (4) -(kitten 0/1* 20s) +(farmer 1)
+XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
+XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
+XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
+XX: [Science] Metal Working -(science 900) +(Metal Working 1)
+XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
+XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
+XX: [Science] Construction -(science 1300) +(Construction 1)
+XX: [Workshop] Mineral Hoes -(minerals 275, science 100) +(Mineral Hoes 1)
+XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
+XX: [Workshop] Mineral Axe -(minerals 500, science 100) +(Mineral Axe 1)
+XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
+XX: [Workshop] Expanded Barns -(wood 465.26/1000 15h52m10s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
+XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25 (wood 465.26/2800 69h17m18s), slab 0/10 (minerals 1750)) +(Reinforced Barns 1)
+XX: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
+sX: time skip and buy action X
+cX: create inputs for action X
+mX: max action X (skip, create, buy)
+last action: max Workshop
