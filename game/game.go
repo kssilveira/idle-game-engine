@@ -249,7 +249,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	}
 	if input.IsMax {
 		for {
-			for _, prefix := range []string{"s", "c", ""} {
+			for _, prefix := range []string{"s", "s", "c", ""} {
 				if _, err := g.act(fmt.Sprintf("%s%d", prefix, input.Index)); err != nil {
 					return input, nil
 				}
