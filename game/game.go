@@ -239,7 +239,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 			need := int(g.getNeededNestedAction(input.Action, c))
 			for i := 0; i < need; i++ {
 				if _, err := g.act(nested); err != nil {
-					return input, nil
+					break
 				}
 			}
 		}
