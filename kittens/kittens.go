@@ -12,11 +12,11 @@ import (
 
 func NewGame(now game.Now) *game.Game {
 	BarnProductionBonus := []data.Resource{{
-		Name: "Expanded Barns", ProductionFactor: 0.75,
+		Name: "Expanded Barns", Factor: 0.75,
 	}, {
-		Name: "Reinforced Barns", ProductionFactor: 0.80,
+		Name: "Reinforced Barns", Factor: 0.80,
 	}}
-	CultureCapacityProductionBonus := []data.Resource{{Name: "Ziggurat", ProductionFactor: 0.08}}
+	CultureCapacityProductionBonus := []data.Resource{{Name: "Ziggurat", Factor: 0.08}}
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
 	}
@@ -25,234 +25,234 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddResources(join([]data.Resource{{
 		Name: "day", Type: "Calendar", IsHidden: true, Quantity: 0, Capacity: -1,
-		Producers: []data.Resource{{ProductionFactor: 0.5}},
+		Producers: []data.Resource{{Factor: 0.5}},
 	}, {
 		Name: "year", Type: "Calendar", StartQuantity: 1, Capacity: -1,
-		Producers: []data.Resource{{Name: "day", ProductionFactor: 0.0025, ProductionFloor: true}},
+		Producers: []data.Resource{{Name: "day", Factor: 0.0025, ProductionFloor: true}},
 	}}, resourceWithModulus(data.Resource{
 		Type: "Calendar", StartQuantity: 1, Capacity: -1,
-		Producers: []data.Resource{{Name: "day", ProductionFactor: 0.01, ProductionFloor: true}},
+		Producers: []data.Resource{{Name: "day", Factor: 0.01, ProductionFloor: true}},
 	}, []string{
 		"Spring", "Summer", "Autumn", "Winter"}), []data.Resource{{
 		Name: "day_of_year", Type: "Calendar", StartQuantity: 1, Capacity: -1,
 		ProductionModulus: 400, ProductionModulusEquals: -1,
-		Producers: []data.Resource{{Name: "day", ProductionFactor: 1, ProductionFloor: true}},
+		Producers: []data.Resource{{Name: "day", Factor: 1, ProductionFloor: true}},
 	}, {
 		Name: "catnip", Type: "Resource", StartCapacity: 5000,
 		Producers: join([]data.Resource{{
-			Name: "Catnip Field", ProductionFactor: 0.125 * 5,
+			Name: "Catnip Field", Factor: 0.125 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "Spring", ProductionFactor: 0.50,
+				Name: "Spring", Factor: 0.50,
 			}, {
-				Name: "Winter", ProductionFactor: -0.75,
+				Name: "Winter", Factor: -0.75,
 			}},
 		}}, resourceWithName(data.Resource{
-			ProductionFactor: -4.25, ProductionFloor: true, ProductionOnGone: true,
+			Factor: -4.25, ProductionFloor: true, ProductionOnGone: true,
 			ProductionBonus: []data.Resource{{
-				Name: "Pasture", ProductionFactor: -0.005,
+				Name: "Pasture", Factor: -0.005,
 			}, {
-				Name: "Unic. Pasture", ProductionFactor: -0.0015,
+				Name: "Unic. Pasture", Factor: -0.0015,
 			}},
 		}, kittenNames), []data.Resource{{
-			Name: "farmer", ProductionFactor: 1 * 5,
+			Name: "farmer", Factor: 1 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "happiness", ProductionFactor: 1,
+				Name: "happiness", Factor: 1,
 			}, {
-				Name: "Mineral Hoes", ProductionFactor: 0.5,
+				Name: "Mineral Hoes", Factor: 0.5,
 			}, {
-				Name: "Iron Hoes", ProductionFactor: 0.3,
+				Name: "Iron Hoes", Factor: 0.3,
 			}},
 		}, {
-			Name: "Brewery", ProductionFactor: -1 * 5,
+			Name: "Brewery", Factor: -1 * 5,
 		}}),
 		ProductionBonus: []data.Resource{{
-			Name: "Aqueduct", ProductionFactor: 0.03,
+			Name: "Aqueduct", Factor: 0.03,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 5000,
+			Name: "Barn", Factor: 5000,
 		}, {
-			Name: "Harbour", ProductionFactor: 2500,
+			Name: "Harbour", Factor: 2500,
 		}},
 	}, {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
 		Producers: []data.Resource{{
-			Name: "woodcutter", ProductionFactor: 0.0018 * 5,
+			Name: "woodcutter", Factor: 0.0018 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "happiness", ProductionFactor: 1,
+				Name: "happiness", Factor: 1,
 			}, {
-				Name: "Mineral Axe", ProductionFactor: 0.7,
+				Name: "Mineral Axe", Factor: 0.7,
 			}, {
-				Name: "Iron Axe", ProductionFactor: 0.5,
+				Name: "Iron Axe", Factor: 0.5,
 			}},
 		}, {
-			Name: "Active Smelter", ProductionFactor: -0.05 * 5,
+			Name: "Active Smelter", Factor: -0.05 * 5,
 		}},
 		ProductionBonus: []data.Resource{{
-			Name: "Lumber Mill", ProductionFactor: 0.10,
+			Name: "Lumber Mill", Factor: 0.10,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 200, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 200, ProductionBonus: BarnProductionBonus,
 		}, {
-			Name: "Warehouse", ProductionFactor: 150,
+			Name: "Warehouse", Factor: 150,
 		}, {
-			Name: "Harbour", ProductionFactor: 700,
+			Name: "Harbour", Factor: 700,
 		}},
 	}, {
 		Name: "science", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "scholar", ProductionFactor: 0.035 * 5,
+			Name: "scholar", Factor: 0.035 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "happiness", ProductionFactor: 1,
+				Name: "happiness", Factor: 1,
 			}},
 		}},
 		ProductionBonus: []data.Resource{{
-			Name: "Library", ProductionFactor: 0.1,
+			Name: "Library", Factor: 0.1,
 		}, {
-			Name: "Academy", ProductionFactor: 0.2,
+			Name: "Academy", Factor: 0.2,
 		}, {
-			Name: "Observatory", ProductionFactor: 0.25,
+			Name: "Observatory", Factor: 0.25,
 		}, {
-			Name: "Bio Lab", ProductionFactor: 0.35,
+			Name: "Bio Lab", Factor: 0.35,
 		}, {
-			Name: "Data Center", ProductionFactor: 0.10,
+			Name: "Data Center", Factor: 0.10,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Library", ProductionFactor: 250,
+			Name: "Library", Factor: 250,
 		}, {
-			Name: "Academy", ProductionFactor: 500,
+			Name: "Academy", Factor: 500,
 		}, {
-			Name: "Observatory", ProductionFactor: 1000,
+			Name: "Observatory", Factor: 1000,
 		}, {
-			Name: "Bio Lab", ProductionFactor: 1500,
+			Name: "Bio Lab", Factor: 1500,
 		}, {
-			Name: "Data Center", ProductionFactor: 750,
+			Name: "Data Center", Factor: 750,
 		}},
 	}, {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "hunter", ProductionFactor: 0.06 * 5,
+			Name: "hunter", Factor: 0.06 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "happiness", ProductionFactor: 1,
+				Name: "happiness", Factor: 1,
 			}, {
-				Name: "Bolas", ProductionFactor: 1,
+				Name: "Bolas", Factor: 1,
 			}, {
-				Name: "Hunting Armor", ProductionFactor: 2,
+				Name: "Hunting Armor", Factor: 2,
 			}, {
-				Name: "Composite Bow", ProductionFactor: 0.5,
+				Name: "Composite Bow", Factor: 0.5,
 			}},
 		}, {
-			Name: "Mint", ProductionFactor: -0.75 * 5,
+			Name: "Mint", Factor: -0.75 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Hut", ProductionFactor: 75,
+			Name: "Hut", Factor: 75,
 		}, {
-			Name: "Log House", ProductionFactor: 50,
+			Name: "Log House", Factor: 50,
 		}, {
-			Name: "Mansion", ProductionFactor: 50,
+			Name: "Mansion", Factor: 50,
 		}},
 	}, {
 		Name: "minerals", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
-			Name: "miner", ProductionFactor: 0.05 * 5,
+			Name: "miner", Factor: 0.05 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "happiness", ProductionFactor: 1,
+				Name: "happiness", Factor: 1,
 			}, {
-				Name: "Mine", ProductionFactor: 0.2,
+				Name: "Mine", Factor: 0.2,
 			}, {
-				Name: "Quarry", ProductionFactor: 0.35,
+				Name: "Quarry", Factor: 0.35,
 			}},
 		}, {
-			Name: "Active Smelter", ProductionFactor: -0.1 * 5,
+			Name: "Active Smelter", Factor: -0.1 * 5,
 		}, {
-			Name: "Calciner", ProductionFactor: -1.5 * 5,
+			Name: "Calciner", Factor: -1.5 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 250, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 250, ProductionBonus: BarnProductionBonus,
 		}, {
-			Name: "Warehouse", ProductionFactor: 200,
+			Name: "Warehouse", Factor: 200,
 		}, {
-			Name: "Harbour", ProductionFactor: 950,
+			Name: "Harbour", Factor: 950,
 		}},
 	}, {
 		Name: "iron", Type: "Resource", StartCapacity: 50,
 		Producers: []data.Resource{{
-			Name: "Active Smelter", ProductionFactor: 0.02 * 5,
+			Name: "Active Smelter", Factor: 0.02 * 5,
 		}, {
-			Name: "Calciner", ProductionFactor: 0.15 * 5,
+			Name: "Calciner", Factor: 0.15 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 50, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 50, ProductionBonus: BarnProductionBonus,
 		}, {
-			Name: "Warehouse", ProductionFactor: 25,
+			Name: "Warehouse", Factor: 25,
 		}, {
-			Name: "Harbour", ProductionFactor: 150,
+			Name: "Harbour", Factor: 150,
 		}},
 	}, {
 		Name: "coal", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
-			Name: "geologist", ProductionFactor: 0.015 * 5,
+			Name: "geologist", Factor: 0.015 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "happiness", ProductionFactor: 1,
+				Name: "happiness", Factor: 1,
 			}},
 		}, {
-			Name: "Quarry", ProductionFactor: 0.015 * 5,
+			Name: "Quarry", Factor: 0.015 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 60, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 60, ProductionBonus: BarnProductionBonus,
 		}, {
-			Name: "Warehouse", ProductionFactor: 30,
+			Name: "Warehouse", Factor: 30,
 		}, {
-			Name: "Harbour", ProductionFactor: 100,
+			Name: "Harbour", Factor: 100,
 		}},
 	}, {
 		Name: "gold", Type: "Resource", StartCapacity: 20,
 		Producers: []data.Resource{{
-			Name: "Mint", ProductionFactor: -0.005 * 5,
+			Name: "Mint", Factor: -0.005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 10, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 10, ProductionBonus: BarnProductionBonus,
 		}, {
-			Name: "Warehouse", ProductionFactor: 5,
+			Name: "Warehouse", Factor: 5,
 		}, {
-			Name: "Harbour", ProductionFactor: 25,
+			Name: "Harbour", Factor: 25,
 		}, {
-			Name: "Mint", ProductionFactor: 100,
+			Name: "Mint", Factor: 100,
 		}},
 	}, {
 		Name: "titanium", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
-			Name: "Accelerator", ProductionFactor: -0.015 * 5,
+			Name: "Accelerator", Factor: -0.015 * 5,
 		}, {
-			Name: "Calciner", ProductionFactor: 0.0005 * 5,
+			Name: "Calciner", Factor: 0.0005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", ProductionFactor: 2, ProductionBonus: BarnProductionBonus,
+			Name: "Barn", Factor: 2, ProductionBonus: BarnProductionBonus,
 		}, {
-			Name: "Warehouse", ProductionFactor: 10,
+			Name: "Warehouse", Factor: 10,
 		}, {
-			Name: "Harbour", ProductionFactor: 50,
+			Name: "Harbour", Factor: 50,
 		}},
 	}, {
 		Name: "oil", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
-			Name: "Oil Well", ProductionFactor: 0.02 * 5,
+			Name: "Oil Well", Factor: 0.02 * 5,
 		}, {
-			Name: "Magneto", ProductionFactor: -0.05 * 5,
+			Name: "Magneto", Factor: -0.05 * 5,
 		}, {
-			Name: "Calciner", ProductionFactor: -0.024 * 5,
+			Name: "Calciner", Factor: -0.024 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Oil Well", ProductionFactor: 1500,
+			Name: "Oil Well", Factor: 1500,
 		}},
 	}, {
 		Name: "uranium", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
-			Name: "Accelerator", ProductionFactor: 0.0025 * 5,
+			Name: "Accelerator", Factor: 0.0025 * 5,
 		}, {
-			Name: "Reactor", ProductionFactor: -0.001 * 5,
+			Name: "Reactor", Factor: -0.001 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Reactor", ProductionFactor: 250,
+			Name: "Reactor", Factor: 250,
 		}},
 	}, {
 		Name: "unobtainium", Type: "Resource", Capacity: 1,
@@ -267,7 +267,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
-			Name: "", ProductionFactor: 0.05,
+			Name: "", Factor: 0.05,
 		}},
 		OnGone: []data.Resource{{
 			Name: "gone kitten", Quantity: 1,
@@ -275,65 +275,65 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "all kittens", Type: "Resource", IsHidden: true, Capacity: -1, StartQuantity: 1,
 		Producers: join([]data.Resource{{
-			Name: "", ProductionFactor: -1,
+			Name: "", Factor: -1,
 		}}, resourceWithName(data.Resource{
-			Name: "kitten", ProductionFactor: 1, ProductionFloor: true,
+			Name: "kitten", Factor: 1, ProductionFloor: true,
 		}, kittenNames)),
 	}, {
 		Name: "furs", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "all kittens", ProductionFactor: -0.05,
-			ProductionBonus: []data.Resource{{Name: "Tradepost", ProductionFactor: -0.04}},
+			Name: "all kittens", Factor: -0.05,
+			ProductionBonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}},
 	}, {
 		Name: "ivory", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "all kittens", ProductionFactor: -0.035,
-			ProductionBonus: []data.Resource{{Name: "Tradepost", ProductionFactor: -0.04}},
+			Name: "all kittens", Factor: -0.035,
+			ProductionBonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}},
 	}, {
 		Name: "spice", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "all kittens", ProductionFactor: -0.005,
-			ProductionBonus: []data.Resource{{Name: "Tradepost", ProductionFactor: -0.04}},
+			Name: "all kittens", Factor: -0.005,
+			ProductionBonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
-			Name: "Brewery", ProductionFactor: -0.1 * 5,
+			Name: "Brewery", Factor: -0.1 * 5,
 		}},
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
-		Producers: []data.Resource{{Name: "Unic. Pasture", ProductionFactor: 0.001 * 5}},
+		Producers: []data.Resource{{Name: "Unic. Pasture", Factor: 0.001 * 5}},
 	}, {
 		Name: "culture", Type: "Resource", StartCapacity: 575,
 		Producers: []data.Resource{{
-			Name: "Amphitheatre", ProductionFactor: 0.005 * 5,
+			Name: "Amphitheatre", Factor: 0.005 * 5,
 		}, {
-			Name: "Chapel", ProductionFactor: 0.05 * 5,
+			Name: "Chapel", Factor: 0.05 * 5,
 		}, {
-			Name: "Temple", ProductionFactor: 0.1 * 5,
+			Name: "Temple", Factor: 0.1 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Library", ProductionFactor: 10, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Library", Factor: 10, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Academy", ProductionFactor: 25, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Academy", Factor: 25, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Amphitheatre", ProductionFactor: 50, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Amphitheatre", Factor: 50, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Chapel", ProductionFactor: 200, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Chapel", Factor: 200, ProductionBonus: CultureCapacityProductionBonus,
 		}, {
-			Name: "Data Center", ProductionFactor: 250, ProductionBonus: CultureCapacityProductionBonus,
+			Name: "Data Center", Factor: 250, ProductionBonus: CultureCapacityProductionBonus,
 		}},
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
-			Name: "priest", ProductionFactor: 0.0015 * 5,
+			Name: "priest", Factor: 0.0015 * 5,
 			ProductionBonus: []data.Resource{{
-				Name: "happiness", ProductionFactor: 1,
+				Name: "happiness", Factor: 1,
 			}},
 		}, {
-			Name: "Chapel", ProductionFactor: 0.005 * 5,
+			Name: "Chapel", Factor: 0.005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Temple", ProductionFactor: 100,
+			Name: "Temple", Factor: 100,
 		}},
 	}, {
 		Name: "steel", Type: "Resource", Capacity: -1,
@@ -350,26 +350,26 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gigaflops", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "AI Core", ProductionFactor: 0.02 * 5,
+			Name: "AI Core", Factor: 0.02 * 5,
 		}},
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "happiness", Type: "Village", StartQuantity: 0.1, Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "all kittens", ProductionFactor: -0.02,
+			Name: "all kittens", Factor: -0.02,
 		}, {
-			Name: "ivory", ProductionFactor: 0.1, ProductionBoolean: true,
+			Name: "ivory", Factor: 0.1, ProductionBoolean: true,
 		}, {
-			Name: "furs", ProductionFactor: 0.1, ProductionBoolean: true,
+			Name: "furs", Factor: 0.1, ProductionBoolean: true,
 		}, {
-			Name: "spice", ProductionFactor: 0.1, ProductionBoolean: true,
+			Name: "spice", Factor: 0.1, ProductionBoolean: true,
 		}, {
-			Name: "unicorns", ProductionFactor: 0.1, ProductionBoolean: true,
+			Name: "unicorns", Factor: 0.1, ProductionBoolean: true,
 		}, {
-			Name: "Amphitheatre", ProductionFactor: 0.048,
+			Name: "Amphitheatre", Factor: 0.048,
 		}, {
-			Name: "Broadcast Tower", ProductionFactor: 0.75,
+			Name: "Broadcast Tower", Factor: 0.75,
 		}},
 	}}))
 
@@ -1256,9 +1256,9 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		action.Adds = []data.Resource{{
 			Name: name, Quantity: 1,
 			ProductionBonus: []data.Resource{{
-				Name: "Workshop", ProductionFactor: 0.06,
+				Name: "Workshop", Factor: 0.06,
 			}, {
-				Name: "Factory", ProductionFactor: 0.05,
+				Name: "Factory", Factor: 0.05,
 			}},
 		}}
 		g.AddAction(action)
@@ -1302,11 +1302,11 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		g.AddResource(data.Resource{
 			Name: "Idle " + name, Type: "Bonfire", Capacity: -1, StartQuantity: 1,
 			Producers: []data.Resource{{
-				Name: "", ProductionFactor: -1,
+				Name: "", Factor: -1,
 			}, {
-				Name: name, ProductionFactor: 1,
+				Name: name, Factor: 1,
 			}, {
-				Name: "Active " + name, ProductionFactor: -1,
+				Name: "Active " + name, Factor: -1,
 			}},
 		})
 	}
@@ -1497,7 +1497,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 				continue
 			}
 			last = p.Name
-			if p.ProductionFactor < 0 {
+			if p.Factor < 0 {
 				edgefn(r.Name, p.Name, "red")
 			} else {
 				edgefn(p.Name, r.Name, "green")
@@ -1506,7 +1506,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 				if b.Name == "Spring" || b.Name == "Winter" || b.Name == "happiness" {
 					continue
 				}
-				if p.ProductionFactor < 0 {
+				if p.Factor < 0 {
 					edgefn(b.Name, p.Name, "red")
 				} else {
 					edgefn(b.Name, p.Name, "green")

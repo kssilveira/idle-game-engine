@@ -80,7 +80,6 @@ Edges:
 
 More features from kittens game:
 
-- change production factor to just factor
 - change production bonus to bonus
 - make functions and attributes private
 

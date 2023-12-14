@@ -454,7 +454,7 @@ func (g *Game) GetCapacityRate(resource *data.Resource) float64 {
 }
 
 func (g *Game) GetOneRate(resource data.Resource) float64 {
-	one := g.GetQuantityForRate(resource) * resource.ProductionFactor
+	one := g.GetQuantityForRate(resource) * resource.Factor
 	bonus := 1.0
 	for _, p := range resource.ProductionBonus {
 		bonus += g.GetOneRate(p)

@@ -17,7 +17,7 @@
       "Capacity": -1,
       "Producers": [
         {
-          "ProductionFactor": 0.5
+          "Factor": 0.5
         }
       ]
     },
@@ -28,7 +28,7 @@
       "Producers": [
         {
           "Name": "day",
-          "ProductionFactor": 0.0025,
+          "Factor": 0.0025,
           "ProductionFloor": true
         }
       ],
@@ -41,7 +41,7 @@
       "Producers": [
         {
           "Name": "day",
-          "ProductionFactor": 0.01,
+          "Factor": 0.01,
           "ProductionFloor": true
         }
       ],
@@ -55,7 +55,7 @@
       "Producers": [
         {
           "Name": "day",
-          "ProductionFactor": 0.01,
+          "Factor": 0.01,
           "ProductionFloor": true
         }
       ],
@@ -70,7 +70,7 @@
       "Producers": [
         {
           "Name": "day",
-          "ProductionFactor": 0.01,
+          "Factor": 0.01,
           "ProductionFloor": true
         }
       ],
@@ -85,7 +85,7 @@
       "Producers": [
         {
           "Name": "day",
-          "ProductionFactor": 0.01,
+          "Factor": 0.01,
           "ProductionFloor": true
         }
       ],
@@ -100,7 +100,7 @@
       "Producers": [
         {
           "Name": "day",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         }
       ],
@@ -114,183 +114,183 @@
       "Producers": [
         {
           "Name": "Catnip Field",
-          "ProductionFactor": 0.625,
+          "Factor": 0.625,
           "ProductionBonus": [
             {
               "Name": "Spring",
-              "ProductionFactor": 0.5
+              "Factor": 0.5
             },
             {
               "Name": "Winter",
-              "ProductionFactor": -0.75
+              "Factor": -0.75
             }
           ]
         },
         {
           "Name": "kitten",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "woodcutter",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "scholar",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "farmer",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "hunter",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "miner",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "priest",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "geologist",
-          "ProductionFactor": -4.25,
+          "Factor": -4.25,
           "ProductionFloor": true,
           "ProductionBonus": [
             {
               "Name": "Pasture",
-              "ProductionFactor": -0.005
+              "Factor": -0.005
             },
             {
               "Name": "Unic. Pasture",
-              "ProductionFactor": -0.0015
+              "Factor": -0.0015
             }
           ],
           "ProductionOnGone": true
         },
         {
           "Name": "farmer",
-          "ProductionFactor": 5,
+          "Factor": 5,
           "ProductionBonus": [
             {
               "Name": "happiness",
-              "ProductionFactor": 1
+              "Factor": 1
             },
             {
               "Name": "Mineral Hoes",
-              "ProductionFactor": 0.5
+              "Factor": 0.5
             },
             {
               "Name": "Iron Hoes",
-              "ProductionFactor": 0.3
+              "Factor": 0.3
             }
           ]
         },
         {
           "Name": "Brewery",
-          "ProductionFactor": -5
+          "Factor": -5
         }
       ],
       "ProductionBonus": [
         {
           "Name": "Aqueduct",
-          "ProductionFactor": 0.03
+          "Factor": 0.03
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "ProductionFactor": 5000
+          "Factor": 5000
         },
         {
           "Name": "Harbour",
-          "ProductionFactor": 2500
+          "Factor": 2500
         }
       ],
       "StartCapacity": 5000
@@ -301,55 +301,55 @@
       "Producers": [
         {
           "Name": "woodcutter",
-          "ProductionFactor": 0.009,
+          "Factor": 0.009,
           "ProductionBonus": [
             {
               "Name": "happiness",
-              "ProductionFactor": 1
+              "Factor": 1
             },
             {
               "Name": "Mineral Axe",
-              "ProductionFactor": 0.7
+              "Factor": 0.7
             },
             {
               "Name": "Iron Axe",
-              "ProductionFactor": 0.5
+              "Factor": 0.5
             }
           ]
         },
         {
           "Name": "Active Smelter",
-          "ProductionFactor": -0.25
+          "Factor": -0.25
         }
       ],
       "ProductionBonus": [
         {
           "Name": "Lumber Mill",
-          "ProductionFactor": 0.1
+          "Factor": 0.1
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "ProductionFactor": 200,
+          "Factor": 200,
           "ProductionBonus": [
             {
               "Name": "Expanded Barns",
-              "ProductionFactor": 0.75
+              "Factor": 0.75
             },
             {
               "Name": "Reinforced Barns",
-              "ProductionFactor": 0.8
+              "Factor": 0.8
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "ProductionFactor": 150
+          "Factor": 150
         },
         {
           "Name": "Harbour",
-          "ProductionFactor": 700
+          "Factor": 700
         }
       ],
       "StartCapacity": 200
@@ -360,11 +360,11 @@
       "Producers": [
         {
           "Name": "scholar",
-          "ProductionFactor": 0.175,
+          "Factor": 0.175,
           "ProductionBonus": [
             {
               "Name": "happiness",
-              "ProductionFactor": 1
+              "Factor": 1
             }
           ]
         }
@@ -372,45 +372,45 @@
       "ProductionBonus": [
         {
           "Name": "Library",
-          "ProductionFactor": 0.1
+          "Factor": 0.1
         },
         {
           "Name": "Academy",
-          "ProductionFactor": 0.2
+          "Factor": 0.2
         },
         {
           "Name": "Observatory",
-          "ProductionFactor": 0.25
+          "Factor": 0.25
         },
         {
           "Name": "Bio Lab",
-          "ProductionFactor": 0.35
+          "Factor": 0.35
         },
         {
           "Name": "Data Center",
-          "ProductionFactor": 0.1
+          "Factor": 0.1
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Library",
-          "ProductionFactor": 250
+          "Factor": 250
         },
         {
           "Name": "Academy",
-          "ProductionFactor": 500
+          "Factor": 500
         },
         {
           "Name": "Observatory",
-          "ProductionFactor": 1000
+          "Factor": 1000
         },
         {
           "Name": "Bio Lab",
-          "ProductionFactor": 1500
+          "Factor": 1500
         },
         {
           "Name": "Data Center",
-          "ProductionFactor": 750
+          "Factor": 750
         }
       ],
       "StartCapacity": 250
@@ -421,43 +421,43 @@
       "Producers": [
         {
           "Name": "hunter",
-          "ProductionFactor": 0.3,
+          "Factor": 0.3,
           "ProductionBonus": [
             {
               "Name": "happiness",
-              "ProductionFactor": 1
+              "Factor": 1
             },
             {
               "Name": "Bolas",
-              "ProductionFactor": 1
+              "Factor": 1
             },
             {
               "Name": "Hunting Armor",
-              "ProductionFactor": 2
+              "Factor": 2
             },
             {
               "Name": "Composite Bow",
-              "ProductionFactor": 0.5
+              "Factor": 0.5
             }
           ]
         },
         {
           "Name": "Mint",
-          "ProductionFactor": -3.75
+          "Factor": -3.75
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Hut",
-          "ProductionFactor": 75
+          "Factor": 75
         },
         {
           "Name": "Log House",
-          "ProductionFactor": 50
+          "Factor": 50
         },
         {
           "Name": "Mansion",
-          "ProductionFactor": 50
+          "Factor": 50
         }
       ],
       "StartCapacity": 250
@@ -468,53 +468,53 @@
       "Producers": [
         {
           "Name": "miner",
-          "ProductionFactor": 0.25,
+          "Factor": 0.25,
           "ProductionBonus": [
             {
               "Name": "happiness",
-              "ProductionFactor": 1
+              "Factor": 1
             },
             {
               "Name": "Mine",
-              "ProductionFactor": 0.2
+              "Factor": 0.2
             },
             {
               "Name": "Quarry",
-              "ProductionFactor": 0.35
+              "Factor": 0.35
             }
           ]
         },
         {
           "Name": "Active Smelter",
-          "ProductionFactor": -0.5
+          "Factor": -0.5
         },
         {
           "Name": "Calciner",
-          "ProductionFactor": -7.5
+          "Factor": -7.5
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "ProductionFactor": 250,
+          "Factor": 250,
           "ProductionBonus": [
             {
               "Name": "Expanded Barns",
-              "ProductionFactor": 0.75
+              "Factor": 0.75
             },
             {
               "Name": "Reinforced Barns",
-              "ProductionFactor": 0.8
+              "Factor": 0.8
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "ProductionFactor": 200
+          "Factor": 200
         },
         {
           "Name": "Harbour",
-          "ProductionFactor": 950
+          "Factor": 950
         }
       ],
       "StartCapacity": 250
@@ -525,35 +525,35 @@
       "Producers": [
         {
           "Name": "Active Smelter",
-          "ProductionFactor": 0.1
+          "Factor": 0.1
         },
         {
           "Name": "Calciner",
-          "ProductionFactor": 0.75
+          "Factor": 0.75
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "ProductionFactor": 50,
+          "Factor": 50,
           "ProductionBonus": [
             {
               "Name": "Expanded Barns",
-              "ProductionFactor": 0.75
+              "Factor": 0.75
             },
             {
               "Name": "Reinforced Barns",
-              "ProductionFactor": 0.8
+              "Factor": 0.8
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "ProductionFactor": 25
+          "Factor": 25
         },
         {
           "Name": "Harbour",
-          "ProductionFactor": 150
+          "Factor": 150
         }
       ],
       "StartCapacity": 50
@@ -564,41 +564,41 @@
       "Producers": [
         {
           "Name": "geologist",
-          "ProductionFactor": 0.075,
+          "Factor": 0.075,
           "ProductionBonus": [
             {
               "Name": "happiness",
-              "ProductionFactor": 1
+              "Factor": 1
             }
           ]
         },
         {
           "Name": "Quarry",
-          "ProductionFactor": 0.075
+          "Factor": 0.075
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "ProductionFactor": 60,
+          "Factor": 60,
           "ProductionBonus": [
             {
               "Name": "Expanded Barns",
-              "ProductionFactor": 0.75
+              "Factor": 0.75
             },
             {
               "Name": "Reinforced Barns",
-              "ProductionFactor": 0.8
+              "Factor": 0.8
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "ProductionFactor": 30
+          "Factor": 30
         },
         {
           "Name": "Harbour",
-          "ProductionFactor": 100
+          "Factor": 100
         }
       ],
       "StartCapacity": 1
@@ -609,35 +609,35 @@
       "Producers": [
         {
           "Name": "Mint",
-          "ProductionFactor": -0.025
+          "Factor": -0.025
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "ProductionFactor": 10,
+          "Factor": 10,
           "ProductionBonus": [
             {
               "Name": "Expanded Barns",
-              "ProductionFactor": 0.75
+              "Factor": 0.75
             },
             {
               "Name": "Reinforced Barns",
-              "ProductionFactor": 0.8
+              "Factor": 0.8
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "ProductionFactor": 5
+          "Factor": 5
         },
         {
           "Name": "Harbour",
-          "ProductionFactor": 25
+          "Factor": 25
         },
         {
           "Name": "Mint",
-          "ProductionFactor": 100
+          "Factor": 100
         }
       ],
       "StartCapacity": 20
@@ -648,35 +648,35 @@
       "Producers": [
         {
           "Name": "Accelerator",
-          "ProductionFactor": -0.075
+          "Factor": -0.075
         },
         {
           "Name": "Calciner",
-          "ProductionFactor": 0.0025
+          "Factor": 0.0025
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "ProductionFactor": 2,
+          "Factor": 2,
           "ProductionBonus": [
             {
               "Name": "Expanded Barns",
-              "ProductionFactor": 0.75
+              "Factor": 0.75
             },
             {
               "Name": "Reinforced Barns",
-              "ProductionFactor": 0.8
+              "Factor": 0.8
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "ProductionFactor": 10
+          "Factor": 10
         },
         {
           "Name": "Harbour",
-          "ProductionFactor": 50
+          "Factor": 50
         }
       ],
       "StartCapacity": 1
@@ -687,21 +687,21 @@
       "Producers": [
         {
           "Name": "Oil Well",
-          "ProductionFactor": 0.1
+          "Factor": 0.1
         },
         {
           "Name": "Magneto",
-          "ProductionFactor": -0.25
+          "Factor": -0.25
         },
         {
           "Name": "Calciner",
-          "ProductionFactor": -0.12
+          "Factor": -0.12
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Oil Well",
-          "ProductionFactor": 1500
+          "Factor": 1500
         }
       ],
       "StartCapacity": 1
@@ -712,17 +712,17 @@
       "Producers": [
         {
           "Name": "Accelerator",
-          "ProductionFactor": 0.0125
+          "Factor": 0.0125
         },
         {
           "Name": "Reactor",
-          "ProductionFactor": -0.005
+          "Factor": -0.005
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Reactor",
-          "ProductionFactor": 250
+          "Factor": 250
         }
       ],
       "StartCapacity": 1
@@ -757,7 +757,7 @@
       "Type": "Resource",
       "Producers": [
         {
-          "ProductionFactor": 0.05
+          "Factor": 0.05
         }
       ],
       "OnGone": [
@@ -774,46 +774,46 @@
       "Capacity": -1,
       "Producers": [
         {
-          "ProductionFactor": -1
+          "Factor": -1
         },
         {
           "Name": "kitten",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "woodcutter",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "scholar",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "farmer",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "hunter",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "miner",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "priest",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "geologist",
-          "ProductionFactor": 1,
+          "Factor": 1,
           "ProductionFloor": true
         }
       ],
@@ -826,11 +826,11 @@
       "Producers": [
         {
           "Name": "all kittens",
-          "ProductionFactor": -0.05,
+          "Factor": -0.05,
           "ProductionBonus": [
             {
               "Name": "Tradepost",
-              "ProductionFactor": -0.04
+              "Factor": -0.04
             }
           ]
         }
@@ -843,11 +843,11 @@
       "Producers": [
         {
           "Name": "all kittens",
-          "ProductionFactor": -0.035,
+          "Factor": -0.035,
           "ProductionBonus": [
             {
               "Name": "Tradepost",
-              "ProductionFactor": -0.04
+              "Factor": -0.04
             }
           ]
         }
@@ -860,17 +860,17 @@
       "Producers": [
         {
           "Name": "all kittens",
-          "ProductionFactor": -0.005,
+          "Factor": -0.005,
           "ProductionBonus": [
             {
               "Name": "Tradepost",
-              "ProductionFactor": -0.04
+              "Factor": -0.04
             }
           ]
         },
         {
           "Name": "Brewery",
-          "ProductionFactor": -0.5
+          "Factor": -0.5
         }
       ]
     },
@@ -881,7 +881,7 @@
       "Producers": [
         {
           "Name": "Unic. Pasture",
-          "ProductionFactor": 0.005
+          "Factor": 0.005
         }
       ]
     },
@@ -891,65 +891,65 @@
       "Producers": [
         {
           "Name": "Amphitheatre",
-          "ProductionFactor": 0.025
+          "Factor": 0.025
         },
         {
           "Name": "Chapel",
-          "ProductionFactor": 0.25
+          "Factor": 0.25
         },
         {
           "Name": "Temple",
-          "ProductionFactor": 0.5
+          "Factor": 0.5
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Library",
-          "ProductionFactor": 10,
+          "Factor": 10,
           "ProductionBonus": [
             {
               "Name": "Ziggurat",
-              "ProductionFactor": 0.08
+              "Factor": 0.08
             }
           ]
         },
         {
           "Name": "Academy",
-          "ProductionFactor": 25,
+          "Factor": 25,
           "ProductionBonus": [
             {
               "Name": "Ziggurat",
-              "ProductionFactor": 0.08
+              "Factor": 0.08
             }
           ]
         },
         {
           "Name": "Amphitheatre",
-          "ProductionFactor": 50,
+          "Factor": 50,
           "ProductionBonus": [
             {
               "Name": "Ziggurat",
-              "ProductionFactor": 0.08
+              "Factor": 0.08
             }
           ]
         },
         {
           "Name": "Chapel",
-          "ProductionFactor": 200,
+          "Factor": 200,
           "ProductionBonus": [
             {
               "Name": "Ziggurat",
-              "ProductionFactor": 0.08
+              "Factor": 0.08
             }
           ]
         },
         {
           "Name": "Data Center",
-          "ProductionFactor": 250,
+          "Factor": 250,
           "ProductionBonus": [
             {
               "Name": "Ziggurat",
-              "ProductionFactor": 0.08
+              "Factor": 0.08
             }
           ]
         }
@@ -962,23 +962,23 @@
       "Producers": [
         {
           "Name": "priest",
-          "ProductionFactor": 0.0075,
+          "Factor": 0.0075,
           "ProductionBonus": [
             {
               "Name": "happiness",
-              "ProductionFactor": 1
+              "Factor": 1
             }
           ]
         },
         {
           "Name": "Chapel",
-          "ProductionFactor": 0.025
+          "Factor": 0.025
         }
       ],
       "CapacityProducers": [
         {
           "Name": "Temple",
-          "ProductionFactor": 100
+          "Factor": 100
         }
       ],
       "StartCapacity": 1
@@ -1020,7 +1020,7 @@
       "Producers": [
         {
           "Name": "AI Core",
-          "ProductionFactor": 0.1
+          "Factor": 0.1
         }
       ]
     },
@@ -1036,35 +1036,35 @@
       "Producers": [
         {
           "Name": "all kittens",
-          "ProductionFactor": -0.02
+          "Factor": -0.02
         },
         {
           "Name": "ivory",
-          "ProductionFactor": 0.1,
+          "Factor": 0.1,
           "ProductionBoolean": true
         },
         {
           "Name": "furs",
-          "ProductionFactor": 0.1,
+          "Factor": 0.1,
           "ProductionBoolean": true
         },
         {
           "Name": "spice",
-          "ProductionFactor": 0.1,
+          "Factor": 0.1,
           "ProductionBoolean": true
         },
         {
           "Name": "unicorns",
-          "ProductionFactor": 0.1,
+          "Factor": 0.1,
           "ProductionBoolean": true
         },
         {
           "Name": "Amphitheatre",
-          "ProductionFactor": 0.048
+          "Factor": 0.048
         },
         {
           "Name": "Broadcast Tower",
-          "ProductionFactor": 0.75
+          "Factor": 0.75
         }
       ],
       "StartQuantity": 0.1
@@ -1123,15 +1123,15 @@
       "Capacity": -1,
       "Producers": [
         {
-          "ProductionFactor": -1
+          "Factor": -1
         },
         {
           "Name": "Smelter",
-          "ProductionFactor": 1
+          "Factor": 1
         },
         {
           "Name": "Active Smelter",
-          "ProductionFactor": -1
+          "Factor": -1
         }
       ],
       "StartQuantity": 1
@@ -3129,11 +3129,11 @@
           "ProductionBonus": [
             {
               "Name": "Workshop",
-              "ProductionFactor": 0.06
+              "Factor": 0.06
             },
             {
               "Name": "Factory",
-              "ProductionFactor": 0.05
+              "Factor": 0.05
             }
           ]
         }
@@ -3156,11 +3156,11 @@
           "ProductionBonus": [
             {
               "Name": "Workshop",
-              "ProductionFactor": 0.06
+              "Factor": 0.06
             },
             {
               "Name": "Factory",
-              "ProductionFactor": 0.05
+              "Factor": 0.05
             }
           ]
         }
@@ -3183,11 +3183,11 @@
           "ProductionBonus": [
             {
               "Name": "Workshop",
-              "ProductionFactor": 0.06
+              "Factor": 0.06
             },
             {
               "Name": "Factory",
-              "ProductionFactor": 0.05
+              "Factor": 0.05
             }
           ]
         }
@@ -3210,11 +3210,11 @@
           "ProductionBonus": [
             {
               "Name": "Workshop",
-              "ProductionFactor": 0.06
+              "Factor": 0.06
             },
             {
               "Name": "Factory",
-              "ProductionFactor": 0.05
+              "Factor": 0.05
             }
           ]
         }
@@ -3237,11 +3237,11 @@
           "ProductionBonus": [
             {
               "Name": "Workshop",
-              "ProductionFactor": 0.06
+              "Factor": 0.06
             },
             {
               "Name": "Factory",
-              "ProductionFactor": 0.05
+              "Factor": 0.05
             }
           ]
         }
@@ -3268,11 +3268,11 @@
           "ProductionBonus": [
             {
               "Name": "Workshop",
-              "ProductionFactor": 0.06
+              "Factor": 0.06
             },
             {
               "Name": "Factory",
-              "ProductionFactor": 0.05
+              "Factor": 0.05
             }
           ]
         }
@@ -3303,11 +3303,11 @@
           "ProductionBonus": [
             {
               "Name": "Workshop",
-              "ProductionFactor": 0.06
+              "Factor": 0.06
             },
             {
               "Name": "Factory",
-              "ProductionFactor": 0.05
+              "Factor": 0.05
             }
           ]
         }

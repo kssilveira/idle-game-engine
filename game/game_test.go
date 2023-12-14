@@ -55,7 +55,7 @@ func TestAct(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Quantity: 1, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "producer", ProductionFactor: 1,
+				Name: "producer", Factor: 1,
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
@@ -81,7 +81,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "nested", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "producer", ProductionFactor: 1,
+				Name: "producer", Factor: 1,
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
@@ -115,7 +115,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "nested", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "producer", ProductionFactor: 1,
+				Name: "producer", Factor: 1,
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
@@ -149,7 +149,7 @@ func TestAct(t *testing.T) {
 		}, {
 			Name: "nested", Capacity: 2,
 			Producers: []data.Resource{{
-				Name: "producer", ProductionFactor: 1,
+				Name: "producer", Factor: 1,
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
@@ -218,7 +218,7 @@ func TestAct(t *testing.T) {
 			Adds: []data.Resource{{
 				Name: "resource", Quantity: 3,
 				ProductionBonus: []data.Resource{{
-					Name: "resource", ProductionFactor: 4,
+					Name: "resource", Factor: 4,
 				}},
 			}},
 		}},
@@ -265,7 +265,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 			}},
 		}, {
 			Name: "input", Quantity: 3, Capacity: -1,
@@ -281,7 +281,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: 28,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 			}},
 		}, {
 			Name: "input", Quantity: 3, Capacity: -1,
@@ -297,9 +297,9 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input 1", ProductionFactor: 2,
+				Name: "input 1", Factor: 2,
 			}, {
-				Name: "input 2", ProductionFactor: 3,
+				Name: "input 2", Factor: 3,
 			}},
 		}, {
 			Name: "input 1", Quantity: 4, Capacity: -1,
@@ -317,12 +317,12 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2, ProductionFloor: true,
+				Name: "input", Factor: 2, ProductionFloor: true,
 			}},
 		}, {
 			Name: "input", Quantity: 0, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "", ProductionFactor: 0.5,
+				Name: "", Factor: 0.5,
 			}},
 		}},
 		times: []int{1, 2, 3, 4, 5},
@@ -338,12 +338,12 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 1, ProductionBoolean: true,
+				Name: "input", Factor: 1, ProductionBoolean: true,
 			}},
 		}, {
 			Name: "input", Quantity: 0, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "", ProductionFactor: 0.25,
+				Name: "", Factor: 0.25,
 			}},
 		}},
 		times: []int{1, 3, 4, 5, 7, 8, 9},
@@ -353,7 +353,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Quantity: 2, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: -0.2, ProductionOnGone: true,
+				Name: "input", Factor: -0.2, ProductionOnGone: true,
 			}},
 		}, {
 			Name: "input", Quantity: 5, Capacity: -1,
@@ -376,7 +376,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Quantity: 2, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: -0.2,
+				Name: "input", Factor: -0.2,
 			}},
 		}, {
 			Name: "input", Quantity: 5, Capacity: -1,
@@ -399,7 +399,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", StartQuantity: 10, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 			}},
 		}, {
 			Name: "input", Quantity: 3, Capacity: -1,
@@ -415,7 +415,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", StartQuantity: 10, ProductionModulus: 4, ProductionModulusEquals: -1, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 			}},
 		}, {
 			Name: "input", Quantity: 3, Capacity: -1,
@@ -431,13 +431,13 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "input", Quantity: 0, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "", ProductionFactor: 1,
+				Name: "", Factor: 1,
 			}},
 		}, {
 			Name: "resource", StartQuantity: 1, ProductionModulus: 2, ProductionModulusEquals: 1,
 			Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 1,
+				Name: "input", Factor: 1,
 			}},
 		}},
 		times: []int{0, 1, 2, 3},
@@ -447,7 +447,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", StartQuantity: 1, Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "time", ProductionFactor: 1,
+				Name: "time", Factor: 1,
 			}},
 		}},
 		times: []int{4, 5, 6},
@@ -461,10 +461,10 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 			}},
 			ProductionBonus: []data.Resource{{
-				Name: "input", ProductionFactor: 7,
+				Name: "input", Factor: 7,
 			}},
 		}, {
 			Name: "input", Quantity: 3, Capacity: -1,
@@ -480,9 +480,9 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 				ProductionBonus: []data.Resource{{
-					Name: "input", ProductionFactor: 7,
+					Name: "input", Factor: 7,
 				}},
 			}},
 		}, {
@@ -499,14 +499,14 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input 1", ProductionFactor: 2,
+				Name: "input 1", Factor: 2,
 			}, {
-				Name: "input 2", ProductionFactor: 3,
+				Name: "input 2", Factor: 3,
 			}},
 			ProductionBonus: []data.Resource{{
-				Name: "input 1", ProductionFactor: 9,
+				Name: "input 1", Factor: 9,
 			}, {
-				Name: "input 2", ProductionFactor: 10,
+				Name: "input 2", Factor: 10,
 			}},
 		}, {
 			Name: "input 1", Quantity: 4, Capacity: -1,
@@ -524,14 +524,14 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", Capacity: -1,
 			Producers: []data.Resource{{
-				Name: "input 1", ProductionFactor: 2,
+				Name: "input 1", Factor: 2,
 				ProductionBonus: []data.Resource{{
-					Name: "input 2", ProductionFactor: 10,
+					Name: "input 2", Factor: 10,
 				}},
 			}, {
-				Name: "input 2", ProductionFactor: 3,
+				Name: "input 2", Factor: 3,
 				ProductionBonus: []data.Resource{{
-					Name: "input 1", ProductionFactor: 9,
+					Name: "input 1", Factor: 9,
 				}},
 			}},
 		}, {
@@ -550,7 +550,7 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", StartCapacity: 1,
 			CapacityProducers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 			}},
 		}, {
 			Name: "input", Quantity: 3, Capacity: -1,
@@ -565,9 +565,9 @@ func TestUpdate(t *testing.T) {
 		resources: []data.Resource{{
 			Name: "resource", StartCapacity: 1,
 			CapacityProducers: []data.Resource{{
-				Name: "input", ProductionFactor: 2,
+				Name: "input", Factor: 2,
 				ProductionBonus: []data.Resource{{
-					Name: "input", ProductionFactor: 4,
+					Name: "input", Factor: 4,
 				}},
 			}},
 		}, {

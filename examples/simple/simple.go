@@ -17,7 +17,7 @@ func main() {
 	g.AddResources([]data.Resource{{
 		Name: "catnip", Quantity: 10, Capacity: 100,
 		Producers: []data.Resource{{
-			Name: "Catnip Field", ProductionFactor: 0.63,
+			Name: "Catnip Field", Factor: 0.63,
 		}},
 	}, {
 		Name: "Catnip Field", Capacity: -1,

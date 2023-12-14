@@ -8,17 +8,17 @@ type Resource struct {
 	Capacity float64 `json:",omitempty"`
 
 	Producers []Resource `json:",omitempty"`
-	// Quantity += Producer.Quantity * ProductionFactor * elapsedTime
-	ProductionFactor float64 `json:",omitempty"`
-	// Quantity += floor(Producer.Quantity) * ProductionFactor * elapsedTime
+	// Quantity += Producer.Quantity * Factor * elapsedTime
+	Factor float64 `json:",omitempty"`
+	// Quantity += floor(Producer.Quantity) * Factor * elapsedTime
 	ProductionFloor bool `json:",omitempty"`
-	// Quantity += (Producer.Quantity > 0 ? 1 : 0) * ProductionFactor * elapsedTime
+	// Quantity += (Producer.Quantity > 0 ? 1 : 0) * Factor * elapsedTime
 	ProductionBoolean bool `json:",omitempty"`
-	// Quantity = StartQuantity + Producer.Quantity * ProductionFactor
+	// Quantity = StartQuantity + Producer.Quantity * Factor
 	StartQuantity float64 `json:",omitempty"`
-	// Quantity = StartQuantity + (Producer.Quantity * ProductionFactor) % ProductionModulus
+	// Quantity = StartQuantity + (Producer.Quantity * Factor) % ProductionModulus
 	ProductionModulus int `json:",omitempty"`
-	// Quantity = StartQuantity if (Producer.Quantity * ProductionFactor) % ProductionModulus == ProductionModulusEquals else 0
+	// Quantity = StartQuantity if (Producer.Quantity * Factor) % ProductionModulus == ProductionModulusEquals else 0
 	ProductionModulusEquals int `json:",omitempty"`
 
 	// production *= 1 + bonus
@@ -29,7 +29,7 @@ type Resource struct {
 	OnGone           []Resource `json:",omitempty"`
 
 	CapacityProducers []Resource `json:",omitempty"`
-	// Capacity = StartCapacity + CapacityProducer.Quantity * ProductionFactor
+	// Capacity = StartCapacity + CapacityProducer.Quantity * Factor
 	StartCapacity float64 `json:",omitempty"`
 
 	// cost = Quantity * pow(CostExponentBase, add.Quantity)
