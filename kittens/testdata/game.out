@@ -631,7 +631,7 @@
       "StartCapacity": 250
     },
     {
-      "Name": "minerals",
+      "Name": "mineral",
       "Type": "Resource",
       "Producers": [
         {
@@ -2901,7 +2901,7 @@
           "CostExponentBase": 1.15
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 400,
           "CostExponentBase": 1.15
         }
@@ -2919,7 +2919,7 @@
       "UnlockedBy": "Metal Working",
       "Costs": [
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 200,
           "CostExponentBase": 1.15
         }
@@ -3000,7 +3000,7 @@
           "CostExponentBase": 1.15
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 70,
           "CostExponentBase": 1.15
         },
@@ -3051,7 +3051,7 @@
           "CostExponentBase": 1.15
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 250,
           "CostExponentBase": 1.15
         }
@@ -3073,7 +3073,7 @@
       "UnlockedBy": "Engineering",
       "Costs": [
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 75,
           "CostExponentBase": 1.12
         }
@@ -3250,7 +3250,7 @@
           "CostExponentBase": 1.15
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 250,
           "CostExponentBase": 1.15
         }
@@ -3474,7 +3474,7 @@
           "CostExponentBase": 1.15
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 1200,
           "CostExponentBase": 1.15
         },
@@ -3497,7 +3497,7 @@
       "UnlockedBy": "Acoustics",
       "Costs": [
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 2000,
           "CostExponentBase": 1.15
         },
@@ -3563,7 +3563,7 @@
           "CostExponentBase": 1.15
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 200,
           "CostExponentBase": 1.15
         },
@@ -3586,7 +3586,7 @@
       "UnlockedBy": "Architecture",
       "Costs": [
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 5000,
           "CostExponentBase": 1.15
         },
@@ -3996,7 +3996,7 @@
       "UnlockedBy": "Construction",
       "Costs": [
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 250
         }
       ],
@@ -4178,7 +4178,7 @@
           "Quantity": 15
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 1000
         }
       ],
@@ -5490,7 +5490,7 @@
       "LockedBy": "Mineral Hoes",
       "Costs": [
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 275
         },
         {
@@ -5534,7 +5534,7 @@
       "LockedBy": "Mineral Axe",
       "Costs": [
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 500
         },
         {
@@ -5736,7 +5736,7 @@
           "Quantity": 1000
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 750
         },
         {
@@ -6402,7 +6402,7 @@
           "Quantity": 50
         },
         {
-          "Name": "minerals",
+          "Name": "mineral",
           "Quantity": 250
         },
         {

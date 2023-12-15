@@ -186,7 +186,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mansion", Factor: 50,
 		}},
 	}, {
-		Name: "minerals", Type: "Resource", StartCapacity: 250,
+		Name: "mineral", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "miner", Factor: 0.05 * 5,
 			Bonus: []data.Resource{{
@@ -446,11 +446,11 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
 		}, {
-			Name: "minerals", Quantity: 400, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 400, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Active Smelter", UnlockedBy: "Metal Working",
-		Costs: []data.Resource{{Name: "minerals", Quantity: 200, CostExponentBase: 1.15}},
+		Costs: []data.Resource{{Name: "mineral", Quantity: 200, CostExponentBase: 1.15}},
 	}, {
 		Name: "Pasture", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{
@@ -466,7 +466,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "minerals", Quantity: 70, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 70, CostExponentBase: 1.15,
 		}, {
 			Name: "science", Quantity: 100, CostExponentBase: 1.15,
 		}},
@@ -482,12 +482,12 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
 		}, {
-			Name: "minerals", Quantity: 250, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 250, CostExponentBase: 1.15,
 		}},
 		Adds: []data.Resource{{Name: "kitten", Capacity: 1}},
 	}, {
 		Name: "Aqueduct", UnlockedBy: "Engineering",
-		Costs: []data.Resource{{Name: "minerals", Quantity: 75, CostExponentBase: 1.12}},
+		Costs: []data.Resource{{Name: "mineral", Quantity: 75, CostExponentBase: 1.12}},
 	}, {
 		Name: "Mansion", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
@@ -543,7 +543,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "iron", Quantity: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "minerals", Quantity: 250, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 250, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Oil Well", UnlockedBy: "Chemistry",
@@ -615,14 +615,14 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
 		}, {
-			Name: "minerals", Quantity: 1200, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 1200, CostExponentBase: 1.15,
 		}, {
 			Name: "parchment", Quantity: 3, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Chapel", UnlockedBy: "Acoustics",
 		Costs: []data.Resource{{
-			Name: "minerals", Quantity: 2000, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 2000, CostExponentBase: 1.15,
 		}, {
 			Name: "culture", Quantity: 250, CostExponentBase: 1.15,
 		}, {
@@ -644,14 +644,14 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 500, CostExponentBase: 1.15,
 		}, {
-			Name: "minerals", Quantity: 200, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 200, CostExponentBase: 1.15,
 		}, {
 			Name: "gold", Quantity: 10, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Mint", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
-			Name: "minerals", Quantity: 5000, CostExponentBase: 1.15,
+			Name: "mineral", Quantity: 5000, CostExponentBase: 1.15,
 		}, {
 			Name: "plate", Quantity: 200, CostExponentBase: 1.15,
 		}, {
@@ -756,7 +756,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
 	}, {
 		Name: "slab", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "minerals", Quantity: 250}},
+		Costs: []data.Resource{{Name: "mineral", Quantity: 250}},
 	}, {
 		Name: "plate", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "iron", Quantity: 125}},
@@ -791,7 +791,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "gold", Quantity: 15,
 		}, {
-			Name: "minerals", Quantity: 1000,
+			Name: "mineral", Quantity: 1000,
 		}},
 		Adds: []data.Resource{{
 			Name: "wood", Quantity: 500,
@@ -1172,7 +1172,7 @@ func NewGame(now game.Now) *game.Game {
 	addWorkshops(g, []data.Action{{
 		Name: "Mineral Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "minerals", Quantity: 275,
+			Name: "mineral", Quantity: 275,
 		}, {
 			Name: "science", Quantity: 100,
 		}},
@@ -1186,7 +1186,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Mineral Axe", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "minerals", Quantity: 500,
+			Name: "mineral", Quantity: 500,
 		}, {
 			Name: "science", Quantity: 100,
 		}},
@@ -1251,7 +1251,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 1000,
 		}, {
-			Name: "minerals", Quantity: 750,
+			Name: "mineral", Quantity: 750,
 		}, {
 			Name: "iron", Quantity: 50,
 		}, {
@@ -1484,7 +1484,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50,
 		}, {
-			Name: "minerals", Quantity: 250,
+			Name: "mineral", Quantity: 250,
 		}, {
 			Name: "science", Quantity: 1000,
 		}},
