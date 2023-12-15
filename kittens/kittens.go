@@ -47,6 +47,7 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Name: "trade ship", Factor: 1,
 		}},
+		BonusStartsFromZero: true,
 	}}
 	HuntingBonus := []data.Resource{{
 		Name: "Bolas", Factor: 1,
@@ -277,11 +278,13 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Active Smelter", Factor: 1,
 				Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
 			}},
+			BonusStartsFromZero: true,
 		}, {
 			Name: "Deep Mining", Factor: 0.003 * 5,
 			Bonus: []data.Resource{{
 				Name: "Mine", Factor: 1,
 			}},
+			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
 			Name: "Pyrolysis", Factor: 0.2,
@@ -304,6 +307,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Active Smelter", Factor: 1,
 			}},
+			BonusStartsFromZero: true,
 		}, {
 			Name: "Geodesy", Factor: 0.0008 * 5,
 			Bonus: []data.Resource{{
@@ -314,6 +318,7 @@ func NewGame(now game.Now) *game.Game {
 					Name: "Unobtainium Drill", Factor: 0.6,
 				}},
 			}},
+			BonusStartsFromZero: true,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", Factor: 10, Bonus: WarehouseBonus,
@@ -342,6 +347,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Active Smelter", Factor: 1,
 			}},
+			BonusStartsFromZero: true,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", Factor: 2, Bonus: WarehouseBonus,
@@ -373,6 +379,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Quarry", Factor: 1,
 			}},
+			BonusStartsFromZero: true,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Reactor", Factor: 250,
@@ -469,15 +476,18 @@ func NewGame(now game.Now) *game.Game {
 				Bonus: []data.Resource{{
 					Name: "Oxidation", Factor: 0.95,
 				}, {
-					Name: "Automated Plants", Factor: 0.25 / 2,
-					Bonus: CraftRatio,
+					Name: "Automated Plants", Factor: 0.25,
+					Bonus:               CraftRatio,
+					BonusStartsFromZero: true,
 				}, {
 					Name: "Nuclear Plants", Factor: 0.02,
 					Bonus: []data.Resource{{
 						Name: "Reactor", Factor: 1,
 					}},
+					BonusStartsFromZero: true,
 				}},
 			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "concrete", Type: "Resource", Capacity: -1,
@@ -878,6 +888,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Steamworks", Factor: 1,
 			}},
+			BonusStartsFromZero: true,
 		}},
 		Costs: []data.Resource{{
 			Name: "culture", Quantity: 400,

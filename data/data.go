@@ -21,8 +21,10 @@ type Resource struct {
 	// Quantity = StartQuantity if (Producer.Quantity * Factor) % ProductionModulus == ProductionModulusEquals else 0
 	ProductionModulusEquals int `json:",omitempty"`
 
-	// production *= 1 + bonus
+	// production *= 1 + sum(bonus)
 	Bonus []Resource `json:",omitempty"`
+	// production *= sum(bonus)
+	BonusStartsFromZero bool
 
 	// negative production reduces consumers
 	ProductionOnGone bool       `json:",omitempty"`

@@ -291,12 +291,19 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 }
 
 func (g *Game) getActionAdd(add data.Resource) data.Resource {
-	bonus := 1.0
-	for _, p := range add.Bonus {
-		bonus += g.getOneRate(p)
-	}
-	add.Quantity *= bonus
+	add.Quantity *= g.getBonus(add)
 	return add
+}
+
+func (g *Game) getBonus(resource data.Resource) float64 {
+	bonus := 1.0
+	if resource.BonusStartsFromZero {
+		bonus = 0
+	}
+	for _, b := range resource.Bonus {
+		bonus += g.getOneRate(b)
+	}
+	return bonus
 }
 
 func (g *Game) parseInput(in string) (data.ParsedInput, error) {
@@ -475,11 +482,7 @@ func (g *Game) getRate(resource *data.Resource) float64 {
 	for _, p := range resource.Producers {
 		factor += g.getOneRate(p)
 	}
-	bonus := 1.0
-	for _, p := range resource.Bonus {
-		bonus += g.getOneRate(p)
-	}
-	return factor * bonus
+	return factor * g.getBonus(resource)
 }
 
 func (g *Game) getCapacityRate(resource *data.Resource) float64 {
@@ -492,11 +495,7 @@ func (g *Game) getCapacityRate(resource *data.Resource) float64 {
 
 func (g *Game) getOneRate(resource data.Resource) float64 {
 	one := g.getQuantityForRate(resource) * resource.Factor
-	bonus := 1.0
-	for _, p := range resource.Bonus {
-		bonus += g.getOneRate(p)
-	}
-	return one * bonus
+	return one * g.getBonus(resource)
 }
 
 func (g *Game) getQuantityForRate(p data.Resource) float64 {
