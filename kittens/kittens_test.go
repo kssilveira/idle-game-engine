@@ -5,12 +5,14 @@ import (
 	"encoding/json"
 	"log"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strings"
 	"testing"
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/game"
+	"github.com/kssilveira/idle-game-engine/kittens/graph"
 	"github.com/kssilveira/idle-game-engine/kittens/solve"
 	"github.com/kssilveira/idle-game-engine/textui"
 	"github.com/kssilveira/idle-game-engine/ui"
@@ -223,16 +225,16 @@ func TestGraph(t *testing.T) {
 		colors map[string]bool
 	}{{
 		name: "graph",
-		fn:   Graph,
+		fn:   graph.Graph,
 	}, {
 		name: "graph edges",
-		fn:   GraphEdges,
+		fn:   graph.GraphEdges,
 	}, {
 		name: "graph nodes",
-		fn:   GraphNodes,
+		fn:   graph.GraphNodes,
 	}, {
 		name: "graph_blue",
-		fn:   Graph,
+		fn:   graph.Graph,
 		colors: map[string]bool{
 			"blue": true,
 		},
@@ -247,13 +249,13 @@ func TestGraph(t *testing.T) {
 		if err := os.WriteFile(dot, buf.Bytes(), 0644); err != nil {
 			t.Errorf("TestGraph.Graph got err %v", err)
 		}
-		/*
+		if false {
 			svg := filepath.Join("testdata", name+".svg")
 			cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
 			if err := cmd.Run(); err != nil {
 				t.Errorf("[%s] got err %v", in.name, err)
 			}
-			//*/
+		}
 	}
 }
 
