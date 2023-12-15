@@ -179,11 +179,9 @@ func TestRun(t *testing.T) {
 				}
 			}
 			for _, one := range in.iters {
-				cmd, err := toInput(g, one.input)
-				if err != nil {
+				if err := toInput(g, one.input, input); err != nil {
 					t.Errorf("[%s] got input err %v", in.name, err)
 				}
-				input <- cmd
 			}
 			input <- "999"
 		}()

@@ -3,6 +3,7 @@ package kittens
 import (
 	"fmt"
 	"log"
+	"strconv"
 	"strings"
 	"time"
 
@@ -1355,28 +1356,15 @@ func addWorkshops(g *game.Game, actions []data.Action) {
 
 func Solve(g *game.Game, input chan string, sleepMS int) error {
 	cmds := []string{
-		"Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip",
-		"Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip", "Gather catnip",
-		"Catnip Field", "m Catnip Field",
-		"s Refine catnip", "s Refine catnip", "s Refine catnip", "s Refine catnip", "s Refine catnip",
-		"Hut", "s woodcutter",
+		"10 Gather catnip", "Catnip Field", "m Catnip Field",
+		"5 s Refine catnip", "Hut", "s woodcutter",
 		"s Library", "s scholar", "m Library",
 		"s Calendar", "s Agriculture", "s Hut", "s farmer", "s farmer",
 		"m Barn", "m Catnip Field", "m Library",
 		"s Archery", "s Hut", "s hunter", "s farmer",
 		"s Animal Husbandry", "m Pasture",
 
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters", "s Send hunters",
-		"Unic. Pasture",
-		"s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture",
-		"s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture", "s Unic. Pasture",
+		"40 s Send hunters", "Unic. Pasture", "10 s Unic. Pasture",
 
 		"s Mining", "s Mine", "s Hut", "s miner", "s farmer", "m Mine",
 		"m Workshop", "s Mineral Hoes", "s Mineral Axe", "s Bolas",
@@ -1395,9 +1383,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 
 		"s Construction", "s Catnip Enrichment", "s Composite Bow",
 		"m Reinforced Barns",
-		"s Warehouse",
-		"s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse",
-		"s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse", "s Warehouse",
+		"11 s Warehouse",
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
 		"m Academy", "m Lumber Mill",
 		"s Reinforced Saw",
@@ -1406,34 +1392,39 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Currency",
 	}
 	for _, cmd := range cmds {
-		in, err := toInput(g, cmd)
-		if err != nil {
+		if err := toInput(g, cmd, input); err != nil {
 			return err
 		}
-		input <- in
 		time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
 	}
 	return nil
 }
 
-func toInput(g *game.Game, cmd string) (string, error) {
+func toInput(g *game.Game, cmd string, input chan string) error {
+	words := strings.Split(cmd, " ")
 	prefix := ""
-	if strings.HasPrefix(cmd, "s ") {
-		prefix = "s"
-		cmd = cmd[2:]
+	count := 1
+	if len(words) > 0 {
+		cnt, err := strconv.Atoi(words[0])
+		if err == nil {
+			count = cnt
+			words = words[1:]
+		}
 	}
-	if strings.HasPrefix(cmd, "c ") {
-		prefix = "c"
-		cmd = cmd[2:]
+	if len(words) > 0 {
+		if len(words[0]) == 1 {
+			prefix = words[0]
+			words = words[1:]
+		}
 	}
-	if strings.HasPrefix(cmd, "m ") {
-		prefix = "m"
-		cmd = cmd[2:]
-	}
+	cmd = strings.Join(words, " ")
 	if !g.HasAction(cmd) {
-		return "", fmt.Errorf("invalid action %s", cmd)
+		return fmt.Errorf("invalid action %s", cmd)
 	}
-	return fmt.Sprintf("%s%d", prefix, g.GetActionIndex(cmd)), nil
+	for i := 0; i < count; i++ {
+		input <- fmt.Sprintf("%s%d", prefix, g.GetActionIndex(cmd))
+	}
+	return nil
 }
 
 func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
