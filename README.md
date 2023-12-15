@@ -11,6 +11,7 @@ Game engine for idle games like kittens game.
 - [simple.go](examples/simple/simple.go) run simple game
 - [kittens.go](kittens/kittens.go) kittens game
 - [main.go](main.go) run kittens game
+- [solve.out](kittens/testdata/game.out) json representation of kittens game
 - [solve.go](kittens/solve/solve.go) solution to kittens game
 - [solve.out](kittens/testdata/solve.out) text UI output for solution to kittens game
 - [graph.go](kittens/graph/graph.go) generate graph kittens game dependencies
