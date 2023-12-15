@@ -109,9 +109,9 @@ func showActions(cfg Config, data *ui.Data) {
 			adds = append(adds, one)
 		}
 		parts = append(parts, strings.Join(adds, ", "))
-		number := fmt.Sprintf("%2d", i)
+		number := fmt.Sprintf("%3d", i)
 		if cfg.HideActionNumbers {
-			number = "XX"
+			number = "X"
 		}
 		cfg.Logger.Printf("%s: %s[%s] %s)\n", number, status, a.Type, strings.Join(parts, ""))
 	}

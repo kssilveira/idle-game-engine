@@ -84,7 +84,8 @@ Edges:
 
 More features from kittens game:
 
-- add bonus starts from zero
+- hide resources
+- hide craft actions
 
 - Bonfire building upgrades
 - Bonfire effects for

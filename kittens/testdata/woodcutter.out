@@ -5,10 +5,10 @@
 [-] [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
 [Resource] kitten 2/2 0.05/s
 [Village] happiness 0.06 (0.10 + -0.04)
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Village] woodcutter -(kitten 1) +(woodcutter 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
+X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 last action: 
 ###
 [Calendar] time 1
@@ -19,11 +19,11 @@ last action:
 [Resource] wood 0.10/200 0.10/s 34m55s to cap
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 0.06 (0.10 + -0.04)
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
-XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Bonfire] Hut (1) -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
+X: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 last action: woodcutter
 ###
 [Calendar] time 1
@@ -34,11 +34,11 @@ last action: woodcutter
 [Resource] wood 0.10/200 0.10/s 34m55s to cap
 [Resource] kitten 1/1 0.05/s
 [Village] happiness 0.06 (0.10 + -0.04)
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
-XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Bonfire] Hut (1) -(wood 0.10/12.50 2m10s) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 0.10/25 4m21s) +(Library 1)
+X: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 last action: Gather catnip
 ###
 [Calendar] time 2
@@ -48,11 +48,11 @@ last action: Gather catnip
 [-] [Resource] catnip 984/5000 -8.50/s 1m55s to empty
 [Resource] wood 0.29/200 0.19/s 17m26s to cap
 [Village] happiness 0.06 (0.10 + -0.04)
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
-XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
+X: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 last action: woodcutter
 ###
 [Calendar] time 2
@@ -62,9 +62,9 @@ last action: woodcutter
 [-] [Resource] catnip 985/5000 -8.50/s 1m55s to empty
 [Resource] wood 0.29/200 0.19/s 17m26s to cap
 [Village] happiness 0.06 (0.10 + -0.04)
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-XX: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
-XX: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Bonfire] Hut (1) -(wood 0.29/12.50 1m4s) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 0.29/25 2m9s) +(Library 1)
+X: [*] [Village] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 last action: Gather catnip

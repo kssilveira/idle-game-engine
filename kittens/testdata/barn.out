@@ -5,15 +5,15 @@
 [Resource] catnip 1/5000
 [Resource] wood 200/200
 [Village] happiness 0.10
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
-XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
-XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 25) +(Library 1)
-XX: [Bonfire] Barn -(wood 50) +(Barn 1)
-XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
-XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
+X: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
+X: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Bonfire] Barn -(wood 50) +(Barn 1)
+X: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
+X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: 
 ###
 [Calendar] time 1
@@ -23,15 +23,15 @@ last action:
 [Resource] catnip 1/10000
 [Resource] wood 150/400
 [Village] happiness 0.10
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
-XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
-XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 25) +(Library 1)
-XX: [Bonfire] Barn (1) -(wood 87.50) +(Barn 1)
-XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
-XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
+X: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
+X: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Bonfire] Barn (1) -(wood 87.50) +(Barn 1)
+X: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
+X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: Barn
 ###
 [Calendar] time 1
@@ -41,15 +41,15 @@ last action: Barn
 [Resource] catnip 2/10000
 [Resource] wood 150/400
 [Village] happiness 0.10
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
-XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
-XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 25) +(Library 1)
-XX: [Bonfire] Barn (1) -(wood 87.50) +(Barn 1)
-XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
-XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
+X: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
+X: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Bonfire] Barn (1) -(wood 87.50) +(Barn 1)
+X: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
+X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: Gather catnip
 ###
 [Calendar] time 2
@@ -59,15 +59,15 @@ last action: Gather catnip
 [Resource] catnip 2/15000
 [Resource] wood 62.50/600
 [Village] happiness 0.10
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
-XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
-XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 25) +(Library 1)
-XX: [Bonfire] Barn (2) -(wood 62.50/153.12) +(Barn 1)
-XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
-XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
+X: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
+X: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Bonfire] Barn (2) -(wood 62.50/153.12) +(Barn 1)
+X: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
+X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: Barn
 ###
 [Calendar] time 2
@@ -77,13 +77,13 @@ last action: Barn
 [Resource] catnip 3/15000
 [Resource] wood 62.50/600
 [Village] happiness 0.10
-XX: [Bonfire] Gather catnip +(catnip 1)
-XX: [Bonfire] Refine catnip -(catnip 3/100) +(wood 1)
-XX: [Bonfire] Catnip Field -(catnip 3/10) +(Catnip Field 1)
-XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-XX: [Bonfire] Library -(wood 25) +(Library 1)
-XX: [Bonfire] Barn (2) -(wood 62.50/153.12) +(Barn 1)
-XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
-XX: [*] [Science] Archery -(science 0/300*) +(Archery 1)
-XX: [*] [Science] Mining -(science 0/500*) +(Mining 1)
+X: [Bonfire] Gather catnip +(catnip 1)
+X: [Bonfire] Refine catnip -(catnip 3/100) +(wood 1)
+X: [Bonfire] Catnip Field -(catnip 3/10) +(Catnip Field 1)
+X: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
+X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Bonfire] Barn (2) -(wood 62.50/153.12) +(Barn 1)
+X: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
+X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
+X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: Gather catnip
