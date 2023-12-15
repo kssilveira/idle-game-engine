@@ -13,6 +13,7 @@ Game engine for idle games like kittens game.
 - [main.go](main.go) run kittens game
 - [solve.go](kittens/solve/solve.go) solution to kittens game
 - [solve.out](kittens/testdata/solve.out) text UI output for solution to kittens game
+- [graph.go](kittens/graph/graph.go) generate graph kittens game dependencies
 - [graph.svg](kittens/testdata/graph.svg) graph of kittens game dependencies
 
 ## Special Actions
@@ -82,7 +83,6 @@ Edges:
 
 More features from kittens game:
 
-- split kittens file
 - hide custom actions from test output
 
 - Bonfire building upgrades
