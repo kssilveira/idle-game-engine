@@ -41,7 +41,7 @@ func Show(cfg Config, data *ui.Data) {
 func showResources(cfg Config, data *ui.Data) {
 	for _, d := range data.Resources {
 		r := d.Resource
-		if r.IsHidden || r.Quantity == 0 {
+		if r.IsHidden || d.Rate == 0 || r.Quantity == 0 {
 			continue
 		}
 		status := ""

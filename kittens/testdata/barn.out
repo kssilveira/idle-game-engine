@@ -1,8 +1,4 @@
 ###
-[Calendar] year 1
-[Calendar] Spring 1
-[Calendar] day_of_year 1
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
@@ -14,11 +10,6 @@ X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: 
 ###
-[Calendar] time 1
-[Calendar] year 1
-[Calendar] Spring 1
-[Calendar] day_of_year 1
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
@@ -30,11 +21,6 @@ X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: Barn
 ###
-[Calendar] time 1
-[Calendar] year 1
-[Calendar] Spring 1
-[Calendar] day_of_year 1
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
@@ -46,11 +32,9 @@ X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: Gather catnip
 ###
-[Calendar] time 2
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
@@ -62,11 +46,9 @@ X: [*] [Science] Archery -(science 0/300*) +(Archery 1)
 X: [*] [Science] Mining -(science 0/500*) +(Mining 1)
 last action: Barn
 ###
-[Calendar] time 2
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 3/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 3/10) +(Catnip Field 1)

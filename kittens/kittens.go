@@ -85,7 +85,7 @@ func NewGame(now game.Now) *game.Game {
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []data.Resource{{Name: "day", Factor: 1, ProductionFloor: true}},
 	}, {
-		Name: "catnip", Type: "Resource", StartCapacity: 5000, IsHidden: true,
+		Name: "catnip", Type: "Resource", StartCapacity: 5000,
 		Producers: join([]data.Resource{{
 			Name: "Catnip Field", Factor: 0.125 * 5,
 			Bonus: []data.Resource{{
@@ -121,7 +121,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Harbour", Factor: 2500, Bonus: join(HarbourBonus, CatnipCapacityBonus),
 		}},
 	}, {
-		Name: "wood", Type: "Resource", StartCapacity: 200, IsHidden: true,
+		Name: "wood", Type: "Resource", StartCapacity: 200,
 		Producers: []data.Resource{{
 			Name: "woodcutter", Factor: 0.018 * 5,
 			Bonus: []data.Resource{{
@@ -160,7 +160,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Harbour", Factor: 700, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}},
 	}, {
-		Name: "science", Type: "Resource", StartCapacity: 250, IsHidden: true,
+		Name: "science", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "scholar", Factor: 0.035 * 5,
 			Bonus: []data.Resource{{
@@ -190,7 +190,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Data Center", Factor: 750,
 		}},
 	}, {
-		Name: "catpower", Type: "Resource", StartCapacity: 250, IsHidden: true,
+		Name: "catpower", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "hunter", Factor: 0.06 * 5,
 			Bonus: []data.Resource{{
@@ -213,7 +213,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mansion", Factor: 50,
 		}},
 	}, {
-		Name: "mineral", Type: "Resource", StartCapacity: 250, IsHidden: true,
+		Name: "mineral", Type: "Resource", StartCapacity: 250,
 		Producers: []data.Resource{{
 			Name: "miner", Factor: 0.05 * 5,
 			Bonus: []data.Resource{{
@@ -236,7 +236,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Harbour", Factor: 950, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}},
 	}, {
-		Name: "iron", Type: "Resource", StartCapacity: 50, IsHidden: true,
+		Name: "iron", Type: "Resource", StartCapacity: 50,
 		Producers: []data.Resource{{
 			Name: "Active Smelter", Factor: 0.02 * 5,
 			Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
@@ -258,7 +258,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Harbour", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}},
 	}, {
-		Name: "coal", Type: "Resource", StartCapacity: 1, IsHidden: true,
+		Name: "coal", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "geologist", Factor: 0.015 * 5,
 			Bonus: []data.Resource{{
@@ -299,7 +299,7 @@ func NewGame(now game.Now) *game.Game {
 			}}),
 		}},
 	}, {
-		Name: "gold", Type: "Resource", StartCapacity: 20, IsHidden: true,
+		Name: "gold", Type: "Resource", StartCapacity: 20,
 		Producers: []data.Resource{{
 			Name: "Mint", Factor: -0.005 * 5,
 		}, {
@@ -330,7 +330,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mint", Factor: 100, Bonus: WarehouseBonus,
 		}},
 	}, {
-		Name: "titanium", Type: "Resource", StartCapacity: 1, IsHidden: true,
+		Name: "titanium", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "Accelerator", Factor: -0.015 * 5,
 		}, {
@@ -357,7 +357,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Harbour", Factor: 50, Bonus: join(WarehouseBonus, HarbourBonus),
 		}},
 	}, {
-		Name: "oil", Type: "Resource", StartCapacity: 1, IsHidden: true,
+		Name: "oil", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "Oil Well", Factor: 0.02 * 5,
 		}, {
@@ -369,7 +369,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Oil Well", Factor: 1500,
 		}},
 	}, {
-		Name: "uranium", Type: "Resource", StartCapacity: 1, IsHidden: true,
+		Name: "uranium", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "Accelerator", Factor: 0.0025 * 5,
 		}, {
@@ -385,17 +385,17 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Reactor", Factor: 250,
 		}},
 	}, {
-		Name: "unobtainium", Type: "Resource", Capacity: 1, IsHidden: true,
+		Name: "unobtainium", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "time crystal", Type: "Resource", Capacity: 1, IsHidden: true,
+		Name: "time crystal", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "antimatter", Type: "Resource", Capacity: 1, IsHidden: true,
+		Name: "antimatter", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "relic", Type: "Resource", Capacity: 1, IsHidden: true,
+		Name: "relic", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "void", Type: "Resource", Capacity: 1, IsHidden: true,
+		Name: "void", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "kitten", Type: "Resource", Capacity: 0, IsHidden: true,
+		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
 			Name: "", Factor: 0.05,
 		}},
@@ -410,19 +410,19 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", Factor: 1, ProductionFloor: true,
 		}, kittenNames)),
 	}, {
-		Name: "furs", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "furs", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.05,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}},
 	}, {
-		Name: "ivory", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "ivory", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.035,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}},
 	}, {
-		Name: "spice", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "spice", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.005,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
@@ -430,10 +430,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Brewery", Factor: -0.1 * 5,
 		}},
 	}, {
-		Name: "unicorns", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "unicorns", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{Name: "Unic. Pasture", Factor: 0.001 * 5}},
 	}, {
-		Name: "culture", Type: "Resource", StartCapacity: 575, IsHidden: true,
+		Name: "culture", Type: "Resource", StartCapacity: 575,
 		Producers: []data.Resource{{
 			Name: "Amphitheatre", Factor: 0.005 * 5,
 		}, {
@@ -453,7 +453,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Data Center", Factor: 250, Bonus: CultureCapacityBonus,
 		}},
 	}, {
-		Name: "faith", Type: "Resource", StartCapacity: 1, IsHidden: true,
+		Name: "faith", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "priest", Factor: 0.0015 * 5,
 			Bonus: []data.Resource{{
@@ -466,9 +466,9 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Temple", Factor: 100,
 		}},
 	}, {
-		Name: "starchart", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "starchart", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "steel", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "steel", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "Steel Plants", Factor: 0.15 * 5 * 0.1,
 			Bonus: []data.Resource{{
@@ -490,23 +490,23 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
-		Name: "concrete", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "concrete", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "alloy", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "alloy", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "parchment", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "parchment", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "compendium", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "compendium", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "blueprint", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "blueprint", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "trade ship", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "trade ship", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "eludium", Type: "Resource", Capacity: 1, IsHidden: true,
+		Name: "eludium", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "thorium", Type: "Resource", Capacity: 1, IsHidden: true,
+		Name: "thorium", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "gigaflops", Type: "Resource", Capacity: -1, IsHidden: true,
+		Name: "gigaflops", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "AI Core", Factor: 0.02 * 5,
 		}},
@@ -1955,7 +1955,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		action.IsHidden = true
 		g.AddAction(action)
 		g.AddResource(data.Resource{
-			Name: name, Type: "Resource", IsHidden: true, Capacity: -1, ProducerAction: action.Name,
+			Name: name, Type: "Resource", Capacity: -1, ProducerAction: action.Name,
 			Producers: action.Producers,
 		})
 	}
@@ -1993,7 +1993,7 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		})
 
 		g.AddResource(data.Resource{
-			Name: "Idle " + name, Type: "Bonfire", Capacity: -1, StartQuantity: 1,
+			Name: "Idle " + name, Type: "Bonfire", IsHidden: true, Capacity: -1, StartQuantity: 1,
 			Producers: []data.Resource{{
 				Name: "", Factor: -1,
 			}, {

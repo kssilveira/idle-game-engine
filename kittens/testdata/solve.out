@@ -1,207 +1,169 @@
 ###
-[Calendar] time 1
-[Calendar] year 1
-[Calendar] Spring 1
-[Calendar] day_of_year 1
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 last action: 
 ###
-[Calendar] time 2
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 3
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 4
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 3/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 3/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 5
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 4/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 4/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 6
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 5/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 5/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 7
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 6/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 6/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 8
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 7/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 7/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 9
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 8/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 8/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 10
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 9/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 9/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 11
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
-[Village] happiness 0.10
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 10/100) +(wood 1)
 X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-[Calendar] time 12
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
-[Village] happiness 0.10
+[Resource] catnip 0.94/5000 0.94/s 1h28m52s to cap
 X: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 X: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
 last action: Catnip Field
 ###
-[Calendar] time 2194
-[Calendar] skip 2181
 [Calendar] year 3.74 (1 + 2.74)
 [Calendar] Autumn 1 (1 if 10.97 % 4 == 2)
 [Calendar] day_of_year 298 (1 + 1097 % 400)
-[Village] happiness 0.10
+[Resource] catnip 5000/5000 34.38/s
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 last action: max Catnip Field
 ###
-[Calendar] time 2195
-[Calendar] skip 2181
 [Calendar] year 3.74 (1 + 2.74)
 [Calendar] Autumn 1 (1 if 10.97 % 4 == 2)
 [Calendar] day_of_year 298 (1 + 1097 % 400)
-[Village] happiness 0.10
+[Resource] catnip 4934.38/5000 34.38/s 1s to cap
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 4934.38/5093.21* 4s) +(Catnip Field 1)
 X: [Bonfire] Hut -(wood 1/5) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library -(wood 1/25) +(Library 1)
 last action: skip Refine catnip
 ###
-[Calendar] time 2196
-[Calendar] skip 2181
 [Calendar] year 3.75 (1 + 2.75)
 [Calendar] Autumn 1 (1 if 10.98 % 4 == 2)
 [Calendar] day_of_year 299 (1 + 1098 % 400)
-[Village] happiness 0.10
+[Resource] catnip 4868.75/5000 34.38/s 3s to cap
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 4868.75/5093.21* 6s) +(Catnip Field 1)
 X: [Bonfire] Hut -(wood 2/5) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library -(wood 2/25) +(Library 1)
 last action: skip Refine catnip
 ###
-[Calendar] time 2197
-[Calendar] skip 2181
 [Calendar] year 3.75 (1 + 2.75)
 [Calendar] Autumn 1 (1 if 10.98 % 4 == 2)
 [Calendar] day_of_year 299 (1 + 1098 % 400)
-[Village] happiness 0.10
+[Resource] catnip 4803.12/5000 34.38/s 5s to cap
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 4803.12/5093.21* 8s) +(Catnip Field 1)
 X: [Bonfire] Hut -(wood 3/5) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library -(wood 3/25) +(Library 1)
 last action: skip Refine catnip
 ###
-[Calendar] time 2198
-[Calendar] skip 2181
 [Calendar] year 3.75 (1 + 2.75)
 [Calendar] Autumn 1 (1 if 10.99 % 4 == 2)
 [Calendar] day_of_year 300 (1 + 1099 % 400)
-[Village] happiness 0.10
+[Resource] catnip 4737.50/5000 34.38/s 7s to cap
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 4737.50/5093.21* 10s) +(Catnip Field 1)
 X: [Bonfire] Hut -(wood 4/5) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library -(wood 4/25) +(Library 1)
 last action: skip Refine catnip
 ###
-[Calendar] time 2199
-[Calendar] skip 2181
 [Calendar] year 3.75 (1 + 2.75)
 [Calendar] Autumn 1 (1 if 10.99 % 4 == 2)
 [Calendar] day_of_year 300 (1 + 1099 % 400)
-[Village] happiness 0.10
+[Resource] catnip 4671.88/5000 34.38/s 9s to cap
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 4671.88/5093.21* 12s) +(Catnip Field 1)
 X: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library -(wood 5/25) +(Library 1)
 last action: skip Refine catnip
 ###
-[Calendar] time 2200
-[Calendar] skip 2181
 [Calendar] year 3.75 (1 + 2.75)
 [Calendar] Winter 1 (1 if 11 % 4 == 3)
 [Calendar] day_of_year 301 (1 + 1100 % 400)
-[Village] happiness 0.10
+[Resource] catnip 4680.47/5000 8.59/s 37s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 4680.47/5093.21* 48s) +(Catnip Field 1)
 X: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: Hut
 ###
-[Calendar] time 2220
-[Calendar] skip 2200
 [Calendar] year 3.77 (1 + 2.77)
 [Calendar] Winter 1 (1 if 11.10 % 4 == 3)
 [Calendar] day_of_year 311 (1 + 1110 % 400)
+[Resource] catnip 4848.09/5000 4.34/s 34s to cap
+[Resource] wood 0.10/200 0.10/s 34m16s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 4848.09/5093.21* 56s) +(Catnip Field 1)
 X: [Bonfire] Hut (1) -(wood 0.10/12.50 2m7s) +(Hut 1, kitten cap 2)
@@ -209,11 +171,12 @@ X: [Bonfire] Library -(wood 0.10/25 4m16s) +(Library 1)
 X: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: skip woodcutter
 ###
-[Calendar] time 2478
-[Calendar] skip 2457
 [Calendar] year 4.10 (1 + 3.10)
 [Calendar] Spring 1 (1 if 12.39 % 4 == 0)
 [Calendar] day_of_year 40 (1 + 1239 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 0.17/200 0.10/s 34m54s to cap
+[Resource] kitten 1/1 0.05/s
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (1) -(wood 0.17/12.50 2m9s) +(Hut 1, kitten cap 2)
@@ -223,11 +186,12 @@ X: [Village] scholar -(kitten 1) +(scholar 1)
 X: [Science] Calendar -(science 0/30) +(Calendar 1)
 last action: skip Library
 ###
-[Calendar] time 2479
-[Calendar] skip 2457
 [Calendar] year 4.10 (1 + 3.10)
 [Calendar] Spring 1 (1 if 12.39 % 4 == 0)
 [Calendar] day_of_year 40 (1 + 1239 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 0.27/200 0.10/s 34m53s to cap
+[Resource] science 0.20/500 0.20/s 40m49s to cap
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (1) -(wood 0.27/12.50 2m8s) +(Hut 1, kitten cap 2)
@@ -237,11 +201,12 @@ X: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
 last action: skip scholar
 ###
-[Calendar] time 16817
-[Calendar] skip 16794
 [Calendar] year 22.02 (1 + 21.02)
 [Calendar] Spring 1 (1 if 84.08 % 4 == 0)
 [Calendar] day_of_year 9 (1 + 8408 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 200/200 0.10/s
+[Resource] science 4000/4000 0.46/s
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -251,11 +216,12 @@ X: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [Science] Calendar -(science 30) +(Calendar 1)
 last action: max Library
 ###
-[Calendar] time 16818
-[Calendar] skip 16794
 [Calendar] year 22.02 (1 + 21.02)
 [Calendar] Spring 1 (1 if 84.09 % 4 == 0)
 [Calendar] day_of_year 10 (1 + 8409 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 200/200 0.10/s
+[Resource] science 3970.46/4000 0.46/s 1m3s to cap
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -265,11 +231,12 @@ X: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [Science] Agriculture -(science 100) +(Agriculture 1)
 last action: skip Calendar
 ###
-[Calendar] time 16819
-[Calendar] skip 16794
 [Calendar] year 22.02 (1 + 21.02)
 [Calendar] Spring 1 (1 if 84.09 % 4 == 0)
 [Calendar] day_of_year 10 (1 + 8409 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 200/200 0.10/s
+[Resource] science 3870.93/4000 0.46/s 4m38s to cap
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
@@ -282,11 +249,13 @@ X: [Science] Archery -(science 300) +(Archery 1)
 X: [Science] Mining -(science 500) +(Mining 1)
 last action: skip Agriculture
 ###
-[Calendar] time 16820
-[Calendar] skip 16794
 [Calendar] year 22.03 (1 + 21.03)
 [Calendar] Spring 1 (1 if 84.10 % 4 == 0)
 [Calendar] day_of_year 11 (1 + 8410 % 400)
+[Resource] catnip 5000/5000 43.06/s
+[Resource] wood 187.60/200 0.10/s 2m10s to cap
+[Resource] science 3871.39/4000 0.46/s 4m37s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
@@ -299,11 +268,13 @@ X: [Science] Archery -(science 300) +(Archery 1)
 X: [Science] Mining -(science 500) +(Mining 1)
 last action: skip Hut
 ###
-[Calendar] time 16840
-[Calendar] skip 16813
 [Calendar] year 22.05 (1 + 21.05)
 [Calendar] Spring 1 (1 if 84.20 % 4 == 0)
 [Calendar] day_of_year 21 (1 + 8420 % 400)
+[Resource] catnip 5000/5000 44.01/s
+[Resource] wood 189.50/200 0.09/s 1m52s to cap
+[Resource] science 3880.66/4000 0.45/s 4m22s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
@@ -316,11 +287,12 @@ X: [Science] Archery -(science 300) +(Archery 1)
 X: [Science] Mining -(science 500) +(Mining 1)
 last action: skip farmer
 ###
-[Calendar] time 16860
-[Calendar] skip 16832
 [Calendar] year 22.07 (1 + 21.07)
 [Calendar] Spring 1 (1 if 84.30 % 4 == 0)
 [Calendar] day_of_year 31 (1 + 8430 % 400)
+[Resource] catnip 5000/5000 44.76/s
+[Resource] wood 191.37/200 0.09/s 1m33s to cap
+[Resource] science 3889.75/4000 0.45/s 4m7s to cap
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
 X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
@@ -333,11 +305,12 @@ X: [Science] Archery -(science 300) +(Archery 1)
 X: [Science] Mining -(science 500) +(Mining 1)
 last action: skip farmer
 ###
-[Calendar] time 50554
-[Calendar] skip 50525
 [Calendar] year 64.19 (1 + 63.19)
 [Calendar] Spring 1 (1 if 252.77 % 4 == 0)
 [Calendar] day_of_year 78 (1 + 25277 % 400)
+[Resource] catnip 35000/35000 44.76/s
+[Resource] wood 1400/1400 0.09/s
+[Resource] science 4000/4000 0.45/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
 X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
@@ -350,11 +323,12 @@ X: [Science] Archery -(science 300) +(Archery 1)
 X: [Science] Mining -(science 500) +(Mining 1)
 last action: max Barn
 ###
-[Calendar] time 60586
-[Calendar] skip 60556
 [Calendar] year 76.73 (1 + 75.73)
 [Calendar] Autumn 1 (1 if 302.93 % 4 == 2)
 [Calendar] day_of_year 294 (1 + 30293 % 400)
+[Resource] catnip 35000/35000 38.83/s
+[Resource] wood 1400/1400 0.09/s
+[Resource] science 4000/4000 0.45/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m47s) +(Catnip Field 1)
 X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
@@ -367,11 +341,12 @@ X: [Science] Archery -(science 300) +(Archery 1)
 X: [Science] Mining -(science 500) +(Mining 1)
 last action: max Catnip Field
 ###
-[Calendar] time 150774
-[Calendar] skip 150743
 [Calendar] year 189.47 (1 + 188.47)
 [Calendar] Summer 1 (1 if 753.87 % 4 == 1)
 [Calendar] day_of_year 188 (1 + 75387 % 400)
+[Resource] catnip 35000/35000 38.83/s
+[Resource] wood 1400/1400 0.09/s
+[Resource] science 7500/7500 0.70/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m47s) +(Catnip Field 1)
 X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
@@ -384,11 +359,12 @@ X: [Science] Archery -(science 300) +(Archery 1)
 X: [Science] Mining -(science 500) +(Mining 1)
 last action: max Library
 ###
-[Calendar] time 150775
-[Calendar] skip 150743
 [Calendar] year 189.47 (1 + 188.47)
 [Calendar] Summer 1 (1 if 753.87 % 4 == 1)
 [Calendar] day_of_year 188 (1 + 75387 % 400)
+[Resource] catnip 35000/35000 38.83/s
+[Resource] wood 1400/1400 0.09/s
+[Resource] science 7200.70/7500 0.70/s 7m9s to cap
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m47s) +(Catnip Field 1)
 X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
@@ -404,11 +380,13 @@ X: [Science] Mining -(science 500) +(Mining 1)
 X: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip Archery
 ###
-[Calendar] time 150776
-[Calendar] skip 150743
 [Calendar] year 189.47 (1 + 188.47)
 [Calendar] Summer 1 (1 if 753.88 % 4 == 1)
 [Calendar] day_of_year 189 (1 + 75388 % 400)
+[Resource] catnip 35000/35000 38.83/s
+[Resource] wood 1368.84/1400 0.09/s 5m39s to cap
+[Resource] science 7201.39/7500 0.70/s 7m8s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m47s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -424,11 +402,14 @@ X: [Science] Mining -(science 500) +(Mining 1)
 X: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip Hut
 ###
-[Calendar] time 150796
-[Calendar] skip 150762
 [Calendar] year 189.50 (1 + 188.50)
 [Calendar] Summer 1 (1 if 753.98 % 4 == 1)
 [Calendar] day_of_year 199 (1 + 75398 % 400)
+[Resource] catnip 35000/35000 34.38/s
+[Resource] wood 1370.68/1400 0.09/s 5m25s to cap
+[Resource] science 7215.30/7500 0.68/s 6m57s to cap
+[Resource] catpower 0.30/475 0.30/s 26m22s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 2m1s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 1370.68/1439.39* 12m43s) +(Library 1)
@@ -443,11 +424,13 @@ X: [Science] Mining -(science 500) +(Mining 1)
 X: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip hunter
 ###
-[Calendar] time 150816
-[Calendar] skip 150781
 [Calendar] year 189.52 (1 + 188.52)
 [Calendar] Autumn 1 (1 if 754.08 % 4 == 2)
 [Calendar] day_of_year 209 (1 + 75408 % 400)
+[Resource] catnip 35000/35000 34.83/s
+[Resource] wood 1372.47/1400 0.09/s 5m12s to cap
+[Resource] science 7228.94/7500 0.67/s 6m45s to cap
+[Resource] catpower 6.29/475 0.29/s 26m34s to cap
 [Village] happiness -0.02 (0.10 + -0.12)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m59s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -463,11 +446,13 @@ X: [Science] Mining -(science 500) +(Mining 1)
 X: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip farmer
 ###
-[Calendar] time 150817
-[Calendar] skip 150781
 [Calendar] year 189.52 (1 + 188.52)
 [Calendar] Autumn 1 (1 if 754.08 % 4 == 2)
 [Calendar] day_of_year 209 (1 + 75408 % 400)
+[Resource] catnip 35000/35000 34.83/s
+[Resource] wood 1372.56/1400 0.09/s 5m11s to cap
+[Resource] science 6729.61/7500 0.67/s 19m11s to cap
+[Resource] catpower 6.59/475 0.29/s 26m33s to cap
 [Village] happiness -0.02 (0.10 + -0.12)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m59s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -487,11 +472,13 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Animal Husbandry
 ###
-[Calendar] time 267626
-[Calendar] skip 267589
 [Calendar] year 335.53 (1 + 334.53)
 [Calendar] Autumn 1 (1 if 1338.13 % 4 == 2)
 [Calendar] day_of_year 214 (1 + 133813 % 400)
+[Resource] catnip 35000/35000 39.42/s
+[Resource] wood 1400/1400 0.09/s
+[Resource] science 7500/7500 0.67/s
+[Resource] catpower 475/475 0.29/s
 [Village] happiness -0.02 (0.10 + -0.12)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m45s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -511,11 +498,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: max Pasture
 ###
-[Calendar] time 267627
-[Calendar] skip 267589
 [Calendar] year 335.53 (1 + 334.53)
 [Calendar] Autumn 1 (1 if 1338.13 % 4 == 2)
 [Calendar] day_of_year 214 (1 + 133813 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 375.29/475 0.38/s 4m19s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -535,11 +526,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 267628
-[Calendar] skip 267589
 [Calendar] year 335.54 (1 + 334.54)
 [Calendar] Autumn 1 (1 if 1338.14 % 4 == 2)
 [Calendar] day_of_year 215 (1 + 133814 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 275.68/475 0.38/s 8m39s to cap
+[-] [Resource] furs 78.40 -0.30/s 4m21s to empty
+[-] [Resource] ivory 21.14 -0.21/s 1m40s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -559,11 +554,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 267629
-[Calendar] skip 267589
 [Calendar] year 335.54 (1 + 334.54)
 [Calendar] Autumn 1 (1 if 1338.14 % 4 == 2)
 [Calendar] day_of_year 215 (1 + 133814 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 176.06/475 0.38/s 12m58s to cap
+[-] [Resource] furs 117.60 -0.30/s 6m31s to empty
+[-] [Resource] ivory 31.71 -0.21/s 2m30s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -583,11 +582,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 267630
-[Calendar] skip 267589
 [Calendar] year 335.54 (1 + 334.54)
 [Calendar] Autumn 1 (1 if 1338.15 % 4 == 2)
 [Calendar] day_of_year 216 (1 + 133815 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 76.45/475 0.38/s 17m17s to cap
+[-] [Resource] furs 156.80 -0.30/s 8m42s to empty
+[-] [Resource] ivory 42.28 -0.21/s 3m21s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -607,11 +610,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 267693
-[Calendar] skip 267651
 [Calendar] year 335.62 (1 + 334.62)
 [Calendar] Autumn 1 (1 if 1338.46 % 4 == 2)
 [Calendar] day_of_year 247 (1 + 133846 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.64/475 0.38/s 20m35s to cap
+[-] [Resource] furs 177.40 -0.30/s 9m51s to empty
+[-] [Resource] ivory 39.83 -0.21/s 3m9s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -631,11 +638,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 267953
-[Calendar] skip 267910
 [Calendar] year 335.94 (1 + 334.94)
 [Calendar] Winter 1 (1 if 1339.76 % 4 == 3)
 [Calendar] day_of_year 377 (1 + 133976 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.45/475 0.38/s 20m35s to cap
+[-] [Resource] furs 138.90 -0.30/s 7m42s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -655,11 +666,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 268214
-[Calendar] skip 268170
 [Calendar] year 336.27 (1 + 335.27)
 [Calendar] Summer 1 (1 if 1341.07 % 4 == 1)
 [Calendar] day_of_year 108 (1 + 134107 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.64/475 0.38/s 20m35s to cap
+[-] [Resource] furs 100.10 -0.30/s 5m33s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -679,11 +694,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 268474
-[Calendar] skip 268429
 [Calendar] year 336.59 (1 + 335.59)
 [Calendar] Autumn 1 (1 if 1342.37 % 4 == 2)
 [Calendar] day_of_year 238 (1 + 134237 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.45/475 0.38/s 20m35s to cap
+[-] [Resource] furs 61.60 -0.30/s 3m25s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -703,11 +722,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 268735
-[Calendar] skip 268689
 [Calendar] year 336.92 (1 + 335.92)
 [Calendar] Winter 1 (1 if 1343.67 % 4 == 3)
 [Calendar] day_of_year 368 (1 + 134367 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.62/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -727,11 +750,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 268995
-[Calendar] skip 268948
 [Calendar] year 337.24 (1 + 336.24)
 [Calendar] Spring 1 (1 if 1344.97 % 4 == 0)
 [Calendar] day_of_year 98 (1 + 134497 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.40/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -751,11 +778,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 269256
-[Calendar] skip 269208
 [Calendar] year 337.57 (1 + 336.57)
 [Calendar] Autumn 1 (1 if 1346.28 % 4 == 2)
 [Calendar] day_of_year 229 (1 + 134628 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.56/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -775,11 +806,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 269516
-[Calendar] skip 269467
 [Calendar] year 337.89 (1 + 336.89)
 [Calendar] Winter 1 (1 if 1347.58 % 4 == 3)
 [Calendar] day_of_year 359 (1 + 134758 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.34/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -799,11 +834,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 269777
-[Calendar] skip 269727
 [Calendar] year 338.22 (1 + 337.22)
 [Calendar] Spring 1 (1 if 1348.88 % 4 == 0)
 [Calendar] day_of_year 89 (1 + 134888 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.50/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -823,11 +862,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 270038
-[Calendar] skip 269987
 [Calendar] year 338.55 (1 + 337.55)
 [Calendar] Autumn 1 (1 if 1350.19 % 4 == 2)
 [Calendar] day_of_year 220 (1 + 135019 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.67/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -847,11 +890,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 270298
-[Calendar] skip 270246
 [Calendar] year 338.87 (1 + 337.87)
 [Calendar] Winter 1 (1 if 1351.49 % 4 == 3)
 [Calendar] day_of_year 350 (1 + 135149 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.45/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -871,11 +918,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 270559
-[Calendar] skip 270506
 [Calendar] year 339.20 (1 + 338.20)
 [Calendar] Spring 1 (1 if 1352.79 % 4 == 0)
 [Calendar] day_of_year 80 (1 + 135279 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.61/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -895,11 +946,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 270819
-[Calendar] skip 270765
 [Calendar] year 339.52 (1 + 338.52)
 [Calendar] Autumn 1 (1 if 1354.09 % 4 == 2)
 [Calendar] day_of_year 210 (1 + 135409 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.39/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -919,11 +974,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 271080
-[Calendar] skip 271025
 [Calendar] year 339.85 (1 + 338.85)
 [Calendar] Winter 1 (1 if 1355.40 % 4 == 3)
 [Calendar] day_of_year 341 (1 + 135540 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.56/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -943,11 +1002,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 271340
-[Calendar] skip 271284
 [Calendar] year 340.18 (1 + 339.18)
 [Calendar] Spring 1 (1 if 1356.70 % 4 == 0)
 [Calendar] day_of_year 71 (1 + 135670 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.34/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -967,11 +1030,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 271601
-[Calendar] skip 271544
 [Calendar] year 340.50 (1 + 339.50)
 [Calendar] Autumn 1 (1 if 1358 % 4 == 2)
 [Calendar] day_of_year 201 (1 + 135800 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.50/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -991,11 +1058,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 271862
-[Calendar] skip 271804
 [Calendar] year 340.83 (1 + 339.83)
 [Calendar] Winter 1 (1 if 1359.31 % 4 == 3)
 [Calendar] day_of_year 332 (1 + 135931 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.66/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1015,11 +1086,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 272122
-[Calendar] skip 272063
 [Calendar] year 341.15 (1 + 340.15)
 [Calendar] Spring 1 (1 if 1360.61 % 4 == 0)
 [Calendar] day_of_year 62 (1 + 136061 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.44/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1039,11 +1114,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 272383
-[Calendar] skip 272323
 [Calendar] year 341.48 (1 + 340.48)
 [Calendar] Summer 1 (1 if 1361.91 % 4 == 1)
 [Calendar] day_of_year 192 (1 + 136191 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.61/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1063,11 +1142,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 272643
-[Calendar] skip 272582
 [Calendar] year 341.80 (1 + 340.80)
 [Calendar] Winter 1 (1 if 1363.21 % 4 == 3)
 [Calendar] day_of_year 322 (1 + 136321 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.39/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1087,11 +1170,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 272904
-[Calendar] skip 272842
 [Calendar] year 342.13 (1 + 341.13)
 [Calendar] Spring 1 (1 if 1364.52 % 4 == 0)
 [Calendar] day_of_year 53 (1 + 136452 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.55/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1111,11 +1198,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 273164
-[Calendar] skip 273101
 [Calendar] year 342.45 (1 + 341.45)
 [Calendar] Summer 1 (1 if 1365.82 % 4 == 1)
 [Calendar] day_of_year 183 (1 + 136582 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.33/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1135,11 +1226,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 273425
-[Calendar] skip 273361
 [Calendar] year 342.78 (1 + 341.78)
 [Calendar] Winter 1 (1 if 1367.12 % 4 == 3)
 [Calendar] day_of_year 313 (1 + 136712 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.50/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1159,11 +1254,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 273686
-[Calendar] skip 273621
 [Calendar] year 343.11 (1 + 342.11)
 [Calendar] Spring 1 (1 if 1368.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 136843 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.66/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1183,11 +1282,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 273946
-[Calendar] skip 273880
 [Calendar] year 343.43 (1 + 342.43)
 [Calendar] Summer 1 (1 if 1369.73 % 4 == 1)
 [Calendar] day_of_year 174 (1 + 136973 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.44/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1207,11 +1310,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 274207
-[Calendar] skip 274140
 [Calendar] year 343.76 (1 + 342.76)
 [Calendar] Winter 1 (1 if 1371.03 % 4 == 3)
 [Calendar] day_of_year 304 (1 + 137103 % 400)
+[Resource] catnip 35000/35000 9.70/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.60/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 7m9s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1231,11 +1338,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 274467
-[Calendar] skip 274399
 [Calendar] year 344.08 (1 + 343.08)
 [Calendar] Spring 1 (1 if 1372.33 % 4 == 0)
 [Calendar] day_of_year 34 (1 + 137233 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.38/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1255,11 +1366,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 274728
-[Calendar] skip 274659
 [Calendar] year 344.41 (1 + 343.41)
 [Calendar] Summer 1 (1 if 1373.64 % 4 == 1)
 [Calendar] day_of_year 165 (1 + 137364 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.55/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1279,11 +1394,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 274988
-[Calendar] skip 274918
 [Calendar] year 344.74 (1 + 343.74)
 [Calendar] Autumn 1 (1 if 1374.94 % 4 == 2)
 [Calendar] day_of_year 295 (1 + 137494 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.33/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1303,11 +1422,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 275249
-[Calendar] skip 275178
 [Calendar] year 345.06 (1 + 344.06)
 [Calendar] Spring 1 (1 if 1376.24 % 4 == 0)
 [Calendar] day_of_year 25 (1 + 137624 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.49/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1327,11 +1450,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 275510
-[Calendar] skip 275438
 [Calendar] year 345.39 (1 + 344.39)
 [Calendar] Summer 1 (1 if 1377.55 % 4 == 1)
 [Calendar] day_of_year 156 (1 + 137755 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.66/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1351,11 +1478,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 275770
-[Calendar] skip 275697
 [Calendar] year 345.71 (1 + 344.71)
 [Calendar] Autumn 1 (1 if 1378.85 % 4 == 2)
 [Calendar] day_of_year 286 (1 + 137885 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.44/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1375,11 +1506,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 276031
-[Calendar] skip 275957
 [Calendar] year 346.04 (1 + 345.04)
 [Calendar] Spring 1 (1 if 1380.15 % 4 == 0)
 [Calendar] day_of_year 16 (1 + 138015 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.60/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1399,11 +1534,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 276291
-[Calendar] skip 276216
 [Calendar] year 346.36 (1 + 345.36)
 [Calendar] Summer 1 (1 if 1381.45 % 4 == 1)
 [Calendar] day_of_year 146 (1 + 138145 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.38/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1423,11 +1562,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 276552
-[Calendar] skip 276476
 [Calendar] year 346.69 (1 + 345.69)
 [Calendar] Autumn 1 (1 if 1382.76 % 4 == 2)
 [Calendar] day_of_year 277 (1 + 138276 % 400)
+[Resource] catnip 35000/35000 43.92/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.54/475 0.38/s 20m35s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m34s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1447,11 +1590,15 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 276812
-[Calendar] skip 276735
 [Calendar] year 347.01 (1 + 346.01)
 [Calendar] Spring 1 (1 if 1384.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 138406 % 400)
+[Resource] catnip 35000/35000 66.73/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.32/475 0.38/s 20m36s to cap
+[-] [Resource] furs 39.20 -0.30/s 2m10s to empty
+[-] [Resource] ivory 10.57 -0.21/s 50s to empty
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1471,11 +1618,16 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
-[Calendar] time 276813
-[Calendar] skip 276735
 [Calendar] year 347.01 (1 + 346.01)
 [Calendar] Spring 1 (1 if 1384.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 138406 % 400)
+[Resource] catnip 35000/35000 66.77/s
+[Resource] wood 1400/1400 0.12/s
+[Resource] science 7500/7500 0.87/s
+[Resource] catpower 0.71/475 0.38/s 20m35s to cap
+[-] [Resource] furs 38.90 -0.30/s 2m9s to empty
+[-] [Resource] ivory 10.36 -0.21/s 49s to empty
+[Resource] unicorns 0.01 0.01/s
 [Village] happiness 0.28 (0.10 + 0.18)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m2s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1495,11 +1647,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: Unic. Pasture
 ###
-[Calendar] time 277513
-[Calendar] skip 277434
 [Calendar] year 347.89 (1 + 346.89)
 [Calendar] Winter 1 (1 if 1387.56 % 4 == 3)
 [Calendar] day_of_year 357 (1 + 138756 % 400)
+[Resource] catnip 35000/35000 6.77/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 269.45/475 0.32/s 10m34s to cap
+[Resource] unicorns 0.01 0.01/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 10m15s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1519,11 +1674,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 278126
-[Calendar] skip 278046
 [Calendar] year 348.66 (1 + 347.66)
 [Calendar] Autumn 1 (1 if 1390.63 % 4 == 2)
 [Calendar] day_of_year 264 (1 + 139063 % 400)
+[Resource] catnip 35000/35000 41.03/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 468.06/475 0.32/s 21s to cap
+[Resource] unicorns 0.02 0.01/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1543,11 +1701,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 278841
-[Calendar] skip 278760
 [Calendar] year 349.55 (1 + 348.55)
 [Calendar] Autumn 1 (1 if 1394.20 % 4 == 2)
 [Calendar] day_of_year 221 (1 + 139420 % 400)
+[Resource] catnip 35000/35000 41.07/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.03 0.02/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1567,11 +1728,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 279779
-[Calendar] skip 279697
 [Calendar] year 350.72 (1 + 349.72)
 [Calendar] Autumn 1 (1 if 1398.89 % 4 == 2)
 [Calendar] day_of_year 290 (1 + 139889 % 400)
+[Resource] catnip 35000/35000 41.11/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.04 0.03/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1591,11 +1755,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 281092
-[Calendar] skip 281009
 [Calendar] year 352.37 (1 + 351.37)
 [Calendar] Summer 1 (1 if 1405.46 % 4 == 1)
 [Calendar] day_of_year 147 (1 + 140546 % 400)
+[Resource] catnip 35000/35000 41.14/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.04 0.03/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1615,11 +1782,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 283007
-[Calendar] skip 282923
 [Calendar] year 354.76 (1 + 353.76)
 [Calendar] Winter 1 (1 if 1415.03 % 4 == 3)
 [Calendar] day_of_year 304 (1 + 141503 % 400)
+[Resource] catnip 35000/35000 6.96/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.05 0.04/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m58s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1639,11 +1809,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 285879
-[Calendar] skip 285794
 [Calendar] year 358.35 (1 + 357.35)
 [Calendar] Summer 1 (1 if 1429.39 % 4 == 1)
 [Calendar] day_of_year 140 (1 + 142939 % 400)
+[Resource] catnip 35000/35000 41.22/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.05 0.04/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m41s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1663,11 +1836,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 290278
-[Calendar] skip 290192
 [Calendar] year 363.85 (1 + 362.85)
 [Calendar] Winter 1 (1 if 1451.39 % 4 == 3)
 [Calendar] day_of_year 340 (1 + 145139 % 400)
+[Resource] catnip 35000/35000 7.04/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.08 0.04/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m51s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1687,11 +1863,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 297119
-[Calendar] skip 297032
 [Calendar] year 372.40 (1 + 371.40)
 [Calendar] Summer 1 (1 if 1485.59 % 4 == 1)
 [Calendar] day_of_year 160 (1 + 148559 % 400)
+[Resource] catnip 35000/35000 41.30/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.06 0.05/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m40s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1711,11 +1890,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 307895
-[Calendar] skip 307807
 [Calendar] year 385.87 (1 + 384.87)
 [Calendar] Winter 1 (1 if 1539.47 % 4 == 3)
 [Calendar] day_of_year 348 (1 + 153947 % 400)
+[Resource] catnip 35000/35000 7.12/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7500/7500 0.74/s
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.09 0.06/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m45s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1735,11 +1917,14 @@ X: [Science] Mathematics -(science 1000) +(Mathematics 1)
 X: [Science] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
-[Calendar] time 307896
-[Calendar] skip 307807
 [Calendar] year 385.87 (1 + 384.87)
 [Calendar] Winter 1 (1 if 1539.48 % 4 == 3)
 [Calendar] day_of_year 349 (1 + 153948 % 400)
+[Resource] catnip 35000/35000 7.12/s
+[Resource] wood 1400/1400 0.10/s
+[Resource] science 7000.74/7500 0.74/s 11m17s to cap
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.14 0.06/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m45s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1762,11 +1947,14 @@ X: [Science] Construction -(science 1300) +(Construction 1)
 X: [Workshop] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Mining
 ###
-[Calendar] time 307897
-[Calendar] skip 307807
 [Calendar] year 385.87 (1 + 384.87)
 [Calendar] Winter 1 (1 if 1539.48 % 4 == 3)
 [Calendar] day_of_year 349 (1 + 153948 % 400)
+[Resource] catnip 35000/35000 7.12/s
+[Resource] wood 1300.10/1400 0.10/s 17m7s to cap
+[Resource] science 7001.47/7500 0.74/s 11m16s to cap
+[Resource] catpower 475/475 0.32/s
+[Resource] unicorns 0.20 0.06/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m45s) +(Catnip Field 1)
 X: [Bonfire] Hut (3) -(wood 78.12) +(Hut 1, kitten cap 2)
@@ -1790,11 +1978,15 @@ X: [Science] Construction -(science 1300) +(Construction 1)
 X: [Workshop] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Mine
 ###
-[Calendar] time 307898
-[Calendar] skip 307807
 [Calendar] year 385.87 (1 + 384.87)
 [Calendar] Winter 1 (1 if 1539.49 % 4 == 3)
 [Calendar] day_of_year 350 (1 + 153949 % 400)
+[Resource] catnip 35000/35000 7.12/s
+[Resource] wood 1222.07/1400 0.10/s 30m30s to cap
+[Resource] science 7002.21/7500 0.74/s 11m15s to cap
+[Resource] catpower 475.32/550 0.32/s 3m50s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
+[Resource] unicorns 0.25 0.06/s
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 9m45s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -1818,11 +2010,16 @@ X: [Science] Construction -(science 1300) +(Construction 1)
 X: [Workshop] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Hut
 ###
-[Calendar] time 307918
-[Calendar] skip 307826
 [Calendar] year 385.90 (1 + 384.90)
 [Calendar] Winter 1 (1 if 1539.59 % 4 == 3)
 [Calendar] day_of_year 360 (1 + 153959 % 400)
+[Resource] catnip 35000/35000 3.40/s
+[Resource] wood 1224.01/1400 0.10/s 30m44s to cap
+[Resource] science 7016.94/7500 0.72/s 11m7s to cap
+[Resource] catpower 481.80/550 0.32/s 3m34s to cap
+[Resource] mineral 0.32/1750 0.32/s 1h32m34s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
+[Resource] unicorns 1.35 0.06/s
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 20m24s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -1846,11 +2043,15 @@ X: [Science] Construction -(science 1300) +(Construction 1)
 X: [Workshop] Bolas -(science 1000, mineral 0.32/250 13m12s, wood 50) +(Bolas 1)
 last action: skip miner
 ###
-[Calendar] time 307938
-[Calendar] skip 307845
 [Calendar] year 385.92 (1 + 384.92)
 [Calendar] Winter 1 (1 if 1539.69 % 4 == 3)
 [Calendar] day_of_year 370 (1 + 153969 % 400)
+[Resource] catnip 35000/35000 4.89/s
+[Resource] wood 1225.92/1400 0.09/s 30m59s to cap
+[Resource] science 7031.40/7500 0.71/s 11m0s to cap
+[Resource] catpower 488.15/550 0.31/s 3m18s to cap
+[Resource] mineral 6.61/1750 0.31/s 1h33m43s to cap
+[Resource] unicorns 2.45 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 14m12s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -1874,11 +2075,15 @@ X: [Science] Construction -(science 1300) +(Construction 1)
 X: [Workshop] Bolas -(science 1000, mineral 6.61/250 13m5s, wood 50) +(Bolas 1)
 last action: skip farmer
 ###
-[Calendar] time 403222
-[Calendar] skip 403128
 [Calendar] year 505.03 (1 + 504.03)
 [Calendar] Spring 1 (1 if 2016.11 % 4 == 0)
 [Calendar] day_of_year 12 (1 + 201611 % 400)
+[Resource] catnip 35000/35000 61.92/s
+[Resource] wood 1400/1400 0.09/s
+[Resource] science 7500/7500 0.71/s
+[Resource] catpower 550/550 0.31/s
+[Resource] mineral 1750/1750 1.21/s
+[Resource] unicorns 5243.07 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m7s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -1902,11 +2107,15 @@ X: [Science] Construction -(science 1300) +(Construction 1)
 X: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: max Mine
 ###
-[Calendar] time 419251
-[Calendar] skip 419156
 [Calendar] year 525.06 (1 + 524.06)
 [Calendar] Spring 1 (1 if 2096.25 % 4 == 0)
 [Calendar] day_of_year 26 (1 + 209625 % 400)
+[Resource] catnip 35000/35000 61.92/s
+[Resource] wood 465.39/1400 0.09/s 2h46m25s to cap
+[Resource] science 7500/7500 0.71/s
+[Resource] catpower 550/550 0.31/s
+[Resource] mineral 1750/1750 1.21/s
+[Resource] unicorns 6124.67 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m7s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -1936,11 +2145,15 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: max Workshop
 ###
-[Calendar] time 419252
-[Calendar] skip 419156
 [Calendar] year 525.07 (1 + 524.07)
 [Calendar] Spring 1 (1 if 2096.26 % 4 == 0)
 [Calendar] day_of_year 27 (1 + 209626 % 400)
+[Resource] catnip 35000/35000 71.92/s
+[Resource] wood 465.48/1400 0.09/s 2h46m24s to cap
+[Resource] science 7400.71/7500 0.71/s 2m19s to cap
+[Resource] catpower 550/550 0.31/s
+[Resource] mineral 1476.21/1750 1.21/s 3m46s to cap
+[Resource] unicorns 6124.72 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 57s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -1969,11 +2182,15 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: skip Mineral Hoes
 ###
-[Calendar] time 419253
-[Calendar] skip 419156
 [Calendar] year 525.07 (1 + 524.07)
 [Calendar] Spring 1 (1 if 2096.26 % 4 == 0)
 [Calendar] day_of_year 27 (1 + 209626 % 400)
+[Resource] catnip 35000/35000 71.92/s
+[Resource] wood 465.64/1400 0.16/s 1h39m26s to cap
+[Resource] science 7301.42/7500 0.71/s 4m39s to cap
+[Resource] catpower 550/550 0.31/s
+[Resource] mineral 977.42/1750 1.21/s 10m38s to cap
+[Resource] unicorns 6124.78 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 57s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -2001,11 +2218,15 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: skip Mineral Axe
 ###
-[Calendar] time 419254
-[Calendar] skip 419156
 [Calendar] year 525.07 (1 + 524.07)
 [Calendar] Spring 1 (1 if 2096.27 % 4 == 0)
 [Calendar] day_of_year 28 (1 + 209627 % 400)
+[Resource] catnip 35000/35000 71.92/s
+[Resource] wood 415.79/1400 0.16/s 1h44m44s to cap
+[Resource] science 6302.13/7500 0.71/s 28m7s to cap
+[Resource] catpower 550/550 0.31/s
+[Resource] mineral 728.63/1750 1.21/s 14m4s to cap
+[Resource] unicorns 6124.83 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 57s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -2032,11 +2253,15 @@ X: [Workshop] Expanded Barns -(wood 415.79/1000 1h2m10s, mineral 728.63/750 17s,
 X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Bolas
 ###
-[Calendar] time 419255
-[Calendar] skip 419156
 [Calendar] year 525.07 (1 + 524.07)
 [Calendar] Spring 1 (1 if 2096.27 % 4 == 0)
 [Calendar] day_of_year 28 (1 + 209627 % 400)
+[Resource] catnip 35000/35000 71.92/s
+[Resource] wood 415.95/1400 0.16/s 1h44m43s to cap
+[Resource] science 5402.84/7500 0.71/s 49m14s to cap
+[Resource] catpower 550/550 0.31/s
+[Resource] mineral 729.84/1750 1.21/s 14m3s to cap
+[Resource] unicorns 6124.89 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 57s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
@@ -2064,13 +2289,16 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip Metal Working
 ###
-[Calendar] time 419256
-[Calendar] skip 419156
 [Calendar] year 525.07 (1 + 524.07)
 [Calendar] Spring 1 (1 if 2096.28 % 4 == 0)
 [Calendar] day_of_year 29 (1 + 209628 % 400)
+[Resource] catnip 35000/35000 71.92/s
+[Resource] wood 416.11/1400 0.16/s 1h44m42s to cap
+[Resource] science 5403.55/7500 0.71/s 49m13s to cap
+[Resource] catpower 550/550 0.31/s
+[Resource] mineral 531.05/1750 1.21/s 16m47s to cap
+[Resource] unicorns 6124.94 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
-[Bonfire] Idle Smelter 1
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 57s) +(Catnip Field 1)
 X: [Bonfire] Hut (4) -(wood 195.31) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 416.11/1439.39* 1h48m54s) +(Library 1)
@@ -2098,13 +2326,17 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip Smelter
 ###
-[Calendar] time 419257
-[Calendar] skip 419156
 [Calendar] year 525.07 (1 + 524.07)
 [Calendar] Spring 1 (1 if 2096.28 % 4 == 0)
 [Calendar] day_of_year 29 (1 + 209628 % 400)
+[Resource] catnip 35000/35000 71.92/s
+[Resource] wood 220.95/1400 0.16/s 2h5m29s to cap
+[Resource] science 5404.26/7500 0.71/s 49m12s to cap
+[Resource] catpower 550.31/625 0.31/s 3m59s to cap
+[Resource] mineral 532.26/1750 1.21/s 16m46s to cap
+[Resource] kitten 0.05/2 0.05/s 39s to cap
+[Resource] unicorns 6125 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
-[Bonfire] Idle Smelter 1
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 57s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 220.95/488.28 28m27s) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 220.95/1439.39* 2h9m40s) +(Library 1)
@@ -2132,13 +2364,17 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip Hut
 ###
-[Calendar] time 419277
-[Calendar] skip 419175
 [Calendar] year 525.10 (1 + 524.10)
 [Calendar] Spring 1 (1 if 2096.38 % 4 == 0)
 [Calendar] day_of_year 39 (1 + 209638 % 400)
+[Resource] catnip 35000/35000 68.10/s
+[Resource] wood 224.24/1400 0.31/s 1h3m17s to cap
+[Resource] science 5418.44/7500 0.70/s 49m50s to cap
+[Resource] catpower 556.55/625 0.31/s 3m43s to cap
+[Resource] mineral 556.46/1750 1.21/s 16m30s to cap
+[Resource] kitten 0.05/1 0.05/s 18s to cap
+[Resource] unicorns 6126.10 0.06/s
 [Village] happiness 0.02 (0.10 + -0.08)
-[Bonfire] Idle Smelter 1
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m1s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 224.24/488.28 14m12s) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 224.24/1439.39* 1h5m24s) +(Library 1)
@@ -2166,12 +2402,15 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip woodcutter
 ###
-[Calendar] time 419297
-[Calendar] skip 419194
 [Calendar] year 525.12 (1 + 524.12)
 [Calendar] Spring 1 (1 if 2096.48 % 4 == 0)
 [Calendar] day_of_year 49 (1 + 209648 % 400)
-[Bonfire] Idle Smelter 1
+[Resource] catnip 35000/35000 71.79/s
+[Resource] wood 230.42/1400 0.31/s 1h3m42s to cap
+[Resource] science 5432.35/7500 0.68/s 50m29s to cap
+[Resource] catpower 562.66/625 0.30/s 3m27s to cap
+[Resource] mineral 580.55/1750 1.20/s 16m14s to cap
+[Resource] unicorns 6127.20 0.06/s
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 58s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 230.42/488.28 14m2s) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 230.42/1439.39* 1h5m50s) +(Library 1)
@@ -2199,11 +2438,16 @@ X: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) 
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip farmer
 ###
-[Calendar] time 419298
-[Calendar] skip 419194
 [Calendar] year 525.12 (1 + 524.12)
 [Calendar] Spring 1 (1 if 2096.49 % 4 == 0)
 [Calendar] day_of_year 50 (1 + 209649 % 400)
+[Resource] catnip 35000/35000 71.79/s
+[Resource] wood 230.48/1400 0.06/s 5h48m4s to cap
+[Resource] science 5433.03/7500 0.68/s 50m28s to cap
+[Resource] catpower 562.96/625 0.30/s 3m26s to cap
+[Resource] mineral 581.25/1750 0.70/s 27m49s to cap
+[Resource] iron 0.10/350 0.10/s 58m18s to cap
+[Resource] unicorns 6127.25 0.06/s
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 58s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 230.48/488.28 1h16m43s) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 230.48/1439.39* 5h59m47s) +(Library 1)
@@ -2231,11 +2475,16 @@ X: [Workshop] Reinforced Barns -(iron 0.10/100 16m39s, science 800, beam 0/25, s
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0.10/750* 2h4m58s) +(Hunting Armour 1)
 last action: Active Smelter
 ###
-[Calendar] time 419548
-[Calendar] skip 419443
 [Calendar] year 525.44 (1 + 524.44)
 [Calendar] Summer 1 (1 if 2097.74 % 4 == 1)
 [Calendar] day_of_year 175 (1 + 209774 % 400)
+[Resource] catnip 35000/35000 56.48/s
+[Resource] wood 244.48/1400 0.06/s 5h43m54s to cap
+[Resource] science 5403.66/7500 0.68/s 51m11s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 756.25/1750 0.70/s 23m39s to cap
+[Resource] iron 0.10/350 0.10/s 58m18s to cap
+[Resource] unicorns 6141 0.06/s
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m13s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 244.48/488.28 1h12m33s) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 244.48/1439.39* 5h55m37s) +(Library 1)
@@ -2262,11 +2511,16 @@ X: [Workshop] Reinforced Barns -(iron 0.10/100 16m38s, science 800, beam 0/25, s
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0.10/750* 2h4m58s) +(Hunting Armour 1)
 last action: skip Iron Hoes
 ###
-[Calendar] time 420048
-[Calendar] skip 419942
 [Calendar] year 526.06 (1 + 525.06)
 [Calendar] Spring 1 (1 if 2100.24 % 4 == 0)
 [Calendar] day_of_year 25 (1 + 210024 % 400)
+[Resource] catnip 35000/35000 79.29/s
+[Resource] wood 272.57/1400 0.15/s 2h8m42s to cap
+[Resource] science 5644.91/7500 0.68/s 45m18s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 1106.25/1750 0.70/s 15m19s to cap
+[Resource] iron 0.10/350 0.10/s 58m18s to cap
+[Resource] unicorns 6168.50 0.06/s
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 52s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 272.57/488.28 24m37s) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (29) -(wood 272.57/1439.39* 2h13m11s) +(Library 1)
@@ -2292,11 +2546,16 @@ X: [Workshop] Reinforced Barns -(iron 0.10/100 16m38s, science 800, beam 0/25, s
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 0.10/750* 2h4m58s) +(Hunting Armour 1)
 last action: skip Iron Axe
 ###
-[Calendar] time 425032
-[Calendar] skip 424925
 [Calendar] year 532.29 (1 + 531.29)
 [Calendar] Summer 1 (1 if 2125.16 % 4 == 1)
 [Calendar] day_of_year 117 (1 + 212516 % 400)
+[Resource] catnip 35000/35000 56.48/s
+[Resource] wood 0.23/2300 0.15/s 4h22m31s to cap
+[Resource] science 7000.68/7500 0.68/s 12m11s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 1000.70/2875 0.70/s 44m37s to cap
+[Resource] iron 300.10/575 0.10/s 45m48s to cap
+[Resource] unicorns 6442.62 0.06/s
 X: [*] [Bonfire] Catnip Field (73) -(catnip 35000/39166.58* 1m13s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.23/488.28 55m42s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (29) -(wood 0.23/1439.39 2h44m17s) +(Library 1)
@@ -2321,11 +2580,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [*] [Workshop] Hunting Armour -(science 2000, iron 300.10/750* 1h14m58s) +(Hunting Armour 1)
 last action: skip Expanded Barns
 ###
-[Calendar] time 482207
-[Calendar] skip 482099
 [Calendar] year 603.76 (1 + 602.76)
 [Calendar] Winter 1 (1 if 2411.03 % 4 == 3)
 [Calendar] day_of_year 304 (1 + 241103 % 400)
+[Resource] catnip 45000/45000 22.26/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 7500/7500 0.68/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 0.70/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 9587.25 0.06/s
 X: [Bonfire] Catnip Field (73) -(catnip 39166.58) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (29) -(wood 1439.39) +(Library 1)
@@ -2350,11 +2614,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Barn
 ###
-[Calendar] time 486082
-[Calendar] skip 485973
 [Calendar] year 608.60 (1 + 607.60)
 [Calendar] Autumn 1 (1 if 2430.41 % 4 == 2)
 [Calendar] day_of_year 242 (1 + 243041 % 400)
+[Resource] catnip 45000/45000 57.73/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 7500/7500 0.68/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 0.70/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 9800.37 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m11s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (29) -(wood 1439.39) +(Library 1)
@@ -2379,11 +2648,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Catnip Field
 ###
-[Calendar] time 574641
-[Calendar] skip 574531
 [Calendar] year 719.30 (1 + 718.30)
 [Calendar] Summer 1 (1 if 2873.20 % 4 == 1)
 [Calendar] day_of_year 121 (1 + 287320 % 400)
+[Resource] catnip 45000/45000 57.73/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 9000/9000 0.79/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 0.70/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 14671.12 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m11s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 3000/3329.39* 37m36s) +(Library 1)
@@ -2408,11 +2682,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Library
 ###
-[Calendar] time 645920
-[Calendar] skip 645809
 [Calendar] year 808.40 (1 + 807.40)
 [Calendar] Summer 1 (1 if 3229.60 % 4 == 1)
 [Calendar] day_of_year 161 (1 + 322960 % 400)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 9000/9000 0.79/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 0.70/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 18591.46 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 3000/3329.39* 37m36s) +(Library 1)
@@ -2437,11 +2716,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Pasture
 ###
-[Calendar] time 733250
-[Calendar] skip 733138
 [Calendar] year 917.56 (1 + 916.56)
 [Calendar] Autumn 1 (1 if 3666.25 % 4 == 2)
 [Calendar] day_of_year 226 (1 + 366625 % 400)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 9000/9000 0.79/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 23394.61 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 3000/3329.39* 37m36s) +(Library 1)
@@ -2466,11 +2750,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Mine
 ###
-[Calendar] time 750096
-[Calendar] skip 749983
 [Calendar] year 938.62 (1 + 937.62)
 [Calendar] Autumn 1 (1 if 3750.48 % 4 == 2)
 [Calendar] day_of_year 249 (1 + 375048 % 400)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 1386.93/3000 0.15/s 3h4m8s to cap
+[Resource] science 9000/9000 0.79/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 24321.14 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 1386.93/3329.39* 3h41m44s) +(Library 1)
@@ -2495,12 +2784,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Workshop
 ###
-[Calendar] time 773674
-[Calendar] skip 773560
 [Calendar] year 968.09 (1 + 967.09)
 [Calendar] Spring 1 (1 if 3868.37 % 4 == 0)
 [Calendar] day_of_year 38 (1 + 386837 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 9000/9000 0.79/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 25617.93 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 3000/3329.39* 37m36s) +(Library 1)
@@ -2525,12 +2818,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(
 X: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Smelter
 ###
-[Calendar] time 773675
-[Calendar] skip 773560
 [Calendar] year 968.09 (1 + 967.09)
 [Calendar] Spring 1 (1 if 3868.37 % 4 == 0)
 [Calendar] day_of_year 38 (1 + 386837 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 7000.79/9000 0.79/s 42m18s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 0.10/750 0.10/s 2h4m58s to cap
+[Resource] unicorns 25617.99 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 3000/3329.39* 37m36s) +(Library 1)
@@ -2554,12 +2851,16 @@ X: [Science] Construction -(science 1300) +(Construction 1)
 X: [Workshop] Reinforced Barns -(iron 0.10/100 16m39s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Hunting Armour
 ###
-[Calendar] time 773676
-[Calendar] skip 773560
 [Calendar] year 968.10 (1 + 967.10)
 [Calendar] Spring 1 (1 if 3868.38 % 4 == 0)
 [Calendar] day_of_year 39 (1 + 386838 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 5501.58/9000 0.79/s 1h14m2s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 0.20/750 0.10/s 2h4m57s to cap
+[Resource] unicorns 25618.04 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 3000/3329.39* 37m36s) +(Library 1)
@@ -2583,12 +2884,16 @@ X: [Science] Currency -(science 2200) +(Currency 1)
 X: [Workshop] Reinforced Barns -(iron 0.20/100 16m37s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Civil Service
 ###
-[Calendar] time 773677
-[Calendar] skip 773560
 [Calendar] year 968.10 (1 + 967.10)
 [Calendar] Spring 1 (1 if 3868.38 % 4 == 0)
 [Calendar] day_of_year 39 (1 + 386838 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 3000/3000 0.15/s
+[Resource] science 4502.36/9000 0.79/s 1h35m11s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 0.30/750 0.10/s 2h4m57s to cap
+[Resource] unicorns 25618.10 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 3000/3329.39* 37m36s) +(Library 1)
@@ -2613,12 +2918,16 @@ X: [Science] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 X: [Workshop] Reinforced Barns -(iron 0.30/100 16m37s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Mathematics
 ###
-[Calendar] time 902016
-[Calendar] skip 901898
 [Calendar] year 1128.52 (1 + 1127.52)
 [Calendar] Autumn 1 (1 if 4510.08 % 4 == 2)
 [Calendar] day_of_year 209 (1 + 451008 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 2879.01/3000 0.15/s 13m48s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 32676.74 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 2879.01/3329.39* 51m24s) +(Library 1)
@@ -2643,12 +2952,16 @@ X: [Science] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: max Academy
 ###
-[Calendar] time 902017
-[Calendar] skip 901898
 [Calendar] year 1128.52 (1 + 1127.52)
 [Calendar] Autumn 1 (1 if 4510.08 % 4 == 2)
 [Calendar] day_of_year 209 (1 + 451008 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 2879.16/3000 0.15/s 13m47s to cap
+[Resource] science 23251.80/23500 1.80/s 2m17s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 32676.80 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 2879.16/3329.39* 51m23s) +(Library 1)
@@ -2672,12 +2985,16 @@ X: [Science] Currency -(science 2200) +(Currency 1)
 X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Celestial Mechanics
 ###
-[Calendar] time 902018
-[Calendar] skip 901898
 [Calendar] year 1128.52 (1 + 1127.52)
 [Calendar] Autumn 1 (1 if 4510.09 % 4 == 2)
 [Calendar] day_of_year 210 (1 + 451009 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 2879.30/3000 0.15/s 13m46s to cap
+[Resource] science 21953.61/23500 1.80/s 14m17s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 32676.85 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 2879.30/3329.39* 51m22s) +(Library 1)
@@ -2708,12 +3025,16 @@ X: [Workshop] Composite Bow -(science 500, iron 100, wood 200) +(Composite Bow 1
 X: [Workshop] Catnip Enrichment -(science 500, catnip 500) +(Catnip Enrichment 1)
 last action: skip Construction
 ###
-[Calendar] time 902019
-[Calendar] skip 901898
 [Calendar] year 1128.52 (1 + 1127.52)
 [Calendar] Autumn 1 (1 if 4510.09 % 4 == 2)
 [Calendar] day_of_year 210 (1 + 451009 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 44558.79/45000 58.79/s 7s to cap
+[Resource] wood 2879.45/3000 0.15/s 13m45s to cap
+[Resource] science 21455.41/23500 1.80/s 18m54s to cap
+[Resource] catpower 625/625 0.30/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 750/750 0.10/s
+[Resource] unicorns 32676.91 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 44558.79/49130.56* 1m17s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 2879.45/3329.39* 51m21s) +(Library 1)
@@ -2743,12 +3064,16 @@ X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), s
 X: [Workshop] Composite Bow -(science 500, iron 100, wood 200) +(Composite Bow 1)
 last action: skip Catnip Enrichment
 ###
-[Calendar] time 902020
-[Calendar] skip 901898
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.10 % 4 == 2)
 [Calendar] day_of_year 211 (1 + 451010 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 44617.58/45000 58.79/s 6s to cap
+[Resource] wood 2679.59/3000 0.15/s 36m34s to cap
+[Resource] science 20957.21/23500 1.80/s 23m30s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 3750/3750 1/s
+[Resource] iron 650.10/750 0.10/s 16m38s to cap
+[Resource] unicorns 32676.96 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 44617.58/49130.56* 1m16s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (35) -(wood 2679.59/3329.39* 1h14m10s) +(Library 1)
@@ -2777,12 +3102,16 @@ X: [*] [Workshop] Reinforced Saw -(iron 650.10/1000* 58m18s, science 2500) +(Rei
 X: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 0/10 (mineral 1250)) +(Reinforced Barns 1)
 last action: skip Composite Bow
 ###
-[Calendar] time 902021
-[Calendar] skip 901898
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.10 % 4 == 2)
 [Calendar] day_of_year 211 (1 + 451010 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 44676.37/45000 58.79/s 5s to cap
+[Resource] wood 404.74/4280 0.15/s 7h22m22s to cap
+[Resource] science 20159.01/23500 1.80/s 30m53s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 2501/5350 1/s 47m29s to cap
+[Resource] iron 550.20/1070 0.10/s 1h26m37s to cap
+[Resource] unicorns 32677.02 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 44676.37/49130.56* 1m15s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 404.74/488.28 9m32s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 404.74/3329.39 5h33m51s) +(Library 1)
@@ -2811,12 +3140,16 @@ X: [Workshop] Reinforced Saw -(iron 550.20/1000 1h14m57s, science 2500) +(Reinfo
 X: [*] [Workshop] Titanium Barns -(science 20159.01/60000* 6h8m23s, titanium 0/25*, steel 0/200, scaffold 0/250 (beam 1.26/6200 (wood 404.74/537075 1021h3m43s))) +(Titanium Barns 1)
 last action: max Reinforced Barns
 ###
-[Calendar] time 902022
-[Calendar] skip 901898
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.11 % 4 == 2)
 [Calendar] day_of_year 212 (1 + 451011 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 44735.15/45000 58.79/s 4s to cap
+[Resource] wood 229.89/4662.50 0.15/s 8h26m0s to cap
+[Resource] science 20160.82/23500 1.80/s 30m52s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 2252/5860 1/s 1h0m8s to cap
+[Resource] iron 550.30/1133.75 0.10/s 1h37m14s to cap
+[Resource] unicorns 32677.07 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 44735.15/49130.56* 1m14s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 229.89/488.28 29m29s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 229.89/3329.39 5h53m49s) +(Library 1)
@@ -2845,12 +3178,16 @@ X: [Workshop] Reinforced Saw -(iron 550.30/1000 1h14m56s, science 2500) +(Reinfo
 X: [*] [Workshop] Titanium Barns -(science 20160.82/60000* 6h8m22s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.78/6200 (wood 229.89/537075 1021h23m41s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 902023
-[Calendar] skip 901898
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.11 % 4 == 2)
 [Calendar] day_of_year 212 (1 + 451011 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 44793.94/45000 58.79/s 3s to cap
+[Resource] wood 230.03/5045 0.15/s 9h9m39s to cap
+[Resource] science 20162.62/23500 1.80/s 30m51s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 1753/6370 1/s 1h16m57s to cap
+[Resource] iron 550.40/1197.50 0.10/s 1h47m50s to cap
+[Resource] unicorns 32677.13 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 44793.94/49130.56* 1m13s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 230.03/488.28 29m28s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 230.03/3329.39 5h53m48s) +(Library 1)
@@ -2879,12 +3216,16 @@ X: [Workshop] Reinforced Saw -(iron 550.40/1000 1h14m55s, science 2500) +(Reinfo
 X: [*] [Workshop] Titanium Barns -(science 20162.62/60000* 6h8m21s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.05/6200 (wood 230.03/537250 1021h43m38s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 902024
-[Calendar] skip 901898
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.12 % 4 == 2)
 [Calendar] day_of_year 213 (1 + 451012 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 44852.73/45000 58.79/s 2s to cap
+[Resource] wood 55.18/5427.50 0.15/s 10h13m16s to cap
+[Resource] science 20164.42/23500 1.80/s 30m50s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 1504/6880 1/s 1h29m36s to cap
+[Resource] iron 550.50/1261.25 0.10/s 1h58m27s to cap
+[Resource] unicorns 32677.18 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 44852.73/49130.56* 1m12s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 55.18/488.28 49m26s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 55.18/3329.39 6h13m46s) +(Library 1)
@@ -2913,12 +3254,16 @@ X: [Workshop] Reinforced Saw -(iron 550.50/1000 1h14m54s, science 2500) +(Reinfo
 X: [*] [Workshop] Titanium Barns -(science 20164.42/60000* 6h8m20s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.09/6200 (wood 55.18/537250 1022h3m36s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 904045
-[Calendar] skip 903918
 [Calendar] year 1131.06 (1 + 1130.06)
 [Calendar] Spring 1 (1 if 4520.22 % 4 == 0)
 [Calendar] day_of_year 23 (1 + 452022 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.24/5810 0.15/s 11h3m12s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 3275/7390 1/s 1h8m35s to cap
+[Resource] iron 752.60/1325 0.10/s 1h35m23s to cap
+[Resource] unicorns 32788.34 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.24/488.28 55m42s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.24/3329.39 6h20m2s) +(Library 1)
@@ -2947,12 +3292,16 @@ X: [Workshop] Reinforced Saw -(iron 752.60/1000 41m13s, science 2500) +(Reinforc
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.85/6200 (wood 0.24/537075 1021h49m54s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 905243
-[Calendar] skip 905115
 [Calendar] year 1132.55 (1 + 1131.55)
 [Calendar] Autumn 1 (1 if 4526.21 % 4 == 2)
 [Calendar] day_of_year 222 (1 + 452621 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 0.15/6192.50 0.15/s 11h46m53s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 3973/7900 1/s 1h5m27s to cap
+[Resource] iron 872.40/1388.75 0.10/s 1h26m3s to cap
+[Resource] unicorns 32854.23 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.15/488.28 55m43s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.15/3329.39 6h20m2s) +(Library 1)
@@ -2981,12 +3330,16 @@ X: [Workshop] Reinforced Saw -(iron 872.40/1000 21m15s, science 2500) +(Reinforc
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.25/6200 (wood 0.15/537075 1021h49m54s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 906442
-[Calendar] skip 906313
 [Calendar] year 1134.05 (1 + 1133.05)
 [Calendar] Spring 1 (1 if 4532.21 % 4 == 0)
 [Calendar] day_of_year 22 (1 + 453221 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.21/6575 0.15/s 12h30m32s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 4672/8410 1/s 1h2m18s to cap
+[Resource] iron 992.30/1452.50 0.10/s 1h16m41s to cap
+[Resource] unicorns 32920.17 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.21/488.28 55m42s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.21/3329.39 6h20m2s) +(Library 1)
@@ -3015,12 +3368,16 @@ X: [Workshop] Reinforced Saw -(iron 992.30/1000 1m16s, science 2500) +(Reinforce
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.25/6200 (wood 0.21/537250 1022h9m53s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 908839
-[Calendar] skip 908709
 [Calendar] year 1137.05 (1 + 1136.05)
 [Calendar] Spring 1 (1 if 4544.19 % 4 == 0)
 [Calendar] day_of_year 20 (1 + 454419 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.17/6957.50 0.15/s 13h14m12s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 6569/8920 1/s 39m11s to cap
+[Resource] iron 1232/1516.25 0.10/s 47m22s to cap
+[Resource] unicorns 33052.01 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.17/488.28 55m43s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.17/3329.39 6h20m2s) +(Library 1)
@@ -3049,12 +3406,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.82/6200 (wood 0.17/537075 1021h49m54s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 911237
-[Calendar] skip 911106
 [Calendar] year 1140.05 (1 + 1139.05)
 [Calendar] Spring 1 (1 if 4556.18 % 4 == 0)
 [Calendar] day_of_year 19 (1 + 455618 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.28/7340 0.15/s 13h57m52s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 8171/9430 1/s 20m59s to cap
+[Resource] iron 1471.80/1580 0.10/s 18m1s to cap
+[Resource] unicorns 33183.90 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.28/488.28 55m42s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.28/3329.39 6h20m2s) +(Library 1)
@@ -3083,12 +3444,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.87/6200 (wood 0.28/537075 1021h49m54s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 913634
-[Calendar] skip 913502
 [Calendar] year 1143.04 (1 + 1142.04)
 [Calendar] Spring 1 (1 if 4568.17 % 4 == 0)
 [Calendar] day_of_year 18 (1 + 456817 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.24/7722.50 0.15/s 14h41m32s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 8681/9940 1/s 20m59s to cap
+[Resource] iron 1580.10/1643.75 0.10/s 10m36s to cap
+[Resource] unicorns 33315.73 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.24/488.28 55m42s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.24/3329.39 6h20m2s) +(Library 1)
@@ -3117,12 +3482,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.32/6200 (wood 0.24/537250 1022h9m52s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 917230
-[Calendar] skip 917097
 [Calendar] year 1147.54 (1 + 1146.54)
 [Calendar] Autumn 1 (1 if 4586.15 % 4 == 2)
 [Calendar] day_of_year 216 (1 + 458615 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 58.79/s
+[Resource] wood 0.25/8105 0.15/s 15h25m11s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 8941/10450 1/s 25m9s to cap
+[Resource] iron 1643.85/1707.50 0.10/s 10m36s to cap
+[Resource] unicorns 33513.51 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 1m10s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.25/488.28 55m42s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.25/3329.39 6h20m2s) +(Library 1)
@@ -3151,12 +3520,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 0.25/537075 1021h49m54s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 920826
-[Calendar] skip 920692
 [Calendar] year 1152.03 (1 + 1151.03)
 [Calendar] Spring 1 (1 if 4604.13 % 4 == 0)
 [Calendar] day_of_year 14 (1 + 460413 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 45000/45000 82.23/s
+[Resource] wood 0.27/8487.50 0.15/s 16h8m51s to cap
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 9451/10960 1/s 25m9s to cap
+[Resource] iron 1707.60/1771.25 0.10/s 10m36s to cap
+[Resource] unicorns 33711.29 0.06/s
 X: [*] [Bonfire] Catnip Field (75) -(catnip 45000/49130.56* 50s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 0.27/488.28 55m42s) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 0.27/3329.39 6h20m2s) +(Library 1)
@@ -3185,12 +3558,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 0.27/537075 1021h49m54s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
-[Calendar] time 1095925
-[Calendar] skip 1095790
 [Calendar] year 1370.90 (1 + 1369.90)
 [Calendar] Winter 1 (1 if 5479.62 % 4 == 3)
 [Calendar] day_of_year 363 (1 + 547962 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 55000/55000 23.63/s
+[Resource] wood 9507.50/9507.50 0.15/s
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 43341.74 0.06/s
 X: [Bonfire] Catnip Field (75) -(catnip 49130.56) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 3329.39) +(Library 1)
@@ -3219,12 +3596,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
 last action: max Barn
 ###
-[Calendar] time 1097993
-[Calendar] skip 1097857
 [Calendar] year 1373.49 (1 + 1372.49)
 [Calendar] Summer 1 (1 if 5489.96 % 4 == 1)
 [Calendar] day_of_year 197 (1 + 548996 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 55000/55000 59.41/s
+[Resource] wood 9507.50/9507.50 0.15/s
+[Resource] science 23500/23500 1.80/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 43455.48 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [Bonfire] Library (35) -(wood 3329.39) +(Library 1)
@@ -3253,12 +3634,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
 last action: max Catnip Field
 ###
-[Calendar] time 1415659
-[Calendar] skip 1415522
 [Calendar] year 1770.57 (1 + 1769.57)
 [Calendar] Autumn 1 (1 if 7078.29 % 4 == 2)
 [Calendar] day_of_year 230 (1 + 707829 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 55000/55000 59.41/s
+[Resource] wood 9507.50/9507.50 0.15/s
+[Resource] science 25500/25500 1.94/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 60927.11 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 1h17m18s) +(Library 1)
@@ -3287,12 +3672,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
 last action: max Library
 ###
-[Calendar] time 1535234
-[Calendar] skip 1535096
 [Calendar] year 1920.04 (1 + 1919.04)
 [Calendar] Spring 1 (1 if 7676.17 % 4 == 0)
 [Calendar] day_of_year 18 (1 + 767617 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 55000/55000 84.23/s
+[Resource] wood 6196.01/9507.50 0.15/s 6h18m1s to cap
+[Resource] science 25500/25500 1.94/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 67503.73 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 6196.01/10184.67* 7h35m19s) +(Library 1)
@@ -3321,12 +3710,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 6196.01/537075 1010h2m37s))) +(Titanium Barns 1)
 last action: max Pasture
 ###
-[Calendar] time 1871271
-[Calendar] skip 1871132
 [Calendar] year 2340.09 (1 + 2339.09)
 [Calendar] Spring 1 (1 if 9356.35 % 4 == 0)
 [Calendar] day_of_year 36 (1 + 935635 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 55000/55000 84.23/s
+[Resource] wood 9507.50/9507.50 0.15/s
+[Resource] science 25500/25500 1.94/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 85985.77 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 1h17m18s) +(Library 1)
@@ -3355,12 +3748,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
 last action: max Mine
 ###
-[Calendar] time 1929877
-[Calendar] skip 1929737
 [Calendar] year 2413.35 (1 + 2412.35)
 [Calendar] Summer 1 (1 if 9649.38 % 4 == 1)
 [Calendar] day_of_year 139 (1 + 964938 % 400)
-[Bonfire] Idle Smelter 20 (1 + 19)
+[Resource] catnip 55000/55000 60.48/s
+[Resource] wood 3292.18/9507.50 0.15/s 11h49m30s to cap
+[Resource] science 25500/25500 1.94/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 89209.10 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 3292.18/10184.67* 13h6m48s) +(Library 1)
@@ -3389,12 +3786,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 3292.18/350000 659h38m31s))) +(Titanium Barns 1)
 last action: max Workshop
 ###
-[Calendar] time 1975732
-[Calendar] skip 1975591
 [Calendar] year 2470.66 (1 + 2469.66)
 [Calendar] Autumn 1 (1 if 9878.66 % 4 == 2)
 [Calendar] day_of_year 267 (1 + 987866 % 400)
-[Bonfire] Idle Smelter 29 (1 + 28)
+[Resource] catnip 55000/55000 60.48/s
+[Resource] wood 9507.50/9507.50 0.15/s
+[Resource] science 25500/25500 1.94/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 91731.12 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 1h17m18s) +(Library 1)
@@ -3423,12 +3824,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 647h49m0s))) +(Titanium Barns 1)
 last action: max Smelter
 ###
-[Calendar] time 2241591
-[Calendar] skip 2241449
 [Calendar] year 2802.99 (1 + 2801.99)
 [Calendar] Winter 1 (1 if 11207.95 % 4 == 3)
 [Calendar] day_of_year 396 (1 + 1120795 % 400)
-[Bonfire] Idle Smelter 29 (1 + 28)
+[Resource] catnip 55000/55000 24.85/s
+[Resource] wood 8806.52/9507.50 0.15/s 1h20m1s to cap
+[Resource] science 29500/29500 2.22/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 106353.37 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23* 1s) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 8806.52/10184.67* 2h37m19s) +(Library 1)
@@ -3457,12 +3862,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 8806.52/350000 649h9m1s))) +(Titanium Barns 1)
 last action: max Academy
 ###
-[Calendar] time 2384882
-[Calendar] skip 2384739
 [Calendar] year 2982.10 (1 + 2981.10)
 [Calendar] Spring 1 (1 if 11924.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 1192441 % 400)
-[Bonfire] Idle Smelter 29 (1 + 28)
+[Resource] catnip 55000/55000 84.23/s
+[Resource] wood 9507.50/9507.50 0.54/s
+[Resource] science 29500/29500 2.22/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 114234.37 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 20m53s) +(Library 1)
@@ -3491,12 +3900,16 @@ X: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Workshop] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 175h5m8s))) +(Titanium Barns 1)
 last action: max Lumber Mill
 ###
-[Calendar] time 2384883
-[Calendar] skip 2384739
 [Calendar] year 2982.10 (1 + 2981.10)
 [Calendar] Spring 1 (1 if 11924.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 1192441 % 400)
-[Bonfire] Idle Smelter 29 (1 + 28)
+[Resource] catnip 55000/55000 84.23/s
+[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] science 27002.22/29500 2.22/s 18m43s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 1026.35/2026.25 0.10/s 2h46m39s to cap
+[Resource] unicorns 114234.43 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)
@@ -3524,12 +3937,16 @@ X: [Science] Engineering -(science 1500) +(Engineering 1)
 X: [*] [Workshop] Titanium Barns -(science 27002.22/60000* 4h7m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
 last action: skip Reinforced Saw
 ###
-[Calendar] time 2384884
-[Calendar] skip 2384739
 [Calendar] year 2982.11 (1 + 2981.11)
 [Calendar] Spring 1 (1 if 11924.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 1192442 % 400)
-[Bonfire] Idle Smelter 29 (1 + 28)
+[Resource] catnip 55000/55000 84.23/s
+[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] science 25504.44/29500 2.22/s 29m57s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 1026.45/2026.25 0.10/s 2h46m38s to cap
+[Resource] unicorns 114234.48 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)
@@ -3558,12 +3975,16 @@ X: [Science] Writing -(science 3600) +(Writing 1)
 X: [*] [Workshop] Titanium Barns -(science 25504.44/60000* 4h18m41s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
 last action: skip Engineering
 ###
-[Calendar] time 2457694
-[Calendar] skip 2457548
 [Calendar] year 3073.12 (1 + 3072.12)
 [Calendar] Spring 1 (1 if 12288.47 % 4 == 0)
 [Calendar] day_of_year 48 (1 + 1228847 % 400)
-[Bonfire] Idle Smelter 29 (1 + 28)
+[Resource] catnip 55000/55000 197.93/s
+[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] science 29500/29500 2.22/s
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 118239.03 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)
@@ -3592,12 +4013,16 @@ X: [Science] Writing -(science 3600) +(Writing 1)
 X: [*] [Workshop] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
 last action: max Aqueduct
 ###
-[Calendar] time 2457695
-[Calendar] skip 2457548
 [Calendar] year 3073.12 (1 + 3072.12)
 [Calendar] Spring 1 (1 if 12288.47 % 4 == 0)
 [Calendar] day_of_year 48 (1 + 1228847 % 400)
-[Bonfire] Idle Smelter 29 (1 + 28)
+[Resource] catnip 55000/55000 197.93/s
+[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] science 27302.22/29500 2.22/s 16m28s to cap
+[Resource] catpower 625/625 0.45/s
+[Resource] mineral 12235/12235 1.40/s
+[Resource] iron 2026.25/2026.25 0.10/s
+[Resource] unicorns 118239.09 0.06/s
 X: [*] [Bonfire] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 X: [*] [Bonfire] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)

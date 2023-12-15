@@ -111,7 +111,6 @@
     {
       "Name": "catnip",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "Catnip Field",
@@ -322,7 +321,6 @@
     {
       "Name": "wood",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "woodcutter",
@@ -563,7 +561,6 @@
     {
       "Name": "science",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "scholar",
@@ -625,7 +622,6 @@
     {
       "Name": "catpower",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "hunter",
@@ -673,7 +669,6 @@
     {
       "Name": "mineral",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "miner",
@@ -882,7 +877,6 @@
     {
       "Name": "iron",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "Active Smelter",
@@ -1093,7 +1087,6 @@
     {
       "Name": "coal",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "geologist",
@@ -1268,7 +1261,6 @@
     {
       "Name": "gold",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "Mint",
@@ -1445,7 +1437,6 @@
     {
       "Name": "titanium",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "Accelerator",
@@ -1589,7 +1580,6 @@
     {
       "Name": "oil",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "Oil Well",
@@ -1615,7 +1605,6 @@
     {
       "Name": "uranium",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "Accelerator",
@@ -1648,37 +1637,31 @@
     {
       "Name": "unobtainium",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "time crystal",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "antimatter",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "relic",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "void",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "kitten",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Factor": 0.05
@@ -1746,7 +1729,6 @@
     {
       "Name": "furs",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -1764,7 +1746,6 @@
     {
       "Name": "ivory",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -1782,7 +1763,6 @@
     {
       "Name": "spice",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -1804,7 +1784,6 @@
     {
       "Name": "unicorns",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -1816,7 +1795,6 @@
     {
       "Name": "culture",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "Amphitheatre",
@@ -1888,7 +1866,6 @@
     {
       "Name": "faith",
       "Type": "Resource",
-      "IsHidden": true,
       "Producers": [
         {
           "Name": "priest",
@@ -1916,13 +1893,11 @@
     {
       "Name": "starchart",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1
     },
     {
       "Name": "steel",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -1973,55 +1948,46 @@
     {
       "Name": "concrete",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1
     },
     {
       "Name": "alloy",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1
     },
     {
       "Name": "parchment",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1
     },
     {
       "Name": "compendium",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1
     },
     {
       "Name": "blueprint",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1
     },
     {
       "Name": "trade ship",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1
     },
     {
       "Name": "eludium",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "thorium",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "gigaflops",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -2126,6 +2092,7 @@
     {
       "Name": "Idle Smelter",
       "Type": "Bonfire",
+      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -3253,42 +3220,36 @@
     {
       "Name": "beam",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "ProducerAction": "@beam"
     },
     {
       "Name": "slab",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "ProducerAction": "@slab"
     },
     {
       "Name": "plate",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "ProducerAction": "@plate"
     },
     {
       "Name": "gear",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "ProducerAction": "@gear"
     },
     {
       "Name": "scaffold",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "ProducerAction": "@scaffold"
     },
     {
       "Name": "manuscript",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "Producers": [
         {
@@ -3320,7 +3281,6 @@
     {
       "Name": "megalith",
       "Type": "Resource",
-      "IsHidden": true,
       "Capacity": -1,
       "ProducerAction": "@megalith"
     }
