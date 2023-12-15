@@ -13,6 +13,7 @@ import (
 
 	"github.com/kssilveira/idle-game-engine/game"
 	"github.com/kssilveira/idle-game-engine/kittens"
+	"github.com/kssilveira/idle-game-engine/kittens/solve"
 	"github.com/kssilveira/idle-game-engine/textui"
 	"github.com/kssilveira/idle-game-engine/ui"
 )
@@ -94,7 +95,7 @@ func updateResources(g *game.Game, resourceMap string) error {
 
 func handleInput(g *game.Game, input game.Input) error {
 	if *auto {
-		if err := kittens.Solve(g, input, *autoSleepMS); err != nil {
+		if err := solve.Solve(g, input, *autoSleepMS); err != nil {
 			return err
 		}
 	}

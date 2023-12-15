@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/game"
+	"github.com/kssilveira/idle-game-engine/kittens/solve"
 	"github.com/kssilveira/idle-game-engine/textui"
 	"github.com/kssilveira/idle-game-engine/ui"
 )
@@ -174,12 +175,12 @@ func TestRun(t *testing.T) {
 		g := NewGame(nowfn)
 		go func() {
 			if len(in.iters) == 0 {
-				if err := Solve(g, input, 0 /* sleepMS */); err != nil {
+				if err := solve.Solve(g, input, 0 /* sleepMS */); err != nil {
 					t.Errorf("[%s] Solve err %v", in.name, err)
 				}
 			}
 			for _, one := range in.iters {
-				if err := toInput(g, one.input, input); err != nil {
+				if err := solve.ToInput(g, one.input, input); err != nil {
 					t.Errorf("[%s] got input err %v", in.name, err)
 				}
 			}
