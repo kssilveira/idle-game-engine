@@ -482,7 +482,7 @@ func (g *Game) getRate(resource *data.Resource) float64 {
 	for _, p := range resource.Producers {
 		factor += g.getOneRate(p)
 	}
-	return factor * g.getBonus(resource)
+	return factor * g.getBonus(*resource)
 }
 
 func (g *Game) getCapacityRate(resource *data.Resource) float64 {

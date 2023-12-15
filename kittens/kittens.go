@@ -887,6 +887,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Printing Press", Factor: 0.0025,
 			Bonus: []data.Resource{{
 				Name: "Steamworks", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Offset Press", Factor: 4 - 1,
+					Bonus: []data.Resource{{
+						Name: "Photolithography", Factor: 4 - 1,
+					}},
+				}},
 			}},
 			BonusStartsFromZero: true,
 		}},
@@ -1883,6 +1889,26 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Quantity: 7500,
 		}, {
 			Name: "gear", Quantity: 45,
+		}},
+	}, {
+		Name: "Offset Press", UnlockedBy: "Combustion",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "gear", Quantity: 250,
+		}, {
+			Name: "oil", Quantity: 15000,
+		}},
+	}, {
+		Name: "Photolithography", UnlockedBy: "Satellites",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "alloy", Quantity: 1250,
+		}, {
+			Name: "oil", Quantity: 50000,
+		}, {
+			Name: "uranium", Quantity: 250,
 		}},
 	}})
 

@@ -188,6 +188,8 @@ digraph {
   "Nuclear Fission" -> "Nuclear Smelter" [color="blue"];
   "Satellites" -> "Orbital Geodesy" [color="blue"];
   "Machinery" -> "Printing Press" [color="blue"];
+  "Combustion" -> "Offset Press" [color="blue"];
+  "Satellites" -> "Photolithography" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
@@ -369,6 +371,8 @@ digraph {
   "Nuclear Smelter" [shape="hexagon"];
   "Orbital Geodesy" [shape="hexagon"];
   "Printing Press" [shape="hexagon"];
+  "Offset Press" [shape="hexagon"];
+  "Photolithography" [shape="hexagon"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
@@ -558,4 +562,6 @@ digraph {
   "Nuclear Smelter" [shape="hexagon"];
   "Orbital Geodesy" [shape="hexagon"];
   "Printing Press" [shape="hexagon"];
+  "Offset Press" [shape="hexagon"];
+  "Photolithography" [shape="hexagon"];
 }

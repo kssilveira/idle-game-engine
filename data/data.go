@@ -24,7 +24,7 @@ type Resource struct {
 	// production *= 1 + sum(bonus)
 	Bonus []Resource `json:",omitempty"`
 	// production *= sum(bonus)
-	BonusStartsFromZero bool
+	BonusStartsFromZero bool `json:",omitempty"`
 
 	// negative production reduces consumers
 	ProductionOnGone bool       `json:",omitempty"`

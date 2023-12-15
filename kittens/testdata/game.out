@@ -306,7 +306,8 @@
                   "Name": "trade ship",
                   "Factor": 1
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             },
             {
               "Name": "Refrigeration",
@@ -549,7 +550,8 @@
                   "Name": "trade ship",
                   "Factor": 1
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -864,7 +866,8 @@
                   "Name": "trade ship",
                   "Factor": 1
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -1073,7 +1076,8 @@
                   "Name": "trade ship",
                   "Factor": 1
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -1124,7 +1128,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         },
         {
           "Name": "Deep Mining",
@@ -1134,7 +1139,8 @@
               "Name": "Mine",
               "Factor": 1
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "Bonus": [
@@ -1240,7 +1246,8 @@
                   "Name": "trade ship",
                   "Factor": 1
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             },
             {
               "Name": "Barges",
@@ -1267,7 +1274,8 @@
               "Name": "Active Smelter",
               "Factor": 1
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         },
         {
           "Name": "Geodesy",
@@ -1287,7 +1295,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "CapacityProducers": [
@@ -1387,7 +1396,8 @@
                   "Name": "trade ship",
                   "Factor": 1
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         },
@@ -1458,7 +1468,8 @@
               "Name": "Active Smelter",
               "Factor": 1
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "CapacityProducers": [
@@ -1558,7 +1569,8 @@
                   "Name": "trade ship",
                   "Factor": 1
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -1610,7 +1622,8 @@
               "Name": "Quarry",
               "Factor": 1
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "CapacityProducers": [
@@ -1901,7 +1914,7 @@
                 },
                 {
                   "Name": "Automated Plants",
-                  "Factor": 0.125,
+                  "Factor": 0.25,
                   "Bonus": [
                     {
                       "Name": "Workshop",
@@ -1911,7 +1924,8 @@
                       "Name": "Factory",
                       "Factor": 0.05
                     }
-                  ]
+                  ],
+                  "BonusStartsFromZero": true
                 },
                 {
                   "Name": "Nuclear Plants",
@@ -1921,11 +1935,13 @@
                       "Name": "Reactor",
                       "Factor": 1
                     }
-                  ]
+                  ],
+                  "BonusStartsFromZero": true
                 }
               ]
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         }
       ]
     },
@@ -2437,9 +2453,22 @@
           "Bonus": [
             {
               "Name": "Steamworks",
-              "Factor": 1
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Offset Press",
+                  "Factor": 3,
+                  "Bonus": [
+                    {
+                      "Name": "Photolithography",
+                      "Factor": 3
+                    }
+                  ]
+                }
+              ]
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "ProducerAction": "@manuscript"
@@ -3238,6 +3267,18 @@
     },
     {
       "Name": "Printing Press",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Offset Press",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Photolithography",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -4656,9 +4697,22 @@
           "Bonus": [
             {
               "Name": "Steamworks",
-              "Factor": 1
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Offset Press",
+                  "Factor": 3,
+                  "Bonus": [
+                    {
+                      "Name": "Photolithography",
+                      "Factor": 3
+                    }
+                  ]
+                }
+              ]
             }
-          ]
+          ],
+          "BonusStartsFromZero": true
         }
       ]
     },
@@ -7766,6 +7820,62 @@
       "Adds": [
         {
           "Name": "Printing Press",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Offset Press",
+      "Type": "Workshop",
+      "UnlockedBy": "Combustion",
+      "LockedBy": "Offset Press",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 250
+        },
+        {
+          "Name": "oil",
+          "Quantity": 15000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Offset Press",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Photolithography",
+      "Type": "Workshop",
+      "UnlockedBy": "Satellites",
+      "LockedBy": "Photolithography",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 1250
+        },
+        {
+          "Name": "oil",
+          "Quantity": 50000
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Photolithography",
           "Quantity": 1
         }
       ]
