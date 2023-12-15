@@ -2,8 +2,6 @@
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[-] [Resource] catnip 1000/5000 -17/s 58s to empty
-[Resource] kitten 4/4 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
@@ -21,9 +19,6 @@ last action:
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[-] [Resource] catnip 983/5000 -17/s 57s to empty
-[Resource] wood 0.09/200 0.09/s 36m17s to cap
-[Resource] kitten 3/3 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -42,9 +37,6 @@ last action: woodcutter
 [Calendar] year 1
 [Calendar] Spring 1
 [Calendar] day_of_year 1
-[-] [Resource] catnip 983/5000 -17/s 57s to empty
-[Resource] wood 0.09/200 0.09/s 36m17s to cap
-[Resource] kitten 3/3 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -64,10 +56,6 @@ error: action Refine catnip is locked
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[-] [Resource] catnip 966/5000 -17/s 56s to empty
-[Resource] wood 0.18/200 0.09/s 36m16s to cap
-[Resource] science 0.20/500 0.20/s 42m25s to cap
-[Resource] kitten 2/2 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -86,10 +74,6 @@ last action: scholar
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[-] [Resource] catnip 966/5000 -17/s 56s to empty
-[Resource] wood 0.18/200 0.09/s 36m16s to cap
-[Resource] science 0.20/500 0.20/s 42m25s to cap
-[Resource] kitten 2/2 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -109,10 +93,6 @@ error: action Refine catnip is locked
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[-] [Resource] catnip 954.10/5000 -11.90/s 1m20s to empty
-[Resource] wood 0.28/200 0.09/s 36m15s to cap
-[Resource] science 0.39/500 0.20/s 42m24s to cap
-[Resource] kitten 1/1 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -131,10 +111,6 @@ last action: farmer
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 41 % 400)
-[-] [Resource] catnip 14/5000 -11.90/s 1s to empty
-[Resource] wood 7.53/200 0.09/s 34m56s to cap
-[Resource] science 15.90/500 0.20/s 41m5s to cap
-[Resource] kitten 1/1 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -154,10 +130,6 @@ error: action Refine catnip is locked
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.41 % 4 == 0)
 [Calendar] day_of_year 42 (1 + 41 % 400)
-[Resource] catnip 2.10/5000 -11.90/s
-[Resource] wood 7.62/200 0.09/s 34m55s to cap
-[Resource] science 16.10/500 0.20/s 41m4s to cap
-[Resource] kitten 1/1 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
 X: [Bonfire] Gather catnip +(catnip 1)
 X: [Bonfire] Catnip Field -(catnip 2.10/10) +(Catnip Field 1)
@@ -177,9 +149,6 @@ error: action Refine catnip is locked
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
-[Resource] wood 7.71/200 0.09/s 34m14s to cap
-[Resource] science 16.30/500 0.20/s 40m16s to cap
-[Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] gone kitten 1
 [Village] happiness 0.04 (0.10 + -0.06)
 X: [Bonfire] Gather catnip +(catnip 1)
@@ -199,9 +168,6 @@ error: action Refine catnip is locked
 [Calendar] year 1.10 (1 + 0.10)
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
-[Resource] wood 7.71/200
-[Resource] science 16.50/500 0.20/s 39m29s to cap
-[Resource] kitten 0.10/2 0.05/s 37s to cap
 [Resource] gone kitten 2
 [Village] happiness 0.06 (0.10 + -0.04)
 X: [Bonfire] Gather catnip +(catnip 1)
@@ -221,9 +187,6 @@ error: action Refine catnip is locked
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
-[Resource] wood 7.71/200
-[Resource] science 16.50/500
-[Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] gone kitten 3
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [Bonfire] Gather catnip +(catnip 1)
@@ -243,9 +206,6 @@ error: action Refine catnip is locked
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
-[Resource] wood 7.71/200
-[Resource] science 16.50/500
-[Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] gone kitten 3
 [Village] happiness 0.08 (0.10 + -0.02)
 X: [Bonfire] Gather catnip +(catnip 1)
