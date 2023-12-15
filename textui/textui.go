@@ -8,12 +8,20 @@ import (
 	"github.com/kssilveira/idle-game-engine/ui"
 )
 
-func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActionNumber bool) {
-	if separator != "" {
-		logger.Printf("%s", separator)
+type Config struct {
+	Logger            *log.Logger
+	Separator         string
+	IsHTML            bool
+	HideActionNumbers bool
+	HideCustomActions bool
+}
+
+func Show(cfg Config, data *ui.Data) {
+	if cfg.Separator != "" {
+		cfg.Logger.Printf("%s", cfg.Separator)
 	}
-	showResources(logger, data)
-	showActions(logger, data, isHTML, showActionNumber)
+	showResources(cfg, data)
+	showActions(cfg, data)
 	prefix := ""
 	if data.LastInput.IsSkip {
 		prefix = "skip "
@@ -24,13 +32,13 @@ func Show(logger *log.Logger, separator string, data *ui.Data, isHTML, showActio
 	if data.LastInput.IsMax {
 		prefix = "max "
 	}
-	logger.Printf("last action: %s%s\n", prefix, data.LastInput.Action.Name)
+	cfg.Logger.Printf("last action: %s%s\n", prefix, data.LastInput.Action.Name)
 	if data.Error != nil {
-		logger.Printf("error: %v\n", data.Error)
+		cfg.Logger.Printf("error: %v\n", data.Error)
 	}
 }
 
-func showResources(logger *log.Logger, data *ui.Data) {
+func showResources(cfg Config, data *ui.Data) {
 	for _, d := range data.Resources {
 		r := d.Resource
 		if r.IsHidden || r.Quantity == 0 {
@@ -68,11 +76,11 @@ func showResources(logger *log.Logger, data *ui.Data) {
 			}
 			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}
-		logger.Printf("%s[%s] %s %s%s%s\n", status, r.Type, r.Name, toString(r.Quantity), capacity, extra)
+		cfg.Logger.Printf("%s[%s] %s %s%s%s\n", status, r.Type, r.Name, toString(r.Quantity), capacity, extra)
 	}
 }
 
-func showActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber bool) {
+func showActions(cfg Config, data *ui.Data) {
 	for i, a := range data.Actions {
 		if a.Locked {
 			continue
@@ -83,7 +91,7 @@ func showActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 			quantity = fmt.Sprintf(" (%s)", toString(a.Quantity))
 		}
 		name := fmt.Sprintf("%s%s", a.Name, quantity)
-		if isHTML {
+		if cfg.IsHTML {
 			name = fmt.Sprintf("<a href='/%d'>%s%s</a> [<a href='/s%d'>skip</a>]", i, a.Name, quantity, i)
 		}
 		parts := []string{name}
@@ -101,14 +109,16 @@ func showActions(logger *log.Logger, data *ui.Data, isHTML, showActionNumber boo
 			adds = append(adds, one)
 		}
 		parts = append(parts, strings.Join(adds, ", "))
-		number := "XX"
-		if showActionNumber {
-			number = fmt.Sprintf("%2d", i)
+		number := fmt.Sprintf("%2d", i)
+		if cfg.HideActionNumbers {
+			number = "XX"
 		}
-		logger.Printf("%s: %s[%s] %s)\n", number, status, a.Type, strings.Join(parts, ""))
+		cfg.Logger.Printf("%s: %s[%s] %s)\n", number, status, a.Type, strings.Join(parts, ""))
 	}
-	for _, a := range data.CustomActions {
-		logger.Printf("%s\n", a.Name)
+	if !cfg.HideCustomActions {
+		for _, a := range data.CustomActions {
+			cfg.Logger.Printf("%s\n", a.Name)
+		}
 	}
 }
 

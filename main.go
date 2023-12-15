@@ -108,14 +108,20 @@ func handleInput(g *game.Game, input game.Input) error {
 }
 
 func handleOutput(output game.Output, last *string, waiting chan bool, refreshed chan bool) {
-	logger := log.New(os.Stdout, "" /* prefix */, 0 /* flags */)
-	separator := "\033[H\033[2J"
+	textConfig := textui.Config{
+		Logger:    log.New(os.Stdout, "" /* prefix */, 0 /* flags */),
+		Separator: "\033[H\033[2J",
+	}
+	var buf bytes.Buffer
+	htmlConfig := textui.Config{
+		Logger: log.New(&buf, "" /* prefix */, 0 /* flags */),
+		IsHTML: true,
+	}
 	for data := range output {
-		textui.Show(logger, separator, data, false /* isHTML */, true /* showActionNumber */)
-		var buf bytes.Buffer
-		buflogger := log.New(&buf, "" /* prefix */, 0 /* flags */)
-		textui.Show(buflogger, "" /* separator */, data, true /* isHTML */, true /* showActionNumber */)
+		textui.Show(textConfig, data)
+		textui.Show(htmlConfig, data)
 		*last = buf.String()
+		buf.Reset()
 		select {
 		case <-waiting:
 			refreshed <- true

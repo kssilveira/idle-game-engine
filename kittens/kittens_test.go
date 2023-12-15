@@ -160,7 +160,6 @@ func TestRun(t *testing.T) {
 	}
 	for _, in := range inputs {
 		var buf bytes.Buffer
-		logger := log.New(&buf, "", 0 /* flags */)
 		input := make(chan string)
 		timeIndex := 0
 		now := time.Unix(0, 0)
@@ -200,8 +199,14 @@ func TestRun(t *testing.T) {
 		}
 		output := make(chan *ui.Data)
 		go g.Run(nowfn, input, output)
+		cfg := textui.Config{
+			Logger:            log.New(&buf, "", 0 /* flags */),
+			Separator:         "###",
+			IsHTML:            in.isHTML,
+			HideActionNumbers: true,
+		}
 		for data := range output {
-			textui.Show(logger, "###", data, in.isHTML, false /* showActionNumber */)
+			textui.Show(cfg, data)
 		}
 		name := filepath.Join("testdata", strings.Replace(in.name, " ", "_", -1)+".out")
 		if err := os.WriteFile(name, buf.Bytes(), 0644); err != nil {
