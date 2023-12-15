@@ -286,7 +286,13 @@
       "CapacityProducers": [
         {
           "Name": "Barn",
-          "Factor": 5000
+          "Factor": 5000,
+          "Bonus": [
+            {
+              "Name": "Refrigeration",
+              "Factor": 0.75
+            }
+          ]
         },
         {
           "Name": "Harbour",
@@ -301,6 +307,10 @@
                   "Factor": 1
                 }
               ]
+            },
+            {
+              "Name": "Refrigeration",
+              "Factor": 0.75
             }
           ]
         }
@@ -396,6 +406,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -414,6 +428,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -442,6 +460,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -460,6 +482,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -488,6 +514,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -506,6 +536,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             },
             {
               "Name": "Expanded Cargo",
@@ -596,16 +630,16 @@
               "Factor": 1
             },
             {
-              "Name": "Bolas",
-              "Factor": 1
-            },
-            {
-              "Name": "Hunting Armor",
-              "Factor": 2
-            },
-            {
               "Name": "Composite Bow",
               "Factor": 0.5
+            },
+            {
+              "Name": "Crossbow",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Railgun",
+              "Factor": 0.25
             }
           ]
         },
@@ -687,6 +721,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -705,6 +743,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -733,6 +775,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -751,6 +797,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -779,6 +829,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -797,6 +851,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             },
             {
               "Name": "Expanded Cargo",
@@ -852,6 +910,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -870,6 +932,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -898,6 +964,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -916,6 +986,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -944,6 +1018,10 @@
               "Factor": 0.75
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Reinforced Warehouses",
               "Factor": 0.25
             },
@@ -962,6 +1040,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             },
             {
               "Name": "Expanded Cargo",
@@ -989,6 +1071,18 @@
             {
               "Name": "happiness",
               "Factor": 1
+            },
+            {
+              "Name": "Geodesy",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Mining Drill",
+              "Factor": 10
+            },
+            {
+              "Name": "Unobtainium Drill",
+              "Factor": 2
             }
           ]
         },
@@ -1021,6 +1115,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -1047,6 +1145,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -1075,6 +1177,10 @@
               "Factor": 0.2
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Expanded Cargo",
               "Factor": 0.01,
               "Bonus": [
@@ -1100,6 +1206,36 @@
         {
           "Name": "Mint",
           "Factor": -0.025
+        },
+        {
+          "Name": "Gold Ore",
+          "Factor": 0.005,
+          "Bonus": [
+            {
+              "Name": "Active Smelter",
+              "Factor": 1
+            }
+          ]
+        },
+        {
+          "Name": "Geodesy",
+          "Factor": 0.004,
+          "Bonus": [
+            {
+              "Name": "geologist",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Mining Drill",
+                  "Factor": 0.6
+                },
+                {
+                  "Name": "Unobtainium Drill",
+                  "Factor": 0.6
+                }
+              ]
+            }
+          ]
         }
       ],
       "CapacityProducers": [
@@ -1126,6 +1262,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -1152,6 +1292,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -1180,6 +1324,10 @@
               "Factor": 0.2
             },
             {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
+            },
+            {
               "Name": "Expanded Cargo",
               "Factor": 0.01,
               "Bonus": [
@@ -1214,6 +1362,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         }
@@ -1257,6 +1409,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -1283,6 +1439,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             }
           ]
         },
@@ -1309,6 +1469,10 @@
             {
               "Name": "Storage Bunkers",
               "Factor": 0.2
+            },
+            {
+              "Name": "Concrete Pillars",
+              "Factor": 0.05
             },
             {
               "Name": "Expanded Cargo",
@@ -1626,6 +1790,11 @@
         }
       ],
       "StartCapacity": 1
+    },
+    {
+      "Name": "starchart",
+      "Type": "Resource",
+      "Capacity": -1
     },
     {
       "Name": "steel",
@@ -2724,31 +2893,25 @@
       "Capacity": 1
     },
     {
-      "Name": "Bolas",
+      "Name": "Ironwood Huts",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
     },
     {
-      "Name": "Hunting Armor",
+      "Name": "Concrete Huts",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
     },
     {
-      "Name": "Composite Bow",
+      "Name": "Unobtainium Huts",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
     },
     {
-      "Name": "Catnip Enrichment",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
-      "Name": "Concrete Pillars",
+      "Name": "Eludium Huts",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -2760,7 +2923,109 @@
       "Capacity": 1
     },
     {
-      "Name": "Ironwood Huts",
+      "Name": "Refrigeration",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Composite Bow",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Crossbow",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Railgun",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Bolas",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Hunting Armour",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Steel Armour",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Alloy Armour",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Nanosuits",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Caravanserai",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Catnip Enrichment",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Gold Ore",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Geodesy",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Register",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Concrete Pillars",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Mining Drill",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Unobtainium Drill",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Hunting Armor",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -3951,11 +4216,55 @@
       "Adds": [
         {
           "Name": "furs",
-          "Quantity": 39.5
+          "Quantity": 39.5,
+          "Bonus": [
+            {
+              "Name": "Bolas",
+              "Factor": 1
+            },
+            {
+              "Name": "Hunting Armour",
+              "Factor": 2
+            },
+            {
+              "Name": "Steel Armour",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Armour",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Nanosuits",
+              "Factor": 0.5
+            }
+          ]
         },
         {
           "Name": "ivory",
-          "Quantity": 10.78
+          "Quantity": 10.78,
+          "Bonus": [
+            {
+              "Name": "Bolas",
+              "Factor": 1
+            },
+            {
+              "Name": "Hunting Armour",
+              "Factor": 2
+            },
+            {
+              "Name": "Steel Armour",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Armour",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Nanosuits",
+              "Factor": 0.5
+            }
+          ]
         },
         {
           "Name": "unicorns",
@@ -6392,27 +6701,537 @@
       ]
     },
     {
+      "Name": "Ironwood Huts",
+      "Type": "Workshop",
+      "UnlockedBy": "Reinforced Warehouses",
+      "LockedBy": "Ironwood Huts",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 30000
+        },
+        {
+          "Name": "wood",
+          "Quantity": 15000
+        },
+        {
+          "Name": "iron",
+          "Quantity": 3000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Ironwood Huts",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Concrete Huts",
+      "Type": "Workshop",
+      "UnlockedBy": "Concrete Pillars",
+      "LockedBy": "Concrete Huts",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 45
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 3000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Concrete Huts",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unobtainium Huts",
+      "Type": "Workshop",
+      "UnlockedBy": "Exogeology",
+      "LockedBy": "Unobtainium Huts",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 200000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 350
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 15000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unobtainium Huts",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Eludium Huts",
+      "Type": "Workshop",
+      "UnlockedBy": "Advanced Exogeology",
+      "LockedBy": "Eludium Huts",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 275000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Eludium Huts",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Silos",
+      "Type": "Workshop",
+      "UnlockedBy": "Ironwood Huts",
+      "LockedBy": "Silos",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 50000
+        },
+        {
+          "Name": "steel",
+          "Quantity": 125
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Silos",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Refrigeration",
+      "Type": "Workshop",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "Refrigeration",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 2500
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Refrigeration",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Composite Bow",
+      "Type": "Workshop",
+      "UnlockedBy": "Construction",
+      "LockedBy": "Composite Bow",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500
+        },
+        {
+          "Name": "iron",
+          "Quantity": 100
+        },
+        {
+          "Name": "wood",
+          "Quantity": 200
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Composite Bow",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Crossbow",
+      "Type": "Workshop",
+      "UnlockedBy": "Machinery",
+      "LockedBy": "Crossbow",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 12000
+        },
+        {
+          "Name": "iron",
+          "Quantity": 1500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Crossbow",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Railgun",
+      "Type": "Workshop",
+      "UnlockedBy": "Particle Physics",
+      "LockedBy": "Railgun",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 150000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Railgun",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
       "Name": "Bolas",
       "Type": "Workshop",
       "UnlockedBy": "Mining",
       "LockedBy": "Bolas",
       "Costs": [
         {
-          "Name": "wood",
-          "Quantity": 50
+          "Name": "science",
+          "Quantity": 1000
         },
         {
           "Name": "mineral",
           "Quantity": 250
         },
         {
-          "Name": "science",
-          "Quantity": 1000
+          "Name": "wood",
+          "Quantity": 50
         }
       ],
       "Adds": [
         {
           "Name": "Bolas",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hunting Armour",
+      "Type": "Workshop",
+      "UnlockedBy": "Metal Working",
+      "LockedBy": "Hunting Armour",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 2000
+        },
+        {
+          "Name": "iron",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hunting Armour",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Steel Armour",
+      "Type": "Workshop",
+      "UnlockedBy": "Steel",
+      "LockedBy": "Steel Armour",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 10000
+        },
+        {
+          "Name": "steel",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Steel Armour",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Alloy Armour",
+      "Type": "Workshop",
+      "UnlockedBy": "Chemistry",
+      "LockedBy": "Alloy Armour",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 50000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Alloy Armour",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Nanosuits",
+      "Type": "Workshop",
+      "UnlockedBy": "Nanotechnology",
+      "LockedBy": "Nanosuits",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 185000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Nanosuits",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Caravanserai",
+      "Type": "Workshop",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Caravanserai",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 25000
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 10000
+        },
+        {
+          "Name": "gold",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Caravanserai",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Catnip Enrichment",
+      "Type": "Workshop",
+      "UnlockedBy": "Construction",
+      "LockedBy": "Catnip Enrichment",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500
+        },
+        {
+          "Name": "catnip",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Catnip Enrichment",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Gold Ore",
+      "Type": "Workshop",
+      "UnlockedBy": "Currency",
+      "LockedBy": "Gold Ore",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 1000
+        },
+        {
+          "Name": "mineral",
+          "Quantity": 800
+        },
+        {
+          "Name": "iron",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Gold Ore",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Geodesy",
+      "Type": "Workshop",
+      "UnlockedBy": "Geology",
+      "LockedBy": "Geodesy",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 90000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 250
+        },
+        {
+          "Name": "starchart",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Geodesy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Register",
+      "Type": "Workshop",
+      "UnlockedBy": "Writing",
+      "LockedBy": "Register",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500
+        },
+        {
+          "Name": "gold",
+          "Quantity": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Register",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Concrete Pillars",
+      "Type": "Workshop",
+      "UnlockedBy": "Mechanization",
+      "LockedBy": "Concrete Pillars",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Concrete Pillars",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mining Drill",
+      "Type": "Workshop",
+      "UnlockedBy": "Metallurgy",
+      "LockedBy": "Mining Drill",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1750
+        },
+        {
+          "Name": "steel",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mining Drill",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unobtainium Drill",
+      "Type": "Workshop",
+      "UnlockedBy": "Exogeology",
+      "LockedBy": "Unobtainium Drill",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 250
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 1250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unobtainium Drill",
           "Quantity": 1
         }
       ]
@@ -6435,90 +7254,6 @@
       "Adds": [
         {
           "Name": "Hunting Armor",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
-      "Name": "Composite Bow",
-      "Type": "Workshop",
-      "UnlockedBy": "Construction",
-      "LockedBy": "Composite Bow",
-      "Costs": [
-        {
-          "Name": "wood",
-          "Quantity": 200
-        },
-        {
-          "Name": "iron",
-          "Quantity": 100
-        },
-        {
-          "Name": "science",
-          "Quantity": 500
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "Composite Bow",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
-      "Name": "Catnip Enrichment",
-      "Type": "Workshop",
-      "UnlockedBy": "Construction",
-      "LockedBy": "Catnip Enrichment",
-      "Costs": [
-        {
-          "Name": "catnip",
-          "Quantity": 5000
-        },
-        {
-          "Name": "science",
-          "Quantity": 500
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "Catnip Enrichment",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
-      "Name": "Concrete Pillars",
-      "Type": "Workshop",
-      "UnlockedBy": "Mechanization",
-      "LockedBy": "Concrete Pillars",
-      "Adds": [
-        {
-          "Name": "Concrete Pillars",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
-      "Name": "Silos",
-      "Type": "Workshop",
-      "UnlockedBy": "Ironwood Huts",
-      "LockedBy": "Silos",
-      "Adds": [
-        {
-          "Name": "Silos",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
-      "Name": "Ironwood Huts",
-      "Type": "Workshop",
-      "UnlockedBy": "Reinforced Warehouses",
-      "LockedBy": "Ironwood Huts",
-      "Adds": [
-        {
-          "Name": "Ironwood Huts",
           "Quantity": 1
         }
       ]

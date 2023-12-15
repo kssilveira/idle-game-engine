@@ -18,6 +18,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Alloy Barns", Factor: 1.00,
 	}, {
 		Name: "Concrete Barns", Factor: 0.75,
+	}, {
+		Name: "Concrete Pillars", Factor: 0.05,
 	}}
 	WarehouseBonus := []data.Resource{{
 		Name: "Reinforced Warehouses", Factor: 0.25,
@@ -29,12 +31,28 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Concrete Warehouses", Factor: 0.35,
 	}, {
 		Name: "Storage Bunkers", Factor: 0.20,
+	}, {
+		Name: "Concrete Pillars", Factor: 0.05,
 	}}
 	HarbourBonus := []data.Resource{{
 		Name: "Expanded Cargo", Factor: 0.01,
 		Bonus: []data.Resource{{
 			Name: "trade ship", Factor: 1,
 		}},
+	}}
+	HuntingBonus := []data.Resource{{
+		Name: "Bolas", Factor: 1,
+	}, {
+		Name: "Hunting Armour", Factor: 2,
+	}, {
+		Name: "Steel Armour", Factor: 0.5,
+	}, {
+		Name: "Alloy Armour", Factor: 0.5,
+	}, {
+		Name: "Nanosuits", Factor: 0.5,
+	}}
+	CatnipCapacityBonus := []data.Resource{{
+		Name: "Refrigeration", Factor: 0.75,
 	}}
 	CultureCapacityBonus := []data.Resource{{Name: "Ziggurat", Factor: 0.08}}
 	kittenNames := []string{
@@ -89,9 +107,9 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Aqueduct", Factor: 0.03,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 5000,
+			Name: "Barn", Factor: 5000, Bonus: CatnipCapacityBonus,
 		}, {
-			Name: "Harbour", Factor: 2500, Bonus: HarbourBonus,
+			Name: "Harbour", Factor: 2500, Bonus: join(HarbourBonus, CatnipCapacityBonus),
 		}},
 	}, {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
@@ -169,11 +187,11 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
 			}, {
-				Name: "Bolas", Factor: 1,
-			}, {
-				Name: "Hunting Armor", Factor: 2,
-			}, {
 				Name: "Composite Bow", Factor: 0.5,
+			}, {
+				Name: "Crossbow", Factor: 0.25,
+			}, {
+				Name: "Railgun", Factor: 0.25,
 			}},
 		}, {
 			Name: "Mint", Factor: -0.75 * 5,
@@ -228,6 +246,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "geologist", Factor: 0.015 * 5,
 			Bonus: []data.Resource{{
 				Name: "happiness", Factor: 1,
+			}, {
+				Name: "Geodesy", Factor: 0.5,
+			}, {
+				Name: "Mining Drill", Factor: 10,
+			}, {
+				Name: "Unobtainium Drill", Factor: 2,
 			}},
 		}, {
 			Name: "Quarry", Factor: 0.015 * 5,
@@ -245,6 +269,21 @@ func NewGame(now game.Now) *game.Game {
 		Name: "gold", Type: "Resource", StartCapacity: 20,
 		Producers: []data.Resource{{
 			Name: "Mint", Factor: -0.005 * 5,
+		}, {
+			Name: "Gold Ore", Factor: 0.001 * 5,
+			Bonus: []data.Resource{{
+				Name: "Active Smelter", Factor: 1,
+			}},
+		}, {
+			Name: "Geodesy", Factor: 0.0008 * 5,
+			Bonus: []data.Resource{{
+				Name: "geologist", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Mining Drill", Factor: 0.6,
+				}, {
+					Name: "Unobtainium Drill", Factor: 0.6,
+				}},
+			}},
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", Factor: 10, Bonus: WarehouseBonus,
@@ -372,6 +411,8 @@ func NewGame(now game.Now) *game.Game {
 		CapacityProducers: []data.Resource{{
 			Name: "Temple", Factor: 100,
 		}},
+	}, {
+		Name: "starchart", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "steel", Type: "Resource", Capacity: -1,
 	}, {
@@ -743,9 +784,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Send hunters", Type: "Village", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
 		Adds: []data.Resource{{
-			Name: "furs", Quantity: 39.5,
+			Name: "furs", Quantity: 39.5, Bonus: HuntingBonus,
 		}, {
-			Name: "ivory", Quantity: 10.78,
+			Name: "ivory", Quantity: 10.78, Bonus: HuntingBonus,
 		}, {
 			Name: "unicorns", Quantity: 0.05,
 		}},
@@ -1480,13 +1521,184 @@ func NewGame(now game.Now) *game.Game {
 			Name: "uranium", Quantity: 125,
 		}},
 	}, {
+		Name: "Ironwood Huts", UnlockedBy: "Reinforced Warehouses",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 30000,
+		}, {
+			Name: "wood", Quantity: 15000,
+		}, {
+			Name: "iron", Quantity: 3000,
+		}},
+	}, {
+		Name: "Concrete Huts", UnlockedBy: "Concrete Pillars",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 125000,
+		}, {
+			Name: "concrete", Quantity: 45,
+		}, {
+			Name: "titanium", Quantity: 3000,
+		}},
+	}, {
+		Name: "Unobtainium Huts", UnlockedBy: "Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 200000,
+		}, {
+			Name: "unobtainium", Quantity: 350,
+		}, {
+			Name: "titanium", Quantity: 15000,
+		}},
+	}, {
+		Name: "Eludium Huts", UnlockedBy: "Advanced Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 275000,
+		}, {
+			Name: "eludium", Quantity: 125,
+		}},
+	}, {
+		Name: "Silos", UnlockedBy: "Ironwood Huts",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 50000,
+		}, {
+			Name: "steel", Quantity: 125,
+		}, {
+			Name: "blueprint", Quantity: 5,
+		}},
+	}, {
+		Name: "Refrigeration", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 125000,
+		}, {
+			Name: "titanium", Quantity: 2500,
+		}, {
+			Name: "blueprint", Quantity: 15,
+		}},
+	}, {
+		Name: "Composite Bow", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 500,
+		}, {
+			Name: "iron", Quantity: 100,
+		}, {
+			Name: "wood", Quantity: 200,
+		}},
+	}, {
+		Name: "Crossbow", UnlockedBy: "Machinery",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 12000,
+		}, {
+			Name: "iron", Quantity: 1500,
+		}},
+	}, {
+		Name: "Railgun", UnlockedBy: "Particle Physics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 150000,
+		}, {
+			Name: "titanium", Quantity: 5000,
+		}, {
+			Name: "blueprint", Quantity: 25,
+		}},
+	}, {
 		Name: "Bolas", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 50,
+			Name: "science", Quantity: 1000,
 		}, {
 			Name: "mineral", Quantity: 250,
 		}, {
+			Name: "wood", Quantity: 50,
+		}},
+	}, {
+		Name: "Hunting Armour", UnlockedBy: "Metal Working",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 2000,
+		}, {
+			Name: "iron", Quantity: 750,
+		}},
+	}, {
+		Name: "Steel Armour", UnlockedBy: "Steel",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 10000,
+		}, {
+			Name: "steel", Quantity: 50,
+		}},
+	}, {
+		Name: "Alloy Armour", UnlockedBy: "Chemistry",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 50000,
+		}, {
+			Name: "alloy", Quantity: 25,
+		}},
+	}, {
+		Name: "Nanosuits", UnlockedBy: "Nanotechnology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 185000,
+		}, {
+			Name: "alloy", Quantity: 250,
+		}},
+	}, {
+		Name: "Caravanserai", UnlockedBy: "Navigation",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 25000,
+		}, {
+			Name: "ivory", Quantity: 10000,
+		}, {
+			Name: "gold", Quantity: 250,
+		}},
+	}, {
+		Name: "Catnip Enrichment", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 500,
+		}, {
+			Name: "catnip", Quantity: 500,
+		}},
+	}, {
+		Name: "Gold Ore", UnlockedBy: "Currency",
+		Costs: []data.Resource{{
 			Name: "science", Quantity: 1000,
+		}, {
+			Name: "mineral", Quantity: 800,
+		}, {
+			Name: "iron", Quantity: 100,
+		}},
+	}, {
+		Name: "Geodesy", UnlockedBy: "Geology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 90000,
+		}, {
+			Name: "titanium", Quantity: 250,
+		}, {
+			Name: "starchart", Quantity: 500,
+		}},
+	}, {
+		Name: "Register", UnlockedBy: "Writing",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 500,
+		}, {
+			Name: "gold", Quantity: 10,
+		}},
+	}, {
+		Name: "Concrete Pillars", UnlockedBy: "Mechanization",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "concrete", Quantity: 50,
+		}},
+	}, {
+		Name: "Mining Drill", UnlockedBy: "Metallurgy",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "titanium", Quantity: 1750,
+		}, {
+			Name: "steel", Quantity: 750,
+		}},
+	}, {
+		Name: "Unobtainium Drill", UnlockedBy: "Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "unobtainium", Quantity: 250,
+		}, {
+			Name: "alloy", Quantity: 1250,
 		}},
 	}, {
 		Name: "Hunting Armor", UnlockedBy: "Metal Working",
@@ -1495,28 +1707,6 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 2000,
 		}},
-	}, {
-		Name: "Composite Bow", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
-			Name: "wood", Quantity: 200,
-		}, {
-			Name: "iron", Quantity: 100,
-		}, {
-			Name: "science", Quantity: 500,
-		}},
-	}, {
-		Name: "Catnip Enrichment", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
-			Name: "catnip", Quantity: 5000,
-		}, {
-			Name: "science", Quantity: 500,
-		}},
-	}, {
-		Name: "Concrete Pillars", UnlockedBy: "Mechanization",
-	}, {
-		Name: "Silos", UnlockedBy: "Ironwood Huts",
-	}, {
-		Name: "Ironwood Huts", UnlockedBy: "Reinforced Warehouses",
 	}})
 
 	return g

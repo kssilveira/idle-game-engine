@@ -2187,7 +2187,7 @@ XX: [Science] Metal Working -(science 900) +(Metal Working 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-XX: [Workshop] Bolas -(wood 50, mineral 0/250, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Mining
 ###
 [Calendar] time 307897
@@ -2220,7 +2220,7 @@ XX: [Science] Metal Working -(science 900) +(Metal Working 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-XX: [Workshop] Bolas -(wood 50, mineral 0/250, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Mine
 ###
 [Calendar] time 307898
@@ -2254,7 +2254,7 @@ XX: [Science] Metal Working -(science 900) +(Metal Working 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-XX: [Workshop] Bolas -(wood 50, mineral 0/250, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Hut
 ###
 [Calendar] time 307918
@@ -2289,7 +2289,7 @@ XX: [Science] Metal Working -(science 900) +(Metal Working 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-XX: [Workshop] Bolas -(wood 50, mineral 0.32/250 13m12s, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 0.32/250 13m12s, wood 50) +(Bolas 1)
 last action: skip miner
 ###
 [Calendar] time 307938
@@ -2323,7 +2323,7 @@ XX: [Science] Metal Working -(science 900) +(Metal Working 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-XX: [Workshop] Bolas -(wood 50, mineral 6.61/250 13m5s, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 6.61/250 13m5s, wood 50) +(Bolas 1)
 last action: skip farmer
 ###
 [Calendar] time 403222
@@ -2357,7 +2357,7 @@ XX: [Science] Metal Working -(science 900) +(Metal Working 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-XX: [Workshop] Bolas -(wood 50, mineral 250, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: max Mine
 ###
 [Calendar] time 419251
@@ -2397,7 +2397,7 @@ XX: [Workshop] Mineral Axe -(mineral 500, science 100) +(Mineral Axe 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 465.39/1000 1h35m11s, mineral 750, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-XX: [Workshop] Bolas -(wood 50, mineral 250, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: max Workshop
 ###
 [Calendar] time 419252
@@ -2436,7 +2436,7 @@ XX: [Workshop] Mineral Axe -(mineral 500, science 100) +(Mineral Axe 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 465.48/1000 1h35m10s, mineral 750, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-XX: [Workshop] Bolas -(wood 50, mineral 250, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: skip Mineral Hoes
 ###
 [Calendar] time 419253
@@ -2474,7 +2474,7 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 465.64/1000 56m52s, mineral 750, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-XX: [Workshop] Bolas -(wood 50, mineral 250, science 1000) +(Bolas 1)
+XX: [Workshop] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: skip Mineral Axe
 ###
 [Calendar] time 419254
@@ -2485,7 +2485,7 @@ last action: skip Mineral Axe
 [Resource] catnip 35000/35000 71.92/s
 [Resource] wood 415.79/1400 0.16/s 1h44m44s to cap
 [Resource] science 6302.13/7500 0.71/s 28m7s to cap
-[Resource] catpower 550/550 0.61/s
+[Resource] catpower 550/550 0.31/s
 [Resource] mineral 728.63/1750 1.21/s 14m4s to cap
 [Resource] unicorns 6124.83 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
@@ -2502,7 +2502,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (4) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 728.63/1000 3m44s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Metal Working -(science 900) +(Metal Working 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
@@ -2522,7 +2522,7 @@ last action: skip Bolas
 [Resource] catnip 35000/35000 71.92/s
 [Resource] wood 415.95/1400 0.16/s 1h44m43s to cap
 [Resource] science 5402.84/7500 0.71/s 49m14s to cap
-[Resource] catpower 550/550 0.61/s
+[Resource] catpower 550/550 0.31/s
 [Resource] mineral 729.84/1750 1.21/s 14m3s to cap
 [Resource] unicorns 6124.89 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
@@ -2540,7 +2540,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (4) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 729.84/1000 3m43s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
@@ -2549,6 +2549,7 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 415.95/1000 1h2m9s, mineral 729.84/750 16s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
 last action: skip Metal Working
 ###
@@ -2560,7 +2561,7 @@ last action: skip Metal Working
 [Resource] catnip 35000/35000 71.92/s
 [Resource] wood 416.11/1400 0.16/s 1h44m42s to cap
 [Resource] science 5403.55/7500 0.71/s 49m13s to cap
-[Resource] catpower 550/550 0.61/s
+[Resource] catpower 550/550 0.31/s
 [Resource] mineral 531.05/1750 1.21/s 16m47s to cap
 [Resource] unicorns 6124.94 0.06/s
 [Village] happiness 0.04 (0.10 + -0.06)
@@ -2580,7 +2581,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (4) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 531.05/1000 6m27s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
@@ -2589,6 +2590,7 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 416.11/1000 1h2m8s, mineral 531.05/750 3m0s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
 last action: skip Smelter
 ###
@@ -2600,7 +2602,7 @@ last action: skip Smelter
 [Resource] catnip 35000/35000 71.92/s
 [Resource] wood 220.95/1400 0.16/s 2h5m29s to cap
 [Resource] science 5404.26/7500 0.71/s 49m12s to cap
-[Resource] catpower 550.61/625 0.61/s 2m1s to cap
+[Resource] catpower 550.31/625 0.31/s 3m59s to cap
 [Resource] mineral 532.26/1750 1.21/s 16m46s to cap
 [Resource] kitten 0.05/2 0.05/s 39s to cap
 [Resource] unicorns 6125 0.06/s
@@ -2621,7 +2623,7 @@ XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
 XX: [Village] farmer (4) -(kitten 0.05/1 18s) +(farmer 1)
 XX: [Village] hunter (1) -(kitten 0.05/1 18s) +(hunter 1)
 XX: [Village] miner (1) -(kitten 0.05/1 18s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 532.26/1000 6m26s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
@@ -2630,6 +2632,7 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 220.95/1000 1h22m54s, mineral 532.26/750 2m59s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
 last action: skip Hut
 ###
@@ -2641,7 +2644,7 @@ last action: skip Hut
 [Resource] catnip 35000/35000 68.10/s
 [Resource] wood 224.24/1400 0.31/s 1h3m17s to cap
 [Resource] science 5418.44/7500 0.70/s 49m50s to cap
-[Resource] catpower 562.85/625 0.61/s 1m42s to cap
+[Resource] catpower 556.55/625 0.31/s 3m43s to cap
 [Resource] mineral 556.46/1750 1.21/s 16m30s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] unicorns 6126.10 0.06/s
@@ -2662,7 +2665,7 @@ XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
 XX: [Village] farmer (4) -(kitten 0.05/1 18s) +(farmer 1)
 XX: [Village] hunter (1) -(kitten 0.05/1 18s) +(hunter 1)
 XX: [Village] miner (1) -(kitten 0.05/1 18s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 556.46/1000 6m8s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
@@ -2671,6 +2674,7 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 224.24/1000 41m45s, mineral 556.46/750 2m40s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
 last action: skip woodcutter
 ###
@@ -2682,7 +2686,7 @@ last action: skip woodcutter
 [Resource] catnip 35000/35000 71.79/s
 [Resource] wood 230.42/1400 0.31/s 1h3m42s to cap
 [Resource] science 5432.35/7500 0.68/s 50m29s to cap
-[Resource] catpower 574.96/625 0.60/s 1m23s to cap
+[Resource] catpower 562.66/625 0.30/s 3m27s to cap
 [Resource] mineral 580.55/1750 1.20/s 16m14s to cap
 [Resource] unicorns 6127.20 0.06/s
 [Bonfire] Idle Smelter 1
@@ -2701,7 +2705,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 580.55/1000 5m49s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
@@ -2710,6 +2714,7 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 230.42/1000 41m54s, mineral 580.55/750 2m21s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
 last action: skip farmer
 ###
@@ -2721,7 +2726,7 @@ last action: skip farmer
 [Resource] catnip 35000/35000 71.79/s
 [Resource] wood 230.48/1400 0.06/s 5h48m4s to cap
 [Resource] science 5433.03/7500 0.68/s 50m28s to cap
-[Resource] catpower 575.56/625 0.60/s 1m22s to cap
+[Resource] catpower 562.96/625 0.30/s 3m26s to cap
 [Resource] mineral 581.25/1750 0.70/s 27m49s to cap
 [Resource] iron 0.10/350 0.10/s 58m18s to cap
 [Resource] unicorns 6127.25 0.06/s
@@ -2740,7 +2745,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 581.25/1000 9m58s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
@@ -2749,6 +2754,7 @@ XX: [Workshop] Iron Hoes -(iron 0.10/25 4m8s, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0.10/50 8m18s, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 230.48/1000 3h49m1s, mineral 581.25/750 4m1s, iron 0.10/50 8m18s, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m39s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0.10/750* 2h4m58s) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0.10/750* 2h4m58s, science 2000) +(Hunting Armor 1)
 last action: Active Smelter
 ###
@@ -2760,7 +2766,7 @@ last action: Active Smelter
 [Resource] catnip 35000/35000 56.48/s
 [Resource] wood 244.48/1400 0.06/s 5h43m54s to cap
 [Resource] science 5403.66/7500 0.68/s 51m11s to cap
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 756.25/1750 0.70/s 23m39s to cap
 [Resource] iron 0.10/350 0.10/s 58m18s to cap
 [Resource] unicorns 6141 0.06/s
@@ -2779,7 +2785,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 756.25/1000 5m48s) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
@@ -2787,6 +2793,7 @@ XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Iron Axe -(iron 0.10/50 8m18s, science 100) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 244.48/1000 3h44m51s, mineral 750, iron 0.10/50 8m18s, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m38s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0.10/750* 2h4m58s) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0.10/750* 2h4m58s, science 2000) +(Hunting Armor 1)
 last action: skip Iron Hoes
 ###
@@ -2798,7 +2805,7 @@ last action: skip Iron Hoes
 [Resource] catnip 35000/35000 79.29/s
 [Resource] wood 272.57/1400 0.15/s 2h8m42s to cap
 [Resource] science 5644.91/7500 0.68/s 45m18s to cap
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 1106.25/1750 0.70/s 15m19s to cap
 [Resource] iron 0.10/350 0.10/s 58m18s to cap
 [Resource] unicorns 6168.50 0.06/s
@@ -2817,13 +2824,14 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Expanded Barns -(wood 272.57/1000 1h23m2s, mineral 750, iron 0.10/50 8m18s, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m38s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 0.10/750* 2h4m58s) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0.10/750* 2h4m58s, science 2000) +(Hunting Armor 1)
 last action: skip Iron Axe
 ###
@@ -2835,7 +2843,7 @@ last action: skip Iron Axe
 [Resource] catnip 35000/35000 56.48/s
 [Resource] wood 0.23/2300 0.15/s 4h22m31s to cap
 [Resource] science 7000.68/7500 0.68/s 12m11s to cap
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 1000.70/2875 0.70/s 44m37s to cap
 [Resource] iron 300.10/575 0.10/s 45m48s to cap
 [Resource] unicorns 6442.62 0.06/s
@@ -2854,12 +2862,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [*] [Workshop] Hunting Armour -(science 2000, iron 300.10/750* 1h14m58s) +(Hunting Armour 1)
 XX: [*] [Workshop] Hunting Armor -(iron 300.10/750* 1h14m58s, science 2000) +(Hunting Armor 1)
 last action: skip Expanded Barns
 ###
@@ -2871,7 +2880,7 @@ last action: skip Expanded Barns
 [Resource] catnip 45000/45000 22.26/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 7500/7500 0.68/s
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 0.70/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 9587.25 0.06/s
@@ -2890,12 +2899,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
 last action: max Barn
 ###
@@ -2907,7 +2917,7 @@ last action: max Barn
 [Resource] catnip 45000/45000 57.73/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 7500/7500 0.68/s
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 0.70/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 9800.37 0.06/s
@@ -2926,12 +2936,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
 last action: max Catnip Field
 ###
@@ -2943,7 +2954,7 @@ last action: max Catnip Field
 [Resource] catnip 45000/45000 57.73/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 9000/9000 0.79/s
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 0.70/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 14671.12 0.06/s
@@ -2962,12 +2973,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
 last action: max Library
 ###
@@ -2979,7 +2991,7 @@ last action: max Library
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 9000/9000 0.79/s
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 0.70/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 18591.46 0.06/s
@@ -2998,12 +3010,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
 last action: max Pasture
 ###
@@ -3015,7 +3028,7 @@ last action: max Pasture
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 9000/9000 0.79/s
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 23394.61 0.06/s
@@ -3034,12 +3047,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
 last action: max Mine
 ###
@@ -3051,7 +3065,7 @@ last action: max Mine
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 1386.93/3000 0.15/s 3h4m8s to cap
 [Resource] science 9000/9000 0.79/s
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 24321.14 0.06/s
@@ -3070,12 +3084,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
 last action: max Workshop
 ###
@@ -3087,7 +3102,7 @@ last action: max Workshop
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 9000/9000 0.79/s
-[Resource] catpower 625/625 0.60/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 25617.93 0.06/s
@@ -3107,12 +3122,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
 last action: max Smelter
 ###
@@ -3124,7 +3140,7 @@ last action: max Smelter
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 7000.79/9000 0.79/s 42m18s to cap
-[Resource] catpower 625/625 1.20/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 0.10/750 0.10/s 2h4m58s to cap
 [Resource] unicorns 25617.99 0.06/s
@@ -3144,12 +3160,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m39s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 0.10/750 2h4m58s) +(Hunting Armour 1)
 last action: skip Hunting Armor
 ###
 [Calendar] time 773676
@@ -3160,7 +3177,7 @@ last action: skip Hunting Armor
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 5501.58/9000 0.79/s 1h14m2s to cap
-[Resource] catpower 625/625 1.20/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 0.20/750 0.10/s 2h4m57s to cap
 [Resource] unicorns 25618.04 0.06/s
@@ -3180,12 +3197,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Workshop] Reinforced Barns -(iron 0.20/100 16m37s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 0.20/750 2h4m57s) +(Hunting Armour 1)
 last action: skip Civil Service
 ###
 [Calendar] time 773677
@@ -3196,7 +3214,7 @@ last action: skip Civil Service
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 3000/3000 0.15/s
 [Resource] science 4502.36/9000 0.79/s 1h35m11s to cap
-[Resource] catpower 625/625 1.20/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 0.30/750 0.10/s 2h4m57s to cap
 [Resource] unicorns 25618.10 0.06/s
@@ -3217,12 +3235,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 XX: [Workshop] Reinforced Barns -(iron 0.30/100 16m37s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 0.30/750 2h4m57s) +(Hunting Armour 1)
 last action: skip Mathematics
 ###
 [Calendar] time 902016
@@ -3233,7 +3252,7 @@ last action: skip Mathematics
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 2879.01/3000 0.15/s 13m48s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.20/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 32676.74 0.06/s
@@ -3254,12 +3273,13 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Academy
 ###
 [Calendar] time 902017
@@ -3270,7 +3290,7 @@ last action: max Academy
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 2879.16/3000 0.15/s 13m47s to cap
 [Resource] science 23251.80/23500 1.80/s 2m17s to cap
-[Resource] catpower 625/625 1.20/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 32676.80 0.06/s
@@ -3291,11 +3311,12 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Celestial Mechanics
 ###
 [Calendar] time 902018
@@ -3306,7 +3327,7 @@ last action: skip Celestial Mechanics
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 2879.30/3000 0.15/s 13m46s to cap
 [Resource] science 21953.61/23500 1.80/s 14m17s to cap
-[Resource] catpower 625/625 1.20/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 32676.85 0.06/s
@@ -3331,7 +3352,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3344,8 +3365,9 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [*] [Workshop] Reinforced Saw -(iron 750/1000* 41m40s, science 2500) +(Reinforced Saw 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 0/10 (mineral 1250)) +(Reinforced Barns 1)
-XX: [Workshop] Composite Bow -(wood 200, iron 100, science 500) +(Composite Bow 1)
-XX: [Workshop] Catnip Enrichment -(catnip 5000, science 500) +(Catnip Enrichment 1)
+XX: [Workshop] Composite Bow -(science 500, iron 100, wood 200) +(Composite Bow 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
+XX: [Workshop] Catnip Enrichment -(science 500, catnip 500) +(Catnip Enrichment 1)
 last action: skip Construction
 ###
 [Calendar] time 902019
@@ -3353,15 +3375,15 @@ last action: skip Construction
 [Calendar] year 1128.52 (1 + 1127.52)
 [Calendar] Autumn 1 (1 if 4510.09 % 4 == 2)
 [Calendar] day_of_year 210 (1 + 451009 % 400)
-[Resource] catnip 40058.79/45000 58.79/s 1m24s to cap
+[Resource] catnip 44558.79/45000 58.79/s 7s to cap
 [Resource] wood 2879.45/3000 0.15/s 13m45s to cap
 [Resource] science 21455.41/23500 1.80/s 18m54s to cap
-[Resource] catpower 625/625 1.20/s
+[Resource] catpower 625/625 0.30/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 750/750 0.10/s
 [Resource] unicorns 32676.91 0.06/s
 [Bonfire] Idle Smelter 20 (1 + 19)
-XX: [*] [Bonfire] Catnip Field (75) -(catnip 40058.79/49130.56* 2m34s) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 44558.79/49130.56* 1m17s) +(Catnip Field 1)
 XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 XX: [*] [Bonfire] Library (35) -(wood 2879.45/3329.39* 51m21s) +(Library 1)
 XX: [*] [Bonfire] Barn (8) -(wood 2879.45/4398.19* 2h53m22s) +(Barn 1)
@@ -3381,7 +3403,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3394,7 +3416,8 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [*] [Workshop] Reinforced Saw -(iron 750/1000* 41m40s, science 2500) +(Reinforced Saw 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 0/10 (mineral 1250)) +(Reinforced Barns 1)
-XX: [Workshop] Composite Bow -(wood 200, iron 100, science 500) +(Composite Bow 1)
+XX: [Workshop] Composite Bow -(science 500, iron 100, wood 200) +(Composite Bow 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Catnip Enrichment
 ###
 [Calendar] time 902020
@@ -3402,15 +3425,15 @@ last action: skip Catnip Enrichment
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.10 % 4 == 2)
 [Calendar] day_of_year 211 (1 + 451010 % 400)
-[Resource] catnip 40117.58/45000 58.79/s 1m23s to cap
+[Resource] catnip 44617.58/45000 58.79/s 6s to cap
 [Resource] wood 2679.59/3000 0.15/s 36m34s to cap
 [Resource] science 20957.21/23500 1.80/s 23m30s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 3750/3750 1/s
 [Resource] iron 650.10/750 0.10/s 16m38s to cap
 [Resource] unicorns 32676.96 0.06/s
 [Bonfire] Idle Smelter 20 (1 + 19)
-XX: [*] [Bonfire] Catnip Field (75) -(catnip 40117.58/49130.56* 2m33s) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 44617.58/49130.56* 1m16s) +(Catnip Field 1)
 XX: [Bonfire] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
 XX: [*] [Bonfire] Library (35) -(wood 2679.59/3329.39* 1h14m10s) +(Library 1)
 XX: [*] [Bonfire] Barn (8) -(wood 2679.59/4398.19* 3h16m11s) +(Barn 1)
@@ -3430,7 +3453,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3443,6 +3466,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [*] [Workshop] Reinforced Saw -(iron 650.10/1000* 58m18s, science 2500) +(Reinforced Saw 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 0/10 (mineral 1250)) +(Reinforced Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 650.10/750 16m38s) +(Hunting Armour 1)
 last action: skip Composite Bow
 ###
 [Calendar] time 902021
@@ -3450,17 +3474,17 @@ last action: skip Composite Bow
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.10 % 4 == 2)
 [Calendar] day_of_year 211 (1 + 451010 % 400)
-[Resource] catnip 40176.37/45000 58.79/s 1m22s to cap
+[Resource] catnip 44676.37/45000 58.79/s 5s to cap
 [Resource] wood 404.74/4280 0.15/s 7h22m22s to cap
 [Resource] science 20159.01/23500 1.80/s 30m53s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 2501/5350 1/s 47m29s to cap
 [Resource] iron 550.20/1070 0.10/s 1h26m37s to cap
 [Resource] unicorns 32677.02 0.06/s
 [Bonfire] Idle Smelter 20 (1 + 19)
 [Resource] beam 1.26
 [Resource] slab 0.10
-XX: [*] [Bonfire] Catnip Field (75) -(catnip 40176.37/49130.56* 2m32s) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 44676.37/49130.56* 1m15s) +(Catnip Field 1)
 XX: [Bonfire] Hut (5) -(wood 404.74/488.28 9m32s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (35) -(wood 404.74/3329.39 5h33m51s) +(Library 1)
 XX: [*] [Bonfire] Barn (8) -(wood 404.74/4398.19* 7h35m52s) +(Barn 1)
@@ -3480,7 +3504,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3493,6 +3517,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.20/1000 1h14m57s, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 20159.01/60000* 6h8m23s, titanium 0/25*, steel 0/200, scaffold 0/250 (beam 1.26/6200 (wood 404.74/537075 1021h3m43s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 550.20/750 33m17s) +(Hunting Armour 1)
 last action: max Reinforced Barns
 ###
 [Calendar] time 902022
@@ -3500,17 +3525,17 @@ last action: max Reinforced Barns
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.11 % 4 == 2)
 [Calendar] day_of_year 212 (1 + 451011 % 400)
-[Resource] catnip 40235.15/45000 58.79/s 1m21s to cap
+[Resource] catnip 44735.15/45000 58.79/s 4s to cap
 [Resource] wood 229.89/4662.50 0.15/s 8h26m0s to cap
 [Resource] science 20160.82/23500 1.80/s 30m52s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 2252/5860 1/s 1h0m8s to cap
 [Resource] iron 550.30/1133.75 0.10/s 1h37m14s to cap
 [Resource] unicorns 32677.07 0.06/s
 [Bonfire] Idle Smelter 20 (1 + 19)
 [Resource] beam 1.78
 [Resource] slab 0.12
-XX: [*] [Bonfire] Catnip Field (75) -(catnip 40235.15/49130.56* 2m31s) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 44735.15/49130.56* 1m14s) +(Catnip Field 1)
 XX: [Bonfire] Hut (5) -(wood 229.89/488.28 29m29s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (35) -(wood 229.89/3329.39 5h53m49s) +(Library 1)
 XX: [Bonfire] Barn (8) -(wood 229.89/4398.19 7h55m50s) +(Barn 1)
@@ -3530,7 +3555,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3543,6 +3568,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.30/1000 1h14m56s, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 20160.82/60000* 6h8m22s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.78/6200 (wood 229.89/537075 1021h23m41s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 550.30/750 33m16s) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 902023
@@ -3550,17 +3576,17 @@ last action: skip Warehouse
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.11 % 4 == 2)
 [Calendar] day_of_year 212 (1 + 451011 % 400)
-[Resource] catnip 40293.94/45000 58.79/s 1m20s to cap
+[Resource] catnip 44793.94/45000 58.79/s 3s to cap
 [Resource] wood 230.03/5045 0.15/s 9h9m39s to cap
 [Resource] science 20162.62/23500 1.80/s 30m51s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 1753/6370 1/s 1h16m57s to cap
 [Resource] iron 550.40/1197.50 0.10/s 1h47m50s to cap
 [Resource] unicorns 32677.13 0.06/s
 [Bonfire] Idle Smelter 20 (1 + 19)
 [Resource] beam 0.05
 [Resource] slab 1.86
-XX: [*] [Bonfire] Catnip Field (75) -(catnip 40293.94/49130.56* 2m30s) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 44793.94/49130.56* 1m13s) +(Catnip Field 1)
 XX: [Bonfire] Hut (5) -(wood 230.03/488.28 29m28s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (35) -(wood 230.03/3329.39 5h53m48s) +(Library 1)
 XX: [Bonfire] Barn (8) -(wood 230.03/4398.19 7h55m49s) +(Barn 1)
@@ -3580,7 +3606,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3593,6 +3619,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.40/1000 1h14m55s, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 20162.62/60000* 6h8m21s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.05/6200 (wood 230.03/537250 1021h43m38s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 550.40/750 33m15s) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 902024
@@ -3600,17 +3627,17 @@ last action: skip Warehouse
 [Calendar] year 1128.53 (1 + 1127.53)
 [Calendar] Autumn 1 (1 if 4510.12 % 4 == 2)
 [Calendar] day_of_year 213 (1 + 451012 % 400)
-[Resource] catnip 40352.73/45000 58.79/s 1m19s to cap
+[Resource] catnip 44852.73/45000 58.79/s 2s to cap
 [Resource] wood 55.18/5427.50 0.15/s 10h13m16s to cap
 [Resource] science 20164.42/23500 1.80/s 30m50s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 1504/6880 1/s 1h29m36s to cap
 [Resource] iron 550.50/1261.25 0.10/s 1h58m27s to cap
 [Resource] unicorns 32677.18 0.06/s
 [Bonfire] Idle Smelter 20 (1 + 19)
 [Resource] beam 0.09
 [Resource] slab 1.24
-XX: [*] [Bonfire] Catnip Field (75) -(catnip 40352.73/49130.56* 2m29s) +(Catnip Field 1)
+XX: [*] [Bonfire] Catnip Field (75) -(catnip 44852.73/49130.56* 1m12s) +(Catnip Field 1)
 XX: [Bonfire] Hut (5) -(wood 55.18/488.28 49m26s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library (35) -(wood 55.18/3329.39 6h13m46s) +(Library 1)
 XX: [Bonfire] Barn (8) -(wood 55.18/4398.19 8h15m46s) +(Barn 1)
@@ -3630,7 +3657,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 55.18/175 13m40s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3643,6 +3670,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.50/1000 1h14m54s, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 20164.42/60000* 6h8m20s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.09/6200 (wood 55.18/537250 1022h3m36s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 550.50/750 33m14s) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 904045
@@ -3653,7 +3681,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 0.24/5810 0.15/s 11h3m12s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 3275/7390 1/s 1h8m35s to cap
 [Resource] iron 752.60/1325 0.10/s 1h35m23s to cap
 [Resource] unicorns 32788.34 0.06/s
@@ -3680,7 +3708,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.24/175 19m56s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3693,6 +3721,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 752.60/1000 41m13s, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.85/6200 (wood 0.24/537075 1021h49m54s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 905243
@@ -3703,7 +3732,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 0.15/6192.50 0.15/s 11h46m53s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 3973/7900 1/s 1h5m27s to cap
 [Resource] iron 872.40/1388.75 0.10/s 1h26m3s to cap
 [Resource] unicorns 32854.23 0.06/s
@@ -3730,7 +3759,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.15/175 19m57s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3743,6 +3772,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 872.40/1000 21m15s, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.25/6200 (wood 0.15/537075 1021h49m54s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 906442
@@ -3753,7 +3783,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 0.21/6575 0.15/s 12h30m32s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 4672/8410 1/s 1h2m18s to cap
 [Resource] iron 992.30/1452.50 0.10/s 1h16m41s to cap
 [Resource] unicorns 32920.17 0.06/s
@@ -3780,7 +3810,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.21/175 19m57s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3793,6 +3823,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 992.30/1000 1m16s, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.25/6200 (wood 0.21/537250 1022h9m53s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 908839
@@ -3803,7 +3834,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 0.17/6957.50 0.15/s 13h14m12s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 6569/8920 1/s 39m11s to cap
 [Resource] iron 1232/1516.25 0.10/s 47m22s to cap
 [Resource] unicorns 33052.01 0.06/s
@@ -3830,7 +3861,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.17/175 19m57s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3843,6 +3874,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.82/6200 (wood 0.17/537075 1021h49m54s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 911237
@@ -3853,7 +3885,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 0.28/7340 0.15/s 13h57m52s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 8171/9430 1/s 20m59s to cap
 [Resource] iron 1471.80/1580 0.10/s 18m1s to cap
 [Resource] unicorns 33183.90 0.06/s
@@ -3880,7 +3912,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.28/175 19m56s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3893,6 +3925,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.87/6200 (wood 0.28/537075 1021h49m54s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 913634
@@ -3903,7 +3936,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 0.24/7722.50 0.15/s 14h41m32s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 8681/9940 1/s 20m59s to cap
 [Resource] iron 1580.10/1643.75 0.10/s 10m36s to cap
 [Resource] unicorns 33315.73 0.06/s
@@ -3930,7 +3963,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.24/175 19m57s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3943,6 +3976,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.32/6200 (wood 0.24/537250 1022h9m52s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 917230
@@ -3953,7 +3987,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 58.79/s
 [Resource] wood 0.25/8105 0.15/s 15h25m11s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 8941/10450 1/s 25m9s to cap
 [Resource] iron 1643.85/1707.50 0.10/s 10m36s to cap
 [Resource] unicorns 33513.51 0.06/s
@@ -3980,7 +4014,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.25/175 19m56s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -3993,6 +4027,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 0.25/537075 1021h49m54s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 920826
@@ -4003,7 +4038,7 @@ last action: skip Warehouse
 [Resource] catnip 45000/45000 82.23/s
 [Resource] wood 0.27/8487.50 0.15/s 16h8m51s to cap
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 9451/10960 1/s 25m9s to cap
 [Resource] iron 1707.60/1771.25 0.10/s 10m36s to cap
 [Resource] unicorns 33711.29 0.06/s
@@ -4030,7 +4065,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 0.27/175 19m56s) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -4043,6 +4078,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 0.27/537075 1021h49m54s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Warehouse
 ###
 [Calendar] time 1095925
@@ -4053,7 +4089,7 @@ last action: skip Warehouse
 [Resource] catnip 55000/55000 23.63/s
 [Resource] wood 9507.50/9507.50 0.15/s
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 43341.74 0.06/s
@@ -4080,7 +4116,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -4093,6 +4129,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Barn
 ###
 [Calendar] time 1097993
@@ -4103,7 +4140,7 @@ last action: max Barn
 [Resource] catnip 55000/55000 59.41/s
 [Resource] wood 9507.50/9507.50 0.15/s
 [Resource] science 23500/23500 1.80/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 43455.48 0.06/s
@@ -4130,7 +4167,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -4143,6 +4180,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 23500/60000* 5h37m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Catnip Field
 ###
 [Calendar] time 1415659
@@ -4153,7 +4191,7 @@ last action: max Catnip Field
 [Resource] catnip 55000/55000 59.41/s
 [Resource] wood 9507.50/9507.50 0.15/s
 [Resource] science 25500/25500 1.94/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 60927.11 0.06/s
@@ -4180,7 +4218,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -4193,6 +4231,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Library
 ###
 [Calendar] time 1535234
@@ -4203,7 +4242,7 @@ last action: max Library
 [Resource] catnip 55000/55000 84.23/s
 [Resource] wood 6196.01/9507.50 0.15/s 6h18m1s to cap
 [Resource] science 25500/25500 1.94/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 67503.73 0.06/s
@@ -4230,7 +4269,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -4243,6 +4282,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 6196.01/537075 1010h2m37s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Pasture
 ###
 [Calendar] time 1871271
@@ -4253,7 +4293,7 @@ last action: max Pasture
 [Resource] catnip 55000/55000 84.23/s
 [Resource] wood 9507.50/9507.50 0.15/s
 [Resource] science 25500/25500 1.94/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 85985.77 0.06/s
@@ -4280,7 +4320,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.02)
 XX: [Craft] @slab -(mineral 250) +(slab 2.02)
 XX: [Craft] @plate -(iron 125) +(plate 2.02)
@@ -4293,6 +4333,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/6200 (wood 9507.50/537075 1003h44m36s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Mine
 ###
 [Calendar] time 1929877
@@ -4303,7 +4344,7 @@ last action: max Mine
 [Resource] catnip 55000/55000 60.48/s
 [Resource] wood 3292.18/9507.50 0.15/s 11h49m30s to cap
 [Resource] science 25500/25500 1.94/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 89209.10 0.06/s
@@ -4330,7 +4371,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4343,6 +4384,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 3292.18/350000 659h38m31s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Workshop
 ###
 [Calendar] time 1975732
@@ -4353,7 +4395,7 @@ last action: max Workshop
 [Resource] catnip 55000/55000 60.48/s
 [Resource] wood 9507.50/9507.50 0.15/s
 [Resource] science 25500/25500 1.94/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 91731.12 0.06/s
@@ -4380,7 +4422,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4393,6 +4435,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 25500/60000* 4h56m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 647h49m0s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Smelter
 ###
 [Calendar] time 2241591
@@ -4403,7 +4446,7 @@ last action: max Smelter
 [Resource] catnip 55000/55000 24.85/s
 [Resource] wood 8806.52/9507.50 0.15/s 1h20m1s to cap
 [Resource] science 29500/29500 2.22/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 106353.37 0.06/s
@@ -4430,7 +4473,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4443,6 +4486,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 8806.52/350000 649h9m1s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Academy
 ###
 [Calendar] time 2384882
@@ -4453,7 +4497,7 @@ last action: max Academy
 [Resource] catnip 55000/55000 84.23/s
 [Resource] wood 9507.50/9507.50 0.54/s
 [Resource] science 29500/29500 2.22/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 114234.37 0.06/s
@@ -4480,7 +4524,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4493,6 +4537,7 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 XX: [*] [Workshop] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 175h5m8s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Lumber Mill
 ###
 [Calendar] time 2384883
@@ -4503,7 +4548,7 @@ last action: max Lumber Mill
 [Resource] catnip 55000/55000 84.23/s
 [Resource] wood 9507.50/9507.50 0.62/s
 [Resource] science 27002.22/29500 2.22/s 18m43s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 1026.35/2026.25 0.10/s 2h46m39s to cap
 [Resource] unicorns 114234.43 0.06/s
@@ -4530,7 +4575,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4542,6 +4587,7 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprin
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [*] [Workshop] Titanium Barns -(science 27002.22/60000* 4h7m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Reinforced Saw
 ###
 [Calendar] time 2384884
@@ -4552,7 +4598,7 @@ last action: skip Reinforced Saw
 [Resource] catnip 55000/55000 84.23/s
 [Resource] wood 9507.50/9507.50 0.62/s
 [Resource] science 25504.44/29500 2.22/s 29m57s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 1026.45/2026.25 0.10/s 2h46m38s to cap
 [Resource] unicorns 114234.48 0.06/s
@@ -4580,7 +4626,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4592,6 +4638,7 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprin
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Writing -(science 3600) +(Writing 1)
 XX: [*] [Workshop] Titanium Barns -(science 25504.44/60000* 4h18m41s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: skip Engineering
 ###
 [Calendar] time 2457694
@@ -4602,7 +4649,7 @@ last action: skip Engineering
 [Resource] catnip 55000/55000 197.93/s
 [Resource] wood 9507.50/9507.50 0.62/s
 [Resource] science 29500/29500 2.22/s
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 118239.03 0.06/s
@@ -4630,7 +4677,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4642,6 +4689,7 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprin
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Writing -(science 3600) +(Writing 1)
 XX: [*] [Workshop] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Aqueduct
 ###
 [Calendar] time 2457695
@@ -4652,7 +4700,7 @@ last action: max Aqueduct
 [Resource] catnip 55000/55000 197.93/s
 [Resource] wood 9507.50/9507.50 0.62/s
 [Resource] science 27302.22/29500 2.22/s 16m28s to cap
-[Resource] catpower 625/625 1.35/s
+[Resource] catpower 625/625 0.45/s
 [Resource] mineral 12235/12235 1.40/s
 [Resource] iron 2026.25/2026.25 0.10/s
 [Resource] unicorns 118239.09 0.06/s
@@ -4681,7 +4729,7 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
 XX: [*] [Village] hunter (1) -(kitten 0/1* 20s) +(hunter 1)
 XX: [*] [Village] miner (1) -(kitten 0/1* 20s) +(miner 1)
-XX: [Village] Send hunters -(catpower 100) +(furs 39.50, ivory 10.78, unicorns 0.05)
+XX: [Village] Send hunters -(catpower 100) +(furs 79, ivory 21.56, unicorns 0.05)
 XX: [Craft] @beam -(wood 175) +(beam 2.50)
 XX: [Craft] @slab -(mineral 250) +(slab 2.50)
 XX: [Craft] @plate -(iron 125) +(plate 2.50)
@@ -4692,4 +4740,6 @@ XX: [Craft] @megalith -(beam 1.10/25 (wood 1750), slab 1.90/50 (mineral 5000), p
 XX: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Writing -(science 3600) +(Writing 1)
 XX: [*] [Workshop] Titanium Barns -(science 27302.22/60000* 4h5m12s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+XX: [Workshop] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
+XX: [Workshop] Gold Ore -(science 1000, mineral 800, iron 100) +(Gold Ore 1)
 last action: skip Currency

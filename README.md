@@ -93,7 +93,7 @@ More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/workshop
-    - TODO from Ironwood Huts
+    - TODO from Coal Furnace
 
 - maybe
   - rX: revert action X
