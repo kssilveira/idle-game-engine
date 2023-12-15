@@ -30,7 +30,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 
 		"s Expanded Barns",
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
-		"s Hunting Armor",
+		"s Hunting Armour",
 
 		"s Civil Service", "s Mathematics",
 		"m Academy",

@@ -877,11 +877,31 @@
       "Producers": [
         {
           "Name": "Active Smelter",
-          "Factor": 0.1
+          "Factor": 0.1,
+          "Bonus": [
+            {
+              "Name": "Electrolytic Smelting",
+              "Factor": 0.95
+            }
+          ]
         },
         {
           "Name": "Calciner",
-          "Factor": 0.75
+          "Factor": 0.75,
+          "Bonus": [
+            {
+              "Name": "Oxidation",
+              "Factor": 0.95
+            },
+            {
+              "Name": "Rotary Kiln",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Fluoridized Reactors",
+              "Factor": 1
+            }
+          ]
         }
       ],
       "CapacityProducers": [
@@ -1089,6 +1109,38 @@
         {
           "Name": "Quarry",
           "Factor": 0.075
+        },
+        {
+          "Name": "Coal Furnace",
+          "Factor": 0.025,
+          "Bonus": [
+            {
+              "Name": "Active Smelter",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Electrolytic Smelting",
+                  "Factor": 0.95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Deep Mining",
+          "Factor": 0.015,
+          "Bonus": [
+            {
+              "Name": "Mine",
+              "Factor": 1
+            }
+          ]
+        }
+      ],
+      "Bonus": [
+        {
+          "Name": "Pyrolysis",
+          "Factor": 0.2
         }
       ],
       "CapacityProducers": [
@@ -1382,7 +1434,31 @@
         },
         {
           "Name": "Calciner",
-          "Factor": 0.0025
+          "Factor": 0.0025,
+          "Bonus": [
+            {
+              "Name": "Oxidation",
+              "Factor": 2.85
+            },
+            {
+              "Name": "Rotary Kiln",
+              "Factor": 2.25
+            },
+            {
+              "Name": "Fluoridized Reactors",
+              "Factor": 3
+            }
+          ]
+        },
+        {
+          "Name": "Nuclear Smelter",
+          "Factor": 0.0075,
+          "Bonus": [
+            {
+              "Name": "Active Smelter",
+              "Factor": 1
+            }
+          ]
         }
       ],
       "CapacityProducers": [
@@ -1799,7 +1875,49 @@
     {
       "Name": "steel",
       "Type": "Resource",
-      "Capacity": -1
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "Steel Plants",
+          "Factor": 0.075,
+          "Bonus": [
+            {
+              "Name": "Calciner",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Oxidation",
+                  "Factor": 0.95
+                },
+                {
+                  "Name": "Automated Plants",
+                  "Factor": 0.125,
+                  "Bonus": [
+                    {
+                      "Name": "Workshop",
+                      "Factor": 0.06
+                    },
+                    {
+                      "Name": "Factory",
+                      "Factor": 0.05
+                    }
+                  ]
+                },
+                {
+                  "Name": "Nuclear Plants",
+                  "Factor": 0.02,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "Name": "concrete",
@@ -3025,7 +3143,67 @@
       "Capacity": 1
     },
     {
-      "Name": "Hunting Armor",
+      "Name": "Coal Furnace",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Deep Mining",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Pyrolysis",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Electrolytic Smelting",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Oxidation",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Steel Plants",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Automated Plants",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Nuclear Plants",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Rotary Kiln",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Fluoridized Reactors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Nuclear Smelter",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -7237,23 +7415,263 @@
       ]
     },
     {
-      "Name": "Hunting Armor",
+      "Name": "Coal Furnace",
       "Type": "Workshop",
-      "UnlockedBy": "Metal Working",
-      "LockedBy": "Hunting Armor",
+      "UnlockedBy": "Steel",
+      "LockedBy": "Coal Furnace",
       "Costs": [
         {
-          "Name": "iron",
-          "Quantity": 750
+          "Name": "science",
+          "Quantity": 5000
         },
         {
+          "Name": "mineral",
+          "Quantity": 5000
+        },
+        {
+          "Name": "iron",
+          "Quantity": 2000
+        },
+        {
+          "Name": "beam",
+          "Quantity": 35
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Coal Furnace",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Deep Mining",
+      "Type": "Workshop",
+      "UnlockedBy": "Steel",
+      "LockedBy": "Deep Mining",
+      "Costs": [
+        {
           "Name": "science",
+          "Quantity": 5000
+        },
+        {
+          "Name": "iron",
+          "Quantity": 1200
+        },
+        {
+          "Name": "beam",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Deep Mining",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Pyrolysis",
+      "Type": "Workshop",
+      "UnlockedBy": "Physics",
+      "LockedBy": "Pyrolysis",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 35000
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Pyrolysis",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Electrolytic Smelting",
+      "Type": "Workshop",
+      "UnlockedBy": "Metallurgy",
+      "LockedBy": "Electrolytic Smelting",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "titanium",
           "Quantity": 2000
         }
       ],
       "Adds": [
         {
-          "Name": "Hunting Armor",
+          "Name": "Electrolytic Smelting",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Oxidation",
+      "Type": "Workshop",
+      "UnlockedBy": "Metallurgy",
+      "LockedBy": "Oxidation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "steel",
+          "Quantity": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Oxidation",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Steel Plants",
+      "Type": "Workshop",
+      "UnlockedBy": "Robotics",
+      "LockedBy": "Steel Plants",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 140000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 3500
+        },
+        {
+          "Name": "gear",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Steel Plants",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Automated Plants",
+      "Type": "Workshop",
+      "UnlockedBy": "Steel Plants",
+      "LockedBy": "Automated Plants",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 200000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Automated Plants",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Nuclear Plants",
+      "Type": "Workshop",
+      "UnlockedBy": "Automated Plants",
+      "LockedBy": "Nuclear Plants",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 10000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Nuclear Plants",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Rotary Kiln",
+      "Type": "Workshop",
+      "UnlockedBy": "Robotics",
+      "LockedBy": "Rotary Kiln",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 145000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Rotary Kiln",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Fluoridized Reactors",
+      "Type": "Workshop",
+      "UnlockedBy": "Nanotechnology",
+      "LockedBy": "Fluoridized Reactors",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 200
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Fluoridized Reactors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Nuclear Smelter",
+      "Type": "Workshop",
+      "UnlockedBy": "Nuclear Fission",
+      "LockedBy": "Nuclear Smelter",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 165000
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Nuclear Smelter",
           "Quantity": 1
         }
       ]

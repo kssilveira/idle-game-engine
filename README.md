@@ -84,6 +84,8 @@ Edges:
 
 More features from kittens game:
 
+- change name of active building count resource
+
 - Bonfire building upgrades
 - Bonfire effects for
   - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
@@ -93,7 +95,7 @@ More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/workshop
-    - TODO from Coal Furnace
+    - TODO
 
 - maybe
   - rX: revert action X

@@ -7,6 +7,14 @@ import (
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
+var (
+	CraftRatio = []data.Resource{{
+		Name: "Workshop", Factor: 0.06,
+	}, {
+		Name: "Factory", Factor: 0.05,
+	}}
+)
+
 func NewGame(now game.Now) *game.Game {
 	BarnBonus := []data.Resource{{
 		Name: "Expanded Barns", Factor: 0.75,
@@ -230,8 +238,16 @@ func NewGame(now game.Now) *game.Game {
 		Name: "iron", Type: "Resource", StartCapacity: 50,
 		Producers: []data.Resource{{
 			Name: "Active Smelter", Factor: 0.02 * 5,
+			Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
 		}, {
 			Name: "Calciner", Factor: 0.15 * 5,
+			Bonus: []data.Resource{{
+				Name: "Oxidation", Factor: 0.95,
+			}, {
+				Name: "Rotary Kiln", Factor: 0.75,
+			}, {
+				Name: "Fluoridized Reactors", Factor: 1,
+			}},
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", Factor: 50, Bonus: join(BarnBonus, WarehouseBonus),
@@ -255,6 +271,20 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Quarry", Factor: 0.015 * 5,
+		}, {
+			Name: "Coal Furnace", Factor: 0.005 * 5,
+			Bonus: []data.Resource{{
+				Name: "Active Smelter", Factor: 1,
+				Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
+			}},
+		}, {
+			Name: "Deep Mining", Factor: 0.003 * 5,
+			Bonus: []data.Resource{{
+				Name: "Mine", Factor: 1,
+			}},
+		}},
+		Bonus: []data.Resource{{
+			Name: "Pyrolysis", Factor: 0.2,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", Factor: 60, Bonus: WarehouseBonus,
@@ -300,6 +330,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Accelerator", Factor: -0.015 * 5,
 		}, {
 			Name: "Calciner", Factor: 0.0005 * 5,
+			Bonus: []data.Resource{{
+				Name: "Oxidation", Factor: 2.85,
+			}, {
+				Name: "Rotary Kiln", Factor: 2.25,
+			}, {
+				Name: "Fluoridized Reactors", Factor: 3,
+			}},
+		}, {
+			Name: "Nuclear Smelter", Factor: 0.0015 * 5,
+			Bonus: []data.Resource{{
+				Name: "Active Smelter", Factor: 1,
+			}},
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", Factor: 2, Bonus: WarehouseBonus,
@@ -415,6 +457,23 @@ func NewGame(now game.Now) *game.Game {
 		Name: "starchart", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "steel", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "Steel Plants", Factor: 0.15 * 5 * 0.1,
+			Bonus: []data.Resource{{
+				Name: "Calciner", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Oxidation", Factor: 0.95,
+				}, {
+					Name: "Automated Plants", Factor: 0.25 / 2,
+					Bonus: CraftRatio,
+				}, {
+					Name: "Nuclear Plants", Factor: 0.02,
+					Bonus: []data.Resource{{
+						Name: "Reactor", Factor: 1,
+					}},
+				}},
+			}},
+		}},
 	}, {
 		Name: "concrete", Type: "Resource", Capacity: -1,
 	}, {
@@ -1701,11 +1760,91 @@ func NewGame(now game.Now) *game.Game {
 			Name: "alloy", Quantity: 1250,
 		}},
 	}, {
-		Name: "Hunting Armor", UnlockedBy: "Metal Working",
+		Name: "Coal Furnace", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "iron", Quantity: 750,
+			Name: "science", Quantity: 5000,
 		}, {
-			Name: "science", Quantity: 2000,
+			Name: "mineral", Quantity: 5000,
+		}, {
+			Name: "iron", Quantity: 2000,
+		}, {
+			Name: "beam", Quantity: 35,
+		}},
+	}, {
+		Name: "Deep Mining", UnlockedBy: "Steel",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 5000,
+		}, {
+			Name: "iron", Quantity: 1200,
+		}, {
+			Name: "beam", Quantity: 50,
+		}},
+	}, {
+		Name: "Pyrolysis", UnlockedBy: "Physics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 35000,
+		}, {
+			Name: "compendium", Quantity: 5,
+		}},
+	}, {
+		Name: "Electrolytic Smelting", UnlockedBy: "Metallurgy",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "titanium", Quantity: 2000,
+		}},
+	}, {
+		Name: "Oxidation", UnlockedBy: "Metallurgy",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "steel", Quantity: 5000,
+		}},
+	}, {
+		Name: "Steel Plants", UnlockedBy: "Robotics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 140000,
+		}, {
+			Name: "titanium", Quantity: 3500,
+		}, {
+			Name: "gear", Quantity: 750,
+		}},
+	}, {
+		Name: "Automated Plants", UnlockedBy: "Steel Plants",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 200000,
+		}, {
+			Name: "alloy", Quantity: 750,
+		}},
+	}, {
+		Name: "Nuclear Plants", UnlockedBy: "Automated Plants",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "uranium", Quantity: 10000,
+		}},
+	}, {
+		Name: "Rotary Kiln", UnlockedBy: "Robotics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 145000,
+		}, {
+			Name: "titanium", Quantity: 5000,
+		}, {
+			Name: "gear", Quantity: 500,
+		}},
+	}, {
+		Name: "Fluoridized Reactors", UnlockedBy: "Nanotechnology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 175000,
+		}, {
+			Name: "alloy", Quantity: 200,
+		}},
+	}, {
+		Name: "Nuclear Smelter", UnlockedBy: "Nuclear Fission",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 165000,
+		}, {
+			Name: "uranium", Quantity: 250,
 		}},
 	}})
 
@@ -1747,11 +1886,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		action.Type = "Craft"
 		action.Adds = []data.Resource{{
 			Name: name, Quantity: 1,
-			Bonus: []data.Resource{{
-				Name: "Workshop", Factor: 0.06,
-			}, {
-				Name: "Factory", Factor: 0.05,
-			}},
+			Bonus: CraftRatio,
 		}}
 		g.AddAction(action)
 		g.AddResource(data.Resource{
