@@ -60,8 +60,6 @@ func TestAct(t *testing.T) {
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
-		}, {
-			Name: "skip", Capacity: -1,
 		}},
 		actions: []data.Action{{
 			Name: "producer",
@@ -89,8 +87,6 @@ func TestAct(t *testing.T) {
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
-		}, {
-			Name: "skip", Capacity: -1,
 		}},
 		actions: []data.Action{{
 			Name: "producer",
@@ -123,8 +119,6 @@ func TestAct(t *testing.T) {
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
-		}, {
-			Name: "skip", Capacity: -1,
 		}},
 		actions: []data.Action{{
 			Name: "producer",
@@ -160,8 +154,6 @@ func TestAct(t *testing.T) {
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
-		}, {
-			Name: "skip", Capacity: -1,
 		}},
 		actions: []data.Action{{
 			Name: "producer",
@@ -246,8 +238,6 @@ func TestAct(t *testing.T) {
 			}},
 		}, {
 			Name: "producer", Capacity: -1,
-		}, {
-			Name: "skip", Capacity: -1,
 		}},
 		actions: []data.Action{{
 			Name: "producer",

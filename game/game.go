@@ -20,6 +20,7 @@ type Game struct {
 	// maps action name to index in Actions
 	actionToIndex map[string]int
 	now           time.Time
+	errors        []error
 }
 
 type Input chan string
@@ -47,6 +48,9 @@ func (g *Game) AddResources(resources []data.Resource) {
 }
 
 func (g *Game) AddResource(resource data.Resource) {
+	if _, ok := g.resourceToIndex[resource.Name]; ok {
+		g.errors = append(g.errors, fmt.Errorf("duplicate resource %s", resource.Name))
+	}
 	g.resourceToIndex[resource.Name] = len(g.Resources)
 	cp := resource
 	g.Resources = append(g.Resources, &cp)
@@ -59,12 +63,18 @@ func (g *Game) AddActions(actions []data.Action) {
 }
 
 func (g *Game) AddAction(action data.Action) {
+	if _, ok := g.actionToIndex[action.Name]; ok {
+		g.errors = append(g.errors, fmt.Errorf("duplicate action %s", action.Name))
+	}
 	g.actionToIndex[action.Name] = len(g.Actions)
 	cp := action
 	g.Actions = append(g.Actions, cp)
 }
 
 func (g *Game) Validate() error {
+	if len(g.errors) > 0 {
+		return fmt.Errorf("%v", g.errors)
+	}
 	for _, r := range g.Resources {
 		if err := g.validateResource(r); err != nil {
 			return err

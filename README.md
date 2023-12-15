@@ -84,10 +84,6 @@ Edges:
 
 More features from kittens game:
 
-- rename minerals to mineral
-- recursive bonus
-- check repeated name of resource or action
-
 - Bonfire building upgrades
 - Bonfire effects for
   - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
