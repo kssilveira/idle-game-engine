@@ -12,6 +12,29 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Expanded Barns", Factor: 0.75,
 	}, {
 		Name: "Reinforced Barns", Factor: 0.80,
+	}, {
+		Name: "Titanium Barns", Factor: 1.00,
+	}, {
+		Name: "Alloy Barns", Factor: 1.00,
+	}, {
+		Name: "Concrete Barns", Factor: 0.75,
+	}}
+	WarehouseBonus := []data.Resource{{
+		Name: "Reinforced Warehouses", Factor: 0.25,
+	}, {
+		Name: "Titanium Warehouses", Factor: 0.50,
+	}, {
+		Name: "Alloy Warehouses", Factor: 0.45,
+	}, {
+		Name: "Concrete Warehouses", Factor: 0.35,
+	}, {
+		Name: "Storage Bunkers", Factor: 0.20,
+	}}
+	HarbourBonus := []data.Resource{{
+		Name: "Expanded Cargo", Factor: 0.01,
+		Bonus: []data.Resource{{
+			Name: "trade ship", Factor: 1,
+		}},
 	}}
 	CultureCapacityBonus := []data.Resource{{Name: "Ziggurat", Factor: 0.08}}
 	kittenNames := []string{
@@ -68,7 +91,7 @@ func NewGame(now game.Now) *game.Game {
 		CapacityProducers: []data.Resource{{
 			Name: "Barn", Factor: 5000,
 		}, {
-			Name: "Harbour", Factor: 2500,
+			Name: "Harbour", Factor: 2500, Bonus: HarbourBonus,
 		}},
 	}, {
 		Name: "wood", Type: "Resource", StartCapacity: 200,
@@ -80,19 +103,34 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Mineral Axe", Factor: 0.7,
 			}, {
 				Name: "Iron Axe", Factor: 0.5,
+			}, {
+				Name: "Steel Axe", Factor: 0.5,
+			}, {
+				Name: "Titanium Axe", Factor: 0.5,
+			}, {
+				Name: "Alloy Axe", Factor: 0.5,
 			}},
 		}, {
 			Name: "Active Smelter", Factor: -0.05 * 5,
 		}},
 		Bonus: []data.Resource{{
 			Name: "Lumber Mill", Factor: 0.10,
+			Bonus: []data.Resource{{
+				Name: "Reinforced Saw", Factor: 0.2,
+			}, {
+				Name: "Steel Saw", Factor: 0.2,
+			}, {
+				Name: "Titanium Saw", Factor: 0.15,
+			}, {
+				Name: "Alloy Saw", Factor: 0.15,
+			}},
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 200, Bonus: BarnBonus,
+			Name: "Barn", Factor: 200, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Warehouse", Factor: 150,
+			Name: "Warehouse", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Harbour", Factor: 700,
+			Name: "Harbour", Factor: 700, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}},
 	}, {
 		Name: "science", Type: "Resource", StartCapacity: 250,
@@ -164,11 +202,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", Factor: -1.5 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 250, Bonus: BarnBonus,
+			Name: "Barn", Factor: 250, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Warehouse", Factor: 200,
+			Name: "Warehouse", Factor: 200, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Harbour", Factor: 950,
+			Name: "Harbour", Factor: 950, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}},
 	}, {
 		Name: "iron", Type: "Resource", StartCapacity: 50,
@@ -178,11 +216,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", Factor: 0.15 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 50, Bonus: BarnBonus,
+			Name: "Barn", Factor: 50, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Warehouse", Factor: 25,
+			Name: "Warehouse", Factor: 25, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Harbour", Factor: 150,
+			Name: "Harbour", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}},
 	}, {
 		Name: "coal", Type: "Resource", StartCapacity: 1,
@@ -195,11 +233,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Quarry", Factor: 0.015 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 60, Bonus: BarnBonus,
+			Name: "Barn", Factor: 60, Bonus: WarehouseBonus,
 		}, {
-			Name: "Warehouse", Factor: 30,
+			Name: "Warehouse", Factor: 30, Bonus: WarehouseBonus,
 		}, {
-			Name: "Harbour", Factor: 100,
+			Name: "Harbour", Factor: 100, Bonus: join(WarehouseBonus, HarbourBonus, []data.Resource{{
+				Name: "Barges", Factor: 0.5,
+			}}),
 		}},
 	}, {
 		Name: "gold", Type: "Resource", StartCapacity: 20,
@@ -207,13 +247,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mint", Factor: -0.005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 10, Bonus: BarnBonus,
+			Name: "Barn", Factor: 10, Bonus: WarehouseBonus,
 		}, {
-			Name: "Warehouse", Factor: 5,
+			Name: "Warehouse", Factor: 5, Bonus: WarehouseBonus,
 		}, {
-			Name: "Harbour", Factor: 25,
+			Name: "Harbour", Factor: 25, Bonus: join(WarehouseBonus, HarbourBonus),
 		}, {
-			Name: "Mint", Factor: 100,
+			Name: "Mint", Factor: 100, Bonus: WarehouseBonus,
 		}},
 	}, {
 		Name: "titanium", Type: "Resource", StartCapacity: 1,
@@ -223,11 +263,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Calciner", Factor: 0.0005 * 5,
 		}},
 		CapacityProducers: []data.Resource{{
-			Name: "Barn", Factor: 2, Bonus: BarnBonus,
+			Name: "Barn", Factor: 2, Bonus: WarehouseBonus,
 		}, {
-			Name: "Warehouse", Factor: 10,
+			Name: "Warehouse", Factor: 10, Bonus: WarehouseBonus,
 		}, {
-			Name: "Harbour", Factor: 50,
+			Name: "Harbour", Factor: 50, Bonus: join(WarehouseBonus, HarbourBonus),
 		}},
 	}, {
 		Name: "oil", Type: "Resource", StartCapacity: 1,
@@ -344,6 +384,12 @@ func NewGame(now game.Now) *game.Game {
 		Name: "compendium", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "blueprint", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "trade ship", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "eludium", Type: "Resource", Capacity: 1,
+	}, {
+		Name: "thorium", Type: "Resource", Capacity: 1,
 	}, {
 		Name: "gigaflops", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
@@ -1149,7 +1195,56 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "iron", Quantity: 50,
 		}, {
-			Name: "science", Quantity: 200,
+			Name: "science", Quantity: 100,
+		}},
+	}, {
+		Name: "Steel Axe", UnlockedBy: "Steel",
+		Costs: []data.Resource{{
+			Name: "steel", Quantity: 75,
+		}, {
+			Name: "science", Quantity: 20000,
+		}},
+	}, {
+		Name: "Reinforced Saw", UnlockedBy: "Construction",
+		Costs: []data.Resource{{
+			Name: "iron", Quantity: 1000,
+		}, {
+			Name: "science", Quantity: 2500,
+		}},
+	}, {
+		Name: "Steel Saw", UnlockedBy: "Physics",
+		Costs: []data.Resource{{
+			Name: "steel", Quantity: 750,
+		}, {
+			Name: "science", Quantity: 52000,
+		}},
+	}, {
+		Name: "Titanium Saw", UnlockedBy: "Steel Saw",
+		Costs: []data.Resource{{
+			Name: "titanium", Quantity: 500,
+		}, {
+			Name: "science", Quantity: 70000,
+		}},
+	}, {
+		Name: "Alloy Saw", UnlockedBy: "Titanium Saw",
+		Costs: []data.Resource{{
+			Name: "alloy", Quantity: 75,
+		}, {
+			Name: "science", Quantity: 85000,
+		}},
+	}, {
+		Name: "Titanium Axe", UnlockedBy: "Navigation",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 38000,
+		}, {
+			Name: "titanium", Quantity: 10,
+		}},
+	}, {
+		Name: "Alloy Axe", UnlockedBy: "Chemistry",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 70000,
+		}, {
+			Name: "alloy", Quantity: 25,
 		}},
 	}, {
 		Name: "Expanded Barns", UnlockedBy: "Workshop",
@@ -1174,6 +1269,217 @@ func NewGame(now game.Now) *game.Game {
 			Name: "slab", Quantity: 10,
 		}},
 	}, {
+		Name: "Reinforced Warehouses", UnlockedBy: "Steel",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 15000,
+		}, {
+			Name: "plate", Quantity: 50,
+		}, {
+			Name: "steel", Quantity: 50,
+		}, {
+			Name: "scaffold", Quantity: 25,
+		}},
+	}, {
+		Name: "Titanium Barns", UnlockedBy: "Reinforced Barns",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 60000,
+		}, {
+			Name: "titanium", Quantity: 25,
+		}, {
+			Name: "steel", Quantity: 200,
+		}, {
+			Name: "scaffold", Quantity: 250,
+		}},
+	}, {
+		Name: "Alloy Barns", UnlockedBy: "Chemistry",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 75000,
+		}, {
+			Name: "alloy", Quantity: 20,
+		}, {
+			Name: "plate", Quantity: 750,
+		}},
+	}, {
+		Name: "Concrete Barns", UnlockedBy: "Concrete Pillars",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 2000,
+		}, {
+			Name: "concrete", Quantity: 45,
+		}, {
+			Name: "titanium", Quantity: 2000,
+		}},
+	}, {
+		Name: "Titanium Warehouses", UnlockedBy: "Silos",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 70000,
+		}, {
+			Name: "titanium", Quantity: 50,
+		}, {
+			Name: "steel", Quantity: 500,
+		}, {
+			Name: "scaffold", Quantity: 500,
+		}},
+	}, {
+		Name: "Alloy Warehouses", UnlockedBy: "Chemistry",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 90000,
+		}, {
+			Name: "titanium", Quantity: 750,
+		}, {
+			Name: "alloy", Quantity: 50,
+		}},
+	}, {
+		Name: "Concrete Warehouses", UnlockedBy: "Concrete Pillars",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "titanium", Quantity: 1250,
+		}, {
+			Name: "concrete", Quantity: 35,
+		}},
+	}, {
+		Name: "Storage Bunkers", UnlockedBy: "Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 25000,
+		}, {
+			Name: "unobtainium", Quantity: 500,
+		}, {
+			Name: "concrete", Quantity: 1250,
+		}},
+	}, {
+		Name: "Energy Rifts", UnlockedBy: "Dimensional Physics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 200000,
+		}, {
+			Name: "titanium", Quantity: 7500,
+		}, {
+			Name: "uranium", Quantity: 250,
+		}},
+	}, {
+		Name: "Stasis Chambers", UnlockedBy: "Chronophysics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 235000,
+		}, {
+			Name: "alloy", Quantity: 200,
+		}, {
+			Name: "uranium", Quantity: 2000,
+		}, {
+			Name: "time crystal", Quantity: 1,
+		}},
+	}, {
+		Name: "Void Energy", UnlockedBy: "Stasis Chambers",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 275000,
+		}, {
+			Name: "alloy", Quantity: 250,
+		}, {
+			Name: "uranium", Quantity: 2500,
+		}, {
+			Name: "time crystal", Quantity: 2,
+		}},
+	}, {
+		Name: "Dark Energy", UnlockedBy: "Void Energy",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 350000,
+		}, {
+			Name: "eludium", Quantity: 75,
+		}, {
+			Name: "time crystal", Quantity: 3,
+		}},
+	}, {
+		Name: "Chronoforge", UnlockedBy: "Tachyon Theory",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 500000,
+		}, {
+			Name: "relic", Quantity: 5,
+		}, {
+			Name: "time crystal", Quantity: 10,
+		}},
+	}, {
+		Name: "Tachyon Accelerators", UnlockedBy: "Tachyon Theory",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 500000,
+		}, {
+			Name: "eludium", Quantity: 125,
+		}, {
+			Name: "time crystal", Quantity: 10,
+		}},
+	}, {
+		Name: "Flux Condensator", UnlockedBy: "Chronophysics",
+		Costs: []data.Resource{{
+			Name: "alloy", Quantity: 250,
+		}, {
+			Name: "unobtainium", Quantity: 5000,
+		}, {
+			Name: "time crystal", Quantity: 5,
+		}},
+	}, {
+		Name: "LHC", UnlockedBy: "Dimensional Physics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "unobtainium", Quantity: 100,
+		}, {
+			Name: "alloy", Quantity: 150,
+		}},
+	}, {
+		Name: "Photovoltaic Cells", UnlockedBy: "Nanotechnology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 75000,
+		}, {
+			Name: "titanium", Quantity: 5000,
+		}},
+	}, {
+		Name: "Thin Film Cells", UnlockedBy: "Satellites",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 125000,
+		}, {
+			Name: "unobtainium", Quantity: 200,
+		}, {
+			Name: "uranium", Quantity: 1000,
+		}},
+	}, {
+		Name: "Quantum Dot Cells", UnlockedBy: "Thorium",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 175000,
+		}, {
+			Name: "eludium", Quantity: 200,
+		}, {
+			Name: "thorium", Quantity: 1000,
+		}},
+	}, {
+		Name: "Solar Satellites", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 225000,
+		}, {
+			Name: "alloy", Quantity: 750,
+		}},
+	}, {
+		Name: "Expanded Cargo", UnlockedBy: "Navigation",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 55000,
+		}, {
+			Name: "blueprint", Quantity: 15,
+		}},
+	}, {
+		Name: "Barges", UnlockedBy: "Industrialization",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "titanium", Quantity: 1500,
+		}, {
+			Name: "blueprint", Quantity: 30,
+		}},
+	}, {
+		Name: "Reactor Vessel", UnlockedBy: "Nuclear Fission",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 135000,
+		}, {
+			Name: "titanium", Quantity: 5000,
+		}, {
+			Name: "uranium", Quantity: 125,
+		}},
+	}, {
 		Name: "Bolas", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
 			Name: "wood", Quantity: 50,
@@ -1188,13 +1494,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "iron", Quantity: 750,
 		}, {
 			Name: "science", Quantity: 2000,
-		}},
-	}, {
-		Name: "Reinforced Saw", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
-			Name: "iron", Quantity: 1000,
-		}, {
-			Name: "science", Quantity: 2500,
 		}},
 	}, {
 		Name: "Composite Bow", UnlockedBy: "Construction",
@@ -1212,6 +1511,12 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Quantity: 500,
 		}},
+	}, {
+		Name: "Concrete Pillars", UnlockedBy: "Mechanization",
+	}, {
+		Name: "Silos", UnlockedBy: "Ironwood Huts",
+	}, {
+		Name: "Ironwood Huts", UnlockedBy: "Reinforced Warehouses",
 	}})
 
 	return g

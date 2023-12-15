@@ -290,7 +290,19 @@
         },
         {
           "Name": "Harbour",
-          "Factor": 2500
+          "Factor": 2500,
+          "Bonus": [
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "trade ship",
+                  "Factor": 1
+                }
+              ]
+            }
+          ]
         }
       ],
       "StartCapacity": 5000
@@ -314,6 +326,18 @@
             {
               "Name": "Iron Axe",
               "Factor": 0.5
+            },
+            {
+              "Name": "Steel Axe",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Titanium Axe",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Axe",
+              "Factor": 0.5
             }
           ]
         },
@@ -325,7 +349,25 @@
       "Bonus": [
         {
           "Name": "Lumber Mill",
-          "Factor": 0.1
+          "Factor": 0.1,
+          "Bonus": [
+            {
+              "Name": "Reinforced Saw",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Steel Saw",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Titanium Saw",
+              "Factor": 0.15
+            },
+            {
+              "Name": "Alloy Saw",
+              "Factor": 0.15
+            }
+          ]
         }
       ],
       "CapacityProducers": [
@@ -340,16 +382,142 @@
             {
               "Name": "Reinforced Barns",
               "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "Factor": 150
+          "Factor": 150,
+          "Bonus": [
+            {
+              "Name": "Expanded Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            }
+          ]
         },
         {
           "Name": "Harbour",
-          "Factor": 700
+          "Factor": 700,
+          "Bonus": [
+            {
+              "Name": "Expanded Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "trade ship",
+                  "Factor": 1
+                }
+              ]
+            }
+          ]
         }
       ],
       "StartCapacity": 200
@@ -505,16 +673,142 @@
             {
               "Name": "Reinforced Barns",
               "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "Factor": 200
+          "Factor": 200,
+          "Bonus": [
+            {
+              "Name": "Expanded Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            }
+          ]
         },
         {
           "Name": "Harbour",
-          "Factor": 950
+          "Factor": 950,
+          "Bonus": [
+            {
+              "Name": "Expanded Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "trade ship",
+                  "Factor": 1
+                }
+              ]
+            }
+          ]
         }
       ],
       "StartCapacity": 250
@@ -544,16 +838,142 @@
             {
               "Name": "Reinforced Barns",
               "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "Factor": 25
+          "Factor": 25,
+          "Bonus": [
+            {
+              "Name": "Expanded Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            }
+          ]
         },
         {
           "Name": "Harbour",
-          "Factor": 150
+          "Factor": 150,
+          "Bonus": [
+            {
+              "Name": "Expanded Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Barns",
+              "Factor": 0.8
+            },
+            {
+              "Name": "Titanium Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Alloy Barns",
+              "Factor": 1
+            },
+            {
+              "Name": "Concrete Barns",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "trade ship",
+                  "Factor": 1
+                }
+              ]
+            }
+          ]
         }
       ],
       "StartCapacity": 50
@@ -583,22 +1003,92 @@
           "Factor": 60,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
             },
             {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "Factor": 30
+          "Factor": 30,
+          "Bonus": [
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            }
+          ]
         },
         {
           "Name": "Harbour",
-          "Factor": 100
+          "Factor": 100,
+          "Bonus": [
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "trade ship",
+                  "Factor": 1
+                }
+              ]
+            },
+            {
+              "Name": "Barges",
+              "Factor": 0.5
+            }
+          ]
         }
       ],
       "StartCapacity": 1
@@ -618,26 +1108,114 @@
           "Factor": 10,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
             },
             {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "Factor": 5
+          "Factor": 5,
+          "Bonus": [
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            }
+          ]
         },
         {
           "Name": "Harbour",
-          "Factor": 25
+          "Factor": 25,
+          "Bonus": [
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "trade ship",
+                  "Factor": 1
+                }
+              ]
+            }
+          ]
         },
         {
           "Name": "Mint",
-          "Factor": 100
+          "Factor": 100,
+          "Bonus": [
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            }
+          ]
         }
       ],
       "StartCapacity": 20
@@ -661,22 +1239,88 @@
           "Factor": 2,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
             },
             {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
             }
           ]
         },
         {
           "Name": "Warehouse",
-          "Factor": 10
+          "Factor": 10,
+          "Bonus": [
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            }
+          ]
         },
         {
           "Name": "Harbour",
-          "Factor": 50
+          "Factor": 50,
+          "Bonus": [
+            {
+              "Name": "Reinforced Warehouses",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Titanium Warehouses",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Warehouses",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Concrete Warehouses",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Storage Bunkers",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "trade ship",
+                  "Factor": 1
+                }
+              ]
+            }
+          ]
         }
       ],
       "StartCapacity": 1
@@ -1012,6 +1656,21 @@
       "Name": "blueprint",
       "Type": "Resource",
       "Capacity": -1
+    },
+    {
+      "Name": "trade ship",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "eludium",
+      "Type": "Resource",
+      "Capacity": 1
+    },
+    {
+      "Name": "thorium",
+      "Type": "Resource",
+      "Capacity": 1
     },
     {
       "Name": "gigaflops",
@@ -1873,6 +2532,48 @@
       "Capacity": 1
     },
     {
+      "Name": "Steel Axe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Reinforced Saw",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Steel Saw",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Titanium Saw",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Alloy Saw",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Titanium Axe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Alloy Axe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
       "Name": "Expanded Barns",
       "Type": "Workshop",
       "IsHidden": true,
@@ -1880,6 +2581,144 @@
     },
     {
       "Name": "Reinforced Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Reinforced Warehouses",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Titanium Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Alloy Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Concrete Barns",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Titanium Warehouses",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Alloy Warehouses",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Concrete Warehouses",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Storage Bunkers",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Energy Rifts",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Stasis Chambers",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Void Energy",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Dark Energy",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chronoforge",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Tachyon Accelerators",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Flux Condensator",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "LHC",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Photovoltaic Cells",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Thin Film Cells",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Quantum Dot Cells",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Solar Satellites",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Expanded Cargo",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Barges",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Reactor Vessel",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -1897,12 +2736,6 @@
       "Capacity": 1
     },
     {
-      "Name": "Reinforced Saw",
-      "Type": "Workshop",
-      "IsHidden": true,
-      "Capacity": 1
-    },
-    {
       "Name": "Composite Bow",
       "Type": "Workshop",
       "IsHidden": true,
@@ -1910,6 +2743,24 @@
     },
     {
       "Name": "Catnip Enrichment",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Concrete Pillars",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Silos",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Ironwood Huts",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -4710,12 +5561,166 @@
         },
         {
           "Name": "science",
-          "Quantity": 200
+          "Quantity": 100
         }
       ],
       "Adds": [
         {
           "Name": "Iron Axe",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Steel Axe",
+      "Type": "Workshop",
+      "UnlockedBy": "Steel",
+      "LockedBy": "Steel Axe",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 75
+        },
+        {
+          "Name": "science",
+          "Quantity": 20000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Steel Axe",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Reinforced Saw",
+      "Type": "Workshop",
+      "UnlockedBy": "Construction",
+      "LockedBy": "Reinforced Saw",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 1000
+        },
+        {
+          "Name": "science",
+          "Quantity": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Reinforced Saw",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Steel Saw",
+      "Type": "Workshop",
+      "UnlockedBy": "Physics",
+      "LockedBy": "Steel Saw",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 750
+        },
+        {
+          "Name": "science",
+          "Quantity": 52000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Steel Saw",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Titanium Saw",
+      "Type": "Workshop",
+      "UnlockedBy": "Steel Saw",
+      "LockedBy": "Titanium Saw",
+      "Costs": [
+        {
+          "Name": "titanium",
+          "Quantity": 500
+        },
+        {
+          "Name": "science",
+          "Quantity": 70000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Titanium Saw",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Alloy Saw",
+      "Type": "Workshop",
+      "UnlockedBy": "Titanium Saw",
+      "LockedBy": "Alloy Saw",
+      "Costs": [
+        {
+          "Name": "alloy",
+          "Quantity": 75
+        },
+        {
+          "Name": "science",
+          "Quantity": 85000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Alloy Saw",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Titanium Axe",
+      "Type": "Workshop",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Titanium Axe",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 38000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Titanium Axe",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Alloy Axe",
+      "Type": "Workshop",
+      "UnlockedBy": "Chemistry",
+      "LockedBy": "Alloy Axe",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 70000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Alloy Axe",
           "Quantity": 1
         }
       ]
@@ -4781,6 +5786,612 @@
       ]
     },
     {
+      "Name": "Reinforced Warehouses",
+      "Type": "Workshop",
+      "UnlockedBy": "Steel",
+      "LockedBy": "Reinforced Warehouses",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 15000
+        },
+        {
+          "Name": "plate",
+          "Quantity": 50
+        },
+        {
+          "Name": "steel",
+          "Quantity": 50
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Reinforced Warehouses",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Titanium Barns",
+      "Type": "Workshop",
+      "UnlockedBy": "Reinforced Barns",
+      "LockedBy": "Titanium Barns",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 60000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 25
+        },
+        {
+          "Name": "steel",
+          "Quantity": 200
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Titanium Barns",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Alloy Barns",
+      "Type": "Workshop",
+      "UnlockedBy": "Chemistry",
+      "LockedBy": "Alloy Barns",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 75000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 20
+        },
+        {
+          "Name": "plate",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Alloy Barns",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Concrete Barns",
+      "Type": "Workshop",
+      "UnlockedBy": "Concrete Pillars",
+      "LockedBy": "Concrete Barns",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 2000
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 45
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 2000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Concrete Barns",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Titanium Warehouses",
+      "Type": "Workshop",
+      "UnlockedBy": "Silos",
+      "LockedBy": "Titanium Warehouses",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 70000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 50
+        },
+        {
+          "Name": "steel",
+          "Quantity": 500
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Titanium Warehouses",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Alloy Warehouses",
+      "Type": "Workshop",
+      "UnlockedBy": "Chemistry",
+      "LockedBy": "Alloy Warehouses",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 90000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 750
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Alloy Warehouses",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Concrete Warehouses",
+      "Type": "Workshop",
+      "UnlockedBy": "Concrete Pillars",
+      "LockedBy": "Concrete Warehouses",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1250
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 35
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Concrete Warehouses",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Storage Bunkers",
+      "Type": "Workshop",
+      "UnlockedBy": "Exogeology",
+      "LockedBy": "Storage Bunkers",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 25000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 500
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 1250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Storage Bunkers",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Energy Rifts",
+      "Type": "Workshop",
+      "UnlockedBy": "Dimensional Physics",
+      "LockedBy": "Energy Rifts",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 200000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 7500
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Energy Rifts",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Stasis Chambers",
+      "Type": "Workshop",
+      "UnlockedBy": "Chronophysics",
+      "LockedBy": "Stasis Chambers",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 235000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 200
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 2000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Stasis Chambers",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Void Energy",
+      "Type": "Workshop",
+      "UnlockedBy": "Stasis Chambers",
+      "LockedBy": "Void Energy",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 275000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 250
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 2500
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 2
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Void Energy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Dark Energy",
+      "Type": "Workshop",
+      "UnlockedBy": "Void Energy",
+      "LockedBy": "Dark Energy",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 350000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 75
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 3
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Dark Energy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chronoforge",
+      "Type": "Workshop",
+      "UnlockedBy": "Tachyon Theory",
+      "LockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500000
+        },
+        {
+          "Name": "relic",
+          "Quantity": 5
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chronoforge",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Tachyon Accelerators",
+      "Type": "Workshop",
+      "UnlockedBy": "Tachyon Theory",
+      "LockedBy": "Tachyon Accelerators",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 125
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Tachyon Accelerators",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Flux Condensator",
+      "Type": "Workshop",
+      "UnlockedBy": "Chronophysics",
+      "LockedBy": "Flux Condensator",
+      "Costs": [
+        {
+          "Name": "alloy",
+          "Quantity": 250
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 5000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Flux Condensator",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "LHC",
+      "Type": "Workshop",
+      "UnlockedBy": "Dimensional Physics",
+      "LockedBy": "LHC",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 100
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 150
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "LHC",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Photovoltaic Cells",
+      "Type": "Workshop",
+      "UnlockedBy": "Nanotechnology",
+      "LockedBy": "Photovoltaic Cells",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 75000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Photovoltaic Cells",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Thin Film Cells",
+      "Type": "Workshop",
+      "UnlockedBy": "Satellites",
+      "LockedBy": "Thin Film Cells",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 200
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Thin Film Cells",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Quantum Dot Cells",
+      "Type": "Workshop",
+      "UnlockedBy": "Thorium",
+      "LockedBy": "Quantum Dot Cells",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 200
+        },
+        {
+          "Name": "thorium",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Quantum Dot Cells",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Solar Satellites",
+      "Type": "Workshop",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Solar Satellites",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 225000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Solar Satellites",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Expanded Cargo",
+      "Type": "Workshop",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Expanded Cargo",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 55000
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Expanded Cargo",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Barges",
+      "Type": "Workshop",
+      "UnlockedBy": "Industrialization",
+      "LockedBy": "Barges",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1500
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 30
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Barges",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Reactor Vessel",
+      "Type": "Workshop",
+      "UnlockedBy": "Nuclear Fission",
+      "LockedBy": "Reactor Vessel",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 135000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5000
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Reactor Vessel",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
       "Name": "Bolas",
       "Type": "Workshop",
       "UnlockedBy": "Mining",
@@ -4829,28 +6440,6 @@
       ]
     },
     {
-      "Name": "Reinforced Saw",
-      "Type": "Workshop",
-      "UnlockedBy": "Construction",
-      "LockedBy": "Reinforced Saw",
-      "Costs": [
-        {
-          "Name": "iron",
-          "Quantity": 1000
-        },
-        {
-          "Name": "science",
-          "Quantity": 2500
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "Reinforced Saw",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
       "Name": "Composite Bow",
       "Type": "Workshop",
       "UnlockedBy": "Construction",
@@ -4894,6 +6483,42 @@
       "Adds": [
         {
           "Name": "Catnip Enrichment",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Concrete Pillars",
+      "Type": "Workshop",
+      "UnlockedBy": "Mechanization",
+      "LockedBy": "Concrete Pillars",
+      "Adds": [
+        {
+          "Name": "Concrete Pillars",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Silos",
+      "Type": "Workshop",
+      "UnlockedBy": "Ironwood Huts",
+      "LockedBy": "Silos",
+      "Adds": [
+        {
+          "Name": "Silos",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Ironwood Huts",
+      "Type": "Workshop",
+      "UnlockedBy": "Reinforced Warehouses",
+      "LockedBy": "Ironwood Huts",
+      "Adds": [
+        {
+          "Name": "Ironwood Huts",
           "Quantity": 1
         }
       ]

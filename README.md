@@ -83,7 +83,9 @@ Edges:
 
 More features from kittens game:
 
-- hide custom actions from test output
+- rename minerals to mineral
+- recursive bonus
+- check repeated name of resource or action
 
 - Bonfire building upgrades
 - Bonfire effects for
@@ -94,7 +96,7 @@ More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/workshop
-    - TODO
+    - TODO from Ironwood Huts
 
 - maybe
   - rX: revert action X
