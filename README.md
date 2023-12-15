@@ -84,9 +84,6 @@ Edges:
 
 More features from kittens game:
 
-- hide resources
-- hide craft actions
-
 - Bonfire building upgrades
 - Bonfire effects for
   - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
@@ -97,6 +94,11 @@ More features from kittens game:
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/workshop
     - TODO
+  - https://wiki.kittensgame.com/en/game-tabs/trade
+  - https://wiki.kittensgame.com/en/game-tabs/religion
+  - https://wiki.kittensgame.com/en/game-tabs/space
+  - https://wiki.kittensgame.com/en/game-tabs/time
+  - https://wiki.kittensgame.com/en/game-tabs/science/metaphysics
 
 - maybe
   - rX: revert action X
