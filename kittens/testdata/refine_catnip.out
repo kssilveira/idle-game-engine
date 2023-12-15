@@ -7,9 +7,6 @@
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] year 1
@@ -23,9 +20,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 1/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 1/25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Refine catnip
 ###
 [Calendar] year 1
@@ -36,7 +30,4 @@ last action: Refine catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Hut -(wood 2/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 2/25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Refine catnip

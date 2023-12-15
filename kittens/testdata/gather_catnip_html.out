@@ -4,9 +4,6 @@
 [Calendar] day_of_year 1
 [Village] happiness 0.10
 XX: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] year 1
@@ -17,9 +14,6 @@ last action:
 XX: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
 XX: [Bonfire] <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 1/100) +(wood 1)
 XX: [Bonfire] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 1/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] year 1
@@ -30,7 +24,4 @@ last action: Gather catnip
 XX: [Bonfire] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 1)
 XX: [Bonfire] <a href='/1'>Refine catnip</a> [<a href='/s1'>skip</a>] -(catnip 2/100) +(wood 1)
 XX: [Bonfire] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 2/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip

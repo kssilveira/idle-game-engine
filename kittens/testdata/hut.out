@@ -10,9 +10,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] time 1
@@ -29,9 +26,6 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Hut
 ###
 [Calendar] time 1
@@ -48,9 +42,6 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 2
@@ -67,9 +58,6 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Hut
 ###
 [Calendar] time 102
@@ -86,9 +74,6 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 1) +(woodcutter 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 102
@@ -105,7 +90,4 @@ XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
 XX: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 25) +(Library 1)
 XX: [Village] woodcutter -(kitten 1) +(woodcutter 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip

@@ -204,6 +204,7 @@ func TestRun(t *testing.T) {
 			Separator:         "###",
 			IsHTML:            in.isHTML,
 			HideActionNumbers: true,
+			HideCustomActions: true,
 		}
 		for data := range output {
 			textui.Show(cfg, data)

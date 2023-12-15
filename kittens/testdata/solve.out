@@ -5,9 +5,6 @@
 [Calendar] day_of_year 1
 [Village] happiness 0.10
 XX: [Bonfire] Gather catnip +(catnip 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: 
 ###
 [Calendar] time 2
@@ -19,9 +16,6 @@ last action:
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 3
@@ -33,9 +27,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 4
@@ -47,9 +38,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 3/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 3/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 5
@@ -61,9 +49,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 4/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 4/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 6
@@ -75,9 +60,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 5/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 5/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 7
@@ -89,9 +71,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 6/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 6/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 8
@@ -103,9 +82,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 7/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 7/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 9
@@ -117,9 +93,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 8/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 8/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 10
@@ -131,9 +104,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 9/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 9/10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 11
@@ -145,9 +115,6 @@ last action: Gather catnip
 XX: [Bonfire] Gather catnip +(catnip 1)
 XX: [Bonfire] Refine catnip -(catnip 10/100) +(wood 1)
 XX: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Gather catnip
 ###
 [Calendar] time 12
@@ -158,9 +125,6 @@ last action: Gather catnip
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 0.94/100 1m45s) +(wood 1)
 XX: [Bonfire] Catnip Field (1) -(catnip 0.94/11.20 10s) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Catnip Field
 ###
 [Calendar] time 2194
@@ -172,9 +136,6 @@ last action: Catnip Field
 [Village] happiness 0.10
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [*] [Bonfire] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Catnip Field
 ###
 [Calendar] time 2195
@@ -189,9 +150,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [*] [Bonfire] Catnip Field (55) -(catnip 4934.38/5093.21* 4s) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 1/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 1/25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Refine catnip
 ###
 [Calendar] time 2196
@@ -206,9 +164,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [*] [Bonfire] Catnip Field (55) -(catnip 4868.75/5093.21* 6s) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 2/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 2/25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Refine catnip
 ###
 [Calendar] time 2197
@@ -223,9 +178,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [*] [Bonfire] Catnip Field (55) -(catnip 4803.12/5093.21* 8s) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 3/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 3/25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Refine catnip
 ###
 [Calendar] time 2198
@@ -240,9 +192,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [*] [Bonfire] Catnip Field (55) -(catnip 4737.50/5093.21* 10s) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 4/5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 4/25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Refine catnip
 ###
 [Calendar] time 2199
@@ -257,9 +206,6 @@ XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [*] [Bonfire] Catnip Field (55) -(catnip 4671.88/5093.21* 12s) +(Catnip Field 1)
 XX: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 5/25) +(Library 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Refine catnip
 ###
 [Calendar] time 2200
@@ -273,9 +219,6 @@ last action: skip Refine catnip
 XX: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
 XX: [*] [Bonfire] Catnip Field (55) -(catnip 4680.47/5093.21* 48s) +(Catnip Field 1)
 XX: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Hut
 ###
 [Calendar] time 2220
@@ -291,9 +234,6 @@ XX: [*] [Bonfire] Catnip Field (55) -(catnip 4848.09/5093.21* 56s) +(Catnip Fiel
 XX: [Bonfire] Hut (1) -(wood 0.10/12.50 2m7s) +(Hut 1, kitten cap 2)
 XX: [Bonfire] Library -(wood 0.10/25 4m16s) +(Library 1)
 XX: [Village] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip woodcutter
 ###
 [Calendar] time 2478
@@ -311,9 +251,6 @@ XX: [Bonfire] Library (1) -(wood 0.17/28.75 4m59s) +(Library 1)
 XX: [Village] woodcutter (1) -(kitten 1) +(woodcutter 1)
 XX: [Village] scholar -(kitten 1) +(scholar 1)
 XX: [Science] Calendar -(science 0/30) +(Calendar 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Library
 ###
 [Calendar] time 2479
@@ -331,9 +268,6 @@ XX: [Bonfire] Library (1) -(wood 0.27/28.75 4m58s) +(Library 1)
 XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [Science] Calendar -(science 0.20/30 2m26s) +(Calendar 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip scholar
 ###
 [Calendar] time 16817
@@ -351,9 +285,6 @@ XX: [*] [Bonfire] Library (15) -(wood 200/203.43* 35s) +(Library 1)
 XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [Science] Calendar -(science 30) +(Calendar 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Library
 ###
 [Calendar] time 16818
@@ -371,9 +302,6 @@ XX: [*] [Bonfire] Library (15) -(wood 200/203.43* 35s) +(Library 1)
 XX: [*] [Village] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [Science] Agriculture -(science 100) +(Agriculture 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Calendar
 ###
 [Calendar] time 16819
@@ -394,9 +322,6 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Agriculture
 ###
 [Calendar] time 16820
@@ -418,9 +343,6 @@ XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
 XX: [Village] farmer -(kitten 0.05/1 18s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Hut
 ###
 [Calendar] time 16840
@@ -442,9 +364,6 @@ XX: [Village] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
 XX: [Village] farmer (1) -(kitten 0.05/1 18s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip farmer
 ###
 [Calendar] time 16860
@@ -465,9 +384,6 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip farmer
 ###
 [Calendar] time 50554
@@ -488,9 +404,6 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Barn
 ###
 [Calendar] time 60586
@@ -511,9 +424,6 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Catnip Field
 ###
 [Calendar] time 150774
@@ -534,9 +444,6 @@ XX: [*] [Village] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 XX: [*] [Village] farmer (2) -(kitten 0/1* 20s) +(farmer 1)
 XX: [Science] Archery -(science 300) +(Archery 1)
 XX: [Science] Mining -(science 500) +(Mining 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Library
 ###
 [Calendar] time 150775
@@ -560,9 +467,6 @@ XX: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns
 XX: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Archery
 ###
 [Calendar] time 150776
@@ -587,9 +491,6 @@ XX: [Village] Send hunters -(catpower 0/100) +(furs 39.50, ivory 10.78, unicorns
 XX: [Trade] Lizards -(catpower 0/50, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Hut
 ###
 [Calendar] time 150796
@@ -614,9 +515,6 @@ XX: [Village] Send hunters -(catpower 0.30/100 5m32s) +(furs 39.50, ivory 10.78,
 XX: [Trade] Lizards -(catpower 0.30/50 2m45s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip hunter
 ###
 [Calendar] time 150816
@@ -641,9 +539,6 @@ XX: [Village] Send hunters -(catpower 6.29/100 5m18s) +(furs 39.50, ivory 10.78,
 XX: [Trade] Lizards -(catpower 6.29/50 2m28s, gold 0/15, minerals 0/1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Animal Husbandry -(science 500) +(Animal Husbandry 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip farmer
 ###
 [Calendar] time 150817
@@ -672,9 +567,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Animal Husbandry
 ###
 [Calendar] time 267626
@@ -703,9 +595,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Pasture
 ###
 [Calendar] time 267627
@@ -737,9 +626,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 267628
@@ -771,9 +657,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 267629
@@ -805,9 +688,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 267630
@@ -839,9 +719,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 267693
@@ -873,9 +750,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 267953
@@ -907,9 +781,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 268214
@@ -941,9 +812,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 268474
@@ -975,9 +843,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 268735
@@ -1009,9 +874,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 268995
@@ -1043,9 +905,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 269256
@@ -1077,9 +936,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 269516
@@ -1111,9 +967,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 269777
@@ -1145,9 +998,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 270038
@@ -1179,9 +1029,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 270298
@@ -1213,9 +1060,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 270559
@@ -1247,9 +1091,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 270819
@@ -1281,9 +1122,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 271080
@@ -1315,9 +1153,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 271340
@@ -1349,9 +1184,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 271601
@@ -1383,9 +1215,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 271862
@@ -1417,9 +1246,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 272122
@@ -1451,9 +1277,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 272383
@@ -1485,9 +1308,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 272643
@@ -1519,9 +1339,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 272904
@@ -1553,9 +1370,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 273164
@@ -1587,9 +1401,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 273425
@@ -1621,9 +1432,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 273686
@@ -1655,9 +1463,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 273946
@@ -1689,9 +1494,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 274207
@@ -1723,9 +1525,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 274467
@@ -1757,9 +1556,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 274728
@@ -1791,9 +1587,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 274988
@@ -1825,9 +1618,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 275249
@@ -1859,9 +1649,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 275510
@@ -1893,9 +1680,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 275770
@@ -1927,9 +1711,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 276031
@@ -1961,9 +1742,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 276291
@@ -1995,9 +1773,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 276552
@@ -2029,9 +1804,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 276812
@@ -2063,9 +1835,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Send hunters
 ###
 [Calendar] time 276813
@@ -2097,9 +1866,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Unic. Pasture
 ###
 [Calendar] time 277513
@@ -2129,9 +1895,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 278126
@@ -2161,9 +1924,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 278841
@@ -2193,9 +1953,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 279779
@@ -2225,9 +1982,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 281092
@@ -2257,9 +2011,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 283007
@@ -2289,9 +2040,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 285879
@@ -2321,9 +2069,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 290278
@@ -2353,9 +2098,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 297119
@@ -2385,9 +2127,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 307895
@@ -2417,9 +2156,6 @@ XX: [Science] Mining -(science 500) +(Mining 1)
 XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Unic. Pasture
 ###
 [Calendar] time 307896
@@ -2452,9 +2188,6 @@ XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Bolas -(wood 50, minerals 0/250, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Mining
 ###
 [Calendar] time 307897
@@ -2488,9 +2221,6 @@ XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Bolas -(wood 50, minerals 0/250, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Mine
 ###
 [Calendar] time 307898
@@ -2525,9 +2255,6 @@ XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Bolas -(wood 50, minerals 0/250, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Hut
 ###
 [Calendar] time 307918
@@ -2563,9 +2290,6 @@ XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Bolas -(wood 50, minerals 0.32/250 13m12s, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip miner
 ###
 [Calendar] time 307938
@@ -2600,9 +2324,6 @@ XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Bolas -(wood 50, minerals 6.61/250 13m5s, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip farmer
 ###
 [Calendar] time 403222
@@ -2637,9 +2358,6 @@ XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Mine
 ###
 [Calendar] time 419251
@@ -2680,9 +2398,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 465.39/1000 1h35m11s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Workshop
 ###
 [Calendar] time 419252
@@ -2722,9 +2437,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 465.48/1000 1h35m10s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Mineral Hoes
 ###
 [Calendar] time 419253
@@ -2763,9 +2475,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 465.64/1000 56m52s, minerals 750, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Bolas -(wood 50, minerals 250, science 1000) +(Bolas 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Mineral Axe
 ###
 [Calendar] time 419254
@@ -2803,9 +2512,6 @@ XX: [Workshop] Iron Hoes -(iron 0/25, science 200) +(Iron Hoes 1)
 XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 415.79/1000 1h2m10s, minerals 728.63/750 17s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Bolas
 ###
 [Calendar] time 419255
@@ -2844,9 +2550,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 415.95/1000 1h2m9s, minerals 729.84/750 16s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Metal Working
 ###
 [Calendar] time 419256
@@ -2887,9 +2590,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 416.11/1000 1h2m8s, minerals 531.05/750 3m0s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Smelter
 ###
 [Calendar] time 419257
@@ -2931,9 +2631,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 220.95/1000 1h22m54s, minerals 532.26/750 2m59s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Hut
 ###
 [Calendar] time 419277
@@ -2975,9 +2672,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 224.24/1000 41m45s, minerals 556.46/750 2m40s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip woodcutter
 ###
 [Calendar] time 419297
@@ -3017,9 +2711,6 @@ XX: [Workshop] Iron Axe -(iron 0/50, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 230.42/1000 41m54s, minerals 580.55/750 2m21s, iron 0/50, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0/750*, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip farmer
 ###
 [Calendar] time 419298
@@ -3059,9 +2750,6 @@ XX: [Workshop] Iron Axe -(iron 0.10/50 8m18s, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 230.48/1000 3h49m1s, minerals 581.25/750 4m1s, iron 0.10/50 8m18s, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m39s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0.10/750* 2h4m58s, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: Active Smelter
 ###
 [Calendar] time 419548
@@ -3100,9 +2788,6 @@ XX: [Workshop] Iron Axe -(iron 0.10/50 8m18s, science 200) +(Iron Axe 1)
 XX: [Workshop] Expanded Barns -(wood 244.48/1000 3h44m51s, minerals 750, iron 0.10/50 8m18s, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m38s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0.10/750* 2h4m58s, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Iron Hoes
 ###
 [Calendar] time 420048
@@ -3140,9 +2825,6 @@ XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Expanded Barns -(wood 272.57/1000 1h23m2s, minerals 750, iron 0.10/50 8m18s, science 500) +(Expanded Barns 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m38s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 0.10/750* 2h4m58s, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Iron Axe
 ###
 [Calendar] time 425032
@@ -3179,9 +2861,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [*] [Workshop] Hunting Armor -(iron 300.10/750* 1h14m58s, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Expanded Barns
 ###
 [Calendar] time 482207
@@ -3218,9 +2897,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Barn
 ###
 [Calendar] time 486082
@@ -3257,9 +2933,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Catnip Field
 ###
 [Calendar] time 574641
@@ -3296,9 +2969,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Library
 ###
 [Calendar] time 645920
@@ -3335,9 +3005,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Pasture
 ###
 [Calendar] time 733250
@@ -3374,9 +3041,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Mine
 ###
 [Calendar] time 750096
@@ -3413,9 +3077,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Workshop
 ###
 [Calendar] time 773674
@@ -3453,9 +3114,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 XX: [Workshop] Hunting Armor -(iron 750, science 2000) +(Hunting Armor 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Smelter
 ###
 [Calendar] time 773675
@@ -3492,9 +3150,6 @@ XX: [Science] Civil Service -(science 1500) +(Civil Service 1)
 XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Workshop] Reinforced Barns -(iron 0.10/100 16m39s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Hunting Armor
 ###
 [Calendar] time 773676
@@ -3531,9 +3186,6 @@ XX: [Science] Mathematics -(science 1000) +(Mathematics 1)
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Workshop] Reinforced Barns -(iron 0.20/100 16m37s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Civil Service
 ###
 [Calendar] time 773677
@@ -3571,9 +3223,6 @@ XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 XX: [Workshop] Reinforced Barns -(iron 0.30/100 16m37s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Mathematics
 ###
 [Calendar] time 902016
@@ -3611,9 +3260,6 @@ XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Academy
 ###
 [Calendar] time 902017
@@ -3650,9 +3296,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Construction -(science 1300) +(Construction 1)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Celestial Mechanics
 ###
 [Calendar] time 902018
@@ -3703,9 +3346,6 @@ XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), 
 XX: [*] [Workshop] Reinforced Saw -(iron 750/1000* 41m40s, science 2500) +(Reinforced Saw 1)
 XX: [Workshop] Composite Bow -(wood 200, iron 100, science 500) +(Composite Bow 1)
 XX: [Workshop] Catnip Enrichment -(catnip 5000, science 500) +(Catnip Enrichment 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Construction
 ###
 [Calendar] time 902019
@@ -3755,9 +3395,6 @@ XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 0/10 (minerals 1250)) +(Reinforced Barns 1)
 XX: [*] [Workshop] Reinforced Saw -(iron 750/1000* 41m40s, science 2500) +(Reinforced Saw 1)
 XX: [Workshop] Composite Bow -(wood 200, iron 100, science 500) +(Composite Bow 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Catnip Enrichment
 ###
 [Calendar] time 902020
@@ -3806,9 +3443,6 @@ XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 0/10 (minerals 1250)) +(Reinforced Barns 1)
 XX: [*] [Workshop] Reinforced Saw -(iron 650.10/1000* 58m18s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Composite Bow
 ###
 [Calendar] time 902021
@@ -3858,9 +3492,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.20/1000 1h14m57s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Reinforced Barns
 ###
 [Calendar] time 902022
@@ -3910,9 +3541,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.30/1000 1h14m56s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 902023
@@ -3962,9 +3590,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.40/1000 1h14m55s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 902024
@@ -4014,9 +3639,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 550.50/1000 1h14m54s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 904045
@@ -4066,9 +3688,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 752.60/1000 41m13s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 905243
@@ -4118,9 +3737,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 872.40/1000 21m15s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 906442
@@ -4170,9 +3786,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 992.30/1000 1m16s, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 908839
@@ -4222,9 +3835,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 911237
@@ -4274,9 +3884,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 913634
@@ -4326,9 +3933,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 917230
@@ -4378,9 +3982,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 920826
@@ -4430,9 +4031,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Warehouse
 ###
 [Calendar] time 1003668
@@ -4482,9 +4080,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Barn
 ###
 [Calendar] time 1004581
@@ -4534,9 +4129,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Catnip Field
 ###
 [Calendar] time 1160093
@@ -4586,9 +4178,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Library
 ###
 [Calendar] time 1258241
@@ -4638,9 +4227,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Pasture
 ###
 [Calendar] time 1418712
@@ -4690,9 +4276,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Mine
 ###
 [Calendar] time 1442308
@@ -4742,9 +4325,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Workshop
 ###
 [Calendar] time 1469087
@@ -4794,9 +4374,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Smelter
 ###
 [Calendar] time 1643190
@@ -4846,9 +4423,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Academy
 ###
 [Calendar] time 1751322
@@ -4898,9 +4472,6 @@ XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, bluepri
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
 XX: [Workshop] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Lumber Mill
 ###
 [Calendar] time 1751323
@@ -4949,9 +4520,6 @@ XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), 
 XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Engineering -(science 1500) +(Engineering 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Reinforced Saw
 ###
 [Calendar] time 1751324
@@ -5001,9 +4569,6 @@ XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), 
 XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Writing -(science 3600) +(Writing 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Engineering
 ###
 [Calendar] time 1809640
@@ -5053,9 +4618,6 @@ XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), 
 XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Currency -(science 2200) +(Currency 1)
 XX: [Science] Writing -(science 3600) +(Writing 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: max Aqueduct
 ###
 [Calendar] time 1809641
@@ -5105,7 +4667,4 @@ XX: [Craft] @manuscript -(culture 0/400, parchment 0/25) +(manuscript 2.32)
 XX: [Craft] @megalith -(beam 1.10/25 (wood 1925), slab 1.90/50 (minerals 5250), plate 0/5 (iron 375)) +(megalith 2.32)
 XX: [Trade] Lizards -(catpower 50, gold 0/15, minerals 1000) +(wood 500, blueprint 0.10, spice 8.75)
 XX: [Science] Writing -(science 3600) +(Writing 1)
-sX: time skip, create inputs and buy action X
-cX: create inputs and buy action X
-mX: max action X (skip, create, buy)
 last action: skip Currency
