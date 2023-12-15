@@ -84,25 +84,22 @@ Edges:
 
 More features from kittens game:
 
-- Bonfire building upgrades
-- Bonfire effects for
-  - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
-- Bonfire active buildings
-- Job engineer
-- Metaphysics
+- graph recursive nested bonus
 
-- https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/workshop
-    - TODO
-  - https://wiki.kittensgame.com/en/game-tabs/trade
-  - https://wiki.kittensgame.com/en/game-tabs/religion
-  - https://wiki.kittensgame.com/en/game-tabs/space
-  - https://wiki.kittensgame.com/en/game-tabs/time
-  - https://wiki.kittensgame.com/en/game-tabs/science/metaphysics
+- https://wiki.kittensgame.com/en/game-tabs/workshop
+- https://wiki.kittensgame.com/en/game-tabs/trade
+- https://wiki.kittensgame.com/en/game-tabs/religion
+- https://wiki.kittensgame.com/en/game-tabs/space
+- https://wiki.kittensgame.com/en/game-tabs/time
+- https://wiki.kittensgame.com/en/game-tabs/science/metaphysics
+- https://wiki.kittensgame.com/en/game-tabs/bonfire
+  - building upgrades
+  - effects for
+    - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
+  - active buildings
 
 - maybe
   - rX: revert action X
     - sell building
     - unassign worker
     - deactivate building
-  - energy
