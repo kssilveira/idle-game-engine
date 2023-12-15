@@ -82,7 +82,7 @@ func showResources(cfg Config, data *ui.Data) {
 
 func showActions(cfg Config, data *ui.Data) {
 	for i, a := range data.Actions {
-		if a.Locked {
+		if a.IsLocked || a.IsHidden {
 			continue
 		}
 		status := ""

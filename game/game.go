@@ -136,9 +136,10 @@ func (g *Game) populateUIResources(data *ui.Data) {
 func (g *Game) populateUIActions(data *ui.Data) {
 	for _, a := range g.Actions {
 		action := ui.Action{
-			Name:   a.Name,
-			Type:   a.Type,
-			Locked: g.isLocked(a),
+			Name:     a.Name,
+			Type:     a.Type,
+			IsHidden: a.IsHidden,
+			IsLocked: g.isLocked(a),
 		}
 		if g.HasResource(a.Name) {
 			action.Quantity = g.GetResource(a.Name).Quantity

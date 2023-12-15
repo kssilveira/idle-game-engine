@@ -25,7 +25,8 @@ type Action struct {
 	Name     string
 	Type     string
 	Quantity float64
-	Locked   bool
+	IsLocked bool
+	IsHidden bool
 	Costs    []Cost
 	Adds     []Add
 }

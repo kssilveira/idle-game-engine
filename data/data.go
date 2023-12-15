@@ -49,6 +49,7 @@ type Action struct {
 	Adds       []Resource `json:",omitempty"`
 	// Producers of the corresponding Resource
 	Producers []Resource `json:",omitempty"`
+	IsHidden  bool       `json:",omitempty"`
 }
 
 type ParsedInput struct {

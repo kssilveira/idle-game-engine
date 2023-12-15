@@ -48,13 +48,6 @@ digraph {
   "Theology" -> "priest" [color="blue"];
   "Geology" -> "geologist" [color="blue"];
   "Archery" -> "Send hunters" [color="blue"];
-  "Construction" -> "@beam" [color="blue"];
-  "Construction" -> "@slab" [color="blue"];
-  "Construction" -> "@plate" [color="blue"];
-  "Construction" -> "@gear" [color="blue"];
-  "Construction" -> "@scaffold" [color="blue"];
-  "Construction" -> "@manuscript" [color="blue"];
-  "Construction" -> "@megalith" [color="blue"];
   "Archery" -> "Lizards" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
@@ -190,6 +183,13 @@ digraph {
   "Machinery" -> "Printing Press" [color="blue"];
   "Combustion" -> "Offset Press" [color="blue"];
   "Satellites" -> "Photolithography" [color="blue"];
+  "Construction" -> "@beam" [color="blue"];
+  "Construction" -> "@slab" [color="blue"];
+  "Construction" -> "@plate" [color="blue"];
+  "Construction" -> "@gear" [color="blue"];
+  "Construction" -> "@scaffold" [color="blue"];
+  "Construction" -> "@manuscript" [color="blue"];
+  "Construction" -> "@megalith" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
@@ -422,13 +422,6 @@ digraph {
   "priest" [shape="house"];
   "geologist" [shape="house"];
   "Send hunters" [shape="house"];
-  "@beam" [shape="cds"];
-  "@slab" [shape="cds"];
-  "@plate" [shape="cds"];
-  "@gear" [shape="cds"];
-  "@scaffold" [shape="cds"];
-  "@manuscript" [shape="cds"];
-  "@megalith" [shape="cds"];
   "Lizards" [shape="cds"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
@@ -564,4 +557,11 @@ digraph {
   "Printing Press" [shape="hexagon"];
   "Offset Press" [shape="hexagon"];
   "Photolithography" [shape="hexagon"];
+  "@beam" [shape="cds"];
+  "@slab" [shape="cds"];
+  "@plate" [shape="cds"];
+  "@gear" [shape="cds"];
+  "@scaffold" [shape="cds"];
+  "@manuscript" [shape="cds"];
+  "@megalith" [shape="cds"];
 }

@@ -2447,73 +2447,6 @@
       ]
     },
     {
-      "Name": "beam",
-      "Type": "Resource",
-      "Capacity": -1,
-      "ProducerAction": "@beam"
-    },
-    {
-      "Name": "slab",
-      "Type": "Resource",
-      "Capacity": -1,
-      "ProducerAction": "@slab"
-    },
-    {
-      "Name": "plate",
-      "Type": "Resource",
-      "Capacity": -1,
-      "ProducerAction": "@plate"
-    },
-    {
-      "Name": "gear",
-      "Type": "Resource",
-      "Capacity": -1,
-      "ProducerAction": "@gear"
-    },
-    {
-      "Name": "scaffold",
-      "Type": "Resource",
-      "Capacity": -1,
-      "ProducerAction": "@scaffold"
-    },
-    {
-      "Name": "manuscript",
-      "Type": "Resource",
-      "Capacity": -1,
-      "Producers": [
-        {
-          "Name": "Printing Press",
-          "Factor": 0.0025,
-          "Bonus": [
-            {
-              "Name": "Steamworks",
-              "Factor": 1,
-              "Bonus": [
-                {
-                  "Name": "Offset Press",
-                  "Factor": 3,
-                  "Bonus": [
-                    {
-                      "Name": "Photolithography",
-                      "Factor": 3
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "BonusStartsFromZero": true
-        }
-      ],
-      "ProducerAction": "@manuscript"
-    },
-    {
-      "Name": "megalith",
-      "Type": "Resource",
-      "Capacity": -1,
-      "ProducerAction": "@megalith"
-    },
-    {
       "Name": "Calendar",
       "Type": "Science",
       "IsHidden": true,
@@ -3316,6 +3249,80 @@
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
+    },
+    {
+      "Name": "beam",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "ProducerAction": "@beam"
+    },
+    {
+      "Name": "slab",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "ProducerAction": "@slab"
+    },
+    {
+      "Name": "plate",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "ProducerAction": "@plate"
+    },
+    {
+      "Name": "gear",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "ProducerAction": "@gear"
+    },
+    {
+      "Name": "scaffold",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "ProducerAction": "@scaffold"
+    },
+    {
+      "Name": "manuscript",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "Printing Press",
+          "Factor": 0.0025,
+          "Bonus": [
+            {
+              "Name": "Steamworks",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Offset Press",
+                  "Factor": 3,
+                  "Bonus": [
+                    {
+                      "Name": "Photolithography",
+                      "Factor": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "ProducerAction": "@manuscript"
+    },
+    {
+      "Name": "megalith",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Capacity": -1,
+      "ProducerAction": "@megalith"
     }
   ],
   "Actions": [
@@ -4556,232 +4563,6 @@
         {
           "Name": "unicorns",
           "Quantity": 0.05
-        }
-      ]
-    },
-    {
-      "Name": "@beam",
-      "Type": "Craft",
-      "UnlockedBy": "Construction",
-      "Costs": [
-        {
-          "Name": "wood",
-          "Quantity": 175
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "beam",
-          "Quantity": 1,
-          "Bonus": [
-            {
-              "Name": "Workshop",
-              "Factor": 0.06
-            },
-            {
-              "Name": "Factory",
-              "Factor": 0.05
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Name": "@slab",
-      "Type": "Craft",
-      "UnlockedBy": "Construction",
-      "Costs": [
-        {
-          "Name": "mineral",
-          "Quantity": 250
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "slab",
-          "Quantity": 1,
-          "Bonus": [
-            {
-              "Name": "Workshop",
-              "Factor": 0.06
-            },
-            {
-              "Name": "Factory",
-              "Factor": 0.05
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Name": "@plate",
-      "Type": "Craft",
-      "UnlockedBy": "Construction",
-      "Costs": [
-        {
-          "Name": "iron",
-          "Quantity": 125
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "plate",
-          "Quantity": 1,
-          "Bonus": [
-            {
-              "Name": "Workshop",
-              "Factor": 0.06
-            },
-            {
-              "Name": "Factory",
-              "Factor": 0.05
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Name": "@gear",
-      "Type": "Craft",
-      "UnlockedBy": "Construction",
-      "Costs": [
-        {
-          "Name": "steel",
-          "Quantity": 15
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "gear",
-          "Quantity": 1,
-          "Bonus": [
-            {
-              "Name": "Workshop",
-              "Factor": 0.06
-            },
-            {
-              "Name": "Factory",
-              "Factor": 0.05
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Name": "@scaffold",
-      "Type": "Craft",
-      "UnlockedBy": "Construction",
-      "Costs": [
-        {
-          "Name": "beam",
-          "Quantity": 50
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "scaffold",
-          "Quantity": 1,
-          "Bonus": [
-            {
-              "Name": "Workshop",
-              "Factor": 0.06
-            },
-            {
-              "Name": "Factory",
-              "Factor": 0.05
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Name": "@manuscript",
-      "Type": "Craft",
-      "UnlockedBy": "Construction",
-      "Costs": [
-        {
-          "Name": "culture",
-          "Quantity": 400
-        },
-        {
-          "Name": "parchment",
-          "Quantity": 25
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "manuscript",
-          "Quantity": 1,
-          "Bonus": [
-            {
-              "Name": "Workshop",
-              "Factor": 0.06
-            },
-            {
-              "Name": "Factory",
-              "Factor": 0.05
-            }
-          ]
-        }
-      ],
-      "Producers": [
-        {
-          "Name": "Printing Press",
-          "Factor": 0.0025,
-          "Bonus": [
-            {
-              "Name": "Steamworks",
-              "Factor": 1,
-              "Bonus": [
-                {
-                  "Name": "Offset Press",
-                  "Factor": 3,
-                  "Bonus": [
-                    {
-                      "Name": "Photolithography",
-                      "Factor": 3
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "BonusStartsFromZero": true
-        }
-      ]
-    },
-    {
-      "Name": "@megalith",
-      "Type": "Craft",
-      "UnlockedBy": "Construction",
-      "Costs": [
-        {
-          "Name": "beam",
-          "Quantity": 25
-        },
-        {
-          "Name": "slab",
-          "Quantity": 50
-        },
-        {
-          "Name": "plate",
-          "Quantity": 5
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "megalith",
-          "Quantity": 1,
-          "Bonus": [
-            {
-              "Name": "Workshop",
-              "Factor": 0.06
-            },
-            {
-              "Name": "Factory",
-              "Factor": 0.05
-            }
-          ]
         }
       ]
     },
@@ -7913,6 +7694,239 @@
           "Quantity": 1
         }
       ]
+    },
+    {
+      "Name": "@beam",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "wood",
+          "Quantity": 175
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "beam",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@slab",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "mineral",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "slab",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@plate",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "plate",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@gear",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "gear",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@scaffold",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "beam",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "scaffold",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@manuscript",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "culture",
+          "Quantity": 400
+        },
+        {
+          "Name": "parchment",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "manuscript",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "Producers": [
+        {
+          "Name": "Printing Press",
+          "Factor": 0.0025,
+          "Bonus": [
+            {
+              "Name": "Steamworks",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Offset Press",
+                  "Factor": 3,
+                  "Bonus": [
+                    {
+                      "Name": "Photolithography",
+                      "Factor": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@megalith",
+      "Type": "Craft",
+      "UnlockedBy": "Construction",
+      "Costs": [
+        {
+          "Name": "beam",
+          "Quantity": 25
+        },
+        {
+          "Name": "slab",
+          "Quantity": 50
+        },
+        {
+          "Name": "plate",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "megalith",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
     }
   ]
 }
