@@ -84,7 +84,7 @@ Edges:
 
 More features from kittens game:
 
-- change name of active building count resource
+- add bonus starts from zero
 
 - Bonfire building upgrades
 - Bonfire effects for

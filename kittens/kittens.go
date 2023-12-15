@@ -368,6 +368,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Accelerator", Factor: 0.0025 * 5,
 		}, {
 			Name: "Reactor", Factor: -0.001 * 5,
+		}, {
+			Name: "Orbital Geodesy", Factor: 0.0005 * 5,
+			Bonus: []data.Resource{{
+				Name: "Quarry", Factor: 1,
+			}},
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Reactor", Factor: 250,
@@ -868,6 +873,12 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "beam", Quantity: 50}},
 	}, {
 		Name: "manuscript", UnlockedBy: "Construction",
+		Producers: []data.Resource{{
+			Name: "Printing Press", Factor: 0.0025,
+			Bonus: []data.Resource{{
+				Name: "Steamworks", Factor: 1,
+			}},
+		}},
 		Costs: []data.Resource{{
 			Name: "culture", Quantity: 400,
 		}, {
@@ -1846,6 +1857,22 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "uranium", Quantity: 250,
 		}},
+	}, {
+		Name: "Orbital Geodesy", UnlockedBy: "Satellites",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 150000,
+		}, {
+			Name: "alloy", Quantity: 1000,
+		}, {
+			Name: "oil", Quantity: 35000,
+		}},
+	}, {
+		Name: "Printing Press", UnlockedBy: "Machinery",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 7500,
+		}, {
+			Name: "gear", Quantity: 45,
+		}},
 	}})
 
 	return g
@@ -1891,6 +1918,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		g.AddAction(action)
 		g.AddResource(data.Resource{
 			Name: name, Type: "Resource", Capacity: -1, ProducerAction: action.Name,
+			Producers: action.Producers,
 		})
 	}
 }

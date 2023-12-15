@@ -45,6 +45,8 @@ type Action struct {
 	LockedBy   string     `json:",omitempty"`
 	Costs      []Resource `json:",omitempty"`
 	Adds       []Resource `json:",omitempty"`
+	// Producers of the corresponding Resource
+	Producers []Resource `json:",omitempty"`
 }
 
 type ParsedInput struct {

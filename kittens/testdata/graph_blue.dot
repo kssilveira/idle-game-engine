@@ -186,6 +186,8 @@ digraph {
   "Robotics" -> "Rotary Kiln" [color="blue"];
   "Nanotechnology" -> "Fluoridized Reactors" [color="blue"];
   "Nuclear Fission" -> "Nuclear Smelter" [color="blue"];
+  "Satellites" -> "Orbital Geodesy" [color="blue"];
+  "Machinery" -> "Printing Press" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
@@ -365,6 +367,8 @@ digraph {
   "Rotary Kiln" [shape="hexagon"];
   "Fluoridized Reactors" [shape="hexagon"];
   "Nuclear Smelter" [shape="hexagon"];
+  "Orbital Geodesy" [shape="hexagon"];
+  "Printing Press" [shape="hexagon"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
@@ -552,4 +556,6 @@ digraph {
   "Rotary Kiln" [shape="hexagon"];
   "Fluoridized Reactors" [shape="hexagon"];
   "Nuclear Smelter" [shape="hexagon"];
+  "Orbital Geodesy" [shape="hexagon"];
+  "Printing Press" [shape="hexagon"];
 }

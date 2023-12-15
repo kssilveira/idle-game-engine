@@ -1601,6 +1601,16 @@
         {
           "Name": "Reactor",
           "Factor": -0.005
+        },
+        {
+          "Name": "Orbital Geodesy",
+          "Factor": 0.0025,
+          "Bonus": [
+            {
+              "Name": "Quarry",
+              "Factor": 1
+            }
+          ]
         }
       ],
       "CapacityProducers": [
@@ -2420,6 +2430,18 @@
       "Name": "manuscript",
       "Type": "Resource",
       "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "Printing Press",
+          "Factor": 0.0025,
+          "Bonus": [
+            {
+              "Name": "Steamworks",
+              "Factor": 1
+            }
+          ]
+        }
+      ],
       "ProducerAction": "@manuscript"
     },
     {
@@ -3204,6 +3226,18 @@
     },
     {
       "Name": "Nuclear Smelter",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Orbital Geodesy",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Printing Press",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -4611,6 +4645,18 @@
             {
               "Name": "Factory",
               "Factor": 0.05
+            }
+          ]
+        }
+      ],
+      "Producers": [
+        {
+          "Name": "Printing Press",
+          "Factor": 0.0025,
+          "Bonus": [
+            {
+              "Name": "Steamworks",
+              "Factor": 1
             }
           ]
         }
@@ -7672,6 +7718,54 @@
       "Adds": [
         {
           "Name": "Nuclear Smelter",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Orbital Geodesy",
+      "Type": "Workshop",
+      "UnlockedBy": "Satellites",
+      "LockedBy": "Orbital Geodesy",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 150000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 1000
+        },
+        {
+          "Name": "oil",
+          "Quantity": 35000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Orbital Geodesy",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Printing Press",
+      "Type": "Workshop",
+      "UnlockedBy": "Machinery",
+      "LockedBy": "Printing Press",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 7500
+        },
+        {
+          "Name": "gear",
+          "Quantity": 45
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Printing Press",
           "Quantity": 1
         }
       ]
