@@ -562,54 +562,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Hubble Space Telescope", Factor: 0.30,
 		}},
 	}, {
-		Name: "steel", Type: "Resource", Capacity: -1,
-		Producers: []data.Resource{{
-			Name: "Calciner", Factor: 0.15 * 5 * 0.1,
-			Bonus: []data.Resource{{
-				Name: "Steel Plants", Factor: 1,
-				Bonus: []data.Resource{{
-					Name: "Oxidation", Factor: 0.95,
-				}, {
-					Name: "Automated Plants", Factor: 0.25,
-					Bonus:               CraftRatio,
-					BonusStartsFromZero: true,
-				}, {
-					Name: "Reactor", Factor: 0.02,
-					Bonus: []data.Resource{{
-						Name: "Nuclear Plants", Factor: 1,
-					}},
-					BonusStartsFromZero: true,
-				}},
-			}},
-			BonusStartsFromZero: true,
-		}},
-	}, {
-		Name: "concrete", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "alloy", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "parchment", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "compendium", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "blueprint", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "trade ship", Type: "Resource", Capacity: -1,
-	}, {
-		Name: "eludium", Type: "Resource", Capacity: 1,
-	}, {
-		Name: "thorium", Type: "Resource", Capacity: 1,
-		Producers: []data.Resource{{
-			Name: "Reactor", Factor: -0.25 * 5,
-			Bonus: []data.Resource{{
-				Name: "Thorium Reactors", Factor: 1,
-				Bonus: []data.Resource{{
-					Name: "Enriched Thorium", Factor: 0.25,
-				}},
-			}},
-			BonusStartsFromZero: true,
-		}},
-	}, {
 		Name: "gigaflops", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "AI Core", Factor: 0.02 * 5,
@@ -2458,14 +2410,90 @@ func NewGame(now game.Now) *game.Game {
 		Name: "slab", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "mineral", Quantity: 250}},
 	}, {
+		Name: "concrete", UnlockedBy: "Mechanization",
+		Costs: []data.Resource{{
+			Name: "slab", Quantity: 2500,
+		}, {
+			Name: "steel", Quantity: 25,
+		}},
+	}, {
 		Name: "plate", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "iron", Quantity: 125}},
+	}, {
+		Name: "steel", UnlockedBy: "Steel",
+		Costs: []data.Resource{{
+			Name: "iron", Quantity: 100,
+		}, {
+			Name: "coal", Quantity: 100,
+		}},
+		Producers: []data.Resource{{
+			Name: "Calciner", Factor: 0.15 * 5 * 0.1,
+			Bonus: []data.Resource{{
+				Name: "Steel Plants", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Oxidation", Factor: 0.95,
+				}, {
+					Name: "Automated Plants", Factor: 0.25,
+					Bonus:               CraftRatio,
+					BonusStartsFromZero: true,
+				}, {
+					Name: "Reactor", Factor: 0.02,
+					Bonus: []data.Resource{{
+						Name: "Nuclear Plants", Factor: 1,
+					}},
+					BonusStartsFromZero: true,
+				}},
+			}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "gear", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "steel", Quantity: 15}},
 	}, {
+		Name: "alloy", UnlockedBy: "Chemistry",
+		Costs: []data.Resource{{
+			Name: "steel", Quantity: 75,
+		}, {
+			Name: "titanium", Quantity: 10,
+		}},
+	}, {
+		Name: "eludium", UnlockedBy: "Advanced Exogeology",
+		Costs: []data.Resource{{
+			Name: "alloy", Quantity: 2500,
+		}, {
+			Name: "unobtainium", Quantity: 1000,
+		}},
+	}, {
 		Name: "scaffold", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "beam", Quantity: 50}},
+	}, {
+		Name: "trade ship", UnlockedBy: "Navigation",
+		Costs: []data.Resource{{
+			Name: "scaffold", Quantity: 100,
+		}, {
+			Name: "plate", Quantity: 150,
+		}, {
+			Name: "starchart", Quantity: 25,
+		}},
+	}, {
+		Name: "tanker", UnlockedBy: "Robotics",
+		Costs: []data.Resource{{
+			Name: "trade ship", Quantity: 200,
+		}, {
+			Name: "alloy", Quantity: 1250,
+		}, {
+			Name: "blueprint", Quantity: 5,
+		}},
+	}, {
+		Name: "kerosene", UnlockedBy: "Oil Processing",
+		Costs: []data.Resource{{
+			Name: "oil", Quantity: 7500,
+		}},
+	}, {
+		Name: "parchment", UnlockedBy: "Writing",
+		Costs: []data.Resource{{
+			Name: "furs", Quantity: 175,
+		}},
 	}, {
 		Name: "manuscript", UnlockedBy: "Construction",
 		Producers: []data.Resource{{
@@ -2485,6 +2513,35 @@ func NewGame(now game.Now) *game.Game {
 			Name: "culture", Quantity: 400,
 		}, {
 			Name: "parchment", Quantity: 25,
+		}},
+	}, {
+		Name: "compendium", UnlockedBy: "Philosophy",
+		Costs: []data.Resource{{
+			Name: "manuscript", Quantity: 50,
+		}, {
+			Name: "science", Quantity: 10000,
+		}},
+	}, {
+		Name: "blueprint", UnlockedBy: "Physics",
+		Costs: []data.Resource{{
+			Name: "compendium", Quantity: 25,
+		}, {
+			Name: "science", Quantity: 25000,
+		}},
+	}, {
+		Name: "thorium", UnlockedBy: "Thorium",
+		Costs: []data.Resource{{
+			Name: "uranium", Quantity: 250,
+		}},
+		Producers: []data.Resource{{
+			Name: "Reactor", Factor: -0.25 * 5,
+			Bonus: []data.Resource{{
+				Name: "Thorium Reactors", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Enriched Thorium", Factor: 0.25,
+				}},
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "megalith", UnlockedBy: "Construction",

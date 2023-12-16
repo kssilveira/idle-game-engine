@@ -2094,121 +2094,6 @@
       ]
     },
     {
-      "Name": "steel",
-      "Type": "Resource",
-      "Capacity": -1,
-      "Producers": [
-        {
-          "Name": "Calciner",
-          "Factor": 0.075,
-          "Bonus": [
-            {
-              "Name": "Steel Plants",
-              "Factor": 1,
-              "Bonus": [
-                {
-                  "Name": "Oxidation",
-                  "Factor": 0.95
-                },
-                {
-                  "Name": "Automated Plants",
-                  "Factor": 0.25,
-                  "Bonus": [
-                    {
-                      "Name": "Workshop",
-                      "Factor": 0.06
-                    },
-                    {
-                      "Name": "Factory",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Factory Logistics",
-                          "Factor": 0.2
-                        }
-                      ]
-                    }
-                  ],
-                  "BonusStartsFromZero": true
-                },
-                {
-                  "Name": "Reactor",
-                  "Factor": 0.02,
-                  "Bonus": [
-                    {
-                      "Name": "Nuclear Plants",
-                      "Factor": 1
-                    }
-                  ],
-                  "BonusStartsFromZero": true
-                }
-              ]
-            }
-          ],
-          "BonusStartsFromZero": true
-        }
-      ]
-    },
-    {
-      "Name": "concrete",
-      "Type": "Resource",
-      "Capacity": -1
-    },
-    {
-      "Name": "alloy",
-      "Type": "Resource",
-      "Capacity": -1
-    },
-    {
-      "Name": "parchment",
-      "Type": "Resource",
-      "Capacity": -1
-    },
-    {
-      "Name": "compendium",
-      "Type": "Resource",
-      "Capacity": -1
-    },
-    {
-      "Name": "blueprint",
-      "Type": "Resource",
-      "Capacity": -1
-    },
-    {
-      "Name": "trade ship",
-      "Type": "Resource",
-      "Capacity": -1
-    },
-    {
-      "Name": "eludium",
-      "Type": "Resource",
-      "Capacity": 1
-    },
-    {
-      "Name": "thorium",
-      "Type": "Resource",
-      "Capacity": 1,
-      "Producers": [
-        {
-          "Name": "Reactor",
-          "Factor": -1.25,
-          "Bonus": [
-            {
-              "Name": "Thorium Reactors",
-              "Factor": 1,
-              "Bonus": [
-                {
-                  "Name": "Enriched Thorium",
-                  "Factor": 0.25
-                }
-              ]
-            }
-          ],
-          "BonusStartsFromZero": true
-        }
-      ]
-    },
-    {
       "Name": "gigaflops",
       "Type": "Resource",
       "Capacity": -1,
@@ -3807,10 +3692,73 @@
       "ProducerAction": "@slab"
     },
     {
+      "Name": "concrete",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@concrete"
+    },
+    {
       "Name": "plate",
       "Type": "Resource",
       "Capacity": -1,
       "ProducerAction": "@plate"
+    },
+    {
+      "Name": "steel",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "Calciner",
+          "Factor": 0.075,
+          "Bonus": [
+            {
+              "Name": "Steel Plants",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Oxidation",
+                  "Factor": 0.95
+                },
+                {
+                  "Name": "Automated Plants",
+                  "Factor": 0.25,
+                  "Bonus": [
+                    {
+                      "Name": "Workshop",
+                      "Factor": 0.06
+                    },
+                    {
+                      "Name": "Factory",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Factory Logistics",
+                          "Factor": 0.2
+                        }
+                      ]
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                },
+                {
+                  "Name": "Reactor",
+                  "Factor": 0.02,
+                  "Bonus": [
+                    {
+                      "Name": "Nuclear Plants",
+                      "Factor": 1
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "ProducerAction": "@steel"
     },
     {
       "Name": "gear",
@@ -3819,10 +3767,46 @@
       "ProducerAction": "@gear"
     },
     {
+      "Name": "alloy",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@alloy"
+    },
+    {
+      "Name": "eludium",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@eludium"
+    },
+    {
       "Name": "scaffold",
       "Type": "Resource",
       "Capacity": -1,
       "ProducerAction": "@scaffold"
+    },
+    {
+      "Name": "trade ship",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@trade ship"
+    },
+    {
+      "Name": "tanker",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@tanker"
+    },
+    {
+      "Name": "kerosene",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@kerosene"
+    },
+    {
+      "Name": "parchment",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@parchment"
     },
     {
       "Name": "manuscript",
@@ -3854,6 +3838,43 @@
         }
       ],
       "ProducerAction": "@manuscript"
+    },
+    {
+      "Name": "compendium",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@compendium"
+    },
+    {
+      "Name": "blueprint",
+      "Type": "Resource",
+      "Capacity": -1,
+      "ProducerAction": "@blueprint"
+    },
+    {
+      "Name": "thorium",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "Reactor",
+          "Factor": -1.25,
+          "Bonus": [
+            {
+              "Name": "Thorium Reactors",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Enriched Thorium",
+                  "Factor": 0.25
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "ProducerAction": "@thorium"
     },
     {
       "Name": "megalith",
@@ -9735,6 +9756,44 @@
       "IsHidden": true
     },
     {
+      "Name": "@concrete",
+      "Type": "Craft",
+      "UnlockedBy": "Mechanization",
+      "Costs": [
+        {
+          "Name": "slab",
+          "Quantity": 2500
+        },
+        {
+          "Name": "steel",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "concrete",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
       "Name": "@plate",
       "Type": "Craft",
       "UnlockedBy": "Construction",
@@ -9764,6 +9823,95 @@
               ]
             }
           ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@steel",
+      "Type": "Craft",
+      "UnlockedBy": "Steel",
+      "Costs": [
+        {
+          "Name": "iron",
+          "Quantity": 100
+        },
+        {
+          "Name": "coal",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "steel",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Producers": [
+        {
+          "Name": "Calciner",
+          "Factor": 0.075,
+          "Bonus": [
+            {
+              "Name": "Steel Plants",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Oxidation",
+                  "Factor": 0.95
+                },
+                {
+                  "Name": "Automated Plants",
+                  "Factor": 0.25,
+                  "Bonus": [
+                    {
+                      "Name": "Workshop",
+                      "Factor": 0.06
+                    },
+                    {
+                      "Name": "Factory",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Factory Logistics",
+                          "Factor": 0.2
+                        }
+                      ]
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                },
+                {
+                  "Name": "Reactor",
+                  "Factor": 0.02,
+                  "Bonus": [
+                    {
+                      "Name": "Nuclear Plants",
+                      "Factor": 1
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "IsHidden": true
@@ -9803,6 +9951,82 @@
       "IsHidden": true
     },
     {
+      "Name": "@alloy",
+      "Type": "Craft",
+      "UnlockedBy": "Chemistry",
+      "Costs": [
+        {
+          "Name": "steel",
+          "Quantity": 75
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "alloy",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@eludium",
+      "Type": "Craft",
+      "UnlockedBy": "Advanced Exogeology",
+      "Costs": [
+        {
+          "Name": "alloy",
+          "Quantity": 2500
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "eludium",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
       "Name": "@scaffold",
       "Type": "Craft",
       "UnlockedBy": "Construction",
@@ -9815,6 +10039,158 @@
       "Adds": [
         {
           "Name": "scaffold",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@trade ship",
+      "Type": "Craft",
+      "UnlockedBy": "Navigation",
+      "Costs": [
+        {
+          "Name": "scaffold",
+          "Quantity": 100
+        },
+        {
+          "Name": "plate",
+          "Quantity": 150
+        },
+        {
+          "Name": "starchart",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "trade ship",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@tanker",
+      "Type": "Craft",
+      "UnlockedBy": "Robotics",
+      "Costs": [
+        {
+          "Name": "trade ship",
+          "Quantity": 200
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 1250
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "tanker",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@kerosene",
+      "Type": "Craft",
+      "UnlockedBy": "Oil Processing",
+      "Costs": [
+        {
+          "Name": "oil",
+          "Quantity": 7500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "kerosene",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@parchment",
+      "Type": "Craft",
+      "UnlockedBy": "Writing",
+      "Costs": [
+        {
+          "Name": "furs",
+          "Quantity": 175
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "parchment",
           "Quantity": 1,
           "Bonus": [
             {
@@ -9890,6 +10266,135 @@
                       "Factor": 3
                     }
                   ]
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@compendium",
+      "Type": "Craft",
+      "UnlockedBy": "Philosophy",
+      "Costs": [
+        {
+          "Name": "manuscript",
+          "Quantity": 50
+        },
+        {
+          "Name": "science",
+          "Quantity": 10000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "compendium",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@blueprint",
+      "Type": "Craft",
+      "UnlockedBy": "Physics",
+      "Costs": [
+        {
+          "Name": "compendium",
+          "Quantity": 25
+        },
+        {
+          "Name": "science",
+          "Quantity": 25000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "blueprint",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true
+    },
+    {
+      "Name": "@thorium",
+      "Type": "Craft",
+      "UnlockedBy": "Thorium",
+      "Costs": [
+        {
+          "Name": "uranium",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "thorium",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Workshop",
+              "Factor": 0.06
+            },
+            {
+              "Name": "Factory",
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Producers": [
+        {
+          "Name": "Reactor",
+          "Factor": -1.25,
+          "Bonus": [
+            {
+              "Name": "Thorium Reactors",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Enriched Thorium",
+                  "Factor": 0.25
                 }
               ]
             }

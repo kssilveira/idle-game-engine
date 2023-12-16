@@ -84,20 +84,9 @@ Edges:
 
 More features from kittens game:
 
-- https://wiki.kittensgame.com/en/game-tabs/workshop
 - https://wiki.kittensgame.com/en/game-tabs/trade
 - https://wiki.kittensgame.com/en/game-tabs/religion
 - https://wiki.kittensgame.com/en/game-tabs/space
 - https://wiki.kittensgame.com/en/game-tabs/time
 - https://wiki.kittensgame.com/en/game-tabs/science/metaphysics
 - https://wiki.kittensgame.com/en/game-tabs/bonfire
-  - building upgrades
-  - effects for
-    - Steamworks, Magneto, Reactor, Tradepost, Mint, Brewery, Chronosphere, Broadcast Tower
-  - active buildings
-
-- maybe
-  - rX: revert action X
-    - sell building
-    - unassign worker
-    - deactivate building
