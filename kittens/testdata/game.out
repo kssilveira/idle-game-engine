@@ -2270,7 +2270,13 @@
     {
       "Name": "sorrow",
       "Type": "Resource",
-      "Capacity": 1
+      "CapacityProducers": [
+        {
+          "Name": "Black Core",
+          "Factor": 1
+        }
+      ],
+      "StartCapacity": 1
     },
     {
       "Name": "gone kitten",
@@ -2686,6 +2692,66 @@
     },
     {
       "Name": "Templars",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Obelisk",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Nexus",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Core",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Event Horizon",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Library",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Radiance",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Blazar",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Dark Nova",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Mausoleum",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Holy Genocide",
       "Type": "Building",
       "IsHidden": true,
       "Capacity": -1
@@ -5649,6 +5715,206 @@
       ]
     },
     {
+      "Name": "Black Obelisk",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Black Obelisk",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Black Nexus",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 5000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Black Nexus",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Black Core",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 10000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Black Core",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Event Horizon",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 25000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Event Horizon",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Black Library",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 30000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Black Library",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Black Radiance",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 37500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Black Radiance",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Blazar",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 50000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Blazar",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Dark Nova",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 75000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "void",
+          "Quantity": 7500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Dark Nova",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Mausoleum",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 50000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "void",
+          "Quantity": 12500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "necrocorn",
+          "Quantity": 10,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Mausoleum",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Holy Genocide",
+      "Type": "Building",
+      "UnlockedBy": "relic",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Quantity": 100000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "void",
+          "Quantity": 25000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Holy Genocide",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
       "Name": "Chronocontrol",
       "Type": "Building",
       "UnlockedBy": "Paradox Theory",
@@ -6332,7 +6598,19 @@
       "Adds": [
         {
           "Name": "relic",
-          "Quantity": 1
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Black Nexus",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Black Pyramid",
+                  "Factor": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     },

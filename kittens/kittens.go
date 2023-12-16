@@ -638,7 +638,10 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "necrocorn", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "sorrow", Type: "Resource", Capacity: 1,
+		Name: "sorrow", Type: "Resource", StartCapacity: 1,
+		CapacityProducers: []data.Resource{{
+			Name: "Black Core", Factor: 1,
+		}},
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
@@ -1105,6 +1108,64 @@ func NewGame(now game.Now) *game.Game {
 			Name: "gold", Quantity: 3000, CostExponentBase: 2.5,
 		}},
 	}, {
+		Name: "Black Obelisk", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 100, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Black Nexus", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 5000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Black Core", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 10000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Event Horizon", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 25000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Black Library", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 30000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Black Radiance", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 37500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Blazar", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 50000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Dark Nova", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 75000, CostExponentBase: 1.15,
+		}, {
+			Name: "void", Quantity: 7500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Mausoleum", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 50000, CostExponentBase: 1.15,
+		}, {
+			Name: "void", Quantity: 12500, CostExponentBase: 1.15,
+		}, {
+			Name: "necrocorn", Quantity: 10, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Holy Genocide", UnlockedBy: "relic",
+		Costs: []data.Resource{{
+			Name: "relic", Quantity: 100000, CostExponentBase: 1.15,
+		}, {
+			Name: "void", Quantity: 25000, CostExponentBase: 1.15,
+		}},
+	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
 		Costs: []data.Resource{{}},
 	}, {
@@ -1356,6 +1417,12 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "relic", Quantity: 1,
+			Bonus: []data.Resource{{
+				Name: "Black Nexus", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Black Pyramid", Factor: 1,
+				}},
+			}},
 		}},
 	}})
 
