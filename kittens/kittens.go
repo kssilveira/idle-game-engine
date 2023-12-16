@@ -482,7 +482,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kitten", Factor: 1, ProductionFloor: true,
 		}, kittenNames)),
 	}, {
-		Name: "furs", Type: "Resource", Capacity: -1,
+		Name: "fur", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.05,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
@@ -502,7 +502,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Brewery", Factor: -0.1 * 5,
 		}},
 	}, {
-		Name: "unicorns", Type: "Resource", Capacity: -1,
+		Name: "unicorn", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "Unic. Pasture", Factor: 0.001 * 5,
 			Bonus: []data.Resource{{
@@ -562,14 +562,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Hubble Space Telescope", Factor: 0.30,
 		}},
 	}, {
-		Name: "gigaflops", Type: "Resource", Capacity: -1,
+		Name: "gigaflop", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "AI Core", Factor: 0.02 * 5,
 		}},
 	}, {
 		Name: "leviathan energy", Type: "Resource", Capacity: 1,
 	}, {
-		Name: "bls", Type: "Resource", Capacity: 1,
+		Name: "tear", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "alicorn", Type: "Resource", Capacity: -1,
+	}, {
+		Name: "sorrow", Type: "Resource", Capacity: 1,
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
@@ -579,11 +583,11 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "ivory", Factor: 0.1, ProductionBoolean: true,
 		}, {
-			Name: "furs", Factor: 0.1, ProductionBoolean: true,
+			Name: "fur", Factor: 0.1, ProductionBoolean: true,
 		}, {
 			Name: "spice", Factor: 0.1, ProductionBoolean: true,
 		}, {
-			Name: "unicorns", Factor: 0.1, ProductionBoolean: true,
+			Name: "unicorn", Factor: 0.1, ProductionBoolean: true,
 		}, {
 			Name: "Amphitheatre", Factor: 0.048,
 		}, {
@@ -635,7 +639,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Unic. Pasture", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "unicorns", Quantity: 2, CostExponentBase: 1.75}},
+		Costs: []data.Resource{{Name: "unicorn", Quantity: 2, CostExponentBase: 1.75}},
 	}, {
 		Name: "Academy", UnlockedBy: "Mathematics",
 		Costs: []data.Resource{{
@@ -902,6 +906,15 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Black Pyramid", UnlockedBy: "Paradox Theory",
 		Costs: []data.Resource{{}},
+	}, {
+		Name: "Unicorn Utopia", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{}},
+	}, {
+		Name: "Sunspire", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{}},
+	}, {
+		Name: "Megalomania", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{}},
 	}})
 
 	addJobs(g, []data.Action{{
@@ -924,11 +937,11 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Send hunters", Type: "Village", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
 		Adds: []data.Resource{{
-			Name: "furs", Quantity: 39.5, Bonus: HuntingBonus,
+			Name: "fur", Quantity: 39.5, Bonus: HuntingBonus,
 		}, {
 			Name: "ivory", Quantity: 10.78, Bonus: HuntingBonus,
 		}, {
-			Name: "unicorns", Quantity: 0.05,
+			Name: "unicorn", Quantity: 0.05,
 		}},
 	}})
 
@@ -1093,7 +1106,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "time crystal", Quantity: 0.25 * 0.98,
 			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
-			Name: "bls", Quantity: 1 * 0.15,
+			Name: "sorrow", Quantity: 1 * 0.15,
 			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
 			Name: "relic", Quantity: 1 * 0.05,
@@ -1102,6 +1115,49 @@ func NewGame(now game.Now) *game.Game {
 			Name: "blueprint", Quantity: 0.1,
 		}, {
 			Name: "spice", Quantity: 8.75,
+		}},
+	}})
+
+	g.AddActions([]data.Action{{
+		Name: "Sacrifice Unicorns", Type: "Craft", UnlockedBy: "Ziggurat",
+		Costs: []data.Resource{{
+			Name: "unicorn", Quantity: 2500,
+		}},
+		Adds: []data.Resource{{
+			Name: "tear", Quantity: 1,
+			Bonus: []data.Resource{{
+				Name: "Ziggurat", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "alicorn",
+		Costs: []data.Resource{{
+			Name: "alicorn", Quantity: 25,
+		}},
+		Adds: []data.Resource{{
+			Name: "time crystal", Quantity: 1,
+			Bonus: []data.Resource{{
+				Name: "Unicorn Utopia", Factor: 0.05,
+			}, {
+				Name: "Sunspire", Factor: 0.10,
+			}},
+		}},
+	}, {
+		Name: "Refine Tears", Type: "Craft", UnlockedBy: "Megalomania",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 10000,
+		}},
+		Adds: []data.Resource{{
+			Name: "sorrow", Quantity: 1,
+		}},
+	}, {
+		Name: "Refine Time Crystals", Type: "Craft", UnlockedBy: "time crystal",
+		Costs: []data.Resource{{
+			Name: "time crystal", Quantity: 25,
+		}},
+		Adds: []data.Resource{{
+			Name: "relic", Quantity: 1,
 		}},
 	}})
 
@@ -2654,7 +2710,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "parchment", UnlockedBy: "Writing",
 		Costs: []data.Resource{{
-			Name: "furs", Quantity: 175,
+			Name: "fur", Quantity: 175,
 		}},
 	}, {
 		Name: "manuscript", UnlockedBy: "Construction",

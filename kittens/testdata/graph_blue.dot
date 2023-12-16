@@ -42,6 +42,9 @@ digraph {
   "Electronics" -> "Broadcast Tower" [color="blue"];
   "Paradox Theory" -> "Chronocontrol" [color="blue"];
   "Paradox Theory" -> "Black Pyramid" [color="blue"];
+  "Paradox Theory" -> "Unicorn Utopia" [color="blue"];
+  "Paradox Theory" -> "Sunspire" [color="blue"];
+  "Paradox Theory" -> "Megalomania" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -58,6 +61,10 @@ digraph {
   "ship" -> "Spiders" [color="blue"];
   "Nuclear Fission" -> "Dragons" [color="blue"];
   "Black Pyramid" -> "Leviathans" [color="blue"];
+  "Ziggurat" -> "Sacrifice Unicorns" [color="blue"];
+  "alicorn" -> "Sacrifice Alicorns" [color="blue"];
+  "Megalomania" -> "Refine Tears" [color="blue"];
+  "time crystal" -> "Refine Time Crystals" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
   "Agriculture" -> "Archery" [color="blue"];
@@ -270,7 +277,9 @@ digraph {
   "Construction" -> "@megalith" [color="blue"];
   "catnip" [shape="cylinder"];
   "wood" [shape="cylinder"];
+  "time crystal" [shape="cylinder"];
   "culture" [shape="cylinder"];
+  "alicorn" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
   "Library" [shape="box3d"];
@@ -313,6 +322,9 @@ digraph {
   "Broadcast Tower" [shape="box3d"];
   "Chronocontrol" [shape="box3d"];
   "Black Pyramid" [shape="box3d"];
+  "Unicorn Utopia" [shape="box3d"];
+  "Sunspire" [shape="box3d"];
+  "Megalomania" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -556,6 +568,9 @@ digraph {
   "Broadcast Tower" [shape="box3d"];
   "Chronocontrol" [shape="box3d"];
   "Black Pyramid" [shape="box3d"];
+  "Unicorn Utopia" [shape="box3d"];
+  "Sunspire" [shape="box3d"];
+  "Megalomania" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -572,6 +587,10 @@ digraph {
   "Spiders" [shape="cds"];
   "Dragons" [shape="cds"];
   "Leviathans" [shape="cds"];
+  "Sacrifice Unicorns" [shape="cds"];
+  "Sacrifice Alicorns" [shape="cds"];
+  "Refine Tears" [shape="cds"];
+  "Refine Time Crystals" [shape="cds"];
   "Calendar" [shape="diamond"];
   "Agriculture" [shape="diamond"];
   "Archery" [shape="diamond"];

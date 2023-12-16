@@ -1889,7 +1889,7 @@
       "StartQuantity": 1
     },
     {
-      "Name": "furs",
+      "Name": "fur",
       "Type": "Resource",
       "Capacity": -1,
       "Producers": [
@@ -1944,7 +1944,7 @@
       ]
     },
     {
-      "Name": "unicorns",
+      "Name": "unicorn",
       "Type": "Resource",
       "Capacity": -1,
       "Producers": [
@@ -2094,7 +2094,7 @@
       ]
     },
     {
-      "Name": "gigaflops",
+      "Name": "gigaflop",
       "Type": "Resource",
       "Capacity": -1,
       "Producers": [
@@ -2110,7 +2110,17 @@
       "Capacity": 1
     },
     {
-      "Name": "bls",
+      "Name": "tear",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "alicorn",
+      "Type": "Resource",
+      "Capacity": -1
+    },
+    {
+      "Name": "sorrow",
       "Type": "Resource",
       "Capacity": 1
     },
@@ -2134,7 +2144,7 @@
           "ProductionBoolean": true
         },
         {
-          "Name": "furs",
+          "Name": "fur",
           "Factor": 0.1,
           "ProductionBoolean": true
         },
@@ -2144,7 +2154,7 @@
           "ProductionBoolean": true
         },
         {
-          "Name": "unicorns",
+          "Name": "unicorn",
           "Factor": 0.1,
           "ProductionBoolean": true
         },
@@ -2427,6 +2437,24 @@
     },
     {
       "Name": "Black Pyramid",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Unicorn Utopia",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Sunspire",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Megalomania",
       "Type": "Building",
       "IsHidden": true,
       "Capacity": -1
@@ -4110,7 +4138,7 @@
       "UnlockedBy": "Animal Husbandry",
       "Costs": [
         {
-          "Name": "unicorns",
+          "Name": "unicorn",
           "Quantity": 2,
           "CostExponentBase": 1.75
         }
@@ -4974,6 +5002,48 @@
       ]
     },
     {
+      "Name": "Unicorn Utopia",
+      "Type": "Building",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {}
+      ],
+      "Adds": [
+        {
+          "Name": "Unicorn Utopia",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Sunspire",
+      "Type": "Building",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {}
+      ],
+      "Adds": [
+        {
+          "Name": "Sunspire",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Megalomania",
+      "Type": "Building",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {}
+      ],
+      "Adds": [
+        {
+          "Name": "Megalomania",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
       "Name": "woodcutter",
       "Type": "Village",
       "UnlockedBy": "Hut",
@@ -5111,7 +5181,7 @@
       ],
       "Adds": [
         {
-          "Name": "furs",
+          "Name": "fur",
           "Quantity": 39.5,
           "Bonus": [
             {
@@ -5163,7 +5233,7 @@
           ]
         },
         {
-          "Name": "unicorns",
+          "Name": "unicorn",
           "Quantity": 0.05
         }
       ]
@@ -5505,7 +5575,7 @@
           ]
         },
         {
-          "Name": "bls",
+          "Name": "sorrow",
           "Quantity": 0.15,
           "Bonus": [
             {
@@ -5531,6 +5601,91 @@
         {
           "Name": "spice",
           "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Sacrifice Unicorns",
+      "Type": "Craft",
+      "UnlockedBy": "Ziggurat",
+      "Costs": [
+        {
+          "Name": "unicorn",
+          "Quantity": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "tear",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Ziggurat",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ]
+    },
+    {
+      "Name": "Sacrifice Alicorns",
+      "Type": "Craft",
+      "UnlockedBy": "alicorn",
+      "Costs": [
+        {
+          "Name": "alicorn",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "time crystal",
+          "Quantity": 1,
+          "Bonus": [
+            {
+              "Name": "Unicorn Utopia",
+              "Factor": 0.05
+            },
+            {
+              "Name": "Sunspire",
+              "Factor": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Refine Tears",
+      "Type": "Craft",
+      "UnlockedBy": "Megalomania",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 10000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "sorrow",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Refine Time Crystals",
+      "Type": "Craft",
+      "UnlockedBy": "time crystal",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "relic",
+          "Quantity": 1
         }
       ]
     },
@@ -10547,7 +10702,7 @@
       "UnlockedBy": "Writing",
       "Costs": [
         {
-          "Name": "furs",
+          "Name": "fur",
           "Quantity": 175
         }
       ],
