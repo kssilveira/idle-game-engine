@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
@@ -38,40 +39,26 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 			} else {
 				edgefn(p.Name, r.Name, "green")
 			}
-			for _, b := range p.Bonus {
-				if p.Factor < 0 {
-					edgefn(b.Name, p.Name, "red")
-				} else {
-					edgefn(b.Name, p.Name, "green")
-				}
-			}
-		}
-		for _, b := range r.Bonus {
-			edgefn(b.Name, r.Name, "green")
+			graphBonus(edgefn, p)
 		}
 		for _, p := range r.CapacityProducers {
 			edgefn(p.Name, r.Name, "limegreen")
-			for _, b := range p.Bonus {
-				edgefn(b.Name, p.Name, "green")
-			}
+			graphBonus(edgefn, p)
 		}
+		graphBonus(edgefn, *r)
 	}
 	for _, a := range g.Actions {
 		for _, c := range a.Costs {
 			edgefn(c.Name, a.Name, "orange")
+			graphBonus(edgefn, c)
 		}
 		for _, add := range a.Adds {
-			if a.Name == add.Name {
-				continue
-			}
 			edgefn(a.Name, add.Name, "limegreen")
+			graphBonus(edgefn, add)
 		}
 		edgefn(a.UnlockedBy, a.Name, "blue")
 	}
 	for _, r := range g.Resources {
-		if r.Type == "Calendar" {
-			continue
-		}
 		if !nodes[r.Name] {
 			continue
 		}
@@ -115,18 +102,32 @@ digraph {
 }
 
 func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colors map[string]bool, excluded map[string]bool, from, to, color string) {
+	if from == to {
+		return
+	}
 	if len(colors) > 0 && !colors[color] {
+		return
+	}
+	if excluded[from] || excluded[to] {
 		return
 	}
 	key := fmt.Sprintf("%s+%s+%s", from, to, color)
 	if edges[key] {
 		return
 	}
-	if excluded[from] || excluded[to] {
-		return
-	}
 	edges[key] = true
 	nodes[from] = true
 	nodes[to] = true
 	logger.Printf(`  "%s" -> "%s" [color="%s"];`+"\n", from, to, color)
+}
+
+func graphBonus(edgefn func(from, to, color string), r data.Resource) {
+	for _, b := range r.Bonus {
+		color := "green"
+		if r.Factor*b.Factor < 0 {
+			color = "red"
+		}
+		edgefn(b.Name, r.Name, color)
+		graphBonus(edgefn, b)
+	}
 }

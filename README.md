@@ -84,8 +84,6 @@ Edges:
 
 More features from kittens game:
 
-- graph recursive nested bonus
-
 - https://wiki.kittensgame.com/en/game-tabs/workshop
 - https://wiki.kittensgame.com/en/game-tabs/trade
 - https://wiki.kittensgame.com/en/game-tabs/religion
