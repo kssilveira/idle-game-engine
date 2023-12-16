@@ -138,6 +138,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -154,6 +158,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -170,6 +178,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -186,6 +198,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -202,6 +218,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -218,6 +238,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -234,6 +258,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -250,6 +278,10 @@
             {
               "Name": "Unic. Pasture",
               "Factor": -0.0015
+            },
+            {
+              "Name": "Robotic Assistance",
+              "Factor": -0.25
             }
           ],
           "ProductionOnGone": true
@@ -275,6 +307,17 @@
         {
           "Name": "Brewery",
           "Factor": -5
+        },
+        {
+          "Name": "Bio Lab",
+          "Factor": -5,
+          "Bonus": [
+            {
+              "Name": "Biofuel Processing",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "Bonus": [
@@ -598,7 +641,28 @@
       "CapacityProducers": [
         {
           "Name": "Library",
-          "Factor": 250
+          "Factor": 250,
+          "Bonus": [
+            {
+              "Name": "Observatory",
+              "Factor": 0.02,
+              "Bonus": [
+                {
+                  "Name": "Titanium Reflectors",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Unobtainium Reflectors",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Eludium Reflectors",
+                  "Factor": 1
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
         },
         {
           "Name": "Academy",
@@ -606,15 +670,47 @@
         },
         {
           "Name": "Observatory",
-          "Factor": 1000
+          "Factor": 1000,
+          "Bonus": [
+            {
+              "Name": "Astrolabe",
+              "Factor": 0.5
+            }
+          ]
         },
         {
           "Name": "Bio Lab",
-          "Factor": 1500
+          "Factor": 1500,
+          "Bonus": [
+            {
+              "Name": "Data Center",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "Uplink",
+                  "Factor": 1
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
         },
         {
           "Name": "Data Center",
-          "Factor": 750
+          "Factor": 750,
+          "Bonus": [
+            {
+              "Name": "Bio Lab",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "Uplink",
+                  "Factor": 1
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
         }
       ],
       "StartCapacity": 250
@@ -1583,7 +1679,21 @@
       "Producers": [
         {
           "Name": "Oil Well",
-          "Factor": 0.1
+          "Factor": 0.1,
+          "Bonus": [
+            {
+              "Name": "Pumpjack",
+              "Factor": 0.45
+            },
+            {
+              "Name": "Oil Refinery",
+              "Factor": 0.35
+            },
+            {
+              "Name": "Oil Distillation",
+              "Factor": 0.75
+            }
+          ]
         },
         {
           "Name": "Magneto",
@@ -1592,6 +1702,23 @@
         {
           "Name": "Calciner",
           "Factor": -0.12
+        },
+        {
+          "Name": "Bio Lab",
+          "Factor": 0.1,
+          "Bonus": [
+            {
+              "Name": "Biofuel Processing",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "GM Catnip",
+                  "Factor": 0.6
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "CapacityProducers": [
@@ -1612,7 +1739,13 @@
         },
         {
           "Name": "Reactor",
-          "Factor": -0.005
+          "Factor": -0.005,
+          "Bonus": [
+            {
+              "Name": "Enriched Uranium",
+              "Factor": -0.25
+            }
+          ]
         },
         {
           "Name": "Quarry",
@@ -1637,7 +1770,13 @@
     {
       "Name": "unobtainium",
       "Type": "Resource",
-      "Capacity": 1
+      "Capacity": 1,
+      "Bonus": [
+        {
+          "Name": "Microwarp Reactors",
+          "Factor": 0.75
+        }
+      ]
     },
     {
       "Name": "time crystal",
@@ -1656,6 +1795,29 @@
     },
     {
       "Name": "void",
+      "Type": "Resource",
+      "Capacity": 1
+    },
+    {
+      "Name": "temporal flux",
+      "Type": "Resource",
+      "Capacity": 1,
+      "Producers": [
+        {
+          "Name": "Chronosphere",
+          "Factor": 0.0003125,
+          "Bonus": [
+            {
+              "Name": "Chronosurge",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ]
+    },
+    {
+      "Name": "blackcoin",
       "Type": "Resource",
       "Capacity": 1
     },
@@ -1788,7 +1950,13 @@
       "Producers": [
         {
           "Name": "Unic. Pasture",
-          "Factor": 0.005
+          "Factor": 0.005,
+          "Bonus": [
+            {
+              "Name": "Unicorn Selection",
+              "Factor": 0.25
+            }
+          ]
         }
       ]
     },
@@ -1857,6 +2025,17 @@
             {
               "Name": "Ziggurat",
               "Factor": 0.08
+            },
+            {
+              "Name": "Bio Lab",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "Uplink",
+                  "Factor": 1
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -1893,7 +2072,26 @@
     {
       "Name": "starchart",
       "Type": "Resource",
-      "Capacity": -1
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "scholar",
+          "Factor": 0.0005,
+          "Bonus": [
+            {
+              "Name": "Astrophysicists",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "Bonus": [
+        {
+          "Name": "Hubble Space Telescope",
+          "Factor": 0.3
+        }
+      ]
     },
     {
       "Name": "steel",
@@ -1922,7 +2120,13 @@
                     },
                     {
                       "Name": "Factory",
-                      "Factor": 0.05
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Factory Logistics",
+                          "Factor": 0.2
+                        }
+                      ]
                     }
                   ],
                   "BonusStartsFromZero": true
@@ -1983,7 +2187,26 @@
     {
       "Name": "thorium",
       "Type": "Resource",
-      "Capacity": 1
+      "Capacity": 1,
+      "Producers": [
+        {
+          "Name": "Reactor",
+          "Factor": -1.25,
+          "Bonus": [
+            {
+              "Name": "Thorium Reactors",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Enriched Thorium",
+                  "Factor": 0.25
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ]
     },
     {
       "Name": "gigaflops",
@@ -2297,6 +2520,12 @@
     },
     {
       "Name": "Broadcast Tower",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Chronocontrol",
       "Type": "Bonfire",
       "IsHidden": true,
       "Capacity": -1
@@ -3213,6 +3442,354 @@
     },
     {
       "Name": "Photolithography",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Uplink",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Cryocomputing",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Machine Learning",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Workshop Automation",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Advanced Automation",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Pneumatic Press",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "High Pressure Engine",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Fuel Injector",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Factory Logistics",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Carbon Sequestration",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Space Manufacturing",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Astrolabe",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Titanium Reflectors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Unobtainium Reflectors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Eludium Reflectors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Hydro Plant Turbines",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Antimatter Bases",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "AI Bases",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Antimatter Fission",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Antimatter Drive",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Antimatter Reactors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Advanced AM Reactors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Void Reactors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Relic Station",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Pumpjack",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Biofuel Processing",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Unicorn Selection",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "GM Catnip",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "CAD System",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "SETI",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Logistics",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Augmentations",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Cold Fusion",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Thorium Reactors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Enriched Uranium",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Enriched Thorium",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Oil Refinery",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Hubble Space Telescope",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Satellite Navigation",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Satellite Radio",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Astrophysicists",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Microwarp Reactors",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Planet Busters",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Thorium Drive",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Oil Distillation",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Factory Processing",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Factory Optimization",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Space Engineers",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "AI Engineers",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chronoengineers",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Telecommunication",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Neural Network",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Robotic Assistance",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Factory Robotics",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Void Aspiration",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Distortion",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Chronosurge",
+      "Type": "Workshop",
+      "IsHidden": true,
+      "Capacity": 1
+    },
+    {
+      "Name": "Invisible Black Hand",
       "Type": "Workshop",
       "IsHidden": true,
       "Capacity": 1
@@ -4327,6 +4904,20 @@
       "Adds": [
         {
           "Name": "Broadcast Tower",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chronocontrol",
+      "Type": "Bonfire",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {}
+      ],
+      "Adds": [
+        {
+          "Name": "Chronocontrol",
           "Quantity": 1
         }
       ]
@@ -7656,6 +8247,1426 @@
       ]
     },
     {
+      "Name": "Uplink",
+      "Type": "Workshop",
+      "UnlockedBy": "Satellites",
+      "LockedBy": "Uplink",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 75000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 1750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Uplink",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Cryocomputing",
+      "Type": "Workshop",
+      "UnlockedBy": "Superconductors",
+      "LockedBy": "Cryocomputing",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Cryocomputing",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Machine Learning",
+      "Type": "Workshop",
+      "UnlockedBy": "Artificial Intelligence",
+      "LockedBy": "Machine Learning",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 25
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Machine Learning",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Workshop Automation",
+      "Type": "Workshop",
+      "UnlockedBy": "Machinery",
+      "LockedBy": "Workshop Automation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 10000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Workshop Automation",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Advanced Automation",
+      "Type": "Workshop",
+      "UnlockedBy": "Industrialization",
+      "LockedBy": "Advanced Automation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 75
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Advanced Automation",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Pneumatic Press",
+      "Type": "Workshop",
+      "UnlockedBy": "Physics",
+      "LockedBy": "Pneumatic Press",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 20000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 30
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Pneumatic Press",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "High Pressure Engine",
+      "Type": "Workshop",
+      "UnlockedBy": "Steel",
+      "LockedBy": "High Pressure Engine",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 20000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 25
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "High Pressure Engine",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Fuel Injector",
+      "Type": "Workshop",
+      "UnlockedBy": "Combustion",
+      "LockedBy": "Fuel Injector",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 250
+        },
+        {
+          "Name": "oil",
+          "Quantity": 20000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Fuel Injector",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Factory Logistics",
+      "Type": "Workshop",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "Factory Logistics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 250
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 2000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Factory Logistics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Carbon Sequestration",
+      "Type": "Workshop",
+      "UnlockedBy": "Ecology",
+      "LockedBy": "Carbon Sequestration",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 75000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1250
+        },
+        {
+          "Name": "gear",
+          "Quantity": 125
+        },
+        {
+          "Name": "steel",
+          "Quantity": 4000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Carbon Sequestration",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Space Manufacturing",
+      "Type": "Workshop",
+      "UnlockedBy": "Superconductors",
+      "LockedBy": "Space Manufacturing",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 125000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Space Manufacturing",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Astrolabe",
+      "Type": "Workshop",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Astrolabe",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 25000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5
+        },
+        {
+          "Name": "starchart",
+          "Quantity": 75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Astrolabe",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Titanium Reflectors",
+      "Type": "Workshop",
+      "UnlockedBy": "Navigation",
+      "LockedBy": "Titanium Reflectors",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 20000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 15
+        },
+        {
+          "Name": "starchart",
+          "Quantity": 20
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Titanium Reflectors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unobtainium Reflectors",
+      "Type": "Workshop",
+      "UnlockedBy": "Exogeology",
+      "LockedBy": "Unobtainium Reflectors",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 75
+        },
+        {
+          "Name": "starchart",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unobtainium Reflectors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Eludium Reflectors",
+      "Type": "Workshop",
+      "UnlockedBy": "Advanced Exogeology",
+      "LockedBy": "Eludium Reflectors",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Eludium Reflectors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hydro Plant Turbines",
+      "Type": "Workshop",
+      "UnlockedBy": "Exogeology",
+      "LockedBy": "Hydro Plant Turbines",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hydro Plant Turbines",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Antimatter Bases",
+      "Type": "Workshop",
+      "UnlockedBy": "Antimatter",
+      "LockedBy": "Antimatter Bases",
+      "Costs": [
+        {
+          "Name": "eludium",
+          "Quantity": 15
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Antimatter Bases",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "AI Bases",
+      "Type": "Workshop",
+      "UnlockedBy": "Antimatter Bases",
+      "LockedBy": "AI Bases",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 750000
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 7500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "AI Bases",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Antimatter Fission",
+      "Type": "Workshop",
+      "UnlockedBy": "Antimatter",
+      "LockedBy": "Antimatter Fission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 525000
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 175
+        },
+        {
+          "Name": "thorium",
+          "Quantity": 7500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Antimatter Fission",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Antimatter Drive",
+      "Type": "Workshop",
+      "UnlockedBy": "Antimatter",
+      "LockedBy": "Antimatter Drive",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 525000
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Antimatter Drive",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Antimatter Reactors",
+      "Type": "Workshop",
+      "UnlockedBy": "Antimatter",
+      "LockedBy": "Antimatter Reactors",
+      "Costs": [
+        {
+          "Name": "eludium",
+          "Quantity": 35
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Antimatter Reactors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Advanced AM Reactors",
+      "Type": "Workshop",
+      "UnlockedBy": "Antimatter Reactors",
+      "LockedBy": "Advanced AM Reactors",
+      "Costs": [
+        {
+          "Name": "eludium",
+          "Quantity": 70
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 1750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Advanced AM Reactors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Void Reactors",
+      "Type": "Workshop",
+      "UnlockedBy": "Advanced AM Reactors",
+      "LockedBy": "Void Reactors",
+      "Costs": [
+        {
+          "Name": "void",
+          "Quantity": 250
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Void Reactors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Relic Station",
+      "Type": "Workshop",
+      "UnlockedBy": "Cryptotheology",
+      "LockedBy": "Relic Station",
+      "Costs": [
+        {
+          "Name": "eludium",
+          "Quantity": 100
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Relic Station",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Pumpjack",
+      "Type": "Workshop",
+      "UnlockedBy": "Mechanization",
+      "LockedBy": "Pumpjack",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 250
+        },
+        {
+          "Name": "gear",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Pumpjack",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Biofuel Processing",
+      "Type": "Workshop",
+      "UnlockedBy": "Biochemistry",
+      "LockedBy": "Biofuel Processing",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 150000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Biofuel Processing",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unicorn Selection",
+      "Type": "Workshop",
+      "UnlockedBy": "Genetics",
+      "LockedBy": "Unicorn Selection",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unicorn Selection",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "GM Catnip",
+      "Type": "Workshop",
+      "UnlockedBy": "Genetics",
+      "LockedBy": "GM Catnip",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1500
+        },
+        {
+          "Name": "catnip",
+          "Quantity": 1000000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "GM Catnip",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "CAD System",
+      "Type": "Workshop",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "CAD System",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "CAD System",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "SETI",
+      "Type": "Workshop",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "SETI",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "SETI",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Logistics",
+      "Type": "Workshop",
+      "UnlockedBy": "Industrialization",
+      "LockedBy": "Logistics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 100
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Logistics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Augmentations",
+      "Type": "Workshop",
+      "UnlockedBy": "Nanotechnology",
+      "LockedBy": "Augmentations",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 150000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5000
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Augmentations",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Cold Fusion",
+      "Type": "Workshop",
+      "UnlockedBy": "Superconductors",
+      "LockedBy": "Cold Fusion",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 200000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Cold Fusion",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Thorium Reactors",
+      "Type": "Workshop",
+      "UnlockedBy": "Thorium",
+      "LockedBy": "Thorium Reactors",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 400000
+        },
+        {
+          "Name": "thorium",
+          "Quantity": 10000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Thorium Reactors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Enriched Uranium",
+      "Type": "Workshop",
+      "UnlockedBy": "Particle Physics",
+      "LockedBy": "Enriched Uranium",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 7500
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 150
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Enriched Uranium",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Enriched Thorium",
+      "Type": "Workshop",
+      "UnlockedBy": "Thorium Reactors",
+      "LockedBy": "Enriched Thorium",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 12500
+        },
+        {
+          "Name": "thorium",
+          "Quantity": 500000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Enriched Thorium",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Oil Refinery",
+      "Type": "Workshop",
+      "UnlockedBy": "Combustion",
+      "LockedBy": "Oil Refinery",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 125000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1250
+        },
+        {
+          "Name": "gear",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Oil Refinery",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hubble Space Telescope",
+      "Type": "Workshop",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Hubble Space Telescope",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 1250
+        },
+        {
+          "Name": "oil",
+          "Quantity": 50000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hubble Space Telescope",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Satellite Navigation",
+      "Type": "Workshop",
+      "UnlockedBy": "Hubble Space Telescope",
+      "LockedBy": "Satellite Navigation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 200000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Satellite Navigation",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Satellite Radio",
+      "Type": "Workshop",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Satellite Radio",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 225000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Satellite Radio",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Astrophysicists",
+      "Type": "Workshop",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Astrophysicists",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 250000
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 350
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Astrophysicists",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Microwarp Reactors",
+      "Type": "Workshop",
+      "UnlockedBy": "Advanced Exogeology",
+      "LockedBy": "Microwarp Reactors",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 150000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Microwarp Reactors",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Planet Busters",
+      "Type": "Workshop",
+      "UnlockedBy": "Advanced Exogeology",
+      "LockedBy": "Planet Busters",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 275000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Planet Busters",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Thorium Drive",
+      "Type": "Workshop",
+      "UnlockedBy": "Thorium",
+      "LockedBy": "Thorium Drive",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 400000
+        },
+        {
+          "Name": "trade ship",
+          "Quantity": 10000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 40000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 2000
+        },
+        {
+          "Name": "thorium",
+          "Quantity": 100000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Thorium Drive",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Oil Distillation",
+      "Type": "Workshop",
+      "UnlockedBy": "Rocketry",
+      "LockedBy": "Oil Distillation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 175000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Oil Distillation",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Factory Processing",
+      "Type": "Workshop",
+      "UnlockedBy": "Oil Processing",
+      "LockedBy": "Factory Processing",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 195000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 7500
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Factory Processing",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Factory Optimization",
+      "Type": "Workshop",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "Factory Optimization",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 75000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 250
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Factory Optimization",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Space Engineers",
+      "Type": "Workshop",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Space Engineers",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 225000
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 200
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Space Engineers",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "AI Engineers",
+      "Type": "Workshop",
+      "UnlockedBy": "Artificial Intelligence",
+      "LockedBy": "AI Engineers",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 35000
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 50
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "AI Engineers",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chronoengineers",
+      "Type": "Workshop",
+      "UnlockedBy": "Tachyon Theory",
+      "LockedBy": "Chronoengineers",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 500000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 5
+        },
+        {
+          "Name": "eludium",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chronoengineers",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Telecommunication",
+      "Type": "Workshop",
+      "UnlockedBy": "Electronics",
+      "LockedBy": "Telecommunication",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 150000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 5000
+        },
+        {
+          "Name": "uranium",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Telecommunication",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Neural Network",
+      "Type": "Workshop",
+      "UnlockedBy": "Artificial Intelligence",
+      "LockedBy": "Neural Network",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 200000
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 7500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Neural Network",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Robotic Assistance",
+      "Type": "Workshop",
+      "UnlockedBy": "Robotics",
+      "LockedBy": "Robotic Assistance",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 100000
+        },
+        {
+          "Name": "steel",
+          "Quantity": 10000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Robotic Assistance",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Factory Robotics",
+      "Type": "Workshop",
+      "UnlockedBy": "Robotics",
+      "LockedBy": "Factory Robotics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 75000
+        },
+        {
+          "Name": "gear",
+          "Quantity": 250
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 1250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Factory Robotics",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Void Aspiration",
+      "Type": "Workshop",
+      "UnlockedBy": "Void Energy",
+      "LockedBy": "Void Aspiration",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Quantity": 15
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 2000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Void Aspiration",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Distortion",
+      "Type": "Workshop",
+      "UnlockedBy": "Paradox Theory",
+      "LockedBy": "Distortion",
+      "Costs": [
+        {
+          "Name": "science",
+          "Quantity": 300000
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 25
+        },
+        {
+          "Name": "antimatter",
+          "Quantity": 2000
+        },
+        {
+          "Name": "void",
+          "Quantity": 1000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Distortion",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chronosurge",
+      "Type": "Workshop",
+      "UnlockedBy": "Chronocontrol",
+      "LockedBy": "Chronosurge",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Quantity": 25
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 100000
+        },
+        {
+          "Name": "void",
+          "Quantity": 750
+        },
+        {
+          "Name": "temporal flux",
+          "Quantity": 6500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chronosurge",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Invisible Black Hand",
+      "Type": "Workshop",
+      "UnlockedBy": "Blackchain",
+      "LockedBy": "Invisible Black Hand",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Quantity": 128
+        },
+        {
+          "Name": "blackcoin",
+          "Quantity": 64
+        },
+        {
+          "Name": "void",
+          "Quantity": 32
+        },
+        {
+          "Name": "temporal flux",
+          "Quantity": 4096
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Invisible Black Hand",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
       "Name": "@beam",
       "Type": "Craft",
       "UnlockedBy": "Construction",
@@ -7676,7 +9687,13 @@
             },
             {
               "Name": "Factory",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
             }
           ]
         }
@@ -7704,7 +9721,13 @@
             },
             {
               "Name": "Factory",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
             }
           ]
         }
@@ -7732,7 +9755,13 @@
             },
             {
               "Name": "Factory",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
             }
           ]
         }
@@ -7760,7 +9789,13 @@
             },
             {
               "Name": "Factory",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
             }
           ]
         }
@@ -7788,7 +9823,13 @@
             },
             {
               "Name": "Factory",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
             }
           ]
         }
@@ -7820,7 +9861,13 @@
             },
             {
               "Name": "Factory",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
             }
           ]
         }
@@ -7881,7 +9928,13 @@
             },
             {
               "Name": "Factory",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
             }
           ]
         }

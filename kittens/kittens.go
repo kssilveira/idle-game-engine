@@ -12,6 +12,9 @@ var (
 		Name: "Workshop", Factor: 0.06,
 	}, {
 		Name: "Factory", Factor: 0.05,
+		Bonus: []data.Resource{{
+			Name: "Factory Logistics", Factor: 0.2,
+		}},
 	}}
 )
 
@@ -99,6 +102,8 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Pasture", Factor: -0.005,
 			}, {
 				Name: "Unic. Pasture", Factor: -0.0015,
+			}, {
+				Name: "Robotic Assistance", Factor: -0.25,
 			}},
 		}, kittenNames), []data.Resource{{
 			Name: "farmer", Factor: 1 * 5,
@@ -111,6 +116,12 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Brewery", Factor: -1 * 5,
+		}, {
+			Name: "Bio Lab", Factor: -1 * 5,
+			Bonus: []data.Resource{{
+				Name: "Biofuel Processing", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
 		}}),
 		Bonus: []data.Resource{{
 			Name: "Aqueduct", Factor: 0.03,
@@ -180,14 +191,42 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Library", Factor: 250,
+			Bonus: []data.Resource{{
+				Name: "Observatory", Factor: 0.02,
+				Bonus: []data.Resource{{
+					Name: "Titanium Reflectors", Factor: 1,
+				}, {
+					Name: "Unobtainium Reflectors", Factor: 1,
+				}, {
+					Name: "Eludium Reflectors", Factor: 1,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}, {
 			Name: "Academy", Factor: 500,
 		}, {
 			Name: "Observatory", Factor: 1000,
+			Bonus: []data.Resource{{
+				Name: "Astrolabe", Factor: 0.5,
+			}},
 		}, {
 			Name: "Bio Lab", Factor: 1500,
+			Bonus: []data.Resource{{
+				Name: "Data Center", Factor: 0.01,
+				Bonus: []data.Resource{{
+					Name: "Uplink", Factor: 1,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}, {
 			Name: "Data Center", Factor: 750,
+			Bonus: []data.Resource{{
+				Name: "Bio Lab", Factor: 0.01,
+				Bonus: []data.Resource{{
+					Name: "Uplink", Factor: 1,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 	}, {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
@@ -360,10 +399,26 @@ func NewGame(now game.Now) *game.Game {
 		Name: "oil", Type: "Resource", StartCapacity: 1,
 		Producers: []data.Resource{{
 			Name: "Oil Well", Factor: 0.02 * 5,
+			Bonus: []data.Resource{{
+				Name: "Pumpjack", Factor: 0.45,
+			}, {
+				Name: "Oil Refinery", Factor: 0.35,
+			}, {
+				Name: "Oil Distillation", Factor: 0.75,
+			}},
 		}, {
 			Name: "Magneto", Factor: -0.05 * 5,
 		}, {
 			Name: "Calciner", Factor: -0.024 * 5,
+		}, {
+			Name: "Bio Lab", Factor: 0.10,
+			Bonus: []data.Resource{{
+				Name: "Biofuel Processing", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "GM Catnip", Factor: 0.60,
+				}},
+			}},
+			BonusStartsFromZero: true,
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Oil Well", Factor: 1500,
@@ -374,6 +429,9 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Accelerator", Factor: 0.0025 * 5,
 		}, {
 			Name: "Reactor", Factor: -0.001 * 5,
+			Bonus: []data.Resource{{
+				Name: "Enriched Uranium", Factor: -0.25,
+			}},
 		}, {
 			Name: "Quarry", Factor: 0.0005 * 5,
 			Bonus: []data.Resource{{
@@ -386,6 +444,9 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "unobtainium", Type: "Resource", Capacity: 1,
+		Bonus: []data.Resource{{
+			Name: "Microwarp Reactors", Factor: 0.75,
+		}},
 	}, {
 		Name: "time crystal", Type: "Resource", Capacity: 1,
 	}, {
@@ -394,6 +455,17 @@ func NewGame(now game.Now) *game.Game {
 		Name: "relic", Type: "Resource", Capacity: 1,
 	}, {
 		Name: "void", Type: "Resource", Capacity: 1,
+	}, {
+		Name: "temporal flux", Type: "Resource", Capacity: 1,
+		Producers: []data.Resource{{
+			Name: "Chronosphere", Factor: 1. / (2 * 400 * 4),
+			Bonus: []data.Resource{{
+				Name: "Chronosurge", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "blackcoin", Type: "Resource", Capacity: 1,
 	}, {
 		Name: "kitten", Type: "Resource", Capacity: 0,
 		Producers: []data.Resource{{
@@ -431,7 +503,12 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "unicorns", Type: "Resource", Capacity: -1,
-		Producers: []data.Resource{{Name: "Unic. Pasture", Factor: 0.001 * 5}},
+		Producers: []data.Resource{{
+			Name: "Unic. Pasture", Factor: 0.001 * 5,
+			Bonus: []data.Resource{{
+				Name: "Unicorn Selection", Factor: 0.25,
+			}},
+		}},
 	}, {
 		Name: "culture", Type: "Resource", StartCapacity: 575,
 		Producers: []data.Resource{{
@@ -450,7 +527,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Chapel", Factor: 200, Bonus: CultureCapacityBonus,
 		}, {
-			Name: "Data Center", Factor: 250, Bonus: CultureCapacityBonus,
+			Name: "Data Center", Factor: 250,
+			Bonus: join(CultureCapacityBonus, []data.Resource{{
+				Name: "Bio Lab", Factor: 0.01,
+				Bonus: []data.Resource{{
+					Name: "Uplink", Factor: 1,
+				}},
+				BonusStartsFromZero: true,
+			}}),
 		}},
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
@@ -467,6 +551,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "starchart", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "scholar", Factor: 0.0005,
+			Bonus: []data.Resource{{
+				Name: "Astrophysicists", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
+		}},
+		Bonus: []data.Resource{{
+			Name: "Hubble Space Telescope", Factor: 0.30,
+		}},
 	}, {
 		Name: "steel", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
@@ -505,6 +599,16 @@ func NewGame(now game.Now) *game.Game {
 		Name: "eludium", Type: "Resource", Capacity: 1,
 	}, {
 		Name: "thorium", Type: "Resource", Capacity: 1,
+		Producers: []data.Resource{{
+			Name: "Reactor", Factor: -0.25 * 5,
+			Bonus: []data.Resource{{
+				Name: "Thorium Reactors", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Enriched Thorium", Factor: 0.25,
+				}},
+			}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "gigaflops", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
@@ -836,6 +940,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "titanium", Quantity: 75, CostExponentBase: 1.18,
 		}},
+	}, {
+		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{}},
 	}})
 
 	addJobs(g, []data.Action{{
@@ -1863,6 +1970,484 @@ func NewGame(now game.Now) *game.Game {
 			Name: "oil", Quantity: 50000,
 		}, {
 			Name: "uranium", Quantity: 250,
+		}},
+	}, {
+		Name: "Uplink", UnlockedBy: "Satellites",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 75000,
+		}, {
+			Name: "alloy", Quantity: 1750,
+		}},
+	}, {
+		Name: "Cryocomputing", UnlockedBy: "Superconductors",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 125000,
+		}, {
+			Name: "eludium", Quantity: 15,
+		}},
+	}, {
+		Name: "Machine Learning", UnlockedBy: "Artificial Intelligence",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 175000,
+		}, {
+			Name: "eludium", Quantity: 25,
+		}, {
+			Name: "antimatter", Quantity: 125,
+		}},
+	}, {
+		Name: "Workshop Automation", UnlockedBy: "Machinery",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 10000,
+		}, {
+			Name: "gear", Quantity: 25,
+		}},
+	}, {
+		Name: "Advanced Automation", UnlockedBy: "Industrialization",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "gear", Quantity: 75,
+		}, {
+			Name: "blueprint", Quantity: 25,
+		}},
+	}, {
+		Name: "Pneumatic Press", UnlockedBy: "Physics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 20000,
+		}, {
+			Name: "gear", Quantity: 30,
+		}, {
+			Name: "blueprint", Quantity: 5,
+		}},
+	}, {
+		Name: "High Pressure Engine", UnlockedBy: "Steel",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 20000,
+		}, {
+			Name: "gear", Quantity: 25,
+		}, {
+			Name: "blueprint", Quantity: 5,
+		}},
+	}, {
+		Name: "Fuel Injector", UnlockedBy: "Combustion",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "gear", Quantity: 250,
+		}, {
+			Name: "oil", Quantity: 20000,
+		}},
+	}, {
+		Name: "Factory Logistics", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "gear", Quantity: 250,
+		}, {
+			Name: "titanium", Quantity: 2000,
+		}},
+	}, {
+		Name: "Carbon Sequestration", UnlockedBy: "Ecology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 75000,
+		}, {
+			Name: "titanium", Quantity: 1250,
+		}, {
+			Name: "gear", Quantity: 125,
+		}, {
+			Name: "steel", Quantity: 4000,
+		}, {
+			Name: "alloy", Quantity: 1000,
+		}},
+	}, {
+		Name: "Space Manufacturing", UnlockedBy: "Superconductors",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "titanium", Quantity: 125000,
+		}},
+	}, {
+		Name: "Astrolabe", UnlockedBy: "Navigation",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 25000,
+		}, {
+			Name: "titanium", Quantity: 5,
+		}, {
+			Name: "starchart", Quantity: 75,
+		}},
+	}, {
+		Name: "Titanium Reflectors", UnlockedBy: "Navigation",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 20000,
+		}, {
+			Name: "titanium", Quantity: 15,
+		}, {
+			Name: "starchart", Quantity: 20,
+		}},
+	}, {
+		Name: "Unobtainium Reflectors", UnlockedBy: "Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "unobtainium", Quantity: 75,
+		}, {
+			Name: "starchart", Quantity: 750,
+		}},
+	}, {
+		Name: "Eludium Reflectors", UnlockedBy: "Advanced Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "eludium", Quantity: 15,
+		}},
+	}, {
+		Name: "Hydro Plant Turbines", UnlockedBy: "Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "unobtainium", Quantity: 125,
+		}},
+	}, {
+		Name: "Antimatter Bases", UnlockedBy: "Antimatter",
+		Costs: []data.Resource{{
+			Name: "eludium", Quantity: 15,
+		}, {
+			Name: "antimatter", Quantity: 250,
+		}},
+	}, {
+		Name: "AI Bases", UnlockedBy: "Antimatter Bases",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 750000,
+		}, {
+			Name: "antimatter", Quantity: 7500,
+		}},
+	}, {
+		Name: "Antimatter Fission", UnlockedBy: "Antimatter",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 525000,
+		}, {
+			Name: "antimatter", Quantity: 175,
+		}, {
+			Name: "thorium", Quantity: 7500,
+		}},
+	}, {
+		Name: "Antimatter Drive", UnlockedBy: "Antimatter",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 525000,
+		}, {
+			Name: "antimatter", Quantity: 125,
+		}},
+	}, {
+		Name: "Antimatter Reactors", UnlockedBy: "Antimatter",
+		Costs: []data.Resource{{
+			Name: "eludium", Quantity: 35,
+		}, {
+			Name: "antimatter", Quantity: 750,
+		}},
+	}, {
+		Name: "Advanced AM Reactors", UnlockedBy: "Antimatter Reactors",
+		Costs: []data.Resource{{
+			Name: "eludium", Quantity: 70,
+		}, {
+			Name: "antimatter", Quantity: 1750,
+		}},
+	}, {
+		Name: "Void Reactors", UnlockedBy: "Advanced AM Reactors",
+		Costs: []data.Resource{{
+			Name: "void", Quantity: 250,
+		}, {
+			Name: "antimatter", Quantity: 2500,
+		}},
+	}, {
+		Name: "Relic Station", UnlockedBy: "Cryptotheology",
+		Costs: []data.Resource{{
+			Name: "eludium", Quantity: 100,
+		}, {
+			Name: "antimatter", Quantity: 5000,
+		}},
+	}, {
+		Name: "Pumpjack", UnlockedBy: "Mechanization",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "titanium", Quantity: 250,
+		}, {
+			Name: "gear", Quantity: 125,
+		}},
+	}, {
+		Name: "Biofuel Processing", UnlockedBy: "Biochemistry",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 150000,
+		}, {
+			Name: "titanium", Quantity: 1250,
+		}},
+	}, {
+		Name: "Unicorn Selection", UnlockedBy: "Genetics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 175000,
+		}, {
+			Name: "titanium", Quantity: 1500,
+		}},
+	}, {
+		Name: "GM Catnip", UnlockedBy: "Genetics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 175000,
+		}, {
+			Name: "titanium", Quantity: 1500,
+		}, {
+			Name: "catnip", Quantity: 1000000,
+		}},
+	}, {
+		Name: "CAD System", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 125000,
+		}, {
+			Name: "titanium", Quantity: 750,
+		}},
+	}, {
+		Name: "SETI", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 125000,
+		}, {
+			Name: "titanium", Quantity: 250,
+		}},
+	}, {
+		Name: "Logistics", UnlockedBy: "Industrialization",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "gear", Quantity: 100,
+		}, {
+			Name: "scaffold", Quantity: 1000,
+		}},
+	}, {
+		Name: "Augmentations", UnlockedBy: "Nanotechnology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 150000,
+		}, {
+			Name: "titanium", Quantity: 5000,
+		}, {
+			Name: "uranium", Quantity: 50,
+		}},
+	}, {
+		Name: "Cold Fusion", UnlockedBy: "Superconductors",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 200000,
+		}, {
+			Name: "eludium", Quantity: 25,
+		}},
+	}, {
+		Name: "Thorium Reactors", UnlockedBy: "Thorium",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 400000,
+		}, {
+			Name: "thorium", Quantity: 10000,
+		}},
+	}, {
+		Name: "Enriched Uranium", UnlockedBy: "Particle Physics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 175000,
+		}, {
+			Name: "titanium", Quantity: 7500,
+		}, {
+			Name: "uranium", Quantity: 150,
+		}},
+	}, {
+		Name: "Enriched Thorium", UnlockedBy: "Thorium Reactors",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 12500,
+		}, {
+			Name: "thorium", Quantity: 500000,
+		}},
+	}, {
+		Name: "Oil Refinery", UnlockedBy: "Combustion",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 125000,
+		}, {
+			Name: "titanium", Quantity: 1250,
+		}, {
+			Name: "gear", Quantity: 500,
+		}},
+	}, {
+		Name: "Hubble Space Telescope", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "alloy", Quantity: 1250,
+		}, {
+			Name: "oil", Quantity: 50000,
+		}},
+	}, {
+		Name: "Satellite Navigation", UnlockedBy: "Hubble Space Telescope",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 200000,
+		}, {
+			Name: "alloy", Quantity: 750,
+		}},
+	}, {
+		Name: "Satellite Radio", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 225000,
+		}, {
+			Name: "alloy", Quantity: 5000,
+		}},
+	}, {
+		Name: "Astrophysicists", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 250000,
+		}, {
+			Name: "unobtainium", Quantity: 350,
+		}},
+	}, {
+		Name: "Microwarp Reactors", UnlockedBy: "Advanced Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 150000,
+		}, {
+			Name: "eludium", Quantity: 50,
+		}},
+	}, {
+		Name: "Planet Busters", UnlockedBy: "Advanced Exogeology",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 275000,
+		}, {
+			Name: "eludium", Quantity: 250,
+		}},
+	}, {
+		Name: "Thorium Drive", UnlockedBy: "Thorium",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 400000,
+		}, {
+			Name: "trade ship", Quantity: 10000,
+		}, {
+			Name: "gear", Quantity: 40000,
+		}, {
+			Name: "alloy", Quantity: 2000,
+		}, {
+			Name: "thorium", Quantity: 100000,
+		}},
+	}, {
+		Name: "Oil Distillation", UnlockedBy: "Rocketry",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 175000,
+		}, {
+			Name: "titanium", Quantity: 5000,
+		}},
+	}, {
+		Name: "Factory Processing", UnlockedBy: "Oil Processing",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 195000,
+		}, {
+			Name: "titanium", Quantity: 7500,
+		}, {
+			Name: "concrete", Quantity: 125,
+		}},
+	}, {
+		Name: "Factory Optimization", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 75000,
+		}, {
+			Name: "gear", Quantity: 250,
+		}, {
+			Name: "titanium", Quantity: 1250,
+		}},
+	}, {
+		Name: "Space Engineers", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 225000,
+		}, {
+			Name: "alloy", Quantity: 200,
+		}},
+	}, {
+		Name: "AI Engineers", UnlockedBy: "Artificial Intelligence",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 35000,
+		}, {
+			Name: "eludium", Quantity: 50,
+		}, {
+			Name: "antimatter", Quantity: 500,
+		}},
+	}, {
+		Name: "Chronoengineers", UnlockedBy: "Tachyon Theory",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 500000,
+		}, {
+			Name: "time crystal", Quantity: 5,
+		}, {
+			Name: "eludium", Quantity: 100,
+		}},
+	}, {
+		Name: "Telecommunication", UnlockedBy: "Electronics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 150000,
+		}, {
+			Name: "titanium", Quantity: 5000,
+		}, {
+			Name: "uranium", Quantity: 50,
+		}},
+	}, {
+		Name: "Neural Network", UnlockedBy: "Artificial Intelligence",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 200000,
+		}, {
+			Name: "titanium", Quantity: 7500,
+		}},
+	}, {
+		Name: "Robotic Assistance", UnlockedBy: "Robotics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 100000,
+		}, {
+			Name: "steel", Quantity: 10000,
+		}, {
+			Name: "gear", Quantity: 250,
+		}},
+	}, {
+		Name: "Factory Robotics", UnlockedBy: "Robotics",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 75000,
+		}, {
+			Name: "gear", Quantity: 250,
+		}, {
+			Name: "titanium", Quantity: 1250,
+		}},
+	}, {
+		Name: "Void Aspiration", UnlockedBy: "Void Energy",
+		Costs: []data.Resource{{
+			Name: "time crystal", Quantity: 15,
+		}, {
+			Name: "antimatter", Quantity: 2000,
+		}},
+	}, {
+		Name: "Distortion", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{
+			Name: "science", Quantity: 300000,
+		}, {
+			Name: "time crystal", Quantity: 25,
+		}, {
+			Name: "antimatter", Quantity: 2000,
+		}, {
+			Name: "void", Quantity: 1000,
+		}},
+	}, {
+		Name: "Chronosurge", UnlockedBy: "Chronocontrol",
+		Costs: []data.Resource{{
+			Name: "time crystal", Quantity: 25,
+		}, {
+			Name: "unobtainium", Quantity: 100000,
+		}, {
+			Name: "void", Quantity: 750,
+		}, {
+			Name: "temporal flux", Quantity: 6500,
+		}},
+	}, {
+		Name: "Invisible Black Hand", UnlockedBy: "Blackchain",
+		Costs: []data.Resource{{
+			Name: "time crystal", Quantity: 128,
+		}, {
+			Name: "blackcoin", Quantity: 64,
+		}, {
+			Name: "void", Quantity: 32,
+		}, {
+			Name: "temporal flux", Quantity: 4096,
 		}},
 	}})
 
