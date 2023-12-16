@@ -711,6 +711,17 @@
               "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Temple",
+          "Factor": 500,
+          "Bonus": [
+            {
+              "Name": "Scholasticism",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartCapacity": 250
@@ -758,6 +769,17 @@
         {
           "Name": "Mansion",
           "Factor": 50
+        },
+        {
+          "Name": "Temple",
+          "Factor": 75,
+          "Bonus": [
+            {
+              "Name": "Templars",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartCapacity": 250
@@ -1998,7 +2020,17 @@
         },
         {
           "Name": "Temple",
-          "Factor": 0.5
+          "Factor": 0.5,
+          "Bonus": [
+            {
+              "Name": "Stained Glass",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Stained Glass",
+              "Factor": 2
+            }
+          ]
         }
       ],
       "CapacityProducers": [
@@ -2092,6 +2124,17 @@
               "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Temple",
+          "Factor": 125,
+          "Bonus": [
+            {
+              "Name": "Basilica",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartCapacity": 575
@@ -2115,10 +2158,26 @@
           "Factor": 0.025
         }
       ],
+      "Bonus": [
+        {
+          "Name": "Solar Chant",
+          "Factor": 0.1
+        }
+      ],
       "CapacityProducers": [
         {
           "Name": "Temple",
-          "Factor": 100
+          "Factor": 100,
+          "Bonus": [
+            {
+              "Name": "Golden Spire",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Sun Altar",
+              "Factor": 0.5
+            }
+          ]
         }
       ],
       "StartCapacity": 1
@@ -2254,6 +2313,17 @@
         {
           "Name": "Broadcast Tower",
           "Factor": 0.75
+        },
+        {
+          "Name": "Temple",
+          "Factor": 0.005,
+          "Bonus": [
+            {
+              "Name": "Sun Altar",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartQuantity": 0.1
@@ -2574,6 +2644,48 @@
     },
     {
       "Name": "Black Pyramid",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Solar Chant",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Scholasticism",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Golden Spire",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Sun Altar",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Stained Glass",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Basilica",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Templars",
       "Type": "Building",
       "IsHidden": true,
       "Capacity": -1
@@ -5381,6 +5493,157 @@
       "Adds": [
         {
           "Name": "Black Pyramid",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Solar Chant",
+      "Type": "Building",
+      "UnlockedBy": "faith",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Quantity": 100,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Solar Chant",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Scholasticism",
+      "Type": "Building",
+      "UnlockedBy": "faith",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Quantity": 250,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Scholasticism",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Golden Spire",
+      "Type": "Building",
+      "UnlockedBy": "faith",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Quantity": 350,
+          "CostExponentBase": 2.5
+        },
+        {
+          "Name": "gold",
+          "Quantity": 150,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Golden Spire",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Sun Altar",
+      "Type": "Building",
+      "UnlockedBy": "faith",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Quantity": 500,
+          "CostExponentBase": 2.5
+        },
+        {
+          "Name": "gold",
+          "Quantity": 250,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Sun Altar",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Stained Glass",
+      "Type": "Building",
+      "UnlockedBy": "faith",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Quantity": 500,
+          "CostExponentBase": 2.5
+        },
+        {
+          "Name": "gold",
+          "Quantity": 250,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Stained Glass",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Basilica",
+      "Type": "Building",
+      "UnlockedBy": "faith",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Quantity": 1250,
+          "CostExponentBase": 2.5
+        },
+        {
+          "Name": "gold",
+          "Quantity": 750,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Basilica",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Templars",
+      "Type": "Building",
+      "UnlockedBy": "faith",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Quantity": 3500,
+          "CostExponentBase": 2.5
+        },
+        {
+          "Name": "gold",
+          "Quantity": 3000,
+          "CostExponentBase": 2.5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Templars",
           "Quantity": 1
         }
       ]

@@ -232,6 +232,12 @@ func NewGame(now game.Now) *game.Game {
 				}},
 				BonusStartsFromZero: true,
 			}},
+		}, {
+			Name: "Temple", Factor: 500,
+			Bonus: []data.Resource{{
+				Name: "Scholasticism", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "catpower", Type: "Resource", StartCapacity: 250,
@@ -255,6 +261,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Log House", Factor: 50,
 		}, {
 			Name: "Mansion", Factor: 50,
+		}, {
+			Name: "Temple", Factor: 75,
+			Bonus: []data.Resource{{
+				Name: "Templars", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "mineral", Type: "Resource", StartCapacity: 250,
@@ -534,6 +546,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Chapel", Factor: 0.05 * 5,
 		}, {
 			Name: "Temple", Factor: 0.1 * 5,
+			Bonus: []data.Resource{{
+				Name: "Stained Glass", Factor: 0.50,
+			}, {
+				Name: "Stained Glass", Factor: 2.00,
+			}},
 		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Library", Factor: 10, Bonus: CultureCapacityBonus,
@@ -552,6 +569,12 @@ func NewGame(now game.Now) *game.Game {
 				}},
 				BonusStartsFromZero: true,
 			}}),
+		}, {
+			Name: "Temple", Factor: 125,
+			Bonus: []data.Resource{{
+				Name: "Basilica", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "faith", Type: "Resource", StartCapacity: 1,
@@ -563,8 +586,16 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Chapel", Factor: 0.005 * 5,
 		}},
+		Bonus: []data.Resource{{
+			Name: "Solar Chant", Factor: 0.10,
+		}},
 		CapacityProducers: []data.Resource{{
 			Name: "Temple", Factor: 100,
+			Bonus: []data.Resource{{
+				Name: "Golden Spire", Factor: 0.50,
+			}, {
+				Name: "Sun Altar", Factor: 0.50,
+			}},
 		}},
 	}, {
 		Name: "starchart", Type: "Resource", Capacity: -1,
@@ -626,6 +657,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Amphitheatre", Factor: 0.048,
 		}, {
 			Name: "Broadcast Tower", Factor: 0.75,
+		}, {
+			Name: "Temple", Factor: 0.005,
+			Bonus: []data.Resource{{
+				Name: "Sun Altar", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}}))
 
@@ -1021,6 +1058,51 @@ func NewGame(now game.Now) *game.Game {
 			Name: "spice", Quantity: 150000, CostExponentBase: 1.15,
 		}, {
 			Name: "unobtainium", Quantity: 5000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Solar Chant", UnlockedBy: "faith",
+		Costs: []data.Resource{{
+			Name: "faith", Quantity: 100, CostExponentBase: 2.5,
+		}},
+	}, {
+		Name: "Scholasticism", UnlockedBy: "faith",
+		Costs: []data.Resource{{
+			Name: "faith", Quantity: 250, CostExponentBase: 2.5,
+		}},
+	}, {
+		Name: "Golden Spire", UnlockedBy: "faith",
+		Costs: []data.Resource{{
+			Name: "faith", Quantity: 350, CostExponentBase: 2.5,
+		}, {
+			Name: "gold", Quantity: 150, CostExponentBase: 2.5,
+		}},
+	}, {
+		Name: "Sun Altar", UnlockedBy: "faith",
+		Costs: []data.Resource{{
+			Name: "faith", Quantity: 500, CostExponentBase: 2.5,
+		}, {
+			Name: "gold", Quantity: 250, CostExponentBase: 2.5,
+		}},
+	}, {
+		Name: "Stained Glass", UnlockedBy: "faith",
+		Costs: []data.Resource{{
+			Name: "faith", Quantity: 500, CostExponentBase: 2.5,
+		}, {
+			Name: "gold", Quantity: 250, CostExponentBase: 2.5,
+		}},
+	}, {
+		Name: "Basilica", UnlockedBy: "faith",
+		Costs: []data.Resource{{
+			Name: "faith", Quantity: 1250, CostExponentBase: 2.5,
+		}, {
+			Name: "gold", Quantity: 750, CostExponentBase: 2.5,
+		}},
+	}, {
+		Name: "Templars", UnlockedBy: "faith",
+		Costs: []data.Resource{{
+			Name: "faith", Quantity: 3500, CostExponentBase: 2.5,
+		}, {
+			Name: "gold", Quantity: 3000, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
