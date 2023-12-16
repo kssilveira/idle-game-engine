@@ -20,28 +20,25 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 	}
 	nodes := map[string]bool{}
 	edges := map[string]bool{}
+	excluded := map[string]bool{
+		"happiness":   true,
+		"":            true,
+		"day":         true,
+		"Spring":      true,
+		"Winter":      true,
+		"gone kitten": true,
+	}
 	edgefn := func(from, to, color string) {
-		edge(logger, nodes, edges, colors, from, to, color)
+		edge(logger, nodes, edges, colors, excluded, from, to, color)
 	}
 	for _, r := range g.Resources {
-		if r.Name == "happiness" {
-			continue
-		}
-		last := ""
 		for _, p := range r.Producers {
-			if p.Name == "" || p.Name == "day" || p.Name == last {
-				continue
-			}
-			last = p.Name
 			if p.Factor < 0 {
 				edgefn(r.Name, p.Name, "red")
 			} else {
 				edgefn(p.Name, r.Name, "green")
 			}
 			for _, b := range p.Bonus {
-				if b.Name == "Spring" || b.Name == "Winter" || b.Name == "happiness" {
-					continue
-				}
 				if p.Factor < 0 {
 					edgefn(b.Name, p.Name, "red")
 				} else {
@@ -69,12 +66,10 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 			}
 			edgefn(a.Name, add.Name, "limegreen")
 		}
-		if a.UnlockedBy != "" {
-			edgefn(a.UnlockedBy, a.Name, "blue")
-		}
+		edgefn(a.UnlockedBy, a.Name, "blue")
 	}
 	for _, r := range g.Resources {
-		if r.Type == "Calendar" || r.Name == "gone kitten" || r.Name == "happiness" {
+		if r.Type == "Calendar" {
 			continue
 		}
 		if !nodes[r.Name] {
@@ -119,12 +114,15 @@ digraph {
 `)
 }
 
-func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colors map[string]bool, from, to, color string) {
+func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colors map[string]bool, excluded map[string]bool, from, to, color string) {
 	if len(colors) > 0 && !colors[color] {
 		return
 	}
 	key := fmt.Sprintf("%s+%s+%s", from, to, color)
 	if edges[key] {
+		return
+	}
+	if excluded[from] || excluded[to] {
 		return
 	}
 	edges[key] = true
