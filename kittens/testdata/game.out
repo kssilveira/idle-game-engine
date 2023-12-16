@@ -299,11 +299,11 @@
           "Factor": 2500,
           "Bonus": [
             {
-              "Name": "Expanded Cargo",
+              "Name": "trade ship",
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "trade ship",
+                  "Name": "Expanded Cargo",
                   "Factor": 1
                 }
               ],
@@ -543,11 +543,11 @@
               "Factor": 0.05
             },
             {
-              "Name": "Expanded Cargo",
+              "Name": "trade ship",
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "trade ship",
+                  "Name": "Expanded Cargo",
                   "Factor": 1
                 }
               ],
@@ -859,11 +859,11 @@
               "Factor": 0.05
             },
             {
-              "Name": "Expanded Cargo",
+              "Name": "trade ship",
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "trade ship",
+                  "Name": "Expanded Cargo",
                   "Factor": 1
                 }
               ],
@@ -1069,11 +1069,11 @@
               "Factor": 0.05
             },
             {
-              "Name": "Expanded Cargo",
+              "Name": "trade ship",
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "trade ship",
+                  "Name": "Expanded Cargo",
                   "Factor": 1
                 }
               ],
@@ -1115,11 +1115,11 @@
           "Factor": 0.075
         },
         {
-          "Name": "Coal Furnace",
+          "Name": "Active Smelter",
           "Factor": 0.025,
           "Bonus": [
             {
-              "Name": "Active Smelter",
+              "Name": "Coal Furnace",
               "Factor": 1,
               "Bonus": [
                 {
@@ -1132,11 +1132,11 @@
           "BonusStartsFromZero": true
         },
         {
-          "Name": "Deep Mining",
+          "Name": "Mine",
           "Factor": 0.015,
           "Bonus": [
             {
-              "Name": "Mine",
+              "Name": "Deep Mining",
               "Factor": 1
             }
           ],
@@ -1239,11 +1239,11 @@
               "Factor": 0.05
             },
             {
-              "Name": "Expanded Cargo",
+              "Name": "trade ship",
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "trade ship",
+                  "Name": "Expanded Cargo",
                   "Factor": 1
                 }
               ],
@@ -1267,22 +1267,22 @@
           "Factor": -0.025
         },
         {
-          "Name": "Gold Ore",
+          "Name": "Active Smelter",
           "Factor": 0.005,
           "Bonus": [
             {
-              "Name": "Active Smelter",
+              "Name": "Gold Ore",
               "Factor": 1
             }
           ],
           "BonusStartsFromZero": true
         },
         {
-          "Name": "Geodesy",
+          "Name": "geologist",
           "Factor": 0.004,
           "Bonus": [
             {
-              "Name": "geologist",
+              "Name": "Geodesy",
               "Factor": 1,
               "Bonus": [
                 {
@@ -1389,11 +1389,11 @@
               "Factor": 0.05
             },
             {
-              "Name": "Expanded Cargo",
+              "Name": "trade ship",
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "trade ship",
+                  "Name": "Expanded Cargo",
                   "Factor": 1
                 }
               ],
@@ -1461,11 +1461,11 @@
           ]
         },
         {
-          "Name": "Nuclear Smelter",
+          "Name": "Active Smelter",
           "Factor": 0.0075,
           "Bonus": [
             {
-              "Name": "Active Smelter",
+              "Name": "Nuclear Smelter",
               "Factor": 1
             }
           ],
@@ -1562,11 +1562,11 @@
               "Factor": 0.05
             },
             {
-              "Name": "Expanded Cargo",
+              "Name": "trade ship",
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "trade ship",
+                  "Name": "Expanded Cargo",
                   "Factor": 1
                 }
               ],
@@ -1615,11 +1615,11 @@
           "Factor": -0.005
         },
         {
-          "Name": "Orbital Geodesy",
+          "Name": "Quarry",
           "Factor": 0.0025,
           "Bonus": [
             {
-              "Name": "Quarry",
+              "Name": "Orbital Geodesy",
               "Factor": 1
             }
           ],
@@ -1901,11 +1901,11 @@
       "Capacity": -1,
       "Producers": [
         {
-          "Name": "Steel Plants",
+          "Name": "Calciner",
           "Factor": 0.075,
           "Bonus": [
             {
-              "Name": "Calciner",
+              "Name": "Steel Plants",
               "Factor": 1,
               "Bonus": [
                 {
@@ -1928,11 +1928,11 @@
                   "BonusStartsFromZero": true
                 },
                 {
-                  "Name": "Nuclear Plants",
+                  "Name": "Reactor",
                   "Factor": 0.02,
                   "Bonus": [
                     {
-                      "Name": "Reactor",
+                      "Name": "Nuclear Plants",
                       "Factor": 1
                     }
                   ],
@@ -3253,11 +3253,11 @@
       "Capacity": -1,
       "Producers": [
         {
-          "Name": "Printing Press",
+          "Name": "Steamworks",
           "Factor": 0.0025,
           "Bonus": [
             {
-              "Name": "Steamworks",
+              "Name": "Printing Press",
               "Factor": 1,
               "Bonus": [
                 {
@@ -7827,11 +7827,11 @@
       ],
       "Producers": [
         {
-          "Name": "Printing Press",
+          "Name": "Steamworks",
           "Factor": 0.0025,
           "Bonus": [
             {
-              "Name": "Steamworks",
+              "Name": "Printing Press",
               "Factor": 1,
               "Bonus": [
                 {

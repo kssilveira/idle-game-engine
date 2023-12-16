@@ -43,9 +43,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Concrete Pillars", Factor: 0.05,
 	}}
 	HarbourBonus := []data.Resource{{
-		Name: "Expanded Cargo", Factor: 0.01,
+		Name: "trade ship", Factor: 0.01,
 		Bonus: []data.Resource{{
-			Name: "trade ship", Factor: 1,
+			Name: "Expanded Cargo", Factor: 1,
 		}},
 		BonusStartsFromZero: true,
 	}}
@@ -273,16 +273,16 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Quarry", Factor: 0.015 * 5,
 		}, {
-			Name: "Coal Furnace", Factor: 0.005 * 5,
+			Name: "Active Smelter", Factor: 0.005 * 5,
 			Bonus: []data.Resource{{
-				Name: "Active Smelter", Factor: 1,
+				Name: "Coal Furnace", Factor: 1,
 				Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
 			}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Deep Mining", Factor: 0.003 * 5,
+			Name: "Mine", Factor: 0.003 * 5,
 			Bonus: []data.Resource{{
-				Name: "Mine", Factor: 1,
+				Name: "Deep Mining", Factor: 1,
 			}},
 			BonusStartsFromZero: true,
 		}},
@@ -303,15 +303,15 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "Mint", Factor: -0.005 * 5,
 		}, {
-			Name: "Gold Ore", Factor: 0.001 * 5,
+			Name: "Active Smelter", Factor: 0.001 * 5,
 			Bonus: []data.Resource{{
-				Name: "Active Smelter", Factor: 1,
+				Name: "Gold Ore", Factor: 1,
 			}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Geodesy", Factor: 0.0008 * 5,
+			Name: "geologist", Factor: 0.0008 * 5,
 			Bonus: []data.Resource{{
-				Name: "geologist", Factor: 1,
+				Name: "Geodesy", Factor: 1,
 				Bonus: []data.Resource{{
 					Name: "Mining Drill", Factor: 0.6,
 				}, {
@@ -343,9 +343,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Fluoridized Reactors", Factor: 3,
 			}},
 		}, {
-			Name: "Nuclear Smelter", Factor: 0.0015 * 5,
+			Name: "Active Smelter", Factor: 0.0015 * 5,
 			Bonus: []data.Resource{{
-				Name: "Active Smelter", Factor: 1,
+				Name: "Nuclear Smelter", Factor: 1,
 			}},
 			BonusStartsFromZero: true,
 		}},
@@ -375,9 +375,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Reactor", Factor: -0.001 * 5,
 		}, {
-			Name: "Orbital Geodesy", Factor: 0.0005 * 5,
+			Name: "Quarry", Factor: 0.0005 * 5,
 			Bonus: []data.Resource{{
-				Name: "Quarry", Factor: 1,
+				Name: "Orbital Geodesy", Factor: 1,
 			}},
 			BonusStartsFromZero: true,
 		}},
@@ -470,9 +470,9 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "steel", Type: "Resource", Capacity: -1,
 		Producers: []data.Resource{{
-			Name: "Steel Plants", Factor: 0.15 * 5 * 0.1,
+			Name: "Calciner", Factor: 0.15 * 5 * 0.1,
 			Bonus: []data.Resource{{
-				Name: "Calciner", Factor: 1,
+				Name: "Steel Plants", Factor: 1,
 				Bonus: []data.Resource{{
 					Name: "Oxidation", Factor: 0.95,
 				}, {
@@ -480,9 +480,9 @@ func NewGame(now game.Now) *game.Game {
 					Bonus:               CraftRatio,
 					BonusStartsFromZero: true,
 				}, {
-					Name: "Nuclear Plants", Factor: 0.02,
+					Name: "Reactor", Factor: 0.02,
 					Bonus: []data.Resource{{
-						Name: "Reactor", Factor: 1,
+						Name: "Nuclear Plants", Factor: 1,
 					}},
 					BonusStartsFromZero: true,
 				}},
@@ -1884,9 +1884,9 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "manuscript", UnlockedBy: "Construction",
 		Producers: []data.Resource{{
-			Name: "Printing Press", Factor: 0.0025,
+			Name: "Steamworks", Factor: 0.0025,
 			Bonus: []data.Resource{{
-				Name: "Steamworks", Factor: 1,
+				Name: "Printing Press", Factor: 1,
 				Bonus: []data.Resource{{
 					Name: "Offset Press", Factor: 4 - 1,
 					Bonus: []data.Resource{{
