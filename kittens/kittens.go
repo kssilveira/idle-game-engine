@@ -592,10 +592,10 @@ func NewGame(now game.Now) *game.Game {
 	}}))
 
 	g.AddActions([]data.Action{{
-		Name: "Gather catnip", Type: "Bonfire", LockedBy: "Catnip Field",
+		Name: "Gather catnip", Type: "Building", LockedBy: "Catnip Field",
 		Adds: []data.Resource{{Name: "catnip", Quantity: 1}},
 	}, {
-		Name: "Refine catnip", Type: "Bonfire", UnlockedBy: "catnip", LockedBy: "woodcutter",
+		Name: "Refine catnip", Type: "Building", UnlockedBy: "catnip", LockedBy: "woodcutter",
 		Costs: []data.Resource{{Name: "catnip", Quantity: 100}},
 		Adds:  []data.Resource{{Name: "wood", Quantity: 1}},
 	}})
@@ -1105,7 +1105,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}})
 
-	addSciences(g, []data.Action{{
+	addTechs(g, []data.Action{{
 		Name: "Calendar", UnlockedBy: "Library",
 		Costs: []data.Resource{{Name: "science", Quantity: 30}},
 	}, {
@@ -1472,7 +1472,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}})
 
-	addWorkshops(g, []data.Action{{
+	addUpgrades(g, []data.Action{{
 		Name: "Mineral Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "mineral", Quantity: 275,
@@ -2774,7 +2774,7 @@ func addBuildings(g *game.Game, actions []data.Action) {
 			isActive = true
 		}
 		action.Name = name
-		action.Type = "Bonfire"
+		action.Type = "Building"
 		action.Adds = append([]data.Resource{{
 			Name: action.Name, Quantity: 1,
 		}}, action.Adds...)
@@ -2797,7 +2797,7 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		})
 
 		g.AddResource(data.Resource{
-			Name: "Idle " + name, Type: "Bonfire", IsHidden: true, Capacity: -1, StartQuantity: 1,
+			Name: "Idle " + name, Type: "Building", IsHidden: true, Capacity: -1, StartQuantity: 1,
 			Producers: []data.Resource{{
 				Name: "", Factor: -1,
 			}, {
@@ -2826,9 +2826,9 @@ func addJobs(g *game.Game, actions []data.Action) {
 	}
 }
 
-func addSciences(g *game.Game, actions []data.Action) {
+func addTechs(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
-		action.Type = "Science"
+		action.Type = "Tech"
 		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
 		action.LockedBy = action.Name
 		g.AddAction(action)
@@ -2838,9 +2838,9 @@ func addSciences(g *game.Game, actions []data.Action) {
 	}
 }
 
-func addWorkshops(g *game.Game, actions []data.Action) {
+func addUpgrades(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
-		action.Type = "Workshop"
+		action.Type = "Upgrade"
 		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
 		action.LockedBy = action.Name
 		g.AddAction(action)

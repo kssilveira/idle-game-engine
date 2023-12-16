@@ -1,26 +1,26 @@
 ###
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Bonfire] Hut -(wood 5) +(Hut 1, kitten cap 2)
-X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Building] Hut -(wood 5) +(Hut 1, kitten cap 2)
+X: [Building] Library -(wood 25) +(Library 1)
 last action: 
 ###
 [Resource] kitten 0.05/2 0.05/s 39s to cap
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
-X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Building] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
+X: [Building] Library -(wood 25) +(Library 1)
 X: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: Hut
 ###
 [Resource] kitten 0.05/2 0.05/s 39s to cap
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Bonfire] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
-X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Building] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
+X: [Building] Library -(wood 25) +(Library 1)
 X: [Village] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: Gather catnip
 ###
@@ -28,11 +28,11 @@ last action: Gather catnip
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] kitten 0.10/4 0.05/s 1m18s to cap
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
-X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Building] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+X: [Building] Library -(wood 25) +(Library 1)
 X: [Village] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
 last action: Hut
 ###
@@ -42,11 +42,11 @@ last action: Hut
 [-] [Resource] catnip 1002/5000 -17/s 58s to empty
 [Resource] kitten 4/4 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
-X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Building] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+X: [Building] Library -(wood 25) +(Library 1)
 X: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 last action: Gather catnip
 ###
@@ -56,10 +56,10 @@ last action: Gather catnip
 [-] [Resource] catnip 1003/5000 -17/s 59s to empty
 [Resource] kitten 4/4 0.05/s
 [Village] happiness 0.02 (0.10 + -0.08)
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Bonfire] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
-X: [Bonfire] Library -(wood 25) +(Library 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
+X: [Building] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
+X: [Building] Library -(wood 25) +(Library 1)
 X: [Village] woodcutter -(kitten 1) +(woodcutter 1)
 last action: Gather catnip

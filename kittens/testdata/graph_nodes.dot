@@ -1,10 +1,10 @@
 
 digraph {
   "Resource" [shape="cylinder"];
-  "Bonfire" [shape="box3d"];
+  "Building" [shape="box3d"];
   "Village" [shape="house"];
-  "Science" [shape="diamond"];
-  "Workshop" [shape="hexagon"];
+  "Tech" [shape="diamond"];
+  "Upgrade" [shape="hexagon"];
   "Craft" [shape="cds"];
   "Trade" [shape="cds"];
 }

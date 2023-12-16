@@ -1,13 +1,13 @@
 ###
-X: [Bonfire] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 1)
 last action: 
 ###
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 1/100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 1/10) +(Catnip Field 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 1/100) +(wood 1)
+X: [Building] Catnip Field -(catnip 1/10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-X: [Bonfire] Gather catnip +(catnip 1)
-X: [Bonfire] Refine catnip -(catnip 2/100) +(wood 1)
-X: [Bonfire] Catnip Field -(catnip 2/10) +(Catnip Field 1)
+X: [Building] Gather catnip +(catnip 1)
+X: [Building] Refine catnip -(catnip 2/100) +(wood 1)
+X: [Building] Catnip Field -(catnip 2/10) +(Catnip Field 1)
 last action: Gather catnip
