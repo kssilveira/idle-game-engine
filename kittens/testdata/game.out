@@ -342,7 +342,7 @@
           "Factor": 2500,
           "Bonus": [
             {
-              "Name": "trade ship",
+              "Name": "ship",
               "Factor": 0.01,
               "Bonus": [
                 {
@@ -586,7 +586,7 @@
               "Factor": 0.05
             },
             {
-              "Name": "trade ship",
+              "Name": "ship",
               "Factor": 0.01,
               "Bonus": [
                 {
@@ -955,7 +955,7 @@
               "Factor": 0.05
             },
             {
-              "Name": "trade ship",
+              "Name": "ship",
               "Factor": 0.01,
               "Bonus": [
                 {
@@ -1165,7 +1165,7 @@
               "Factor": 0.05
             },
             {
-              "Name": "trade ship",
+              "Name": "ship",
               "Factor": 0.01,
               "Bonus": [
                 {
@@ -1335,7 +1335,7 @@
               "Factor": 0.05
             },
             {
-              "Name": "trade ship",
+              "Name": "ship",
               "Factor": 0.01,
               "Bonus": [
                 {
@@ -1485,7 +1485,7 @@
               "Factor": 0.05
             },
             {
-              "Name": "trade ship",
+              "Name": "ship",
               "Factor": 0.01,
               "Bonus": [
                 {
@@ -1658,7 +1658,7 @@
               "Factor": 0.05
             },
             {
-              "Name": "trade ship",
+              "Name": "ship",
               "Factor": 0.01,
               "Bonus": [
                 {
@@ -3785,10 +3785,10 @@
       "ProducerAction": "@scaffold"
     },
     {
-      "Name": "trade ship",
+      "Name": "ship",
       "Type": "Resource",
       "Capacity": -1,
-      "ProducerAction": "@trade ship"
+      "ProducerAction": "@ship"
     },
     {
       "Name": "tanker",
@@ -9304,7 +9304,7 @@
           "Quantity": 400000
         },
         {
-          "Name": "trade ship",
+          "Name": "ship",
           "Quantity": 10000
         },
         {
@@ -10061,7 +10061,7 @@
       "IsHidden": true
     },
     {
-      "Name": "@trade ship",
+      "Name": "@ship",
       "Type": "Craft",
       "UnlockedBy": "Navigation",
       "Costs": [
@@ -10080,7 +10080,7 @@
       ],
       "Adds": [
         {
-          "Name": "trade ship",
+          "Name": "ship",
           "Quantity": 1,
           "Bonus": [
             {
@@ -10108,7 +10108,7 @@
       "UnlockedBy": "Robotics",
       "Costs": [
         {
-          "Name": "trade ship",
+          "Name": "ship",
           "Quantity": 200
         },
         {

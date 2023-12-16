@@ -251,7 +251,7 @@ digraph {
   "Chemistry" -> "@alloy" [color="blue"];
   "Advanced Exogeology" -> "@eludium" [color="blue"];
   "Construction" -> "@scaffold" [color="blue"];
-  "Navigation" -> "@trade ship" [color="blue"];
+  "Navigation" -> "@ship" [color="blue"];
   "Robotics" -> "@tanker" [color="blue"];
   "Oil Processing" -> "@kerosene" [color="blue"];
   "Writing" -> "@parchment" [color="blue"];
@@ -754,7 +754,7 @@ digraph {
   "@alloy" [shape="cds"];
   "@eludium" [shape="cds"];
   "@scaffold" [shape="cds"];
-  "@trade ship" [shape="cds"];
+  "@ship" [shape="cds"];
   "@tanker" [shape="cds"];
   "@kerosene" [shape="cds"];
   "@parchment" [shape="cds"];

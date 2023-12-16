@@ -46,7 +46,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Concrete Pillars", Factor: 0.05,
 	}}
 	HarbourBonus := []data.Resource{{
-		Name: "trade ship", Factor: 0.01,
+		Name: "ship", Factor: 0.01,
 		Bonus: []data.Resource{{
 			Name: "Expanded Cargo", Factor: 1,
 		}},
@@ -2269,7 +2269,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "science", Quantity: 400000,
 		}, {
-			Name: "trade ship", Quantity: 10000,
+			Name: "ship", Quantity: 10000,
 		}, {
 			Name: "gear", Quantity: 40000,
 		}, {
@@ -2467,7 +2467,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "scaffold", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "beam", Quantity: 50}},
 	}, {
-		Name: "trade ship", UnlockedBy: "Navigation",
+		Name: "ship", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
 			Name: "scaffold", Quantity: 100,
 		}, {
@@ -2478,7 +2478,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "tanker", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "trade ship", Quantity: 200,
+			Name: "ship", Quantity: 200,
 		}, {
 			Name: "alloy", Quantity: 1250,
 		}, {
