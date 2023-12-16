@@ -66,7 +66,12 @@ func NewGame(now game.Now) *game.Game {
 	CatnipCapacityBonus := []data.Resource{{
 		Name: "Refrigeration", Factor: 0.75,
 	}}
-	CultureCapacityBonus := []data.Resource{{Name: "Ziggurat", Factor: 0.08}}
+	CultureCapacityBonus := []data.Resource{{
+		Name: "Ziggurat", Factor: 0.08,
+		Bonus: []data.Resource{{
+			Name: "Unicorn Graveyard", Factor: 0.01,
+		}},
+	}}
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
 	}
@@ -507,6 +512,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Unic. Pasture", Factor: 0.001 * 5,
 			Bonus: []data.Resource{{
 				Name: "Unicorn Selection", Factor: 0.25,
+			}, {
+				Name: "Unicorn Tomb", Factor: 0.05,
+			}, {
+				Name: "Ivory Tower", Factor: 0.10,
+			}, {
+				Name: "Ivory Citadel", Factor: 0.25,
+			}, {
+				Name: "Sky Palace", Factor: 0.50,
+			}, {
+				Name: "Unicorn Utopia", Factor: 2.50,
+			}, {
+				Name: "Sunspire", Factor: 5.00,
 			}},
 		}},
 	}, {
@@ -567,11 +584,28 @@ func NewGame(now game.Now) *game.Game {
 			Name: "AI Core", Factor: 0.02 * 5,
 		}},
 	}, {
-		Name: "leviathan energy", Type: "Resource", Capacity: 1,
+		Name: "leviathan energy", Type: "Resource", StartCapacity: 1,
+		CapacityProducers: []data.Resource{{
+			Name: "Marker", Factor: 5,
+		}},
 	}, {
 		Name: "tear", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "alicorn", Type: "Resource", Capacity: -1,
+		Producers: []data.Resource{{
+			Name: "Sky Palace", Factor: 0.00002 * 5,
+			Bonus: []data.Resource{{
+				Name: "Unicorn Utopia", Factor: 0.00015,
+			}, {
+				Name: "Unicorn Utopia", Factor: 0.0003,
+			}},
+		}, {
+			Name: "Unicorn Utopia", Factor: 0.000025 * 5,
+		}, {
+			Name: "Sunspire", Factor: 0.00005 * 5,
+		}},
+	}, {
+		Name: "necrocorn", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "sorrow", Type: "Resource", Capacity: 1,
 	}, {
@@ -901,19 +935,101 @@ func NewGame(now game.Now) *game.Game {
 			Name: "titanium", Quantity: 75, CostExponentBase: 1.18,
 		}},
 	}, {
+		Name: "Unicorn Tomb", UnlockedBy: "tear",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 5, CostExponentBase: 1.15,
+		}, {
+			Name: "ivory", Quantity: 500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Ivory Tower", UnlockedBy: "Unicorn Tomb",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 25, CostExponentBase: 1.15,
+		}, {
+			Name: "ivory", Quantity: 25000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Ivory Citadel", UnlockedBy: "Ivory Tower",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 50, CostExponentBase: 1.15,
+		}, {
+			Name: "ivory", Quantity: 50000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Sky Palace", UnlockedBy: "Ivory Citadel",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 500, CostExponentBase: 1.15,
+		}, {
+			Name: "ivory", Quantity: 125000, CostExponentBase: 1.15,
+		}, {
+			Name: "megalith", Quantity: 5, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Unicorn Utopia", UnlockedBy: "Sky Palace",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 5000, CostExponentBase: 1.15,
+		}, {
+			Name: "ivory", Quantity: 1000000, CostExponentBase: 1.15,
+		}, {
+			Name: "gold", Quantity: 500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Sunspire", UnlockedBy: "Unicorn Utopia",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 25000, CostExponentBase: 1.15,
+		}, {
+			Name: "ivory", Quantity: 750000, CostExponentBase: 1.15,
+		}, {
+			Name: "gold", Quantity: 1000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Marker", UnlockedBy: "Megalomania",
+		Costs: []data.Resource{{
+			Name: "tear", Quantity: 5000, CostExponentBase: 1.15,
+		}, {
+			Name: "megalith", Quantity: 750, CostExponentBase: 1.15,
+		}, {
+			Name: "spice", Quantity: 50000, CostExponentBase: 1.15,
+		}, {
+			Name: "unobtainium", Quantity: 2500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Unicorn Graveyard", UnlockedBy: "Black Codex",
+		Costs: []data.Resource{{
+			Name: "necrocorn", Quantity: 5, CostExponentBase: 1.15,
+		}, {
+			Name: "megalith", Quantity: 1000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Unicorn Necropolis", UnlockedBy: "Unicorn Graveyard",
+		Costs: []data.Resource{{
+			Name: "necrocorn", Quantity: 15, CostExponentBase: 1.15,
+		}, {
+			Name: "megalith", Quantity: 2500, CostExponentBase: 1.15,
+		}, {
+			Name: "alicorn", Quantity: 100, CostExponentBase: 1.15,
+		}, {
+			Name: "void", Quantity: 5, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Black Pyramid", UnlockedBy: "Megalomania",
+		Costs: []data.Resource{{
+			Name: "sorrow", Quantity: 5, CostExponentBase: 1.15,
+		}, {
+			Name: "megalith", Quantity: 2500, CostExponentBase: 1.15,
+		}, {
+			Name: "spice", Quantity: 150000, CostExponentBase: 1.15,
+		}, {
+			Name: "unobtainium", Quantity: 5000, CostExponentBase: 1.15,
+		}},
+	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
 		Costs: []data.Resource{{}},
 	}, {
-		Name: "Black Pyramid", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{}},
-	}, {
-		Name: "Unicorn Utopia", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{}},
-	}, {
-		Name: "Sunspire", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{}},
-	}, {
 		Name: "Megalomania", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{}},
+	}, {
+		Name: "Black Codex", UnlockedBy: "Paradox Theory",
 		Costs: []data.Resource{{}},
 	}})
 

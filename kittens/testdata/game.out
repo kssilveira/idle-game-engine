@@ -1955,6 +1955,30 @@
             {
               "Name": "Unicorn Selection",
               "Factor": 0.25
+            },
+            {
+              "Name": "Unicorn Tomb",
+              "Factor": 0.05
+            },
+            {
+              "Name": "Ivory Tower",
+              "Factor": 0.1
+            },
+            {
+              "Name": "Ivory Citadel",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Sky Palace",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Unicorn Utopia",
+              "Factor": 2.5
+            },
+            {
+              "Name": "Sunspire",
+              "Factor": 5
             }
           ]
         }
@@ -1984,7 +2008,13 @@
           "Bonus": [
             {
               "Name": "Ziggurat",
-              "Factor": 0.08
+              "Factor": 0.08,
+              "Bonus": [
+                {
+                  "Name": "Unicorn Graveyard",
+                  "Factor": 0.01
+                }
+              ]
             }
           ]
         },
@@ -1994,7 +2024,13 @@
           "Bonus": [
             {
               "Name": "Ziggurat",
-              "Factor": 0.08
+              "Factor": 0.08,
+              "Bonus": [
+                {
+                  "Name": "Unicorn Graveyard",
+                  "Factor": 0.01
+                }
+              ]
             }
           ]
         },
@@ -2004,7 +2040,13 @@
           "Bonus": [
             {
               "Name": "Ziggurat",
-              "Factor": 0.08
+              "Factor": 0.08,
+              "Bonus": [
+                {
+                  "Name": "Unicorn Graveyard",
+                  "Factor": 0.01
+                }
+              ]
             }
           ]
         },
@@ -2014,7 +2056,13 @@
           "Bonus": [
             {
               "Name": "Ziggurat",
-              "Factor": 0.08
+              "Factor": 0.08,
+              "Bonus": [
+                {
+                  "Name": "Unicorn Graveyard",
+                  "Factor": 0.01
+                }
+              ]
             }
           ]
         },
@@ -2024,7 +2072,13 @@
           "Bonus": [
             {
               "Name": "Ziggurat",
-              "Factor": 0.08
+              "Factor": 0.08,
+              "Bonus": [
+                {
+                  "Name": "Unicorn Graveyard",
+                  "Factor": 0.01
+                }
+              ]
             },
             {
               "Name": "Bio Lab",
@@ -2107,7 +2161,13 @@
     {
       "Name": "leviathan energy",
       "Type": "Resource",
-      "Capacity": 1
+      "CapacityProducers": [
+        {
+          "Name": "Marker",
+          "Factor": 5
+        }
+      ],
+      "StartCapacity": 1
     },
     {
       "Name": "tear",
@@ -2116,6 +2176,35 @@
     },
     {
       "Name": "alicorn",
+      "Type": "Resource",
+      "Capacity": -1,
+      "Producers": [
+        {
+          "Name": "Sky Palace",
+          "Factor": 0.0001,
+          "Bonus": [
+            {
+              "Name": "Unicorn Utopia",
+              "Factor": 0.00015
+            },
+            {
+              "Name": "Unicorn Utopia",
+              "Factor": 0.0003
+            }
+          ]
+        },
+        {
+          "Name": "Unicorn Utopia",
+          "Factor": 0.000125
+        },
+        {
+          "Name": "Sunspire",
+          "Factor": 0.00025
+        }
+      ]
+    },
+    {
+      "Name": "necrocorn",
       "Type": "Resource",
       "Capacity": -1
     },
@@ -2430,13 +2519,25 @@
       "Capacity": -1
     },
     {
-      "Name": "Chronocontrol",
+      "Name": "Unicorn Tomb",
       "Type": "Building",
       "IsHidden": true,
       "Capacity": -1
     },
     {
-      "Name": "Black Pyramid",
+      "Name": "Ivory Tower",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Ivory Citadel",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Sky Palace",
       "Type": "Building",
       "IsHidden": true,
       "Capacity": -1
@@ -2454,7 +2555,43 @@
       "Capacity": -1
     },
     {
+      "Name": "Marker",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Unicorn Graveyard",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Unicorn Necropolis",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Pyramid",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Chronocontrol",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
       "Name": "Megalomania",
+      "Type": "Building",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Codex",
       "Type": "Building",
       "IsHidden": true,
       "Capacity": -1
@@ -4974,6 +5111,281 @@
       ]
     },
     {
+      "Name": "Unicorn Tomb",
+      "Type": "Building",
+      "UnlockedBy": "tear",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 5,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unicorn Tomb",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Ivory Tower",
+      "Type": "Building",
+      "UnlockedBy": "Unicorn Tomb",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 25,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 25000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Ivory Tower",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Ivory Citadel",
+      "Type": "Building",
+      "UnlockedBy": "Ivory Tower",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 50,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 50000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Ivory Citadel",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Sky Palace",
+      "Type": "Building",
+      "UnlockedBy": "Ivory Citadel",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 125000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "megalith",
+          "Quantity": 5,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Sky Palace",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unicorn Utopia",
+      "Type": "Building",
+      "UnlockedBy": "Sky Palace",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 5000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 1000000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "gold",
+          "Quantity": 500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unicorn Utopia",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Sunspire",
+      "Type": "Building",
+      "UnlockedBy": "Unicorn Utopia",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 25000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 750000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "gold",
+          "Quantity": 1000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Sunspire",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Marker",
+      "Type": "Building",
+      "UnlockedBy": "Megalomania",
+      "Costs": [
+        {
+          "Name": "tear",
+          "Quantity": 5000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "megalith",
+          "Quantity": 750,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "spice",
+          "Quantity": 50000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 2500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Marker",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unicorn Graveyard",
+      "Type": "Building",
+      "UnlockedBy": "Black Codex",
+      "Costs": [
+        {
+          "Name": "necrocorn",
+          "Quantity": 5,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "megalith",
+          "Quantity": 1000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unicorn Graveyard",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unicorn Necropolis",
+      "Type": "Building",
+      "UnlockedBy": "Unicorn Graveyard",
+      "Costs": [
+        {
+          "Name": "necrocorn",
+          "Quantity": 15,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "megalith",
+          "Quantity": 2500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "alicorn",
+          "Quantity": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "void",
+          "Quantity": 5,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unicorn Necropolis",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Black Pyramid",
+      "Type": "Building",
+      "UnlockedBy": "Megalomania",
+      "Costs": [
+        {
+          "Name": "sorrow",
+          "Quantity": 5,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "megalith",
+          "Quantity": 2500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "spice",
+          "Quantity": 150000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 5000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Black Pyramid",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
       "Name": "Chronocontrol",
       "Type": "Building",
       "UnlockedBy": "Paradox Theory",
@@ -4988,48 +5400,6 @@
       ]
     },
     {
-      "Name": "Black Pyramid",
-      "Type": "Building",
-      "UnlockedBy": "Paradox Theory",
-      "Costs": [
-        {}
-      ],
-      "Adds": [
-        {
-          "Name": "Black Pyramid",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
-      "Name": "Unicorn Utopia",
-      "Type": "Building",
-      "UnlockedBy": "Paradox Theory",
-      "Costs": [
-        {}
-      ],
-      "Adds": [
-        {
-          "Name": "Unicorn Utopia",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
-      "Name": "Sunspire",
-      "Type": "Building",
-      "UnlockedBy": "Paradox Theory",
-      "Costs": [
-        {}
-      ],
-      "Adds": [
-        {
-          "Name": "Sunspire",
-          "Quantity": 1
-        }
-      ]
-    },
-    {
       "Name": "Megalomania",
       "Type": "Building",
       "UnlockedBy": "Paradox Theory",
@@ -5039,6 +5409,20 @@
       "Adds": [
         {
           "Name": "Megalomania",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
+      "Name": "Black Codex",
+      "Type": "Building",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {}
+      ],
+      "Adds": [
+        {
+          "Name": "Black Codex",
           "Quantity": 1
         }
       ]
