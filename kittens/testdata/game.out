@@ -2105,6 +2105,16 @@
       ]
     },
     {
+      "Name": "leviathan energy",
+      "Type": "Resource",
+      "Capacity": 1
+    },
+    {
+      "Name": "bls",
+      "Type": "Resource",
+      "Capacity": 1
+    },
+    {
       "Name": "gone kitten",
       "Type": "Resource",
       "Capacity": -1
@@ -2411,6 +2421,12 @@
     },
     {
       "Name": "Chronocontrol",
+      "Type": "Bonfire",
+      "IsHidden": true,
+      "Capacity": -1
+    },
+    {
+      "Name": "Black Pyramid",
       "Type": "Bonfire",
       "IsHidden": true,
       "Capacity": -1
@@ -4944,6 +4960,20 @@
       ]
     },
     {
+      "Name": "Black Pyramid",
+      "Type": "Bonfire",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {}
+      ],
+      "Adds": [
+        {
+          "Name": "Black Pyramid",
+          "Quantity": 1
+        }
+      ]
+    },
+    {
       "Name": "woodcutter",
       "Type": "Village",
       "UnlockedBy": "Hut",
@@ -5160,6 +5190,339 @@
         {
           "Name": "wood",
           "Quantity": 500
+        },
+        {
+          "Name": "beam",
+          "Quantity": 1.5
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Sharks",
+      "Type": "Trade",
+      "UnlockedBy": "Archery",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "iron",
+          "Quantity": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "catnip",
+          "Quantity": 35000
+        },
+        {
+          "Name": "parchment",
+          "Quantity": 1.25
+        },
+        {
+          "Name": "manuscript",
+          "Quantity": 0.6
+        },
+        {
+          "Name": "compendium",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Griffins",
+      "Type": "Trade",
+      "UnlockedBy": "Archery",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "wood",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "iron",
+          "Quantity": 250
+        },
+        {
+          "Name": "steel",
+          "Quantity": 6.25
+        },
+        {
+          "Name": "gear",
+          "Quantity": 0.5
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Nagas",
+      "Type": "Trade",
+      "UnlockedBy": "culture",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "ivory",
+          "Quantity": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "mineral",
+          "Quantity": 1000
+        },
+        {
+          "Name": "slab",
+          "Quantity": 3.75
+        },
+        {
+          "Name": "concrete",
+          "Quantity": 1.25
+        },
+        {
+          "Name": "megalith",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Zebras",
+      "Type": "Trade",
+      "UnlockedBy": "ship",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "slab",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "iron",
+          "Quantity": 300
+        },
+        {
+          "Name": "plate",
+          "Quantity": 1.3
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 0.225,
+          "Bonus": [
+            {
+              "Name": "ship",
+              "Factor": 0.000105
+            }
+          ]
+        },
+        {
+          "Name": "alloy",
+          "Quantity": 0.0125
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Spiders",
+      "Type": "Trade",
+      "UnlockedBy": "ship",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "scaffold",
+          "Quantity": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "coal",
+          "Quantity": 350
+        },
+        {
+          "Name": "oil",
+          "Quantity": 25
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Dragons",
+      "Type": "Trade",
+      "UnlockedBy": "Nuclear Fission",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "titanium",
+          "Quantity": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "uranium",
+          "Quantity": 0.95
+        },
+        {
+          "Name": "thorium",
+          "Quantity": 0.5
+        },
+        {
+          "Name": "blueprint",
+          "Quantity": 0.1
+        },
+        {
+          "Name": "spice",
+          "Quantity": 8.75
+        }
+      ]
+    },
+    {
+      "Name": "Leviathans",
+      "Type": "Trade",
+      "UnlockedBy": "Black Pyramid",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Quantity": 50
+        },
+        {
+          "Name": "gold",
+          "Quantity": 15
+        },
+        {
+          "Name": "unobtainium",
+          "Quantity": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "starchart",
+          "Quantity": 125,
+          "Bonus": [
+            {
+              "Name": "leviathan energy",
+              "Factor": 0.02
+            }
+          ]
+        },
+        {
+          "Name": "time crystal",
+          "Quantity": 0.245,
+          "Bonus": [
+            {
+              "Name": "leviathan energy",
+              "Factor": 0.02
+            }
+          ]
+        },
+        {
+          "Name": "bls",
+          "Quantity": 0.15,
+          "Bonus": [
+            {
+              "Name": "leviathan energy",
+              "Factor": 0.02
+            }
+          ]
+        },
+        {
+          "Name": "relic",
+          "Quantity": 0.05,
+          "Bonus": [
+            {
+              "Name": "leviathan energy",
+              "Factor": 0.02
+            }
+          ]
         },
         {
           "Name": "blueprint",

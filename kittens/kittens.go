@@ -567,6 +567,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "AI Core", Factor: 0.02 * 5,
 		}},
 	}, {
+		Name: "leviathan energy", Type: "Resource", Capacity: 1,
+	}, {
+		Name: "bls", Type: "Resource", Capacity: 1,
+	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
 		Name: "happiness", Type: "Village", StartQuantity: 0.1, Capacity: -1,
@@ -895,6 +899,9 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
 		Costs: []data.Resource{{}},
+	}, {
+		Name: "Black Pyramid", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{}},
 	}})
 
 	addJobs(g, []data.Action{{
@@ -936,6 +943,161 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Adds: []data.Resource{{
 			Name: "wood", Quantity: 500,
+		}, {
+			Name: "beam", Quantity: 10 * 0.15,
+		}, {
+			Name: "scaffold", Quantity: 1 * 0.1,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
+		Name: "Sharks", Type: "Trade", UnlockedBy: "Archery",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "iron", Quantity: 100,
+		}},
+		Adds: []data.Resource{{
+			Name: "catnip", Quantity: 35000,
+		}, {
+			Name: "parchment", Quantity: 5 * 0.25,
+		}, {
+			Name: "manuscript", Quantity: 4 * 0.15,
+		}, {
+			Name: "compendium", Quantity: 1 * 0.10,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
+		Name: "Griffins", Type: "Trade", UnlockedBy: "Archery",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "wood", Quantity: 500,
+		}},
+		Adds: []data.Resource{{
+			Name: "iron", Quantity: 250,
+		}, {
+			Name: "steel", Quantity: 25 * 0.25,
+		}, {
+			Name: "gear", Quantity: 5 * 0.10,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
+		Name: "Nagas", Type: "Trade", UnlockedBy: "culture",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "ivory", Quantity: 500,
+		}},
+		Adds: []data.Resource{{
+			Name: "mineral", Quantity: 1000,
+		}, {
+			Name: "slab", Quantity: 5 * 0.75,
+		}, {
+			Name: "concrete", Quantity: 5 * 0.25,
+		}, {
+			Name: "megalith", Quantity: 1 * 0.10,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
+		Name: "Zebras", Type: "Trade", UnlockedBy: "ship",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "slab", Quantity: 50,
+		}},
+		Adds: []data.Resource{{
+			Name: "iron", Quantity: 300,
+		}, {
+			Name: "plate", Quantity: 2 * 0.65,
+		}, {
+			Name: "titanium", Quantity: 1.5 * 0.15,
+			Bonus: []data.Resource{{
+				Name: "ship", Factor: 0.03 * 0.35 / 100,
+			}},
+		}, {
+			Name: "alloy", Quantity: 0.25 * 0.05,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
+		Name: "Spiders", Type: "Trade", UnlockedBy: "ship",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "scaffold", Quantity: 50,
+		}},
+		Adds: []data.Resource{{
+			Name: "coal", Quantity: 350,
+		}, {
+			Name: "oil", Quantity: 100 * 0.25,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
+		Name: "Dragons", Type: "Trade", UnlockedBy: "Nuclear Fission",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "titanium", Quantity: 250,
+		}},
+		Adds: []data.Resource{{
+			Name: "uranium", Quantity: 1 * 0.95,
+		}, {
+			Name: "thorium", Quantity: 1 * 0.50,
+		}, {
+			Name: "blueprint", Quantity: 0.1,
+		}, {
+			Name: "spice", Quantity: 8.75,
+		}},
+	}, {
+		Name: "Leviathans", Type: "Trade", UnlockedBy: "Black Pyramid",
+		Costs: []data.Resource{{
+			Name: "catpower", Quantity: 50,
+		}, {
+			Name: "gold", Quantity: 15,
+		}, {
+			Name: "unobtainium", Quantity: 5000,
+		}},
+		Adds: []data.Resource{{
+			Name: "starchart", Quantity: 250 * 0.50,
+			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
+		}, {
+			Name: "time crystal", Quantity: 0.25 * 0.98,
+			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
+		}, {
+			Name: "bls", Quantity: 1 * 0.15,
+			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
+		}, {
+			Name: "relic", Quantity: 1 * 0.05,
+			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
 			Name: "blueprint", Quantity: 0.1,
 		}, {
