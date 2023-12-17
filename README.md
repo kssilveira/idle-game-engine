@@ -84,8 +84,6 @@ Edges:
 
 More features from kittens game:
 
-- https://wiki.kittensgame.com/en/game-tabs/religion
 - https://wiki.kittensgame.com/en/game-tabs/space
 - https://wiki.kittensgame.com/en/game-tabs/time
 - https://wiki.kittensgame.com/en/game-tabs/science/metaphysics
-- https://wiki.kittensgame.com/en/game-tabs/bonfire
