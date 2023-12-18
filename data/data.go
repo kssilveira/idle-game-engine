@@ -21,9 +21,9 @@ type Resource struct {
 	// Count = StartCount if (Producer.Count * Factor) % ProductionModulus == ProductionModulusEquals else 0
 	ProductionModulusEquals int `json:",omitempty"`
 
-	// production *= 1 + sum(bonus)
+	// Production *= 1 + sum(Bonus)
 	Bonus []Resource `json:",omitempty"`
-	// production *= sum(bonus)
+	// Production *= sum(Bonus)
 	BonusStartsFromZero bool `json:",omitempty"`
 
 	// negative production reduces consumers
@@ -33,6 +33,8 @@ type Resource struct {
 	CapProducers []Resource `json:",omitempty"`
 	// Cap = StartCap + CapProducer.Count * Factor
 	StartCap float64 `json:",omitempty"`
+	// Cap *= 1 + sum(CapBonus)
+	CapBonus []Resource `json:",omitempty"`
 
 	// cost = Count * pow(CostExponentBase, add.Count)
 	CostExponentBase float64 `json:",omitempty"`

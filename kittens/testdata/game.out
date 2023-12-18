@@ -336,14 +336,75 @@
           "Factor": 5000,
           "Bonus": [
             {
-              "Name": "Refrigeration",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Hydroponics",
-              "Factor": 0.1
+              "Name": "Silos",
+              "Factor": 0.25,
+              "Bonus": [
+                {
+                  "Name": "Expanded Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Reinforced Barns",
+                  "Factor": 0.8
+                },
+                {
+                  "Name": "Titanium Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Alloy Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Concrete Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Concrete Pillars",
+                  "Factor": 0.05
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Warehouse",
+          "Factor": 750,
+          "Bonus": [
+            {
+              "Name": "Silos",
+              "Factor": 0.25,
+              "Bonus": [
+                {
+                  "Name": "Expanded Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Reinforced Barns",
+                  "Factor": 0.8
+                },
+                {
+                  "Name": "Titanium Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Alloy Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Concrete Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Concrete Pillars",
+                  "Factor": 0.05
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true
         },
         {
           "Name": "Harbour",
@@ -355,37 +416,131 @@
               "Bonus": [
                 {
                   "Name": "Expanded Cargo",
-                  "Factor": 1
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
                 }
               ],
               "BonusStartsFromZero": true
             },
             {
-              "Name": "Refrigeration",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Hydroponics",
-              "Factor": 0.1
+              "Name": "Silos",
+              "Factor": 0.25,
+              "Bonus": [
+                {
+                  "Name": "Expanded Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Reinforced Barns",
+                  "Factor": 0.8
+                },
+                {
+                  "Name": "Titanium Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Alloy Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Concrete Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Concrete Pillars",
+                  "Factor": 0.05
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Accelerator",
+          "Factor": 30000,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Stasis Chambers",
+                  "Factor": 0.95
+                },
+                {
+                  "Name": "Void Energy",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Dark Energy",
+                  "Factor": 2.5
+                },
+                {
+                  "Name": "Tachyon Accelerators",
+                  "Factor": 5
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         },
         {
           "Name": "Moon Base",
           "Factor": 45000,
           "Bonus": [
             {
-              "Name": "Refrigeration",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Hydroponics",
-              "Factor": 0.1
+              "Name": "AI Core",
+              "Factor": 0.1,
+              "Bonus": [
+                {
+                  "Name": "AI Bases",
+                  "Factor": 1
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
       ],
-      "StartCap": 5000
+      "StartCap": 5000,
+      "CapBonus": [
+        {
+          "Name": "Refrigeration",
+          "Factor": 0.75
+        },
+        {
+          "Name": "Hydroponics",
+          "Factor": 0.1
+        },
+        {
+          "Name": "paragon",
+          "Factor": 0.001
+        },
+        {
+          "Name": "burned paragon",
+          "Factor": 0.0005
+        },
+        {
+          "Name": "Void Rift",
+          "Factor": 0.02
+        },
+        {
+          "Name": "Event Horizon",
+          "Factor": 0.1
+        }
+      ]
     },
     {
       "Name": "wood",
@@ -617,7 +772,20 @@
               "Bonus": [
                 {
                   "Name": "Expanded Cargo",
-                  "Factor": 1
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
                 }
               ],
               "BonusStartsFromZero": true
@@ -1060,7 +1228,20 @@
               "Bonus": [
                 {
                   "Name": "Expanded Cargo",
-                  "Factor": 1
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
                 }
               ],
               "BonusStartsFromZero": true
@@ -1278,7 +1459,20 @@
               "Bonus": [
                 {
                   "Name": "Expanded Cargo",
-                  "Factor": 1
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
                 }
               ],
               "BonusStartsFromZero": true
@@ -1456,7 +1650,20 @@
               "Bonus": [
                 {
                   "Name": "Expanded Cargo",
-                  "Factor": 1
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
                 }
               ],
               "BonusStartsFromZero": true
@@ -1614,7 +1821,20 @@
               "Bonus": [
                 {
                   "Name": "Expanded Cargo",
-                  "Factor": 1
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
                 }
               ],
               "BonusStartsFromZero": true
@@ -1787,7 +2007,20 @@
               "Bonus": [
                 {
                   "Name": "Expanded Cargo",
-                  "Factor": 1
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
                 }
               ],
               "BonusStartsFromZero": true
@@ -2554,6 +2787,11 @@
     },
     {
       "Name": "paragon",
+      "Type": "Resource",
+      "Cap": -1
+    },
+    {
+      "Name": "burned paragon",
       "Type": "Resource",
       "Cap": -1
     },

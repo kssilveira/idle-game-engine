@@ -438,7 +438,7 @@ func (g *Game) validateResource(r *data.Resource) error {
 		}
 	}
 	for _, list := range append(
-		[][]data.Resource{}, r.Producers, r.CapProducers, r.Bonus, r.OnGone) {
+		[][]data.Resource{}, r.Producers, r.CapProducers, r.Bonus, r.CapBonus, r.OnGone) {
 		for _, r := range list {
 			if err := g.validateResource(&r); err != nil {
 				return err
@@ -491,7 +491,11 @@ func (g *Game) getCapRate(resource *data.Resource) float64 {
 	for _, p := range resource.CapProducers {
 		factor += g.getOneRate(p)
 	}
-	return factor
+	bonus := 1.0
+	for _, b := range resource.CapBonus {
+		bonus += g.getOneRate(b)
+	}
+	return factor * bonus
 }
 
 func (g *Game) getOneRate(resource data.Resource) float64 {

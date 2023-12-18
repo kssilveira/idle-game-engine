@@ -49,6 +49,13 @@ func NewGame(now game.Now) *game.Game {
 		Name: "ship", Factor: 0.01,
 		Bonus: []data.Resource{{
 			Name: "Expanded Cargo", Factor: 1,
+			Bonus: []data.Resource{{
+				Name: "Reactor", Factor: 0.05,
+				Bonus: []data.Resource{{
+					Name: "Reactor Vessel", Factor: 1,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusStartsFromZero: true,
 	}}
@@ -63,16 +70,14 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Nanosuits", Factor: 0.5,
 	}}
-	CatnipCapBonus := []data.Resource{{
-		Name: "Refrigeration", Factor: 0.75,
-	}, {
-		Name: "Hydroponics", Factor: 0.10,
+	BarnCatnipCapBonus := []data.Resource{{
+		Name: "Silos", Factor: 0.25,
+		Bonus:               BarnBonus,
+		BonusStartsFromZero: true,
 	}}
 	CultureCapBonus := []data.Resource{{
 		Name: "Ziggurat", Factor: 0.08,
-		Bonus: []data.Resource{{
-			Name: "Unicorn Graveyard", Factor: 0.01,
-		}},
+		Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.01}},
 	}}
 	SpaceElevatorBonus := []data.Resource{{
 		Name: "Space Elevator", Factor: -0.05,
@@ -83,6 +88,37 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Advanced AM Reactors", Factor: 1.50,
 	}, {
 		Name: "Void Reactors", Factor: 4.00,
+	}}
+	AcceleratorCapBonus := []data.Resource{{
+		Name: "Stasis Chambers", Factor: 0.95,
+	}, {
+		Name: "Void Energy", Factor: 0.75,
+	}, {
+		Name: "Dark Energy", Factor: 2.50,
+	}, {
+		Name: "Tachyon Accelerators", Factor: 5.00,
+	}}
+	MoonBaseCapBonus := []data.Resource{{
+		Name: "AI Core", Factor: 0.10,
+		Bonus: []data.Resource{{
+			Name: "AI Bases", Factor: 1,
+		}},
+		BonusStartsFromZero: true,
+	}}
+	CatnipCapBonus := []data.Resource{{
+		Name: "Refrigeration", Factor: 0.75,
+	}, {
+		Name: "Hydroponics", Factor: 0.10,
+	}}
+	GlobalCapBonus := []data.Resource{{
+		Name: "Void Rift", Factor: 0.02,
+	}, {
+		Name: "Event Horizon", Factor: 0.10,
+	}}
+	ParagonCapBonus := []data.Resource{{
+		Name: "paragon", Factor: 0.001,
+	}, {
+		Name: "burned paragon", Factor: 0.0005,
 	}}
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
@@ -135,9 +171,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Brewery", Factor: -1 * 5,
 		}, {
 			Name: "Bio Lab", Factor: -1 * 5,
-			Bonus: []data.Resource{{
-				Name: "Biofuel Processing", Factor: 1,
-			}},
+			Bonus:               []data.Resource{{Name: "Biofuel Processing", Factor: 1}},
 			BonusStartsFromZero: true,
 		}}),
 		Bonus: []data.Resource{{
@@ -146,12 +180,21 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Hydroponics", Factor: 0.025,
 		}},
 		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 5000, Bonus: CatnipCapBonus,
+			Name: "Barn", Factor: 5000, Bonus: BarnCatnipCapBonus,
 		}, {
-			Name: "Harbour", Factor: 2500, Bonus: join(HarbourBonus, CatnipCapBonus),
+			Name: "Warehouse", Factor: 750,
+			Bonus:               BarnCatnipCapBonus,
+			BonusStartsFromZero: true,
 		}, {
-			Name: "Moon Base", Factor: 45000, Bonus: CatnipCapBonus,
+			Name: "Harbour", Factor: 2500, Bonus: join(HarbourBonus, BarnCatnipCapBonus),
+		}, {
+			Name: "Accelerator", Factor: 30000,
+			Bonus:               []data.Resource{{Name: "Energy Rifts", Factor: 1, Bonus: AcceleratorCapBonus}},
+			BonusStartsFromZero: true,
+		}, {
+			Name: "Moon Base", Factor: 45000, Bonus: MoonBaseCapBonus,
 		}},
+		CapBonus: join(CatnipCapBonus, ParagonCapBonus, GlobalCapBonus),
 	}, {
 		Name: "wood", Type: "Resource", StartCap: 200,
 		Producers: []data.Resource{{
@@ -769,6 +812,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "karma", Type: "Resource", Cap: -1,
 	}, {
 		Name: "paragon", Type: "Resource", Cap: -1,
+	}, {
+		Name: "burned paragon", Type: "Resource", Cap: -1,
 	}, {
 		Name: "gone kitten", Type: "Resource", Cap: -1,
 	}, {

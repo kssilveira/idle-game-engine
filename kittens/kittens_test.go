@@ -155,7 +155,7 @@ func TestRun(t *testing.T) {
 	{
 		g := NewGame(func() time.Time { return time.Unix(0, 0) })
 		if err := g.Validate(); err != nil {
-			t.Errorf("Validate got err %v", err)
+			t.Fatalf("Validate got err %v", err)
 		}
 	}
 	for _, in := range inputs {

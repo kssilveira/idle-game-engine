@@ -84,6 +84,8 @@ Edges:
 
 More features from kittens game:
 
+- output formulas
+
 - https://wiki.kittensgame.com/en/general-information/resources
 - https://wiki.kittensgame.com/en/general-information/game-mechanics
 - https://wiki.kittensgame.com/en/home
