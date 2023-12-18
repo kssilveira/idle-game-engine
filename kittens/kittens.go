@@ -141,7 +141,25 @@ func NewGame(now game.Now) *game.Game {
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []data.Resource{{Name: "day", Factor: 1, ProductionFloor: true}},
 	}, {
-		Name: "catnip", Type: "Resource", StartCap: 5000,
+		Name: "catnip cap", Type: "Resource", IsHidden: true, StartCount: 5000,
+		Producers: []data.Resource{{
+			Name: "Barn", Factor: 5000, Bonus: BarnCatnipCapBonus,
+		}, {
+			Name: "Warehouse", Factor: 750,
+			Bonus:               BarnCatnipCapBonus,
+			BonusStartsFromZero: true,
+		}, {
+			Name: "Harbour", Factor: 2500, Bonus: join(HarbourBonus, BarnCatnipCapBonus),
+		}, {
+			Name: "Accelerator", Factor: 30000,
+			Bonus:               []data.Resource{{Name: "Energy Rifts", Factor: 1, Bonus: AcceleratorCapBonus}},
+			BonusStartsFromZero: true,
+		}, {
+			Name: "Moon Base", Factor: 45000, Bonus: MoonBaseCapBonus,
+		}},
+		Bonus: join(CatnipCapBonus, ParagonCapBonus, GlobalCapBonus),
+	}, {
+		Name: "catnip", Type: "Resource", CapResource: "catnip cap",
 		Producers: join([]data.Resource{{
 			Name: "Catnip Field", Factor: 0.125 * 5,
 			Bonus: []data.Resource{{
@@ -179,24 +197,21 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Hydroponics", Factor: 0.025,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 5000, Bonus: BarnCatnipCapBonus,
-		}, {
-			Name: "Warehouse", Factor: 750,
-			Bonus:               BarnCatnipCapBonus,
-			BonusStartsFromZero: true,
-		}, {
-			Name: "Harbour", Factor: 2500, Bonus: join(HarbourBonus, BarnCatnipCapBonus),
-		}, {
-			Name: "Accelerator", Factor: 30000,
-			Bonus:               []data.Resource{{Name: "Energy Rifts", Factor: 1, Bonus: AcceleratorCapBonus}},
-			BonusStartsFromZero: true,
-		}, {
-			Name: "Moon Base", Factor: 45000, Bonus: MoonBaseCapBonus,
-		}},
-		CapBonus: join(CatnipCapBonus, ParagonCapBonus, GlobalCapBonus),
 	}, {
-		Name: "wood", Type: "Resource", StartCap: 200,
+		Name: "wood cap", Type: "Resource", IsHidden: true, StartCount: 200,
+		Producers: []data.Resource{{
+			Name: "Barn", Factor: 200, Bonus: join(BarnBonus, WarehouseBonus),
+		}, {
+			Name: "Warehouse", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus),
+		}, {
+			Name: "Harbour", Factor: 700, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
+		}, {
+			Name: "Moon Base", Factor: 25000,
+		}, {
+			Name: "Cryostation", Factor: 200000,
+		}},
+	}, {
+		Name: "wood", Type: "Resource", CapResource: "wood cap",
 		Producers: []data.Resource{{
 			Name: "woodcutter", Factor: 0.018 * 5,
 			Bonus: []data.Resource{{
@@ -227,39 +242,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Alloy Saw", Factor: 0.15,
 			}},
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 200, Bonus: join(BarnBonus, WarehouseBonus),
-		}, {
-			Name: "Warehouse", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus),
-		}, {
-			Name: "Harbour", Factor: 700, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
-		}, {
-			Name: "Moon Base", Factor: 25000,
-		}, {
-			Name: "Cryostation", Factor: 200000,
-		}},
 	}, {
-		Name: "science", Type: "Resource", StartCap: 250,
+		Name: "science cap", Type: "Resource", IsHidden: true, StartCount: 250,
 		Producers: []data.Resource{{
-			Name: "scholar", Factor: 0.035 * 5,
-			Bonus: []data.Resource{{
-				Name: "happiness", Factor: 1,
-			}},
-		}},
-		Bonus: []data.Resource{{
-			Name: "Library", Factor: 0.1,
-		}, {
-			Name: "Academy", Factor: 0.2,
-		}, {
-			Name: "Observatory", Factor: 0.25,
-		}, {
-			Name: "Bio Lab", Factor: 0.35,
-		}, {
-			Name: "Data Center", Factor: 0.10,
-		}, {
-			Name: "Space Station", Factor: 0.50,
-		}},
-		CapProducers: []data.Resource{{
 			Name: "Library", Factor: 250,
 			Bonus: []data.Resource{{
 				Name: "Observatory", Factor: 0.02,
@@ -311,7 +296,43 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Space Beacon", Factor: 25000, Bonus: SpaceReactorScienceBonus,
 		}},
 	}, {
-		Name: "catpower", Type: "Resource", StartCap: 250,
+		Name: "science", Type: "Resource", CapResource: "science cap",
+		Producers: []data.Resource{{
+			Name: "scholar", Factor: 0.035 * 5,
+			Bonus: []data.Resource{{
+				Name: "happiness", Factor: 1,
+			}},
+		}},
+		Bonus: []data.Resource{{
+			Name: "Library", Factor: 0.1,
+		}, {
+			Name: "Academy", Factor: 0.2,
+		}, {
+			Name: "Observatory", Factor: 0.25,
+		}, {
+			Name: "Bio Lab", Factor: 0.35,
+		}, {
+			Name: "Data Center", Factor: 0.10,
+		}, {
+			Name: "Space Station", Factor: 0.50,
+		}},
+	}, {
+		Name: "catpower cap", Type: "Resource", IsHidden: true, StartCount: 250,
+		Producers: []data.Resource{{
+			Name: "Hut", Factor: 75,
+		}, {
+			Name: "Log House", Factor: 50,
+		}, {
+			Name: "Mansion", Factor: 50,
+		}, {
+			Name: "Temple", Factor: 75,
+			Bonus: []data.Resource{{
+				Name: "Templars", Factor: 1,
+			}},
+			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "catpower", Type: "Resource", CapResource: "catpower cap",
 		Producers: []data.Resource{{
 			Name: "hunter", Factor: 0.06 * 5,
 			Bonus: []data.Resource{{
@@ -326,21 +347,21 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Mint", Factor: -0.75 * 5,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Hut", Factor: 75,
+	}, {
+		Name: "mineral cap", Type: "Resource", IsHidden: true, StartCount: 250,
+		Producers: []data.Resource{{
+			Name: "Barn", Factor: 250, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Log House", Factor: 50,
+			Name: "Warehouse", Factor: 200, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Mansion", Factor: 50,
+			Name: "Harbour", Factor: 950, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}, {
-			Name: "Temple", Factor: 75,
-			Bonus: []data.Resource{{
-				Name: "Templars", Factor: 1,
-			}},
-			BonusStartsFromZero: true,
+			Name: "Moon Base", Factor: 30000,
+		}, {
+			Name: "Cryostation", Factor: 200000,
 		}},
 	}, {
-		Name: "mineral", Type: "Resource", StartCap: 250,
+		Name: "mineral", Type: "Resource", CapResource: "mineral cap",
 		Producers: []data.Resource{{
 			Name: "miner", Factor: 0.05 * 5,
 			Bonus: []data.Resource{{
@@ -355,19 +376,21 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Calciner", Factor: -1.5 * 5,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 250, Bonus: join(BarnBonus, WarehouseBonus),
+	}, {
+		Name: "iron cap", Type: "Resource", IsHidden: true, StartCount: 50,
+		Producers: []data.Resource{{
+			Name: "Barn", Factor: 50, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Warehouse", Factor: 200, Bonus: join(BarnBonus, WarehouseBonus),
+			Name: "Warehouse", Factor: 25, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
-			Name: "Harbour", Factor: 950, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
+			Name: "Harbour", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
 		}, {
-			Name: "Moon Base", Factor: 30000,
+			Name: "Moon Base", Factor: 9000,
 		}, {
-			Name: "Cryostation", Factor: 200000,
+			Name: "Cryostation", Factor: 50000,
 		}},
 	}, {
-		Name: "iron", Type: "Resource", StartCap: 50,
+		Name: "iron", Type: "Resource", CapResource: "iron cap",
 		Producers: []data.Resource{{
 			Name: "Active Smelter", Factor: 0.02 * 5,
 			Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
@@ -381,19 +404,23 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Fluoridized Reactors", Factor: 1,
 			}},
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 50, Bonus: join(BarnBonus, WarehouseBonus),
+	}, {
+		Name: "coal cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
+			Name: "Barn", Factor: 60, Bonus: WarehouseBonus,
 		}, {
-			Name: "Warehouse", Factor: 25, Bonus: join(BarnBonus, WarehouseBonus),
+			Name: "Warehouse", Factor: 30, Bonus: WarehouseBonus,
 		}, {
-			Name: "Harbour", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
+			Name: "Harbour", Factor: 100, Bonus: join(WarehouseBonus, HarbourBonus, []data.Resource{{
+				Name: "Barges", Factor: 0.5,
+			}}),
 		}, {
-			Name: "Moon Base", Factor: 9000,
+			Name: "Moon Base", Factor: 3500,
 		}, {
-			Name: "Cryostation", Factor: 50000,
+			Name: "Cryostation", Factor: 25000,
 		}},
 	}, {
-		Name: "coal", Type: "Resource", StartCap: 1,
+		Name: "coal", Type: "Resource", CapResource: "coal cap",
 		Producers: []data.Resource{{
 			Name: "geologist", Factor: 0.015 * 5,
 			Bonus: []data.Resource{{
@@ -424,21 +451,19 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Name: "Pyrolysis", Factor: 0.2,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 60, Bonus: WarehouseBonus,
+	}, {
+		Name: "gold cap", Type: "Resource", IsHidden: true, StartCount: 20,
+		Producers: []data.Resource{{
+			Name: "Barn", Factor: 10, Bonus: WarehouseBonus,
 		}, {
-			Name: "Warehouse", Factor: 30, Bonus: WarehouseBonus,
+			Name: "Warehouse", Factor: 5, Bonus: WarehouseBonus,
 		}, {
-			Name: "Harbour", Factor: 100, Bonus: join(WarehouseBonus, HarbourBonus, []data.Resource{{
-				Name: "Barges", Factor: 0.5,
-			}}),
+			Name: "Harbour", Factor: 25, Bonus: join(WarehouseBonus, HarbourBonus),
 		}, {
-			Name: "Moon Base", Factor: 3500,
-		}, {
-			Name: "Cryostation", Factor: 25000,
+			Name: "Mint", Factor: 100, Bonus: WarehouseBonus,
 		}},
 	}, {
-		Name: "gold", Type: "Resource", StartCap: 20,
+		Name: "gold", Type: "Resource", CapResource: "gold cap",
 		Producers: []data.Resource{{
 			Name: "Mint", Factor: -0.005 * 5,
 		}, {
@@ -459,17 +484,21 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 10, Bonus: WarehouseBonus,
+	}, {
+		Name: "titanium cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
+			Name: "Barn", Factor: 2, Bonus: WarehouseBonus,
 		}, {
-			Name: "Warehouse", Factor: 5, Bonus: WarehouseBonus,
+			Name: "Warehouse", Factor: 10, Bonus: WarehouseBonus,
 		}, {
-			Name: "Harbour", Factor: 25, Bonus: join(WarehouseBonus, HarbourBonus),
+			Name: "Harbour", Factor: 50, Bonus: join(WarehouseBonus, HarbourBonus),
 		}, {
-			Name: "Mint", Factor: 100, Bonus: WarehouseBonus,
+			Name: "Moon Base", Factor: 1250,
+		}, {
+			Name: "Cryostation", Factor: 7500,
 		}},
 	}, {
-		Name: "titanium", Type: "Resource", StartCap: 1,
+		Name: "titanium", Type: "Resource", CapResource: "titanium cap",
 		Producers: []data.Resource{{
 			Name: "Accelerator", Factor: -0.015 * 5,
 		}, {
@@ -488,19 +517,17 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Barn", Factor: 2, Bonus: WarehouseBonus,
+	}, {
+		Name: "oil cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
+			Name: "Oil Well", Factor: 1500,
 		}, {
-			Name: "Warehouse", Factor: 10, Bonus: WarehouseBonus,
-		}, {
-			Name: "Harbour", Factor: 50, Bonus: join(WarehouseBonus, HarbourBonus),
-		}, {
-			Name: "Moon Base", Factor: 1250,
+			Name: "Moon Base", Factor: 3500,
 		}, {
 			Name: "Cryostation", Factor: 7500,
 		}},
 	}, {
-		Name: "oil", Type: "Resource", StartCap: 1,
+		Name: "oil", Type: "Resource", CapResource: "oil cap",
 		Producers: []data.Resource{{
 			Name: "Oil Well", Factor: 0.02 * 5,
 			Bonus: []data.Resource{{
@@ -526,15 +553,17 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Hydraulic Fracturer", Factor: 2.5,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Oil Well", Factor: 1500,
+	}, {
+		Name: "uranium cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
+			Name: "Reactor", Factor: 250,
 		}, {
-			Name: "Moon Base", Factor: 3500,
+			Name: "Planet Cracker", Factor: 1750,
 		}, {
-			Name: "Cryostation", Factor: 7500,
+			Name: "Cryostation", Factor: 5000,
 		}},
 	}, {
-		Name: "uranium", Type: "Resource", StartCap: 1,
+		Name: "uranium", Type: "Resource", CapResource: "uranium cap",
 		Producers: []data.Resource{{
 			Name: "Accelerator", Factor: 0.0025 * 5,
 		}, {
@@ -556,38 +585,35 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Planet Busters", Factor: 1,
 			}},
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Reactor", Factor: 250,
+	}, {
+		Name: "unobtainium cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
+			Name: "Moon Base", Factor: 150,
 		}, {
-			Name: "Planet Cracker", Factor: 1750,
-		}, {
-			Name: "Cryostation", Factor: 5000,
+			Name: "Cryostation", Factor: 750,
 		}},
 	}, {
-		Name: "unobtainium", Type: "Resource", StartCap: 1,
+		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
 		Producers: []data.Resource{{
 			Name: "Active Lunar Outpost", Factor: 0.035,
 		}},
 		Bonus: []data.Resource{{
 			Name: "Microwarp Reactors", Factor: 0.75,
 		}},
-		CapProducers: []data.Resource{{
-			Name: "Moon Base", Factor: 150,
-		}, {
-			Name: "Cryostation", Factor: 750,
-		}},
 	}, {
 		Name: "time crystal", Type: "Resource", Cap: -1,
 	}, {
-		Name: "antimatter", Type: "Resource", StartCap: 1,
+		Name: "antimatter cap", Type: "Resource", IsHidden: true, StartCount: 1,
 		Producers: []data.Resource{{
-			Name: "Sunlifter", Factor: 1. / (2 * 400 * 4),
-		}},
-		CapProducers: []data.Resource{{
 			Name: "Containment Chamber", Factor: 100,
 			Bonus: []data.Resource{{
 				Name: "Heatsink", Factor: 0.02,
 			}},
+		}},
+	}, {
+		Name: "antimatter", Type: "Resource", CapResource: "antimatter cap",
+		Producers: []data.Resource{{
+			Name: "Sunlifter", Factor: 1. / (2 * 400 * 4),
 		}},
 	}, {
 		Name: "relic", Type: "Resource", Cap: -1,
@@ -682,20 +708,8 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 	}, {
-		Name: "culture", Type: "Resource", StartCap: 575,
+		Name: "culture cap", Type: "Resource", IsHidden: true, StartCount: 575,
 		Producers: []data.Resource{{
-			Name: "Amphitheatre", Factor: 0.005 * 5,
-		}, {
-			Name: "Chapel", Factor: 0.05 * 5,
-		}, {
-			Name: "Temple", Factor: 0.1 * 5,
-			Bonus: []data.Resource{{
-				Name: "Stained Glass", Factor: 0.50,
-			}, {
-				Name: "Stained Glass", Factor: 2.00,
-			}},
-		}},
-		CapProducers: []data.Resource{{
 			Name: "Library", Factor: 10, Bonus: CultureCapBonus,
 		}, {
 			Name: "Academy", Factor: 25, Bonus: CultureCapBonus,
@@ -720,7 +734,31 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
-		Name: "faith", Type: "Resource", StartCap: 1,
+		Name: "culture", Type: "Resource", CapResource: "culture cap",
+		Producers: []data.Resource{{
+			Name: "Amphitheatre", Factor: 0.005 * 5,
+		}, {
+			Name: "Chapel", Factor: 0.05 * 5,
+		}, {
+			Name: "Temple", Factor: 0.1 * 5,
+			Bonus: []data.Resource{{
+				Name: "Stained Glass", Factor: 0.50,
+			}, {
+				Name: "Stained Glass", Factor: 2.00,
+			}},
+		}},
+	}, {
+		Name: "faith cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
+			Name: "Temple", Factor: 100,
+			Bonus: []data.Resource{{
+				Name: "Golden Spire", Factor: 0.50,
+			}, {
+				Name: "Sun Altar", Factor: 0.50,
+			}},
+		}},
+	}, {
+		Name: "faith", Type: "Resource", CapResource: "faith cap",
 		Producers: []data.Resource{{
 			Name: "priest", Factor: 0.0015 * 5,
 			Bonus: []data.Resource{{
@@ -731,14 +769,6 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Name: "Solar Chant", Factor: 0.10,
-		}},
-		CapProducers: []data.Resource{{
-			Name: "Temple", Factor: 100,
-			Bonus: []data.Resource{{
-				Name: "Golden Spire", Factor: 0.50,
-			}, {
-				Name: "Sun Altar", Factor: 0.50,
-			}},
 		}},
 	}, {
 		Name: "starchart", Type: "Resource", Cap: -1,
@@ -771,10 +801,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Entanglement Station", Factor: 0.1 * 5,
 		}},
 	}, {
-		Name: "leviathan energy", Type: "Resource", StartCap: 1,
-		CapProducers: []data.Resource{{
+		Name: "leviathan energy cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
 			Name: "Marker", Factor: 5,
 		}},
+	}, {
+		Name: "leviathan energy", Type: "Resource", CapResource: "leviathan energy cap",
 	}, {
 		Name: "tear", Type: "Resource", Cap: -1,
 	}, {
@@ -794,19 +826,23 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "necrocorn", Type: "Resource", Cap: -1,
 	}, {
-		Name: "sorrow", Type: "Resource", StartCap: 1,
-		CapProducers: []data.Resource{{
+		Name: "sorrow cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Producers: []data.Resource{{
 			Name: "Black Core", Factor: 1,
 		}},
 	}, {
-		Name: "chronoheat", Type: "Resource", StartCap: 1,
+		Name: "sorrow", Type: "Resource", CapResource: "sorrow cap",
+	}, {
+		Name: "chronoheat cap", Type: "Resource", IsHidden: true, StartCount: 1,
 		Producers: []data.Resource{{
-			Name: "Chrono Furnace", Factor: -0.02 * 5,
-		}},
-		CapProducers: []data.Resource{{
 			Name: "Chrono Furnace", Factor: 100,
 		}, {
 			Name: "Time Boiler", Factor: 10,
+		}},
+	}, {
+		Name: "chronoheat", Type: "Resource", CapResource: "chronoheat cap",
+		Producers: []data.Resource{{
+			Name: "Chrono Furnace", Factor: -0.02 * 5,
 		}},
 	}, {
 		Name: "karma", Type: "Resource", Cap: -1,

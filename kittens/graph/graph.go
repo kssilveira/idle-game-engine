@@ -40,10 +40,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 			}
 			graphBonus(edgefn, p)
 		}
-		for _, p := range r.CapProducers {
-			edgefn(p.Name, r.Name, "limegreen")
-			graphBonus(edgefn, p)
-		}
+		edgefn(r.CapResource, r.Name, "limegreen")
 		graphBonus(edgefn, *r)
 	}
 	for _, a := range g.Actions {

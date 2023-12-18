@@ -109,6 +109,222 @@
       "ProductionModulusEquals": -1
     },
     {
+      "Name": "catnip cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Barn",
+          "Factor": 5000,
+          "Bonus": [
+            {
+              "Name": "Silos",
+              "Factor": 0.25,
+              "Bonus": [
+                {
+                  "Name": "Expanded Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Reinforced Barns",
+                  "Factor": 0.8
+                },
+                {
+                  "Name": "Titanium Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Alloy Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Concrete Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Concrete Pillars",
+                  "Factor": 0.05
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
+        },
+        {
+          "Name": "Warehouse",
+          "Factor": 750,
+          "Bonus": [
+            {
+              "Name": "Silos",
+              "Factor": 0.25,
+              "Bonus": [
+                {
+                  "Name": "Expanded Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Reinforced Barns",
+                  "Factor": 0.8
+                },
+                {
+                  "Name": "Titanium Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Alloy Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Concrete Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Concrete Pillars",
+                  "Factor": 0.05
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Harbour",
+          "Factor": 2500,
+          "Bonus": [
+            {
+              "Name": "ship",
+              "Factor": 0.01,
+              "Bonus": [
+                {
+                  "Name": "Expanded Cargo",
+                  "Factor": 1,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor",
+                      "Factor": 0.05,
+                      "Bonus": [
+                        {
+                          "Name": "Reactor Vessel",
+                          "Factor": 1
+                        }
+                      ],
+                      "BonusStartsFromZero": true
+                    }
+                  ]
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Silos",
+              "Factor": 0.25,
+              "Bonus": [
+                {
+                  "Name": "Expanded Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Reinforced Barns",
+                  "Factor": 0.8
+                },
+                {
+                  "Name": "Titanium Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Alloy Barns",
+                  "Factor": 1
+                },
+                {
+                  "Name": "Concrete Barns",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Concrete Pillars",
+                  "Factor": 0.05
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
+        },
+        {
+          "Name": "Accelerator",
+          "Factor": 30000,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Stasis Chambers",
+                  "Factor": 0.95
+                },
+                {
+                  "Name": "Void Energy",
+                  "Factor": 0.75
+                },
+                {
+                  "Name": "Dark Energy",
+                  "Factor": 2.5
+                },
+                {
+                  "Name": "Tachyon Accelerators",
+                  "Factor": 5
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 45000,
+          "Bonus": [
+            {
+              "Name": "AI Core",
+              "Factor": 0.1,
+              "Bonus": [
+                {
+                  "Name": "AI Bases",
+                  "Factor": 1
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
+        }
+      ],
+      "StartCount": 5000,
+      "Bonus": [
+        {
+          "Name": "Refrigeration",
+          "Factor": 0.75
+        },
+        {
+          "Name": "Hydroponics",
+          "Factor": 0.1
+        },
+        {
+          "Name": "paragon",
+          "Factor": 0.001
+        },
+        {
+          "Name": "burned paragon",
+          "Factor": 0.0005
+        },
+        {
+          "Name": "Void Rift",
+          "Factor": 0.02
+        },
+        {
+          "Name": "Event Horizon",
+          "Factor": 0.1
+        }
+      ]
+    },
+    {
       "Name": "catnip",
       "Type": "Resource",
       "Producers": [
@@ -330,282 +546,13 @@
           "Factor": 0.025
         }
       ],
-      "CapProducers": [
-        {
-          "Name": "Barn",
-          "Factor": 5000,
-          "Bonus": [
-            {
-              "Name": "Silos",
-              "Factor": 0.25,
-              "Bonus": [
-                {
-                  "Name": "Expanded Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Reinforced Barns",
-                  "Factor": 0.8
-                },
-                {
-                  "Name": "Titanium Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Alloy Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Concrete Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Concrete Pillars",
-                  "Factor": 0.05
-                }
-              ],
-              "BonusStartsFromZero": true
-            }
-          ]
-        },
-        {
-          "Name": "Warehouse",
-          "Factor": 750,
-          "Bonus": [
-            {
-              "Name": "Silos",
-              "Factor": 0.25,
-              "Bonus": [
-                {
-                  "Name": "Expanded Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Reinforced Barns",
-                  "Factor": 0.8
-                },
-                {
-                  "Name": "Titanium Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Alloy Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Concrete Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Concrete Pillars",
-                  "Factor": 0.05
-                }
-              ],
-              "BonusStartsFromZero": true
-            }
-          ],
-          "BonusStartsFromZero": true
-        },
-        {
-          "Name": "Harbour",
-          "Factor": 2500,
-          "Bonus": [
-            {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
-            },
-            {
-              "Name": "Silos",
-              "Factor": 0.25,
-              "Bonus": [
-                {
-                  "Name": "Expanded Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Reinforced Barns",
-                  "Factor": 0.8
-                },
-                {
-                  "Name": "Titanium Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Alloy Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Concrete Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Concrete Pillars",
-                  "Factor": 0.05
-                }
-              ],
-              "BonusStartsFromZero": true
-            }
-          ]
-        },
-        {
-          "Name": "Accelerator",
-          "Factor": 30000,
-          "Bonus": [
-            {
-              "Name": "Energy Rifts",
-              "Factor": 1,
-              "Bonus": [
-                {
-                  "Name": "Stasis Chambers",
-                  "Factor": 0.95
-                },
-                {
-                  "Name": "Void Energy",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Dark Energy",
-                  "Factor": 2.5
-                },
-                {
-                  "Name": "Tachyon Accelerators",
-                  "Factor": 5
-                }
-              ]
-            }
-          ],
-          "BonusStartsFromZero": true
-        },
-        {
-          "Name": "Moon Base",
-          "Factor": 45000,
-          "Bonus": [
-            {
-              "Name": "AI Core",
-              "Factor": 0.1,
-              "Bonus": [
-                {
-                  "Name": "AI Bases",
-                  "Factor": 1
-                }
-              ],
-              "BonusStartsFromZero": true
-            }
-          ]
-        }
-      ],
-      "StartCap": 5000,
-      "CapBonus": [
-        {
-          "Name": "Refrigeration",
-          "Factor": 0.75
-        },
-        {
-          "Name": "Hydroponics",
-          "Factor": 0.1
-        },
-        {
-          "Name": "paragon",
-          "Factor": 0.001
-        },
-        {
-          "Name": "burned paragon",
-          "Factor": 0.0005
-        },
-        {
-          "Name": "Void Rift",
-          "Factor": 0.02
-        },
-        {
-          "Name": "Event Horizon",
-          "Factor": 0.1
-        }
-      ]
+      "CapResource": "catnip cap"
     },
     {
-      "Name": "wood",
+      "Name": "wood cap",
       "Type": "Resource",
+      "IsHidden": true,
       "Producers": [
-        {
-          "Name": "woodcutter",
-          "Factor": 0.09,
-          "Bonus": [
-            {
-              "Name": "happiness",
-              "Factor": 1
-            },
-            {
-              "Name": "Mineral Axe",
-              "Factor": 0.7
-            },
-            {
-              "Name": "Iron Axe",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Steel Axe",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Titanium Axe",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Axe",
-              "Factor": 0.5
-            }
-          ]
-        },
-        {
-          "Name": "Active Smelter",
-          "Factor": -0.25
-        }
-      ],
-      "Bonus": [
-        {
-          "Name": "Lumber Mill",
-          "Factor": 0.1,
-          "Bonus": [
-            {
-              "Name": "Reinforced Saw",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Steel Saw",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Titanium Saw",
-              "Factor": 0.15
-            },
-            {
-              "Name": "Alloy Saw",
-              "Factor": 0.15
-            }
-          ]
-        }
-      ],
-      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 200,
@@ -801,50 +748,78 @@
           "Factor": 200000
         }
       ],
-      "StartCap": 200
+      "StartCount": 200
     },
     {
-      "Name": "science",
+      "Name": "wood",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "scholar",
-          "Factor": 0.175,
+          "Name": "woodcutter",
+          "Factor": 0.09,
           "Bonus": [
             {
               "Name": "happiness",
               "Factor": 1
+            },
+            {
+              "Name": "Mineral Axe",
+              "Factor": 0.7
+            },
+            {
+              "Name": "Iron Axe",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Steel Axe",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Titanium Axe",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Alloy Axe",
+              "Factor": 0.5
             }
           ]
+        },
+        {
+          "Name": "Active Smelter",
+          "Factor": -0.25
         }
       ],
       "Bonus": [
         {
-          "Name": "Library",
-          "Factor": 0.1
-        },
-        {
-          "Name": "Academy",
-          "Factor": 0.2
-        },
-        {
-          "Name": "Observatory",
-          "Factor": 0.25
-        },
-        {
-          "Name": "Bio Lab",
-          "Factor": 0.35
-        },
-        {
-          "Name": "Data Center",
-          "Factor": 0.1
-        },
-        {
-          "Name": "Space Station",
-          "Factor": 0.5
+          "Name": "Lumber Mill",
+          "Factor": 0.1,
+          "Bonus": [
+            {
+              "Name": "Reinforced Saw",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Steel Saw",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Titanium Saw",
+              "Factor": 0.15
+            },
+            {
+              "Name": "Alloy Saw",
+              "Factor": 0.15
+            }
+          ]
         }
       ],
-      "CapProducers": [
+      "CapResource": "wood cap"
+    },
+    {
+      "Name": "science cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
         {
           "Name": "Library",
           "Factor": 250,
@@ -970,7 +945,81 @@
           ]
         }
       ],
-      "StartCap": 250
+      "StartCount": 250
+    },
+    {
+      "Name": "science",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "scholar",
+          "Factor": 0.175,
+          "Bonus": [
+            {
+              "Name": "happiness",
+              "Factor": 1
+            }
+          ]
+        }
+      ],
+      "Bonus": [
+        {
+          "Name": "Library",
+          "Factor": 0.1
+        },
+        {
+          "Name": "Academy",
+          "Factor": 0.2
+        },
+        {
+          "Name": "Observatory",
+          "Factor": 0.25
+        },
+        {
+          "Name": "Bio Lab",
+          "Factor": 0.35
+        },
+        {
+          "Name": "Data Center",
+          "Factor": 0.1
+        },
+        {
+          "Name": "Space Station",
+          "Factor": 0.5
+        }
+      ],
+      "CapResource": "science cap"
+    },
+    {
+      "Name": "catpower cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Hut",
+          "Factor": 75
+        },
+        {
+          "Name": "Log House",
+          "Factor": 50
+        },
+        {
+          "Name": "Mansion",
+          "Factor": 50
+        },
+        {
+          "Name": "Temple",
+          "Factor": 75,
+          "Bonus": [
+            {
+              "Name": "Templars",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCount": 250
     },
     {
       "Name": "catpower",
@@ -1003,65 +1052,13 @@
           "Factor": -3.75
         }
       ],
-      "CapProducers": [
-        {
-          "Name": "Hut",
-          "Factor": 75
-        },
-        {
-          "Name": "Log House",
-          "Factor": 50
-        },
-        {
-          "Name": "Mansion",
-          "Factor": 50
-        },
-        {
-          "Name": "Temple",
-          "Factor": 75,
-          "Bonus": [
-            {
-              "Name": "Templars",
-              "Factor": 1
-            }
-          ],
-          "BonusStartsFromZero": true
-        }
-      ],
-      "StartCap": 250
+      "CapResource": "catpower cap"
     },
     {
-      "Name": "mineral",
+      "Name": "mineral cap",
       "Type": "Resource",
+      "IsHidden": true,
       "Producers": [
-        {
-          "Name": "miner",
-          "Factor": 0.25,
-          "Bonus": [
-            {
-              "Name": "happiness",
-              "Factor": 1
-            },
-            {
-              "Name": "Mine",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Quarry",
-              "Factor": 0.35
-            }
-          ]
-        },
-        {
-          "Name": "Active Smelter",
-          "Factor": -0.5
-        },
-        {
-          "Name": "Calciner",
-          "Factor": -7.5
-        }
-      ],
-      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 250,
@@ -1257,42 +1254,46 @@
           "Factor": 200000
         }
       ],
-      "StartCap": 250
+      "StartCount": 250
     },
     {
-      "Name": "iron",
+      "Name": "mineral",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "Active Smelter",
-          "Factor": 0.1,
+          "Name": "miner",
+          "Factor": 0.25,
           "Bonus": [
             {
-              "Name": "Electrolytic Smelting",
-              "Factor": 0.95
+              "Name": "happiness",
+              "Factor": 1
+            },
+            {
+              "Name": "Mine",
+              "Factor": 0.2
+            },
+            {
+              "Name": "Quarry",
+              "Factor": 0.35
             }
           ]
         },
         {
+          "Name": "Active Smelter",
+          "Factor": -0.5
+        },
+        {
           "Name": "Calciner",
-          "Factor": 0.75,
-          "Bonus": [
-            {
-              "Name": "Oxidation",
-              "Factor": 0.95
-            },
-            {
-              "Name": "Rotary Kiln",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Fluoridized Reactors",
-              "Factor": 1
-            }
-          ]
+          "Factor": -7.5
         }
       ],
-      "CapProducers": [
+      "CapResource": "mineral cap"
+    },
+    {
+      "Name": "iron cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
         {
           "Name": "Barn",
           "Factor": 50,
@@ -1488,74 +1489,48 @@
           "Factor": 50000
         }
       ],
-      "StartCap": 50
+      "StartCount": 50
     },
     {
-      "Name": "coal",
+      "Name": "iron",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "geologist",
-          "Factor": 0.075,
+          "Name": "Active Smelter",
+          "Factor": 0.1,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
-            },
-            {
-              "Name": "Geodesy",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Mining Drill",
-              "Factor": 10
-            },
-            {
-              "Name": "Unobtainium Drill",
-              "Factor": 2
+              "Name": "Electrolytic Smelting",
+              "Factor": 0.95
             }
           ]
         },
         {
-          "Name": "Quarry",
-          "Factor": 0.075
-        },
-        {
-          "Name": "Active Smelter",
-          "Factor": 0.025,
+          "Name": "Calciner",
+          "Factor": 0.75,
           "Bonus": [
             {
-              "Name": "Coal Furnace",
-              "Factor": 1,
-              "Bonus": [
-                {
-                  "Name": "Electrolytic Smelting",
-                  "Factor": 0.95
-                }
-              ]
-            }
-          ],
-          "BonusStartsFromZero": true
-        },
-        {
-          "Name": "Mine",
-          "Factor": 0.015,
-          "Bonus": [
+              "Name": "Oxidation",
+              "Factor": 0.95
+            },
             {
-              "Name": "Deep Mining",
+              "Name": "Rotary Kiln",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Fluoridized Reactors",
               "Factor": 1
             }
-          ],
-          "BonusStartsFromZero": true
+          ]
         }
       ],
-      "Bonus": [
-        {
-          "Name": "Pyrolysis",
-          "Factor": 0.2
-        }
-      ],
-      "CapProducers": [
+      "CapResource": "iron cap"
+    },
+    {
+      "Name": "coal cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
         {
           "Name": "Barn",
           "Factor": 60,
@@ -1683,50 +1658,80 @@
           "Factor": 25000
         }
       ],
-      "StartCap": 1
+      "StartCount": 1
     },
     {
-      "Name": "gold",
+      "Name": "coal",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "Mint",
-          "Factor": -0.025
+          "Name": "geologist",
+          "Factor": 0.075,
+          "Bonus": [
+            {
+              "Name": "happiness",
+              "Factor": 1
+            },
+            {
+              "Name": "Geodesy",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Mining Drill",
+              "Factor": 10
+            },
+            {
+              "Name": "Unobtainium Drill",
+              "Factor": 2
+            }
+          ]
+        },
+        {
+          "Name": "Quarry",
+          "Factor": 0.075
         },
         {
           "Name": "Active Smelter",
-          "Factor": 0.005,
+          "Factor": 0.025,
           "Bonus": [
             {
-              "Name": "Gold Ore",
-              "Factor": 1
-            }
-          ],
-          "BonusStartsFromZero": true
-        },
-        {
-          "Name": "geologist",
-          "Factor": 0.004,
-          "Bonus": [
-            {
-              "Name": "Geodesy",
+              "Name": "Coal Furnace",
               "Factor": 1,
               "Bonus": [
                 {
-                  "Name": "Mining Drill",
-                  "Factor": 0.6
-                },
-                {
-                  "Name": "Unobtainium Drill",
-                  "Factor": 0.6
+                  "Name": "Electrolytic Smelting",
+                  "Factor": 0.95
                 }
               ]
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Mine",
+          "Factor": 0.015,
+          "Bonus": [
+            {
+              "Name": "Deep Mining",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
-      "CapProducers": [
+      "Bonus": [
+        {
+          "Name": "Pyrolysis",
+          "Factor": 0.2
+        }
+      ],
+      "CapResource": "coal cap"
+    },
+    {
+      "Name": "gold cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
         {
           "Name": "Barn",
           "Factor": 10,
@@ -1872,47 +1877,56 @@
           ]
         }
       ],
-      "StartCap": 20
+      "StartCount": 20
     },
     {
-      "Name": "titanium",
+      "Name": "gold",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "Accelerator",
-          "Factor": -0.075
-        },
-        {
-          "Name": "Calciner",
-          "Factor": 0.0025,
-          "Bonus": [
-            {
-              "Name": "Oxidation",
-              "Factor": 2.85
-            },
-            {
-              "Name": "Rotary Kiln",
-              "Factor": 2.25
-            },
-            {
-              "Name": "Fluoridized Reactors",
-              "Factor": 3
-            }
-          ]
+          "Name": "Mint",
+          "Factor": -0.025
         },
         {
           "Name": "Active Smelter",
-          "Factor": 0.0075,
+          "Factor": 0.005,
           "Bonus": [
             {
-              "Name": "Nuclear Smelter",
+              "Name": "Gold Ore",
               "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
+        },
+        {
+          "Name": "geologist",
+          "Factor": 0.004,
+          "Bonus": [
+            {
+              "Name": "Geodesy",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Mining Drill",
+                  "Factor": 0.6
+                },
+                {
+                  "Name": "Unobtainium Drill",
+                  "Factor": 0.6
+                }
+              ]
             }
           ],
           "BonusStartsFromZero": true
         }
       ],
-      "CapProducers": [
+      "CapResource": "gold cap"
+    },
+    {
+      "Name": "titanium cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
         {
           "Name": "Barn",
           "Factor": 2,
@@ -2036,7 +2050,67 @@
           "Factor": 7500
         }
       ],
-      "StartCap": 1
+      "StartCount": 1
+    },
+    {
+      "Name": "titanium",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Accelerator",
+          "Factor": -0.075
+        },
+        {
+          "Name": "Calciner",
+          "Factor": 0.0025,
+          "Bonus": [
+            {
+              "Name": "Oxidation",
+              "Factor": 2.85
+            },
+            {
+              "Name": "Rotary Kiln",
+              "Factor": 2.25
+            },
+            {
+              "Name": "Fluoridized Reactors",
+              "Factor": 3
+            }
+          ]
+        },
+        {
+          "Name": "Active Smelter",
+          "Factor": 0.0075,
+          "Bonus": [
+            {
+              "Name": "Nuclear Smelter",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "CapResource": "titanium cap"
+    },
+    {
+      "Name": "oil cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Oil Well",
+          "Factor": 1500
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 3500
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 7500
+        }
+      ],
+      "StartCount": 1
     },
     {
       "Name": "oil",
@@ -2090,21 +2164,27 @@
           "Factor": 2.5
         }
       ],
-      "CapProducers": [
+      "CapResource": "oil cap"
+    },
+    {
+      "Name": "uranium cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
         {
-          "Name": "Oil Well",
-          "Factor": 1500
+          "Name": "Reactor",
+          "Factor": 250
         },
         {
-          "Name": "Moon Base",
-          "Factor": 3500
+          "Name": "Planet Cracker",
+          "Factor": 1750
         },
         {
           "Name": "Cryostation",
-          "Factor": 7500
+          "Factor": 5000
         }
       ],
-      "StartCap": 1
+      "StartCount": 1
     },
     {
       "Name": "uranium",
@@ -2150,21 +2230,23 @@
           ]
         }
       ],
-      "CapProducers": [
+      "CapResource": "uranium cap"
+    },
+    {
+      "Name": "unobtainium cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
         {
-          "Name": "Reactor",
-          "Factor": 250
-        },
-        {
-          "Name": "Planet Cracker",
-          "Factor": 1750
+          "Name": "Moon Base",
+          "Factor": 150
         },
         {
           "Name": "Cryostation",
-          "Factor": 5000
+          "Factor": 750
         }
       ],
-      "StartCap": 1
+      "StartCount": 1
     },
     {
       "Name": "unobtainium",
@@ -2181,17 +2263,7 @@
           "Factor": 0.75
         }
       ],
-      "CapProducers": [
-        {
-          "Name": "Moon Base",
-          "Factor": 150
-        },
-        {
-          "Name": "Cryostation",
-          "Factor": 750
-        }
-      ],
-      "StartCap": 1
+      "CapResource": "unobtainium cap"
     },
     {
       "Name": "time crystal",
@@ -2199,15 +2271,10 @@
       "Cap": -1
     },
     {
-      "Name": "antimatter",
+      "Name": "antimatter cap",
       "Type": "Resource",
+      "IsHidden": true,
       "Producers": [
-        {
-          "Name": "Sunlifter",
-          "Factor": 0.0003125
-        }
-      ],
-      "CapProducers": [
         {
           "Name": "Containment Chamber",
           "Factor": 100,
@@ -2219,7 +2286,18 @@
           ]
         }
       ],
-      "StartCap": 1
+      "StartCount": 1
+    },
+    {
+      "Name": "antimatter",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Sunlifter",
+          "Factor": 0.0003125
+        }
+      ],
+      "CapResource": "antimatter cap"
     },
     {
       "Name": "relic",
@@ -2461,33 +2539,10 @@
       ]
     },
     {
-      "Name": "culture",
+      "Name": "culture cap",
       "Type": "Resource",
+      "IsHidden": true,
       "Producers": [
-        {
-          "Name": "Amphitheatre",
-          "Factor": 0.025
-        },
-        {
-          "Name": "Chapel",
-          "Factor": 0.25
-        },
-        {
-          "Name": "Temple",
-          "Factor": 0.5,
-          "Bonus": [
-            {
-              "Name": "Stained Glass",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Stained Glass",
-              "Factor": 2
-            }
-          ]
-        }
-      ],
-      "CapProducers": [
         {
           "Name": "Library",
           "Factor": 10,
@@ -2591,7 +2646,58 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCap": 575
+      "StartCount": 575
+    },
+    {
+      "Name": "culture",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Amphitheatre",
+          "Factor": 0.025
+        },
+        {
+          "Name": "Chapel",
+          "Factor": 0.25
+        },
+        {
+          "Name": "Temple",
+          "Factor": 0.5,
+          "Bonus": [
+            {
+              "Name": "Stained Glass",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Stained Glass",
+              "Factor": 2
+            }
+          ]
+        }
+      ],
+      "CapResource": "culture cap"
+    },
+    {
+      "Name": "faith cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Temple",
+          "Factor": 100,
+          "Bonus": [
+            {
+              "Name": "Golden Spire",
+              "Factor": 0.5
+            },
+            {
+              "Name": "Sun Altar",
+              "Factor": 0.5
+            }
+          ]
+        }
+      ],
+      "StartCount": 1
     },
     {
       "Name": "faith",
@@ -2618,23 +2724,7 @@
           "Factor": 0.1
         }
       ],
-      "CapProducers": [
-        {
-          "Name": "Temple",
-          "Factor": 100,
-          "Bonus": [
-            {
-              "Name": "Golden Spire",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Sun Altar",
-              "Factor": 0.5
-            }
-          ]
-        }
-      ],
-      "StartCap": 1
+      "CapResource": "faith cap"
     },
     {
       "Name": "starchart",
@@ -2699,15 +2789,21 @@
       ]
     },
     {
-      "Name": "leviathan energy",
+      "Name": "leviathan energy cap",
       "Type": "Resource",
-      "CapProducers": [
+      "IsHidden": true,
+      "Producers": [
         {
           "Name": "Marker",
           "Factor": 5
         }
       ],
-      "StartCap": 1
+      "StartCount": 1
+    },
+    {
+      "Name": "leviathan energy",
+      "Type": "Resource",
+      "CapResource": "leviathan energy cap"
     },
     {
       "Name": "tear",
@@ -2749,15 +2845,37 @@
       "Cap": -1
     },
     {
-      "Name": "sorrow",
+      "Name": "sorrow cap",
       "Type": "Resource",
-      "CapProducers": [
+      "IsHidden": true,
+      "Producers": [
         {
           "Name": "Black Core",
           "Factor": 1
         }
       ],
-      "StartCap": 1
+      "StartCount": 1
+    },
+    {
+      "Name": "sorrow",
+      "Type": "Resource",
+      "CapResource": "sorrow cap"
+    },
+    {
+      "Name": "chronoheat cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Chrono Furnace",
+          "Factor": 100
+        },
+        {
+          "Name": "Time Boiler",
+          "Factor": 10
+        }
+      ],
+      "StartCount": 1
     },
     {
       "Name": "chronoheat",
@@ -2768,17 +2886,7 @@
           "Factor": -0.1
         }
       ],
-      "CapProducers": [
-        {
-          "Name": "Chrono Furnace",
-          "Factor": 100
-        },
-        {
-          "Name": "Time Boiler",
-          "Factor": 10
-        }
-      ],
-      "StartCap": 1
+      "CapResource": "chronoheat cap"
     },
     {
       "Name": "karma",

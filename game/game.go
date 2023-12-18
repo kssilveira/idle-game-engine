@@ -195,8 +195,8 @@ func (g *Game) update(now time.Time) {
 	g.now = now
 	g.GetResource("time").Count += float64(elapsed / time.Second)
 	for _, resource := range g.Resources {
-		if resource.StartCap > 0 {
-			resource.Cap = resource.StartCap + g.getCapRate(resource)
+		if resource.CapResource != "" {
+			resource.Cap = g.GetResource(resource.CapResource).Count
 		}
 		factor := g.getRate(resource)
 		if resource.ProductionModulus != 0 {
@@ -427,7 +427,7 @@ func (g *Game) timeSkip(skip time.Duration) {
 }
 
 func (g *Game) validateResource(r *data.Resource) error {
-	for _, name := range []string{r.Name} {
+	for _, name := range []string{r.Name, r.CapResource} {
 		if err := g.validateResourceName(name); err != nil {
 			return err
 		}
@@ -438,7 +438,7 @@ func (g *Game) validateResource(r *data.Resource) error {
 		}
 	}
 	for _, list := range append(
-		[][]data.Resource{}, r.Producers, r.CapProducers, r.Bonus, r.CapBonus, r.OnGone) {
+		[][]data.Resource{}, r.Producers, r.Bonus, r.OnGone) {
 		for _, r := range list {
 			if err := g.validateResource(&r); err != nil {
 				return err
@@ -451,14 +451,6 @@ func (g *Game) validateResource(r *data.Resource) error {
 		}
 		if len(r.Producers) == 0 {
 			return fmt.Errorf("resource %s has StartCount and no Producers", r.Name)
-		}
-	}
-	if r.StartCap != 0 || len(r.CapProducers) > 0 {
-		if r.Cap != 0 {
-			return fmt.Errorf("resource %s should not set Cap", r.Name)
-		}
-		if r.StartCap == 0 || len(r.CapProducers) == 0 {
-			return fmt.Errorf("resource %s should set StartCap and CapProducers", r.Name)
 		}
 	}
 	return nil
@@ -484,18 +476,6 @@ func (g *Game) getRate(resource *data.Resource) float64 {
 		factor += g.getOneRate(p)
 	}
 	return factor * g.getBonus(*resource)
-}
-
-func (g *Game) getCapRate(resource *data.Resource) float64 {
-	factor := 0.0
-	for _, p := range resource.CapProducers {
-		factor += g.getOneRate(p)
-	}
-	bonus := 1.0
-	for _, b := range resource.CapBonus {
-		bonus += g.getOneRate(b)
-	}
-	return factor * bonus
 }
 
 func (g *Game) getOneRate(resource data.Resource) float64 {

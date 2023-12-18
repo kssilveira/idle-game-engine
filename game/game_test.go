@@ -577,39 +577,6 @@ func TestUpdate(t *testing.T) {
 			(2*4*(1+5*10) + 3*5*(1+4*9)) * 7,
 			(2*4*(1+5*10) + 3*5*(1+4*9)) * 8,
 		},
-	}, {
-		name: "capacity producer",
-		resources: []data.Resource{{
-			Name: "resource", StartCap: 1,
-			CapProducers: []data.Resource{{
-				Name: "input", Factor: 2,
-			}},
-		}, {
-			Name: "input", Count: 3, Cap: -1,
-		}},
-		times: []int{4, 5},
-		wantCap: []int{
-			1 + 2*3,
-			1 + 2*3,
-		},
-	}, {
-		name: "capacity producer bonus",
-		resources: []data.Resource{{
-			Name: "resource", StartCap: 1,
-			CapProducers: []data.Resource{{
-				Name: "input", Factor: 2,
-				Bonus: []data.Resource{{
-					Name: "input", Factor: 4,
-				}},
-			}},
-		}, {
-			Name: "input", Count: 3, Cap: -1,
-		}},
-		times: []int{4, 5},
-		wantCap: []int{
-			1 + 2*3*(1+4*3),
-			1 + 2*3*(1+4*3),
-		},
 	}}
 	for _, in := range inputs {
 		g := NewGame(time.Unix(0, 0))

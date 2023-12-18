@@ -85,6 +85,7 @@ Edges:
 More features from kittens game:
 
 - output formulas
+- multiplicative catnip cap bonus
 
 - https://wiki.kittensgame.com/en/general-information/resources
 - https://wiki.kittensgame.com/en/general-information/game-mechanics
