@@ -645,7 +645,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "happiness", Type: "Village", StartQuantity: 0.1, Capacity: -1,
+		Name: "happiness", Type: "Job", StartQuantity: 0.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.02,
 		}, {
@@ -1193,7 +1193,7 @@ func NewGame(now game.Now) *game.Game {
 	}})
 
 	g.AddActions([]data.Action{{
-		Name: "Send hunters", Type: "Village", UnlockedBy: "Archery",
+		Name: "Send hunters", Type: "Job", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
 		Adds: []data.Resource{{
 			Name: "fur", Quantity: 39.5, Bonus: HuntingBonus,
@@ -1791,9 +1791,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "void", Quantity: 250,
 		}},
-	}})
-
-	addUpgrades(g, []data.Action{{
+	}, {
 		Name: "Mineral Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
 			Name: "mineral", Quantity: 275,
@@ -3132,7 +3130,7 @@ func addBuildings(g *game.Game, actions []data.Action) {
 
 func addJobs(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
-		action.Type = "Village"
+		action.Type = "Job"
 		action.Costs = []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}}
 		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
 		g.AddAction(action)
@@ -3150,18 +3148,6 @@ func addJobs(g *game.Game, actions []data.Action) {
 func addTechs(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
 		action.Type = "Tech"
-		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
-		action.LockedBy = action.Name
-		g.AddAction(action)
-		g.AddResource(data.Resource{
-			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: 1,
-		})
-	}
-}
-
-func addUpgrades(g *game.Game, actions []data.Action) {
-	for _, action := range actions {
-		action.Type = "Upgrade"
 		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
 		action.LockedBy = action.Name
 		g.AddAction(action)

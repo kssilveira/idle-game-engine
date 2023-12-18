@@ -2,9 +2,8 @@
 digraph {
   "Resource" [shape="cylinder"];
   "Building" [shape="box3d"];
-  "Village" [shape="house"];
+  "Job" [shape="house"];
   "Tech" [shape="diamond"];
-  "Upgrade" [shape="hexagon"];
   "Craft" [shape="cds"];
   "Trade" [shape="cds"];
 }

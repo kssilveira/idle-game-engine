@@ -13,9 +13,8 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 	typeToShape := map[string]string{
 		"Resource": "cylinder",
 		"Building": "box3d",
-		"Village":  "house",
+		"Job":      "house",
 		"Tech":     "diamond",
-		"Upgrade":  "hexagon",
 		"Craft":    "cds",
 		"Trade":    "cds",
 	}
@@ -92,9 +91,8 @@ func GraphNodes(logger *log.Logger, g *game.Game, colors map[string]bool) {
 digraph {
   "Resource" [shape="cylinder"];
   "Building" [shape="box3d"];
-  "Village" [shape="house"];
+  "Job" [shape="house"];
   "Tech" [shape="diamond"];
-  "Upgrade" [shape="hexagon"];
   "Craft" [shape="cds"];
   "Trade" [shape="cds"];
 }

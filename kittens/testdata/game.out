@@ -2285,7 +2285,7 @@
     },
     {
       "Name": "happiness",
-      "Type": "Village",
+      "Type": "Job",
       "Capacity": -1,
       "Producers": [
         {
@@ -2776,7 +2776,7 @@
     },
     {
       "Name": "woodcutter",
-      "Type": "Village",
+      "Type": "Job",
       "IsHidden": true,
       "Capacity": -1,
       "OnGone": [
@@ -2792,7 +2792,7 @@
     },
     {
       "Name": "scholar",
-      "Type": "Village",
+      "Type": "Job",
       "IsHidden": true,
       "Capacity": -1,
       "OnGone": [
@@ -2808,7 +2808,7 @@
     },
     {
       "Name": "farmer",
-      "Type": "Village",
+      "Type": "Job",
       "IsHidden": true,
       "Capacity": -1,
       "OnGone": [
@@ -2824,7 +2824,7 @@
     },
     {
       "Name": "hunter",
-      "Type": "Village",
+      "Type": "Job",
       "IsHidden": true,
       "Capacity": -1,
       "OnGone": [
@@ -2840,7 +2840,7 @@
     },
     {
       "Name": "miner",
-      "Type": "Village",
+      "Type": "Job",
       "IsHidden": true,
       "Capacity": -1,
       "OnGone": [
@@ -2856,7 +2856,7 @@
     },
     {
       "Name": "priest",
-      "Type": "Village",
+      "Type": "Job",
       "IsHidden": true,
       "Capacity": -1,
       "OnGone": [
@@ -2872,7 +2872,7 @@
     },
     {
       "Name": "geologist",
-      "Type": "Village",
+      "Type": "Job",
       "IsHidden": true,
       "Capacity": -1,
       "OnGone": [
@@ -3254,787 +3254,787 @@
     },
     {
       "Name": "Mineral Hoes",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Iron Hoes",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Mineral Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Iron Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Steel Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Reinforced Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Steel Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Titanium Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Alloy Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Titanium Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Alloy Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Expanded Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Reinforced Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Reinforced Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Titanium Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Alloy Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Concrete Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Titanium Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Alloy Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Concrete Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Storage Bunkers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Energy Rifts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Stasis Chambers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Void Energy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Dark Energy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Chronoforge",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Tachyon Accelerators",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Flux Condensator",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "LHC",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Photovoltaic Cells",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Thin Film Cells",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Quantum Dot Cells",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Solar Satellites",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Expanded Cargo",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Barges",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Reactor Vessel",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Ironwood Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Concrete Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Unobtainium Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Eludium Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Silos",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Refrigeration",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Composite Bow",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Crossbow",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Railgun",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Bolas",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Hunting Armour",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Steel Armour",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Alloy Armour",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Nanosuits",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Caravanserai",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Catnip Enrichment",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Gold Ore",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Geodesy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Register",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Concrete Pillars",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Mining Drill",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Unobtainium Drill",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Coal Furnace",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Deep Mining",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Pyrolysis",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Electrolytic Smelting",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Oxidation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Steel Plants",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Automated Plants",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Nuclear Plants",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Rotary Kiln",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Fluoridized Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Nuclear Smelter",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Orbital Geodesy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Printing Press",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Offset Press",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Photolithography",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Uplink",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Cryocomputing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Machine Learning",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Workshop Automation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Advanced Automation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Pneumatic Press",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "High Pressure Engine",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Fuel Injector",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Factory Logistics",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Carbon Sequestration",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Space Manufacturing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Astrolabe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Titanium Reflectors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Unobtainium Reflectors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Eludium Reflectors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Hydro Plant Turbines",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Antimatter Bases",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "AI Bases",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Antimatter Fission",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Antimatter Drive",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Antimatter Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Advanced AM Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Void Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Relic Station",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Pumpjack",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Biofuel Processing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Unicorn Selection",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "GM Catnip",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "CAD System",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "SETI",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Logistics",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Augmentations",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Cold Fusion",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Thorium Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Enriched Uranium",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Enriched Thorium",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Oil Refinery",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Hubble Space Telescope",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Satellite Navigation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Satellite Radio",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Astrophysicists",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Microwarp Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Planet Busters",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Thorium Drive",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Oil Distillation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Factory Processing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Factory Optimization",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Space Engineers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "AI Engineers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Chronoengineers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Telecommunication",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Neural Network",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Robotic Assistance",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Factory Robotics",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Void Aspiration",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Distortion",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Chronosurge",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
     {
       "Name": "Invisible Black Hand",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "IsHidden": true,
       "Capacity": 1
     },
@@ -5958,7 +5958,7 @@
     },
     {
       "Name": "woodcutter",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Hut",
       "Costs": [
         {
@@ -5976,7 +5976,7 @@
     },
     {
       "Name": "scholar",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Library",
       "Costs": [
         {
@@ -5994,7 +5994,7 @@
     },
     {
       "Name": "farmer",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Agriculture",
       "Costs": [
         {
@@ -6012,7 +6012,7 @@
     },
     {
       "Name": "hunter",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Archery",
       "Costs": [
         {
@@ -6030,7 +6030,7 @@
     },
     {
       "Name": "miner",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Mine",
       "Costs": [
         {
@@ -6048,7 +6048,7 @@
     },
     {
       "Name": "priest",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Theology",
       "Costs": [
         {
@@ -6066,7 +6066,7 @@
     },
     {
       "Name": "geologist",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Geology",
       "Costs": [
         {
@@ -6084,7 +6084,7 @@
     },
     {
       "Name": "Send hunters",
-      "Type": "Village",
+      "Type": "Job",
       "UnlockedBy": "Archery",
       "Costs": [
         {
@@ -7902,7 +7902,7 @@
     },
     {
       "Name": "Mineral Hoes",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Workshop",
       "LockedBy": "Mineral Hoes",
       "Costs": [
@@ -7924,7 +7924,7 @@
     },
     {
       "Name": "Iron Hoes",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Workshop",
       "LockedBy": "Iron Hoes",
       "Costs": [
@@ -7946,7 +7946,7 @@
     },
     {
       "Name": "Mineral Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Workshop",
       "LockedBy": "Mineral Axe",
       "Costs": [
@@ -7968,7 +7968,7 @@
     },
     {
       "Name": "Iron Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Workshop",
       "LockedBy": "Iron Axe",
       "Costs": [
@@ -7990,7 +7990,7 @@
     },
     {
       "Name": "Steel Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel",
       "LockedBy": "Steel Axe",
       "Costs": [
@@ -8012,7 +8012,7 @@
     },
     {
       "Name": "Reinforced Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Construction",
       "LockedBy": "Reinforced Saw",
       "Costs": [
@@ -8034,7 +8034,7 @@
     },
     {
       "Name": "Steel Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Physics",
       "LockedBy": "Steel Saw",
       "Costs": [
@@ -8056,7 +8056,7 @@
     },
     {
       "Name": "Titanium Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel Saw",
       "LockedBy": "Titanium Saw",
       "Costs": [
@@ -8078,7 +8078,7 @@
     },
     {
       "Name": "Alloy Saw",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Titanium Saw",
       "LockedBy": "Alloy Saw",
       "Costs": [
@@ -8100,7 +8100,7 @@
     },
     {
       "Name": "Titanium Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Navigation",
       "LockedBy": "Titanium Axe",
       "Costs": [
@@ -8122,7 +8122,7 @@
     },
     {
       "Name": "Alloy Axe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Chemistry",
       "LockedBy": "Alloy Axe",
       "Costs": [
@@ -8144,7 +8144,7 @@
     },
     {
       "Name": "Expanded Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Workshop",
       "LockedBy": "Expanded Barns",
       "Costs": [
@@ -8174,7 +8174,7 @@
     },
     {
       "Name": "Reinforced Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Workshop",
       "LockedBy": "Reinforced Barns",
       "Costs": [
@@ -8204,7 +8204,7 @@
     },
     {
       "Name": "Reinforced Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel",
       "LockedBy": "Reinforced Warehouses",
       "Costs": [
@@ -8234,7 +8234,7 @@
     },
     {
       "Name": "Titanium Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Reinforced Barns",
       "LockedBy": "Titanium Barns",
       "Costs": [
@@ -8264,7 +8264,7 @@
     },
     {
       "Name": "Alloy Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Chemistry",
       "LockedBy": "Alloy Barns",
       "Costs": [
@@ -8290,7 +8290,7 @@
     },
     {
       "Name": "Concrete Barns",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Concrete Pillars",
       "LockedBy": "Concrete Barns",
       "Costs": [
@@ -8316,7 +8316,7 @@
     },
     {
       "Name": "Titanium Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Silos",
       "LockedBy": "Titanium Warehouses",
       "Costs": [
@@ -8346,7 +8346,7 @@
     },
     {
       "Name": "Alloy Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Chemistry",
       "LockedBy": "Alloy Warehouses",
       "Costs": [
@@ -8372,7 +8372,7 @@
     },
     {
       "Name": "Concrete Warehouses",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Concrete Pillars",
       "LockedBy": "Concrete Warehouses",
       "Costs": [
@@ -8398,7 +8398,7 @@
     },
     {
       "Name": "Storage Bunkers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Exogeology",
       "LockedBy": "Storage Bunkers",
       "Costs": [
@@ -8424,7 +8424,7 @@
     },
     {
       "Name": "Energy Rifts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Dimensional Physics",
       "LockedBy": "Energy Rifts",
       "Costs": [
@@ -8450,7 +8450,7 @@
     },
     {
       "Name": "Stasis Chambers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Chronophysics",
       "LockedBy": "Stasis Chambers",
       "Costs": [
@@ -8480,7 +8480,7 @@
     },
     {
       "Name": "Void Energy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Stasis Chambers",
       "LockedBy": "Void Energy",
       "Costs": [
@@ -8510,7 +8510,7 @@
     },
     {
       "Name": "Dark Energy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Void Energy",
       "LockedBy": "Dark Energy",
       "Costs": [
@@ -8536,7 +8536,7 @@
     },
     {
       "Name": "Chronoforge",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Tachyon Theory",
       "LockedBy": "Chronoforge",
       "Costs": [
@@ -8562,7 +8562,7 @@
     },
     {
       "Name": "Tachyon Accelerators",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Tachyon Theory",
       "LockedBy": "Tachyon Accelerators",
       "Costs": [
@@ -8588,7 +8588,7 @@
     },
     {
       "Name": "Flux Condensator",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Chronophysics",
       "LockedBy": "Flux Condensator",
       "Costs": [
@@ -8614,7 +8614,7 @@
     },
     {
       "Name": "LHC",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Dimensional Physics",
       "LockedBy": "LHC",
       "Costs": [
@@ -8640,7 +8640,7 @@
     },
     {
       "Name": "Photovoltaic Cells",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Nanotechnology",
       "LockedBy": "Photovoltaic Cells",
       "Costs": [
@@ -8662,7 +8662,7 @@
     },
     {
       "Name": "Thin Film Cells",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Satellites",
       "LockedBy": "Thin Film Cells",
       "Costs": [
@@ -8688,7 +8688,7 @@
     },
     {
       "Name": "Quantum Dot Cells",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Thorium",
       "LockedBy": "Quantum Dot Cells",
       "Costs": [
@@ -8714,7 +8714,7 @@
     },
     {
       "Name": "Solar Satellites",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Orbital Engineering",
       "LockedBy": "Solar Satellites",
       "Costs": [
@@ -8736,7 +8736,7 @@
     },
     {
       "Name": "Expanded Cargo",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Navigation",
       "LockedBy": "Expanded Cargo",
       "Costs": [
@@ -8758,7 +8758,7 @@
     },
     {
       "Name": "Barges",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Industrialization",
       "LockedBy": "Barges",
       "Costs": [
@@ -8784,7 +8784,7 @@
     },
     {
       "Name": "Reactor Vessel",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Nuclear Fission",
       "LockedBy": "Reactor Vessel",
       "Costs": [
@@ -8810,7 +8810,7 @@
     },
     {
       "Name": "Ironwood Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Reinforced Warehouses",
       "LockedBy": "Ironwood Huts",
       "Costs": [
@@ -8836,7 +8836,7 @@
     },
     {
       "Name": "Concrete Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Concrete Pillars",
       "LockedBy": "Concrete Huts",
       "Costs": [
@@ -8862,7 +8862,7 @@
     },
     {
       "Name": "Unobtainium Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Exogeology",
       "LockedBy": "Unobtainium Huts",
       "Costs": [
@@ -8888,7 +8888,7 @@
     },
     {
       "Name": "Eludium Huts",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Advanced Exogeology",
       "LockedBy": "Eludium Huts",
       "Costs": [
@@ -8910,7 +8910,7 @@
     },
     {
       "Name": "Silos",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Ironwood Huts",
       "LockedBy": "Silos",
       "Costs": [
@@ -8936,7 +8936,7 @@
     },
     {
       "Name": "Refrigeration",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Electronics",
       "LockedBy": "Refrigeration",
       "Costs": [
@@ -8962,7 +8962,7 @@
     },
     {
       "Name": "Composite Bow",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Construction",
       "LockedBy": "Composite Bow",
       "Costs": [
@@ -8988,7 +8988,7 @@
     },
     {
       "Name": "Crossbow",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Machinery",
       "LockedBy": "Crossbow",
       "Costs": [
@@ -9010,7 +9010,7 @@
     },
     {
       "Name": "Railgun",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Particle Physics",
       "LockedBy": "Railgun",
       "Costs": [
@@ -9036,7 +9036,7 @@
     },
     {
       "Name": "Bolas",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Mining",
       "LockedBy": "Bolas",
       "Costs": [
@@ -9062,7 +9062,7 @@
     },
     {
       "Name": "Hunting Armour",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Metal Working",
       "LockedBy": "Hunting Armour",
       "Costs": [
@@ -9084,7 +9084,7 @@
     },
     {
       "Name": "Steel Armour",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel",
       "LockedBy": "Steel Armour",
       "Costs": [
@@ -9106,7 +9106,7 @@
     },
     {
       "Name": "Alloy Armour",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Chemistry",
       "LockedBy": "Alloy Armour",
       "Costs": [
@@ -9128,7 +9128,7 @@
     },
     {
       "Name": "Nanosuits",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Nanotechnology",
       "LockedBy": "Nanosuits",
       "Costs": [
@@ -9150,7 +9150,7 @@
     },
     {
       "Name": "Caravanserai",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Navigation",
       "LockedBy": "Caravanserai",
       "Costs": [
@@ -9176,7 +9176,7 @@
     },
     {
       "Name": "Catnip Enrichment",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Construction",
       "LockedBy": "Catnip Enrichment",
       "Costs": [
@@ -9198,7 +9198,7 @@
     },
     {
       "Name": "Gold Ore",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Currency",
       "LockedBy": "Gold Ore",
       "Costs": [
@@ -9224,7 +9224,7 @@
     },
     {
       "Name": "Geodesy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Geology",
       "LockedBy": "Geodesy",
       "Costs": [
@@ -9250,7 +9250,7 @@
     },
     {
       "Name": "Register",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Writing",
       "LockedBy": "Register",
       "Costs": [
@@ -9272,7 +9272,7 @@
     },
     {
       "Name": "Concrete Pillars",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Mechanization",
       "LockedBy": "Concrete Pillars",
       "Costs": [
@@ -9294,7 +9294,7 @@
     },
     {
       "Name": "Mining Drill",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Metallurgy",
       "LockedBy": "Mining Drill",
       "Costs": [
@@ -9320,7 +9320,7 @@
     },
     {
       "Name": "Unobtainium Drill",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Exogeology",
       "LockedBy": "Unobtainium Drill",
       "Costs": [
@@ -9346,7 +9346,7 @@
     },
     {
       "Name": "Coal Furnace",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel",
       "LockedBy": "Coal Furnace",
       "Costs": [
@@ -9376,7 +9376,7 @@
     },
     {
       "Name": "Deep Mining",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel",
       "LockedBy": "Deep Mining",
       "Costs": [
@@ -9402,7 +9402,7 @@
     },
     {
       "Name": "Pyrolysis",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Physics",
       "LockedBy": "Pyrolysis",
       "Costs": [
@@ -9424,7 +9424,7 @@
     },
     {
       "Name": "Electrolytic Smelting",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Metallurgy",
       "LockedBy": "Electrolytic Smelting",
       "Costs": [
@@ -9446,7 +9446,7 @@
     },
     {
       "Name": "Oxidation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Metallurgy",
       "LockedBy": "Oxidation",
       "Costs": [
@@ -9468,7 +9468,7 @@
     },
     {
       "Name": "Steel Plants",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Robotics",
       "LockedBy": "Steel Plants",
       "Costs": [
@@ -9494,7 +9494,7 @@
     },
     {
       "Name": "Automated Plants",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel Plants",
       "LockedBy": "Automated Plants",
       "Costs": [
@@ -9516,7 +9516,7 @@
     },
     {
       "Name": "Nuclear Plants",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Automated Plants",
       "LockedBy": "Nuclear Plants",
       "Costs": [
@@ -9538,7 +9538,7 @@
     },
     {
       "Name": "Rotary Kiln",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Robotics",
       "LockedBy": "Rotary Kiln",
       "Costs": [
@@ -9564,7 +9564,7 @@
     },
     {
       "Name": "Fluoridized Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Nanotechnology",
       "LockedBy": "Fluoridized Reactors",
       "Costs": [
@@ -9586,7 +9586,7 @@
     },
     {
       "Name": "Nuclear Smelter",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Nuclear Fission",
       "LockedBy": "Nuclear Smelter",
       "Costs": [
@@ -9608,7 +9608,7 @@
     },
     {
       "Name": "Orbital Geodesy",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Satellites",
       "LockedBy": "Orbital Geodesy",
       "Costs": [
@@ -9634,7 +9634,7 @@
     },
     {
       "Name": "Printing Press",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Machinery",
       "LockedBy": "Printing Press",
       "Costs": [
@@ -9656,7 +9656,7 @@
     },
     {
       "Name": "Offset Press",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Combustion",
       "LockedBy": "Offset Press",
       "Costs": [
@@ -9682,7 +9682,7 @@
     },
     {
       "Name": "Photolithography",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Satellites",
       "LockedBy": "Photolithography",
       "Costs": [
@@ -9712,7 +9712,7 @@
     },
     {
       "Name": "Uplink",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Satellites",
       "LockedBy": "Uplink",
       "Costs": [
@@ -9734,7 +9734,7 @@
     },
     {
       "Name": "Cryocomputing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Superconductors",
       "LockedBy": "Cryocomputing",
       "Costs": [
@@ -9756,7 +9756,7 @@
     },
     {
       "Name": "Machine Learning",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Artificial Intelligence",
       "LockedBy": "Machine Learning",
       "Costs": [
@@ -9782,7 +9782,7 @@
     },
     {
       "Name": "Workshop Automation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Machinery",
       "LockedBy": "Workshop Automation",
       "Costs": [
@@ -9804,7 +9804,7 @@
     },
     {
       "Name": "Advanced Automation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Industrialization",
       "LockedBy": "Advanced Automation",
       "Costs": [
@@ -9830,7 +9830,7 @@
     },
     {
       "Name": "Pneumatic Press",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Physics",
       "LockedBy": "Pneumatic Press",
       "Costs": [
@@ -9856,7 +9856,7 @@
     },
     {
       "Name": "High Pressure Engine",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Steel",
       "LockedBy": "High Pressure Engine",
       "Costs": [
@@ -9882,7 +9882,7 @@
     },
     {
       "Name": "Fuel Injector",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Combustion",
       "LockedBy": "Fuel Injector",
       "Costs": [
@@ -9908,7 +9908,7 @@
     },
     {
       "Name": "Factory Logistics",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Electronics",
       "LockedBy": "Factory Logistics",
       "Costs": [
@@ -9934,7 +9934,7 @@
     },
     {
       "Name": "Carbon Sequestration",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Ecology",
       "LockedBy": "Carbon Sequestration",
       "Costs": [
@@ -9968,7 +9968,7 @@
     },
     {
       "Name": "Space Manufacturing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Superconductors",
       "LockedBy": "Space Manufacturing",
       "Costs": [
@@ -9990,7 +9990,7 @@
     },
     {
       "Name": "Astrolabe",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Navigation",
       "LockedBy": "Astrolabe",
       "Costs": [
@@ -10016,7 +10016,7 @@
     },
     {
       "Name": "Titanium Reflectors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Navigation",
       "LockedBy": "Titanium Reflectors",
       "Costs": [
@@ -10042,7 +10042,7 @@
     },
     {
       "Name": "Unobtainium Reflectors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Exogeology",
       "LockedBy": "Unobtainium Reflectors",
       "Costs": [
@@ -10068,7 +10068,7 @@
     },
     {
       "Name": "Eludium Reflectors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Advanced Exogeology",
       "LockedBy": "Eludium Reflectors",
       "Costs": [
@@ -10090,7 +10090,7 @@
     },
     {
       "Name": "Hydro Plant Turbines",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Exogeology",
       "LockedBy": "Hydro Plant Turbines",
       "Costs": [
@@ -10112,7 +10112,7 @@
     },
     {
       "Name": "Antimatter Bases",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Antimatter",
       "LockedBy": "Antimatter Bases",
       "Costs": [
@@ -10134,7 +10134,7 @@
     },
     {
       "Name": "AI Bases",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Antimatter Bases",
       "LockedBy": "AI Bases",
       "Costs": [
@@ -10156,7 +10156,7 @@
     },
     {
       "Name": "Antimatter Fission",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Antimatter",
       "LockedBy": "Antimatter Fission",
       "Costs": [
@@ -10182,7 +10182,7 @@
     },
     {
       "Name": "Antimatter Drive",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Antimatter",
       "LockedBy": "Antimatter Drive",
       "Costs": [
@@ -10204,7 +10204,7 @@
     },
     {
       "Name": "Antimatter Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Antimatter",
       "LockedBy": "Antimatter Reactors",
       "Costs": [
@@ -10226,7 +10226,7 @@
     },
     {
       "Name": "Advanced AM Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Antimatter Reactors",
       "LockedBy": "Advanced AM Reactors",
       "Costs": [
@@ -10248,7 +10248,7 @@
     },
     {
       "Name": "Void Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Advanced AM Reactors",
       "LockedBy": "Void Reactors",
       "Costs": [
@@ -10270,7 +10270,7 @@
     },
     {
       "Name": "Relic Station",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Cryptotheology",
       "LockedBy": "Relic Station",
       "Costs": [
@@ -10292,7 +10292,7 @@
     },
     {
       "Name": "Pumpjack",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Mechanization",
       "LockedBy": "Pumpjack",
       "Costs": [
@@ -10318,7 +10318,7 @@
     },
     {
       "Name": "Biofuel Processing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Biochemistry",
       "LockedBy": "Biofuel Processing",
       "Costs": [
@@ -10340,7 +10340,7 @@
     },
     {
       "Name": "Unicorn Selection",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Genetics",
       "LockedBy": "Unicorn Selection",
       "Costs": [
@@ -10362,7 +10362,7 @@
     },
     {
       "Name": "GM Catnip",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Genetics",
       "LockedBy": "GM Catnip",
       "Costs": [
@@ -10388,7 +10388,7 @@
     },
     {
       "Name": "CAD System",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Electronics",
       "LockedBy": "CAD System",
       "Costs": [
@@ -10410,7 +10410,7 @@
     },
     {
       "Name": "SETI",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Electronics",
       "LockedBy": "SETI",
       "Costs": [
@@ -10432,7 +10432,7 @@
     },
     {
       "Name": "Logistics",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Industrialization",
       "LockedBy": "Logistics",
       "Costs": [
@@ -10458,7 +10458,7 @@
     },
     {
       "Name": "Augmentations",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Nanotechnology",
       "LockedBy": "Augmentations",
       "Costs": [
@@ -10484,7 +10484,7 @@
     },
     {
       "Name": "Cold Fusion",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Superconductors",
       "LockedBy": "Cold Fusion",
       "Costs": [
@@ -10506,7 +10506,7 @@
     },
     {
       "Name": "Thorium Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Thorium",
       "LockedBy": "Thorium Reactors",
       "Costs": [
@@ -10528,7 +10528,7 @@
     },
     {
       "Name": "Enriched Uranium",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Particle Physics",
       "LockedBy": "Enriched Uranium",
       "Costs": [
@@ -10554,7 +10554,7 @@
     },
     {
       "Name": "Enriched Thorium",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Thorium Reactors",
       "LockedBy": "Enriched Thorium",
       "Costs": [
@@ -10576,7 +10576,7 @@
     },
     {
       "Name": "Oil Refinery",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Combustion",
       "LockedBy": "Oil Refinery",
       "Costs": [
@@ -10602,7 +10602,7 @@
     },
     {
       "Name": "Hubble Space Telescope",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Orbital Engineering",
       "LockedBy": "Hubble Space Telescope",
       "Costs": [
@@ -10628,7 +10628,7 @@
     },
     {
       "Name": "Satellite Navigation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Hubble Space Telescope",
       "LockedBy": "Satellite Navigation",
       "Costs": [
@@ -10650,7 +10650,7 @@
     },
     {
       "Name": "Satellite Radio",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Orbital Engineering",
       "LockedBy": "Satellite Radio",
       "Costs": [
@@ -10672,7 +10672,7 @@
     },
     {
       "Name": "Astrophysicists",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Orbital Engineering",
       "LockedBy": "Astrophysicists",
       "Costs": [
@@ -10694,7 +10694,7 @@
     },
     {
       "Name": "Microwarp Reactors",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Advanced Exogeology",
       "LockedBy": "Microwarp Reactors",
       "Costs": [
@@ -10716,7 +10716,7 @@
     },
     {
       "Name": "Planet Busters",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Advanced Exogeology",
       "LockedBy": "Planet Busters",
       "Costs": [
@@ -10738,7 +10738,7 @@
     },
     {
       "Name": "Thorium Drive",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Thorium",
       "LockedBy": "Thorium Drive",
       "Costs": [
@@ -10772,7 +10772,7 @@
     },
     {
       "Name": "Oil Distillation",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Rocketry",
       "LockedBy": "Oil Distillation",
       "Costs": [
@@ -10794,7 +10794,7 @@
     },
     {
       "Name": "Factory Processing",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Oil Processing",
       "LockedBy": "Factory Processing",
       "Costs": [
@@ -10820,7 +10820,7 @@
     },
     {
       "Name": "Factory Optimization",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Electronics",
       "LockedBy": "Factory Optimization",
       "Costs": [
@@ -10846,7 +10846,7 @@
     },
     {
       "Name": "Space Engineers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Orbital Engineering",
       "LockedBy": "Space Engineers",
       "Costs": [
@@ -10868,7 +10868,7 @@
     },
     {
       "Name": "AI Engineers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Artificial Intelligence",
       "LockedBy": "AI Engineers",
       "Costs": [
@@ -10894,7 +10894,7 @@
     },
     {
       "Name": "Chronoengineers",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Tachyon Theory",
       "LockedBy": "Chronoengineers",
       "Costs": [
@@ -10920,7 +10920,7 @@
     },
     {
       "Name": "Telecommunication",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Electronics",
       "LockedBy": "Telecommunication",
       "Costs": [
@@ -10946,7 +10946,7 @@
     },
     {
       "Name": "Neural Network",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Artificial Intelligence",
       "LockedBy": "Neural Network",
       "Costs": [
@@ -10968,7 +10968,7 @@
     },
     {
       "Name": "Robotic Assistance",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Robotics",
       "LockedBy": "Robotic Assistance",
       "Costs": [
@@ -10994,7 +10994,7 @@
     },
     {
       "Name": "Factory Robotics",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Robotics",
       "LockedBy": "Factory Robotics",
       "Costs": [
@@ -11020,7 +11020,7 @@
     },
     {
       "Name": "Void Aspiration",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Void Energy",
       "LockedBy": "Void Aspiration",
       "Costs": [
@@ -11042,7 +11042,7 @@
     },
     {
       "Name": "Distortion",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Paradox Theory",
       "LockedBy": "Distortion",
       "Costs": [
@@ -11072,7 +11072,7 @@
     },
     {
       "Name": "Chronosurge",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Chronocontrol",
       "LockedBy": "Chronosurge",
       "Costs": [
@@ -11102,7 +11102,7 @@
     },
     {
       "Name": "Invisible Black Hand",
-      "Type": "Upgrade",
+      "Type": "Tech",
       "UnlockedBy": "Blackchain",
       "LockedBy": "Invisible Black Hand",
       "Costs": [
