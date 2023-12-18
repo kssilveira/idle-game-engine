@@ -2882,6 +2882,28 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "temporal flux", Count: 4096,
 		}},
+	}, {
+		Name: "Orbital Launch", UnlockedBy: "Rocketry",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 250,
+		}, {
+			Name: "catpower", Count: 5000,
+		}, {
+			Name: "science", Count: 100000,
+		}, {
+			Name: "oil", Count: 15000,
+		}},
+	}, {
+		Name: "Moon Mission", UnlockedBy: "Orbital Launch",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 500,
+		}, {
+			Name: "titanium", Count: 5000,
+		}, {
+			Name: "science", Count: 125000,
+		}, {
+			Name: "oil", Count: 45000,
+		}},
 	}})
 
 	addCrafts(g, []data.Action{{

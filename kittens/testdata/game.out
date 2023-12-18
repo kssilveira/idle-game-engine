@@ -4039,6 +4039,18 @@
       "Cap": 1
     },
     {
+      "Name": "Orbital Launch",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Moon Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
       "Name": "beam",
       "Type": "Resource",
       "Cap": -1,
@@ -11126,6 +11138,66 @@
       "Adds": [
         {
           "Name": "Invisible Black Hand",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Orbital Launch",
+      "Type": "Tech",
+      "UnlockedBy": "Rocketry",
+      "LockedBy": "Orbital Launch",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 250
+        },
+        {
+          "Name": "catpower",
+          "Count": 5000
+        },
+        {
+          "Name": "science",
+          "Count": 100000
+        },
+        {
+          "Name": "oil",
+          "Count": 15000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Orbital Launch",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Moon Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Orbital Launch",
+      "LockedBy": "Moon Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 500
+        },
+        {
+          "Name": "titanium",
+          "Count": 5000
+        },
+        {
+          "Name": "science",
+          "Count": 125000
+        },
+        {
+          "Name": "oil",
+          "Count": 45000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Moon Mission",
           "Count": 1
         }
       ]

@@ -1274,6 +1274,16 @@ digraph {
   "void" -> "Invisible Black Hand" [color="orange"];
   "temporal flux" -> "Invisible Black Hand" [color="orange"];
   "Blackchain" -> "Invisible Black Hand" [color="blue"];
+  "starchart" -> "Orbital Launch" [color="orange"];
+  "catpower" -> "Orbital Launch" [color="orange"];
+  "science" -> "Orbital Launch" [color="orange"];
+  "oil" -> "Orbital Launch" [color="orange"];
+  "Rocketry" -> "Orbital Launch" [color="blue"];
+  "starchart" -> "Moon Mission" [color="orange"];
+  "titanium" -> "Moon Mission" [color="orange"];
+  "science" -> "Moon Mission" [color="orange"];
+  "oil" -> "Moon Mission" [color="orange"];
+  "Orbital Launch" -> "Moon Mission" [color="blue"];
   "wood" -> "@beam" [color="orange"];
   "@beam" -> "beam" [color="limegreen"];
   "Workshop" -> "beam" [color="green"];
@@ -1680,6 +1690,8 @@ digraph {
   "Distortion" [shape="diamond"];
   "Chronosurge" [shape="diamond"];
   "Invisible Black Hand" [shape="diamond"];
+  "Orbital Launch" [shape="diamond"];
+  "Moon Mission" [shape="diamond"];
   "beam" [shape="cylinder"];
   "slab" [shape="cylinder"];
   "concrete" [shape="cylinder"];
@@ -1982,6 +1994,8 @@ digraph {
   "Distortion" [shape="diamond"];
   "Chronosurge" [shape="diamond"];
   "Invisible Black Hand" [shape="diamond"];
+  "Orbital Launch" [shape="diamond"];
+  "Moon Mission" [shape="diamond"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];
   "@concrete" [shape="cds"];

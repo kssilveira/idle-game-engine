@@ -282,6 +282,8 @@ digraph {
   "Paradox Theory" -> "Distortion" [color="blue"];
   "Chronocontrol" -> "Chronosurge" [color="blue"];
   "Blackchain" -> "Invisible Black Hand" [color="blue"];
+  "Rocketry" -> "Orbital Launch" [color="blue"];
+  "Orbital Launch" -> "Moon Mission" [color="blue"];
   "Construction" -> "@beam" [color="blue"];
   "Construction" -> "@slab" [color="blue"];
   "Mechanization" -> "@concrete" [color="blue"];
@@ -577,6 +579,8 @@ digraph {
   "Distortion" [shape="diamond"];
   "Chronosurge" [shape="diamond"];
   "Invisible Black Hand" [shape="diamond"];
+  "Orbital Launch" [shape="diamond"];
+  "Moon Mission" [shape="diamond"];
   "ship" [shape="cylinder"];
   "Refine catnip" [shape="box3d"];
   "Catnip Field" [shape="box3d"];
@@ -861,6 +865,8 @@ digraph {
   "Distortion" [shape="diamond"];
   "Chronosurge" [shape="diamond"];
   "Invisible Black Hand" [shape="diamond"];
+  "Orbital Launch" [shape="diamond"];
+  "Moon Mission" [shape="diamond"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];
   "@concrete" [shape="cds"];
