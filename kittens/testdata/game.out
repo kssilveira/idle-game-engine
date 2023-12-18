@@ -324,6 +324,10 @@
         {
           "Name": "Aqueduct",
           "Factor": 0.03
+        },
+        {
+          "Name": "Hydroponics",
+          "Factor": 0.025
         }
       ],
       "CapProducers": [
@@ -334,6 +338,10 @@
             {
               "Name": "Refrigeration",
               "Factor": 0.75
+            },
+            {
+              "Name": "Hydroponics",
+              "Factor": 0.1
             }
           ]
         },
@@ -355,6 +363,24 @@
             {
               "Name": "Refrigeration",
               "Factor": 0.75
+            },
+            {
+              "Name": "Hydroponics",
+              "Factor": 0.1
+            }
+          ]
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 45000,
+          "Bonus": [
+            {
+              "Name": "Refrigeration",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Hydroponics",
+              "Factor": 0.1
             }
           ]
         }
@@ -597,6 +623,14 @@
               "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 25000
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 200000
         }
       ],
       "StartCap": 200
@@ -636,6 +670,10 @@
         {
           "Name": "Data Center",
           "Factor": 0.1
+        },
+        {
+          "Name": "Space Station",
+          "Factor": 0.5
         }
       ],
       "CapProducers": [
@@ -675,6 +713,10 @@
             {
               "Name": "Astrolabe",
               "Factor": 0.5
+            },
+            {
+              "Name": "Satellite",
+              "Factor": 0.05
             }
           ]
         },
@@ -722,6 +764,42 @@
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Research Vessel",
+          "Factor": 10000,
+          "Bonus": [
+            {
+              "Name": "Antimatter Reactors",
+              "Factor": 0.95
+            },
+            {
+              "Name": "Advanced AM Reactors",
+              "Factor": 1.5
+            },
+            {
+              "Name": "Void Reactors",
+              "Factor": 4
+            }
+          ]
+        },
+        {
+          "Name": "Space Beacon",
+          "Factor": 25000,
+          "Bonus": [
+            {
+              "Name": "Antimatter Reactors",
+              "Factor": 0.95
+            },
+            {
+              "Name": "Advanced AM Reactors",
+              "Factor": 1.5
+            },
+            {
+              "Name": "Void Reactors",
+              "Factor": 4
+            }
+          ]
         }
       ],
       "StartCap": 250
@@ -988,6 +1066,14 @@
               "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 30000
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 200000
         }
       ],
       "StartCap": 250
@@ -1198,6 +1284,14 @@
               "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 9000
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 50000
         }
       ],
       "StartCap": 50
@@ -1372,6 +1466,14 @@
               "Factor": 0.5
             }
           ]
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 3500
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 25000
         }
       ],
       "StartCap": 1
@@ -1691,6 +1793,14 @@
               "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 1250
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 7500
         }
       ],
       "StartCap": 1
@@ -1741,12 +1851,24 @@
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Hydraulic Fracturer",
+          "Factor": 2.5
         }
       ],
       "CapProducers": [
         {
           "Name": "Oil Well",
           "Factor": 1500
+        },
+        {
+          "Name": "Moon Base",
+          "Factor": 3500
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 7500
         }
       ],
       "StartCap": 1
@@ -1779,12 +1901,34 @@
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Active Lunar Outpost",
+          "Factor": -1.75
+        },
+        {
+          "Name": "Planet Cracker",
+          "Factor": 1.5,
+          "Bonus": [
+            {
+              "Name": "Planet Busters",
+              "Factor": 1
+            }
+          ]
         }
       ],
       "CapProducers": [
         {
           "Name": "Reactor",
           "Factor": 250
+        },
+        {
+          "Name": "Planet Cracker",
+          "Factor": 1750
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 5000
         }
       ],
       "StartCap": 1
@@ -1792,13 +1936,29 @@
     {
       "Name": "unobtainium",
       "Type": "Resource",
-      "Cap": 1,
+      "Producers": [
+        {
+          "Name": "Active Lunar Outpost",
+          "Factor": 0.035
+        }
+      ],
       "Bonus": [
         {
           "Name": "Microwarp Reactors",
           "Factor": 0.75
         }
-      ]
+      ],
+      "CapProducers": [
+        {
+          "Name": "Moon Base",
+          "Factor": 150
+        },
+        {
+          "Name": "Cryostation",
+          "Factor": 750
+        }
+      ],
+      "StartCap": 1
     },
     {
       "Name": "time crystal",
@@ -1808,12 +1968,59 @@
     {
       "Name": "antimatter",
       "Type": "Resource",
-      "Cap": 1
+      "Producers": [
+        {
+          "Name": "Sunlifter",
+          "Factor": 0.0003125
+        }
+      ],
+      "CapProducers": [
+        {
+          "Name": "Containment Chamber",
+          "Factor": 100,
+          "Bonus": [
+            {
+              "Name": "Heatsink",
+              "Factor": 0.02
+            }
+          ]
+        }
+      ],
+      "StartCap": 1
     },
     {
       "Name": "relic",
       "Type": "Resource",
-      "Cap": 1
+      "Cap": 1,
+      "Producers": [
+        {
+          "Name": "Space Beacon",
+          "Factor": 0.005,
+          "Bonus": [
+            {
+              "Name": "Relic Station",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Black Nexus",
+                  "Factor": 0.1,
+                  "Bonus": [
+                    {
+                      "Name": "Black Pyramid",
+                      "Factor": 1
+                    }
+                  ]
+                },
+                {
+                  "Name": "Hash Level",
+                  "Factor": 0.25
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ]
     },
     {
       "Name": "void",
@@ -1962,6 +2169,10 @@
         {
           "Name": "Brewery",
           "Factor": -0.5
+        },
+        {
+          "Name": "Spice Refinery",
+          "Factor": 0.125
         }
       ]
     },
@@ -2197,6 +2408,18 @@
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Satellite",
+          "Factor": 0.005
+        },
+        {
+          "Name": "Research Vessel",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Space Beacon",
+          "Factor": 0.125
         }
       ],
       "Bonus": [
@@ -2214,6 +2437,21 @@
         {
           "Name": "AI Core",
           "Factor": 0.1
+        },
+        {
+          "Name": "Entanglement Station",
+          "Factor": -0.5
+        }
+      ]
+    },
+    {
+      "Name": "hash",
+      "Type": "Resource",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Entanglement Station",
+          "Factor": 0.5
         }
       ]
     },
@@ -2757,6 +2995,170 @@
       "Cap": -1
     },
     {
+      "Name": "Space Elevator",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Satellite",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Space Station",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Lunar Outpost",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Active Lunar Outpost",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Lunar Outpost",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Factor": -1
+        },
+        {
+          "Name": "Lunar Outpost",
+          "Factor": 1
+        },
+        {
+          "Name": "Active Lunar Outpost",
+          "Factor": -1
+        }
+      ],
+      "StartCount": 1
+    },
+    {
+      "Name": "Moon Base",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Planet Cracker",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Hydraulic Fracturer",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Spice Refinery",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Research Vessel",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Orbital Array",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Sunlifter",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Containment Chamber",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Heatsink",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Sunforge",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Cryostation",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Space Beacon",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Terraforming Station",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Hydroponics",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "HR Harvester",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Entanglement Station",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Tectonic",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Molten Core",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Hash Level",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
       "Name": "Chronocontrol",
       "Type": "Building",
       "IsHidden": true,
@@ -3199,7 +3601,7 @@
       "Cap": 1
     },
     {
-      "Name": "Hydroponics",
+      "Name": "Hydroponics Tech",
       "Type": "Tech",
       "IsHidden": true,
       "Cap": 1
@@ -4069,7 +4471,7 @@
       "Cap": 1
     },
     {
-      "Name": "T-minus Mission",
+      "Name": "T-Minus Mission",
       "Type": "Tech",
       "IsHidden": true,
       "Cap": 1
@@ -5993,6 +6395,760 @@
       ]
     },
     {
+      "Name": "Space Elevator",
+      "Type": "Building",
+      "UnlockedBy": "Orbital Engineering",
+      "Costs": [
+        {
+          "Name": "titanium",
+          "Count": 6000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "science",
+          "Count": 75000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "unobtainium",
+          "Count": 50,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Space Elevator",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Satellite",
+      "Type": "Building",
+      "UnlockedBy": "Satellites",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 325,
+          "CostExponentBase": 1.08
+        },
+        {
+          "Name": "titanium",
+          "Count": 2500,
+          "CostExponentBase": 1.08
+        },
+        {
+          "Name": "science",
+          "Count": 100000,
+          "CostExponentBase": 1.08
+        },
+        {
+          "Name": "oil",
+          "Count": 15000,
+          "Bonus": [
+            {
+              "Name": "Space Elevator",
+              "Factor": -0.05
+            }
+          ],
+          "CostExponentBase": 1.05
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Satellite",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Space Station",
+      "Type": "Building",
+      "UnlockedBy": "Orbital Engineering",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 425,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "alloy",
+          "Count": 750,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "science",
+          "Count": 150000,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "oil",
+          "Count": 35000,
+          "Bonus": [
+            {
+              "Name": "Space Elevator",
+              "Factor": -0.05
+            }
+          ],
+          "CostExponentBase": 1.05
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Space Station",
+          "Count": 1
+        },
+        {
+          "Name": "kitten",
+          "Cap": 2
+        }
+      ]
+    },
+    {
+      "Name": "Lunar Outpost",
+      "Type": "Building",
+      "UnlockedBy": "Moon Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 650,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "uranium",
+          "Count": 500,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "alloy",
+          "Count": 750,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "concrete",
+          "Count": 150,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "science",
+          "Count": 100000,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "oil",
+          "Count": 55000,
+          "Bonus": [
+            {
+              "Name": "Space Elevator",
+              "Factor": -0.05
+            }
+          ],
+          "CostExponentBase": 1.05
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Lunar Outpost",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Active Lunar Outpost",
+      "Type": "Building",
+      "UnlockedBy": "Lunar Outpost",
+      "Costs": [
+        {
+          "Name": "Idle Lunar Outpost",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Lunar Outpost",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Moon Base",
+      "Type": "Building",
+      "UnlockedBy": "Moon Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 700,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "titanium",
+          "Count": 9500,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "concrete",
+          "Count": 250,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "science",
+          "Count": 100000,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "unobtainium",
+          "Count": 50,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "oil",
+          "Count": 70000,
+          "Bonus": [
+            {
+              "Name": "Space Elevator",
+              "Factor": -0.05
+            }
+          ],
+          "CostExponentBase": 1.05
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Moon Base",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Planet Cracker",
+      "Type": "Building",
+      "UnlockedBy": "Dune Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 2500,
+          "CostExponentBase": 1.18
+        },
+        {
+          "Name": "alloy",
+          "Count": 1750,
+          "CostExponentBase": 1.18
+        },
+        {
+          "Name": "science",
+          "Count": 125000,
+          "CostExponentBase": 1.18
+        },
+        {
+          "Name": "kerosene",
+          "Count": 50,
+          "CostExponentBase": 1.18
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Planet Cracker",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hydraulic Fracturer",
+      "Type": "Building",
+      "UnlockedBy": "Dune Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 750,
+          "CostExponentBase": 1.18
+        },
+        {
+          "Name": "alloy",
+          "Count": 1025,
+          "CostExponentBase": 1.18
+        },
+        {
+          "Name": "science",
+          "Count": 150000,
+          "CostExponentBase": 1.18
+        },
+        {
+          "Name": "kerosene",
+          "Count": 100,
+          "CostExponentBase": 1.18
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hydraulic Fracturer",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Spice Refinery",
+      "Type": "Building",
+      "UnlockedBy": "Dune Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "alloy",
+          "Count": 500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "science",
+          "Count": 75000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "kerosene",
+          "Count": 125,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Spice Refinery",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Research Vessel",
+      "Type": "Building",
+      "UnlockedBy": "Piscine Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "alloy",
+          "Count": 2500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "titanium",
+          "Count": 12500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "kerosene",
+          "Count": 250,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Research Vessel",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Orbital Array",
+      "Type": "Building",
+      "UnlockedBy": "Piscine Mission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 250000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "eludium",
+          "Count": 100,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "kerosene",
+          "Count": 500,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "starchart",
+          "Count": 2000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Orbital Array",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Sunlifter",
+      "Type": "Building",
+      "UnlockedBy": "Helios Mission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 500000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "eludium",
+          "Count": 225,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "kerosene",
+          "Count": 2500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Sunlifter",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Containment Chamber",
+      "Type": "Building",
+      "UnlockedBy": "Helios Mission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 500000,
+          "CostExponentBase": 1.125
+        },
+        {
+          "Name": "kerosene",
+          "Count": 2500,
+          "CostExponentBase": 1.125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Containment Chamber",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Heatsink",
+      "Type": "Building",
+      "UnlockedBy": "Helios Mission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 125000,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "thorium",
+          "Count": 12500,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "relic",
+          "Count": 1,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "kerosene",
+          "Count": 5000,
+          "CostExponentBase": 1.12
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Heatsink",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Sunforge",
+      "Type": "Building",
+      "UnlockedBy": "Helios Mission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 100000,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "relic",
+          "Count": 1,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "kerosene",
+          "Count": 1250,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "antimatter",
+          "Count": 250,
+          "CostExponentBase": 1.12
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Sunforge",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Cryostation",
+      "Type": "Building",
+      "UnlockedBy": "T-Minus Mission",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 200000,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "eludium",
+          "Count": 25,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "concrete",
+          "Count": 1500,
+          "CostExponentBase": 1.12
+        },
+        {
+          "Name": "kerosene",
+          "Count": 500,
+          "CostExponentBase": 1.12
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Cryostation",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Space Beacon",
+      "Type": "Building",
+      "UnlockedBy": "Kairo Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 25000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "antimatter",
+          "Count": 10,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "alloy",
+          "Count": 25000,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "kerosene",
+          "Count": 7500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Space Beacon",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Terraforming Station",
+      "Type": "Building",
+      "UnlockedBy": "Terraformation",
+      "Costs": [
+        {
+          "Name": "antimatter",
+          "Count": 25,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "uranium",
+          "Count": 5000,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "kerosene",
+          "Count": 5000,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Terraforming Station",
+          "Count": 1
+        },
+        {
+          "Name": "kitten",
+          "Cap": 1,
+          "Bonus": [
+            {
+              "Name": "Hydroponics",
+              "Factor": 0.01
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Hydroponics",
+      "Type": "Building",
+      "UnlockedBy": "Hydroponics Tech",
+      "Costs": [
+        {
+          "Name": "unobtainium",
+          "Count": 1,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "kerosene",
+          "Count": 500,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hydroponics",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "HR Harvester",
+      "Type": "Building",
+      "UnlockedBy": "Umbra Mission",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Count": 25,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "antimatter",
+          "Count": 1250,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "HR Harvester",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Entanglement Station",
+      "Type": "Building",
+      "UnlockedBy": "Quantum Cryptography",
+      "Costs": [
+        {
+          "Name": "relic",
+          "Count": 1250,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "antimatter",
+          "Count": 5250,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "eludium",
+          "Count": 5000,
+          "CostExponentBase": 1.15
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Entanglement Station",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Tectonic",
+      "Type": "Building",
+      "UnlockedBy": "Terraformation",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 600000,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "antimatter",
+          "Count": 500,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "thorium",
+          "Count": 75000,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Tectonic",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Molten Core",
+      "Type": "Building",
+      "UnlockedBy": "Exophysics",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 25000000,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "uranium",
+          "Count": 5000000,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Molten Core",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hash Level",
+      "Type": "Building",
+      "UnlockedBy": "hash",
+      "Costs": [
+        {
+          "Name": "hash",
+          "Count": 1600,
+          "CostExponentBase": 1.6
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hash Level",
+          "Count": 1
+        }
+      ]
+    },
+    {
       "Name": "Chronocontrol",
       "Type": "Building",
       "UnlockedBy": "Paradox Theory",
@@ -7773,10 +8929,10 @@
       ]
     },
     {
-      "Name": "Hydroponics",
+      "Name": "Hydroponics Tech",
       "Type": "Tech",
       "UnlockedBy": "Terraformation",
-      "LockedBy": "Hydroponics",
+      "LockedBy": "Hydroponics Tech",
       "Costs": [
         {
           "Name": "science",
@@ -7789,7 +8945,7 @@
       ],
       "Adds": [
         {
-          "Name": "Hydroponics",
+          "Name": "Hydroponics Tech",
           "Count": 1
         }
       ]
@@ -7797,7 +8953,7 @@
     {
       "Name": "Exophysics",
       "Type": "Tech",
-      "UnlockedBy": "Hydroponics",
+      "UnlockedBy": "Hydroponics Tech",
       "LockedBy": "Exophysics",
       "Costs": [
         {
@@ -11228,7 +12384,13 @@
         },
         {
           "Name": "oil",
-          "Count": 15000
+          "Count": 15000,
+          "Bonus": [
+            {
+              "Name": "Space Elevator",
+              "Factor": -0.05
+            }
+          ]
         }
       ],
       "Adds": [
@@ -11258,7 +12420,13 @@
         },
         {
           "Name": "oil",
-          "Count": 45000
+          "Count": 45000,
+          "Bonus": [
+            {
+              "Name": "Space Elevator",
+              "Factor": -0.05
+            }
+          ]
         }
       ],
       "Adds": [
@@ -11359,10 +12527,10 @@
       ]
     },
     {
-      "Name": "T-minus Mission",
+      "Name": "T-Minus Mission",
       "Type": "Tech",
       "UnlockedBy": "Helios Mission",
-      "LockedBy": "T-minus Mission",
+      "LockedBy": "T-Minus Mission",
       "Costs": [
         {
           "Name": "starchart",
@@ -11383,7 +12551,7 @@
       ],
       "Adds": [
         {
-          "Name": "T-minus Mission",
+          "Name": "T-Minus Mission",
           "Count": 1
         }
       ]
@@ -11391,7 +12559,7 @@
     {
       "Name": "Kairo Mission",
       "Type": "Tech",
-      "UnlockedBy": "T-minus Mission",
+      "UnlockedBy": "T-Minus Mission",
       "LockedBy": "Kairo Mission",
       "Costs": [
         {

@@ -65,12 +65,24 @@ func NewGame(now game.Now) *game.Game {
 	}}
 	CatnipCapBonus := []data.Resource{{
 		Name: "Refrigeration", Factor: 0.75,
+	}, {
+		Name: "Hydroponics", Factor: 0.10,
 	}}
 	CultureCapBonus := []data.Resource{{
 		Name: "Ziggurat", Factor: 0.08,
 		Bonus: []data.Resource{{
 			Name: "Unicorn Graveyard", Factor: 0.01,
 		}},
+	}}
+	SpaceElevatorBonus := []data.Resource{{
+		Name: "Space Elevator", Factor: -0.05,
+	}}
+	SpaceReactorScienceBonus := []data.Resource{{
+		Name: "Antimatter Reactors", Factor: 0.95,
+	}, {
+		Name: "Advanced AM Reactors", Factor: 1.50,
+	}, {
+		Name: "Void Reactors", Factor: 4.00,
 	}}
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
@@ -130,11 +142,15 @@ func NewGame(now game.Now) *game.Game {
 		}}),
 		Bonus: []data.Resource{{
 			Name: "Aqueduct", Factor: 0.03,
+		}, {
+			Name: "Hydroponics", Factor: 0.025,
 		}},
 		CapProducers: []data.Resource{{
 			Name: "Barn", Factor: 5000, Bonus: CatnipCapBonus,
 		}, {
 			Name: "Harbour", Factor: 2500, Bonus: join(HarbourBonus, CatnipCapBonus),
+		}, {
+			Name: "Moon Base", Factor: 45000, Bonus: CatnipCapBonus,
 		}},
 	}, {
 		Name: "wood", Type: "Resource", StartCap: 200,
@@ -174,6 +190,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Warehouse", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
 			Name: "Harbour", Factor: 700, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
+		}, {
+			Name: "Moon Base", Factor: 25000,
+		}, {
+			Name: "Cryostation", Factor: 200000,
 		}},
 	}, {
 		Name: "science", Type: "Resource", StartCap: 250,
@@ -193,6 +213,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Bio Lab", Factor: 0.35,
 		}, {
 			Name: "Data Center", Factor: 0.10,
+		}, {
+			Name: "Space Station", Factor: 0.50,
 		}},
 		CapProducers: []data.Resource{{
 			Name: "Library", Factor: 250,
@@ -213,6 +235,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Observatory", Factor: 1000,
 			Bonus: []data.Resource{{
 				Name: "Astrolabe", Factor: 0.5,
+			}, {
+				Name: "Satellite", Factor: 0.05,
 			}},
 		}, {
 			Name: "Bio Lab", Factor: 1500,
@@ -238,6 +262,10 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Scholasticism", Factor: 1,
 			}},
 			BonusStartsFromZero: true,
+		}, {
+			Name: "Research Vessel", Factor: 10000, Bonus: SpaceReactorScienceBonus,
+		}, {
+			Name: "Space Beacon", Factor: 25000, Bonus: SpaceReactorScienceBonus,
 		}},
 	}, {
 		Name: "catpower", Type: "Resource", StartCap: 250,
@@ -290,6 +318,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Warehouse", Factor: 200, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
 			Name: "Harbour", Factor: 950, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
+		}, {
+			Name: "Moon Base", Factor: 30000,
+		}, {
+			Name: "Cryostation", Factor: 200000,
 		}},
 	}, {
 		Name: "iron", Type: "Resource", StartCap: 50,
@@ -312,6 +344,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Warehouse", Factor: 25, Bonus: join(BarnBonus, WarehouseBonus),
 		}, {
 			Name: "Harbour", Factor: 150, Bonus: join(BarnBonus, WarehouseBonus, HarbourBonus),
+		}, {
+			Name: "Moon Base", Factor: 9000,
+		}, {
+			Name: "Cryostation", Factor: 50000,
 		}},
 	}, {
 		Name: "coal", Type: "Resource", StartCap: 1,
@@ -353,6 +389,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Harbour", Factor: 100, Bonus: join(WarehouseBonus, HarbourBonus, []data.Resource{{
 				Name: "Barges", Factor: 0.5,
 			}}),
+		}, {
+			Name: "Moon Base", Factor: 3500,
+		}, {
+			Name: "Cryostation", Factor: 25000,
 		}},
 	}, {
 		Name: "gold", Type: "Resource", StartCap: 20,
@@ -411,6 +451,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Warehouse", Factor: 10, Bonus: WarehouseBonus,
 		}, {
 			Name: "Harbour", Factor: 50, Bonus: join(WarehouseBonus, HarbourBonus),
+		}, {
+			Name: "Moon Base", Factor: 1250,
+		}, {
+			Name: "Cryostation", Factor: 7500,
 		}},
 	}, {
 		Name: "oil", Type: "Resource", StartCap: 1,
@@ -436,9 +480,15 @@ func NewGame(now game.Now) *game.Game {
 				}},
 			}},
 			BonusStartsFromZero: true,
+		}, {
+			Name: "Hydraulic Fracturer", Factor: 2.5,
 		}},
 		CapProducers: []data.Resource{{
 			Name: "Oil Well", Factor: 1500,
+		}, {
+			Name: "Moon Base", Factor: 3500,
+		}, {
+			Name: "Cryostation", Factor: 7500,
 		}},
 	}, {
 		Name: "uranium", Type: "Resource", StartCap: 1,
@@ -455,21 +505,64 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Orbital Geodesy", Factor: 1,
 			}},
 			BonusStartsFromZero: true,
+		}, {
+			Name: "Active Lunar Outpost", Factor: -1.75,
+		}, {
+			Name: "Planet Cracker", Factor: 1.5,
+			Bonus: []data.Resource{{
+				Name: "Planet Busters", Factor: 1,
+			}},
 		}},
 		CapProducers: []data.Resource{{
 			Name: "Reactor", Factor: 250,
+		}, {
+			Name: "Planet Cracker", Factor: 1750,
+		}, {
+			Name: "Cryostation", Factor: 5000,
 		}},
 	}, {
-		Name: "unobtainium", Type: "Resource", Cap: 1,
+		Name: "unobtainium", Type: "Resource", StartCap: 1,
+		Producers: []data.Resource{{
+			Name: "Active Lunar Outpost", Factor: 0.035,
+		}},
 		Bonus: []data.Resource{{
 			Name: "Microwarp Reactors", Factor: 0.75,
+		}},
+		CapProducers: []data.Resource{{
+			Name: "Moon Base", Factor: 150,
+		}, {
+			Name: "Cryostation", Factor: 750,
 		}},
 	}, {
 		Name: "time crystal", Type: "Resource", Cap: 1,
 	}, {
-		Name: "antimatter", Type: "Resource", Cap: 1,
+		Name: "antimatter", Type: "Resource", StartCap: 1,
+		Producers: []data.Resource{{
+			Name: "Sunlifter", Factor: 1. / (2 * 400 * 4),
+		}},
+		CapProducers: []data.Resource{{
+			Name: "Containment Chamber", Factor: 100,
+			Bonus: []data.Resource{{
+				Name: "Heatsink", Factor: 0.02,
+			}},
+		}},
 	}, {
 		Name: "relic", Type: "Resource", Cap: 1,
+		Producers: []data.Resource{{
+			Name: "Space Beacon", Factor: 0.01 / 2,
+			Bonus: []data.Resource{{
+				Name: "Relic Station", Factor: 1,
+				Bonus: []data.Resource{{
+					Name: "Black Nexus", Factor: 0.10,
+					Bonus: []data.Resource{{
+						Name: "Black Pyramid", Factor: 1,
+					}},
+				}, {
+					Name: "Hash Level", Factor: 0.25,
+				}},
+			}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "void", Type: "Resource", Cap: 1,
 	}, {
@@ -517,6 +610,8 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Brewery", Factor: -0.1 * 5,
+		}, {
+			Name: "Spice Refinery", Factor: 0.125,
 		}},
 	}, {
 		Name: "unicorn", Type: "Resource", Cap: -1,
@@ -605,6 +700,12 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Astrophysicists", Factor: 1,
 			}},
 			BonusStartsFromZero: true,
+		}, {
+			Name: "Satellite", Factor: 0.005,
+		}, {
+			Name: "Research Vessel", Factor: 0.05,
+		}, {
+			Name: "Space Beacon", Factor: 0.125,
 		}},
 		Bonus: []data.Resource{{
 			Name: "Hubble Space Telescope", Factor: 0.30,
@@ -613,6 +714,13 @@ func NewGame(now game.Now) *game.Game {
 		Name: "gigaflop", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
 			Name: "AI Core", Factor: 0.02 * 5,
+		}, {
+			Name: "Entanglement Station", Factor: -0.1 * 5,
+		}},
+	}, {
+		Name: "hash", Type: "Resource", Cap: -1,
+		Producers: []data.Resource{{
+			Name: "Entanglement Station", Factor: 0.1 * 5,
 		}},
 	}, {
 		Name: "leviathan energy", Type: "Resource", StartCap: 1,
@@ -1164,6 +1272,242 @@ func NewGame(now game.Now) *game.Game {
 			Name: "relic", Count: 100000, CostExponentBase: 1.15,
 		}, {
 			Name: "void", Count: 25000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Space Elevator", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "titanium", Count: 6000, CostExponentBase: 1.15,
+		}, {
+			Name: "science", Count: 75000, CostExponentBase: 1.15,
+		}, {
+			Name: "unobtainium", Count: 50, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Satellite", UnlockedBy: "Satellites",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 325, CostExponentBase: 1.08,
+		}, {
+			Name: "titanium", Count: 2500, CostExponentBase: 1.08,
+		}, {
+			Name: "science", Count: 100000, CostExponentBase: 1.08,
+		}, {
+			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+		}},
+	}, {
+		Name: "Space Station", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 425, CostExponentBase: 1.12,
+		}, {
+			Name: "alloy", Count: 750, CostExponentBase: 1.12,
+		}, {
+			Name: "science", Count: 150000, CostExponentBase: 1.12,
+		}, {
+			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+		}},
+		Adds: []data.Resource{{Name: "kitten", Cap: 2}},
+	}, {
+		Name: "Active Lunar Outpost", UnlockedBy: "Moon Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 650, CostExponentBase: 1.12,
+		}, {
+			Name: "uranium", Count: 500, CostExponentBase: 1.12,
+		}, {
+			Name: "alloy", Count: 750, CostExponentBase: 1.12,
+		}, {
+			Name: "concrete", Count: 150, CostExponentBase: 1.12,
+		}, {
+			Name: "science", Count: 100000, CostExponentBase: 1.12,
+		}, {
+			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+		}},
+	}, {
+		Name: "Moon Base", UnlockedBy: "Moon Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 700, CostExponentBase: 1.12,
+		}, {
+			Name: "titanium", Count: 9500, CostExponentBase: 1.12,
+		}, {
+			Name: "concrete", Count: 250, CostExponentBase: 1.12,
+		}, {
+			Name: "science", Count: 100000, CostExponentBase: 1.12,
+		}, {
+			Name: "unobtainium", Count: 50, CostExponentBase: 1.12,
+		}, {
+			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+		}},
+	}, {
+		Name: "Planet Cracker", UnlockedBy: "Dune Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 2500, CostExponentBase: 1.18,
+		}, {
+			Name: "alloy", Count: 1750, CostExponentBase: 1.18,
+		}, {
+			Name: "science", Count: 125000, CostExponentBase: 1.18,
+		}, {
+			Name: "kerosene", Count: 50, CostExponentBase: 1.18,
+		}},
+	}, {
+		Name: "Hydraulic Fracturer", UnlockedBy: "Dune Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 750, CostExponentBase: 1.18,
+		}, {
+			Name: "alloy", Count: 1025, CostExponentBase: 1.18,
+		}, {
+			Name: "science", Count: 150000, CostExponentBase: 1.18,
+		}, {
+			Name: "kerosene", Count: 100, CostExponentBase: 1.18,
+		}},
+	}, {
+		Name: "Spice Refinery", UnlockedBy: "Dune Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 500, CostExponentBase: 1.15,
+		}, {
+			Name: "alloy", Count: 500, CostExponentBase: 1.15,
+		}, {
+			Name: "science", Count: 75000, CostExponentBase: 1.15,
+		}, {
+			Name: "kerosene", Count: 125, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Research Vessel", UnlockedBy: "Piscine Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 100, CostExponentBase: 1.15,
+		}, {
+			Name: "alloy", Count: 2500, CostExponentBase: 1.15,
+		}, {
+			Name: "titanium", Count: 12500, CostExponentBase: 1.15,
+		}, {
+			Name: "kerosene", Count: 250, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Orbital Array", UnlockedBy: "Piscine Mission",
+		Costs: []data.Resource{{
+			Name: "science", Count: 250000, CostExponentBase: 1.15,
+		}, {
+			Name: "eludium", Count: 100, CostExponentBase: 1.15,
+		}, {
+			Name: "kerosene", Count: 500, CostExponentBase: 1.15,
+		}, {
+			Name: "starchart", Count: 2000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Sunlifter", UnlockedBy: "Helios Mission",
+		Costs: []data.Resource{{
+			Name: "science", Count: 500000, CostExponentBase: 1.15,
+		}, {
+			Name: "eludium", Count: 225, CostExponentBase: 1.15,
+		}, {
+			Name: "kerosene", Count: 2500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Containment Chamber", UnlockedBy: "Helios Mission",
+		Costs: []data.Resource{{
+			Name: "science", Count: 500000, CostExponentBase: 1.125,
+		}, {
+			Name: "kerosene", Count: 2500, CostExponentBase: 1.125,
+		}},
+	}, {
+		Name: "Heatsink", UnlockedBy: "Helios Mission",
+		Costs: []data.Resource{{
+			Name: "science", Count: 125000, CostExponentBase: 1.12,
+		}, {
+			Name: "thorium", Count: 12500, CostExponentBase: 1.12,
+		}, {
+			Name: "relic", Count: 1, CostExponentBase: 1.12,
+		}, {
+			Name: "kerosene", Count: 5000, CostExponentBase: 1.12,
+		}},
+	}, {
+		Name: "Sunforge", UnlockedBy: "Helios Mission",
+		Costs: []data.Resource{{
+			Name: "science", Count: 100000, CostExponentBase: 1.12,
+		}, {
+			Name: "relic", Count: 1, CostExponentBase: 1.12,
+		}, {
+			Name: "kerosene", Count: 1250, CostExponentBase: 1.12,
+		}, {
+			Name: "antimatter", Count: 250, CostExponentBase: 1.12,
+		}},
+	}, {
+		Name: "Cryostation", UnlockedBy: "T-Minus Mission",
+		Costs: []data.Resource{{
+			Name: "science", Count: 200000, CostExponentBase: 1.12,
+		}, {
+			Name: "eludium", Count: 25, CostExponentBase: 1.12,
+		}, {
+			Name: "concrete", Count: 1500, CostExponentBase: 1.12,
+		}, {
+			Name: "kerosene", Count: 500, CostExponentBase: 1.12,
+		}},
+	}, {
+		Name: "Space Beacon", UnlockedBy: "Kairo Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 25000, CostExponentBase: 1.15,
+		}, {
+			Name: "antimatter", Count: 10, CostExponentBase: 1.15,
+		}, {
+			Name: "alloy", Count: 25000, CostExponentBase: 1.15,
+		}, {
+			Name: "kerosene", Count: 7500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Terraforming Station", UnlockedBy: "Terraformation",
+		Costs: []data.Resource{{
+			Name: "antimatter", Count: 25, CostExponentBase: 1.25,
+		}, {
+			Name: "uranium", Count: 5000, CostExponentBase: 1.25,
+		}, {
+			Name: "kerosene", Count: 5000, CostExponentBase: 1.25,
+		}},
+		Adds: []data.Resource{{
+			Name: "kitten", Cap: 1,
+			Bonus: []data.Resource{{
+				Name: "Hydroponics", Factor: 0.01,
+			}},
+		}},
+	}, {
+		Name: "Hydroponics", UnlockedBy: "Hydroponics Tech",
+		Costs: []data.Resource{{
+			Name: "unobtainium", Count: 1, CostExponentBase: 1.15,
+		}, {
+			Name: "kerosene", Count: 500, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "HR Harvester", UnlockedBy: "Umbra Mission",
+		Costs: []data.Resource{{
+			Name: "relic", Count: 25, CostExponentBase: 1.15,
+		}, {
+			Name: "antimatter", Count: 1250, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Entanglement Station", UnlockedBy: "Quantum Cryptography",
+		Costs: []data.Resource{{
+			Name: "relic", Count: 1250, CostExponentBase: 1.15,
+		}, {
+			Name: "antimatter", Count: 5250, CostExponentBase: 1.15,
+		}, {
+			Name: "eludium", Count: 5000, CostExponentBase: 1.15,
+		}},
+	}, {
+		Name: "Tectonic", UnlockedBy: "Terraformation",
+		Costs: []data.Resource{{
+			Name: "science", Count: 600000, CostExponentBase: 1.25,
+		}, {
+			Name: "antimatter", Count: 500, CostExponentBase: 1.25,
+		}, {
+			Name: "thorium", Count: 75000, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Molten Core", UnlockedBy: "Exophysics",
+		Costs: []data.Resource{{
+			Name: "science", Count: 25000000, CostExponentBase: 1.25,
+		}, {
+			Name: "uranium", Count: 5000000, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Hash Level", UnlockedBy: "hash",
+		Costs: []data.Resource{{
+			Name: "hash", Count: 1600, CostExponentBase: 1.6,
 		}},
 	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
@@ -1727,14 +2071,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "relic", Count: 5,
 		}},
 	}, {
-		Name: "Hydroponics", UnlockedBy: "Terraformation",
+		Name: "Hydroponics Tech", UnlockedBy: "Terraformation",
 		Costs: []data.Resource{{
 			Name: "science", Count: 1000000,
 		}, {
 			Name: "relic", Count: 25,
 		}},
 	}, {
-		Name: "Exophysics", UnlockedBy: "Hydroponics",
+		Name: "Exophysics", UnlockedBy: "Hydroponics Tech",
 		Costs: []data.Resource{{
 			Name: "science", Count: 25000000,
 		}, {
@@ -2891,7 +3235,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000,
 		}, {
-			Name: "oil", Count: 15000,
+			Name: "oil", Count: 15000, Bonus: SpaceElevatorBonus,
 		}},
 	}, {
 		Name: "Moon Mission", UnlockedBy: "Orbital Launch",
@@ -2902,7 +3246,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 125000,
 		}, {
-			Name: "oil", Count: 45000,
+			Name: "oil", Count: 45000, Bonus: SpaceElevatorBonus,
 		}},
 	}, {
 		Name: "Dune Mission", UnlockedBy: "Moon Mission",
@@ -2938,7 +3282,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kerosene", Count: 1250,
 		}},
 	}, {
-		Name: "T-minus Mission", UnlockedBy: "Helios Mission",
+		Name: "T-Minus Mission", UnlockedBy: "Helios Mission",
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 2500,
 		}, {
@@ -2949,7 +3293,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kerosene", Count: 750,
 		}},
 	}, {
-		Name: "Kairo Mission", UnlockedBy: "T-minus Mission",
+		Name: "Kairo Mission", UnlockedBy: "T-Minus Mission",
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 5000,
 		}, {
