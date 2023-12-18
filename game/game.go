@@ -142,13 +142,13 @@ func (g *Game) populateUIActions(data *ui.Data) {
 			IsLocked: g.isLocked(a),
 		}
 		if g.HasResource(a.Name) {
-			action.Quantity = g.GetResource(a.Name).Quantity
+			action.Count = g.GetResource(a.Name).Count
 		}
 		action.Costs = g.populateUICosts(a, false /* isNested */)
 		for _, r := range a.Adds {
 			action.Adds = append(action.Adds, ui.Add{
 				Name:     r.Name,
-				Quantity: g.getActionAdd(r).Quantity,
+				Count:    g.getActionAdd(r).Count,
 				Capacity: r.Capacity,
 			})
 		}
@@ -170,7 +170,7 @@ func (g *Game) populateUICosts(a data.Action, isNested bool) []ui.Cost {
 		r := g.GetResource(c.Name)
 		one := ui.Cost{
 			Name:     c.Name,
-			Quantity: r.Quantity,
+			Count:    r.Count,
 			Capacity: r.Capacity,
 			Cost:     cost,
 			Duration: g.getDuration(r, cost),
@@ -187,13 +187,13 @@ func (g *Game) populateUICosts(a data.Action, isNested bool) []ui.Cost {
 }
 
 func (g *Game) getDuration(r *data.Resource, quantity float64) time.Duration {
-	return time.Duration(((quantity - r.Quantity) / g.getRate(r))) * time.Second
+	return time.Duration(((quantity - r.Count) / g.getRate(r))) * time.Second
 }
 
 func (g *Game) update(now time.Time) {
 	elapsed := now.Sub(g.now)
 	g.now = now
-	g.GetResource("time").Quantity += float64(elapsed / time.Second)
+	g.GetResource("time").Count += float64(elapsed / time.Second)
 	for _, resource := range g.Resources {
 		if resource.StartCapacity > 0 {
 			resource.Capacity = resource.StartCapacity + g.getCapacityRate(resource)
@@ -202,20 +202,20 @@ func (g *Game) update(now time.Time) {
 		if resource.ProductionModulus != 0 {
 			factor = float64(int(factor) % resource.ProductionModulus)
 		}
-		if resource.StartQuantity != 0 {
+		if resource.StartCount != 0 {
 			if resource.ProductionModulus != 0 && resource.ProductionModulusEquals >= 0 {
 				if int(factor) == resource.ProductionModulusEquals {
-					resource.Quantity = resource.StartQuantity
+					resource.Count = resource.StartCount
 				} else {
-					resource.Quantity = 0
+					resource.Count = 0
 				}
 			} else {
-				resource.Quantity = resource.StartQuantity + factor
+				resource.Count = resource.StartCount + factor
 			}
 		} else {
-			resource.Add(data.Resource{Quantity: factor * elapsed.Seconds()})
+			resource.Add(data.Resource{Count: factor * elapsed.Seconds()})
 		}
-		if factor < 0 && resource.Quantity == 0 {
+		if factor < 0 && resource.Count == 0 {
 			g.updateRate(resource)
 		}
 	}
@@ -272,7 +272,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		return input, nil
 	}
 	for _, c := range input.Action.Costs {
-		if g.GetResource(c.Name).Quantity < g.getCost(input.Action, c) {
+		if g.GetResource(c.Name).Count < g.getCost(input.Action, c) {
 			if input.IsSkip {
 				return input, nil
 			}
@@ -281,7 +281,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	}
 	for _, c := range input.Action.Costs {
 		r := g.GetResource(c.Name)
-		r.Quantity -= g.getCost(input.Action, c)
+		r.Count -= g.getCost(input.Action, c)
 		r.Capacity -= c.Capacity
 	}
 	for _, add := range input.Action.Adds {
@@ -292,7 +292,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 }
 
 func (g *Game) getActionAdd(add data.Resource) data.Resource {
-	add.Quantity *= g.getBonus(add)
+	add.Count *= g.getBonus(add)
 	return add
 }
 
@@ -334,15 +334,15 @@ func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 }
 
 func (g *Game) isLocked(a data.Action) bool {
-	return (a.UnlockedBy != "" && g.GetResource(a.UnlockedBy).Quantity <= 0) ||
-		(a.LockedBy != "" && g.GetResource(a.LockedBy).Quantity > 0)
+	return (a.UnlockedBy != "" && g.GetResource(a.UnlockedBy).Count <= 0) ||
+		(a.LockedBy != "" && g.GetResource(a.LockedBy).Count > 0)
 }
 
 func (g *Game) checkMax(a data.Action) error {
 	found := false
 	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
-		if r.Quantity < r.Capacity || r.Capacity == -1 || add.Capacity > 0 {
+		if r.Count < r.Capacity || r.Capacity == -1 || add.Capacity > 0 {
 			found = true
 			break
 		}
@@ -358,10 +358,10 @@ func (g *Game) getSkipTime(a data.Action) (time.Duration, error) {
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
 		cost := g.getCost(a, c)
-		if r.Quantity >= cost {
+		if r.Count >= cost {
 			continue
 		}
-		if g.getRate(r) > 0 && (r.Capacity == -1 || r.Quantity < r.Capacity) {
+		if g.getRate(r) > 0 && (r.Capacity == -1 || r.Count < r.Capacity) {
 			duration := g.getDuration(r, cost) + time.Second
 			if duration > skipTime {
 				skipTime = duration
@@ -398,8 +398,8 @@ func (g *Game) getNestedAction(a data.Action, c data.Resource) data.Action {
 	for _, c := range action.Costs {
 		cost := g.getCost(action, c) * need
 		res.Costs = append(res.Costs, data.Resource{
-			Name:     c.Name,
-			Quantity: cost,
+			Name:  c.Name,
+			Count: cost,
 		})
 	}
 	return res
@@ -410,17 +410,17 @@ func (g *Game) getNeededNestedAction(a data.Action, c data.Resource) float64 {
 	if r.ProducerAction == "" {
 		return 0
 	}
-	cost := g.getCost(a, c) - r.Quantity
+	cost := g.getCost(a, c) - r.Count
 	if cost < 0 {
 		return 0
 	}
 	action := g.GetAction(r.ProducerAction)
-	res := math.Ceil(cost / g.getActionAdd(action.Adds[0]).Quantity)
+	res := math.Ceil(cost / g.getActionAdd(action.Adds[0]).Count)
 	return res
 }
 
 func (g *Game) timeSkip(skip time.Duration) {
-	g.GetResource("skip").Quantity += float64(skip / time.Second)
+	g.GetResource("skip").Count += float64(skip / time.Second)
 	now := g.now
 	g.now = time.Time(now.Add(-skip))
 	g.update(now)
@@ -445,12 +445,12 @@ func (g *Game) validateResource(r *data.Resource) error {
 			}
 		}
 	}
-	if r.StartQuantity != 0 {
-		if r.Quantity != 0 {
-			return fmt.Errorf("resource %s has StartQuantity and Quantity", r.Name)
+	if r.StartCount != 0 {
+		if r.Count != 0 {
+			return fmt.Errorf("resource %s has StartCount and Count", r.Name)
 		}
 		if len(r.Producers) == 0 {
-			return fmt.Errorf("resource %s has StartQuantity and no Producers", r.Name)
+			return fmt.Errorf("resource %s has StartCount and no Producers", r.Name)
 		}
 	}
 	if r.StartCapacity != 0 || len(r.CapacityProducers) > 0 {
@@ -495,14 +495,14 @@ func (g *Game) getCapacityRate(resource *data.Resource) float64 {
 }
 
 func (g *Game) getOneRate(resource data.Resource) float64 {
-	one := g.getQuantityForRate(resource) * resource.Factor
+	one := g.getCountForRate(resource) * resource.Factor
 	return one * g.getBonus(resource)
 }
 
-func (g *Game) getQuantityForRate(p data.Resource) float64 {
+func (g *Game) getCountForRate(p data.Resource) float64 {
 	quantity := 1.0
 	if p.Name != "" {
-		quantity = g.GetResource(p.Name).Quantity
+		quantity = g.GetResource(p.Name).Count
 	}
 	if p.ProductionFloor {
 		quantity = math.Floor(quantity)
@@ -523,10 +523,10 @@ func (g *Game) updateRate(resource *data.Resource) {
 		one := g.getOneRate(p)
 		if one < 0 {
 			r := g.GetResource(p.Name)
-			r.Quantity--
+			r.Count--
 			for _, onGone := range r.OnGone {
 				gone := g.GetResource(onGone.Name)
-				gone.Quantity += onGone.Quantity
+				gone.Count += onGone.Count
 				gone.Capacity += onGone.Capacity
 			}
 			return
@@ -551,7 +551,7 @@ func (g *Game) getCost(a data.Action, c data.Resource) float64 {
 	if base == 0 {
 		base = 1
 	}
-	return c.Quantity * math.Pow(base, g.GetResource(a.Adds[0].Name).Quantity)
+	return c.Count * math.Pow(base, g.GetResource(a.Adds[0].Name).Count)
 }
 
 func (g *Game) HasResource(name string) bool {

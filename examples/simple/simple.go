@@ -15,7 +15,7 @@ import (
 func main() {
 	g := game.NewGame(time.Now())
 	g.AddResources([]data.Resource{{
-		Name: "catnip", Quantity: 10, Capacity: 100,
+		Name: "catnip", Count: 10, Capacity: 100,
 		Producers: []data.Resource{{
 			Name: "Catnip Field", Factor: 0.63,
 		}},
@@ -25,10 +25,10 @@ func main() {
 	g.AddActions([]data.Action{{
 		Name: "Catnip Field",
 		Costs: []data.Resource{{
-			Name: "catnip", Quantity: 10, CostExponentBase: 1.12,
+			Name: "catnip", Count: 10, CostExponentBase: 1.12,
 		}},
 		Adds: []data.Resource{{
-			Name: "Catnip Field", Quantity: 1,
+			Name: "Catnip Field", Count: 1,
 		}},
 	}})
 	if err := g.Validate(); err != nil {

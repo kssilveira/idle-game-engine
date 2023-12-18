@@ -4,21 +4,21 @@ type Resource struct {
 	Name     string  `json:",omitempty"`
 	Type     string  `json:",omitempty"`
 	IsHidden bool    `json:",omitempty"`
-	Quantity float64 `json:",omitempty"`
+	Count    float64 `json:",omitempty"`
 	Capacity float64 `json:",omitempty"`
 
 	Producers []Resource `json:",omitempty"`
-	// Quantity += Producer.Quantity * Factor * elapsedTime
+	// Count += Producer.Count * Factor * elapsedTime
 	Factor float64 `json:",omitempty"`
-	// Quantity += floor(Producer.Quantity) * Factor * elapsedTime
+	// Count += floor(Producer.Count) * Factor * elapsedTime
 	ProductionFloor bool `json:",omitempty"`
-	// Quantity += (Producer.Quantity > 0 ? 1 : 0) * Factor * elapsedTime
+	// Count += (Producer.Count > 0 ? 1 : 0) * Factor * elapsedTime
 	ProductionBoolean bool `json:",omitempty"`
-	// Quantity = StartQuantity + Producer.Quantity * Factor
-	StartQuantity float64 `json:",omitempty"`
-	// Quantity = StartQuantity + (Producer.Quantity * Factor) % ProductionModulus
+	// Count = StartCount + Producer.Count * Factor
+	StartCount float64 `json:",omitempty"`
+	// Count = StartCount + (Producer.Count * Factor) % ProductionModulus
 	ProductionModulus int `json:",omitempty"`
-	// Quantity = StartQuantity if (Producer.Quantity * Factor) % ProductionModulus == ProductionModulusEquals else 0
+	// Count = StartCount if (Producer.Count * Factor) % ProductionModulus == ProductionModulusEquals else 0
 	ProductionModulusEquals int `json:",omitempty"`
 
 	// production *= 1 + sum(bonus)
@@ -31,10 +31,10 @@ type Resource struct {
 	OnGone           []Resource `json:",omitempty"`
 
 	CapacityProducers []Resource `json:",omitempty"`
-	// Capacity = StartCapacity + CapacityProducer.Quantity * Factor
+	// Capacity = StartCapacity + CapacityProducer.Count * Factor
 	StartCapacity float64 `json:",omitempty"`
 
-	// cost = Quantity * pow(CostExponentBase, add.Quantity)
+	// cost = Count * pow(CostExponentBase, add.Count)
 	CostExponentBase float64 `json:",omitempty"`
 
 	ProducerAction string `json:",omitempty"`
@@ -62,11 +62,11 @@ type ParsedInput struct {
 
 func (r *Resource) Add(add Resource) {
 	r.Capacity += add.Capacity
-	r.Quantity += add.Quantity
-	if r.Quantity > r.Capacity && r.Capacity >= 0 {
-		r.Quantity = r.Capacity
+	r.Count += add.Count
+	if r.Count > r.Capacity && r.Capacity >= 0 {
+		r.Count = r.Capacity
 	}
-	if r.Quantity < 0 {
-		r.Quantity = 0
+	if r.Count < 0 {
+		r.Count = 0
 	}
 }

@@ -192,9 +192,9 @@ func TestRun(t *testing.T) {
 				t.Errorf("[%s] missing resource %s", in.name, name)
 			}
 			r := g.GetResource(name)
-			r.Quantity = float64(quantity)
-			if r.Capacity != -1 && r.Capacity < r.Quantity {
-				r.Capacity = r.Quantity
+			r.Count = float64(quantity)
+			if r.Capacity != -1 && r.Capacity < r.Count {
+				r.Capacity = r.Count
 			}
 		}
 		output := make(chan *ui.Data)

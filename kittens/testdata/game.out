@@ -32,7 +32,7 @@
           "ProductionFloor": true
         }
       ],
-      "StartQuantity": 1
+      "StartCount": 1
     },
     {
       "Name": "Spring",
@@ -45,7 +45,7 @@
           "ProductionFloor": true
         }
       ],
-      "StartQuantity": 1,
+      "StartCount": 1,
       "ProductionModulus": 4
     },
     {
@@ -59,7 +59,7 @@
           "ProductionFloor": true
         }
       ],
-      "StartQuantity": 1,
+      "StartCount": 1,
       "ProductionModulus": 4,
       "ProductionModulusEquals": 1
     },
@@ -74,7 +74,7 @@
           "ProductionFloor": true
         }
       ],
-      "StartQuantity": 1,
+      "StartCount": 1,
       "ProductionModulus": 4,
       "ProductionModulusEquals": 2
     },
@@ -89,7 +89,7 @@
           "ProductionFloor": true
         }
       ],
-      "StartQuantity": 1,
+      "StartCount": 1,
       "ProductionModulus": 4,
       "ProductionModulusEquals": 3
     },
@@ -104,7 +104,7 @@
           "ProductionFloor": true
         }
       ],
-      "StartQuantity": 1,
+      "StartCount": 1,
       "ProductionModulus": 400,
       "ProductionModulusEquals": -1
     },
@@ -1854,7 +1854,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -1908,7 +1908,7 @@
           "ProductionFloor": true
         }
       ],
-      "StartQuantity": 1
+      "StartCount": 1
     },
     {
       "Name": "fur",
@@ -2332,7 +2332,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartQuantity": 0.1
+      "StartCount": 0.1
     },
     {
       "Name": "Catnip Field",
@@ -2400,7 +2400,7 @@
           "Factor": -1
         }
       ],
-      "StartQuantity": 1
+      "StartCount": 1
     },
     {
       "Name": "Pasture",
@@ -2782,7 +2782,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -2798,7 +2798,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -2814,7 +2814,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -2830,7 +2830,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -2846,7 +2846,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -2862,7 +2862,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -2878,7 +2878,7 @@
       "OnGone": [
         {
           "Name": "gone kitten",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -4250,7 +4250,7 @@
       "Adds": [
         {
           "Name": "catnip",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4262,13 +4262,13 @@
       "Costs": [
         {
           "Name": "catnip",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "wood",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4279,14 +4279,14 @@
       "Costs": [
         {
           "Name": "catnip",
-          "Quantity": 10,
+          "Count": 10,
           "CostExponentBase": 1.12
         }
       ],
       "Adds": [
         {
           "Name": "Catnip Field",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4297,14 +4297,14 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Hut",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -4319,14 +4319,14 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Library",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4337,14 +4337,14 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.75
         }
       ],
       "Adds": [
         {
           "Name": "Barn",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4355,14 +4355,14 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Mine",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4373,19 +4373,19 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         },
         {
           "Name": "mineral",
-          "Quantity": 400,
+          "Count": 400,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Workshop",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4396,14 +4396,14 @@
       "Costs": [
         {
           "Name": "mineral",
-          "Quantity": 200,
+          "Count": 200,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Smelter",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4414,13 +4414,13 @@
       "Costs": [
         {
           "Name": "Idle Smelter",
-          "Quantity": 1
+          "Count": 1
         }
       ],
       "Adds": [
         {
           "Name": "Active Smelter",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4431,19 +4431,19 @@
       "Costs": [
         {
           "Name": "catnip",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         },
         {
           "Name": "wood",
-          "Quantity": 10,
+          "Count": 10,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Pasture",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4454,14 +4454,14 @@
       "Costs": [
         {
           "Name": "unicorn",
-          "Quantity": 2,
+          "Count": 2,
           "CostExponentBase": 1.75
         }
       ],
       "Adds": [
         {
           "Name": "Unic. Pasture",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4472,24 +4472,24 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "mineral",
-          "Quantity": 70,
+          "Count": 70,
           "CostExponentBase": 1.15
         },
         {
           "Name": "science",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Academy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4500,19 +4500,19 @@
       "Costs": [
         {
           "Name": "beam",
-          "Quantity": 1.5,
+          "Count": 1.5,
           "CostExponentBase": 1.15
         },
         {
           "Name": "slab",
-          "Quantity": 2,
+          "Count": 2,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Warehouse",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4523,19 +4523,19 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 200,
+          "Count": 200,
           "CostExponentBase": 1.15
         },
         {
           "Name": "mineral",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Log House",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -4550,14 +4550,14 @@
       "Costs": [
         {
           "Name": "mineral",
-          "Quantity": 75,
+          "Count": 75,
           "CostExponentBase": 1.12
         }
       ],
       "Adds": [
         {
           "Name": "Aqueduct",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4568,24 +4568,24 @@
       "Costs": [
         {
           "Name": "slab",
-          "Quantity": 185,
+          "Count": 185,
           "CostExponentBase": 1.15
         },
         {
           "Name": "steel",
-          "Quantity": 75,
+          "Count": 75,
           "CostExponentBase": 1.15
         },
         {
           "Name": "titanium",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Mansion",
-          "Quantity": 1
+          "Count": 1
         },
         {
           "Name": "kitten",
@@ -4600,29 +4600,29 @@
       "Costs": [
         {
           "Name": "scaffold",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.1
         },
         {
           "Name": "slab",
-          "Quantity": 35,
+          "Count": 35,
           "CostExponentBase": 1.1
         },
         {
           "Name": "iron",
-          "Quantity": 750,
+          "Count": 750,
           "CostExponentBase": 1.1
         },
         {
           "Name": "science",
-          "Quantity": 1000,
+          "Count": 1000,
           "CostExponentBase": 1.1
         }
       ],
       "Adds": [
         {
           "Name": "Observatory",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4633,24 +4633,24 @@
       "Costs": [
         {
           "Name": "slab",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.1
         },
         {
           "Name": "alloy",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.1
         },
         {
           "Name": "science",
-          "Quantity": 1500,
+          "Count": 1500,
           "CostExponentBase": 1.1
         }
       ],
       "Adds": [
         {
           "Name": "Bio Lab",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4661,24 +4661,24 @@
       "Costs": [
         {
           "Name": "scaffold",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.15
         },
         {
           "Name": "slab",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "plate",
-          "Quantity": 75,
+          "Count": 75,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Harbour",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4689,24 +4689,24 @@
       "Costs": [
         {
           "Name": "scaffold",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "steel",
-          "Quantity": 125,
+          "Count": 125,
           "CostExponentBase": 1.15
         },
         {
           "Name": "slab",
-          "Quantity": 1000,
+          "Count": 1000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Quarry",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4717,24 +4717,24 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         },
         {
           "Name": "iron",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "mineral",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Lumber Mill",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4745,24 +4745,24 @@
       "Costs": [
         {
           "Name": "steel",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "gear",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         },
         {
           "Name": "scaffold",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Oil Well",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4773,24 +4773,24 @@
       "Costs": [
         {
           "Name": "titanium",
-          "Quantity": 7500,
+          "Count": 7500,
           "CostExponentBase": 1.15
         },
         {
           "Name": "concrete",
-          "Quantity": 125,
+          "Count": 125,
           "CostExponentBase": 1.15
         },
         {
           "Name": "uranium",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Accelerator",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4801,24 +4801,24 @@
       "Costs": [
         {
           "Name": "steel",
-          "Quantity": 65,
+          "Count": 65,
           "CostExponentBase": 1.25
         },
         {
           "Name": "gear",
-          "Quantity": 20,
+          "Count": 20,
           "CostExponentBase": 1.25
         },
         {
           "Name": "blueprint",
-          "Quantity": 1,
+          "Count": 1,
           "CostExponentBase": 1.25
         }
       ],
       "Adds": [
         {
           "Name": "Steamworks",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4829,24 +4829,24 @@
       "Costs": [
         {
           "Name": "alloy",
-          "Quantity": 10,
+          "Count": 10,
           "CostExponentBase": 1.25
         },
         {
           "Name": "gear",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.25
         },
         {
           "Name": "blueprint",
-          "Quantity": 1,
+          "Count": 1,
           "CostExponentBase": 1.25
         }
       ],
       "Adds": [
         {
           "Name": "Magneto",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4857,24 +4857,24 @@
       "Costs": [
         {
           "Name": "steel",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         },
         {
           "Name": "titanium",
-          "Quantity": 15,
+          "Count": 15,
           "CostExponentBase": 1.15
         },
         {
           "Name": "blueprint",
-          "Quantity": 1,
+          "Count": 1,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Calciner",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4885,24 +4885,24 @@
       "Costs": [
         {
           "Name": "titanium",
-          "Quantity": 2000,
+          "Count": 2000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "plate",
-          "Quantity": 25000,
+          "Count": 25000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "concrete",
-          "Quantity": 15,
+          "Count": 15,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Factory",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4913,29 +4913,29 @@
       "Costs": [
         {
           "Name": "titanium",
-          "Quantity": 3500,
+          "Count": 3500,
           "CostExponentBase": 1.15
         },
         {
           "Name": "plate",
-          "Quantity": 5000,
+          "Count": 5000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "concrete",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "blueprint",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Reactor",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4946,24 +4946,24 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 200,
+          "Count": 200,
           "CostExponentBase": 1.15
         },
         {
           "Name": "mineral",
-          "Quantity": 1200,
+          "Count": 1200,
           "CostExponentBase": 1.15
         },
         {
           "Name": "parchment",
-          "Quantity": 3,
+          "Count": 3,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Amphitheatre",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -4974,24 +4974,24 @@
       "Costs": [
         {
           "Name": "mineral",
-          "Quantity": 2000,
+          "Count": 2000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "culture",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 1.15
         },
         {
           "Name": "parchment",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Chapel",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5002,29 +5002,29 @@
       "Costs": [
         {
           "Name": "slab",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         },
         {
           "Name": "plate",
-          "Quantity": 15,
+          "Count": 15,
           "CostExponentBase": 1.15
         },
         {
           "Name": "gold",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "manuscript",
-          "Quantity": 10,
+          "Count": 10,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Temple",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5035,24 +5035,24 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 500,
+          "Count": 500,
           "CostExponentBase": 1.15
         },
         {
           "Name": "mineral",
-          "Quantity": 200,
+          "Count": 200,
           "CostExponentBase": 1.15
         },
         {
           "Name": "gold",
-          "Quantity": 10,
+          "Count": 10,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Tradepost",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5063,24 +5063,24 @@
       "Costs": [
         {
           "Name": "mineral",
-          "Quantity": 5000,
+          "Count": 5000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "plate",
-          "Quantity": 200,
+          "Count": 200,
           "CostExponentBase": 1.15
         },
         {
           "Name": "gold",
-          "Quantity": 500,
+          "Count": 500,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Mint",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5091,29 +5091,29 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 1000,
+          "Count": 1000,
           "CostExponentBase": 1.5
         },
         {
           "Name": "culture",
-          "Quantity": 750,
+          "Count": 750,
           "CostExponentBase": 1.5
         },
         {
           "Name": "spice",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.5
         },
         {
           "Name": "parchment",
-          "Quantity": 375,
+          "Count": 375,
           "CostExponentBase": 1.5
         }
       ],
       "Adds": [
         {
           "Name": "Brewery",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5124,24 +5124,24 @@
       "Costs": [
         {
           "Name": "megalith",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.25
         },
         {
           "Name": "scaffold",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.25
         },
         {
           "Name": "blueprint",
-          "Quantity": 1,
+          "Count": 1,
           "CostExponentBase": 1.25
         }
       ],
       "Adds": [
         {
           "Name": "Ziggurat",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5152,29 +5152,29 @@
       "Costs": [
         {
           "Name": "unobtainium",
-          "Quantity": 2500,
+          "Count": 2500,
           "CostExponentBase": 1.25
         },
         {
           "Name": "time crystal",
-          "Quantity": 1,
+          "Count": 1,
           "CostExponentBase": 1.25
         },
         {
           "Name": "blueprint",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.25
         },
         {
           "Name": "science",
-          "Quantity": 250000,
+          "Count": 250000,
           "CostExponentBase": 1.25
         }
       ],
       "Adds": [
         {
           "Name": "Chronosphere",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5185,19 +5185,19 @@
       "Costs": [
         {
           "Name": "antimatter",
-          "Quantity": 125,
+          "Count": 125,
           "CostExponentBase": 1.15
         },
         {
           "Name": "science",
-          "Quantity": 500000,
+          "Count": 500000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "AI Core",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5208,14 +5208,14 @@
       "Costs": [
         {
           "Name": "titanium",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Solar Farm",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5226,19 +5226,19 @@
       "Costs": [
         {
           "Name": "concrete",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         },
         {
           "Name": "titanium",
-          "Quantity": 2500,
+          "Count": 2500,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Hydro Plant",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5249,19 +5249,19 @@
       "Costs": [
         {
           "Name": "concrete",
-          "Quantity": 10,
+          "Count": 10,
           "CostExponentBase": 1.15
         },
         {
           "Name": "steel",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Data Center",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5272,19 +5272,19 @@
       "Costs": [
         {
           "Name": "iron",
-          "Quantity": 1250,
+          "Count": 1250,
           "CostExponentBase": 1.18
         },
         {
           "Name": "titanium",
-          "Quantity": 75,
+          "Count": 75,
           "CostExponentBase": 1.18
         }
       ],
       "Adds": [
         {
           "Name": "Broadcast Tower",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5295,19 +5295,19 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.15
         },
         {
           "Name": "ivory",
-          "Quantity": 500,
+          "Count": 500,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Unicorn Tomb",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5318,19 +5318,19 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 25,
+          "Count": 25,
           "CostExponentBase": 1.15
         },
         {
           "Name": "ivory",
-          "Quantity": 25000,
+          "Count": 25000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Ivory Tower",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5341,19 +5341,19 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 50,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
           "Name": "ivory",
-          "Quantity": 50000,
+          "Count": 50000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Ivory Citadel",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5364,24 +5364,24 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 500,
+          "Count": 500,
           "CostExponentBase": 1.15
         },
         {
           "Name": "ivory",
-          "Quantity": 125000,
+          "Count": 125000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "megalith",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Sky Palace",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5392,24 +5392,24 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 5000,
+          "Count": 5000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "ivory",
-          "Quantity": 1000000,
+          "Count": 1000000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "gold",
-          "Quantity": 500,
+          "Count": 500,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Unicorn Utopia",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5420,24 +5420,24 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 25000,
+          "Count": 25000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "ivory",
-          "Quantity": 750000,
+          "Count": 750000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "gold",
-          "Quantity": 1000,
+          "Count": 1000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Sunspire",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5448,29 +5448,29 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 5000,
+          "Count": 5000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "megalith",
-          "Quantity": 750,
+          "Count": 750,
           "CostExponentBase": 1.15
         },
         {
           "Name": "spice",
-          "Quantity": 50000,
+          "Count": 50000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "unobtainium",
-          "Quantity": 2500,
+          "Count": 2500,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Marker",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5481,19 +5481,19 @@
       "Costs": [
         {
           "Name": "necrocorn",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.15
         },
         {
           "Name": "megalith",
-          "Quantity": 1000,
+          "Count": 1000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Unicorn Graveyard",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5504,29 +5504,29 @@
       "Costs": [
         {
           "Name": "necrocorn",
-          "Quantity": 15,
+          "Count": 15,
           "CostExponentBase": 1.15
         },
         {
           "Name": "megalith",
-          "Quantity": 2500,
+          "Count": 2500,
           "CostExponentBase": 1.15
         },
         {
           "Name": "alicorn",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         },
         {
           "Name": "void",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Unicorn Necropolis",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5537,29 +5537,29 @@
       "Costs": [
         {
           "Name": "sorrow",
-          "Quantity": 5,
+          "Count": 5,
           "CostExponentBase": 1.15
         },
         {
           "Name": "megalith",
-          "Quantity": 2500,
+          "Count": 2500,
           "CostExponentBase": 1.15
         },
         {
           "Name": "spice",
-          "Quantity": 150000,
+          "Count": 150000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "unobtainium",
-          "Quantity": 5000,
+          "Count": 5000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Black Pyramid",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5570,14 +5570,14 @@
       "Costs": [
         {
           "Name": "faith",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Solar Chant",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5588,14 +5588,14 @@
       "Costs": [
         {
           "Name": "faith",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Scholasticism",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5606,19 +5606,19 @@
       "Costs": [
         {
           "Name": "faith",
-          "Quantity": 350,
+          "Count": 350,
           "CostExponentBase": 2.5
         },
         {
           "Name": "gold",
-          "Quantity": 150,
+          "Count": 150,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Golden Spire",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5629,19 +5629,19 @@
       "Costs": [
         {
           "Name": "faith",
-          "Quantity": 500,
+          "Count": 500,
           "CostExponentBase": 2.5
         },
         {
           "Name": "gold",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Sun Altar",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5652,19 +5652,19 @@
       "Costs": [
         {
           "Name": "faith",
-          "Quantity": 500,
+          "Count": 500,
           "CostExponentBase": 2.5
         },
         {
           "Name": "gold",
-          "Quantity": 250,
+          "Count": 250,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Stained Glass",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5675,19 +5675,19 @@
       "Costs": [
         {
           "Name": "faith",
-          "Quantity": 1250,
+          "Count": 1250,
           "CostExponentBase": 2.5
         },
         {
           "Name": "gold",
-          "Quantity": 750,
+          "Count": 750,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Basilica",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5698,19 +5698,19 @@
       "Costs": [
         {
           "Name": "faith",
-          "Quantity": 3500,
+          "Count": 3500,
           "CostExponentBase": 2.5
         },
         {
           "Name": "gold",
-          "Quantity": 3000,
+          "Count": 3000,
           "CostExponentBase": 2.5
         }
       ],
       "Adds": [
         {
           "Name": "Templars",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5721,14 +5721,14 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 100,
+          "Count": 100,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Black Obelisk",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5739,14 +5739,14 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 5000,
+          "Count": 5000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Black Nexus",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5757,14 +5757,14 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 10000,
+          "Count": 10000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Black Core",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5775,14 +5775,14 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 25000,
+          "Count": 25000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Event Horizon",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5793,14 +5793,14 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 30000,
+          "Count": 30000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Black Library",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5811,14 +5811,14 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 37500,
+          "Count": 37500,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Black Radiance",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5829,14 +5829,14 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 50000,
+          "Count": 50000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Blazar",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5847,19 +5847,19 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 75000,
+          "Count": 75000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "void",
-          "Quantity": 7500,
+          "Count": 7500,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Dark Nova",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5870,24 +5870,24 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 50000,
+          "Count": 50000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "void",
-          "Quantity": 12500,
+          "Count": 12500,
           "CostExponentBase": 1.15
         },
         {
           "Name": "necrocorn",
-          "Quantity": 10,
+          "Count": 10,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Mausoleum",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5898,19 +5898,19 @@
       "Costs": [
         {
           "Name": "relic",
-          "Quantity": 100000,
+          "Count": 100000,
           "CostExponentBase": 1.15
         },
         {
           "Name": "void",
-          "Quantity": 25000,
+          "Count": 25000,
           "CostExponentBase": 1.15
         }
       ],
       "Adds": [
         {
           "Name": "Holy Genocide",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5924,7 +5924,7 @@
       "Adds": [
         {
           "Name": "Chronocontrol",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5938,7 +5938,7 @@
       "Adds": [
         {
           "Name": "Megalomania",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5952,7 +5952,7 @@
       "Adds": [
         {
           "Name": "Black Codex",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5963,14 +5963,14 @@
       "Costs": [
         {
           "Name": "kitten",
-          "Quantity": 1,
+          "Count": 1,
           "Capacity": 1
         }
       ],
       "Adds": [
         {
           "Name": "woodcutter",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5981,14 +5981,14 @@
       "Costs": [
         {
           "Name": "kitten",
-          "Quantity": 1,
+          "Count": 1,
           "Capacity": 1
         }
       ],
       "Adds": [
         {
           "Name": "scholar",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -5999,14 +5999,14 @@
       "Costs": [
         {
           "Name": "kitten",
-          "Quantity": 1,
+          "Count": 1,
           "Capacity": 1
         }
       ],
       "Adds": [
         {
           "Name": "farmer",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6017,14 +6017,14 @@
       "Costs": [
         {
           "Name": "kitten",
-          "Quantity": 1,
+          "Count": 1,
           "Capacity": 1
         }
       ],
       "Adds": [
         {
           "Name": "hunter",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6035,14 +6035,14 @@
       "Costs": [
         {
           "Name": "kitten",
-          "Quantity": 1,
+          "Count": 1,
           "Capacity": 1
         }
       ],
       "Adds": [
         {
           "Name": "miner",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6053,14 +6053,14 @@
       "Costs": [
         {
           "Name": "kitten",
-          "Quantity": 1,
+          "Count": 1,
           "Capacity": 1
         }
       ],
       "Adds": [
         {
           "Name": "priest",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6071,14 +6071,14 @@
       "Costs": [
         {
           "Name": "kitten",
-          "Quantity": 1,
+          "Count": 1,
           "Capacity": 1
         }
       ],
       "Adds": [
         {
           "Name": "geologist",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6089,13 +6089,13 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "fur",
-          "Quantity": 39.5,
+          "Count": 39.5,
           "Bonus": [
             {
               "Name": "Bolas",
@@ -6121,7 +6121,7 @@
         },
         {
           "Name": "ivory",
-          "Quantity": 10.78,
+          "Count": 10.78,
           "Bonus": [
             {
               "Name": "Bolas",
@@ -6147,7 +6147,7 @@
         },
         {
           "Name": "unicorn",
-          "Quantity": 0.05
+          "Count": 0.05
         }
       ]
     },
@@ -6158,37 +6158,37 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "mineral",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "wood",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "beam",
-          "Quantity": 1.5
+          "Count": 1.5
         },
         {
           "Name": "scaffold",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6199,41 +6199,41 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "iron",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "catnip",
-          "Quantity": 35000
+          "Count": 35000
         },
         {
           "Name": "parchment",
-          "Quantity": 1.25
+          "Count": 1.25
         },
         {
           "Name": "manuscript",
-          "Quantity": 0.6
+          "Count": 0.6
         },
         {
           "Name": "compendium",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6244,37 +6244,37 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "wood",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "iron",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "steel",
-          "Quantity": 6.25
+          "Count": 6.25
         },
         {
           "Name": "gear",
-          "Quantity": 0.5
+          "Count": 0.5
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6285,41 +6285,41 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "ivory",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "mineral",
-          "Quantity": 1000
+          "Count": 1000
         },
         {
           "Name": "slab",
-          "Quantity": 3.75
+          "Count": 3.75
         },
         {
           "Name": "concrete",
-          "Quantity": 1.25
+          "Count": 1.25
         },
         {
           "Name": "megalith",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6330,29 +6330,29 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "slab",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "iron",
-          "Quantity": 300
+          "Count": 300
         },
         {
           "Name": "plate",
-          "Quantity": 1.3
+          "Count": 1.3
         },
         {
           "Name": "titanium",
-          "Quantity": 0.225,
+          "Count": 0.225,
           "Bonus": [
             {
               "Name": "ship",
@@ -6362,15 +6362,15 @@
         },
         {
           "Name": "alloy",
-          "Quantity": 0.0125
+          "Count": 0.0125
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6381,33 +6381,33 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "scaffold",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "coal",
-          "Quantity": 350
+          "Count": 350
         },
         {
           "Name": "oil",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6418,33 +6418,33 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "titanium",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "uranium",
-          "Quantity": 0.95
+          "Count": 0.95
         },
         {
           "Name": "thorium",
-          "Quantity": 0.5
+          "Count": 0.5
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6455,21 +6455,21 @@
       "Costs": [
         {
           "Name": "catpower",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "gold",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "unobtainium",
-          "Quantity": 5000
+          "Count": 5000
         }
       ],
       "Adds": [
         {
           "Name": "starchart",
-          "Quantity": 125,
+          "Count": 125,
           "Bonus": [
             {
               "Name": "leviathan energy",
@@ -6479,7 +6479,7 @@
         },
         {
           "Name": "time crystal",
-          "Quantity": 0.245,
+          "Count": 0.245,
           "Bonus": [
             {
               "Name": "leviathan energy",
@@ -6489,7 +6489,7 @@
         },
         {
           "Name": "sorrow",
-          "Quantity": 0.15,
+          "Count": 0.15,
           "Bonus": [
             {
               "Name": "leviathan energy",
@@ -6499,7 +6499,7 @@
         },
         {
           "Name": "relic",
-          "Quantity": 0.05,
+          "Count": 0.05,
           "Bonus": [
             {
               "Name": "leviathan energy",
@@ -6509,11 +6509,11 @@
         },
         {
           "Name": "blueprint",
-          "Quantity": 0.1
+          "Count": 0.1
         },
         {
           "Name": "spice",
-          "Quantity": 8.75
+          "Count": 8.75
         }
       ]
     },
@@ -6524,13 +6524,13 @@
       "Costs": [
         {
           "Name": "unicorn",
-          "Quantity": 2500
+          "Count": 2500
         }
       ],
       "Adds": [
         {
           "Name": "tear",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Ziggurat",
@@ -6548,13 +6548,13 @@
       "Costs": [
         {
           "Name": "alicorn",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "time crystal",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Unicorn Utopia",
@@ -6575,13 +6575,13 @@
       "Costs": [
         {
           "Name": "tear",
-          "Quantity": 10000
+          "Count": 10000
         }
       ],
       "Adds": [
         {
           "Name": "sorrow",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6592,13 +6592,13 @@
       "Costs": [
         {
           "Name": "time crystal",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "relic",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Black Nexus",
@@ -6622,13 +6622,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 30
+          "Count": 30
         }
       ],
       "Adds": [
         {
           "Name": "Calendar",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6640,13 +6640,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Agriculture",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6658,13 +6658,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 300
+          "Count": 300
         }
       ],
       "Adds": [
         {
           "Name": "Archery",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6676,13 +6676,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Mining",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6694,13 +6694,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Animal Husbandry",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6712,13 +6712,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 900
+          "Count": 900
         }
       ],
       "Adds": [
         {
           "Name": "Metal Working",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6730,13 +6730,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1500
+          "Count": 1500
         }
       ],
       "Adds": [
         {
           "Name": "Civil Service",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6748,13 +6748,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "Mathematics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6766,13 +6766,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1300
+          "Count": 1300
         }
       ],
       "Adds": [
         {
           "Name": "Construction",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6784,13 +6784,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 2200
+          "Count": 2200
         }
       ],
       "Adds": [
         {
           "Name": "Currency",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6802,13 +6802,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Celestial Mechanics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6820,13 +6820,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1500
+          "Count": 1500
         }
       ],
       "Adds": [
         {
           "Name": "Engineering",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6838,13 +6838,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 3600
+          "Count": 3600
         }
       ],
       "Adds": [
         {
           "Name": "Writing",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6856,13 +6856,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 9500
+          "Count": 9500
         }
       ],
       "Adds": [
         {
           "Name": "Philosophy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6874,13 +6874,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 12000
+          "Count": 12000
         }
       ],
       "Adds": [
         {
           "Name": "Steel",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6892,13 +6892,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 15000
+          "Count": 15000
         }
       ],
       "Adds": [
         {
           "Name": "Machinery",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6910,17 +6910,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 20000
+          "Count": 20000
         },
         {
           "Name": "manuscript",
-          "Quantity": 35
+          "Count": 35
         }
       ],
       "Adds": [
         {
           "Name": "Theology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6932,17 +6932,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 28000
+          "Count": 28000
         },
         {
           "Name": "manuscript",
-          "Quantity": 65
+          "Count": 65
         }
       ],
       "Adds": [
         {
           "Name": "Astronomy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6954,17 +6954,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 35000
+          "Count": 35000
         },
         {
           "Name": "manuscript",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Navigation",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6976,17 +6976,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 42000
+          "Count": 42000
         },
         {
           "Name": "compendium",
-          "Quantity": 10
+          "Count": 10
         }
       ],
       "Adds": [
         {
           "Name": "Architecture",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -6998,17 +6998,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 50000
+          "Count": 50000
         },
         {
           "Name": "compendium",
-          "Quantity": 35
+          "Count": 35
         }
       ],
       "Adds": [
         {
           "Name": "Physics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7020,17 +7020,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 55000
+          "Count": 55000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Metaphysics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7042,17 +7042,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 60000
+          "Count": 60000
         },
         {
           "Name": "compendium",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Chemistry",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7064,17 +7064,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 60000
+          "Count": 60000
         },
         {
           "Name": "compendium",
-          "Quantity": 60
+          "Count": 60
         }
       ],
       "Adds": [
         {
           "Name": "Acoustics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7086,17 +7086,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 65000
+          "Count": 65000
         },
         {
           "Name": "compendium",
-          "Quantity": 65
+          "Count": 65
         }
       ],
       "Adds": [
         {
           "Name": "Geology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7108,17 +7108,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 90000
+          "Count": 90000
         },
         {
           "Name": "parchment",
-          "Quantity": 5000
+          "Count": 5000
         }
       ],
       "Adds": [
         {
           "Name": "Drama and Poetry",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7130,17 +7130,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 75000
+          "Count": 75000
         },
         {
           "Name": "compendium",
-          "Quantity": 85
+          "Count": 85
         }
       ],
       "Adds": [
         {
           "Name": "Electricity",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7152,17 +7152,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 85000
+          "Count": 85000
         },
         {
           "Name": "compendium",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Biology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7174,17 +7174,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 145000
+          "Count": 145000
         },
         {
           "Name": "compendium",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Biochemistry",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7196,17 +7196,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 190000
+          "Count": 190000
         },
         {
           "Name": "compendium",
-          "Quantity": 1500
+          "Count": 1500
         }
       ],
       "Adds": [
         {
           "Name": "Genetics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7218,17 +7218,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 10000
+          "Count": 10000
         },
         {
           "Name": "blueprint",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Industrialization",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7240,17 +7240,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 115000
+          "Count": 115000
         },
         {
           "Name": "blueprint",
-          "Quantity": 45
+          "Count": 45
         }
       ],
       "Adds": [
         {
           "Name": "Mechanization",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7262,17 +7262,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 115000
+          "Count": 115000
         },
         {
           "Name": "blueprint",
-          "Quantity": 45
+          "Count": 45
         }
       ],
       "Adds": [
         {
           "Name": "Combustion",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7284,17 +7284,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "blueprint",
-          "Quantity": 60
+          "Count": 60
         }
       ],
       "Adds": [
         {
           "Name": "Metallurgy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7306,17 +7306,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "blueprint",
-          "Quantity": 55
+          "Count": 55
         }
       ],
       "Adds": [
         {
           "Name": "Ecology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7328,17 +7328,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 135000
+          "Count": 135000
         },
         {
           "Name": "blueprint",
-          "Quantity": 70
+          "Count": 70
         }
       ],
       "Adds": [
         {
           "Name": "Electronics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7350,17 +7350,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 140000
+          "Count": 140000
         },
         {
           "Name": "blueprint",
-          "Quantity": 80
+          "Count": 80
         }
       ],
       "Adds": [
         {
           "Name": "Robotics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7372,17 +7372,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "blueprint",
-          "Quantity": 150
+          "Count": 150
         }
       ],
       "Adds": [
         {
           "Name": "Artificial Intelligence",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7394,17 +7394,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1250000
+          "Count": 1250000
         },
         {
           "Name": "relic",
-          "Quantity": 1024
+          "Count": 1024
         }
       ],
       "Adds": [
         {
           "Name": "Quantum Cryptography",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7416,17 +7416,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 5000000
+          "Count": 5000000
         },
         {
           "Name": "relic",
-          "Quantity": 4096
+          "Count": 4096
         }
       ],
       "Adds": [
         {
           "Name": "Blackchain",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7438,17 +7438,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 150000
+          "Count": 150000
         },
         {
           "Name": "blueprint",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Nuclear Fission",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7460,17 +7460,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "blueprint",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Rocketry",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7482,17 +7482,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 215000
+          "Count": 215000
         },
         {
           "Name": "blueprint",
-          "Quantity": 150
+          "Count": 150
         }
       ],
       "Adds": [
         {
           "Name": "Oil Processing",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7504,17 +7504,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 190000
+          "Count": 190000
         },
         {
           "Name": "blueprint",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Satellites",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7526,17 +7526,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "blueprint",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Orbital Engineering",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7548,17 +7548,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 375000
+          "Count": 375000
         },
         {
           "Name": "blueprint",
-          "Quantity": 375
+          "Count": 375
         }
       ],
       "Adds": [
         {
           "Name": "Thorium",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7570,17 +7570,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 275000
+          "Count": 275000
         },
         {
           "Name": "blueprint",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Exogeology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7592,17 +7592,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 325000
+          "Count": 325000
         },
         {
           "Name": "blueprint",
-          "Quantity": 350
+          "Count": 350
         }
       ],
       "Adds": [
         {
           "Name": "Advanced Exogeology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7614,17 +7614,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 200000
+          "Count": 200000
         },
         {
           "Name": "blueprint",
-          "Quantity": 150
+          "Count": 150
         }
       ],
       "Adds": [
         {
           "Name": "Nanotechnology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7636,17 +7636,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 225000
+          "Count": 225000
         },
         {
           "Name": "blueprint",
-          "Quantity": 175
+          "Count": 175
         }
       ],
       "Adds": [
         {
           "Name": "Superconductors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7658,17 +7658,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500000
+          "Count": 500000
         },
         {
           "Name": "relic",
-          "Quantity": 1
+          "Count": 1
         }
       ],
       "Adds": [
         {
           "Name": "Antimatter",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7680,17 +7680,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 750000
+          "Count": 750000
         },
         {
           "Name": "relic",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Terraformation",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7702,17 +7702,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1000000
+          "Count": 1000000
         },
         {
           "Name": "relic",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Hydroponics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7724,17 +7724,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 25000000
+          "Count": 25000000
         },
         {
           "Name": "relic",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Exophysics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7746,17 +7746,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 185000
+          "Count": 185000
         },
         {
           "Name": "blueprint",
-          "Quantity": 135
+          "Count": 135
         }
       ],
       "Adds": [
         {
           "Name": "Particle Physics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7768,13 +7768,13 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 235000
+          "Count": 235000
         }
       ],
       "Adds": [
         {
           "Name": "Dimensional Physics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7786,17 +7786,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "time crystal",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Chronophysics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7808,21 +7808,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 750000
+          "Count": 750000
         },
         {
           "Name": "time crystal",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "relic",
-          "Quantity": 1
+          "Count": 1
         }
       ],
       "Adds": [
         {
           "Name": "Tachyon Theory",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7834,17 +7834,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 650000
+          "Count": 650000
         },
         {
           "Name": "relic",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Cryptotheology",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7856,21 +7856,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 800000
+          "Count": 800000
         },
         {
           "Name": "time crystal",
-          "Quantity": 30
+          "Count": 30
         },
         {
           "Name": "void",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Void Space",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7882,21 +7882,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1000000
+          "Count": 1000000
         },
         {
           "Name": "time crystal",
-          "Quantity": 40
+          "Count": 40
         },
         {
           "Name": "void",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Paradox Theory",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7908,17 +7908,17 @@
       "Costs": [
         {
           "Name": "mineral",
-          "Quantity": 275
+          "Count": 275
         },
         {
           "Name": "science",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Mineral Hoes",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7930,17 +7930,17 @@
       "Costs": [
         {
           "Name": "iron",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "science",
-          "Quantity": 200
+          "Count": 200
         }
       ],
       "Adds": [
         {
           "Name": "Iron Hoes",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7952,17 +7952,17 @@
       "Costs": [
         {
           "Name": "mineral",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "science",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Mineral Axe",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7974,17 +7974,17 @@
       "Costs": [
         {
           "Name": "iron",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "science",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Iron Axe",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -7996,17 +7996,17 @@
       "Costs": [
         {
           "Name": "steel",
-          "Quantity": 75
+          "Count": 75
         },
         {
           "Name": "science",
-          "Quantity": 20000
+          "Count": 20000
         }
       ],
       "Adds": [
         {
           "Name": "Steel Axe",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8018,17 +8018,17 @@
       "Costs": [
         {
           "Name": "iron",
-          "Quantity": 1000
+          "Count": 1000
         },
         {
           "Name": "science",
-          "Quantity": 2500
+          "Count": 2500
         }
       ],
       "Adds": [
         {
           "Name": "Reinforced Saw",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8040,17 +8040,17 @@
       "Costs": [
         {
           "Name": "steel",
-          "Quantity": 750
+          "Count": 750
         },
         {
           "Name": "science",
-          "Quantity": 52000
+          "Count": 52000
         }
       ],
       "Adds": [
         {
           "Name": "Steel Saw",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8062,17 +8062,17 @@
       "Costs": [
         {
           "Name": "titanium",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "science",
-          "Quantity": 70000
+          "Count": 70000
         }
       ],
       "Adds": [
         {
           "Name": "Titanium Saw",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8084,17 +8084,17 @@
       "Costs": [
         {
           "Name": "alloy",
-          "Quantity": 75
+          "Count": 75
         },
         {
           "Name": "science",
-          "Quantity": 85000
+          "Count": 85000
         }
       ],
       "Adds": [
         {
           "Name": "Alloy Saw",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8106,17 +8106,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 38000
+          "Count": 38000
         },
         {
           "Name": "titanium",
-          "Quantity": 10
+          "Count": 10
         }
       ],
       "Adds": [
         {
           "Name": "Titanium Axe",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8128,17 +8128,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 70000
+          "Count": 70000
         },
         {
           "Name": "alloy",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Alloy Axe",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8150,25 +8150,25 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 1000
+          "Count": 1000
         },
         {
           "Name": "mineral",
-          "Quantity": 750
+          "Count": 750
         },
         {
           "Name": "iron",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "science",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Expanded Barns",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8180,25 +8180,25 @@
       "Costs": [
         {
           "Name": "iron",
-          "Quantity": 100
+          "Count": 100
         },
         {
           "Name": "science",
-          "Quantity": 800
+          "Count": 800
         },
         {
           "Name": "beam",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "slab",
-          "Quantity": 10
+          "Count": 10
         }
       ],
       "Adds": [
         {
           "Name": "Reinforced Barns",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8210,25 +8210,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 15000
+          "Count": 15000
         },
         {
           "Name": "plate",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "steel",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "scaffold",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Reinforced Warehouses",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8240,25 +8240,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 60000
+          "Count": 60000
         },
         {
           "Name": "titanium",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "steel",
-          "Quantity": 200
+          "Count": 200
         },
         {
           "Name": "scaffold",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Titanium Barns",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8270,21 +8270,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 75000
+          "Count": 75000
         },
         {
           "Name": "alloy",
-          "Quantity": 20
+          "Count": 20
         },
         {
           "Name": "plate",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Alloy Barns",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8296,21 +8296,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 2000
+          "Count": 2000
         },
         {
           "Name": "concrete",
-          "Quantity": 45
+          "Count": 45
         },
         {
           "Name": "titanium",
-          "Quantity": 2000
+          "Count": 2000
         }
       ],
       "Adds": [
         {
           "Name": "Concrete Barns",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8322,25 +8322,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 70000
+          "Count": 70000
         },
         {
           "Name": "titanium",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "steel",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "scaffold",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Titanium Warehouses",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8352,21 +8352,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 90000
+          "Count": 90000
         },
         {
           "Name": "titanium",
-          "Quantity": 750
+          "Count": 750
         },
         {
           "Name": "alloy",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Alloy Warehouses",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8378,21 +8378,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "titanium",
-          "Quantity": 1250
+          "Count": 1250
         },
         {
           "Name": "concrete",
-          "Quantity": 35
+          "Count": 35
         }
       ],
       "Adds": [
         {
           "Name": "Concrete Warehouses",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8404,21 +8404,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 25000
+          "Count": 25000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "concrete",
-          "Quantity": 1250
+          "Count": 1250
         }
       ],
       "Adds": [
         {
           "Name": "Storage Bunkers",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8430,21 +8430,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 200000
+          "Count": 200000
         },
         {
           "Name": "titanium",
-          "Quantity": 7500
+          "Count": 7500
         },
         {
           "Name": "uranium",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Energy Rifts",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8456,25 +8456,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 235000
+          "Count": 235000
         },
         {
           "Name": "alloy",
-          "Quantity": 200
+          "Count": 200
         },
         {
           "Name": "uranium",
-          "Quantity": 2000
+          "Count": 2000
         },
         {
           "Name": "time crystal",
-          "Quantity": 1
+          "Count": 1
         }
       ],
       "Adds": [
         {
           "Name": "Stasis Chambers",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8486,25 +8486,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 275000
+          "Count": 275000
         },
         {
           "Name": "alloy",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "uranium",
-          "Quantity": 2500
+          "Count": 2500
         },
         {
           "Name": "time crystal",
-          "Quantity": 2
+          "Count": 2
         }
       ],
       "Adds": [
         {
           "Name": "Void Energy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8516,21 +8516,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 350000
+          "Count": 350000
         },
         {
           "Name": "eludium",
-          "Quantity": 75
+          "Count": 75
         },
         {
           "Name": "time crystal",
-          "Quantity": 3
+          "Count": 3
         }
       ],
       "Adds": [
         {
           "Name": "Dark Energy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8542,21 +8542,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500000
+          "Count": 500000
         },
         {
           "Name": "relic",
-          "Quantity": 5
+          "Count": 5
         },
         {
           "Name": "time crystal",
-          "Quantity": 10
+          "Count": 10
         }
       ],
       "Adds": [
         {
           "Name": "Chronoforge",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8568,21 +8568,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500000
+          "Count": 500000
         },
         {
           "Name": "eludium",
-          "Quantity": 125
+          "Count": 125
         },
         {
           "Name": "time crystal",
-          "Quantity": 10
+          "Count": 10
         }
       ],
       "Adds": [
         {
           "Name": "Tachyon Accelerators",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8594,21 +8594,21 @@
       "Costs": [
         {
           "Name": "alloy",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "unobtainium",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "time crystal",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Flux Condensator",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8620,21 +8620,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 100
+          "Count": 100
         },
         {
           "Name": "alloy",
-          "Quantity": 150
+          "Count": 150
         }
       ],
       "Adds": [
         {
           "Name": "LHC",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8646,17 +8646,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 75000
+          "Count": 75000
         },
         {
           "Name": "titanium",
-          "Quantity": 5000
+          "Count": 5000
         }
       ],
       "Adds": [
         {
           "Name": "Photovoltaic Cells",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8668,21 +8668,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 200
+          "Count": 200
         },
         {
           "Name": "uranium",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "Thin Film Cells",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8694,21 +8694,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "eludium",
-          "Quantity": 200
+          "Count": 200
         },
         {
           "Name": "thorium",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "Quantum Dot Cells",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8720,17 +8720,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 225000
+          "Count": 225000
         },
         {
           "Name": "alloy",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Solar Satellites",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8742,17 +8742,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 55000
+          "Count": 55000
         },
         {
           "Name": "blueprint",
-          "Quantity": 15
+          "Count": 15
         }
       ],
       "Adds": [
         {
           "Name": "Expanded Cargo",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8764,21 +8764,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "titanium",
-          "Quantity": 1500
+          "Count": 1500
         },
         {
           "Name": "blueprint",
-          "Quantity": 30
+          "Count": 30
         }
       ],
       "Adds": [
         {
           "Name": "Barges",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8790,21 +8790,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 135000
+          "Count": 135000
         },
         {
           "Name": "titanium",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "uranium",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Reactor Vessel",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8816,21 +8816,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 30000
+          "Count": 30000
         },
         {
           "Name": "wood",
-          "Quantity": 15000
+          "Count": 15000
         },
         {
           "Name": "iron",
-          "Quantity": 3000
+          "Count": 3000
         }
       ],
       "Adds": [
         {
           "Name": "Ironwood Huts",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8842,21 +8842,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "concrete",
-          "Quantity": 45
+          "Count": 45
         },
         {
           "Name": "titanium",
-          "Quantity": 3000
+          "Count": 3000
         }
       ],
       "Adds": [
         {
           "Name": "Concrete Huts",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8868,21 +8868,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 200000
+          "Count": 200000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 350
+          "Count": 350
         },
         {
           "Name": "titanium",
-          "Quantity": 15000
+          "Count": 15000
         }
       ],
       "Adds": [
         {
           "Name": "Unobtainium Huts",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8894,17 +8894,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 275000
+          "Count": 275000
         },
         {
           "Name": "eludium",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Eludium Huts",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8916,21 +8916,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 50000
+          "Count": 50000
         },
         {
           "Name": "steel",
-          "Quantity": 125
+          "Count": 125
         },
         {
           "Name": "blueprint",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Silos",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8942,21 +8942,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "titanium",
-          "Quantity": 2500
+          "Count": 2500
         },
         {
           "Name": "blueprint",
-          "Quantity": 15
+          "Count": 15
         }
       ],
       "Adds": [
         {
           "Name": "Refrigeration",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8968,21 +8968,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "iron",
-          "Quantity": 100
+          "Count": 100
         },
         {
           "Name": "wood",
-          "Quantity": 200
+          "Count": 200
         }
       ],
       "Adds": [
         {
           "Name": "Composite Bow",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -8994,17 +8994,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 12000
+          "Count": 12000
         },
         {
           "Name": "iron",
-          "Quantity": 1500
+          "Count": 1500
         }
       ],
       "Adds": [
         {
           "Name": "Crossbow",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9016,21 +9016,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 150000
+          "Count": 150000
         },
         {
           "Name": "titanium",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "blueprint",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Railgun",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9042,21 +9042,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1000
+          "Count": 1000
         },
         {
           "Name": "mineral",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "wood",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Bolas",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9068,17 +9068,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 2000
+          "Count": 2000
         },
         {
           "Name": "iron",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Hunting Armour",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9090,17 +9090,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 10000
+          "Count": 10000
         },
         {
           "Name": "steel",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Steel Armour",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9112,17 +9112,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 50000
+          "Count": 50000
         },
         {
           "Name": "alloy",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Alloy Armour",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9134,17 +9134,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 185000
+          "Count": 185000
         },
         {
           "Name": "alloy",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Nanosuits",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9156,21 +9156,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 25000
+          "Count": 25000
         },
         {
           "Name": "ivory",
-          "Quantity": 10000
+          "Count": 10000
         },
         {
           "Name": "gold",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Caravanserai",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9182,17 +9182,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "catnip",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Catnip Enrichment",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9204,21 +9204,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 1000
+          "Count": 1000
         },
         {
           "Name": "mineral",
-          "Quantity": 800
+          "Count": 800
         },
         {
           "Name": "iron",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Gold Ore",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9230,21 +9230,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 90000
+          "Count": 90000
         },
         {
           "Name": "titanium",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "starchart",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Geodesy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9256,17 +9256,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500
+          "Count": 500
         },
         {
           "Name": "gold",
-          "Quantity": 10
+          "Count": 10
         }
       ],
       "Adds": [
         {
           "Name": "Register",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9278,17 +9278,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "concrete",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Concrete Pillars",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9300,21 +9300,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "titanium",
-          "Quantity": 1750
+          "Count": 1750
         },
         {
           "Name": "steel",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Mining Drill",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9326,21 +9326,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "alloy",
-          "Quantity": 1250
+          "Count": 1250
         }
       ],
       "Adds": [
         {
           "Name": "Unobtainium Drill",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9352,25 +9352,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "mineral",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "iron",
-          "Quantity": 2000
+          "Count": 2000
         },
         {
           "Name": "beam",
-          "Quantity": 35
+          "Count": 35
         }
       ],
       "Adds": [
         {
           "Name": "Coal Furnace",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9382,21 +9382,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "iron",
-          "Quantity": 1200
+          "Count": 1200
         },
         {
           "Name": "beam",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Deep Mining",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9408,17 +9408,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 35000
+          "Count": 35000
         },
         {
           "Name": "compendium",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Pyrolysis",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9430,17 +9430,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "titanium",
-          "Quantity": 2000
+          "Count": 2000
         }
       ],
       "Adds": [
         {
           "Name": "Electrolytic Smelting",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9452,17 +9452,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "steel",
-          "Quantity": 5000
+          "Count": 5000
         }
       ],
       "Adds": [
         {
           "Name": "Oxidation",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9474,21 +9474,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 140000
+          "Count": 140000
         },
         {
           "Name": "titanium",
-          "Quantity": 3500
+          "Count": 3500
         },
         {
           "Name": "gear",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Steel Plants",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9500,17 +9500,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 200000
+          "Count": 200000
         },
         {
           "Name": "alloy",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Automated Plants",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9522,17 +9522,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "uranium",
-          "Quantity": 10000
+          "Count": 10000
         }
       ],
       "Adds": [
         {
           "Name": "Nuclear Plants",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9544,21 +9544,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 145000
+          "Count": 145000
         },
         {
           "Name": "titanium",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "gear",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Rotary Kiln",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9570,17 +9570,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "alloy",
-          "Quantity": 200
+          "Count": 200
         }
       ],
       "Adds": [
         {
           "Name": "Fluoridized Reactors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9592,17 +9592,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 165000
+          "Count": 165000
         },
         {
           "Name": "uranium",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Nuclear Smelter",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9614,21 +9614,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 150000
+          "Count": 150000
         },
         {
           "Name": "alloy",
-          "Quantity": 1000
+          "Count": 1000
         },
         {
           "Name": "oil",
-          "Quantity": 35000
+          "Count": 35000
         }
       ],
       "Adds": [
         {
           "Name": "Orbital Geodesy",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9640,17 +9640,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 7500
+          "Count": 7500
         },
         {
           "Name": "gear",
-          "Quantity": 45
+          "Count": 45
         }
       ],
       "Adds": [
         {
           "Name": "Printing Press",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9662,21 +9662,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "gear",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "oil",
-          "Quantity": 15000
+          "Count": 15000
         }
       ],
       "Adds": [
         {
           "Name": "Offset Press",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9688,25 +9688,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "alloy",
-          "Quantity": 1250
+          "Count": 1250
         },
         {
           "Name": "oil",
-          "Quantity": 50000
+          "Count": 50000
         },
         {
           "Name": "uranium",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Photolithography",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9718,17 +9718,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 75000
+          "Count": 75000
         },
         {
           "Name": "alloy",
-          "Quantity": 1750
+          "Count": 1750
         }
       ],
       "Adds": [
         {
           "Name": "Uplink",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9740,17 +9740,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "eludium",
-          "Quantity": 15
+          "Count": 15
         }
       ],
       "Adds": [
         {
           "Name": "Cryocomputing",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9762,21 +9762,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "eludium",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "antimatter",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Machine Learning",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9788,17 +9788,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 10000
+          "Count": 10000
         },
         {
           "Name": "gear",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Workshop Automation",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9810,21 +9810,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "gear",
-          "Quantity": 75
+          "Count": 75
         },
         {
           "Name": "blueprint",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Advanced Automation",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9836,21 +9836,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 20000
+          "Count": 20000
         },
         {
           "Name": "gear",
-          "Quantity": 30
+          "Count": 30
         },
         {
           "Name": "blueprint",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "Pneumatic Press",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9862,21 +9862,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 20000
+          "Count": 20000
         },
         {
           "Name": "gear",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "blueprint",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "High Pressure Engine",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9888,21 +9888,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "gear",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "oil",
-          "Quantity": 20000
+          "Count": 20000
         }
       ],
       "Adds": [
         {
           "Name": "Fuel Injector",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9914,21 +9914,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "gear",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "titanium",
-          "Quantity": 2000
+          "Count": 2000
         }
       ],
       "Adds": [
         {
           "Name": "Factory Logistics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9940,29 +9940,29 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 75000
+          "Count": 75000
         },
         {
           "Name": "titanium",
-          "Quantity": 1250
+          "Count": 1250
         },
         {
           "Name": "gear",
-          "Quantity": 125
+          "Count": 125
         },
         {
           "Name": "steel",
-          "Quantity": 4000
+          "Count": 4000
         },
         {
           "Name": "alloy",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "Carbon Sequestration",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9974,17 +9974,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "titanium",
-          "Quantity": 125000
+          "Count": 125000
         }
       ],
       "Adds": [
         {
           "Name": "Space Manufacturing",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -9996,21 +9996,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 25000
+          "Count": 25000
         },
         {
           "Name": "titanium",
-          "Quantity": 5
+          "Count": 5
         },
         {
           "Name": "starchart",
-          "Quantity": 75
+          "Count": 75
         }
       ],
       "Adds": [
         {
           "Name": "Astrolabe",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10022,21 +10022,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 20000
+          "Count": 20000
         },
         {
           "Name": "titanium",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "starchart",
-          "Quantity": 20
+          "Count": 20
         }
       ],
       "Adds": [
         {
           "Name": "Titanium Reflectors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10048,21 +10048,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 75
+          "Count": 75
         },
         {
           "Name": "starchart",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Unobtainium Reflectors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10074,17 +10074,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "eludium",
-          "Quantity": 15
+          "Count": 15
         }
       ],
       "Adds": [
         {
           "Name": "Eludium Reflectors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10096,17 +10096,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Hydro Plant Turbines",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10118,17 +10118,17 @@
       "Costs": [
         {
           "Name": "eludium",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "antimatter",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Antimatter Bases",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10140,17 +10140,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 750000
+          "Count": 750000
         },
         {
           "Name": "antimatter",
-          "Quantity": 7500
+          "Count": 7500
         }
       ],
       "Adds": [
         {
           "Name": "AI Bases",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10162,21 +10162,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 525000
+          "Count": 525000
         },
         {
           "Name": "antimatter",
-          "Quantity": 175
+          "Count": 175
         },
         {
           "Name": "thorium",
-          "Quantity": 7500
+          "Count": 7500
         }
       ],
       "Adds": [
         {
           "Name": "Antimatter Fission",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10188,17 +10188,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 525000
+          "Count": 525000
         },
         {
           "Name": "antimatter",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Antimatter Drive",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10210,17 +10210,17 @@
       "Costs": [
         {
           "Name": "eludium",
-          "Quantity": 35
+          "Count": 35
         },
         {
           "Name": "antimatter",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Antimatter Reactors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10232,17 +10232,17 @@
       "Costs": [
         {
           "Name": "eludium",
-          "Quantity": 70
+          "Count": 70
         },
         {
           "Name": "antimatter",
-          "Quantity": 1750
+          "Count": 1750
         }
       ],
       "Adds": [
         {
           "Name": "Advanced AM Reactors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10254,17 +10254,17 @@
       "Costs": [
         {
           "Name": "void",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "antimatter",
-          "Quantity": 2500
+          "Count": 2500
         }
       ],
       "Adds": [
         {
           "Name": "Void Reactors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10276,17 +10276,17 @@
       "Costs": [
         {
           "Name": "eludium",
-          "Quantity": 100
+          "Count": 100
         },
         {
           "Name": "antimatter",
-          "Quantity": 5000
+          "Count": 5000
         }
       ],
       "Adds": [
         {
           "Name": "Relic Station",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10298,21 +10298,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "titanium",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "gear",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Pumpjack",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10324,17 +10324,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 150000
+          "Count": 150000
         },
         {
           "Name": "titanium",
-          "Quantity": 1250
+          "Count": 1250
         }
       ],
       "Adds": [
         {
           "Name": "Biofuel Processing",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10346,17 +10346,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "titanium",
-          "Quantity": 1500
+          "Count": 1500
         }
       ],
       "Adds": [
         {
           "Name": "Unicorn Selection",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10368,21 +10368,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "titanium",
-          "Quantity": 1500
+          "Count": 1500
         },
         {
           "Name": "catnip",
-          "Quantity": 1000000
+          "Count": 1000000
         }
       ],
       "Adds": [
         {
           "Name": "GM Catnip",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10394,17 +10394,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "titanium",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "CAD System",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10416,17 +10416,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "titanium",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "SETI",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10438,21 +10438,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "gear",
-          "Quantity": 100
+          "Count": 100
         },
         {
           "Name": "scaffold",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "Logistics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10464,21 +10464,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 150000
+          "Count": 150000
         },
         {
           "Name": "titanium",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "uranium",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Augmentations",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10490,17 +10490,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 200000
+          "Count": 200000
         },
         {
           "Name": "eludium",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "Cold Fusion",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10512,17 +10512,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 400000
+          "Count": 400000
         },
         {
           "Name": "thorium",
-          "Quantity": 10000
+          "Count": 10000
         }
       ],
       "Adds": [
         {
           "Name": "Thorium Reactors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10534,21 +10534,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "titanium",
-          "Quantity": 7500
+          "Count": 7500
         },
         {
           "Name": "uranium",
-          "Quantity": 150
+          "Count": 150
         }
       ],
       "Adds": [
         {
           "Name": "Enriched Uranium",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10560,17 +10560,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 12500
+          "Count": 12500
         },
         {
           "Name": "thorium",
-          "Quantity": 500000
+          "Count": 500000
         }
       ],
       "Adds": [
         {
           "Name": "Enriched Thorium",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10582,21 +10582,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 125000
+          "Count": 125000
         },
         {
           "Name": "titanium",
-          "Quantity": 1250
+          "Count": 1250
         },
         {
           "Name": "gear",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "Oil Refinery",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10608,21 +10608,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "alloy",
-          "Quantity": 1250
+          "Count": 1250
         },
         {
           "Name": "oil",
-          "Quantity": 50000
+          "Count": 50000
         }
       ],
       "Adds": [
         {
           "Name": "Hubble Space Telescope",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10634,17 +10634,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 200000
+          "Count": 200000
         },
         {
           "Name": "alloy",
-          "Quantity": 750
+          "Count": 750
         }
       ],
       "Adds": [
         {
           "Name": "Satellite Navigation",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10656,17 +10656,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 225000
+          "Count": 225000
         },
         {
           "Name": "alloy",
-          "Quantity": 5000
+          "Count": 5000
         }
       ],
       "Adds": [
         {
           "Name": "Satellite Radio",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10678,17 +10678,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 250000
+          "Count": 250000
         },
         {
           "Name": "unobtainium",
-          "Quantity": 350
+          "Count": 350
         }
       ],
       "Adds": [
         {
           "Name": "Astrophysicists",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10700,17 +10700,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 150000
+          "Count": 150000
         },
         {
           "Name": "eludium",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Microwarp Reactors",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10722,17 +10722,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 275000
+          "Count": 275000
         },
         {
           "Name": "eludium",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Planet Busters",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10744,29 +10744,29 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 400000
+          "Count": 400000
         },
         {
           "Name": "ship",
-          "Quantity": 10000
+          "Count": 10000
         },
         {
           "Name": "gear",
-          "Quantity": 40000
+          "Count": 40000
         },
         {
           "Name": "alloy",
-          "Quantity": 2000
+          "Count": 2000
         },
         {
           "Name": "thorium",
-          "Quantity": 100000
+          "Count": 100000
         }
       ],
       "Adds": [
         {
           "Name": "Thorium Drive",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10778,17 +10778,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 175000
+          "Count": 175000
         },
         {
           "Name": "titanium",
-          "Quantity": 5000
+          "Count": 5000
         }
       ],
       "Adds": [
         {
           "Name": "Oil Distillation",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10800,21 +10800,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 195000
+          "Count": 195000
         },
         {
           "Name": "titanium",
-          "Quantity": 7500
+          "Count": 7500
         },
         {
           "Name": "concrete",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "Factory Processing",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10826,21 +10826,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 75000
+          "Count": 75000
         },
         {
           "Name": "gear",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "titanium",
-          "Quantity": 1250
+          "Count": 1250
         }
       ],
       "Adds": [
         {
           "Name": "Factory Optimization",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10852,17 +10852,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 225000
+          "Count": 225000
         },
         {
           "Name": "alloy",
-          "Quantity": 200
+          "Count": 200
         }
       ],
       "Adds": [
         {
           "Name": "Space Engineers",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10874,21 +10874,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 35000
+          "Count": 35000
         },
         {
           "Name": "eludium",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "antimatter",
-          "Quantity": 500
+          "Count": 500
         }
       ],
       "Adds": [
         {
           "Name": "AI Engineers",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10900,21 +10900,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 500000
+          "Count": 500000
         },
         {
           "Name": "time crystal",
-          "Quantity": 5
+          "Count": 5
         },
         {
           "Name": "eludium",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "Chronoengineers",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10926,21 +10926,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 150000
+          "Count": 150000
         },
         {
           "Name": "titanium",
-          "Quantity": 5000
+          "Count": 5000
         },
         {
           "Name": "uranium",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "Telecommunication",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10952,17 +10952,17 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 200000
+          "Count": 200000
         },
         {
           "Name": "titanium",
-          "Quantity": 7500
+          "Count": 7500
         }
       ],
       "Adds": [
         {
           "Name": "Neural Network",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -10974,21 +10974,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "steel",
-          "Quantity": 10000
+          "Count": 10000
         },
         {
           "Name": "gear",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "Robotic Assistance",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -11000,21 +11000,21 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 75000
+          "Count": 75000
         },
         {
           "Name": "gear",
-          "Quantity": 250
+          "Count": 250
         },
         {
           "Name": "titanium",
-          "Quantity": 1250
+          "Count": 1250
         }
       ],
       "Adds": [
         {
           "Name": "Factory Robotics",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -11026,17 +11026,17 @@
       "Costs": [
         {
           "Name": "time crystal",
-          "Quantity": 15
+          "Count": 15
         },
         {
           "Name": "antimatter",
-          "Quantity": 2000
+          "Count": 2000
         }
       ],
       "Adds": [
         {
           "Name": "Void Aspiration",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -11048,25 +11048,25 @@
       "Costs": [
         {
           "Name": "science",
-          "Quantity": 300000
+          "Count": 300000
         },
         {
           "Name": "time crystal",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "antimatter",
-          "Quantity": 2000
+          "Count": 2000
         },
         {
           "Name": "void",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "Distortion",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -11078,25 +11078,25 @@
       "Costs": [
         {
           "Name": "time crystal",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "unobtainium",
-          "Quantity": 100000
+          "Count": 100000
         },
         {
           "Name": "void",
-          "Quantity": 750
+          "Count": 750
         },
         {
           "Name": "temporal flux",
-          "Quantity": 6500
+          "Count": 6500
         }
       ],
       "Adds": [
         {
           "Name": "Chronosurge",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -11108,25 +11108,25 @@
       "Costs": [
         {
           "Name": "time crystal",
-          "Quantity": 128
+          "Count": 128
         },
         {
           "Name": "blackcoin",
-          "Quantity": 64
+          "Count": 64
         },
         {
           "Name": "void",
-          "Quantity": 32
+          "Count": 32
         },
         {
           "Name": "temporal flux",
-          "Quantity": 4096
+          "Count": 4096
         }
       ],
       "Adds": [
         {
           "Name": "Invisible Black Hand",
-          "Quantity": 1
+          "Count": 1
         }
       ]
     },
@@ -11137,13 +11137,13 @@
       "Costs": [
         {
           "Name": "wood",
-          "Quantity": 175
+          "Count": 175
         }
       ],
       "Adds": [
         {
           "Name": "beam",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11171,13 +11171,13 @@
       "Costs": [
         {
           "Name": "mineral",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "slab",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11205,17 +11205,17 @@
       "Costs": [
         {
           "Name": "slab",
-          "Quantity": 2500
+          "Count": 2500
         },
         {
           "Name": "steel",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "concrete",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11243,13 +11243,13 @@
       "Costs": [
         {
           "Name": "iron",
-          "Quantity": 125
+          "Count": 125
         }
       ],
       "Adds": [
         {
           "Name": "plate",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11277,17 +11277,17 @@
       "Costs": [
         {
           "Name": "iron",
-          "Quantity": 100
+          "Count": 100
         },
         {
           "Name": "coal",
-          "Quantity": 100
+          "Count": 100
         }
       ],
       "Adds": [
         {
           "Name": "steel",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11366,13 +11366,13 @@
       "Costs": [
         {
           "Name": "steel",
-          "Quantity": 15
+          "Count": 15
         }
       ],
       "Adds": [
         {
           "Name": "gear",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11400,17 +11400,17 @@
       "Costs": [
         {
           "Name": "steel",
-          "Quantity": 75
+          "Count": 75
         },
         {
           "Name": "titanium",
-          "Quantity": 10
+          "Count": 10
         }
       ],
       "Adds": [
         {
           "Name": "alloy",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11438,17 +11438,17 @@
       "Costs": [
         {
           "Name": "alloy",
-          "Quantity": 2500
+          "Count": 2500
         },
         {
           "Name": "unobtainium",
-          "Quantity": 1000
+          "Count": 1000
         }
       ],
       "Adds": [
         {
           "Name": "eludium",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11476,13 +11476,13 @@
       "Costs": [
         {
           "Name": "beam",
-          "Quantity": 50
+          "Count": 50
         }
       ],
       "Adds": [
         {
           "Name": "scaffold",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11510,21 +11510,21 @@
       "Costs": [
         {
           "Name": "scaffold",
-          "Quantity": 100
+          "Count": 100
         },
         {
           "Name": "plate",
-          "Quantity": 150
+          "Count": 150
         },
         {
           "Name": "starchart",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "ship",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11552,21 +11552,21 @@
       "Costs": [
         {
           "Name": "ship",
-          "Quantity": 200
+          "Count": 200
         },
         {
           "Name": "alloy",
-          "Quantity": 1250
+          "Count": 1250
         },
         {
           "Name": "blueprint",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "tanker",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11594,13 +11594,13 @@
       "Costs": [
         {
           "Name": "oil",
-          "Quantity": 7500
+          "Count": 7500
         }
       ],
       "Adds": [
         {
           "Name": "kerosene",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11628,13 +11628,13 @@
       "Costs": [
         {
           "Name": "fur",
-          "Quantity": 175
+          "Count": 175
         }
       ],
       "Adds": [
         {
           "Name": "parchment",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11662,17 +11662,17 @@
       "Costs": [
         {
           "Name": "culture",
-          "Quantity": 400
+          "Count": 400
         },
         {
           "Name": "parchment",
-          "Quantity": 25
+          "Count": 25
         }
       ],
       "Adds": [
         {
           "Name": "manuscript",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11725,17 +11725,17 @@
       "Costs": [
         {
           "Name": "manuscript",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "science",
-          "Quantity": 10000
+          "Count": 10000
         }
       ],
       "Adds": [
         {
           "Name": "compendium",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11763,17 +11763,17 @@
       "Costs": [
         {
           "Name": "compendium",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "science",
-          "Quantity": 25000
+          "Count": 25000
         }
       ],
       "Adds": [
         {
           "Name": "blueprint",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11801,13 +11801,13 @@
       "Costs": [
         {
           "Name": "uranium",
-          "Quantity": 250
+          "Count": 250
         }
       ],
       "Adds": [
         {
           "Name": "thorium",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",
@@ -11854,21 +11854,21 @@
       "Costs": [
         {
           "Name": "beam",
-          "Quantity": 25
+          "Count": 25
         },
         {
           "Name": "slab",
-          "Quantity": 50
+          "Count": 50
         },
         {
           "Name": "plate",
-          "Quantity": 5
+          "Count": 5
         }
       ],
       "Adds": [
         {
           "Name": "megalith",
-          "Quantity": 1,
+          "Count": 1,
           "Bonus": [
             {
               "Name": "Workshop",

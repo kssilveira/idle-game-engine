@@ -85,7 +85,7 @@ func updateResources(g *game.Game, resourceMap string) error {
 			return fmt.Errorf("--resource_map has invalid value '%s' err %v", words[0], err)
 		}
 		r := g.GetResource(words[0])
-		r.Quantity = value
+		r.Count = value
 		if r.Capacity != -1 && r.Capacity < value {
 			r.Capacity = value
 		}

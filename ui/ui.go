@@ -24,7 +24,7 @@ type Resource struct {
 type Action struct {
 	Name     string
 	Type     string
-	Quantity float64
+	Count    float64
 	IsLocked bool
 	IsHidden bool
 	Costs    []Cost
@@ -33,7 +33,7 @@ type Action struct {
 
 type Cost struct {
 	Name     string
-	Quantity float64
+	Count    float64
 	Capacity float64
 	Cost     float64
 	Duration time.Duration
@@ -42,7 +42,7 @@ type Cost struct {
 
 type Add struct {
 	Name     string
-	Quantity float64
+	Count    float64
 	Capacity float64
 }
 

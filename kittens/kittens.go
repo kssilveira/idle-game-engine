@@ -79,17 +79,17 @@ func NewGame(now game.Now) *game.Game {
 	g := game.NewGame(now())
 
 	g.AddResources(join([]data.Resource{{
-		Name: "day", Type: "Calendar", IsHidden: true, Quantity: 0, Capacity: -1,
+		Name: "day", Type: "Calendar", IsHidden: true, Count: 0, Capacity: -1,
 		Producers: []data.Resource{{Factor: 0.5}},
 	}, {
-		Name: "year", Type: "Calendar", StartQuantity: 1, Capacity: -1,
+		Name: "year", Type: "Calendar", StartCount: 1, Capacity: -1,
 		Producers: []data.Resource{{Name: "day", Factor: 0.0025, ProductionFloor: true}},
 	}}, resourceWithModulus(data.Resource{
-		Type: "Calendar", StartQuantity: 1, Capacity: -1,
+		Type: "Calendar", StartCount: 1, Capacity: -1,
 		Producers: []data.Resource{{Name: "day", Factor: 0.01, ProductionFloor: true}},
 	}, []string{
 		"Spring", "Summer", "Autumn", "Winter"}), []data.Resource{{
-		Name: "day_of_year", Type: "Calendar", StartQuantity: 1, Capacity: -1,
+		Name: "day_of_year", Type: "Calendar", StartCount: 1, Capacity: -1,
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []data.Resource{{Name: "day", Factor: 1, ProductionFloor: true}},
 	}, {
@@ -489,10 +489,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "", Factor: 0.05,
 		}},
 		OnGone: []data.Resource{{
-			Name: "gone kitten", Quantity: 1,
+			Name: "gone kitten", Count: 1,
 		}},
 	}, {
-		Name: "all kittens", Type: "Resource", IsHidden: true, Capacity: -1, StartQuantity: 1,
+		Name: "all kittens", Type: "Resource", IsHidden: true, Capacity: -1, StartCount: 1,
 		Producers: join([]data.Resource{{
 			Name: "", Factor: -1,
 		}}, resourceWithName(data.Resource{
@@ -645,7 +645,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gone kitten", Type: "Resource", Capacity: -1,
 	}, {
-		Name: "happiness", Type: "Job", StartQuantity: 0.1, Capacity: -1,
+		Name: "happiness", Type: "Job", StartCount: 0.1, Capacity: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.02,
 		}, {
@@ -671,499 +671,499 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Building", LockedBy: "Catnip Field",
-		Adds: []data.Resource{{Name: "catnip", Quantity: 1}},
+		Adds: []data.Resource{{Name: "catnip", Count: 1}},
 	}, {
 		Name: "Refine catnip", Type: "Building", UnlockedBy: "catnip", LockedBy: "woodcutter",
-		Costs: []data.Resource{{Name: "catnip", Quantity: 100}},
-		Adds:  []data.Resource{{Name: "wood", Quantity: 1}},
+		Costs: []data.Resource{{Name: "catnip", Count: 100}},
+		Adds:  []data.Resource{{Name: "wood", Count: 1}},
 	}})
 
 	addBuildings(g, []data.Action{{
 		Name: "Catnip Field", UnlockedBy: "catnip",
-		Costs: []data.Resource{{Name: "catnip", Quantity: 10, CostExponentBase: 1.12}},
+		Costs: []data.Resource{{Name: "catnip", Count: 10, CostExponentBase: 1.12}},
 	}, {
 		Name: "Hut", UnlockedBy: "wood",
-		Costs: []data.Resource{{Name: "wood", Quantity: 5, CostExponentBase: 2.5}},
+		Costs: []data.Resource{{Name: "wood", Count: 5, CostExponentBase: 2.5}},
 		Adds:  []data.Resource{{Name: "kitten", Capacity: 2}},
 	}, {
 		Name: "Library", UnlockedBy: "wood",
-		Costs: []data.Resource{{Name: "wood", Quantity: 25, CostExponentBase: 1.15}},
+		Costs: []data.Resource{{Name: "wood", Count: 25, CostExponentBase: 1.15}},
 	}, {
 		Name: "Barn", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "wood", Quantity: 50, CostExponentBase: 1.75}},
+		Costs: []data.Resource{{Name: "wood", Count: 50, CostExponentBase: 1.75}},
 	}, {
 		Name: "Mine", UnlockedBy: "Mining",
-		Costs: []data.Resource{{Name: "wood", Quantity: 100, CostExponentBase: 1.15}},
+		Costs: []data.Resource{{Name: "wood", Count: 100, CostExponentBase: 1.15}},
 	}, {
 		Name: "Workshop", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
+			Name: "wood", Count: 100, CostExponentBase: 1.15,
 		}, {
-			Name: "mineral", Quantity: 400, CostExponentBase: 1.15,
+			Name: "mineral", Count: 400, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Active Smelter", UnlockedBy: "Metal Working",
-		Costs: []data.Resource{{Name: "mineral", Quantity: 200, CostExponentBase: 1.15}},
+		Costs: []data.Resource{{Name: "mineral", Count: 200, CostExponentBase: 1.15}},
 	}, {
 		Name: "Pasture", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{
-			Name: "catnip", Quantity: 100, CostExponentBase: 1.15,
+			Name: "catnip", Count: 100, CostExponentBase: 1.15,
 		}, {
-			Name: "wood", Quantity: 10, CostExponentBase: 1.15,
+			Name: "wood", Count: 10, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Unic. Pasture", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "unicorn", Quantity: 2, CostExponentBase: 1.75}},
+		Costs: []data.Resource{{Name: "unicorn", Count: 2, CostExponentBase: 1.75}},
 	}, {
 		Name: "Academy", UnlockedBy: "Mathematics",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 50, CostExponentBase: 1.15,
+			Name: "wood", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "mineral", Quantity: 70, CostExponentBase: 1.15,
+			Name: "mineral", Count: 70, CostExponentBase: 1.15,
 		}, {
-			Name: "science", Quantity: 100, CostExponentBase: 1.15,
+			Name: "science", Count: 100, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Warehouse", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "beam", Quantity: 1.5, CostExponentBase: 1.15,
+			Name: "beam", Count: 1.5, CostExponentBase: 1.15,
 		}, {
-			Name: "slab", Quantity: 2, CostExponentBase: 1.15,
+			Name: "slab", Count: 2, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Log House", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
+			Name: "wood", Count: 200, CostExponentBase: 1.15,
 		}, {
-			Name: "mineral", Quantity: 250, CostExponentBase: 1.15,
+			Name: "mineral", Count: 250, CostExponentBase: 1.15,
 		}},
 		Adds: []data.Resource{{Name: "kitten", Capacity: 1}},
 	}, {
 		Name: "Aqueduct", UnlockedBy: "Engineering",
-		Costs: []data.Resource{{Name: "mineral", Quantity: 75, CostExponentBase: 1.12}},
+		Costs: []data.Resource{{Name: "mineral", Count: 75, CostExponentBase: 1.12}},
 	}, {
 		Name: "Mansion", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
-			Name: "slab", Quantity: 185, CostExponentBase: 1.15,
+			Name: "slab", Count: 185, CostExponentBase: 1.15,
 		}, {
-			Name: "steel", Quantity: 75, CostExponentBase: 1.15,
+			Name: "steel", Count: 75, CostExponentBase: 1.15,
 		}, {
-			Name: "titanium", Quantity: 25, CostExponentBase: 1.15,
+			Name: "titanium", Count: 25, CostExponentBase: 1.15,
 		}},
 		Adds: []data.Resource{{Name: "kitten", Capacity: 1}},
 	}, {
 		Name: "Observatory", UnlockedBy: "Astronomy",
 		Costs: []data.Resource{{
-			Name: "scaffold", Quantity: 50, CostExponentBase: 1.1,
+			Name: "scaffold", Count: 50, CostExponentBase: 1.1,
 		}, {
-			Name: "slab", Quantity: 35, CostExponentBase: 1.1,
+			Name: "slab", Count: 35, CostExponentBase: 1.1,
 		}, {
-			Name: "iron", Quantity: 750, CostExponentBase: 1.1,
+			Name: "iron", Count: 750, CostExponentBase: 1.1,
 		}, {
-			Name: "science", Quantity: 1000, CostExponentBase: 1.1,
+			Name: "science", Count: 1000, CostExponentBase: 1.1,
 		}},
 	}, {
 		Name: "Bio Lab", UnlockedBy: "Biology",
 		Costs: []data.Resource{{
-			Name: "slab", Quantity: 100, CostExponentBase: 1.1,
+			Name: "slab", Count: 100, CostExponentBase: 1.1,
 		}, {
-			Name: "alloy", Quantity: 25, CostExponentBase: 1.1,
+			Name: "alloy", Count: 25, CostExponentBase: 1.1,
 		}, {
-			Name: "science", Quantity: 1500, CostExponentBase: 1.1,
+			Name: "science", Count: 1500, CostExponentBase: 1.1,
 		}},
 	}, {
 		Name: "Harbour", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "scaffold", Quantity: 5, CostExponentBase: 1.15,
+			Name: "scaffold", Count: 5, CostExponentBase: 1.15,
 		}, {
-			Name: "slab", Quantity: 50, CostExponentBase: 1.15,
+			Name: "slab", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "plate", Quantity: 75, CostExponentBase: 1.15,
+			Name: "plate", Count: 75, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Quarry", UnlockedBy: "Geology",
 		Costs: []data.Resource{{
-			Name: "scaffold", Quantity: 50, CostExponentBase: 1.15,
+			Name: "scaffold", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "steel", Quantity: 125, CostExponentBase: 1.15,
+			Name: "steel", Count: 125, CostExponentBase: 1.15,
 		}, {
-			Name: "slab", Quantity: 1000, CostExponentBase: 1.15,
+			Name: "slab", Count: 1000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Lumber Mill", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 100, CostExponentBase: 1.15,
+			Name: "wood", Count: 100, CostExponentBase: 1.15,
 		}, {
-			Name: "iron", Quantity: 50, CostExponentBase: 1.15,
+			Name: "iron", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "mineral", Quantity: 250, CostExponentBase: 1.15,
+			Name: "mineral", Count: 250, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Oil Well", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "steel", Quantity: 50, CostExponentBase: 1.15,
+			Name: "steel", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "gear", Quantity: 25, CostExponentBase: 1.15,
+			Name: "gear", Count: 25, CostExponentBase: 1.15,
 		}, {
-			Name: "scaffold", Quantity: 25, CostExponentBase: 1.15,
+			Name: "scaffold", Count: 25, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Accelerator", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{
-			Name: "titanium", Quantity: 7500, CostExponentBase: 1.15,
+			Name: "titanium", Count: 7500, CostExponentBase: 1.15,
 		}, {
-			Name: "concrete", Quantity: 125, CostExponentBase: 1.15,
+			Name: "concrete", Count: 125, CostExponentBase: 1.15,
 		}, {
-			Name: "uranium", Quantity: 25, CostExponentBase: 1.15,
+			Name: "uranium", Count: 25, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Steamworks", UnlockedBy: "Machinery",
 		Costs: []data.Resource{{
-			Name: "steel", Quantity: 65, CostExponentBase: 1.25,
+			Name: "steel", Count: 65, CostExponentBase: 1.25,
 		}, {
-			Name: "gear", Quantity: 20, CostExponentBase: 1.25,
+			Name: "gear", Count: 20, CostExponentBase: 1.25,
 		}, {
-			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
 		}},
 	}, {
 		Name: "Magneto", UnlockedBy: "Electricity",
 		Costs: []data.Resource{{
-			Name: "alloy", Quantity: 10, CostExponentBase: 1.25,
+			Name: "alloy", Count: 10, CostExponentBase: 1.25,
 		}, {
-			Name: "gear", Quantity: 5, CostExponentBase: 1.25,
+			Name: "gear", Count: 5, CostExponentBase: 1.25,
 		}, {
-			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
 		}},
 	}, {
 		Name: "Calciner", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "steel", Quantity: 100, CostExponentBase: 1.15,
+			Name: "steel", Count: 100, CostExponentBase: 1.15,
 		}, {
-			Name: "titanium", Quantity: 15, CostExponentBase: 1.15,
+			Name: "titanium", Count: 15, CostExponentBase: 1.15,
 		}, {
-			Name: "blueprint", Quantity: 1, CostExponentBase: 1.15,
+			Name: "blueprint", Count: 1, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Factory", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
-			Name: "titanium", Quantity: 2000, CostExponentBase: 1.15,
+			Name: "titanium", Count: 2000, CostExponentBase: 1.15,
 		}, {
-			Name: "plate", Quantity: 25000, CostExponentBase: 1.15,
+			Name: "plate", Count: 25000, CostExponentBase: 1.15,
 		}, {
-			Name: "concrete", Quantity: 15, CostExponentBase: 1.15,
+			Name: "concrete", Count: 15, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Reactor", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
-			Name: "titanium", Quantity: 3500, CostExponentBase: 1.15,
+			Name: "titanium", Count: 3500, CostExponentBase: 1.15,
 		}, {
-			Name: "plate", Quantity: 5000, CostExponentBase: 1.15,
+			Name: "plate", Count: 5000, CostExponentBase: 1.15,
 		}, {
-			Name: "concrete", Quantity: 50, CostExponentBase: 1.15,
+			Name: "concrete", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "blueprint", Quantity: 25, CostExponentBase: 1.15,
+			Name: "blueprint", Count: 25, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Amphitheatre", UnlockedBy: "Writing",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 200, CostExponentBase: 1.15,
+			Name: "wood", Count: 200, CostExponentBase: 1.15,
 		}, {
-			Name: "mineral", Quantity: 1200, CostExponentBase: 1.15,
+			Name: "mineral", Count: 1200, CostExponentBase: 1.15,
 		}, {
-			Name: "parchment", Quantity: 3, CostExponentBase: 1.15,
+			Name: "parchment", Count: 3, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Chapel", UnlockedBy: "Acoustics",
 		Costs: []data.Resource{{
-			Name: "mineral", Quantity: 2000, CostExponentBase: 1.15,
+			Name: "mineral", Count: 2000, CostExponentBase: 1.15,
 		}, {
-			Name: "culture", Quantity: 250, CostExponentBase: 1.15,
+			Name: "culture", Count: 250, CostExponentBase: 1.15,
 		}, {
-			Name: "parchment", Quantity: 250, CostExponentBase: 1.15,
+			Name: "parchment", Count: 250, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Temple", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
-			Name: "slab", Quantity: 25, CostExponentBase: 1.15,
+			Name: "slab", Count: 25, CostExponentBase: 1.15,
 		}, {
-			Name: "plate", Quantity: 15, CostExponentBase: 1.15,
+			Name: "plate", Count: 15, CostExponentBase: 1.15,
 		}, {
-			Name: "gold", Quantity: 50, CostExponentBase: 1.15,
+			Name: "gold", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "manuscript", Quantity: 10, CostExponentBase: 1.15,
+			Name: "manuscript", Count: 10, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Tradepost", UnlockedBy: "Currency",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 500, CostExponentBase: 1.15,
+			Name: "wood", Count: 500, CostExponentBase: 1.15,
 		}, {
-			Name: "mineral", Quantity: 200, CostExponentBase: 1.15,
+			Name: "mineral", Count: 200, CostExponentBase: 1.15,
 		}, {
-			Name: "gold", Quantity: 10, CostExponentBase: 1.15,
+			Name: "gold", Count: 10, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Mint", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
-			Name: "mineral", Quantity: 5000, CostExponentBase: 1.15,
+			Name: "mineral", Count: 5000, CostExponentBase: 1.15,
 		}, {
-			Name: "plate", Quantity: 200, CostExponentBase: 1.15,
+			Name: "plate", Count: 200, CostExponentBase: 1.15,
 		}, {
-			Name: "gold", Quantity: 500, CostExponentBase: 1.15,
+			Name: "gold", Count: 500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Brewery", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 1000, CostExponentBase: 1.5,
+			Name: "wood", Count: 1000, CostExponentBase: 1.5,
 		}, {
-			Name: "culture", Quantity: 750, CostExponentBase: 1.5,
+			Name: "culture", Count: 750, CostExponentBase: 1.5,
 		}, {
-			Name: "spice", Quantity: 5, CostExponentBase: 1.5,
+			Name: "spice", Count: 5, CostExponentBase: 1.5,
 		}, {
-			Name: "parchment", Quantity: 375, CostExponentBase: 1.5,
+			Name: "parchment", Count: 375, CostExponentBase: 1.5,
 		}},
 	}, {
 		Name: "Ziggurat", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "megalith", Quantity: 50, CostExponentBase: 1.25,
+			Name: "megalith", Count: 50, CostExponentBase: 1.25,
 		}, {
-			Name: "scaffold", Quantity: 50, CostExponentBase: 1.25,
+			Name: "scaffold", Count: 50, CostExponentBase: 1.25,
 		}, {
-			Name: "blueprint", Quantity: 1, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
 		}},
 	}, {
 		Name: "Chronosphere", UnlockedBy: "Chronophysics",
 		Costs: []data.Resource{{
-			Name: "unobtainium", Quantity: 2500, CostExponentBase: 1.25,
+			Name: "unobtainium", Count: 2500, CostExponentBase: 1.25,
 		}, {
-			Name: "time crystal", Quantity: 1, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 1, CostExponentBase: 1.25,
 		}, {
-			Name: "blueprint", Quantity: 100, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 100, CostExponentBase: 1.25,
 		}, {
-			Name: "science", Quantity: 250000, CostExponentBase: 1.25,
+			Name: "science", Count: 250000, CostExponentBase: 1.25,
 		}},
 	}, {
 		Name: "AI Core", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
-			Name: "antimatter", Quantity: 125, CostExponentBase: 1.15,
+			Name: "antimatter", Count: 125, CostExponentBase: 1.15,
 		}, {
-			Name: "science", Quantity: 500000, CostExponentBase: 1.15,
+			Name: "science", Count: 500000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Solar Farm", UnlockedBy: "Ecology",
 		Costs: []data.Resource{{
-			Name: "titanium", Quantity: 250, CostExponentBase: 1.15,
+			Name: "titanium", Count: 250, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Hydro Plant", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "concrete", Quantity: 100, CostExponentBase: 1.15,
+			Name: "concrete", Count: 100, CostExponentBase: 1.15,
 		}, {
-			Name: "titanium", Quantity: 2500, CostExponentBase: 1.15,
+			Name: "titanium", Count: 2500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Data Center", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "concrete", Quantity: 10, CostExponentBase: 1.15,
+			Name: "concrete", Count: 10, CostExponentBase: 1.15,
 		}, {
-			Name: "steel", Quantity: 100, CostExponentBase: 1.15,
+			Name: "steel", Count: 100, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Broadcast Tower", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "iron", Quantity: 1250, CostExponentBase: 1.18,
+			Name: "iron", Count: 1250, CostExponentBase: 1.18,
 		}, {
-			Name: "titanium", Quantity: 75, CostExponentBase: 1.18,
+			Name: "titanium", Count: 75, CostExponentBase: 1.18,
 		}},
 	}, {
 		Name: "Unicorn Tomb", UnlockedBy: "tear",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 5, CostExponentBase: 1.15,
+			Name: "tear", Count: 5, CostExponentBase: 1.15,
 		}, {
-			Name: "ivory", Quantity: 500, CostExponentBase: 1.15,
+			Name: "ivory", Count: 500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Ivory Tower", UnlockedBy: "Unicorn Tomb",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 25, CostExponentBase: 1.15,
+			Name: "tear", Count: 25, CostExponentBase: 1.15,
 		}, {
-			Name: "ivory", Quantity: 25000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 25000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Ivory Citadel", UnlockedBy: "Ivory Tower",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 50, CostExponentBase: 1.15,
+			Name: "tear", Count: 50, CostExponentBase: 1.15,
 		}, {
-			Name: "ivory", Quantity: 50000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 50000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Sky Palace", UnlockedBy: "Ivory Citadel",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 500, CostExponentBase: 1.15,
+			Name: "tear", Count: 500, CostExponentBase: 1.15,
 		}, {
-			Name: "ivory", Quantity: 125000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 125000, CostExponentBase: 1.15,
 		}, {
-			Name: "megalith", Quantity: 5, CostExponentBase: 1.15,
+			Name: "megalith", Count: 5, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Unicorn Utopia", UnlockedBy: "Sky Palace",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 5000, CostExponentBase: 1.15,
+			Name: "tear", Count: 5000, CostExponentBase: 1.15,
 		}, {
-			Name: "ivory", Quantity: 1000000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 1000000, CostExponentBase: 1.15,
 		}, {
-			Name: "gold", Quantity: 500, CostExponentBase: 1.15,
+			Name: "gold", Count: 500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Sunspire", UnlockedBy: "Unicorn Utopia",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 25000, CostExponentBase: 1.15,
+			Name: "tear", Count: 25000, CostExponentBase: 1.15,
 		}, {
-			Name: "ivory", Quantity: 750000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 750000, CostExponentBase: 1.15,
 		}, {
-			Name: "gold", Quantity: 1000, CostExponentBase: 1.15,
+			Name: "gold", Count: 1000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Marker", UnlockedBy: "Megalomania",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 5000, CostExponentBase: 1.15,
+			Name: "tear", Count: 5000, CostExponentBase: 1.15,
 		}, {
-			Name: "megalith", Quantity: 750, CostExponentBase: 1.15,
+			Name: "megalith", Count: 750, CostExponentBase: 1.15,
 		}, {
-			Name: "spice", Quantity: 50000, CostExponentBase: 1.15,
+			Name: "spice", Count: 50000, CostExponentBase: 1.15,
 		}, {
-			Name: "unobtainium", Quantity: 2500, CostExponentBase: 1.15,
+			Name: "unobtainium", Count: 2500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Unicorn Graveyard", UnlockedBy: "Black Codex",
 		Costs: []data.Resource{{
-			Name: "necrocorn", Quantity: 5, CostExponentBase: 1.15,
+			Name: "necrocorn", Count: 5, CostExponentBase: 1.15,
 		}, {
-			Name: "megalith", Quantity: 1000, CostExponentBase: 1.15,
+			Name: "megalith", Count: 1000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Unicorn Necropolis", UnlockedBy: "Unicorn Graveyard",
 		Costs: []data.Resource{{
-			Name: "necrocorn", Quantity: 15, CostExponentBase: 1.15,
+			Name: "necrocorn", Count: 15, CostExponentBase: 1.15,
 		}, {
-			Name: "megalith", Quantity: 2500, CostExponentBase: 1.15,
+			Name: "megalith", Count: 2500, CostExponentBase: 1.15,
 		}, {
-			Name: "alicorn", Quantity: 100, CostExponentBase: 1.15,
+			Name: "alicorn", Count: 100, CostExponentBase: 1.15,
 		}, {
-			Name: "void", Quantity: 5, CostExponentBase: 1.15,
+			Name: "void", Count: 5, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Black Pyramid", UnlockedBy: "Megalomania",
 		Costs: []data.Resource{{
-			Name: "sorrow", Quantity: 5, CostExponentBase: 1.15,
+			Name: "sorrow", Count: 5, CostExponentBase: 1.15,
 		}, {
-			Name: "megalith", Quantity: 2500, CostExponentBase: 1.15,
+			Name: "megalith", Count: 2500, CostExponentBase: 1.15,
 		}, {
-			Name: "spice", Quantity: 150000, CostExponentBase: 1.15,
+			Name: "spice", Count: 150000, CostExponentBase: 1.15,
 		}, {
-			Name: "unobtainium", Quantity: 5000, CostExponentBase: 1.15,
+			Name: "unobtainium", Count: 5000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Solar Chant", UnlockedBy: "faith",
 		Costs: []data.Resource{{
-			Name: "faith", Quantity: 100, CostExponentBase: 2.5,
+			Name: "faith", Count: 100, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Scholasticism", UnlockedBy: "faith",
 		Costs: []data.Resource{{
-			Name: "faith", Quantity: 250, CostExponentBase: 2.5,
+			Name: "faith", Count: 250, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Golden Spire", UnlockedBy: "faith",
 		Costs: []data.Resource{{
-			Name: "faith", Quantity: 350, CostExponentBase: 2.5,
+			Name: "faith", Count: 350, CostExponentBase: 2.5,
 		}, {
-			Name: "gold", Quantity: 150, CostExponentBase: 2.5,
+			Name: "gold", Count: 150, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Sun Altar", UnlockedBy: "faith",
 		Costs: []data.Resource{{
-			Name: "faith", Quantity: 500, CostExponentBase: 2.5,
+			Name: "faith", Count: 500, CostExponentBase: 2.5,
 		}, {
-			Name: "gold", Quantity: 250, CostExponentBase: 2.5,
+			Name: "gold", Count: 250, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Stained Glass", UnlockedBy: "faith",
 		Costs: []data.Resource{{
-			Name: "faith", Quantity: 500, CostExponentBase: 2.5,
+			Name: "faith", Count: 500, CostExponentBase: 2.5,
 		}, {
-			Name: "gold", Quantity: 250, CostExponentBase: 2.5,
+			Name: "gold", Count: 250, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Basilica", UnlockedBy: "faith",
 		Costs: []data.Resource{{
-			Name: "faith", Quantity: 1250, CostExponentBase: 2.5,
+			Name: "faith", Count: 1250, CostExponentBase: 2.5,
 		}, {
-			Name: "gold", Quantity: 750, CostExponentBase: 2.5,
+			Name: "gold", Count: 750, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Templars", UnlockedBy: "faith",
 		Costs: []data.Resource{{
-			Name: "faith", Quantity: 3500, CostExponentBase: 2.5,
+			Name: "faith", Count: 3500, CostExponentBase: 2.5,
 		}, {
-			Name: "gold", Quantity: 3000, CostExponentBase: 2.5,
+			Name: "gold", Count: 3000, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Black Obelisk", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 100, CostExponentBase: 1.15,
+			Name: "relic", Count: 100, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Black Nexus", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 5000, CostExponentBase: 1.15,
+			Name: "relic", Count: 5000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Black Core", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 10000, CostExponentBase: 1.15,
+			Name: "relic", Count: 10000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Event Horizon", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 25000, CostExponentBase: 1.15,
+			Name: "relic", Count: 25000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Black Library", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 30000, CostExponentBase: 1.15,
+			Name: "relic", Count: 30000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Black Radiance", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 37500, CostExponentBase: 1.15,
+			Name: "relic", Count: 37500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Blazar", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 50000, CostExponentBase: 1.15,
+			Name: "relic", Count: 50000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Dark Nova", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 75000, CostExponentBase: 1.15,
+			Name: "relic", Count: 75000, CostExponentBase: 1.15,
 		}, {
-			Name: "void", Quantity: 7500, CostExponentBase: 1.15,
+			Name: "void", Count: 7500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Mausoleum", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 50000, CostExponentBase: 1.15,
+			Name: "relic", Count: 50000, CostExponentBase: 1.15,
 		}, {
-			Name: "void", Quantity: 12500, CostExponentBase: 1.15,
+			Name: "void", Count: 12500, CostExponentBase: 1.15,
 		}, {
-			Name: "necrocorn", Quantity: 10, CostExponentBase: 1.15,
+			Name: "necrocorn", Count: 10, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Holy Genocide", UnlockedBy: "relic",
 		Costs: []data.Resource{{
-			Name: "relic", Quantity: 100000, CostExponentBase: 1.15,
+			Name: "relic", Count: 100000, CostExponentBase: 1.15,
 		}, {
-			Name: "void", Quantity: 25000, CostExponentBase: 1.15,
+			Name: "void", Count: 25000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
@@ -1194,196 +1194,196 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddActions([]data.Action{{
 		Name: "Send hunters", Type: "Job", UnlockedBy: "Archery",
-		Costs: []data.Resource{{Name: "catpower", Quantity: 100}},
+		Costs: []data.Resource{{Name: "catpower", Count: 100}},
 		Adds: []data.Resource{{
-			Name: "fur", Quantity: 39.5, Bonus: HuntingBonus,
+			Name: "fur", Count: 39.5, Bonus: HuntingBonus,
 		}, {
-			Name: "ivory", Quantity: 10.78, Bonus: HuntingBonus,
+			Name: "ivory", Count: 10.78, Bonus: HuntingBonus,
 		}, {
-			Name: "unicorn", Quantity: 0.05,
+			Name: "unicorn", Count: 0.05,
 		}},
 	}})
 
 	g.AddActions([]data.Action{{
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "mineral", Quantity: 1000,
+			Name: "mineral", Count: 1000,
 		}},
 		Adds: []data.Resource{{
-			Name: "wood", Quantity: 500,
+			Name: "wood", Count: 500,
 		}, {
-			Name: "beam", Quantity: 10 * 0.15,
+			Name: "beam", Count: 10 * 0.15,
 		}, {
-			Name: "scaffold", Quantity: 1 * 0.1,
+			Name: "scaffold", Count: 1 * 0.1,
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}, {
 		Name: "Sharks", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "iron", Quantity: 100,
+			Name: "iron", Count: 100,
 		}},
 		Adds: []data.Resource{{
-			Name: "catnip", Quantity: 35000,
+			Name: "catnip", Count: 35000,
 		}, {
-			Name: "parchment", Quantity: 5 * 0.25,
+			Name: "parchment", Count: 5 * 0.25,
 		}, {
-			Name: "manuscript", Quantity: 4 * 0.15,
+			Name: "manuscript", Count: 4 * 0.15,
 		}, {
-			Name: "compendium", Quantity: 1 * 0.10,
+			Name: "compendium", Count: 1 * 0.10,
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}, {
 		Name: "Griffins", Type: "Trade", UnlockedBy: "Archery",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "wood", Quantity: 500,
+			Name: "wood", Count: 500,
 		}},
 		Adds: []data.Resource{{
-			Name: "iron", Quantity: 250,
+			Name: "iron", Count: 250,
 		}, {
-			Name: "steel", Quantity: 25 * 0.25,
+			Name: "steel", Count: 25 * 0.25,
 		}, {
-			Name: "gear", Quantity: 5 * 0.10,
+			Name: "gear", Count: 5 * 0.10,
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}, {
 		Name: "Nagas", Type: "Trade", UnlockedBy: "culture",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "ivory", Quantity: 500,
+			Name: "ivory", Count: 500,
 		}},
 		Adds: []data.Resource{{
-			Name: "mineral", Quantity: 1000,
+			Name: "mineral", Count: 1000,
 		}, {
-			Name: "slab", Quantity: 5 * 0.75,
+			Name: "slab", Count: 5 * 0.75,
 		}, {
-			Name: "concrete", Quantity: 5 * 0.25,
+			Name: "concrete", Count: 5 * 0.25,
 		}, {
-			Name: "megalith", Quantity: 1 * 0.10,
+			Name: "megalith", Count: 1 * 0.10,
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}, {
 		Name: "Zebras", Type: "Trade", UnlockedBy: "ship",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "slab", Quantity: 50,
+			Name: "slab", Count: 50,
 		}},
 		Adds: []data.Resource{{
-			Name: "iron", Quantity: 300,
+			Name: "iron", Count: 300,
 		}, {
-			Name: "plate", Quantity: 2 * 0.65,
+			Name: "plate", Count: 2 * 0.65,
 		}, {
-			Name: "titanium", Quantity: 1.5 * 0.15,
+			Name: "titanium", Count: 1.5 * 0.15,
 			Bonus: []data.Resource{{
 				Name: "ship", Factor: 0.03 * 0.35 / 100,
 			}},
 		}, {
-			Name: "alloy", Quantity: 0.25 * 0.05,
+			Name: "alloy", Count: 0.25 * 0.05,
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}, {
 		Name: "Spiders", Type: "Trade", UnlockedBy: "ship",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "scaffold", Quantity: 50,
+			Name: "scaffold", Count: 50,
 		}},
 		Adds: []data.Resource{{
-			Name: "coal", Quantity: 350,
+			Name: "coal", Count: 350,
 		}, {
-			Name: "oil", Quantity: 100 * 0.25,
+			Name: "oil", Count: 100 * 0.25,
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}, {
 		Name: "Dragons", Type: "Trade", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "titanium", Quantity: 250,
+			Name: "titanium", Count: 250,
 		}},
 		Adds: []data.Resource{{
-			Name: "uranium", Quantity: 1 * 0.95,
+			Name: "uranium", Count: 1 * 0.95,
 		}, {
-			Name: "thorium", Quantity: 1 * 0.50,
+			Name: "thorium", Count: 1 * 0.50,
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}, {
 		Name: "Leviathans", Type: "Trade", UnlockedBy: "Black Pyramid",
 		Costs: []data.Resource{{
-			Name: "catpower", Quantity: 50,
+			Name: "catpower", Count: 50,
 		}, {
-			Name: "gold", Quantity: 15,
+			Name: "gold", Count: 15,
 		}, {
-			Name: "unobtainium", Quantity: 5000,
+			Name: "unobtainium", Count: 5000,
 		}},
 		Adds: []data.Resource{{
-			Name: "starchart", Quantity: 250 * 0.50,
+			Name: "starchart", Count: 250 * 0.50,
 			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
-			Name: "time crystal", Quantity: 0.25 * 0.98,
+			Name: "time crystal", Count: 0.25 * 0.98,
 			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
-			Name: "sorrow", Quantity: 1 * 0.15,
+			Name: "sorrow", Count: 1 * 0.15,
 			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
-			Name: "relic", Quantity: 1 * 0.05,
+			Name: "relic", Count: 1 * 0.05,
 			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
-			Name: "blueprint", Quantity: 0.1,
+			Name: "blueprint", Count: 0.1,
 		}, {
-			Name: "spice", Quantity: 8.75,
+			Name: "spice", Count: 8.75,
 		}},
 	}})
 
 	g.AddActions([]data.Action{{
 		Name: "Sacrifice Unicorns", Type: "Craft", UnlockedBy: "Ziggurat",
 		Costs: []data.Resource{{
-			Name: "unicorn", Quantity: 2500,
+			Name: "unicorn", Count: 2500,
 		}},
 		Adds: []data.Resource{{
-			Name: "tear", Quantity: 1,
+			Name: "tear", Count: 1,
 			Bonus: []data.Resource{{
 				Name: "Ziggurat", Factor: 1,
 			}},
@@ -1392,10 +1392,10 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "alicorn",
 		Costs: []data.Resource{{
-			Name: "alicorn", Quantity: 25,
+			Name: "alicorn", Count: 25,
 		}},
 		Adds: []data.Resource{{
-			Name: "time crystal", Quantity: 1,
+			Name: "time crystal", Count: 1,
 			Bonus: []data.Resource{{
 				Name: "Unicorn Utopia", Factor: 0.05,
 			}, {
@@ -1405,18 +1405,18 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Refine Tears", Type: "Craft", UnlockedBy: "Megalomania",
 		Costs: []data.Resource{{
-			Name: "tear", Quantity: 10000,
+			Name: "tear", Count: 10000,
 		}},
 		Adds: []data.Resource{{
-			Name: "sorrow", Quantity: 1,
+			Name: "sorrow", Count: 1,
 		}},
 	}, {
 		Name: "Refine Time Crystals", Type: "Craft", UnlockedBy: "time crystal",
 		Costs: []data.Resource{{
-			Name: "time crystal", Quantity: 25,
+			Name: "time crystal", Count: 25,
 		}},
 		Adds: []data.Resource{{
-			Name: "relic", Quantity: 1,
+			Name: "relic", Count: 1,
 			Bonus: []data.Resource{{
 				Name: "Black Nexus", Factor: 1,
 				Bonus: []data.Resource{{
@@ -1428,1484 +1428,1484 @@ func NewGame(now game.Now) *game.Game {
 
 	addTechs(g, []data.Action{{
 		Name: "Calendar", UnlockedBy: "Library",
-		Costs: []data.Resource{{Name: "science", Quantity: 30}},
+		Costs: []data.Resource{{Name: "science", Count: 30}},
 	}, {
 		Name: "Agriculture", UnlockedBy: "Calendar",
-		Costs: []data.Resource{{Name: "science", Quantity: 100}},
+		Costs: []data.Resource{{Name: "science", Count: 100}},
 	}, {
 		Name: "Archery", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "science", Quantity: 300}},
+		Costs: []data.Resource{{Name: "science", Count: 300}},
 	}, {
 		Name: "Mining", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "science", Quantity: 500}},
+		Costs: []data.Resource{{Name: "science", Count: 500}},
 	}, {
 		Name: "Animal Husbandry", UnlockedBy: "Archery",
-		Costs: []data.Resource{{Name: "science", Quantity: 500}},
+		Costs: []data.Resource{{Name: "science", Count: 500}},
 	}, {
 		Name: "Metal Working", UnlockedBy: "Mining",
-		Costs: []data.Resource{{Name: "science", Quantity: 900}},
+		Costs: []data.Resource{{Name: "science", Count: 900}},
 	}, {
 		Name: "Civil Service", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
+		Costs: []data.Resource{{Name: "science", Count: 1500}},
 	}, {
 		Name: "Mathematics", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "science", Quantity: 1000}},
+		Costs: []data.Resource{{Name: "science", Count: 1000}},
 	}, {
 		Name: "Construction", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "science", Quantity: 1300}},
+		Costs: []data.Resource{{Name: "science", Count: 1300}},
 	}, {
 		Name: "Currency", UnlockedBy: "Civil Service",
-		Costs: []data.Resource{{Name: "science", Quantity: 2200}},
+		Costs: []data.Resource{{Name: "science", Count: 2200}},
 	}, {
 		Name: "Celestial Mechanics", UnlockedBy: "Mathematics",
-		Costs: []data.Resource{{Name: "science", Quantity: 250}},
+		Costs: []data.Resource{{Name: "science", Count: 250}},
 	}, {
 		Name: "Engineering", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "science", Quantity: 1500}},
+		Costs: []data.Resource{{Name: "science", Count: 1500}},
 	}, {
 		Name: "Writing", UnlockedBy: "Engineering",
-		Costs: []data.Resource{{Name: "science", Quantity: 3600}},
+		Costs: []data.Resource{{Name: "science", Count: 3600}},
 	}, {
 		Name: "Philosophy", UnlockedBy: "Writing",
-		Costs: []data.Resource{{Name: "science", Quantity: 9500}},
+		Costs: []data.Resource{{Name: "science", Count: 9500}},
 	}, {
 		Name: "Steel", UnlockedBy: "Writing",
-		Costs: []data.Resource{{Name: "science", Quantity: 12000}},
+		Costs: []data.Resource{{Name: "science", Count: 12000}},
 	}, {
 		Name: "Machinery", UnlockedBy: "Writing",
-		Costs: []data.Resource{{Name: "science", Quantity: 15000}},
+		Costs: []data.Resource{{Name: "science", Count: 15000}},
 	}, {
 		Name: "Theology", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 20000,
+			Name: "science", Count: 20000,
 		}, {
-			Name: "manuscript", Quantity: 35,
+			Name: "manuscript", Count: 35,
 		}},
 	}, {
 		Name: "Astronomy", UnlockedBy: "Theology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 28000,
+			Name: "science", Count: 28000,
 		}, {
-			Name: "manuscript", Quantity: 65,
+			Name: "manuscript", Count: 65,
 		}},
 	}, {
 		Name: "Navigation", UnlockedBy: "Astronomy",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 35000,
+			Name: "science", Count: 35000,
 		}, {
-			Name: "manuscript", Quantity: 100,
+			Name: "manuscript", Count: 100,
 		}},
 	}, {
 		Name: "Architecture", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 42000,
+			Name: "science", Count: 42000,
 		}, {
-			Name: "compendium", Quantity: 10,
+			Name: "compendium", Count: 10,
 		}},
 	}, {
 		Name: "Physics", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 50000,
+			Name: "science", Count: 50000,
 		}, {
-			Name: "compendium", Quantity: 35,
+			Name: "compendium", Count: 35,
 		}},
 	}, {
 		Name: "Metaphysics", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 55000,
+			Name: "science", Count: 55000,
 		}, {
-			Name: "unobtainium", Quantity: 5,
+			Name: "unobtainium", Count: 5,
 		}},
 	}, {
 		Name: "Chemistry", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 60000,
+			Name: "science", Count: 60000,
 		}, {
-			Name: "compendium", Quantity: 50,
+			Name: "compendium", Count: 50,
 		}},
 	}, {
 		Name: "Acoustics", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 60000,
+			Name: "science", Count: 60000,
 		}, {
-			Name: "compendium", Quantity: 60,
+			Name: "compendium", Count: 60,
 		}},
 	}, {
 		Name: "Geology", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 65000,
+			Name: "science", Count: 65000,
 		}, {
-			Name: "compendium", Quantity: 65,
+			Name: "compendium", Count: 65,
 		}},
 	}, {
 		Name: "Drama and Poetry", UnlockedBy: "Acoustics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 90000,
+			Name: "science", Count: 90000,
 		}, {
-			Name: "parchment", Quantity: 5000,
+			Name: "parchment", Count: 5000,
 		}},
 	}, {
 		Name: "Electricity", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 75000,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "compendium", Quantity: 85,
+			Name: "compendium", Count: 85,
 		}},
 	}, {
 		Name: "Biology", UnlockedBy: "Geology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 85000,
+			Name: "science", Count: 85000,
 		}, {
-			Name: "compendium", Quantity: 100,
+			Name: "compendium", Count: 100,
 		}},
 	}, {
 		Name: "Biochemistry", UnlockedBy: "Biology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 145000,
+			Name: "science", Count: 145000,
 		}, {
-			Name: "compendium", Quantity: 500,
+			Name: "compendium", Count: 500,
 		}},
 	}, {
 		Name: "Genetics", UnlockedBy: "Biochemistry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 190000,
+			Name: "science", Count: 190000,
 		}, {
-			Name: "compendium", Quantity: 1500,
+			Name: "compendium", Count: 1500,
 		}},
 	}, {
 		Name: "Industrialization", UnlockedBy: "Electricity",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 10000,
+			Name: "science", Count: 10000,
 		}, {
-			Name: "blueprint", Quantity: 25,
+			Name: "blueprint", Count: 25,
 		}},
 	}, {
 		Name: "Mechanization", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 115000,
+			Name: "science", Count: 115000,
 		}, {
-			Name: "blueprint", Quantity: 45,
+			Name: "blueprint", Count: 45,
 		}},
 	}, {
 		Name: "Combustion", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 115000,
+			Name: "science", Count: 115000,
 		}, {
-			Name: "blueprint", Quantity: 45,
+			Name: "blueprint", Count: 45,
 		}},
 	}, {
 		Name: "Metallurgy", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "blueprint", Quantity: 60,
+			Name: "blueprint", Count: 60,
 		}},
 	}, {
 		Name: "Ecology", UnlockedBy: "Combustion",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "blueprint", Quantity: 55,
+			Name: "blueprint", Count: 55,
 		}},
 	}, {
 		Name: "Electronics", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 135000,
+			Name: "science", Count: 135000,
 		}, {
-			Name: "blueprint", Quantity: 70,
+			Name: "blueprint", Count: 70,
 		}},
 	}, {
 		Name: "Robotics", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 140000,
+			Name: "science", Count: 140000,
 		}, {
-			Name: "blueprint", Quantity: 80,
+			Name: "blueprint", Count: 80,
 		}},
 	}, {
 		Name: "Artificial Intelligence", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "blueprint", Quantity: 150,
+			Name: "blueprint", Count: 150,
 		}},
 	}, {
 		Name: "Quantum Cryptography", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 1250000,
+			Name: "science", Count: 1250000,
 		}, {
-			Name: "relic", Quantity: 1024,
+			Name: "relic", Count: 1024,
 		}},
 	}, {
 		Name: "Blackchain", UnlockedBy: "Quantum Cryptography",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 5000000,
+			Name: "science", Count: 5000000,
 		}, {
-			Name: "relic", Quantity: 4096,
+			Name: "relic", Count: 4096,
 		}},
 	}, {
 		Name: "Nuclear Fission", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 150000,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "blueprint", Quantity: 100,
+			Name: "blueprint", Count: 100,
 		}},
 	}, {
 		Name: "Rocketry", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "blueprint", Quantity: 125,
+			Name: "blueprint", Count: 125,
 		}},
 	}, {
 		Name: "Oil Processing", UnlockedBy: "Rocketry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 215000,
+			Name: "science", Count: 215000,
 		}, {
-			Name: "blueprint", Quantity: 150,
+			Name: "blueprint", Count: 150,
 		}},
 	}, {
 		Name: "Satellites", UnlockedBy: "Rocketry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 190000,
+			Name: "science", Count: 190000,
 		}, {
-			Name: "blueprint", Quantity: 125,
+			Name: "blueprint", Count: 125,
 		}},
 	}, {
 		Name: "Orbital Engineering", UnlockedBy: "Satellites",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "blueprint", Quantity: 250,
+			Name: "blueprint", Count: 250,
 		}},
 	}, {
 		Name: "Thorium", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 375000,
+			Name: "science", Count: 375000,
 		}, {
-			Name: "blueprint", Quantity: 375,
+			Name: "blueprint", Count: 375,
 		}},
 	}, {
 		Name: "Exogeology", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 275000,
+			Name: "science", Count: 275000,
 		}, {
-			Name: "blueprint", Quantity: 250,
+			Name: "blueprint", Count: 250,
 		}},
 	}, {
 		Name: "Advanced Exogeology", UnlockedBy: "Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 325000,
+			Name: "science", Count: 325000,
 		}, {
-			Name: "blueprint", Quantity: 350,
+			Name: "blueprint", Count: 350,
 		}},
 	}, {
 		Name: "Nanotechnology", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 200000,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "blueprint", Quantity: 150,
+			Name: "blueprint", Count: 150,
 		}},
 	}, {
 		Name: "Superconductors", UnlockedBy: "Nanotechnology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 225000,
+			Name: "science", Count: 225000,
 		}, {
-			Name: "blueprint", Quantity: 175,
+			Name: "blueprint", Count: 175,
 		}},
 	}, {
 		Name: "Antimatter", UnlockedBy: "Superconductors",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 500000,
+			Name: "science", Count: 500000,
 		}, {
-			Name: "relic", Quantity: 1,
+			Name: "relic", Count: 1,
 		}},
 	}, {
 		Name: "Terraformation", UnlockedBy: "Antimatter",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 750000,
+			Name: "science", Count: 750000,
 		}, {
-			Name: "relic", Quantity: 5,
+			Name: "relic", Count: 5,
 		}},
 	}, {
 		Name: "Hydroponics", UnlockedBy: "Terraformation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 1000000,
+			Name: "science", Count: 1000000,
 		}, {
-			Name: "relic", Quantity: 25,
+			Name: "relic", Count: 25,
 		}},
 	}, {
 		Name: "Exophysics", UnlockedBy: "Hydroponics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 25000000,
+			Name: "science", Count: 25000000,
 		}, {
-			Name: "relic", Quantity: 500,
+			Name: "relic", Count: 500,
 		}},
 	}, {
 		Name: "Particle Physics", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 185000,
+			Name: "science", Count: 185000,
 		}, {
-			Name: "blueprint", Quantity: 135,
+			Name: "blueprint", Count: 135,
 		}},
 	}, {
 		Name: "Dimensional Physics", UnlockedBy: "Particle Physics",
-		Costs: []data.Resource{{Name: "science", Quantity: 235000}},
+		Costs: []data.Resource{{Name: "science", Count: 235000}},
 	}, {
 		Name: "Chronophysics", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "time crystal", Quantity: 5,
+			Name: "time crystal", Count: 5,
 		}},
 	}, {
 		Name: "Tachyon Theory", UnlockedBy: "Chronophysics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 750000,
+			Name: "science", Count: 750000,
 		}, {
-			Name: "time crystal", Quantity: 25,
+			Name: "time crystal", Count: 25,
 		}, {
-			Name: "relic", Quantity: 1,
+			Name: "relic", Count: 1,
 		}},
 	}, {
 		Name: "Cryptotheology", UnlockedBy: "Theology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 650000,
+			Name: "science", Count: 650000,
 		}, {
-			Name: "relic", Quantity: 5,
+			Name: "relic", Count: 5,
 		}},
 	}, {
 		Name: "Void Space", UnlockedBy: "Tachyon Theory",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 800000,
+			Name: "science", Count: 800000,
 		}, {
-			Name: "time crystal", Quantity: 30,
+			Name: "time crystal", Count: 30,
 		}, {
-			Name: "void", Quantity: 100,
+			Name: "void", Count: 100,
 		}},
 	}, {
 		Name: "Paradox Theory", UnlockedBy: "Void Space",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 1000000,
+			Name: "science", Count: 1000000,
 		}, {
-			Name: "time crystal", Quantity: 40,
+			Name: "time crystal", Count: 40,
 		}, {
-			Name: "void", Quantity: 250,
+			Name: "void", Count: 250,
 		}},
 	}, {
 		Name: "Mineral Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "mineral", Quantity: 275,
+			Name: "mineral", Count: 275,
 		}, {
-			Name: "science", Quantity: 100,
+			Name: "science", Count: 100,
 		}},
 	}, {
 		Name: "Iron Hoes", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "iron", Quantity: 25,
+			Name: "iron", Count: 25,
 		}, {
-			Name: "science", Quantity: 200,
+			Name: "science", Count: 200,
 		}},
 	}, {
 		Name: "Mineral Axe", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "mineral", Quantity: 500,
+			Name: "mineral", Count: 500,
 		}, {
-			Name: "science", Quantity: 100,
+			Name: "science", Count: 100,
 		}},
 	}, {
 		Name: "Iron Axe", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "iron", Quantity: 50,
+			Name: "iron", Count: 50,
 		}, {
-			Name: "science", Quantity: 100,
+			Name: "science", Count: 100,
 		}},
 	}, {
 		Name: "Steel Axe", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "steel", Quantity: 75,
+			Name: "steel", Count: 75,
 		}, {
-			Name: "science", Quantity: 20000,
+			Name: "science", Count: 20000,
 		}},
 	}, {
 		Name: "Reinforced Saw", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "iron", Quantity: 1000,
+			Name: "iron", Count: 1000,
 		}, {
-			Name: "science", Quantity: 2500,
+			Name: "science", Count: 2500,
 		}},
 	}, {
 		Name: "Steel Saw", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
-			Name: "steel", Quantity: 750,
+			Name: "steel", Count: 750,
 		}, {
-			Name: "science", Quantity: 52000,
+			Name: "science", Count: 52000,
 		}},
 	}, {
 		Name: "Titanium Saw", UnlockedBy: "Steel Saw",
 		Costs: []data.Resource{{
-			Name: "titanium", Quantity: 500,
+			Name: "titanium", Count: 500,
 		}, {
-			Name: "science", Quantity: 70000,
+			Name: "science", Count: 70000,
 		}},
 	}, {
 		Name: "Alloy Saw", UnlockedBy: "Titanium Saw",
 		Costs: []data.Resource{{
-			Name: "alloy", Quantity: 75,
+			Name: "alloy", Count: 75,
 		}, {
-			Name: "science", Quantity: 85000,
+			Name: "science", Count: 85000,
 		}},
 	}, {
 		Name: "Titanium Axe", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 38000,
+			Name: "science", Count: 38000,
 		}, {
-			Name: "titanium", Quantity: 10,
+			Name: "titanium", Count: 10,
 		}},
 	}, {
 		Name: "Alloy Axe", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 70000,
+			Name: "science", Count: 70000,
 		}, {
-			Name: "alloy", Quantity: 25,
+			Name: "alloy", Count: 25,
 		}},
 	}, {
 		Name: "Expanded Barns", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "wood", Quantity: 1000,
+			Name: "wood", Count: 1000,
 		}, {
-			Name: "mineral", Quantity: 750,
+			Name: "mineral", Count: 750,
 		}, {
-			Name: "iron", Quantity: 50,
+			Name: "iron", Count: 50,
 		}, {
-			Name: "science", Quantity: 500,
+			Name: "science", Count: 500,
 		}},
 	}, {
 		Name: "Reinforced Barns", UnlockedBy: "Workshop",
 		Costs: []data.Resource{{
-			Name: "iron", Quantity: 100,
+			Name: "iron", Count: 100,
 		}, {
-			Name: "science", Quantity: 800,
+			Name: "science", Count: 800,
 		}, {
-			Name: "beam", Quantity: 25,
+			Name: "beam", Count: 25,
 		}, {
-			Name: "slab", Quantity: 10,
+			Name: "slab", Count: 10,
 		}},
 	}, {
 		Name: "Reinforced Warehouses", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 15000,
+			Name: "science", Count: 15000,
 		}, {
-			Name: "plate", Quantity: 50,
+			Name: "plate", Count: 50,
 		}, {
-			Name: "steel", Quantity: 50,
+			Name: "steel", Count: 50,
 		}, {
-			Name: "scaffold", Quantity: 25,
+			Name: "scaffold", Count: 25,
 		}},
 	}, {
 		Name: "Titanium Barns", UnlockedBy: "Reinforced Barns",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 60000,
+			Name: "science", Count: 60000,
 		}, {
-			Name: "titanium", Quantity: 25,
+			Name: "titanium", Count: 25,
 		}, {
-			Name: "steel", Quantity: 200,
+			Name: "steel", Count: 200,
 		}, {
-			Name: "scaffold", Quantity: 250,
+			Name: "scaffold", Count: 250,
 		}},
 	}, {
 		Name: "Alloy Barns", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 75000,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "alloy", Quantity: 20,
+			Name: "alloy", Count: 20,
 		}, {
-			Name: "plate", Quantity: 750,
+			Name: "plate", Count: 750,
 		}},
 	}, {
 		Name: "Concrete Barns", UnlockedBy: "Concrete Pillars",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 2000,
+			Name: "science", Count: 2000,
 		}, {
-			Name: "concrete", Quantity: 45,
+			Name: "concrete", Count: 45,
 		}, {
-			Name: "titanium", Quantity: 2000,
+			Name: "titanium", Count: 2000,
 		}},
 	}, {
 		Name: "Titanium Warehouses", UnlockedBy: "Silos",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 70000,
+			Name: "science", Count: 70000,
 		}, {
-			Name: "titanium", Quantity: 50,
+			Name: "titanium", Count: 50,
 		}, {
-			Name: "steel", Quantity: 500,
+			Name: "steel", Count: 500,
 		}, {
-			Name: "scaffold", Quantity: 500,
+			Name: "scaffold", Count: 500,
 		}},
 	}, {
 		Name: "Alloy Warehouses", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 90000,
+			Name: "science", Count: 90000,
 		}, {
-			Name: "titanium", Quantity: 750,
+			Name: "titanium", Count: 750,
 		}, {
-			Name: "alloy", Quantity: 50,
+			Name: "alloy", Count: 50,
 		}},
 	}, {
 		Name: "Concrete Warehouses", UnlockedBy: "Concrete Pillars",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "titanium", Quantity: 1250,
+			Name: "titanium", Count: 1250,
 		}, {
-			Name: "concrete", Quantity: 35,
+			Name: "concrete", Count: 35,
 		}},
 	}, {
 		Name: "Storage Bunkers", UnlockedBy: "Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 25000,
+			Name: "science", Count: 25000,
 		}, {
-			Name: "unobtainium", Quantity: 500,
+			Name: "unobtainium", Count: 500,
 		}, {
-			Name: "concrete", Quantity: 1250,
+			Name: "concrete", Count: 1250,
 		}},
 	}, {
 		Name: "Energy Rifts", UnlockedBy: "Dimensional Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 200000,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "titanium", Quantity: 7500,
+			Name: "titanium", Count: 7500,
 		}, {
-			Name: "uranium", Quantity: 250,
+			Name: "uranium", Count: 250,
 		}},
 	}, {
 		Name: "Stasis Chambers", UnlockedBy: "Chronophysics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 235000,
+			Name: "science", Count: 235000,
 		}, {
-			Name: "alloy", Quantity: 200,
+			Name: "alloy", Count: 200,
 		}, {
-			Name: "uranium", Quantity: 2000,
+			Name: "uranium", Count: 2000,
 		}, {
-			Name: "time crystal", Quantity: 1,
+			Name: "time crystal", Count: 1,
 		}},
 	}, {
 		Name: "Void Energy", UnlockedBy: "Stasis Chambers",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 275000,
+			Name: "science", Count: 275000,
 		}, {
-			Name: "alloy", Quantity: 250,
+			Name: "alloy", Count: 250,
 		}, {
-			Name: "uranium", Quantity: 2500,
+			Name: "uranium", Count: 2500,
 		}, {
-			Name: "time crystal", Quantity: 2,
+			Name: "time crystal", Count: 2,
 		}},
 	}, {
 		Name: "Dark Energy", UnlockedBy: "Void Energy",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 350000,
+			Name: "science", Count: 350000,
 		}, {
-			Name: "eludium", Quantity: 75,
+			Name: "eludium", Count: 75,
 		}, {
-			Name: "time crystal", Quantity: 3,
+			Name: "time crystal", Count: 3,
 		}},
 	}, {
 		Name: "Chronoforge", UnlockedBy: "Tachyon Theory",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 500000,
+			Name: "science", Count: 500000,
 		}, {
-			Name: "relic", Quantity: 5,
+			Name: "relic", Count: 5,
 		}, {
-			Name: "time crystal", Quantity: 10,
+			Name: "time crystal", Count: 10,
 		}},
 	}, {
 		Name: "Tachyon Accelerators", UnlockedBy: "Tachyon Theory",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 500000,
+			Name: "science", Count: 500000,
 		}, {
-			Name: "eludium", Quantity: 125,
+			Name: "eludium", Count: 125,
 		}, {
-			Name: "time crystal", Quantity: 10,
+			Name: "time crystal", Count: 10,
 		}},
 	}, {
 		Name: "Flux Condensator", UnlockedBy: "Chronophysics",
 		Costs: []data.Resource{{
-			Name: "alloy", Quantity: 250,
+			Name: "alloy", Count: 250,
 		}, {
-			Name: "unobtainium", Quantity: 5000,
+			Name: "unobtainium", Count: 5000,
 		}, {
-			Name: "time crystal", Quantity: 5,
+			Name: "time crystal", Count: 5,
 		}},
 	}, {
 		Name: "LHC", UnlockedBy: "Dimensional Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "unobtainium", Quantity: 100,
+			Name: "unobtainium", Count: 100,
 		}, {
-			Name: "alloy", Quantity: 150,
+			Name: "alloy", Count: 150,
 		}},
 	}, {
 		Name: "Photovoltaic Cells", UnlockedBy: "Nanotechnology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 75000,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "titanium", Quantity: 5000,
+			Name: "titanium", Count: 5000,
 		}},
 	}, {
 		Name: "Thin Film Cells", UnlockedBy: "Satellites",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "unobtainium", Quantity: 200,
+			Name: "unobtainium", Count: 200,
 		}, {
-			Name: "uranium", Quantity: 1000,
+			Name: "uranium", Count: 1000,
 		}},
 	}, {
 		Name: "Quantum Dot Cells", UnlockedBy: "Thorium",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "eludium", Quantity: 200,
+			Name: "eludium", Count: 200,
 		}, {
-			Name: "thorium", Quantity: 1000,
+			Name: "thorium", Count: 1000,
 		}},
 	}, {
 		Name: "Solar Satellites", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 225000,
+			Name: "science", Count: 225000,
 		}, {
-			Name: "alloy", Quantity: 750,
+			Name: "alloy", Count: 750,
 		}},
 	}, {
 		Name: "Expanded Cargo", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 55000,
+			Name: "science", Count: 55000,
 		}, {
-			Name: "blueprint", Quantity: 15,
+			Name: "blueprint", Count: 15,
 		}},
 	}, {
 		Name: "Barges", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "titanium", Quantity: 1500,
+			Name: "titanium", Count: 1500,
 		}, {
-			Name: "blueprint", Quantity: 30,
+			Name: "blueprint", Count: 30,
 		}},
 	}, {
 		Name: "Reactor Vessel", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 135000,
+			Name: "science", Count: 135000,
 		}, {
-			Name: "titanium", Quantity: 5000,
+			Name: "titanium", Count: 5000,
 		}, {
-			Name: "uranium", Quantity: 125,
+			Name: "uranium", Count: 125,
 		}},
 	}, {
 		Name: "Ironwood Huts", UnlockedBy: "Reinforced Warehouses",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 30000,
+			Name: "science", Count: 30000,
 		}, {
-			Name: "wood", Quantity: 15000,
+			Name: "wood", Count: 15000,
 		}, {
-			Name: "iron", Quantity: 3000,
+			Name: "iron", Count: 3000,
 		}},
 	}, {
 		Name: "Concrete Huts", UnlockedBy: "Concrete Pillars",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "concrete", Quantity: 45,
+			Name: "concrete", Count: 45,
 		}, {
-			Name: "titanium", Quantity: 3000,
+			Name: "titanium", Count: 3000,
 		}},
 	}, {
 		Name: "Unobtainium Huts", UnlockedBy: "Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 200000,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "unobtainium", Quantity: 350,
+			Name: "unobtainium", Count: 350,
 		}, {
-			Name: "titanium", Quantity: 15000,
+			Name: "titanium", Count: 15000,
 		}},
 	}, {
 		Name: "Eludium Huts", UnlockedBy: "Advanced Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 275000,
+			Name: "science", Count: 275000,
 		}, {
-			Name: "eludium", Quantity: 125,
+			Name: "eludium", Count: 125,
 		}},
 	}, {
 		Name: "Silos", UnlockedBy: "Ironwood Huts",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 50000,
+			Name: "science", Count: 50000,
 		}, {
-			Name: "steel", Quantity: 125,
+			Name: "steel", Count: 125,
 		}, {
-			Name: "blueprint", Quantity: 5,
+			Name: "blueprint", Count: 5,
 		}},
 	}, {
 		Name: "Refrigeration", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "titanium", Quantity: 2500,
+			Name: "titanium", Count: 2500,
 		}, {
-			Name: "blueprint", Quantity: 15,
+			Name: "blueprint", Count: 15,
 		}},
 	}, {
 		Name: "Composite Bow", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 500,
+			Name: "science", Count: 500,
 		}, {
-			Name: "iron", Quantity: 100,
+			Name: "iron", Count: 100,
 		}, {
-			Name: "wood", Quantity: 200,
+			Name: "wood", Count: 200,
 		}},
 	}, {
 		Name: "Crossbow", UnlockedBy: "Machinery",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 12000,
+			Name: "science", Count: 12000,
 		}, {
-			Name: "iron", Quantity: 1500,
+			Name: "iron", Count: 1500,
 		}},
 	}, {
 		Name: "Railgun", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 150000,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "titanium", Quantity: 5000,
+			Name: "titanium", Count: 5000,
 		}, {
-			Name: "blueprint", Quantity: 25,
+			Name: "blueprint", Count: 25,
 		}},
 	}, {
 		Name: "Bolas", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 1000,
+			Name: "science", Count: 1000,
 		}, {
-			Name: "mineral", Quantity: 250,
+			Name: "mineral", Count: 250,
 		}, {
-			Name: "wood", Quantity: 50,
+			Name: "wood", Count: 50,
 		}},
 	}, {
 		Name: "Hunting Armour", UnlockedBy: "Metal Working",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 2000,
+			Name: "science", Count: 2000,
 		}, {
-			Name: "iron", Quantity: 750,
+			Name: "iron", Count: 750,
 		}},
 	}, {
 		Name: "Steel Armour", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 10000,
+			Name: "science", Count: 10000,
 		}, {
-			Name: "steel", Quantity: 50,
+			Name: "steel", Count: 50,
 		}},
 	}, {
 		Name: "Alloy Armour", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 50000,
+			Name: "science", Count: 50000,
 		}, {
-			Name: "alloy", Quantity: 25,
+			Name: "alloy", Count: 25,
 		}},
 	}, {
 		Name: "Nanosuits", UnlockedBy: "Nanotechnology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 185000,
+			Name: "science", Count: 185000,
 		}, {
-			Name: "alloy", Quantity: 250,
+			Name: "alloy", Count: 250,
 		}},
 	}, {
 		Name: "Caravanserai", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 25000,
+			Name: "science", Count: 25000,
 		}, {
-			Name: "ivory", Quantity: 10000,
+			Name: "ivory", Count: 10000,
 		}, {
-			Name: "gold", Quantity: 250,
+			Name: "gold", Count: 250,
 		}},
 	}, {
 		Name: "Catnip Enrichment", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 500,
+			Name: "science", Count: 500,
 		}, {
-			Name: "catnip", Quantity: 500,
+			Name: "catnip", Count: 500,
 		}},
 	}, {
 		Name: "Gold Ore", UnlockedBy: "Currency",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 1000,
+			Name: "science", Count: 1000,
 		}, {
-			Name: "mineral", Quantity: 800,
+			Name: "mineral", Count: 800,
 		}, {
-			Name: "iron", Quantity: 100,
+			Name: "iron", Count: 100,
 		}},
 	}, {
 		Name: "Geodesy", UnlockedBy: "Geology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 90000,
+			Name: "science", Count: 90000,
 		}, {
-			Name: "titanium", Quantity: 250,
+			Name: "titanium", Count: 250,
 		}, {
-			Name: "starchart", Quantity: 500,
+			Name: "starchart", Count: 500,
 		}},
 	}, {
 		Name: "Register", UnlockedBy: "Writing",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 500,
+			Name: "science", Count: 500,
 		}, {
-			Name: "gold", Quantity: 10,
+			Name: "gold", Count: 10,
 		}},
 	}, {
 		Name: "Concrete Pillars", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "concrete", Quantity: 50,
+			Name: "concrete", Count: 50,
 		}},
 	}, {
 		Name: "Mining Drill", UnlockedBy: "Metallurgy",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "titanium", Quantity: 1750,
+			Name: "titanium", Count: 1750,
 		}, {
-			Name: "steel", Quantity: 750,
+			Name: "steel", Count: 750,
 		}},
 	}, {
 		Name: "Unobtainium Drill", UnlockedBy: "Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "unobtainium", Quantity: 250,
+			Name: "unobtainium", Count: 250,
 		}, {
-			Name: "alloy", Quantity: 1250,
+			Name: "alloy", Count: 1250,
 		}},
 	}, {
 		Name: "Coal Furnace", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 5000,
+			Name: "science", Count: 5000,
 		}, {
-			Name: "mineral", Quantity: 5000,
+			Name: "mineral", Count: 5000,
 		}, {
-			Name: "iron", Quantity: 2000,
+			Name: "iron", Count: 2000,
 		}, {
-			Name: "beam", Quantity: 35,
+			Name: "beam", Count: 35,
 		}},
 	}, {
 		Name: "Deep Mining", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 5000,
+			Name: "science", Count: 5000,
 		}, {
-			Name: "iron", Quantity: 1200,
+			Name: "iron", Count: 1200,
 		}, {
-			Name: "beam", Quantity: 50,
+			Name: "beam", Count: 50,
 		}},
 	}, {
 		Name: "Pyrolysis", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 35000,
+			Name: "science", Count: 35000,
 		}, {
-			Name: "compendium", Quantity: 5,
+			Name: "compendium", Count: 5,
 		}},
 	}, {
 		Name: "Electrolytic Smelting", UnlockedBy: "Metallurgy",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "titanium", Quantity: 2000,
+			Name: "titanium", Count: 2000,
 		}},
 	}, {
 		Name: "Oxidation", UnlockedBy: "Metallurgy",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "steel", Quantity: 5000,
+			Name: "steel", Count: 5000,
 		}},
 	}, {
 		Name: "Steel Plants", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 140000,
+			Name: "science", Count: 140000,
 		}, {
-			Name: "titanium", Quantity: 3500,
+			Name: "titanium", Count: 3500,
 		}, {
-			Name: "gear", Quantity: 750,
+			Name: "gear", Count: 750,
 		}},
 	}, {
 		Name: "Automated Plants", UnlockedBy: "Steel Plants",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 200000,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "alloy", Quantity: 750,
+			Name: "alloy", Count: 750,
 		}},
 	}, {
 		Name: "Nuclear Plants", UnlockedBy: "Automated Plants",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "uranium", Quantity: 10000,
+			Name: "uranium", Count: 10000,
 		}},
 	}, {
 		Name: "Rotary Kiln", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 145000,
+			Name: "science", Count: 145000,
 		}, {
-			Name: "titanium", Quantity: 5000,
+			Name: "titanium", Count: 5000,
 		}, {
-			Name: "gear", Quantity: 500,
+			Name: "gear", Count: 500,
 		}},
 	}, {
 		Name: "Fluoridized Reactors", UnlockedBy: "Nanotechnology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "alloy", Quantity: 200,
+			Name: "alloy", Count: 200,
 		}},
 	}, {
 		Name: "Nuclear Smelter", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 165000,
+			Name: "science", Count: 165000,
 		}, {
-			Name: "uranium", Quantity: 250,
+			Name: "uranium", Count: 250,
 		}},
 	}, {
 		Name: "Orbital Geodesy", UnlockedBy: "Satellites",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 150000,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "alloy", Quantity: 1000,
+			Name: "alloy", Count: 1000,
 		}, {
-			Name: "oil", Quantity: 35000,
+			Name: "oil", Count: 35000,
 		}},
 	}, {
 		Name: "Printing Press", UnlockedBy: "Machinery",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 7500,
+			Name: "science", Count: 7500,
 		}, {
-			Name: "gear", Quantity: 45,
+			Name: "gear", Count: 45,
 		}},
 	}, {
 		Name: "Offset Press", UnlockedBy: "Combustion",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "gear", Quantity: 250,
+			Name: "gear", Count: 250,
 		}, {
-			Name: "oil", Quantity: 15000,
+			Name: "oil", Count: 15000,
 		}},
 	}, {
 		Name: "Photolithography", UnlockedBy: "Satellites",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "alloy", Quantity: 1250,
+			Name: "alloy", Count: 1250,
 		}, {
-			Name: "oil", Quantity: 50000,
+			Name: "oil", Count: 50000,
 		}, {
-			Name: "uranium", Quantity: 250,
+			Name: "uranium", Count: 250,
 		}},
 	}, {
 		Name: "Uplink", UnlockedBy: "Satellites",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 75000,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "alloy", Quantity: 1750,
+			Name: "alloy", Count: 1750,
 		}},
 	}, {
 		Name: "Cryocomputing", UnlockedBy: "Superconductors",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "eludium", Quantity: 15,
+			Name: "eludium", Count: 15,
 		}},
 	}, {
 		Name: "Machine Learning", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "eludium", Quantity: 25,
+			Name: "eludium", Count: 25,
 		}, {
-			Name: "antimatter", Quantity: 125,
+			Name: "antimatter", Count: 125,
 		}},
 	}, {
 		Name: "Workshop Automation", UnlockedBy: "Machinery",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 10000,
+			Name: "science", Count: 10000,
 		}, {
-			Name: "gear", Quantity: 25,
+			Name: "gear", Count: 25,
 		}},
 	}, {
 		Name: "Advanced Automation", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "gear", Quantity: 75,
+			Name: "gear", Count: 75,
 		}, {
-			Name: "blueprint", Quantity: 25,
+			Name: "blueprint", Count: 25,
 		}},
 	}, {
 		Name: "Pneumatic Press", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 20000,
+			Name: "science", Count: 20000,
 		}, {
-			Name: "gear", Quantity: 30,
+			Name: "gear", Count: 30,
 		}, {
-			Name: "blueprint", Quantity: 5,
+			Name: "blueprint", Count: 5,
 		}},
 	}, {
 		Name: "High Pressure Engine", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 20000,
+			Name: "science", Count: 20000,
 		}, {
-			Name: "gear", Quantity: 25,
+			Name: "gear", Count: 25,
 		}, {
-			Name: "blueprint", Quantity: 5,
+			Name: "blueprint", Count: 5,
 		}},
 	}, {
 		Name: "Fuel Injector", UnlockedBy: "Combustion",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "gear", Quantity: 250,
+			Name: "gear", Count: 250,
 		}, {
-			Name: "oil", Quantity: 20000,
+			Name: "oil", Count: 20000,
 		}},
 	}, {
 		Name: "Factory Logistics", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "gear", Quantity: 250,
+			Name: "gear", Count: 250,
 		}, {
-			Name: "titanium", Quantity: 2000,
+			Name: "titanium", Count: 2000,
 		}},
 	}, {
 		Name: "Carbon Sequestration", UnlockedBy: "Ecology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 75000,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "titanium", Quantity: 1250,
+			Name: "titanium", Count: 1250,
 		}, {
-			Name: "gear", Quantity: 125,
+			Name: "gear", Count: 125,
 		}, {
-			Name: "steel", Quantity: 4000,
+			Name: "steel", Count: 4000,
 		}, {
-			Name: "alloy", Quantity: 1000,
+			Name: "alloy", Count: 1000,
 		}},
 	}, {
 		Name: "Space Manufacturing", UnlockedBy: "Superconductors",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "titanium", Quantity: 125000,
+			Name: "titanium", Count: 125000,
 		}},
 	}, {
 		Name: "Astrolabe", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 25000,
+			Name: "science", Count: 25000,
 		}, {
-			Name: "titanium", Quantity: 5,
+			Name: "titanium", Count: 5,
 		}, {
-			Name: "starchart", Quantity: 75,
+			Name: "starchart", Count: 75,
 		}},
 	}, {
 		Name: "Titanium Reflectors", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 20000,
+			Name: "science", Count: 20000,
 		}, {
-			Name: "titanium", Quantity: 15,
+			Name: "titanium", Count: 15,
 		}, {
-			Name: "starchart", Quantity: 20,
+			Name: "starchart", Count: 20,
 		}},
 	}, {
 		Name: "Unobtainium Reflectors", UnlockedBy: "Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "unobtainium", Quantity: 75,
+			Name: "unobtainium", Count: 75,
 		}, {
-			Name: "starchart", Quantity: 750,
+			Name: "starchart", Count: 750,
 		}},
 	}, {
 		Name: "Eludium Reflectors", UnlockedBy: "Advanced Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "eludium", Quantity: 15,
+			Name: "eludium", Count: 15,
 		}},
 	}, {
 		Name: "Hydro Plant Turbines", UnlockedBy: "Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "unobtainium", Quantity: 125,
+			Name: "unobtainium", Count: 125,
 		}},
 	}, {
 		Name: "Antimatter Bases", UnlockedBy: "Antimatter",
 		Costs: []data.Resource{{
-			Name: "eludium", Quantity: 15,
+			Name: "eludium", Count: 15,
 		}, {
-			Name: "antimatter", Quantity: 250,
+			Name: "antimatter", Count: 250,
 		}},
 	}, {
 		Name: "AI Bases", UnlockedBy: "Antimatter Bases",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 750000,
+			Name: "science", Count: 750000,
 		}, {
-			Name: "antimatter", Quantity: 7500,
+			Name: "antimatter", Count: 7500,
 		}},
 	}, {
 		Name: "Antimatter Fission", UnlockedBy: "Antimatter",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 525000,
+			Name: "science", Count: 525000,
 		}, {
-			Name: "antimatter", Quantity: 175,
+			Name: "antimatter", Count: 175,
 		}, {
-			Name: "thorium", Quantity: 7500,
+			Name: "thorium", Count: 7500,
 		}},
 	}, {
 		Name: "Antimatter Drive", UnlockedBy: "Antimatter",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 525000,
+			Name: "science", Count: 525000,
 		}, {
-			Name: "antimatter", Quantity: 125,
+			Name: "antimatter", Count: 125,
 		}},
 	}, {
 		Name: "Antimatter Reactors", UnlockedBy: "Antimatter",
 		Costs: []data.Resource{{
-			Name: "eludium", Quantity: 35,
+			Name: "eludium", Count: 35,
 		}, {
-			Name: "antimatter", Quantity: 750,
+			Name: "antimatter", Count: 750,
 		}},
 	}, {
 		Name: "Advanced AM Reactors", UnlockedBy: "Antimatter Reactors",
 		Costs: []data.Resource{{
-			Name: "eludium", Quantity: 70,
+			Name: "eludium", Count: 70,
 		}, {
-			Name: "antimatter", Quantity: 1750,
+			Name: "antimatter", Count: 1750,
 		}},
 	}, {
 		Name: "Void Reactors", UnlockedBy: "Advanced AM Reactors",
 		Costs: []data.Resource{{
-			Name: "void", Quantity: 250,
+			Name: "void", Count: 250,
 		}, {
-			Name: "antimatter", Quantity: 2500,
+			Name: "antimatter", Count: 2500,
 		}},
 	}, {
 		Name: "Relic Station", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{
-			Name: "eludium", Quantity: 100,
+			Name: "eludium", Count: 100,
 		}, {
-			Name: "antimatter", Quantity: 5000,
+			Name: "antimatter", Count: 5000,
 		}},
 	}, {
 		Name: "Pumpjack", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "titanium", Quantity: 250,
+			Name: "titanium", Count: 250,
 		}, {
-			Name: "gear", Quantity: 125,
+			Name: "gear", Count: 125,
 		}},
 	}, {
 		Name: "Biofuel Processing", UnlockedBy: "Biochemistry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 150000,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "titanium", Quantity: 1250,
+			Name: "titanium", Count: 1250,
 		}},
 	}, {
 		Name: "Unicorn Selection", UnlockedBy: "Genetics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "titanium", Quantity: 1500,
+			Name: "titanium", Count: 1500,
 		}},
 	}, {
 		Name: "GM Catnip", UnlockedBy: "Genetics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "titanium", Quantity: 1500,
+			Name: "titanium", Count: 1500,
 		}, {
-			Name: "catnip", Quantity: 1000000,
+			Name: "catnip", Count: 1000000,
 		}},
 	}, {
 		Name: "CAD System", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "titanium", Quantity: 750,
+			Name: "titanium", Count: 750,
 		}},
 	}, {
 		Name: "SETI", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "titanium", Quantity: 250,
+			Name: "titanium", Count: 250,
 		}},
 	}, {
 		Name: "Logistics", UnlockedBy: "Industrialization",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "gear", Quantity: 100,
+			Name: "gear", Count: 100,
 		}, {
-			Name: "scaffold", Quantity: 1000,
+			Name: "scaffold", Count: 1000,
 		}},
 	}, {
 		Name: "Augmentations", UnlockedBy: "Nanotechnology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 150000,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "titanium", Quantity: 5000,
+			Name: "titanium", Count: 5000,
 		}, {
-			Name: "uranium", Quantity: 50,
+			Name: "uranium", Count: 50,
 		}},
 	}, {
 		Name: "Cold Fusion", UnlockedBy: "Superconductors",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 200000,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "eludium", Quantity: 25,
+			Name: "eludium", Count: 25,
 		}},
 	}, {
 		Name: "Thorium Reactors", UnlockedBy: "Thorium",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 400000,
+			Name: "science", Count: 400000,
 		}, {
-			Name: "thorium", Quantity: 10000,
+			Name: "thorium", Count: 10000,
 		}},
 	}, {
 		Name: "Enriched Uranium", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "titanium", Quantity: 7500,
+			Name: "titanium", Count: 7500,
 		}, {
-			Name: "uranium", Quantity: 150,
+			Name: "uranium", Count: 150,
 		}},
 	}, {
 		Name: "Enriched Thorium", UnlockedBy: "Thorium Reactors",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 12500,
+			Name: "science", Count: 12500,
 		}, {
-			Name: "thorium", Quantity: 500000,
+			Name: "thorium", Count: 500000,
 		}},
 	}, {
 		Name: "Oil Refinery", UnlockedBy: "Combustion",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 125000,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "titanium", Quantity: 1250,
+			Name: "titanium", Count: 1250,
 		}, {
-			Name: "gear", Quantity: 500,
+			Name: "gear", Count: 500,
 		}},
 	}, {
 		Name: "Hubble Space Telescope", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "alloy", Quantity: 1250,
+			Name: "alloy", Count: 1250,
 		}, {
-			Name: "oil", Quantity: 50000,
+			Name: "oil", Count: 50000,
 		}},
 	}, {
 		Name: "Satellite Navigation", UnlockedBy: "Hubble Space Telescope",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 200000,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "alloy", Quantity: 750,
+			Name: "alloy", Count: 750,
 		}},
 	}, {
 		Name: "Satellite Radio", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 225000,
+			Name: "science", Count: 225000,
 		}, {
-			Name: "alloy", Quantity: 5000,
+			Name: "alloy", Count: 5000,
 		}},
 	}, {
 		Name: "Astrophysicists", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 250000,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "unobtainium", Quantity: 350,
+			Name: "unobtainium", Count: 350,
 		}},
 	}, {
 		Name: "Microwarp Reactors", UnlockedBy: "Advanced Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 150000,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "eludium", Quantity: 50,
+			Name: "eludium", Count: 50,
 		}},
 	}, {
 		Name: "Planet Busters", UnlockedBy: "Advanced Exogeology",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 275000,
+			Name: "science", Count: 275000,
 		}, {
-			Name: "eludium", Quantity: 250,
+			Name: "eludium", Count: 250,
 		}},
 	}, {
 		Name: "Thorium Drive", UnlockedBy: "Thorium",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 400000,
+			Name: "science", Count: 400000,
 		}, {
-			Name: "ship", Quantity: 10000,
+			Name: "ship", Count: 10000,
 		}, {
-			Name: "gear", Quantity: 40000,
+			Name: "gear", Count: 40000,
 		}, {
-			Name: "alloy", Quantity: 2000,
+			Name: "alloy", Count: 2000,
 		}, {
-			Name: "thorium", Quantity: 100000,
+			Name: "thorium", Count: 100000,
 		}},
 	}, {
 		Name: "Oil Distillation", UnlockedBy: "Rocketry",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 175000,
+			Name: "science", Count: 175000,
 		}, {
-			Name: "titanium", Quantity: 5000,
+			Name: "titanium", Count: 5000,
 		}},
 	}, {
 		Name: "Factory Processing", UnlockedBy: "Oil Processing",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 195000,
+			Name: "science", Count: 195000,
 		}, {
-			Name: "titanium", Quantity: 7500,
+			Name: "titanium", Count: 7500,
 		}, {
-			Name: "concrete", Quantity: 125,
+			Name: "concrete", Count: 125,
 		}},
 	}, {
 		Name: "Factory Optimization", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 75000,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "gear", Quantity: 250,
+			Name: "gear", Count: 250,
 		}, {
-			Name: "titanium", Quantity: 1250,
+			Name: "titanium", Count: 1250,
 		}},
 	}, {
 		Name: "Space Engineers", UnlockedBy: "Orbital Engineering",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 225000,
+			Name: "science", Count: 225000,
 		}, {
-			Name: "alloy", Quantity: 200,
+			Name: "alloy", Count: 200,
 		}},
 	}, {
 		Name: "AI Engineers", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 35000,
+			Name: "science", Count: 35000,
 		}, {
-			Name: "eludium", Quantity: 50,
+			Name: "eludium", Count: 50,
 		}, {
-			Name: "antimatter", Quantity: 500,
+			Name: "antimatter", Count: 500,
 		}},
 	}, {
 		Name: "Chronoengineers", UnlockedBy: "Tachyon Theory",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 500000,
+			Name: "science", Count: 500000,
 		}, {
-			Name: "time crystal", Quantity: 5,
+			Name: "time crystal", Count: 5,
 		}, {
-			Name: "eludium", Quantity: 100,
+			Name: "eludium", Count: 100,
 		}},
 	}, {
 		Name: "Telecommunication", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 150000,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "titanium", Quantity: 5000,
+			Name: "titanium", Count: 5000,
 		}, {
-			Name: "uranium", Quantity: 50,
+			Name: "uranium", Count: 50,
 		}},
 	}, {
 		Name: "Neural Network", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 200000,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "titanium", Quantity: 7500,
+			Name: "titanium", Count: 7500,
 		}},
 	}, {
 		Name: "Robotic Assistance", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 100000,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "steel", Quantity: 10000,
+			Name: "steel", Count: 10000,
 		}, {
-			Name: "gear", Quantity: 250,
+			Name: "gear", Count: 250,
 		}},
 	}, {
 		Name: "Factory Robotics", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 75000,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "gear", Quantity: 250,
+			Name: "gear", Count: 250,
 		}, {
-			Name: "titanium", Quantity: 1250,
+			Name: "titanium", Count: 1250,
 		}},
 	}, {
 		Name: "Void Aspiration", UnlockedBy: "Void Energy",
 		Costs: []data.Resource{{
-			Name: "time crystal", Quantity: 15,
+			Name: "time crystal", Count: 15,
 		}, {
-			Name: "antimatter", Quantity: 2000,
+			Name: "antimatter", Count: 2000,
 		}},
 	}, {
 		Name: "Distortion", UnlockedBy: "Paradox Theory",
 		Costs: []data.Resource{{
-			Name: "science", Quantity: 300000,
+			Name: "science", Count: 300000,
 		}, {
-			Name: "time crystal", Quantity: 25,
+			Name: "time crystal", Count: 25,
 		}, {
-			Name: "antimatter", Quantity: 2000,
+			Name: "antimatter", Count: 2000,
 		}, {
-			Name: "void", Quantity: 1000,
+			Name: "void", Count: 1000,
 		}},
 	}, {
 		Name: "Chronosurge", UnlockedBy: "Chronocontrol",
 		Costs: []data.Resource{{
-			Name: "time crystal", Quantity: 25,
+			Name: "time crystal", Count: 25,
 		}, {
-			Name: "unobtainium", Quantity: 100000,
+			Name: "unobtainium", Count: 100000,
 		}, {
-			Name: "void", Quantity: 750,
+			Name: "void", Count: 750,
 		}, {
-			Name: "temporal flux", Quantity: 6500,
+			Name: "temporal flux", Count: 6500,
 		}},
 	}, {
 		Name: "Invisible Black Hand", UnlockedBy: "Blackchain",
 		Costs: []data.Resource{{
-			Name: "time crystal", Quantity: 128,
+			Name: "time crystal", Count: 128,
 		}, {
-			Name: "blackcoin", Quantity: 64,
+			Name: "blackcoin", Count: 64,
 		}, {
-			Name: "void", Quantity: 32,
+			Name: "void", Count: 32,
 		}, {
-			Name: "temporal flux", Quantity: 4096,
+			Name: "temporal flux", Count: 4096,
 		}},
 	}})
 
 	addCrafts(g, []data.Action{{
 		Name: "beam", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "wood", Quantity: 175}},
+		Costs: []data.Resource{{Name: "wood", Count: 175}},
 	}, {
 		Name: "slab", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "mineral", Quantity: 250}},
+		Costs: []data.Resource{{Name: "mineral", Count: 250}},
 	}, {
 		Name: "concrete", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
-			Name: "slab", Quantity: 2500,
+			Name: "slab", Count: 2500,
 		}, {
-			Name: "steel", Quantity: 25,
+			Name: "steel", Count: 25,
 		}},
 	}, {
 		Name: "plate", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "iron", Quantity: 125}},
+		Costs: []data.Resource{{Name: "iron", Count: 125}},
 	}, {
 		Name: "steel", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
-			Name: "iron", Quantity: 100,
+			Name: "iron", Count: 100,
 		}, {
-			Name: "coal", Quantity: 100,
+			Name: "coal", Count: 100,
 		}},
 		Producers: []data.Resource{{
 			Name: "Calciner", Factor: 0.15 * 5 * 0.1,
@@ -2929,51 +2929,51 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "gear", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "steel", Quantity: 15}},
+		Costs: []data.Resource{{Name: "steel", Count: 15}},
 	}, {
 		Name: "alloy", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "steel", Quantity: 75,
+			Name: "steel", Count: 75,
 		}, {
-			Name: "titanium", Quantity: 10,
+			Name: "titanium", Count: 10,
 		}},
 	}, {
 		Name: "eludium", UnlockedBy: "Advanced Exogeology",
 		Costs: []data.Resource{{
-			Name: "alloy", Quantity: 2500,
+			Name: "alloy", Count: 2500,
 		}, {
-			Name: "unobtainium", Quantity: 1000,
+			Name: "unobtainium", Count: 1000,
 		}},
 	}, {
 		Name: "scaffold", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "beam", Quantity: 50}},
+		Costs: []data.Resource{{Name: "beam", Count: 50}},
 	}, {
 		Name: "ship", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "scaffold", Quantity: 100,
+			Name: "scaffold", Count: 100,
 		}, {
-			Name: "plate", Quantity: 150,
+			Name: "plate", Count: 150,
 		}, {
-			Name: "starchart", Quantity: 25,
+			Name: "starchart", Count: 25,
 		}},
 	}, {
 		Name: "tanker", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "ship", Quantity: 200,
+			Name: "ship", Count: 200,
 		}, {
-			Name: "alloy", Quantity: 1250,
+			Name: "alloy", Count: 1250,
 		}, {
-			Name: "blueprint", Quantity: 5,
+			Name: "blueprint", Count: 5,
 		}},
 	}, {
 		Name: "kerosene", UnlockedBy: "Oil Processing",
 		Costs: []data.Resource{{
-			Name: "oil", Quantity: 7500,
+			Name: "oil", Count: 7500,
 		}},
 	}, {
 		Name: "parchment", UnlockedBy: "Writing",
 		Costs: []data.Resource{{
-			Name: "fur", Quantity: 175,
+			Name: "fur", Count: 175,
 		}},
 	}, {
 		Name: "manuscript", UnlockedBy: "Construction",
@@ -2991,28 +2991,28 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Costs: []data.Resource{{
-			Name: "culture", Quantity: 400,
+			Name: "culture", Count: 400,
 		}, {
-			Name: "parchment", Quantity: 25,
+			Name: "parchment", Count: 25,
 		}},
 	}, {
 		Name: "compendium", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
-			Name: "manuscript", Quantity: 50,
+			Name: "manuscript", Count: 50,
 		}, {
-			Name: "science", Quantity: 10000,
+			Name: "science", Count: 10000,
 		}},
 	}, {
 		Name: "blueprint", UnlockedBy: "Physics",
 		Costs: []data.Resource{{
-			Name: "compendium", Quantity: 25,
+			Name: "compendium", Count: 25,
 		}, {
-			Name: "science", Quantity: 25000,
+			Name: "science", Count: 25000,
 		}},
 	}, {
 		Name: "thorium", UnlockedBy: "Thorium",
 		Costs: []data.Resource{{
-			Name: "uranium", Quantity: 250,
+			Name: "uranium", Count: 250,
 		}},
 		Producers: []data.Resource{{
 			Name: "Reactor", Factor: -0.25 * 5,
@@ -3027,11 +3027,11 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "megalith", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "beam", Quantity: 25,
+			Name: "beam", Count: 25,
 		}, {
-			Name: "slab", Quantity: 50,
+			Name: "slab", Count: 50,
 		}, {
-			Name: "plate", Quantity: 5,
+			Name: "plate", Count: 5,
 		}},
 	}})
 
@@ -3072,7 +3072,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		action.Name = "@" + name
 		action.Type = "Craft"
 		action.Adds = []data.Resource{{
-			Name: name, Quantity: 1,
+			Name: name, Count: 1,
 			Bonus: CraftRatio,
 		}}
 		action.IsHidden = true
@@ -3095,7 +3095,7 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		action.Name = name
 		action.Type = "Building"
 		action.Adds = append([]data.Resource{{
-			Name: action.Name, Quantity: 1,
+			Name: action.Name, Count: 1,
 		}}, action.Adds...)
 		g.AddAction(action)
 		g.AddResource(data.Resource{
@@ -3107,8 +3107,8 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		}
 
 		action.Name = "Active " + name
-		action.Costs = []data.Resource{{Name: "Idle " + name, Quantity: 1}}
-		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
+		action.Costs = []data.Resource{{Name: "Idle " + name, Count: 1}}
+		action.Adds = []data.Resource{{Name: action.Name, Count: 1}}
 		action.UnlockedBy = name
 		g.AddAction(action)
 		g.AddResource(data.Resource{
@@ -3116,7 +3116,7 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		})
 
 		g.AddResource(data.Resource{
-			Name: "Idle " + name, Type: "Building", IsHidden: true, Capacity: -1, StartQuantity: 1,
+			Name: "Idle " + name, Type: "Building", IsHidden: true, Capacity: -1, StartCount: 1,
 			Producers: []data.Resource{{
 				Name: "", Factor: -1,
 			}, {
@@ -3131,13 +3131,13 @@ func addBuildings(g *game.Game, actions []data.Action) {
 func addJobs(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
 		action.Type = "Job"
-		action.Costs = []data.Resource{{Name: "kitten", Quantity: 1, Capacity: 1}}
-		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
+		action.Costs = []data.Resource{{Name: "kitten", Count: 1, Capacity: 1}}
+		action.Adds = []data.Resource{{Name: action.Name, Count: 1}}
 		g.AddAction(action)
 		g.AddResource(data.Resource{
 			Name: action.Name, Type: action.Type, IsHidden: true, Capacity: -1,
 			OnGone: []data.Resource{{
-				Name: "gone kitten", Quantity: 1,
+				Name: "gone kitten", Count: 1,
 			}, {
 				Name: "kitten", Capacity: 1,
 			}},
@@ -3148,7 +3148,7 @@ func addJobs(g *game.Game, actions []data.Action) {
 func addTechs(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
 		action.Type = "Tech"
-		action.Adds = []data.Resource{{Name: action.Name, Quantity: 1}}
+		action.Adds = []data.Resource{{Name: action.Name, Count: 1}}
 		action.LockedBy = action.Name
 		g.AddAction(action)
 		g.AddResource(data.Resource{
