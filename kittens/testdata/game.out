@@ -4051,6 +4051,72 @@
       "Cap": 1
     },
     {
+      "Name": "Dune Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Piscine Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Helios Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "T-minus Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Kairo Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Rorschach Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Yarn Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Umbra Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Charon Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Centaurus Mission",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Furthest Ring",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
       "Name": "beam",
       "Type": "Resource",
       "Cap": -1,
@@ -11198,6 +11264,340 @@
       "Adds": [
         {
           "Name": "Moon Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Dune Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Moon Mission",
+      "LockedBy": "Dune Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 1000
+        },
+        {
+          "Name": "titanium",
+          "Count": 7000
+        },
+        {
+          "Name": "science",
+          "Count": 175000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Dune Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Piscine Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Dune Mission",
+      "LockedBy": "Piscine Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 1500
+        },
+        {
+          "Name": "titanium",
+          "Count": 9000
+        },
+        {
+          "Name": "science",
+          "Count": 200000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Piscine Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Helios Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Piscine Mission",
+      "LockedBy": "Helios Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 3000
+        },
+        {
+          "Name": "titanium",
+          "Count": 15000
+        },
+        {
+          "Name": "science",
+          "Count": 250000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 1250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Helios Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "T-minus Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Helios Mission",
+      "LockedBy": "T-minus Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 2500
+        },
+        {
+          "Name": "titanium",
+          "Count": 12000
+        },
+        {
+          "Name": "science",
+          "Count": 125000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "T-minus Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Kairo Mission",
+      "Type": "Tech",
+      "UnlockedBy": "T-minus Mission",
+      "LockedBy": "Kairo Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 5000
+        },
+        {
+          "Name": "titanium",
+          "Count": 20000
+        },
+        {
+          "Name": "science",
+          "Count": 300000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 7500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Kairo Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Rorschach Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Kairo Mission",
+      "LockedBy": "Rorschach Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 15000
+        },
+        {
+          "Name": "titanium",
+          "Count": 80000
+        },
+        {
+          "Name": "science",
+          "Count": 500000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 25000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Rorschach Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Yarn Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Rorschach Mission",
+      "LockedBy": "Yarn Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 7500
+        },
+        {
+          "Name": "titanium",
+          "Count": 35000
+        },
+        {
+          "Name": "science",
+          "Count": 350000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 12000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Yarn Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Umbra Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Yarn Mission",
+      "LockedBy": "Umbra Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 25000
+        },
+        {
+          "Name": "science",
+          "Count": 500000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 25000
+        },
+        {
+          "Name": "thorium",
+          "Count": 15000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Umbra Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Charon Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Umbra Mission",
+      "LockedBy": "Charon Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 75000
+        },
+        {
+          "Name": "science",
+          "Count": 750000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 35000
+        },
+        {
+          "Name": "thorium",
+          "Count": 35000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Charon Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Centaurus Mission",
+      "Type": "Tech",
+      "UnlockedBy": "Charon Mission",
+      "LockedBy": "Centaurus Mission",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 100000
+        },
+        {
+          "Name": "titanium",
+          "Count": 40000
+        },
+        {
+          "Name": "science",
+          "Count": 400000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 50000
+        },
+        {
+          "Name": "thorium",
+          "Count": 50000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Centaurus Mission",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Furthest Ring",
+      "Type": "Tech",
+      "UnlockedBy": "Centaurus Mission",
+      "LockedBy": "Furthest Ring",
+      "Costs": [
+        {
+          "Name": "starchart",
+          "Count": 500000
+        },
+        {
+          "Name": "science",
+          "Count": 1250000
+        },
+        {
+          "Name": "kerosene",
+          "Count": 75000
+        },
+        {
+          "Name": "thorium",
+          "Count": 75000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Furthest Ring",
           "Count": 1
         }
       ]

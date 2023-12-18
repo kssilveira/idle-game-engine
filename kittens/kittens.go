@@ -2904,6 +2904,129 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "oil", Count: 45000,
 		}},
+	}, {
+		Name: "Dune Mission", UnlockedBy: "Moon Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 1000,
+		}, {
+			Name: "titanium", Count: 7000,
+		}, {
+			Name: "science", Count: 175000,
+		}, {
+			Name: "kerosene", Count: 75,
+		}},
+	}, {
+		Name: "Piscine Mission", UnlockedBy: "Dune Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 1500,
+		}, {
+			Name: "titanium", Count: 9000,
+		}, {
+			Name: "science", Count: 200000,
+		}, {
+			Name: "kerosene", Count: 500,
+		}},
+	}, {
+		Name: "Helios Mission", UnlockedBy: "Piscine Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 3000,
+		}, {
+			Name: "titanium", Count: 15000,
+		}, {
+			Name: "science", Count: 250000,
+		}, {
+			Name: "kerosene", Count: 1250,
+		}},
+	}, {
+		Name: "T-minus Mission", UnlockedBy: "Helios Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 2500,
+		}, {
+			Name: "titanium", Count: 12000,
+		}, {
+			Name: "science", Count: 125000,
+		}, {
+			Name: "kerosene", Count: 750,
+		}},
+	}, {
+		Name: "Kairo Mission", UnlockedBy: "T-minus Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 5000,
+		}, {
+			Name: "titanium", Count: 20000,
+		}, {
+			Name: "science", Count: 300000,
+		}, {
+			Name: "kerosene", Count: 7500,
+		}},
+	}, {
+		Name: "Rorschach Mission", UnlockedBy: "Kairo Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 15000,
+		}, {
+			Name: "titanium", Count: 80000,
+		}, {
+			Name: "science", Count: 500000,
+		}, {
+			Name: "kerosene", Count: 25000,
+		}},
+	}, {
+		Name: "Yarn Mission", UnlockedBy: "Rorschach Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 7500,
+		}, {
+			Name: "titanium", Count: 35000,
+		}, {
+			Name: "science", Count: 350000,
+		}, {
+			Name: "kerosene", Count: 12000,
+		}},
+	}, {
+		Name: "Umbra Mission", UnlockedBy: "Yarn Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 25000,
+		}, {
+			Name: "science", Count: 500000,
+		}, {
+			Name: "kerosene", Count: 25000,
+		}, {
+			Name: "thorium", Count: 15000,
+		}},
+	}, {
+		Name: "Charon Mission", UnlockedBy: "Umbra Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 75000,
+		}, {
+			Name: "science", Count: 750000,
+		}, {
+			Name: "kerosene", Count: 35000,
+		}, {
+			Name: "thorium", Count: 35000,
+		}},
+	}, {
+		Name: "Centaurus Mission", UnlockedBy: "Charon Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 100000,
+		}, {
+			Name: "titanium", Count: 40000,
+		}, {
+			Name: "science", Count: 400000,
+		}, {
+			Name: "kerosene", Count: 50000,
+		}, {
+			Name: "thorium", Count: 50000,
+		}},
+	}, {
+		Name: "Furthest Ring", UnlockedBy: "Centaurus Mission",
+		Costs: []data.Resource{{
+			Name: "starchart", Count: 500000,
+		}, {
+			Name: "science", Count: 1250000,
+		}, {
+			Name: "kerosene", Count: 75000,
+		}, {
+			Name: "thorium", Count: 75000,
+		}},
 	}})
 
 	addCrafts(g, []data.Action{{
