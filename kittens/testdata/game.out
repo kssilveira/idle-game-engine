@@ -2553,6 +2553,11 @@
       "Cap": -1
     },
     {
+      "Name": "paragon",
+      "Type": "Resource",
+      "Cap": -1
+    },
+    {
       "Name": "gone kitten",
       "Type": "Resource",
       "Cap": -1
@@ -3262,18 +3267,6 @@
     },
     {
       "Name": "Void Resonator",
-      "Type": "Building",
-      "IsHidden": true,
-      "Cap": -1
-    },
-    {
-      "Name": "Megalomania",
-      "Type": "Building",
-      "IsHidden": true,
-      "Cap": -1
-    },
-    {
-      "Name": "Black Codex",
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
@@ -4616,6 +4609,228 @@
     },
     {
       "Name": "Furthest Ring",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Enlightenment",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Codex Vox",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Codex Logos",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Codex Agrum",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Megalomania",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Black Codex",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Codex Leviathanus",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Golden Ratio",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Divine Proportion",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Vitruvian Feline",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Renaissance",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Diplomacy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Zebra Diplomacy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Zebra Covenant",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Navigation Diplomacy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Chronomancy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Anachronomancy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Astromancy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Unicornmancy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Carnivals",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Numerology",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Order of the Void",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Venus of Willenfluff",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Pawgan Rituals",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Numeromancy",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Malkuth",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Yesod",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Hod",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Netzach",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Tiferet",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Gevurah",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Chesed",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Binah",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Chokhmah",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Keter",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Adjustment Bureau",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "ASCOH",
       "Type": "Tech",
       "IsHidden": true,
       "Cap": 1
@@ -7522,34 +7737,6 @@
       "Adds": [
         {
           "Name": "Void Resonator",
-          "Count": 1
-        }
-      ]
-    },
-    {
-      "Name": "Megalomania",
-      "Type": "Building",
-      "UnlockedBy": "Paradox Theory",
-      "Costs": [
-        {}
-      ],
-      "Adds": [
-        {
-          "Name": "Megalomania",
-          "Count": 1
-        }
-      ]
-    },
-    {
-      "Name": "Black Codex",
-      "Type": "Building",
-      "UnlockedBy": "Paradox Theory",
-      "Costs": [
-        {}
-      ],
-      "Adds": [
-        {
-          "Name": "Black Codex",
           "Count": 1
         }
       ]
@@ -13151,6 +13338,672 @@
       "Adds": [
         {
           "Name": "Furthest Ring",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Enlightenment",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Enlightenment",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Enlightenment",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Codex Vox",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Codex Vox",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Codex Vox",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Codex Logos",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Codex Logos",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Codex Logos",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Codex Agrum",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Codex Agrum",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Codex Agrum",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Megalomania",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Megalomania",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 10
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Megalomania",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Black Codex",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Black Codex",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Black Codex",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Codex Leviathanus",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Codex Leviathanus",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Codex Leviathanus",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Golden Ratio",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Golden Ratio",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Golden Ratio",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Divine Proportion",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Divine Proportion",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Divine Proportion",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Vitruvian Feline",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Vitruvian Feline",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Vitruvian Feline",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Renaissance",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Renaissance",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Renaissance",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Diplomacy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Diplomacy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Diplomacy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Zebra Diplomacy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Zebra Diplomacy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 35
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Zebra Diplomacy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Zebra Covenant",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Zebra Covenant",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Zebra Covenant",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Navigation Diplomacy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Navigation Diplomacy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 300
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Navigation Diplomacy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chronomancy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Chronomancy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chronomancy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Anachronomancy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Anachronomancy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Anachronomancy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Astromancy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Astromancy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Astromancy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Unicornmancy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Unicornmancy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 125
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Unicornmancy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Carnivals",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Carnivals",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Carnivals",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Numerology",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Numerology",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 50
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Numerology",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Order of the Void",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Order of the Void",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 75
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Order of the Void",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Venus of Willenfluff",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Venus of Willenfluff",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 150
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Venus of Willenfluff",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Pawgan Rituals",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Pawgan Rituals",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 400
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Pawgan Rituals",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Numeromancy",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Numeromancy",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Numeromancy",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Malkuth",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Malkuth",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Malkuth",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Yesod",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Yesod",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Yesod",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Hod",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Hod",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 1250
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Hod",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Netzach",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Netzach",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 1750
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Netzach",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Tiferet",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Tiferet",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Tiferet",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Gevurah",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Gevurah",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Gevurah",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chesed",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Chesed",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 7500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chesed",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Binah",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Binah",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 15000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Binah",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chokhmah",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Chokhmah",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 30000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chokhmah",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Keter",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Keter",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 60000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Keter",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Adjustment Bureau",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "Adjustment Bureau",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Adjustment Bureau",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "ASCOH",
+      "Type": "Tech",
+      "UnlockedBy": "Metaphysics",
+      "LockedBy": "ASCOH",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 5
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "ASCOH",
           "Count": 1
         }
       ]
