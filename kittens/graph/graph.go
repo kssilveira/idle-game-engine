@@ -122,6 +122,9 @@ func graphBonus(edgefn func(from, to, color string), r data.Resource) {
 		if r.Factor*b.Factor < 0 {
 			color = "red"
 		}
+		if b.Name == "" {
+			b.Name = r.Name
+		}
 		edgefn(b.Name, r.Name, color)
 		graphBonus(edgefn, b)
 	}

@@ -306,31 +306,47 @@
       "StartCount": 5000,
       "Bonus": [
         {
-          "Name": "Refrigeration",
-          "Factor": 0.75
+          "Factor": 1,
+          "Bonus": [
+            {
+              "Name": "Refrigeration",
+              "Factor": 0.75
+            },
+            {
+              "Name": "Hydroponics",
+              "Factor": 0.1
+            }
+          ]
         },
         {
-          "Name": "Hydroponics",
-          "Factor": 0.1
+          "Factor": 1,
+          "Bonus": [
+            {
+              "Name": "paragon",
+              "Factor": 0.001
+            },
+            {
+              "Name": "burned paragon",
+              "Factor": 0.0005
+            }
+          ]
         },
         {
-          "Name": "paragon",
-          "Factor": 0.001
-        },
-        {
-          "Name": "burned paragon",
-          "Factor": 0.0005
-        },
-        {
-          "Name": "Void Rift",
-          "Factor": 0.02
-        },
-        {
-          "Name": "Event Horizon",
-          "Factor": 0.1
+          "Factor": 1,
+          "Bonus": [
+            {
+              "Name": "Void Rift",
+              "Factor": 0.02
+            },
+            {
+              "Name": "Event Horizon",
+              "Factor": 0.1
+            }
+          ]
         }
       ],
-      "Formula": "Count = (5000 + (((c(Barn) * 5000 * (1 + (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05))))) + (c(Warehouse) * 750 * (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05)))) + (c(Harbour) * 2500 * (1 + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))) + (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05))))) + (c(Accelerator) * 30000 * (c(Energy Rifts) * (1 + (c(Stasis Chambers) * 0.95) + (c(Void Energy) * 0.75) + (c(Dark Energy) * 2.5) + (c(Tachyon Accelerators) * 5)))) + (c(Moon Base) * 45000 * (1 + (c(AI Core) * 0.1 * c(AI Bases))))) * (1 + (c(Refrigeration) * 0.75) + (c(Hydroponics) * 0.1) + (c(paragon) * 0.001) + (c(burned paragon) * 0.0005) + (c(Void Rift) * 0.02) + (c(Event Horizon) * 0.1))))"
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (5000 + (((c(Barn) * 5000 * (1 + (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05))))) + (c(Warehouse) * 750 * (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05)))) + (c(Harbour) * 2500 * (1 + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))) + (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05))))) + (c(Accelerator) * 30000 * (c(Energy Rifts) * (1 + (c(Stasis Chambers) * 0.95) + (c(Void Energy) * 0.75) + (c(Dark Energy) * 2.5) + (c(Tachyon Accelerators) * 5)))) + (c(Moon Base) * 45000 * (1 + (c(AI Core) * 0.1 * c(AI Bases))))) * ((1 + (c(Refrigeration) * 0.75) + (c(Hydroponics) * 0.1)) * (1 + (c(paragon) * 0.001) + (c(burned paragon) * 0.0005)) * (1 + (c(Void Rift) * 0.02) + (c(Event Horizon) * 0.1)))))"
     },
     {
       "Name": "catnip",

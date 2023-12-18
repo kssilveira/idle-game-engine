@@ -157,7 +157,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Moon Base", Factor: 45000, Bonus: MoonBaseCapBonus,
 		}},
-		Bonus: join(CatnipCapBonus, ParagonCapBonus, GlobalCapBonus),
+		Bonus: []data.Resource{{
+			Factor: 1, Bonus: CatnipCapBonus,
+		}, {
+			Factor: 1, Bonus: ParagonCapBonus,
+		}, {
+			Factor: 1, Bonus: GlobalCapBonus,
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "catnip", Type: "Resource", CapResource: "catnip cap",
 		Producers: join([]data.Resource{{

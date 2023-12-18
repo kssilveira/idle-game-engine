@@ -351,8 +351,14 @@ func (g *Game) getBonus(resource data.Resource) float64 {
 	if resource.BonusStartsFromZero {
 		bonus = 0
 	}
-	for _, b := range resource.Bonus {
-		bonus += g.getOneRate(b)
+	if resource.BonusIsMultiplicative {
+		for _, b := range resource.Bonus {
+			bonus *= g.getOneRate(b)
+		}
+	} else {
+		for _, b := range resource.Bonus {
+			bonus += g.getOneRate(b)
+		}
 	}
 	return bonus
 }
@@ -366,7 +372,11 @@ func (g *Game) getBonusFormula(resource data.Resource) string {
 	for _, b := range resource.Bonus {
 		bonus = append(bonus, g.getOneRateFormula(b))
 	}
-	return joinFormula("+", bonus...)
+	operator := "+"
+	if resource.BonusIsMultiplicative {
+		operator = "*"
+	}
+	return joinFormula(operator, bonus...)
 }
 
 func (g *Game) parseInput(in string) (data.ParsedInput, error) {
