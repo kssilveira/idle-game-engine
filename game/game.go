@@ -53,6 +53,7 @@ func (g *Game) AddResource(resource data.Resource) {
 	}
 	g.resourceToIndex[resource.Name] = len(g.Resources)
 	cp := resource
+	cp.Formula = g.getFormula(cp)
 	g.Resources = append(g.Resources, &cp)
 }
 
@@ -221,6 +222,55 @@ func (g *Game) update(now time.Time) {
 	}
 }
 
+func (g *Game) getFormula(resource data.Resource) string {
+	if len(resource.Producers) == 0 {
+		return ""
+	}
+	factor := g.getRateFormula(resource)
+	if resource.ProductionModulus != 0 {
+		factor = fmt.Sprintf("%s %% %d", factor, resource.ProductionModulus)
+	}
+	count := ""
+	if resource.StartCount != 0 {
+		if resource.ProductionModulus != 0 && resource.ProductionModulusEquals >= 0 {
+			count = fmt.Sprintf("Count = %s if %s == %d", floatFormula(resource.StartCount), factor, resource.ProductionModulusEquals)
+		} else {
+			count = fmt.Sprintf("Count = %s", joinFormula("+", floatFormula(resource.StartCount), factor))
+		}
+	} else {
+		count = fmt.Sprintf("Count += %s", joinFormula("*", factor, "seconds"))
+	}
+	return count
+}
+
+func joinFormula(operator string, parts ...string) string {
+	filtered := []string{}
+	for _, part := range parts {
+		if part == "" {
+			continue
+		}
+		if operator == "*" && (part == "1" || part == "(1)") {
+			continue
+		}
+		if operator == "+" && (part == "0" || part == "(0)") {
+			continue
+		}
+		filtered = append(filtered, part)
+	}
+	res := strings.Join(filtered, fmt.Sprintf(" %s ", operator))
+	if len(filtered) > 1 {
+		res = fmt.Sprintf("(%s)", res)
+	}
+	return res
+}
+
+func floatFormula(f float64) string {
+	res := fmt.Sprintf("%f", f)
+	res = strings.TrimRight(res, "0")
+	res = strings.TrimRight(res, ".")
+	return res
+}
+
 func (g *Game) act(in string) (data.ParsedInput, error) {
 	input, err := g.parseInput(in)
 	if err != nil {
@@ -305,6 +355,18 @@ func (g *Game) getBonus(resource data.Resource) float64 {
 		bonus += g.getOneRate(b)
 	}
 	return bonus
+}
+
+func (g *Game) getBonusFormula(resource data.Resource) string {
+	start := "1"
+	if resource.BonusStartsFromZero {
+		start = "0"
+	}
+	bonus := []string{start}
+	for _, b := range resource.Bonus {
+		bonus = append(bonus, g.getOneRateFormula(b))
+	}
+	return joinFormula("+", bonus...)
 }
 
 func (g *Game) parseInput(in string) (data.ParsedInput, error) {
@@ -478,9 +540,21 @@ func (g *Game) getRate(resource *data.Resource) float64 {
 	return factor * g.getBonus(*resource)
 }
 
+func (g *Game) getRateFormula(resource data.Resource) string {
+	factors := []string{}
+	for _, p := range resource.Producers {
+		factors = append(factors, g.getOneRateFormula(p))
+	}
+	return joinFormula("*", joinFormula("+", factors...), g.getBonusFormula(resource))
+}
+
 func (g *Game) getOneRate(resource data.Resource) float64 {
 	one := g.getCountForRate(resource) * resource.Factor
 	return one * g.getBonus(resource)
+}
+
+func (g *Game) getOneRateFormula(resource data.Resource) string {
+	return joinFormula("*", g.getCountForRateFormula(resource), floatFormula(resource.Factor), g.getBonusFormula(resource))
 }
 
 func (g *Game) getCountForRate(p data.Resource) float64 {
@@ -495,6 +569,20 @@ func (g *Game) getCountForRate(p data.Resource) float64 {
 		if quantity > 0 {
 			quantity = 1
 		}
+	}
+	return quantity
+}
+
+func (g *Game) getCountForRateFormula(p data.Resource) string {
+	quantity := "1"
+	if p.Name != "" {
+		quantity = fmt.Sprintf("c(%s)", p.Name)
+	}
+	if p.ProductionFloor {
+		quantity = fmt.Sprintf("floor(%s)", quantity)
+	}
+	if p.ProductionBoolean {
+		quantity = fmt.Sprintf("(1 if %s > 0)", quantity)
 	}
 	return quantity
 }

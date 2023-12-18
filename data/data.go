@@ -37,6 +37,9 @@ type Resource struct {
 	CostExponentBase float64 `json:",omitempty"`
 
 	ProducerAction string `json:",omitempty"`
+
+	// generated production formula
+	Formula string `json:",omitempty"`
 }
 
 type Action struct {
