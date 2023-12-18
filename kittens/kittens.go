@@ -534,7 +534,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Cryostation", Factor: 750,
 		}},
 	}, {
-		Name: "time crystal", Type: "Resource", Cap: 1,
+		Name: "time crystal", Type: "Resource", Cap: -1,
 	}, {
 		Name: "antimatter", Type: "Resource", StartCap: 1,
 		Producers: []data.Resource{{
@@ -547,7 +547,7 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 	}, {
-		Name: "relic", Type: "Resource", Cap: 1,
+		Name: "relic", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
 			Name: "Space Beacon", Factor: 0.01 / 2,
 			Bonus: []data.Resource{{
@@ -564,10 +564,15 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
-		Name: "void", Type: "Resource", Cap: 1,
+		Name: "void", Type: "Resource", Cap: -1,
 	}, {
-		Name: "temporal flux", Type: "Resource", Cap: 1,
+		Name: "temporal flux", Type: "Resource", IsHidden: true, Cap: 1,
 		Producers: []data.Resource{{
+			Name: "", Factor: 5. / (2 * 60 * 10),
+			Bonus: []data.Resource{{
+				Name: "Temporal Accelerator", Factor: 0.05,
+			}},
+		}, {
 			Name: "Chronosphere", Factor: 1. / (2 * 400 * 4),
 			Bonus: []data.Resource{{
 				Name: "Chronosurge", Factor: 1,
@@ -750,6 +755,18 @@ func NewGame(now game.Now) *game.Game {
 		CapProducers: []data.Resource{{
 			Name: "Black Core", Factor: 1,
 		}},
+	}, {
+		Name: "chronoheat", Type: "Resource", StartCap: 1,
+		Producers: []data.Resource{{
+			Name: "Chrono Furnace", Factor: -0.02 * 5,
+		}},
+		CapProducers: []data.Resource{{
+			Name: "Chrono Furnace", Factor: 100,
+		}, {
+			Name: "Time Boiler", Factor: 10,
+		}},
+	}, {
+		Name: "karma", Type: "Resource", Cap: -1,
 	}, {
 		Name: "gone kitten", Type: "Resource", Cap: -1,
 	}, {
@@ -1510,8 +1527,89 @@ func NewGame(now game.Now) *game.Game {
 			Name: "hash", Count: 1600, CostExponentBase: 1.6,
 		}},
 	}, {
+		Name: "Temporal Battery", UnlockedBy: "Chronoforge",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 5, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Chrono Furnace", UnlockedBy: "Chronoforge",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 25, CostExponentBase: 1.25,
+		}, {
+			Name: "relic", Count: 5, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Time Boiler", UnlockedBy: "Chronoforge",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 25000, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Temporal Accelerator", UnlockedBy: "Chronoforge",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 10, CostExponentBase: 1.25,
+		}, {
+			Name: "relic", Count: 1000, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Time Impedance", UnlockedBy: "Chronoforge",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 100, CostExponentBase: 1.05,
+		}, {
+			Name: "relic", Count: 250, CostExponentBase: 1.05,
+		}},
+	}, {
+		Name: "Resource Retrieval", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 1000, CostExponentBase: 1.3,
+		}},
+	}, {
+		Name: "Temporal Press", UnlockedBy: "Chronosurge",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 100, CostExponentBase: 1.1,
+		}, {
+			Name: "void", Count: 10, CostExponentBase: 1.1,
+		}},
+	}, {
+		Name: "Cryochambers", UnlockedBy: "Void Space",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 2, CostExponentBase: 1.25,
+		}, {
+			Name: "void", Count: 100, CostExponentBase: 1.25,
+		}, {
+			Name: "karma", Count: 1, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Void Hoover", UnlockedBy: "Void Aspiration",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 10, CostExponentBase: 1.25,
+		}, {
+			Name: "void", Count: 250, CostExponentBase: 1.25,
+		}, {
+			Name: "antimatter", Count: 1000, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Void Rift", UnlockedBy: "Void Space",
+		Costs: []data.Resource{{
+			Name: "void", Count: 75, CostExponentBase: 1.3,
+		}},
+	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{}},
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 30, CostExponentBase: 1.25,
+		}, {
+			Name: "void", Count: 500, CostExponentBase: 1.25,
+		}, {
+			Name: "temporal flux", Count: 3000, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "Void Resonator", UnlockedBy: "Paradox Theory",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 1000, CostExponentBase: 1.25,
+		}, {
+			Name: "relic", Count: 10000, CostExponentBase: 1.25,
+		}, {
+			Name: "void", Count: 50, CostExponentBase: 1.25,
+		}},
 	}, {
 		Name: "Megalomania", UnlockedBy: "Paradox Theory",
 		Costs: []data.Resource{{}},
@@ -1767,6 +1865,18 @@ func NewGame(now game.Now) *game.Game {
 					Name: "Black Pyramid", Factor: 1,
 				}},
 			}},
+		}},
+	}})
+
+	g.AddActions([]data.Action{{
+		Name: "Combust time crystal", Type: "Craft", UnlockedBy: "time crystal",
+		Costs: []data.Resource{{
+			Name: "time crystal", Count: 1,
+		}},
+		Adds: []data.Resource{{
+			Name: "day", Count: 400,
+		}, {
+			Name: "chronoheat", Count: 10,
 		}},
 	}})
 

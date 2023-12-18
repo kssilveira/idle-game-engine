@@ -1963,7 +1963,7 @@
     {
       "Name": "time crystal",
       "Type": "Resource",
-      "Cap": 1
+      "Cap": -1
     },
     {
       "Name": "antimatter",
@@ -1991,7 +1991,7 @@
     {
       "Name": "relic",
       "Type": "Resource",
-      "Cap": 1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "Space Beacon",
@@ -2025,13 +2025,23 @@
     {
       "Name": "void",
       "Type": "Resource",
-      "Cap": 1
+      "Cap": -1
     },
     {
       "Name": "temporal flux",
       "Type": "Resource",
+      "IsHidden": true,
       "Cap": 1,
       "Producers": [
+        {
+          "Factor": 0.004166666666666667,
+          "Bonus": [
+            {
+              "Name": "Temporal Accelerator",
+              "Factor": 0.05
+            }
+          ]
+        },
         {
           "Name": "Chronosphere",
           "Factor": 0.0003125,
@@ -2515,6 +2525,32 @@
         }
       ],
       "StartCap": 1
+    },
+    {
+      "Name": "chronoheat",
+      "Type": "Resource",
+      "Producers": [
+        {
+          "Name": "Chrono Furnace",
+          "Factor": -0.1
+        }
+      ],
+      "CapProducers": [
+        {
+          "Name": "Chrono Furnace",
+          "Factor": 100
+        },
+        {
+          "Name": "Time Boiler",
+          "Factor": 10
+        }
+      ],
+      "StartCap": 1
+    },
+    {
+      "Name": "karma",
+      "Type": "Resource",
+      "Cap": -1
     },
     {
       "Name": "gone kitten",
@@ -3159,7 +3195,73 @@
       "Cap": -1
     },
     {
+      "Name": "Temporal Battery",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Chrono Furnace",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Time Boiler",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Temporal Accelerator",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Time Impedance",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Resource Retrieval",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Temporal Press",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Cryochambers",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Void Hoover",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Void Rift",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
       "Name": "Chronocontrol",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Void Resonator",
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
@@ -7149,15 +7251,277 @@
       ]
     },
     {
+      "Name": "Temporal Battery",
+      "Type": "Building",
+      "UnlockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 5,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Temporal Battery",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Chrono Furnace",
+      "Type": "Building",
+      "UnlockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 25,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "relic",
+          "Count": 5,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Chrono Furnace",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Time Boiler",
+      "Type": "Building",
+      "UnlockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 25000,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Time Boiler",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Temporal Accelerator",
+      "Type": "Building",
+      "UnlockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 10,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "relic",
+          "Count": 1000,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Temporal Accelerator",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Time Impedance",
+      "Type": "Building",
+      "UnlockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 100,
+          "CostExponentBase": 1.05
+        },
+        {
+          "Name": "relic",
+          "Count": 250,
+          "CostExponentBase": 1.05
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Time Impedance",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Resource Retrieval",
+      "Type": "Building",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 1000,
+          "CostExponentBase": 1.3
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Resource Retrieval",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Temporal Press",
+      "Type": "Building",
+      "UnlockedBy": "Chronosurge",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 100,
+          "CostExponentBase": 1.1
+        },
+        {
+          "Name": "void",
+          "Count": 10,
+          "CostExponentBase": 1.1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Temporal Press",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Cryochambers",
+      "Type": "Building",
+      "UnlockedBy": "Void Space",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 2,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "void",
+          "Count": 100,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "karma",
+          "Count": 1,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Cryochambers",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Void Hoover",
+      "Type": "Building",
+      "UnlockedBy": "Void Aspiration",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 10,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "void",
+          "Count": 250,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "antimatter",
+          "Count": 1000,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Void Hoover",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Void Rift",
+      "Type": "Building",
+      "UnlockedBy": "Void Space",
+      "Costs": [
+        {
+          "Name": "void",
+          "Count": 75,
+          "CostExponentBase": 1.3
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Void Rift",
+          "Count": 1
+        }
+      ]
+    },
+    {
       "Name": "Chronocontrol",
       "Type": "Building",
       "UnlockedBy": "Paradox Theory",
       "Costs": [
-        {}
+        {
+          "Name": "time crystal",
+          "Count": 30,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "void",
+          "Count": 500,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "temporal flux",
+          "Count": 3000,
+          "CostExponentBase": 1.25
+        }
       ],
       "Adds": [
         {
           "Name": "Chronocontrol",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Void Resonator",
+      "Type": "Building",
+      "UnlockedBy": "Paradox Theory",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 1000,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "relic",
+          "Count": 10000,
+          "CostExponentBase": 1.25
+        },
+        {
+          "Name": "void",
+          "Count": 50,
+          "CostExponentBase": 1.25
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Void Resonator",
           "Count": 1
         }
       ]
@@ -7845,6 +8209,27 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "Name": "Combust time crystal",
+      "Type": "Craft",
+      "UnlockedBy": "time crystal",
+      "Costs": [
+        {
+          "Name": "time crystal",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "day",
+          "Count": 400
+        },
+        {
+          "Name": "chronoheat",
+          "Count": 10
         }
       ]
     },

@@ -87,4 +87,5 @@ More features from kittens game:
 - https://wiki.kittensgame.com/en/game-tabs/time
 - https://wiki.kittensgame.com/en/game-tabs/science/metaphysics
 - https://wiki.kittensgame.com/en/general-information/resources
+- https://wiki.kittensgame.com/en/general-information/game-mechanics
 - https://wiki.kittensgame.com/en/home
