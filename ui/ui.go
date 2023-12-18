@@ -34,16 +34,16 @@ type Action struct {
 type Cost struct {
 	Name     string
 	Count    float64
-	Capacity float64
+	Cap      float64
 	Cost     float64
 	Duration time.Duration
 	Costs    []Cost
 }
 
 type Add struct {
-	Name     string
-	Count    float64
-	Capacity float64
+	Name  string
+	Count float64
+	Cap   float64
 }
 
 type CustomAction struct {

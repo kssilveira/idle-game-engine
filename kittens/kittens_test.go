@@ -193,8 +193,8 @@ func TestRun(t *testing.T) {
 			}
 			r := g.GetResource(name)
 			r.Count = float64(quantity)
-			if r.Capacity != -1 && r.Capacity < r.Count {
-				r.Capacity = r.Count
+			if r.Cap != -1 && r.Cap < r.Count {
+				r.Cap = r.Count
 			}
 		}
 		output := make(chan *ui.Data)

@@ -34,9 +34,9 @@ func NewGame(now time.Time) *Game {
 		actionToIndex:   map[string]int{},
 	}
 	g.AddResources([]data.Resource{{
-		Name: "time", Type: "Calendar", Capacity: -1,
+		Name: "time", Type: "Calendar", Cap: -1,
 	}, {
-		Name: "skip", Type: "Calendar", Capacity: -1,
+		Name: "skip", Type: "Calendar", Cap: -1,
 	}})
 	return g
 }
@@ -127,7 +127,7 @@ func (g *Game) populateUIResources(data *ui.Data) {
 		data.Resources = append(data.Resources, ui.Resource{
 			Resource:        *r,
 			Rate:            g.getRate(r),
-			DurationToCap:   g.getDuration(r, r.Capacity),
+			DurationToCap:   g.getDuration(r, r.Cap),
 			DurationToEmpty: g.getDuration(r, 0),
 		})
 	}
@@ -147,9 +147,9 @@ func (g *Game) populateUIActions(data *ui.Data) {
 		action.Costs = g.populateUICosts(a, false /* isNested */)
 		for _, r := range a.Adds {
 			action.Adds = append(action.Adds, ui.Add{
-				Name:     r.Name,
-				Count:    g.getActionAdd(r).Count,
-				Capacity: r.Capacity,
+				Name:  r.Name,
+				Count: g.getActionAdd(r).Count,
+				Cap:   r.Cap,
 			})
 		}
 		data.Actions = append(data.Actions, action)
@@ -171,12 +171,12 @@ func (g *Game) populateUICosts(a data.Action, isNested bool) []ui.Cost {
 		one := ui.Cost{
 			Name:     c.Name,
 			Count:    r.Count,
-			Capacity: r.Capacity,
+			Cap:      r.Cap,
 			Cost:     cost,
 			Duration: g.getDuration(r, cost),
 		}
 		if isNested {
-			one.Capacity = -1
+			one.Cap = -1
 		}
 		if r.ProducerAction != "" {
 			one.Costs = g.populateUICosts(g.getNestedAction(a, c), true /* isNested */)
@@ -195,8 +195,8 @@ func (g *Game) update(now time.Time) {
 	g.now = now
 	g.GetResource("time").Count += float64(elapsed / time.Second)
 	for _, resource := range g.Resources {
-		if resource.StartCapacity > 0 {
-			resource.Capacity = resource.StartCapacity + g.getCapacityRate(resource)
+		if resource.StartCap > 0 {
+			resource.Cap = resource.StartCap + g.getCapRate(resource)
 		}
 		factor := g.getRate(resource)
 		if resource.ProductionModulus != 0 {
@@ -282,7 +282,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	for _, c := range input.Action.Costs {
 		r := g.GetResource(c.Name)
 		r.Count -= g.getCost(input.Action, c)
-		r.Capacity -= c.Capacity
+		r.Cap -= c.Cap
 	}
 	for _, add := range input.Action.Adds {
 		r := g.GetResource(add.Name)
@@ -342,7 +342,7 @@ func (g *Game) checkMax(a data.Action) error {
 	found := false
 	for _, add := range a.Adds {
 		r := g.GetResource(add.Name)
-		if r.Count < r.Capacity || r.Capacity == -1 || add.Capacity > 0 {
+		if r.Count < r.Cap || r.Cap == -1 || add.Cap > 0 {
 			found = true
 			break
 		}
@@ -361,7 +361,7 @@ func (g *Game) getSkipTime(a data.Action) (time.Duration, error) {
 		if r.Count >= cost {
 			continue
 		}
-		if g.getRate(r) > 0 && (r.Capacity == -1 || r.Count < r.Capacity) {
+		if g.getRate(r) > 0 && (r.Cap == -1 || r.Count < r.Cap) {
 			duration := g.getDuration(r, cost) + time.Second
 			if duration > skipTime {
 				skipTime = duration
@@ -438,7 +438,7 @@ func (g *Game) validateResource(r *data.Resource) error {
 		}
 	}
 	for _, list := range append(
-		[][]data.Resource{}, r.Producers, r.CapacityProducers, r.Bonus, r.OnGone) {
+		[][]data.Resource{}, r.Producers, r.CapProducers, r.Bonus, r.OnGone) {
 		for _, r := range list {
 			if err := g.validateResource(&r); err != nil {
 				return err
@@ -453,12 +453,12 @@ func (g *Game) validateResource(r *data.Resource) error {
 			return fmt.Errorf("resource %s has StartCount and no Producers", r.Name)
 		}
 	}
-	if r.StartCapacity != 0 || len(r.CapacityProducers) > 0 {
-		if r.Capacity != 0 {
-			return fmt.Errorf("resource %s should not set Capacity", r.Name)
+	if r.StartCap != 0 || len(r.CapProducers) > 0 {
+		if r.Cap != 0 {
+			return fmt.Errorf("resource %s should not set Cap", r.Name)
 		}
-		if r.StartCapacity == 0 || len(r.CapacityProducers) == 0 {
-			return fmt.Errorf("resource %s should set StartCapacity and CapacityProducers", r.Name)
+		if r.StartCap == 0 || len(r.CapProducers) == 0 {
+			return fmt.Errorf("resource %s should set StartCap and CapProducers", r.Name)
 		}
 	}
 	return nil
@@ -486,9 +486,9 @@ func (g *Game) getRate(resource *data.Resource) float64 {
 	return factor * g.getBonus(*resource)
 }
 
-func (g *Game) getCapacityRate(resource *data.Resource) float64 {
+func (g *Game) getCapRate(resource *data.Resource) float64 {
 	factor := 0.0
-	for _, p := range resource.CapacityProducers {
+	for _, p := range resource.CapProducers {
 		factor += g.getOneRate(p)
 	}
 	return factor
@@ -527,7 +527,7 @@ func (g *Game) updateRate(resource *data.Resource) {
 			for _, onGone := range r.OnGone {
 				gone := g.GetResource(onGone.Name)
 				gone.Count += onGone.Count
-				gone.Capacity += onGone.Capacity
+				gone.Cap += onGone.Cap
 			}
 			return
 		}

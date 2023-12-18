@@ -46,13 +46,13 @@ func showResources(cfg Config, data *ui.Data) {
 		}
 		status := ""
 		capacity := ""
-		if r.Capacity > 0 {
-			capacity = fmt.Sprintf("/%s", toString(r.Capacity))
+		if r.Cap > 0 {
+			capacity = fmt.Sprintf("/%s", toString(r.Cap))
 		}
 		extra := ""
 		if d.Rate != 0 {
 			capStr := ""
-			if d.DurationToCap > 0 && r.Capacity > 0 {
+			if d.DurationToCap > 0 && r.Cap > 0 {
 				capStr = fmt.Sprintf(" %s to cap", d.DurationToCap)
 			}
 			if d.DurationToEmpty > 0 && r.StartCount == 0 {
@@ -103,8 +103,8 @@ func showActions(cfg Config, data *ui.Data) {
 		adds := []string{}
 		for _, r := range a.Adds {
 			one := fmt.Sprintf("%s %s", r.Name, toString(r.Count))
-			if r.Count == 0 && r.Capacity > 0 {
-				one = fmt.Sprintf("%s cap %s", r.Name, toString(r.Capacity))
+			if r.Count == 0 && r.Cap > 0 {
+				one = fmt.Sprintf("%s cap %s", r.Name, toString(r.Cap))
 			}
 			adds = append(adds, one)
 		}
@@ -129,7 +129,7 @@ func getCosts(costs []ui.Cost, status *string) string {
 			continue
 		}
 		overCap := ""
-		if c.Cost > c.Capacity && c.Capacity != -1 {
+		if c.Cost > c.Cap && c.Cap != -1 {
 			overCap = "*"
 			*status = "[*] "
 		}

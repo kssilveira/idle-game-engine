@@ -5,7 +5,7 @@ type Resource struct {
 	Type     string  `json:",omitempty"`
 	IsHidden bool    `json:",omitempty"`
 	Count    float64 `json:",omitempty"`
-	Capacity float64 `json:",omitempty"`
+	Cap      float64 `json:",omitempty"`
 
 	Producers []Resource `json:",omitempty"`
 	// Count += Producer.Count * Factor * elapsedTime
@@ -30,9 +30,9 @@ type Resource struct {
 	ProductionOnGone bool       `json:",omitempty"`
 	OnGone           []Resource `json:",omitempty"`
 
-	CapacityProducers []Resource `json:",omitempty"`
-	// Capacity = StartCapacity + CapacityProducer.Count * Factor
-	StartCapacity float64 `json:",omitempty"`
+	CapProducers []Resource `json:",omitempty"`
+	// Cap = StartCap + CapProducer.Count * Factor
+	StartCap float64 `json:",omitempty"`
 
 	// cost = Count * pow(CostExponentBase, add.Count)
 	CostExponentBase float64 `json:",omitempty"`
@@ -61,10 +61,10 @@ type ParsedInput struct {
 }
 
 func (r *Resource) Add(add Resource) {
-	r.Capacity += add.Capacity
+	r.Cap += add.Cap
 	r.Count += add.Count
-	if r.Count > r.Capacity && r.Capacity >= 0 {
-		r.Count = r.Capacity
+	if r.Count > r.Cap && r.Cap >= 0 {
+		r.Count = r.Cap
 	}
 	if r.Count < 0 {
 		r.Count = 0

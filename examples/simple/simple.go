@@ -15,12 +15,12 @@ import (
 func main() {
 	g := game.NewGame(time.Now())
 	g.AddResources([]data.Resource{{
-		Name: "catnip", Count: 10, Capacity: 100,
+		Name: "catnip", Count: 10, Cap: 100,
 		Producers: []data.Resource{{
 			Name: "Catnip Field", Factor: 0.63,
 		}},
 	}, {
-		Name: "Catnip Field", Capacity: -1,
+		Name: "Catnip Field", Cap: -1,
 	}})
 	g.AddActions([]data.Action{{
 		Name: "Catnip Field",

@@ -3,18 +3,18 @@
     {
       "Name": "time",
       "Type": "Calendar",
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "skip",
       "Type": "Calendar",
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "day",
       "Type": "Calendar",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Factor": 0.5
@@ -24,7 +24,7 @@
     {
       "Name": "year",
       "Type": "Calendar",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "day",
@@ -37,7 +37,7 @@
     {
       "Name": "Spring",
       "Type": "Calendar",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "day",
@@ -51,7 +51,7 @@
     {
       "Name": "Summer",
       "Type": "Calendar",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "day",
@@ -66,7 +66,7 @@
     {
       "Name": "Autumn",
       "Type": "Calendar",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "day",
@@ -81,7 +81,7 @@
     {
       "Name": "Winter",
       "Type": "Calendar",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "day",
@@ -96,7 +96,7 @@
     {
       "Name": "day_of_year",
       "Type": "Calendar",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "day",
@@ -326,7 +326,7 @@
           "Factor": 0.03
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 5000,
@@ -359,7 +359,7 @@
           ]
         }
       ],
-      "StartCapacity": 5000
+      "StartCap": 5000
     },
     {
       "Name": "wood",
@@ -424,7 +424,7 @@
           ]
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 200,
@@ -599,7 +599,7 @@
           ]
         }
       ],
-      "StartCapacity": 200
+      "StartCap": 200
     },
     {
       "Name": "science",
@@ -638,7 +638,7 @@
           "Factor": 0.1
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Library",
           "Factor": 250,
@@ -724,7 +724,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCapacity": 250
+      "StartCap": 250
     },
     {
       "Name": "catpower",
@@ -757,7 +757,7 @@
           "Factor": -3.75
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Hut",
           "Factor": 75
@@ -782,7 +782,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCapacity": 250
+      "StartCap": 250
     },
     {
       "Name": "mineral",
@@ -815,7 +815,7 @@
           "Factor": -7.5
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 250,
@@ -990,7 +990,7 @@
           ]
         }
       ],
-      "StartCapacity": 250
+      "StartCap": 250
     },
     {
       "Name": "iron",
@@ -1025,7 +1025,7 @@
           ]
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 50,
@@ -1200,7 +1200,7 @@
           ]
         }
       ],
-      "StartCapacity": 50
+      "StartCap": 50
     },
     {
       "Name": "coal",
@@ -1267,7 +1267,7 @@
           "Factor": 0.2
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 60,
@@ -1374,7 +1374,7 @@
           ]
         }
       ],
-      "StartCapacity": 1
+      "StartCap": 1
     },
     {
       "Name": "gold",
@@ -1417,7 +1417,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 10,
@@ -1550,7 +1550,7 @@
           ]
         }
       ],
-      "StartCapacity": 20
+      "StartCap": 20
     },
     {
       "Name": "titanium",
@@ -1590,7 +1590,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Barn",
           "Factor": 2,
@@ -1693,7 +1693,7 @@
           ]
         }
       ],
-      "StartCapacity": 1
+      "StartCap": 1
     },
     {
       "Name": "oil",
@@ -1743,13 +1743,13 @@
           "BonusStartsFromZero": true
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Oil Well",
           "Factor": 1500
         }
       ],
-      "StartCapacity": 1
+      "StartCap": 1
     },
     {
       "Name": "uranium",
@@ -1781,18 +1781,18 @@
           "BonusStartsFromZero": true
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Reactor",
           "Factor": 250
         }
       ],
-      "StartCapacity": 1
+      "StartCap": 1
     },
     {
       "Name": "unobtainium",
       "Type": "Resource",
-      "Capacity": 1,
+      "Cap": 1,
       "Bonus": [
         {
           "Name": "Microwarp Reactors",
@@ -1803,27 +1803,27 @@
     {
       "Name": "time crystal",
       "Type": "Resource",
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "antimatter",
       "Type": "Resource",
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "relic",
       "Type": "Resource",
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "void",
       "Type": "Resource",
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "temporal flux",
       "Type": "Resource",
-      "Capacity": 1,
+      "Cap": 1,
       "Producers": [
         {
           "Name": "Chronosphere",
@@ -1841,7 +1841,7 @@
     {
       "Name": "blackcoin",
       "Type": "Resource",
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "kitten",
@@ -1862,7 +1862,7 @@
       "Name": "all kittens",
       "Type": "Resource",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Factor": -1
@@ -1913,7 +1913,7 @@
     {
       "Name": "fur",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "all kittens",
@@ -1930,7 +1930,7 @@
     {
       "Name": "ivory",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "all kittens",
@@ -1947,7 +1947,7 @@
     {
       "Name": "spice",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "all kittens",
@@ -1968,7 +1968,7 @@
     {
       "Name": "unicorn",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "Unic. Pasture",
@@ -2033,7 +2033,7 @@
           ]
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Library",
           "Factor": 10,
@@ -2137,7 +2137,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCapacity": 575
+      "StartCap": 575
     },
     {
       "Name": "faith",
@@ -2164,7 +2164,7 @@
           "Factor": 0.1
         }
       ],
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Temple",
           "Factor": 100,
@@ -2180,12 +2180,12 @@
           ]
         }
       ],
-      "StartCapacity": 1
+      "StartCap": 1
     },
     {
       "Name": "starchart",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "scholar",
@@ -2209,7 +2209,7 @@
     {
       "Name": "gigaflop",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "AI Core",
@@ -2220,23 +2220,23 @@
     {
       "Name": "leviathan energy",
       "Type": "Resource",
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Marker",
           "Factor": 5
         }
       ],
-      "StartCapacity": 1
+      "StartCap": 1
     },
     {
       "Name": "tear",
       "Type": "Resource",
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "alicorn",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "Sky Palace",
@@ -2265,28 +2265,28 @@
     {
       "Name": "necrocorn",
       "Type": "Resource",
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "sorrow",
       "Type": "Resource",
-      "CapacityProducers": [
+      "CapProducers": [
         {
           "Name": "Black Core",
           "Factor": 1
         }
       ],
-      "StartCapacity": 1
+      "StartCap": 1
     },
     {
       "Name": "gone kitten",
       "Type": "Resource",
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "happiness",
       "Type": "Job",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "all kittens",
@@ -2338,55 +2338,55 @@
       "Name": "Catnip Field",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Hut",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Library",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Barn",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Mine",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Workshop",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Smelter",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Active Smelter",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Idle Smelter",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Factor": -1
@@ -2406,379 +2406,379 @@
       "Name": "Pasture",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Unic. Pasture",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Academy",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Warehouse",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Log House",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Aqueduct",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Mansion",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Observatory",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Bio Lab",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Harbour",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Quarry",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Lumber Mill",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Oil Well",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Accelerator",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Steamworks",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Magneto",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Calciner",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Factory",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Reactor",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Amphitheatre",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Chapel",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Temple",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Tradepost",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Mint",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Brewery",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Ziggurat",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Chronosphere",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "AI Core",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Solar Farm",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Hydro Plant",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Data Center",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Broadcast Tower",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Unicorn Tomb",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Ivory Tower",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Ivory Citadel",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Sky Palace",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Unicorn Utopia",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Sunspire",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Marker",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Unicorn Graveyard",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Unicorn Necropolis",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Black Pyramid",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Solar Chant",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Scholasticism",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Golden Spire",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Sun Altar",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Stained Glass",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Basilica",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Templars",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Black Obelisk",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Black Nexus",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Black Core",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Event Horizon",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Black Library",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Black Radiance",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Blazar",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Dark Nova",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Mausoleum",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Holy Genocide",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Chronocontrol",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Megalomania",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "Black Codex",
       "Type": "Building",
       "IsHidden": true,
-      "Capacity": -1
+      "Cap": -1
     },
     {
       "Name": "woodcutter",
       "Type": "Job",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "OnGone": [
         {
           "Name": "gone kitten",
@@ -2786,7 +2786,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -2794,7 +2794,7 @@
       "Name": "scholar",
       "Type": "Job",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "OnGone": [
         {
           "Name": "gone kitten",
@@ -2802,7 +2802,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -2810,7 +2810,7 @@
       "Name": "farmer",
       "Type": "Job",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "OnGone": [
         {
           "Name": "gone kitten",
@@ -2818,7 +2818,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -2826,7 +2826,7 @@
       "Name": "hunter",
       "Type": "Job",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "OnGone": [
         {
           "Name": "gone kitten",
@@ -2834,7 +2834,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -2842,7 +2842,7 @@
       "Name": "miner",
       "Type": "Job",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "OnGone": [
         {
           "Name": "gone kitten",
@@ -2850,7 +2850,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -2858,7 +2858,7 @@
       "Name": "priest",
       "Type": "Job",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "OnGone": [
         {
           "Name": "gone kitten",
@@ -2866,7 +2866,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -2874,7 +2874,7 @@
       "Name": "geologist",
       "Type": "Job",
       "IsHidden": true,
-      "Capacity": -1,
+      "Cap": -1,
       "OnGone": [
         {
           "Name": "gone kitten",
@@ -2882,7 +2882,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -2890,1182 +2890,1182 @@
       "Name": "Calendar",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Agriculture",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Archery",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Mining",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Animal Husbandry",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Metal Working",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Civil Service",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Mathematics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Construction",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Currency",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Celestial Mechanics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Engineering",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Writing",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Philosophy",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Steel",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Machinery",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Theology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Astronomy",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Navigation",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Architecture",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Physics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Metaphysics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Chemistry",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Acoustics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Geology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Drama and Poetry",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Electricity",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Biology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Biochemistry",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Genetics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Industrialization",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Mechanization",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Combustion",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Metallurgy",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Ecology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Electronics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Robotics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Artificial Intelligence",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Quantum Cryptography",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Blackchain",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Nuclear Fission",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Rocketry",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Oil Processing",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Satellites",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Orbital Engineering",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Thorium",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Exogeology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Advanced Exogeology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Nanotechnology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Superconductors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Antimatter",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Terraformation",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Hydroponics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Exophysics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Particle Physics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Dimensional Physics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Chronophysics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Tachyon Theory",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Cryptotheology",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Void Space",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Paradox Theory",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Mineral Hoes",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Iron Hoes",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Mineral Axe",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Iron Axe",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Steel Axe",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Reinforced Saw",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Steel Saw",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Titanium Saw",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Alloy Saw",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Titanium Axe",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Alloy Axe",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Expanded Barns",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Reinforced Barns",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Reinforced Warehouses",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Titanium Barns",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Alloy Barns",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Concrete Barns",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Titanium Warehouses",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Alloy Warehouses",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Concrete Warehouses",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Storage Bunkers",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Energy Rifts",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Stasis Chambers",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Void Energy",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Dark Energy",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Chronoforge",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Tachyon Accelerators",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Flux Condensator",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "LHC",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Photovoltaic Cells",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Thin Film Cells",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Quantum Dot Cells",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Solar Satellites",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Expanded Cargo",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Barges",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Reactor Vessel",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Ironwood Huts",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Concrete Huts",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Unobtainium Huts",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Eludium Huts",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Silos",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Refrigeration",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Composite Bow",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Crossbow",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Railgun",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Bolas",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Hunting Armour",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Steel Armour",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Alloy Armour",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Nanosuits",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Caravanserai",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Catnip Enrichment",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Gold Ore",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Geodesy",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Register",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Concrete Pillars",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Mining Drill",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Unobtainium Drill",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Coal Furnace",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Deep Mining",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Pyrolysis",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Electrolytic Smelting",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Oxidation",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Steel Plants",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Automated Plants",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Nuclear Plants",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Rotary Kiln",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Fluoridized Reactors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Nuclear Smelter",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Orbital Geodesy",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Printing Press",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Offset Press",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Photolithography",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Uplink",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Cryocomputing",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Machine Learning",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Workshop Automation",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Advanced Automation",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Pneumatic Press",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "High Pressure Engine",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Fuel Injector",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Factory Logistics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Carbon Sequestration",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Space Manufacturing",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Astrolabe",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Titanium Reflectors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Unobtainium Reflectors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Eludium Reflectors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Hydro Plant Turbines",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Antimatter Bases",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "AI Bases",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Antimatter Fission",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Antimatter Drive",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Antimatter Reactors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Advanced AM Reactors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Void Reactors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Relic Station",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Pumpjack",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Biofuel Processing",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Unicorn Selection",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "GM Catnip",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "CAD System",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "SETI",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Logistics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Augmentations",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Cold Fusion",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Thorium Reactors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Enriched Uranium",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Enriched Thorium",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Oil Refinery",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Hubble Space Telescope",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Satellite Navigation",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Satellite Radio",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Astrophysicists",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Microwarp Reactors",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Planet Busters",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Thorium Drive",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Oil Distillation",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Factory Processing",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Factory Optimization",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Space Engineers",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "AI Engineers",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Chronoengineers",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Telecommunication",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Neural Network",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Robotic Assistance",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Factory Robotics",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Void Aspiration",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Distortion",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Chronosurge",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "Invisible Black Hand",
       "Type": "Tech",
       "IsHidden": true,
-      "Capacity": 1
+      "Cap": 1
     },
     {
       "Name": "beam",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@beam"
     },
     {
       "Name": "slab",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@slab"
     },
     {
       "Name": "concrete",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@concrete"
     },
     {
       "Name": "plate",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@plate"
     },
     {
       "Name": "steel",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "Calciner",
@@ -4122,55 +4122,55 @@
     {
       "Name": "gear",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@gear"
     },
     {
       "Name": "alloy",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@alloy"
     },
     {
       "Name": "eludium",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@eludium"
     },
     {
       "Name": "scaffold",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@scaffold"
     },
     {
       "Name": "ship",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@ship"
     },
     {
       "Name": "tanker",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@tanker"
     },
     {
       "Name": "kerosene",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@kerosene"
     },
     {
       "Name": "parchment",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@parchment"
     },
     {
       "Name": "manuscript",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "Steamworks",
@@ -4201,19 +4201,19 @@
     {
       "Name": "compendium",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@compendium"
     },
     {
       "Name": "blueprint",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@blueprint"
     },
     {
       "Name": "thorium",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "Producers": [
         {
           "Name": "Reactor",
@@ -4238,7 +4238,7 @@
     {
       "Name": "megalith",
       "Type": "Resource",
-      "Capacity": -1,
+      "Cap": -1,
       "ProducerAction": "@megalith"
     }
   ],
@@ -4308,7 +4308,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 2
+          "Cap": 2
         }
       ]
     },
@@ -4539,7 +4539,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -4589,7 +4589,7 @@
         },
         {
           "Name": "kitten",
-          "Capacity": 1
+          "Cap": 1
         }
       ]
     },
@@ -5964,7 +5964,7 @@
         {
           "Name": "kitten",
           "Count": 1,
-          "Capacity": 1
+          "Cap": 1
         }
       ],
       "Adds": [
@@ -5982,7 +5982,7 @@
         {
           "Name": "kitten",
           "Count": 1,
-          "Capacity": 1
+          "Cap": 1
         }
       ],
       "Adds": [
@@ -6000,7 +6000,7 @@
         {
           "Name": "kitten",
           "Count": 1,
-          "Capacity": 1
+          "Cap": 1
         }
       ],
       "Adds": [
@@ -6018,7 +6018,7 @@
         {
           "Name": "kitten",
           "Count": 1,
-          "Capacity": 1
+          "Cap": 1
         }
       ],
       "Adds": [
@@ -6036,7 +6036,7 @@
         {
           "Name": "kitten",
           "Count": 1,
-          "Capacity": 1
+          "Cap": 1
         }
       ],
       "Adds": [
@@ -6054,7 +6054,7 @@
         {
           "Name": "kitten",
           "Count": 1,
-          "Capacity": 1
+          "Cap": 1
         }
       ],
       "Adds": [
@@ -6072,7 +6072,7 @@
         {
           "Name": "kitten",
           "Count": 1,
-          "Capacity": 1
+          "Cap": 1
         }
       ],
       "Adds": [

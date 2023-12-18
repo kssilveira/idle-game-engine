@@ -86,8 +86,8 @@ func updateResources(g *game.Game, resourceMap string) error {
 		}
 		r := g.GetResource(words[0])
 		r.Count = value
-		if r.Capacity != -1 && r.Capacity < value {
-			r.Capacity = value
+		if r.Cap != -1 && r.Cap < value {
+			r.Cap = value
 		}
 	}
 	return nil
