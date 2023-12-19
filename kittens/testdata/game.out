@@ -116,6 +116,137 @@
       "Formula": "Count = (1 + floor(c(day)) % 400)"
     },
     {
+      "Name": "BarnBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Factor": -1
+        },
+        {
+          "Name": "Expanded Barns",
+          "Factor": 0.75
+        },
+        {
+          "Name": "Reinforced Barns",
+          "Factor": 0.8
+        },
+        {
+          "Name": "Titanium Barns",
+          "Factor": 1
+        },
+        {
+          "Name": "Alloy Barns",
+          "Factor": 1
+        },
+        {
+          "Name": "Concrete Barns",
+          "Factor": 0.75
+        },
+        {
+          "Name": "Concrete Pillars",
+          "Factor": 0.05
+        }
+      ],
+      "StartCount": 1,
+      "Formula": "Count = (1 + (-1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05)))"
+    },
+    {
+      "Name": "WarehouseBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Factor": -1
+        },
+        {
+          "Name": "Reinforced Warehouses",
+          "Factor": 0.25
+        },
+        {
+          "Name": "Titanium Warehouses",
+          "Factor": 0.5
+        },
+        {
+          "Name": "Alloy Warehouses",
+          "Factor": 0.45
+        },
+        {
+          "Name": "Concrete Warehouses",
+          "Factor": 0.35
+        },
+        {
+          "Name": "Storage Bunkers",
+          "Factor": 0.2
+        },
+        {
+          "Name": "Concrete Pillars",
+          "Factor": 0.05
+        }
+      ],
+      "StartCount": 1,
+      "Formula": "Count = (1 + (-1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05)))"
+    },
+    {
+      "Name": "HarbourBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Factor": -1
+        },
+        {
+          "Name": "ship",
+          "Factor": 0.01,
+          "Bonus": [
+            {
+              "Name": "Expanded Cargo",
+              "Factor": 1,
+              "Bonus": [
+                {
+                  "Name": "Reactor",
+                  "Factor": 0.05,
+                  "Bonus": [
+                    {
+                      "Name": "Reactor Vessel",
+                      "Factor": 1
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCount": 1,
+      "Formula": "Count = (1 + (-1 + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel)))))))"
+    },
+    {
+      "Name": "BarnCatnipCapBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Factor": -1
+        },
+        {
+          "Name": "Silos",
+          "Factor": 0.25,
+          "Bonus": [
+            {
+              "Name": "BarnBonus",
+              "Factor": 1
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCount": 1,
+      "Formula": "Count = (1 + (-1 + (c(Silos) * 0.25 * c(BarnBonus))))"
+    },
+    {
       "Name": "catnip cap",
       "Type": "Resource",
       "IsHidden": true,
@@ -125,35 +256,8 @@
           "Factor": 5000,
           "Bonus": [
             {
-              "Name": "Silos",
-              "Factor": 0.25,
-              "Bonus": [
-                {
-                  "Name": "Expanded Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Reinforced Barns",
-                  "Factor": 0.8
-                },
-                {
-                  "Name": "Titanium Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Alloy Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Concrete Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Concrete Pillars",
-                  "Factor": 0.05
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "BarnCatnipCapBonus",
+              "Factor": 1
             }
           ]
         },
@@ -162,35 +266,8 @@
           "Factor": 750,
           "Bonus": [
             {
-              "Name": "Silos",
-              "Factor": 0.25,
-              "Bonus": [
-                {
-                  "Name": "Expanded Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Reinforced Barns",
-                  "Factor": 0.8
-                },
-                {
-                  "Name": "Titanium Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Alloy Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Concrete Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Concrete Pillars",
-                  "Factor": 0.05
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "BarnCatnipCapBonus",
+              "Factor": 1
             }
           ],
           "BonusStartsFromZero": true
@@ -200,59 +277,12 @@
           "Factor": 2500,
           "Bonus": [
             {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "HarbourBonus",
+              "Factor": 1
             },
             {
-              "Name": "Silos",
-              "Factor": 0.25,
-              "Bonus": [
-                {
-                  "Name": "Expanded Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Reinforced Barns",
-                  "Factor": 0.8
-                },
-                {
-                  "Name": "Titanium Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Alloy Barns",
-                  "Factor": 1
-                },
-                {
-                  "Name": "Concrete Barns",
-                  "Factor": 0.75
-                },
-                {
-                  "Name": "Concrete Pillars",
-                  "Factor": 0.05
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "BarnCatnipCapBonus",
+              "Factor": 1
             }
           ]
         },
@@ -346,7 +376,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (5000 + (((c(Barn) * 5000 * (1 + (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05))))) + (c(Warehouse) * 750 * (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05)))) + (c(Harbour) * 2500 * (1 + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))) + (c(Silos) * 0.25 * ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05))))) + (c(Accelerator) * 30000 * (c(Energy Rifts) * (1 + (c(Stasis Chambers) * 0.95) + (c(Void Energy) * 0.75) + (c(Dark Energy) * 2.5) + (c(Tachyon Accelerators) * 5)))) + (c(Moon Base) * 45000 * (1 + (c(AI Core) * 0.1 * c(AI Bases))))) * ((1 + (c(Refrigeration) * 0.75) + (c(Hydroponics) * 0.1)) * (1 + (c(paragon) * 0.001) + (c(burned paragon) * 0.0005)) * (1 + (c(Void Rift) * 0.02) + (c(Event Horizon) * 0.1)))))"
+      "Formula": "Count = (5000 + (((c(Barn) * 5000 * (1 + c(BarnCatnipCapBonus))) + (c(Warehouse) * 750 * c(BarnCatnipCapBonus)) + (c(Harbour) * 2500 * (1 + c(HarbourBonus) + c(BarnCatnipCapBonus))) + (c(Accelerator) * 30000 * (c(Energy Rifts) * (1 + (c(Stasis Chambers) * 0.95) + (c(Void Energy) * 0.75) + (c(Dark Energy) * 2.5) + (c(Tachyon Accelerators) * 5)))) + (c(Moon Base) * 45000 * (1 + (c(AI Core) * 0.1 * c(AI Bases))))) * ((1 + (c(Refrigeration) * 0.75) + (c(Hydroponics) * 0.1)) * (1 + (c(paragon) * 0.001) + (c(burned paragon) * 0.0005)) * (1 + (c(Void Rift) * 0.02) + (c(Event Horizon) * 0.1)))))"
     },
     {
       "Name": "catnip",
@@ -583,52 +613,12 @@
           "Factor": 200,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
-            },
-            {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
             }
           ]
         },
@@ -637,52 +627,12 @@
           "Factor": 150,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
-            },
-            {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
             }
           ]
         },
@@ -691,76 +641,16 @@
           "Factor": 700,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
             },
             {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "HarbourBonus",
+              "Factor": 1
             }
           ]
         },
@@ -774,7 +664,7 @@
         }
       ],
       "StartCount": 200,
-      "Formula": "Count = (200 + ((c(Barn) * 200 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Warehouse) * 150 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Harbour) * 700 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05) + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))))) + (c(Moon Base) * 25000) + (c(Cryostation) * 200000)))"
+      "Formula": "Count = (200 + ((c(Barn) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 700 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 25000) + (c(Cryostation) * 200000)))"
     },
     {
       "Name": "wood",
@@ -1095,52 +985,12 @@
           "Factor": 250,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
-            },
-            {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
             }
           ]
         },
@@ -1149,52 +999,12 @@
           "Factor": 200,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
-            },
-            {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
             }
           ]
         },
@@ -1203,76 +1013,16 @@
           "Factor": 950,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
             },
             {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "HarbourBonus",
+              "Factor": 1
             }
           ]
         },
@@ -1286,7 +1036,7 @@
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Barn) * 250 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Warehouse) * 200 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Harbour) * 950 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05) + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))))) + (c(Moon Base) * 30000) + (c(Cryostation) * 200000)))"
+      "Formula": "Count = (250 + ((c(Barn) * 250 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 950 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 30000) + (c(Cryostation) * 200000)))"
     },
     {
       "Name": "mineral",
@@ -1332,52 +1082,12 @@
           "Factor": 50,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
-            },
-            {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
             }
           ]
         },
@@ -1386,52 +1096,12 @@
           "Factor": 25,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
-            },
-            {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
             }
           ]
         },
@@ -1440,76 +1110,16 @@
           "Factor": 150,
           "Bonus": [
             {
-              "Name": "Expanded Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Reinforced Barns",
-              "Factor": 0.8
-            },
-            {
-              "Name": "Titanium Barns",
+              "Name": "BarnBonus",
               "Factor": 1
             },
             {
-              "Name": "Alloy Barns",
+              "Name": "WarehouseBonus",
               "Factor": 1
             },
             {
-              "Name": "Concrete Barns",
-              "Factor": 0.75
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "HarbourBonus",
+              "Factor": 1
             }
           ]
         },
@@ -1523,7 +1133,7 @@
         }
       ],
       "StartCount": 50,
-      "Formula": "Count = (50 + ((c(Barn) * 50 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Warehouse) * 25 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Harbour) * 150 * (1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05) + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05) + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))))) + (c(Moon Base) * 9000) + (c(Cryostation) * 50000)))"
+      "Formula": "Count = (50 + ((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000) + (c(Cryostation) * 50000)))"
     },
     {
       "Name": "iron",
@@ -1571,28 +1181,8 @@
           "Factor": 60,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
+              "Name": "WarehouseBonus",
+              "Factor": 1
             }
           ]
         },
@@ -1601,28 +1191,8 @@
           "Factor": 30,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
+              "Name": "WarehouseBonus",
+              "Factor": 1
             }
           ]
         },
@@ -1631,52 +1201,12 @@
           "Factor": 100,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
+              "Name": "WarehouseBonus",
+              "Factor": 1
             },
             {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "HarbourBonus",
+              "Factor": 1
             },
             {
               "Name": "Barges",
@@ -1694,7 +1224,7 @@
         }
       ],
       "StartCount": 1,
-      "Formula": "Count = (1 + ((c(Barn) * 60 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Warehouse) * 30 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Harbour) * 100 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05) + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000)))"
+      "Formula": "Count = (1 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000)))"
     },
     {
       "Name": "coal",
@@ -1774,28 +1304,8 @@
           "Factor": 10,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
+              "Name": "WarehouseBonus",
+              "Factor": 1
             }
           ]
         },
@@ -1804,28 +1314,8 @@
           "Factor": 5,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
+              "Name": "WarehouseBonus",
+              "Factor": 1
             }
           ]
         },
@@ -1834,52 +1324,12 @@
           "Factor": 25,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
+              "Name": "WarehouseBonus",
+              "Factor": 1
             },
             {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "HarbourBonus",
+              "Factor": 1
             }
           ]
         },
@@ -1888,34 +1338,14 @@
           "Factor": 100,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
+              "Name": "WarehouseBonus",
+              "Factor": 1
             }
           ]
         }
       ],
       "StartCount": 20,
-      "Formula": "Count = (20 + ((c(Barn) * 10 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Warehouse) * 5 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Harbour) * 25 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05) + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))))) + (c(Mint) * 100 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05)))))"
+      "Formula": "Count = (20 + ((c(Barn) * 10 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 5 * (1 + c(WarehouseBonus))) + (c(Harbour) * 25 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Mint) * 100 * (1 + c(WarehouseBonus)))))"
     },
     {
       "Name": "gold",
@@ -1971,28 +1401,8 @@
           "Factor": 2,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
+              "Name": "WarehouseBonus",
+              "Factor": 1
             }
           ]
         },
@@ -2001,28 +1411,8 @@
           "Factor": 10,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
-            },
-            {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
+              "Name": "WarehouseBonus",
+              "Factor": 1
             }
           ]
         },
@@ -2031,52 +1421,12 @@
           "Factor": 50,
           "Bonus": [
             {
-              "Name": "Reinforced Warehouses",
-              "Factor": 0.25
+              "Name": "WarehouseBonus",
+              "Factor": 1
             },
             {
-              "Name": "Titanium Warehouses",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Warehouses",
-              "Factor": 0.45
-            },
-            {
-              "Name": "Concrete Warehouses",
-              "Factor": 0.35
-            },
-            {
-              "Name": "Storage Bunkers",
-              "Factor": 0.2
-            },
-            {
-              "Name": "Concrete Pillars",
-              "Factor": 0.05
-            },
-            {
-              "Name": "ship",
-              "Factor": 0.01,
-              "Bonus": [
-                {
-                  "Name": "Expanded Cargo",
-                  "Factor": 1,
-                  "Bonus": [
-                    {
-                      "Name": "Reactor",
-                      "Factor": 0.05,
-                      "Bonus": [
-                        {
-                          "Name": "Reactor Vessel",
-                          "Factor": 1
-                        }
-                      ],
-                      "BonusStartsFromZero": true
-                    }
-                  ]
-                }
-              ],
-              "BonusStartsFromZero": true
+              "Name": "HarbourBonus",
+              "Factor": 1
             }
           ]
         },
@@ -2090,7 +1440,7 @@
         }
       ],
       "StartCount": 1,
-      "Formula": "Count = (1 + ((c(Barn) * 2 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Warehouse) * 10 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))) + (c(Harbour) * 50 * (1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05) + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel))))))) + (c(Moon Base) * 1250) + (c(Cryostation) * 7500)))"
+      "Formula": "Count = (1 + ((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 1250) + (c(Cryostation) * 7500)))"
     },
     {
       "Name": "titanium",

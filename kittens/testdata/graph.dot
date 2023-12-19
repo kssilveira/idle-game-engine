@@ -1,20 +1,29 @@
 digraph {
-  "Barn" -> "catnip cap" [color="green"];
-  "Silos" -> "Barn" [color="green"];
-  "Expanded Barns" -> "Silos" [color="green"];
-  "Reinforced Barns" -> "Silos" [color="green"];
-  "Titanium Barns" -> "Silos" [color="green"];
-  "Alloy Barns" -> "Silos" [color="green"];
-  "Concrete Barns" -> "Silos" [color="green"];
-  "Concrete Pillars" -> "Silos" [color="green"];
-  "Warehouse" -> "catnip cap" [color="green"];
-  "Silos" -> "Warehouse" [color="green"];
-  "Harbour" -> "catnip cap" [color="green"];
-  "ship" -> "Harbour" [color="green"];
+  "Expanded Barns" -> "BarnBonus" [color="green"];
+  "Reinforced Barns" -> "BarnBonus" [color="green"];
+  "Titanium Barns" -> "BarnBonus" [color="green"];
+  "Alloy Barns" -> "BarnBonus" [color="green"];
+  "Concrete Barns" -> "BarnBonus" [color="green"];
+  "Concrete Pillars" -> "BarnBonus" [color="green"];
+  "Reinforced Warehouses" -> "WarehouseBonus" [color="green"];
+  "Titanium Warehouses" -> "WarehouseBonus" [color="green"];
+  "Alloy Warehouses" -> "WarehouseBonus" [color="green"];
+  "Concrete Warehouses" -> "WarehouseBonus" [color="green"];
+  "Storage Bunkers" -> "WarehouseBonus" [color="green"];
+  "Concrete Pillars" -> "WarehouseBonus" [color="green"];
+  "ship" -> "HarbourBonus" [color="green"];
   "Expanded Cargo" -> "ship" [color="green"];
   "Reactor" -> "Expanded Cargo" [color="green"];
   "Reactor Vessel" -> "Reactor" [color="green"];
-  "Silos" -> "Harbour" [color="green"];
+  "Silos" -> "BarnCatnipCapBonus" [color="green"];
+  "BarnBonus" -> "Silos" [color="green"];
+  "Barn" -> "catnip cap" [color="green"];
+  "BarnCatnipCapBonus" -> "Barn" [color="green"];
+  "Warehouse" -> "catnip cap" [color="green"];
+  "BarnCatnipCapBonus" -> "Warehouse" [color="green"];
+  "Harbour" -> "catnip cap" [color="green"];
+  "HarbourBonus" -> "Harbour" [color="green"];
+  "BarnCatnipCapBonus" -> "Harbour" [color="green"];
   "Accelerator" -> "catnip cap" [color="green"];
   "Energy Rifts" -> "Accelerator" [color="green"];
   "Stasis Chambers" -> "Energy Rifts" [color="green"];
@@ -73,41 +82,14 @@ digraph {
   "Aqueduct" -> "catnip" [color="green"];
   "Hydroponics" -> "catnip" [color="green"];
   "Barn" -> "wood cap" [color="green"];
-  "Expanded Barns" -> "Barn" [color="green"];
-  "Reinforced Barns" -> "Barn" [color="green"];
-  "Titanium Barns" -> "Barn" [color="green"];
-  "Alloy Barns" -> "Barn" [color="green"];
-  "Concrete Barns" -> "Barn" [color="green"];
-  "Concrete Pillars" -> "Barn" [color="green"];
-  "Reinforced Warehouses" -> "Barn" [color="green"];
-  "Titanium Warehouses" -> "Barn" [color="green"];
-  "Alloy Warehouses" -> "Barn" [color="green"];
-  "Concrete Warehouses" -> "Barn" [color="green"];
-  "Storage Bunkers" -> "Barn" [color="green"];
+  "BarnBonus" -> "Barn" [color="green"];
+  "WarehouseBonus" -> "Barn" [color="green"];
   "Warehouse" -> "wood cap" [color="green"];
-  "Expanded Barns" -> "Warehouse" [color="green"];
-  "Reinforced Barns" -> "Warehouse" [color="green"];
-  "Titanium Barns" -> "Warehouse" [color="green"];
-  "Alloy Barns" -> "Warehouse" [color="green"];
-  "Concrete Barns" -> "Warehouse" [color="green"];
-  "Concrete Pillars" -> "Warehouse" [color="green"];
-  "Reinforced Warehouses" -> "Warehouse" [color="green"];
-  "Titanium Warehouses" -> "Warehouse" [color="green"];
-  "Alloy Warehouses" -> "Warehouse" [color="green"];
-  "Concrete Warehouses" -> "Warehouse" [color="green"];
-  "Storage Bunkers" -> "Warehouse" [color="green"];
+  "BarnBonus" -> "Warehouse" [color="green"];
+  "WarehouseBonus" -> "Warehouse" [color="green"];
   "Harbour" -> "wood cap" [color="green"];
-  "Expanded Barns" -> "Harbour" [color="green"];
-  "Reinforced Barns" -> "Harbour" [color="green"];
-  "Titanium Barns" -> "Harbour" [color="green"];
-  "Alloy Barns" -> "Harbour" [color="green"];
-  "Concrete Barns" -> "Harbour" [color="green"];
-  "Concrete Pillars" -> "Harbour" [color="green"];
-  "Reinforced Warehouses" -> "Harbour" [color="green"];
-  "Titanium Warehouses" -> "Harbour" [color="green"];
-  "Alloy Warehouses" -> "Harbour" [color="green"];
-  "Concrete Warehouses" -> "Harbour" [color="green"];
-  "Storage Bunkers" -> "Harbour" [color="green"];
+  "BarnBonus" -> "Harbour" [color="green"];
+  "WarehouseBonus" -> "Harbour" [color="green"];
   "Moon Base" -> "wood cap" [color="green"];
   "Cryostation" -> "wood cap" [color="green"];
   "woodcutter" -> "wood" [color="green"];
@@ -204,12 +186,7 @@ digraph {
   "Warehouse" -> "gold cap" [color="green"];
   "Harbour" -> "gold cap" [color="green"];
   "Mint" -> "gold cap" [color="green"];
-  "Reinforced Warehouses" -> "Mint" [color="green"];
-  "Titanium Warehouses" -> "Mint" [color="green"];
-  "Alloy Warehouses" -> "Mint" [color="green"];
-  "Concrete Warehouses" -> "Mint" [color="green"];
-  "Storage Bunkers" -> "Mint" [color="green"];
-  "Concrete Pillars" -> "Mint" [color="green"];
+  "WarehouseBonus" -> "Mint" [color="green"];
   "gold" -> "Mint" [color="red"];
   "Active Smelter" -> "gold" [color="green"];
   "Gold Ore" -> "Active Smelter" [color="green"];
@@ -1528,6 +1505,10 @@ digraph {
   "Workshop" -> "megalith" [color="green"];
   "Factory" -> "megalith" [color="green"];
   "Construction" -> "@megalith" [color="blue"];
+  "BarnBonus" [shape="cylinder"];
+  "WarehouseBonus" [shape="cylinder"];
+  "HarbourBonus" [shape="cylinder"];
+  "BarnCatnipCapBonus" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];
   "wood cap" [shape="cylinder"];
@@ -1994,5 +1975,5 @@ digraph {
 # blueprint: 45
 # relic: 42
 # Metaphysics: 39
-# alloy: 38
 # paragon: 38
+# alloy: 38
