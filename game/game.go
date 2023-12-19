@@ -559,12 +559,18 @@ func (g *Game) getRateFormula(resource data.Resource) string {
 }
 
 func (g *Game) getOneRate(resource data.Resource) float64 {
-	one := g.getCountForRate(resource) * resource.Factor
-	return one * g.getBonus(resource)
+	return g.getCountForRate(resource) * GetFactor(resource.Factor) * g.getBonus(resource)
 }
 
 func (g *Game) getOneRateFormula(resource data.Resource) string {
-	return joinFormula("*", g.getCountForRateFormula(resource), floatFormula(resource.Factor), g.getBonusFormula(resource))
+	return joinFormula("*", g.getCountForRateFormula(resource), floatFormula(GetFactor(resource.Factor)), g.getBonusFormula(resource))
+}
+
+func GetFactor(factor float64) float64 {
+	if factor == 0 {
+		return 1
+	}
+	return factor
 }
 
 func (g *Game) getCountForRate(p data.Resource) float64 {

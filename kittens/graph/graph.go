@@ -49,6 +49,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 	for _, a := range g.Actions {
 		for _, c := range a.Costs {
 			edgefn(c.Name, a.Name, "orange")
+			c.Factor = game.GetFactor(c.Factor) * -1
 			graphBonus(edgefn, c)
 		}
 		for _, add := range a.Adds {
@@ -148,7 +149,7 @@ func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colo
 func graphBonus(edgefn func(from, to, color string), r data.Resource) {
 	for _, b := range r.Bonus {
 		color := "green"
-		if r.Factor*b.Factor < 0 {
+		if game.GetFactor(r.Factor)*game.GetFactor(b.Factor) < 0 {
 			color = "red"
 		}
 		if b.Name == "" {

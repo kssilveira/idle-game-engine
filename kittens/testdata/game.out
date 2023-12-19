@@ -106,7 +106,6 @@
       "Producers": [
         {
           "Name": "day",
-          "Factor": 1,
           "ProductionFloor": true
         }
       ],
@@ -129,12 +128,10 @@
           "Factor": 0.8
         },
         {
-          "Name": "Titanium Barns",
-          "Factor": 1
+          "Name": "Titanium Barns"
         },
         {
-          "Name": "Alloy Barns",
-          "Factor": 1
+          "Name": "Alloy Barns"
         },
         {
           "Name": "Concrete Barns",
@@ -192,15 +189,13 @@
           "Bonus": [
             {
               "Name": "Expanded Cargo",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Reactor",
                   "Factor": 0.05,
                   "Bonus": [
                     {
-                      "Name": "Reactor Vessel",
-                      "Factor": 1
+                      "Name": "Reactor Vessel"
                     }
                   ],
                   "BonusStartsFromZero": true
@@ -224,8 +219,7 @@
           "Factor": 0.25,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             }
           ],
           "BonusStartsFromZero": true
@@ -265,12 +259,10 @@
           "Factor": 2500,
           "Bonus": [
             {
-              "Name": "HarbourBonus",
-              "Factor": 1
+              "Name": "HarbourBonus"
             },
             {
-              "Name": "BarnCatnipCapBonus",
-              "Factor": 1
+              "Name": "BarnCatnipCapBonus"
             }
           ]
         },
@@ -280,7 +272,6 @@
           "Bonus": [
             {
               "Name": "Energy Rifts",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Stasis Chambers",
@@ -312,8 +303,7 @@
               "Factor": 0.1,
               "Bonus": [
                 {
-                  "Name": "AI Bases",
-                  "Factor": 1
+                  "Name": "AI Bases"
                 }
               ],
               "BonusStartsFromZero": true
@@ -324,7 +314,6 @@
       "StartCount": 5000,
       "Bonus": [
         {
-          "Factor": 1,
           "Bonus": [
             {
               "Name": "Refrigeration",
@@ -337,7 +326,6 @@
           ]
         },
         {
-          "Factor": 1,
           "Bonus": [
             {
               "Name": "paragon",
@@ -350,7 +338,6 @@
           ]
         },
         {
-          "Factor": 1,
           "Bonus": [
             {
               "Name": "Void Rift",
@@ -549,8 +536,7 @@
           "Factor": 5,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
+              "Name": "happiness"
             },
             {
               "Name": "Mineral Hoes",
@@ -571,8 +557,7 @@
           "Factor": -5,
           "Bonus": [
             {
-              "Name": "Biofuel Processing",
-              "Factor": 1
+              "Name": "Biofuel Processing"
             }
           ],
           "BonusStartsFromZero": true
@@ -601,12 +586,10 @@
           "Factor": 200,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -615,12 +598,10 @@
           "Factor": 150,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -629,16 +610,13 @@
           "Factor": 700,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             },
             {
-              "Name": "HarbourBonus",
-              "Factor": 1
+              "Name": "HarbourBonus"
             }
           ]
         },
@@ -663,8 +641,7 @@
           "Factor": 0.09,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
+              "Name": "happiness"
             },
             {
               "Name": "Mineral Axe",
@@ -734,16 +711,13 @@
               "Factor": 0.02,
               "Bonus": [
                 {
-                  "Name": "Titanium Reflectors",
-                  "Factor": 1
+                  "Name": "Titanium Reflectors"
                 },
                 {
-                  "Name": "Unobtainium Reflectors",
-                  "Factor": 1
+                  "Name": "Unobtainium Reflectors"
                 },
                 {
-                  "Name": "Eludium Reflectors",
-                  "Factor": 1
+                  "Name": "Eludium Reflectors"
                 }
               ],
               "BonusStartsFromZero": true
@@ -777,8 +751,7 @@
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "Uplink",
-                  "Factor": 1
+                  "Name": "Uplink"
                 }
               ],
               "BonusStartsFromZero": true
@@ -794,8 +767,7 @@
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "Uplink",
-                  "Factor": 1
+                  "Name": "Uplink"
                 }
               ],
               "BonusStartsFromZero": true
@@ -807,8 +779,7 @@
           "Factor": 500,
           "Bonus": [
             {
-              "Name": "Scholasticism",
-              "Factor": 1
+              "Name": "Scholasticism"
             }
           ],
           "BonusStartsFromZero": true
@@ -862,8 +833,7 @@
           "Factor": 0.175,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
+              "Name": "happiness"
             }
           ]
         }
@@ -919,8 +889,7 @@
           "Factor": 75,
           "Bonus": [
             {
-              "Name": "Templars",
-              "Factor": 1
+              "Name": "Templars"
             }
           ],
           "BonusStartsFromZero": true
@@ -938,8 +907,7 @@
           "Factor": 0.3,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
+              "Name": "happiness"
             },
             {
               "Name": "Composite Bow",
@@ -973,12 +941,10 @@
           "Factor": 250,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -987,12 +953,10 @@
           "Factor": 200,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1001,16 +965,13 @@
           "Factor": 950,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             },
             {
-              "Name": "HarbourBonus",
-              "Factor": 1
+              "Name": "HarbourBonus"
             }
           ]
         },
@@ -1035,8 +996,7 @@
           "Factor": 0.25,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
+              "Name": "happiness"
             },
             {
               "Name": "Mine",
@@ -1070,12 +1030,10 @@
           "Factor": 50,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1084,12 +1042,10 @@
           "Factor": 25,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1098,16 +1054,13 @@
           "Factor": 150,
           "Bonus": [
             {
-              "Name": "BarnBonus",
-              "Factor": 1
+              "Name": "BarnBonus"
             },
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             },
             {
-              "Name": "HarbourBonus",
-              "Factor": 1
+              "Name": "HarbourBonus"
             }
           ]
         },
@@ -1150,8 +1103,7 @@
               "Factor": 0.75
             },
             {
-              "Name": "Fluoridized Reactors",
-              "Factor": 1
+              "Name": "Fluoridized Reactors"
             }
           ]
         }
@@ -1169,8 +1121,7 @@
           "Factor": 60,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1179,8 +1130,7 @@
           "Factor": 30,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1189,12 +1139,10 @@
           "Factor": 100,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             },
             {
-              "Name": "HarbourBonus",
-              "Factor": 1
+              "Name": "HarbourBonus"
             },
             {
               "Name": "Barges",
@@ -1223,8 +1171,7 @@
           "Factor": 0.075,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
+              "Name": "happiness"
             },
             {
               "Name": "Geodesy",
@@ -1250,7 +1197,6 @@
           "Bonus": [
             {
               "Name": "Coal Furnace",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Electrolytic Smelting",
@@ -1266,8 +1212,7 @@
           "Factor": 0.015,
           "Bonus": [
             {
-              "Name": "Deep Mining",
-              "Factor": 1
+              "Name": "Deep Mining"
             }
           ],
           "BonusStartsFromZero": true
@@ -1292,8 +1237,7 @@
           "Factor": 10,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1302,8 +1246,7 @@
           "Factor": 5,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1312,12 +1255,10 @@
           "Factor": 25,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             },
             {
-              "Name": "HarbourBonus",
-              "Factor": 1
+              "Name": "HarbourBonus"
             }
           ]
         },
@@ -1326,8 +1267,7 @@
           "Factor": 100,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         }
@@ -1348,8 +1288,7 @@
           "Factor": 0.005,
           "Bonus": [
             {
-              "Name": "Gold Ore",
-              "Factor": 1
+              "Name": "Gold Ore"
             }
           ],
           "BonusStartsFromZero": true
@@ -1360,7 +1299,6 @@
           "Bonus": [
             {
               "Name": "Geodesy",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Mining Drill",
@@ -1389,8 +1327,7 @@
           "Factor": 2,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1399,8 +1336,7 @@
           "Factor": 10,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             }
           ]
         },
@@ -1409,12 +1345,10 @@
           "Factor": 50,
           "Bonus": [
             {
-              "Name": "WarehouseBonus",
-              "Factor": 1
+              "Name": "WarehouseBonus"
             },
             {
-              "Name": "HarbourBonus",
-              "Factor": 1
+              "Name": "HarbourBonus"
             }
           ]
         },
@@ -1461,8 +1395,7 @@
           "Factor": 0.0075,
           "Bonus": [
             {
-              "Name": "Nuclear Smelter",
-              "Factor": 1
+              "Name": "Nuclear Smelter"
             }
           ],
           "BonusStartsFromZero": true
@@ -1528,7 +1461,6 @@
           "Bonus": [
             {
               "Name": "Biofuel Processing",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "GM Catnip",
@@ -1591,8 +1523,7 @@
           "Factor": 0.0025,
           "Bonus": [
             {
-              "Name": "Orbital Geodesy",
-              "Factor": 1
+              "Name": "Orbital Geodesy"
             }
           ],
           "BonusStartsFromZero": true
@@ -1606,8 +1537,7 @@
           "Factor": 1.5,
           "Bonus": [
             {
-              "Name": "Planet Busters",
-              "Factor": 1
+              "Name": "Planet Busters"
             }
           ]
         }
@@ -1697,15 +1627,13 @@
           "Bonus": [
             {
               "Name": "Relic Station",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Black Nexus",
                   "Factor": 0.1,
                   "Bonus": [
                     {
-                      "Name": "Black Pyramid",
-                      "Factor": 1
+                      "Name": "Black Pyramid"
                     }
                   ]
                 },
@@ -1746,8 +1674,7 @@
           "Factor": 0.0003125,
           "Bonus": [
             {
-              "Name": "Chronosurge",
-              "Factor": 1
+              "Name": "Chronosurge"
             }
           ],
           "BonusStartsFromZero": true
@@ -1784,42 +1711,34 @@
       "Producers": [
         {
           "Name": "kitten",
-          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "woodcutter",
-          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "scholar",
-          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "farmer",
-          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "hunter",
-          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "miner",
-          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "priest",
-          "Factor": 1,
           "ProductionFloor": true
         },
         {
           "Name": "geologist",
-          "Factor": 1,
           "ProductionFloor": true
         }
       ],
@@ -2018,8 +1937,7 @@
               "Factor": 0.01,
               "Bonus": [
                 {
-                  "Name": "Uplink",
-                  "Factor": 1
+                  "Name": "Uplink"
                 }
               ],
               "BonusStartsFromZero": true
@@ -2031,8 +1949,7 @@
           "Factor": 125,
           "Bonus": [
             {
-              "Name": "Basilica",
-              "Factor": 1
+              "Name": "Basilica"
             }
           ],
           "BonusStartsFromZero": true
@@ -2103,8 +2020,7 @@
           "Factor": 0.0075,
           "Bonus": [
             {
-              "Name": "happiness",
-              "Factor": 1
+              "Name": "happiness"
             }
           ]
         },
@@ -2132,8 +2048,7 @@
           "Factor": 0.0005,
           "Bonus": [
             {
-              "Name": "Astrophysicists",
-              "Factor": 1
+              "Name": "Astrophysicists"
             }
           ],
           "BonusStartsFromZero": true
@@ -2251,8 +2166,7 @@
       "IsHidden": true,
       "Producers": [
         {
-          "Name": "Black Core",
-          "Factor": 1
+          "Name": "Black Core"
         }
       ],
       "StartCount": 1,
@@ -2354,8 +2268,7 @@
           "Factor": 0.005,
           "Bonus": [
             {
-              "Name": "Sun Altar",
-              "Factor": 1
+              "Name": "Sun Altar"
             }
           ],
           "BonusStartsFromZero": true
@@ -2419,8 +2332,7 @@
       "Cap": -1,
       "Producers": [
         {
-          "Name": "Smelter",
-          "Factor": 1
+          "Name": "Smelter"
         },
         {
           "Name": "Active Smelter",
@@ -2821,8 +2733,7 @@
       "Cap": -1,
       "Producers": [
         {
-          "Name": "Lunar Outpost",
-          "Factor": 1
+          "Name": "Lunar Outpost"
         },
         {
           "Name": "Active Lunar Outpost",
@@ -4617,7 +4528,6 @@
           "Bonus": [
             {
               "Name": "Steel Plants",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Oxidation",
@@ -4649,8 +4559,7 @@
                   "Factor": 0.02,
                   "Bonus": [
                     {
-                      "Name": "Nuclear Plants",
-                      "Factor": 1
+                      "Name": "Nuclear Plants"
                     }
                   ],
                   "BonusStartsFromZero": true
@@ -4723,7 +4632,6 @@
           "Bonus": [
             {
               "Name": "Printing Press",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Offset Press",
@@ -4767,7 +4675,6 @@
           "Bonus": [
             {
               "Name": "Thorium Reactors",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Enriched Thorium",
@@ -7633,8 +7540,7 @@
           "Count": 39.5,
           "Bonus": [
             {
-              "Name": "Bolas",
-              "Factor": 1
+              "Name": "Bolas"
             },
             {
               "Name": "Hunting Armour",
@@ -7659,8 +7565,7 @@
           "Count": 10.78,
           "Bonus": [
             {
-              "Name": "Bolas",
-              "Factor": 1
+              "Name": "Bolas"
             },
             {
               "Name": "Hunting Armour",
@@ -8068,8 +7973,7 @@
           "Count": 1,
           "Bonus": [
             {
-              "Name": "Ziggurat",
-              "Factor": 1
+              "Name": "Ziggurat"
             }
           ],
           "BonusStartsFromZero": true
@@ -8137,11 +8041,9 @@
           "Bonus": [
             {
               "Name": "Black Nexus",
-              "Factor": 1,
               "Bonus": [
                 {
-                  "Name": "Black Pyramid",
-                  "Factor": 1
+                  "Name": "Black Pyramid"
                 }
               ]
             }
@@ -13941,7 +13843,6 @@
           "Bonus": [
             {
               "Name": "Steel Plants",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Oxidation",
@@ -13973,8 +13874,7 @@
                   "Factor": 0.02,
                   "Bonus": [
                     {
-                      "Name": "Nuclear Plants",
-                      "Factor": 1
+                      "Name": "Nuclear Plants"
                     }
                   ],
                   "BonusStartsFromZero": true
@@ -14326,7 +14226,6 @@
           "Bonus": [
             {
               "Name": "Printing Press",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Offset Press",
@@ -14461,7 +14360,6 @@
           "Bonus": [
             {
               "Name": "Thorium Reactors",
-              "Factor": 1,
               "Bonus": [
                 {
                   "Name": "Enriched Thorium",
