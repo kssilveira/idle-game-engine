@@ -84,8 +84,6 @@ Edges:
 
 More features from kittens game:
 
-- change common bonus to named resources
-
 - https://wiki.kittensgame.com/en/general-information/resources
   - https://wiki.kittensgame.com/en/general-information/resources/wood
 - https://wiki.kittensgame.com/en/general-information/game-mechanics
