@@ -280,25 +280,6 @@
       "Formula": "Count = ((c(Workshop) * 0.06) + (c(Factory) * 0.05 * (1 + (c(Factory Logistics) * 0.2))))"
     },
     {
-      "Name": "CultureCapBonus",
-      "Type": "Resource",
-      "IsHidden": true,
-      "Producers": [
-        {
-          "Name": "Ziggurat",
-          "Factor": 0.08,
-          "Bonus": [
-            {
-              "Name": "Unicorn Graveyard",
-              "Factor": 0.01
-            }
-          ]
-        }
-      ],
-      "StartCountFromZero": true,
-      "Formula": "Count = (c(Ziggurat) * 0.08 * (1 + (c(Unicorn Graveyard) * 0.01)))"
-    },
-    {
       "Name": "SpaceElevatorBonus",
       "Type": "Resource",
       "IsHidden": true,
@@ -889,6 +870,10 @@
           ]
         },
         {
+          "Name": "compendium",
+          "Factor": 10
+        },
+        {
           "Name": "Academy",
           "Factor": 500
         },
@@ -949,6 +934,16 @@
           "BonusStartsFromZero": true
         },
         {
+          "Name": "Accelerator",
+          "Factor": 2500,
+          "Bonus": [
+            {
+              "Name": "LHC"
+            }
+          ],
+          "BonusStartsFromZero": true
+        },
+        {
           "Name": "Research Vessel",
           "Factor": 10000,
           "Bonus": [
@@ -968,7 +963,7 @@
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * c(Uplink)))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))))"
+      "Formula": "Count = (250 + ((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * c(Uplink)))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))))"
     },
     {
       "Name": "science",
@@ -1041,8 +1036,8 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Hut) * 75) + (c(Log House) * 50) + (c(Mansion) * 50) + (c(Temple) * 75 * c(Templars))))"
+      "StartCount": 100,
+      "Formula": "Count = (100 + ((c(Hut) * 75) + (c(Log House) * 50) + (c(Mansion) * 50) + (c(Temple) * 75 * c(Templars))))"
     },
     {
       "Name": "catpower",
@@ -2073,47 +2068,24 @@
       "Producers": [
         {
           "Name": "Library",
-          "Factor": 10,
-          "Bonus": [
-            {
-              "Name": "CultureCapBonus"
-            }
-          ]
+          "Factor": 10
         },
         {
           "Name": "Academy",
-          "Factor": 25,
-          "Bonus": [
-            {
-              "Name": "CultureCapBonus"
-            }
-          ]
+          "Factor": 25
         },
         {
           "Name": "Amphitheatre",
-          "Factor": 50,
-          "Bonus": [
-            {
-              "Name": "CultureCapBonus"
-            }
-          ]
+          "Factor": 50
         },
         {
           "Name": "Chapel",
-          "Factor": 200,
-          "Bonus": [
-            {
-              "Name": "CultureCapBonus"
-            }
-          ]
+          "Factor": 200
         },
         {
           "Name": "Data Center",
           "Factor": 250,
           "Bonus": [
-            {
-              "Name": "CultureCapBonus"
-            },
             {
               "Name": "Bio Lab",
               "Factor": 0.01,
@@ -2128,7 +2100,7 @@
         },
         {
           "Name": "Temple",
-          "Factor": 125,
+          "Factor": 50,
           "Bonus": [
             {
               "Name": "Basilica"
@@ -2137,8 +2109,20 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCount": 575,
-      "Formula": "Count = (575 + ((c(Library) * 10 * (1 + c(CultureCapBonus))) + (c(Academy) * 25 * (1 + c(CultureCapBonus))) + (c(Amphitheatre) * 50 * (1 + c(CultureCapBonus))) + (c(Chapel) * 200 * (1 + c(CultureCapBonus))) + (c(Data Center) * 250 * (1 + c(CultureCapBonus) + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 125 * c(Basilica))))"
+      "StartCount": 100,
+      "Bonus": [
+        {
+          "Name": "Ziggurat",
+          "Factor": 0.08,
+          "Bonus": [
+            {
+              "Name": "Unicorn Graveyard",
+              "Factor": 0.125
+            }
+          ]
+        }
+      ],
+      "Formula": "Count = (100 + (((c(Library) * 10) + (c(Academy) * 25) + (c(Amphitheatre) * 50) + (c(Chapel) * 200) + (c(Data Center) * 250 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 50 * c(Basilica))) * (1 + (c(Ziggurat) * 0.08 * (1 + (c(Unicorn Graveyard) * 0.125))))))"
     },
     {
       "Name": "culture",
@@ -2161,14 +2145,14 @@
               "Factor": 0.5
             },
             {
-              "Name": "Stained Glass",
-              "Factor": 2
+              "Name": "Basilica",
+              "Factor": 0.5
             }
           ]
         }
       ],
       "CapResource": "culture cap",
-      "Formula": "Count += (((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Stained Glass) * 2)))) * seconds)"
+      "Formula": "Count += (((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 0.5)))) * seconds)"
     },
     {
       "Name": "faith cap",
@@ -2182,16 +2166,18 @@
             {
               "Name": "Golden Spire",
               "Factor": 0.5
-            },
-            {
-              "Name": "Sun Altar",
-              "Factor": 0.5
             }
           ]
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (c(Temple) * 100 * (1 + (c(Golden Spire) * 0.5) + (c(Sun Altar) * 0.5))))"
+      "StartCount": 100,
+      "Bonus": [
+        {
+          "Name": "Sun Altar",
+          "Factor": 0.1
+        }
+      ],
+      "Formula": "Count = (100 + ((c(Temple) * 100 * (1 + (c(Golden Spire) * 0.5))) * (1 + (c(Sun Altar) * 0.1))))"
     },
     {
       "Name": "faith",
@@ -2207,6 +2193,10 @@
           ]
         },
         {
+          "Name": "Temple",
+          "Factor": 0.0075
+        },
+        {
           "Name": "Chapel",
           "Factor": 0.025
         }
@@ -2218,7 +2208,7 @@
         }
       ],
       "CapResource": "faith cap",
-      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Chapel) * 0.025)) * (1 + (c(Solar Chant) * 0.1))) * seconds)"
+      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075) + (c(Chapel) * 0.025)) * (1 + (c(Solar Chant) * 0.1))) * seconds)"
     },
     {
       "Name": "starchart",

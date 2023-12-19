@@ -103,12 +103,6 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Factory Logistics", Factor: 0.2}},
 		}},
 	}, {
-		Name: "CultureCapBonus",
-		Producers: []data.Resource{{
-			Name: "Ziggurat", Factor: 0.08,
-			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.01}},
-		}},
-	}, {
 		Name: "SpaceElevatorBonus",
 		Producers: []data.Resource{{
 			Name: "Space Elevator", Factor: -0.05,
@@ -313,11 +307,13 @@ func NewGame(now game.Now) *game.Game {
 				BonusStartsFromZero: true,
 			}},
 		}, {
+			Name: "compendium", Factor: 10,
+		}, {
 			Name: "Academy", Factor: 500,
 		}, {
 			Name: "Observatory", Factor: 1000,
 			Bonus: []data.Resource{{
-				Name: "Astrolabe", Factor: 0.5,
+				Name: "Astrolabe", Factor: 0.50,
 			}, {
 				Name: "Satellite", Factor: 0.05,
 			}},
@@ -338,6 +334,10 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Temple", Factor: 500,
 			Bonus:               []data.Resource{{Name: "Scholasticism"}},
+			BonusStartsFromZero: true,
+		}, {
+			Name: "Accelerator", Factor: 2500,
+			Bonus:               []data.Resource{{Name: "LHC"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Research Vessel", Factor: 10000, Bonus: []data.Resource{{Name: "SpaceReactorScienceBonus"}},
@@ -364,7 +364,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Space Station", Factor: 0.50,
 		}},
 	}, {
-		Name: "catpower cap", Type: "Resource", IsHidden: true, StartCount: 250,
+		Name: "catpower cap", Type: "Resource", IsHidden: true, StartCount: 100,
 		Producers: []data.Resource{{
 			Name: "Hut", Factor: 75,
 		}, {
@@ -383,7 +383,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "happiness",
 			}, {
-				Name: "Composite Bow", Factor: 0.5,
+				Name: "Composite Bow", Factor: 0.50,
 			}, {
 				Name: "Crossbow", Factor: 0.25,
 			}, {
@@ -807,28 +807,30 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 	}, {
-		Name: "culture cap", Type: "Resource", IsHidden: true, StartCount: 575,
+		Name: "culture cap", Type: "Resource", IsHidden: true, StartCount: 100,
 		Producers: []data.Resource{{
-			Name: "Library", Factor: 10, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
+			Name: "Library", Factor: 10,
 		}, {
-			Name: "Academy", Factor: 25, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
+			Name: "Academy", Factor: 25,
 		}, {
-			Name: "Amphitheatre", Factor: 50, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
+			Name: "Amphitheatre", Factor: 50,
 		}, {
-			Name: "Chapel", Factor: 200, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
+			Name: "Chapel", Factor: 200,
 		}, {
 			Name: "Data Center", Factor: 250,
 			Bonus: []data.Resource{{
-				Name: "CultureCapBonus",
-			}, {
 				Name: "Bio Lab", Factor: 0.01,
 				Bonus:               []data.Resource{{Name: "Uplink"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
-			Name: "Temple", Factor: 125,
+			Name: "Temple", Factor: 50,
 			Bonus:               []data.Resource{{Name: "Basilica"}},
 			BonusStartsFromZero: true,
+		}},
+		Bonus: []data.Resource{{
+			Name: "Ziggurat", Factor: 0.08,
+			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.125}},
 		}},
 	}, {
 		Name: "culture", Type: "Resource", CapResource: "culture cap",
@@ -841,24 +843,23 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Stained Glass", Factor: 0.50,
 			}, {
-				Name: "Stained Glass", Factor: 2.00,
+				Name: "Basilica", Factor: 0.50,
 			}},
 		}},
 	}, {
-		Name: "faith cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Name: "faith cap", Type: "Resource", IsHidden: true, StartCount: 100,
 		Producers: []data.Resource{{
 			Name: "Temple", Factor: 100,
-			Bonus: []data.Resource{{
-				Name: "Golden Spire", Factor: 0.50,
-			}, {
-				Name: "Sun Altar", Factor: 0.50,
-			}},
+			Bonus: []data.Resource{{Name: "Golden Spire", Factor: 0.50}},
 		}},
+		Bonus: []data.Resource{{Name: "Sun Altar", Factor: 0.10}},
 	}, {
 		Name: "faith", Type: "Resource", CapResource: "faith cap",
 		Producers: []data.Resource{{
 			Name: "priest", Factor: 0.0015 * 5,
 			Bonus: []data.Resource{{Name: "happiness"}},
+		}, {
+			Name: "Temple", Factor: 0.0015 * 5,
 		}, {
 			Name: "Chapel", Factor: 0.005 * 5,
 		}},

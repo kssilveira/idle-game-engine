@@ -25,8 +25,6 @@ digraph {
   "Workshop" -> "CraftRatio" [color="green"];
   "Factory" -> "CraftRatio" [color="green"];
   "Factory Logistics" -> "Factory" [color="green"];
-  "Ziggurat" -> "CultureCapBonus" [color="green"];
-  "Unicorn Graveyard" -> "Ziggurat" [color="green"];
   "SpaceElevatorBonus" -> "Space Elevator" [color="red"];
   "Antimatter Reactors" -> "SpaceReactorScienceBonus" [color="green"];
   "Advanced AM Reactors" -> "SpaceReactorScienceBonus" [color="green"];
@@ -129,6 +127,7 @@ digraph {
   "Titanium Reflectors" -> "Observatory" [color="green"];
   "Unobtainium Reflectors" -> "Observatory" [color="green"];
   "Eludium Reflectors" -> "Observatory" [color="green"];
+  "compendium" -> "science cap" [color="green"];
   "Academy" -> "science cap" [color="green"];
   "Observatory" -> "science cap" [color="green"];
   "Astrolabe" -> "Observatory" [color="green"];
@@ -141,6 +140,8 @@ digraph {
   "Uplink" -> "Bio Lab" [color="green"];
   "Temple" -> "science cap" [color="green"];
   "Scholasticism" -> "Temple" [color="green"];
+  "Accelerator" -> "science cap" [color="green"];
+  "LHC" -> "Accelerator" [color="green"];
   "Research Vessel" -> "science cap" [color="green"];
   "SpaceReactorScienceBonus" -> "Research Vessel" [color="green"];
   "Space Beacon" -> "science cap" [color="green"];
@@ -294,17 +295,14 @@ digraph {
   "Unicorn Utopia" -> "Unic. Pasture" [color="green"];
   "Sunspire" -> "Unic. Pasture" [color="green"];
   "Library" -> "culture cap" [color="green"];
-  "CultureCapBonus" -> "Library" [color="green"];
   "Academy" -> "culture cap" [color="green"];
-  "CultureCapBonus" -> "Academy" [color="green"];
   "Amphitheatre" -> "culture cap" [color="green"];
-  "CultureCapBonus" -> "Amphitheatre" [color="green"];
   "Chapel" -> "culture cap" [color="green"];
-  "CultureCapBonus" -> "Chapel" [color="green"];
   "Data Center" -> "culture cap" [color="green"];
-  "CultureCapBonus" -> "Data Center" [color="green"];
   "Temple" -> "culture cap" [color="green"];
   "Basilica" -> "Temple" [color="green"];
+  "Ziggurat" -> "culture cap" [color="green"];
+  "Unicorn Graveyard" -> "Ziggurat" [color="green"];
   "Amphitheatre" -> "culture" [color="green"];
   "Chapel" -> "culture" [color="green"];
   "Temple" -> "culture" [color="green"];
@@ -312,8 +310,9 @@ digraph {
   "culture cap" -> "culture" [color="limegreen"];
   "Temple" -> "faith cap" [color="green"];
   "Golden Spire" -> "Temple" [color="green"];
-  "Sun Altar" -> "Temple" [color="green"];
+  "Sun Altar" -> "faith cap" [color="green"];
   "priest" -> "faith" [color="green"];
+  "Temple" -> "faith" [color="green"];
   "Chapel" -> "faith" [color="green"];
   "faith cap" -> "faith" [color="limegreen"];
   "Solar Chant" -> "faith" [color="green"];
@@ -338,6 +337,7 @@ digraph {
   "Time Boiler" -> "chronoheat cap" [color="green"];
   "chronoheat" -> "Chrono Furnace" [color="red"];
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
+  "Sun Altar" -> "Temple" [color="green"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Accelerator" -> "Idle Accelerator" [color="green"];
@@ -1524,7 +1524,6 @@ digraph {
   "BarnCatnipCapBonus" [shape="cylinder"];
   "HuntingBonus" [shape="cylinder"];
   "CraftRatio" [shape="cylinder"];
-  "CultureCapBonus" [shape="cylinder"];
   "SpaceElevatorBonus" [shape="cylinder"];
   "SpaceReactorScienceBonus" [shape="cylinder"];
   "AcceleratorCapBonus" [shape="cylinder"];
