@@ -7,63 +7,7 @@ import (
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
-var (
-	CraftRatio = []data.Resource{{
-		Name: "Workshop", Factor: 0.06,
-	}, {
-		Name: "Factory", Factor: 0.05,
-		Bonus: []data.Resource{{
-			Name: "Factory Logistics", Factor: 0.2,
-		}},
-	}}
-)
-
 func NewGame(now game.Now) *game.Game {
-	CultureCapBonus := []data.Resource{{
-		Name: "Ziggurat", Factor: 0.08,
-		Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.01}},
-	}}
-	SpaceElevatorBonus := []data.Resource{{
-		Name: "Space Elevator", Factor: -0.05,
-	}}
-	SpaceReactorScienceBonus := []data.Resource{{
-		Name: "Antimatter Reactors", Factor: 0.95,
-	}, {
-		Name: "Advanced AM Reactors", Factor: 1.50,
-	}, {
-		Name: "Void Reactors", Factor: 4.00,
-	}}
-	AcceleratorCapBonus := []data.Resource{{
-		Name: "Stasis Chambers", Factor: 0.95,
-	}, {
-		Name: "Void Energy", Factor: 0.75,
-	}, {
-		Name: "Dark Energy", Factor: 2.50,
-	}, {
-		Name: "Tachyon Accelerators", Factor: 5.00,
-	}}
-	MoonBaseCapBonus := []data.Resource{{
-		Name: "AI Core", Factor: 0.10,
-		Bonus: []data.Resource{{
-			Name: "AI Bases",
-		}},
-		BonusStartsFromZero: true,
-	}}
-	CatnipCapBonus := []data.Resource{{
-		Name: "Refrigeration", Factor: 0.75,
-	}, {
-		Name: "Hydroponics", Factor: 0.10,
-	}}
-	GlobalCapBonus := []data.Resource{{
-		Name: "Void Rift", Factor: 0.02,
-	}, {
-		Name: "Event Horizon", Factor: 0.10,
-	}}
-	ParagonCapBonus := []data.Resource{{
-		Name: "paragon", Factor: 0.001,
-	}, {
-		Name: "burned paragon", Factor: 0.0005,
-	}}
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
 	}
@@ -154,6 +98,77 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Nanosuits", Factor: 0.5,
 		}},
+	}, {
+		Name: "CraftRatio",
+		Producers: []data.Resource{{
+			Name: "Workshop", Factor: 0.06,
+		}, {
+			Name: "Factory", Factor: 0.05,
+			Bonus: []data.Resource{{
+				Name: "Factory Logistics", Factor: 0.2,
+			}},
+		}},
+	}, {
+		Name: "CultureCapBonus",
+		Producers: []data.Resource{{
+			Name: "Ziggurat", Factor: 0.08,
+			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.01}},
+		}},
+	}, {
+		Name: "SpaceElevatorBonus",
+		Producers: []data.Resource{{
+			Name: "Space Elevator", Factor: -0.05,
+		}},
+	}, {
+		Name: "SpaceReactorScienceBonus",
+		Producers: []data.Resource{{
+			Name: "Antimatter Reactors", Factor: 0.95,
+		}, {
+			Name: "Advanced AM Reactors", Factor: 1.50,
+		}, {
+			Name: "Void Reactors", Factor: 4.00,
+		}},
+	}, {
+		Name: "AcceleratorCapBonus",
+		Producers: []data.Resource{{
+			Name: "Stasis Chambers", Factor: 0.95,
+		}, {
+			Name: "Void Energy", Factor: 0.75,
+		}, {
+			Name: "Dark Energy", Factor: 2.50,
+		}, {
+			Name: "Tachyon Accelerators", Factor: 5.00,
+		}},
+	}, {
+		Name: "MoonBaseCapBonus",
+		Producers: []data.Resource{{
+			Name: "AI Core", Factor: 0.10,
+			Bonus: []data.Resource{{
+				Name: "AI Bases",
+			}},
+			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "CatnipCapBonus",
+		Producers: []data.Resource{{
+			Name: "Refrigeration", Factor: 0.75,
+		}, {
+			Name: "Hydroponics", Factor: 0.10,
+		}},
+	}, {
+		Name: "ParagonCapBonus",
+		Producers: []data.Resource{{
+			Name: "paragon", Factor: 0.001,
+		}, {
+			Name: "burned paragon", Factor: 0.0005,
+		}},
+	}, {
+		Name: "GlobalCapBonus",
+		Producers: []data.Resource{{
+			Name: "Void Rift", Factor: 0.02,
+		}, {
+			Name: "Event Horizon", Factor: 0.10,
+		}},
 	}})
 
 	g.AddResources(join([]data.Resource{{
@@ -174,17 +189,17 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Accelerator", Factor: 30000,
-			Bonus:               []data.Resource{{Name: "Energy Rifts", Bonus: AcceleratorCapBonus}},
+			Bonus:               []data.Resource{{Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}}}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Moon Base", Factor: 45000, Bonus: MoonBaseCapBonus,
+			Name: "Moon Base", Factor: 45000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: CatnipCapBonus,
+			Bonus: []data.Resource{{Name: "CatnipCapBonus"}},
 		}, {
-			Bonus: ParagonCapBonus,
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
 		}, {
-			Bonus: GlobalCapBonus,
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -337,9 +352,9 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Research Vessel", Factor: 10000, Bonus: SpaceReactorScienceBonus,
+			Name: "Research Vessel", Factor: 10000, Bonus: []data.Resource{{Name: "SpaceReactorScienceBonus"}},
 		}, {
-			Name: "Space Beacon", Factor: 25000, Bonus: SpaceReactorScienceBonus,
+			Name: "Space Beacon", Factor: 25000, Bonus: []data.Resource{{Name: "SpaceReactorScienceBonus"}},
 		}},
 	}, {
 		Name: "science", Type: "Resource", CapResource: "science cap",
@@ -810,22 +825,24 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "culture cap", Type: "Resource", IsHidden: true, StartCount: 575,
 		Producers: []data.Resource{{
-			Name: "Library", Factor: 10, Bonus: CultureCapBonus,
+			Name: "Library", Factor: 10, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
 		}, {
-			Name: "Academy", Factor: 25, Bonus: CultureCapBonus,
+			Name: "Academy", Factor: 25, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
 		}, {
-			Name: "Amphitheatre", Factor: 50, Bonus: CultureCapBonus,
+			Name: "Amphitheatre", Factor: 50, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
 		}, {
-			Name: "Chapel", Factor: 200, Bonus: CultureCapBonus,
+			Name: "Chapel", Factor: 200, Bonus: []data.Resource{{Name: "CultureCapBonus"}},
 		}, {
 			Name: "Data Center", Factor: 250,
-			Bonus: join(CultureCapBonus, []data.Resource{{
+			Bonus: []data.Resource{{
+				Name: "CultureCapBonus",
+			}, {
 				Name: "Bio Lab", Factor: 0.01,
 				Bonus: []data.Resource{{
 					Name: "Uplink",
 				}},
 				BonusStartsFromZero: true,
-			}}),
+			}},
 		}, {
 			Name: "Temple", Factor: 125,
 			Bonus: []data.Resource{{
@@ -1491,7 +1508,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000, CostExponentBase: 1.08,
 		}, {
-			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
 		}},
 	}, {
 		Name: "Space Station", UnlockedBy: "Orbital Engineering",
@@ -1502,7 +1519,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 150000, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
 		}},
 		Adds: []data.Resource{{Name: "kitten", Cap: 2}},
 	}, {
@@ -1518,7 +1535,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
 		}},
 	}, {
 		Name: "Moon Base", UnlockedBy: "Moon Mission",
@@ -1533,7 +1550,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "unobtainium", Count: 50, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: SpaceElevatorBonus,
+			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
 		}},
 	}, {
 		Name: "Planet Cracker", UnlockedBy: "Dune Mission",
@@ -3522,7 +3539,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000,
 		}, {
-			Name: "oil", Count: 15000, Bonus: SpaceElevatorBonus,
+			Name: "oil", Count: 15000, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
 		}},
 	}, {
 		Name: "Moon Mission", UnlockedBy: "Orbital Launch",
@@ -3533,7 +3550,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 125000,
 		}, {
-			Name: "oil", Count: 45000, Bonus: SpaceElevatorBonus,
+			Name: "oil", Count: 45000, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
 		}},
 	}, {
 		Name: "Dune Mission", UnlockedBy: "Moon Mission",
@@ -3802,7 +3819,7 @@ func NewGame(now game.Now) *game.Game {
 					Name: "Oxidation", Factor: 0.95,
 				}, {
 					Name: "Automated Plants", Factor: 0.25,
-					Bonus:               CraftRatio,
+					Bonus:               []data.Resource{{Name: "CraftRatio"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Reactor", Factor: 0.02,
@@ -3969,7 +3986,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		action.Type = "Craft"
 		action.Adds = []data.Resource{{
 			Name: name, Count: 1,
-			Bonus: CraftRatio,
+			Bonus: []data.Resource{{Name: "CraftRatio"}},
 		}}
 		action.IsHidden = true
 		g.AddAction(action)
