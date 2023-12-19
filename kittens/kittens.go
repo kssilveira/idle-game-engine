@@ -3559,43 +3559,43 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Enlightenment", UnlockedBy: "Metaphysics",
 		Costs: []data.Resource{{Name: "paragon", Count: 5}},
 	}, {
-		Name: "Codex Vox", UnlockedBy: "Metaphysics",
+		Name: "Codex Vox", UnlockedBy: "Enlightenment",
 		Costs: []data.Resource{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Codex Logos", UnlockedBy: "Metaphysics",
+		Name: "Codex Logos", UnlockedBy: "Codex Vox",
 		Costs: []data.Resource{{Name: "paragon", Count: 50}},
 	}, {
-		Name: "Codex Agrum", UnlockedBy: "Metaphysics",
+		Name: "Codex Agrum", UnlockedBy: "Codex Logos",
 		Costs: []data.Resource{{Name: "paragon", Count: 75}},
 	}, {
-		Name: "Megalomania", UnlockedBy: "Metaphysics",
+		Name: "Megalomania", UnlockedBy: "Enlightenment",
 		Costs: []data.Resource{{Name: "paragon", Count: 10}},
 	}, {
-		Name: "Black Codex", UnlockedBy: "Metaphysics",
+		Name: "Black Codex", UnlockedBy: "Megalomania",
 		Costs: []data.Resource{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Codex Leviathanus", UnlockedBy: "Metaphysics",
+		Name: "Codex Leviathanus", UnlockedBy: "Codex Logos",
 		Costs: []data.Resource{{Name: "paragon", Count: 75}},
 	}, {
-		Name: "Golden Ratio", UnlockedBy: "Metaphysics",
+		Name: "Golden Ratio", UnlockedBy: "Enlightenment",
 		Costs: []data.Resource{{Name: "paragon", Count: 50}},
 	}, {
-		Name: "Divine Proportion", UnlockedBy: "Metaphysics",
+		Name: "Divine Proportion", UnlockedBy: "Golden Ratio",
 		Costs: []data.Resource{{Name: "paragon", Count: 100}},
 	}, {
-		Name: "Vitruvian Feline", UnlockedBy: "Metaphysics",
+		Name: "Vitruvian Feline", UnlockedBy: "Divine Proportion",
 		Costs: []data.Resource{{Name: "paragon", Count: 250}},
 	}, {
-		Name: "Renaissance", UnlockedBy: "Metaphysics",
+		Name: "Renaissance", UnlockedBy: "Vitruvian Feline",
 		Costs: []data.Resource{{Name: "paragon", Count: 750}},
 	}, {
 		Name: "Diplomacy", UnlockedBy: "Metaphysics",
 		Costs: []data.Resource{{Name: "paragon", Count: 5}},
 	}, {
-		Name: "Zebra Diplomacy", UnlockedBy: "Metaphysics",
+		Name: "Zebra Diplomacy", UnlockedBy: "Diplomacy",
 		Costs: []data.Resource{{Name: "paragon", Count: 35}},
 	}, {
-		Name: "Zebra Covenant", UnlockedBy: "Metaphysics",
+		Name: "Zebra Covenant", UnlockedBy: "Zebra Diplomacy",
 		Costs: []data.Resource{{Name: "paragon", Count: 75}},
 	}, {
 		Name: "Navigation Diplomacy", UnlockedBy: "Metaphysics",
@@ -3604,10 +3604,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Chronomancy", UnlockedBy: "Metaphysics",
 		Costs: []data.Resource{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Anachronomancy", UnlockedBy: "Metaphysics",
+		Name: "Anachronomancy", UnlockedBy: "Chronomancy",
 		Costs: []data.Resource{{Name: "paragon", Count: 125}},
 	}, {
-		Name: "Astromancy", UnlockedBy: "Metaphysics",
+		Name: "Astromancy", UnlockedBy: "Chronomancy",
 		Costs: []data.Resource{{Name: "paragon", Count: 50}},
 	}, {
 		Name: "Unicornmancy", UnlockedBy: "Metaphysics",
@@ -3616,55 +3616,55 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Carnivals", UnlockedBy: "Metaphysics",
 		Costs: []data.Resource{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Numerology", UnlockedBy: "Metaphysics",
+		Name: "Numerology", UnlockedBy: "Carnivals",
 		Costs: []data.Resource{{Name: "paragon", Count: 50}},
 	}, {
-		Name: "Order of the Void", UnlockedBy: "Metaphysics",
+		Name: "Order of the Void", UnlockedBy: "Numerology",
 		Costs: []data.Resource{{Name: "paragon", Count: 75}},
 	}, {
-		Name: "Venus of Willenfluff", UnlockedBy: "Metaphysics",
+		Name: "Venus of Willenfluff", UnlockedBy: "Numerology",
 		Costs: []data.Resource{{Name: "paragon", Count: 150}},
 	}, {
-		Name: "Pawgan Rituals", UnlockedBy: "Metaphysics",
+		Name: "Pawgan Rituals", UnlockedBy: "Venus of Willenfluff",
 		Costs: []data.Resource{{Name: "paragon", Count: 400}},
 	}, {
-		Name: "Numeromancy", UnlockedBy: "Metaphysics",
+		Name: "Numeromancy", UnlockedBy: "Numerology",
 		Costs: []data.Resource{{Name: "paragon", Count: 250}},
 	}, {
-		Name: "Malkuth", UnlockedBy: "Metaphysics",
+		Name: "Malkuth", UnlockedBy: "Numeromancy",
 		Costs: []data.Resource{{Name: "paragon", Count: 500}},
 	}, {
-		Name: "Yesod", UnlockedBy: "Metaphysics",
+		Name: "Yesod", UnlockedBy: "Malkuth",
 		Costs: []data.Resource{{Name: "paragon", Count: 750}},
 	}, {
-		Name: "Hod", UnlockedBy: "Metaphysics",
+		Name: "Hod", UnlockedBy: "Yesod",
 		Costs: []data.Resource{{Name: "paragon", Count: 1250}},
 	}, {
-		Name: "Netzach", UnlockedBy: "Metaphysics",
+		Name: "Netzach", UnlockedBy: "Hod",
 		Costs: []data.Resource{{Name: "paragon", Count: 1750}},
 	}, {
-		Name: "Tiferet", UnlockedBy: "Metaphysics",
+		Name: "Tiferet", UnlockedBy: "Netzach",
 		Costs: []data.Resource{{Name: "paragon", Count: 2500}},
 	}, {
-		Name: "Gevurah", UnlockedBy: "Metaphysics",
+		Name: "Gevurah", UnlockedBy: "Gevurah",
 		Costs: []data.Resource{{Name: "paragon", Count: 5000}},
 	}, {
-		Name: "Chesed", UnlockedBy: "Metaphysics",
+		Name: "Chesed", UnlockedBy: "Gevurah",
 		Costs: []data.Resource{{Name: "paragon", Count: 7500}},
 	}, {
-		Name: "Binah", UnlockedBy: "Metaphysics",
+		Name: "Binah", UnlockedBy: "Chesed",
 		Costs: []data.Resource{{Name: "paragon", Count: 15000}},
 	}, {
-		Name: "Chokhmah", UnlockedBy: "Metaphysics",
+		Name: "Chokhmah", UnlockedBy: "Binah",
 		Costs: []data.Resource{{Name: "paragon", Count: 30000}},
 	}, {
-		Name: "Keter", UnlockedBy: "Metaphysics",
+		Name: "Keter", UnlockedBy: "Chokhmah",
 		Costs: []data.Resource{{Name: "paragon", Count: 60000}},
 	}, {
 		Name: "Adjustment Bureau", UnlockedBy: "Metaphysics",
 		Costs: []data.Resource{{Name: "paragon", Count: 5}},
 	}, {
-		Name: "ASCOH", UnlockedBy: "Metaphysics",
+		Name: "ASCOH", UnlockedBy: "Adjustment Bureau",
 		Costs: []data.Resource{{Name: "paragon", Count: 5}},
 	}})
 

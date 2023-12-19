@@ -330,42 +330,41 @@ digraph {
   "Charon Mission" -> "Centaurus Mission" [color="blue"];
   "Centaurus Mission" -> "Furthest Ring" [color="blue"];
   "Metaphysics" -> "Enlightenment" [color="blue"];
-  "Metaphysics" -> "Codex Vox" [color="blue"];
-  "Metaphysics" -> "Codex Logos" [color="blue"];
-  "Metaphysics" -> "Codex Agrum" [color="blue"];
-  "Metaphysics" -> "Megalomania" [color="blue"];
-  "Metaphysics" -> "Black Codex" [color="blue"];
-  "Metaphysics" -> "Codex Leviathanus" [color="blue"];
-  "Metaphysics" -> "Golden Ratio" [color="blue"];
-  "Metaphysics" -> "Divine Proportion" [color="blue"];
-  "Metaphysics" -> "Vitruvian Feline" [color="blue"];
-  "Metaphysics" -> "Renaissance" [color="blue"];
+  "Enlightenment" -> "Codex Vox" [color="blue"];
+  "Codex Vox" -> "Codex Logos" [color="blue"];
+  "Codex Logos" -> "Codex Agrum" [color="blue"];
+  "Enlightenment" -> "Megalomania" [color="blue"];
+  "Megalomania" -> "Black Codex" [color="blue"];
+  "Codex Logos" -> "Codex Leviathanus" [color="blue"];
+  "Enlightenment" -> "Golden Ratio" [color="blue"];
+  "Golden Ratio" -> "Divine Proportion" [color="blue"];
+  "Divine Proportion" -> "Vitruvian Feline" [color="blue"];
+  "Vitruvian Feline" -> "Renaissance" [color="blue"];
   "Metaphysics" -> "Diplomacy" [color="blue"];
-  "Metaphysics" -> "Zebra Diplomacy" [color="blue"];
-  "Metaphysics" -> "Zebra Covenant" [color="blue"];
+  "Diplomacy" -> "Zebra Diplomacy" [color="blue"];
+  "Zebra Diplomacy" -> "Zebra Covenant" [color="blue"];
   "Metaphysics" -> "Navigation Diplomacy" [color="blue"];
   "Metaphysics" -> "Chronomancy" [color="blue"];
-  "Metaphysics" -> "Anachronomancy" [color="blue"];
-  "Metaphysics" -> "Astromancy" [color="blue"];
+  "Chronomancy" -> "Anachronomancy" [color="blue"];
+  "Chronomancy" -> "Astromancy" [color="blue"];
   "Metaphysics" -> "Unicornmancy" [color="blue"];
   "Metaphysics" -> "Carnivals" [color="blue"];
-  "Metaphysics" -> "Numerology" [color="blue"];
-  "Metaphysics" -> "Order of the Void" [color="blue"];
-  "Metaphysics" -> "Venus of Willenfluff" [color="blue"];
-  "Metaphysics" -> "Pawgan Rituals" [color="blue"];
-  "Metaphysics" -> "Numeromancy" [color="blue"];
-  "Metaphysics" -> "Malkuth" [color="blue"];
-  "Metaphysics" -> "Yesod" [color="blue"];
-  "Metaphysics" -> "Hod" [color="blue"];
-  "Metaphysics" -> "Netzach" [color="blue"];
-  "Metaphysics" -> "Tiferet" [color="blue"];
-  "Metaphysics" -> "Gevurah" [color="blue"];
-  "Metaphysics" -> "Chesed" [color="blue"];
-  "Metaphysics" -> "Binah" [color="blue"];
-  "Metaphysics" -> "Chokhmah" [color="blue"];
-  "Metaphysics" -> "Keter" [color="blue"];
+  "Carnivals" -> "Numerology" [color="blue"];
+  "Numerology" -> "Order of the Void" [color="blue"];
+  "Numerology" -> "Venus of Willenfluff" [color="blue"];
+  "Venus of Willenfluff" -> "Pawgan Rituals" [color="blue"];
+  "Numerology" -> "Numeromancy" [color="blue"];
+  "Numeromancy" -> "Malkuth" [color="blue"];
+  "Malkuth" -> "Yesod" [color="blue"];
+  "Yesod" -> "Hod" [color="blue"];
+  "Hod" -> "Netzach" [color="blue"];
+  "Netzach" -> "Tiferet" [color="blue"];
+  "Gevurah" -> "Chesed" [color="blue"];
+  "Chesed" -> "Binah" [color="blue"];
+  "Binah" -> "Chokhmah" [color="blue"];
+  "Chokhmah" -> "Keter" [color="blue"];
   "Metaphysics" -> "Adjustment Bureau" [color="blue"];
-  "Metaphysics" -> "ASCOH" [color="blue"];
+  "Adjustment Bureau" -> "ASCOH" [color="blue"];
   "Construction" -> "@beam" [color="blue"];
   "Construction" -> "@slab" [color="blue"];
   "Mechanization" -> "@concrete" [color="blue"];
@@ -780,9 +779,9 @@ digraph {
   "@thorium" [shape="cds"];
   "@megalith" [shape="cds"];
 }
-# Metaphysics: 38
 # Construction: 16
 # Electronics: 12
 # Navigation: 11
 # Orbital Engineering: 10
 # relic: 10
+# Chemistry: 8

@@ -13077,7 +13077,7 @@
     {
       "Name": "Codex Vox",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Enlightenment",
       "LockedBy": "Codex Vox",
       "Costs": [
         {
@@ -13095,7 +13095,7 @@
     {
       "Name": "Codex Logos",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Codex Vox",
       "LockedBy": "Codex Logos",
       "Costs": [
         {
@@ -13113,7 +13113,7 @@
     {
       "Name": "Codex Agrum",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Codex Logos",
       "LockedBy": "Codex Agrum",
       "Costs": [
         {
@@ -13131,7 +13131,7 @@
     {
       "Name": "Megalomania",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Enlightenment",
       "LockedBy": "Megalomania",
       "Costs": [
         {
@@ -13149,7 +13149,7 @@
     {
       "Name": "Black Codex",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Megalomania",
       "LockedBy": "Black Codex",
       "Costs": [
         {
@@ -13167,7 +13167,7 @@
     {
       "Name": "Codex Leviathanus",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Codex Logos",
       "LockedBy": "Codex Leviathanus",
       "Costs": [
         {
@@ -13185,7 +13185,7 @@
     {
       "Name": "Golden Ratio",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Enlightenment",
       "LockedBy": "Golden Ratio",
       "Costs": [
         {
@@ -13203,7 +13203,7 @@
     {
       "Name": "Divine Proportion",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Golden Ratio",
       "LockedBy": "Divine Proportion",
       "Costs": [
         {
@@ -13221,7 +13221,7 @@
     {
       "Name": "Vitruvian Feline",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Divine Proportion",
       "LockedBy": "Vitruvian Feline",
       "Costs": [
         {
@@ -13239,7 +13239,7 @@
     {
       "Name": "Renaissance",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Vitruvian Feline",
       "LockedBy": "Renaissance",
       "Costs": [
         {
@@ -13275,7 +13275,7 @@
     {
       "Name": "Zebra Diplomacy",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Diplomacy",
       "LockedBy": "Zebra Diplomacy",
       "Costs": [
         {
@@ -13293,7 +13293,7 @@
     {
       "Name": "Zebra Covenant",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Zebra Diplomacy",
       "LockedBy": "Zebra Covenant",
       "Costs": [
         {
@@ -13347,7 +13347,7 @@
     {
       "Name": "Anachronomancy",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Chronomancy",
       "LockedBy": "Anachronomancy",
       "Costs": [
         {
@@ -13365,7 +13365,7 @@
     {
       "Name": "Astromancy",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Chronomancy",
       "LockedBy": "Astromancy",
       "Costs": [
         {
@@ -13419,7 +13419,7 @@
     {
       "Name": "Numerology",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Carnivals",
       "LockedBy": "Numerology",
       "Costs": [
         {
@@ -13437,7 +13437,7 @@
     {
       "Name": "Order of the Void",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Numerology",
       "LockedBy": "Order of the Void",
       "Costs": [
         {
@@ -13455,7 +13455,7 @@
     {
       "Name": "Venus of Willenfluff",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Numerology",
       "LockedBy": "Venus of Willenfluff",
       "Costs": [
         {
@@ -13473,7 +13473,7 @@
     {
       "Name": "Pawgan Rituals",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Venus of Willenfluff",
       "LockedBy": "Pawgan Rituals",
       "Costs": [
         {
@@ -13491,7 +13491,7 @@
     {
       "Name": "Numeromancy",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Numerology",
       "LockedBy": "Numeromancy",
       "Costs": [
         {
@@ -13509,7 +13509,7 @@
     {
       "Name": "Malkuth",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Numeromancy",
       "LockedBy": "Malkuth",
       "Costs": [
         {
@@ -13527,7 +13527,7 @@
     {
       "Name": "Yesod",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Malkuth",
       "LockedBy": "Yesod",
       "Costs": [
         {
@@ -13545,7 +13545,7 @@
     {
       "Name": "Hod",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Yesod",
       "LockedBy": "Hod",
       "Costs": [
         {
@@ -13563,7 +13563,7 @@
     {
       "Name": "Netzach",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Hod",
       "LockedBy": "Netzach",
       "Costs": [
         {
@@ -13581,7 +13581,7 @@
     {
       "Name": "Tiferet",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Netzach",
       "LockedBy": "Tiferet",
       "Costs": [
         {
@@ -13599,7 +13599,7 @@
     {
       "Name": "Gevurah",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Gevurah",
       "LockedBy": "Gevurah",
       "Costs": [
         {
@@ -13617,7 +13617,7 @@
     {
       "Name": "Chesed",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Gevurah",
       "LockedBy": "Chesed",
       "Costs": [
         {
@@ -13635,7 +13635,7 @@
     {
       "Name": "Binah",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Chesed",
       "LockedBy": "Binah",
       "Costs": [
         {
@@ -13653,7 +13653,7 @@
     {
       "Name": "Chokhmah",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Binah",
       "LockedBy": "Chokhmah",
       "Costs": [
         {
@@ -13671,7 +13671,7 @@
     {
       "Name": "Keter",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Chokhmah",
       "LockedBy": "Keter",
       "Costs": [
         {
@@ -13707,7 +13707,7 @@
     {
       "Name": "ASCOH",
       "Type": "Tech",
-      "UnlockedBy": "Metaphysics",
+      "UnlockedBy": "Adjustment Bureau",
       "LockedBy": "ASCOH",
       "Costs": [
         {
