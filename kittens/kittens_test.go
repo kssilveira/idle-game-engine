@@ -257,7 +257,7 @@ func TestGraph(t *testing.T) {
 		}
 		if false {
 			svg := filepath.Join("testdata", name+".svg")
-			cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
+			cmd := exec.Command("dot", "-v", "-Tsvg", "-o", svg, dot)
 			if err := cmd.Run(); err != nil {
 				t.Errorf("[%s] got err %v", in.name, err)
 			}

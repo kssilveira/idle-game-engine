@@ -3,6 +3,7 @@ package graph
 import (
 	"fmt"
 	"log"
+	"sort"
 
 	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/game"
@@ -27,9 +28,11 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 		"Spring":      true,
 		"Winter":      true,
 		"gone kitten": true,
+		"science":     true,
 	}
+	counts := map[string]int{}
 	edgefn := func(from, to, color string) {
-		edge(logger, nodes, edges, colors, excluded, from, to, color)
+		edge(logger, nodes, edges, colors, excluded, counts, from, to, color)
 	}
 	for _, r := range g.Resources {
 		for _, p := range r.Producers {
@@ -69,6 +72,20 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 		logger.Printf(`  "%s" [shape="%s"];`+"\n", a.Name, typeToShape[a.Type])
 	}
 	logger.Printf("}\n")
+
+	keys := []string{}
+	for key := range counts {
+		keys = append(keys, key)
+	}
+	sort.SliceStable(keys, func(i, j int) bool {
+		return counts[keys[i]] > counts[keys[j]]
+	})
+	for i, k := range keys {
+		if i > 5 {
+			break
+		}
+		logger.Printf("# %s: %d\n", k, counts[k])
+	}
 }
 
 func GraphEdges(logger *log.Logger, g *game.Game, colors map[string]bool) {
@@ -98,7 +115,7 @@ digraph {
 `)
 }
 
-func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colors map[string]bool, excluded map[string]bool, from, to, color string) {
+func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colors map[string]bool, excluded map[string]bool, counts map[string]int, from, to, color string) {
 	if from == to {
 		return
 	}
@@ -115,6 +132,8 @@ func edge(logger *log.Logger, nodes map[string]bool, edges map[string]bool, colo
 	edges[key] = true
 	nodes[from] = true
 	nodes[to] = true
+	counts[from]++
+	counts[to]++
 	logger.Printf(`  "%s" -> "%s" [color="%s"];`+"\n", from, to, color)
 }
 
