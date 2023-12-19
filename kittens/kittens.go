@@ -272,15 +272,15 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "happiness",
 			}, {
-				Name: "Mineral Axe", Factor: 0.7,
+				Name: "Mineral Axe", Factor: 0.70,
 			}, {
-				Name: "Iron Axe", Factor: 0.5,
+				Name: "Iron Axe", Factor: 0.50,
 			}, {
-				Name: "Steel Axe", Factor: 0.5,
+				Name: "Steel Axe", Factor: 0.50,
 			}, {
-				Name: "Titanium Axe", Factor: 0.5,
+				Name: "Titanium Axe", Factor: 0.50,
 			}, {
-				Name: "Alloy Axe", Factor: 0.5,
+				Name: "Alloy Axe", Factor: 0.50,
 			}},
 		}, {
 			Name: "Active Smelter", Factor: -0.05 * 5,
@@ -288,9 +288,9 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Name: "Lumber Mill", Factor: 0.10,
 			Bonus: []data.Resource{{
-				Name: "Reinforced Saw", Factor: 0.2,
+				Name: "Reinforced Saw", Factor: 0.20,
 			}, {
-				Name: "Steel Saw", Factor: 0.2,
+				Name: "Steel Saw", Factor: 0.20,
 			}, {
 				Name: "Titanium Saw", Factor: 0.15,
 			}, {
@@ -927,8 +927,14 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{Name: "catnip", Count: 1}},
 	}, {
 		Name: "Refine catnip", Type: "Building", UnlockedBy: "catnip", LockedBy: "woodcutter",
-		Costs: []data.Resource{{Name: "catnip", Count: 100}},
-		Adds:  []data.Resource{{Name: "wood", Count: 1}},
+		Costs: []data.Resource{{
+			Name: "catnip", Count: 100,
+			Bonus: []data.Resource{{Name: "Catnip Enrichment", Factor: -0.50}},
+		}},
+		Adds: []data.Resource{{
+			Name: "wood", Count: 1,
+			Bonus: []data.Resource{{Name: "Bio Lab", Factor: 0.10}},
+		}},
 	}})
 
 	addBuildings(g, []data.Action{{

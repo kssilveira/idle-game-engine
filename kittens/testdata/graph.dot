@@ -348,7 +348,9 @@ digraph {
   "Enriched Thorium" -> "Thorium Reactors" [color="green"];
   "Gather catnip" -> "catnip" [color="limegreen"];
   "catnip" -> "Refine catnip" [color="orange"];
+  "Catnip Enrichment" -> "catnip" [color="green"];
   "Refine catnip" -> "wood" [color="limegreen"];
+  "Bio Lab" -> "wood" [color="green"];
   "catnip" -> "Refine catnip" [color="blue"];
   "catnip" -> "Catnip Field" [color="orange"];
   "catnip" -> "Catnip Field" [color="blue"];

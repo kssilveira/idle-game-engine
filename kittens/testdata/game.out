@@ -4816,13 +4816,25 @@
       "Costs": [
         {
           "Name": "catnip",
-          "Count": 100
+          "Count": 100,
+          "Bonus": [
+            {
+              "Name": "Catnip Enrichment",
+              "Factor": -0.5
+            }
+          ]
         }
       ],
       "Adds": [
         {
           "Name": "wood",
-          "Count": 1
+          "Count": 1,
+          "Bonus": [
+            {
+              "Name": "Bio Lab",
+              "Factor": 0.1
+            }
+          ]
         }
       ]
     },
