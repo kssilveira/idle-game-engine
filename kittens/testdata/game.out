@@ -121,9 +121,6 @@
       "IsHidden": true,
       "Producers": [
         {
-          "Factor": -1
-        },
-        {
           "Name": "Expanded Barns",
           "Factor": 0.75
         },
@@ -148,17 +145,14 @@
           "Factor": 0.05
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (-1 + (c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05)))"
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(Expanded Barns) * 0.75) + (c(Reinforced Barns) * 0.8) + c(Titanium Barns) + c(Alloy Barns) + (c(Concrete Barns) * 0.75) + (c(Concrete Pillars) * 0.05))"
     },
     {
       "Name": "WarehouseBonus",
       "Type": "Resource",
       "IsHidden": true,
       "Producers": [
-        {
-          "Factor": -1
-        },
         {
           "Name": "Reinforced Warehouses",
           "Factor": 0.25
@@ -184,17 +178,14 @@
           "Factor": 0.05
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (-1 + (c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05)))"
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(Reinforced Warehouses) * 0.25) + (c(Titanium Warehouses) * 0.5) + (c(Alloy Warehouses) * 0.45) + (c(Concrete Warehouses) * 0.35) + (c(Storage Bunkers) * 0.2) + (c(Concrete Pillars) * 0.05))"
     },
     {
       "Name": "HarbourBonus",
       "Type": "Resource",
       "IsHidden": true,
       "Producers": [
-        {
-          "Factor": -1
-        },
         {
           "Name": "ship",
           "Factor": 0.01,
@@ -220,17 +211,14 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (-1 + (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel)))))))"
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(ship) * 0.01 * (c(Expanded Cargo) * (1 + (c(Reactor) * 0.05 * c(Reactor Vessel)))))"
     },
     {
       "Name": "BarnCatnipCapBonus",
       "Type": "Resource",
       "IsHidden": true,
       "Producers": [
-        {
-          "Factor": -1
-        },
         {
           "Name": "Silos",
           "Factor": 0.25,
@@ -243,8 +231,8 @@
           "BonusStartsFromZero": true
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (-1 + (c(Silos) * 0.25 * c(BarnBonus))))"
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Silos) * 0.25 * c(BarnBonus))"
     },
     {
       "Name": "catnip cap",
@@ -1795,9 +1783,6 @@
       "Cap": -1,
       "Producers": [
         {
-          "Factor": -1
-        },
-        {
           "Name": "kitten",
           "Factor": 1,
           "ProductionFloor": true
@@ -1838,8 +1823,8 @@
           "ProductionFloor": true
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (-1 + floor(c(kitten)) + floor(c(woodcutter)) + floor(c(scholar)) + floor(c(farmer)) + floor(c(hunter)) + floor(c(miner)) + floor(c(priest)) + floor(c(geologist))))"
+      "StartCountFromZero": true,
+      "Formula": "Count = (floor(c(kitten)) + floor(c(woodcutter)) + floor(c(scholar)) + floor(c(farmer)) + floor(c(hunter)) + floor(c(miner)) + floor(c(priest)) + floor(c(geologist)))"
     },
     {
       "Name": "fur",
@@ -2434,9 +2419,6 @@
       "Cap": -1,
       "Producers": [
         {
-          "Factor": -1
-        },
-        {
           "Name": "Smelter",
           "Factor": 1
         },
@@ -2445,8 +2427,8 @@
           "Factor": -1
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (-1 + c(Smelter) + (c(Active Smelter) * -1)))"
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Smelter) + (c(Active Smelter) * -1))"
     },
     {
       "Name": "Pasture",
@@ -2839,9 +2821,6 @@
       "Cap": -1,
       "Producers": [
         {
-          "Factor": -1
-        },
-        {
           "Name": "Lunar Outpost",
           "Factor": 1
         },
@@ -2850,8 +2829,8 @@
           "Factor": -1
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (-1 + c(Lunar Outpost) + (c(Active Lunar Outpost) * -1)))"
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Lunar Outpost) + (c(Active Lunar Outpost) * -1))"
     },
     {
       "Name": "Moon Base",

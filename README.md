@@ -84,10 +84,8 @@ Edges:
 
 More features from kittens game:
 
-- graph sort also by name
-- change common bonus to named resources
-- start count from zero
 - default factor to 1
+- change common bonus to named resources
 
 - https://wiki.kittensgame.com/en/general-information/resources
   - https://wiki.kittensgame.com/en/general-information/resources/wood

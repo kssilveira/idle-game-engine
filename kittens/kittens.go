@@ -96,10 +96,8 @@ func NewGame(now game.Now) *game.Game {
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []data.Resource{{Name: "day", Factor: 1, ProductionFloor: true}},
 	}, {
-		Name: "BarnBonus", Type: "Resource", IsHidden: true, StartCount: 1,
+		Name: "BarnBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
 		Producers: []data.Resource{{
-			Factor: -1,
-		}, {
 			Name: "Expanded Barns", Factor: 0.75,
 		}, {
 			Name: "Reinforced Barns", Factor: 0.80,
@@ -113,10 +111,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Concrete Pillars", Factor: 0.05,
 		}},
 	}, {
-		Name: "WarehouseBonus", Type: "Resource", IsHidden: true, StartCount: 1,
+		Name: "WarehouseBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
 		Producers: []data.Resource{{
-			Factor: -1,
-		}, {
 			Name: "Reinforced Warehouses", Factor: 0.25,
 		}, {
 			Name: "Titanium Warehouses", Factor: 0.50,
@@ -130,10 +126,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Concrete Pillars", Factor: 0.05,
 		}},
 	}, {
-		Name: "HarbourBonus", Type: "Resource", IsHidden: true, StartCount: 1,
+		Name: "HarbourBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
 		Producers: []data.Resource{{
-			Factor: -1,
-		}, {
 			Name: "ship", Factor: 0.01,
 			Bonus: []data.Resource{{
 				Name: "Expanded Cargo", Factor: 1,
@@ -148,10 +142,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
-		Name: "BarnCatnipCapBonus", Type: "Resource", IsHidden: true, StartCount: 1,
+		Name: "BarnCatnipCapBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
 		Producers: []data.Resource{{
-			Factor: -1,
-		}, {
 			Name: "Silos", Factor: 0.25,
 			Bonus: []data.Resource{{
 				Name: "BarnBonus", Factor: 1,
@@ -763,12 +755,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "gone kitten", Count: 1,
 		}},
 	}, {
-		Name: "all kittens", Type: "Resource", IsHidden: true, Cap: -1, StartCount: 1,
-		Producers: join([]data.Resource{{
-			Name: "", Factor: -1,
-		}}, resourceWithName(data.Resource{
+		Name: "all kittens", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
+		Producers: resourceWithName(data.Resource{
 			Name: "kitten", Factor: 1, ProductionFloor: true,
-		}, kittenNames)),
+		}, kittenNames),
 	}, {
 		Name: "fur", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
@@ -4007,10 +3997,8 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		})
 
 		g.AddResource(data.Resource{
-			Name: "Idle " + name, Type: "Building", IsHidden: true, Cap: -1, StartCount: 1,
+			Name: "Idle " + name, Type: "Building", IsHidden: true, Cap: -1, StartCountFromZero: true,
 			Producers: []data.Resource{{
-				Name: "", Factor: -1,
-			}, {
 				Name: name, Factor: 1,
 			}, {
 				Name: "Active " + name, Factor: -1,

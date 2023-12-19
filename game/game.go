@@ -203,7 +203,7 @@ func (g *Game) update(now time.Time) {
 		if resource.ProductionModulus != 0 {
 			factor = float64(int(factor) % resource.ProductionModulus)
 		}
-		if resource.StartCount != 0 {
+		if resource.StartCount != 0 || resource.StartCountFromZero {
 			if resource.ProductionModulus != 0 && resource.ProductionModulusEquals >= 0 {
 				if int(factor) == resource.ProductionModulusEquals {
 					resource.Count = resource.StartCount
@@ -231,7 +231,7 @@ func (g *Game) getFormula(resource data.Resource) string {
 		factor = fmt.Sprintf("%s %% %d", factor, resource.ProductionModulus)
 	}
 	count := ""
-	if resource.StartCount != 0 {
+	if resource.StartCount != 0 || resource.StartCountFromZero {
 		if resource.ProductionModulus != 0 && resource.ProductionModulusEquals >= 0 {
 			count = fmt.Sprintf("Count = %s if %s == %d", floatFormula(resource.StartCount), factor, resource.ProductionModulusEquals)
 		} else {
@@ -517,7 +517,7 @@ func (g *Game) validateResource(r *data.Resource) error {
 			}
 		}
 	}
-	if r.StartCount != 0 {
+	if r.StartCount != 0 || r.StartCountFromZero {
 		if r.Count != 0 {
 			return fmt.Errorf("resource %s has StartCount and Count", r.Name)
 		}

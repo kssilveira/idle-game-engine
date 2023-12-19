@@ -16,6 +16,8 @@ type Resource struct {
 	ProductionBoolean bool `json:",omitempty"`
 	// Count = StartCount + Producer.Count * Factor
 	StartCount float64 `json:",omitempty"`
+	// Count = Producer.Count * Factor
+	StartCountFromZero bool `json:",omitempty"`
 	// Count = StartCount + (Producer.Count * Factor) % ProductionModulus
 	ProductionModulus int `json:",omitempty"`
 	// Count = StartCount if (Producer.Count * Factor) % ProductionModulus == ProductionModulusEquals else 0
