@@ -78,7 +78,15 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 		keys = append(keys, key)
 	}
 	sort.SliceStable(keys, func(i, j int) bool {
-		return counts[keys[i]] > counts[keys[j]]
+		ki := keys[i]
+		kj := keys[j]
+		if counts[ki] > counts[kj] {
+			return true
+		}
+		if counts[ki] < counts[kj] {
+			return false
+		}
+		return ki < kj
 	})
 	for i, k := range keys {
 		if i > 5 {
