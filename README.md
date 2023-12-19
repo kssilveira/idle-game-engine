@@ -11,10 +11,10 @@ Game engine for idle games like kittens game.
 - [simple.go](examples/simple/simple.go) run simple game
 - [kittens.go](kittens/kittens.go) kittens game
 - [main.go](main.go) run kittens game
-- [game.out](kittens/testdata/game.out) json representation of kittens game
+- [game.out](kittens/testdata/game.out) json representation of kittens game, including generated formulas
 - [solve.go](kittens/solve/solve.go) solution to kittens game
 - [solve.out](kittens/testdata/solve.out) text UI output for solution to kittens game
-- [graph.go](kittens/graph/graph.go) generate graph kittens game dependencies
+- [graph.go](kittens/graph/graph.go) generate graph of kittens game dependencies
 - [graph.svg](kittens/testdata/graph.svg) graph of kittens game dependencies
 
 ## Special Actions
@@ -84,7 +84,6 @@ Edges:
 
 More features from kittens game:
 
-- default factor to 1
 - change common bonus to named resources
 
 - https://wiki.kittensgame.com/en/general-information/resources

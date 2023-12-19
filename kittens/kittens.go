@@ -19,17 +19,6 @@ var (
 )
 
 func NewGame(now game.Now) *game.Game {
-	HuntingBonus := []data.Resource{{
-		Name: "Bolas",
-	}, {
-		Name: "Hunting Armour", Factor: 2,
-	}, {
-		Name: "Steel Armour", Factor: 0.5,
-	}, {
-		Name: "Alloy Armour", Factor: 0.5,
-	}, {
-		Name: "Nanosuits", Factor: 0.5,
-	}}
 	CultureCapBonus := []data.Resource{{
 		Name: "Ziggurat", Factor: 0.08,
 		Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.01}},
@@ -95,8 +84,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "day_of_year", Type: "Calendar", StartCount: 1, Cap: -1,
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []data.Resource{{Name: "day", ProductionFloor: true}},
-	}, {
-		Name: "BarnBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
+	}}))
+
+	addBonus(g, []data.Resource{{
+		Name: "BarnBonus",
 		Producers: []data.Resource{{
 			Name: "Expanded Barns", Factor: 0.75,
 		}, {
@@ -151,6 +142,21 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
+		Name: "HuntingBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
+		Producers: []data.Resource{{
+			Name: "Bolas",
+		}, {
+			Name: "Hunting Armour", Factor: 2,
+		}, {
+			Name: "Steel Armour", Factor: 0.5,
+		}, {
+			Name: "Alloy Armour", Factor: 0.5,
+		}, {
+			Name: "Nanosuits", Factor: 0.5,
+		}},
+	}})
+
+	g.AddResources(join([]data.Resource{{
 		Name: "catnip cap", Type: "Resource", IsHidden: true, StartCount: 5000,
 		Producers: []data.Resource{{
 			Name: "Barn", Factor: 5000,
@@ -1809,9 +1815,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Send hunters", Type: "Job", UnlockedBy: "Archery",
 		Costs: []data.Resource{{Name: "catpower", Count: 100}},
 		Adds: []data.Resource{{
-			Name: "fur", Count: 39.5, Bonus: HuntingBonus,
+			Name: "fur", Count: 39.5, Bonus: []data.Resource{{Name: "HuntingBonus"}},
 		}, {
-			Name: "ivory", Count: 10.78, Bonus: HuntingBonus,
+			Name: "ivory", Count: 10.78, Bonus: []data.Resource{{Name: "HuntingBonus"}},
 		}, {
 			Name: "unicorn", Count: 0.05,
 		}},
@@ -3945,6 +3951,15 @@ func resourceWithName(resource data.Resource, names []string) []data.Resource {
 		res = append(res, resource)
 	}
 	return res
+}
+
+func addBonus(g *game.Game, resources []data.Resource) {
+	for _, resource := range resources {
+		resource.Type = "Resource"
+		resource.IsHidden = true
+		resource.StartCountFromZero = true
+		g.AddResource(resource)
+	}
 }
 
 func addCrafts(g *game.Game, actions []data.Action) {

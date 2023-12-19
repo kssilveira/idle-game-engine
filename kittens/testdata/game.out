@@ -229,6 +229,34 @@
       "Formula": "Count = (c(Silos) * 0.25 * c(BarnBonus))"
     },
     {
+      "Name": "HuntingBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Bolas"
+        },
+        {
+          "Name": "Hunting Armour",
+          "Factor": 2
+        },
+        {
+          "Name": "Steel Armour",
+          "Factor": 0.5
+        },
+        {
+          "Name": "Alloy Armour",
+          "Factor": 0.5
+        },
+        {
+          "Name": "Nanosuits",
+          "Factor": 0.5
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Bolas) + (c(Hunting Armour) * 2) + (c(Steel Armour) * 0.5) + (c(Alloy Armour) * 0.5) + (c(Nanosuits) * 0.5))"
+    },
+    {
       "Name": "catnip cap",
       "Type": "Resource",
       "IsHidden": true,
@@ -7540,23 +7568,7 @@
           "Count": 39.5,
           "Bonus": [
             {
-              "Name": "Bolas"
-            },
-            {
-              "Name": "Hunting Armour",
-              "Factor": 2
-            },
-            {
-              "Name": "Steel Armour",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Armour",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Nanosuits",
-              "Factor": 0.5
+              "Name": "HuntingBonus"
             }
           ]
         },
@@ -7565,23 +7577,7 @@
           "Count": 10.78,
           "Bonus": [
             {
-              "Name": "Bolas"
-            },
-            {
-              "Name": "Hunting Armour",
-              "Factor": 2
-            },
-            {
-              "Name": "Steel Armour",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Alloy Armour",
-              "Factor": 0.5
-            },
-            {
-              "Name": "Nanosuits",
-              "Factor": 0.5
+              "Name": "HuntingBonus"
             }
           ]
         },
