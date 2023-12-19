@@ -58,12 +58,14 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 		if !nodes[r.Name] {
 			continue
 		}
+		nodes[r.Name] = false
 		logger.Printf(`  "%s" [shape="%s"];`+"\n", r.Name, typeToShape[r.Type])
 	}
 	for _, a := range g.Actions {
 		if !nodes[a.Name] {
 			continue
 		}
+		nodes[a.Name] = false
 		logger.Printf(`  "%s" [shape="%s"];`+"\n", a.Name, typeToShape[a.Type])
 	}
 	logger.Printf("}\n")
