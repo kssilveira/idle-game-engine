@@ -1070,12 +1070,12 @@
           ]
         },
         {
-          "Name": "Mint",
+          "Name": "Active Mint",
           "Factor": -3.75
         }
       ],
       "CapResource": "catpower cap",
-      "Formula": "Count += (((c(hunter) * 0.3 * (1 + c(happiness) + (c(Composite Bow) * 0.5) + (c(Crossbow) * 0.25) + (c(Railgun) * 0.25))) + (c(Mint) * -3.75)) * seconds)"
+      "Formula": "Count += (((c(hunter) * 0.3 * (1 + c(happiness) + (c(Composite Bow) * 0.5) + (c(Crossbow) * 0.25) + (c(Railgun) * 0.25))) + (c(Active Mint) * -3.75)) * seconds)"
     },
     {
       "Name": "mineral cap",
@@ -1273,7 +1273,7 @@
         },
         {
           "Name": "Warehouse",
-          "Factor": 30,
+          "Factor": 20,
           "Bonus": [
             {
               "Name": "WarehouseBonus"
@@ -1305,8 +1305,8 @@
           "Factor": 25000
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000)))"
+      "StartCount": 60,
+      "Formula": "Count = (60 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 20 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000)))"
     },
     {
       "Name": "coal",
@@ -1368,10 +1368,25 @@
         {
           "Name": "Pyrolysis",
           "Factor": 0.2
+        },
+        {
+          "Name": "Active Steamworks",
+          "Factor": -0.8,
+          "ProductionBoolean": true,
+          "Bonus": [
+            {
+              "Name": "High Pressure Engine",
+              "Factor": -0.25
+            },
+            {
+              "Name": "Fuel Injector",
+              "Factor": -0.25
+            }
+          ]
         }
       ],
       "CapResource": "coal cap",
-      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 10) + (c(Unobtainium Drill) * 2))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining))) * (1 + (c(Pyrolysis) * 0.2))) * seconds)"
+      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 10) + (c(Unobtainium Drill) * 2))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining))) * (1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) \u003e 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25))))) * seconds)"
     },
     {
       "Name": "gold cap",
@@ -1416,17 +1431,42 @@
               "Name": "WarehouseBonus"
             }
           ]
+        },
+        {
+          "Name": "Accelerator",
+          "Factor": 250,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Bonus": [
+                {
+                  "Name": "AcceleratorCapBonus"
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
-      "StartCount": 20,
-      "Formula": "Count = (20 + ((c(Barn) * 10 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 5 * (1 + c(WarehouseBonus))) + (c(Harbour) * 25 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Mint) * 100 * (1 + c(WarehouseBonus)))))"
+      "StartCount": 10,
+      "Bonus": [
+        {
+          "Name": "Sky Palace",
+          "Factor": 0.01
+        },
+        {
+          "Name": "Sunforge",
+          "Factor": 0.01
+        }
+      ],
+      "Formula": "Count = (10 + (((c(Barn) * 10 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 5 * (1 + c(WarehouseBonus))) + (c(Harbour) * 25 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Mint) * 100 * (1 + c(WarehouseBonus))) + (c(Accelerator) * 250 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + (c(Sky Palace) * 0.01) + (c(Sunforge) * 0.01))))"
     },
     {
       "Name": "gold",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "Mint",
+          "Name": "Active Mint",
           "Factor": -0.025
         },
         {
@@ -1461,7 +1501,7 @@
         }
       ],
       "CapResource": "gold cap",
-      "Formula": "Count += (((c(Mint) * -0.025) + (c(Active Smelter) * 0.005 * c(Gold Ore)) + (c(geologist) * 0.004 * (c(Geodesy) * (1 + (c(Mining Drill) * 0.6) + (c(Unobtainium Drill) * 0.6))))) * seconds)"
+      "Formula": "Count += (((c(Active Mint) * -0.025) + (c(Active Smelter) * 0.005 * c(Gold Ore)) + (c(geologist) * 0.004 * (c(Geodesy) * (1 + (c(Mining Drill) * 0.6) + (c(Unobtainium Drill) * 0.6))))) * seconds)"
     },
     {
       "Name": "titanium cap",
@@ -1499,6 +1539,21 @@
           ]
         },
         {
+          "Name": "Accelerator",
+          "Factor": 750,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Bonus": [
+                {
+                  "Name": "AcceleratorCapBonus"
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        },
+        {
           "Name": "Moon Base",
           "Factor": 1250
         },
@@ -1507,15 +1562,15 @@
           "Factor": 7500
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + ((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 1250) + (c(Cryostation) * 7500)))"
+      "StartCount": 2,
+      "Formula": "Count = (2 + ((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Accelerator) * 750 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus)))) + (c(Moon Base) * 1250) + (c(Cryostation) * 7500)))"
     },
     {
       "Name": "titanium",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "Accelerator",
+          "Name": "Active Accelerator",
           "Factor": -0.075
         },
         {
@@ -1548,7 +1603,7 @@
         }
       ],
       "CapResource": "titanium cap",
-      "Formula": "Count += (((c(Accelerator) * -0.075) + (c(Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * seconds)"
+      "Formula": "Count += (((c(Active Accelerator) * -0.075) + (c(Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * seconds)"
     },
     {
       "Name": "oil cap",
@@ -1560,6 +1615,10 @@
           "Factor": 1500
         },
         {
+          "Name": "tanker",
+          "Factor": 500
+        },
+        {
           "Name": "Moon Base",
           "Factor": 3500
         },
@@ -1568,8 +1627,8 @@
           "Factor": 7500
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + ((c(Oil Well) * 1500) + (c(Moon Base) * 3500) + (c(Cryostation) * 7500)))"
+      "StartCount": 1500,
+      "Formula": "Count = (1500 + ((c(Oil Well) * 1500) + (c(tanker) * 500) + (c(Moon Base) * 3500) + (c(Cryostation) * 7500)))"
     },
     {
       "Name": "oil",
@@ -1643,19 +1702,19 @@
           "Factor": 5000
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + ((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000)))"
+      "StartCount": 250,
+      "Formula": "Count = (250 + ((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000)))"
     },
     {
       "Name": "uranium",
       "Type": "Resource",
       "Producers": [
         {
-          "Name": "Accelerator",
+          "Name": "Active Accelerator",
           "Factor": 0.0125
         },
         {
-          "Name": "Reactor",
+          "Name": "Active Reactor",
           "Factor": -0.005,
           "Bonus": [
             {
@@ -1669,7 +1728,13 @@
           "Factor": 0.0025,
           "Bonus": [
             {
-              "Name": "Orbital Geodesy"
+              "Name": "Orbital Geodesy",
+              "Bonus": [
+                {
+                  "Name": "Enriched Uranium",
+                  "Factor": 0.25
+                }
+              ]
             }
           ],
           "BonusStartsFromZero": true
@@ -1689,7 +1754,7 @@
         }
       ],
       "CapResource": "uranium cap",
-      "Formula": "Count += (((c(Accelerator) * 0.0125) + (c(Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * c(Orbital Geodesy)) + (c(Active Lunar Outpost) * -1.75) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters)))) * seconds)"
+      "Formula": "Count += (((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters)))) * seconds)"
     },
     {
       "Name": "unobtainium cap",
@@ -1705,8 +1770,14 @@
           "Factor": 750
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + ((c(Moon Base) * 150) + (c(Cryostation) * 750)))"
+      "StartCount": 150,
+      "Bonus": [
+        {
+          "Name": "Sunforge",
+          "Factor": 0.01
+        }
+      ],
+      "Formula": "Count = (150 + (((c(Moon Base) * 150) + (c(Cryostation) * 750)) * (1 + (c(Sunforge) * 0.01))))"
     },
     {
       "Name": "unobtainium",
@@ -1747,8 +1818,8 @@
           ]
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + (c(Containment Chamber) * 100 * (1 + (c(Heatsink) * 0.02))))"
+      "StartCount": 100,
+      "Formula": "Count = (100 + (c(Containment Chamber) * 100 * (1 + (c(Heatsink) * 0.02))))"
     },
     {
       "Name": "antimatter",
@@ -1756,11 +1827,11 @@
       "Producers": [
         {
           "Name": "Sunlifter",
-          "Factor": 0.0003125
+          "Factor": 0.00125
         }
       ],
       "CapResource": "antimatter cap",
-      "Formula": "Count += ((c(Sunlifter) * 0.000313) * seconds)"
+      "Formula": "Count += ((c(Sunlifter) * 0.00125) * seconds)"
     },
     {
       "Name": "relic",
@@ -1817,7 +1888,7 @@
         },
         {
           "Name": "Chronosphere",
-          "Factor": 0.0003125,
+          "Factor": 0.00125,
           "Bonus": [
             {
               "Name": "Chronosurge"
@@ -1826,7 +1897,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "Formula": "Count += (((0.004167 * (1 + (c(Temporal Accelerator) * 0.05))) + (c(Chronosphere) * 0.000313 * c(Chronosurge))) * seconds)"
+      "Formula": "Count += (((0.004167 * (1 + (c(Temporal Accelerator) * 0.05))) + (c(Chronosphere) * 0.00125 * c(Chronosurge))) * seconds)"
     },
     {
       "Name": "blackcoin",
@@ -2538,10 +2609,56 @@
       "Cap": -1
     },
     {
+      "Name": "Active Accelerator",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Accelerator",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Accelerator"
+        },
+        {
+          "Name": "Active Accelerator",
+          "Factor": -1
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Accelerator) + (c(Active Accelerator) * -1))"
+    },
+    {
       "Name": "Steamworks",
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
+    },
+    {
+      "Name": "Active Steamworks",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Steamworks",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Steamworks"
+        },
+        {
+          "Name": "Active Steamworks",
+          "Factor": -1
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Steamworks) + (c(Active Steamworks) * -1))"
     },
     {
       "Name": "Magneto",
@@ -2566,6 +2683,29 @@
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
+    },
+    {
+      "Name": "Active Reactor",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Reactor",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Reactor"
+        },
+        {
+          "Name": "Active Reactor",
+          "Factor": -1
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Reactor) + (c(Active Reactor) * -1))"
     },
     {
       "Name": "Amphitheatre",
@@ -2596,6 +2736,29 @@
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
+    },
+    {
+      "Name": "Active Mint",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Mint",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Mint"
+        },
+        {
+          "Name": "Active Mint",
+          "Factor": -1
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Mint) + (c(Active Mint) * -1))"
     },
     {
       "Name": "Brewery",
@@ -4770,7 +4933,7 @@
       "Cap": -1,
       "Producers": [
         {
-          "Name": "Reactor",
+          "Name": "Active Reactor",
           "Factor": -1.25,
           "Bonus": [
             {
@@ -4787,7 +4950,7 @@
         }
       ],
       "ProducerAction": "@thorium",
-      "Formula": "Count += ((c(Reactor) * -1.25 * (c(Thorium Reactors) * (1 + (c(Enriched Thorium) * 0.25)))) * seconds)"
+      "Formula": "Count += ((c(Active Reactor) * -1.25 * (c(Thorium Reactors) * (1 + (c(Enriched Thorium) * 0.25)))) * seconds)"
     },
     {
       "Name": "megalith",
@@ -5361,6 +5524,23 @@
       ]
     },
     {
+      "Name": "Active Accelerator",
+      "Type": "Building",
+      "UnlockedBy": "Accelerator",
+      "Costs": [
+        {
+          "Name": "Idle Accelerator",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Accelerator",
+          "Count": 1
+        }
+      ]
+    },
+    {
       "Name": "Steamworks",
       "Type": "Building",
       "UnlockedBy": "Machinery",
@@ -5384,6 +5564,23 @@
       "Adds": [
         {
           "Name": "Steamworks",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Active Steamworks",
+      "Type": "Building",
+      "UnlockedBy": "Steamworks",
+      "Costs": [
+        {
+          "Name": "Idle Steamworks",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Steamworks",
           "Count": 1
         }
       ]
@@ -5501,6 +5698,23 @@
       "Adds": [
         {
           "Name": "Reactor",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Active Reactor",
+      "Type": "Building",
+      "UnlockedBy": "Reactor",
+      "Costs": [
+        {
+          "Name": "Idle Reactor",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Reactor",
           "Count": 1
         }
       ]
@@ -5646,6 +5860,23 @@
       "Adds": [
         {
           "Name": "Mint",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Active Mint",
+      "Type": "Building",
+      "UnlockedBy": "Mint",
+      "Costs": [
+        {
+          "Name": "Idle Mint",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Mint",
           "Count": 1
         }
       ]
@@ -14231,7 +14462,7 @@
       ],
       "Producers": [
         {
-          "Name": "Reactor",
+          "Name": "Active Reactor",
           "Factor": -1.25,
           "Bonus": [
             {
