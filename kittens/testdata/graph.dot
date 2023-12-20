@@ -327,6 +327,7 @@ digraph {
   "Sun Altar" -> "faith cap" [color="green"];
   "priest" -> "faith" [color="green"];
   "Temple" -> "faith" [color="green"];
+  "Theology" -> "Temple" [color="green"];
   "Chapel" -> "faith" [color="green"];
   "faith cap" -> "faith" [color="limegreen"];
   "Solar Chant" -> "faith" [color="green"];

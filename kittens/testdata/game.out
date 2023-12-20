@@ -2217,7 +2217,7 @@
         },
         {
           "Name": "Temple",
-          "Factor": 50,
+          "Factor": 125,
           "Bonus": [
             {
               "Name": "Basilica"
@@ -2239,7 +2239,7 @@
           ]
         }
       ],
-      "Formula": "Count = (100 + (((c(Library) * 10) + (c(Academy) * 25) + (c(Amphitheatre) * 50) + (c(Chapel) * 200) + (c(Data Center) * 250 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 50 * c(Basilica))) * (1 + (c(Ziggurat) * 0.08 * (1 + (c(Unicorn Graveyard) * 0.125))))))"
+      "Formula": "Count = (100 + (((c(Library) * 10) + (c(Academy) * 25) + (c(Amphitheatre) * 50) + (c(Chapel) * 200) + (c(Data Center) * 250 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 125 * c(Basilica))) * (1 + (c(Ziggurat) * 0.08 * (1 + (c(Unicorn Graveyard) * 0.125))))))"
     },
     {
       "Name": "culture",
@@ -2258,18 +2258,17 @@
           "Factor": 0.5,
           "Bonus": [
             {
-              "Name": "Stained Glass",
-              "Factor": 0.5
+              "Name": "Stained Glass"
             },
             {
               "Name": "Basilica",
-              "Factor": 0.5
+              "Factor": 2
             }
           ]
         }
       ],
       "CapResource": "culture cap",
-      "Formula": "Count += (((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 0.5)))) * seconds)"
+      "Formula": "Count += (((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + c(Stained Glass) + (c(Basilica) * 2)))) * seconds)"
     },
     {
       "Name": "faith cap",
@@ -2311,7 +2310,13 @@
         },
         {
           "Name": "Temple",
-          "Factor": 0.0075
+          "Factor": 0.0075,
+          "Bonus": [
+            {
+              "Name": "Theology"
+            }
+          ],
+          "BonusStartsFromZero": true
         },
         {
           "Name": "Chapel",
@@ -2325,7 +2330,7 @@
         }
       ],
       "CapResource": "faith cap",
-      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075) + (c(Chapel) * 0.025)) * (1 + (c(Solar Chant) * 0.1))) * seconds)"
+      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075 * c(Theology)) + (c(Chapel) * 0.025)) * (1 + (c(Solar Chant) * 0.1))) * seconds)"
     },
     {
       "Name": "starchart",

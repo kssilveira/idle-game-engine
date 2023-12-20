@@ -873,7 +873,7 @@ func NewGame(now game.Now) *game.Game {
 				BonusStartsFromZero: true,
 			}},
 		}, {
-			Name: "Temple", Factor: 50,
+			Name: "Temple", Factor: 125,
 			Bonus:               []data.Resource{{Name: "Basilica"}},
 			BonusStartsFromZero: true,
 		}},
@@ -890,9 +890,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Temple", Factor: 0.1 * 5,
 			Bonus: []data.Resource{{
-				Name: "Stained Glass", Factor: 0.50,
+				Name: "Stained Glass",
 			}, {
-				Name: "Basilica", Factor: 0.50,
+				Name: "Basilica", Factor: 2.00,
 			}},
 		}},
 	}, {
@@ -909,6 +909,8 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "happiness"}},
 		}, {
 			Name: "Temple", Factor: 0.0015 * 5,
+			Bonus:               []data.Resource{{Name: "Theology"}},
+			BonusStartsFromZero: true,
 		}, {
 			Name: "Chapel", Factor: 0.005 * 5,
 		}},

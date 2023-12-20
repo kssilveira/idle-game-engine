@@ -91,7 +91,7 @@ More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/bonfire
-    - Culture
+    - Other
 
 - Factory
   - Space Manufacturing - Space Bonus +3.75
