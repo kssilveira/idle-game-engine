@@ -499,7 +499,7 @@ func (g *Game) timeSkip(skip time.Duration) {
 }
 
 func (g *Game) validateResource(r *data.Resource) error {
-	for _, name := range []string{r.Name, r.CapResource} {
+	for _, name := range []string{r.Name, r.CapResource, r.CostExponentBaseResource} {
 		if err := g.validateResourceName(name); err != nil {
 			return err
 		}
@@ -636,6 +636,9 @@ func (g *Game) GetActionIndex(name string) int {
 
 func (g *Game) getCost(a data.Action, c data.Resource) float64 {
 	base := c.CostExponentBase
+	if c.CostExponentBaseResource != "" {
+		base = g.GetResource(c.CostExponentBaseResource).Count
+	}
 	if base == 0 {
 		base = 1
 	}

@@ -348,6 +348,10 @@ digraph {
   "chronoheat" -> "Chrono Furnace" [color="red"];
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
   "Sun Altar" -> "Temple" [color="green"];
+  "HutCostExponentBase" -> "Ironwood Huts" [color="red"];
+  "HutCostExponentBase" -> "Concrete Huts" [color="red"];
+  "HutCostExponentBase" -> "Unobtainium Huts" [color="red"];
+  "HutCostExponentBase" -> "Eludium Huts" [color="red"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Accelerator" -> "Idle Accelerator" [color="green"];
@@ -385,6 +389,7 @@ digraph {
   "catnip" -> "Catnip Field" [color="orange"];
   "catnip" -> "Catnip Field" [color="blue"];
   "wood" -> "Hut" [color="orange"];
+  "HutCostExponentBase" -> "Hut" [color="orange"];
   "Hut" -> "kitten" [color="limegreen"];
   "Catnip Field" -> "Hut" [color="blue"];
   "wood" -> "Library" [color="orange"];
@@ -1602,6 +1607,7 @@ digraph {
   "karma" [shape="cylinder"];
   "paragon" [shape="cylinder"];
   "burned paragon" [shape="cylinder"];
+  "HutCostExponentBase" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
   "Library" [shape="box3d"];

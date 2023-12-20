@@ -2513,6 +2513,31 @@
       "Formula": "Count = (0.1 + ((c(all kittens) * -0.02) + ((1 if c(ivory) \u003e 0) * 0.1) + ((1 if c(fur) \u003e 0) * 0.1) + ((1 if c(spice) \u003e 0) * 0.1) + ((1 if c(unicorn) \u003e 0) * 0.1) + (c(Amphitheatre) * 0.048) + (c(Broadcast Tower) * 0.75) + (c(Temple) * 0.005 * c(Sun Altar))))"
     },
     {
+      "Name": "HutCostExponentBase",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Ironwood Huts",
+          "Factor": -0.5
+        },
+        {
+          "Name": "Concrete Huts",
+          "Factor": -0.3
+        },
+        {
+          "Name": "Unobtainium Huts",
+          "Factor": -0.25
+        },
+        {
+          "Name": "Eludium Huts",
+          "Factor": -0.1
+        }
+      ],
+      "StartCount": 2.5,
+      "Formula": "Count = (2.5 + ((c(Ironwood Huts) * -0.5) + (c(Concrete Huts) * -0.3) + (c(Unobtainium Huts) * -0.25) + (c(Eludium Huts) * -0.1)))"
+    },
+    {
       "Name": "Catnip Field",
       "Type": "Building",
       "IsHidden": true,
@@ -5103,7 +5128,7 @@
         {
           "Name": "wood",
           "Count": 5,
-          "CostExponentBase": 2.5
+          "CostExponentBaseResource": "HutCostExponentBase"
         }
       ],
       "Adds": [

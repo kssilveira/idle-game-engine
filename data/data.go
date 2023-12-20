@@ -34,11 +34,13 @@ type Resource struct {
 	ProductionOnGone bool       `json:",omitempty"`
 	OnGone           []Resource `json:",omitempty"`
 
-	// Cap = CapResource.Quantity
+	// Cap = CapResource.Count
 	CapResource string `json:",omitempty"`
 
-	// cost = Count * pow(CostExponentBase, add.Count)
+	// Cost = Count * pow(CostExponentBase, add.Count)
 	CostExponentBase float64 `json:",omitempty"`
+	// Cost = Count * pow(CostExponentBaseResource.Count, add.Count)
+	CostExponentBaseResource string `json:",omitempty"`
 
 	ProducerAction string `json:",omitempty"`
 

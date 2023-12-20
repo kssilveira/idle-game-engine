@@ -157,7 +157,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}})
 
-	g.AddResources(join([]data.Resource{{
+	g.AddResources([]data.Resource{{
 		Name: "catnip cap", Type: "Resource", IsHidden: true, StartCount: 5000,
 		Producers: []data.Resource{{
 			Name: "Barn", Factor: 5000,
@@ -979,7 +979,18 @@ func NewGame(now game.Now) *game.Game {
 			Bonus:               []data.Resource{{Name: "Sun Altar"}},
 			BonusStartsFromZero: true,
 		}},
-	}}))
+	}, {
+		Name: "HutCostExponentBase", Type: "Resource", IsHidden: true, StartCount: 2.5,
+		Producers: []data.Resource{{
+			Name: "Ironwood Huts", Factor: -0.5,
+		}, {
+			Name: "Concrete Huts", Factor: -0.3,
+		}, {
+			Name: "Unobtainium Huts", Factor: -0.25,
+		}, {
+			Name: "Eludium Huts", Factor: -0.1,
+		}},
+	}})
 
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Building", LockedBy: "Catnip Field",
@@ -1001,7 +1012,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "catnip", Count: 10, CostExponentBase: 1.12}},
 	}, {
 		Name: "Hut", UnlockedBy: "Catnip Field",
-		Costs: []data.Resource{{Name: "wood", Count: 5, CostExponentBase: 2.5}},
+		Costs: []data.Resource{{Name: "wood", Count: 5, CostExponentBaseResource: "HutCostExponentBase"}},
 		Adds:  []data.Resource{{Name: "kitten", Cap: 2}},
 	}, {
 		Name: "Library", UnlockedBy: "Catnip Field",
