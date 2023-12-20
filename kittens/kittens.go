@@ -340,6 +340,16 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Bio Lab", Factor: 0.01,
 				Bonus:               []data.Resource{{Name: "Uplink"}},
 				BonusStartsFromZero: true,
+			}, {
+				Name: "Observatory", Factor: 0.02,
+				Bonus: []data.Resource{{
+					Name: "Titanium Reflectors",
+				}, {
+					Name: "Unobtainium Reflectors",
+				}, {
+					Name: "Eludium Reflectors",
+				}},
+				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Temple", Factor: 500,
@@ -370,6 +380,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Bio Lab", Factor: 0.35,
 		}, {
 			Name: "Data Center", Factor: 0.10,
+			Bonus: []data.Resource{{
+				Name: "Bio Lab", Factor: 0.01,
+				Bonus:               []data.Resource{{Name: "Uplink"}},
+				BonusStartsFromZero: true,
+			}},
 		}, {
 			Name: "Space Station", Factor: 0.50,
 		}},

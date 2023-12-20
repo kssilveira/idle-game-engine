@@ -90,8 +90,7 @@ Edges:
 More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/bonfire
-    - Mega
+  - https://wiki.kittensgame.com/en/game-tabs/outpost
 
 - Tradepost
   - Trade +1.5%
@@ -100,6 +99,8 @@ More features from kittens game:
   - Space Manufacturing - Space Bonus +3.75
   - Factory Processing - Oil refinement +5%
   - Workshop Factory Processing - Kerosene Crafting +5%
+- AI Core
+  - Machine Learning - Data Center effectiveness +10% per AI Core
 - Steamworks Automation
 - Global Production
   - Magneto
@@ -107,7 +108,13 @@ More features from kittens game:
   - Reactor
 - Astronomical Events
 - Meteors
+- Reset
+  - Chronosphere
+    - Resource Preservation +1.5%
+    - Flux Condensator - Craftable Resource Preservation +1.5%
 - Energy
+  - Broadcast Tower Satellite Radio - Culture per Tick, Max Culture +0.5% per Satellite
 - Festivals
+- Compendium Cap
 - Kitten Exp
 - Iron Will
