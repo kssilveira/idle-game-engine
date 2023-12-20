@@ -744,9 +744,14 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "void", Type: "Resource", Cap: -1,
 	}, {
-		Name: "temporal flux", Type: "Resource", IsHidden: true, Cap: 1,
+		Name: "temporal flux cap", Type: "Resource", IsHidden: true, StartCount: 3000,
 		Producers: []data.Resource{{
-			Factor: 5. / (2 * 60 * 10),
+			Name: "Temporal Battery", Factor: 750,
+		}},
+	}, {
+		Name: "temporal flux", Type: "Resource", IsHidden: true, Cap: "temporal flux cap",
+		Producers: []data.Resource{{
+			Factor: 5. / (60 * 10),
 			Bonus:  []data.Resource{{Name: "Temporal Accelerator", Factor: 0.05}},
 		}, {
 			Name: "Chronosphere", Factor: 1. / (2 * 100 * 4),
@@ -912,7 +917,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "necrocorn", Type: "Resource", Cap: -1,
 	}, {
-		Name: "sorrow cap", Type: "Resource", IsHidden: true, StartCount: 1,
+		Name: "sorrow cap", Type: "Resource", IsHidden: true, StartCount: 16,
 		Producers: []data.Resource{{Name: "Black Core"}},
 	}, {
 		Name: "sorrow", Type: "Resource", CapResource: "sorrow cap",

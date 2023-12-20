@@ -85,6 +85,6 @@ Edges:
 More features from kittens game:
 
 - https://wiki.kittensgame.com/en/general-information/resources
-  - https://wiki.kittensgame.com/en/general-information/resources/wood
+  - https://wiki.kittensgame.com/en/general-information/resources/starchart
 - https://wiki.kittensgame.com/en/general-information/game-mechanics
 - https://wiki.kittensgame.com/en/home
