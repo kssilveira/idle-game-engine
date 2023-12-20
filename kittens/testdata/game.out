@@ -770,10 +770,25 @@
         {
           "Name": "Cryostation",
           "Factor": 200000
+        },
+        {
+          "Name": "Accelerator",
+          "Factor": 20000,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Bonus": [
+                {
+                  "Name": "AcceleratorCapBonus"
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartCount": 200,
-      "Formula": "Count = (200 + ((c(Barn) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 700 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 25000) + (c(Cryostation) * 200000)))"
+      "Formula": "Count = (200 + ((c(Barn) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 700 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 25000) + (c(Cryostation) * 200000) + (c(Accelerator) * 20000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
     },
     {
       "Name": "wood",
@@ -820,25 +835,25 @@
           "Bonus": [
             {
               "Name": "Reinforced Saw",
-              "Factor": 0.2
+              "Factor": 0.02
             },
             {
               "Name": "Steel Saw",
-              "Factor": 0.2
+              "Factor": 0.02
             },
             {
               "Name": "Titanium Saw",
-              "Factor": 0.15
+              "Factor": 0.015
             },
             {
               "Name": "Alloy Saw",
-              "Factor": 0.15
+              "Factor": 0.015
             }
           ]
         }
       ],
       "CapResource": "wood cap",
-      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25)) * (1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15))))) * seconds)"
+      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25)) * (1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.02) + (c(Steel Saw) * 0.02) + (c(Titanium Saw) * 0.015) + (c(Alloy Saw) * 0.015))))) * seconds)"
     },
     {
       "Name": "science cap",
@@ -1124,10 +1139,25 @@
         {
           "Name": "Cryostation",
           "Factor": 200000
+        },
+        {
+          "Name": "Accelerator",
+          "Factor": 25000,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Bonus": [
+                {
+                  "Name": "AcceleratorCapBonus"
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Barn) * 250 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 950 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 30000) + (c(Cryostation) * 200000)))"
+      "Formula": "Count = (250 + ((c(Barn) * 250 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 950 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 30000) + (c(Cryostation) * 200000) + (c(Accelerator) * 25000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
     },
     {
       "Name": "mineral",
@@ -1213,10 +1243,25 @@
         {
           "Name": "Cryostation",
           "Factor": 50000
+        },
+        {
+          "Name": "Accelerator",
+          "Factor": 7500,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Bonus": [
+                {
+                  "Name": "AcceleratorCapBonus"
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartCount": 50,
-      "Formula": "Count = (50 + ((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000) + (c(Cryostation) * 50000)))"
+      "Formula": "Count = (50 + ((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000) + (c(Cryostation) * 50000) + (c(Accelerator) * 7500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
     },
     {
       "Name": "iron",
@@ -1309,10 +1354,25 @@
         {
           "Name": "Cryostation",
           "Factor": 25000
+        },
+        {
+          "Name": "Accelerator",
+          "Factor": 2500,
+          "Bonus": [
+            {
+              "Name": "Energy Rifts",
+              "Bonus": [
+                {
+                  "Name": "AcceleratorCapBonus"
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "StartCount": 60,
-      "Formula": "Count = (60 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000)))"
+      "Formula": "Count = (60 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000) + (c(Accelerator) * 2500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
     },
     {
       "Name": "coal",

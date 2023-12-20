@@ -4124,7 +4124,7 @@ last action: max Lumber Mill
 [Calendar] Summer 1 (1 if 11913.39 % 4 == 1)
 [Calendar] day_of_year 140 (1 + 1191339 % 400)
 [Resource] catnip 55000/55000 60.48/s
-[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] wood 9507.50/9507.50 0.55/s
 [Resource] science 27002.22/29500 2.22/s 18m43s to cap
 [Resource] catpower 475/475 0.45/s
 [Resource] mineral 12235/12235 1.40/s
@@ -4132,9 +4132,9 @@ last action: max Lumber Mill
 [Resource] unicorn 114092.31 0.06/s
 X: [*] [Building] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Building] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
-X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)
-X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 1h46m40s) +(Barn 1)
-X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 15m8s) +(Mine 1)
+X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 20m35s) +(Library 1)
+X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 2h0m28s) +(Barn 1)
+X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 17m6s) +(Mine 1)
 X: [*] [Building] Workshop (25) -(wood 3291.90, mineral 12235/13167.58* 11m6s) +(Workshop 1)
 X: [*] [Building] Smelter (30) -(mineral 12235/13242.35* 11m59s) +(Smelter 1)
 X: [Building] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
@@ -4144,7 +4144,7 @@ X: [*] [Building] Academy (37) -(wood 8806.23, mineral 12235/12328.72* 1m6s, sci
 X: [Building] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (mineral 750)) +(Warehouse 1)
 X: [Building] Log House -(wood 200, mineral 250) +(Log House 1, kitten cap 1)
 X: [*] [Building] Lumber Mill (27) -(wood 4353.53, iron 1026.35/2176.77* 3h11m44s, mineral 10883.83) +(Lumber Mill 1)
-X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 11h26m20s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 1026.35/5000 11h2m16s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 27h8m39s)), blueprint 0/1) +(Ziggurat 1)
+X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 12h55m12s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 1026.35/5000 11h2m16s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 30h39m30s)), blueprint 0/1) +(Ziggurat 1)
 X: [*] [Job] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [*] [Job] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
@@ -4156,14 +4156,14 @@ X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.50, blueprint 0.10, spice 8.75)
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
-X: [*] [Tech] Titanium Barns -(science 27002.22/60000* 4h7m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 27002.22/60000* 4h7m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 172h34m1s))) +(Titanium Barns 1)
 last action: skip Reinforced Saw
 ###
 [Calendar] year 2979.35 (1 + 2978.35)
 [Calendar] Summer 1 (1 if 11913.40 % 4 == 1)
 [Calendar] day_of_year 141 (1 + 1191340 % 400)
 [Resource] catnip 55000/55000 60.48/s
-[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] wood 9507.50/9507.50 0.55/s
 [Resource] science 25504.44/29500 2.22/s 29m57s to cap
 [Resource] catpower 475/475 0.45/s
 [Resource] mineral 12235/12235 1.40/s
@@ -4171,9 +4171,9 @@ last action: skip Reinforced Saw
 [Resource] unicorn 114092.36 0.06/s
 X: [*] [Building] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Building] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
-X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)
-X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 1h46m40s) +(Barn 1)
-X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 15m8s) +(Mine 1)
+X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 20m35s) +(Library 1)
+X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 2h0m28s) +(Barn 1)
+X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 17m6s) +(Mine 1)
 X: [*] [Building] Workshop (25) -(wood 3291.90, mineral 12235/13167.58* 11m6s) +(Workshop 1)
 X: [*] [Building] Smelter (30) -(mineral 12235/13242.35* 11m59s) +(Smelter 1)
 X: [Building] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
@@ -4184,7 +4184,7 @@ X: [Building] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minera
 X: [Building] Log House -(wood 200, mineral 250) +(Log House 1, kitten cap 1)
 X: [Building] Aqueduct -(mineral 75) +(Aqueduct 1)
 X: [*] [Building] Lumber Mill (27) -(wood 4353.53, iron 1026.45/2176.77* 3h11m43s, mineral 10883.83) +(Lumber Mill 1)
-X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 11h26m20s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 1026.45/5000 11h2m15s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 27h8m39s)), blueprint 0/1) +(Ziggurat 1)
+X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 12h55m12s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 1026.45/5000 11h2m15s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 30h39m30s)), blueprint 0/1) +(Ziggurat 1)
 X: [*] [Job] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [*] [Job] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
@@ -4196,14 +4196,14 @@ X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.50, blueprint 0.10, spice 8.75)
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Writing -(science 3600) +(Writing 1)
-X: [*] [Tech] Titanium Barns -(science 25504.44/60000* 4h18m41s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 25504.44/60000* 4h18m41s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 172h34m1s))) +(Titanium Barns 1)
 last action: skip Engineering
 ###
 [Calendar] year 3070.36 (1 + 3069.36)
 [Calendar] Summer 1 (1 if 12277.45 % 4 == 1)
 [Calendar] day_of_year 146 (1 + 1227745 % 400)
 [Resource] catnip 55000/55000 142.12/s
-[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] wood 9507.50/9507.50 0.55/s
 [Resource] science 29500/29500 2.22/s
 [Resource] catpower 475/475 0.45/s
 [Resource] mineral 12235/12235 1.40/s
@@ -4211,9 +4211,9 @@ last action: skip Engineering
 [Resource] unicorn 118096.91 0.06/s
 X: [*] [Building] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Building] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
-X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)
-X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 1h46m40s) +(Barn 1)
-X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 15m8s) +(Mine 1)
+X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 20m35s) +(Library 1)
+X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 2h0m28s) +(Barn 1)
+X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 17m6s) +(Mine 1)
 X: [*] [Building] Workshop (25) -(wood 3291.90, mineral 12235/13167.58* 11m6s) +(Workshop 1)
 X: [*] [Building] Smelter (30) -(mineral 12235/13242.35* 11m59s) +(Smelter 1)
 X: [Building] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
@@ -4224,7 +4224,7 @@ X: [Building] Warehouse (11) -(beam 1.10/6.98 (wood 525), slab 1.90/9.30 (minera
 X: [Building] Log House -(wood 200, mineral 250) +(Log House 1, kitten cap 1)
 X: [*] [Building] Aqueduct (45) -(mineral 12235/12299.07* 45s) +(Aqueduct 1)
 X: [*] [Building] Lumber Mill (27) -(wood 4353.53, iron 2026.25/2176.77* 25m5s, mineral 10883.83) +(Lumber Mill 1)
-X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 11h26m20s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 2026.25/5000 8h15m37s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 27h8m39s)), blueprint 0/1) +(Ziggurat 1)
+X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 12h55m12s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 2026.25/5000 8h15m37s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 30h39m30s)), blueprint 0/1) +(Ziggurat 1)
 X: [*] [Job] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [*] [Job] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
@@ -4236,14 +4236,14 @@ X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.50, blueprint 0.10, spice 8.75)
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Writing -(science 3600) +(Writing 1)
-X: [*] [Tech] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 29500/60000* 3h48m43s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 172h34m1s))) +(Titanium Barns 1)
 last action: max Aqueduct
 ###
 [Calendar] year 3070.36 (1 + 3069.36)
 [Calendar] Summer 1 (1 if 12277.45 % 4 == 1)
 [Calendar] day_of_year 146 (1 + 1227745 % 400)
 [Resource] catnip 55000/55000 142.12/s
-[Resource] wood 9507.50/9507.50 0.62/s
+[Resource] wood 9507.50/9507.50 0.55/s
 [Resource] science 27302.22/29500 2.22/s 16m28s to cap
 [Resource] catpower 475/475 0.45/s
 [Resource] mineral 12235/12235 1.40/s
@@ -4251,9 +4251,9 @@ last action: max Aqueduct
 [Resource] unicorn 118096.97 0.06/s
 X: [*] [Building] Catnip Field (76) -(catnip 55000/55026.23*) +(Catnip Field 1)
 X: [Building] Hut (5) -(wood 488.28) +(Hut 1, kitten cap 2)
-X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 18m13s) +(Library 1)
-X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 1h46m40s) +(Barn 1)
-X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 15m8s) +(Mine 1)
+X: [*] [Building] Library (43) -(wood 9507.50/10184.67* 20m35s) +(Library 1)
+X: [*] [Building] Barn (10) -(wood 9507.50/13469.47* 2h0m28s) +(Barn 1)
+X: [*] [Building] Mine (33) -(wood 9507.50/10069.98* 17m6s) +(Mine 1)
 X: [*] [Building] Workshop (25) -(wood 3291.90, mineral 12235/13167.58* 11m6s) +(Workshop 1)
 X: [*] [Building] Smelter (30) -(mineral 12235/13242.35* 11m59s) +(Smelter 1)
 X: [Building] Active Smelter (1) -(Idle Smelter 1) +(Active Smelter 1)
@@ -4265,7 +4265,7 @@ X: [Building] Log House -(wood 200, mineral 250) +(Log House 1, kitten cap 1)
 X: [*] [Building] Aqueduct (45) -(mineral 12235/12299.07* 45s) +(Aqueduct 1)
 X: [*] [Building] Lumber Mill (27) -(wood 4353.53, iron 2026.25/2176.77* 25m5s, mineral 10883.83) +(Lumber Mill 1)
 X: [Building] Tradepost -(wood 500, mineral 200, gold 0/10) +(Tradepost 1)
-X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 11h26m20s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 2026.25/5000 8h15m37s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 27h8m39s)), blueprint 0/1) +(Ziggurat 1)
+X: [Building] Ziggurat -(megalith 0/50 (beam 1.10/500 (wood 9507.50/35000 12h55m12s), slab 1.90/1000 (mineral 12235/100000 17h24m49s), plate 0/100 (iron 2026.25/5000 8h15m37s)), scaffold 0/50 (beam 1.10/1000 (wood 9507.50/70000 30h39m30s)), blueprint 0/1) +(Ziggurat 1)
 X: [*] [Job] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [*] [Job] farmer (5) -(kitten 0/1* 20s) +(farmer 1)
@@ -4276,6 +4276,6 @@ X: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, beam 1.50
 X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 1.25, manuscript 0.60, compendium 0.10, blueprint 0.10, spice 8.75)
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.50, blueprint 0.10, spice 8.75)
 X: [Tech] Writing -(science 3600) +(Writing 1)
-X: [*] [Tech] Titanium Barns -(science 27302.22/60000* 4h5m12s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 152h47m13s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 27302.22/60000* 4h5m12s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.10/5000 (wood 9507.50/350000 172h34m1s))) +(Titanium Barns 1)
 X: [Tech] Gold Ore -(science 1000, mineral 800, iron 100) +(Gold Ore 1)
 last action: skip Currency

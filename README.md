@@ -91,7 +91,7 @@ More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/bonfire
-    - Resources
+    - Industry
 
 - Academy
   - Kitten Exp +5%
@@ -101,3 +101,5 @@ More features from kittens game:
   - Automatic Event Observation Chance +1%
   - Chronomancy - Astronomical Event Chance x1.1
   - Astromancy - Astronomical Event Chance, Auto Event Observation Chance x2
+- Iron Will
+- energy

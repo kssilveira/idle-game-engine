@@ -258,6 +258,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Moon Base", Factor: 25000,
 		}, {
 			Name: "Cryostation", Factor: 200000,
+		}, {
+			Name: "Accelerator", Factor: 20000,
+			Bonus: []data.Resource{{
+				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "wood", Type: "Resource", CapResource: "wood cap",
@@ -282,13 +288,13 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Name: "Lumber Mill", Factor: 0.10,
 			Bonus: []data.Resource{{
-				Name: "Reinforced Saw", Factor: 0.20,
+				Name: "Reinforced Saw", Factor: 0.02,
 			}, {
-				Name: "Steel Saw", Factor: 0.20,
+				Name: "Steel Saw", Factor: 0.02,
 			}, {
-				Name: "Titanium Saw", Factor: 0.15,
+				Name: "Titanium Saw", Factor: 0.015,
 			}, {
-				Name: "Alloy Saw", Factor: 0.15,
+				Name: "Alloy Saw", Factor: 0.015,
 			}},
 		}},
 	}, {
@@ -425,6 +431,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Moon Base", Factor: 30000,
 		}, {
 			Name: "Cryostation", Factor: 200000,
+		}, {
+			Name: "Accelerator", Factor: 25000,
+			Bonus: []data.Resource{{
+				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "mineral", Type: "Resource", CapResource: "mineral cap",
@@ -471,6 +483,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Moon Base", Factor: 9000,
 		}, {
 			Name: "Cryostation", Factor: 50000,
+		}, {
+			Name: "Accelerator", Factor: 7500,
+			Bonus: []data.Resource{{
+				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "iron", Type: "Resource", CapResource: "iron cap",
@@ -512,6 +530,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Moon Base", Factor: 3500,
 		}, {
 			Name: "Cryostation", Factor: 25000,
+		}, {
+			Name: "Accelerator", Factor: 2500,
+			Bonus: []data.Resource{{
+				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "coal", Type: "Resource", CapResource: "coal cap",

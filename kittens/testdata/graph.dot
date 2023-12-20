@@ -109,6 +109,7 @@ digraph {
   "WarehouseBonus" -> "Harbour" [color="green"];
   "Moon Base" -> "wood cap" [color="green"];
   "Cryostation" -> "wood cap" [color="green"];
+  "Accelerator" -> "wood cap" [color="green"];
   "woodcutter" -> "wood" [color="green"];
   "Mineral Axe" -> "woodcutter" [color="green"];
   "Iron Axe" -> "woodcutter" [color="green"];
@@ -163,6 +164,7 @@ digraph {
   "Harbour" -> "mineral cap" [color="green"];
   "Moon Base" -> "mineral cap" [color="green"];
   "Cryostation" -> "mineral cap" [color="green"];
+  "Accelerator" -> "mineral cap" [color="green"];
   "miner" -> "mineral" [color="green"];
   "Mine" -> "miner" [color="green"];
   "Quarry" -> "miner" [color="green"];
@@ -174,6 +176,7 @@ digraph {
   "Harbour" -> "iron cap" [color="green"];
   "Moon Base" -> "iron cap" [color="green"];
   "Cryostation" -> "iron cap" [color="green"];
+  "Accelerator" -> "iron cap" [color="green"];
   "Active Smelter" -> "iron" [color="green"];
   "Electrolytic Smelting" -> "Active Smelter" [color="green"];
   "Active Calciner" -> "iron" [color="green"];
@@ -189,6 +192,7 @@ digraph {
   "Barges" -> "Harbour" [color="green"];
   "Moon Base" -> "coal cap" [color="green"];
   "Cryostation" -> "coal cap" [color="green"];
+  "Accelerator" -> "coal cap" [color="green"];
   "geologist" -> "coal" [color="green"];
   "Geodesy" -> "geologist" [color="green"];
   "Mining Drill" -> "geologist" [color="green"];
