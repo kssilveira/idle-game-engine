@@ -964,9 +964,9 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Building", LockedBy: "Catnip Field",
-		Adds: []data.Resource{{Name: "catnip", Count: 1}},
+		Adds: []data.Resource{{Name: "catnip", Count: 10}},
 	}, {
-		Name: "Refine catnip", Type: "Building", UnlockedBy: "catnip", LockedBy: "woodcutter",
+		Name: "Refine catnip", Type: "Building", UnlockedBy: "Gather catnip", LockedBy: "woodcutter",
 		Costs: []data.Resource{{
 			Name: "catnip", Count: 100,
 			Bonus: []data.Resource{{Name: "Catnip Enrichment", Factor: -0.50}},
@@ -978,14 +978,14 @@ func NewGame(now game.Now) *game.Game {
 	}})
 
 	addBuildings(g, []data.Action{{
-		Name: "Catnip Field", UnlockedBy: "catnip",
+		Name: "Catnip Field", UnlockedBy: "Gather catnip",
 		Costs: []data.Resource{{Name: "catnip", Count: 10, CostExponentBase: 1.12}},
 	}, {
-		Name: "Hut", UnlockedBy: "wood",
+		Name: "Hut", UnlockedBy: "Catnip Field",
 		Costs: []data.Resource{{Name: "wood", Count: 5, CostExponentBase: 2.5}},
 		Adds:  []data.Resource{{Name: "kitten", Cap: 2}},
 	}, {
-		Name: "Library", UnlockedBy: "wood",
+		Name: "Library", UnlockedBy: "Catnip Field",
 		Costs: []data.Resource{{Name: "wood", Count: 25, CostExponentBase: 1.15}},
 	}, {
 		Name: "Barn", UnlockedBy: "Agriculture",
@@ -1274,7 +1274,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "titanium", Count: 75, CostExponentBase: 1.18,
 		}},
 	}, {
-		Name: "Unicorn Tomb", UnlockedBy: "tear",
+		Name: "Unicorn Tomb", UnlockedBy: "Ziggurat",
 		Costs: []data.Resource{{
 			Name: "tear", Count: 5, CostExponentBase: 1.15,
 		}, {
@@ -1362,76 +1362,76 @@ func NewGame(now game.Now) *game.Game {
 			Name: "unobtainium", Count: 5000, CostExponentBase: 1.15,
 		}},
 	}, {
-		Name: "Solar Chant", UnlockedBy: "faith",
+		Name: "Solar Chant", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{Name: "faith", Count: 100, CostExponentBase: 2.5}},
 	}, {
-		Name: "Scholasticism", UnlockedBy: "faith",
+		Name: "Scholasticism", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{Name: "faith", Count: 250, CostExponentBase: 2.5}},
 	}, {
-		Name: "Golden Spire", UnlockedBy: "faith",
+		Name: "Golden Spire", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "faith", Count: 350, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 150, CostExponentBase: 2.5,
 		}},
 	}, {
-		Name: "Sun Altar", UnlockedBy: "faith",
+		Name: "Sun Altar", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "faith", Count: 500, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 250, CostExponentBase: 2.5,
 		}},
 	}, {
-		Name: "Stained Glass", UnlockedBy: "faith",
+		Name: "Stained Glass", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "faith", Count: 500, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 250, CostExponentBase: 2.5,
 		}},
 	}, {
-		Name: "Basilica", UnlockedBy: "faith",
+		Name: "Basilica", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "faith", Count: 1250, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 750, CostExponentBase: 2.5,
 		}},
 	}, {
-		Name: "Templars", UnlockedBy: "faith",
+		Name: "Templars", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "faith", Count: 3500, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 3000, CostExponentBase: 2.5,
 		}},
 	}, {
-		Name: "Black Obelisk", UnlockedBy: "relic",
+		Name: "Black Obelisk", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{Name: "relic", Count: 100, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Nexus", UnlockedBy: "relic",
+		Name: "Black Nexus", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{Name: "relic", Count: 5000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Core", UnlockedBy: "relic",
+		Name: "Black Core", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{Name: "relic", Count: 10000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Event Horizon", UnlockedBy: "relic",
+		Name: "Event Horizon", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{Name: "relic", Count: 25000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Library", UnlockedBy: "relic",
+		Name: "Black Library", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{Name: "relic", Count: 30000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Radiance", UnlockedBy: "relic",
+		Name: "Black Radiance", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{Name: "relic", Count: 37500, CostExponentBase: 1.15}},
 	}, {
-		Name: "Blazar", UnlockedBy: "relic",
+		Name: "Blazar", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{Name: "relic", Count: 50000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Dark Nova", UnlockedBy: "relic",
+		Name: "Dark Nova", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{
 			Name: "relic", Count: 75000, CostExponentBase: 1.15,
 		}, {
 			Name: "void", Count: 7500, CostExponentBase: 1.15,
 		}},
 	}, {
-		Name: "Mausoleum", UnlockedBy: "relic",
+		Name: "Mausoleum", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{
 			Name: "relic", Count: 50000, CostExponentBase: 1.15,
 		}, {
@@ -1440,7 +1440,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "necrocorn", Count: 10, CostExponentBase: 1.15,
 		}},
 	}, {
-		Name: "Holy Genocide", UnlockedBy: "relic",
+		Name: "Holy Genocide", UnlockedBy: "Cryptotheology",
 		Costs: []data.Resource{{
 			Name: "relic", Count: 100000, CostExponentBase: 1.15,
 		}, {
@@ -1676,7 +1676,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "uranium", Count: 5000000, CostExponentBase: 1.25,
 		}},
 	}, {
-		Name: "Hash Level", UnlockedBy: "hash",
+		Name: "Hash Level", UnlockedBy: "Entanglement Station",
 		Costs: []data.Resource{{Name: "hash", Count: 1600, CostExponentBase: 1.6}},
 	}, {
 		Name: "Temporal Battery", UnlockedBy: "Chronoforge",
@@ -1847,7 +1847,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "spice", Count: 8.75,
 		}},
 	}, {
-		Name: "Nagas", Type: "Trade", UnlockedBy: "culture",
+		Name: "Nagas", Type: "Trade", UnlockedBy: "Writing",
 		Costs: []data.Resource{{
 			Name: "catpower", Count: 50,
 		}, {
@@ -1869,7 +1869,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "spice", Count: 8.75,
 		}},
 	}, {
-		Name: "Zebras", Type: "Trade", UnlockedBy: "ship",
+		Name: "Zebras", Type: "Trade", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
 			Name: "catpower", Count: 50,
 		}, {
@@ -1892,7 +1892,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "spice", Count: 8.75,
 		}},
 	}, {
-		Name: "Spiders", Type: "Trade", UnlockedBy: "ship",
+		Name: "Spiders", Type: "Trade", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
 			Name: "catpower", Count: 50,
 		}, {
@@ -1964,7 +1964,7 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
-		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "alicorn",
+		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "Ziggurat",
 		Costs: []data.Resource{{Name: "alicorn", Count: 25}},
 		Adds: []data.Resource{{
 			Name: "time crystal", Count: 1,
@@ -1979,7 +1979,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "tear", Count: 10000}},
 		Adds:  []data.Resource{{Name: "sorrow", Count: 1}},
 	}, {
-		Name: "Refine Time Crystals", Type: "Craft", UnlockedBy: "time crystal",
+		Name: "Refine Time Crystals", Type: "Craft", UnlockedBy: "Ziggurat",
 		Costs: []data.Resource{{Name: "time crystal", Count: 25}},
 		Adds: []data.Resource{{
 			Name: "relic", Count: 1,
@@ -1991,7 +1991,7 @@ func NewGame(now game.Now) *game.Game {
 	}})
 
 	g.AddActions([]data.Action{{
-		Name: "Combust time crystal", Type: "Craft", UnlockedBy: "time crystal",
+		Name: "Combust time crystal", Type: "Craft", UnlockedBy: "Ziggurat",
 		Costs: []data.Resource{{Name: "time crystal", Count: 1}},
 		Adds: []data.Resource{{
 			Name: "day", Count: 400,

@@ -4970,14 +4970,14 @@
       "Adds": [
         {
           "Name": "catnip",
-          "Count": 1
+          "Count": 10
         }
       ]
     },
     {
       "Name": "Refine catnip",
       "Type": "Building",
-      "UnlockedBy": "catnip",
+      "UnlockedBy": "Gather catnip",
       "LockedBy": "woodcutter",
       "Costs": [
         {
@@ -5007,7 +5007,7 @@
     {
       "Name": "Catnip Field",
       "Type": "Building",
-      "UnlockedBy": "catnip",
+      "UnlockedBy": "Gather catnip",
       "Costs": [
         {
           "Name": "catnip",
@@ -5025,7 +5025,7 @@
     {
       "Name": "Hut",
       "Type": "Building",
-      "UnlockedBy": "wood",
+      "UnlockedBy": "Catnip Field",
       "Costs": [
         {
           "Name": "wood",
@@ -5047,7 +5047,7 @@
     {
       "Name": "Library",
       "Type": "Building",
-      "UnlockedBy": "wood",
+      "UnlockedBy": "Catnip Field",
       "Costs": [
         {
           "Name": "wood",
@@ -6091,7 +6091,7 @@
     {
       "Name": "Unicorn Tomb",
       "Type": "Building",
-      "UnlockedBy": "tear",
+      "UnlockedBy": "Ziggurat",
       "Costs": [
         {
           "Name": "tear",
@@ -6366,7 +6366,7 @@
     {
       "Name": "Solar Chant",
       "Type": "Building",
-      "UnlockedBy": "faith",
+      "UnlockedBy": "Philosophy",
       "Costs": [
         {
           "Name": "faith",
@@ -6384,7 +6384,7 @@
     {
       "Name": "Scholasticism",
       "Type": "Building",
-      "UnlockedBy": "faith",
+      "UnlockedBy": "Philosophy",
       "Costs": [
         {
           "Name": "faith",
@@ -6402,7 +6402,7 @@
     {
       "Name": "Golden Spire",
       "Type": "Building",
-      "UnlockedBy": "faith",
+      "UnlockedBy": "Philosophy",
       "Costs": [
         {
           "Name": "faith",
@@ -6425,7 +6425,7 @@
     {
       "Name": "Sun Altar",
       "Type": "Building",
-      "UnlockedBy": "faith",
+      "UnlockedBy": "Philosophy",
       "Costs": [
         {
           "Name": "faith",
@@ -6448,7 +6448,7 @@
     {
       "Name": "Stained Glass",
       "Type": "Building",
-      "UnlockedBy": "faith",
+      "UnlockedBy": "Philosophy",
       "Costs": [
         {
           "Name": "faith",
@@ -6471,7 +6471,7 @@
     {
       "Name": "Basilica",
       "Type": "Building",
-      "UnlockedBy": "faith",
+      "UnlockedBy": "Philosophy",
       "Costs": [
         {
           "Name": "faith",
@@ -6494,7 +6494,7 @@
     {
       "Name": "Templars",
       "Type": "Building",
-      "UnlockedBy": "faith",
+      "UnlockedBy": "Philosophy",
       "Costs": [
         {
           "Name": "faith",
@@ -6517,7 +6517,7 @@
     {
       "Name": "Black Obelisk",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6535,7 +6535,7 @@
     {
       "Name": "Black Nexus",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6553,7 +6553,7 @@
     {
       "Name": "Black Core",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6571,7 +6571,7 @@
     {
       "Name": "Event Horizon",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6589,7 +6589,7 @@
     {
       "Name": "Black Library",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6607,7 +6607,7 @@
     {
       "Name": "Black Radiance",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6625,7 +6625,7 @@
     {
       "Name": "Blazar",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6643,7 +6643,7 @@
     {
       "Name": "Dark Nova",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6666,7 +6666,7 @@
     {
       "Name": "Mausoleum",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -6694,7 +6694,7 @@
     {
       "Name": "Holy Genocide",
       "Type": "Building",
-      "UnlockedBy": "relic",
+      "UnlockedBy": "Cryptotheology",
       "Costs": [
         {
           "Name": "relic",
@@ -7449,7 +7449,7 @@
     {
       "Name": "Hash Level",
       "Type": "Building",
-      "UnlockedBy": "hash",
+      "UnlockedBy": "Entanglement Station",
       "Costs": [
         {
           "Name": "hash",
@@ -8031,7 +8031,7 @@
     {
       "Name": "Nagas",
       "Type": "Trade",
-      "UnlockedBy": "culture",
+      "UnlockedBy": "Writing",
       "Costs": [
         {
           "Name": "catpower",
@@ -8076,7 +8076,7 @@
     {
       "Name": "Zebras",
       "Type": "Trade",
-      "UnlockedBy": "ship",
+      "UnlockedBy": "Navigation",
       "Costs": [
         {
           "Name": "catpower",
@@ -8127,7 +8127,7 @@
     {
       "Name": "Spiders",
       "Type": "Trade",
-      "UnlockedBy": "ship",
+      "UnlockedBy": "Navigation",
       "Costs": [
         {
           "Name": "catpower",
@@ -8293,7 +8293,7 @@
     {
       "Name": "Sacrifice Alicorns",
       "Type": "Craft",
-      "UnlockedBy": "alicorn",
+      "UnlockedBy": "Ziggurat",
       "Costs": [
         {
           "Name": "alicorn",
@@ -8337,7 +8337,7 @@
     {
       "Name": "Refine Time Crystals",
       "Type": "Craft",
-      "UnlockedBy": "time crystal",
+      "UnlockedBy": "Ziggurat",
       "Costs": [
         {
           "Name": "time crystal",
@@ -8364,7 +8364,7 @@
     {
       "Name": "Combust time crystal",
       "Type": "Craft",
-      "UnlockedBy": "time crystal",
+      "UnlockedBy": "Ziggurat",
       "Costs": [
         {
           "Name": "time crystal",

@@ -16,6 +16,7 @@ Game engine for idle games like kittens game.
 - [solve.out](kittens/testdata/solve.out) text UI output for solution to kittens game
 - [graph.go](kittens/graph/graph.go) generate graph of kittens game dependencies
 - [graph.svg](kittens/testdata/graph.svg) graph of kittens game dependencies
+- [graph_blue.svg](kittens/testdata/graph_blue.svg) graph of kittens game unlocks
 
 ## Special Actions
 
@@ -70,9 +71,13 @@ Faster solution:
 
 ## Kittens
 
-Graph of current features:
+Graph of features:
 
 ![graph](kittens/testdata/graph.svg)
+
+Graph of unlocks:
+
+![graph](kittens/testdata/graph_blue.svg)
 
 Nodes:
 
