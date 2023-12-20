@@ -371,14 +371,14 @@ digraph {
   "Catnip Enrichment" -> "catnip" [color="green"];
   "Refine catnip" -> "wood" [color="limegreen"];
   "Bio Lab" -> "wood" [color="green"];
-  "catnip" -> "Refine catnip" [color="blue"];
+  "Gather catnip" -> "Refine catnip" [color="blue"];
   "catnip" -> "Catnip Field" [color="orange"];
-  "catnip" -> "Catnip Field" [color="blue"];
+  "Gather catnip" -> "Catnip Field" [color="blue"];
   "wood" -> "Hut" [color="orange"];
   "Hut" -> "kitten" [color="limegreen"];
-  "wood" -> "Hut" [color="blue"];
+  "Catnip Field" -> "Hut" [color="blue"];
   "wood" -> "Library" [color="orange"];
-  "wood" -> "Library" [color="blue"];
+  "Catnip Field" -> "Library" [color="blue"];
   "wood" -> "Barn" [color="orange"];
   "Agriculture" -> "Barn" [color="blue"];
   "wood" -> "Mine" [color="orange"];
@@ -517,7 +517,7 @@ digraph {
   "Electronics" -> "Broadcast Tower" [color="blue"];
   "tear" -> "Unicorn Tomb" [color="orange"];
   "ivory" -> "Unicorn Tomb" [color="orange"];
-  "tear" -> "Unicorn Tomb" [color="blue"];
+  "Ziggurat" -> "Unicorn Tomb" [color="blue"];
   "tear" -> "Ivory Tower" [color="orange"];
   "ivory" -> "Ivory Tower" [color="orange"];
   "Unicorn Tomb" -> "Ivory Tower" [color="blue"];
@@ -555,48 +555,48 @@ digraph {
   "unobtainium" -> "Black Pyramid" [color="orange"];
   "Megalomania" -> "Black Pyramid" [color="blue"];
   "faith" -> "Solar Chant" [color="orange"];
-  "faith" -> "Solar Chant" [color="blue"];
+  "Philosophy" -> "Solar Chant" [color="blue"];
   "faith" -> "Scholasticism" [color="orange"];
-  "faith" -> "Scholasticism" [color="blue"];
+  "Philosophy" -> "Scholasticism" [color="blue"];
   "faith" -> "Golden Spire" [color="orange"];
   "gold" -> "Golden Spire" [color="orange"];
-  "faith" -> "Golden Spire" [color="blue"];
+  "Philosophy" -> "Golden Spire" [color="blue"];
   "faith" -> "Sun Altar" [color="orange"];
   "gold" -> "Sun Altar" [color="orange"];
-  "faith" -> "Sun Altar" [color="blue"];
+  "Philosophy" -> "Sun Altar" [color="blue"];
   "faith" -> "Stained Glass" [color="orange"];
   "gold" -> "Stained Glass" [color="orange"];
-  "faith" -> "Stained Glass" [color="blue"];
+  "Philosophy" -> "Stained Glass" [color="blue"];
   "faith" -> "Basilica" [color="orange"];
   "gold" -> "Basilica" [color="orange"];
-  "faith" -> "Basilica" [color="blue"];
+  "Philosophy" -> "Basilica" [color="blue"];
   "faith" -> "Templars" [color="orange"];
   "gold" -> "Templars" [color="orange"];
-  "faith" -> "Templars" [color="blue"];
+  "Philosophy" -> "Templars" [color="blue"];
   "relic" -> "Black Obelisk" [color="orange"];
-  "relic" -> "Black Obelisk" [color="blue"];
+  "Cryptotheology" -> "Black Obelisk" [color="blue"];
   "relic" -> "Black Nexus" [color="orange"];
-  "relic" -> "Black Nexus" [color="blue"];
+  "Cryptotheology" -> "Black Nexus" [color="blue"];
   "relic" -> "Black Core" [color="orange"];
-  "relic" -> "Black Core" [color="blue"];
+  "Cryptotheology" -> "Black Core" [color="blue"];
   "relic" -> "Event Horizon" [color="orange"];
-  "relic" -> "Event Horizon" [color="blue"];
+  "Cryptotheology" -> "Event Horizon" [color="blue"];
   "relic" -> "Black Library" [color="orange"];
-  "relic" -> "Black Library" [color="blue"];
+  "Cryptotheology" -> "Black Library" [color="blue"];
   "relic" -> "Black Radiance" [color="orange"];
-  "relic" -> "Black Radiance" [color="blue"];
+  "Cryptotheology" -> "Black Radiance" [color="blue"];
   "relic" -> "Blazar" [color="orange"];
-  "relic" -> "Blazar" [color="blue"];
+  "Cryptotheology" -> "Blazar" [color="blue"];
   "relic" -> "Dark Nova" [color="orange"];
   "void" -> "Dark Nova" [color="orange"];
-  "relic" -> "Dark Nova" [color="blue"];
+  "Cryptotheology" -> "Dark Nova" [color="blue"];
   "relic" -> "Mausoleum" [color="orange"];
   "void" -> "Mausoleum" [color="orange"];
   "necrocorn" -> "Mausoleum" [color="orange"];
-  "relic" -> "Mausoleum" [color="blue"];
+  "Cryptotheology" -> "Mausoleum" [color="blue"];
   "relic" -> "Holy Genocide" [color="orange"];
   "void" -> "Holy Genocide" [color="orange"];
-  "relic" -> "Holy Genocide" [color="blue"];
+  "Cryptotheology" -> "Holy Genocide" [color="blue"];
   "titanium" -> "Space Elevator" [color="orange"];
   "unobtainium" -> "Space Elevator" [color="orange"];
   "Orbital Engineering" -> "Space Elevator" [color="blue"];
@@ -689,7 +689,7 @@ digraph {
   "uranium" -> "Molten Core" [color="orange"];
   "Exophysics" -> "Molten Core" [color="blue"];
   "hash" -> "Hash Level" [color="orange"];
-  "hash" -> "Hash Level" [color="blue"];
+  "Entanglement Station" -> "Hash Level" [color="blue"];
   "time crystal" -> "Temporal Battery" [color="orange"];
   "Chronoforge" -> "Temporal Battery" [color="blue"];
   "time crystal" -> "Chrono Furnace" [color="orange"];
@@ -784,7 +784,7 @@ digraph {
   "Nagas" -> "megalith" [color="limegreen"];
   "Nagas" -> "blueprint" [color="limegreen"];
   "Nagas" -> "spice" [color="limegreen"];
-  "culture" -> "Nagas" [color="blue"];
+  "Writing" -> "Nagas" [color="blue"];
   "catpower" -> "Zebras" [color="orange"];
   "gold" -> "Zebras" [color="orange"];
   "slab" -> "Zebras" [color="orange"];
@@ -795,7 +795,7 @@ digraph {
   "Zebras" -> "alloy" [color="limegreen"];
   "Zebras" -> "blueprint" [color="limegreen"];
   "Zebras" -> "spice" [color="limegreen"];
-  "ship" -> "Zebras" [color="blue"];
+  "Navigation" -> "Zebras" [color="blue"];
   "catpower" -> "Spiders" [color="orange"];
   "gold" -> "Spiders" [color="orange"];
   "scaffold" -> "Spiders" [color="orange"];
@@ -803,7 +803,7 @@ digraph {
   "Spiders" -> "oil" [color="limegreen"];
   "Spiders" -> "blueprint" [color="limegreen"];
   "Spiders" -> "spice" [color="limegreen"];
-  "ship" -> "Spiders" [color="blue"];
+  "Navigation" -> "Spiders" [color="blue"];
   "catpower" -> "Dragons" [color="orange"];
   "gold" -> "Dragons" [color="orange"];
   "titanium" -> "Dragons" [color="orange"];
@@ -834,17 +834,17 @@ digraph {
   "Sacrifice Alicorns" -> "time crystal" [color="limegreen"];
   "Unicorn Utopia" -> "time crystal" [color="green"];
   "Sunspire" -> "time crystal" [color="green"];
-  "alicorn" -> "Sacrifice Alicorns" [color="blue"];
+  "Ziggurat" -> "Sacrifice Alicorns" [color="blue"];
   "tear" -> "Refine Tears" [color="orange"];
   "Refine Tears" -> "sorrow" [color="limegreen"];
   "Megalomania" -> "Refine Tears" [color="blue"];
   "time crystal" -> "Refine Time Crystals" [color="orange"];
   "Refine Time Crystals" -> "relic" [color="limegreen"];
   "Black Nexus" -> "relic" [color="green"];
-  "time crystal" -> "Refine Time Crystals" [color="blue"];
+  "Ziggurat" -> "Refine Time Crystals" [color="blue"];
   "time crystal" -> "Combust time crystal" [color="orange"];
   "Combust time crystal" -> "chronoheat" [color="limegreen"];
-  "time crystal" -> "Combust time crystal" [color="blue"];
+  "Ziggurat" -> "Combust time crystal" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
   "Agriculture" -> "Archery" [color="blue"];
@@ -2007,7 +2007,7 @@ digraph {
 }
 # titanium: 69
 # blueprint: 44
-# relic: 42
 # paragon: 38
 # alloy: 37
-# time crystal: 36
+# starchart: 35
+# time crystal: 34

@@ -230,11 +230,9 @@ func TestGraph(t *testing.T) {
 		fn     func(*log.Logger, *game.Game, map[string]bool)
 		colors map[string]bool
 	}{{
-		/*
-				name: "graph",
-				fn:   graph.Graph,
-			}, {
-				//*/
+		name: "graph",
+		fn:   graph.Graph,
+	}, {
 		name: "graph edges",
 		fn:   graph.GraphEdges,
 	}, {
@@ -257,7 +255,7 @@ func TestGraph(t *testing.T) {
 		if err := os.WriteFile(dot, buf.Bytes(), 0644); err != nil {
 			t.Errorf("TestGraph.Graph got err %v", err)
 		}
-		if true {
+		if false {
 			svg := filepath.Join("testdata", name+".svg")
 			cmd := exec.Command("dot", "-Tsvg", "-o", svg, dot)
 			if err := cmd.Run(); err != nil {
