@@ -91,4 +91,13 @@ More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/bonfire
-    - Science
+    - Storage
+
+- Academy
+  - Kitten Exp +5%
+  - Minerology Department +1% production from meteors
+- Observatory
+  - Astronomical Event Chance +0.2%
+  - Automatic Event Observation Chance +1%
+  - Chronomancy - Astronomical Event Chance x1.1
+  - Astromancy - Astronomical Event Chance, Auto Event Observation Chance x2

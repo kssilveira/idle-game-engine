@@ -901,6 +901,9 @@
               "Bonus": [
                 {
                   "Name": "Uplink"
+                },
+                {
+                  "Name": "Starlink"
                 }
               ],
               "BonusStartsFromZero": true
@@ -963,7 +966,7 @@
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * c(Uplink)))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))))"
+      "Formula": "Count = (250 + ((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * (c(Uplink) + c(Starlink))))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))))"
     },
     {
       "Name": "science",

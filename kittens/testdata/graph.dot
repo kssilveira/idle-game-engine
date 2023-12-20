@@ -135,6 +135,7 @@ digraph {
   "Bio Lab" -> "science cap" [color="green"];
   "Data Center" -> "Bio Lab" [color="green"];
   "Uplink" -> "Data Center" [color="green"];
+  "Starlink" -> "Data Center" [color="green"];
   "Data Center" -> "science cap" [color="green"];
   "Bio Lab" -> "Data Center" [color="green"];
   "Uplink" -> "Bio Lab" [color="green"];

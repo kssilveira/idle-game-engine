@@ -321,7 +321,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Bio Lab", Factor: 1500,
 			Bonus: []data.Resource{{
 				Name: "Data Center", Factor: 0.01,
-				Bonus:               []data.Resource{{Name: "Uplink"}},
+				Bonus: []data.Resource{{
+					Name: "Uplink",
+				}, {
+					Name: "Starlink",
+				}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
@@ -351,9 +355,9 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "happiness"}},
 		}},
 		Bonus: []data.Resource{{
-			Name: "Library", Factor: 0.1,
+			Name: "Library", Factor: 0.10,
 		}, {
-			Name: "Academy", Factor: 0.2,
+			Name: "Academy", Factor: 0.20,
 		}, {
 			Name: "Observatory", Factor: 0.25,
 		}, {
@@ -671,7 +675,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Calciner", Factor: -0.024 * 5,
 		}, {
-			Name: "Bio Lab", Factor: 0.10,
+			Name: "Bio Lab", Factor: 0.02 * 5,
 			Bonus: []data.Resource{{
 				Name:  "Biofuel Processing",
 				Bonus: []data.Resource{{Name: "GM Catnip", Factor: 0.60}},
