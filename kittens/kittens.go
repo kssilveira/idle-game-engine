@@ -213,9 +213,9 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "happiness",
 			}, {
-				Name: "Mineral Hoes", Factor: 0.5,
+				Name: "Mineral Hoes", Factor: 0.50,
 			}, {
-				Name: "Iron Hoes", Factor: 0.3,
+				Name: "Iron Hoes", Factor: 0.30,
 			}},
 		}, {
 			Name: "Active Brewery", Factor: -1 * 5,
@@ -255,7 +255,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "HarbourBonus",
 			}},
 		}, {
-			Name: "Moon Base", Factor: 25000,
+			Name: "Moon Base", Factor: 25000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
 			Name: "Cryostation", Factor: 200000,
 		}, {
@@ -288,13 +288,13 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Name: "Lumber Mill", Factor: 0.10,
 			Bonus: []data.Resource{{
-				Name: "Reinforced Saw", Factor: 0.02,
+				Name: "Reinforced Saw", Factor: 0.20,
 			}, {
-				Name: "Steel Saw", Factor: 0.02,
+				Name: "Steel Saw", Factor: 0.20,
 			}, {
-				Name: "Titanium Saw", Factor: 0.015,
+				Name: "Titanium Saw", Factor: 0.15,
 			}, {
-				Name: "Alloy Saw", Factor: 0.015,
+				Name: "Alloy Saw", Factor: 0.15,
 			}},
 		}},
 	}, {
@@ -342,7 +342,7 @@ func NewGame(now game.Now) *game.Game {
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Observatory", Factor: 0.02,
-				Bonus: []data.Resource{{
+				Bonus:               []data.Resource{{
 					Name: "Titanium Reflectors",
 				}, {
 					Name: "Unobtainium Reflectors",
@@ -443,7 +443,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "HarbourBonus",
 			}},
 		}, {
-			Name: "Moon Base", Factor: 30000,
+			Name: "Moon Base", Factor: 30000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
 			Name: "Cryostation", Factor: 200000,
 		}, {
@@ -495,7 +495,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "HarbourBonus",
 			}},
 		}, {
-			Name: "Moon Base", Factor: 9000,
+			Name: "Moon Base", Factor: 9000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
 			Name: "Cryostation", Factor: 50000,
 		}, {
@@ -539,10 +539,10 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "HarbourBonus",
 			}, {
-				Name: "Barges", Factor: 0.5,
+				Name: "Barges", Factor: 0.50,
 			}},
 		}, {
-			Name: "Moon Base", Factor: 3500,
+			Name: "Moon Base", Factor: 3500, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
 			Name: "Cryostation", Factor: 25000,
 		}, {
@@ -561,9 +561,9 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Geodesy", Factor: 0.50,
 			}, {
-				Name: "Mining Drill", Factor: 10.00,
+				Name: "Mining Drill", Factor: 0.66,
 			}, {
-				Name: "Unobtainium Drill", Factor: 2.00,
+				Name: "Unobtainium Drill",
 			}},
 		}, {
 			Name: "Quarry", Factor: 0.015 * 5,
@@ -636,9 +636,9 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Geodesy",
 				Bonus: []data.Resource{{
-					Name: "Mining Drill", Factor: 0.6,
+					Name: "Mining Drill", Factor: 0.625,
 				}, {
-					Name: "Unobtainium Drill", Factor: 0.6,
+					Name: "Unobtainium Drill", Factor: 0.625,
 				}},
 			}},
 			BonusStartsFromZero: true,
@@ -665,7 +665,7 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Moon Base", Factor: 1250,
+			Name: "Moon Base", Factor: 1250, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
 			Name: "Cryostation", Factor: 7500,
 		}},
@@ -694,7 +694,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "tanker", Factor: 500,
 		}, {
-			Name: "Moon Base", Factor: 3500,
+			Name: "Moon Base", Factor: 3500, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
 			Name: "Cryostation", Factor: 7500,
 		}},
@@ -755,7 +755,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "unobtainium cap", Type: "Resource", IsHidden: true, StartCount: 150,
 		Producers: []data.Resource{{
-			Name: "Moon Base", Factor: 150,
+			Name: "Moon Base", Factor: 150, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
 			Name: "Cryostation", Factor: 750,
 		}},
@@ -835,7 +835,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Active Mint", Factor: 0.0000875,
-			Bonus:               []data.Resource{{Name: "catpower cap"}},
+			Bonus: []data.Resource{{Name: "catpower cap"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
@@ -845,7 +845,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Active Mint", Factor: 0.000021,
-			Bonus:               []data.Resource{{Name: "catpower cap"}},
+			Bonus: []data.Resource{{Name: "catpower cap"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
@@ -1034,14 +1034,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "HutCostExponentBase", Type: "Resource", IsHidden: true, StartCount: 2.5,
-		Producers: []data.Resource{{
-			Name: "Ironwood Huts", Factor: -0.5,
+		Bonus: []data.Resource{{
+			Name: "Ironwood Huts", Factor: -0.50,
 		}, {
-			Name: "Concrete Huts", Factor: -0.3,
+			Name: "Concrete Huts", Factor: -0.30,
 		}, {
 			Name: "Unobtainium Huts", Factor: -0.25,
 		}, {
-			Name: "Eludium Huts", Factor: -0.1,
+			Name: "Eludium Huts", Factor: -0.10,
 		}},
 	}})
 
@@ -2888,7 +2888,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "science", Count: 500,
 		}, {
-			Name: "catnip", Count: 500,
+			Name: "catnip", Count: 5000,
 		}},
 	}, {
 		Name: "Gold Ore", UnlockedBy: "Currency",
@@ -3234,7 +3234,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "Antimatter Drive", UnlockedBy: "Antimatter",
 		Costs: []data.Resource{{
-			Name: "science", Count: 525000,
+			Name: "science", Count: 450000,
 		}, {
 			Name: "antimatter", Count: 125,
 		}},

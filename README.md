@@ -65,7 +65,7 @@ Faster solution:
 - shared web server
 - configurable game rules at runtime
 - competition of best solutions
-  - least actions 
+  - least actions
   - least skipped time
 - competition of bots
 
@@ -90,18 +90,23 @@ Edges:
 More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/outpost
+  - https://wiki.kittensgame.com/en/game-tabs/workshop
 
 - Tradepost
   - Trade +1.5%
   - Caravanserai - Trade Relations +0.35%
+    - Each Tradepost improves standings by +0.35%
 - Factory
   - Space Manufacturing - Space Bonus +3.75
+    - Increases Space Bonus from Space Elevators and Orbital Arrays by 3.75% per factory. (4.5% with Factory Logistics) Does not apply to Planet Crackers.
   - Factory Processing - Oil refinement +5%
   - Workshop Factory Processing - Kerosene Crafting +5%
 - AI Core
   - Machine Learning - Data Center effectiveness +10% per AI Core
 - Steamworks Automation
+  - Workshop Automation	Converts (2 + 2\*(# of Steamworks))% of wood (to beams) and minerals (to slabs) at 98% of that resource's cap
+  - Advanced Automation	Workshop Automation will be activated twice per year
+  - Pneumatic Press	Workshop Automation will also convert iron to plates
 - Global Production
   - Magneto
     - Steamworks Magneto Boost
@@ -112,9 +117,15 @@ More features from kittens game:
   - Chronosphere
     - Resource Preservation +1.5%
     - Flux Condensator - Craftable Resource Preservation +1.5%
+      - 1.5 * # of Chronospheres * Sqrt(resource amount) of each craftable resource is carried over on reset.
+- Engineer
 - Energy
   - Broadcast Tower Satellite Radio - Culture per Tick, Max Culture +0.5% per Satellite
+- Pollution
+- Diminishing Returns and Limits
+  - e.g. Each trade ship adds +1% to harbor capacity with diminishing returns past 168.75% and a limit of 225%
 - Festivals
 - Compendium Cap
-- Kitten Exp
+- Kitten Skills
+- Space Travel Speed
 - Iron Will
