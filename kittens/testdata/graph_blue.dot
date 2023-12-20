@@ -38,7 +38,8 @@ digraph {
   "Currency" -> "Tradepost" [color="blue"];
   "Architecture" -> "Mint" [color="blue"];
   "Mint" -> "Active Mint" [color="blue"];
-  "Architecture" -> "Brewery" [color="blue"];
+  "Drama and Poetry" -> "Brewery" [color="blue"];
+  "Brewery" -> "Active Brewery" [color="blue"];
   "Construction" -> "Ziggurat" [color="blue"];
   "Chronophysics" -> "Chronosphere" [color="blue"];
   "Artificial Intelligence" -> "AI Core" [color="blue"];
@@ -431,6 +432,7 @@ digraph {
   "Mint" [shape="box3d"];
   "Active Mint" [shape="box3d"];
   "Brewery" [shape="box3d"];
+  "Active Brewery" [shape="box3d"];
   "Ziggurat" [shape="box3d"];
   "Chronosphere" [shape="box3d"];
   "AI Core" [shape="box3d"];

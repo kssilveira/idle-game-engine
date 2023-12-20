@@ -692,7 +692,7 @@
           ]
         },
         {
-          "Name": "Brewery",
+          "Name": "Active Brewery",
           "Factor": -5
         },
         {
@@ -717,7 +717,7 @@
         }
       ],
       "CapResource": "catnip cap",
-      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Brewery) * -5) + (c(Bio Lab) * -5 * c(Biofuel Processing))) * (1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025))) * seconds)"
+      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Bio Lab) * -5 * c(Biofuel Processing))) * (1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025))) * seconds)"
     },
     {
       "Name": "wood cap",
@@ -2088,9 +2088,19 @@
               "Factor": -0.04
             }
           ]
+        },
+        {
+          "Name": "Active Mint",
+          "Factor": 0.0000875,
+          "Bonus": [
+            {
+              "Name": "catpower cap"
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
-      "Formula": "Count += ((c(all kittens) * -0.05 * (1 + (c(Tradepost) * -0.04))) * seconds)"
+      "Formula": "Count += (((c(all kittens) * -0.05 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000087 * c(catpower cap))) * seconds)"
     },
     {
       "Name": "ivory",
@@ -2106,9 +2116,19 @@
               "Factor": -0.04
             }
           ]
+        },
+        {
+          "Name": "Active Mint",
+          "Factor": 0.000021,
+          "Bonus": [
+            {
+              "Name": "catpower cap"
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
-      "Formula": "Count += ((c(all kittens) * -0.035 * (1 + (c(Tradepost) * -0.04))) * seconds)"
+      "Formula": "Count += (((c(all kittens) * -0.035 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000021 * c(catpower cap))) * seconds)"
     },
     {
       "Name": "spice",
@@ -2126,7 +2146,7 @@
           ]
         },
         {
-          "Name": "Brewery",
+          "Name": "Active Brewery",
           "Factor": -0.5
         },
         {
@@ -2134,7 +2154,7 @@
           "Factor": 0.125
         }
       ],
-      "Formula": "Count += (((c(all kittens) * -0.005 * (1 + (c(Tradepost) * -0.04))) + (c(Brewery) * -0.5) + (c(Spice Refinery) * 0.125)) * seconds)"
+      "Formula": "Count += (((c(all kittens) * -0.005 * (1 + (c(Tradepost) * -0.04))) + (c(Active Brewery) * -0.5) + (c(Spice Refinery) * 0.125)) * seconds)"
     },
     {
       "Name": "unicorn",
@@ -2955,6 +2975,29 @@
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
+    },
+    {
+      "Name": "Active Brewery",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Brewery",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Brewery"
+        },
+        {
+          "Name": "Active Brewery",
+          "Factor": -1
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Brewery) + (c(Active Brewery) * -1))"
     },
     {
       "Name": "Ziggurat",
@@ -6119,7 +6162,7 @@
     {
       "Name": "Brewery",
       "Type": "Building",
-      "UnlockedBy": "Architecture",
+      "UnlockedBy": "Drama and Poetry",
       "Costs": [
         {
           "Name": "wood",
@@ -6145,6 +6188,23 @@
       "Adds": [
         {
           "Name": "Brewery",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Active Brewery",
+      "Type": "Building",
+      "UnlockedBy": "Brewery",
+      "Costs": [
+        {
+          "Name": "Idle Brewery",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Brewery",
           "Count": 1
         }
       ]

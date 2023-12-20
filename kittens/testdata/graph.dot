@@ -92,7 +92,7 @@ digraph {
   "farmer" -> "catnip" [color="green"];
   "Mineral Hoes" -> "farmer" [color="green"];
   "Iron Hoes" -> "farmer" [color="green"];
-  "catnip" -> "Brewery" [color="red"];
+  "catnip" -> "Active Brewery" [color="red"];
   "catnip" -> "Bio Lab" [color="red"];
   "Biofuel Processing" -> "Bio Lab" [color="red"];
   "catnip cap" -> "catnip" [color="limegreen"];
@@ -296,9 +296,12 @@ digraph {
   "geologist" -> "all kittens" [color="green"];
   "fur" -> "all kittens" [color="red"];
   "Tradepost" -> "all kittens" [color="green"];
+  "Active Mint" -> "fur" [color="green"];
+  "catpower cap" -> "Active Mint" [color="green"];
   "ivory" -> "all kittens" [color="red"];
+  "Active Mint" -> "ivory" [color="green"];
   "spice" -> "all kittens" [color="red"];
-  "spice" -> "Brewery" [color="red"];
+  "spice" -> "Active Brewery" [color="red"];
   "Spice Refinery" -> "spice" [color="green"];
   "Unic. Pasture" -> "unicorn" [color="green"];
   "Unicorn Selection" -> "Unic. Pasture" [color="green"];
@@ -372,6 +375,8 @@ digraph {
   "Idle Reactor" -> "Active Reactor" [color="red"];
   "Mint" -> "Idle Mint" [color="green"];
   "Idle Mint" -> "Active Mint" [color="red"];
+  "Brewery" -> "Idle Brewery" [color="green"];
+  "Idle Brewery" -> "Active Brewery" [color="red"];
   "Lunar Outpost" -> "Idle Lunar Outpost" [color="green"];
   "Idle Lunar Outpost" -> "Active Lunar Outpost" [color="red"];
   "Active Calciner" -> "steel" [color="green"];
@@ -521,7 +526,9 @@ digraph {
   "culture" -> "Brewery" [color="orange"];
   "spice" -> "Brewery" [color="orange"];
   "parchment" -> "Brewery" [color="orange"];
-  "Architecture" -> "Brewery" [color="blue"];
+  "Drama and Poetry" -> "Brewery" [color="blue"];
+  "Idle Brewery" -> "Active Brewery" [color="orange"];
+  "Brewery" -> "Active Brewery" [color="blue"];
   "megalith" -> "Ziggurat" [color="orange"];
   "scaffold" -> "Ziggurat" [color="orange"];
   "blueprint" -> "Ziggurat" [color="orange"];
@@ -1668,6 +1675,8 @@ digraph {
   "Active Mint" [shape="box3d"];
   "Idle Mint" [shape="box3d"];
   "Brewery" [shape="box3d"];
+  "Active Brewery" [shape="box3d"];
+  "Idle Brewery" [shape="box3d"];
   "Ziggurat" [shape="box3d"];
   "Chronosphere" [shape="box3d"];
   "AI Core" [shape="box3d"];

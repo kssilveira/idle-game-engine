@@ -91,18 +91,23 @@ More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/bonfire
-    - Other
+    - Mega
 
+- Tradepost
+  - Trade +1.5%
+  - Caravanserai - Trade Relations +0.35%
 - Factory
   - Space Manufacturing - Space Bonus +3.75
   - Factory Processing - Oil refinement +5%
+  - Workshop Factory Processing - Kerosene Crafting +5%
 - Steamworks Automation
 - Global Production
   - Magneto
-  - Steamworks Magneto Boost
+    - Steamworks Magneto Boost
   - Reactor
 - Astronomical Events
 - Meteors
 - Energy
+- Festivals
 - Kitten Exp
 - Iron Will

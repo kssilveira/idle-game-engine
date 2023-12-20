@@ -218,7 +218,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Iron Hoes", Factor: 0.3,
 			}},
 		}, {
-			Name: "Brewery", Factor: -1 * 5,
+			Name: "Active Brewery", Factor: -1 * 5,
 		}, {
 			Name: "Bio Lab", Factor: -1 * 5,
 			Bonus:               []data.Resource{{Name: "Biofuel Processing"}},
@@ -818,12 +818,20 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.05,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+		}, {
+			Name: "Active Mint", Factor: 0.0000875,
+			Bonus:               []data.Resource{{Name: "catpower cap"}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "ivory", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.035,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+		}, {
+			Name: "Active Mint", Factor: 0.000021,
+			Bonus:               []data.Resource{{Name: "catpower cap"}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "spice", Type: "Resource", Cap: -1,
@@ -831,7 +839,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "all kittens", Factor: -0.005,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
-			Name: "Brewery", Factor: -0.1 * 5,
+			Name: "Active Brewery", Factor: -0.1 * 5,
 		}, {
 			Name: "Spice Refinery", Factor: 0.125,
 		}},
@@ -1272,7 +1280,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "gold", Count: 500, CostExponentBase: 1.15,
 		}},
 	}, {
-		Name: "Brewery", UnlockedBy: "Architecture",
+		Name: "Active Brewery", UnlockedBy: "Drama and Poetry",
 		Costs: []data.Resource{{
 			Name: "wood", Count: 1000, CostExponentBase: 1.5,
 		}, {
