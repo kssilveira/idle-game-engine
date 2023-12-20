@@ -100,7 +100,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Workshop", Factor: 0.06,
 		}, {
 			Name: "Factory", Factor: 0.05,
-			Bonus: []data.Resource{{Name: "Factory Logistics", Factor: 0.2}},
+			Bonus: []data.Resource{{Name: "Factory Logistics", Factor: 0.20}},
 		}},
 	}, {
 		Name: "SpaceElevatorBonus",
@@ -695,7 +695,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Oil Distillation", Factor: 0.75,
 			}},
 		}, {
-			Name: "Magneto", Factor: -0.05 * 5,
+			Name: "Active Magneto", Factor: -0.05 * 5,
 		}, {
 			Name: "Active Calciner", Factor: -0.024 * 5,
 		}, {
@@ -1183,7 +1183,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
 		}},
 	}, {
-		Name: "Magneto", UnlockedBy: "Electricity",
+		Name: "Active Magneto", UnlockedBy: "Electricity",
 		Costs: []data.Resource{{
 			Name: "alloy", Count: 10, CostExponentBase: 1.25,
 		}, {
@@ -1199,6 +1199,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "titanium", Count: 15, CostExponentBase: 1.15,
 		}, {
 			Name: "blueprint", Count: 1, CostExponentBase: 1.15,
+		}, {
+			Name: "oil", Count: 500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Factory", UnlockedBy: "Mechanization",
@@ -3805,7 +3807,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "coal", Count: 100,
 		}},
 		Producers: []data.Resource{{
-			Name: "Active Calciner", Factor: 0.15 * 5 * 0.10,
+			Name: "Active Calciner", Factor: 0.15 * 5 * 0.10 * 0.01,
 			Bonus: []data.Resource{{
 				Name: "Steel Plants",
 				Bonus: []data.Resource{{
@@ -3869,7 +3871,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "manuscript", UnlockedBy: "Construction",
 		Producers: []data.Resource{{
-			Name: "Steamworks", Factor: 0.0025,
+			Name: "Steamworks", Factor: 0.0005 * 5,
 			Bonus: []data.Resource{{
 				Name: "Printing Press",
 				Bonus: []data.Resource{{
@@ -3902,10 +3904,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "thorium", UnlockedBy: "Thorium",
 		Costs: []data.Resource{{Name: "uranium", Count: 250}},
 		Producers: []data.Resource{{
-			Name: "Active Reactor", Factor: -0.25 * 5,
+			Name: "Active Reactor", Factor: -0.05 * 5,
 			Bonus: []data.Resource{{
 				Name:  "Thorium Reactors",
-				Bonus: []data.Resource{{Name: "Enriched Thorium", Factor: 0.25}},
+				Bonus: []data.Resource{{Name: "Enriched Thorium", Factor: -0.25}},
 			}},
 			BonusStartsFromZero: true,
 		}},

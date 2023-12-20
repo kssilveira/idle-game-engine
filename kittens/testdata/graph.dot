@@ -243,7 +243,7 @@ digraph {
   "Pumpjack" -> "Oil Well" [color="green"];
   "Oil Refinery" -> "Oil Well" [color="green"];
   "Oil Distillation" -> "Oil Well" [color="green"];
-  "oil" -> "Magneto" [color="red"];
+  "oil" -> "Active Magneto" [color="red"];
   "oil" -> "Active Calciner" [color="red"];
   "Bio Lab" -> "oil" [color="green"];
   "Biofuel Processing" -> "Bio Lab" [color="green"];
@@ -363,6 +363,8 @@ digraph {
   "Idle Accelerator" -> "Active Accelerator" [color="red"];
   "Steamworks" -> "Idle Steamworks" [color="green"];
   "Idle Steamworks" -> "Active Steamworks" [color="red"];
+  "Magneto" -> "Idle Magneto" [color="green"];
+  "Idle Magneto" -> "Active Magneto" [color="red"];
   "Calciner" -> "Idle Calciner" [color="green"];
   "Idle Calciner" -> "Active Calciner" [color="red"];
   "Reactor" -> "Idle Reactor" [color="green"];
@@ -384,7 +386,7 @@ digraph {
   "Photolithography" -> "Offset Press" [color="green"];
   "thorium" -> "Active Reactor" [color="red"];
   "Thorium Reactors" -> "Active Reactor" [color="red"];
-  "Enriched Thorium" -> "Thorium Reactors" [color="green"];
+  "Enriched Thorium" -> "Thorium Reactors" [color="red"];
   "Gather catnip" -> "catnip" [color="limegreen"];
   "catnip" -> "Refine catnip" [color="orange"];
   "Catnip Enrichment" -> "catnip" [color="green"];
@@ -471,9 +473,12 @@ digraph {
   "gear" -> "Magneto" [color="orange"];
   "blueprint" -> "Magneto" [color="orange"];
   "Electricity" -> "Magneto" [color="blue"];
+  "Idle Magneto" -> "Active Magneto" [color="orange"];
+  "Magneto" -> "Active Magneto" [color="blue"];
   "steel" -> "Calciner" [color="orange"];
   "titanium" -> "Calciner" [color="orange"];
   "blueprint" -> "Calciner" [color="orange"];
+  "oil" -> "Calciner" [color="orange"];
   "Chemistry" -> "Calciner" [color="blue"];
   "Idle Calciner" -> "Active Calciner" [color="orange"];
   "Calciner" -> "Active Calciner" [color="blue"];
@@ -1645,6 +1650,8 @@ digraph {
   "Active Steamworks" [shape="box3d"];
   "Idle Steamworks" [shape="box3d"];
   "Magneto" [shape="box3d"];
+  "Active Magneto" [shape="box3d"];
+  "Idle Magneto" [shape="box3d"];
   "Calciner" [shape="box3d"];
   "Active Calciner" [shape="box3d"];
   "Idle Calciner" [shape="box3d"];

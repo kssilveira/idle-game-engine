@@ -26,6 +26,7 @@ digraph {
   "Machinery" -> "Steamworks" [color="blue"];
   "Steamworks" -> "Active Steamworks" [color="blue"];
   "Electricity" -> "Magneto" [color="blue"];
+  "Magneto" -> "Active Magneto" [color="blue"];
   "Chemistry" -> "Calciner" [color="blue"];
   "Calciner" -> "Active Calciner" [color="blue"];
   "Mechanization" -> "Factory" [color="blue"];
@@ -417,6 +418,7 @@ digraph {
   "Steamworks" [shape="box3d"];
   "Active Steamworks" [shape="box3d"];
   "Magneto" [shape="box3d"];
+  "Active Magneto" [shape="box3d"];
   "Calciner" [shape="box3d"];
   "Active Calciner" [shape="box3d"];
   "Factory" [shape="box3d"];

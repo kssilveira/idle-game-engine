@@ -1729,7 +1729,7 @@
           ]
         },
         {
-          "Name": "Magneto",
+          "Name": "Active Magneto",
           "Factor": -0.25
         },
         {
@@ -1758,7 +1758,7 @@
         }
       ],
       "CapResource": "oil cap",
-      "Formula": "Count += (((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5)) * seconds)"
+      "Formula": "Count += (((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5)) * seconds)"
     },
     {
       "Name": "uranium cap",
@@ -2804,6 +2804,29 @@
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
+    },
+    {
+      "Name": "Active Magneto",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Magneto",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Magneto"
+        },
+        {
+          "Name": "Active Magneto",
+          "Factor": -1
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Magneto) + (c(Active Magneto) * -1))"
     },
     {
       "Name": "Calciner",
@@ -4966,7 +4989,7 @@
       "Producers": [
         {
           "Name": "Active Calciner",
-          "Factor": 0.075,
+          "Factor": 0.00075,
           "Bonus": [
             {
               "Name": "Steel Plants",
@@ -5002,7 +5025,7 @@
         }
       ],
       "ProducerAction": "@steel",
-      "Formula": "Count += ((c(Active Calciner) * 0.075 * (c(Steel Plants) * (1 + (c(Oxidation) * 0.95) + (c(CraftRatio) * 0.25 * c(Automated Plants)) + (c(Reactor) * 0.02 * c(Nuclear Plants))))) * seconds)"
+      "Formula": "Count += ((c(Active Calciner) * 0.00075 * (c(Steel Plants) * (1 + (c(Oxidation) * 0.95) + (c(CraftRatio) * 0.25 * c(Automated Plants)) + (c(Reactor) * 0.02 * c(Nuclear Plants))))) * seconds)"
     },
     {
       "Name": "gear",
@@ -5102,14 +5125,14 @@
       "Producers": [
         {
           "Name": "Active Reactor",
-          "Factor": -1.25,
+          "Factor": -0.25,
           "Bonus": [
             {
               "Name": "Thorium Reactors",
               "Bonus": [
                 {
                   "Name": "Enriched Thorium",
-                  "Factor": 0.25
+                  "Factor": -0.25
                 }
               ]
             }
@@ -5118,7 +5141,7 @@
         }
       ],
       "ProducerAction": "@thorium",
-      "Formula": "Count += ((c(Active Reactor) * -1.25 * (c(Thorium Reactors) * (1 + (c(Enriched Thorium) * 0.25)))) * seconds)"
+      "Formula": "Count += ((c(Active Reactor) * -0.25 * (c(Thorium Reactors) * (1 + (c(Enriched Thorium) * -0.25)))) * seconds)"
     },
     {
       "Name": "megalith",
@@ -5782,6 +5805,23 @@
       ]
     },
     {
+      "Name": "Active Magneto",
+      "Type": "Building",
+      "UnlockedBy": "Magneto",
+      "Costs": [
+        {
+          "Name": "Idle Magneto",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Magneto",
+          "Count": 1
+        }
+      ]
+    },
+    {
       "Name": "Calciner",
       "Type": "Building",
       "UnlockedBy": "Chemistry",
@@ -5799,6 +5839,11 @@
         {
           "Name": "blueprint",
           "Count": 1,
+          "CostExponentBase": 1.15
+        },
+        {
+          "Name": "oil",
+          "Count": 500,
           "CostExponentBase": 1.15
         }
       ],
@@ -14300,7 +14345,7 @@
       "Producers": [
         {
           "Name": "Active Calciner",
-          "Factor": 0.075,
+          "Factor": 0.00075,
           "Bonus": [
             {
               "Name": "Steel Plants",
@@ -14674,14 +14719,14 @@
       "Producers": [
         {
           "Name": "Active Reactor",
-          "Factor": -1.25,
+          "Factor": -0.25,
           "Bonus": [
             {
               "Name": "Thorium Reactors",
               "Bonus": [
                 {
                   "Name": "Enriched Thorium",
-                  "Factor": 0.25
+                  "Factor": -0.25
                 }
               ]
             }
