@@ -1,6 +1,6 @@
 digraph {
-  "Gather catnip" -> "Refine catnip" [color="blue"];
-  "Gather catnip" -> "Catnip Field" [color="blue"];
+  "Catnip Field" -> "Refine catnip" [color="blue"];
+  "catnip" -> "Catnip Field" [color="blue"];
   "Catnip Field" -> "Hut" [color="blue"];
   "Catnip Field" -> "Library" [color="blue"];
   "Agriculture" -> "Barn" [color="blue"];
@@ -27,6 +27,7 @@ digraph {
   "Steamworks" -> "Active Steamworks" [color="blue"];
   "Electricity" -> "Magneto" [color="blue"];
   "Chemistry" -> "Calciner" [color="blue"];
+  "Calciner" -> "Active Calciner" [color="blue"];
   "Mechanization" -> "Factory" [color="blue"];
   "Nuclear Fission" -> "Reactor" [color="blue"];
   "Reactor" -> "Active Reactor" [color="blue"];
@@ -388,6 +389,7 @@ digraph {
   "Physics" -> "@blueprint" [color="blue"];
   "Thorium" -> "@thorium" [color="blue"];
   "Construction" -> "@megalith" [color="blue"];
+  "catnip" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
   "Library" [shape="box3d"];
@@ -415,6 +417,7 @@ digraph {
   "Active Steamworks" [shape="box3d"];
   "Magneto" [shape="box3d"];
   "Calciner" [shape="box3d"];
+  "Active Calciner" [shape="box3d"];
   "Factory" [shape="box3d"];
   "Reactor" [shape="box3d"];
   "Active Reactor" [shape="box3d"];
@@ -744,7 +747,6 @@ digraph {
   "Keter" [shape="diamond"];
   "Adjustment Bureau" [shape="diamond"];
   "ASCOH" [shape="diamond"];
-  "Gather catnip" [shape="box3d"];
   "Refine catnip" [shape="box3d"];
   "Send hunters" [shape="house"];
   "Lizards" [shape="cds"];

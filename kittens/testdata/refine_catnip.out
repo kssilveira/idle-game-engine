@@ -1,17 +1,14 @@
 ###
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: 
 ###
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut -(wood 1/5) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 1/25) +(Library 1)
 last action: Refine catnip
+error: action Refine catnip is locked
 ###
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Hut -(wood 2/5) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 2/25) +(Library 1)
+X: [Building] Gather catnip +(catnip 10)
+X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Refine catnip
+error: action Refine catnip is locked

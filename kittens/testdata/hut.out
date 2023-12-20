@@ -1,65 +1,35 @@
 ###
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut -(wood 5) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 25) +(Library 1)
 last action: 
 ###
-[Resource] kitten 0.05/2 0.05/s 39s to cap
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 25) +(Library 1)
-X: [Job] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: Hut
+error: action Hut is locked
 ###
-[Resource] kitten 0.05/2 0.05/s 39s to cap
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 12.50) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 25) +(Library 1)
-X: [Job] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: Gather catnip
 ###
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] kitten 0.10/4 0.05/s 1m18s to cap
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 25) +(Library 1)
-X: [Job] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
 last action: Hut
+error: action Hut is locked
 ###
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.51 % 4 == 0)
 [Calendar] day_of_year 52 (1 + 51 % 400)
-[-] [Resource] catnip 1002/5000 -17/s 58s to empty
-[Resource] kitten 4/4 0.05/s
-[Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 25) +(Library 1)
-X: [Job] woodcutter -(kitten 1) +(woodcutter 1)
 last action: Gather catnip
 ###
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.51 % 4 == 0)
 [Calendar] day_of_year 52 (1 + 51 % 400)
-[-] [Resource] catnip 1003/5000 -17/s 59s to empty
-[Resource] kitten 4/4 0.05/s
-[Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (2) -(wood 31.25) +(Hut 1, kitten cap 2)
-X: [Building] Library -(wood 25) +(Library 1)
-X: [Job] woodcutter -(kitten 1) +(woodcutter 1)
 last action: Gather catnip

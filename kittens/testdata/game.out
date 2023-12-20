@@ -1154,12 +1154,12 @@
           "Factor": -0.5
         },
         {
-          "Name": "Calciner",
+          "Name": "Active Calciner",
           "Factor": -7.5
         }
       ],
       "CapResource": "mineral cap",
-      "Formula": "Count += (((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Calciner) * -7.5)) * seconds)"
+      "Formula": "Count += (((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5)) * seconds)"
     },
     {
       "Name": "iron cap",
@@ -1232,7 +1232,7 @@
           ]
         },
         {
-          "Name": "Calciner",
+          "Name": "Active Calciner",
           "Factor": 0.75,
           "Bonus": [
             {
@@ -1247,10 +1247,20 @@
               "Name": "Fluoridized Reactors"
             }
           ]
+        },
+        {
+          "Name": "Active Calciner",
+          "Factor": -0.075,
+          "Bonus": [
+            {
+              "Name": "Steel Plants"
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "CapResource": "iron cap",
-      "Formula": "Count += (((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors)))) * seconds)"
+      "Formula": "Count += (((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * seconds)"
     },
     {
       "Name": "coal cap",
@@ -1357,6 +1367,16 @@
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Active Calciner",
+          "Factor": -0.075,
+          "Bonus": [
+            {
+              "Name": "Steel Plants"
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "Bonus": [
@@ -1381,7 +1401,7 @@
         }
       ],
       "CapResource": "coal cap",
-      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 10) + (c(Unobtainium Drill) * 2))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining))) * (1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) \u003e 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25))))) * seconds)"
+      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 10) + (c(Unobtainium Drill) * 2))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining)) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * (1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) \u003e 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25))))) * seconds)"
     },
     {
       "Name": "gold cap",
@@ -1569,7 +1589,7 @@
           "Factor": -0.075
         },
         {
-          "Name": "Calciner",
+          "Name": "Active Calciner",
           "Factor": 0.0025,
           "Bonus": [
             {
@@ -1598,7 +1618,7 @@
         }
       ],
       "CapResource": "titanium cap",
-      "Formula": "Count += (((c(Active Accelerator) * -0.075) + (c(Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * seconds)"
+      "Formula": "Count += (((c(Active Accelerator) * -0.075) + (c(Active Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * seconds)"
     },
     {
       "Name": "oil cap",
@@ -1652,7 +1672,7 @@
           "Factor": -0.25
         },
         {
-          "Name": "Calciner",
+          "Name": "Active Calciner",
           "Factor": -0.12
         },
         {
@@ -1677,7 +1697,7 @@
         }
       ],
       "CapResource": "oil cap",
-      "Formula": "Count += (((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Magneto) * -0.25) + (c(Calciner) * -0.12) + (c(Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5)) * seconds)"
+      "Formula": "Count += (((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5)) * seconds)"
     },
     {
       "Name": "uranium cap",
@@ -1864,7 +1884,30 @@
     {
       "Name": "void",
       "Type": "Resource",
-      "Cap": -1
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Chronosphere",
+          "Factor": 0.000025,
+          "Bonus": [
+            {
+              "Name": "Void Hoover"
+            }
+          ]
+        }
+      ],
+      "Bonus": [
+        {
+          "Name": "Chronocontrol",
+          "Bonus": [
+            {
+              "Name": "Distortion",
+              "Factor": 2
+            }
+          ]
+        }
+      ],
+      "Formula": "Count += (((c(Chronosphere) * 0.000025 * (1 + c(Void Hoover))) * (1 + (c(Chronocontrol) * (1 + (c(Distortion) * 2))))) * seconds)"
     },
     {
       "Name": "temporal flux cap",
@@ -2343,7 +2386,14 @@
     {
       "Name": "necrocorn",
       "Type": "Resource",
-      "Cap": -1
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Marker",
+          "Factor": 0.000005
+        }
+      ],
+      "Formula": "Count += ((c(Marker) * 0.000005) * seconds)"
     },
     {
       "Name": "sorrow cap",
@@ -2674,6 +2724,29 @@
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
+    },
+    {
+      "Name": "Active Calciner",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Idle Calciner",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Calciner"
+        },
+        {
+          "Name": "Active Calciner",
+          "Factor": -1
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Calciner) + (c(Active Calciner) * -1))"
     },
     {
       "Name": "Factory",
@@ -4800,7 +4873,7 @@
       "Cap": -1,
       "Producers": [
         {
-          "Name": "Calciner",
+          "Name": "Active Calciner",
           "Factor": 0.075,
           "Bonus": [
             {
@@ -4811,11 +4884,11 @@
                   "Factor": 0.95
                 },
                 {
-                  "Name": "Automated Plants",
+                  "Name": "CraftRatio",
                   "Factor": 0.25,
                   "Bonus": [
                     {
-                      "Name": "CraftRatio"
+                      "Name": "Automated Plants"
                     }
                   ],
                   "BonusStartsFromZero": true
@@ -4837,7 +4910,7 @@
         }
       ],
       "ProducerAction": "@steel",
-      "Formula": "Count += ((c(Calciner) * 0.075 * (c(Steel Plants) * (1 + (c(Oxidation) * 0.95) + (c(Automated Plants) * 0.25 * c(CraftRatio)) + (c(Reactor) * 0.02 * c(Nuclear Plants))))) * seconds)"
+      "Formula": "Count += ((c(Active Calciner) * 0.075 * (c(Steel Plants) * (1 + (c(Oxidation) * 0.95) + (c(CraftRatio) * 0.25 * c(Automated Plants)) + (c(Reactor) * 0.02 * c(Nuclear Plants))))) * seconds)"
     },
     {
       "Name": "gear",
@@ -4977,7 +5050,7 @@
     {
       "Name": "Refine catnip",
       "Type": "Building",
-      "UnlockedBy": "Gather catnip",
+      "UnlockedBy": "Catnip Field",
       "LockedBy": "woodcutter",
       "Costs": [
         {
@@ -5007,7 +5080,7 @@
     {
       "Name": "Catnip Field",
       "Type": "Building",
-      "UnlockedBy": "Gather catnip",
+      "UnlockedBy": "catnip",
       "Costs": [
         {
           "Name": "catnip",
@@ -5640,6 +5713,23 @@
       "Adds": [
         {
           "Name": "Calciner",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Active Calciner",
+      "Type": "Building",
+      "UnlockedBy": "Calciner",
+      "Costs": [
+        {
+          "Name": "Idle Calciner",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Active Calciner",
           "Count": 1
         }
       ]
@@ -14091,7 +14181,7 @@
       ],
       "Producers": [
         {
-          "Name": "Calciner",
+          "Name": "Active Calciner",
           "Factor": 0.075,
           "Bonus": [
             {
@@ -14102,11 +14192,11 @@
                   "Factor": 0.95
                 },
                 {
-                  "Name": "Automated Plants",
+                  "Name": "CraftRatio",
                   "Factor": 0.25,
                   "Bonus": [
                     {
-                      "Name": "CraftRatio"
+                      "Name": "Automated Plants"
                     }
                   ],
                   "BonusStartsFromZero": true

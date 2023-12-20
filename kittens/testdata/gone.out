@@ -2,8 +2,7 @@
 [-] [Resource] catnip 1000/5000 -17/s 58s to empty
 [Resource] kitten 4/4 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Refine catnip -(catnip 100) +(wood 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 0/50) +(Barn 1)
 X: [Job] woodcutter -(kitten 1) +(woodcutter 1)
@@ -18,10 +17,8 @@ last action:
 [Resource] wood 0.09/200 0.09/s 36m17s to cap
 [Resource] kitten 3/3 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 0.09/12.50 2m15s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 0.09/28.75 5m12s) +(Library 1)
 X: [Building] Barn -(wood 0.09/50 9m3s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar -(kitten 1) +(scholar 1)
@@ -35,10 +32,8 @@ last action: woodcutter
 [Resource] wood 0.09/200 0.09/s 36m17s to cap
 [Resource] kitten 3/3 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 0.09/12.50 2m15s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 0.09/28.75 5m12s) +(Library 1)
 X: [Building] Barn -(wood 0.09/50 9m3s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar -(kitten 1) +(scholar 1)
@@ -57,10 +52,8 @@ error: action Refine catnip is locked
 [Resource] science 0.20/500 0.20/s 42m25s to cap
 [Resource] kitten 2/2 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 0.18/12.50 2m14s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 0.18/28.75 5m11s) +(Library 1)
 X: [Building] Barn -(wood 0.18/50 9m2s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar (1) -(kitten 1) +(scholar 1)
@@ -78,10 +71,8 @@ last action: scholar
 [Resource] science 0.20/500 0.20/s 42m25s to cap
 [Resource] kitten 2/2 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 0.18/12.50 2m14s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 0.18/28.75 5m11s) +(Library 1)
 X: [Building] Barn -(wood 0.18/50 9m2s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar (1) -(kitten 1) +(scholar 1)
@@ -100,10 +91,8 @@ error: action Refine catnip is locked
 [Resource] science 0.39/500 0.20/s 42m24s to cap
 [Resource] kitten 1/1 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 0.28/12.50 2m13s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 0.28/28.75 5m10s) +(Library 1)
 X: [Building] Barn -(wood 0.28/50 9m1s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar (1) -(kitten 1) +(scholar 1)
@@ -121,10 +110,8 @@ last action: farmer
 [Resource] science 15.90/500 0.20/s 41m5s to cap
 [Resource] kitten 1/1 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 7.53/12.50 54s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 7.53/28.75 3m51s) +(Library 1)
 X: [Building] Barn -(wood 7.53/50 7m42s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar (1) -(kitten 1) +(scholar 1)
@@ -143,10 +130,8 @@ error: action Refine catnip is locked
 [Resource] science 16.10/500 0.20/s 41m4s to cap
 [Resource] kitten 1/1 0.05/s
 [Job] happiness 0.02 (0.10 + -0.08)
-X: [Building] Gather catnip +(catnip 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 2.10/10) +(Catnip Field 1)
-X: [Building] Hut (1) -(wood 7.62/12.50 53s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 7.62/28.75 3m50s) +(Library 1)
 X: [Building] Barn -(wood 7.62/50 7m41s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar (1) -(kitten 1) +(scholar 1)
@@ -164,9 +149,7 @@ error: action Refine catnip is locked
 [Resource] science 16.30/500 0.20/s 40m16s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Job] happiness 0.04 (0.10 + -0.06)
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Hut (1) -(wood 7.71/12.50 51s) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 7.71/28.75 3m44s) +(Library 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Barn -(wood 7.71/50 7m31s) +(Barn 1)
 X: [Job] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
 X: [Job] scholar (1) -(kitten 0.05/1 18s) +(scholar 1)
@@ -183,9 +166,7 @@ error: action Refine catnip is locked
 [Resource] science 16.50/500 0.20/s 39m29s to cap
 [Resource] kitten 0.10/2 0.05/s 37s to cap
 [Job] happiness 0.06 (0.10 + -0.04)
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Hut (1) -(wood 7.71/12.50) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 7.71/28.75) +(Library 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Barn -(wood 7.71/50) +(Barn 1)
 X: [Job] woodcutter -(kitten 0.10/1 18s) +(woodcutter 1)
 X: [Job] scholar (1) -(kitten 0.10/1 18s) +(scholar 1)
@@ -201,9 +182,7 @@ error: action Refine catnip is locked
 [Calendar] day_of_year 44 (1 + 43 % 400)
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Job] happiness 0.08 (0.10 + -0.02)
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Hut (1) -(wood 7.71/12.50) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 7.71/28.75) +(Library 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Barn -(wood 7.71/50) +(Barn 1)
 X: [Job] woodcutter -(kitten 0.15/1 17s) +(woodcutter 1)
 X: [Job] scholar -(kitten 0.15/1 17s) +(scholar 1)
@@ -219,9 +198,7 @@ error: action Refine catnip is locked
 [Calendar] day_of_year 44 (1 + 43 % 400)
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Job] happiness 0.08 (0.10 + -0.02)
-X: [Building] Gather catnip +(catnip 1)
-X: [Building] Hut (1) -(wood 7.71/12.50) +(Hut 1, kitten cap 2)
-X: [Building] Library (1) -(wood 7.71/28.75) +(Library 1)
+X: [Building] Gather catnip +(catnip 10)
 X: [Building] Barn -(wood 7.71/50) +(Barn 1)
 X: [Job] woodcutter -(kitten 0.15/1 17s) +(woodcutter 1)
 X: [Job] scholar -(kitten 0.15/1 17s) +(scholar 1)

@@ -436,7 +436,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Smelter", Factor: -0.1 * 5,
 		}, {
-			Name: "Calciner", Factor: -1.5 * 5,
+			Name: "Active Calciner", Factor: -1.5 * 5,
 		}},
 	}, {
 		Name: "iron cap", Type: "Resource", IsHidden: true, StartCount: 50,
@@ -474,7 +474,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Smelter", Factor: 0.02 * 5,
 			Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
 		}, {
-			Name: "Calciner", Factor: 0.15 * 5,
+			Name: "Active Calciner", Factor: 0.15 * 5,
 			Bonus: []data.Resource{{
 				Name: "Oxidation", Factor: 0.95,
 			}, {
@@ -482,6 +482,10 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Fluoridized Reactors",
 			}},
+		}, {
+			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10,
+			Bonus:               []data.Resource{{Name: "Steel Plants"}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "coal cap", Type: "Resource", IsHidden: true, StartCount: 60,
@@ -530,6 +534,10 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Mine", Factor: 0.003 * 5,
 			Bonus:               []data.Resource{{Name: "Deep Mining"}},
+			BonusStartsFromZero: true,
+		}, {
+			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10,
+			Bonus:               []data.Resource{{Name: "Steel Plants"}},
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
@@ -623,7 +631,7 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "Active Accelerator", Factor: -0.015 * 5,
 		}, {
-			Name: "Calciner", Factor: 0.0005 * 5,
+			Name: "Active Calciner", Factor: 0.0005 * 5,
 			Bonus: []data.Resource{{
 				Name: "Oxidation", Factor: 2.85,
 			}, {
@@ -661,7 +669,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Magneto", Factor: -0.05 * 5,
 		}, {
-			Name: "Calciner", Factor: -0.024 * 5,
+			Name: "Active Calciner", Factor: -0.024 * 5,
 		}, {
 			Name: "Bio Lab", Factor: 0.10,
 			Bonus: []data.Resource{{
@@ -743,6 +751,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "void", Type: "Resource", Cap: -1,
+		Producers: []data.Resource{{
+			Name: "Chronosphere", Factor: 0.005 / (2 * 100),
+			Bonus: []data.Resource{{Name: "Void Hoover"}},
+		}},
+		Bonus: []data.Resource{{
+			Name:  "Chronocontrol",
+			Bonus: []data.Resource{{Name: "Distortion", Factor: 2}},
+		}},
 	}, {
 		Name: "temporal flux cap", Type: "Resource", IsHidden: true, StartCount: 3000,
 		Producers: []data.Resource{{
@@ -916,6 +932,9 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "necrocorn", Type: "Resource", Cap: -1,
+		Producers: []data.Resource{{
+			Name: "Marker", Factor: 0.000001 * 5,
+		}},
 	}, {
 		Name: "sorrow cap", Type: "Resource", IsHidden: true, StartCount: 16,
 		Producers: []data.Resource{{Name: "Black Core"}},
@@ -966,7 +985,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Gather catnip", Type: "Building", LockedBy: "Catnip Field",
 		Adds: []data.Resource{{Name: "catnip", Count: 10}},
 	}, {
-		Name: "Refine catnip", Type: "Building", UnlockedBy: "Gather catnip", LockedBy: "woodcutter",
+		Name: "Refine catnip", Type: "Building", UnlockedBy: "Catnip Field", LockedBy: "woodcutter",
 		Costs: []data.Resource{{
 			Name: "catnip", Count: 100,
 			Bonus: []data.Resource{{Name: "Catnip Enrichment", Factor: -0.50}},
@@ -978,7 +997,7 @@ func NewGame(now game.Now) *game.Game {
 	}})
 
 	addBuildings(g, []data.Action{{
-		Name: "Catnip Field", UnlockedBy: "Gather catnip",
+		Name: "Catnip Field", UnlockedBy: "catnip",
 		Costs: []data.Resource{{Name: "catnip", Count: 10, CostExponentBase: 1.12}},
 	}, {
 		Name: "Hut", UnlockedBy: "Catnip Field",
@@ -1134,7 +1153,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
 		}},
 	}, {
-		Name: "Calciner", UnlockedBy: "Chemistry",
+		Name: "Active Calciner", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
 			Name: "steel", Count: 100, CostExponentBase: 1.15,
 		}, {
@@ -3738,14 +3757,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "coal", Count: 100,
 		}},
 		Producers: []data.Resource{{
-			Name: "Calciner", Factor: 0.15 * 5 * 0.1,
+			Name: "Active Calciner", Factor: 0.15 * 5 * 0.10,
 			Bonus: []data.Resource{{
 				Name: "Steel Plants",
 				Bonus: []data.Resource{{
 					Name: "Oxidation", Factor: 0.95,
 				}, {
-					Name: "Automated Plants", Factor: 0.25,
-					Bonus:               []data.Resource{{Name: "CraftRatio"}},
+					Name: "CraftRatio", Factor: 0.25,
+					Bonus:               []data.Resource{{Name: "Automated Plants"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Reactor", Factor: 0.02,
