@@ -161,10 +161,10 @@ func NewGame(now game.Now) *game.Game {
 		Name: "catnip cap", Type: "Resource", IsHidden: true, StartCount: 5000,
 		Producers: []data.Resource{{
 			Name: "Barn", Factor: 5000,
-			Bonus: []data.Resource{{Name: "BarnCatnipCapBonus", Factor: 1}},
+			Bonus: []data.Resource{{Name: "BarnCatnipCapBonus"}},
 		}, {
 			Name: "Warehouse", Factor: 750,
-			Bonus:               []data.Resource{{Name: "BarnCatnipCapBonus", Factor: 1}},
+			Bonus:               []data.Resource{{Name: "BarnCatnipCapBonus"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Harbour", Factor: 2500,
@@ -497,7 +497,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Barn", Factor: 60,
 			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
 		}, {
-			Name: "Warehouse", Factor: 20,
+			Name: "Warehouse", Factor: 30,
 			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Harbour", Factor: 100,
@@ -3018,6 +3018,15 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Count: 75000,
 		}, {
 			Name: "alloy", Count: 1750,
+		}},
+	}, {
+		Name: "Starlink", UnlockedBy: "Orbital Engineering",
+		Costs: []data.Resource{{
+			Name: "science", Count: 175000,
+		}, {
+			Name: "alloy", Count: 5000,
+		}, {
+			Name: "oil", Count: 25000,
 		}},
 	}, {
 		Name: "Cryocomputing", UnlockedBy: "Superconductors",

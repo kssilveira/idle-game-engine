@@ -418,8 +418,7 @@
           "Factor": 5000,
           "Bonus": [
             {
-              "Name": "BarnCatnipCapBonus",
-              "Factor": 1
+              "Name": "BarnCatnipCapBonus"
             }
           ]
         },
@@ -428,8 +427,7 @@
           "Factor": 750,
           "Bonus": [
             {
-              "Name": "BarnCatnipCapBonus",
-              "Factor": 1
+              "Name": "BarnCatnipCapBonus"
             }
           ],
           "BonusStartsFromZero": true
@@ -1281,7 +1279,7 @@
         },
         {
           "Name": "Warehouse",
-          "Factor": 20,
+          "Factor": 30,
           "Bonus": [
             {
               "Name": "WarehouseBonus"
@@ -1314,7 +1312,7 @@
         }
       ],
       "StartCount": 60,
-      "Formula": "Count = (60 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 20 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000)))"
+      "Formula": "Count = (60 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500) + (c(Cryostation) * 25000)))"
     },
     {
       "Name": "coal",
@@ -4225,6 +4223,12 @@
     },
     {
       "Name": "Uplink",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Starlink",
       "Type": "Tech",
       "IsHidden": true,
       "Cap": 1
@@ -11614,6 +11618,32 @@
       "Adds": [
         {
           "Name": "Uplink",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Starlink",
+      "Type": "Tech",
+      "UnlockedBy": "Orbital Engineering",
+      "LockedBy": "Starlink",
+      "Costs": [
+        {
+          "Name": "science",
+          "Count": 175000
+        },
+        {
+          "Name": "alloy",
+          "Count": 5000
+        },
+        {
+          "Name": "oil",
+          "Count": 25000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Starlink",
           "Count": 1
         }
       ]

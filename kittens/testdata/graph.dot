@@ -1171,6 +1171,9 @@ digraph {
   "Satellites" -> "Photolithography" [color="blue"];
   "alloy" -> "Uplink" [color="orange"];
   "Satellites" -> "Uplink" [color="blue"];
+  "alloy" -> "Starlink" [color="orange"];
+  "oil" -> "Starlink" [color="orange"];
+  "Orbital Engineering" -> "Starlink" [color="blue"];
   "eludium" -> "Cryocomputing" [color="orange"];
   "Superconductors" -> "Cryocomputing" [color="blue"];
   "eludium" -> "Machine Learning" [color="orange"];
@@ -1866,6 +1869,7 @@ digraph {
   "Offset Press" [shape="diamond"];
   "Photolithography" [shape="diamond"];
   "Uplink" [shape="diamond"];
+  "Starlink" [shape="diamond"];
   "Cryocomputing" [shape="diamond"];
   "Machine Learning" [shape="diamond"];
   "Workshop Automation" [shape="diamond"];
@@ -2028,7 +2032,7 @@ digraph {
 }
 # titanium: 69
 # blueprint: 44
+# alloy: 38
 # paragon: 38
-# alloy: 37
 # starchart: 35
 # time crystal: 34

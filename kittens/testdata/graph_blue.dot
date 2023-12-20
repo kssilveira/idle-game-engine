@@ -264,6 +264,7 @@ digraph {
   "Combustion" -> "Offset Press" [color="blue"];
   "Satellites" -> "Photolithography" [color="blue"];
   "Satellites" -> "Uplink" [color="blue"];
+  "Orbital Engineering" -> "Starlink" [color="blue"];
   "Superconductors" -> "Cryocomputing" [color="blue"];
   "Artificial Intelligence" -> "Machine Learning" [color="blue"];
   "Machinery" -> "Workshop Automation" [color="blue"];
@@ -640,6 +641,7 @@ digraph {
   "Offset Press" [shape="diamond"];
   "Photolithography" [shape="diamond"];
   "Uplink" [shape="diamond"];
+  "Starlink" [shape="diamond"];
   "Cryocomputing" [shape="diamond"];
   "Machine Learning" [shape="diamond"];
   "Workshop Automation" [shape="diamond"];
@@ -785,5 +787,5 @@ digraph {
 # Navigation: 13
 # Cryptotheology: 12
 # Electronics: 12
+# Orbital Engineering: 11
 # Philosophy: 11
-# Orbital Engineering: 10
