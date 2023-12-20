@@ -270,8 +270,10 @@ digraph {
   "Black Nexus" -> "Relic Station" [color="green"];
   "Black Pyramid" -> "Black Nexus" [color="green"];
   "Hash Level" -> "Relic Station" [color="green"];
+  "Temporal Battery" -> "temporal flux cap" [color="green"];
   "Chronosphere" -> "temporal flux" [color="green"];
   "Chronosurge" -> "Chronosphere" [color="green"];
+  "temporal flux cap" -> "temporal flux" [color="limegreen"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -1423,6 +1425,7 @@ digraph {
   "paragon" -> "Tiferet" [color="orange"];
   "Netzach" -> "Tiferet" [color="blue"];
   "paragon" -> "Gevurah" [color="orange"];
+  "Tiferet" -> "Gevurah" [color="blue"];
   "paragon" -> "Chesed" [color="orange"];
   "Gevurah" -> "Chesed" [color="blue"];
   "paragon" -> "Binah" [color="orange"];
@@ -1559,6 +1562,7 @@ digraph {
   "antimatter" [shape="cylinder"];
   "relic" [shape="cylinder"];
   "void" [shape="cylinder"];
+  "temporal flux cap" [shape="cylinder"];
   "temporal flux" [shape="cylinder"];
   "blackcoin" [shape="cylinder"];
   "kitten" [shape="cylinder"];

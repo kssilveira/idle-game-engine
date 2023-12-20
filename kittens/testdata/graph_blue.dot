@@ -363,6 +363,7 @@ digraph {
   "Yesod" -> "Hod" [color="blue"];
   "Hod" -> "Netzach" [color="blue"];
   "Netzach" -> "Tiferet" [color="blue"];
+  "Tiferet" -> "Gevurah" [color="blue"];
   "Gevurah" -> "Chesed" [color="blue"];
   "Chesed" -> "Binah" [color="blue"];
   "Binah" -> "Chokhmah" [color="blue"];

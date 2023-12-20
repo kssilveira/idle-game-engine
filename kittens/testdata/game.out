@@ -1867,13 +1867,25 @@
       "Cap": -1
     },
     {
+      "Name": "temporal flux cap",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Temporal Battery",
+          "Factor": 750
+        }
+      ],
+      "StartCount": 3000,
+      "Formula": "Count = (3000 + (c(Temporal Battery) * 750))"
+    },
+    {
       "Name": "temporal flux",
       "Type": "Resource",
       "IsHidden": true,
-      "Cap": 1,
       "Producers": [
         {
-          "Factor": 0.004166666666666667,
+          "Factor": 0.008333333333333333,
           "Bonus": [
             {
               "Name": "Temporal Accelerator",
@@ -1892,7 +1904,8 @@
           "BonusStartsFromZero": true
         }
       ],
-      "Formula": "Count += (((0.004167 * (1 + (c(Temporal Accelerator) * 0.05))) + (c(Chronosphere) * 0.00125 * c(Chronosurge))) * seconds)"
+      "CapResource": "temporal flux cap",
+      "Formula": "Count += (((0.008333 * (1 + (c(Temporal Accelerator) * 0.05))) + (c(Chronosphere) * 0.00125 * c(Chronosurge))) * seconds)"
     },
     {
       "Name": "blackcoin",
@@ -2341,8 +2354,8 @@
           "Name": "Black Core"
         }
       ],
-      "StartCount": 1,
-      "Formula": "Count = (1 + c(Black Core))"
+      "StartCount": 16,
+      "Formula": "Count = (16 + c(Black Core))"
     },
     {
       "Name": "sorrow",
@@ -13832,7 +13845,7 @@
     {
       "Name": "Gevurah",
       "Type": "Tech",
-      "UnlockedBy": "Gevurah",
+      "UnlockedBy": "Tiferet",
       "LockedBy": "Gevurah",
       "Costs": [
         {

@@ -749,7 +749,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Temporal Battery", Factor: 750,
 		}},
 	}, {
-		Name: "temporal flux", Type: "Resource", IsHidden: true, Cap: "temporal flux cap",
+		Name: "temporal flux", Type: "Resource", IsHidden: true, CapResource: "temporal flux cap",
 		Producers: []data.Resource{{
 			Factor: 5. / (60 * 10),
 			Bonus:  []data.Resource{{Name: "Temporal Accelerator", Factor: 0.05}},
@@ -3692,7 +3692,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Tiferet", UnlockedBy: "Netzach",
 		Costs: []data.Resource{{Name: "paragon", Count: 2500}},
 	}, {
-		Name: "Gevurah", UnlockedBy: "Gevurah",
+		Name: "Gevurah", UnlockedBy: "Tiferet",
 		Costs: []data.Resource{{Name: "paragon", Count: 5000}},
 	}, {
 		Name: "Chesed", UnlockedBy: "Gevurah",
