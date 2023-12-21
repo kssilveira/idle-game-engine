@@ -1883,9 +1883,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "beam", Count: 10 * 0.15,
 		}, {
-			Name: "scaffold", Count: 1 * 0.1,
+			Name: "scaffold", Count: 1 * 0.10,
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},
@@ -1903,11 +1903,11 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "parchment", Count: 5 * 0.25,
 		}, {
-			Name: "manuscript", Count: 4 * 0.15,
+			Name: "manuscript", Count: 3 * 0.15,
 		}, {
 			Name: "compendium", Count: 1 * 0.10,
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},
@@ -1927,7 +1927,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "gear", Count: 5 * 0.10,
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},
@@ -1949,7 +1949,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "megalith", Count: 1 * 0.10,
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},
@@ -1968,11 +1968,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "plate", Count: 2 * 0.65,
 		}, {
 			Name: "titanium", Count: 1.5 * 0.15,
-			Bonus: []data.Resource{{Name: "ship", Factor: 0.03 * 0.35 / 100}},
+			Bonus: []data.Resource{{Name: "ship", Factor: 0.03 * 0.0035}},
 		}, {
 			Name: "alloy", Count: 0.25 * 0.05,
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},
@@ -1990,7 +1990,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "oil", Count: 100 * 0.25,
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},
@@ -2008,7 +2008,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "thorium", Count: 1 * 0.50,
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},
@@ -2034,7 +2034,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "relic", Count: 1 * 0.05,
 			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
-			Name: "blueprint", Count: 0.1,
+			Name: "blueprint", Count: 0.10,
 		}, {
 			Name: "spice", Count: 8.75,
 		}},

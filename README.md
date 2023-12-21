@@ -90,13 +90,8 @@ Edges:
 More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/workshop
-    - Antimatter Reactors
+  - https://wiki.kittensgame.com/en/game-tabs/religion
 
-- Tradepost
-  - Trade +1.5%
-  - Caravanserai - Trade Relations +0.35%
-    - Each Tradepost improves standings by +0.35%
 - Factory
   - Space Manufacturing - Space Bonus +3.75
     - Increases Space Bonus from Space Elevators and Orbital Arrays by 3.75% per factory. (4.5% with Factory Logistics) Does not apply to Planet Crackers.
@@ -121,16 +116,13 @@ More features from kittens game:
       - 1.5 * # of Chronospheres * Sqrt(resource amount) of each craftable resource is carried over on reset.
 - Engineer
 - Energy
-  - Broadcast Tower
-    - Culture per Tick +(1\*Energy Surplus Ratio)
-    - Max Culture +(300\*Energy Surplus Ratio)
-    - Satellite Radio - Culture per Tick, Max Culture +0.5% per Satellite
-      - Broadcast Towers' max culture and culture production is increased by 0.5% per active Satellite (multiplies with other effects)
+  - Broadcast Tower culture
 - Pollution
 - Diminishing Returns and Limits
   - e.g. Each trade ship adds +1% to harbor capacity with diminishing returns past 168.75% and a limit of 225%
-- Festivals
 - Compendium Cap
+- Festivals
+- Trade Standings And Embassy
 - Kitten Skills
 - Space Travel Speed
 - Blackcoin Market
