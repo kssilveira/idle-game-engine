@@ -90,7 +90,7 @@ Edges:
 More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/space
+  - https://wiki.kittensgame.com/en/game-tabs/time
 
 - Factory
   - Space Manufacturing - Space Bonus +3.75
@@ -107,6 +107,7 @@ More features from kittens game:
   - Magneto
     - Steamworks Magneto Boost
   - Reactor
+  - Space Elevator Provide 0.1% of global production to Hydraulic Fracturers & Spice Refineries
 - Events
   - Astronomical Events
   - Meteors
@@ -116,6 +117,9 @@ More features from kittens game:
   - Ivory Meteors
   - Alicorn
 - Global Storage Ratio
+- Space Bonus
+  - Space Elevator Provide a 1% bonus to all space structures
+  - Orbital Array Provide a 2% bonus to all space structures
 - Faith Transcend, Adore, Praise
 - Reset
   - Chronosphere

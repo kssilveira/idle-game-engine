@@ -103,7 +103,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Factory Logistics", Factor: 0.20}},
 		}},
 	}, {
-		Name: "SpaceElevatorBonus",
+		Name: "SpaceElevatorOilBonus",
 		Producers: []data.Resource{{
 			Name: "Space Elevator", Factor: -0.05,
 		}},
@@ -155,6 +155,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Event Horizon", Factor: 0.10,
 		}},
+	}, {
+		Name:      "BaseMetalCapBonus",
+		Producers: []data.Resource{{Name: "Sunforge", Factor: 0.01}},
 	}})
 
 	g.AddResources([]data.Resource{{
@@ -505,6 +508,7 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
+		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 	}, {
 		Name: "iron", Type: "Resource", CapResource: "iron cap",
 		Producers: []data.Resource{{
@@ -619,9 +623,9 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Name: "Sky Palace", Factor: 0.01,
+			Name: "BaseMetalCapBonus",
 		}, {
-			Name: "Sunforge", Factor: 0.01,
+			Name: "Sky Palace", Factor: 0.01,
 		}},
 	}, {
 		Name: "gold", Type: "Resource", CapResource: "gold cap",
@@ -669,6 +673,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Cryostation", Factor: 7500,
 		}},
+		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 	}, {
 		Name: "titanium", Type: "Resource", CapResource: "titanium cap",
 		Producers: []data.Resource{{
@@ -732,6 +737,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Cryostation", Factor: 5000,
 		}},
+		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 	}, {
 		Name: "uranium", Type: "Resource", CapResource: "uranium cap",
 		Producers: []data.Resource{{
@@ -759,9 +765,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Cryostation", Factor: 750,
 		}},
-		Bonus: []data.Resource{{
-			Name: "Sunforge", Factor: 0.01,
-		}},
+		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 	}, {
 		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
 		Producers: []data.Resource{{Name: "Active Lunar Outpost", Factor: 0.035}},
@@ -1558,7 +1562,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000, CostExponentBase: 1.08,
 		}, {
-			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
+			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Space Station", UnlockedBy: "Orbital Engineering",
@@ -1569,7 +1573,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 150000, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
+			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
 		}},
 		Adds: []data.Resource{{Name: "kitten", Cap: 2}},
 	}, {
@@ -1585,7 +1589,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
+			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Moon Base", UnlockedBy: "Moon Mission",
@@ -1600,7 +1604,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "unobtainium", Count: 50, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
+			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Planet Cracker", UnlockedBy: "Dune Mission",
@@ -1711,7 +1715,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 25000, CostExponentBase: 1.15,
 		}, {
-			Name: "antimatter", Count: 10, CostExponentBase: 1.15,
+			Name: "antimatter", Count: 50, CostExponentBase: 1.15,
 		}, {
 			Name: "alloy", Count: 25000, CostExponentBase: 1.15,
 		}, {
@@ -3569,7 +3573,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000,
 		}, {
-			Name: "oil", Count: 15000, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
+			Name: "oil", Count: 15000, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Moon Mission", UnlockedBy: "Orbital Launch",
@@ -3580,7 +3584,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 125000,
 		}, {
-			Name: "oil", Count: 45000, Bonus: []data.Resource{{Name: "SpaceElevatorBonus"}},
+			Name: "oil", Count: 45000, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Dune Mission", UnlockedBy: "Moon Mission",
@@ -3594,7 +3598,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kerosene", Count: 75,
 		}},
 	}, {
-		Name: "Piscine Mission", UnlockedBy: "Dune Mission",
+		Name: "Piscine Mission", UnlockedBy: "Moon Mission",
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 1500,
 		}, {
@@ -3602,10 +3606,10 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 200000,
 		}, {
-			Name: "kerosene", Count: 500,
+			Name: "kerosene", Count: 250,
 		}},
 	}, {
-		Name: "Helios Mission", UnlockedBy: "Piscine Mission",
+		Name: "Helios Mission", UnlockedBy: "Dune Mission",
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 3000,
 		}, {
@@ -3616,13 +3620,13 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kerosene", Count: 1250,
 		}},
 	}, {
-		Name: "T-Minus Mission", UnlockedBy: "Helios Mission",
+		Name: "T-Minus Mission", UnlockedBy: "Piscine Mission",
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 2500,
 		}, {
 			Name: "titanium", Count: 12000,
 		}, {
-			Name: "science", Count: 125000,
+			Name: "science", Count: 225000,
 		}, {
 			Name: "kerosene", Count: 750,
 		}},
@@ -3649,7 +3653,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "kerosene", Count: 25000,
 		}},
 	}, {
-		Name: "Yarn Mission", UnlockedBy: "Rorschach Mission",
+		Name: "Yarn Mission", UnlockedBy: "Helios Mission",
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 7500,
 		}, {
@@ -3682,7 +3686,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "thorium", Count: 35000,
 		}},
 	}, {
-		Name: "Centaurus Mission", UnlockedBy: "Charon Mission",
+		Name: "Centaurus Mission", UnlockedBy: "Rorschach Mission",
 		Costs: []data.Resource{{
 			Name: "starchart", Count: 100000,
 		}, {

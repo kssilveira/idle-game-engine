@@ -280,7 +280,7 @@
       "Formula": "Count = ((c(Workshop) * 0.06) + (c(Factory) * 0.05 * (1 + (c(Factory Logistics) * 0.2))))"
     },
     {
-      "Name": "SpaceElevatorBonus",
+      "Name": "SpaceElevatorOilBonus",
       "Type": "Resource",
       "IsHidden": true,
       "Producers": [
@@ -407,6 +407,19 @@
       ],
       "StartCountFromZero": true,
       "Formula": "Count = ((c(Void Rift) * 0.02) + (c(Event Horizon) * 0.1))"
+    },
+    {
+      "Name": "BaseMetalCapBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Sunforge",
+          "Factor": 0.01
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(Sunforge) * 0.01)"
     },
     {
       "Name": "catnip cap",
@@ -1304,7 +1317,12 @@
         }
       ],
       "StartCount": 50,
-      "Formula": "Count = (50 + ((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 50000) + (c(Accelerator) * 7500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
+      "Bonus": [
+        {
+          "Name": "BaseMetalCapBonus"
+        }
+      ],
+      "Formula": "Count = (50 + (((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 50000) + (c(Accelerator) * 7500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(BaseMetalCapBonus))))"
     },
     {
       "Name": "iron",
@@ -1574,15 +1592,14 @@
       "StartCount": 10,
       "Bonus": [
         {
-          "Name": "Sky Palace",
-          "Factor": 0.01
+          "Name": "BaseMetalCapBonus"
         },
         {
-          "Name": "Sunforge",
+          "Name": "Sky Palace",
           "Factor": 0.01
         }
       ],
-      "Formula": "Count = (10 + (((c(Barn) * 10 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 5 * (1 + c(WarehouseBonus))) + (c(Harbour) * 25 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Mint) * 100 * (1 + c(WarehouseBonus))) + (c(Accelerator) * 250 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + (c(Sky Palace) * 0.01) + (c(Sunforge) * 0.01))))"
+      "Formula": "Count = (10 + (((c(Barn) * 10 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 5 * (1 + c(WarehouseBonus))) + (c(Harbour) * 25 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Mint) * 100 * (1 + c(WarehouseBonus))) + (c(Accelerator) * 250 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(BaseMetalCapBonus) + (c(Sky Palace) * 0.01))))"
     },
     {
       "Name": "gold",
@@ -1691,7 +1708,12 @@
         }
       ],
       "StartCount": 2,
-      "Formula": "Count = (2 + ((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Accelerator) * 750 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus)))) + (c(Moon Base) * 1250 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)))"
+      "Bonus": [
+        {
+          "Name": "BaseMetalCapBonus"
+        }
+      ],
+      "Formula": "Count = (2 + (((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Accelerator) * 750 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus)))) + (c(Moon Base) * 1250 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)) * (1 + c(BaseMetalCapBonus))))"
     },
     {
       "Name": "titanium",
@@ -1836,7 +1858,12 @@
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000)))"
+      "Bonus": [
+        {
+          "Name": "BaseMetalCapBonus"
+        }
+      ],
+      "Formula": "Count = (250 + (((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000)) * (1 + c(BaseMetalCapBonus))))"
     },
     {
       "Name": "uranium",
@@ -1911,11 +1938,10 @@
       "StartCount": 150,
       "Bonus": [
         {
-          "Name": "Sunforge",
-          "Factor": 0.01
+          "Name": "BaseMetalCapBonus"
         }
       ],
-      "Formula": "Count = (150 + (((c(Moon Base) * 150 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 750)) * (1 + (c(Sunforge) * 0.01))))"
+      "Formula": "Count = (150 + (((c(Moon Base) * 150 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 750)) * (1 + c(BaseMetalCapBonus))))"
     },
     {
       "Name": "unobtainium",
@@ -7176,7 +7202,7 @@
           "Count": 15000,
           "Bonus": [
             {
-              "Name": "SpaceElevatorBonus"
+              "Name": "SpaceElevatorOilBonus"
             }
           ],
           "CostExponentBase": 1.05
@@ -7214,7 +7240,7 @@
           "Count": 35000,
           "Bonus": [
             {
-              "Name": "SpaceElevatorBonus"
+              "Name": "SpaceElevatorOilBonus"
             }
           ],
           "CostExponentBase": 1.05
@@ -7266,7 +7292,7 @@
           "Count": 55000,
           "Bonus": [
             {
-              "Name": "SpaceElevatorBonus"
+              "Name": "SpaceElevatorOilBonus"
             }
           ],
           "CostExponentBase": 1.05
@@ -7331,7 +7357,7 @@
           "Count": 70000,
           "Bonus": [
             {
-              "Name": "SpaceElevatorBonus"
+              "Name": "SpaceElevatorOilBonus"
             }
           ],
           "CostExponentBase": 1.05
@@ -7671,7 +7697,7 @@
         },
         {
           "Name": "antimatter",
-          "Count": 10,
+          "Count": 50,
           "CostExponentBase": 1.15
         },
         {
@@ -13357,7 +13383,7 @@
           "Count": 15000,
           "Bonus": [
             {
-              "Name": "SpaceElevatorBonus"
+              "Name": "SpaceElevatorOilBonus"
             }
           ]
         }
@@ -13392,7 +13418,7 @@
           "Count": 45000,
           "Bonus": [
             {
-              "Name": "SpaceElevatorBonus"
+              "Name": "SpaceElevatorOilBonus"
             }
           ]
         }
@@ -13437,7 +13463,7 @@
     {
       "Name": "Piscine Mission",
       "Type": "Tech",
-      "UnlockedBy": "Dune Mission",
+      "UnlockedBy": "Moon Mission",
       "LockedBy": "Piscine Mission",
       "Costs": [
         {
@@ -13454,7 +13480,7 @@
         },
         {
           "Name": "kerosene",
-          "Count": 500
+          "Count": 250
         }
       ],
       "Adds": [
@@ -13467,7 +13493,7 @@
     {
       "Name": "Helios Mission",
       "Type": "Tech",
-      "UnlockedBy": "Piscine Mission",
+      "UnlockedBy": "Dune Mission",
       "LockedBy": "Helios Mission",
       "Costs": [
         {
@@ -13497,7 +13523,7 @@
     {
       "Name": "T-Minus Mission",
       "Type": "Tech",
-      "UnlockedBy": "Helios Mission",
+      "UnlockedBy": "Piscine Mission",
       "LockedBy": "T-Minus Mission",
       "Costs": [
         {
@@ -13510,7 +13536,7 @@
         },
         {
           "Name": "science",
-          "Count": 125000
+          "Count": 225000
         },
         {
           "Name": "kerosene",
@@ -13587,7 +13613,7 @@
     {
       "Name": "Yarn Mission",
       "Type": "Tech",
-      "UnlockedBy": "Rorschach Mission",
+      "UnlockedBy": "Helios Mission",
       "LockedBy": "Yarn Mission",
       "Costs": [
         {
@@ -13677,7 +13703,7 @@
     {
       "Name": "Centaurus Mission",
       "Type": "Tech",
-      "UnlockedBy": "Charon Mission",
+      "UnlockedBy": "Rorschach Mission",
       "LockedBy": "Centaurus Mission",
       "Costs": [
         {

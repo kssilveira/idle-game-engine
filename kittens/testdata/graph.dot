@@ -25,7 +25,7 @@ digraph {
   "Workshop" -> "CraftRatio" [color="green"];
   "Factory" -> "CraftRatio" [color="green"];
   "Factory Logistics" -> "Factory" [color="green"];
-  "SpaceElevatorBonus" -> "Space Elevator" [color="red"];
+  "SpaceElevatorOilBonus" -> "Space Elevator" [color="red"];
   "Antimatter Reactors" -> "SpaceReactorScienceBonus" [color="green"];
   "Advanced AM Reactors" -> "SpaceReactorScienceBonus" [color="green"];
   "Void Reactors" -> "SpaceReactorScienceBonus" [color="green"];
@@ -41,6 +41,7 @@ digraph {
   "burned paragon" -> "ParagonCapBonus" [color="green"];
   "Void Rift" -> "GlobalCapBonus" [color="green"];
   "Event Horizon" -> "GlobalCapBonus" [color="green"];
+  "Sunforge" -> "BaseMetalCapBonus" [color="green"];
   "Barn" -> "catnip cap" [color="green"];
   "BarnCatnipCapBonus" -> "Barn" [color="green"];
   "Warehouse" -> "catnip cap" [color="green"];
@@ -178,6 +179,7 @@ digraph {
   "Moon Base" -> "iron cap" [color="green"];
   "Cryostation" -> "iron cap" [color="green"];
   "Accelerator" -> "iron cap" [color="green"];
+  "BaseMetalCapBonus" -> "iron cap" [color="green"];
   "Active Smelter" -> "iron" [color="green"];
   "Electrolytic Smelting" -> "Active Smelter" [color="green"];
   "Active Calciner" -> "iron" [color="green"];
@@ -216,8 +218,8 @@ digraph {
   "Mint" -> "gold cap" [color="green"];
   "WarehouseBonus" -> "Mint" [color="green"];
   "Accelerator" -> "gold cap" [color="green"];
+  "BaseMetalCapBonus" -> "gold cap" [color="green"];
   "Sky Palace" -> "gold cap" [color="green"];
-  "Sunforge" -> "gold cap" [color="green"];
   "gold" -> "Active Mint" [color="red"];
   "Active Smelter" -> "gold" [color="green"];
   "Gold Ore" -> "Active Smelter" [color="green"];
@@ -231,6 +233,7 @@ digraph {
   "Accelerator" -> "titanium cap" [color="green"];
   "Moon Base" -> "titanium cap" [color="green"];
   "Cryostation" -> "titanium cap" [color="green"];
+  "BaseMetalCapBonus" -> "titanium cap" [color="green"];
   "titanium" -> "Active Accelerator" [color="red"];
   "Active Calciner" -> "titanium" [color="green"];
   "Active Smelter" -> "titanium" [color="green"];
@@ -254,6 +257,7 @@ digraph {
   "Reactor" -> "uranium cap" [color="green"];
   "Planet Cracker" -> "uranium cap" [color="green"];
   "Cryostation" -> "uranium cap" [color="green"];
+  "BaseMetalCapBonus" -> "uranium cap" [color="green"];
   "Active Accelerator" -> "uranium" [color="green"];
   "uranium" -> "Active Reactor" [color="red"];
   "Enriched Uranium" -> "Active Reactor" [color="green"];
@@ -266,7 +270,7 @@ digraph {
   "uranium cap" -> "uranium" [color="limegreen"];
   "Moon Base" -> "unobtainium cap" [color="green"];
   "Cryostation" -> "unobtainium cap" [color="green"];
-  "Sunforge" -> "unobtainium cap" [color="green"];
+  "BaseMetalCapBonus" -> "unobtainium cap" [color="green"];
   "Active Lunar Outpost" -> "unobtainium" [color="green"];
   "unobtainium cap" -> "unobtainium" [color="limegreen"];
   "Microwarp Reactors" -> "unobtainium" [color="green"];
@@ -646,7 +650,7 @@ digraph {
   "starchart" -> "Satellite" [color="orange"];
   "titanium" -> "Satellite" [color="orange"];
   "oil" -> "Satellite" [color="orange"];
-  "SpaceElevatorBonus" -> "oil" [color="red"];
+  "SpaceElevatorOilBonus" -> "oil" [color="red"];
   "Satellites" -> "Satellite" [color="blue"];
   "starchart" -> "Space Station" [color="orange"];
   "alloy" -> "Space Station" [color="orange"];
@@ -1372,15 +1376,15 @@ digraph {
   "starchart" -> "Piscine Mission" [color="orange"];
   "titanium" -> "Piscine Mission" [color="orange"];
   "kerosene" -> "Piscine Mission" [color="orange"];
-  "Dune Mission" -> "Piscine Mission" [color="blue"];
+  "Moon Mission" -> "Piscine Mission" [color="blue"];
   "starchart" -> "Helios Mission" [color="orange"];
   "titanium" -> "Helios Mission" [color="orange"];
   "kerosene" -> "Helios Mission" [color="orange"];
-  "Piscine Mission" -> "Helios Mission" [color="blue"];
+  "Dune Mission" -> "Helios Mission" [color="blue"];
   "starchart" -> "T-Minus Mission" [color="orange"];
   "titanium" -> "T-Minus Mission" [color="orange"];
   "kerosene" -> "T-Minus Mission" [color="orange"];
-  "Helios Mission" -> "T-Minus Mission" [color="blue"];
+  "Piscine Mission" -> "T-Minus Mission" [color="blue"];
   "starchart" -> "Kairo Mission" [color="orange"];
   "titanium" -> "Kairo Mission" [color="orange"];
   "kerosene" -> "Kairo Mission" [color="orange"];
@@ -1392,7 +1396,7 @@ digraph {
   "starchart" -> "Yarn Mission" [color="orange"];
   "titanium" -> "Yarn Mission" [color="orange"];
   "kerosene" -> "Yarn Mission" [color="orange"];
-  "Rorschach Mission" -> "Yarn Mission" [color="blue"];
+  "Helios Mission" -> "Yarn Mission" [color="blue"];
   "starchart" -> "Umbra Mission" [color="orange"];
   "kerosene" -> "Umbra Mission" [color="orange"];
   "thorium" -> "Umbra Mission" [color="orange"];
@@ -1405,7 +1409,7 @@ digraph {
   "titanium" -> "Centaurus Mission" [color="orange"];
   "kerosene" -> "Centaurus Mission" [color="orange"];
   "thorium" -> "Centaurus Mission" [color="orange"];
-  "Charon Mission" -> "Centaurus Mission" [color="blue"];
+  "Rorschach Mission" -> "Centaurus Mission" [color="blue"];
   "starchart" -> "Furthest Ring" [color="orange"];
   "kerosene" -> "Furthest Ring" [color="orange"];
   "thorium" -> "Furthest Ring" [color="orange"];
@@ -1583,13 +1587,14 @@ digraph {
   "BarnCatnipCapBonus" [shape="cylinder"];
   "HuntingBonus" [shape="cylinder"];
   "CraftRatio" [shape="cylinder"];
-  "SpaceElevatorBonus" [shape="cylinder"];
+  "SpaceElevatorOilBonus" [shape="cylinder"];
   "SpaceReactorScienceBonus" [shape="cylinder"];
   "AcceleratorCapBonus" [shape="cylinder"];
   "MoonBaseCapBonus" [shape="cylinder"];
   "CatnipCapBonus" [shape="cylinder"];
   "ParagonCapBonus" [shape="cylinder"];
   "GlobalCapBonus" [shape="cylinder"];
+  "BaseMetalCapBonus" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];
   "wood cap" [shape="cylinder"];
