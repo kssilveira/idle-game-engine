@@ -1990,7 +1990,8 @@
                     {
                       "Name": "Black Pyramid"
                     }
-                  ]
+                  ],
+                  "BonusStartsFromZero": true
                 },
                 {
                   "Name": "Hash Level",
@@ -2002,7 +2003,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "Formula": "Count += ((c(Space Beacon) * 0.005 * (c(Relic Station) * (1 + (c(Black Nexus) * 0.1 * (1 + c(Black Pyramid))) + (c(Hash Level) * 0.25)))) * seconds)"
+      "Formula": "Count += ((c(Space Beacon) * 0.005 * (c(Relic Station) * (1 + (c(Black Nexus) * 0.1 * c(Black Pyramid)) + (c(Hash Level) * 0.25)))) * seconds)"
     },
     {
       "Name": "void",
@@ -2340,7 +2341,8 @@
           "Factor": 0.5,
           "Bonus": [
             {
-              "Name": "Stained Glass"
+              "Name": "Stained Glass",
+              "Factor": 0.5
             },
             {
               "Name": "Basilica",
@@ -2350,7 +2352,7 @@
         }
       ],
       "CapResource": "culture cap",
-      "Formula": "Count += (((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + c(Stained Glass) + (c(Basilica) * 2)))) * seconds)"
+      "Formula": "Count += (((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 2)))) * seconds)"
     },
     {
       "Name": "faith cap",
@@ -2364,18 +2366,16 @@
             {
               "Name": "Golden Spire",
               "Factor": 0.5
+            },
+            {
+              "Name": "Sun Altar",
+              "Factor": 0.5
             }
           ]
         }
       ],
       "StartCount": 100,
-      "Bonus": [
-        {
-          "Name": "Sun Altar",
-          "Factor": 0.1
-        }
-      ],
-      "Formula": "Count = (100 + ((c(Temple) * 100 * (1 + (c(Golden Spire) * 0.5))) * (1 + (c(Sun Altar) * 0.1))))"
+      "Formula": "Count = (100 + (c(Temple) * 100 * (1 + (c(Golden Spire) * 0.5) + (c(Sun Altar) * 0.5))))"
     },
     {
       "Name": "faith",
@@ -2515,8 +2515,18 @@
               "Factor": 0.00015
             },
             {
-              "Name": "Unicorn Utopia",
+              "Name": "Sunspire",
               "Factor": 0.0003
+            },
+            {
+              "Name": "Black Radiance",
+              "Factor": 0.03464,
+              "Bonus": [
+                {
+                  "Name": "sorrow"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         },
@@ -2529,7 +2539,7 @@
           "Factor": 0.00025
         }
       ],
-      "Formula": "Count += (((c(Sky Palace) * 0.0001 * (1 + (c(Unicorn Utopia) * 0.00015) + (c(Unicorn Utopia) * 0.0003))) + (c(Unicorn Utopia) * 0.000125) + (c(Sunspire) * 0.00025)) * seconds)"
+      "Formula": "Count += (((c(Sky Palace) * 0.0001 * (1 + (c(Unicorn Utopia) * 0.00015) + (c(Sunspire) * 0.0003) + (c(Black Radiance) * 0.03464 * c(sorrow)))) + (c(Unicorn Utopia) * 0.000125) + (c(Sunspire) * 0.00025)) * seconds)"
     },
     {
       "Name": "necrocorn",
@@ -2538,10 +2548,16 @@
       "Producers": [
         {
           "Name": "Marker",
-          "Factor": 0.000005
+          "Factor": 0.000005,
+          "Bonus": [
+            {
+              "Name": "Unicorn Graveyard",
+              "Factor": 0.1
+            }
+          ]
         }
       ],
-      "Formula": "Count += ((c(Marker) * 0.000005) * seconds)"
+      "Formula": "Count += ((c(Marker) * 0.000005 * (1 + (c(Unicorn Graveyard) * 0.1))) * seconds)"
     },
     {
       "Name": "sorrow cap",
@@ -8748,7 +8764,8 @@
                 {
                   "Name": "Black Pyramid"
                 }
-              ]
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }

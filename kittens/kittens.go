@@ -785,7 +785,8 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Relic Station",
 				Bonus: []data.Resource{{
 					Name: "Black Nexus", Factor: 0.10,
-					Bonus: []data.Resource{{Name: "Black Pyramid"}},
+					Bonus:               []data.Resource{{Name: "Black Pyramid"}},
+					BonusStartsFromZero: true,
 				}, {
 					Name: "Hash Level", Factor: 0.25,
 				}},
@@ -913,7 +914,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Temple", Factor: 0.1 * 5,
 			Bonus: []data.Resource{{
-				Name: "Stained Glass",
+				Name: "Stained Glass", Factor: 0.50,
 			}, {
 				Name: "Basilica", Factor: 2.00,
 			}},
@@ -922,9 +923,12 @@ func NewGame(now game.Now) *game.Game {
 		Name: "faith cap", Type: "Resource", IsHidden: true, StartCount: 100,
 		Producers: []data.Resource{{
 			Name: "Temple", Factor: 100,
-			Bonus: []data.Resource{{Name: "Golden Spire", Factor: 0.50}},
+			Bonus: []data.Resource{{
+				Name: "Golden Spire", Factor: 0.50,
+			}, {
+				Name: "Sun Altar", Factor: 0.50,
+			}},
 		}},
-		Bonus: []data.Resource{{Name: "Sun Altar", Factor: 0.10}},
 	}, {
 		Name: "faith", Type: "Resource", CapResource: "faith cap",
 		Producers: []data.Resource{{
@@ -976,7 +980,11 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Unicorn Utopia", Factor: 0.00015,
 			}, {
-				Name: "Unicorn Utopia", Factor: 0.0003,
+				Name: "Sunspire", Factor: 0.0003,
+			}, {
+				Name: "Black Radiance", Factor: 0.03464,
+				Bonus:               []data.Resource{{Name: "sorrow"}},
+				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Unicorn Utopia", Factor: 0.000025 * 5,
@@ -987,6 +995,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "necrocorn", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
 			Name: "Marker", Factor: 0.000001 * 5,
+			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.10}},
 		}},
 	}, {
 		Name: "sorrow cap", Type: "Resource", IsHidden: true, StartCount: 16,
@@ -2069,8 +2078,9 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{
 			Name: "relic", Count: 1,
 			Bonus: []data.Resource{{
-				Name:  "Black Nexus",
-				Bonus: []data.Resource{{Name: "Black Pyramid"}},
+				Name:                "Black Nexus",
+				Bonus:               []data.Resource{{Name: "Black Pyramid"}},
+				BonusStartsFromZero: true,
 			}},
 		}},
 	}})

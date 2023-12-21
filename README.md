@@ -90,7 +90,7 @@ Edges:
 More features from kittens game:
 
 - https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/religion
+  - https://wiki.kittensgame.com/en/game-tabs/space
 
 - Factory
   - Space Manufacturing - Space Bonus +3.75
@@ -107,13 +107,25 @@ More features from kittens game:
   - Magneto
     - Steamworks Magneto Boost
   - Reactor
-- Astronomical Events
-- Meteors
+- Events
+  - Astronomical Events
+  - Meteors
+  - Unicorn Rifts
+    - Each Ivory Tower increases the frequency of this event by 0.05% per game-day, or 1% per day per 20 towers.
+      - The amount of unicorns you get from a rift is 500* (1 + your unicorn ziggurat bonus production to unicorns/10)
+  - Ivory Meteors
+  - Alicorn
+- Global Storage Ratio
+- Faith Transcend, Adore, Praise
 - Reset
   - Chronosphere
     - Resource Preservation +1.5%
     - Flux Condensator - Craftable Resource Preservation +1.5%
       - 1.5 * # of Chronospheres * Sqrt(resource amount) of each craftable resource is carried over on reset.
+- Codex Leviathanus
+  - Every Black Library improves Codex Leviathanus scaling by +2%. This value is further improved by Unicorn Graveyards
+- Blazar
+  - Each level improves Chronomancy and Unicornmancy by 2.5%, and Time Impedance by 10%. Improves Resource Retrieval effectiveness by 2%
 - Engineer
 - Energy
   - Broadcast Tower culture
@@ -127,3 +139,4 @@ More features from kittens game:
 - Space Travel Speed
 - Blackcoin Market
 - Iron Will
+- Pacts
