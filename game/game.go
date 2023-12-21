@@ -521,8 +521,8 @@ func (g *Game) validateResource(r *data.Resource) error {
 		if r.Count != 0 {
 			return fmt.Errorf("resource %s has StartCount and Count", r.Name)
 		}
-		if len(r.Producers) == 0 {
-			return fmt.Errorf("resource %s has StartCount and no Producers", r.Name)
+		if len(r.Producers) == 0 && len(r.Bonus) == 0 {
+			return fmt.Errorf("resource %s has StartCount and no Producers or Bonus", r.Name)
 		}
 	}
 	return nil

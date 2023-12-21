@@ -220,7 +220,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Brewery", Factor: -1 * 5,
 		}, {
-			Name: "Bio Lab", Factor: -1 * 5,
+			Name: "Active Bio Lab", Factor: -1 * 5,
 			Bonus:               []data.Resource{{Name: "Biofuel Processing"}},
 			BonusStartsFromZero: true,
 		}}),
@@ -342,7 +342,7 @@ func NewGame(now game.Now) *game.Game {
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Observatory", Factor: 0.02,
-				Bonus:               []data.Resource{{
+				Bonus: []data.Resource{{
 					Name: "Titanium Reflectors",
 				}, {
 					Name: "Unobtainium Reflectors",
@@ -714,7 +714,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Calciner", Factor: -0.024 * 5,
 		}, {
-			Name: "Bio Lab", Factor: 0.02 * 5,
+			Name: "Active Bio Lab", Factor: 0.02 * 5,
 			Bonus: []data.Resource{{
 				Name:  "Biofuel Processing",
 				Bonus: []data.Resource{{Name: "GM Catnip", Factor: 0.60}},
@@ -835,7 +835,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Active Mint", Factor: 0.0000875,
-			Bonus: []data.Resource{{Name: "catpower cap"}},
+			Bonus:               []data.Resource{{Name: "catpower cap"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
@@ -845,7 +845,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Active Mint", Factor: 0.000021,
-			Bonus: []data.Resource{{Name: "catpower cap"}},
+			Bonus:               []data.Resource{{Name: "catpower cap"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
@@ -1145,7 +1145,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "science", Count: 1000, CostExponentBase: 1.1,
 		}},
 	}, {
-		Name: "Bio Lab", UnlockedBy: "Biology",
+		Name: "Active Bio Lab", UnlockedBy: "Biology",
 		Costs: []data.Resource{{
 			Name: "slab", Count: 100, CostExponentBase: 1.1,
 		}, {
@@ -1819,7 +1819,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "antimatter", Count: 1000, CostExponentBase: 1.25,
 		}},
 	}, {
-		Name: "Void Rift", UnlockedBy: "Void Space",
+		Name: "Void Rift", UnlockedBy: "Void Aspiration",
 		Costs: []data.Resource{{Name: "void", Count: 75, CostExponentBase: 1.3}},
 	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
@@ -3877,6 +3877,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "plate", Count: 150,
 		}, {
 			Name: "starchart", Count: 25,
+			Bonus: []data.Resource{{
+				Name: "Satellite", Factor: 0.0125,
+				Bonus:               []data.Resource{{Name: "Satellite Navigation"}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 	}, {
 		Name: "tanker", UnlockedBy: "Robotics",
@@ -3890,6 +3895,11 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "kerosene", UnlockedBy: "Oil Processing",
 		Costs: []data.Resource{{Name: "oil", Count: 7500}},
+		Bonus: []data.Resource{{
+			Name: "Factory", Factor: 0.05,
+			Bonus:               []data.Resource{{Name: "Factory Processing"}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "parchment", UnlockedBy: "Writing",
 		Costs: []data.Resource{{Name: "fur", Count: 175}},
@@ -3924,6 +3934,20 @@ func NewGame(now game.Now) *game.Game {
 			Name: "compendium", Count: 25,
 		}, {
 			Name: "science", Count: 25000,
+		}},
+		Bonus: []data.Resource{{
+			Name: "CAD System", Factor: 0.01,
+			Bonus: []data.Resource{{
+				Name: "Library",
+			}, {
+				Name: "Data Center",
+			}, {
+				Name: "Academy",
+			}, {
+				Name: "Observatory",
+			}, {
+				Name: "Bio Lab",
+			}},
 		}},
 	}, {
 		Name: "thorium", UnlockedBy: "Thorium",
@@ -3994,7 +4018,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		action.Type = "Craft"
 		action.Adds = []data.Resource{{
 			Name: name, Count: 1,
-			Bonus: []data.Resource{{Name: "CraftRatio"}},
+			Bonus: join([]data.Resource{{Name: "CraftRatio"}}, action.Bonus),
 		}}
 		action.IsHidden = true
 		g.AddAction(action)

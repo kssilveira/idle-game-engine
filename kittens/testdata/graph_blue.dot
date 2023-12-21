@@ -17,6 +17,7 @@ digraph {
   "Architecture" -> "Mansion" [color="blue"];
   "Astronomy" -> "Observatory" [color="blue"];
   "Biology" -> "Bio Lab" [color="blue"];
+  "Bio Lab" -> "Active Bio Lab" [color="blue"];
   "Navigation" -> "Harbour" [color="blue"];
   "Geology" -> "Quarry" [color="blue"];
   "Construction" -> "Lumber Mill" [color="blue"];
@@ -107,7 +108,7 @@ digraph {
   "Chronosurge" -> "Temporal Press" [color="blue"];
   "Void Space" -> "Cryochambers" [color="blue"];
   "Void Aspiration" -> "Void Hoover" [color="blue"];
-  "Void Space" -> "Void Rift" [color="blue"];
+  "Void Aspiration" -> "Void Rift" [color="blue"];
   "Paradox Theory" -> "Chronocontrol" [color="blue"];
   "Paradox Theory" -> "Void Resonator" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
@@ -410,6 +411,7 @@ digraph {
   "Mansion" [shape="box3d"];
   "Observatory" [shape="box3d"];
   "Bio Lab" [shape="box3d"];
+  "Active Bio Lab" [shape="box3d"];
   "Harbour" [shape="box3d"];
   "Quarry" [shape="box3d"];
   "Lumber Mill" [shape="box3d"];

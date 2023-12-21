@@ -93,8 +93,8 @@ digraph {
   "Mineral Hoes" -> "farmer" [color="green"];
   "Iron Hoes" -> "farmer" [color="green"];
   "catnip" -> "Active Brewery" [color="red"];
-  "catnip" -> "Bio Lab" [color="red"];
-  "Biofuel Processing" -> "Bio Lab" [color="red"];
+  "catnip" -> "Active Bio Lab" [color="red"];
+  "Biofuel Processing" -> "Active Bio Lab" [color="red"];
   "catnip cap" -> "catnip" [color="limegreen"];
   "Aqueduct" -> "catnip" [color="green"];
   "Hydroponics" -> "catnip" [color="green"];
@@ -246,8 +246,8 @@ digraph {
   "Oil Distillation" -> "Oil Well" [color="green"];
   "oil" -> "Active Magneto" [color="red"];
   "oil" -> "Active Calciner" [color="red"];
-  "Bio Lab" -> "oil" [color="green"];
-  "Biofuel Processing" -> "Bio Lab" [color="green"];
+  "Active Bio Lab" -> "oil" [color="green"];
+  "Biofuel Processing" -> "Active Bio Lab" [color="green"];
   "GM Catnip" -> "Biofuel Processing" [color="green"];
   "Hydraulic Fracturer" -> "oil" [color="green"];
   "oil cap" -> "oil" [color="limegreen"];
@@ -358,12 +358,14 @@ digraph {
   "chronoheat" -> "Chrono Furnace" [color="red"];
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
   "Sun Altar" -> "Temple" [color="green"];
-  "HutCostExponentBase" -> "Ironwood Huts" [color="red"];
-  "HutCostExponentBase" -> "Concrete Huts" [color="red"];
-  "HutCostExponentBase" -> "Unobtainium Huts" [color="red"];
-  "HutCostExponentBase" -> "Eludium Huts" [color="red"];
+  "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
+  "Concrete Huts" -> "HutCostExponentBase" [color="red"];
+  "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
+  "Eludium Huts" -> "HutCostExponentBase" [color="red"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
+  "Bio Lab" -> "Idle Bio Lab" [color="green"];
+  "Idle Bio Lab" -> "Active Bio Lab" [color="red"];
   "Accelerator" -> "Idle Accelerator" [color="green"];
   "Idle Accelerator" -> "Active Accelerator" [color="red"];
   "Steamworks" -> "Idle Steamworks" [color="green"];
@@ -448,6 +450,8 @@ digraph {
   "slab" -> "Bio Lab" [color="orange"];
   "alloy" -> "Bio Lab" [color="orange"];
   "Biology" -> "Bio Lab" [color="blue"];
+  "Idle Bio Lab" -> "Active Bio Lab" [color="orange"];
+  "Bio Lab" -> "Active Bio Lab" [color="blue"];
   "scaffold" -> "Harbour" [color="orange"];
   "slab" -> "Harbour" [color="orange"];
   "plate" -> "Harbour" [color="orange"];
@@ -753,7 +757,7 @@ digraph {
   "antimatter" -> "Void Hoover" [color="orange"];
   "Void Aspiration" -> "Void Hoover" [color="blue"];
   "void" -> "Void Rift" [color="orange"];
-  "Void Space" -> "Void Rift" [color="blue"];
+  "Void Aspiration" -> "Void Rift" [color="blue"];
   "time crystal" -> "Chronocontrol" [color="orange"];
   "void" -> "Chronocontrol" [color="orange"];
   "temporal flux" -> "Chronocontrol" [color="orange"];
@@ -1520,6 +1524,8 @@ digraph {
   "scaffold" -> "@ship" [color="orange"];
   "plate" -> "@ship" [color="orange"];
   "starchart" -> "@ship" [color="orange"];
+  "Satellite" -> "starchart" [color="red"];
+  "Satellite Navigation" -> "Satellite" [color="green"];
   "@ship" -> "ship" [color="limegreen"];
   "CraftRatio" -> "ship" [color="green"];
   "Navigation" -> "@ship" [color="blue"];
@@ -1532,6 +1538,8 @@ digraph {
   "oil" -> "@kerosene" [color="orange"];
   "@kerosene" -> "kerosene" [color="limegreen"];
   "CraftRatio" -> "kerosene" [color="green"];
+  "Factory" -> "kerosene" [color="green"];
+  "Factory Processing" -> "Factory" [color="green"];
   "Oil Processing" -> "@kerosene" [color="blue"];
   "fur" -> "@parchment" [color="orange"];
   "@parchment" -> "parchment" [color="limegreen"];
@@ -1549,6 +1557,12 @@ digraph {
   "compendium" -> "@blueprint" [color="orange"];
   "@blueprint" -> "blueprint" [color="limegreen"];
   "CraftRatio" -> "blueprint" [color="green"];
+  "CAD System" -> "blueprint" [color="green"];
+  "Library" -> "CAD System" [color="green"];
+  "Data Center" -> "CAD System" [color="green"];
+  "Academy" -> "CAD System" [color="green"];
+  "Observatory" -> "CAD System" [color="green"];
+  "Bio Lab" -> "CAD System" [color="green"];
   "Physics" -> "@blueprint" [color="blue"];
   "uranium" -> "@thorium" [color="orange"];
   "@thorium" -> "thorium" [color="limegreen"];
@@ -1648,6 +1662,8 @@ digraph {
   "Mansion" [shape="box3d"];
   "Observatory" [shape="box3d"];
   "Bio Lab" [shape="box3d"];
+  "Active Bio Lab" [shape="box3d"];
+  "Idle Bio Lab" [shape="box3d"];
   "Harbour" [shape="box3d"];
   "Quarry" [shape="box3d"];
   "Lumber Mill" [shape="box3d"];
@@ -2053,8 +2069,8 @@ digraph {
   "@megalith" [shape="cds"];
 }
 # titanium: 69
-# blueprint: 44
+# blueprint: 45
 # alloy: 38
 # paragon: 38
-# starchart: 35
+# starchart: 36
 # time crystal: 34
