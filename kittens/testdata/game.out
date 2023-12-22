@@ -747,7 +747,8 @@
         },
         {
           "Name": "Active Brewery",
-          "Factor": -5
+          "Factor": -5,
+          "ProductionOnGone": true
         },
         {
           "Name": "Active Bio Lab",
@@ -757,7 +758,8 @@
               "Name": "Biofuel Processing"
             }
           ],
-          "BonusStartsFromZero": true
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -913,7 +915,8 @@
         },
         {
           "Name": "Active Smelter",
-          "Factor": -0.25
+          "Factor": -0.25,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -1276,7 +1279,8 @@
         },
         {
           "Name": "Active Mint",
-          "Factor": -3.75
+          "Factor": -3.75,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -1408,11 +1412,13 @@
         },
         {
           "Name": "Active Smelter",
-          "Factor": -0.5
+          "Factor": -0.5,
+          "ProductionOnGone": true
         },
         {
           "Name": "Active Calciner",
-          "Factor": -7.5
+          "Factor": -7.5,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -1567,7 +1573,8 @@
               "Name": "Steel Plants"
             }
           ],
-          "BonusStartsFromZero": true
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -1733,7 +1740,8 @@
               "Name": "Steel Plants"
             }
           ],
-          "BonusStartsFromZero": true
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -1756,7 +1764,8 @@
                   "Name": "Fuel Injector",
                   "Factor": -0.25
                 }
-              ]
+              ],
+              "ProductionOnGone": true
             }
           ]
         },
@@ -1873,7 +1882,8 @@
       "Producers": [
         {
           "Name": "Active Mint",
-          "Factor": -0.025
+          "Factor": -0.025,
+          "ProductionOnGone": true
         },
         {
           "Name": "Active Smelter",
@@ -2016,7 +2026,8 @@
       "Producers": [
         {
           "Name": "Active Accelerator",
-          "Factor": -0.075
+          "Factor": -0.075,
+          "ProductionOnGone": true
         },
         {
           "Name": "Active Calciner",
@@ -2131,11 +2142,13 @@
         },
         {
           "Name": "Active Magneto",
-          "Factor": -0.25
+          "Factor": -0.25,
+          "ProductionOnGone": true
         },
         {
           "Name": "Active Calciner",
-          "Factor": -0.12
+          "Factor": -0.12,
+          "ProductionOnGone": true
         },
         {
           "Name": "Active Bio Lab",
@@ -2232,7 +2245,8 @@
               "Name": "Enriched Uranium",
               "Factor": -0.25
             }
-          ]
+          ],
+          "ProductionOnGone": true
         },
         {
           "Name": "Quarry",
@@ -2252,7 +2266,8 @@
         },
         {
           "Name": "Active Lunar Outpost",
-          "Factor": -1.75
+          "Factor": -1.75,
+          "ProductionOnGone": true
         },
         {
           "Name": "Planet Cracker",
@@ -2716,7 +2731,8 @@
         },
         {
           "Name": "Active Brewery",
-          "Factor": -0.5
+          "Factor": -0.5,
+          "ProductionOnGone": true
         },
         {
           "Name": "Spice Refinery",

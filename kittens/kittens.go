@@ -239,9 +239,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Iron Hoes", Factor: 0.30,
 			}},
 		}, {
-			Name: "Active Brewery", Factor: -1 * 5,
+			Name: "Active Brewery", Factor: -1 * 5, ProductionOnGone: true,
 		}, {
-			Name: "Active Bio Lab", Factor: -1 * 5,
+			Name: "Active Bio Lab", Factor: -1 * 5, ProductionOnGone: true,
 			Bonus:               []data.Resource{{Name: "Biofuel Processing"}},
 			BonusStartsFromZero: true,
 		}}),
@@ -315,7 +315,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Alloy Axe", Factor: 0.50,
 			}},
 		}, {
-			Name: "Active Smelter", Factor: -0.05 * 5,
+			Name: "Active Smelter", Factor: -0.05 * 5, ProductionOnGone: true,
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{
@@ -477,7 +477,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Railgun", Factor: 0.25,
 			}},
 		}, {
-			Name: "Active Mint", Factor: -0.75 * 5,
+			Name: "Active Mint", Factor: -0.75 * 5, ProductionOnGone: true,
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
@@ -537,9 +537,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Quarry", Factor: 0.35,
 			}},
 		}, {
-			Name: "Active Smelter", Factor: -0.1 * 5,
+			Name: "Active Smelter", Factor: -0.1 * 5, ProductionOnGone: true,
 		}, {
-			Name: "Active Calciner", Factor: -1.5 * 5,
+			Name: "Active Calciner", Factor: -1.5 * 5, ProductionOnGone: true,
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
@@ -604,7 +604,7 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Fluoridized Reactors",
 			}},
 		}, {
-			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10,
+			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10, ProductionOnGone: true,
 			Bonus:               []data.Resource{{Name: "Steel Plants"}},
 			BonusStartsFromZero: true,
 		}},
@@ -673,7 +673,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus:               []data.Resource{{Name: "Deep Mining"}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10,
+			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10, ProductionOnGone: true,
 			Bonus:               []data.Resource{{Name: "Steel Plants"}},
 			BonusStartsFromZero: true,
 		}},
@@ -681,7 +681,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Pyrolysis", Factor: 0.20,
 			}, {
-				Name: "Active Steamworks", Factor: -0.80, ProductionBoolean: true,
+				Name: "Active Steamworks", Factor: -0.80, ProductionBoolean: true, ProductionOnGone: true,
 				Bonus: []data.Resource{{
 					Name: "High Pressure Engine", Factor: -0.25,
 				}, {
@@ -730,7 +730,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "gold", Type: "Resource", CapResource: "gold cap",
 		Producers: []data.Resource{{
-			Name: "Active Mint", Factor: -0.005 * 5,
+			Name: "Active Mint", Factor: -0.005 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Smelter", Factor: 0.001 * 5,
 			Bonus:               []data.Resource{{Name: "Gold Ore"}},
@@ -788,7 +788,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "titanium", Type: "Resource", CapResource: "titanium cap",
 		Producers: []data.Resource{{
-			Name: "Active Accelerator", Factor: -0.015 * 5,
+			Name: "Active Accelerator", Factor: -0.015 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Calciner", Factor: 0.0005 * 5,
 			Bonus: []data.Resource{{
@@ -836,9 +836,9 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Oil Distillation", Factor: 0.75,
 			}},
 		}, {
-			Name: "Active Magneto", Factor: -0.05 * 5,
+			Name: "Active Magneto", Factor: -0.05 * 5, ProductionOnGone: true,
 		}, {
-			Name: "Active Calciner", Factor: -0.024 * 5,
+			Name: "Active Calciner", Factor: -0.024 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Bio Lab", Factor: 0.02 * 5,
 			Bonus: []data.Resource{{
@@ -875,7 +875,7 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "Active Accelerator", Factor: 0.0025 * 5,
 		}, {
-			Name: "Active Reactor", Factor: -0.001 * 5,
+			Name: "Active Reactor", Factor: -0.001 * 5, ProductionOnGone: true,
 			Bonus: []data.Resource{{Name: "Enriched Uranium", Factor: -0.25}},
 		}, {
 			Name: "Quarry", Factor: 0.0005 * 5,
@@ -885,7 +885,7 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Active Lunar Outpost", Factor: -0.35 * 5,
+			Name: "Active Lunar Outpost", Factor: -0.35 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Planet Cracker", Factor: 0.3 * 5,
 			Bonus: []data.Resource{{Name: "Planet Busters"}},
@@ -1043,7 +1043,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "all kittens", Factor: -0.005,
 			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
 		}, {
-			Name: "Active Brewery", Factor: -0.1 * 5,
+			Name: "Active Brewery", Factor: -0.1 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Spice Refinery", Factor: 0.125,
 		}},
