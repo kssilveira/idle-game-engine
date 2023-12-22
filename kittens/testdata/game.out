@@ -422,6 +422,40 @@
       "Formula": "Count = (c(Sunforge) * 0.01)"
     },
     {
+      "Name": "ParagonProductionBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "paragon",
+          "Factor": 0.01
+        },
+        {
+          "Name": "burned paragon",
+          "Factor": 0.01
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(paragon) * 0.01) + (c(burned paragon) * 0.01))"
+    },
+    {
+      "Name": "ParagonAutoProductionBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "paragon",
+          "Factor": 0.0005
+        },
+        {
+          "Name": "burned paragon",
+          "Factor": 0.0005
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(paragon) * 0.0005) + (c(burned paragon) * 0.0005))"
+    },
+    {
       "Name": "catnip cap",
       "Type": "Resource",
       "IsHidden": true,
@@ -806,7 +840,24 @@
         }
       ],
       "StartCount": 200,
-      "Formula": "Count = (200 + ((c(Barn) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 700 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 25000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000) + (c(Accelerator) * 20000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
+      "Bonus": [
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
+        }
+      ],
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (200 + (((c(Barn) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 700 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 25000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000) + (c(Accelerator) * 20000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * ((1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "wood",
@@ -1023,7 +1074,24 @@
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * (c(Uplink) + c(Starlink))))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))))"
+      "Bonus": [
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
+        }
+      ],
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (250 + (((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * (c(Uplink) + c(Starlink))))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))) * ((1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "science",
@@ -1119,7 +1187,24 @@
         }
       ],
       "StartCount": 100,
-      "Formula": "Count = (100 + ((c(Hut) * 75) + (c(Log House) * 50) + (c(Mansion) * 50) + (c(Temple) * 75 * c(Templars))))"
+      "Bonus": [
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
+        }
+      ],
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (100 + (((c(Hut) * 75) + (c(Log House) * 50) + (c(Mansion) * 50) + (c(Temple) * 75 * c(Templars))) * ((1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "catpower",
@@ -1228,7 +1313,24 @@
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Barn) * 250 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 950 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 30000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000) + (c(Accelerator) * 25000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
+      "Bonus": [
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
+        }
+      ],
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (250 + (((c(Barn) * 250 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 950 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 30000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000) + (c(Accelerator) * 25000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * ((1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "mineral",
@@ -1339,10 +1441,29 @@
       "StartCount": 50,
       "Bonus": [
         {
-          "Name": "BaseMetalCapBonus"
+          "Bonus": [
+            {
+              "Name": "BaseMetalCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
         }
       ],
-      "Formula": "Count = (50 + (((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 50000) + (c(Accelerator) * 7500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(BaseMetalCapBonus))))"
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (50 + (((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 50000) + (c(Accelerator) * 7500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * ((1 + c(BaseMetalCapBonus)) * (1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "iron",
@@ -1458,7 +1579,24 @@
         }
       ],
       "StartCount": 60,
-      "Formula": "Count = (60 + ((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 25000) + (c(Accelerator) * 2500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))))"
+      "Bonus": [
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
+        }
+      ],
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (60 + (((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 25000) + (c(Accelerator) * 2500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * ((1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "coal",
@@ -1612,14 +1750,37 @@
       "StartCount": 10,
       "Bonus": [
         {
-          "Name": "BaseMetalCapBonus"
+          "Bonus": [
+            {
+              "Name": "Sky Palace",
+              "Factor": 0.01
+            }
+          ]
         },
         {
-          "Name": "Sky Palace",
-          "Factor": 0.01
+          "Bonus": [
+            {
+              "Name": "BaseMetalCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
         }
       ],
-      "Formula": "Count = (10 + (((c(Barn) * 10 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 5 * (1 + c(WarehouseBonus))) + (c(Harbour) * 25 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Mint) * 100 * (1 + c(WarehouseBonus))) + (c(Accelerator) * 250 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(BaseMetalCapBonus) + (c(Sky Palace) * 0.01))))"
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (10 + (((c(Barn) * 10 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 5 * (1 + c(WarehouseBonus))) + (c(Harbour) * 25 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Mint) * 100 * (1 + c(WarehouseBonus))) + (c(Accelerator) * 250 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * ((1 + (c(Sky Palace) * 0.01)) * (1 + c(BaseMetalCapBonus)) * (1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "gold",
@@ -1730,10 +1891,29 @@
       "StartCount": 2,
       "Bonus": [
         {
-          "Name": "BaseMetalCapBonus"
+          "Bonus": [
+            {
+              "Name": "BaseMetalCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
         }
       ],
-      "Formula": "Count = (2 + (((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Accelerator) * 750 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus)))) + (c(Moon Base) * 1250 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)) * (1 + c(BaseMetalCapBonus))))"
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (2 + (((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Accelerator) * 750 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus)))) + (c(Moon Base) * 1250 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)) * ((1 + c(BaseMetalCapBonus)) * (1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "titanium",
@@ -1803,7 +1983,24 @@
         }
       ],
       "StartCount": 1500,
-      "Formula": "Count = (1500 + ((c(Oil Well) * 1500) + (c(tanker) * 500) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)))"
+      "Bonus": [
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
+        }
+      ],
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (1500 + (((c(Oil Well) * 1500) + (c(tanker) * 500) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)) * ((1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "oil",
@@ -1880,10 +2077,29 @@
       "StartCount": 250,
       "Bonus": [
         {
-          "Name": "BaseMetalCapBonus"
+          "Bonus": [
+            {
+              "Name": "BaseMetalCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
         }
       ],
-      "Formula": "Count = (250 + (((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000)) * (1 + c(BaseMetalCapBonus))))"
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (250 + (((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000)) * ((1 + c(BaseMetalCapBonus)) * (1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "uranium",
@@ -1958,10 +2174,29 @@
       "StartCount": 150,
       "Bonus": [
         {
-          "Name": "BaseMetalCapBonus"
+          "Bonus": [
+            {
+              "Name": "BaseMetalCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
         }
       ],
-      "Formula": "Count = (150 + (((c(Moon Base) * 150 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 750)) * (1 + c(BaseMetalCapBonus))))"
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (150 + (((c(Moon Base) * 150 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 750)) * ((1 + c(BaseMetalCapBonus)) * (1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "unobtainium",
@@ -2003,7 +2238,24 @@
         }
       ],
       "StartCount": 100,
-      "Formula": "Count = (100 + (c(Containment Chamber) * 100 * (1 + (c(Heatsink) * 0.02))))"
+      "Bonus": [
+        {
+          "Bonus": [
+            {
+              "Name": "ParagonCapBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
+              "Name": "GlobalCapBonus"
+            }
+          ]
+        }
+      ],
+      "BonusIsMultiplicative": true,
+      "Formula": "Count = (100 + ((c(Containment Chamber) * 100 * (1 + (c(Heatsink) * 0.02))) * ((1 + c(ParagonCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "antimatter",
@@ -2690,7 +2942,13 @@
     {
       "Name": "paragon",
       "Type": "Resource",
-      "Cap": -1
+      "Cap": -1,
+      "Producers": [
+        {
+          "Factor": 0.00000125
+        }
+      ],
+      "Formula": "Count += (0.000001 * seconds)"
     },
     {
       "Name": "burned paragon",
@@ -8866,6 +9124,23 @@
         {
           "Name": "chronoheat",
           "Count": 10
+        }
+      ]
+    },
+    {
+      "Name": "Burn Paragon",
+      "Type": "Craft",
+      "UnlockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "paragon",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "burned paragon",
+          "Count": 1
         }
       ]
     },

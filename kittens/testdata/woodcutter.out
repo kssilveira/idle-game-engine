@@ -10,6 +10,7 @@ last action:
 [-] [Resource] catnip 991.50/5000 -8.50/s 1m56s to empty
 [Resource] wood 0.10/200 0.10/s 34m55s to cap
 [Resource] kitten 1/1 0.05/s
+[Resource] paragon 0 0/s
 [Job] happiness 0.06 (0.10 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -19,6 +20,7 @@ last action: woodcutter
 [-] [Resource] catnip 1001.50/5000 -8.50/s 1m57s to empty
 [Resource] wood 0.10/200 0.10/s 34m55s to cap
 [Resource] kitten 1/1 0.05/s
+[Resource] paragon 0 0/s
 [Job] happiness 0.06 (0.10 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -30,6 +32,7 @@ last action: Gather catnip
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [-] [Resource] catnip 993/5000 -8.50/s 1m56s to empty
 [Resource] wood 0.29/200 0.19/s 17m26s to cap
+[Resource] paragon 0 0/s
 [Job] happiness 0.06 (0.10 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -41,6 +44,7 @@ last action: woodcutter
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [-] [Resource] catnip 1003/5000 -8.50/s 1m58s to empty
 [Resource] wood 0.29/200 0.19/s 17m26s to cap
+[Resource] paragon 0 0/s
 [Job] happiness 0.06 (0.10 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)

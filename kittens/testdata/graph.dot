@@ -42,6 +42,10 @@ digraph {
   "Void Rift" -> "GlobalCapBonus" [color="green"];
   "Event Horizon" -> "GlobalCapBonus" [color="green"];
   "Sunforge" -> "BaseMetalCapBonus" [color="green"];
+  "paragon" -> "ParagonProductionBonus" [color="green"];
+  "burned paragon" -> "ParagonProductionBonus" [color="green"];
+  "paragon" -> "ParagonAutoProductionBonus" [color="green"];
+  "burned paragon" -> "ParagonAutoProductionBonus" [color="green"];
   "Barn" -> "catnip cap" [color="green"];
   "BarnCatnipCapBonus" -> "Barn" [color="green"];
   "Warehouse" -> "catnip cap" [color="green"];
@@ -111,6 +115,8 @@ digraph {
   "Moon Base" -> "wood cap" [color="green"];
   "Cryostation" -> "wood cap" [color="green"];
   "Accelerator" -> "wood cap" [color="green"];
+  "ParagonCapBonus" -> "wood cap" [color="green"];
+  "GlobalCapBonus" -> "wood cap" [color="green"];
   "woodcutter" -> "wood" [color="green"];
   "Mineral Axe" -> "woodcutter" [color="green"];
   "Iron Axe" -> "woodcutter" [color="green"];
@@ -152,11 +158,15 @@ digraph {
   "SpaceReactorScienceBonus" -> "Research Vessel" [color="green"];
   "Space Beacon" -> "science cap" [color="green"];
   "SpaceReactorScienceBonus" -> "Space Beacon" [color="green"];
+  "ParagonCapBonus" -> "science cap" [color="green"];
+  "GlobalCapBonus" -> "science cap" [color="green"];
   "Hut" -> "catpower cap" [color="green"];
   "Log House" -> "catpower cap" [color="green"];
   "Mansion" -> "catpower cap" [color="green"];
   "Temple" -> "catpower cap" [color="green"];
   "Templars" -> "Temple" [color="green"];
+  "ParagonCapBonus" -> "catpower cap" [color="green"];
+  "GlobalCapBonus" -> "catpower cap" [color="green"];
   "hunter" -> "catpower" [color="green"];
   "Composite Bow" -> "hunter" [color="green"];
   "Crossbow" -> "hunter" [color="green"];
@@ -169,6 +179,8 @@ digraph {
   "Moon Base" -> "mineral cap" [color="green"];
   "Cryostation" -> "mineral cap" [color="green"];
   "Accelerator" -> "mineral cap" [color="green"];
+  "ParagonCapBonus" -> "mineral cap" [color="green"];
+  "GlobalCapBonus" -> "mineral cap" [color="green"];
   "miner" -> "mineral" [color="green"];
   "Mine" -> "miner" [color="green"];
   "Quarry" -> "miner" [color="green"];
@@ -182,6 +194,8 @@ digraph {
   "Cryostation" -> "iron cap" [color="green"];
   "Accelerator" -> "iron cap" [color="green"];
   "BaseMetalCapBonus" -> "iron cap" [color="green"];
+  "ParagonCapBonus" -> "iron cap" [color="green"];
+  "GlobalCapBonus" -> "iron cap" [color="green"];
   "Active Smelter" -> "iron" [color="green"];
   "Electrolytic Smelting" -> "Active Smelter" [color="green"];
   "Active Calciner" -> "iron" [color="green"];
@@ -198,6 +212,8 @@ digraph {
   "Moon Base" -> "coal cap" [color="green"];
   "Cryostation" -> "coal cap" [color="green"];
   "Accelerator" -> "coal cap" [color="green"];
+  "ParagonCapBonus" -> "coal cap" [color="green"];
+  "GlobalCapBonus" -> "coal cap" [color="green"];
   "geologist" -> "coal" [color="green"];
   "Geodesy" -> "geologist" [color="green"];
   "Mining Drill" -> "geologist" [color="green"];
@@ -220,8 +236,10 @@ digraph {
   "Mint" -> "gold cap" [color="green"];
   "WarehouseBonus" -> "Mint" [color="green"];
   "Accelerator" -> "gold cap" [color="green"];
-  "BaseMetalCapBonus" -> "gold cap" [color="green"];
   "Sky Palace" -> "gold cap" [color="green"];
+  "BaseMetalCapBonus" -> "gold cap" [color="green"];
+  "ParagonCapBonus" -> "gold cap" [color="green"];
+  "GlobalCapBonus" -> "gold cap" [color="green"];
   "gold" -> "Active Mint" [color="red"];
   "Active Smelter" -> "gold" [color="green"];
   "Gold Ore" -> "Active Smelter" [color="green"];
@@ -236,6 +254,8 @@ digraph {
   "Moon Base" -> "titanium cap" [color="green"];
   "Cryostation" -> "titanium cap" [color="green"];
   "BaseMetalCapBonus" -> "titanium cap" [color="green"];
+  "ParagonCapBonus" -> "titanium cap" [color="green"];
+  "GlobalCapBonus" -> "titanium cap" [color="green"];
   "titanium" -> "Active Accelerator" [color="red"];
   "Active Calciner" -> "titanium" [color="green"];
   "Active Smelter" -> "titanium" [color="green"];
@@ -245,6 +265,8 @@ digraph {
   "tanker" -> "oil cap" [color="green"];
   "Moon Base" -> "oil cap" [color="green"];
   "Cryostation" -> "oil cap" [color="green"];
+  "ParagonCapBonus" -> "oil cap" [color="green"];
+  "GlobalCapBonus" -> "oil cap" [color="green"];
   "Oil Well" -> "oil" [color="green"];
   "Pumpjack" -> "Oil Well" [color="green"];
   "Oil Refinery" -> "Oil Well" [color="green"];
@@ -260,6 +282,8 @@ digraph {
   "Planet Cracker" -> "uranium cap" [color="green"];
   "Cryostation" -> "uranium cap" [color="green"];
   "BaseMetalCapBonus" -> "uranium cap" [color="green"];
+  "ParagonCapBonus" -> "uranium cap" [color="green"];
+  "GlobalCapBonus" -> "uranium cap" [color="green"];
   "Active Accelerator" -> "uranium" [color="green"];
   "uranium" -> "Active Reactor" [color="red"];
   "Enriched Uranium" -> "Active Reactor" [color="green"];
@@ -273,11 +297,15 @@ digraph {
   "Moon Base" -> "unobtainium cap" [color="green"];
   "Cryostation" -> "unobtainium cap" [color="green"];
   "BaseMetalCapBonus" -> "unobtainium cap" [color="green"];
+  "ParagonCapBonus" -> "unobtainium cap" [color="green"];
+  "GlobalCapBonus" -> "unobtainium cap" [color="green"];
   "Active Lunar Outpost" -> "unobtainium" [color="green"];
   "unobtainium cap" -> "unobtainium" [color="limegreen"];
   "Microwarp Reactors" -> "unobtainium" [color="green"];
   "Containment Chamber" -> "antimatter cap" [color="green"];
   "Heatsink" -> "Containment Chamber" [color="green"];
+  "ParagonCapBonus" -> "antimatter cap" [color="green"];
+  "GlobalCapBonus" -> "antimatter cap" [color="green"];
   "Sunlifter" -> "antimatter" [color="green"];
   "antimatter cap" -> "antimatter" [color="limegreen"];
   "Space Beacon" -> "relic" [color="green"];
@@ -897,6 +925,9 @@ digraph {
   "time crystal" -> "Combust time crystal" [color="orange"];
   "Combust time crystal" -> "chronoheat" [color="limegreen"];
   "Chronoforge" -> "Combust time crystal" [color="blue"];
+  "paragon" -> "Burn Paragon" [color="orange"];
+  "Burn Paragon" -> "burned paragon" [color="limegreen"];
+  "Chronoforge" -> "Burn Paragon" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
   "Agriculture" -> "Archery" [color="blue"];
@@ -1606,6 +1637,8 @@ digraph {
   "ParagonCapBonus" [shape="cylinder"];
   "GlobalCapBonus" [shape="cylinder"];
   "BaseMetalCapBonus" [shape="cylinder"];
+  "ParagonProductionBonus" [shape="cylinder"];
+  "ParagonAutoProductionBonus" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];
   "wood cap" [shape="cylinder"];
@@ -2069,6 +2102,7 @@ digraph {
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];
   "Combust time crystal" [shape="cds"];
+  "Burn Paragon" [shape="cds"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];
   "@concrete" [shape="cds"];
@@ -2090,7 +2124,7 @@ digraph {
 }
 # titanium: 69
 # blueprint: 46
+# paragon: 41
 # alloy: 38
-# paragon: 38
 # starchart: 36
 # time crystal: 34

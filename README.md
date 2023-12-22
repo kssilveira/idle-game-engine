@@ -89,7 +89,6 @@ Edges:
 
 Missing features:
 
-- Relic Station: each antimatter storage unit below 5000 decrease relic production by 0.02%
 - Events: https://wiki.kittensgame.com/en/general-information/events
 - Global Production Bonus (Magneto, Steamworks, Reactor, Space Elevator)
 - Global Storage Bonus
@@ -97,7 +96,6 @@ Missing features:
 - Faith Transcend, Adore, Praise, Solar Revolution
 - Reset
 - Resource Retrieval
-- Engineer
 - Energy
 - Pollution
 - Festivals
@@ -116,4 +114,6 @@ Missing features:
 - Metaphysics
   - price ratios
   - paragon effect and scaling
-- Diminishing Returns and Limits
+
+- Diminishing Returns and Limits: https://wiki.kittensgame.com/en/guides-and-advice-and-stuff/diminishing-returns
+- Engineer: https://wiki.kittensgame.com/en/game-tabs/outpost/engineer

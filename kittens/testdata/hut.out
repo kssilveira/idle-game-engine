@@ -3,11 +3,13 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: 
 ###
+[Resource] paragon 0 0/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Hut
 error: action Hut is locked
 ###
+[Resource] paragon 0 0/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
@@ -15,6 +17,7 @@ last action: Gather catnip
 [Calendar] year 1 (1 + 0)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
+[Resource] paragon 0 0/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Hut
@@ -23,6 +26,7 @@ error: action Hut is locked
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.51 % 4 == 0)
 [Calendar] day_of_year 52 (1 + 51 % 400)
+[Resource] paragon 0 0/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
@@ -30,6 +34,7 @@ last action: Gather catnip
 [Calendar] year 1.13 (1 + 0.13)
 [Calendar] Spring 1 (1 if 0.51 % 4 == 0)
 [Calendar] day_of_year 52 (1 + 51 % 400)
+[Resource] paragon 0 0/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip

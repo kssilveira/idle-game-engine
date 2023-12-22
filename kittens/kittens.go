@@ -158,6 +158,20 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name:      "BaseMetalCapBonus",
 		Producers: []data.Resource{{Name: "Sunforge", Factor: 0.01}},
+	}, {
+		Name: "ParagonProductionBonus",
+		Producers: []data.Resource{{
+			Name: "paragon", Factor: 0.01,
+		}, {
+			Name: "burned paragon", Factor: 0.01,
+		}},
+	}, {
+		Name: "ParagonAutoProductionBonus",
+		Producers: []data.Resource{{
+			Name: "paragon", Factor: 0.0005,
+		}, {
+			Name: "burned paragon", Factor: 0.0005,
+		}},
 	}})
 
 	g.AddResources([]data.Resource{{
@@ -268,6 +282,12 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "wood", Type: "Resource", CapResource: "wood cap",
 		Producers: []data.Resource{{
@@ -371,6 +391,12 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Space Beacon", Factor: 25000, Bonus: []data.Resource{{Name: "SpaceReactorScienceBonus"}},
 		}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "science", Type: "Resource", CapResource: "science cap",
 		Producers: []data.Resource{{
@@ -412,6 +438,12 @@ func NewGame(now game.Now) *game.Game {
 			Bonus:               []data.Resource{{Name: "Templars"}},
 			BonusStartsFromZero: true,
 		}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "catpower", Type: "Resource", CapResource: "catpower cap",
 		Producers: []data.Resource{{
@@ -464,6 +496,12 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "mineral", Type: "Resource", CapResource: "mineral cap",
 		Producers: []data.Resource{{
@@ -516,7 +554,14 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "iron", Type: "Resource", CapResource: "iron cap",
 		Producers: []data.Resource{{
@@ -564,6 +609,12 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "coal", Type: "Resource", CapResource: "coal cap",
 		Producers: []data.Resource{{
@@ -631,10 +682,15 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Name: "BaseMetalCapBonus",
+			Bonus: []data.Resource{{Name: "Sky Palace", Factor: 0.01}},
 		}, {
-			Name: "Sky Palace", Factor: 0.01,
+			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "gold", Type: "Resource", CapResource: "gold cap",
 		Producers: []data.Resource{{
@@ -681,7 +737,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Cryostation", Factor: 7500,
 		}},
-		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "titanium", Type: "Resource", CapResource: "titanium cap",
 		Producers: []data.Resource{{
@@ -711,6 +774,12 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Cryostation", Factor: 7500,
 		}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "oil", Type: "Resource", CapResource: "oil cap",
 		Producers: []data.Resource{{
@@ -745,7 +814,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Cryostation", Factor: 5000,
 		}},
-		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "uranium", Type: "Resource", CapResource: "uranium cap",
 		Producers: []data.Resource{{
@@ -773,7 +849,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Cryostation", Factor: 750,
 		}},
-		Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
 		Producers: []data.Resource{{Name: "Active Lunar Outpost", Factor: 0.035}},
@@ -786,6 +869,12 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Containment Chamber", Factor: 100,
 			Bonus: []data.Resource{{Name: "Heatsink", Factor: 0.02}},
 		}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		}, {
+			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		}},
+		BonusIsMultiplicative: true,
 	}, {
 		Name: "antimatter", Type: "Resource", CapResource: "antimatter cap",
 		Producers: []data.Resource{{Name: "Sunlifter", Factor: 1. / (2 * 100 * 4)}},
@@ -1040,6 +1129,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "karma", Type: "Resource", Cap: -1,
 	}, {
 		Name: "paragon", Type: "Resource", Cap: -1,
+		Producers: []data.Resource{{Factor: 1. / (2 * 100 * 4 * 1000)}},
 	}, {
 		Name: "burned paragon", Type: "Resource", Cap: -1,
 	}, {
@@ -2117,6 +2207,10 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "chronoheat", Count: 10,
 		}},
+	}, {
+		Name: "Burn Paragon", Type: "Craft", UnlockedBy: "Chronoforge",
+		Costs: []data.Resource{{Name: "paragon", Count: 1}},
+		Adds:  []data.Resource{{Name: "burned paragon", Count: 1}},
 	}})
 
 	addTechs(g, []data.Action{{
