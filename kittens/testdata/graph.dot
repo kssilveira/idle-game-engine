@@ -44,8 +44,10 @@ digraph {
   "Sunforge" -> "BaseMetalCapBonus" [color="green"];
   "paragon" -> "ParagonProductionBonus" [color="green"];
   "burned paragon" -> "ParagonProductionBonus" [color="green"];
-  "paragon" -> "ParagonAutoProductionBonus" [color="green"];
-  "burned paragon" -> "ParagonAutoProductionBonus" [color="green"];
+  "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
+  "Concrete Huts" -> "HutCostExponentBase" [color="red"];
+  "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
+  "Eludium Huts" -> "HutCostExponentBase" [color="red"];
   "Barn" -> "catnip cap" [color="green"];
   "BarnCatnipCapBonus" -> "Barn" [color="green"];
   "Warehouse" -> "catnip cap" [color="green"];
@@ -103,6 +105,7 @@ digraph {
   "catnip cap" -> "catnip" [color="limegreen"];
   "Aqueduct" -> "catnip" [color="green"];
   "Hydroponics" -> "catnip" [color="green"];
+  "ParagonProductionBonus" -> "catnip" [color="green"];
   "Barn" -> "wood cap" [color="green"];
   "BarnBonus" -> "Barn" [color="green"];
   "WarehouseBonus" -> "Barn" [color="green"];
@@ -130,6 +133,7 @@ digraph {
   "Steel Saw" -> "Lumber Mill" [color="green"];
   "Titanium Saw" -> "Lumber Mill" [color="green"];
   "Alloy Saw" -> "Lumber Mill" [color="green"];
+  "ParagonProductionBonus" -> "wood" [color="green"];
   "Library" -> "science cap" [color="green"];
   "Observatory" -> "Library" [color="green"];
   "Titanium Reflectors" -> "Observatory" [color="green"];
@@ -173,6 +177,7 @@ digraph {
   "Railgun" -> "hunter" [color="green"];
   "catpower" -> "Active Mint" [color="red"];
   "catpower cap" -> "catpower" [color="limegreen"];
+  "ParagonProductionBonus" -> "catpower" [color="green"];
   "Barn" -> "mineral cap" [color="green"];
   "Warehouse" -> "mineral cap" [color="green"];
   "Harbour" -> "mineral cap" [color="green"];
@@ -187,6 +192,7 @@ digraph {
   "mineral" -> "Active Smelter" [color="red"];
   "mineral" -> "Active Calciner" [color="red"];
   "mineral cap" -> "mineral" [color="limegreen"];
+  "ParagonProductionBonus" -> "mineral" [color="green"];
   "Barn" -> "iron cap" [color="green"];
   "Warehouse" -> "iron cap" [color="green"];
   "Harbour" -> "iron cap" [color="green"];
@@ -205,6 +211,7 @@ digraph {
   "iron" -> "Active Calciner" [color="red"];
   "Steel Plants" -> "Active Calciner" [color="red"];
   "iron cap" -> "iron" [color="limegreen"];
+  "ParagonProductionBonus" -> "iron" [color="green"];
   "Barn" -> "coal cap" [color="green"];
   "Warehouse" -> "coal cap" [color="green"];
   "Harbour" -> "coal cap" [color="green"];
@@ -230,6 +237,7 @@ digraph {
   "Active Steamworks" -> "coal" [color="red"];
   "High Pressure Engine" -> "Active Steamworks" [color="green"];
   "Fuel Injector" -> "Active Steamworks" [color="green"];
+  "ParagonProductionBonus" -> "coal" [color="green"];
   "Barn" -> "gold cap" [color="green"];
   "Warehouse" -> "gold cap" [color="green"];
   "Harbour" -> "gold cap" [color="green"];
@@ -247,6 +255,7 @@ digraph {
   "Mining Drill" -> "Geodesy" [color="green"];
   "Unobtainium Drill" -> "Geodesy" [color="green"];
   "gold cap" -> "gold" [color="limegreen"];
+  "ParagonProductionBonus" -> "gold" [color="green"];
   "Barn" -> "titanium cap" [color="green"];
   "Warehouse" -> "titanium cap" [color="green"];
   "Harbour" -> "titanium cap" [color="green"];
@@ -261,6 +270,7 @@ digraph {
   "Active Smelter" -> "titanium" [color="green"];
   "Nuclear Smelter" -> "Active Smelter" [color="green"];
   "titanium cap" -> "titanium" [color="limegreen"];
+  "ParagonProductionBonus" -> "titanium" [color="green"];
   "Oil Well" -> "oil cap" [color="green"];
   "tanker" -> "oil cap" [color="green"];
   "Moon Base" -> "oil cap" [color="green"];
@@ -278,6 +288,7 @@ digraph {
   "GM Catnip" -> "Biofuel Processing" [color="green"];
   "Hydraulic Fracturer" -> "oil" [color="green"];
   "oil cap" -> "oil" [color="limegreen"];
+  "ParagonProductionBonus" -> "oil" [color="green"];
   "Reactor" -> "uranium cap" [color="green"];
   "Planet Cracker" -> "uranium cap" [color="green"];
   "Cryostation" -> "uranium cap" [color="green"];
@@ -294,6 +305,7 @@ digraph {
   "Planet Cracker" -> "uranium" [color="green"];
   "Planet Busters" -> "Planet Cracker" [color="green"];
   "uranium cap" -> "uranium" [color="limegreen"];
+  "ParagonProductionBonus" -> "uranium" [color="green"];
   "Moon Base" -> "unobtainium cap" [color="green"];
   "Cryostation" -> "unobtainium cap" [color="green"];
   "BaseMetalCapBonus" -> "unobtainium cap" [color="green"];
@@ -302,25 +314,30 @@ digraph {
   "Active Lunar Outpost" -> "unobtainium" [color="green"];
   "unobtainium cap" -> "unobtainium" [color="limegreen"];
   "Microwarp Reactors" -> "unobtainium" [color="green"];
+  "ParagonProductionBonus" -> "unobtainium" [color="green"];
   "Containment Chamber" -> "antimatter cap" [color="green"];
   "Heatsink" -> "Containment Chamber" [color="green"];
   "ParagonCapBonus" -> "antimatter cap" [color="green"];
   "GlobalCapBonus" -> "antimatter cap" [color="green"];
   "Sunlifter" -> "antimatter" [color="green"];
   "antimatter cap" -> "antimatter" [color="limegreen"];
+  "ParagonProductionBonus" -> "antimatter" [color="green"];
   "Space Beacon" -> "relic" [color="green"];
   "Relic Station" -> "Space Beacon" [color="green"];
   "Black Nexus" -> "Relic Station" [color="green"];
   "Black Pyramid" -> "Black Nexus" [color="green"];
   "Hash Level" -> "Relic Station" [color="green"];
+  "ParagonProductionBonus" -> "relic" [color="green"];
   "Chronosphere" -> "void" [color="green"];
   "Void Hoover" -> "Chronosphere" [color="green"];
   "Chronocontrol" -> "void" [color="green"];
   "Distortion" -> "Chronocontrol" [color="green"];
+  "ParagonProductionBonus" -> "void" [color="green"];
   "Temporal Battery" -> "temporal flux cap" [color="green"];
   "Chronosphere" -> "temporal flux" [color="green"];
   "Chronosurge" -> "Chronosphere" [color="green"];
   "temporal flux cap" -> "temporal flux" [color="limegreen"];
+  "ParagonProductionBonus" -> "temporal flux" [color="green"];
   "Venus of Willenfluff" -> "kitten" [color="green"];
   "Pawgan Rituals" -> "kitten" [color="green"];
   "kitten" -> "all kittens" [color="green"];
@@ -335,19 +352,23 @@ digraph {
   "Tradepost" -> "all kittens" [color="green"];
   "Active Mint" -> "fur" [color="green"];
   "catpower cap" -> "Active Mint" [color="green"];
+  "ParagonProductionBonus" -> "fur" [color="green"];
   "ivory" -> "all kittens" [color="red"];
   "Active Mint" -> "ivory" [color="green"];
+  "ParagonProductionBonus" -> "ivory" [color="green"];
   "spice" -> "all kittens" [color="red"];
   "spice" -> "Active Brewery" [color="red"];
   "Spice Refinery" -> "spice" [color="green"];
+  "ParagonProductionBonus" -> "spice" [color="green"];
   "Unic. Pasture" -> "unicorn" [color="green"];
-  "Unicorn Selection" -> "Unic. Pasture" [color="green"];
-  "Unicorn Tomb" -> "Unic. Pasture" [color="green"];
-  "Ivory Tower" -> "Unic. Pasture" [color="green"];
-  "Ivory Citadel" -> "Unic. Pasture" [color="green"];
-  "Sky Palace" -> "Unic. Pasture" [color="green"];
-  "Unicorn Utopia" -> "Unic. Pasture" [color="green"];
-  "Sunspire" -> "Unic. Pasture" [color="green"];
+  "Unicorn Selection" -> "unicorn" [color="green"];
+  "Unicorn Tomb" -> "unicorn" [color="green"];
+  "Ivory Tower" -> "unicorn" [color="green"];
+  "Ivory Citadel" -> "unicorn" [color="green"];
+  "Sky Palace" -> "unicorn" [color="green"];
+  "Unicorn Utopia" -> "unicorn" [color="green"];
+  "Sunspire" -> "unicorn" [color="green"];
+  "ParagonProductionBonus" -> "unicorn" [color="green"];
   "Library" -> "culture cap" [color="green"];
   "Academy" -> "culture cap" [color="green"];
   "Amphitheatre" -> "culture cap" [color="green"];
@@ -362,6 +383,7 @@ digraph {
   "Temple" -> "culture" [color="green"];
   "Stained Glass" -> "Temple" [color="green"];
   "culture cap" -> "culture" [color="limegreen"];
+  "ParagonProductionBonus" -> "culture" [color="green"];
   "Temple" -> "faith cap" [color="green"];
   "Golden Spire" -> "Temple" [color="green"];
   "Sun Altar" -> "Temple" [color="green"];
@@ -371,15 +393,18 @@ digraph {
   "Chapel" -> "faith" [color="green"];
   "faith cap" -> "faith" [color="limegreen"];
   "Solar Chant" -> "faith" [color="green"];
+  "ParagonProductionBonus" -> "faith" [color="green"];
   "scholar" -> "starchart" [color="green"];
   "Astrophysicists" -> "scholar" [color="green"];
   "Satellite" -> "starchart" [color="green"];
   "Research Vessel" -> "starchart" [color="green"];
   "Space Beacon" -> "starchart" [color="green"];
   "Hubble Space Telescope" -> "starchart" [color="green"];
+  "ParagonProductionBonus" -> "starchart" [color="green"];
   "AI Core" -> "gigaflop" [color="green"];
   "gigaflop" -> "Entanglement Station" [color="red"];
   "Entanglement Station" -> "hash" [color="green"];
+  "ParagonProductionBonus" -> "hash" [color="green"];
   "Marker" -> "leviathan energy cap" [color="green"];
   "leviathan energy cap" -> "leviathan energy" [color="limegreen"];
   "Sky Palace" -> "alicorn" [color="green"];
@@ -389,8 +414,10 @@ digraph {
   "sorrow" -> "Black Radiance" [color="green"];
   "Unicorn Utopia" -> "alicorn" [color="green"];
   "Sunspire" -> "alicorn" [color="green"];
+  "ParagonProductionBonus" -> "alicorn" [color="green"];
   "Marker" -> "necrocorn" [color="green"];
   "Unicorn Graveyard" -> "Marker" [color="green"];
+  "ParagonProductionBonus" -> "necrocorn" [color="green"];
   "Black Core" -> "sorrow cap" [color="green"];
   "sorrow cap" -> "sorrow" [color="limegreen"];
   "Chrono Furnace" -> "chronoheat cap" [color="green"];
@@ -398,10 +425,6 @@ digraph {
   "chronoheat" -> "Chrono Furnace" [color="red"];
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
   "Chrono Furnace" -> "chrono furnace fuel" [color="green"];
-  "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
-  "Concrete Huts" -> "HutCostExponentBase" [color="red"];
-  "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
-  "Eludium Huts" -> "HutCostExponentBase" [color="red"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Bio Lab" -> "Idle Bio Lab" [color="green"];
@@ -906,6 +929,9 @@ digraph {
   "Leviathans" -> "blueprint" [color="limegreen"];
   "Leviathans" -> "spice" [color="limegreen"];
   "Black Pyramid" -> "Leviathans" [color="blue"];
+  "necrocorn" -> "Feed Leviathans" [color="orange"];
+  "Feed Leviathans" -> "leviathan energy" [color="limegreen"];
+  "Black Pyramid" -> "Feed Leviathans" [color="blue"];
   "unicorn" -> "Sacrifice Unicorns" [color="orange"];
   "Sacrifice Unicorns" -> "tear" [color="limegreen"];
   "Ziggurat" -> "tear" [color="green"];
@@ -1638,7 +1664,7 @@ digraph {
   "GlobalCapBonus" [shape="cylinder"];
   "BaseMetalCapBonus" [shape="cylinder"];
   "ParagonProductionBonus" [shape="cylinder"];
-  "ParagonAutoProductionBonus" [shape="cylinder"];
+  "HutCostExponentBase" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];
   "wood cap" [shape="cylinder"];
@@ -1696,7 +1722,6 @@ digraph {
   "karma" [shape="cylinder"];
   "paragon" [shape="cylinder"];
   "burned paragon" [shape="cylinder"];
-  "HutCostExponentBase" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
   "Library" [shape="box3d"];
@@ -2097,6 +2122,7 @@ digraph {
   "Spiders" [shape="cds"];
   "Dragons" [shape="cds"];
   "Leviathans" [shape="cds"];
+  "Feed Leviathans" [shape="cds"];
   "Sacrifice Unicorns" [shape="cds"];
   "Sacrifice Alicorns" [shape="cds"];
   "Refine Tears" [shape="cds"];
@@ -2122,9 +2148,9 @@ digraph {
   "@thorium" [shape="cds"];
   "@megalith" [shape="cds"];
 }
-# titanium: 69
+# titanium: 70
 # blueprint: 46
-# paragon: 41
+# paragon: 40
 # alloy: 38
-# starchart: 36
+# starchart: 37
 # time crystal: 34

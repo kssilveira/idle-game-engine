@@ -89,7 +89,6 @@ Edges:
 
 Missing features:
 
-- Increase Leviathan Energy
 - Use chrono furnace fuel
 - Events: https://wiki.kittensgame.com/en/general-information/events
 - Global Production Bonus (Magneto, Steamworks, Reactor, Space Elevator)

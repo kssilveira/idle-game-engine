@@ -46,7 +46,7 @@ error: action Library is locked
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[-] [Resource] catnip 1003/5000 -8.5/s 1m58s to empty
+[-] [Resource] catnip 1003/5000 -8.5/s 1m57s to empty
 [Resource] kitten 2/2 0.05/s
 [Resource] paragon 0.000003 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
@@ -57,7 +57,7 @@ last action: Gather catnip
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[-] [Resource] catnip 994.5/5000 -8.5/s 1m57s to empty
+[-] [Resource] catnip 994.5/5000 -8.5/s 1m56s to empty
 [Resource] kitten 2/2 0.05/s
 [Resource] paragon 0.000004 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)

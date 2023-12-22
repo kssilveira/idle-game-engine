@@ -23,10 +23,10 @@ error: action Gather catnip is locked
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
-[Resource] catnip 1.92/5000 1.88/s 44m25s to cap
+[Resource] catnip 1.93/5000 1.88/s 44m25s to cap
 [Resource] paragon 0.00002 0.000001/s
-X: [Building] Refine catnip -(catnip 1.92/100 52s) +(wood 1)
-X: [Building] Catnip Field (2) -(catnip 1.92/12.54 5s) +(Catnip Field 1)
+X: [Building] Refine catnip -(catnip 1.93/100 52s) +(wood 1)
+X: [Building] Catnip Field (2) -(catnip 1.93/12.54 5s) +(Catnip Field 1)
 X: [Building] Hut -(wood 0/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 0/25) +(Library 1)
 last action: skip Catnip Field
@@ -34,10 +34,10 @@ last action: skip Catnip Field
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
-[Resource] catnip 1.92/5000 1.88/s 44m25s to cap
+[Resource] catnip 1.93/5000 1.88/s 44m25s to cap
 [Resource] paragon 0.00002 0.000001/s
-X: [Building] Refine catnip -(catnip 1.92/100 52s) +(wood 1)
-X: [Building] Catnip Field (2) -(catnip 1.92/12.54 5s) +(Catnip Field 1)
+X: [Building] Refine catnip -(catnip 1.93/100 52s) +(wood 1)
+X: [Building] Catnip Field (2) -(catnip 1.93/12.54 5s) +(Catnip Field 1)
 X: [Building] Hut -(wood 0/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Gather catnip

@@ -913,7 +913,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
 		Producers: []data.Resource{{Name: "Active Lunar Outpost", Factor: 0.035}},
 		Bonus: []data.Resource{{
-			Bonus:     []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
+			Bonus: []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
 		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}},
@@ -2270,6 +2270,10 @@ func NewGame(now game.Now) *game.Game {
 	}})
 
 	g.AddActions([]data.Action{{
+		Name: "Feed Leviathans", Type: "Craft", UnlockedBy: "Black Pyramid",
+		Costs: []data.Resource{{Name: "necrocorn", Count: 1}},
+		Adds:  []data.Resource{{Name: "leviathan energy", Count: 1}},
+	}, {
 		Name: "Sacrifice Unicorns", Type: "Craft", UnlockedBy: "Ziggurat",
 		Costs: []data.Resource{{Name: "unicorn", Count: 2500}},
 		Adds: []data.Resource{{

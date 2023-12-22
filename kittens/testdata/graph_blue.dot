@@ -127,6 +127,7 @@ digraph {
   "Navigation" -> "Spiders" [color="blue"];
   "Nuclear Fission" -> "Dragons" [color="blue"];
   "Black Pyramid" -> "Leviathans" [color="blue"];
+  "Black Pyramid" -> "Feed Leviathans" [color="blue"];
   "Ziggurat" -> "Sacrifice Unicorns" [color="blue"];
   "Ziggurat" -> "Sacrifice Alicorns" [color="blue"];
   "Megalomania" -> "Refine Tears" [color="blue"];
@@ -766,6 +767,7 @@ digraph {
   "Spiders" [shape="cds"];
   "Dragons" [shape="cds"];
   "Leviathans" [shape="cds"];
+  "Feed Leviathans" [shape="cds"];
   "Sacrifice Unicorns" [shape="cds"];
   "Sacrifice Alicorns" [shape="cds"];
   "Refine Tears" [shape="cds"];
