@@ -47,6 +47,11 @@ digraph {
   "Active Magneto" -> "GlobalProductionBonus" [color="green"];
   "Steamworks" -> "Active Magneto" [color="green"];
   "Active Reactor" -> "GlobalProductionBonus" [color="green"];
+  "Space Elevator" -> "SpaceProductionBonus" [color="green"];
+  "Orbital Array" -> "SpaceProductionBonus" [color="green"];
+  "Factory" -> "SpaceProductionBonus" [color="green"];
+  "Space Manufacturing" -> "Factory" [color="green"];
+  "Factory Logistics" -> "Space Manufacturing" [color="green"];
   "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
   "Concrete Huts" -> "HutCostExponentBase" [color="red"];
   "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
@@ -298,6 +303,7 @@ digraph {
   "Biofuel Processing" -> "Active Bio Lab" [color="green"];
   "GM Catnip" -> "Biofuel Processing" [color="green"];
   "Hydraulic Fracturer" -> "oil" [color="green"];
+  "SpaceProductionBonus" -> "Hydraulic Fracturer" [color="green"];
   "oil cap" -> "oil" [color="limegreen"];
   "ParagonProductionBonus" -> "oil" [color="green"];
   "GlobalProductionBonus" -> "oil" [color="green"];
@@ -314,8 +320,10 @@ digraph {
   "Orbital Geodesy" -> "Quarry" [color="green"];
   "Enriched Uranium" -> "Orbital Geodesy" [color="green"];
   "uranium" -> "Active Lunar Outpost" [color="red"];
+  "SpaceProductionBonus" -> "Active Lunar Outpost" [color="red"];
   "Planet Cracker" -> "uranium" [color="green"];
   "Planet Busters" -> "Planet Cracker" [color="green"];
+  "SpaceProductionBonus" -> "Planet Cracker" [color="green"];
   "uranium cap" -> "uranium" [color="limegreen"];
   "ParagonProductionBonus" -> "uranium" [color="green"];
   "GlobalProductionBonus" -> "uranium" [color="green"];
@@ -325,6 +333,7 @@ digraph {
   "ParagonCapBonus" -> "unobtainium cap" [color="green"];
   "GlobalCapBonus" -> "unobtainium cap" [color="green"];
   "Active Lunar Outpost" -> "unobtainium" [color="green"];
+  "SpaceProductionBonus" -> "Active Lunar Outpost" [color="green"];
   "unobtainium cap" -> "unobtainium" [color="limegreen"];
   "Microwarp Reactors" -> "unobtainium" [color="green"];
   "ParagonProductionBonus" -> "unobtainium" [color="green"];
@@ -335,13 +344,12 @@ digraph {
   "GlobalCapBonus" -> "antimatter cap" [color="green"];
   "Sunlifter" -> "antimatter" [color="green"];
   "antimatter cap" -> "antimatter" [color="limegreen"];
-  "ParagonProductionBonus" -> "antimatter" [color="green"];
-  "GlobalProductionBonus" -> "antimatter" [color="green"];
   "Space Beacon" -> "relic" [color="green"];
   "Relic Station" -> "Space Beacon" [color="green"];
   "Black Nexus" -> "Relic Station" [color="green"];
   "Black Pyramid" -> "Black Nexus" [color="green"];
   "Hash Level" -> "Relic Station" [color="green"];
+  "SpaceProductionBonus" -> "Relic Station" [color="green"];
   "ParagonProductionBonus" -> "relic" [color="green"];
   "GlobalProductionBonus" -> "relic" [color="green"];
   "Chronosphere" -> "void" [color="green"];
@@ -379,6 +387,7 @@ digraph {
   "spice" -> "all kittens" [color="red"];
   "spice" -> "Active Brewery" [color="red"];
   "Spice Refinery" -> "spice" [color="green"];
+  "SpaceProductionBonus" -> "Spice Refinery" [color="green"];
   "ParagonProductionBonus" -> "spice" [color="green"];
   "GlobalProductionBonus" -> "spice" [color="green"];
   "Unic. Pasture" -> "unicorn" [color="green"];
@@ -422,7 +431,9 @@ digraph {
   "Astrophysicists" -> "scholar" [color="green"];
   "Satellite" -> "starchart" [color="green"];
   "Research Vessel" -> "starchart" [color="green"];
+  "SpaceProductionBonus" -> "Research Vessel" [color="green"];
   "Space Beacon" -> "starchart" [color="green"];
+  "SpaceProductionBonus" -> "Space Beacon" [color="green"];
   "Hubble Space Telescope" -> "starchart" [color="green"];
   "ParagonProductionBonus" -> "starchart" [color="green"];
   "GlobalProductionBonus" -> "starchart" [color="green"];
@@ -1696,6 +1707,7 @@ digraph {
   "BaseMetalCapBonus" [shape="cylinder"];
   "ParagonProductionBonus" [shape="cylinder"];
   "GlobalProductionBonus" [shape="cylinder"];
+  "SpaceProductionBonus" [shape="cylinder"];
   "HutCostExponentBase" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];

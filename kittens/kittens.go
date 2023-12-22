@@ -173,6 +173,21 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Reactor", Factor: 0.05,
 		}},
+	}, {
+		Name: "SpaceProductionBonus",
+		Producers: []data.Resource{{
+			Name: "Space Elevator", Factor: 0.01,
+		}, {
+			Name: "Orbital Array", Factor: 0.02,
+		}},
+		Bonus: []data.Resource{{
+			Name: "Factory", Factor: 0.0375,
+			Bonus: []data.Resource{{
+				Name:  "Space Manufacturing",
+				Bonus: []data.Resource{{Name: "Factory Logistics", Factor: 4.5/3.75 - 1}},
+			}},
+			BonusStartsFromZero: true,
+		}},
 	}})
 
 	g.AddResources([]data.Resource{{
@@ -874,6 +889,7 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Hydraulic Fracturer", Factor: 0.5 * 5,
+			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
@@ -914,9 +930,14 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Active Lunar Outpost", Factor: -0.35 * 5, ProductionOnGone: true,
+			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}, {
 			Name: "Planet Cracker", Factor: 0.3 * 5,
-			Bonus: []data.Resource{{Name: "Planet Busters"}},
+			Bonus: []data.Resource{{
+				Name: "Planet Busters",
+			}, {
+				Name: "SpaceProductionBonus",
+			}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
@@ -941,7 +962,10 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
-		Producers: []data.Resource{{Name: "Active Lunar Outpost", Factor: 0.035}},
+		Producers: []data.Resource{{
+			Name: "Active Lunar Outpost", Factor: 0.035,
+			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
+		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
 		}, {
@@ -967,12 +991,6 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "antimatter", Type: "Resource", CapResource: "antimatter cap",
 		Producers: []data.Resource{{Name: "Sunlifter", Factor: 1. / (2 * 100 * 4)}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
-		}},
-		BonusIsMultiplicative: true,
 	}, {
 		Name: "relic", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
@@ -985,6 +1003,8 @@ func NewGame(now game.Now) *game.Game {
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Hash Level", Factor: 0.25,
+				}, {
+					Name: "SpaceProductionBonus",
 				}},
 			}},
 			BonusStartsFromZero: true,
@@ -1090,6 +1110,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Brewery", Factor: -0.1 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Spice Refinery", Factor: 0.125,
+			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
@@ -1214,8 +1235,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Satellite", Factor: 0.005,
 		}, {
 			Name: "Research Vessel", Factor: 0.05,
+			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}, {
 			Name: "Space Beacon", Factor: 0.125,
+			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Hubble Space Telescope", Factor: 0.30}},

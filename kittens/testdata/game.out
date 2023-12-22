@@ -462,6 +462,41 @@
       "Formula": "Count = ((c(Active Magneto) * 0.02 * (1 + (c(Steamworks) * 0.15))) + (c(Active Reactor) * 0.05))"
     },
     {
+      "Name": "SpaceProductionBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Space Elevator",
+          "Factor": 0.01
+        },
+        {
+          "Name": "Orbital Array",
+          "Factor": 0.02
+        }
+      ],
+      "StartCountFromZero": true,
+      "Bonus": [
+        {
+          "Name": "Factory",
+          "Factor": 0.0375,
+          "Bonus": [
+            {
+              "Name": "Space Manufacturing",
+              "Bonus": [
+                {
+                  "Name": "Factory Logistics",
+                  "Factor": 0.2
+                }
+              ]
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "Formula": "Count = (((c(Space Elevator) * 0.01) + (c(Orbital Array) * 0.02)) * (1 + (c(Factory) * 0.0375 * (c(Space Manufacturing) * (1 + (c(Factory Logistics) * 0.2))))))"
+    },
+    {
       "Name": "HutCostExponentBase",
       "Type": "Resource",
       "IsHidden": true,
@@ -2254,7 +2289,12 @@
         },
         {
           "Name": "Hydraulic Fracturer",
-          "Factor": 2.5
+          "Factor": 2.5,
+          "Bonus": [
+            {
+              "Name": "SpaceProductionBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -2275,7 +2315,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "oil cap",
-      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5)) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "uranium cap",
@@ -2360,6 +2400,11 @@
         {
           "Name": "Active Lunar Outpost",
           "Factor": -1.75,
+          "Bonus": [
+            {
+              "Name": "SpaceProductionBonus"
+            }
+          ],
           "ProductionOnGone": true
         },
         {
@@ -2368,6 +2413,9 @@
           "Bonus": [
             {
               "Name": "Planet Busters"
+            },
+            {
+              "Name": "SpaceProductionBonus"
             }
           ]
         }
@@ -2390,7 +2438,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "uranium cap",
-      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "unobtainium cap",
@@ -2444,7 +2492,12 @@
       "Producers": [
         {
           "Name": "Active Lunar Outpost",
-          "Factor": 0.035
+          "Factor": 0.035,
+          "Bonus": [
+            {
+              "Name": "SpaceProductionBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -2473,7 +2526,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "unobtainium cap",
-      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "time crystal",
@@ -2525,25 +2578,8 @@
           "Factor": 0.00125
         }
       ],
-      "Bonus": [
-        {
-          "Bonus": [
-            {
-              "Name": "ParagonProductionBonus"
-            }
-          ]
-        },
-        {
-          "Bonus": [
-            {
-              "Name": "GlobalProductionBonus"
-            }
-          ]
-        }
-      ],
-      "BonusIsMultiplicative": true,
       "CapResource": "antimatter cap",
-      "Formula": "Count += (((c(Sunlifter) * 0.00125) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((c(Sunlifter) * 0.00125) * seconds)"
     },
     {
       "Name": "relic",
@@ -2570,6 +2606,9 @@
                 {
                   "Name": "Hash Level",
                   "Factor": 0.25
+                },
+                {
+                  "Name": "SpaceProductionBonus"
                 }
               ]
             }
@@ -2594,7 +2633,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Space Beacon) * 0.005 * (c(Relic Station) * (1 + (c(Black Nexus) * 0.1 * c(Black Pyramid)) + (c(Hash Level) * 0.25)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Space Beacon) * 0.005 * (c(Relic Station) * (1 + (c(Black Nexus) * 0.1 * c(Black Pyramid)) + (c(Hash Level) * 0.25) + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "void",
@@ -2885,7 +2924,12 @@
         },
         {
           "Name": "Spice Refinery",
-          "Factor": 0.125
+          "Factor": 0.125,
+          "Bonus": [
+            {
+              "Name": "SpaceProductionBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -2905,7 +2949,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(all kittens) * -0.005 * (1 + (c(Tradepost) * -0.04))) + (c(Active Brewery) * -0.5) + (c(Spice Refinery) * 0.125)) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(all kittens) * -0.005 * (1 + (c(Tradepost) * -0.04))) + (c(Active Brewery) * -0.5) + (c(Spice Refinery) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "unicorn",
@@ -3188,11 +3232,21 @@
         },
         {
           "Name": "Research Vessel",
-          "Factor": 0.05
+          "Factor": 0.05,
+          "Bonus": [
+            {
+              "Name": "SpaceProductionBonus"
+            }
+          ]
         },
         {
           "Name": "Space Beacon",
-          "Factor": 0.125
+          "Factor": 0.125,
+          "Bonus": [
+            {
+              "Name": "SpaceProductionBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -3220,7 +3274,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005) + (c(Research Vessel) * 0.05) + (c(Space Beacon) * 0.125)) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "gigaflop",

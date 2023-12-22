@@ -91,7 +91,6 @@ Missing features:
 
 - Events: https://wiki.kittensgame.com/en/general-information/events
 
-- Space Bonus (Space Elevator, Orbital Array, Factory)
 - Faith Transcend, Adore, Praise, Solar Revolution
 - Reset
 - Resource Retrieval
