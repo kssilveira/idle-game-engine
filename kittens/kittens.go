@@ -149,12 +149,26 @@ func NewGame(now game.Now) *game.Game {
 			Name: "burned paragon", Factor: 0.0005,
 		}},
 	}, {
-		Name: "GlobalCapBonus",
+		Name: "OtherCapBonus",
 		Producers: []data.Resource{{
 			Name: "Void Rift", Factor: 0.02,
 		}, {
 			Name: "Event Horizon", Factor: 0.10,
 		}},
+	}, {
+		Name:      "GlobalCapBonus",
+		Producers: []data.Resource{{}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{
+				Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+			}, {
+				Bonus: []data.Resource{{Name: "OtherCapBonus"}},
+			}},
+			BonusIsMultiplicative: true,
+		}, {
+			Factor: -1,
+		}},
+		BonusStartsFromZero: true,
 	}, {
 		Name:      "BaseMetalCapBonus",
 		Producers: []data.Resource{{Name: "Sunforge", Factor: 0.01}},
@@ -242,8 +256,6 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "CatnipCapBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
@@ -333,8 +345,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -451,8 +461,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Space Beacon", Factor: 25000, Bonus: []data.Resource{{Name: "SpaceReactorScienceBonus"}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -507,8 +515,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -573,8 +579,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -641,8 +645,6 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -702,8 +704,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -787,8 +787,6 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -849,8 +847,6 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -892,8 +888,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Cryostation", Factor: 7500,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -943,8 +937,6 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -991,8 +983,6 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1021,8 +1011,6 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Heatsink", Factor: 0.02}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
