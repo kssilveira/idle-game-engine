@@ -87,10 +87,12 @@ Edges:
 
 ![graph edges](kittens/testdata/graph_edges.svg)
 
-More features from kittens game:
+Wiki:
 
 - https://wiki.kittensgame.com/en/home
   - https://wiki.kittensgame.com/en/game-tabs/time
+
+Missing features:
 
 - Factory
   - Space Manufacturing - Space Bonus +3.75
