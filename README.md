@@ -91,7 +91,6 @@ Missing features:
 
 - [Cycles](https://wiki.kittensgame.com/en/general-information/game-mechanics#cycles)
 - [Events](https://wiki.kittensgame.com/en/general-information/events)
-- [Festival](https://wiki.kittensgame.com/en/general-information/events/festival)
 - [Metaphysics paragon effect and scaling](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
 - [Metaphysics price ratios](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
 - [Reset](https://wiki.kittensgame.com/en/general-information/game-mechanics#reset)

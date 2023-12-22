@@ -1050,6 +1050,10 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Venus of Willenfluff", Factor: 0.75,
 		}, {
 			Name: "Pawgan Rituals", Factor: 1.50,
+		}, {
+			Name: "Brewery", Factor: 0.01,
+			Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+			BonusStartsFromZero: true,
 		}},
 		OnGone: []data.Resource{{Name: "gone kitten", Count: 1}},
 	}, {
@@ -1227,6 +1231,9 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
+		Name: "festival day", Type: "Resource", Cap: -1,
+		Producers: []data.Resource{{Factor: -0.5}},
+	}, {
 		Name: "gigaflop", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
 			Name: "AI Core", Factor: 0.02 * 5,
@@ -1315,13 +1322,32 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "all kittens", Factor: -0.02,
 		}, {
-			Name: "ivory", Factor: 0.1, ProductionBoolean: true,
+			Name: "ivory", Factor: 0.10, ProductionBoolean: true,
 		}, {
-			Name: "fur", Factor: 0.1, ProductionBoolean: true,
+			Name: "fur", Factor: 0.10, ProductionBoolean: true,
 		}, {
-			Name: "spice", Factor: 0.1, ProductionBoolean: true,
+			Name: "spice", Factor: 0.10, ProductionBoolean: true,
 		}, {
-			Name: "unicorn", Factor: 0.1, ProductionBoolean: true,
+			Name: "unicorn", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "alicorn", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "necrocorn", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "karma", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "karma", Factor: 0.01,
+		}, {
+			Name: "tear", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "relic", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "blackcoin", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "void", Factor: 0.10, ProductionBoolean: true,
+		}, {
+			Name: "festival day", Factor: 0.10, ProductionBoolean: true,
+			Bonus: []data.Resource{{Name: "Brewery", Factor: 0.01}},
 		}, {
 			Name: "Amphitheatre", Factor: 0.048,
 		}, {
@@ -2159,6 +2185,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "ivory", Count: 10.78, Bonus: []data.Resource{{Name: "HuntingBonus"}},
 		}, {
 			Name: "unicorn", Count: 0.05,
+		}},
+	}, {
+		Name: "Festival", Type: "Job", UnlockedBy: "Drama and Poetry",
+		Costs: []data.Resource{{
+			Name: "catpower", Count: 1500,
+		}, {
+			Name: "culture", Count: 5000,
+		}, {
+			Name: "parchment", Count: 2500,
+		}},
+		Adds: []data.Resource{{
+			Name: "festival day", Count: 400,
 		}},
 	}})
 

@@ -120,6 +120,7 @@ digraph {
   "Theology" -> "priest" [color="blue"];
   "Geology" -> "geologist" [color="blue"];
   "Archery" -> "Send hunters" [color="blue"];
+  "Drama and Poetry" -> "Festival" [color="blue"];
   "Archery" -> "Lizards" [color="blue"];
   "Archery" -> "Sharks" [color="blue"];
   "Archery" -> "Griffins" [color="blue"];
@@ -770,6 +771,7 @@ digraph {
   "ASCOH" [shape="diamond"];
   "Refine catnip" [shape="box3d"];
   "Send hunters" [shape="house"];
+  "Festival" [shape="house"];
   "Lizards" [shape="cds"];
   "Sharks" [shape="cds"];
   "Griffins" [shape="cds"];

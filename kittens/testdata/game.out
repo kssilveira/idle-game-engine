@@ -2672,6 +2672,17 @@
         {
           "Name": "Pawgan Rituals",
           "Factor": 1.5
+        },
+        {
+          "Name": "Brewery",
+          "Factor": 0.01,
+          "Bonus": [
+            {
+              "Name": "festival day",
+              "ProductionBoolean": true
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "OnGone": [
@@ -2680,7 +2691,7 @@
           "Count": 1
         }
       ],
-      "Formula": "Count += ((0.05 * (1 + (c(Venus of Willenfluff) * 0.75) + (c(Pawgan Rituals) * 1.5))) * seconds)"
+      "Formula": "Count += ((0.05 * (1 + (c(Venus of Willenfluff) * 0.75) + (c(Pawgan Rituals) * 1.5) + (c(Brewery) * 0.01 * (1 if c(festival day) \u003e 0)))) * seconds)"
     },
     {
       "Name": "all kittens",
@@ -3150,6 +3161,17 @@
       "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
+      "Name": "festival day",
+      "Type": "Resource",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Factor": -0.5
+        }
+      ],
+      "Formula": "Count += (-0.5 * seconds)"
+    },
+    {
       "Name": "gigaflop",
       "Type": "Resource",
       "Cap": -1,
@@ -3409,6 +3431,56 @@
           "ProductionBoolean": true
         },
         {
+          "Name": "alicorn",
+          "Factor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "necrocorn",
+          "Factor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "karma",
+          "Factor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "karma",
+          "Factor": 0.01
+        },
+        {
+          "Name": "tear",
+          "Factor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "relic",
+          "Factor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "blackcoin",
+          "Factor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "void",
+          "Factor": 0.1,
+          "ProductionBoolean": true
+        },
+        {
+          "Name": "festival day",
+          "Factor": 0.1,
+          "ProductionBoolean": true,
+          "Bonus": [
+            {
+              "Name": "Brewery",
+              "Factor": 0.01
+            }
+          ]
+        },
+        {
           "Name": "Amphitheatre",
           "Factor": 0.048
         },
@@ -3428,7 +3500,7 @@
         }
       ],
       "StartCount": 0.1,
-      "Formula": "Count = (0.1 + ((c(all kittens) * -0.02) + ((1 if c(ivory) \u003e 0) * 0.1) + ((1 if c(fur) \u003e 0) * 0.1) + ((1 if c(spice) \u003e 0) * 0.1) + ((1 if c(unicorn) \u003e 0) * 0.1) + (c(Amphitheatre) * 0.048) + (c(Broadcast Tower) * 0.75) + (c(Temple) * 0.005 * c(Sun Altar))))"
+      "Formula": "Count = (0.1 + ((c(all kittens) * -0.02) + ((1 if c(ivory) \u003e 0) * 0.1) + ((1 if c(fur) \u003e 0) * 0.1) + ((1 if c(spice) \u003e 0) * 0.1) + ((1 if c(unicorn) \u003e 0) * 0.1) + ((1 if c(alicorn) \u003e 0) * 0.1) + ((1 if c(necrocorn) \u003e 0) * 0.1) + ((1 if c(karma) \u003e 0) * 0.1) + (c(karma) * 0.01) + ((1 if c(tear) \u003e 0) * 0.1) + ((1 if c(relic) \u003e 0) * 0.1) + ((1 if c(blackcoin) \u003e 0) * 0.1) + ((1 if c(void) \u003e 0) * 0.1) + ((1 if c(festival day) \u003e 0) * 0.1 * (1 + (c(Brewery) * 0.01))) + (c(Amphitheatre) * 0.048) + (c(Broadcast Tower) * 0.75) + (c(Temple) * 0.005 * c(Sun Altar))))"
     },
     {
       "Name": "Catnip Field",
@@ -9079,6 +9151,31 @@
         {
           "Name": "unicorn",
           "Count": 0.05
+        }
+      ]
+    },
+    {
+      "Name": "Festival",
+      "Type": "Job",
+      "UnlockedBy": "Drama and Poetry",
+      "Costs": [
+        {
+          "Name": "catpower",
+          "Count": 1500
+        },
+        {
+          "Name": "culture",
+          "Count": 5000
+        },
+        {
+          "Name": "parchment",
+          "Count": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "festival day",
+          "Count": 400
         }
       ]
     },
