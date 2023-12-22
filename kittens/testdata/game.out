@@ -970,6 +970,16 @@
                 }
               ],
               "BonusStartsFromZero": true
+            },
+            {
+              "Name": "AI Core",
+              "Factor": 0.1,
+              "Bonus": [
+                {
+                  "Name": "Machine Learning"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         },
@@ -1013,7 +1023,7 @@
         }
       ],
       "StartCount": 250,
-      "Formula": "Count = (250 + ((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * (c(Uplink) + c(Starlink))))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))))"
+      "Formula": "Count = (250 + ((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * (c(Uplink) + c(Starlink))))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))))"
     },
     {
       "Name": "science",
@@ -1059,6 +1069,16 @@
                 }
               ],
               "BonusStartsFromZero": true
+            },
+            {
+              "Name": "AI Core",
+              "Factor": 0.1,
+              "Bonus": [
+                {
+                  "Name": "Machine Learning"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         },
@@ -1068,7 +1088,7 @@
         }
       ],
       "CapResource": "science cap",
-      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * (1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Space Station) * 0.5))) * seconds)"
+      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * (1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5))) * seconds)"
     },
     {
       "Name": "catpower cap",
@@ -2330,6 +2350,16 @@
                 }
               ],
               "BonusStartsFromZero": true
+            },
+            {
+              "Name": "AI Core",
+              "Factor": 0.1,
+              "Bonus": [
+                {
+                  "Name": "Machine Learning"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         },
@@ -2357,7 +2387,7 @@
           ]
         }
       ],
-      "Formula": "Count = (100 + (((c(Library) * 10) + (c(Academy) * 25) + (c(Amphitheatre) * 50) + (c(Chapel) * 200) + (c(Data Center) * 250 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)))) + (c(Temple) * 125 * c(Basilica))) * (1 + (c(Ziggurat) * 0.08 * (1 + (c(Unicorn Graveyard) * 0.125))))))"
+      "Formula": "Count = (100 + (((c(Library) * 10) + (c(Academy) * 25) + (c(Amphitheatre) * 50) + (c(Chapel) * 200) + (c(Data Center) * 250 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Temple) * 125 * c(Basilica))) * (1 + (c(Ziggurat) * 0.08 * (1 + (c(Unicorn Graveyard) * 0.125))))))"
     },
     {
       "Name": "culture",

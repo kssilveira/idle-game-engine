@@ -89,7 +89,6 @@ Edges:
 
 Missing features:
 
-- AI Core: Machine Learning: Data Center effectiveness +10% per AI Core
 - Relic Station: each antimatter storage unit below 5000 decrease relic production by 0.02%
 - Events: https://wiki.kittensgame.com/en/general-information/events
 - Global Production Bonus (Magneto, Steamworks, Reactor, Space Elevator)

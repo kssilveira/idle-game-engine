@@ -353,6 +353,10 @@ func NewGame(now game.Now) *game.Game {
 					Name: "Eludium Reflectors",
 				}},
 				BonusStartsFromZero: true,
+			}, {
+				Name: "AI Core", Factor: 0.10,
+				Bonus:               []data.Resource{{Name: "Machine Learning"}},
+				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Temple", Factor: 500,
@@ -386,6 +390,10 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Bio Lab", Factor: 0.01,
 				Bonus:               []data.Resource{{Name: "Uplink"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "AI Core", Factor: 0.10,
+				Bonus:               []data.Resource{{Name: "Machine Learning"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
@@ -903,6 +911,10 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{
 				Name: "Bio Lab", Factor: 0.01,
 				Bonus:               []data.Resource{{Name: "Uplink"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "AI Core", Factor: 0.10,
+				Bonus:               []data.Resource{{Name: "Machine Learning"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {

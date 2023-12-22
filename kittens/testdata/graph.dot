@@ -142,6 +142,8 @@ digraph {
   "Bio Lab" -> "Data Center" [color="green"];
   "Uplink" -> "Bio Lab" [color="green"];
   "Observatory" -> "Data Center" [color="green"];
+  "AI Core" -> "Data Center" [color="green"];
+  "Machine Learning" -> "AI Core" [color="green"];
   "Temple" -> "science cap" [color="green"];
   "Scholasticism" -> "Temple" [color="green"];
   "Accelerator" -> "science cap" [color="green"];
