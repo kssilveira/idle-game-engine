@@ -113,6 +113,5 @@ Missing features:
 
 TODO:
 
-- change formula '>' to 'gt'
 - record terminal using https://asciinema.org/
 - make [solve.go](kittens/solve/solve.go) get everything

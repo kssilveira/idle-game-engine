@@ -1195,7 +1195,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "catnip cap",
-      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025 * (1 + (c(Yarn) * c(Numerology)) + (c(Piscine) * -0.5 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025 * (1 + (c(Yarn) * c(Numerology)) + (c(Piscine) * -0.5 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "wood cap",
@@ -1385,7 +1385,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "wood cap",
-      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25)) * ((1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25)) * ((1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "science cap",
@@ -1687,7 +1687,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "science cap",
-      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5 * (1 + (c(Cath) * 0.5 * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Piscine) * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5 * (1 + (c(Cath) * 0.5 * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Piscine) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "catpower cap",
@@ -1792,7 +1792,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "catpower cap",
-      "Formula": "Count += ((((c(hunter) * 0.3 * (1 + c(happiness) + (c(Composite Bow) * 0.5) + (c(Crossbow) * 0.25) + (c(Railgun) * 0.25))) + (c(Active Mint) * -3.75)) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Cath) * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(hunter) * 0.3 * (1 + c(happiness) + (c(Composite Bow) * 0.5) + (c(Crossbow) * 0.25) + (c(Railgun) * 0.25))) + (c(Active Mint) * -3.75)) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Cath) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "mineral cap",
@@ -1949,7 +1949,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "mineral cap",
-      "Formula": "Count += ((((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5)) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5)) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "iron cap",
@@ -2124,7 +2124,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "iron cap",
-      "Formula": "Count += ((((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "coal cap",
@@ -2334,7 +2334,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "coal cap",
-      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 0.66) + c(Unobtainium Drill))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining)) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) \u003e 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 0.66) + c(Unobtainium Drill))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining)) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) gt 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "gold cap",
@@ -2496,7 +2496,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "gold cap",
-      "Formula": "Count += ((((c(Active Mint) * -0.025) + (c(Active Smelter) * 0.005 * c(Gold Ore)) + (c(geologist) * 0.004 * (c(Geodesy) * (1 + (c(Mining Drill) * 0.625) + (c(Unobtainium Drill) * 0.625))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Active Mint) * -0.025) + (c(Active Smelter) * 0.005 * c(Gold Ore)) + (c(geologist) * 0.004 * (c(Geodesy) * (1 + (c(Mining Drill) * 0.625) + (c(Unobtainium Drill) * 0.625))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "titanium cap",
@@ -2657,7 +2657,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "titanium cap",
-      "Formula": "Count += ((((c(Active Accelerator) * -0.075) + (c(Active Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 1.5 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Active Accelerator) * -0.075) + (c(Active Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 1.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "oil cap",
@@ -2813,7 +2813,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "oil cap",
-      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus) + (c(Umbra) * -0.25 * c(Numerology)) + (c(Dune) * 0.5 * c(Numerology))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Termogus) * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus) + (c(Umbra) * -0.25 * c(Numerology)) + (c(Dune) * 0.5 * c(Numerology))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Termogus) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "uranium cap",
@@ -2967,7 +2967,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "uranium cap",
-      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus) + (c(Umbra) * -0.1 * c(Numerology)) + (c(Dune) * 0.1 * c(Numerology))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Dune) * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus) + (c(Umbra) * -0.1 * c(Numerology)) + (c(Dune) * 0.1 * c(Numerology))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Dune) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "unobtainium cap",
@@ -3086,7 +3086,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "unobtainium cap",
-      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus) + (c(Charon) * -0.1 * c(Numerology)) + (c(Redmoon) * 0.2 * c(Numerology)))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Redmoon) * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus) + (c(Charon) * -0.1 * c(Numerology)) + (c(Redmoon) * 0.2 * c(Numerology)))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Redmoon) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "time crystal",
@@ -3311,7 +3311,7 @@
           "Count": 1
         }
       ],
-      "Formula": "Count += ((0.05 * (1 + (c(Venus of Willenfluff) * 0.75) + (c(Pawgan Rituals) * 1.5) + (c(Active Brewery) * 0.01 * (1 if c(festival day) \u003e 0)))) * seconds)"
+      "Formula": "Count += ((0.05 * (1 + (c(Venus of Willenfluff) * 0.75) + (c(Pawgan Rituals) * 1.5) + (c(Active Brewery) * 0.01 * (1 if c(festival day) gt 0)))) * seconds)"
     },
     {
       "Name": "all kittens",
@@ -3546,7 +3546,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Unic. Pasture) * 0.005) * ((1 + (c(Unicorn Selection) * 0.25) + (c(Unicorn Tomb) * 0.05) + (c(Ivory Tower) * 0.1) + (c(Ivory Citadel) * 0.25) + (c(Sky Palace) * 0.5) + (c(Unicorn Utopia) * 2.5) + (c(Sunspire) * 5)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * 0.25 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += (((c(Unic. Pasture) * 0.005) * ((1 + (c(Unicorn Selection) * 0.25) + (c(Unicorn Tomb) * 0.05) + (c(Ivory Tower) * 0.1) + (c(Ivory Citadel) * 0.25) + (c(Sky Palace) * 0.5) + (c(Unicorn Utopia) * 2.5) + (c(Sunspire) * 5)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * 0.25 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "culture cap",
@@ -3679,7 +3679,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "culture cap",
-      "Formula": "Count += ((((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 2)))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Yarn) * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 2)))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Yarn) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "faith cap",
@@ -3771,7 +3771,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "faith cap",
-      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075 * c(Theology)) + (c(Chapel) * 0.025)) * ((1 + (c(Solar Chant) * 0.1)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075 * c(Theology)) + (c(Chapel) * 0.025)) * ((1 + (c(Solar Chant) * 0.1)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "worship",
@@ -3921,7 +3921,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005 * (1 + (c(Cath) * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology)))) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus) + (c(Yarn) * -0.5 * c(Numerology)) + (c(Piscine) * 0.5 * c(Numerology)))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus) + (c(Cath) * -0.5 * c(Numerology)) + (c(Kairo) * 4 * c(Numerology))))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Kairo) * 4 * (c(Numeromancy) * (1 if c(festival day) \u003e 0)))))) * seconds)"
+      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005 * (1 + (c(Cath) * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology)))) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus) + (c(Yarn) * -0.5 * c(Numerology)) + (c(Piscine) * 0.5 * c(Numerology)))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus) + (c(Cath) * -0.5 * c(Numerology)) + (c(Kairo) * 4 * c(Numerology))))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Kairo) * 4 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "festival day",
@@ -4157,7 +4157,7 @@
           "BonusStartsFromZero": true
         }
       ],
-      "Formula": "Count += ((c(Chrono Furnace) * 0.1 * (1 if c(chronoheat) \u003e 0)) * seconds)"
+      "Formula": "Count += ((c(Chrono Furnace) * 0.1 * (1 if c(chronoheat) gt 0)) * seconds)"
     },
     {
       "Name": "karma",
@@ -4284,7 +4284,7 @@
         }
       ],
       "StartCount": 0.1,
-      "Formula": "Count = (0.1 + ((c(all kittens) * -0.02) + ((1 if c(ivory) \u003e 0) * 0.1) + ((1 if c(fur) \u003e 0) * 0.1) + ((1 if c(spice) \u003e 0) * 0.1) + ((1 if c(unicorn) \u003e 0) * 0.1) + ((1 if c(alicorn) \u003e 0) * 0.1) + ((1 if c(necrocorn) \u003e 0) * 0.1) + ((1 if c(karma) \u003e 0) * 0.1) + (c(karma) * 0.01) + ((1 if c(tear) \u003e 0) * 0.1) + ((1 if c(relic) \u003e 0) * 0.1) + ((1 if c(blackcoin) \u003e 0) * 0.1) + ((1 if c(void) \u003e 0) * 0.1) + ((1 if c(festival day) \u003e 0) * 0.1 * (1 + (c(Active Brewery) * 0.01))) + (c(Amphitheatre) * 0.048) + (c(Broadcast Tower) * 0.75) + (c(Temple) * 0.005 * c(Sun Altar))))"
+      "Formula": "Count = (0.1 + ((c(all kittens) * -0.02) + ((1 if c(ivory) gt 0) * 0.1) + ((1 if c(fur) gt 0) * 0.1) + ((1 if c(spice) gt 0) * 0.1) + ((1 if c(unicorn) gt 0) * 0.1) + ((1 if c(alicorn) gt 0) * 0.1) + ((1 if c(necrocorn) gt 0) * 0.1) + ((1 if c(karma) gt 0) * 0.1) + (c(karma) * 0.01) + ((1 if c(tear) gt 0) * 0.1) + ((1 if c(relic) gt 0) * 0.1) + ((1 if c(blackcoin) gt 0) * 0.1) + ((1 if c(void) gt 0) * 0.1) + ((1 if c(festival day) gt 0) * 0.1 * (1 + (c(Active Brewery) * 0.01))) + (c(Amphitheatre) * 0.048) + (c(Broadcast Tower) * 0.75) + (c(Temple) * 0.005 * c(Sun Altar))))"
     },
     {
       "Name": "Catnip Field",

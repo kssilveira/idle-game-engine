@@ -598,7 +598,7 @@ func (g *Game) getCountForRateFormula(p data.Resource) string {
 		quantity = fmt.Sprintf("floor(%s)", quantity)
 	}
 	if p.ProductionBoolean {
-		quantity = fmt.Sprintf("(1 if %s > 0)", quantity)
+		quantity = fmt.Sprintf("(1 if %s gt 0)", quantity)
 	}
 	return quantity
 }
