@@ -90,7 +90,7 @@ Edges:
 Missing features:
 
 - Events: https://wiki.kittensgame.com/en/general-information/events
-- Global Production Bonus (Magneto, Steamworks, Reactor, Space Elevator)
+
 - Space Bonus (Space Elevator, Orbital Array, Factory)
 - Faith Transcend, Adore, Praise, Solar Revolution
 - Reset
