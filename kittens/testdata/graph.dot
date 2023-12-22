@@ -348,8 +348,8 @@ digraph {
   "GlobalProductionBonus" -> "temporal flux" [color="green"];
   "Venus of Willenfluff" -> "kitten" [color="green"];
   "Pawgan Rituals" -> "kitten" [color="green"];
-  "Brewery" -> "kitten" [color="green"];
-  "festival day" -> "Brewery" [color="green"];
+  "Active Brewery" -> "kitten" [color="green"];
+  "festival day" -> "Active Brewery" [color="green"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -439,7 +439,7 @@ digraph {
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
   "Chrono Furnace" -> "chrono furnace fuel" [color="green"];
   "chronoheat" -> "Chrono Furnace" [color="green"];
-  "Brewery" -> "festival day" [color="green"];
+  "Active Brewery" -> "festival day" [color="green"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Bio Lab" -> "Idle Bio Lab" [color="green"];

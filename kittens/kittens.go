@@ -1051,7 +1051,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Pawgan Rituals", Factor: 1.50,
 		}, {
-			Name: "Brewery", Factor: 0.01,
+			Name: "Active Brewery", Factor: 0.01,
 			Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
 			BonusStartsFromZero: true,
 		}},
@@ -1347,7 +1347,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "void", Factor: 0.10, ProductionBoolean: true,
 		}, {
 			Name: "festival day", Factor: 0.10, ProductionBoolean: true,
-			Bonus: []data.Resource{{Name: "Brewery", Factor: 0.01}},
+			Bonus: []data.Resource{{Name: "Active Brewery", Factor: 0.01}},
 		}, {
 			Name: "Amphitheatre", Factor: 0.048,
 		}, {
