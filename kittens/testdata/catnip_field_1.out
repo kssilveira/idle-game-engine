@@ -20,6 +20,7 @@ X: [Building] Hut -(wood 0/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Catnip Field
 ###
+[Calendar] Charon 1 (1 if 0.003 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
@@ -32,6 +33,7 @@ X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
+[Calendar] Charon 1 (1 if 0.05 % 10 == 0)
 [Calendar] year 1.26 (1 + 0.26)
 [Calendar] Summer 1 (1 if 1.05 % 4 == 1)
 [Calendar] day_of_year 106 (1 + 105 % 400)
@@ -44,6 +46,7 @@ X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
+[Calendar] Charon 1 (1 if 0.1 % 10 == 0)
 [Calendar] year 1.51 (1 + 0.51)
 [Calendar] Autumn 1 (1 if 2.05 % 4 == 2)
 [Calendar] day_of_year 206 (1 + 205 % 400)
@@ -56,6 +59,7 @@ X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
+[Calendar] Charon 1 (1 if 0.15 % 10 == 0)
 [Calendar] year 1.76 (1 + 0.76)
 [Calendar] Winter 1 (1 if 3.05 % 4 == 3)
 [Calendar] day_of_year 306 (1 + 305 % 400)
@@ -68,6 +72,7 @@ X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
+[Calendar] Charon 1 (1 if 0.2 % 10 == 0)
 [Calendar] year 2.01 (1 + 1.01)
 [Calendar] Spring 1 (1 if 4.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 405 % 400)
@@ -80,6 +85,7 @@ X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Gather catnip
 error: action Gather catnip is locked
 ###
+[Calendar] Charon 1 (1 if 0.2 % 10 == 0)
 [Calendar] year 2.01 (1 + 1.01)
 [Calendar] Spring 1 (1 if 4.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 405 % 400)

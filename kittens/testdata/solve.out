@@ -3,6 +3,7 @@
 X: [Building] Gather catnip +(catnip 10)
 last action: 
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -11,6 +12,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -19,6 +21,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
@@ -27,6 +30,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
@@ -35,6 +39,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.002 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
@@ -43,6 +48,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.002 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
@@ -51,6 +57,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.002 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
@@ -59,6 +66,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.002 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
@@ -67,6 +75,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.003 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
@@ -75,6 +84,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.003 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
@@ -83,6 +93,7 @@ X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.003 % 10 == 0)
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
@@ -94,6 +105,7 @@ X: [Building] Hut -(wood 0/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 0/25) +(Library 1)
 last action: Catnip Field
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.91 % 4 == 2)
 [Calendar] day_of_year 292 (1 + 1091 % 400)
@@ -105,6 +117,7 @@ X: [Building] Hut -(wood 0/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 0/25) +(Library 1)
 last action: max Catnip Field
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.91 % 4 == 2)
 [Calendar] day_of_year 292 (1 + 1091 % 400)
@@ -116,6 +129,7 @@ X: [Building] Hut -(wood 1/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 1/25) +(Library 1)
 last action: skip Refine catnip
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.92 % 4 == 2)
 [Calendar] day_of_year 293 (1 + 1092 % 400)
@@ -127,6 +141,7 @@ X: [Building] Hut -(wood 2/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 2/25) +(Library 1)
 last action: skip Refine catnip
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.92 % 4 == 2)
 [Calendar] day_of_year 293 (1 + 1092 % 400)
@@ -138,6 +153,7 @@ X: [Building] Hut -(wood 3/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 3/25) +(Library 1)
 last action: skip Refine catnip
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.93 % 4 == 2)
 [Calendar] day_of_year 294 (1 + 1093 % 400)
@@ -149,6 +165,7 @@ X: [Building] Hut -(wood 4/5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 4/25) +(Library 1)
 last action: skip Refine catnip
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.93 % 4 == 2)
 [Calendar] day_of_year 294 (1 + 1093 % 400)
@@ -160,6 +177,7 @@ X: [Building] Hut -(wood 5) +(Hut 1, kitten cap 2)
 X: [Building] Library -(wood 5/25) +(Library 1)
 last action: skip Refine catnip
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.73 (1 + 2.73)
 [Calendar] Autumn 1 (1 if 10.94 % 4 == 2)
 [Calendar] day_of_year 295 (1 + 1094 % 400)
@@ -173,6 +191,7 @@ X: [Building] Library -(wood 0/25) +(Library 1)
 X: [Job] woodcutter -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: Hut
 ###
+[Calendar] Charon 1 (1 if 0.55 % 10 == 0)
 [Calendar] year 3.76 (1 + 2.76)
 [Calendar] Winter 1 (1 if 11.04 % 4 == 3)
 [Calendar] day_of_year 305 (1 + 1104 % 400)
@@ -187,6 +206,7 @@ X: [Building] Library -(wood 0.1/25 4m16s) +(Library 1)
 X: [Job] woodcutter (1) -(kitten 0.05/1 18s) +(woodcutter 1)
 last action: skip woodcutter
 ###
+[Calendar] Charon 1 (1 if 0.62 % 10 == 0)
 [Calendar] year 4.08 (1 + 3.08)
 [Calendar] Spring 1 (1 if 12.33 % 4 == 0)
 [Calendar] day_of_year 34 (1 + 1233 % 400)
@@ -203,6 +223,7 @@ X: [Job] scholar -(kitten 1) +(scholar 1)
 X: [Tech] Calendar -(science 0/30) +(Calendar 1)
 last action: skip Library
 ###
+[Calendar] Charon 1 (1 if 0.62 % 10 == 0)
 [Calendar] year 4.08 (1 + 3.08)
 [Calendar] Spring 1 (1 if 12.33 % 4 == 0)
 [Calendar] day_of_year 34 (1 + 1233 % 400)
@@ -219,6 +240,7 @@ X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [Tech] Calendar -(science 0.2/30 2m26s) +(Calendar 1)
 last action: skip scholar
 ###
+[Calendar] Cath 1 (1 if 4.2 % 10 == 4)
 [Calendar] year 22 (1 + 21)
 [Calendar] Spring 1 (1 if 84.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 8401 % 400)
@@ -235,6 +257,7 @@ X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [Tech] Calendar -(science 30) +(Calendar 1)
 last action: max Library
 ###
+[Calendar] Cath 1 (1 if 4.2 % 10 == 4)
 [Calendar] year 22 (1 + 21)
 [Calendar] Spring 1 (1 if 84.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 8402 % 400)
@@ -251,6 +274,7 @@ X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
 X: [Tech] Agriculture -(science 100) +(Agriculture 1)
 last action: skip Calendar
 ###
+[Calendar] Cath 1 (1 if 4.2 % 10 == 4)
 [Calendar] year 22 (1 + 21)
 [Calendar] Spring 1 (1 if 84.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 8402 % 400)
@@ -270,6 +294,7 @@ X: [Tech] Archery -(science 300) +(Archery 1)
 X: [Tech] Mining -(science 500) +(Mining 1)
 last action: skip Agriculture
 ###
+[Calendar] Cath 1 (1 if 4.2 % 10 == 4)
 [Calendar] year 22.01 (1 + 21.01)
 [Calendar] Spring 1 (1 if 84.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 8403 % 400)
@@ -290,6 +315,7 @@ X: [Tech] Archery -(science 300) +(Archery 1)
 X: [Tech] Mining -(science 500) +(Mining 1)
 last action: skip Hut
 ###
+[Calendar] Cath 1 (1 if 4.21 % 10 == 4)
 [Calendar] year 22.03 (1 + 21.03)
 [Calendar] Spring 1 (1 if 84.13 % 4 == 0)
 [Calendar] day_of_year 14 (1 + 8413 % 400)
@@ -310,6 +336,7 @@ X: [Tech] Archery -(science 300) +(Archery 1)
 X: [Tech] Mining -(science 500) +(Mining 1)
 last action: skip farmer
 ###
+[Calendar] Cath 1 (1 if 4.21 % 10 == 4)
 [Calendar] year 22.06 (1 + 21.06)
 [Calendar] Spring 1 (1 if 84.23 % 4 == 0)
 [Calendar] day_of_year 24 (1 + 8423 % 400)
@@ -329,6 +356,7 @@ X: [Tech] Archery -(science 300) +(Archery 1)
 X: [Tech] Mining -(science 500) +(Mining 1)
 last action: skip farmer
 ###
+[Calendar] Yarn 1 (1 if 12.63 % 10 == 2)
 [Calendar] year 64.16 (1 + 63.16)
 [Calendar] Spring 1 (1 if 252.65 % 4 == 0)
 [Calendar] day_of_year 66 (1 + 25265 % 400)
@@ -348,6 +376,7 @@ X: [Tech] Archery -(science 300) +(Archery 1)
 X: [Tech] Mining -(science 500) +(Mining 1)
 last action: max Barn
 ###
+[Calendar] Dune 1 (1 if 16.31 % 10 == 6)
 [Calendar] year 82.54 (1 + 81.54)
 [Calendar] Autumn 1 (1 if 326.16 % 4 == 2)
 [Calendar] day_of_year 217 (1 + 32616 % 400)
@@ -367,6 +396,7 @@ X: [Tech] Archery -(science 300) +(Archery 1)
 X: [Tech] Mining -(science 500) +(Mining 1)
 last action: max Catnip Field
 ###
+[Calendar] Termogus 1 (1 if 38.83 % 10 == 8)
 [Calendar] year 195.13 (1 + 194.13)
 [Calendar] Spring 1 (1 if 776.52 % 4 == 0)
 [Calendar] day_of_year 53 (1 + 77652 % 400)
@@ -386,6 +416,7 @@ X: [Tech] Archery -(science 300) +(Archery 1)
 X: [Tech] Mining -(science 500) +(Mining 1)
 last action: max Library
 ###
+[Calendar] Termogus 1 (1 if 38.83 % 10 == 8)
 [Calendar] year 195.13 (1 + 194.13)
 [Calendar] Spring 1 (1 if 776.52 % 4 == 0)
 [Calendar] day_of_year 53 (1 + 77652 % 400)
@@ -410,6 +441,7 @@ X: [Tech] Mining -(science 500) +(Mining 1)
 X: [Tech] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip Archery
 ###
+[Calendar] Termogus 1 (1 if 38.83 % 10 == 8)
 [Calendar] year 195.13 (1 + 194.13)
 [Calendar] Spring 1 (1 if 776.53 % 4 == 0)
 [Calendar] day_of_year 54 (1 + 77653 % 400)
@@ -435,6 +467,7 @@ X: [Tech] Mining -(science 500) +(Mining 1)
 X: [Tech] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip Hut
 ###
+[Calendar] Termogus 1 (1 if 38.83 % 10 == 8)
 [Calendar] year 195.16 (1 + 194.16)
 [Calendar] Spring 1 (1 if 776.63 % 4 == 0)
 [Calendar] day_of_year 64 (1 + 77663 % 400)
@@ -460,6 +493,7 @@ X: [Tech] Mining -(science 500) +(Mining 1)
 X: [Tech] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip hunter
 ###
+[Calendar] Termogus 1 (1 if 38.84 % 10 == 8)
 [Calendar] year 195.18 (1 + 194.18)
 [Calendar] Spring 1 (1 if 776.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 77673 % 400)
@@ -485,6 +519,7 @@ X: [Tech] Mining -(science 500) +(Mining 1)
 X: [Tech] Animal Husbandry -(science 500) +(Animal Husbandry 1)
 last action: skip farmer
 ###
+[Calendar] Termogus 1 (1 if 38.84 % 10 == 8)
 [Calendar] year 195.18 (1 + 194.18)
 [Calendar] Spring 1 (1 if 776.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 77673 % 400)
@@ -514,6 +549,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Animal Husbandry
 ###
+[Calendar] Piscine 1 (1 if 67.96 % 10 == 7)
 [Calendar] year 340.81 (1 + 339.81)
 [Calendar] Winter 1 (1 if 1359.26 % 4 == 3)
 [Calendar] day_of_year 327 (1 + 135926 % 400)
@@ -543,6 +579,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: max Pasture
 ###
+[Calendar] Piscine 1 (1 if 67.96 % 10 == 7)
 [Calendar] year 340.82 (1 + 339.82)
 [Calendar] Winter 1 (1 if 1359.27 % 4 == 3)
 [Calendar] day_of_year 328 (1 + 135927 % 400)
@@ -574,6 +611,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Piscine 1 (1 if 67.96 % 10 == 7)
 [Calendar] year 340.82 (1 + 339.82)
 [Calendar] Winter 1 (1 if 1359.27 % 4 == 3)
 [Calendar] day_of_year 328 (1 + 135927 % 400)
@@ -605,6 +643,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Piscine 1 (1 if 67.96 % 10 == 7)
 [Calendar] year 340.82 (1 + 339.82)
 [Calendar] Winter 1 (1 if 1359.28 % 4 == 3)
 [Calendar] day_of_year 329 (1 + 135928 % 400)
@@ -636,6 +675,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.01 % 10 == 8)
 [Calendar] year 341.06 (1 + 340.06)
 [Calendar] Spring 1 (1 if 1360.24 % 4 == 0)
 [Calendar] day_of_year 25 (1 + 136024 % 400)
@@ -667,6 +707,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.08 % 10 == 8)
 [Calendar] year 341.38 (1 + 340.38)
 [Calendar] Summer 1 (1 if 1361.54 % 4 == 1)
 [Calendar] day_of_year 155 (1 + 136154 % 400)
@@ -698,6 +739,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.14 % 10 == 8)
 [Calendar] year 341.71 (1 + 340.71)
 [Calendar] Autumn 1 (1 if 1362.84 % 4 == 2)
 [Calendar] day_of_year 285 (1 + 136284 % 400)
@@ -729,6 +771,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.21 % 10 == 8)
 [Calendar] year 342.04 (1 + 341.04)
 [Calendar] Spring 1 (1 if 1364.14 % 4 == 0)
 [Calendar] day_of_year 15 (1 + 136414 % 400)
@@ -760,6 +803,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.27 % 10 == 8)
 [Calendar] year 342.36 (1 + 341.36)
 [Calendar] Summer 1 (1 if 1365.44 % 4 == 1)
 [Calendar] day_of_year 145 (1 + 136544 % 400)
@@ -791,6 +835,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.34 % 10 == 8)
 [Calendar] year 342.68 (1 + 341.68)
 [Calendar] Autumn 1 (1 if 1366.73 % 4 == 2)
 [Calendar] day_of_year 274 (1 + 136673 % 400)
@@ -822,6 +867,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.4 % 10 == 8)
 [Calendar] year 343.01 (1 + 342.01)
 [Calendar] Spring 1 (1 if 1368.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 136803 % 400)
@@ -853,6 +899,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.47 % 10 == 8)
 [Calendar] year 343.33 (1 + 342.33)
 [Calendar] Summer 1 (1 if 1369.33 % 4 == 1)
 [Calendar] day_of_year 134 (1 + 136933 % 400)
@@ -884,6 +931,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.53 % 10 == 8)
 [Calendar] year 343.66 (1 + 342.66)
 [Calendar] Autumn 1 (1 if 1370.63 % 4 == 2)
 [Calendar] day_of_year 264 (1 + 137063 % 400)
@@ -915,6 +963,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.6 % 10 == 8)
 [Calendar] year 343.98 (1 + 342.98)
 [Calendar] Winter 1 (1 if 1371.93 % 4 == 3)
 [Calendar] day_of_year 394 (1 + 137193 % 400)
@@ -946,6 +995,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.66 % 10 == 8)
 [Calendar] year 344.31 (1 + 343.31)
 [Calendar] Summer 1 (1 if 1373.23 % 4 == 1)
 [Calendar] day_of_year 124 (1 + 137323 % 400)
@@ -977,6 +1027,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.73 % 10 == 8)
 [Calendar] year 344.63 (1 + 343.63)
 [Calendar] Autumn 1 (1 if 1374.53 % 4 == 2)
 [Calendar] day_of_year 254 (1 + 137453 % 400)
@@ -1008,6 +1059,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.79 % 10 == 8)
 [Calendar] year 344.95 (1 + 343.95)
 [Calendar] Winter 1 (1 if 1375.82 % 4 == 3)
 [Calendar] day_of_year 383 (1 + 137582 % 400)
@@ -1039,6 +1091,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.86 % 10 == 8)
 [Calendar] year 345.28 (1 + 344.28)
 [Calendar] Summer 1 (1 if 1377.12 % 4 == 1)
 [Calendar] day_of_year 113 (1 + 137712 % 400)
@@ -1070,6 +1123,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.92 % 10 == 8)
 [Calendar] year 345.61 (1 + 344.61)
 [Calendar] Autumn 1 (1 if 1378.42 % 4 == 2)
 [Calendar] day_of_year 243 (1 + 137842 % 400)
@@ -1101,6 +1155,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Termogus 1 (1 if 68.99 % 10 == 8)
 [Calendar] year 345.93 (1 + 344.93)
 [Calendar] Winter 1 (1 if 1379.72 % 4 == 3)
 [Calendar] day_of_year 373 (1 + 137972 % 400)
@@ -1132,6 +1187,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.05 % 10 == 9)
 [Calendar] year 346.25 (1 + 345.25)
 [Calendar] Summer 1 (1 if 1381.02 % 4 == 1)
 [Calendar] day_of_year 103 (1 + 138102 % 400)
@@ -1163,6 +1219,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.12 % 10 == 9)
 [Calendar] year 346.58 (1 + 345.58)
 [Calendar] Autumn 1 (1 if 1382.32 % 4 == 2)
 [Calendar] day_of_year 233 (1 + 138232 % 400)
@@ -1194,6 +1251,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.18 % 10 == 9)
 [Calendar] year 346.9 (1 + 345.9)
 [Calendar] Winter 1 (1 if 1383.61 % 4 == 3)
 [Calendar] day_of_year 362 (1 + 138361 % 400)
@@ -1225,6 +1283,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.25 % 10 == 9)
 [Calendar] year 347.23 (1 + 346.23)
 [Calendar] Spring 1 (1 if 1384.91 % 4 == 0)
 [Calendar] day_of_year 92 (1 + 138491 % 400)
@@ -1256,6 +1315,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.31 % 10 == 9)
 [Calendar] year 347.55 (1 + 346.55)
 [Calendar] Autumn 1 (1 if 1386.21 % 4 == 2)
 [Calendar] day_of_year 222 (1 + 138621 % 400)
@@ -1287,6 +1347,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.38 % 10 == 9)
 [Calendar] year 347.88 (1 + 346.88)
 [Calendar] Winter 1 (1 if 1387.51 % 4 == 3)
 [Calendar] day_of_year 352 (1 + 138751 % 400)
@@ -1318,6 +1379,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.44 % 10 == 9)
 [Calendar] year 348.2 (1 + 347.2)
 [Calendar] Spring 1 (1 if 1388.81 % 4 == 0)
 [Calendar] day_of_year 82 (1 + 138881 % 400)
@@ -1349,6 +1411,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.51 % 10 == 9)
 [Calendar] year 348.53 (1 + 347.53)
 [Calendar] Autumn 1 (1 if 1390.11 % 4 == 2)
 [Calendar] day_of_year 212 (1 + 139011 % 400)
@@ -1380,6 +1443,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.57 % 10 == 9)
 [Calendar] year 348.85 (1 + 347.85)
 [Calendar] Winter 1 (1 if 1391.4 % 4 == 3)
 [Calendar] day_of_year 341 (1 + 139140 % 400)
@@ -1411,6 +1475,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.64 % 10 == 9)
 [Calendar] year 349.18 (1 + 348.18)
 [Calendar] Spring 1 (1 if 1392.7 % 4 == 0)
 [Calendar] day_of_year 71 (1 + 139270 % 400)
@@ -1442,6 +1507,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.7 % 10 == 9)
 [Calendar] year 349.5 (1 + 348.5)
 [Calendar] Autumn 1 (1 if 1394 % 4 == 2)
 [Calendar] day_of_year 201 (1 + 139400 % 400)
@@ -1473,6 +1539,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.77 % 10 == 9)
 [Calendar] year 349.82 (1 + 348.82)
 [Calendar] Winter 1 (1 if 1395.3 % 4 == 3)
 [Calendar] day_of_year 331 (1 + 139530 % 400)
@@ -1504,6 +1571,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.83 % 10 == 9)
 [Calendar] year 350.15 (1 + 349.15)
 [Calendar] Spring 1 (1 if 1396.6 % 4 == 0)
 [Calendar] day_of_year 61 (1 + 139660 % 400)
@@ -1535,6 +1603,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.89 % 10 == 9)
 [Calendar] year 350.48 (1 + 349.48)
 [Calendar] Summer 1 (1 if 1397.9 % 4 == 1)
 [Calendar] day_of_year 191 (1 + 139790 % 400)
@@ -1566,6 +1635,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Kairo 1 (1 if 69.96 % 10 == 9)
 [Calendar] year 350.8 (1 + 349.8)
 [Calendar] Winter 1 (1 if 1399.19 % 4 == 3)
 [Calendar] day_of_year 320 (1 + 139919 % 400)
@@ -1597,6 +1667,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Charon 1 (1 if 70.02 % 10 == 0)
 [Calendar] year 351.12 (1 + 350.12)
 [Calendar] Spring 1 (1 if 1400.49 % 4 == 0)
 [Calendar] day_of_year 50 (1 + 140049 % 400)
@@ -1628,6 +1699,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Charon 1 (1 if 70.09 % 10 == 0)
 [Calendar] year 351.45 (1 + 350.45)
 [Calendar] Summer 1 (1 if 1401.79 % 4 == 1)
 [Calendar] day_of_year 180 (1 + 140179 % 400)
@@ -1659,6 +1731,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Charon 1 (1 if 70.15 % 10 == 0)
 [Calendar] year 351.77 (1 + 350.77)
 [Calendar] Winter 1 (1 if 1403.09 % 4 == 3)
 [Calendar] day_of_year 310 (1 + 140309 % 400)
@@ -1690,6 +1763,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Charon 1 (1 if 70.22 % 10 == 0)
 [Calendar] year 352.1 (1 + 351.1)
 [Calendar] Spring 1 (1 if 1404.39 % 4 == 0)
 [Calendar] day_of_year 40 (1 + 140439 % 400)
@@ -1721,6 +1795,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Charon 1 (1 if 70.28 % 10 == 0)
 [Calendar] year 352.42 (1 + 351.42)
 [Calendar] Summer 1 (1 if 1405.69 % 4 == 1)
 [Calendar] day_of_year 170 (1 + 140569 % 400)
@@ -1752,6 +1827,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Charon 1 (1 if 70.35 % 10 == 0)
 [Calendar] year 352.75 (1 + 351.75)
 [Calendar] Autumn 1 (1 if 1406.98 % 4 == 2)
 [Calendar] day_of_year 299 (1 + 140698 % 400)
@@ -1783,6 +1859,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Send hunters
 ###
+[Calendar] Charon 1 (1 if 70.35 % 10 == 0)
 [Calendar] year 352.75 (1 + 351.75)
 [Calendar] Autumn 1 (1 if 1406.99 % 4 == 2)
 [Calendar] day_of_year 300 (1 + 140699 % 400)
@@ -1815,6 +1892,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: Unic. Pasture
 ###
+[Calendar] Charon 1 (1 if 70.52 % 10 == 0)
 [Calendar] year 353.62 (1 + 352.62)
 [Calendar] Autumn 1 (1 if 1410.48 % 4 == 2)
 [Calendar] day_of_year 249 (1 + 141048 % 400)
@@ -1845,6 +1923,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Charon 1 (1 if 70.68 % 10 == 0)
 [Calendar] year 354.38 (1 + 353.38)
 [Calendar] Summer 1 (1 if 1413.53 % 4 == 1)
 [Calendar] day_of_year 154 (1 + 141353 % 400)
@@ -1875,6 +1954,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Charon 1 (1 if 70.85 % 10 == 0)
 [Calendar] year 355.27 (1 + 354.27)
 [Calendar] Summer 1 (1 if 1417.09 % 4 == 1)
 [Calendar] day_of_year 110 (1 + 141709 % 400)
@@ -1905,6 +1985,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Umbra 1 (1 if 71.09 % 10 == 1)
 [Calendar] year 356.44 (1 + 355.44)
 [Calendar] Summer 1 (1 if 1421.77 % 4 == 1)
 [Calendar] day_of_year 178 (1 + 142177 % 400)
@@ -1935,6 +2016,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Umbra 1 (1 if 71.42 % 10 == 1)
 [Calendar] year 358.08 (1 + 357.08)
 [Calendar] Spring 1 (1 if 1428.31 % 4 == 0)
 [Calendar] day_of_year 32 (1 + 142831 % 400)
@@ -1965,6 +2047,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Umbra 1 (1 if 71.89 % 10 == 1)
 [Calendar] year 360.46 (1 + 359.46)
 [Calendar] Summer 1 (1 if 1437.85 % 4 == 1)
 [Calendar] day_of_year 186 (1 + 143785 % 400)
@@ -1995,6 +2078,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Yarn 1 (1 if 72.61 % 10 == 2)
 [Calendar] year 364.04 (1 + 363.04)
 [Calendar] Spring 1 (1 if 1452.16 % 4 == 0)
 [Calendar] day_of_year 17 (1 + 145216 % 400)
@@ -2025,6 +2109,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Helios 1 (1 if 73.7 % 10 == 3)
 [Calendar] year 369.52 (1 + 368.52)
 [Calendar] Autumn 1 (1 if 1474.07 % 4 == 2)
 [Calendar] day_of_year 208 (1 + 147407 % 400)
@@ -2055,6 +2140,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Redmoon 1 (1 if 75.41 % 10 == 5)
 [Calendar] year 378.04 (1 + 377.04)
 [Calendar] Spring 1 (1 if 1508.15 % 4 == 0)
 [Calendar] day_of_year 16 (1 + 150815 % 400)
@@ -2085,6 +2171,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Termogus 1 (1 if 78.09 % 10 == 8)
 [Calendar] year 391.46 (1 + 390.46)
 [Calendar] Summer 1 (1 if 1561.83 % 4 == 1)
 [Calendar] day_of_year 184 (1 + 156183 % 400)
@@ -2115,6 +2202,7 @@ X: [Tech] Mathematics -(science 1000) +(Mathematics 1)
 X: [Tech] Construction -(science 1300) +(Construction 1)
 last action: skip Unic. Pasture
 ###
+[Calendar] Termogus 1 (1 if 78.09 % 10 == 8)
 [Calendar] year 391.46 (1 + 390.46)
 [Calendar] Summer 1 (1 if 1561.83 % 4 == 1)
 [Calendar] day_of_year 184 (1 + 156183 % 400)
@@ -2148,6 +2236,7 @@ X: [Tech] Construction -(science 1300) +(Construction 1)
 X: [Tech] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Mining
 ###
+[Calendar] Termogus 1 (1 if 78.09 % 10 == 8)
 [Calendar] year 391.46 (1 + 390.46)
 [Calendar] Summer 1 (1 if 1561.84 % 4 == 1)
 [Calendar] day_of_year 185 (1 + 156184 % 400)
@@ -2182,6 +2271,7 @@ X: [Tech] Construction -(science 1300) +(Construction 1)
 X: [Tech] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Mine
 ###
+[Calendar] Termogus 1 (1 if 78.09 % 10 == 8)
 [Calendar] year 391.46 (1 + 390.46)
 [Calendar] Summer 1 (1 if 1561.84 % 4 == 1)
 [Calendar] day_of_year 185 (1 + 156184 % 400)
@@ -2217,6 +2307,7 @@ X: [Tech] Construction -(science 1300) +(Construction 1)
 X: [Tech] Bolas -(science 1000, mineral 0/250, wood 50) +(Bolas 1)
 last action: skip Hut
 ###
+[Calendar] Termogus 1 (1 if 78.1 % 10 == 8)
 [Calendar] year 391.49 (1 + 390.49)
 [Calendar] Summer 1 (1 if 1561.94 % 4 == 1)
 [Calendar] day_of_year 195 (1 + 156194 % 400)
@@ -2253,6 +2344,7 @@ X: [Tech] Construction -(science 1300) +(Construction 1)
 X: [Tech] Bolas -(science 1000, mineral 0.32/250 13m9s, wood 50) +(Bolas 1)
 last action: skip miner
 ###
+[Calendar] Termogus 1 (1 if 78.1 % 10 == 8)
 [Calendar] year 391.51 (1 + 390.51)
 [Calendar] Autumn 1 (1 if 1562.04 % 4 == 2)
 [Calendar] day_of_year 205 (1 + 156204 % 400)
@@ -2288,6 +2380,7 @@ X: [Tech] Construction -(science 1300) +(Construction 1)
 X: [Tech] Bolas -(science 1000, mineral 6.64/250 13m1s, wood 50) +(Bolas 1)
 last action: skip farmer
 ###
+[Calendar] Umbra 1 (1 if 101.82 % 10 == 1)
 [Calendar] year 510.09 (1 + 509.09)
 [Calendar] Spring 1 (1 if 2036.34 % 4 == 0)
 [Calendar] day_of_year 35 (1 + 203634 % 400)
@@ -2323,6 +2416,7 @@ X: [Tech] Construction -(science 1300) +(Construction 1)
 X: [Tech] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: max Mine
 ###
+[Calendar] Redmoon 1 (1 if 105.8 % 10 == 5)
 [Calendar] year 530.01 (1 + 529.01)
 [Calendar] Spring 1 (1 if 2116.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 211604 % 400)
@@ -2364,6 +2458,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [Tech] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: max Workshop
 ###
+[Calendar] Redmoon 1 (1 if 105.8 % 10 == 5)
 [Calendar] year 530.01 (1 + 529.01)
 [Calendar] Spring 1 (1 if 2116.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 211605 % 400)
@@ -2404,6 +2499,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [Tech] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: skip Mineral Hoes
 ###
+[Calendar] Redmoon 1 (1 if 105.8 % 10 == 5)
 [Calendar] year 530.01 (1 + 529.01)
 [Calendar] Spring 1 (1 if 2116.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 211605 % 400)
@@ -2443,6 +2539,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [Tech] Bolas -(science 1000, mineral 250, wood 50) +(Bolas 1)
 last action: skip Mineral Axe
 ###
+[Calendar] Redmoon 1 (1 if 105.8 % 10 == 5)
 [Calendar] year 530.01 (1 + 529.01)
 [Calendar] Spring 1 (1 if 2116.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 211606 % 400)
@@ -2481,6 +2578,7 @@ X: [Tech] Expanded Barns -(wood 415.79/1000 1h1m50s, mineral 729.44/750 16s, iro
 X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Bolas
 ###
+[Calendar] Redmoon 1 (1 if 105.8 % 10 == 5)
 [Calendar] year 530.01 (1 + 529.01)
 [Calendar] Spring 1 (1 if 2116.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 211606 % 400)
@@ -2520,6 +2618,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip Metal Working
 ###
+[Calendar] Redmoon 1 (1 if 105.8 % 10 == 5)
 [Calendar] year 530.02 (1 + 529.02)
 [Calendar] Spring 1 (1 if 2116.07 % 4 == 0)
 [Calendar] day_of_year 8 (1 + 211607 % 400)
@@ -2560,6 +2659,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip Smelter
 ###
+[Calendar] Redmoon 1 (1 if 105.8 % 10 == 5)
 [Calendar] year 530.02 (1 + 529.02)
 [Calendar] Spring 1 (1 if 2116.07 % 4 == 0)
 [Calendar] day_of_year 8 (1 + 211607 % 400)
@@ -2601,6 +2701,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip Hut
 ###
+[Calendar] Redmoon 1 (1 if 105.81 % 10 == 5)
 [Calendar] year 530.04 (1 + 529.04)
 [Calendar] Spring 1 (1 if 2116.17 % 4 == 0)
 [Calendar] day_of_year 18 (1 + 211617 % 400)
@@ -2642,6 +2743,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip woodcutter
 ###
+[Calendar] Redmoon 1 (1 if 105.81 % 10 == 5)
 [Calendar] year 530.07 (1 + 529.07)
 [Calendar] Spring 1 (1 if 2116.27 % 4 == 0)
 [Calendar] day_of_year 28 (1 + 211627 % 400)
@@ -2681,6 +2783,7 @@ X: [Tech] Reinforced Barns -(iron 0/100, science 800, beam 0/25, slab 0/10) +(Re
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0/750*) +(Hunting Armour 1)
 last action: skip farmer
 ###
+[Calendar] Redmoon 1 (1 if 105.81 % 10 == 5)
 [Calendar] year 530.07 (1 + 529.07)
 [Calendar] Spring 1 (1 if 2116.28 % 4 == 0)
 [Calendar] day_of_year 29 (1 + 211628 % 400)
@@ -2721,6 +2824,7 @@ X: [Tech] Reinforced Barns -(iron 0.1/100 16m33s, science 800, beam 0/25, slab 0
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0.1/750* 2h4m19s) +(Hunting Armour 1)
 last action: Active Smelter
 ###
+[Calendar] Redmoon 1 (1 if 105.88 % 10 == 5)
 [Calendar] year 530.38 (1 + 529.38)
 [Calendar] Summer 1 (1 if 2117.52 % 4 == 1)
 [Calendar] day_of_year 153 (1 + 211752 % 400)
@@ -2760,6 +2864,7 @@ X: [Tech] Reinforced Barns -(iron 0.13/100 16m33s, science 800, beam 0/25, slab 
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0.13/750* 2h4m19s) +(Hunting Armour 1)
 last action: skip Iron Hoes
 ###
+[Calendar] Dune 1 (1 if 106 % 10 == 6)
 [Calendar] year 531 (1 + 530)
 [Calendar] Spring 1 (1 if 2120.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 212001 % 400)
@@ -2798,6 +2903,7 @@ X: [Tech] Reinforced Barns -(iron 0.2/100 16m32s, science 800, beam 0/25, slab 0
 X: [*] [Tech] Hunting Armour -(science 2000, iron 0.2/750* 2h4m18s) +(Hunting Armour 1)
 last action: skip Iron Axe
 ###
+[Calendar] Piscine 1 (1 if 107.24 % 10 == 7)
 [Calendar] year 537.2 (1 + 536.2)
 [Calendar] Spring 1 (1 if 2144.8 % 4 == 0)
 [Calendar] day_of_year 81 (1 + 214480 % 400)
@@ -2835,6 +2941,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [*] [Tech] Hunting Armour -(science 2000, iron 300.26/750* 1h14m33s) +(Hunting Armour 1)
 last action: skip Expanded Barns
 ###
+[Calendar] Umbra 1 (1 if 121.46 % 10 == 1)
 [Calendar] year 608.28 (1 + 607.28)
 [Calendar] Summer 1 (1 if 2429.12 % 4 == 1)
 [Calendar] day_of_year 113 (1 + 242912 % 400)
@@ -2872,6 +2979,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [Tech] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Barn
 ###
+[Calendar] Yarn 1 (1 if 122.15 % 10 == 2)
 [Calendar] year 611.75 (1 + 610.75)
 [Calendar] Winter 1 (1 if 2443 % 4 == 3)
 [Calendar] day_of_year 301 (1 + 244300 % 400)
@@ -2909,6 +3017,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [Tech] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Catnip Field
 ###
+[Calendar] Cath 1 (1 if 144.14 % 10 == 4)
 [Calendar] year 721.72 (1 + 720.72)
 [Calendar] Autumn 1 (1 if 2882.89 % 4 == 2)
 [Calendar] day_of_year 290 (1 + 288289 % 400)
@@ -2946,6 +3055,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [Tech] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Library
 ###
+[Calendar] Umbra 1 (1 if 161.83 % 10 == 1)
 [Calendar] year 810.14 (1 + 809.14)
 [Calendar] Spring 1 (1 if 3236.57 % 4 == 0)
 [Calendar] day_of_year 58 (1 + 323657 % 400)
@@ -2983,6 +3093,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [Tech] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Pasture
 ###
+[Calendar] Helios 1 (1 if 183.47 % 10 == 3)
 [Calendar] year 918.37 (1 + 917.37)
 [Calendar] Summer 1 (1 if 3669.48 % 4 == 1)
 [Calendar] day_of_year 149 (1 + 366948 % 400)
@@ -3020,6 +3131,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [Tech] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Mine
 ###
+[Calendar] Piscine 1 (1 if 187.65 % 10 == 7)
 [Calendar] year 939.23 (1 + 938.23)
 [Calendar] Spring 1 (1 if 3752.93 % 4 == 0)
 [Calendar] day_of_year 94 (1 + 375293 % 400)
@@ -3057,6 +3169,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [Tech] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Workshop
 ###
+[Calendar] Helios 1 (1 if 193.48 % 10 == 3)
 [Calendar] year 968.42 (1 + 967.42)
 [Calendar] Summer 1 (1 if 3869.69 % 4 == 1)
 [Calendar] day_of_year 170 (1 + 386969 % 400)
@@ -3094,6 +3207,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Rein
 X: [Tech] Hunting Armour -(science 2000, iron 750) +(Hunting Armour 1)
 last action: max Smelter
 ###
+[Calendar] Helios 1 (1 if 193.49 % 10 == 3)
 [Calendar] year 968.43 (1 + 967.43)
 [Calendar] Summer 1 (1 if 3869.7 % 4 == 1)
 [Calendar] day_of_year 171 (1 + 386970 % 400)
@@ -3130,6 +3244,7 @@ X: [Tech] Construction -(science 1300) +(Construction 1)
 X: [Tech] Reinforced Barns -(iron 0.78/100 16m22s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Hunting Armour
 ###
+[Calendar] Helios 1 (1 if 193.49 % 10 == 3)
 [Calendar] year 968.43 (1 + 967.43)
 [Calendar] Summer 1 (1 if 3869.7 % 4 == 1)
 [Calendar] day_of_year 171 (1 + 386970 % 400)
@@ -3166,6 +3281,7 @@ X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Reinforced Barns -(iron 0.88/100 16m21s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Civil Service
 ###
+[Calendar] Helios 1 (1 if 193.49 % 10 == 3)
 [Calendar] year 968.43 (1 + 967.43)
 [Calendar] Summer 1 (1 if 3869.71 % 4 == 1)
 [Calendar] day_of_year 172 (1 + 386971 % 400)
@@ -3203,6 +3319,7 @@ X: [Tech] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 X: [Tech] Reinforced Barns -(iron 0.98/100 16m20s, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Mathematics
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.18 (1 + 1126.18)
 [Calendar] Spring 1 (1 if 4504.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 450473 % 400)
@@ -3240,6 +3357,7 @@ X: [Tech] Celestial Mechanics -(science 250) +(Celestial Mechanics 1)
 X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: max Academy
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.18 (1 + 1126.18)
 [Calendar] Spring 1 (1 if 4504.73 % 4 == 0)
 [Calendar] day_of_year 74 (1 + 450473 % 400)
@@ -3276,6 +3394,7 @@ X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25, slab 0/10) +(Reinforced Barns 1)
 last action: skip Celestial Mechanics
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.18 (1 + 1126.18)
 [Calendar] Spring 1 (1 if 4504.74 % 4 == 0)
 [Calendar] day_of_year 75 (1 + 450474 % 400)
@@ -3319,6 +3438,7 @@ X: [Tech] Composite Bow -(science 500, iron 100, wood 200) +(Composite Bow 1)
 X: [Tech] Catnip Enrichment -(science 500, catnip 5000) +(Catnip Enrichment 1)
 last action: skip Construction
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.18 (1 + 1126.18)
 [Calendar] Spring 1 (1 if 4504.74 % 4 == 0)
 [Calendar] day_of_year 75 (1 + 450474 % 400)
@@ -3361,6 +3481,7 @@ X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 
 X: [Tech] Composite Bow -(science 500, iron 100, wood 200) +(Composite Bow 1)
 last action: skip Catnip Enrichment
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.19 (1 + 1126.19)
 [Calendar] Spring 1 (1 if 4504.75 % 4 == 0)
 [Calendar] day_of_year 76 (1 + 450475 % 400)
@@ -3402,6 +3523,7 @@ X: [*] [Tech] Reinforced Saw -(iron 650.89/1000* 57m32s, science 2500) +(Reinfor
 X: [Tech] Reinforced Barns -(iron 100, science 800, beam 0/25 (wood 2275), slab 0/10 (mineral 1250)) +(Reinforced Barns 1)
 last action: skip Composite Bow
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.19 (1 + 1126.19)
 [Calendar] Spring 1 (1 if 4504.75 % 4 == 0)
 [Calendar] day_of_year 76 (1 + 450475 % 400)
@@ -3443,6 +3565,7 @@ X: [Tech] Reinforced Saw -(iron 550.99/1000 1h14m0s, science 2500) +(Reinforced 
 X: [*] [Tech] Titanium Barns -(science 20185.3/60000* 6h4m2s, titanium 0/25*, steel 0/200, scaffold 0/250 (beam 1.26/6200 (wood 405.26/537075 1009h41m24s))) +(Titanium Barns 1)
 last action: max Reinforced Barns
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.19 (1 + 1126.19)
 [Calendar] Spring 1 (1 if 4504.76 % 4 == 0)
 [Calendar] day_of_year 77 (1 + 450476 % 400)
@@ -3484,6 +3607,7 @@ X: [Tech] Reinforced Saw -(iron 551.09/1000 1h13m59s, science 2500) +(Reinforced
 X: [*] [Tech] Titanium Barns -(science 20187.12/60000* 6h4m1s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.78/6200 (wood 230.41/537075 1010h1m8s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.19 (1 + 1126.19)
 [Calendar] Spring 1 (1 if 4504.76 % 4 == 0)
 [Calendar] day_of_year 77 (1 + 450476 % 400)
@@ -3525,6 +3649,7 @@ X: [Tech] Reinforced Saw -(iron 551.19/1000 1h13m58s, science 2500) +(Reinforced
 X: [*] [Tech] Titanium Barns -(science 20188.94/60000* 6h4m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.05/6200 (wood 230.56/537250 1010h20m52s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
 [Calendar] year 1127.19 (1 + 1126.19)
 [Calendar] Spring 1 (1 if 4504.77 % 4 == 0)
 [Calendar] day_of_year 78 (1 + 450477 % 400)
@@ -3566,6 +3691,7 @@ X: [Tech] Reinforced Saw -(iron 551.29/1000 1h13m57s, science 2500) +(Reinforced
 X: [*] [Tech] Titanium Barns -(science 20190.77/60000* 6h3m59s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.09/6200 (wood 55.71/537250 1010h40m37s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Redmoon 1 (1 if 225.74 % 10 == 5)
 [Calendar] year 1129.68 (1 + 1128.68)
 [Calendar] Autumn 1 (1 if 4514.74 % 4 == 2)
 [Calendar] day_of_year 275 (1 + 451474 % 400)
@@ -3607,6 +3733,7 @@ X: [Tech] Reinforced Saw -(iron 753.04/1000 40m42s, science 2500) +(Reinforced S
 X: [*] [Tech] Titanium Barns -(science 23526.24/60000* 5h33m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.85/6200 (wood 0.26/537075 1010h25m37s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Dune 1 (1 if 226.03 % 10 == 6)
 [Calendar] year 1131.17 (1 + 1130.17)
 [Calendar] Spring 1 (1 if 4520.67 % 4 == 0)
 [Calendar] day_of_year 68 (1 + 452067 % 400)
@@ -3648,6 +3775,7 @@ X: [Tech] Reinforced Saw -(iron 872.88/1000 20m57s, science 2500) +(Reinforced S
 X: [*] [Tech] Titanium Barns -(science 23526.28/60000* 5h33m28s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.25/6200 (wood 0.22/537075 1010h24m44s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Dune 1 (1 if 226.33 % 10 == 6)
 [Calendar] year 1132.65 (1 + 1131.65)
 [Calendar] Autumn 1 (1 if 4526.59 % 4 == 2)
 [Calendar] day_of_year 260 (1 + 452659 % 400)
@@ -3689,6 +3817,7 @@ X: [Tech] Reinforced Saw -(iron 992.72/1000 1m12s, science 2500) +(Reinforced Sa
 X: [*] [Tech] Titanium Barns -(science 23526.31/60000* 5h33m28s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.25/6200 (wood 0.18/537250 1010h43m36s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Dune 1 (1 if 226.92 % 10 == 6)
 [Calendar] year 1135.61 (1 + 1134.61)
 [Calendar] Autumn 1 (1 if 4538.45 % 4 == 2)
 [Calendar] day_of_year 246 (1 + 453845 % 400)
@@ -3730,6 +3859,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 23526.38/60000* 5h33m28s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.82/6200 (wood 0.27/537075 1010h22m4s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Piscine 1 (1 if 227.52 % 10 == 7)
 [Calendar] year 1138.58 (1 + 1137.58)
 [Calendar] Autumn 1 (1 if 4550.3 % 4 == 2)
 [Calendar] day_of_year 231 (1 + 455030 % 400)
@@ -3771,6 +3901,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 23526.45/60000* 5h33m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.87/6200 (wood 0.21/537075 1010h20m18s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Termogus 1 (1 if 228.11 % 10 == 8)
 [Calendar] year 1141.54 (1 + 1140.54)
 [Calendar] Autumn 1 (1 if 4562.15 % 4 == 2)
 [Calendar] day_of_year 216 (1 + 456215 % 400)
@@ -3812,6 +3943,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 23526.52/60000* 5h33m26s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.32/6200 (wood 0.17/537250 1010h38m17s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Termogus 1 (1 if 229 % 10 == 8)
 [Calendar] year 1145.98 (1 + 1144.98)
 [Calendar] Winter 1 (1 if 4579.93 % 4 == 3)
 [Calendar] day_of_year 394 (1 + 457993 % 400)
@@ -3853,6 +3985,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 23526.62/60000* 5h33m25s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 0.27/537075 1010h15m51s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Kairo 1 (1 if 229.88 % 10 == 9)
 [Calendar] year 1150.42 (1 + 1149.42)
 [Calendar] Summer 1 (1 if 4597.7 % 4 == 1)
 [Calendar] day_of_year 171 (1 + 459770 % 400)
@@ -3894,6 +4027,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 23526.72/60000* 5h33m24s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 0.24/537075 1010h13m12s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
+[Calendar] Helios 1 (1 if 273.15 % 10 == 3)
 [Calendar] year 1366.75 (1 + 1365.75)
 [Calendar] Autumn 1 (1 if 5462.99 % 4 == 2)
 [Calendar] day_of_year 300 (1 + 546299 % 400)
@@ -3935,6 +4069,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 23530.93/60000* 5h32m39s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9519.3/537075 990h11m50s))) +(Titanium Barns 1)
 last action: max Barn
 ###
+[Calendar] Helios 1 (1 if 273.91 % 10 == 3)
 [Calendar] year 1370.56 (1 + 1369.56)
 [Calendar] Autumn 1 (1 if 5478.23 % 4 == 2)
 [Calendar] day_of_year 224 (1 + 547823 % 400)
@@ -3976,6 +4111,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 23531.84/60000* 5h32m38s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9520.25/537075 990h9m29s))) +(Titanium Barns 1)
 last action: max Catnip Field
 ###
+[Calendar] Yarn 1 (1 if 352.12 % 10 == 2)
 [Calendar] year 1761.6 (1 + 1760.6)
 [Calendar] Autumn 1 (1 if 7042.4 % 4 == 2)
 [Calendar] day_of_year 241 (1 + 704240 % 400)
@@ -4017,6 +4153,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 25544.27/60000* 4h50m30s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9523.24/537075 986h20m51s))) +(Titanium Barns 1)
 last action: max Library
 ###
+[Calendar] Umbra 1 (1 if 381.46 % 10 == 1)
 [Calendar] year 1908.3 (1 + 1907.3)
 [Calendar] Summer 1 (1 if 7629.2 % 4 == 1)
 [Calendar] day_of_year 121 (1 + 762920 % 400)
@@ -4058,6 +4195,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 25548.16/60000* 4h50m3s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 6198.86/537075 991h8m3s))) +(Titanium Barns 1)
 last action: max Pasture
 ###
+[Calendar] Helios 1 (1 if 463.76 % 10 == 3)
 [Calendar] year 2319.82 (1 + 2318.82)
 [Calendar] Winter 1 (1 if 9275.26 % 4 == 3)
 [Calendar] day_of_year 327 (1 + 927526 % 400)
@@ -4099,6 +4237,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 25558.41/60000* 4h48m48s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9528.45/537075 980h57m24s))) +(Titanium Barns 1)
 last action: max Mine
 ###
+[Calendar] Termogus 1 (1 if 478.04 % 10 == 8)
 [Calendar] year 2391.22 (1 + 2390.22)
 [Calendar] Spring 1 (1 if 9560.89 % 4 == 0)
 [Calendar] day_of_year 90 (1 + 956089 % 400)
@@ -4140,6 +4279,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 25560.35/60000* 4h48m35s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 3292.61/350000 644h14m32s))) +(Titanium Barns 1)
 last action: max Workshop
 ###
+[Calendar] Kairo 1 (1 if 489.23 % 10 == 9)
 [Calendar] year 2447.16 (1 + 2446.16)
 [Calendar] Spring 1 (1 if 9784.66 % 4 == 0)
 [Calendar] day_of_year 67 (1 + 978466 % 400)
@@ -4181,6 +4321,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 25561.77/60000* 4h48m25s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9530.27/350000 632h18m22s))) +(Titanium Barns 1)
 last action: max Smelter
 ###
+[Calendar] Helios 1 (1 if 554 % 10 == 3)
 [Calendar] year 2770.99 (1 + 2769.99)
 [Calendar] Winter 1 (1 if 11079.94 % 4 == 3)
 [Calendar] day_of_year 395 (1 + 1107994 % 400)
@@ -4222,6 +4363,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 29581.02/60000* 3h41m57s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 8811.96/350000 631h38m37s))) +(Titanium Barns 1)
 last action: max Academy
 ###
+[Calendar] Termogus 1 (1 if 588.82 % 10 == 8)
 [Calendar] year 2945.08 (1 + 2944.08)
 [Calendar] Spring 1 (1 if 11776.31 % 4 == 0)
 [Calendar] day_of_year 32 (1 + 1177631 % 400)
@@ -4263,6 +4405,7 @@ X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
 X: [*] [Tech] Titanium Barns -(science 29586.11/60000* 3h41m33s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 170h3m52s))) +(Titanium Barns 1)
 last action: max Lumber Mill
 ###
+[Calendar] Termogus 1 (1 if 588.82 % 10 == 8)
 [Calendar] year 2945.08 (1 + 2944.08)
 [Calendar] Spring 1 (1 if 11776.32 % 4 == 0)
 [Calendar] day_of_year 33 (1 + 1177632 % 400)
@@ -4303,6 +4446,7 @@ X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [*] [Tech] Titanium Barns -(science 27088.4/60000* 3h59m44s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 148h24m19s))) +(Titanium Barns 1)
 last action: skip Reinforced Saw
 ###
+[Calendar] Termogus 1 (1 if 588.82 % 10 == 8)
 [Calendar] year 2945.08 (1 + 2944.08)
 [Calendar] Spring 1 (1 if 11776.32 % 4 == 0)
 [Calendar] day_of_year 33 (1 + 1177632 % 400)
@@ -4344,6 +4488,7 @@ X: [Tech] Writing -(science 3600) +(Writing 1)
 X: [*] [Tech] Titanium Barns -(science 25590.69/60000* 4h10m39s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 148h24m19s))) +(Titanium Barns 1)
 last action: skip Engineering
 ###
+[Calendar] Dune 1 (1 if 606.49 % 10 == 6)
 [Calendar] year 3033.43 (1 + 3032.43)
 [Calendar] Summer 1 (1 if 12129.7 % 4 == 1)
 [Calendar] day_of_year 171 (1 + 1212970 % 400)
@@ -4385,6 +4530,7 @@ X: [Tech] Writing -(science 3600) +(Writing 1)
 X: [*] [Tech] Titanium Barns -(science 29588.7/60000* 3h41m20s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9535.72/350000 148h16m40s))) +(Titanium Barns 1)
 last action: max Aqueduct
 ###
+[Calendar] Dune 1 (1 if 606.49 % 10 == 6)
 [Calendar] year 3033.43 (1 + 3032.43)
 [Calendar] Summer 1 (1 if 12129.7 % 4 == 1)
 [Calendar] day_of_year 171 (1 + 1212970 % 400)

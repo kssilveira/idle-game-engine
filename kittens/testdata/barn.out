@@ -25,6 +25,7 @@ X: [*] [Tech] Archery -(science 0/300*) +(Archery 1)
 X: [*] [Tech] Mining -(science 0/500*) +(Mining 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -37,6 +38,7 @@ X: [*] [Tech] Archery -(science 0/300*) +(Archery 1)
 X: [*] [Tech] Mining -(science 0/500*) +(Mining 1)
 last action: Barn
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)

@@ -23,6 +23,165 @@
       "Formula": "Count += (0.5 * seconds)"
     },
     {
+      "Name": "Charon",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 0"
+    },
+    {
+      "Name": "Umbra",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 1,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 1"
+    },
+    {
+      "Name": "Yarn",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 2,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 2"
+    },
+    {
+      "Name": "Helios",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 3,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 3"
+    },
+    {
+      "Name": "Cath",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 4,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 4"
+    },
+    {
+      "Name": "Redmoon",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 5,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 5"
+    },
+    {
+      "Name": "Dune",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 6,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 6"
+    },
+    {
+      "Name": "Piscine",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 7,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 7"
+    },
+    {
+      "Name": "Termogus",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 8,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 8"
+    },
+    {
+      "Name": "Kairo",
+      "Type": "Calendar",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "day",
+          "Factor": 0.0005,
+          "ProductionFloor": true
+        }
+      ],
+      "StartCount": 1,
+      "ProductionModulus": 10,
+      "ProductionModulusEquals": 9,
+      "Formula": "Count = 1 if (floor(c(day)) * 0.0005) % 10 == 9"
+    },
+    {
       "Name": "year",
       "Type": "Calendar",
       "Cap": -1,

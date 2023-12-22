@@ -27,6 +27,7 @@ X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 last action: Gather catnip
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
@@ -39,6 +40,7 @@ X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [*] [Job] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 last action: woodcutter
 ###
+[Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)

@@ -17,7 +17,12 @@ func NewGame(now game.Now) *game.Game {
 	g.AddResources(join([]data.Resource{{
 		Name: "day", Type: "Calendar", IsHidden: true, Count: 0, Cap: -1,
 		Producers: []data.Resource{{Factor: 0.5}},
-	}, {
+	}}, resourceWithModulus(data.Resource{
+		Type: "Calendar", StartCount: 1, Cap: -1,
+		Producers: []data.Resource{{Name: "day", Factor: 1. / (100 * 4 * 5), ProductionFloor: true}},
+	}, []string{
+		"Charon", "Umbra", "Yarn", "Helios", "Cath", "Redmoon", "Dune", "Piscine", "Termogus",
+		"Kairo"}), []data.Resource{{
 		Name: "year", Type: "Calendar", StartCount: 1, Cap: -1,
 		Producers: []data.Resource{{Name: "day", Factor: 0.0025, ProductionFloor: true}},
 	}}, resourceWithModulus(data.Resource{
