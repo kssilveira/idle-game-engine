@@ -153,6 +153,19 @@ func getCosts(costs []ui.Cost, status *string) string {
 }
 
 func toString(n float64) string {
-	res := fmt.Sprintf("%.2f", n)
-	return strings.TrimSuffix(res, ".00")
+	if n == 0 {
+		return "0"
+	}
+	for precision := 2; precision < 10; precision++ {
+		res := fmt.Sprintf("%.*f", precision, n)
+		res = strings.TrimRight(res, "0")
+		res = strings.TrimRight(res, ".")
+		if res != "0" {
+			return res
+		}
+	}
+	res := fmt.Sprintf("%f", n)
+	res = strings.TrimRight(res, "0")
+	res = strings.TrimRight(res, ".")
+	return res
 }

@@ -1,51 +1,51 @@
 ###
-[-] [Resource] catnip 1000/5000 -8.50/s 1m57s to empty
+[-] [Resource] catnip 1000/5000 -8.5/s 1m57s to empty
 [Resource] kitten 2/2 0.05/s
-[Job] happiness 0.06 (0.10 + -0.04)
+[Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Job] woodcutter -(kitten 1) +(woodcutter 1)
 last action: 
 ###
-[-] [Resource] catnip 991.50/5000 -8.50/s 1m56s to empty
-[Resource] wood 0.10/200 0.10/s 34m55s to cap
+[-] [Resource] catnip 991.5/5000 -8.5/s 1m56s to empty
+[Resource] wood 0.1/200 0.1/s 34m55s to cap
 [Resource] kitten 1/1 0.05/s
-[Resource] paragon 0 0/s
-[Job] happiness 0.06 (0.10 + -0.04)
+[Resource] paragon 0.000001 0.000001/s
+[Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 last action: woodcutter
 ###
-[-] [Resource] catnip 1001.50/5000 -8.50/s 1m57s to empty
-[Resource] wood 0.10/200 0.10/s 34m55s to cap
+[-] [Resource] catnip 1001.5/5000 -8.5/s 1m57s to empty
+[Resource] wood 0.1/200 0.1/s 34m55s to cap
 [Resource] kitten 1/1 0.05/s
-[Resource] paragon 0 0/s
-[Job] happiness 0.06 (0.10 + -0.04)
+[Resource] paragon 0.000001 0.000001/s
+[Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 last action: Gather catnip
 ###
-[Calendar] year 1 (1 + 0)
+[Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[-] [Resource] catnip 993/5000 -8.50/s 1m56s to empty
+[-] [Resource] catnip 993/5000 -8.5/s 1m56s to empty
 [Resource] wood 0.29/200 0.19/s 17m26s to cap
-[Resource] paragon 0 0/s
-[Job] happiness 0.06 (0.10 + -0.04)
+[Resource] paragon 0.000003 0.000001/s
+[Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [*] [Job] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
 last action: woodcutter
 ###
-[Calendar] year 1 (1 + 0)
+[Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[-] [Resource] catnip 1003/5000 -8.50/s 1m58s to empty
+[-] [Resource] catnip 1003/5000 -8.5/s 1m58s to empty
 [Resource] wood 0.29/200 0.19/s 17m26s to cap
-[Resource] paragon 0 0/s
-[Job] happiness 0.06 (0.10 + -0.04)
+[Resource] paragon 0.000003 0.000001/s
+[Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [*] [Job] woodcutter (2) -(kitten 0/1* 20s) +(woodcutter 1)
