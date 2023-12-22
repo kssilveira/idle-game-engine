@@ -445,11 +445,32 @@
       "Producers": [
         {
           "Name": "Space Elevator",
-          "Factor": -0.05
+          "Factor": -0.05,
+          "Bonus": [
+            {
+              "Name": "Cath",
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Kairo",
+              "Factor": -0.5,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
         }
       ],
       "StartCountFromZero": true,
-      "Formula": "Count = (c(Space Elevator) * -0.05)"
+      "Formula": "Count = (c(Space Elevator) * -0.05 * (1 + (c(Cath) * c(Numerology)) + (c(Kairo) * -0.5 * c(Numerology))))"
     },
     {
       "Name": "SpaceReactorScienceBonus",
@@ -762,6 +783,35 @@
         }
       ],
       "Formula": "Count = (((c(Space Elevator) * 0.01) + (c(Orbital Array) * 0.02)) * (1 + (c(Factory) * 0.0375 * (c(Space Manufacturing) * (1 + (c(Factory Logistics) * 0.2))))))"
+    },
+    {
+      "Name": "CryostationStorageBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Helios",
+          "Factor": -0.1,
+          "Bonus": [
+            {
+              "Name": "Numerology"
+            }
+          ],
+          "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Termogus",
+          "Factor": 0.2,
+          "Bonus": [
+            {
+              "Name": "Numerology"
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(Helios) * -0.1 * c(Numerology)) + (c(Termogus) * 0.2 * c(Numerology)))"
     },
     {
       "Name": "HutCostExponentBase",
@@ -1089,7 +1139,28 @@
             },
             {
               "Name": "Hydroponics",
-              "Factor": 0.025
+              "Factor": 0.025,
+              "Bonus": [
+                {
+                  "Name": "Yarn",
+                  "Bonus": [
+                    {
+                      "Name": "Numerology"
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                },
+                {
+                  "Name": "Piscine",
+                  "Factor": -0.5,
+                  "Bonus": [
+                    {
+                      "Name": "Numerology"
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ]
             }
           ]
         },
@@ -1103,7 +1174,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "catnip cap",
-      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025 * (1 + (c(Yarn) * c(Numerology)) + (c(Piscine) * -0.5 * c(Numerology))))) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "wood cap",
@@ -1160,7 +1231,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 200000
+          "Factor": 200000,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         },
         {
           "Name": "Accelerator",
@@ -1189,7 +1265,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (200 + (((c(Barn) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 700 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 25000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000) + (c(Accelerator) * 20000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(GlobalCapBonus))))"
+      "Formula": "Count = (200 + (((c(Barn) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 700 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 25000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000 * (1 + c(CryostationStorageBonus))) + (c(Accelerator) * 20000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(GlobalCapBonus))))"
     },
     {
       "Name": "wood",
@@ -1314,7 +1390,28 @@
             },
             {
               "Name": "Satellite",
-              "Factor": 0.05
+              "Factor": 0.05,
+              "Bonus": [
+                {
+                  "Name": "Charon",
+                  "Bonus": [
+                    {
+                      "Name": "Numerology"
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                },
+                {
+                  "Name": "Kairo",
+                  "Factor": -0.25,
+                  "Bonus": [
+                    {
+                      "Name": "Numerology"
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ]
             }
           ]
         },
@@ -1429,7 +1526,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (250 + (((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * (c(Uplink) + c(Starlink))))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))) * (1 + c(GlobalCapBonus))))"
+      "Formula": "Count = (250 + (((c(Library) * 250 * (1 + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))))) + (c(compendium) * 10) + (c(Academy) * 500) + (c(Observatory) * 1000 * (1 + (c(Astrolabe) * 0.5) + (c(Satellite) * 0.05 * (1 + (c(Charon) * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology)))))) + (c(Bio Lab) * 1500 * (1 + (c(Data Center) * 0.01 * (c(Uplink) + c(Starlink))))) + (c(Data Center) * 750 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(Observatory) * 0.02 * (c(Titanium Reflectors) + c(Unobtainium Reflectors) + c(Eludium Reflectors))) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Temple) * 500 * c(Scholasticism)) + (c(Accelerator) * 2500 * c(LHC)) + (c(Research Vessel) * 10000 * (1 + c(SpaceReactorScienceBonus))) + (c(Space Beacon) * 25000 * (1 + c(SpaceReactorScienceBonus)))) * (1 + c(GlobalCapBonus))))"
     },
     {
       "Name": "science",
@@ -1492,7 +1589,29 @@
             },
             {
               "Name": "Space Station",
-              "Factor": 0.5
+              "Factor": 0.5,
+              "Bonus": [
+                {
+                  "Name": "Cath",
+                  "Factor": 0.5,
+                  "Bonus": [
+                    {
+                      "Name": "Numerology"
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                },
+                {
+                  "Name": "Kairo",
+                  "Factor": -0.25,
+                  "Bonus": [
+                    {
+                      "Name": "Numerology"
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ]
             }
           ]
         },
@@ -1506,7 +1625,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "science cap",
-      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5 * (1 + (c(Cath) * 0.5 * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology))))) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "catpower cap",
@@ -1648,7 +1767,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 200000
+          "Factor": 200000,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         },
         {
           "Name": "Accelerator",
@@ -1677,7 +1801,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (250 + (((c(Barn) * 250 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 950 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 30000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000) + (c(Accelerator) * 25000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(GlobalCapBonus))))"
+      "Formula": "Count = (250 + (((c(Barn) * 250 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 200 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 950 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 30000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 200000 * (1 + c(CryostationStorageBonus))) + (c(Accelerator) * 25000 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(GlobalCapBonus))))"
     },
     {
       "Name": "mineral",
@@ -1779,7 +1903,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 50000
+          "Factor": 50000,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         },
         {
           "Name": "Accelerator",
@@ -1815,7 +1944,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (50 + (((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 50000) + (c(Accelerator) * 7500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
+      "Formula": "Count = (50 + (((c(Barn) * 50 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Warehouse) * 25 * (1 + c(BarnBonus) + c(WarehouseBonus))) + (c(Harbour) * 150 * (1 + c(BarnBonus) + c(WarehouseBonus) + c(HarbourBonus))) + (c(Moon Base) * 9000 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 50000 * (1 + c(CryostationStorageBonus))) + (c(Accelerator) * 7500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "iron",
@@ -1923,7 +2052,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 25000
+          "Factor": 25000,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         },
         {
           "Name": "Accelerator",
@@ -1952,7 +2086,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (60 + (((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 25000) + (c(Accelerator) * 2500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(GlobalCapBonus))))"
+      "Formula": "Count = (60 + (((c(Barn) * 60 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 30 * (1 + c(WarehouseBonus))) + (c(Harbour) * 100 * (1 + c(WarehouseBonus) + c(HarbourBonus) + (c(Barges) * 0.5))) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 25000 * (1 + c(CryostationStorageBonus))) + (c(Accelerator) * 2500 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus))))) * (1 + c(GlobalCapBonus))))"
     },
     {
       "Name": "coal",
@@ -2259,7 +2393,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 7500
+          "Factor": 7500,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         }
       ],
       "StartCount": 2,
@@ -2280,7 +2419,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (2 + (((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Accelerator) * 750 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus)))) + (c(Moon Base) * 1250 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
+      "Formula": "Count = (2 + (((c(Barn) * 2 * (1 + c(WarehouseBonus))) + (c(Warehouse) * 10 * (1 + c(WarehouseBonus))) + (c(Harbour) * 50 * (1 + c(WarehouseBonus) + c(HarbourBonus))) + (c(Accelerator) * 750 * (c(Energy Rifts) * (1 + c(AcceleratorCapBonus)))) + (c(Moon Base) * 1250 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500 * (1 + c(CryostationStorageBonus)))) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "titanium",
@@ -2357,7 +2496,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 7500
+          "Factor": 7500,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         }
       ],
       "StartCount": 1500,
@@ -2371,7 +2515,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (1500 + (((c(Oil Well) * 1500) + (c(tanker) * 500) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500)) * (1 + c(GlobalCapBonus))))"
+      "Formula": "Count = (1500 + (((c(Oil Well) * 1500) + (c(tanker) * 500) + (c(Moon Base) * 3500 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 7500 * (1 + c(CryostationStorageBonus)))) * (1 + c(GlobalCapBonus))))"
     },
     {
       "Name": "oil",
@@ -2427,6 +2571,26 @@
           "Bonus": [
             {
               "Name": "SpaceProductionBonus"
+            },
+            {
+              "Name": "Umbra",
+              "Factor": -0.25,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Dune",
+              "Factor": 0.5,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -2442,7 +2606,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "oil cap",
-      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus)))) * (1 + c(GlobalProductionBonus))) * seconds)"
+      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus) + (c(Umbra) * -0.25 * c(Numerology)) + (c(Dune) * 0.5 * c(Numerology))))) * (1 + c(GlobalProductionBonus))) * seconds)"
     },
     {
       "Name": "uranium cap",
@@ -2459,7 +2623,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 5000
+          "Factor": 5000,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         }
       ],
       "StartCount": 250,
@@ -2480,7 +2649,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (250 + (((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000)) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
+      "Formula": "Count = (250 + (((c(Reactor) * 250) + (c(Planet Cracker) * 1750) + (c(Cryostation) * 5000 * (1 + c(CryostationStorageBonus)))) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "uranium",
@@ -2536,6 +2705,26 @@
             },
             {
               "Name": "SpaceProductionBonus"
+            },
+            {
+              "Name": "Umbra",
+              "Factor": -0.1,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Dune",
+              "Factor": 0.1,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -2551,7 +2740,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "uranium cap",
-      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus)))) * (1 + c(GlobalProductionBonus))) * seconds)"
+      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus) + (c(Umbra) * -0.1 * c(Numerology)) + (c(Dune) * 0.1 * c(Numerology))))) * (1 + c(GlobalProductionBonus))) * seconds)"
     },
     {
       "Name": "unobtainium cap",
@@ -2569,7 +2758,12 @@
         },
         {
           "Name": "Cryostation",
-          "Factor": 750
+          "Factor": 750,
+          "Bonus": [
+            {
+              "Name": "CryostationStorageBonus"
+            }
+          ]
         }
       ],
       "StartCount": 150,
@@ -2590,7 +2784,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count = (150 + (((c(Moon Base) * 150 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 750)) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
+      "Formula": "Count = (150 + (((c(Moon Base) * 150 * (1 + c(MoonBaseCapBonus))) + (c(Cryostation) * 750 * (1 + c(CryostationStorageBonus)))) * ((1 + c(BaseMetalCapBonus)) * (1 + c(GlobalCapBonus)))))"
     },
     {
       "Name": "unobtainium",
@@ -2602,6 +2796,26 @@
           "Bonus": [
             {
               "Name": "SpaceProductionBonus"
+            },
+            {
+              "Name": "Charon",
+              "Factor": -0.1,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Redmoon",
+              "Factor": 0.2,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -2625,7 +2839,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "unobtainium cap",
-      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus) + (c(Charon) * -0.1 * c(Numerology)) + (c(Redmoon) * 0.2 * c(Numerology)))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "time crystal",
@@ -3278,7 +3492,28 @@
         },
         {
           "Name": "Satellite",
-          "Factor": 0.005
+          "Factor": 0.005,
+          "Bonus": [
+            {
+              "Name": "Cath",
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Kairo",
+              "Factor": -0.25,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
         },
         {
           "Name": "Research Vessel",
@@ -3286,6 +3521,26 @@
           "Bonus": [
             {
               "Name": "SpaceProductionBonus"
+            },
+            {
+              "Name": "Yarn",
+              "Factor": -0.5,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Piscine",
+              "Factor": 0.5,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         },
@@ -3295,6 +3550,26 @@
           "Bonus": [
             {
               "Name": "SpaceProductionBonus"
+            },
+            {
+              "Name": "Cath",
+              "Factor": -0.5,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Kairo",
+              "Factor": 4,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
             }
           ]
         }
@@ -3317,7 +3592,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005 * (1 + (c(Cath) * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology)))) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus) + (c(Yarn) * -0.5 * c(Numerology)) + (c(Piscine) * 0.5 * c(Numerology)))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus) + (c(Cath) * -0.5 * c(Numerology)) + (c(Kairo) * 4 * c(Numerology))))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "festival day",
@@ -3341,10 +3616,31 @@
         },
         {
           "Name": "Entanglement Station",
-          "Factor": -0.5
+          "Factor": -0.5,
+          "Bonus": [
+            {
+              "Name": "Charon",
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            },
+            {
+              "Name": "Redmoon",
+              "Factor": -0.5,
+              "Bonus": [
+                {
+                  "Name": "Numerology"
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
         }
       ],
-      "Formula": "Count += (((c(AI Core) * 0.1) + (c(Entanglement Station) * -0.5)) * seconds)"
+      "Formula": "Count += (((c(AI Core) * 0.1) + (c(Entanglement Station) * -0.5 * (1 + (c(Charon) * c(Numerology)) + (c(Redmoon) * -0.5 * c(Numerology))))) * seconds)"
     },
     {
       "Name": "hash",

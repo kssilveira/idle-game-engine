@@ -111,6 +111,15 @@ func NewGame(now game.Now) *game.Game {
 		Name: "SpaceElevatorOilBonus",
 		Producers: []data.Resource{{
 			Name: "Space Elevator", Factor: -0.05,
+			Bonus: []data.Resource{{
+				Name:                "Cath",
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Kairo", Factor: -0.50,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 	}, {
 		Name: "SpaceReactorScienceBonus",
@@ -237,6 +246,17 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
+	}, {
+		Name: "CryostationStorageBonus",
+		Producers: []data.Resource{{
+			Name: "Helios", Factor: -0.10,
+			Bonus:               []data.Resource{{Name: "Numerology"}},
+			BonusStartsFromZero: true,
+		}, {
+			Name: "Termogus", Factor: 0.20,
+			Bonus:               []data.Resource{{Name: "Numerology"}},
+			BonusStartsFromZero: true,
+		}},
 	}})
 
 	g.AddResources([]data.Resource{{
@@ -320,6 +340,15 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Aqueduct", Factor: 0.03,
 			}, {
 				Name: "Hydroponics", Factor: 0.025,
+				Bonus: []data.Resource{{
+					Name:                "Yarn",
+					Bonus:               []data.Resource{{Name: "Numerology"}},
+					BonusStartsFromZero: true,
+				}, {
+					Name: "Piscine", Factor: -0.50,
+					Bonus:               []data.Resource{{Name: "Numerology"}},
+					BonusStartsFromZero: true,
+				}},
 			}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -353,7 +382,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Moon Base", Factor: 25000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 200000,
+			Name: "Cryostation", Factor: 200000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 20000,
 			Bonus: []data.Resource{{
@@ -427,6 +456,15 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Astrolabe", Factor: 0.50,
 			}, {
 				Name: "Satellite", Factor: 0.05,
+				Bonus: []data.Resource{{
+					Name:                "Charon",
+					Bonus:               []data.Resource{{Name: "Numerology"}},
+					BonusStartsFromZero: true,
+				}, {
+					Name: "Kairo", Factor: -0.25,
+					Bonus:               []data.Resource{{Name: "Numerology"}},
+					BonusStartsFromZero: true,
+				}},
 			}},
 		}, {
 			Name: "Bio Lab", Factor: 1500,
@@ -505,6 +543,15 @@ func NewGame(now game.Now) *game.Game {
 				}},
 			}, {
 				Name: "Space Station", Factor: 0.50,
+				Bonus: []data.Resource{{
+					Name: "Cath", Factor: 0.50,
+					Bonus:               []data.Resource{{Name: "Numerology"}},
+					BonusStartsFromZero: true,
+				}, {
+					Name: "Kairo", Factor: -0.25,
+					Bonus:               []data.Resource{{Name: "Numerology"}},
+					BonusStartsFromZero: true,
+				}},
 			}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -575,7 +622,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Moon Base", Factor: 30000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 200000,
+			Name: "Cryostation", Factor: 200000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 25000,
 			Bonus: []data.Resource{{
@@ -635,7 +682,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Moon Base", Factor: 9000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 50000,
+			Name: "Cryostation", Factor: 50000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 7500,
 			Bonus: []data.Resource{{
@@ -692,7 +739,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Moon Base", Factor: 3500, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 25000,
+			Name: "Cryostation", Factor: 25000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 2500,
 			Bonus: []data.Resource{{
@@ -831,7 +878,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Moon Base", Factor: 1250, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 7500,
+			Name: "Cryostation", Factor: 7500, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
@@ -870,7 +917,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Moon Base", Factor: 3500, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 7500,
+			Name: "Cryostation", Factor: 7500, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
@@ -900,7 +947,17 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Hydraulic Fracturer", Factor: 0.5 * 5,
-			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
+			Bonus: []data.Resource{{
+				Name: "SpaceProductionBonus",
+			}, {
+				Name: "Umbra", Factor: -0.25,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Dune", Factor: 0.50,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -913,7 +970,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Planet Cracker", Factor: 1750,
 		}, {
-			Name: "Cryostation", Factor: 5000,
+			Name: "Cryostation", Factor: 5000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
@@ -944,6 +1001,14 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Planet Busters",
 			}, {
 				Name: "SpaceProductionBonus",
+			}, {
+				Name: "Umbra", Factor: -0.10,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Dune", Factor: 0.10,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
 			}},
 		}},
 		Bonus: []data.Resource{{
@@ -955,7 +1020,7 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "Moon Base", Factor: 150, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 750,
+			Name: "Cryostation", Factor: 750, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
@@ -967,7 +1032,17 @@ func NewGame(now game.Now) *game.Game {
 		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
 		Producers: []data.Resource{{
 			Name: "Active Lunar Outpost", Factor: 0.035,
-			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
+			Bonus: []data.Resource{{
+				Name: "SpaceProductionBonus",
+			}, {
+				Name: "Charon", Factor: -0.10,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Redmoon", Factor: 0.20,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
@@ -1222,12 +1297,41 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Satellite", Factor: 0.005,
+			Bonus: []data.Resource{{
+				Name:                "Cath",
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Kairo", Factor: -0.25,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}},
 		}, {
 			Name: "Research Vessel", Factor: 0.05,
-			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
+			Bonus: []data.Resource{{
+				Name: "SpaceProductionBonus",
+			}, {
+				Name: "Yarn", Factor: -0.50,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Piscine", Factor: 0.50,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}},
 		}, {
 			Name: "Space Beacon", Factor: 0.125,
-			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
+			Bonus: []data.Resource{{
+				Name: "SpaceProductionBonus",
+			}, {
+				Name: "Cath", Factor: -0.50,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Kairo", Factor: 4.00,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Hubble Space Telescope", Factor: 0.30}},
@@ -1244,6 +1348,15 @@ func NewGame(now game.Now) *game.Game {
 			Name: "AI Core", Factor: 0.02 * 5,
 		}, {
 			Name: "Entanglement Station", Factor: -0.1 * 5,
+			Bonus: []data.Resource{{
+				Name:                "Charon",
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}, {
+				Name: "Redmoon", Factor: -0.50,
+				Bonus:               []data.Resource{{Name: "Numerology"}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 	}, {
 		Name: "hash", Type: "Resource", Cap: -1,

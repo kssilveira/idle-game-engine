@@ -9,16 +9,20 @@ import (
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
-func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
-	logger.Printf("digraph {\n")
-	typeToShape := map[string]string{
+var (
+	typeToShape = map[string]string{
 		"Resource": "cylinder",
+		"Calendar": "cylinder",
 		"Building": "box3d",
 		"Job":      "house",
 		"Tech":     "diamond",
 		"Craft":    "cds",
 		"Trade":    "cds",
 	}
+)
+
+func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
+	logger.Printf("digraph {\n")
 	nodes := map[string]bool{}
 	edges := map[string]bool{}
 	excluded := map[string]bool{
@@ -115,12 +119,16 @@ digraph {
 func GraphNodes(logger *log.Logger, g *game.Game, colors map[string]bool) {
 	logger.Printf(`
 digraph {
-  "Resource" [shape="cylinder"];
-  "Building" [shape="box3d"];
-  "Job" [shape="house"];
-  "Tech" [shape="diamond"];
-  "Craft" [shape="cds"];
-  "Trade" [shape="cds"];
+`)
+	keys := []string{}
+	for key := range typeToShape {
+		keys = append(keys, key)
+	}
+	sort.Strings(keys)
+	for _, key := range keys {
+		logger.Printf(`  "%s" [shape="%s"];`+"\n", key, typeToShape[key])
+	}
+	logger.Printf(`
 }
 `)
 }

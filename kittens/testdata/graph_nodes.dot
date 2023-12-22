@@ -1,9 +1,11 @@
 
 digraph {
-  "Resource" [shape="cylinder"];
   "Building" [shape="box3d"];
-  "Job" [shape="house"];
-  "Tech" [shape="diamond"];
+  "Calendar" [shape="cylinder"];
   "Craft" [shape="cds"];
+  "Job" [shape="house"];
+  "Resource" [shape="cylinder"];
+  "Tech" [shape="diamond"];
   "Trade" [shape="cds"];
+
 }
