@@ -194,13 +194,29 @@ func NewGame(now game.Now) *game.Game {
 			Name: "burned paragon", Factor: 0.01,
 		}},
 	}, {
-		Name: "GlobalProductionBonus",
+		Name: "OtherProductionBonus",
 		Producers: []data.Resource{{
 			Name: "Active Magneto", Factor: 0.02,
 			Bonus: []data.Resource{{Name: "Steamworks", Factor: 0.15}},
 		}, {
 			Name: "Active Reactor", Factor: 0.05,
 		}},
+	}, {
+		Name:      "GlobalProductionBonus",
+		Producers: []data.Resource{{}},
+		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{
+				Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+			}, {
+				Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
+			}, {
+				Bonus: []data.Resource{{Name: "OtherProductionBonus"}},
+			}},
+			BonusIsMultiplicative: true,
+		}, {
+			Factor: -1,
+		}},
+		BonusStartsFromZero: true,
 	}, {
 		Name: "SpaceProductionBonus",
 		Producers: []data.Resource{{
@@ -301,10 +317,6 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Hydroponics", Factor: 0.025,
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -381,10 +393,6 @@ func NewGame(now game.Now) *game.Game {
 					Name: "Alloy Saw", Factor: 0.15,
 				}},
 			}},
-		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
@@ -494,10 +502,6 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Space Station", Factor: 0.50,
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -535,10 +539,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Mint", Factor: -0.75 * 5, ProductionOnGone: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -599,10 +599,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Calciner", Factor: -1.5 * 5, ProductionOnGone: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -668,10 +664,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -750,10 +742,6 @@ func NewGame(now game.Now) *game.Game {
 				}},
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -811,10 +799,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -869,10 +853,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -918,10 +898,6 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -966,10 +942,6 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -994,10 +966,6 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
-		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
@@ -1036,10 +1004,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1054,10 +1018,6 @@ func NewGame(now game.Now) *game.Game {
 				Name:  "Chronocontrol",
 				Bonus: []data.Resource{{Name: "Distortion", Factor: 2}},
 			}},
-		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
@@ -1078,10 +1038,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1112,10 +1068,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1130,10 +1082,6 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1149,10 +1097,6 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1177,10 +1121,6 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Sunspire", Factor: 5.00,
 			}},
-		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
@@ -1230,10 +1170,6 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1262,10 +1198,6 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Solar Chant", Factor: 0.10}},
 		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1291,10 +1223,6 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Hubble Space Telescope", Factor: 0.30}},
 		}, {
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1309,10 +1237,6 @@ func NewGame(now game.Now) *game.Game {
 		Name: "hash", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{Name: "Entanglement Station", Factor: 0.1 * 5}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1342,10 +1266,6 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Sunspire", Factor: 0.00005 * 5,
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
@@ -1356,10 +1276,6 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.10}},
 		}},
 		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
-		}, {
-			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
-		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
