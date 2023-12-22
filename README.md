@@ -89,7 +89,6 @@ Edges:
 
 Missing features:
 
-- [Apocrypha](https://wiki.kittensgame.com/en/game-tabs/religion/apocrypha)
 - [Cycles](https://wiki.kittensgame.com/en/general-information/game-mechanics#cycles)
 - [Events](https://wiki.kittensgame.com/en/general-information/events)
 - [Festival](https://wiki.kittensgame.com/en/general-information/events/festival)
@@ -116,5 +115,6 @@ Missing features:
 
 TODO:
 
+- simplify bonus list
 - record terminal using https://asciinema.org/
 - make [solve.go](kittens/solve/solve.go) get everything

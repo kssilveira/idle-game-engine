@@ -159,6 +159,20 @@ func NewGame(now game.Now) *game.Game {
 		Name:      "BaseMetalCapBonus",
 		Producers: []data.Resource{{Name: "Sunforge", Factor: 0.01}},
 	}, {
+		Name: "SolarRevolutionProductionBonus",
+		Producers: []data.Resource{{
+			Name: "worship", Factor: 0.01 / 1000,
+			Bonus: []data.Resource{{
+				Name: "Solar Revolution",
+				Bonus: []data.Resource{{
+					Name: "Black Obelisk", Factor: 0.05,
+					Bonus:               []data.Resource{{Name: "Transcendence Level"}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
+		}},
+	}, {
 		Name: "ParagonProductionBonus",
 		Producers: []data.Resource{{
 			Name: "paragon", Factor: 0.01,
@@ -275,6 +289,8 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Hydroponics", Factor: 0.025,
 			}},
 		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -355,6 +371,8 @@ func NewGame(now game.Now) *game.Game {
 					Name: "Alloy Saw", Factor: 0.15,
 				}},
 			}},
+		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
@@ -468,6 +486,8 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Space Station", Factor: 0.50,
 			}},
 		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -509,6 +529,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Mint", Factor: -0.75 * 5, ProductionOnGone: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -573,6 +595,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Calciner", Factor: -1.5 * 5, ProductionOnGone: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -642,6 +666,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -724,6 +750,8 @@ func NewGame(now game.Now) *game.Game {
 				}},
 			}},
 		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -785,6 +813,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -843,6 +873,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -892,6 +924,8 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -940,6 +974,8 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -968,6 +1004,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
+		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
@@ -1010,6 +1048,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1026,6 +1066,8 @@ func NewGame(now game.Now) *game.Game {
 				Name:  "Chronocontrol",
 				Bonus: []data.Resource{{Name: "Distortion", Factor: 2}},
 			}},
+		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
@@ -1048,6 +1090,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1080,6 +1124,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1096,6 +1142,8 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1113,6 +1161,8 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1139,6 +1189,8 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Sunspire", Factor: 5.00,
 			}},
+		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
@@ -1190,6 +1242,8 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1220,11 +1274,17 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Solar Chant", Factor: 0.10}},
 		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
+	}, {
+		Name: "worship", Type: "Resource", Cap: -1,
+	}, {
+		Name: "epiphany", Type: "Resource", Cap: -1,
 	}, {
 		Name: "starchart", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
@@ -1243,6 +1303,8 @@ func NewGame(now game.Now) *game.Game {
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Hubble Space Telescope", Factor: 0.30}},
 		}, {
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1259,6 +1321,8 @@ func NewGame(now game.Now) *game.Game {
 		Name: "hash", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{Name: "Entanglement Station", Factor: 0.1 * 5}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1290,6 +1354,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Sunspire", Factor: 0.00005 * 5,
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1302,6 +1368,8 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.10}},
 		}},
 		Bonus: []data.Resource{{
+			Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		}, {
 			Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1802,6 +1870,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "faith", Count: 3500, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 3000, CostExponentBase: 2.5,
+		}},
+	}, {
+		Name: "Transcendence Level", UnlockedBy: "Transcendence",
+		Costs: []data.Resource{{
+			Name: "epiphany", Count: 1, CostExponentBase: 3,
 		}},
 	}, {
 		Name: "Black Obelisk", UnlockedBy: "Cryptotheology",
@@ -2367,6 +2440,23 @@ func NewGame(now game.Now) *game.Game {
 			Name: "tear", Count: 1,
 			Bonus:               []data.Resource{{Name: "Ziggurat"}},
 			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "Praise the sun!", Type: "Craft", UnlockedBy: "Philosophy",
+		Costs: []data.Resource{{Name: "faith", Count: 1}},
+		Adds: []data.Resource{{
+			Name: "worship", Count: 1,
+			Bonus: []data.Resource{{Name: "epiphany"}},
+		}},
+	}, {
+		Name: "Adore the galaxy", Type: "Craft", UnlockedBy: "Apocrypha",
+		Costs: []data.Resource{{Name: "worship", Count: 1}},
+		Adds: []data.Resource{{
+			Name: "epiphany", Count: 1. / 1000000,
+			Bonus: []data.Resource{{
+				Name:  "Transcendence Level",
+				Bonus: []data.Resource{{Name: "Transcendence Level"}},
+			}},
 		}},
 	}, {
 		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "Ziggurat",
@@ -3878,6 +3968,27 @@ func NewGame(now game.Now) *game.Game {
 			Name: "void", Count: 32,
 		}, {
 			Name: "temporal flux", Count: 4096,
+		}},
+	}, {
+		Name: "Solar Revolution", UnlockedBy: "Philosophy",
+		Costs: []data.Resource{{
+			Name: "faith", Count: 750,
+		}, {
+			Name: "gold", Count: 500,
+		}},
+	}, {
+		Name: "Apocrypha", UnlockedBy: "Philosophy",
+		Costs: []data.Resource{{
+			Name: "faith", Count: 5000,
+		}, {
+			Name: "gold", Count: 5000,
+		}},
+	}, {
+		Name: "Transcendence", UnlockedBy: "Philosophy",
+		Costs: []data.Resource{{
+			Name: "faith", Count: 7500,
+		}, {
+			Name: "gold", Count: 7500,
 		}},
 	}, {
 		Name: "Orbital Launch", UnlockedBy: "Rocketry",

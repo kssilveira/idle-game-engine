@@ -65,6 +65,7 @@ digraph {
   "Philosophy" -> "Stained Glass" [color="blue"];
   "Philosophy" -> "Basilica" [color="blue"];
   "Philosophy" -> "Templars" [color="blue"];
+  "Transcendence" -> "Transcendence Level" [color="blue"];
   "Cryptotheology" -> "Black Obelisk" [color="blue"];
   "Cryptotheology" -> "Black Nexus" [color="blue"];
   "Cryptotheology" -> "Black Core" [color="blue"];
@@ -129,6 +130,8 @@ digraph {
   "Black Pyramid" -> "Leviathans" [color="blue"];
   "Black Pyramid" -> "Feed Leviathans" [color="blue"];
   "Ziggurat" -> "Sacrifice Unicorns" [color="blue"];
+  "Philosophy" -> "Praise the sun!" [color="blue"];
+  "Apocrypha" -> "Adore the galaxy" [color="blue"];
   "Ziggurat" -> "Sacrifice Alicorns" [color="blue"];
   "Megalomania" -> "Refine Tears" [color="blue"];
   "Ziggurat" -> "Refine Time Crystals" [color="blue"];
@@ -328,6 +331,9 @@ digraph {
   "Paradox Theory" -> "Distortion" [color="blue"];
   "Chronocontrol" -> "Chronosurge" [color="blue"];
   "Blackchain" -> "Invisible Black Hand" [color="blue"];
+  "Philosophy" -> "Solar Revolution" [color="blue"];
+  "Philosophy" -> "Apocrypha" [color="blue"];
+  "Philosophy" -> "Transcendence" [color="blue"];
   "Rocketry" -> "Orbital Launch" [color="blue"];
   "Orbital Launch" -> "Moon Mission" [color="blue"];
   "Moon Mission" -> "Dune Mission" [color="blue"];
@@ -462,6 +468,7 @@ digraph {
   "Stained Glass" [shape="box3d"];
   "Basilica" [shape="box3d"];
   "Templars" [shape="box3d"];
+  "Transcendence Level" [shape="box3d"];
   "Black Obelisk" [shape="box3d"];
   "Black Nexus" [shape="box3d"];
   "Black Core" [shape="box3d"];
@@ -708,6 +715,9 @@ digraph {
   "Distortion" [shape="diamond"];
   "Chronosurge" [shape="diamond"];
   "Invisible Black Hand" [shape="diamond"];
+  "Solar Revolution" [shape="diamond"];
+  "Apocrypha" [shape="diamond"];
+  "Transcendence" [shape="diamond"];
   "Orbital Launch" [shape="diamond"];
   "Moon Mission" [shape="diamond"];
   "Dune Mission" [shape="diamond"];
@@ -770,6 +780,8 @@ digraph {
   "Leviathans" [shape="cds"];
   "Feed Leviathans" [shape="cds"];
   "Sacrifice Unicorns" [shape="cds"];
+  "Praise the sun!" [shape="cds"];
+  "Adore the galaxy" [shape="cds"];
   "Sacrifice Alicorns" [shape="cds"];
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];
@@ -796,8 +808,8 @@ digraph {
   "@megalith" [shape="cds"];
 }
 # Construction: 16
+# Philosophy: 15
 # Navigation: 13
 # Cryptotheology: 12
 # Electronics: 12
 # Orbital Engineering: 11
-# Philosophy: 11

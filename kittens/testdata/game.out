@@ -422,6 +422,37 @@
       "Formula": "Count = (c(Sunforge) * 0.01)"
     },
     {
+      "Name": "SolarRevolutionProductionBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "worship",
+          "Factor": 0.00001,
+          "Bonus": [
+            {
+              "Name": "Solar Revolution",
+              "Bonus": [
+                {
+                  "Name": "Black Obelisk",
+                  "Factor": 0.05,
+                  "Bonus": [
+                    {
+                      "Name": "Transcendence Level"
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ]
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(worship) * 0.00001 * (1 + (c(Solar Revolution) * (c(Black Obelisk) * 0.05 * c(Transcendence Level)))))"
+    },
+    {
       "Name": "ParagonProductionBonus",
       "Type": "Resource",
       "IsHidden": true,
@@ -836,6 +867,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -850,7 +888,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "catnip cap",
-      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025)) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "wood cap",
@@ -1014,6 +1052,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -1028,7 +1073,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "wood cap",
-      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25)) * ((1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15)))) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25)) * ((1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15)))) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "science cap",
@@ -1267,6 +1312,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -1281,7 +1333,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "science cap",
-      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5)) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "catpower cap",
@@ -1366,6 +1418,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -1380,7 +1439,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "catpower cap",
-      "Formula": "Count += ((((c(hunter) * 0.3 * (1 + c(happiness) + (c(Composite Bow) * 0.5) + (c(Crossbow) * 0.25) + (c(Railgun) * 0.25))) + (c(Active Mint) * -3.75)) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(hunter) * 0.3 * (1 + c(happiness) + (c(Composite Bow) * 0.5) + (c(Crossbow) * 0.25) + (c(Railgun) * 0.25))) + (c(Active Mint) * -3.75)) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "mineral cap",
@@ -1511,6 +1570,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -1525,7 +1591,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "mineral cap",
-      "Formula": "Count += ((((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5)) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5)) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "iron cap",
@@ -1674,6 +1740,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -1688,7 +1761,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "iron cap",
-      "Formula": "Count += ((((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "coal cap",
@@ -1872,6 +1945,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -1886,7 +1966,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "coal cap",
-      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 0.66) + c(Unobtainium Drill))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining)) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) \u003e 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25)))) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 0.66) + c(Unobtainium Drill))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining)) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) \u003e 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25)))) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "gold cap",
@@ -2027,6 +2107,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2041,7 +2128,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "gold cap",
-      "Formula": "Count += ((((c(Active Mint) * -0.025) + (c(Active Smelter) * 0.005 * c(Gold Ore)) + (c(geologist) * 0.004 * (c(Geodesy) * (1 + (c(Mining Drill) * 0.625) + (c(Unobtainium Drill) * 0.625))))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Active Mint) * -0.025) + (c(Active Smelter) * 0.005 * c(Gold Ore)) + (c(geologist) * 0.004 * (c(Geodesy) * (1 + (c(Mining Drill) * 0.625) + (c(Unobtainium Drill) * 0.625))))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "titanium cap",
@@ -2176,6 +2263,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2190,7 +2284,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "titanium cap",
-      "Formula": "Count += ((((c(Active Accelerator) * -0.075) + (c(Active Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Active Accelerator) * -0.075) + (c(Active Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "oil cap",
@@ -2301,6 +2395,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2315,7 +2416,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "oil cap",
-      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus)))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "uranium cap",
@@ -2424,6 +2525,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2438,7 +2546,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "uranium cap",
-      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus)))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "unobtainium cap",
@@ -2512,6 +2620,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2526,7 +2641,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "unobtainium cap",
-      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "time crystal",
@@ -2620,6 +2735,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2633,7 +2755,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Space Beacon) * 0.005 * (c(Relic Station) * (1 + (c(Black Nexus) * 0.1 * c(Black Pyramid)) + (c(Hash Level) * 0.25) + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Space Beacon) * 0.005 * (c(Relic Station) * (1 + (c(Black Nexus) * 0.1 * c(Black Pyramid)) + (c(Hash Level) * 0.25) + c(SpaceProductionBonus)))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "void",
@@ -2667,6 +2789,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2680,7 +2809,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Chronosphere) * 0.000025 * (1 + c(Void Hoover))) * ((1 + (c(Chronocontrol) * (1 + (c(Distortion) * 2)))) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Chronosphere) * 0.000025 * (1 + c(Void Hoover))) * ((1 + (c(Chronocontrol) * (1 + (c(Distortion) * 2)))) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "temporal flux cap",
@@ -2723,6 +2852,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2737,7 +2873,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "temporal flux cap",
-      "Formula": "Count += ((((0.008333 * (1 + (c(Temporal Accelerator) * 0.05))) + (c(Chronosphere) * 0.00125 * c(Chronosurge))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((0.008333 * (1 + (c(Temporal Accelerator) * 0.05))) + (c(Chronosphere) * 0.00125 * c(Chronosurge))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "blackcoin",
@@ -2842,6 +2978,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2855,7 +2998,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(all kittens) * -0.05 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000087 * c(catpower cap))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(all kittens) * -0.05 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000087 * c(catpower cap))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "ivory",
@@ -2887,6 +3030,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2900,7 +3050,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(all kittens) * -0.035 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000021 * c(catpower cap))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(all kittens) * -0.035 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000021 * c(catpower cap))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "spice",
@@ -2936,6 +3086,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -2949,7 +3106,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(all kittens) * -0.005 * (1 + (c(Tradepost) * -0.04))) + (c(Active Brewery) * -0.5) + (c(Spice Refinery) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(all kittens) * -0.005 * (1 + (c(Tradepost) * -0.04))) + (c(Active Brewery) * -0.5) + (c(Spice Refinery) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "unicorn",
@@ -2997,6 +3154,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -3010,7 +3174,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Unic. Pasture) * 0.005) * ((1 + (c(Unicorn Selection) * 0.25) + (c(Unicorn Tomb) * 0.05) + (c(Ivory Tower) * 0.1) + (c(Ivory Citadel) * 0.25) + (c(Sky Palace) * 0.5) + (c(Unicorn Utopia) * 2.5) + (c(Sunspire) * 5)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Unic. Pasture) * 0.005) * ((1 + (c(Unicorn Selection) * 0.25) + (c(Unicorn Tomb) * 0.05) + (c(Ivory Tower) * 0.1) + (c(Ivory Citadel) * 0.25) + (c(Sky Palace) * 0.5) + (c(Unicorn Utopia) * 2.5) + (c(Sunspire) * 5)) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "culture cap",
@@ -3116,6 +3280,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -3130,7 +3301,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "culture cap",
-      "Formula": "Count += ((((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 2)))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 2)))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "faith cap",
@@ -3195,6 +3366,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -3209,7 +3387,17 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "faith cap",
-      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075 * c(Theology)) + (c(Chapel) * 0.025)) * ((1 + (c(Solar Chant) * 0.1)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075 * c(Theology)) + (c(Chapel) * 0.025)) * ((1 + (c(Solar Chant) * 0.1)) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+    },
+    {
+      "Name": "worship",
+      "Type": "Resource",
+      "Cap": -1
+    },
+    {
+      "Name": "epiphany",
+      "Type": "Resource",
+      "Cap": -1
     },
     {
       "Name": "starchart",
@@ -3261,6 +3449,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -3274,7 +3469,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus)))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "gigaflop",
@@ -3306,6 +3501,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -3319,7 +3521,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Entanglement Station) * 0.5) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Entanglement Station) * 0.5) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "leviathan energy cap",
@@ -3386,6 +3588,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -3399,7 +3608,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(Sky Palace) * 0.0001 * (1 + (c(Unicorn Utopia) * 0.00015) + (c(Sunspire) * 0.0003) + (c(Black Radiance) * 0.03464 * c(sorrow)))) + (c(Unicorn Utopia) * 0.000125) + (c(Sunspire) * 0.00025)) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += ((((c(Sky Palace) * 0.0001 * (1 + (c(Unicorn Utopia) * 0.00015) + (c(Sunspire) * 0.0003) + (c(Black Radiance) * 0.03464 * c(sorrow)))) + (c(Unicorn Utopia) * 0.000125) + (c(Sunspire) * 0.00025)) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "necrocorn",
@@ -3421,6 +3630,13 @@
         {
           "Bonus": [
             {
+              "Name": "SolarRevolutionProductionBonus"
+            }
+          ]
+        },
+        {
+          "Bonus": [
+            {
               "Name": "ParagonProductionBonus"
             }
           ]
@@ -3434,7 +3650,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Marker) * 0.000005 * (1 + (c(Unicorn Graveyard) * 0.1))) * ((1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
+      "Formula": "Count += (((c(Marker) * 0.000005 * (1 + (c(Unicorn Graveyard) * 0.1))) * ((1 + c(SolarRevolutionProductionBonus)) * (1 + c(ParagonProductionBonus)) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
       "Name": "sorrow cap",
@@ -4117,6 +4333,12 @@
     },
     {
       "Name": "Templars",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "Transcendence Level",
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
@@ -5680,6 +5902,24 @@
     },
     {
       "Name": "Invisible Black Hand",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Solar Revolution",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Apocrypha",
+      "Type": "Tech",
+      "IsHidden": true,
+      "Cap": 1
+    },
+    {
+      "Name": "Transcendence",
       "Type": "Tech",
       "IsHidden": true,
       "Cap": 1
@@ -7802,6 +8042,24 @@
       ]
     },
     {
+      "Name": "Transcendence Level",
+      "Type": "Building",
+      "UnlockedBy": "Transcendence",
+      "Costs": [
+        {
+          "Name": "epiphany",
+          "Count": 1,
+          "CostExponentBase": 3
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Transcendence Level",
+          "Count": 1
+        }
+      ]
+    },
+    {
       "Name": "Black Obelisk",
       "Type": "Building",
       "UnlockedBy": "Cryptotheology",
@@ -9591,6 +9849,55 @@
             }
           ],
           "BonusStartsFromZero": true
+        }
+      ]
+    },
+    {
+      "Name": "Praise the sun!",
+      "Type": "Craft",
+      "UnlockedBy": "Philosophy",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "worship",
+          "Count": 1,
+          "Bonus": [
+            {
+              "Name": "epiphany"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Adore the galaxy",
+      "Type": "Craft",
+      "UnlockedBy": "Apocrypha",
+      "Costs": [
+        {
+          "Name": "worship",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "epiphany",
+          "Count": 0.000001,
+          "Bonus": [
+            {
+              "Name": "Transcendence Level",
+              "Bonus": [
+                {
+                  "Name": "Transcendence Level"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -14259,6 +14566,72 @@
       "Adds": [
         {
           "Name": "Invisible Black Hand",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Solar Revolution",
+      "Type": "Tech",
+      "UnlockedBy": "Philosophy",
+      "LockedBy": "Solar Revolution",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Count": 750
+        },
+        {
+          "Name": "gold",
+          "Count": 500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Solar Revolution",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Apocrypha",
+      "Type": "Tech",
+      "UnlockedBy": "Philosophy",
+      "LockedBy": "Apocrypha",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Count": 5000
+        },
+        {
+          "Name": "gold",
+          "Count": 5000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Apocrypha",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Transcendence",
+      "Type": "Tech",
+      "UnlockedBy": "Philosophy",
+      "LockedBy": "Transcendence",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Count": 7500
+        },
+        {
+          "Name": "gold",
+          "Count": 7500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "Transcendence",
           "Count": 1
         }
       ]
