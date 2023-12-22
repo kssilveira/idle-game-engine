@@ -352,6 +352,16 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Charon", Factor: 0.50,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -429,6 +439,16 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Charon", Factor: 0.50,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -555,6 +575,16 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Piscine",
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -592,6 +622,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Cath",
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -652,6 +692,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Charon", Factor: 0.50,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -717,6 +767,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Umbra", Factor: 0.50,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -795,6 +855,16 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Umbra", Factor: 0.50,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -852,6 +922,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Umbra", Factor: 0.50,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -906,6 +986,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Charon", Factor: 1.50,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -961,6 +1051,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Termogus",
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -1013,6 +1113,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Dune",
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -1048,6 +1158,16 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Redmoon",
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -1207,6 +1327,16 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Helios", Factor: 0.25,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -1255,6 +1385,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Yarn",
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -1283,6 +1423,16 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Solar Chant", Factor: 0.10}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Helios",
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
@@ -1337,6 +1487,16 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []data.Resource{{Name: "Hubble Space Telescope", Factor: 0.30}},
 		}, {
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		}, {
+			Bonus: []data.Resource{{
+				Name: "Kairo", Factor: 4.00,
+				Bonus: []data.Resource{{
+					Name:                "Numeromancy",
+					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {

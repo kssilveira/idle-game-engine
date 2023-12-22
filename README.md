@@ -89,7 +89,6 @@ Edges:
 
 Missing features:
 
-- [Cycles](https://wiki.kittensgame.com/en/general-information/game-mechanics#cycles)
 - [Events](https://wiki.kittensgame.com/en/general-information/events)
 - [Metaphysics paragon effect and scaling](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
 - [Metaphysics price ratios](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
@@ -114,5 +113,6 @@ Missing features:
 
 TODO:
 
+- change formula '>' to 'gt'
 - record terminal using https://asciinema.org/
 - make [solve.go](kittens/solve/solve.go) get everything
