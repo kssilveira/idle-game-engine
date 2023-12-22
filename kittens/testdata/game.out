@@ -2063,14 +2063,13 @@
       "Name": "temporal flux cap",
       "Type": "Resource",
       "IsHidden": true,
-      "Producers": [
+      "StartCount": 3000,
+      "Bonus": [
         {
           "Name": "Temporal Battery",
-          "Factor": 750
+          "Factor": 0.25
         }
-      ],
-      "StartCount": 3000,
-      "Formula": "Count = (3000 + (c(Temporal Battery) * 750))"
+      ]
     },
     {
       "Name": "temporal flux",
@@ -2103,7 +2102,7 @@
     {
       "Name": "blackcoin",
       "Type": "Resource",
-      "Cap": 1
+      "Cap": -1
     },
     {
       "Name": "kitten",
@@ -2113,13 +2112,23 @@
           "Factor": 0.05
         }
       ],
+      "Bonus": [
+        {
+          "Name": "Venus of Willenfluff",
+          "Factor": 0.75
+        },
+        {
+          "Name": "Pawgan Rituals",
+          "Factor": 1.5
+        }
+      ],
       "OnGone": [
         {
           "Name": "gone kitten",
           "Count": 1
         }
       ],
-      "Formula": "Count += (0.05 * seconds)"
+      "Formula": "Count += ((0.05 * (1 + (c(Venus of Willenfluff) * 0.75) + (c(Pawgan Rituals) * 1.5))) * seconds)"
     },
     {
       "Name": "all kittens",
@@ -2630,6 +2639,18 @@
       ],
       "CapResource": "chronoheat cap",
       "Formula": "Count += ((c(Chrono Furnace) * -0.1) * seconds)"
+    },
+    {
+      "Name": "chrono furnace fuel",
+      "Type": "Resource",
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "Chrono Furnace",
+          "Factor": 0.1
+        }
+      ],
+      "Formula": "Count += ((c(Chrono Furnace) * 0.1) * seconds)"
     },
     {
       "Name": "karma",
@@ -8800,7 +8821,7 @@
     {
       "Name": "Combust time crystal",
       "Type": "Craft",
-      "UnlockedBy": "Ziggurat",
+      "UnlockedBy": "Chronoforge",
       "Costs": [
         {
           "Name": "time crystal",
@@ -14854,6 +14875,18 @@
           "Bonus": [
             {
               "Name": "CraftRatio"
+            },
+            {
+              "Name": "Codex Vox",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Codex Logos",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Codex Agrum",
+              "Factor": 0.25
             }
           ]
         }
@@ -14882,6 +14915,20 @@
           ],
           "BonusStartsFromZero": true
         }
+      ],
+      "Bonus": [
+        {
+          "Name": "Codex Vox",
+          "Factor": 0.25
+        },
+        {
+          "Name": "Codex Logos",
+          "Factor": 0.25
+        },
+        {
+          "Name": "Codex Agrum",
+          "Factor": 0.25
+        }
       ]
     },
     {
@@ -14905,11 +14952,29 @@
           "Bonus": [
             {
               "Name": "CraftRatio"
+            },
+            {
+              "Name": "Codex Logos",
+              "Factor": 0.25
+            },
+            {
+              "Name": "Codex Agrum",
+              "Factor": 0.25
             }
           ]
         }
       ],
-      "IsHidden": true
+      "IsHidden": true,
+      "Bonus": [
+        {
+          "Name": "Codex Logos",
+          "Factor": 0.25
+        },
+        {
+          "Name": "Codex Agrum",
+          "Factor": 0.25
+        }
+      ]
     },
     {
       "Name": "@blueprint",
@@ -14953,6 +15018,10 @@
                   "Name": "Bio Lab"
                 }
               ]
+            },
+            {
+              "Name": "Codex Agrum",
+              "Factor": 0.25
             }
           ]
         }
@@ -14979,6 +15048,10 @@
               "Name": "Bio Lab"
             }
           ]
+        },
+        {
+          "Name": "Codex Agrum",
+          "Factor": 0.25
         }
       ]
     },

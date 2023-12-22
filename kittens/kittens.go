@@ -809,8 +809,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "temporal flux cap", Type: "Resource", IsHidden: true, StartCount: 3000,
-		Producers: []data.Resource{{
-			Name: "Temporal Battery", Factor: 750,
+		Bonus: []data.Resource{{
+			Name: "Temporal Battery", Factor: 0.25,
 		}},
 	}, {
 		Name: "temporal flux", Type: "Resource", IsHidden: true, CapResource: "temporal flux cap",
@@ -823,11 +823,16 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
-		Name: "blackcoin", Type: "Resource", Cap: 1,
+		Name: "blackcoin", Type: "Resource", Cap: -1,
 	}, {
 		Name: "kitten", Type: "Resource", Cap: 0,
 		Producers: []data.Resource{{Factor: 0.05}},
-		OnGone:    []data.Resource{{Name: "gone kitten", Count: 1}},
+		Bonus: []data.Resource{{
+			Name: "Venus of Willenfluff", Factor: 0.75,
+		}, {
+			Name: "Pawgan Rituals", Factor: 1.50,
+		}},
+		OnGone: []data.Resource{{Name: "gone kitten", Count: 1}},
 	}, {
 		Name: "all kittens", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
 		Producers: resourceWithName(data.Resource{
@@ -1016,6 +1021,9 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "chronoheat", Type: "Resource", CapResource: "chronoheat cap",
 		Producers: []data.Resource{{Name: "Chrono Furnace", Factor: -0.02 * 5}},
+	}, {
+		Name: "chrono furnace fuel", Type: "Resource", Cap: -1,
+		Producers: []data.Resource{{Name: "Chrono Furnace", Factor: 0.02 * 5}},
 	}, {
 		Name: "karma", Type: "Resource", Cap: -1,
 	}, {
@@ -2090,7 +2098,7 @@ func NewGame(now game.Now) *game.Game {
 	}})
 
 	g.AddActions([]data.Action{{
-		Name: "Combust time crystal", Type: "Craft", UnlockedBy: "Ziggurat",
+		Name: "Combust time crystal", Type: "Craft", UnlockedBy: "Chronoforge",
 		Costs: []data.Resource{{Name: "time crystal", Count: 1}},
 		Adds: []data.Resource{{
 			Name: "day", Count: 400,
@@ -3935,12 +3943,24 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "parchment", Count: 25,
 		}},
+		Bonus: []data.Resource{{
+			Name: "Codex Vox", Factor: 0.25,
+		}, {
+			Name: "Codex Logos", Factor: 0.25,
+		}, {
+			Name: "Codex Agrum", Factor: 0.25,
+		}},
 	}, {
 		Name: "compendium", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
 			Name: "manuscript", Count: 50,
 		}, {
 			Name: "science", Count: 10000,
+		}},
+		Bonus: []data.Resource{{
+			Name: "Codex Logos", Factor: 0.25,
+		}, {
+			Name: "Codex Agrum", Factor: 0.25,
 		}},
 	}, {
 		Name: "blueprint", UnlockedBy: "Physics",
@@ -3962,6 +3982,8 @@ func NewGame(now game.Now) *game.Game {
 			}, {
 				Name: "Bio Lab",
 			}},
+		}, {
+			Name: "Codex Agrum", Factor: 0.25,
 		}},
 	}, {
 		Name: "thorium", UnlockedBy: "Thorium",

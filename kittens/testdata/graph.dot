@@ -291,6 +291,8 @@ digraph {
   "Chronosphere" -> "temporal flux" [color="green"];
   "Chronosurge" -> "Chronosphere" [color="green"];
   "temporal flux cap" -> "temporal flux" [color="limegreen"];
+  "Venus of Willenfluff" -> "kitten" [color="green"];
+  "Pawgan Rituals" -> "kitten" [color="green"];
   "kitten" -> "all kittens" [color="green"];
   "woodcutter" -> "all kittens" [color="green"];
   "scholar" -> "all kittens" [color="green"];
@@ -365,6 +367,7 @@ digraph {
   "Time Boiler" -> "chronoheat cap" [color="green"];
   "chronoheat" -> "Chrono Furnace" [color="red"];
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
+  "Chrono Furnace" -> "chrono furnace fuel" [color="green"];
   "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
   "Concrete Huts" -> "HutCostExponentBase" [color="red"];
   "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
@@ -891,7 +894,7 @@ digraph {
   "Ziggurat" -> "Refine Time Crystals" [color="blue"];
   "time crystal" -> "Combust time crystal" [color="orange"];
   "Combust time crystal" -> "chronoheat" [color="limegreen"];
-  "Ziggurat" -> "Combust time crystal" [color="blue"];
+  "Chronoforge" -> "Combust time crystal" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
   "Agriculture" -> "Archery" [color="blue"];
@@ -1556,10 +1559,15 @@ digraph {
   "parchment" -> "@manuscript" [color="orange"];
   "@manuscript" -> "manuscript" [color="limegreen"];
   "CraftRatio" -> "manuscript" [color="green"];
+  "Codex Vox" -> "manuscript" [color="green"];
+  "Codex Logos" -> "manuscript" [color="green"];
+  "Codex Agrum" -> "manuscript" [color="green"];
   "Construction" -> "@manuscript" [color="blue"];
   "manuscript" -> "@compendium" [color="orange"];
   "@compendium" -> "compendium" [color="limegreen"];
   "CraftRatio" -> "compendium" [color="green"];
+  "Codex Logos" -> "compendium" [color="green"];
+  "Codex Agrum" -> "compendium" [color="green"];
   "Philosophy" -> "@compendium" [color="blue"];
   "compendium" -> "@blueprint" [color="orange"];
   "@blueprint" -> "blueprint" [color="limegreen"];
@@ -1570,6 +1578,7 @@ digraph {
   "Academy" -> "CAD System" [color="green"];
   "Observatory" -> "CAD System" [color="green"];
   "Bio Lab" -> "CAD System" [color="green"];
+  "Codex Agrum" -> "blueprint" [color="green"];
   "Physics" -> "@blueprint" [color="blue"];
   "uranium" -> "@thorium" [color="orange"];
   "@thorium" -> "thorium" [color="limegreen"];
@@ -1648,6 +1657,7 @@ digraph {
   "sorrow" [shape="cylinder"];
   "chronoheat cap" [shape="cylinder"];
   "chronoheat" [shape="cylinder"];
+  "chrono furnace fuel" [shape="cylinder"];
   "karma" [shape="cylinder"];
   "paragon" [shape="cylinder"];
   "burned paragon" [shape="cylinder"];
@@ -2077,7 +2087,7 @@ digraph {
   "@megalith" [shape="cds"];
 }
 # titanium: 69
-# blueprint: 45
+# blueprint: 46
 # alloy: 38
 # paragon: 38
 # starchart: 36

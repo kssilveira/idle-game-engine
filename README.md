@@ -87,62 +87,34 @@ Edges:
 
 ![graph edges](kittens/testdata/graph_edges.svg)
 
-Wiki:
-
-- https://wiki.kittensgame.com/en/home
-  - https://wiki.kittensgame.com/en/game-tabs/time
-
 Missing features:
 
-- Factory
-  - Space Manufacturing - Space Bonus +3.75
-    - Increases Space Bonus from Space Elevators and Orbital Arrays by 3.75% per factory. (4.5% with Factory Logistics) Does not apply to Planet Crackers.
-- AI Core
-  - Machine Learning - Data Center effectiveness +10% per AI Core
-- Relic Station
-  - your relic production scales with your antimatter storage. Each storage unit below 5000 will decrease production by 0.02%
-- Steamworks Automation
-  - Workshop Automation	Converts (2 + 2\*(# of Steamworks))% of wood (to beams) and minerals (to slabs) at 98% of that resource's cap
-  - Advanced Automation	Workshop Automation will be activated twice per year
-  - Pneumatic Press	Workshop Automation will also convert iron to plates
-- Global Production
-  - Magneto
-    - Steamworks Magneto Boost
-  - Reactor
-  - Space Elevator Provide 0.1% of global production to Hydraulic Fracturers & Spice Refineries
-- Events
-  - Astronomical Events
-  - Meteors
-  - Unicorn Rifts
-    - Each Ivory Tower increases the frequency of this event by 0.05% per game-day, or 1% per day per 20 towers.
-      - The amount of unicorns you get from a rift is 500* (1 + your unicorn ziggurat bonus production to unicorns/10)
-  - Ivory Meteors
-  - Alicorn
-- Global Storage Ratio
-- Space Bonus
-  - Space Elevator Provide a 1% bonus to all space structures
-  - Orbital Array Provide a 2% bonus to all space structures
-- Faith Transcend, Adore, Praise
+- AI Core: Machine Learning: Data Center effectiveness +10% per AI Core
+- Relic Station: each antimatter storage unit below 5000 decrease relic production by 0.02%
+- Events: https://wiki.kittensgame.com/en/general-information/events
+- Global Production Bonus (Magneto, Steamworks, Reactor, Space Elevator)
+- Global Storage Bonus
+- Space Bonus (Space Elevator, Orbital Array, Factory)
+- Faith Transcend, Adore, Praise, Solar Revolution
 - Reset
-  - Chronosphere
-    - Resource Preservation +1.5%
-    - Flux Condensator - Craftable Resource Preservation +1.5%
-      - 1.5 * # of Chronospheres * Sqrt(resource amount) of each craftable resource is carried over on reset.
-- Codex Leviathanus
-  - Every Black Library improves Codex Leviathanus scaling by +2%. This value is further improved by Unicorn Graveyards
-- Blazar
-  - Each level improves Chronomancy and Unicornmancy by 2.5%, and Time Impedance by 10%. Improves Resource Retrieval effectiveness by 2%
+- Resource Retrieval
 - Engineer
 - Energy
-  - Broadcast Tower culture
 - Pollution
-- Diminishing Returns and Limits
-  - e.g. Each trade ship adds +1% to harbor capacity with diminishing returns past 168.75% and a limit of 225%
-- Compendium Cap
 - Festivals
-- Trade Standings And Embassy
+- Trade Standings and Embassy
 - Kitten Skills
 - Space Travel Speed
-- Blackcoin Market
+- Blackcoin
 - Iron Will
 - Pacts
+- Dark Future
+- Challenges
+- Achievements
+- Cycles
+- AI Apocalypse
+- Policies
+- Metaphysics
+  - price ratios
+  - paragon effect and scaling
+- Diminishing Returns and Limits

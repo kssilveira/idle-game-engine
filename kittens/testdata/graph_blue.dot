@@ -131,7 +131,7 @@ digraph {
   "Ziggurat" -> "Sacrifice Alicorns" [color="blue"];
   "Megalomania" -> "Refine Tears" [color="blue"];
   "Ziggurat" -> "Refine Time Crystals" [color="blue"];
-  "Ziggurat" -> "Combust time crystal" [color="blue"];
+  "Chronoforge" -> "Combust time crystal" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
   "Agriculture" -> "Archery" [color="blue"];
