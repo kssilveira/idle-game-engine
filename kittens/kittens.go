@@ -1241,7 +1241,11 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{Name: "Chrono Furnace", Factor: -0.02 * 5}},
 	}, {
 		Name: "chrono furnace fuel", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{Name: "Chrono Furnace", Factor: 0.02 * 5}},
+		Producers: []data.Resource{{
+			Name: "Chrono Furnace", Factor: 0.02 * 5,
+			Bonus:               []data.Resource{{Name: "chronoheat", ProductionBoolean: true}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "karma", Type: "Resource", Cap: -1,
 	}, {
@@ -2317,6 +2321,10 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "chronoheat", Count: 10,
 		}},
+	}, {
+		Name: "Burn Chrono Furnace Fuel", Type: "Craft", UnlockedBy: "Chronoforge",
+		Costs: []data.Resource{{Name: "chrono furnace fuel", Count: 100}},
+		Adds:  []data.Resource{{Name: "day", Count: 400}},
 	}, {
 		Name: "Burn Paragon", Type: "Craft", UnlockedBy: "Chronoforge",
 		Costs: []data.Resource{{Name: "paragon", Count: 1}},

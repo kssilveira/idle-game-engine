@@ -133,6 +133,7 @@ digraph {
   "Megalomania" -> "Refine Tears" [color="blue"];
   "Ziggurat" -> "Refine Time Crystals" [color="blue"];
   "Chronoforge" -> "Combust time crystal" [color="blue"];
+  "Chronoforge" -> "Burn Chrono Furnace Fuel" [color="blue"];
   "Chronoforge" -> "Burn Paragon" [color="blue"];
   "Library" -> "Calendar" [color="blue"];
   "Calendar" -> "Agriculture" [color="blue"];
@@ -773,6 +774,7 @@ digraph {
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];
   "Combust time crystal" [shape="cds"];
+  "Burn Chrono Furnace Fuel" [shape="cds"];
   "Burn Paragon" [shape="cds"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];

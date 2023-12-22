@@ -89,7 +89,7 @@ Edges:
 
 Missing features:
 
-- Use chrono furnace fuel
+- Deactivate building when no resource
 - Events: https://wiki.kittensgame.com/en/general-information/events
 - Global Production Bonus (Magneto, Steamworks, Reactor, Space Elevator)
 - Space Bonus (Space Elevator, Orbital Array, Factory)

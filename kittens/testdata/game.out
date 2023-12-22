@@ -3214,10 +3214,17 @@
       "Producers": [
         {
           "Name": "Chrono Furnace",
-          "Factor": 0.1
+          "Factor": 0.1,
+          "Bonus": [
+            {
+              "Name": "chronoheat",
+              "ProductionBoolean": true
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
-      "Formula": "Count += ((c(Chrono Furnace) * 0.1) * seconds)"
+      "Formula": "Count += ((c(Chrono Furnace) * 0.1 * (1 if c(chronoheat) \u003e 0)) * seconds)"
     },
     {
       "Name": "karma",
@@ -9402,6 +9409,23 @@
         {
           "Name": "chronoheat",
           "Count": 10
+        }
+      ]
+    },
+    {
+      "Name": "Burn Chrono Furnace Fuel",
+      "Type": "Craft",
+      "UnlockedBy": "Chronoforge",
+      "Costs": [
+        {
+          "Name": "chrono furnace fuel",
+          "Count": 100
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "day",
+          "Count": 400
         }
       ]
     },

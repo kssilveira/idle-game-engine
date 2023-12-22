@@ -425,6 +425,7 @@ digraph {
   "chronoheat" -> "Chrono Furnace" [color="red"];
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
   "Chrono Furnace" -> "chrono furnace fuel" [color="green"];
+  "chronoheat" -> "Chrono Furnace" [color="green"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Bio Lab" -> "Idle Bio Lab" [color="green"];
@@ -951,6 +952,8 @@ digraph {
   "time crystal" -> "Combust time crystal" [color="orange"];
   "Combust time crystal" -> "chronoheat" [color="limegreen"];
   "Chronoforge" -> "Combust time crystal" [color="blue"];
+  "chrono furnace fuel" -> "Burn Chrono Furnace Fuel" [color="orange"];
+  "Chronoforge" -> "Burn Chrono Furnace Fuel" [color="blue"];
   "paragon" -> "Burn Paragon" [color="orange"];
   "Burn Paragon" -> "burned paragon" [color="limegreen"];
   "Chronoforge" -> "Burn Paragon" [color="blue"];
@@ -2128,6 +2131,7 @@ digraph {
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];
   "Combust time crystal" [shape="cds"];
+  "Burn Chrono Furnace Fuel" [shape="cds"];
   "Burn Paragon" [shape="cds"];
   "@beam" [shape="cds"];
   "@slab" [shape="cds"];
