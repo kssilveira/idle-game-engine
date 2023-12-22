@@ -89,29 +89,26 @@ Edges:
 
 Missing features:
 
-- Events: https://wiki.kittensgame.com/en/general-information/events
-
-- Faith Transcend, Adore, Praise, Solar Revolution
-- Reset
-- Resource Retrieval
-- Energy
-- Pollution
-- Festivals
-- Trade Standings and Embassy
-- Kitten Skills
-- Space Travel Speed
-- Blackcoin
-- Iron Will
-- Pacts
-- Dark Future
-- Challenges
-- Achievements
-- Cycles
-- AI Apocalypse
-- Policies
-- Metaphysics
-  - price ratios
-  - paragon effect and scaling
-
-- Diminishing Returns and Limits: https://wiki.kittensgame.com/en/guides-and-advice-and-stuff/diminishing-returns
-- Engineer: https://wiki.kittensgame.com/en/game-tabs/outpost/engineer
+- [AI Apocalypse](https://wiki.kittensgame.com/en/general-information/events/ai-apocalypse)
+- [Achievements](https://wiki.kittensgame.com/en/game-tabs/achievements)
+- [Apocrypha](https://wiki.kittensgame.com/en/game-tabs/religion/apocrypha)
+- [Blackcoin](https://wiki.kittensgame.com/en/general-information/resources/blackcoin)
+- [Challenges](https://wiki.kittensgame.com/en/game-tabs/challenges)
+- [Cycles](https://wiki.kittensgame.com/en/general-information/game-mechanics#cycles)
+- [Dark Future](https://wiki.kittensgame.com/en/general-information/events/dark-future)
+- [Diminishing Returns and Limits](https://wiki.kittensgame.com/en/guides-and-advice-and-stuff/diminishing-returns)
+- [Energy](https://wiki.kittensgame.com/en/general-information/resources/energy)
+- [Engineer](https://wiki.kittensgame.com/en/game-tabs/outpost/engineer)
+- [Events](https://wiki.kittensgame.com/en/general-information/events)
+- [Festival](https://wiki.kittensgame.com/en/general-information/events/festival)
+- [Iron Will](https://wiki.kittensgame.com/en/game-tabs/challenges/iron-will)
+- [Kitten Skills](https://wiki.kittensgame.com/en/general-information/resources/kittens#kitten-list)
+- [Metaphysics paragon effect and scaling](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
+- [Metaphysics price ratios](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
+- [Pacts](https://wiki.kittensgame.com/en/game-tabs/religion#pacts)
+- [Policies](https://wiki.kittensgame.com/en/game-tabs/science/policies)
+- [Pollution](https://wiki.kittensgame.com/en/general-information/game-mechanics/pollution)
+- [Reset](https://wiki.kittensgame.com/en/general-information/game-mechanics#reset)
+- [Resource Retrieval](https://wiki.kittensgame.com/en/game-tabs/time#resource-retrieval)
+- [Space Travel Speed](https://wiki.kittensgame.com/en/game-tabs/space)
+- [Trade Attitude and Embassy](https://wiki.kittensgame.com/en/game-tabs/trade)
