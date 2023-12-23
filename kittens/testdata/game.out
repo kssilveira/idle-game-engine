@@ -555,6 +555,55 @@
       "Formula": "Count = ((c(Refrigeration) * 0.75) + (c(Hydroponics) * 0.1))"
     },
     {
+      "Name": "ParagonEffectBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Malkuth",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Yesod",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Hod",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Netzach",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Tiferet",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Gevurah",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Chesed",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Binah",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Chokhmah",
+          "Factor": 0.05
+        },
+        {
+          "Name": "Keter",
+          "Factor": 0.05
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(Malkuth) * 0.05) + (c(Yesod) * 0.05) + (c(Hod) * 0.05) + (c(Netzach) * 0.05) + (c(Tiferet) * 0.05) + (c(Gevurah) * 0.05) + (c(Chesed) * 0.05) + (c(Binah) * 0.05) + (c(Chokhmah) * 0.05) + (c(Keter) * 0.05))"
+    },
+    {
       "Name": "ParagonCapBonus",
       "Type": "Resource",
       "IsHidden": true,
@@ -569,7 +618,12 @@
         }
       ],
       "StartCountFromZero": true,
-      "Formula": "Count = ((c(paragon) * 0.001) + (c(burned paragon) * 0.0005))"
+      "Bonus": [
+        {
+          "Name": "ParagonEffectBonus"
+        }
+      ],
+      "Formula": "Count = (((c(paragon) * 0.001) + (c(burned paragon) * 0.0005)) * (1 + c(ParagonEffectBonus)))"
     },
     {
       "Name": "OtherCapBonus",
@@ -682,7 +736,12 @@
         }
       ],
       "StartCountFromZero": true,
-      "Formula": "Count = ((c(paragon) * 0.01) + (c(burned paragon) * 0.01))"
+      "Bonus": [
+        {
+          "Name": "ParagonEffectBonus"
+        }
+      ],
+      "Formula": "Count = (((c(paragon) * 0.01) + (c(burned paragon) * 0.01)) * (1 + c(ParagonEffectBonus)))"
     },
     {
       "Name": "OtherProductionBonus",

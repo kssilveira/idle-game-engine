@@ -156,12 +156,36 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Hydroponics", Factor: 0.10,
 		}},
 	}, {
+		Name: "ParagonEffectBonus",
+		Producers: []data.Resource{{
+			Name: "Malkuth", Factor: 0.05,
+		}, {
+			Name: "Yesod", Factor: 0.05,
+		}, {
+			Name: "Hod", Factor: 0.05,
+		}, {
+			Name: "Netzach", Factor: 0.05,
+		}, {
+			Name: "Tiferet", Factor: 0.05,
+		}, {
+			Name: "Gevurah", Factor: 0.05,
+		}, {
+			Name: "Chesed", Factor: 0.05,
+		}, {
+			Name: "Binah", Factor: 0.05,
+		}, {
+			Name: "Chokhmah", Factor: 0.05,
+		}, {
+			Name: "Keter", Factor: 0.05,
+		}},
+	}, {
 		Name: "ParagonCapBonus",
 		Producers: []data.Resource{{
 			Name: "paragon", Factor: 0.001,
 		}, {
 			Name: "burned paragon", Factor: 0.0005,
 		}},
+		Bonus: []data.Resource{{Name: "ParagonEffectBonus"}},
 	}, {
 		Name: "OtherCapBonus",
 		Producers: []data.Resource{{
@@ -207,6 +231,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "burned paragon", Factor: 0.01,
 		}},
+		Bonus: []data.Resource{{Name: "ParagonEffectBonus"}},
 	}, {
 		Name: "OtherProductionBonus",
 		Producers: []data.Resource{{

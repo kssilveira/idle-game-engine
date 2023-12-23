@@ -41,8 +41,19 @@ digraph {
   "AI Bases" -> "AI Core" [color="green"];
   "Refrigeration" -> "CatnipCapBonus" [color="green"];
   "Hydroponics" -> "CatnipCapBonus" [color="green"];
+  "Malkuth" -> "ParagonEffectBonus" [color="green"];
+  "Yesod" -> "ParagonEffectBonus" [color="green"];
+  "Hod" -> "ParagonEffectBonus" [color="green"];
+  "Netzach" -> "ParagonEffectBonus" [color="green"];
+  "Tiferet" -> "ParagonEffectBonus" [color="green"];
+  "Gevurah" -> "ParagonEffectBonus" [color="green"];
+  "Chesed" -> "ParagonEffectBonus" [color="green"];
+  "Binah" -> "ParagonEffectBonus" [color="green"];
+  "Chokhmah" -> "ParagonEffectBonus" [color="green"];
+  "Keter" -> "ParagonEffectBonus" [color="green"];
   "paragon" -> "ParagonCapBonus" [color="green"];
   "burned paragon" -> "ParagonCapBonus" [color="green"];
+  "ParagonEffectBonus" -> "ParagonCapBonus" [color="green"];
   "Void Rift" -> "OtherCapBonus" [color="green"];
   "Event Horizon" -> "OtherCapBonus" [color="green"];
   "ParagonCapBonus" -> "GlobalCapBonus" [color="green"];
@@ -54,6 +65,7 @@ digraph {
   "Transcendence Level" -> "Black Obelisk" [color="green"];
   "paragon" -> "ParagonProductionBonus" [color="green"];
   "burned paragon" -> "ParagonProductionBonus" [color="green"];
+  "ParagonEffectBonus" -> "ParagonProductionBonus" [color="green"];
   "Active Magneto" -> "OtherProductionBonus" [color="green"];
   "Steamworks" -> "Active Magneto" [color="green"];
   "Active Reactor" -> "OtherProductionBonus" [color="green"];
@@ -1810,6 +1822,7 @@ digraph {
   "AcceleratorCapBonus" [shape="cylinder"];
   "MoonBaseCapBonus" [shape="cylinder"];
   "CatnipCapBonus" [shape="cylinder"];
+  "ParagonEffectBonus" [shape="cylinder"];
   "ParagonCapBonus" [shape="cylinder"];
   "OtherCapBonus" [shape="cylinder"];
   "GlobalCapBonus" [shape="cylinder"];

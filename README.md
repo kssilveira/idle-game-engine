@@ -89,8 +89,6 @@ Edges:
 
 Missing features:
 
-- [Events](https://wiki.kittensgame.com/en/general-information/events)
-- [Metaphysics paragon effect and scaling](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
 - [Metaphysics price ratios](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
 - [Reset](https://wiki.kittensgame.com/en/general-information/game-mechanics#reset)
 - [Space Travel Speed](https://wiki.kittensgame.com/en/game-tabs/space)
