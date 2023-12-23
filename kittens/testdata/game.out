@@ -4229,6 +4229,10 @@
         {
           "Name": "Sunspire",
           "Factor": 0.00025
+        },
+        {
+          "Name": "Sky Palace",
+          "Factor": 0.00005
         }
       ],
       "Bonus": [
@@ -4241,7 +4245,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(Sky Palace) * 0.0001 * (1 + (c(Unicorn Utopia) * 0.00015) + (c(Sunspire) * 0.0003) + (c(Black Radiance) * 0.03464 * c(sorrow)))) + (c(Unicorn Utopia) * 0.000125) + (c(Sunspire) * 0.00025)) * (1 + c(GlobalProductionBonus))) * seconds)"
+      "Formula": "Count += ((((c(Sky Palace) * 0.0001 * (1 + (c(Unicorn Utopia) * 0.00015) + (c(Sunspire) * 0.0003) + (c(Black Radiance) * 0.03464 * c(sorrow)))) + (c(Unicorn Utopia) * 0.000125) + (c(Sunspire) * 0.00025) + (c(Sky Palace) * 0.00005)) * (1 + c(GlobalProductionBonus))) * seconds)"
     },
     {
       "Name": "necrocorn",

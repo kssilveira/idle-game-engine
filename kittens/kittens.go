@@ -1634,6 +1634,8 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Unicorn Utopia", Factor: 0.000025 * 5,
 		}, {
 			Name: "Sunspire", Factor: 0.00005 * 5,
+		}, {
+			Name: "Sky Palace", Factor: 0.0001 / 2,
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
