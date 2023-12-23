@@ -1357,6 +1357,28 @@
           "Name": "Active Smelter",
           "Factor": -0.25,
           "ProductionOnGone": true
+        },
+        {
+          "Name": "Active Steamworks",
+          "Factor": -0.000025,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "wood cap",
+                  "Bonus": [
+                    {
+                      "Name": "Advanced Automation"
+                    }
+                  ]
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -1417,7 +1439,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "wood cap",
-      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25)) * ((1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+      "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25) + (c(Active Steamworks) * -0.000025 * (c(Workshop Automation) * (c(wood cap) * (1 + c(Advanced Automation)))))) * ((1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "science cap",
@@ -1972,6 +1994,28 @@
               "Name": "AstronomicalEventBonus"
             }
           ]
+        },
+        {
+          "Name": "Active Steamworks",
+          "Factor": -0.000025,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "mineral cap",
+                  "Bonus": [
+                    {
+                      "Name": "Advanced Automation"
+                    }
+                  ]
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -2006,7 +2050,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "mineral cap",
-      "Formula": "Count += ((((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5) + (0.0125 * (1 + c(AstronomicalEventBonus)))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+      "Formula": "Count += ((((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5) + (0.0125 * (1 + c(AstronomicalEventBonus))) + (c(Active Steamworks) * -0.000025 * (c(Workshop Automation) * (c(mineral cap) * (1 + c(Advanced Automation)))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "iron cap",
@@ -2147,6 +2191,34 @@
           ],
           "BonusStartsFromZero": true,
           "ProductionOnGone": true
+        },
+        {
+          "Name": "Active Steamworks",
+          "Factor": -0.000025,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "Pneumatic Press",
+                  "Bonus": [
+                    {
+                      "Name": "iron cap",
+                      "Bonus": [
+                        {
+                          "Name": "Advanced Automation"
+                        }
+                      ]
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
         }
       ],
       "Bonus": [
@@ -2181,7 +2253,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "iron cap",
-      "Formula": "Count += ((((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants)) + (c(Active Steamworks) * -0.000025 * (c(Workshop Automation) * (c(Pneumatic Press) * (c(iron cap) * (1 + c(Advanced Automation))))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "coal cap",
@@ -6786,13 +6858,69 @@
       "Name": "beam",
       "Type": "Resource",
       "Cap": -1,
-      "ProducerAction": "@beam"
+      "Producers": [
+        {
+          "Name": "Active Steamworks",
+          "Factor": 0.000007142857142857143,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "wood cap",
+                  "Bonus": [
+                    {
+                      "Name": "Advanced Automation"
+                    },
+                    {
+                      "Name": "CraftRatio"
+                    }
+                  ]
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
+        }
+      ],
+      "ProducerAction": "@beam",
+      "Formula": "Count += ((c(Active Steamworks) * 0.000007 * (c(Workshop Automation) * (c(wood cap) * (1 + c(Advanced Automation) + c(CraftRatio))))) * seconds)"
     },
     {
       "Name": "slab",
       "Type": "Resource",
       "Cap": -1,
-      "ProducerAction": "@slab"
+      "Producers": [
+        {
+          "Name": "Active Steamworks",
+          "Factor": 0.000005,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "mineral cap",
+                  "Bonus": [
+                    {
+                      "Name": "Advanced Automation"
+                    },
+                    {
+                      "Name": "CraftRatio"
+                    }
+                  ]
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
+        }
+      ],
+      "ProducerAction": "@slab",
+      "Formula": "Count += ((c(Active Steamworks) * 0.000005 * (c(Workshop Automation) * (c(mineral cap) * (1 + c(Advanced Automation) + c(CraftRatio))))) * seconds)"
     },
     {
       "Name": "concrete",
@@ -6804,7 +6932,41 @@
       "Name": "plate",
       "Type": "Resource",
       "Cap": -1,
-      "ProducerAction": "@plate"
+      "Producers": [
+        {
+          "Name": "Active Steamworks",
+          "Factor": 0.00001,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "Pneumatic Press",
+                  "Bonus": [
+                    {
+                      "Name": "iron cap",
+                      "Bonus": [
+                        {
+                          "Name": "Advanced Automation"
+                        },
+                        {
+                          "Name": "CraftRatio"
+                        }
+                      ]
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
+        }
+      ],
+      "ProducerAction": "@plate",
+      "Formula": "Count += ((c(Active Steamworks) * 0.00001 * (c(Workshop Automation) * (c(Pneumatic Press) * (c(iron cap) * (1 + c(Advanced Automation) + c(CraftRatio)))))) * seconds)"
     },
     {
       "Name": "steel",
@@ -16310,7 +16472,34 @@
           ]
         }
       ],
-      "IsHidden": true
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Active Steamworks",
+          "Factor": 0.000007142857142857143,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "wood cap",
+                  "Bonus": [
+                    {
+                      "Name": "Advanced Automation"
+                    },
+                    {
+                      "Name": "CraftRatio"
+                    }
+                  ]
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
+        }
+      ]
     },
     {
       "Name": "@slab",
@@ -16333,7 +16522,34 @@
           ]
         }
       ],
-      "IsHidden": true
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Active Steamworks",
+          "Factor": 0.000005,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "mineral cap",
+                  "Bonus": [
+                    {
+                      "Name": "Advanced Automation"
+                    },
+                    {
+                      "Name": "CraftRatio"
+                    }
+                  ]
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
+        }
+      ]
     },
     {
       "Name": "@concrete",
@@ -16383,7 +16599,40 @@
           ]
         }
       ],
-      "IsHidden": true
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Active Steamworks",
+          "Factor": 0.00001,
+          "Bonus": [
+            {
+              "Name": "Workshop Automation",
+              "Bonus": [
+                {
+                  "Name": "Pneumatic Press",
+                  "Bonus": [
+                    {
+                      "Name": "iron cap",
+                      "Bonus": [
+                        {
+                          "Name": "Advanced Automation"
+                        },
+                        {
+                          "Name": "CraftRatio"
+                        }
+                      ]
+                    }
+                  ],
+                  "BonusStartsFromZero": true
+                }
+              ],
+              "BonusStartsFromZero": true
+            }
+          ],
+          "BonusStartsFromZero": true,
+          "ProductionOnGone": true
+        }
+      ]
     },
     {
       "Name": "@steel",

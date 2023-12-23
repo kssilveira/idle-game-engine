@@ -164,6 +164,10 @@ digraph {
   "Titanium Axe" -> "woodcutter" [color="green"];
   "Alloy Axe" -> "woodcutter" [color="green"];
   "wood" -> "Active Smelter" [color="red"];
+  "wood" -> "Active Steamworks" [color="red"];
+  "Workshop Automation" -> "Active Steamworks" [color="red"];
+  "wood cap" -> "Workshop Automation" [color="green"];
+  "Advanced Automation" -> "wood cap" [color="green"];
   "wood cap" -> "wood" [color="limegreen"];
   "Lumber Mill" -> "wood" [color="green"];
   "Reinforced Saw" -> "Lumber Mill" [color="green"];
@@ -235,6 +239,9 @@ digraph {
   "Quarry" -> "miner" [color="green"];
   "mineral" -> "Active Smelter" [color="red"];
   "mineral" -> "Active Calciner" [color="red"];
+  "mineral" -> "Active Steamworks" [color="red"];
+  "mineral cap" -> "Workshop Automation" [color="green"];
+  "Advanced Automation" -> "mineral cap" [color="green"];
   "mineral cap" -> "mineral" [color="limegreen"];
   "GlobalProductionBonus" -> "mineral" [color="green"];
   "Charon" -> "mineral" [color="green"];
@@ -254,6 +261,10 @@ digraph {
   "Fluoridized Reactors" -> "Active Calciner" [color="green"];
   "iron" -> "Active Calciner" [color="red"];
   "Steel Plants" -> "Active Calciner" [color="red"];
+  "iron" -> "Active Steamworks" [color="red"];
+  "Pneumatic Press" -> "Workshop Automation" [color="green"];
+  "iron cap" -> "Pneumatic Press" [color="green"];
+  "Advanced Automation" -> "iron cap" [color="green"];
   "iron cap" -> "iron" [color="limegreen"];
   "GlobalProductionBonus" -> "iron" [color="green"];
   "Umbra" -> "iron" [color="green"];
@@ -535,6 +546,13 @@ digraph {
   "Idle Brewery" -> "Active Brewery" [color="red"];
   "Lunar Outpost" -> "Idle Lunar Outpost" [color="green"];
   "Idle Lunar Outpost" -> "Active Lunar Outpost" [color="red"];
+  "Active Steamworks" -> "beam" [color="green"];
+  "Workshop Automation" -> "Active Steamworks" [color="green"];
+  "CraftRatio" -> "wood cap" [color="green"];
+  "Active Steamworks" -> "slab" [color="green"];
+  "CraftRatio" -> "mineral cap" [color="green"];
+  "Active Steamworks" -> "plate" [color="green"];
+  "CraftRatio" -> "iron cap" [color="green"];
   "Active Calciner" -> "steel" [color="green"];
   "Steel Plants" -> "Active Calciner" [color="green"];
   "Oxidation" -> "Steel Plants" [color="green"];

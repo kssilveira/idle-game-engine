@@ -438,6 +438,19 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Active Smelter", Factor: -0.05 * 5, ProductionOnGone: true,
+		}, {
+			Name: "Active Steamworks", Factor: -0.02 / (2 * 100 * 4), ProductionOnGone: true,
+			Bonus: []data.Resource{{
+				Name: "Workshop Automation",
+				Bonus: []data.Resource{{
+					Name: "wood cap",
+					Bonus: []data.Resource{{
+						Name: "Advanced Automation",
+					}},
+				}},
+				BonusStartsFromZero: true,
+			}},
+			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{
@@ -713,6 +726,19 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Factor: 0.001 * 25. / 2.,
 			Bonus:  []data.Resource{{Name: "AstronomicalEventBonus"}},
+		}, {
+			Name: "Active Steamworks", Factor: -0.02 / (2 * 100 * 4), ProductionOnGone: true,
+			Bonus: []data.Resource{{
+				Name: "Workshop Automation",
+				Bonus: []data.Resource{{
+					Name: "mineral cap",
+					Bonus: []data.Resource{{
+						Name: "Advanced Automation",
+					}},
+				}},
+				BonusStartsFromZero: true,
+			}},
+			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -787,6 +813,23 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10, ProductionOnGone: true,
 			Bonus:               []data.Resource{{Name: "Steel Plants"}},
+			BonusStartsFromZero: true,
+		}, {
+			Name: "Active Steamworks", Factor: -0.02 / (2 * 100 * 4), ProductionOnGone: true,
+			Bonus: []data.Resource{{
+				Name: "Workshop Automation",
+				Bonus: []data.Resource{{
+					Name: "Pneumatic Press",
+					Bonus: []data.Resource{{
+						Name: "iron cap",
+						Bonus: []data.Resource{{
+							Name: "Advanced Automation",
+						}},
+					}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
 			BonusStartsFromZero: true,
 		}},
 		Bonus: []data.Resource{{
@@ -4498,9 +4541,41 @@ func NewGame(now game.Now) *game.Game {
 	addCrafts(g, []data.Action{{
 		Name: "beam", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "wood", Count: 175}},
+		Producers: []data.Resource{{
+			Name: "Active Steamworks", Factor: 1. / (2 * 100 * 4 * 175), ProductionOnGone: true,
+			Bonus: []data.Resource{{
+				Name: "Workshop Automation",
+				Bonus: []data.Resource{{
+					Name: "wood cap",
+					Bonus: []data.Resource{{
+						Name: "Advanced Automation",
+					}, {
+						Name: "CraftRatio",
+					}},
+				}},
+				BonusStartsFromZero: true,
+			}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "slab", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "mineral", Count: 250}},
+		Producers: []data.Resource{{
+			Name: "Active Steamworks", Factor: 1. / (2 * 100 * 4 * 250), ProductionOnGone: true,
+			Bonus: []data.Resource{{
+				Name: "Workshop Automation",
+				Bonus: []data.Resource{{
+					Name: "mineral cap",
+					Bonus: []data.Resource{{
+						Name: "Advanced Automation",
+					}, {
+						Name: "CraftRatio",
+					}},
+				}},
+				BonusStartsFromZero: true,
+			}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "concrete", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
@@ -4511,6 +4586,26 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "plate", UnlockedBy: "Construction",
 		Costs: []data.Resource{{Name: "iron", Count: 125}},
+		Producers: []data.Resource{{
+			Name: "Active Steamworks", Factor: 1. / (2 * 100 * 4 * 125), ProductionOnGone: true,
+			Bonus: []data.Resource{{
+				Name: "Workshop Automation",
+				Bonus: []data.Resource{{
+					Name: "Pneumatic Press",
+					Bonus: []data.Resource{{
+						Name: "iron cap",
+						Bonus: []data.Resource{{
+							Name: "Advanced Automation",
+						}, {
+							Name: "CraftRatio",
+						}},
+					}},
+					BonusStartsFromZero: true,
+				}},
+				BonusStartsFromZero: true,
+			}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "steel", UnlockedBy: "Steel",
 		Costs: []data.Resource{{
