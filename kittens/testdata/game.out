@@ -814,6 +814,38 @@
       "Formula": "Count = ((c(Helios) * -0.1 * c(Numerology)) + (c(Termogus) * 0.2 * c(Numerology)))"
     },
     {
+      "Name": "AstronomicalEventBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Observatory",
+          "Factor": 0.002
+        },
+        {
+          "Name": "Celestial Mechanics",
+          "Factor": 0.2
+        },
+        {
+          "Name": "Chronomancy",
+          "Factor": 0.1
+        },
+        {
+          "Name": "Astromancy"
+        },
+        {
+          "Name": "Temporal Accelerator",
+          "Factor": 0.0125
+        },
+        {
+          "Name": "Blazar",
+          "Factor": 0.025
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(Observatory) * 0.002) + (c(Celestial Mechanics) * 0.2) + (c(Chronomancy) * 0.1) + c(Astromancy) + (c(Temporal Accelerator) * 0.0125) + (c(Blazar) * 0.025))"
+    },
+    {
       "Name": "HutCostExponentBase",
       "Type": "Resource",
       "IsHidden": true,
@@ -1582,6 +1614,14 @@
               "Name": "happiness"
             }
           ]
+        },
+        {
+          "Factor": 0.03125,
+          "Bonus": [
+            {
+              "Name": "AstronomicalEventBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -1687,7 +1727,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "science cap",
-      "Formula": "Count += (((c(scholar) * 0.175 * (1 + c(happiness))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5 * (1 + (c(Cath) * 0.5 * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Piscine) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+      "Formula": "Count += ((((c(scholar) * 0.175 * (1 + c(happiness))) + (0.03125 * (1 + c(AstronomicalEventBonus)))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5 * (1 + (c(Cath) * 0.5 * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Piscine) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "catpower cap",
@@ -3880,6 +3920,15 @@
               "BonusStartsFromZero": true
             }
           ]
+        },
+        {
+          "Name": "Astronomy",
+          "Factor": 0.00125,
+          "Bonus": [
+            {
+              "Name": "AstronomicalEventBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -3921,7 +3970,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005 * (1 + (c(Cath) * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology)))) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus) + (c(Yarn) * -0.5 * c(Numerology)) + (c(Piscine) * 0.5 * c(Numerology)))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus) + (c(Cath) * -0.5 * c(Numerology)) + (c(Kairo) * 4 * c(Numerology))))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Kairo) * 4 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+      "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005 * (1 + (c(Cath) * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology)))) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus) + (c(Yarn) * -0.5 * c(Numerology)) + (c(Piscine) * 0.5 * c(Numerology)))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus) + (c(Cath) * -0.5 * c(Numerology)) + (c(Kairo) * 4 * c(Numerology)))) + (c(Astronomy) * 0.00125 * (1 + c(AstronomicalEventBonus)))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Kairo) * 4 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "festival day",

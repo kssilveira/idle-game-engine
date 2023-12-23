@@ -257,6 +257,21 @@ func NewGame(now game.Now) *game.Game {
 			Bonus:               []data.Resource{{Name: "Numerology"}},
 			BonusStartsFromZero: true,
 		}},
+	}, {
+		Name: "AstronomicalEventBonus",
+		Producers: []data.Resource{{
+			Name: "Observatory", Factor: 0.002,
+		}, {
+			Name: "Celestial Mechanics", Factor: 0.20,
+		}, {
+			Name: "Chronomancy", Factor: 0.10,
+		}, {
+			Name: "Astromancy",
+		}, {
+			Name: "Temporal Accelerator", Factor: 0.0125,
+		}, {
+			Name: "Blazar", Factor: 0.025,
+		}},
 	}})
 
 	g.AddResources([]data.Resource{{
@@ -540,6 +555,9 @@ func NewGame(now game.Now) *game.Game {
 		Producers: []data.Resource{{
 			Name: "scholar", Factor: 0.035 * 5,
 			Bonus: []data.Resource{{Name: "happiness"}},
+		}, {
+			Factor: 0.0025 * 25. / 2.,
+			Bonus:  []data.Resource{{Name: "AstronomicalEventBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{
@@ -1482,6 +1500,9 @@ func NewGame(now game.Now) *game.Game {
 				Bonus:               []data.Resource{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
+		}, {
+			Name: "Astronomy", Factor: 0.0025 * 1 / 2.,
+			Bonus: []data.Resource{{Name: "AstronomicalEventBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "Hubble Space Telescope", Factor: 0.30}},

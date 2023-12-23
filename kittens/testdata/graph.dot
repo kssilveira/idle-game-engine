@@ -69,6 +69,12 @@ digraph {
   "Numerology" -> "Helios" [color="red"];
   "Termogus" -> "CryostationStorageBonus" [color="green"];
   "Numerology" -> "Termogus" [color="green"];
+  "Observatory" -> "AstronomicalEventBonus" [color="green"];
+  "Celestial Mechanics" -> "AstronomicalEventBonus" [color="green"];
+  "Chronomancy" -> "AstronomicalEventBonus" [color="green"];
+  "Astromancy" -> "AstronomicalEventBonus" [color="green"];
+  "Temporal Accelerator" -> "AstronomicalEventBonus" [color="green"];
+  "Blazar" -> "AstronomicalEventBonus" [color="green"];
   "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
   "Concrete Huts" -> "HutCostExponentBase" [color="red"];
   "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
@@ -473,6 +479,8 @@ digraph {
   "Numerology" -> "Cath" [color="red"];
   "Kairo" -> "Space Beacon" [color="green"];
   "Numerology" -> "Kairo" [color="green"];
+  "Astronomy" -> "starchart" [color="green"];
+  "AstronomicalEventBonus" -> "Astronomy" [color="green"];
   "Hubble Space Telescope" -> "starchart" [color="green"];
   "GlobalProductionBonus" -> "starchart" [color="green"];
   "Kairo" -> "starchart" [color="green"];
@@ -1787,6 +1795,7 @@ digraph {
   "GlobalProductionBonus" [shape="cylinder"];
   "SpaceProductionBonus" [shape="cylinder"];
   "CryostationStorageBonus" [shape="cylinder"];
+  "AstronomicalEventBonus" [shape="cylinder"];
   "HutCostExponentBase" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];
@@ -2285,6 +2294,6 @@ digraph {
 # titanium: 71
 # blueprint: 46
 # paragon: 40
+# starchart: 39
 # alloy: 38
-# starchart: 38
 # time crystal: 34

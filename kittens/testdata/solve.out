@@ -1,4 +1,5 @@
 ###
+[Resource] science 0.03/250 0.03/s 2h13m19s to cap
 [Resource] paragon 0.000001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 last action: 
@@ -7,6 +8,7 @@ last action:
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
+[Resource] science 0.06/250 0.03/s 2h13m17s to cap
 [Resource] paragon 0.000003 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -16,6 +18,7 @@ last action: Gather catnip
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
+[Resource] science 0.09/250 0.03/s 2h13m16s to cap
 [Resource] paragon 0.000004 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -25,6 +28,7 @@ last action: Gather catnip
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
+[Resource] science 0.13/250 0.03/s 2h13m15s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -34,6 +38,7 @@ last action: Gather catnip
 [Calendar] year 1 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.02 % 4 == 0)
 [Calendar] day_of_year 3 (1 + 2 % 400)
+[Resource] science 0.16/250 0.03/s 2h13m14s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -43,6 +48,7 @@ last action: Gather catnip
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
+[Resource] science 0.19/250 0.03/s 2h13m13s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -52,6 +58,7 @@ last action: Gather catnip
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.03 % 4 == 0)
 [Calendar] day_of_year 4 (1 + 3 % 400)
+[Resource] science 0.22/250 0.03/s 2h13m12s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -61,6 +68,7 @@ last action: Gather catnip
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
+[Resource] science 0.25/250 0.03/s 2h13m11s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -70,6 +78,7 @@ last action: Gather catnip
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.04 % 4 == 0)
 [Calendar] day_of_year 5 (1 + 4 % 400)
+[Resource] science 0.28/250 0.03/s 2h13m10s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -79,6 +88,7 @@ last action: Gather catnip
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
+[Resource] science 0.31/250 0.03/s 2h13m9s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -88,6 +98,7 @@ last action: Gather catnip
 [Calendar] year 1.01 (1 + 0.01)
 [Calendar] Spring 1 (1 if 0.05 % 4 == 0)
 [Calendar] day_of_year 6 (1 + 5 % 400)
+[Resource] science 0.34/250 0.03/s 2h13m8s to cap
 [Resource] paragon 0.00001 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -98,6 +109,7 @@ last action: Gather catnip
 [Calendar] Spring 1 (1 if 0.06 % 4 == 0)
 [Calendar] day_of_year 7 (1 + 6 % 400)
 [Resource] catnip 90.94/5000 0.94/s 1h27m16s to cap
+[Resource] science 0.38/250 0.03/s 2h13m7s to cap
 [Resource] paragon 0.00002 0.000001/s
 X: [Building] Refine catnip -(catnip 90.94/100 9s) +(wood 1)
 X: [Building] Catnip Field (1) -(catnip 11.2) +(Catnip Field 1)
@@ -110,6 +122,7 @@ last action: Catnip Field
 [Calendar] Autumn 1 (1 if 10.91 % 4 == 2)
 [Calendar] day_of_year 292 (1 + 1091 % 400)
 [Resource] catnip 5000/5000 34.38/s
+[Resource] science 68.19/250 0.03/s 1h36m57s to cap
 [Resource] paragon 0.003 0.000001/s
 X: [Building] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Building] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -122,6 +135,7 @@ last action: max Catnip Field
 [Calendar] Autumn 1 (1 if 10.91 % 4 == 2)
 [Calendar] day_of_year 292 (1 + 1091 % 400)
 [Resource] catnip 4934.38/5000 34.38/s 1s to cap
+[Resource] science 68.22/250 0.03/s 1h36m56s to cap
 [Resource] paragon 0.003 0.000001/s
 X: [Building] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Building] Catnip Field (55) -(catnip 4934.38/5093.21* 4s) +(Catnip Field 1)
@@ -134,6 +148,7 @@ last action: skip Refine catnip
 [Calendar] Autumn 1 (1 if 10.92 % 4 == 2)
 [Calendar] day_of_year 293 (1 + 1092 % 400)
 [Resource] catnip 4868.75/5000 34.38/s 3s to cap
+[Resource] science 68.25/250 0.03/s 1h36m55s to cap
 [Resource] paragon 0.003 0.000001/s
 X: [Building] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Building] Catnip Field (55) -(catnip 4868.75/5093.21* 6s) +(Catnip Field 1)
@@ -146,6 +161,7 @@ last action: skip Refine catnip
 [Calendar] Autumn 1 (1 if 10.92 % 4 == 2)
 [Calendar] day_of_year 293 (1 + 1092 % 400)
 [Resource] catnip 4803.13/5000 34.38/s 5s to cap
+[Resource] science 68.28/250 0.03/s 1h36m54s to cap
 [Resource] paragon 0.003 0.000001/s
 X: [Building] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Building] Catnip Field (55) -(catnip 4803.13/5093.21* 8s) +(Catnip Field 1)
@@ -158,6 +174,7 @@ last action: skip Refine catnip
 [Calendar] Autumn 1 (1 if 10.93 % 4 == 2)
 [Calendar] day_of_year 294 (1 + 1093 % 400)
 [Resource] catnip 4737.5/5000 34.38/s 7s to cap
+[Resource] science 68.31/250 0.03/s 1h36m53s to cap
 [Resource] paragon 0.003 0.000001/s
 X: [Building] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Building] Catnip Field (55) -(catnip 4737.5/5093.21* 10s) +(Catnip Field 1)
@@ -170,6 +187,7 @@ last action: skip Refine catnip
 [Calendar] Autumn 1 (1 if 10.93 % 4 == 2)
 [Calendar] day_of_year 294 (1 + 1093 % 400)
 [Resource] catnip 4671.88/5000 34.38/s 9s to cap
+[Resource] science 68.34/250 0.03/s 1h36m52s to cap
 [Resource] paragon 0.003 0.000001/s
 X: [Building] Refine catnip -(catnip 100) +(wood 1)
 X: [*] [Building] Catnip Field (55) -(catnip 4671.88/5093.21* 12s) +(Catnip Field 1)
@@ -182,6 +200,7 @@ last action: skip Refine catnip
 [Calendar] Autumn 1 (1 if 10.94 % 4 == 2)
 [Calendar] day_of_year 295 (1 + 1094 % 400)
 [Resource] catnip 4706.26/5000 34.38/s 8s to cap
+[Resource] science 68.38/250 0.03/s 1h36m51s to cap
 [Resource] kitten 0.05/2 0.05/s 39s to cap
 [Resource] paragon 0.003 0.000001/s
 X: [Building] Refine catnip -(catnip 100) +(wood 1)
@@ -197,6 +216,7 @@ last action: Hut
 [Calendar] day_of_year 305 (1 + 1104 % 400)
 [Resource] catnip 4873.89/5000 4.34/s 29s to cap
 [Resource] wood 0.1/200 0.1/s 34m16s to cap
+[Resource] science 69/250 0.03/s 1h36m31s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] paragon 0.003 0.000001/s
 [Job] happiness 0.08 (0.1 + -0.02)
@@ -212,6 +232,7 @@ last action: skip woodcutter
 [Calendar] day_of_year 34 (1 + 1233 % 400)
 [Resource] catnip 5000/5000 43.06/s
 [Resource] wood 0.17/200 0.1/s 34m54s to cap
+[Resource] science 77.07/500 0.03/s 3h25m3s to cap
 [Resource] kitten 1/1 0.05/s
 [Resource] paragon 0.003 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
@@ -220,7 +241,7 @@ X: [Building] Hut (1) -(wood 0.17/12.5 2m9s) +(Hut 1, kitten cap 2)
 X: [Building] Library (1) -(wood 0.17/28.75 4m59s) +(Library 1)
 X: [Job] woodcutter (1) -(kitten 1) +(woodcutter 1)
 X: [Job] scholar -(kitten 1) +(scholar 1)
-X: [Tech] Calendar -(science 0/30) +(Calendar 1)
+X: [Tech] Calendar -(science 30) +(Calendar 1)
 last action: skip Library
 ###
 [Calendar] Charon 1 (1 if 0.62 % 10 == 0)
@@ -229,7 +250,7 @@ last action: skip Library
 [Calendar] day_of_year 34 (1 + 1233 % 400)
 [Resource] catnip 5000/5000 43.06/s
 [Resource] wood 0.27/200 0.1/s 34m53s to cap
-[Resource] science 0.2/500 0.2/s 40m49s to cap
+[Resource] science 77.31/500 0.24/s 29m32s to cap
 [Resource] paragon 0.003 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [*] [Building] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -237,7 +258,7 @@ X: [Building] Hut (1) -(wood 0.27/12.5 2m8s) +(Hut 1, kitten cap 2)
 X: [Building] Library (1) -(wood 0.27/28.75 4m58s) +(Library 1)
 X: [*] [Job] woodcutter (1) -(kitten 0/1* 20s) +(woodcutter 1)
 X: [*] [Job] scholar (1) -(kitten 0/1* 20s) +(scholar 1)
-X: [Tech] Calendar -(science 0.2/30 2m26s) +(Calendar 1)
+X: [Tech] Calendar -(science 30) +(Calendar 1)
 last action: skip scholar
 ###
 [Calendar] Cath 1 (1 if 4.2 % 10 == 4)
@@ -246,7 +267,7 @@ last action: skip scholar
 [Calendar] day_of_year 2 (1 + 8401 % 400)
 [Resource] catnip 5000/5000 43.07/s
 [Resource] wood 200/200 0.1/s
-[Resource] science 4000.08/4000.08 0.46/s
+[Resource] science 4000.08/4000.08 0.54/s
 [Resource] paragon 0.02 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [*] [Building] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -263,7 +284,7 @@ last action: max Library
 [Calendar] day_of_year 3 (1 + 8402 % 400)
 [Resource] catnip 5000/5000 43.07/s
 [Resource] wood 200/200 0.1/s
-[Resource] science 3970.54/4000.08 0.46/s 1m3s to cap
+[Resource] science 3970.62/4000.08 0.54/s 54s to cap
 [Resource] paragon 0.02 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [*] [Building] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -280,7 +301,7 @@ last action: skip Calendar
 [Calendar] day_of_year 3 (1 + 8402 % 400)
 [Resource] catnip 5000/5000 43.07/s
 [Resource] wood 200/200 0.1/s
-[Resource] science 3871.01/4000.08 0.46/s 4m38s to cap
+[Resource] science 3871.16/4000.08 0.54/s 3m57s to cap
 [Resource] paragon 0.02 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [*] [Building] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -300,7 +321,7 @@ last action: skip Agriculture
 [Calendar] day_of_year 4 (1 + 8403 % 400)
 [Resource] catnip 5000/5000 43.07/s
 [Resource] wood 187.6/200 0.1/s 2m9s to cap
-[Resource] science 3871.47/4000.08 0.46/s 4m37s to cap
+[Resource] science 3871.7/4000.08 0.54/s 3m56s to cap
 [Resource] kitten 0.05/2 0.05/s 39s to cap
 [Resource] paragon 0.02 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
@@ -321,7 +342,7 @@ last action: skip Hut
 [Calendar] day_of_year 14 (1 + 8413 % 400)
 [Resource] catnip 5000/5000 44.02/s
 [Resource] wood 189.5/200 0.09/s 1m52s to cap
-[Resource] science 3880.74/4000.08 0.46/s 4m22s to cap
+[Resource] science 3882.54/4000.08 0.53/s 3m40s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] paragon 0.02 0.000001/s
 [Job] happiness 0.04 (0.1 + -0.06)
@@ -342,7 +363,7 @@ last action: skip farmer
 [Calendar] day_of_year 24 (1 + 8423 % 400)
 [Resource] catnip 5000/5000 44.77/s
 [Resource] wood 191.37/200 0.09/s 1m33s to cap
-[Resource] science 3889.83/4000.08 0.45/s 4m7s to cap
+[Resource] science 3893.19/4000.08 0.52/s 3m23s to cap
 [Resource] paragon 0.02 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
 X: [*] [Building] Catnip Field (55) -(catnip 5000/5093.21* 2s) +(Catnip Field 1)
@@ -362,7 +383,7 @@ last action: skip farmer
 [Calendar] day_of_year 66 (1 + 25265 % 400)
 [Resource] catnip 35001.89/35001.89 44.79/s
 [Resource] wood 1400.08/1400.08 0.09/s
-[Resource] science 4000.24/4000.24 0.45/s
+[Resource] science 4000.24/4000.24 0.52/s
 [Resource] paragon 0.06 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
 X: [Building] Catnip Field (55) -(catnip 5093.21) +(Catnip Field 1)
@@ -382,7 +403,7 @@ last action: max Barn
 [Calendar] day_of_year 217 (1 + 32616 % 400)
 [Resource] catnip 35002.45/35002.45 38.86/s
 [Resource] wood 1400.1/1400.1 0.09/s
-[Resource] science 4000.31/4000.31 0.45/s
+[Resource] science 4000.31/4000.31 0.52/s
 [Resource] paragon 0.08 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
 X: [*] [Building] Catnip Field (73) -(catnip 35002.45/39166.58* 1m47s) +(Catnip Field 1)
@@ -402,7 +423,7 @@ last action: max Catnip Field
 [Calendar] day_of_year 53 (1 + 77652 % 400)
 [Resource] catnip 35005.82/35005.82 61.76/s
 [Resource] wood 1400.23/1400.23 0.09/s
-[Resource] science 7501.41/7501.41 0.7/s
+[Resource] science 7501.41/7501.41 0.82/s
 [Resource] paragon 0.19 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
 X: [*] [Building] Catnip Field (73) -(catnip 35005.82/39166.58* 1m7s) +(Catnip Field 1)
@@ -422,7 +443,7 @@ last action: max Library
 [Calendar] day_of_year 53 (1 + 77652 % 400)
 [Resource] catnip 35005.82/35005.82 61.76/s
 [Resource] wood 1400.23/1400.23 0.09/s
-[Resource] science 7202.1/7501.41 0.7/s 7m9s to cap
+[Resource] science 7202.23/7501.41 0.82/s 6m5s to cap
 [Resource] paragon 0.19 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
 X: [*] [Building] Catnip Field (73) -(catnip 35005.82/39166.58* 1m7s) +(Catnip Field 1)
@@ -447,7 +468,7 @@ last action: skip Archery
 [Calendar] day_of_year 54 (1 + 77653 % 400)
 [Resource] catnip 35005.82/35005.82 61.76/s
 [Resource] wood 1369.07/1400.23 0.09/s 5m38s to cap
-[Resource] science 7202.8/7501.41 0.7/s 7m8s to cap
+[Resource] science 7203.05/7501.41 0.82/s 6m4s to cap
 [Resource] kitten 0.05/2 0.05/s 39s to cap
 [Resource] paragon 0.19 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -473,7 +494,7 @@ last action: skip Hut
 [Calendar] day_of_year 64 (1 + 77663 % 400)
 [Resource] catnip 35005.82/35005.82 57.3/s
 [Resource] wood 1370.91/1400.23 0.09/s 5m25s to cap
-[Resource] science 7216.74/7501.41 0.68/s 6m56s to cap
+[Resource] science 7219.43/7501.41 0.81/s 5m49s to cap
 [Resource] catpower 0.3/325.04 0.3/s 18m0s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] paragon 0.19 0.000001/s
@@ -499,7 +520,7 @@ last action: skip hunter
 [Calendar] day_of_year 74 (1 + 77673 % 400)
 [Resource] catnip 35005.83/35005.83 57.75/s
 [Resource] wood 1372.71/1400.23 0.09/s 5m11s to cap
-[Resource] science 7230.4/7501.41 0.67/s 6m44s to cap
+[Resource] science 7235.53/7501.41 0.79/s 5m35s to cap
 [Resource] catpower 6.31/325.04 0.29/s 18m2s to cap
 [Resource] paragon 0.19 0.000001/s
 [Job] happiness -0.02 (0.1 + -0.12)
@@ -525,7 +546,7 @@ last action: skip farmer
 [Calendar] day_of_year 74 (1 + 77673 % 400)
 [Resource] catnip 35005.83/35005.83 57.75/s
 [Resource] wood 1372.8/1400.23 0.09/s 5m10s to cap
-[Resource] science 6731.07/7501.41 0.67/s 19m9s to cap
+[Resource] science 6736.32/7501.41 0.79/s 16m5s to cap
 [Resource] catpower 6.6/325.04 0.29/s 18m1s to cap
 [Resource] paragon 0.19 0.000001/s
 [Job] happiness -0.02 (0.1 + -0.12)
@@ -555,7 +576,7 @@ last action: skip Animal Husbandry
 [Calendar] day_of_year 327 (1 + 135926 % 400)
 [Resource] catnip 35010.19/35010.19 5.21/s
 [Resource] wood 1400.41/1400.41 0.09/s
-[Resource] science 7502.46/7502.46 0.67/s
+[Resource] science 7502.46/7502.46 0.79/s
 [Resource] catpower 325.08/325.08 0.29/s
 [Resource] paragon 0.34 0.000001/s
 [Job] happiness -0.02 (0.1 + -0.12)
@@ -585,7 +606,7 @@ last action: max Pasture
 [Calendar] day_of_year 328 (1 + 135927 % 400)
 [Resource] catnip 35010.19/35010.19 9.73/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.46/7502.46 0.88/s
+[Resource] science 7502.46/7502.46 1/s
 [Resource] catpower 225.37/325.08 0.39/s 4m18s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -617,7 +638,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 328 (1 + 135927 % 400)
 [Resource] catnip 35010.19/35010.19 9.73/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.46/7502.46 0.88/s
+[Resource] science 7502.46/7502.46 1/s
 [Resource] catpower 125.76/325.08 0.39/s 8m37s to cap
 [-] [Resource] fur 78.4 -0.3/s 4m20s to empty
 [-] [Resource] ivory 21.14 -0.21/s 1m40s to empty
@@ -649,7 +670,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 329 (1 + 135928 % 400)
 [Resource] catnip 35010.19/35010.19 9.73/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.46/7502.46 0.88/s
+[Resource] science 7502.46/7502.46 1/s
 [Resource] catpower 26.14/325.08 0.39/s 12m55s to cap
 [-] [Resource] fur 117.6 -0.3/s 6m30s to empty
 [-] [Resource] ivory 31.71 -0.21/s 2m30s to empty
@@ -681,7 +702,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 25 (1 + 136024 % 400)
 [Resource] catnip 35010.2/35010.2 66.95/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.47/7502.47 0.88/s
+[Resource] science 7502.47/7502.47 1/s
 [Resource] catpower 0.48/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 99 -0.3/s 5m28s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -713,7 +734,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 155 (1 + 136154 % 400)
 [Resource] catnip 35010.21/35010.21 44.06/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.47/7502.47 0.88/s
+[Resource] science 7502.47/7502.47 1/s
 [Resource] catpower 0.63/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 60.23 -0.3/s 3m20s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -745,7 +766,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 285 (1 + 136284 % 400)
 [Resource] catnip 35010.22/35010.22 44.06/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.47/7502.47 0.88/s
+[Resource] science 7502.47/7502.47 1/s
 [Resource] catpower 0.36/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -777,7 +798,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 15 (1 + 136414 % 400)
 [Resource] catnip 35010.23/35010.23 66.96/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.47/7502.47 0.88/s
+[Resource] science 7502.47/7502.47 1/s
 [Resource] catpower 0.48/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -809,7 +830,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 145 (1 + 136544 % 400)
 [Resource] catnip 35010.24/35010.24 44.06/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.47/7502.47 0.88/s
+[Resource] science 7502.47/7502.47 1/s
 [Resource] catpower 0.6/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -841,7 +862,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 274 (1 + 136673 % 400)
 [Resource] catnip 35010.25/35010.25 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.48/7502.48 0.88/s
+[Resource] science 7502.48/7502.48 1/s
 [Resource] catpower 0.34/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -873,7 +894,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 4 (1 + 136803 % 400)
 [Resource] catnip 35010.26/35010.26 66.96/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.48/7502.48 0.88/s
+[Resource] science 7502.48/7502.48 1/s
 [Resource] catpower 0.46/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -905,7 +926,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 134 (1 + 136933 % 400)
 [Resource] catnip 35010.27/35010.27 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.48/7502.48 0.88/s
+[Resource] science 7502.48/7502.48 1/s
 [Resource] catpower 0.58/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -937,7 +958,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 264 (1 + 137063 % 400)
 [Resource] catnip 35010.28/35010.28 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.48/7502.48 0.88/s
+[Resource] science 7502.48/7502.48 1/s
 [Resource] catpower 0.7/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -969,7 +990,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 394 (1 + 137193 % 400)
 [Resource] catnip 35010.29/35010.29 9.73/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.49/7502.49 0.88/s
+[Resource] science 7502.49/7502.49 1/s
 [Resource] catpower 0.44/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1001,7 +1022,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 124 (1 + 137323 % 400)
 [Resource] catnip 35010.3/35010.3 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.49/7502.49 0.88/s
+[Resource] science 7502.49/7502.49 1/s
 [Resource] catpower 0.56/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1033,7 +1054,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 254 (1 + 137453 % 400)
 [Resource] catnip 35010.31/35010.31 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.49/7502.49 0.88/s
+[Resource] science 7502.49/7502.49 1/s
 [Resource] catpower 0.68/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1065,7 +1086,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 383 (1 + 137582 % 400)
 [Resource] catnip 35010.32/35010.32 9.73/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.49/7502.49 0.88/s
+[Resource] science 7502.49/7502.49 1/s
 [Resource] catpower 0.42/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1097,7 +1118,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 113 (1 + 137712 % 400)
 [Resource] catnip 35010.33/35010.33 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.5/7502.5 0.88/s
+[Resource] science 7502.5/7502.5 1/s
 [Resource] catpower 0.54/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1129,7 +1150,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 243 (1 + 137842 % 400)
 [Resource] catnip 35010.34/35010.34 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.5/7502.5 0.88/s
+[Resource] science 7502.5/7502.5 1/s
 [Resource] catpower 0.66/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1161,7 +1182,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 373 (1 + 137972 % 400)
 [Resource] catnip 35010.35/35010.35 9.73/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.5/7502.5 0.88/s
+[Resource] science 7502.5/7502.5 1/s
 [Resource] catpower 0.4/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1193,7 +1214,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 103 (1 + 138102 % 400)
 [Resource] catnip 35010.36/35010.36 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.5/7502.5 0.88/s
+[Resource] science 7502.5/7502.5 1/s
 [Resource] catpower 0.53/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1225,7 +1246,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 233 (1 + 138232 % 400)
 [Resource] catnip 35010.37/35010.37 44.07/s
 [Resource] wood 1400.41/1400.41 0.12/s
-[Resource] science 7502.51/7502.51 0.88/s
+[Resource] science 7502.51/7502.51 1/s
 [Resource] catpower 0.65/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1257,7 +1278,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 362 (1 + 138361 % 400)
 [Resource] catnip 35010.38/35010.38 9.73/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.51/7502.51 0.88/s
+[Resource] science 7502.51/7502.51 1/s
 [Resource] catpower 0.39/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1289,7 +1310,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 92 (1 + 138491 % 400)
 [Resource] catnip 35010.39/35010.39 66.96/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.51/7502.51 0.88/s
+[Resource] science 7502.51/7502.51 1/s
 [Resource] catpower 0.52/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1321,7 +1342,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 222 (1 + 138621 % 400)
 [Resource] catnip 35010.4/35010.4 44.07/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.51/7502.51 0.88/s
+[Resource] science 7502.51/7502.51 1/s
 [Resource] catpower 0.64/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1353,7 +1374,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 352 (1 + 138751 % 400)
 [Resource] catnip 35010.41/35010.41 9.73/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.51/7502.51 0.88/s
+[Resource] science 7502.51/7502.51 1/s
 [Resource] catpower 0.38/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1385,7 +1406,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 82 (1 + 138881 % 400)
 [Resource] catnip 35010.42/35010.42 66.96/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.52/7502.52 0.88/s
+[Resource] science 7502.52/7502.52 1/s
 [Resource] catpower 0.51/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1417,7 +1438,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 212 (1 + 139011 % 400)
 [Resource] catnip 35010.43/35010.43 44.07/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.52/7502.52 0.88/s
+[Resource] science 7502.52/7502.52 1/s
 [Resource] catpower 0.63/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1449,7 +1470,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 341 (1 + 139140 % 400)
 [Resource] catnip 35010.44/35010.44 9.73/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.52/7502.52 0.88/s
+[Resource] science 7502.52/7502.52 1/s
 [Resource] catpower 0.38/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1481,7 +1502,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 71 (1 + 139270 % 400)
 [Resource] catnip 35010.45/35010.45 66.96/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.52/7502.52 0.88/s
+[Resource] science 7502.52/7502.52 1/s
 [Resource] catpower 0.5/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1513,7 +1534,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 201 (1 + 139400 % 400)
 [Resource] catnip 35010.46/35010.46 44.07/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.53/7502.53 0.88/s
+[Resource] science 7502.53/7502.53 1/s
 [Resource] catpower 0.63/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1545,7 +1566,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 331 (1 + 139530 % 400)
 [Resource] catnip 35010.46/35010.46 9.73/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.53/7502.53 0.88/s
+[Resource] science 7502.53/7502.53 1/s
 [Resource] catpower 0.37/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1577,7 +1598,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 61 (1 + 139660 % 400)
 [Resource] catnip 35010.47/35010.47 66.96/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.53/7502.53 0.88/s
+[Resource] science 7502.53/7502.53 1/s
 [Resource] catpower 0.5/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1609,7 +1630,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 191 (1 + 139790 % 400)
 [Resource] catnip 35010.48/35010.48 44.07/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.53/7502.53 0.88/s
+[Resource] science 7502.53/7502.53 1/s
 [Resource] catpower 0.63/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1641,7 +1662,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 320 (1 + 139919 % 400)
 [Resource] catnip 35010.49/35010.49 9.73/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.54/7502.54 0.88/s
+[Resource] science 7502.54/7502.54 1/s
 [Resource] catpower 0.37/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1673,7 +1694,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 50 (1 + 140049 % 400)
 [Resource] catnip 35010.5/35010.5 66.96/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.54/7502.54 0.88/s
+[Resource] science 7502.54/7502.54 1/s
 [Resource] catpower 0.5/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1705,7 +1726,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 180 (1 + 140179 % 400)
 [Resource] catnip 35010.51/35010.51 44.07/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.54/7502.54 0.88/s
+[Resource] science 7502.54/7502.54 1/s
 [Resource] catpower 0.63/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1737,7 +1758,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 310 (1 + 140309 % 400)
 [Resource] catnip 35010.52/35010.52 9.73/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.54/7502.54 0.88/s
+[Resource] science 7502.54/7502.54 1/s
 [Resource] catpower 0.38/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1769,7 +1790,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 40 (1 + 140439 % 400)
 [Resource] catnip 35010.53/35010.53 66.96/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.55/7502.55 0.88/s
+[Resource] science 7502.55/7502.55 1/s
 [Resource] catpower 0.51/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1801,7 +1822,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 170 (1 + 140569 % 400)
 [Resource] catnip 35010.54/35010.54 44.07/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.55/7502.55 0.88/s
+[Resource] science 7502.55/7502.55 1/s
 [Resource] catpower 0.64/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1833,7 +1854,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 299 (1 + 140698 % 400)
 [Resource] catnip 35010.55/35010.55 44.07/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.55/7502.55 0.88/s
+[Resource] science 7502.55/7502.55 1/s
 [Resource] catpower 0.38/325.08 0.39/s 14m2s to cap
 [-] [Resource] fur 39.2 -0.3/s 2m10s to empty
 [-] [Resource] ivory 10.57 -0.21/s 50s to empty
@@ -1865,7 +1886,7 @@ last action: skip Send hunters
 [Calendar] day_of_year 300 (1 + 140699 % 400)
 [Resource] catnip 35010.55/35010.55 44.11/s
 [Resource] wood 1400.42/1400.42 0.12/s
-[Resource] science 7502.55/7502.55 0.88/s
+[Resource] science 7502.55/7502.55 1/s
 [Resource] catpower 0.77/325.08 0.39/s 14m1s to cap
 [-] [Resource] fur 38.9 -0.3/s 2m9s to empty
 [-] [Resource] ivory 10.36 -0.21/s 49s to empty
@@ -1898,7 +1919,7 @@ last action: Unic. Pasture
 [Calendar] day_of_year 249 (1 + 141048 % 400)
 [Resource] catnip 35010.58/35010.58 41.14/s
 [Resource] wood 1400.42/1400.42 0.1/s
-[Resource] science 7502.56/7502.56 0.74/s
+[Resource] science 7502.56/7502.56 0.86/s
 [Resource] catpower 269.68/325.08 0.33/s 2m50s to cap
 [Resource] unicorn 0.01 0.01/s
 [Resource] paragon 0.35 0.000001/s
@@ -1929,7 +1950,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 154 (1 + 141353 % 400)
 [Resource] catnip 35010.6/35010.6 41.17/s
 [Resource] wood 1400.42/1400.42 0.1/s
-[Resource] science 7502.56/7502.56 0.74/s
+[Resource] science 7502.56/7502.56 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.02 0.02/s
 [Resource] paragon 0.35 0.000001/s
@@ -1960,7 +1981,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 110 (1 + 141709 % 400)
 [Resource] catnip 35010.63/35010.63 41.21/s
 [Resource] wood 1400.43/1400.43 0.1/s
-[Resource] science 7502.57/7502.57 0.74/s
+[Resource] science 7502.57/7502.57 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.03 0.02/s
 [Resource] paragon 0.35 0.000001/s
@@ -1991,7 +2012,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 178 (1 + 142177 % 400)
 [Resource] catnip 35010.66/35010.66 41.25/s
 [Resource] wood 1400.43/1400.43 0.1/s
-[Resource] science 7502.58/7502.58 0.74/s
+[Resource] science 7502.58/7502.58 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.04 0.03/s
 [Resource] paragon 0.36 0.000001/s
@@ -2022,7 +2043,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 32 (1 + 142831 % 400)
 [Resource] catnip 35010.71/35010.71 64.19/s
 [Resource] wood 1400.43/1400.43 0.1/s
-[Resource] science 7502.59/7502.59 0.74/s
+[Resource] science 7502.59/7502.59 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.04 0.03/s
 [Resource] paragon 0.36 0.000001/s
@@ -2053,7 +2074,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 186 (1 + 143785 % 400)
 [Resource] catnip 35010.78/35010.78 41.33/s
 [Resource] wood 1400.43/1400.43 0.1/s
-[Resource] science 7502.61/7502.61 0.74/s
+[Resource] science 7502.61/7502.61 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.04 0.04/s
 [Resource] paragon 0.36 0.000001/s
@@ -2084,7 +2105,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 17 (1 + 145216 % 400)
 [Resource] catnip 35010.89/35010.89 64.27/s
 [Resource] wood 1400.44/1400.44 0.1/s
-[Resource] science 7502.63/7502.63 0.74/s
+[Resource] science 7502.63/7502.63 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.04 0.04/s
 [Resource] paragon 0.36 0.000001/s
@@ -2115,7 +2136,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 208 (1 + 147407 % 400)
 [Resource] catnip 35011.06/35011.06 41.41/s
 [Resource] wood 1400.44/1400.44 0.1/s
-[Resource] science 7502.67/7502.67 0.74/s
+[Resource] science 7502.67/7502.67 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.08 0.05/s
 [Resource] paragon 0.37 0.000001/s
@@ -2146,7 +2167,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 16 (1 + 150815 % 400)
 [Resource] catnip 35011.31/35011.31 64.35/s
 [Resource] wood 1400.45/1400.45 0.1/s
-[Resource] science 7502.73/7502.73 0.74/s
+[Resource] science 7502.73/7502.73 0.86/s
 [Resource] catpower 325.08/325.08 0.33/s
 [Resource] unicorn 0.06 0.05/s
 [Resource] paragon 0.38 0.000001/s
@@ -2177,7 +2198,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 184 (1 + 156183 % 400)
 [Resource] catnip 35011.71/35011.71 41.5/s
 [Resource] wood 1400.47/1400.47 0.1/s
-[Resource] science 7502.83/7502.83 0.74/s
+[Resource] science 7502.83/7502.83 0.86/s
 [Resource] catpower 325.09/325.09 0.33/s
 [Resource] unicorn 0.06 0.06/s
 [Resource] paragon 0.39 0.000001/s
@@ -2208,7 +2229,7 @@ last action: skip Unic. Pasture
 [Calendar] day_of_year 184 (1 + 156183 % 400)
 [Resource] catnip 35011.71/35011.71 41.5/s
 [Resource] wood 1400.47/1400.47 0.1/s
-[Resource] science 7003.57/7502.83 0.74/s 11m14s to cap
+[Resource] science 7003.69/7502.83 0.86/s 9m38s to cap
 [Resource] catpower 325.09/325.09 0.33/s
 [Resource] unicorn 0.12 0.06/s
 [Resource] paragon 0.39 0.000001/s
@@ -2242,7 +2263,7 @@ last action: skip Mining
 [Calendar] day_of_year 185 (1 + 156184 % 400)
 [Resource] catnip 35011.71/35011.71 41.5/s
 [Resource] wood 1300.57/1400.47 0.1/s 17m3s to cap
-[Resource] science 7004.31/7502.83 0.74/s 11m13s to cap
+[Resource] science 7004.56/7502.83 0.86/s 9m37s to cap
 [Resource] catpower 325.09/325.09 0.33/s
 [Resource] unicorn 0.17 0.06/s
 [Resource] paragon 0.39 0.000001/s
@@ -2277,7 +2298,7 @@ last action: skip Mine
 [Calendar] day_of_year 185 (1 + 156184 % 400)
 [Resource] catnip 35011.71/35011.71 41.5/s
 [Resource] wood 1222.54/1400.47 0.1/s 30m23s to cap
-[Resource] science 7005.05/7502.83 0.74/s 11m12s to cap
+[Resource] science 7005.42/7502.83 0.86/s 9m36s to cap
 [Resource] catpower 325.41/400.12 0.33/s 3m49s to cap
 [Resource] kitten 0.05/2 0.05/s 39s to cap
 [Resource] unicorn 0.23 0.06/s
@@ -2313,7 +2334,7 @@ last action: skip Hut
 [Calendar] day_of_year 195 (1 + 156194 % 400)
 [Resource] catnip 35011.71/35011.71 37.77/s
 [Resource] wood 1224.49/1400.47 0.1/s 30m37s to cap
-[Resource] science 7019.84/7502.83 0.73/s 11m5s to cap
+[Resource] science 7022.65/7502.83 0.85/s 9m25s to cap
 [Resource] catpower 331.91/400.12 0.32/s 3m33s to cap
 [Resource] mineral 0.32/1750.59 0.32/s 1h32m14s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
@@ -2350,7 +2371,7 @@ last action: skip miner
 [Calendar] day_of_year 205 (1 + 156204 % 400)
 [Resource] catnip 35011.72/35011.72 39.26/s
 [Resource] wood 1226.4/1400.47 0.09/s 30m52s to cap
-[Resource] science 7034.35/7502.83 0.71/s 10m57s to cap
+[Resource] science 7039.61/7502.83 0.83/s 9m14s to cap
 [Resource] catpower 338.29/400.12 0.31/s 3m17s to cap
 [Resource] mineral 6.64/1750.59 0.31/s 1h33m23s to cap
 [Resource] unicorn 2.43 0.06/s
@@ -2386,7 +2407,7 @@ last action: skip farmer
 [Calendar] day_of_year 35 (1 + 203634 % 400)
 [Resource] catnip 35015.27/35015.27 62.23/s
 [Resource] wood 1400.61/1400.61 0.09/s
-[Resource] science 7503.69/7503.69 0.71/s
+[Resource] science 7503.69/7503.69 0.84/s
 [Resource] catpower 400.15/400.15 0.31/s
 [Resource] mineral 1750.76/1750.76 1.22/s
 [Resource] unicorn 5242.89 0.06/s
@@ -2422,7 +2443,7 @@ last action: max Mine
 [Calendar] day_of_year 5 (1 + 211604 % 400)
 [Resource] catnip 35015.87/35015.87 62.25/s
 [Resource] wood 465.38/1400.63 0.09/s 2h45m39s to cap
-[Resource] science 7503.84/7503.84 0.71/s
+[Resource] science 7503.84/7503.84 0.84/s
 [Resource] catpower 400.16/400.16 0.31/s
 [Resource] mineral 1750.79/1750.79 1.22/s
 [Resource] unicorn 6124.12 0.06/s
@@ -2464,7 +2485,7 @@ last action: max Workshop
 [Calendar] day_of_year 6 (1 + 211605 % 400)
 [Resource] catnip 35015.87/35015.87 72.3/s
 [Resource] wood 465.47/1400.63 0.09/s 2h45m38s to cap
-[Resource] science 7404.55/7503.84 0.71/s 2m19s to cap
+[Resource] science 7404.67/7503.84 0.84/s 1m58s to cap
 [Resource] catpower 400.16/400.16 0.31/s
 [Resource] mineral 1477.01/1750.79 1.22/s 3m45s to cap
 [Resource] unicorn 6124.18 0.06/s
@@ -2505,7 +2526,7 @@ last action: skip Mineral Hoes
 [Calendar] day_of_year 6 (1 + 211605 % 400)
 [Resource] catnip 35015.87/35015.87 72.3/s
 [Resource] wood 465.63/1400.63 0.16/s 1h38m59s to cap
-[Resource] science 7305.26/7503.84 0.71/s 4m38s to cap
+[Resource] science 7305.51/7503.84 0.84/s 3m57s to cap
 [Resource] catpower 400.16/400.16 0.31/s
 [Resource] mineral 978.23/1750.79 1.22/s 10m35s to cap
 [Resource] unicorn 6124.23 0.06/s
@@ -2545,7 +2566,7 @@ last action: skip Mineral Axe
 [Calendar] day_of_year 7 (1 + 211606 % 400)
 [Resource] catnip 35015.87/35015.87 72.3/s
 [Resource] wood 415.79/1400.63 0.16/s 1h44m15s to cap
-[Resource] science 6305.98/7503.84 0.71/s 27m58s to cap
+[Resource] science 6306.34/7503.84 0.84/s 23m52s to cap
 [Resource] catpower 400.16/400.16 0.31/s
 [Resource] mineral 729.44/1750.79 1.22/s 13m59s to cap
 [Resource] unicorn 6124.29 0.06/s
@@ -2584,7 +2605,7 @@ last action: skip Bolas
 [Calendar] day_of_year 7 (1 + 211606 % 400)
 [Resource] catnip 35015.87/35015.87 72.3/s
 [Resource] wood 415.95/1400.63 0.16/s 1h44m14s to cap
-[Resource] science 5406.69/7503.84 0.71/s 48m59s to cap
+[Resource] science 5407.18/7503.84 0.84/s 41m47s to cap
 [Resource] catpower 400.16/400.16 0.31/s
 [Resource] mineral 730.66/1750.79 1.22/s 13m58s to cap
 [Resource] unicorn 6124.34 0.06/s
@@ -2624,7 +2645,7 @@ last action: skip Metal Working
 [Calendar] day_of_year 8 (1 + 211607 % 400)
 [Resource] catnip 35015.87/35015.87 72.3/s
 [Resource] wood 416.1/1400.63 0.16/s 1h44m13s to cap
-[Resource] science 5407.4/7503.84 0.71/s 48m58s to cap
+[Resource] science 5408.02/7503.84 0.84/s 41m46s to cap
 [Resource] catpower 400.16/400.16 0.31/s
 [Resource] mineral 531.88/1750.79 1.22/s 16m42s to cap
 [Resource] unicorn 6124.4 0.06/s
@@ -2665,7 +2686,7 @@ last action: skip Smelter
 [Calendar] day_of_year 8 (1 + 211607 % 400)
 [Resource] catnip 35015.87/35015.87 72.3/s
 [Resource] wood 220.95/1400.63 0.16/s 2h4m53s to cap
-[Resource] science 5408.12/7503.84 0.71/s 48m57s to cap
+[Resource] science 5408.85/7503.84 0.84/s 41m45s to cap
 [Resource] catpower 400.47/475.2 0.31/s 3m58s to cap
 [Resource] mineral 533.09/1750.79 1.22/s 16m41s to cap
 [Resource] kitten 0.05/2 0.05/s 39s to cap
@@ -2707,7 +2728,7 @@ last action: skip Hut
 [Calendar] day_of_year 18 (1 + 211617 % 400)
 [Resource] catnip 35015.87/35015.87 68.46/s
 [Resource] wood 224.25/1400.63 0.31/s 1h2m59s to cap
-[Resource] science 5422.37/7503.84 0.7/s 49m34s to cap
+[Resource] science 5425.56/7503.84 0.82/s 42m7s to cap
 [Resource] catpower 406.74/475.2 0.31/s 3m42s to cap
 [Resource] mineral 557.41/1750.79 1.21/s 16m25s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
@@ -2749,7 +2770,7 @@ last action: skip woodcutter
 [Calendar] day_of_year 28 (1 + 211627 % 400)
 [Resource] catnip 35015.87/35015.87 72.17/s
 [Resource] wood 230.47/1400.63 0.31/s 1h3m23s to cap
-[Resource] science 5436.36/7503.84 0.69/s 50m13s to cap
+[Resource] science 5441.99/7503.84 0.81/s 42m29s to cap
 [Resource] catpower 412.89/475.2 0.3/s 3m26s to cap
 [Resource] mineral 581.64/1750.79 1.21/s 16m9s to cap
 [Resource] unicorn 6126.67 0.06/s
@@ -2789,7 +2810,7 @@ last action: skip farmer
 [Calendar] day_of_year 29 (1 + 211628 % 400)
 [Resource] catnip 35015.87/35015.87 72.17/s
 [Resource] wood 230.53/1400.63 0.06/s 5h46m24s to cap
-[Resource] science 5437.04/7503.84 0.69/s 50m12s to cap
+[Resource] science 5442.8/7503.84 0.81/s 42m28s to cap
 [Resource] catpower 413.19/475.2 0.3/s 3m25s to cap
 [Resource] mineral 582.34/1750.79 0.7/s 27m40s to cap
 [Resource] iron 0.1/350.16 0.1/s 58m2s to cap
@@ -2830,7 +2851,7 @@ last action: Active Smelter
 [Calendar] day_of_year 153 (1 + 211752 % 400)
 [Resource] catnip 35015.88/35015.88 56.78/s
 [Resource] wood 244.55/1400.64 0.06/s 5h42m15s to cap
-[Resource] science 5407.88/7503.84 0.69/s 50m54s to cap
+[Resource] science 5444.15/7503.84 0.81/s 42m27s to cap
 [Resource] catpower 475.2/475.2 0.3/s
 [Resource] mineral 757.56/1750.79 0.7/s 23m31s to cap
 [Resource] iron 0.13/350.16 0.1/s 58m1s to cap
@@ -2870,7 +2891,7 @@ last action: skip Iron Hoes
 [Calendar] day_of_year 2 (1 + 212001 % 400)
 [Resource] catnip 35015.9/35015.9 79.71/s
 [Resource] wood 272.67/1400.64 0.15/s 2h8m5s to cap
-[Resource] science 5649.57/7503.84 0.69/s 45m2s to cap
+[Resource] science 5746.85/7503.84 0.81/s 36m12s to cap
 [Resource] catpower 475.2/475.2 0.3/s
 [Resource] mineral 1108.01/1750.8 0.7/s 15m13s to cap
 [Resource] iron 0.2/350.16 0.1/s 58m1s to cap
@@ -2909,7 +2930,7 @@ last action: skip Iron Axe
 [Calendar] day_of_year 81 (1 + 214480 % 400)
 [Resource] catnip 35016.09/35016.09 79.71/s
 [Resource] wood 0.23/2301.13 0.15/s 4h21m15s to cap
-[Resource] science 7004.53/7503.89 0.69/s 12m7s to cap
+[Resource] science 7004.65/7503.89 0.81/s 10m17s to cap
 [Resource] catpower 475.2/475.2 0.3/s
 [Resource] mineral 1001.5/2876.41 0.7/s 44m24s to cap
 [Resource] iron 300.26/575.28 0.1/s 45m35s to cap
@@ -2947,7 +2968,7 @@ last action: skip Expanded Barns
 [Calendar] day_of_year 113 (1 + 242912 % 400)
 [Resource] catnip 45024.29/45024.29 56.82/s
 [Resource] wood 3001.7/3001.7 0.15/s
-[Resource] science 7504.4/7504.4 0.69/s
+[Resource] science 7504.4/7504.4 0.81/s
 [Resource] catpower 475.23/475.23 0.3/s
 [Resource] mineral 3752.13/3752.13 0.7/s
 [Resource] iron 750.43/750.43 0.1/s
@@ -2985,7 +3006,7 @@ last action: max Barn
 [Calendar] day_of_year 301 (1 + 244300 % 400)
 [Resource] catnip 45024.43/45024.43 22.71/s
 [Resource] wood 3001.71/3001.71 0.15/s
-[Resource] science 7504.43/7504.43 0.69/s
+[Resource] science 7504.43/7504.43 0.81/s
 [Resource] catpower 475.23/475.23 0.3/s
 [Resource] mineral 3752.14/3752.14 0.7/s
 [Resource] iron 750.43/750.43 0.1/s
@@ -3023,7 +3044,7 @@ last action: max Catnip Field
 [Calendar] day_of_year 290 (1 + 288289 % 400)
 [Resource] catnip 45028.83/45028.83 58.14/s
 [Resource] wood 3002.02/3002.02 0.15/s
-[Resource] science 9006.31/9006.31 0.79/s
+[Resource] science 9006.31/9006.31 0.93/s
 [Resource] catpower 475.27/475.27 0.3/s
 [Resource] mineral 3752.52/3752.52 0.71/s
 [Resource] iron 750.5/750.5 0.1/s
@@ -3061,7 +3082,7 @@ last action: max Library
 [Calendar] day_of_year 58 (1 + 323657 % 400)
 [Resource] catnip 45032.37/45032.37 82.89/s
 [Resource] wood 3002.27/3002.27 0.15/s
-[Resource] science 9007.08/9007.08 0.79/s
+[Resource] science 9007.08/9007.08 0.94/s
 [Resource] catpower 475.3/475.3 0.3/s
 [Resource] mineral 3752.83/3752.83 0.71/s
 [Resource] iron 750.57/750.57 0.1/s
@@ -3099,7 +3120,7 @@ last action: max Pasture
 [Calendar] day_of_year 149 (1 + 366948 % 400)
 [Resource] catnip 45036.69/45036.69 59.33/s
 [Resource] wood 3002.57/3002.57 0.15/s
-[Resource] science 9008.03/9008.03 0.79/s
+[Resource] science 9008.03/9008.03 0.94/s
 [Resource] catpower 475.34/475.34 0.3/s
 [Resource] mineral 3753.21/3753.21 1.01/s
 [Resource] iron 750.64/750.64 0.1/s
@@ -3137,7 +3158,7 @@ last action: max Mine
 [Calendar] day_of_year 94 (1 + 375293 % 400)
 [Resource] catnip 45037.53/45037.53 83/s
 [Resource] wood 1389.14/3002.63 0.15/s 3h2m28s to cap
-[Resource] science 9008.21/9008.21 0.79/s
+[Resource] science 9008.21/9008.21 0.94/s
 [Resource] catpower 475.35/475.35 0.3/s
 [Resource] mineral 3753.28/3753.28 1.01/s
 [Resource] iron 750.66/750.66 0.1/s
@@ -3175,7 +3196,7 @@ last action: max Workshop
 [Calendar] day_of_year 170 (1 + 386969 % 400)
 [Resource] catnip 45038.7/45038.7 59.36/s
 [Resource] wood 3002.71/3002.71 0.15/s
-[Resource] science 9008.46/9008.46 0.8/s
+[Resource] science 9008.46/9008.46 0.94/s
 [Resource] catpower 475.36/475.36 0.3/s
 [Resource] mineral 3753.39/3753.39 1.01/s
 [Resource] iron 750.68/750.68 0.1/s
@@ -3213,7 +3234,7 @@ last action: max Smelter
 [Calendar] day_of_year 171 (1 + 386970 % 400)
 [Resource] catnip 45038.7/45038.7 59.36/s
 [Resource] wood 3002.71/3002.71 0.15/s
-[Resource] science 7009.26/9008.46 0.8/s 41m54s to cap
+[Resource] science 7009.4/9008.46 0.94/s 35m33s to cap
 [Resource] catpower 475.36/475.36 0.3/s
 [Resource] mineral 3753.39/3753.39 1.01/s
 [Resource] iron 0.78/750.68 0.1/s 2h3m47s to cap
@@ -3250,7 +3271,7 @@ last action: skip Hunting Armour
 [Calendar] day_of_year 171 (1 + 386970 % 400)
 [Resource] catnip 45038.7/45038.7 59.36/s
 [Resource] wood 3002.71/3002.71 0.15/s
-[Resource] science 5510.06/9008.46 0.8/s 1h13m19s to cap
+[Resource] science 5510.34/9008.46 0.94/s 1h2m12s to cap
 [Resource] catpower 475.36/475.36 0.3/s
 [Resource] mineral 3753.39/3753.39 1.01/s
 [Resource] iron 0.88/750.68 0.1/s 2h3m46s to cap
@@ -3287,7 +3308,7 @@ last action: skip Civil Service
 [Calendar] day_of_year 172 (1 + 386971 % 400)
 [Resource] catnip 45038.7/45038.7 59.36/s
 [Resource] wood 3002.71/3002.71 0.15/s
-[Resource] science 4510.85/9008.46 0.8/s 1h34m16s to cap
+[Resource] science 4511.28/9008.46 0.94/s 1h19m59s to cap
 [Resource] catpower 475.36/475.36 0.3/s
 [Resource] mineral 3753.39/3753.39 1.01/s
 [Resource] iron 0.98/750.68 0.1/s 2h3m45s to cap
@@ -3325,7 +3346,7 @@ last action: skip Mathematics
 [Calendar] day_of_year 74 (1 + 450473 % 400)
 [Resource] catnip 45045.05/45045.05 83.15/s
 [Resource] wood 2879.52/3003.15 0.15/s 13m57s to cap
-[Resource] science 23526.18/23526.18 1.82/s
+[Resource] science 23526.18/23526.18 2.15/s
 [Resource] catpower 475.42/475.42 0.3/s
 [Resource] mineral 3753.94/3753.94 1.01/s
 [Resource] iron 750.79/750.79 0.1/s
@@ -3363,7 +3384,7 @@ last action: max Academy
 [Calendar] day_of_year 74 (1 + 450473 % 400)
 [Resource] catnip 45045.05/45045.05 83.15/s
 [Resource] wood 2879.67/3003.15 0.15/s 13m56s to cap
-[Resource] science 23278.01/23526.18 1.82/s 2m16s to cap
+[Resource] science 23278.4/23526.18 2.21/s 1m51s to cap
 [Resource] catpower 475.42/475.42 0.3/s
 [Resource] mineral 3753.94/3753.94 1.01/s
 [Resource] iron 750.79/750.79 0.1/s
@@ -3400,7 +3421,7 @@ last action: skip Celestial Mechanics
 [Calendar] day_of_year 75 (1 + 450474 % 400)
 [Resource] catnip 45045.05/45045.05 83.15/s
 [Resource] wood 2879.82/3003.15 0.15/s 13m55s to cap
-[Resource] science 21979.83/23526.18 1.82/s 14m8s to cap
+[Resource] science 21980.61/23526.18 2.21/s 11m38s to cap
 [Resource] catpower 475.42/475.42 0.3/s
 [Resource] mineral 3753.94/3753.94 1.01/s
 [Resource] iron 750.79/750.79 0.1/s
@@ -3444,7 +3465,7 @@ last action: skip Construction
 [Calendar] day_of_year 75 (1 + 450474 % 400)
 [Resource] catnip 40128.2/45045.05 83.15/s 59s to cap
 [Resource] wood 2879.97/3003.15 0.15/s 13m54s to cap
-[Resource] science 21481.65/23526.18 1.82/s 18m41s to cap
+[Resource] science 21482.82/23526.18 2.21/s 15m23s to cap
 [Resource] catpower 475.42/475.42 0.3/s
 [Resource] mineral 3753.94/3753.94 1.01/s
 [Resource] iron 750.79/750.79 0.1/s
@@ -3487,7 +3508,7 @@ last action: skip Catnip Enrichment
 [Calendar] day_of_year 76 (1 + 450475 % 400)
 [Resource] catnip 40211.35/45045.05 83.15/s 58s to cap
 [Resource] wood 2680.12/3003.15 0.15/s 36m27s to cap
-[Resource] science 20983.47/23526.18 1.82/s 23m14s to cap
+[Resource] science 20985.04/23526.18 2.21/s 19m8s to cap
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 3753.94/3753.94 1.01/s
 [Resource] iron 650.89/750.79 0.1/s 16m27s to cap
@@ -3529,7 +3550,7 @@ last action: skip Composite Bow
 [Calendar] day_of_year 76 (1 + 450475 % 400)
 [Resource] catnip 40294.5/45045.05 83.15/s 57s to cap
 [Resource] wood 405.26/4284.59 0.15/s 7h17m54s to cap
-[Resource] science 20185.3/23526.18 1.82/s 30m32s to cap
+[Resource] science 20187.25/23526.18 2.21/s 25m8s to cap
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 2504.95/5355.74 1.01/s 46m59s to cap
 [Resource] iron 550.99/1071.15 0.1/s 1h25m43s to cap
@@ -3562,7 +3583,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 405.26/500 10m41s) +(iron 250
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 550.99/1000 1h14m0s, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 20185.3/60000* 6h4m2s, titanium 0/25*, steel 0/200, scaffold 0/250 (beam 1.26/6200 (wood 405.26/537075 1009h41m24s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 20187.25/60000* 4h59m47s, titanium 0/25*, steel 0/200, scaffold 0/250 (beam 1.26/6200 (wood 405.26/537075 1009h41m24s))) +(Titanium Barns 1)
 last action: max Reinforced Barns
 ###
 [Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
@@ -3571,7 +3592,7 @@ last action: max Reinforced Barns
 [Calendar] day_of_year 77 (1 + 450476 % 400)
 [Resource] catnip 40377.66/45045.05 83.15/s 56s to cap
 [Resource] wood 230.41/4667.53 0.15/s 8h20m52s to cap
-[Resource] science 20187.12/23526.18 1.82/s 30m31s to cap
+[Resource] science 20189.46/23526.18 2.21/s 25m7s to cap
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 2255.96/5866.32 1.01/s 59m30s to cap
 [Resource] iron 551.09/1134.97 0.1/s 1h36m13s to cap
@@ -3604,7 +3625,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 230.41/500 30m25s) +(iron 250
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 551.09/1000 1h13m59s, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 20187.12/60000* 6h4m1s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.78/6200 (wood 230.41/537075 1010h1m8s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 20189.46/60000* 4h59m46s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.78/6200 (wood 230.41/537075 1010h1m8s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
@@ -3613,7 +3634,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 77 (1 + 450476 % 400)
 [Resource] catnip 40460.81/45045.05 83.15/s 55s to cap
 [Resource] wood 230.56/5050.46 0.15/s 9h4m5s to cap
-[Resource] science 20188.94/23526.18 1.82/s 30m30s to cap
+[Resource] science 20191.68/23526.18 2.21/s 25m6s to cap
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 1756.98/6376.89 1.01/s 1h16m8s to cap
 [Resource] iron 551.19/1198.79 0.1/s 1h46m43s to cap
@@ -3646,7 +3667,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 230.56/500 30m24s) +(iron 250
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 551.19/1000 1h13m58s, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 20188.94/60000* 6h4m0s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.05/6200 (wood 230.56/537250 1010h20m52s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 20191.68/60000* 4h59m45s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.05/6200 (wood 230.56/537250 1010h20m52s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Redmoon 1 (1 if 225.24 % 10 == 5)
@@ -3655,7 +3676,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 78 (1 + 450477 % 400)
 [Resource] catnip 40543.96/45045.05 83.15/s 54s to cap
 [Resource] wood 55.71/5433.39 0.15/s 10h7m3s to cap
-[Resource] science 20190.77/23526.18 1.82/s 30m29s to cap
+[Resource] science 20193.89/23526.18 2.21/s 25m5s to cap
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 1507.99/6887.47 1.01/s 1h28m39s to cap
 [Resource] iron 551.29/1262.61 0.1/s 1h57m13s to cap
@@ -3688,7 +3709,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 55.71/500 50m9s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 551.29/1000 1h13m57s, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 20190.77/60000* 6h3m59s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.09/6200 (wood 55.71/537250 1010h40m37s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 20193.89/60000* 4h59m44s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.09/6200 (wood 55.71/537250 1010h40m37s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Redmoon 1 (1 if 225.74 % 10 == 5)
@@ -3697,7 +3718,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 275 (1 + 451474 % 400)
 [Resource] catnip 45045.15/45045.15 59.45/s
 [Resource] wood 0.26/5816.33 0.15/s 10h56m31s to cap
-[Resource] science 23526.24/23526.24 1.82/s
+[Resource] science 23526.24/23526.24 2.21/s
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 3275.45/7398.06 1.01/s 1h7m56s to cap
 [Resource] iron 753.04/1326.44 0.1/s 1h34m29s to cap
@@ -3730,7 +3751,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.26/500 56m24s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 753.04/1000 40m42s, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.24/60000* 5h33m29s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.85/6200 (wood 0.26/537075 1010h25m37s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.24/60000* 4h34m38s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.85/6200 (wood 0.26/537075 1010h25m37s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Dune 1 (1 if 226.03 % 10 == 6)
@@ -3739,7 +3760,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 68 (1 + 452067 % 400)
 [Resource] catnip 45045.21/45045.21 83.16/s
 [Resource] wood 0.22/6199.27 0.15/s 11h39m44s to cap
-[Resource] science 23526.28/23526.28 1.82/s
+[Resource] science 23526.28/23526.28 2.21/s
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 3973.83/7908.65 1.01/s 1h4m50s to cap
 [Resource] iron 872.88/1390.26 0.1/s 1h25m16s to cap
@@ -3772,7 +3793,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.22/500 56m24s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 872.88/1000 20m57s, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.28/60000* 5h33m28s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.25/6200 (wood 0.22/537075 1010h24m44s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.28/60000* 4h34m37s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.25/6200 (wood 0.22/537075 1010h24m44s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Dune 1 (1 if 226.33 % 10 == 6)
@@ -3781,7 +3802,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 260 (1 + 452659 % 400)
 [Resource] catnip 45045.27/45045.27 59.45/s
 [Resource] wood 0.18/6582.21 0.15/s 12h22m57s to cap
-[Resource] science 23526.31/23526.31 1.82/s
+[Resource] science 23526.31/23526.31 2.21/s
 [Resource] catpower 475.42/475.42 0.46/s
 [Resource] mineral 4672.22/8419.23 1.01/s 1h1m45s to cap
 [Resource] iron 992.72/1454.09 0.1/s 1h16m2s to cap
@@ -3814,7 +3835,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.18/500 56m25s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 992.72/1000 1m12s, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.31/60000* 5h33m28s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.25/6200 (wood 0.18/537250 1010h43m36s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.31/60000* 4h34m37s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.25/6200 (wood 0.18/537250 1010h43m36s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Dune 1 (1 if 226.92 % 10 == 6)
@@ -3823,7 +3844,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 246 (1 + 453845 % 400)
 [Resource] catnip 45045.38/45045.38 59.46/s
 [Resource] wood 0.27/6965.17 0.15/s 13h6m9s to cap
-[Resource] science 23526.38/23526.38 1.82/s
+[Resource] science 23526.38/23526.38 2.21/s
 [Resource] catpower 475.43/475.43 0.46/s
 [Resource] mineral 6570.05/8929.84 1.01/s 38m53s to cap
 [Resource] iron 1232.5/1517.91 0.1/s 47m2s to cap
@@ -3856,7 +3877,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.27/500 56m24s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.38/60000* 5h33m28s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.82/6200 (wood 0.27/537075 1010h22m4s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.38/60000* 4h34m37s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.82/6200 (wood 0.27/537075 1010h22m4s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Piscine 1 (1 if 227.52 % 10 == 7)
@@ -3865,7 +3886,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 231 (1 + 455030 % 400)
 [Resource] catnip 45045.5/45045.5 59.46/s
 [Resource] wood 0.21/7348.12 0.15/s 13h49m22s to cap
-[Resource] science 23526.45/23526.45 1.82/s
+[Resource] science 23526.45/23526.45 2.21/s
 [Resource] catpower 475.43/475.43 0.46/s
 [Resource] mineral 8180.85/9440.44 1.01/s 20m45s to cap
 [Resource] iron 1472.19/1581.74 0.1/s 18m3s to cap
@@ -3898,7 +3919,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.21/500 56m24s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.45/60000* 5h33m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.87/6200 (wood 0.21/537075 1010h20m18s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.45/60000* 4h34m36s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.87/6200 (wood 0.21/537075 1010h20m18s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Termogus 1 (1 if 228.11 % 10 == 8)
@@ -3907,7 +3928,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 216 (1 + 456215 % 400)
 [Resource] catnip 45045.62/45045.62 59.46/s
 [Resource] wood 0.17/7731.08 0.15/s 14h32m34s to cap
-[Resource] science 23526.52/23526.52 1.82/s
+[Resource] science 23526.52/23526.52 2.21/s
 [Resource] catpower 475.43/475.43 0.46/s
 [Resource] mineral 8691.45/9951.05 1.01/s 20m45s to cap
 [Resource] iron 1581.84/1645.57 0.1/s 10m30s to cap
@@ -3940,7 +3961,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.17/500 56m24s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.52/60000* 5h33m26s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.32/6200 (wood 0.17/537250 1010h38m17s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.52/60000* 4h34m36s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 0.32/6200 (wood 0.17/537250 1010h38m17s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Termogus 1 (1 if 229 % 10 == 8)
@@ -3949,7 +3970,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 394 (1 + 457993 % 400)
 [Resource] catnip 45045.8/45045.8 23.9/s
 [Resource] wood 0.27/8114.05 0.15/s 15h15m44s to cap
-[Resource] science 23526.62/23526.62 1.82/s
+[Resource] science 23526.62/23526.62 2.21/s
 [Resource] catpower 475.43/475.43 0.46/s
 [Resource] mineral 8952.06/10461.68 1.01/s 24m52s to cap
 [Resource] iron 1645.67/1709.4 0.1/s 10m30s to cap
@@ -3982,7 +4003,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.27/500 56m24s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.62/60000* 5h33m25s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 0.27/537075 1010h15m51s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.62/60000* 4h34m35s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 0.27/537075 1010h15m51s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Kairo 1 (1 if 229.88 % 10 == 9)
@@ -3991,7 +4012,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 171 (1 + 459770 % 400)
 [Resource] catnip 45045.98/45045.98 59.46/s
 [Resource] wood 0.24/8497.03 0.15/s 15h58m55s to cap
-[Resource] science 23526.72/23526.72 1.82/s
+[Resource] science 23526.72/23526.72 2.21/s
 [Resource] catpower 475.43/475.43 0.46/s
 [Resource] mineral 9462.69/10972.31 1.01/s 24m52s to cap
 [Resource] iron 1709.5/1773.23 0.1/s 10m30s to cap
@@ -4024,7 +4045,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 0.24/500 56m24s) +(iron 250, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23526.72/60000* 5h33m24s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 0.24/537075 1010h13m12s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23526.72/60000* 4h34m34s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 0.24/537075 1010h13m12s))) +(Titanium Barns 1)
 last action: skip Warehouse
 ###
 [Calendar] Helios 1 (1 if 273.15 % 10 == 3)
@@ -4033,7 +4054,7 @@ last action: skip Warehouse
 [Calendar] day_of_year 300 (1 + 546299 % 400)
 [Resource] catnip 55068.29/55068.29 59.59/s
 [Resource] wood 9519.3/9520.21 0.15/s 6s to cap
-[Resource] science 23530.93/23531.75 1.83/s
+[Resource] science 23531.32/23531.75 2.22/s
 [Resource] catpower 475.51/475.51 0.46/s
 [Resource] mineral 12251.02/12251.37 1.01/s
 [Resource] iron 2028.83/2028.95 0.1/s 1s to cap
@@ -4066,7 +4087,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23530.93/60000* 5h32m39s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9519.3/537075 990h11m50s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23531.32/60000* 4h33m57s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9519.3/537075 990h11m50s))) +(Titanium Barns 1)
 last action: max Barn
 ###
 [Calendar] Helios 1 (1 if 273.91 % 10 == 3)
@@ -4075,7 +4096,7 @@ last action: max Barn
 [Calendar] day_of_year 224 (1 + 547823 % 400)
 [Resource] catnip 55068.48/55068.48 60.86/s
 [Resource] wood 9520.25/9520.25 0.15/s
-[Resource] science 23531.84/23531.84 1.83/s
+[Resource] science 23531.84/23531.84 2.22/s
 [Resource] catpower 475.51/475.51 0.46/s
 [Resource] mineral 12251.41/12251.41 1.01/s
 [Resource] iron 2028.96/2028.96 0.1/s
@@ -4108,7 +4129,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 23531.84/60000* 5h32m38s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9520.25/537075 990h9m29s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 23531.84/60000* 4h33m56s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9520.25/537075 990h9m29s))) +(Titanium Barns 1)
 last action: max Catnip Field
 ###
 [Calendar] Yarn 1 (1 if 352.12 % 10 == 2)
@@ -4117,7 +4138,7 @@ last action: max Catnip Field
 [Calendar] day_of_year 241 (1 + 704240 % 400)
 [Resource] catnip 55088.03/55088.03 61.1/s
 [Resource] wood 9523.24/9523.89 0.15/s 4s to cap
-[Resource] science 25544.27/25544.46 1.98/s
+[Resource] science 25544.46/25544.46 2.4/s
 [Resource] catpower 475.66/475.66 0.46/s
 [Resource] mineral 12256.09/12256.1 1.02/s
 [Resource] iron 2029.66/2029.73 0.1/s
@@ -4150,7 +4171,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 25544.27/60000* 4h50m30s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9523.24/537075 986h20m51s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 25544.46/60000* 3h59m14s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9523.24/537075 986h20m51s))) +(Titanium Barns 1)
 last action: max Library
 ###
 [Calendar] Umbra 1 (1 if 381.46 % 10 == 1)
@@ -4159,7 +4180,7 @@ last action: max Library
 [Calendar] day_of_year 121 (1 + 762920 % 400)
 [Resource] catnip 55095.37/55095.37 62.27/s
 [Resource] wood 6198.86/9525.25 0.15/s 6h12m37s to cap
-[Resource] science 25548.16/25548.16 1.98/s
+[Resource] science 25548.16/25548.16 2.4/s
 [Resource] catpower 475.72/475.72 0.46/s
 [Resource] mineral 12257.86/12257.86 1.02/s
 [Resource] iron 2030.02/2030.02 0.1/s
@@ -4192,7 +4213,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 25548.16/60000* 4h50m3s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 6198.86/537075 991h8m3s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 25548.16/60000* 3h58m52s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 6198.86/537075 991h8m3s))) +(Titanium Barns 1)
 last action: max Pasture
 ###
 [Calendar] Helios 1 (1 if 463.76 % 10 == 3)
@@ -4201,7 +4222,7 @@ last action: max Pasture
 [Calendar] day_of_year 327 (1 + 927526 % 400)
 [Resource] catnip 55115.94/55115.94 25.59/s
 [Resource] wood 9528.45/9529.08 0.15/s 4s to cap
-[Resource] science 25558.41/25558.55 1.99/s
+[Resource] science 25558.55/25558.55 2.41/s
 [Resource] catpower 475.87/475.87 0.46/s
 [Resource] mineral 12262.79/12262.79 1.43/s
 [Resource] iron 2030.77/2030.83 0.1/s
@@ -4234,7 +4255,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 25558.41/60000* 4h48m48s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9528.45/537075 980h57m24s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 25558.55/60000* 3h57m50s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/6200 (wood 9528.45/537075 980h57m24s))) +(Titanium Barns 1)
 last action: max Mine
 ###
 [Calendar] Termogus 1 (1 if 478.04 % 10 == 8)
@@ -4243,7 +4264,7 @@ last action: max Mine
 [Calendar] day_of_year 90 (1 + 956089 % 400)
 [Resource] catnip 55119.51/55119.51 87.2/s
 [Resource] wood 3292.61/9529.75 0.15/s 11h35m22s to cap
-[Resource] science 25560.35/25560.35 1.99/s
+[Resource] science 25560.35/25560.35 2.42/s
 [Resource] catpower 475.9/475.9 0.46/s
 [Resource] mineral 12263.65/12263.65 1.43/s
 [Resource] iron 2030.97/2030.97 0.1/s
@@ -4276,7 +4297,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 25560.35/60000* 4h48m35s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 3292.61/350000 644h14m32s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 25560.35/60000* 3h57m39s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 3292.61/350000 644h14m32s))) +(Titanium Barns 1)
 last action: max Workshop
 ###
 [Calendar] Kairo 1 (1 if 489.23 % 10 == 9)
@@ -4285,7 +4306,7 @@ last action: max Workshop
 [Calendar] day_of_year 67 (1 + 978466 % 400)
 [Resource] catnip 55122.31/55122.31 87.25/s
 [Resource] wood 9530.27/9530.27 0.15/s
-[Resource] science 25561.77/25561.77 1.99/s
+[Resource] science 25561.77/25561.77 2.42/s
 [Resource] catpower 475.92/475.92 0.46/s
 [Resource] mineral 12264.32/12264.32 1.43/s
 [Resource] iron 2031.08/2031.08 0.1/s
@@ -4318,7 +4339,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 25561.77/60000* 4h48m25s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9530.27/350000 632h18m22s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 25561.77/60000* 3h57m31s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9530.27/350000 632h18m22s))) +(Titanium Barns 1)
 last action: max Smelter
 ###
 [Calendar] Helios 1 (1 if 554 % 10 == 3)
@@ -4327,7 +4348,7 @@ last action: max Smelter
 [Calendar] day_of_year 395 (1 + 1107994 % 400)
 [Resource] catnip 55138.5/55138.5 25.7/s
 [Resource] wood 8811.96/9533.28 0.15/s 1h20m7s to cap
-[Resource] science 29581.02/29581.02 2.28/s
+[Resource] science 29581.02/29581.02 2.77/s
 [Resource] catpower 476.04/476.04 0.46/s
 [Resource] mineral 12268.2/12268.2 1.44/s
 [Resource] iron 2031.68/2031.72 0.1/s
@@ -4360,7 +4381,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 29581.02/60000* 3h41m57s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 8811.96/350000 631h38m37s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 29581.02/60000* 3h2m47s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 8811.96/350000 631h38m37s))) +(Titanium Barns 1)
 last action: max Academy
 ###
 [Calendar] Termogus 1 (1 if 588.82 % 10 == 8)
@@ -4369,7 +4390,7 @@ last action: max Academy
 [Calendar] day_of_year 32 (1 + 1177631 % 400)
 [Resource] catnip 55147.2/55147.2 87.67/s
 [Resource] wood 9534.9/9534.9 0.56/s
-[Resource] science 29586.11/29586.11 2.29/s
+[Resource] science 29586.11/29586.11 2.78/s
 [Resource] catpower 476.1/476.1 0.46/s
 [Resource] mineral 12270.28/12270.28 1.44/s
 [Resource] iron 2032.07/2032.07 0.1/s
@@ -4402,7 +4423,7 @@ X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, 
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
 X: [Tech] Reinforced Saw -(iron 1000, science 2500) +(Reinforced Saw 1)
-X: [*] [Tech] Titanium Barns -(science 29586.11/60000* 3h41m33s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 170h3m52s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 29586.11/60000* 3h2m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 170h3m52s))) +(Titanium Barns 1)
 last action: max Lumber Mill
 ###
 [Calendar] Termogus 1 (1 if 588.82 % 10 == 8)
@@ -4411,7 +4432,7 @@ last action: max Lumber Mill
 [Calendar] day_of_year 33 (1 + 1177632 % 400)
 [Resource] catnip 55147.2/55147.2 87.67/s
 [Resource] wood 9534.9/9534.9 0.64/s
-[Resource] science 27088.4/29586.11 2.29/s 18m11s to cap
+[Resource] science 27088.89/29586.11 2.78/s 14m58s to cap
 [Resource] catpower 476.1/476.1 0.46/s
 [Resource] mineral 12270.28/12270.28 1.44/s
 [Resource] iron 1032.17/2032.07 0.1/s 2h41m53s to cap
@@ -4443,7 +4464,7 @@ X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.5, blueprint 0.1, spice 8.75)
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Engineering -(science 1500) +(Engineering 1)
-X: [*] [Tech] Titanium Barns -(science 27088.4/60000* 3h59m44s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 148h24m19s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 27088.89/60000* 3h17m26s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 148h24m19s))) +(Titanium Barns 1)
 last action: skip Reinforced Saw
 ###
 [Calendar] Termogus 1 (1 if 588.82 % 10 == 8)
@@ -4452,7 +4473,7 @@ last action: skip Reinforced Saw
 [Calendar] day_of_year 33 (1 + 1177632 % 400)
 [Resource] catnip 55147.2/55147.2 87.67/s
 [Resource] wood 9534.9/9534.9 0.64/s
-[Resource] science 25590.69/29586.11 2.29/s 29m6s to cap
+[Resource] science 25591.67/29586.11 2.78/s 23m57s to cap
 [Resource] catpower 476.1/476.1 0.46/s
 [Resource] mineral 12270.28/12270.28 1.44/s
 [Resource] iron 1032.27/2032.07 0.1/s 2h41m52s to cap
@@ -4485,7 +4506,7 @@ X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.5, blueprint 0.1, spice 8.75)
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Writing -(science 3600) +(Writing 1)
-X: [*] [Tech] Titanium Barns -(science 25590.69/60000* 4h10m39s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 148h24m19s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 25591.67/60000* 3h26m25s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9534.9/350000 148h24m19s))) +(Titanium Barns 1)
 last action: skip Engineering
 ###
 [Calendar] Dune 1 (1 if 606.49 % 10 == 6)
@@ -4494,7 +4515,7 @@ last action: skip Engineering
 [Calendar] day_of_year 171 (1 + 1212970 % 400)
 [Resource] catnip 55151.62/55151.62 147.94/s
 [Resource] wood 9535.72/9535.72 0.64/s
-[Resource] science 29588.7/29588.7 2.29/s
+[Resource] science 29588.7/29588.7 2.78/s
 [Resource] catpower 476.14/476.14 0.46/s
 [Resource] mineral 12271.34/12271.34 1.44/s
 [Resource] iron 2032.24/2032.24 0.1/s
@@ -4527,7 +4548,7 @@ X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.5, blueprint 0.1, spice 8.75)
 X: [Tech] Currency -(science 2200) +(Currency 1)
 X: [Tech] Writing -(science 3600) +(Writing 1)
-X: [*] [Tech] Titanium Barns -(science 29588.7/60000* 3h41m20s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9535.72/350000 148h16m40s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 29588.7/60000* 3h2m17s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9535.72/350000 148h16m40s))) +(Titanium Barns 1)
 last action: max Aqueduct
 ###
 [Calendar] Dune 1 (1 if 606.49 % 10 == 6)
@@ -4536,7 +4557,7 @@ last action: max Aqueduct
 [Calendar] day_of_year 171 (1 + 1212970 % 400)
 [Resource] catnip 55151.62/55151.62 147.94/s
 [Resource] wood 9535.72/9535.72 0.64/s
-[Resource] science 27390.99/29588.7 2.29/s 15m59s to cap
+[Resource] science 27391.48/29588.7 2.78/s 13m10s to cap
 [Resource] catpower 476.14/476.14 0.46/s
 [Resource] mineral 12271.34/12271.34 1.44/s
 [Resource] iron 2032.24/2032.24 0.1/s
@@ -4569,6 +4590,6 @@ X: [Trade] Lizards -(catpower 50, gold 0/15, mineral 1000) +(wood 500, beam 1.5,
 X: [Trade] Sharks -(catpower 50, gold 0/15, iron 100) +(catnip 35000, parchment 1.25, manuscript 0.45, compendium 0.1, blueprint 0.1, spice 8.75)
 X: [Trade] Griffins -(catpower 50, gold 0/15, wood 500) +(iron 250, steel 6.25, gear 0.5, blueprint 0.1, spice 8.75)
 X: [Tech] Writing -(science 3600) +(Writing 1)
-X: [*] [Tech] Titanium Barns -(science 27390.99/60000* 3h57m20s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9535.72/350000 148h16m40s))) +(Titanium Barns 1)
+X: [*] [Tech] Titanium Barns -(science 27391.48/60000* 3h15m27s, titanium 0/25, steel 0/200, scaffold 0/250 (beam 1.1/5000 (wood 9535.72/350000 148h16m40s))) +(Titanium Barns 1)
 X: [Tech] Gold Ore -(science 1000, mineral 800, iron 100) +(Gold Ore 1)
 last action: skip Currency
