@@ -113,5 +113,6 @@ Missing features:
 
 TODO:
 
+- format numbers like '1 000 000.00'
 - record terminal using https://asciinema.org/
 - make [solve.go](kittens/solve/solve.go) get everything
