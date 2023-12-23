@@ -846,6 +846,27 @@
       "Formula": "Count = ((c(Observatory) * 0.002) + (c(Celestial Mechanics) * 0.2) + (c(Chronomancy) * 0.1) + c(Astromancy) + (c(Temporal Accelerator) * 0.0125) + (c(Blazar) * 0.025))"
     },
     {
+      "Name": "UnicornEventBonus",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Producers": [
+        {
+          "Name": "Unicornmancy",
+          "Factor": 0.1
+        },
+        {
+          "Name": "Temporal Accelerator",
+          "Factor": 0.0125
+        },
+        {
+          "Name": "Blazar",
+          "Factor": 0.025
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(Unicornmancy) * 0.1) + (c(Temporal Accelerator) * 0.0125) + (c(Blazar) * 0.025))"
+    },
+    {
       "Name": "HutCostExponentBase",
       "Type": "Resource",
       "IsHidden": true,
@@ -3546,6 +3567,15 @@
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "Ivory Citadel",
+          "Factor": 0.0625,
+          "Bonus": [
+            {
+              "Name": "UnicornEventBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -3558,7 +3588,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += ((((c(all kittens) * -0.035 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000021 * c(catpower cap))) * (1 + c(GlobalProductionBonus))) * seconds)"
+      "Formula": "Count += ((((c(all kittens) * -0.035 * (1 + (c(Tradepost) * -0.04))) + (c(Active Mint) * 0.000021 * c(catpower cap)) + (c(Ivory Citadel) * 0.0625 * (1 + c(UnicornEventBonus)))) * (1 + c(GlobalProductionBonus))) * seconds)"
     },
     {
       "Name": "spice",
@@ -3610,6 +3640,15 @@
         {
           "Name": "Unic. Pasture",
           "Factor": 0.005
+        },
+        {
+          "Name": "Ivory Tower",
+          "Factor": 0.125,
+          "Bonus": [
+            {
+              "Name": "UnicornEventBonus"
+            }
+          ]
         }
       ],
       "Bonus": [
@@ -3675,7 +3714,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
-      "Formula": "Count += (((c(Unic. Pasture) * 0.005) * ((1 + (c(Unicorn Selection) * 0.25) + (c(Unicorn Tomb) * 0.05) + (c(Ivory Tower) * 0.1) + (c(Ivory Citadel) * 0.25) + (c(Sky Palace) * 0.5) + (c(Unicorn Utopia) * 2.5) + (c(Sunspire) * 5)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * 0.25 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Unic. Pasture) * 0.005) + (c(Ivory Tower) * 0.125 * (1 + c(UnicornEventBonus)))) * ((1 + (c(Unicorn Selection) * 0.25) + (c(Unicorn Tomb) * 0.05) + (c(Ivory Tower) * 0.1) + (c(Ivory Citadel) * 0.25) + (c(Sky Palace) * 0.5) + (c(Unicorn Utopia) * 2.5) + (c(Sunspire) * 5)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * 0.25 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "culture cap",

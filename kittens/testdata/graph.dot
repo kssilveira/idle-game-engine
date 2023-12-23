@@ -75,6 +75,9 @@ digraph {
   "Astromancy" -> "AstronomicalEventBonus" [color="green"];
   "Temporal Accelerator" -> "AstronomicalEventBonus" [color="green"];
   "Blazar" -> "AstronomicalEventBonus" [color="green"];
+  "Unicornmancy" -> "UnicornEventBonus" [color="green"];
+  "Temporal Accelerator" -> "UnicornEventBonus" [color="green"];
+  "Blazar" -> "UnicornEventBonus" [color="green"];
   "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
   "Concrete Huts" -> "HutCostExponentBase" [color="red"];
   "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
@@ -430,6 +433,8 @@ digraph {
   "GlobalProductionBonus" -> "fur" [color="green"];
   "ivory" -> "all kittens" [color="red"];
   "Active Mint" -> "ivory" [color="green"];
+  "Ivory Citadel" -> "ivory" [color="green"];
+  "UnicornEventBonus" -> "Ivory Citadel" [color="green"];
   "GlobalProductionBonus" -> "ivory" [color="green"];
   "spice" -> "all kittens" [color="red"];
   "spice" -> "Active Brewery" [color="red"];
@@ -437,9 +442,10 @@ digraph {
   "SpaceProductionBonus" -> "Spice Refinery" [color="green"];
   "GlobalProductionBonus" -> "spice" [color="green"];
   "Unic. Pasture" -> "unicorn" [color="green"];
+  "Ivory Tower" -> "unicorn" [color="green"];
+  "UnicornEventBonus" -> "Ivory Tower" [color="green"];
   "Unicorn Selection" -> "unicorn" [color="green"];
   "Unicorn Tomb" -> "unicorn" [color="green"];
-  "Ivory Tower" -> "unicorn" [color="green"];
   "Ivory Citadel" -> "unicorn" [color="green"];
   "Sky Palace" -> "unicorn" [color="green"];
   "Unicorn Utopia" -> "unicorn" [color="green"];
@@ -1815,6 +1821,7 @@ digraph {
   "SpaceProductionBonus" [shape="cylinder"];
   "CryostationStorageBonus" [shape="cylinder"];
   "AstronomicalEventBonus" [shape="cylinder"];
+  "UnicornEventBonus" [shape="cylinder"];
   "HutCostExponentBase" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];

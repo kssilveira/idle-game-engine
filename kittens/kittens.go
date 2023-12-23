@@ -272,6 +272,15 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Blazar", Factor: 0.025,
 		}},
+	}, {
+		Name: "UnicornEventBonus",
+		Producers: []data.Resource{{
+			Name: "Unicornmancy", Factor: 0.10,
+		}, {
+			Name: "Temporal Accelerator", Factor: 0.0125,
+		}, {
+			Name: "Blazar", Factor: 0.025,
+		}},
 	}})
 
 	g.AddResources([]data.Resource{{
@@ -1351,6 +1360,9 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Mint", Factor: 0.000021,
 			Bonus:               []data.Resource{{Name: "catpower cap"}},
 			BonusStartsFromZero: true,
+		}, {
+			Name: "Ivory Citadel", Factor: 0.0005 * 250. / 2.,
+			Bonus: []data.Resource{{Name: "UnicornEventBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
@@ -1375,6 +1387,9 @@ func NewGame(now game.Now) *game.Game {
 		Name: "unicorn", Type: "Resource", Cap: -1,
 		Producers: []data.Resource{{
 			Name: "Unic. Pasture", Factor: 0.001 * 5,
+		}, {
+			Name: "Ivory Tower", Factor: 0.0005 * 500. / 2.,
+			Bonus: []data.Resource{{Name: "UnicornEventBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{
