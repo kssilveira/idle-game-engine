@@ -89,9 +89,8 @@ Edges:
 
 Missing features:
 
-- [Metaphysics price ratios](https://wiki.kittensgame.com/en/game-tabs/science/metaphysics)
-- [Reset](https://wiki.kittensgame.com/en/general-information/game-mechanics#reset)
 - [Space Travel Speed](https://wiki.kittensgame.com/en/game-tabs/space)
+- [Reset](https://wiki.kittensgame.com/en/general-information/game-mechanics#reset)
 
 - [AI Apocalypse](https://wiki.kittensgame.com/en/general-information/events/ai-apocalypse)
 - [Achievements](https://wiki.kittensgame.com/en/game-tabs/achievements)
@@ -111,6 +110,7 @@ Missing features:
 
 TODO:
 
+- remove redundant cost exponent base
 - format numbers like '1 000 000.00'
 - add colors to textui
 - record terminal using https://asciinema.org/

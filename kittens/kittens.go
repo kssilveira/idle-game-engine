@@ -7,6 +7,8 @@ import (
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
+type R = data.Resource
+
 func NewGame(now game.Now) *game.Game {
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
@@ -14,30 +16,30 @@ func NewGame(now game.Now) *game.Game {
 
 	g := game.NewGame(now())
 
-	g.AddResources(join([]data.Resource{{
+	g.AddResources(join([]R{{
 		Name: "day", Type: "Calendar", IsHidden: true, Count: 0, Cap: -1,
-		Producers: []data.Resource{{Factor: 0.5}},
-	}}, resourceWithModulus(data.Resource{
+		Producers: []R{{Factor: 0.5}},
+	}}, resourceWithModulus(R{
 		Type: "Calendar", StartCount: 1, Cap: -1,
-		Producers: []data.Resource{{Name: "day", Factor: 1. / (100 * 4 * 5), ProductionFloor: true}},
+		Producers: []R{{Name: "day", Factor: 1. / (100 * 4 * 5), ProductionFloor: true}},
 	}, []string{
 		"Charon", "Umbra", "Yarn", "Helios", "Cath", "Redmoon", "Dune", "Piscine", "Termogus",
-		"Kairo"}), []data.Resource{{
+		"Kairo"}), []R{{
 		Name: "year", Type: "Calendar", StartCount: 1, Cap: -1,
-		Producers: []data.Resource{{Name: "day", Factor: 0.0025, ProductionFloor: true}},
-	}}, resourceWithModulus(data.Resource{
+		Producers: []R{{Name: "day", Factor: 0.0025, ProductionFloor: true}},
+	}}, resourceWithModulus(R{
 		Type: "Calendar", StartCount: 1, Cap: -1,
-		Producers: []data.Resource{{Name: "day", Factor: 0.01, ProductionFloor: true}},
+		Producers: []R{{Name: "day", Factor: 0.01, ProductionFloor: true}},
 	}, []string{
-		"Spring", "Summer", "Autumn", "Winter"}), []data.Resource{{
+		"Spring", "Summer", "Autumn", "Winter"}), []R{{
 		Name: "day_of_year", Type: "Calendar", StartCount: 1, Cap: -1,
 		ProductionModulus: 400, ProductionModulusEquals: -1,
-		Producers: []data.Resource{{Name: "day", ProductionFloor: true}},
+		Producers: []R{{Name: "day", ProductionFloor: true}},
 	}}))
 
-	addBonus(g, []data.Resource{{
+	addBonus(g, []R{{
 		Name: "BarnBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Expanded Barns", Factor: 0.75,
 		}, {
 			Name: "Reinforced Barns", Factor: 0.80,
@@ -52,7 +54,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "WarehouseBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Reinforced Warehouses", Factor: 0.25,
 		}, {
 			Name: "Titanium Warehouses", Factor: 0.50,
@@ -67,13 +69,13 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "HarbourBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "ship", Factor: 0.01,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Expanded Cargo",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Reactor", Factor: 0.05,
-					Bonus:               []data.Resource{{Name: "Reactor Vessel"}},
+					Bonus:               []R{{Name: "Reactor Vessel"}},
 					BonusStartsFromZero: true,
 				}},
 			}},
@@ -81,14 +83,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "BarnCatnipCapBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Silos", Factor: 0.25,
-			Bonus:               []data.Resource{{Name: "BarnBonus"}},
+			Bonus:               []R{{Name: "BarnBonus"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "HuntingBonus", Type: "Resource", IsHidden: true, StartCountFromZero: true,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Bolas",
 		}, {
 			Name: "Hunting Armour", Factor: 2,
@@ -101,29 +103,29 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "CraftRatio",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Workshop", Factor: 0.06,
 		}, {
 			Name: "Factory", Factor: 0.05,
-			Bonus: []data.Resource{{Name: "Factory Logistics", Factor: 0.20}},
+			Bonus: []R{{Name: "Factory Logistics", Factor: 0.20}},
 		}},
 	}, {
 		Name: "SpaceElevatorOilBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Space Elevator", Factor: -0.05,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:                "Cath",
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Kairo", Factor: -0.50,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}},
 	}, {
 		Name: "SpaceReactorScienceBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Antimatter Reactors", Factor: 0.95,
 		}, {
 			Name: "Advanced AM Reactors", Factor: 1.50,
@@ -132,7 +134,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "AcceleratorCapBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Stasis Chambers", Factor: 0.95,
 		}, {
 			Name: "Void Energy", Factor: 0.75,
@@ -143,21 +145,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "MoonBaseCapBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "AI Core", Factor: 0.10,
-			Bonus:               []data.Resource{{Name: "AI Bases"}},
+			Bonus:               []R{{Name: "AI Bases"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "CatnipCapBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Refrigeration", Factor: 0.75,
 		}, {
 			Name: "Hydroponics", Factor: 0.10,
 		}},
 	}, {
 		Name: "ParagonEffectBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Malkuth", Factor: 0.05,
 		}, {
 			Name: "Yesod", Factor: 0.05,
@@ -180,27 +182,27 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "ParagonCapBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "paragon", Factor: 0.001,
 		}, {
 			Name: "burned paragon", Factor: 0.0005,
 		}},
-		Bonus: []data.Resource{{Name: "ParagonEffectBonus"}},
+		Bonus: []R{{Name: "ParagonEffectBonus"}},
 	}, {
 		Name: "OtherCapBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Void Rift", Factor: 0.02,
 		}, {
 			Name: "Event Horizon", Factor: 0.10,
 		}},
 	}, {
 		Name:      "GlobalCapBonus",
-		Producers: []data.Resource{{}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
-				Bonus: []data.Resource{{Name: "ParagonCapBonus"}},
+		Producers: []R{{}},
+		Bonus: []R{{
+			Bonus: []R{{
+				Bonus: []R{{Name: "ParagonCapBonus"}},
 			}, {
-				Bonus: []data.Resource{{Name: "OtherCapBonus"}},
+				Bonus: []R{{Name: "OtherCapBonus"}},
 			}},
 			BonusIsMultiplicative: true,
 		}, {
@@ -209,16 +211,16 @@ func NewGame(now game.Now) *game.Game {
 		BonusStartsFromZero: true,
 	}, {
 		Name:      "BaseMetalCapBonus",
-		Producers: []data.Resource{{Name: "Sunforge", Factor: 0.01}},
+		Producers: []R{{Name: "Sunforge", Factor: 0.01}},
 	}, {
 		Name: "SolarRevolutionProductionBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "worship", Factor: 0.01 / 1000,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Solar Revolution",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Black Obelisk", Factor: 0.05,
-					Bonus:               []data.Resource{{Name: "Transcendence Level"}},
+					Bonus:               []R{{Name: "Transcendence Level"}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -226,30 +228,30 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "ParagonProductionBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "paragon", Factor: 0.01,
 		}, {
 			Name: "burned paragon", Factor: 0.01,
 		}},
-		Bonus: []data.Resource{{Name: "ParagonEffectBonus"}},
+		Bonus: []R{{Name: "ParagonEffectBonus"}},
 	}, {
 		Name: "OtherProductionBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Active Magneto", Factor: 0.02,
-			Bonus: []data.Resource{{Name: "Steamworks", Factor: 0.15}},
+			Bonus: []R{{Name: "Steamworks", Factor: 0.15}},
 		}, {
 			Name: "Active Reactor", Factor: 0.05,
 		}},
 	}, {
 		Name:      "GlobalProductionBonus",
-		Producers: []data.Resource{{}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
-				Bonus: []data.Resource{{Name: "SolarRevolutionProductionBonus"}},
+		Producers: []R{{}},
+		Bonus: []R{{
+			Bonus: []R{{
+				Bonus: []R{{Name: "SolarRevolutionProductionBonus"}},
 			}, {
-				Bonus: []data.Resource{{Name: "ParagonProductionBonus"}},
+				Bonus: []R{{Name: "ParagonProductionBonus"}},
 			}, {
-				Bonus: []data.Resource{{Name: "OtherProductionBonus"}},
+				Bonus: []R{{Name: "OtherProductionBonus"}},
 			}},
 			BonusIsMultiplicative: true,
 		}, {
@@ -258,33 +260,33 @@ func NewGame(now game.Now) *game.Game {
 		BonusStartsFromZero: true,
 	}, {
 		Name: "SpaceProductionBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Space Elevator", Factor: 0.01,
 		}, {
 			Name: "Orbital Array", Factor: 0.02,
 		}},
-		Bonus: []data.Resource{{
+		Bonus: []R{{
 			Name: "Factory", Factor: 0.0375,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:  "Space Manufacturing",
-				Bonus: []data.Resource{{Name: "Factory Logistics", Factor: 4.5/3.75 - 1}},
+				Bonus: []R{{Name: "Factory Logistics", Factor: 4.5/3.75 - 1}},
 			}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "CryostationStorageBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Helios", Factor: -0.10,
-			Bonus:               []data.Resource{{Name: "Numerology"}},
+			Bonus:               []R{{Name: "Numerology"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Termogus", Factor: 0.20,
-			Bonus:               []data.Resource{{Name: "Numerology"}},
+			Bonus:               []R{{Name: "Numerology"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "AstronomicalEventBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Observatory", Factor: 0.002,
 		}, {
 			Name: "Celestial Mechanics", Factor: 0.20,
@@ -299,7 +301,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "UnicornEventBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Unicornmancy", Factor: 0.10,
 		}, {
 			Name: "Temporal Accelerator", Factor: 0.0125,
@@ -308,7 +310,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "PriceRatioBonus",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Enlightenment", Factor: -0.01,
 		}, {
 			Name: "Golden Ratio", Factor: -0.01618,
@@ -321,58 +323,58 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}})
 
-	g.AddResources([]data.Resource{{
+	g.AddResources([]R{{
 		Name: "catnip cap", Type: "Resource", IsHidden: true, StartCount: 5000,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Barn", Factor: 5000,
-			Bonus: []data.Resource{{Name: "BarnCatnipCapBonus"}},
+			Bonus: []R{{Name: "BarnCatnipCapBonus"}},
 		}, {
 			Name: "Warehouse", Factor: 750,
-			Bonus:               []data.Resource{{Name: "BarnCatnipCapBonus"}},
+			Bonus:               []R{{Name: "BarnCatnipCapBonus"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Harbour", Factor: 2500,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "HarbourBonus",
 			}, {
 				Name: "BarnCatnipCapBonus",
 			}},
 		}, {
 			Name: "Accelerator", Factor: 30000,
-			Bonus: []data.Resource{{
-				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			Bonus: []R{{
+				Name: "Energy Rifts", Bonus: []R{{Name: "AcceleratorCapBonus"}},
 			}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Moon Base", Factor: 45000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+			Name: "Moon Base", Factor: 45000, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "CatnipCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "CatnipCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "catnip", Type: "Resource", CapResource: "catnip cap",
-		Producers: join([]data.Resource{{
+		Producers: join([]R{{
 			Name: "Catnip Field", Factor: 0.125 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Spring", Factor: 0.50,
 			}, {
 				Name: "Winter", Factor: -0.75,
 			}},
-		}}, resourceWithName(data.Resource{
+		}}, resourceWithName(R{
 			Factor: -4.25, ProductionFloor: true, ProductionOnGone: true,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Pasture", Factor: -0.005,
 			}, {
 				Name: "Unic. Pasture", Factor: -0.0015,
 			}, {
 				Name: "Robotic Assistance", Factor: -0.25,
 			}},
-		}, kittenNames), []data.Resource{{
+		}, kittenNames), []R{{
 			Name: "farmer", Factor: 1 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "happiness",
 			}, {
 				Name: "Mineral Hoes", Factor: 0.50,
@@ -383,32 +385,32 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Brewery", Factor: -1 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Bio Lab", Factor: -1 * 5, ProductionOnGone: true,
-			Bonus:               []data.Resource{{Name: "Biofuel Processing"}},
+			Bonus:               []R{{Name: "Biofuel Processing"}},
 			BonusStartsFromZero: true,
 		}}),
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
+		Bonus: []R{{
+			Bonus: []R{{
 				Name: "Aqueduct", Factor: 0.03,
 			}, {
 				Name: "Hydroponics", Factor: 0.025,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Yarn",
-					Bonus:               []data.Resource{{Name: "Numerology"}},
+					Bonus:               []R{{Name: "Numerology"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Piscine", Factor: -0.50,
-					Bonus:               []data.Resource{{Name: "Numerology"}},
+					Bonus:               []R{{Name: "Numerology"}},
 					BonusStartsFromZero: true,
 				}},
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Charon", Factor: 0.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -417,23 +419,23 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "wood cap", Type: "Resource", IsHidden: true, StartCount: 200,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Barn", Factor: 200,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
 			}},
 		}, {
 			Name: "Warehouse", Factor: 150,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
 			}},
 		}, {
 			Name: "Harbour", Factor: 700,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
@@ -441,25 +443,25 @@ func NewGame(now game.Now) *game.Game {
 				Name: "HarbourBonus",
 			}},
 		}, {
-			Name: "Moon Base", Factor: 25000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+			Name: "Moon Base", Factor: 25000, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 200000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 200000, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 20000,
-			Bonus: []data.Resource{{
-				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			Bonus: []R{{
+				Name: "Energy Rifts", Bonus: []R{{Name: "AcceleratorCapBonus"}},
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "wood", Type: "Resource", CapResource: "wood cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "woodcutter", Factor: 0.018 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "happiness",
 			}, {
 				Name: "Mineral Axe", Factor: 0.70,
@@ -476,11 +478,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Smelter", Factor: -0.05 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Steamworks", Factor: -0.02 / (2 * 100 * 4), ProductionOnGone: true,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Workshop Automation",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "wood cap",
-					Bonus: []data.Resource{{
+					Bonus: []R{{
 						Name: "Advanced Automation",
 					}},
 				}},
@@ -488,10 +490,10 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
+		Bonus: []R{{
+			Bonus: []R{{
 				Name: "Lumber Mill", Factor: 0.10,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Reinforced Saw", Factor: 0.20,
 				}, {
 					Name: "Steel Saw", Factor: 0.20,
@@ -502,13 +504,13 @@ func NewGame(now game.Now) *game.Game {
 				}},
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Charon", Factor: 0.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -517,11 +519,11 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "science cap", Type: "Resource", IsHidden: true, StartCount: 250,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Library", Factor: 250,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Observatory", Factor: 0.02,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Titanium Reflectors",
 				}, {
 					Name: "Unobtainium Reflectors",
@@ -536,25 +538,25 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Academy", Factor: 500,
 		}, {
 			Name: "Observatory", Factor: 1000,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Astrolabe", Factor: 0.50,
 			}, {
 				Name: "Satellite", Factor: 0.05,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Charon",
-					Bonus:               []data.Resource{{Name: "Numerology"}},
+					Bonus:               []R{{Name: "Numerology"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Kairo", Factor: -0.25,
-					Bonus:               []data.Resource{{Name: "Numerology"}},
+					Bonus:               []R{{Name: "Numerology"}},
 					BonusStartsFromZero: true,
 				}},
 			}},
 		}, {
 			Name: "Bio Lab", Factor: 1500,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Data Center", Factor: 0.01,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Uplink",
 				}, {
 					Name: "Starlink",
@@ -563,13 +565,13 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Data Center", Factor: 750,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Bio Lab", Factor: 0.01,
-				Bonus:               []data.Resource{{Name: "Uplink"}},
+				Bonus:               []R{{Name: "Uplink"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Observatory", Factor: 0.02,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Titanium Reflectors",
 				}, {
 					Name: "Unobtainium Reflectors",
@@ -579,40 +581,40 @@ func NewGame(now game.Now) *game.Game {
 				BonusStartsFromZero: true,
 			}, {
 				Name: "AI Core", Factor: 0.10,
-				Bonus:               []data.Resource{{Name: "Machine Learning"}},
+				Bonus:               []R{{Name: "Machine Learning"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Temple", Factor: 500,
-			Bonus:               []data.Resource{{Name: "Scholasticism"}},
+			Bonus:               []R{{Name: "Scholasticism"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Accelerator", Factor: 2500,
-			Bonus:               []data.Resource{{Name: "LHC"}},
+			Bonus:               []R{{Name: "LHC"}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Research Vessel", Factor: 10000, Bonus: []data.Resource{{Name: "SpaceReactorScienceBonus"}},
+			Name: "Research Vessel", Factor: 10000, Bonus: []R{{Name: "SpaceReactorScienceBonus"}},
 		}, {
-			Name: "Space Beacon", Factor: 25000, Bonus: []data.Resource{{Name: "SpaceReactorScienceBonus"}},
+			Name: "Space Beacon", Factor: 25000, Bonus: []R{{Name: "SpaceReactorScienceBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "science", Type: "Resource", CapResource: "science cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "scholar", Factor: 0.035 * 5,
-			Bonus: []data.Resource{{Name: "happiness"}},
+			Bonus: []R{{Name: "happiness"}},
 		}, {
 			Factor: 0.0025 * 25. / 2.,
-			Bonus:  []data.Resource{{Name: "AstronomicalEventBonus"}},
+			Bonus:  []R{{Name: "AstronomicalEventBonus"}},
 		}, {
 			Name: "Celestial Mechanics", Factor: 0.001 * 15. / 2.,
-			Bonus: []data.Resource{{Name: "AstronomicalEventBonus"}},
+			Bonus: []R{{Name: "AstronomicalEventBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
+		Bonus: []R{{
+			Bonus: []R{{
 				Name: "Library", Factor: 0.10,
 			}, {
 				Name: "Academy", Factor: 0.20,
@@ -622,35 +624,35 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Bio Lab", Factor: 0.35,
 			}, {
 				Name: "Data Center", Factor: 0.10,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Bio Lab", Factor: 0.01,
-					Bonus:               []data.Resource{{Name: "Uplink"}},
+					Bonus:               []R{{Name: "Uplink"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "AI Core", Factor: 0.10,
-					Bonus:               []data.Resource{{Name: "Machine Learning"}},
+					Bonus:               []R{{Name: "Machine Learning"}},
 					BonusStartsFromZero: true,
 				}},
 			}, {
 				Name: "Space Station", Factor: 0.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Cath", Factor: 0.50,
-					Bonus:               []data.Resource{{Name: "Numerology"}},
+					Bonus:               []R{{Name: "Numerology"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Kairo", Factor: -0.25,
-					Bonus:               []data.Resource{{Name: "Numerology"}},
+					Bonus:               []R{{Name: "Numerology"}},
 					BonusStartsFromZero: true,
 				}},
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Piscine",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -659,7 +661,7 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "catpower cap", Type: "Resource", IsHidden: true, StartCount: 100,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Hut", Factor: 75,
 		}, {
 			Name: "Log House", Factor: 50,
@@ -667,18 +669,18 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Mansion", Factor: 50,
 		}, {
 			Name: "Temple", Factor: 75,
-			Bonus:               []data.Resource{{Name: "Templars"}},
+			Bonus:               []R{{Name: "Templars"}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "catpower", Type: "Resource", CapResource: "catpower cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "hunter", Factor: 0.06 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "happiness",
 			}, {
 				Name: "Composite Bow", Factor: 0.50,
@@ -690,14 +692,14 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Active Mint", Factor: -0.75 * 5, ProductionOnGone: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Cath",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -706,23 +708,23 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "mineral cap", Type: "Resource", IsHidden: true, StartCount: 250,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Barn", Factor: 250,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
 			}},
 		}, {
 			Name: "Warehouse", Factor: 200,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
 			}},
 		}, {
 			Name: "Harbour", Factor: 950,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
@@ -730,25 +732,25 @@ func NewGame(now game.Now) *game.Game {
 				Name: "HarbourBonus",
 			}},
 		}, {
-			Name: "Moon Base", Factor: 30000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+			Name: "Moon Base", Factor: 30000, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 200000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 200000, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 25000,
-			Bonus: []data.Resource{{
-				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			Bonus: []R{{
+				Name: "Energy Rifts", Bonus: []R{{Name: "AcceleratorCapBonus"}},
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "mineral", Type: "Resource", CapResource: "mineral cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "miner", Factor: 0.05 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "happiness",
 			}, {
 				Name: "Mine", Factor: 0.20,
@@ -761,14 +763,14 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Calciner", Factor: -1.5 * 5, ProductionOnGone: true,
 		}, {
 			Factor: 0.001 * 25. / 2.,
-			Bonus:  []data.Resource{{Name: "AstronomicalEventBonus"}},
+			Bonus:  []R{{Name: "AstronomicalEventBonus"}},
 		}, {
 			Name: "Active Steamworks", Factor: -0.02 / (2 * 100 * 4), ProductionOnGone: true,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Workshop Automation",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "mineral cap",
-					Bonus: []data.Resource{{
+					Bonus: []R{{
 						Name: "Advanced Automation",
 					}},
 				}},
@@ -776,14 +778,14 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Charon", Factor: 0.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -792,23 +794,23 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "iron cap", Type: "Resource", IsHidden: true, StartCount: 50,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Barn", Factor: 50,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
 			}},
 		}, {
 			Name: "Warehouse", Factor: 25,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
 			}},
 		}, {
 			Name: "Harbour", Factor: 150,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "BarnBonus",
 			}, {
 				Name: "WarehouseBonus",
@@ -816,30 +818,30 @@ func NewGame(now game.Now) *game.Game {
 				Name: "HarbourBonus",
 			}},
 		}, {
-			Name: "Moon Base", Factor: 9000, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+			Name: "Moon Base", Factor: 9000, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 50000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 50000, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 7500,
-			Bonus: []data.Resource{{
-				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			Bonus: []R{{
+				Name: "Energy Rifts", Bonus: []R{{Name: "AcceleratorCapBonus"}},
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "iron", Type: "Resource", CapResource: "iron cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Active Smelter", Factor: 0.02 * 5,
-			Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
+			Bonus: []R{{Name: "Electrolytic Smelting", Factor: 0.95}},
 		}, {
 			Name: "Active Calciner", Factor: 0.15 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Oxidation", Factor: 0.95,
 			}, {
 				Name: "Rotary Kiln", Factor: 0.75,
@@ -848,17 +850,17 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10, ProductionOnGone: true,
-			Bonus:               []data.Resource{{Name: "Steel Plants"}},
+			Bonus:               []R{{Name: "Steel Plants"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Active Steamworks", Factor: -0.02 / (2 * 100 * 4), ProductionOnGone: true,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Workshop Automation",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Pneumatic Press",
-					Bonus: []data.Resource{{
+					Bonus: []R{{
 						Name: "iron cap",
-						Bonus: []data.Resource{{
+						Bonus: []R{{
 							Name: "Advanced Automation",
 						}},
 					}},
@@ -868,14 +870,14 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Umbra", Factor: 0.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -884,15 +886,15 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "coal cap", Type: "Resource", IsHidden: true, StartCount: 60,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Barn", Factor: 60,
-			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
+			Bonus: []R{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Warehouse", Factor: 30,
-			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
+			Bonus: []R{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Harbour", Factor: 100,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "WarehouseBonus",
 			}, {
 				Name: "HarbourBonus",
@@ -900,25 +902,25 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Barges", Factor: 0.50,
 			}},
 		}, {
-			Name: "Moon Base", Factor: 3500, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+			Name: "Moon Base", Factor: 3500, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 25000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 25000, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 2500,
-			Bonus: []data.Resource{{
-				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			Bonus: []R{{
+				Name: "Energy Rifts", Bonus: []R{{Name: "AcceleratorCapBonus"}},
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "coal", Type: "Resource", CapResource: "coal cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "geologist", Factor: 0.015 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "happiness",
 			}, {
 				Name: "Geodesy", Factor: 0.50,
@@ -931,39 +933,39 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Quarry", Factor: 0.015 * 5,
 		}, {
 			Name: "Active Smelter", Factor: 0.005 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:  "Coal Furnace",
-				Bonus: []data.Resource{{Name: "Electrolytic Smelting", Factor: 0.95}},
+				Bonus: []R{{Name: "Electrolytic Smelting", Factor: 0.95}},
 			}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Mine", Factor: 0.003 * 5,
-			Bonus:               []data.Resource{{Name: "Deep Mining"}},
+			Bonus:               []R{{Name: "Deep Mining"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Active Calciner", Factor: -0.15 * 5 * 0.10, ProductionOnGone: true,
-			Bonus:               []data.Resource{{Name: "Steel Plants"}},
+			Bonus:               []R{{Name: "Steel Plants"}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
+		Bonus: []R{{
+			Bonus: []R{{
 				Name: "Pyrolysis", Factor: 0.20,
 			}, {
 				Name: "Active Steamworks", Factor: -0.80, ProductionBoolean: true, ProductionOnGone: true,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "High Pressure Engine", Factor: -0.25,
 				}, {
 					Name: "Fuel Injector", Factor: -0.25,
 				}},
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Umbra", Factor: 0.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -972,50 +974,50 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "gold cap", Type: "Resource", IsHidden: true, StartCount: 10,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Barn", Factor: 10,
-			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
+			Bonus: []R{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Warehouse", Factor: 5,
-			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
+			Bonus: []R{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Harbour", Factor: 25,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "WarehouseBonus",
 			}, {
 				Name: "HarbourBonus",
 			}},
 		}, {
 			Name: "Mint", Factor: 100,
-			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
+			Bonus: []R{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Accelerator", Factor: 250,
-			Bonus: []data.Resource{{
-				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			Bonus: []R{{
+				Name: "Energy Rifts", Bonus: []R{{Name: "AcceleratorCapBonus"}},
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "Sky Palace", Factor: 0.01}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "Sky Palace", Factor: 0.01}},
 		}, {
-			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+			Bonus: []R{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "gold", Type: "Resource", CapResource: "gold cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Active Mint", Factor: -0.005 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Smelter", Factor: 0.001 * 5,
-			Bonus:               []data.Resource{{Name: "Gold Ore"}},
+			Bonus:               []R{{Name: "Gold Ore"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "geologist", Factor: 0.0008 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Geodesy",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Mining Drill", Factor: 0.625,
 				}, {
 					Name: "Unobtainium Drill", Factor: 0.625,
@@ -1023,14 +1025,14 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Umbra", Factor: 0.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1039,43 +1041,43 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "titanium cap", Type: "Resource", IsHidden: true, StartCount: 2,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Barn", Factor: 2,
-			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
+			Bonus: []R{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Warehouse", Factor: 10,
-			Bonus: []data.Resource{{Name: "WarehouseBonus"}},
+			Bonus: []R{{Name: "WarehouseBonus"}},
 		}, {
 			Name: "Harbour", Factor: 50,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "WarehouseBonus",
 			}, {
 				Name: "HarbourBonus",
 			}},
 		}, {
 			Name: "Accelerator", Factor: 750,
-			Bonus: []data.Resource{{
-				Name: "Energy Rifts", Bonus: []data.Resource{{Name: "AcceleratorCapBonus"}},
+			Bonus: []R{{
+				Name: "Energy Rifts", Bonus: []R{{Name: "AcceleratorCapBonus"}},
 			}},
 			BonusStartsFromZero: true,
 		}, {
-			Name: "Moon Base", Factor: 1250, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+			Name: "Moon Base", Factor: 1250, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 7500, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 7500, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "titanium", Type: "Resource", CapResource: "titanium cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Active Accelerator", Factor: -0.015 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Calciner", Factor: 0.0005 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Oxidation", Factor: 2.85,
 			}, {
 				Name: "Rotary Kiln", Factor: 2.25,
@@ -1084,17 +1086,17 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}, {
 			Name: "Active Smelter", Factor: 0.0015 * 5,
-			Bonus:               []data.Resource{{Name: "Nuclear Smelter"}},
+			Bonus:               []R{{Name: "Nuclear Smelter"}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Charon", Factor: 1.50,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1103,24 +1105,24 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "oil cap", Type: "Resource", IsHidden: true, StartCount: 1500,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Oil Well", Factor: 1500,
 		}, {
 			Name: "tanker", Factor: 500,
 		}, {
-			Name: "Moon Base", Factor: 3500, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+			Name: "Moon Base", Factor: 3500, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 7500, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 7500, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "oil", Type: "Resource", CapResource: "oil cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Oil Well", Factor: 0.02 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Pumpjack", Factor: 0.45,
 			}, {
 				Name: "Oil Refinery", Factor: 0.35,
@@ -1133,33 +1135,33 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Calciner", Factor: -0.024 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Bio Lab", Factor: 0.02 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:  "Biofuel Processing",
-				Bonus: []data.Resource{{Name: "GM Catnip", Factor: 0.60}},
+				Bonus: []R{{Name: "GM Catnip", Factor: 0.60}},
 			}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Hydraulic Fracturer", Factor: 0.5 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "SpaceProductionBonus",
 			}, {
 				Name: "Umbra", Factor: -0.25,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Dune", Factor: 0.50,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Termogus",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1168,60 +1170,60 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "uranium cap", Type: "Resource", IsHidden: true, StartCount: 250,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Reactor", Factor: 250,
 		}, {
 			Name: "Planet Cracker", Factor: 1750,
 		}, {
-			Name: "Cryostation", Factor: 5000, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 5000, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "uranium", Type: "Resource", CapResource: "uranium cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Active Accelerator", Factor: 0.0025 * 5,
 		}, {
 			Name: "Active Reactor", Factor: -0.001 * 5, ProductionOnGone: true,
-			Bonus: []data.Resource{{Name: "Enriched Uranium", Factor: -0.25}},
+			Bonus: []R{{Name: "Enriched Uranium", Factor: -0.25}},
 		}, {
 			Name: "Quarry", Factor: 0.0005 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:  "Orbital Geodesy",
-				Bonus: []data.Resource{{Name: "Enriched Uranium", Factor: 0.25}},
+				Bonus: []R{{Name: "Enriched Uranium", Factor: 0.25}},
 			}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Active Lunar Outpost", Factor: -0.35 * 5, ProductionOnGone: true,
-			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
+			Bonus: []R{{Name: "SpaceProductionBonus"}},
 		}, {
 			Name: "Planet Cracker", Factor: 0.3 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Planet Busters",
 			}, {
 				Name: "SpaceProductionBonus",
 			}, {
 				Name: "Umbra", Factor: -0.10,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Dune", Factor: 0.10,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Dune",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1230,43 +1232,43 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "unobtainium cap", Type: "Resource", IsHidden: true, StartCount: 150,
-		Producers: []data.Resource{{
-			Name: "Moon Base", Factor: 150, Bonus: []data.Resource{{Name: "MoonBaseCapBonus"}},
+		Producers: []R{{
+			Name: "Moon Base", Factor: 150, Bonus: []R{{Name: "MoonBaseCapBonus"}},
 		}, {
-			Name: "Cryostation", Factor: 750, Bonus: []data.Resource{{Name: "CryostationStorageBonus"}},
+			Name: "Cryostation", Factor: 750, Bonus: []R{{Name: "CryostationStorageBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "BaseMetalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "BaseMetalCapBonus"}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Active Lunar Outpost", Factor: 0.035,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "SpaceProductionBonus",
 			}, {
 				Name: "Charon", Factor: -0.10,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Redmoon", Factor: 0.20,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "Microwarp Reactors", Factor: 0.75}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "Microwarp Reactors", Factor: 0.75}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Redmoon",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1277,26 +1279,26 @@ func NewGame(now game.Now) *game.Game {
 		Name: "time crystal", Type: "Resource", Cap: -1,
 	}, {
 		Name: "antimatter cap", Type: "Resource", IsHidden: true, StartCount: 100,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Containment Chamber", Factor: 100,
-			Bonus: []data.Resource{{Name: "Heatsink", Factor: 0.02}},
+			Bonus: []R{{Name: "Heatsink", Factor: 0.02}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalCapBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalCapBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "antimatter", Type: "Resource", CapResource: "antimatter cap",
-		Producers: []data.Resource{{Name: "Sunlifter", Factor: 1. / (2 * 100 * 4)}},
+		Producers: []R{{Name: "Sunlifter", Factor: 1. / (2 * 100 * 4)}},
 	}, {
 		Name: "relic", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Space Beacon", Factor: 0.01 / 2,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Relic Station",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Black Nexus", Factor: 0.10,
-					Bonus:               []data.Resource{{Name: "Black Pyramid"}},
+					Bonus:               []R{{Name: "Black Pyramid"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Hash Level", Factor: 0.25,
@@ -1306,120 +1308,120 @@ func NewGame(now game.Now) *game.Game {
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "void", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Chronosphere", Factor: 0.005 / (2 * 100),
-			Bonus: []data.Resource{{Name: "Void Hoover"}},
+			Bonus: []R{{Name: "Void Hoover"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
+		Bonus: []R{{
+			Bonus: []R{{
 				Name:  "Chronocontrol",
-				Bonus: []data.Resource{{Name: "Distortion", Factor: 2}},
+				Bonus: []R{{Name: "Distortion", Factor: 2}},
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "temporal flux cap", Type: "Resource", IsHidden: true, StartCount: 3000,
-		Bonus: []data.Resource{{
+		Bonus: []R{{
 			Name: "Temporal Battery", Factor: 0.25,
 		}},
 	}, {
 		Name: "temporal flux", Type: "Resource", IsHidden: true, CapResource: "temporal flux cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Factor: 5. / (60 * 10),
-			Bonus:  []data.Resource{{Name: "Temporal Accelerator", Factor: 0.05}},
+			Bonus:  []R{{Name: "Temporal Accelerator", Factor: 0.05}},
 		}, {
 			Name: "Chronosphere", Factor: 1. / (2 * 100 * 4),
-			Bonus:               []data.Resource{{Name: "Chronosurge"}},
+			Bonus:               []R{{Name: "Chronosurge"}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "blackcoin", Type: "Resource", Cap: -1,
 	}, {
 		Name: "kitten", Type: "Resource", Cap: 0,
-		Producers: []data.Resource{{Factor: 0.05}},
-		Bonus: []data.Resource{{
+		Producers: []R{{Factor: 0.05}},
+		Bonus: []R{{
 			Name: "Venus of Willenfluff", Factor: 0.75,
 		}, {
 			Name: "Pawgan Rituals", Factor: 1.50,
 		}, {
 			Name: "Active Brewery", Factor: 0.01,
-			Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+			Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 			BonusStartsFromZero: true,
 		}},
-		OnGone: []data.Resource{{Name: "gone kitten", Count: 1}},
+		OnGone: []R{{Name: "gone kitten", Count: 1}},
 	}, {
 		Name: "all kittens", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
-		Producers: resourceWithName(data.Resource{
+		Producers: resourceWithName(R{
 			Name: "kitten", ProductionFloor: true,
 		}, kittenNames),
 	}, {
 		Name: "fur", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "all kittens", Factor: -0.05,
-			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []R{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Active Mint", Factor: 0.0000875,
-			Bonus:               []data.Resource{{Name: "catpower cap"}},
+			Bonus:               []R{{Name: "catpower cap"}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "ivory", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "all kittens", Factor: -0.035,
-			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []R{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Active Mint", Factor: 0.000021,
-			Bonus:               []data.Resource{{Name: "catpower cap"}},
+			Bonus:               []R{{Name: "catpower cap"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Ivory Citadel", Factor: 0.0005 * 250. / 2.,
-			Bonus: []data.Resource{{Name: "UnicornEventBonus"}},
+			Bonus: []R{{Name: "UnicornEventBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "spice", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "all kittens", Factor: -0.005,
-			Bonus: []data.Resource{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []R{{Name: "Tradepost", Factor: -0.04}},
 		}, {
 			Name: "Active Brewery", Factor: -0.1 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Spice Refinery", Factor: 0.125,
-			Bonus: []data.Resource{{Name: "SpaceProductionBonus"}},
+			Bonus: []R{{Name: "SpaceProductionBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "unicorn", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Unic. Pasture", Factor: 0.001 * 5,
 		}, {
 			Name: "Ivory Tower", Factor: 0.0005 * 500. / 2.,
-			Bonus: []data.Resource{{Name: "UnicornEventBonus"}},
+			Bonus: []R{{Name: "UnicornEventBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{
+		Bonus: []R{{
+			Bonus: []R{{
 				Name: "Unicorn Selection", Factor: 0.25,
 			}, {
 				Name: "Unicorn Tomb", Factor: 0.05,
@@ -1435,13 +1437,13 @@ func NewGame(now game.Now) *game.Game {
 				Name: "Sunspire", Factor: 5.00,
 			}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Helios", Factor: 0.25,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1450,7 +1452,7 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "culture cap", Type: "Resource", IsHidden: true, StartCount: 100,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Library", Factor: 10,
 		}, {
 			Name: "Academy", Factor: 25,
@@ -1460,46 +1462,46 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Chapel", Factor: 200,
 		}, {
 			Name: "Data Center", Factor: 250,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Bio Lab", Factor: 0.01,
-				Bonus:               []data.Resource{{Name: "Uplink"}},
+				Bonus:               []R{{Name: "Uplink"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "AI Core", Factor: 0.10,
-				Bonus:               []data.Resource{{Name: "Machine Learning"}},
+				Bonus:               []R{{Name: "Machine Learning"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Temple", Factor: 125,
-			Bonus:               []data.Resource{{Name: "Basilica"}},
+			Bonus:               []R{{Name: "Basilica"}},
 			BonusStartsFromZero: true,
 		}},
-		Bonus: []data.Resource{{
+		Bonus: []R{{
 			Name: "Ziggurat", Factor: 0.08,
-			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.125}},
+			Bonus: []R{{Name: "Unicorn Graveyard", Factor: 0.125}},
 		}},
 	}, {
 		Name: "culture", Type: "Resource", CapResource: "culture cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Amphitheatre", Factor: 0.005 * 5,
 		}, {
 			Name: "Chapel", Factor: 0.05 * 5,
 		}, {
 			Name: "Temple", Factor: 0.1 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Stained Glass", Factor: 0.50,
 			}, {
 				Name: "Basilica", Factor: 2.00,
 			}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Yarn",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1508,9 +1510,9 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "faith cap", Type: "Resource", IsHidden: true, StartCount: 100,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Temple", Factor: 100,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Golden Spire", Factor: 0.50,
 			}, {
 				Name: "Sun Altar", Factor: 0.50,
@@ -1518,26 +1520,26 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "faith", Type: "Resource", CapResource: "faith cap",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "priest", Factor: 0.0015 * 5,
-			Bonus: []data.Resource{{Name: "happiness"}},
+			Bonus: []R{{Name: "happiness"}},
 		}, {
 			Name: "Temple", Factor: 0.0015 * 5,
-			Bonus:               []data.Resource{{Name: "Theology"}},
+			Bonus:               []R{{Name: "Theology"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Chapel", Factor: 0.005 * 5,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "Solar Chant", Factor: 0.10}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "Solar Chant", Factor: 0.10}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Helios",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1550,61 +1552,61 @@ func NewGame(now game.Now) *game.Game {
 		Name: "epiphany", Type: "Resource", Cap: -1,
 	}, {
 		Name: "starchart", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "scholar", Factor: 0.0005,
-			Bonus:               []data.Resource{{Name: "Astrophysicists"}},
+			Bonus:               []R{{Name: "Astrophysicists"}},
 			BonusStartsFromZero: true,
 		}, {
 			Name: "Satellite", Factor: 0.005,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:                "Cath",
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Kairo", Factor: -0.25,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Research Vessel", Factor: 0.05,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "SpaceProductionBonus",
 			}, {
 				Name: "Yarn", Factor: -0.50,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Piscine", Factor: 0.50,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Space Beacon", Factor: 0.125,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "SpaceProductionBonus",
 			}, {
 				Name: "Cath", Factor: -0.50,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Kairo", Factor: 4.00,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
 			Name: "Astronomy", Factor: 0.0025 * 1 / 2.,
-			Bonus: []data.Resource{{Name: "AstronomicalEventBonus"}},
+			Bonus: []R{{Name: "AstronomicalEventBonus"}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "Hubble Space Telescope", Factor: 0.30}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "Hubble Space Telescope", Factor: 0.30}},
 		}, {
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}, {
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Kairo", Factor: 4.00,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name:                "Numeromancy",
-					Bonus:               []data.Resource{{Name: "festival day", ProductionBoolean: true}},
+					Bonus:               []R{{Name: "festival day", ProductionBoolean: true}},
 					BonusStartsFromZero: true,
 				}},
 				BonusStartsFromZero: true,
@@ -1613,48 +1615,48 @@ func NewGame(now game.Now) *game.Game {
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "festival day", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{Factor: -0.5}},
+		Producers: []R{{Factor: -0.5}},
 	}, {
 		Name: "gigaflop", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "AI Core", Factor: 0.02 * 5,
 		}, {
 			Name: "Entanglement Station", Factor: -0.1 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:                "Charon",
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}, {
 				Name: "Redmoon", Factor: -0.50,
-				Bonus:               []data.Resource{{Name: "Numerology"}},
+				Bonus:               []R{{Name: "Numerology"}},
 				BonusStartsFromZero: true,
 			}},
 		}},
 	}, {
 		Name: "hash", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{Name: "Entanglement Station", Factor: 0.1 * 5}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Producers: []R{{Name: "Entanglement Station", Factor: 0.1 * 5}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "leviathan energy cap", Type: "Resource", IsHidden: true, StartCount: 1,
-		Producers: []data.Resource{{Name: "Marker", Factor: 5}},
+		Producers: []R{{Name: "Marker", Factor: 5}},
 	}, {
 		Name: "leviathan energy", Type: "Resource", CapResource: "leviathan energy cap",
 	}, {
 		Name: "tear", Type: "Resource", Cap: -1,
 	}, {
 		Name: "alicorn", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Sky Palace", Factor: 0.00002 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Unicorn Utopia", Factor: 0.00015,
 			}, {
 				Name: "Sunspire", Factor: 0.0003,
 			}, {
 				Name: "Black Radiance", Factor: 0.03464,
-				Bonus:               []data.Resource{{Name: "sorrow"}},
+				Bonus:               []R{{Name: "sorrow"}},
 				BonusStartsFromZero: true,
 			}},
 		}, {
@@ -1664,54 +1666,54 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Sky Palace", Factor: 0.0001 / 2,
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "necrocorn", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Marker", Factor: 0.000001 * 5,
-			Bonus: []data.Resource{{Name: "Unicorn Graveyard", Factor: 0.10}},
+			Bonus: []R{{Name: "Unicorn Graveyard", Factor: 0.10}},
 		}},
-		Bonus: []data.Resource{{
-			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},
+		Bonus: []R{{
+			Bonus: []R{{Name: "GlobalProductionBonus"}},
 		}},
 		BonusIsMultiplicative: true,
 	}, {
 		Name: "sorrow cap", Type: "Resource", IsHidden: true, StartCount: 16,
-		Producers: []data.Resource{{Name: "Black Core"}},
+		Producers: []R{{Name: "Black Core"}},
 	}, {
 		Name: "sorrow", Type: "Resource", CapResource: "sorrow cap",
 	}, {
 		Name: "chronoheat cap", Type: "Resource", IsHidden: true, StartCount: 1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Chrono Furnace", Factor: 100,
 		}, {
 			Name: "Time Boiler", Factor: 10,
 		}},
 	}, {
 		Name: "chronoheat", Type: "Resource", CapResource: "chronoheat cap",
-		Producers: []data.Resource{{Name: "Chrono Furnace", Factor: -0.02 * 5}},
+		Producers: []R{{Name: "Chrono Furnace", Factor: -0.02 * 5}},
 	}, {
 		Name: "chrono furnace fuel", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Chrono Furnace", Factor: 0.02 * 5,
-			Bonus:               []data.Resource{{Name: "chronoheat", ProductionBoolean: true}},
+			Bonus:               []R{{Name: "chronoheat", ProductionBoolean: true}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "karma", Type: "Resource", Cap: -1,
 	}, {
 		Name: "paragon", Type: "Resource", Cap: -1,
-		Producers: []data.Resource{{Factor: 1. / (2 * 100 * 4 * 1000)}},
+		Producers: []R{{Factor: 1. / (2 * 100 * 4 * 1000)}},
 	}, {
 		Name: "burned paragon", Type: "Resource", Cap: -1,
 	}, {
 		Name: "gone kitten", Type: "Resource", Cap: -1,
 	}, {
 		Name: "happiness", Type: "Job", StartCount: 0.1, Cap: -1,
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "all kittens", Factor: -0.02,
 		}, {
 			Name: "ivory", Factor: 0.10, ProductionBoolean: true,
@@ -1739,42 +1741,42 @@ func NewGame(now game.Now) *game.Game {
 			Name: "void", Factor: 0.10, ProductionBoolean: true,
 		}, {
 			Name: "festival day", Factor: 0.10, ProductionBoolean: true,
-			Bonus: []data.Resource{{Name: "Active Brewery", Factor: 0.01}},
+			Bonus: []R{{Name: "Active Brewery", Factor: 0.01}},
 		}, {
 			Name: "Amphitheatre", Factor: 0.048,
 		}, {
 			Name: "Broadcast Tower", Factor: 0.75,
 		}, {
 			Name: "Temple", Factor: 0.005,
-			Bonus:               []data.Resource{{Name: "Sun Altar"}},
+			Bonus:               []R{{Name: "Sun Altar"}},
 			BonusStartsFromZero: true,
 		}},
 	}})
 
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Building", LockedBy: "Catnip Field",
-		Adds: []data.Resource{{Name: "catnip", Count: 10}},
+		Adds: []R{{Name: "catnip", Count: 10}},
 	}, {
 		Name: "Refine catnip", Type: "Building", UnlockedBy: "Catnip Field", LockedBy: "woodcutter",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catnip", Count: 100,
-			Bonus: []data.Resource{{Name: "Catnip Enrichment", Factor: -0.50}},
+			Bonus: []R{{Name: "Catnip Enrichment", Factor: -0.50}},
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "wood", Count: 1,
-			Bonus: []data.Resource{{Name: "Bio Lab", Factor: 0.10}},
+			Bonus: []R{{Name: "Bio Lab", Factor: 0.10}},
 		}},
 	}})
 
 	addBuildings(g, []data.Action{{
 		Name: "Catnip Field", UnlockedBy: "catnip",
-		Costs: []data.Resource{{Name: "catnip", Count: 10, CostExponentBaseResource: getCEBR(1.12)}},
+		Costs: []R{{Name: "catnip", Count: 10, CostExponentBaseResource: getCEBR(1.12)}},
 	}, {
 		Name: "Hut", UnlockedBy: "Catnip Field",
-		Costs: []data.Resource{{
-			Name: "wood", Count: 5, CostExponentBaseResource: &data.Resource{
+		Costs: []R{{
+			Name: "wood", Count: 5, CostExponentBaseResource: &R{
 				Factor: 2.5,
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Ironwood Huts", Factor: -0.50,
 				}, {
 					Name: "Concrete Huts", Factor: -0.30,
@@ -1786,39 +1788,39 @@ func NewGame(now game.Now) *game.Game {
 					Name: "PriceRatioBonus",
 				}},
 			}}},
-		Adds: []data.Resource{{Name: "kitten", Cap: 2}},
+		Adds: []R{{Name: "kitten", Cap: 2}},
 	}, {
 		Name: "Library", UnlockedBy: "Catnip Field",
-		Costs: []data.Resource{{Name: "wood", Count: 25, CostExponentBaseResource: getCEBR(1.15)}},
+		Costs: []R{{Name: "wood", Count: 25, CostExponentBaseResource: getCEBR(1.15)}},
 	}, {
 		Name: "Barn", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "wood", Count: 50, CostExponentBaseResource: getCEBR(1.75)}},
+		Costs: []R{{Name: "wood", Count: 50, CostExponentBaseResource: getCEBR(1.75)}},
 	}, {
 		Name: "Mine", UnlockedBy: "Mining",
-		Costs: []data.Resource{{Name: "wood", Count: 100, CostExponentBaseResource: getCEBR(1.15)}},
+		Costs: []R{{Name: "wood", Count: 100, CostExponentBaseResource: getCEBR(1.15)}},
 	}, {
 		Name: "Workshop", UnlockedBy: "Mining",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "mineral", Count: 400, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Active Smelter", UnlockedBy: "Metal Working",
-		Costs: []data.Resource{{Name: "mineral", Count: 200, CostExponentBaseResource: getCEBR(1.15)}},
+		Costs: []R{{Name: "mineral", Count: 200, CostExponentBaseResource: getCEBR(1.15)}},
 	}, {
 		Name: "Pasture", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catnip", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "wood", Count: 10, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Unic. Pasture", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "unicorn", Count: 2, CostExponentBaseResource: getCEBR(1.75)}},
+		Costs: []R{{Name: "unicorn", Count: 2, CostExponentBaseResource: getCEBR(1.75)}},
 	}, {
 		Name: "Academy", UnlockedBy: "Mathematics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "mineral", Count: 70, CostExponentBaseResource: getCEBR(1.15),
@@ -1827,35 +1829,35 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Warehouse", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "beam", Count: 1.5, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "slab", Count: 2, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Log House", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 200, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "mineral", Count: 250, CostExponentBaseResource: getCEBR(1.15),
 		}},
-		Adds: []data.Resource{{Name: "kitten", Cap: 1}},
+		Adds: []R{{Name: "kitten", Cap: 1}},
 	}, {
 		Name: "Aqueduct", UnlockedBy: "Engineering",
-		Costs: []data.Resource{{Name: "mineral", Count: 75, CostExponentBaseResource: getCEBR(1.12)}},
+		Costs: []R{{Name: "mineral", Count: 75, CostExponentBaseResource: getCEBR(1.12)}},
 	}, {
 		Name: "Mansion", UnlockedBy: "Architecture",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "slab", Count: 185, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "steel", Count: 75, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "titanium", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}},
-		Adds: []data.Resource{{Name: "kitten", Cap: 1}},
+		Adds: []R{{Name: "kitten", Cap: 1}},
 	}, {
 		Name: "Observatory", UnlockedBy: "Astronomy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "scaffold", Count: 50, CostExponentBaseResource: getCEBR(1.1),
 		}, {
 			Name: "slab", Count: 35, CostExponentBaseResource: getCEBR(1.1),
@@ -1866,7 +1868,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Bio Lab", UnlockedBy: "Biology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "slab", Count: 100, CostExponentBaseResource: getCEBR(1.1),
 		}, {
 			Name: "alloy", Count: 25, CostExponentBaseResource: getCEBR(1.1),
@@ -1875,7 +1877,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Harbour", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "scaffold", Count: 5, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "slab", Count: 50, CostExponentBaseResource: getCEBR(1.15),
@@ -1884,7 +1886,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Quarry", UnlockedBy: "Geology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "scaffold", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "steel", Count: 125, CostExponentBaseResource: getCEBR(1.15),
@@ -1893,7 +1895,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Lumber Mill", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "iron", Count: 50, CostExponentBaseResource: getCEBR(1.15),
@@ -1902,7 +1904,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Oil Well", UnlockedBy: "Chemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "steel", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "gear", Count: 25, CostExponentBaseResource: getCEBR(1.15),
@@ -1911,7 +1913,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Accelerator", UnlockedBy: "Particle Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "titanium", Count: 7500, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "concrete", Count: 125, CostExponentBaseResource: getCEBR(1.15),
@@ -1920,7 +1922,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Steamworks", UnlockedBy: "Machinery",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "steel", Count: 65, CostExponentBaseResource: getCEBR(1.25),
 		}, {
 			Name: "gear", Count: 20, CostExponentBaseResource: getCEBR(1.25),
@@ -1929,7 +1931,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Magneto", UnlockedBy: "Electricity",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "alloy", Count: 10, CostExponentBaseResource: getCEBR(1.25),
 		}, {
 			Name: "gear", Count: 5, CostExponentBaseResource: getCEBR(1.25),
@@ -1938,7 +1940,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Calciner", UnlockedBy: "Chemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "steel", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "titanium", Count: 15, CostExponentBaseResource: getCEBR(1.15),
@@ -1949,7 +1951,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Factory", UnlockedBy: "Mechanization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "titanium", Count: 2000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "plate", Count: 25000, CostExponentBaseResource: getCEBR(1.15),
@@ -1958,7 +1960,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Reactor", UnlockedBy: "Nuclear Fission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "titanium", Count: 3500, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "plate", Count: 5000, CostExponentBaseResource: getCEBR(1.15),
@@ -1969,7 +1971,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Amphitheatre", UnlockedBy: "Writing",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 200, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "mineral", Count: 1200, CostExponentBaseResource: getCEBR(1.15),
@@ -1978,7 +1980,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Chapel", UnlockedBy: "Acoustics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "mineral", Count: 2000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "culture", Count: 250, CostExponentBaseResource: getCEBR(1.15),
@@ -1987,7 +1989,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Temple", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "slab", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "plate", Count: 15, CostExponentBaseResource: getCEBR(1.15),
@@ -1998,7 +2000,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Tradepost", UnlockedBy: "Currency",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 500, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "mineral", Count: 200, CostExponentBaseResource: getCEBR(1.15),
@@ -2007,7 +2009,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Mint", UnlockedBy: "Architecture",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "mineral", Count: 5000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "plate", Count: 200, CostExponentBaseResource: getCEBR(1.15),
@@ -2016,7 +2018,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Active Brewery", UnlockedBy: "Drama and Poetry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 1000, CostExponentBaseResource: getCEBR(1.5),
 		}, {
 			Name: "culture", Count: 750, CostExponentBaseResource: getCEBR(1.5),
@@ -2027,7 +2029,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Ziggurat", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "megalith", Count: 50, CostExponentBaseResource: getCEBR(1.25),
 		}, {
 			Name: "scaffold", Count: 50, CostExponentBaseResource: getCEBR(1.25),
@@ -2036,7 +2038,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Chronosphere", UnlockedBy: "Chronophysics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "unobtainium", Count: 2500, CostExponentBaseResource: getCEBR(1.25),
 		}, {
 			Name: "time crystal", Count: 1, CostExponentBaseResource: getCEBR(1.25),
@@ -2047,61 +2049,61 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "AI Core", UnlockedBy: "Artificial Intelligence",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "antimatter", Count: 125, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "science", Count: 500000, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Solar Farm", UnlockedBy: "Ecology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "titanium", Count: 250, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Hydro Plant", UnlockedBy: "Robotics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "concrete", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "titanium", Count: 2500, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Data Center", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "concrete", Count: 10, CostExponentBaseResource: getCEBR(1.15),
 		}, {
 			Name: "steel", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Broadcast Tower", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "iron", Count: 1250, CostExponentBaseResource: getCEBR(1.18),
 		}, {
 			Name: "titanium", Count: 75, CostExponentBaseResource: getCEBR(1.18),
 		}},
 	}, {
 		Name: "Unicorn Tomb", UnlockedBy: "Ziggurat",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "tear", Count: 5, CostExponentBase: 1.15,
 		}, {
 			Name: "ivory", Count: 500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Ivory Tower", UnlockedBy: "Unicorn Tomb",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "tear", Count: 25, CostExponentBase: 1.15,
 		}, {
 			Name: "ivory", Count: 25000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Ivory Citadel", UnlockedBy: "Ivory Tower",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "tear", Count: 50, CostExponentBase: 1.15,
 		}, {
 			Name: "ivory", Count: 50000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Sky Palace", UnlockedBy: "Ivory Citadel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "tear", Count: 500, CostExponentBase: 1.15,
 		}, {
 			Name: "ivory", Count: 125000, CostExponentBase: 1.15,
@@ -2110,7 +2112,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Unicorn Utopia", UnlockedBy: "Sky Palace",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "tear", Count: 5000, CostExponentBase: 1.15,
 		}, {
 			Name: "ivory", Count: 1000000, CostExponentBase: 1.15,
@@ -2119,7 +2121,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Sunspire", UnlockedBy: "Unicorn Utopia",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "tear", Count: 25000, CostExponentBase: 1.15,
 		}, {
 			Name: "ivory", Count: 750000, CostExponentBase: 1.15,
@@ -2128,7 +2130,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Marker", UnlockedBy: "Megalomania",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "tear", Count: 5000, CostExponentBase: 1.15,
 		}, {
 			Name: "megalith", Count: 750, CostExponentBase: 1.15,
@@ -2139,14 +2141,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Unicorn Graveyard", UnlockedBy: "Black Codex",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "necrocorn", Count: 5, CostExponentBase: 1.15,
 		}, {
 			Name: "megalith", Count: 1000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Unicorn Necropolis", UnlockedBy: "Unicorn Graveyard",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "necrocorn", Count: 15, CostExponentBase: 1.15,
 		}, {
 			Name: "megalith", Count: 2500, CostExponentBase: 1.15,
@@ -2157,7 +2159,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Black Pyramid", UnlockedBy: "Megalomania",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "sorrow", Count: 5, CostExponentBase: 1.15,
 		}, {
 			Name: "megalith", Count: 2500, CostExponentBase: 1.15,
@@ -2168,81 +2170,81 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Solar Chant", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{Name: "faith", Count: 100, CostExponentBase: 2.5}},
+		Costs: []R{{Name: "faith", Count: 100, CostExponentBase: 2.5}},
 	}, {
 		Name: "Scholasticism", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{Name: "faith", Count: 250, CostExponentBase: 2.5}},
+		Costs: []R{{Name: "faith", Count: 250, CostExponentBase: 2.5}},
 	}, {
 		Name: "Golden Spire", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 350, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 150, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Sun Altar", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 500, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 250, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Stained Glass", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 500, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 250, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Basilica", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 1250, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 750, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Templars", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 3500, CostExponentBase: 2.5,
 		}, {
 			Name: "gold", Count: 3000, CostExponentBase: 2.5,
 		}},
 	}, {
 		Name: "Transcendence Level", UnlockedBy: "Transcendence",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "epiphany", Count: 1, CostExponentBase: 3,
 		}},
 	}, {
 		Name: "Black Obelisk", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{Name: "relic", Count: 100, CostExponentBase: 1.15}},
+		Costs: []R{{Name: "relic", Count: 100, CostExponentBase: 1.15}},
 	}, {
 		Name: "Black Nexus", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{Name: "relic", Count: 5000, CostExponentBase: 1.15}},
+		Costs: []R{{Name: "relic", Count: 5000, CostExponentBase: 1.15}},
 	}, {
 		Name: "Black Core", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{Name: "relic", Count: 10000, CostExponentBase: 1.15}},
+		Costs: []R{{Name: "relic", Count: 10000, CostExponentBase: 1.15}},
 	}, {
 		Name: "Event Horizon", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{Name: "relic", Count: 25000, CostExponentBase: 1.15}},
+		Costs: []R{{Name: "relic", Count: 25000, CostExponentBase: 1.15}},
 	}, {
 		Name: "Black Library", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{Name: "relic", Count: 30000, CostExponentBase: 1.15}},
+		Costs: []R{{Name: "relic", Count: 30000, CostExponentBase: 1.15}},
 	}, {
 		Name: "Black Radiance", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{Name: "relic", Count: 37500, CostExponentBase: 1.15}},
+		Costs: []R{{Name: "relic", Count: 37500, CostExponentBase: 1.15}},
 	}, {
 		Name: "Blazar", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{Name: "relic", Count: 50000, CostExponentBase: 1.15}},
+		Costs: []R{{Name: "relic", Count: 50000, CostExponentBase: 1.15}},
 	}, {
 		Name: "Dark Nova", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "relic", Count: 75000, CostExponentBase: 1.15,
 		}, {
 			Name: "void", Count: 7500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Mausoleum", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "relic", Count: 50000, CostExponentBase: 1.15,
 		}, {
 			Name: "void", Count: 12500, CostExponentBase: 1.15,
@@ -2251,14 +2253,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Holy Genocide", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "relic", Count: 100000, CostExponentBase: 1.15,
 		}, {
 			Name: "void", Count: 25000, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Space Elevator", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "titanium", Count: 6000, CostExponentBase: 1.15,
 		}, {
 			Name: "science", Count: 75000, CostExponentBase: 1.15,
@@ -2267,30 +2269,30 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Satellite", UnlockedBy: "Satellites",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 325, CostExponentBase: 1.08,
 		}, {
 			Name: "titanium", Count: 2500, CostExponentBase: 1.08,
 		}, {
 			Name: "science", Count: 100000, CostExponentBase: 1.08,
 		}, {
-			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Space Station", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 425, CostExponentBase: 1.12,
 		}, {
 			Name: "alloy", Count: 750, CostExponentBase: 1.12,
 		}, {
 			Name: "science", Count: 150000, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
-		Adds: []data.Resource{{Name: "kitten", Cap: 2}},
+		Adds: []R{{Name: "kitten", Cap: 2}},
 	}, {
 		Name: "Active Lunar Outpost", UnlockedBy: "Moon Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 650, CostExponentBase: 1.12,
 		}, {
 			Name: "uranium", Count: 500, CostExponentBase: 1.12,
@@ -2301,11 +2303,11 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "science", Count: 100000, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Moon Base", UnlockedBy: "Moon Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 700, CostExponentBase: 1.12,
 		}, {
 			Name: "titanium", Count: 9500, CostExponentBase: 1.12,
@@ -2316,11 +2318,11 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "unobtainium", Count: 50, CostExponentBase: 1.12,
 		}, {
-			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Planet Cracker", UnlockedBy: "Dune Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 2500, CostExponentBase: 1.18,
 		}, {
 			Name: "alloy", Count: 1750, CostExponentBase: 1.18,
@@ -2331,7 +2333,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Hydraulic Fracturer", UnlockedBy: "Dune Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 750, CostExponentBase: 1.18,
 		}, {
 			Name: "alloy", Count: 1025, CostExponentBase: 1.18,
@@ -2342,7 +2344,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Spice Refinery", UnlockedBy: "Dune Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 500, CostExponentBase: 1.15,
 		}, {
 			Name: "alloy", Count: 500, CostExponentBase: 1.15,
@@ -2353,7 +2355,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Research Vessel", UnlockedBy: "Piscine Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 100, CostExponentBase: 1.15,
 		}, {
 			Name: "alloy", Count: 2500, CostExponentBase: 1.15,
@@ -2364,7 +2366,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Orbital Array", UnlockedBy: "Piscine Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000, CostExponentBase: 1.15,
 		}, {
 			Name: "eludium", Count: 100, CostExponentBase: 1.15,
@@ -2375,7 +2377,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Sunlifter", UnlockedBy: "Helios Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500000, CostExponentBase: 1.15,
 		}, {
 			Name: "eludium", Count: 225, CostExponentBase: 1.15,
@@ -2384,14 +2386,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Containment Chamber", UnlockedBy: "Helios Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500000, CostExponentBase: 1.125,
 		}, {
 			Name: "kerosene", Count: 2500, CostExponentBase: 1.125,
 		}},
 	}, {
 		Name: "Heatsink", UnlockedBy: "Helios Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000, CostExponentBase: 1.12,
 		}, {
 			Name: "thorium", Count: 12500, CostExponentBase: 1.12,
@@ -2402,7 +2404,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Sunforge", UnlockedBy: "Helios Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000, CostExponentBase: 1.12,
 		}, {
 			Name: "relic", Count: 1, CostExponentBase: 1.12,
@@ -2413,7 +2415,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Cryostation", UnlockedBy: "T-Minus Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000, CostExponentBase: 1.12,
 		}, {
 			Name: "eludium", Count: 25, CostExponentBase: 1.12,
@@ -2424,7 +2426,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Space Beacon", UnlockedBy: "Kairo Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 25000, CostExponentBase: 1.15,
 		}, {
 			Name: "antimatter", Count: 50, CostExponentBase: 1.15,
@@ -2435,34 +2437,34 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Terraforming Station", UnlockedBy: "Terraformation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "antimatter", Count: 25, CostExponentBase: 1.25,
 		}, {
 			Name: "uranium", Count: 5000, CostExponentBase: 1.25,
 		}, {
 			Name: "kerosene", Count: 5000, CostExponentBase: 1.25,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "kitten", Cap: 1,
-			Bonus: []data.Resource{{Name: "Hydroponics", Factor: 0.01}},
+			Bonus: []R{{Name: "Hydroponics", Factor: 0.01}},
 		}},
 	}, {
 		Name: "Hydroponics", UnlockedBy: "Hydroponics Tech",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "unobtainium", Count: 1, CostExponentBase: 1.15,
 		}, {
 			Name: "kerosene", Count: 500, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "HR Harvester", UnlockedBy: "Umbra Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "relic", Count: 25, CostExponentBase: 1.15,
 		}, {
 			Name: "antimatter", Count: 1250, CostExponentBase: 1.15,
 		}},
 	}, {
 		Name: "Entanglement Station", UnlockedBy: "Quantum Cryptography",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "relic", Count: 1250, CostExponentBase: 1.15,
 		}, {
 			Name: "antimatter", Count: 5250, CostExponentBase: 1.15,
@@ -2471,7 +2473,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Tectonic", UnlockedBy: "Terraformation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 600000, CostExponentBase: 1.25,
 		}, {
 			Name: "antimatter", Count: 500, CostExponentBase: 1.25,
@@ -2480,54 +2482,54 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Molten Core", UnlockedBy: "Exophysics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 25000000, CostExponentBase: 1.25,
 		}, {
 			Name: "uranium", Count: 5000000, CostExponentBase: 1.25,
 		}},
 	}, {
 		Name: "Hash Level", UnlockedBy: "Entanglement Station",
-		Costs: []data.Resource{{Name: "hash", Count: 1600, CostExponentBase: 1.6}},
+		Costs: []R{{Name: "hash", Count: 1600, CostExponentBase: 1.6}},
 	}, {
 		Name: "Temporal Battery", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{Name: "time crystal", Count: 5, CostExponentBase: 1.25}},
+		Costs: []R{{Name: "time crystal", Count: 5, CostExponentBase: 1.25}},
 	}, {
 		Name: "Chrono Furnace", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 25, CostExponentBase: 1.25,
 		}, {
 			Name: "relic", Count: 5, CostExponentBase: 1.25,
 		}},
 	}, {
 		Name: "Time Boiler", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{Name: "time crystal", Count: 25000, CostExponentBase: 1.25}},
+		Costs: []R{{Name: "time crystal", Count: 25000, CostExponentBase: 1.25}},
 	}, {
 		Name: "Temporal Accelerator", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 10, CostExponentBase: 1.25,
 		}, {
 			Name: "relic", Count: 1000, CostExponentBase: 1.25,
 		}},
 	}, {
 		Name: "Time Impedance", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 100, CostExponentBase: 1.05,
 		}, {
 			Name: "relic", Count: 250, CostExponentBase: 1.05,
 		}},
 	}, {
 		Name: "Resource Retrieval", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{Name: "time crystal", Count: 1000, CostExponentBase: 1.3}},
+		Costs: []R{{Name: "time crystal", Count: 1000, CostExponentBase: 1.3}},
 	}, {
 		Name: "Temporal Press", UnlockedBy: "Chronosurge",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 100, CostExponentBase: 1.1,
 		}, {
 			Name: "void", Count: 10, CostExponentBase: 1.1,
 		}},
 	}, {
 		Name: "Cryochambers", UnlockedBy: "Void Space",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 2, CostExponentBase: 1.25,
 		}, {
 			Name: "void", Count: 100, CostExponentBase: 1.25,
@@ -2536,7 +2538,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Void Hoover", UnlockedBy: "Void Aspiration",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 10, CostExponentBase: 1.25,
 		}, {
 			Name: "void", Count: 250, CostExponentBase: 1.25,
@@ -2545,10 +2547,10 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Void Rift", UnlockedBy: "Void Aspiration",
-		Costs: []data.Resource{{Name: "void", Count: 75, CostExponentBase: 1.3}},
+		Costs: []R{{Name: "void", Count: 75, CostExponentBase: 1.3}},
 	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 30, CostExponentBase: 1.25,
 		}, {
 			Name: "void", Count: 500, CostExponentBase: 1.25,
@@ -2557,7 +2559,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Void Resonator", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 1000, CostExponentBase: 1.25,
 		}, {
 			Name: "relic", Count: 10000, CostExponentBase: 1.25,
@@ -2584,38 +2586,38 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddActions([]data.Action{{
 		Name: "Send hunters", Type: "Job", UnlockedBy: "Archery",
-		Costs: []data.Resource{{Name: "catpower", Count: 100}},
-		Adds: []data.Resource{{
-			Name: "fur", Count: 39.5, Bonus: []data.Resource{{Name: "HuntingBonus"}},
+		Costs: []R{{Name: "catpower", Count: 100}},
+		Adds: []R{{
+			Name: "fur", Count: 39.5, Bonus: []R{{Name: "HuntingBonus"}},
 		}, {
-			Name: "ivory", Count: 10.78, Bonus: []data.Resource{{Name: "HuntingBonus"}},
+			Name: "ivory", Count: 10.78, Bonus: []R{{Name: "HuntingBonus"}},
 		}, {
 			Name: "unicorn", Count: 0.05,
 		}},
 	}, {
 		Name: "Festival", Type: "Job", UnlockedBy: "Drama and Poetry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 1500,
 		}, {
 			Name: "culture", Count: 5000,
 		}, {
 			Name: "parchment", Count: 2500,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "festival day", Count: 400,
 		}},
 	}})
 
 	g.AddActions([]data.Action{{
 		Name: "Lizards", Type: "Trade", UnlockedBy: "Archery",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "mineral", Count: 1000,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "wood", Count: 500,
 		}, {
 			Name: "beam", Count: 10 * 0.15,
@@ -2628,14 +2630,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Sharks", Type: "Trade", UnlockedBy: "Archery",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "iron", Count: 100,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "catnip", Count: 35000,
 		}, {
 			Name: "parchment", Count: 5 * 0.25,
@@ -2650,14 +2652,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Griffins", Type: "Trade", UnlockedBy: "Archery",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "wood", Count: 500,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "iron", Count: 250,
 		}, {
 			Name: "steel", Count: 25 * 0.25,
@@ -2670,14 +2672,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Nagas", Type: "Trade", UnlockedBy: "Writing",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "ivory", Count: 500,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "mineral", Count: 1000,
 		}, {
 			Name: "slab", Count: 5 * 0.75,
@@ -2692,20 +2694,20 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Zebras", Type: "Trade", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "slab", Count: 50,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "iron", Count: 300,
 		}, {
 			Name: "plate", Count: 2 * 0.65,
 		}, {
 			Name: "titanium", Count: 1.5 * 0.15,
-			Bonus: []data.Resource{{Name: "ship", Factor: 0.03 * 0.0035}},
+			Bonus: []R{{Name: "ship", Factor: 0.03 * 0.0035}},
 		}, {
 			Name: "alloy", Count: 0.25 * 0.05,
 		}, {
@@ -2715,14 +2717,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Spiders", Type: "Trade", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "scaffold", Count: 50,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "coal", Count: 350,
 		}, {
 			Name: "oil", Count: 100 * 0.25,
@@ -2733,14 +2735,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Dragons", Type: "Trade", UnlockedBy: "Nuclear Fission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "titanium", Count: 250,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "uranium", Count: 1 * 0.95,
 		}, {
 			Name: "thorium", Count: 1 * 0.50,
@@ -2751,25 +2753,25 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Leviathans", Type: "Trade", UnlockedBy: "Black Pyramid",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "catpower", Count: 50,
 		}, {
 			Name: "gold", Count: 15,
 		}, {
 			Name: "unobtainium", Count: 5000,
 		}},
-		Adds: []data.Resource{{
+		Adds: []R{{
 			Name: "starchart", Count: 250 * 0.50,
-			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
+			Bonus: []R{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
 			Name: "time crystal", Count: 0.25 * 0.98,
-			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
+			Bonus: []R{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
 			Name: "sorrow", Count: 1 * 0.15,
-			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
+			Bonus: []R{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
 			Name: "relic", Count: 1 * 0.05,
-			Bonus: []data.Resource{{Name: "leviathan energy", Factor: 0.02}},
+			Bonus: []R{{Name: "leviathan energy", Factor: 0.02}},
 		}, {
 			Name: "blueprint", Count: 0.10,
 		}, {
@@ -2779,39 +2781,39 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddActions([]data.Action{{
 		Name: "Feed Leviathans", Type: "Craft", UnlockedBy: "Black Pyramid",
-		Costs: []data.Resource{{Name: "necrocorn", Count: 1}},
-		Adds:  []data.Resource{{Name: "leviathan energy", Count: 1}},
+		Costs: []R{{Name: "necrocorn", Count: 1}},
+		Adds:  []R{{Name: "leviathan energy", Count: 1}},
 	}, {
 		Name: "Sacrifice Unicorns", Type: "Craft", UnlockedBy: "Ziggurat",
-		Costs: []data.Resource{{Name: "unicorn", Count: 2500}},
-		Adds: []data.Resource{{
+		Costs: []R{{Name: "unicorn", Count: 2500}},
+		Adds: []R{{
 			Name: "tear", Count: 1,
-			Bonus:               []data.Resource{{Name: "Ziggurat"}},
+			Bonus:               []R{{Name: "Ziggurat"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "Praise the sun!", Type: "Craft", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{Name: "faith", Count: 1}},
-		Adds: []data.Resource{{
+		Costs: []R{{Name: "faith", Count: 1}},
+		Adds: []R{{
 			Name: "worship", Count: 1,
-			Bonus: []data.Resource{{Name: "epiphany"}},
+			Bonus: []R{{Name: "epiphany"}},
 		}},
 	}, {
 		Name: "Adore the galaxy", Type: "Craft", UnlockedBy: "Apocrypha",
-		Costs: []data.Resource{{Name: "worship", Count: 1}},
-		Adds: []data.Resource{{
+		Costs: []R{{Name: "worship", Count: 1}},
+		Adds: []R{{
 			Name: "epiphany", Count: 1. / 1000000,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:  "Transcendence Level",
-				Bonus: []data.Resource{{Name: "Transcendence Level"}},
+				Bonus: []R{{Name: "Transcendence Level"}},
 			}},
 		}},
 	}, {
 		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "Ziggurat",
-		Costs: []data.Resource{{Name: "alicorn", Count: 25}},
-		Adds: []data.Resource{{
+		Costs: []R{{Name: "alicorn", Count: 25}},
+		Adds: []R{{
 			Name: "time crystal", Count: 1,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Unicorn Utopia", Factor: 0.05,
 			}, {
 				Name: "Sunspire", Factor: 0.10,
@@ -2819,16 +2821,16 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Refine Tears", Type: "Craft", UnlockedBy: "Megalomania",
-		Costs: []data.Resource{{Name: "tear", Count: 10000}},
-		Adds:  []data.Resource{{Name: "sorrow", Count: 1}},
+		Costs: []R{{Name: "tear", Count: 10000}},
+		Adds:  []R{{Name: "sorrow", Count: 1}},
 	}, {
 		Name: "Refine Time Crystals", Type: "Craft", UnlockedBy: "Ziggurat",
-		Costs: []data.Resource{{Name: "time crystal", Count: 25}},
-		Adds: []data.Resource{{
+		Costs: []R{{Name: "time crystal", Count: 25}},
+		Adds: []R{{
 			Name: "relic", Count: 1,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:                "Black Nexus",
-				Bonus:               []data.Resource{{Name: "Black Pyramid"}},
+				Bonus:               []R{{Name: "Black Pyramid"}},
 				BonusStartsFromZero: true,
 			}},
 		}},
@@ -2836,356 +2838,356 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddActions([]data.Action{{
 		Name: "Combust time crystal", Type: "Craft", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{Name: "time crystal", Count: 1}},
-		Adds: []data.Resource{{
+		Costs: []R{{Name: "time crystal", Count: 1}},
+		Adds: []R{{
 			Name: "day", Count: 400,
 		}, {
 			Name: "chronoheat", Count: 10,
 		}},
 	}, {
 		Name: "Burn Chrono Furnace Fuel", Type: "Craft", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{Name: "chrono furnace fuel", Count: 100}},
-		Adds:  []data.Resource{{Name: "day", Count: 400}},
+		Costs: []R{{Name: "chrono furnace fuel", Count: 100}},
+		Adds:  []R{{Name: "day", Count: 400}},
 	}, {
 		Name: "Burn Paragon", Type: "Craft", UnlockedBy: "Chronoforge",
-		Costs: []data.Resource{{Name: "paragon", Count: 1}},
-		Adds:  []data.Resource{{Name: "burned paragon", Count: 1}},
+		Costs: []R{{Name: "paragon", Count: 1}},
+		Adds:  []R{{Name: "burned paragon", Count: 1}},
 	}})
 
 	addTechs(g, []data.Action{{
 		Name: "Calendar", UnlockedBy: "Library",
-		Costs: []data.Resource{{Name: "science", Count: 30}},
+		Costs: []R{{Name: "science", Count: 30}},
 	}, {
 		Name: "Agriculture", UnlockedBy: "Calendar",
-		Costs: []data.Resource{{Name: "science", Count: 100}},
+		Costs: []R{{Name: "science", Count: 100}},
 	}, {
 		Name: "Archery", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "science", Count: 300}},
+		Costs: []R{{Name: "science", Count: 300}},
 	}, {
 		Name: "Mining", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "science", Count: 500}},
+		Costs: []R{{Name: "science", Count: 500}},
 	}, {
 		Name: "Animal Husbandry", UnlockedBy: "Archery",
-		Costs: []data.Resource{{Name: "science", Count: 500}},
+		Costs: []R{{Name: "science", Count: 500}},
 	}, {
 		Name: "Metal Working", UnlockedBy: "Mining",
-		Costs: []data.Resource{{Name: "science", Count: 900}},
+		Costs: []R{{Name: "science", Count: 900}},
 	}, {
 		Name: "Civil Service", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "science", Count: 1500}},
+		Costs: []R{{Name: "science", Count: 1500}},
 	}, {
 		Name: "Mathematics", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "science", Count: 1000}},
+		Costs: []R{{Name: "science", Count: 1000}},
 	}, {
 		Name: "Construction", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "science", Count: 1300}},
+		Costs: []R{{Name: "science", Count: 1300}},
 	}, {
 		Name: "Currency", UnlockedBy: "Civil Service",
-		Costs: []data.Resource{{Name: "science", Count: 2200}},
+		Costs: []R{{Name: "science", Count: 2200}},
 	}, {
 		Name: "Celestial Mechanics", UnlockedBy: "Mathematics",
-		Costs: []data.Resource{{Name: "science", Count: 250}},
+		Costs: []R{{Name: "science", Count: 250}},
 	}, {
 		Name: "Engineering", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "science", Count: 1500}},
+		Costs: []R{{Name: "science", Count: 1500}},
 	}, {
 		Name: "Writing", UnlockedBy: "Engineering",
-		Costs: []data.Resource{{Name: "science", Count: 3600}},
+		Costs: []R{{Name: "science", Count: 3600}},
 	}, {
 		Name: "Philosophy", UnlockedBy: "Writing",
-		Costs: []data.Resource{{Name: "science", Count: 9500}},
+		Costs: []R{{Name: "science", Count: 9500}},
 	}, {
 		Name: "Steel", UnlockedBy: "Writing",
-		Costs: []data.Resource{{Name: "science", Count: 12000}},
+		Costs: []R{{Name: "science", Count: 12000}},
 	}, {
 		Name: "Machinery", UnlockedBy: "Writing",
-		Costs: []data.Resource{{Name: "science", Count: 15000}},
+		Costs: []R{{Name: "science", Count: 15000}},
 	}, {
 		Name: "Theology", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 20000,
 		}, {
 			Name: "manuscript", Count: 35,
 		}},
 	}, {
 		Name: "Astronomy", UnlockedBy: "Theology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 28000,
 		}, {
 			Name: "manuscript", Count: 65,
 		}},
 	}, {
 		Name: "Navigation", UnlockedBy: "Astronomy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 35000,
 		}, {
 			Name: "manuscript", Count: 100,
 		}},
 	}, {
 		Name: "Architecture", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 42000,
 		}, {
 			Name: "compendium", Count: 10,
 		}},
 	}, {
 		Name: "Physics", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 50000,
 		}, {
 			Name: "compendium", Count: 35,
 		}},
 	}, {
 		Name: "Metaphysics", UnlockedBy: "Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 55000,
 		}, {
 			Name: "unobtainium", Count: 5,
 		}},
 	}, {
 		Name: "Chemistry", UnlockedBy: "Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 60000,
 		}, {
 			Name: "compendium", Count: 50,
 		}},
 	}, {
 		Name: "Acoustics", UnlockedBy: "Architecture",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 60000,
 		}, {
 			Name: "compendium", Count: 60,
 		}},
 	}, {
 		Name: "Geology", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 65000,
 		}, {
 			Name: "compendium", Count: 65,
 		}},
 	}, {
 		Name: "Drama and Poetry", UnlockedBy: "Acoustics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 90000,
 		}, {
 			Name: "parchment", Count: 5000,
 		}},
 	}, {
 		Name: "Electricity", UnlockedBy: "Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 75000,
 		}, {
 			Name: "compendium", Count: 85,
 		}},
 	}, {
 		Name: "Biology", UnlockedBy: "Geology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 85000,
 		}, {
 			Name: "compendium", Count: 100,
 		}},
 	}, {
 		Name: "Biochemistry", UnlockedBy: "Biology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 145000,
 		}, {
 			Name: "compendium", Count: 500,
 		}},
 	}, {
 		Name: "Genetics", UnlockedBy: "Biochemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 190000,
 		}, {
 			Name: "compendium", Count: 1500,
 		}},
 	}, {
 		Name: "Industrialization", UnlockedBy: "Electricity",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 10000,
 		}, {
 			Name: "blueprint", Count: 25,
 		}},
 	}, {
 		Name: "Mechanization", UnlockedBy: "Industrialization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 115000,
 		}, {
 			Name: "blueprint", Count: 45,
 		}},
 	}, {
 		Name: "Combustion", UnlockedBy: "Industrialization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 115000,
 		}, {
 			Name: "blueprint", Count: 45,
 		}},
 	}, {
 		Name: "Metallurgy", UnlockedBy: "Industrialization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "blueprint", Count: 60,
 		}},
 	}, {
 		Name: "Ecology", UnlockedBy: "Combustion",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "blueprint", Count: 55,
 		}},
 	}, {
 		Name: "Electronics", UnlockedBy: "Mechanization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 135000,
 		}, {
 			Name: "blueprint", Count: 70,
 		}},
 	}, {
 		Name: "Robotics", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 140000,
 		}, {
 			Name: "blueprint", Count: 80,
 		}},
 	}, {
 		Name: "Artificial Intelligence", UnlockedBy: "Robotics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "blueprint", Count: 150,
 		}},
 	}, {
 		Name: "Quantum Cryptography", UnlockedBy: "Artificial Intelligence",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 1250000,
 		}, {
 			Name: "relic", Count: 1024,
 		}},
 	}, {
 		Name: "Blackchain", UnlockedBy: "Quantum Cryptography",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 5000000,
 		}, {
 			Name: "relic", Count: 4096,
 		}},
 	}, {
 		Name: "Nuclear Fission", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 150000,
 		}, {
 			Name: "blueprint", Count: 100,
 		}},
 	}, {
 		Name: "Rocketry", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "blueprint", Count: 125,
 		}},
 	}, {
 		Name: "Oil Processing", UnlockedBy: "Rocketry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 215000,
 		}, {
 			Name: "blueprint", Count: 150,
 		}},
 	}, {
 		Name: "Satellites", UnlockedBy: "Rocketry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 190000,
 		}, {
 			Name: "blueprint", Count: 125,
 		}},
 	}, {
 		Name: "Orbital Engineering", UnlockedBy: "Satellites",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "blueprint", Count: 250,
 		}},
 	}, {
 		Name: "Thorium", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 375000,
 		}, {
 			Name: "blueprint", Count: 375,
 		}},
 	}, {
 		Name: "Exogeology", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 275000,
 		}, {
 			Name: "blueprint", Count: 250,
 		}},
 	}, {
 		Name: "Advanced Exogeology", UnlockedBy: "Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 325000,
 		}, {
 			Name: "blueprint", Count: 350,
 		}},
 	}, {
 		Name: "Nanotechnology", UnlockedBy: "Nuclear Fission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000,
 		}, {
 			Name: "blueprint", Count: 150,
 		}},
 	}, {
 		Name: "Superconductors", UnlockedBy: "Nanotechnology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 225000,
 		}, {
 			Name: "blueprint", Count: 175,
 		}},
 	}, {
 		Name: "Antimatter", UnlockedBy: "Superconductors",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500000,
 		}, {
 			Name: "relic", Count: 1,
 		}},
 	}, {
 		Name: "Terraformation", UnlockedBy: "Antimatter",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 750000,
 		}, {
 			Name: "relic", Count: 5,
 		}},
 	}, {
 		Name: "Hydroponics Tech", UnlockedBy: "Terraformation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 1000000,
 		}, {
 			Name: "relic", Count: 25,
 		}},
 	}, {
 		Name: "Exophysics", UnlockedBy: "Hydroponics Tech",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 25000000,
 		}, {
 			Name: "relic", Count: 500,
 		}},
 	}, {
 		Name: "Particle Physics", UnlockedBy: "Nuclear Fission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 185000,
 		}, {
 			Name: "blueprint", Count: 135,
 		}},
 	}, {
 		Name: "Dimensional Physics", UnlockedBy: "Particle Physics",
-		Costs: []data.Resource{{Name: "science", Count: 235000}},
+		Costs: []R{{Name: "science", Count: 235000}},
 	}, {
 		Name: "Chronophysics", UnlockedBy: "Particle Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "time crystal", Count: 5,
 		}},
 	}, {
 		Name: "Tachyon Theory", UnlockedBy: "Chronophysics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 750000,
 		}, {
 			Name: "time crystal", Count: 25,
@@ -3194,14 +3196,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Cryptotheology", UnlockedBy: "Theology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 650000,
 		}, {
 			Name: "relic", Count: 5,
 		}},
 	}, {
 		Name: "Void Space", UnlockedBy: "Tachyon Theory",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 800000,
 		}, {
 			Name: "time crystal", Count: 30,
@@ -3210,7 +3212,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Paradox Theory", UnlockedBy: "Void Space",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 1000000,
 		}, {
 			Name: "time crystal", Count: 40,
@@ -3219,84 +3221,84 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Mineral Hoes", UnlockedBy: "Workshop",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "mineral", Count: 275,
 		}, {
 			Name: "science", Count: 100,
 		}},
 	}, {
 		Name: "Iron Hoes", UnlockedBy: "Workshop",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "iron", Count: 25,
 		}, {
 			Name: "science", Count: 200,
 		}},
 	}, {
 		Name: "Mineral Axe", UnlockedBy: "Workshop",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "mineral", Count: 500,
 		}, {
 			Name: "science", Count: 100,
 		}},
 	}, {
 		Name: "Iron Axe", UnlockedBy: "Workshop",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "iron", Count: 50,
 		}, {
 			Name: "science", Count: 100,
 		}},
 	}, {
 		Name: "Steel Axe", UnlockedBy: "Steel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "steel", Count: 75,
 		}, {
 			Name: "science", Count: 20000,
 		}},
 	}, {
 		Name: "Reinforced Saw", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "iron", Count: 1000,
 		}, {
 			Name: "science", Count: 2500,
 		}},
 	}, {
 		Name: "Steel Saw", UnlockedBy: "Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "steel", Count: 750,
 		}, {
 			Name: "science", Count: 52000,
 		}},
 	}, {
 		Name: "Titanium Saw", UnlockedBy: "Steel Saw",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "titanium", Count: 500,
 		}, {
 			Name: "science", Count: 70000,
 		}},
 	}, {
 		Name: "Alloy Saw", UnlockedBy: "Titanium Saw",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "alloy", Count: 75,
 		}, {
 			Name: "science", Count: 85000,
 		}},
 	}, {
 		Name: "Titanium Axe", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 38000,
 		}, {
 			Name: "titanium", Count: 10,
 		}},
 	}, {
 		Name: "Alloy Axe", UnlockedBy: "Chemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 70000,
 		}, {
 			Name: "alloy", Count: 25,
 		}},
 	}, {
 		Name: "Expanded Barns", UnlockedBy: "Workshop",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "wood", Count: 1000,
 		}, {
 			Name: "mineral", Count: 750,
@@ -3307,7 +3309,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Reinforced Barns", UnlockedBy: "Workshop",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "iron", Count: 100,
 		}, {
 			Name: "science", Count: 800,
@@ -3318,7 +3320,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Reinforced Warehouses", UnlockedBy: "Steel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 15000,
 		}, {
 			Name: "plate", Count: 50,
@@ -3329,7 +3331,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Titanium Barns", UnlockedBy: "Reinforced Barns",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 60000,
 		}, {
 			Name: "titanium", Count: 25,
@@ -3340,7 +3342,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Alloy Barns", UnlockedBy: "Chemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 75000,
 		}, {
 			Name: "alloy", Count: 20,
@@ -3349,7 +3351,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Concrete Barns", UnlockedBy: "Concrete Pillars",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 2000,
 		}, {
 			Name: "concrete", Count: 45,
@@ -3358,7 +3360,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Titanium Warehouses", UnlockedBy: "Silos",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 70000,
 		}, {
 			Name: "titanium", Count: 50,
@@ -3369,7 +3371,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Alloy Warehouses", UnlockedBy: "Chemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 90000,
 		}, {
 			Name: "titanium", Count: 750,
@@ -3378,7 +3380,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Concrete Warehouses", UnlockedBy: "Concrete Pillars",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "titanium", Count: 1250,
@@ -3387,7 +3389,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Storage Bunkers", UnlockedBy: "Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 25000,
 		}, {
 			Name: "unobtainium", Count: 500,
@@ -3396,7 +3398,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Energy Rifts", UnlockedBy: "Dimensional Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000,
 		}, {
 			Name: "titanium", Count: 7500,
@@ -3405,7 +3407,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Stasis Chambers", UnlockedBy: "Chronophysics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 235000,
 		}, {
 			Name: "alloy", Count: 200,
@@ -3416,7 +3418,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Void Energy", UnlockedBy: "Stasis Chambers",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 275000,
 		}, {
 			Name: "alloy", Count: 250,
@@ -3427,7 +3429,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Dark Energy", UnlockedBy: "Void Energy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 350000,
 		}, {
 			Name: "eludium", Count: 75,
@@ -3436,7 +3438,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Chronoforge", UnlockedBy: "Tachyon Theory",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500000,
 		}, {
 			Name: "relic", Count: 5,
@@ -3445,7 +3447,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Tachyon Accelerators", UnlockedBy: "Tachyon Theory",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500000,
 		}, {
 			Name: "eludium", Count: 125,
@@ -3454,7 +3456,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Flux Condensator", UnlockedBy: "Chronophysics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "alloy", Count: 250,
 		}, {
 			Name: "unobtainium", Count: 5000,
@@ -3463,7 +3465,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "LHC", UnlockedBy: "Dimensional Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "unobtainium", Count: 100,
@@ -3472,14 +3474,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Photovoltaic Cells", UnlockedBy: "Nanotechnology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 75000,
 		}, {
 			Name: "titanium", Count: 5000,
 		}},
 	}, {
 		Name: "Thin Film Cells", UnlockedBy: "Satellites",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "unobtainium", Count: 200,
@@ -3488,7 +3490,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Quantum Dot Cells", UnlockedBy: "Thorium",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "eludium", Count: 200,
@@ -3497,21 +3499,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Solar Satellites", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 225000,
 		}, {
 			Name: "alloy", Count: 750,
 		}},
 	}, {
 		Name: "Expanded Cargo", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 55000,
 		}, {
 			Name: "blueprint", Count: 15,
 		}},
 	}, {
 		Name: "Barges", UnlockedBy: "Industrialization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "titanium", Count: 1500,
@@ -3520,7 +3522,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Reactor Vessel", UnlockedBy: "Nuclear Fission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 135000,
 		}, {
 			Name: "titanium", Count: 5000,
@@ -3529,7 +3531,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Ironwood Huts", UnlockedBy: "Reinforced Warehouses",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 30000,
 		}, {
 			Name: "wood", Count: 15000,
@@ -3538,7 +3540,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Concrete Huts", UnlockedBy: "Concrete Pillars",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "concrete", Count: 45,
@@ -3547,7 +3549,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Unobtainium Huts", UnlockedBy: "Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000,
 		}, {
 			Name: "unobtainium", Count: 350,
@@ -3556,14 +3558,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Eludium Huts", UnlockedBy: "Advanced Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 275000,
 		}, {
 			Name: "eludium", Count: 125,
 		}},
 	}, {
 		Name: "Silos", UnlockedBy: "Ironwood Huts",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 50000,
 		}, {
 			Name: "steel", Count: 125,
@@ -3572,7 +3574,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Refrigeration", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "titanium", Count: 2500,
@@ -3581,7 +3583,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Composite Bow", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500,
 		}, {
 			Name: "iron", Count: 100,
@@ -3590,14 +3592,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Crossbow", UnlockedBy: "Machinery",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 12000,
 		}, {
 			Name: "iron", Count: 1500,
 		}},
 	}, {
 		Name: "Railgun", UnlockedBy: "Particle Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 150000,
 		}, {
 			Name: "titanium", Count: 5000,
@@ -3606,7 +3608,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Bolas", UnlockedBy: "Mining",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 1000,
 		}, {
 			Name: "mineral", Count: 250,
@@ -3615,35 +3617,35 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Hunting Armour", UnlockedBy: "Metal Working",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 2000,
 		}, {
 			Name: "iron", Count: 750,
 		}},
 	}, {
 		Name: "Steel Armour", UnlockedBy: "Steel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 10000,
 		}, {
 			Name: "steel", Count: 50,
 		}},
 	}, {
 		Name: "Alloy Armour", UnlockedBy: "Chemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 50000,
 		}, {
 			Name: "alloy", Count: 25,
 		}},
 	}, {
 		Name: "Nanosuits", UnlockedBy: "Nanotechnology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 185000,
 		}, {
 			Name: "alloy", Count: 250,
 		}},
 	}, {
 		Name: "Caravanserai", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 25000,
 		}, {
 			Name: "ivory", Count: 10000,
@@ -3652,14 +3654,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Catnip Enrichment", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500,
 		}, {
 			Name: "catnip", Count: 5000,
 		}},
 	}, {
 		Name: "Gold Ore", UnlockedBy: "Currency",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 1000,
 		}, {
 			Name: "mineral", Count: 800,
@@ -3668,7 +3670,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Geodesy", UnlockedBy: "Geology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 90000,
 		}, {
 			Name: "titanium", Count: 250,
@@ -3677,21 +3679,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Register", UnlockedBy: "Writing",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500,
 		}, {
 			Name: "gold", Count: 10,
 		}},
 	}, {
 		Name: "Concrete Pillars", UnlockedBy: "Mechanization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "concrete", Count: 50,
 		}},
 	}, {
 		Name: "Mining Drill", UnlockedBy: "Metallurgy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "titanium", Count: 1750,
@@ -3700,7 +3702,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Unobtainium Drill", UnlockedBy: "Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "unobtainium", Count: 250,
@@ -3709,7 +3711,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Coal Furnace", UnlockedBy: "Steel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 5000,
 		}, {
 			Name: "mineral", Count: 5000,
@@ -3720,7 +3722,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Deep Mining", UnlockedBy: "Steel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 5000,
 		}, {
 			Name: "iron", Count: 1200,
@@ -3729,28 +3731,28 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Pyrolysis", UnlockedBy: "Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 35000,
 		}, {
 			Name: "compendium", Count: 5,
 		}},
 	}, {
 		Name: "Electrolytic Smelting", UnlockedBy: "Metallurgy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "titanium", Count: 2000,
 		}},
 	}, {
 		Name: "Oxidation", UnlockedBy: "Metallurgy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "steel", Count: 5000,
 		}},
 	}, {
 		Name: "Steel Plants", UnlockedBy: "Robotics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 140000,
 		}, {
 			Name: "titanium", Count: 3500,
@@ -3759,21 +3761,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Automated Plants", UnlockedBy: "Steel Plants",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000,
 		}, {
 			Name: "alloy", Count: 750,
 		}},
 	}, {
 		Name: "Nuclear Plants", UnlockedBy: "Automated Plants",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "uranium", Count: 10000,
 		}},
 	}, {
 		Name: "Rotary Kiln", UnlockedBy: "Robotics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 145000,
 		}, {
 			Name: "titanium", Count: 5000,
@@ -3782,21 +3784,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Fluoridized Reactors", UnlockedBy: "Nanotechnology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "alloy", Count: 200,
 		}},
 	}, {
 		Name: "Nuclear Smelter", UnlockedBy: "Nuclear Fission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 165000,
 		}, {
 			Name: "uranium", Count: 250,
 		}},
 	}, {
 		Name: "Orbital Geodesy", UnlockedBy: "Satellites",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 150000,
 		}, {
 			Name: "alloy", Count: 1000,
@@ -3805,14 +3807,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Printing Press", UnlockedBy: "Machinery",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 7500,
 		}, {
 			Name: "gear", Count: 45,
 		}},
 	}, {
 		Name: "Offset Press", UnlockedBy: "Combustion",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "gear", Count: 250,
@@ -3821,7 +3823,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Photolithography", UnlockedBy: "Satellites",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "alloy", Count: 1250,
@@ -3832,14 +3834,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Uplink", UnlockedBy: "Satellites",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 75000,
 		}, {
 			Name: "alloy", Count: 1750,
 		}},
 	}, {
 		Name: "Starlink", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "alloy", Count: 5000,
@@ -3848,14 +3850,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Cryocomputing", UnlockedBy: "Superconductors",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "eludium", Count: 15,
 		}},
 	}, {
 		Name: "Machine Learning", UnlockedBy: "Artificial Intelligence",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "eludium", Count: 25,
@@ -3864,14 +3866,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Workshop Automation", UnlockedBy: "Machinery",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 10000,
 		}, {
 			Name: "gear", Count: 25,
 		}},
 	}, {
 		Name: "Advanced Automation", UnlockedBy: "Industrialization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "gear", Count: 75,
@@ -3880,7 +3882,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Pneumatic Press", UnlockedBy: "Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 20000,
 		}, {
 			Name: "gear", Count: 30,
@@ -3889,7 +3891,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "High Pressure Engine", UnlockedBy: "Steel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 20000,
 		}, {
 			Name: "gear", Count: 25,
@@ -3898,7 +3900,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Fuel Injector", UnlockedBy: "Combustion",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "gear", Count: 250,
@@ -3907,7 +3909,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Factory Logistics", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "gear", Count: 250,
@@ -3916,7 +3918,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Carbon Sequestration", UnlockedBy: "Ecology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 75000,
 		}, {
 			Name: "titanium", Count: 1250,
@@ -3929,14 +3931,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Space Manufacturing", UnlockedBy: "Superconductors",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "titanium", Count: 125000,
 		}},
 	}, {
 		Name: "Astrolabe", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 25000,
 		}, {
 			Name: "titanium", Count: 5,
@@ -3945,7 +3947,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Titanium Reflectors", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 20000,
 		}, {
 			Name: "titanium", Count: 15,
@@ -3954,7 +3956,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Unobtainium Reflectors", UnlockedBy: "Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "unobtainium", Count: 75,
@@ -3963,35 +3965,35 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Eludium Reflectors", UnlockedBy: "Advanced Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "eludium", Count: 15,
 		}},
 	}, {
 		Name: "Hydro Plant Turbines", UnlockedBy: "Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "unobtainium", Count: 125,
 		}},
 	}, {
 		Name: "Antimatter Bases", UnlockedBy: "Antimatter",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "eludium", Count: 15,
 		}, {
 			Name: "antimatter", Count: 250,
 		}},
 	}, {
 		Name: "AI Bases", UnlockedBy: "Antimatter Bases",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 750000,
 		}, {
 			Name: "antimatter", Count: 7500,
 		}},
 	}, {
 		Name: "Antimatter Fission", UnlockedBy: "Antimatter",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 525000,
 		}, {
 			Name: "antimatter", Count: 175,
@@ -4000,42 +4002,42 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Antimatter Drive", UnlockedBy: "Antimatter",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 450000,
 		}, {
 			Name: "antimatter", Count: 125,
 		}},
 	}, {
 		Name: "Antimatter Reactors", UnlockedBy: "Antimatter",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "eludium", Count: 35,
 		}, {
 			Name: "antimatter", Count: 750,
 		}},
 	}, {
 		Name: "Advanced AM Reactors", UnlockedBy: "Antimatter Reactors",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "eludium", Count: 70,
 		}, {
 			Name: "antimatter", Count: 1750,
 		}},
 	}, {
 		Name: "Void Reactors", UnlockedBy: "Advanced AM Reactors",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "void", Count: 250,
 		}, {
 			Name: "antimatter", Count: 2500,
 		}},
 	}, {
 		Name: "Relic Station", UnlockedBy: "Cryptotheology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "eludium", Count: 100,
 		}, {
 			Name: "antimatter", Count: 5000,
 		}},
 	}, {
 		Name: "Pumpjack", UnlockedBy: "Mechanization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "titanium", Count: 250,
@@ -4044,21 +4046,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Biofuel Processing", UnlockedBy: "Biochemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 150000,
 		}, {
 			Name: "titanium", Count: 1250,
 		}},
 	}, {
 		Name: "Unicorn Selection", UnlockedBy: "Genetics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "titanium", Count: 1500,
 		}},
 	}, {
 		Name: "GM Catnip", UnlockedBy: "Genetics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "titanium", Count: 1500,
@@ -4067,21 +4069,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "CAD System", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "titanium", Count: 750,
 		}},
 	}, {
 		Name: "SETI", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "titanium", Count: 250,
 		}},
 	}, {
 		Name: "Logistics", UnlockedBy: "Industrialization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "gear", Count: 100,
@@ -4090,7 +4092,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Augmentations", UnlockedBy: "Nanotechnology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 150000,
 		}, {
 			Name: "titanium", Count: 5000,
@@ -4099,21 +4101,21 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Cold Fusion", UnlockedBy: "Superconductors",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000,
 		}, {
 			Name: "eludium", Count: 25,
 		}},
 	}, {
 		Name: "Thorium Reactors", UnlockedBy: "Thorium",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 400000,
 		}, {
 			Name: "thorium", Count: 10000,
 		}},
 	}, {
 		Name: "Enriched Uranium", UnlockedBy: "Particle Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "titanium", Count: 7500,
@@ -4122,14 +4124,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Enriched Thorium", UnlockedBy: "Thorium Reactors",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 12500,
 		}, {
 			Name: "thorium", Count: 500000,
 		}},
 	}, {
 		Name: "Oil Refinery", UnlockedBy: "Combustion",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 125000,
 		}, {
 			Name: "titanium", Count: 1250,
@@ -4138,7 +4140,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Hubble Space Telescope", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "alloy", Count: 1250,
@@ -4147,42 +4149,42 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Satellite Navigation", UnlockedBy: "Hubble Space Telescope",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000,
 		}, {
 			Name: "alloy", Count: 750,
 		}},
 	}, {
 		Name: "Satellite Radio", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 225000,
 		}, {
 			Name: "alloy", Count: 5000,
 		}},
 	}, {
 		Name: "Astrophysicists", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
 			Name: "unobtainium", Count: 350,
 		}},
 	}, {
 		Name: "Microwarp Reactors", UnlockedBy: "Advanced Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 150000,
 		}, {
 			Name: "eludium", Count: 50,
 		}},
 	}, {
 		Name: "Planet Busters", UnlockedBy: "Advanced Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 275000,
 		}, {
 			Name: "eludium", Count: 250,
 		}},
 	}, {
 		Name: "Thorium Drive", UnlockedBy: "Thorium",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 400000,
 		}, {
 			Name: "ship", Count: 10000,
@@ -4195,14 +4197,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Oil Distillation", UnlockedBy: "Rocketry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 175000,
 		}, {
 			Name: "titanium", Count: 5000,
 		}},
 	}, {
 		Name: "Factory Processing", UnlockedBy: "Oil Processing",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 195000,
 		}, {
 			Name: "titanium", Count: 7500,
@@ -4211,7 +4213,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Factory Optimization", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 75000,
 		}, {
 			Name: "gear", Count: 250,
@@ -4220,14 +4222,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Space Engineers", UnlockedBy: "Orbital Engineering",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 225000,
 		}, {
 			Name: "alloy", Count: 200,
 		}},
 	}, {
 		Name: "AI Engineers", UnlockedBy: "Artificial Intelligence",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 35000,
 		}, {
 			Name: "eludium", Count: 50,
@@ -4236,7 +4238,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Chronoengineers", UnlockedBy: "Tachyon Theory",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 500000,
 		}, {
 			Name: "time crystal", Count: 5,
@@ -4245,7 +4247,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Telecommunication", UnlockedBy: "Electronics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 150000,
 		}, {
 			Name: "titanium", Count: 5000,
@@ -4254,14 +4256,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Neural Network", UnlockedBy: "Artificial Intelligence",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 200000,
 		}, {
 			Name: "titanium", Count: 7500,
 		}},
 	}, {
 		Name: "Robotic Assistance", UnlockedBy: "Robotics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 100000,
 		}, {
 			Name: "steel", Count: 10000,
@@ -4270,7 +4272,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Factory Robotics", UnlockedBy: "Robotics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 75000,
 		}, {
 			Name: "gear", Count: 250,
@@ -4279,14 +4281,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Void Aspiration", UnlockedBy: "Void Energy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 15,
 		}, {
 			Name: "antimatter", Count: 2000,
 		}},
 	}, {
 		Name: "Distortion", UnlockedBy: "Paradox Theory",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "science", Count: 300000,
 		}, {
 			Name: "time crystal", Count: 25,
@@ -4297,7 +4299,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Chronosurge", UnlockedBy: "Chronocontrol",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 25,
 		}, {
 			Name: "unobtainium", Count: 100000,
@@ -4308,7 +4310,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Invisible Black Hand", UnlockedBy: "Blackchain",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "time crystal", Count: 128,
 		}, {
 			Name: "blackcoin", Count: 64,
@@ -4319,50 +4321,50 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Solar Revolution", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 750,
 		}, {
 			Name: "gold", Count: 500,
 		}},
 	}, {
 		Name: "Apocrypha", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 5000,
 		}, {
 			Name: "gold", Count: 5000,
 		}},
 	}, {
 		Name: "Transcendence", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "faith", Count: 7500,
 		}, {
 			Name: "gold", Count: 7500,
 		}},
 	}, {
 		Name: "Orbital Launch", UnlockedBy: "Rocketry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 250,
 		}, {
 			Name: "catpower", Count: 5000,
 		}, {
 			Name: "science", Count: 100000,
 		}, {
-			Name: "oil", Count: 15000, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 15000, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Moon Mission", UnlockedBy: "Orbital Launch",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 500,
 		}, {
 			Name: "titanium", Count: 5000,
 		}, {
 			Name: "science", Count: 125000,
 		}, {
-			Name: "oil", Count: 45000, Bonus: []data.Resource{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 45000, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Dune Mission", UnlockedBy: "Moon Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 1000,
 		}, {
 			Name: "titanium", Count: 7000,
@@ -4373,7 +4375,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Piscine Mission", UnlockedBy: "Moon Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 1500,
 		}, {
 			Name: "titanium", Count: 9000,
@@ -4384,7 +4386,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Helios Mission", UnlockedBy: "Dune Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 3000,
 		}, {
 			Name: "titanium", Count: 15000,
@@ -4395,7 +4397,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "T-Minus Mission", UnlockedBy: "Piscine Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 2500,
 		}, {
 			Name: "titanium", Count: 12000,
@@ -4406,7 +4408,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Kairo Mission", UnlockedBy: "T-Minus Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 5000,
 		}, {
 			Name: "titanium", Count: 20000,
@@ -4417,7 +4419,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Rorschach Mission", UnlockedBy: "Kairo Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 15000,
 		}, {
 			Name: "titanium", Count: 80000,
@@ -4428,7 +4430,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Yarn Mission", UnlockedBy: "Helios Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 7500,
 		}, {
 			Name: "titanium", Count: 35000,
@@ -4439,7 +4441,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Umbra Mission", UnlockedBy: "Yarn Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 25000,
 		}, {
 			Name: "science", Count: 500000,
@@ -4450,7 +4452,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Charon Mission", UnlockedBy: "Umbra Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 75000,
 		}, {
 			Name: "science", Count: 750000,
@@ -4461,7 +4463,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Centaurus Mission", UnlockedBy: "Rorschach Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 100000,
 		}, {
 			Name: "titanium", Count: 40000,
@@ -4474,7 +4476,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Furthest Ring", UnlockedBy: "Centaurus Mission",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "starchart", Count: 500000,
 		}, {
 			Name: "science", Count: 1250000,
@@ -4485,127 +4487,127 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Enlightenment", UnlockedBy: "Metaphysics",
-		Costs: []data.Resource{{Name: "paragon", Count: 5}},
+		Costs: []R{{Name: "paragon", Count: 5}},
 	}, {
 		Name: "Codex Vox", UnlockedBy: "Enlightenment",
-		Costs: []data.Resource{{Name: "paragon", Count: 25}},
+		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
 		Name: "Codex Logos", UnlockedBy: "Codex Vox",
-		Costs: []data.Resource{{Name: "paragon", Count: 50}},
+		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
 		Name: "Codex Agrum", UnlockedBy: "Codex Logos",
-		Costs: []data.Resource{{Name: "paragon", Count: 75}},
+		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
 		Name: "Megalomania", UnlockedBy: "Enlightenment",
-		Costs: []data.Resource{{Name: "paragon", Count: 10}},
+		Costs: []R{{Name: "paragon", Count: 10}},
 	}, {
 		Name: "Black Codex", UnlockedBy: "Megalomania",
-		Costs: []data.Resource{{Name: "paragon", Count: 25}},
+		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
 		Name: "Codex Leviathanus", UnlockedBy: "Codex Logos",
-		Costs: []data.Resource{{Name: "paragon", Count: 75}},
+		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
 		Name: "Golden Ratio", UnlockedBy: "Enlightenment",
-		Costs: []data.Resource{{Name: "paragon", Count: 50}},
+		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
 		Name: "Divine Proportion", UnlockedBy: "Golden Ratio",
-		Costs: []data.Resource{{Name: "paragon", Count: 100}},
+		Costs: []R{{Name: "paragon", Count: 100}},
 	}, {
 		Name: "Vitruvian Feline", UnlockedBy: "Divine Proportion",
-		Costs: []data.Resource{{Name: "paragon", Count: 250}},
+		Costs: []R{{Name: "paragon", Count: 250}},
 	}, {
 		Name: "Renaissance", UnlockedBy: "Vitruvian Feline",
-		Costs: []data.Resource{{Name: "paragon", Count: 750}},
+		Costs: []R{{Name: "paragon", Count: 750}},
 	}, {
 		Name: "Diplomacy", UnlockedBy: "Metaphysics",
-		Costs: []data.Resource{{Name: "paragon", Count: 5}},
+		Costs: []R{{Name: "paragon", Count: 5}},
 	}, {
 		Name: "Zebra Diplomacy", UnlockedBy: "Diplomacy",
-		Costs: []data.Resource{{Name: "paragon", Count: 35}},
+		Costs: []R{{Name: "paragon", Count: 35}},
 	}, {
 		Name: "Zebra Covenant", UnlockedBy: "Zebra Diplomacy",
-		Costs: []data.Resource{{Name: "paragon", Count: 75}},
+		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
 		Name: "Navigation Diplomacy", UnlockedBy: "Metaphysics",
-		Costs: []data.Resource{{Name: "paragon", Count: 300}},
+		Costs: []R{{Name: "paragon", Count: 300}},
 	}, {
 		Name: "Chronomancy", UnlockedBy: "Metaphysics",
-		Costs: []data.Resource{{Name: "paragon", Count: 25}},
+		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
 		Name: "Anachronomancy", UnlockedBy: "Chronomancy",
-		Costs: []data.Resource{{Name: "paragon", Count: 125}},
+		Costs: []R{{Name: "paragon", Count: 125}},
 	}, {
 		Name: "Astromancy", UnlockedBy: "Chronomancy",
-		Costs: []data.Resource{{Name: "paragon", Count: 50}},
+		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
 		Name: "Unicornmancy", UnlockedBy: "Metaphysics",
-		Costs: []data.Resource{{Name: "paragon", Count: 125}},
+		Costs: []R{{Name: "paragon", Count: 125}},
 	}, {
 		Name: "Carnivals", UnlockedBy: "Metaphysics",
-		Costs: []data.Resource{{Name: "paragon", Count: 25}},
+		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
 		Name: "Numerology", UnlockedBy: "Carnivals",
-		Costs: []data.Resource{{Name: "paragon", Count: 50}},
+		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
 		Name: "Order of the Void", UnlockedBy: "Numerology",
-		Costs: []data.Resource{{Name: "paragon", Count: 75}},
+		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
 		Name: "Venus of Willenfluff", UnlockedBy: "Numerology",
-		Costs: []data.Resource{{Name: "paragon", Count: 150}},
+		Costs: []R{{Name: "paragon", Count: 150}},
 	}, {
 		Name: "Pawgan Rituals", UnlockedBy: "Venus of Willenfluff",
-		Costs: []data.Resource{{Name: "paragon", Count: 400}},
+		Costs: []R{{Name: "paragon", Count: 400}},
 	}, {
 		Name: "Numeromancy", UnlockedBy: "Numerology",
-		Costs: []data.Resource{{Name: "paragon", Count: 250}},
+		Costs: []R{{Name: "paragon", Count: 250}},
 	}, {
 		Name: "Malkuth", UnlockedBy: "Numeromancy",
-		Costs: []data.Resource{{Name: "paragon", Count: 500}},
+		Costs: []R{{Name: "paragon", Count: 500}},
 	}, {
 		Name: "Yesod", UnlockedBy: "Malkuth",
-		Costs: []data.Resource{{Name: "paragon", Count: 750}},
+		Costs: []R{{Name: "paragon", Count: 750}},
 	}, {
 		Name: "Hod", UnlockedBy: "Yesod",
-		Costs: []data.Resource{{Name: "paragon", Count: 1250}},
+		Costs: []R{{Name: "paragon", Count: 1250}},
 	}, {
 		Name: "Netzach", UnlockedBy: "Hod",
-		Costs: []data.Resource{{Name: "paragon", Count: 1750}},
+		Costs: []R{{Name: "paragon", Count: 1750}},
 	}, {
 		Name: "Tiferet", UnlockedBy: "Netzach",
-		Costs: []data.Resource{{Name: "paragon", Count: 2500}},
+		Costs: []R{{Name: "paragon", Count: 2500}},
 	}, {
 		Name: "Gevurah", UnlockedBy: "Tiferet",
-		Costs: []data.Resource{{Name: "paragon", Count: 5000}},
+		Costs: []R{{Name: "paragon", Count: 5000}},
 	}, {
 		Name: "Chesed", UnlockedBy: "Gevurah",
-		Costs: []data.Resource{{Name: "paragon", Count: 7500}},
+		Costs: []R{{Name: "paragon", Count: 7500}},
 	}, {
 		Name: "Binah", UnlockedBy: "Chesed",
-		Costs: []data.Resource{{Name: "paragon", Count: 15000}},
+		Costs: []R{{Name: "paragon", Count: 15000}},
 	}, {
 		Name: "Chokhmah", UnlockedBy: "Binah",
-		Costs: []data.Resource{{Name: "paragon", Count: 30000}},
+		Costs: []R{{Name: "paragon", Count: 30000}},
 	}, {
 		Name: "Keter", UnlockedBy: "Chokhmah",
-		Costs: []data.Resource{{Name: "paragon", Count: 60000}},
+		Costs: []R{{Name: "paragon", Count: 60000}},
 	}, {
 		Name: "Adjustment Bureau", UnlockedBy: "Metaphysics",
-		Costs: []data.Resource{{Name: "paragon", Count: 5}},
+		Costs: []R{{Name: "paragon", Count: 5}},
 	}, {
 		Name: "ASCOH", UnlockedBy: "Adjustment Bureau",
-		Costs: []data.Resource{{Name: "paragon", Count: 5}},
+		Costs: []R{{Name: "paragon", Count: 5}},
 	}})
 
 	addCrafts(g, []data.Action{{
 		Name: "beam", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "wood", Count: 175}},
-		Producers: []data.Resource{{
+		Costs: []R{{Name: "wood", Count: 175}},
+		Producers: []R{{
 			Name: "Active Steamworks", Factor: 1. / (2 * 100 * 4 * 175), ProductionOnGone: true,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Workshop Automation",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "wood cap",
-					Bonus: []data.Resource{{
+					Bonus: []R{{
 						Name: "Advanced Automation",
 					}, {
 						Name: "CraftRatio",
@@ -4617,14 +4619,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "slab", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "mineral", Count: 250}},
-		Producers: []data.Resource{{
+		Costs: []R{{Name: "mineral", Count: 250}},
+		Producers: []R{{
 			Name: "Active Steamworks", Factor: 1. / (2 * 100 * 4 * 250), ProductionOnGone: true,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Workshop Automation",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "mineral cap",
-					Bonus: []data.Resource{{
+					Bonus: []R{{
 						Name: "Advanced Automation",
 					}, {
 						Name: "CraftRatio",
@@ -4636,23 +4638,23 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "concrete", UnlockedBy: "Mechanization",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "slab", Count: 2500,
 		}, {
 			Name: "steel", Count: 25,
 		}},
 	}, {
 		Name: "plate", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "iron", Count: 125}},
-		Producers: []data.Resource{{
+		Costs: []R{{Name: "iron", Count: 125}},
+		Producers: []R{{
 			Name: "Active Steamworks", Factor: 1. / (2 * 100 * 4 * 125), ProductionOnGone: true,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Workshop Automation",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Pneumatic Press",
-					Bonus: []data.Resource{{
+					Bonus: []R{{
 						Name: "iron cap",
-						Bonus: []data.Resource{{
+						Bonus: []R{{
 							Name: "Advanced Automation",
 						}, {
 							Name: "CraftRatio",
@@ -4666,24 +4668,24 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "steel", UnlockedBy: "Steel",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "iron", Count: 100,
 		}, {
 			Name: "coal", Count: 100,
 		}},
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Active Calciner", Factor: 0.15 * 5 * 0.10 * 0.01,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Steel Plants",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Oxidation", Factor: 0.95,
 				}, {
 					Name: "CraftRatio", Factor: 0.25,
-					Bonus:               []data.Resource{{Name: "Automated Plants"}},
+					Bonus:               []R{{Name: "Automated Plants"}},
 					BonusStartsFromZero: true,
 				}, {
 					Name: "Reactor", Factor: 0.02,
-					Bonus:               []data.Resource{{Name: "Nuclear Plants"}},
+					Bonus:               []R{{Name: "Nuclear Plants"}},
 					BonusStartsFromZero: true,
 				}},
 			}},
@@ -4691,41 +4693,41 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "gear", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "steel", Count: 15}},
+		Costs: []R{{Name: "steel", Count: 15}},
 	}, {
 		Name: "alloy", UnlockedBy: "Chemistry",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "steel", Count: 75,
 		}, {
 			Name: "titanium", Count: 10,
 		}},
 	}, {
 		Name: "eludium", UnlockedBy: "Advanced Exogeology",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "alloy", Count: 2500,
 		}, {
 			Name: "unobtainium", Count: 1000,
 		}},
 	}, {
 		Name: "scaffold", UnlockedBy: "Construction",
-		Costs: []data.Resource{{Name: "beam", Count: 50}},
+		Costs: []R{{Name: "beam", Count: 50}},
 	}, {
 		Name: "ship", UnlockedBy: "Navigation",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "scaffold", Count: 100,
 		}, {
 			Name: "plate", Count: 150,
 		}, {
 			Name: "starchart", Count: 25,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Satellite", Factor: 0.0125,
-				Bonus:               []data.Resource{{Name: "Satellite Navigation"}},
+				Bonus:               []R{{Name: "Satellite Navigation"}},
 				BonusStartsFromZero: true,
 			}},
 		}},
 	}, {
 		Name: "tanker", UnlockedBy: "Robotics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "ship", Count: 200,
 		}, {
 			Name: "alloy", Count: 1250,
@@ -4734,34 +4736,34 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "kerosene", UnlockedBy: "Oil Processing",
-		Costs: []data.Resource{{Name: "oil", Count: 7500}},
-		Bonus: []data.Resource{{
+		Costs: []R{{Name: "oil", Count: 7500}},
+		Bonus: []R{{
 			Name: "Factory", Factor: 0.05,
-			Bonus:               []data.Resource{{Name: "Factory Processing"}},
+			Bonus:               []R{{Name: "Factory Processing"}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "parchment", UnlockedBy: "Writing",
-		Costs: []data.Resource{{Name: "fur", Count: 175}},
+		Costs: []R{{Name: "fur", Count: 175}},
 	}, {
 		Name: "manuscript", UnlockedBy: "Construction",
-		Producers: []data.Resource{{
+		Producers: []R{{
 			Name: "Steamworks", Factor: 0.0005 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Printing Press",
-				Bonus: []data.Resource{{
+				Bonus: []R{{
 					Name: "Offset Press", Factor: 4 - 1,
-					Bonus: []data.Resource{{Name: "Photolithography", Factor: 4 - 1}},
+					Bonus: []R{{Name: "Photolithography", Factor: 4 - 1}},
 				}},
 			}},
 			BonusStartsFromZero: true,
 		}},
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "culture", Count: 400,
 		}, {
 			Name: "parchment", Count: 25,
 		}},
-		Bonus: []data.Resource{{
+		Bonus: []R{{
 			Name: "Codex Vox", Factor: 0.25,
 		}, {
 			Name: "Codex Logos", Factor: 0.25,
@@ -4770,26 +4772,26 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "compendium", UnlockedBy: "Philosophy",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "manuscript", Count: 50,
 		}, {
 			Name: "science", Count: 10000,
 		}},
-		Bonus: []data.Resource{{
+		Bonus: []R{{
 			Name: "Codex Logos", Factor: 0.25,
 		}, {
 			Name: "Codex Agrum", Factor: 0.25,
 		}},
 	}, {
 		Name: "blueprint", UnlockedBy: "Physics",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "compendium", Count: 25,
 		}, {
 			Name: "science", Count: 25000,
 		}},
-		Bonus: []data.Resource{{
+		Bonus: []R{{
 			Name: "CAD System", Factor: 0.01,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name: "Library",
 			}, {
 				Name: "Data Center",
@@ -4805,18 +4807,18 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "thorium", UnlockedBy: "Thorium",
-		Costs: []data.Resource{{Name: "uranium", Count: 250}},
-		Producers: []data.Resource{{
+		Costs: []R{{Name: "uranium", Count: 250}},
+		Producers: []R{{
 			Name: "Active Reactor", Factor: -0.05 * 5,
-			Bonus: []data.Resource{{
+			Bonus: []R{{
 				Name:  "Thorium Reactors",
-				Bonus: []data.Resource{{Name: "Enriched Thorium", Factor: -0.25}},
+				Bonus: []R{{Name: "Enriched Thorium", Factor: -0.25}},
 			}},
 			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "megalith", UnlockedBy: "Construction",
-		Costs: []data.Resource{{
+		Costs: []R{{
 			Name: "beam", Count: 25,
 		}, {
 			Name: "slab", Count: 50,
@@ -4836,8 +4838,8 @@ func join[T any](slices ...[]T) []T {
 	return res
 }
 
-func resourceWithModulus(resource data.Resource, names []string) []data.Resource {
-	res := []data.Resource{}
+func resourceWithModulus(resource R, names []string) []R {
+	res := []R{}
 	resource.ProductionModulus = len(names)
 	for i, name := range names {
 		resource.Name = name
@@ -4847,8 +4849,8 @@ func resourceWithModulus(resource data.Resource, names []string) []data.Resource
 	return res
 }
 
-func resourceWithName(resource data.Resource, names []string) []data.Resource {
-	res := []data.Resource{}
+func resourceWithName(resource R, names []string) []R {
+	res := []R{}
 	for _, name := range names {
 		resource.Name = name
 		res = append(res, resource)
@@ -4856,7 +4858,7 @@ func resourceWithName(resource data.Resource, names []string) []data.Resource {
 	return res
 }
 
-func addBonus(g *game.Game, resources []data.Resource) {
+func addBonus(g *game.Game, resources []R) {
 	for _, resource := range resources {
 		resource.Type = "Resource"
 		resource.IsHidden = true
@@ -4870,13 +4872,13 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		name := action.Name
 		action.Name = "@" + name
 		action.Type = "Craft"
-		action.Adds = []data.Resource{{
+		action.Adds = []R{{
 			Name: name, Count: 1,
-			Bonus: join([]data.Resource{{Name: "CraftRatio"}}, action.Bonus),
+			Bonus: join([]R{{Name: "CraftRatio"}}, action.Bonus),
 		}}
 		action.IsHidden = true
 		g.AddAction(action)
-		g.AddResource(data.Resource{
+		g.AddResource(R{
 			Name: name, Type: "Resource", Cap: -1, ProducerAction: action.Name,
 			Producers: action.Producers,
 		})
@@ -4893,11 +4895,11 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		}
 		action.Name = name
 		action.Type = "Building"
-		action.Adds = append([]data.Resource{{
+		action.Adds = append([]R{{
 			Name: action.Name, Count: 1,
 		}}, action.Adds...)
 		g.AddAction(action)
-		g.AddResource(data.Resource{
+		g.AddResource(R{
 			Name: action.Name, Type: action.Type, IsHidden: true, Cap: -1,
 		})
 
@@ -4906,17 +4908,17 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		}
 
 		action.Name = "Active " + name
-		action.Costs = []data.Resource{{Name: "Idle " + name, Count: 1}}
-		action.Adds = []data.Resource{{Name: action.Name, Count: 1}}
+		action.Costs = []R{{Name: "Idle " + name, Count: 1}}
+		action.Adds = []R{{Name: action.Name, Count: 1}}
 		action.UnlockedBy = name
 		g.AddAction(action)
-		g.AddResource(data.Resource{
+		g.AddResource(R{
 			Name: action.Name, Type: action.Type, IsHidden: true, Cap: -1,
 		})
 
-		g.AddResource(data.Resource{
+		g.AddResource(R{
 			Name: "Idle " + name, Type: "Building", IsHidden: true, Cap: -1, StartCountFromZero: true,
-			Producers: []data.Resource{{
+			Producers: []R{{
 				Name: name,
 			}, {
 				Name: "Active " + name, Factor: -1,
@@ -4928,12 +4930,12 @@ func addBuildings(g *game.Game, actions []data.Action) {
 func addJobs(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
 		action.Type = "Job"
-		action.Costs = []data.Resource{{Name: "kitten", Count: 1, Cap: 1}}
-		action.Adds = []data.Resource{{Name: action.Name, Count: 1}}
+		action.Costs = []R{{Name: "kitten", Count: 1, Cap: 1}}
+		action.Adds = []R{{Name: action.Name, Count: 1}}
 		g.AddAction(action)
-		g.AddResource(data.Resource{
+		g.AddResource(R{
 			Name: action.Name, Type: action.Type, IsHidden: true, Cap: -1,
-			OnGone: []data.Resource{{
+			OnGone: []R{{
 				Name: "gone kitten", Count: 1,
 			}, {
 				Name: "kitten", Cap: 1,
@@ -4945,18 +4947,18 @@ func addJobs(g *game.Game, actions []data.Action) {
 func addTechs(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
 		action.Type = "Tech"
-		action.Adds = []data.Resource{{Name: action.Name, Count: 1}}
+		action.Adds = []R{{Name: action.Name, Count: 1}}
 		action.LockedBy = action.Name
 		g.AddAction(action)
-		g.AddResource(data.Resource{
+		g.AddResource(R{
 			Name: action.Name, Type: action.Type, IsHidden: true, Cap: 1,
 		})
 	}
 }
 
-func getCEBR(base float64) *data.Resource {
-	return &data.Resource{
+func getCEBR(base float64) *R {
+	return &R{
 		Factor: base,
-		Bonus:  []data.Resource{{Name: "PriceRatioBonus"}},
+		Bonus:  []R{{Name: "PriceRatioBonus"}},
 	}
 }
