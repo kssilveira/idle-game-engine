@@ -1789,294 +1789,294 @@ func NewGame(now game.Now) *game.Game {
 		Adds: []data.Resource{{Name: "kitten", Cap: 2}},
 	}, {
 		Name: "Library", UnlockedBy: "Catnip Field",
-		Costs: []data.Resource{{Name: "wood", Count: 25, CostExponentBase: 1.15}},
+		Costs: []data.Resource{{Name: "wood", Count: 25, CostExponentBaseResource: getCEBR(1.15)}},
 	}, {
 		Name: "Barn", UnlockedBy: "Agriculture",
-		Costs: []data.Resource{{Name: "wood", Count: 50, CostExponentBase: 1.75}},
+		Costs: []data.Resource{{Name: "wood", Count: 50, CostExponentBaseResource: getCEBR(1.75)}},
 	}, {
 		Name: "Mine", UnlockedBy: "Mining",
-		Costs: []data.Resource{{Name: "wood", Count: 100, CostExponentBase: 1.15}},
+		Costs: []data.Resource{{Name: "wood", Count: 100, CostExponentBaseResource: getCEBR(1.15)}},
 	}, {
 		Name: "Workshop", UnlockedBy: "Mining",
 		Costs: []data.Resource{{
-			Name: "wood", Count: 100, CostExponentBase: 1.15,
+			Name: "wood", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "mineral", Count: 400, CostExponentBase: 1.15,
+			Name: "mineral", Count: 400, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Active Smelter", UnlockedBy: "Metal Working",
-		Costs: []data.Resource{{Name: "mineral", Count: 200, CostExponentBase: 1.15}},
+		Costs: []data.Resource{{Name: "mineral", Count: 200, CostExponentBaseResource: getCEBR(1.15)}},
 	}, {
 		Name: "Pasture", UnlockedBy: "Animal Husbandry",
 		Costs: []data.Resource{{
-			Name: "catnip", Count: 100, CostExponentBase: 1.15,
+			Name: "catnip", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "wood", Count: 10, CostExponentBase: 1.15,
+			Name: "wood", Count: 10, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Unic. Pasture", UnlockedBy: "Animal Husbandry",
-		Costs: []data.Resource{{Name: "unicorn", Count: 2, CostExponentBase: 1.75}},
+		Costs: []data.Resource{{Name: "unicorn", Count: 2, CostExponentBaseResource: getCEBR(1.75)}},
 	}, {
 		Name: "Academy", UnlockedBy: "Mathematics",
 		Costs: []data.Resource{{
-			Name: "wood", Count: 50, CostExponentBase: 1.15,
+			Name: "wood", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "mineral", Count: 70, CostExponentBase: 1.15,
+			Name: "mineral", Count: 70, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "science", Count: 100, CostExponentBase: 1.15,
+			Name: "science", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Warehouse", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "beam", Count: 1.5, CostExponentBase: 1.15,
+			Name: "beam", Count: 1.5, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "slab", Count: 2, CostExponentBase: 1.15,
+			Name: "slab", Count: 2, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Log House", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "wood", Count: 200, CostExponentBase: 1.15,
+			Name: "wood", Count: 200, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "mineral", Count: 250, CostExponentBase: 1.15,
+			Name: "mineral", Count: 250, CostExponentBaseResource: getCEBR(1.15),
 		}},
 		Adds: []data.Resource{{Name: "kitten", Cap: 1}},
 	}, {
 		Name: "Aqueduct", UnlockedBy: "Engineering",
-		Costs: []data.Resource{{Name: "mineral", Count: 75, CostExponentBase: 1.12}},
+		Costs: []data.Resource{{Name: "mineral", Count: 75, CostExponentBaseResource: getCEBR(1.12)}},
 	}, {
 		Name: "Mansion", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
-			Name: "slab", Count: 185, CostExponentBase: 1.15,
+			Name: "slab", Count: 185, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "steel", Count: 75, CostExponentBase: 1.15,
+			Name: "steel", Count: 75, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "titanium", Count: 25, CostExponentBase: 1.15,
+			Name: "titanium", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}},
 		Adds: []data.Resource{{Name: "kitten", Cap: 1}},
 	}, {
 		Name: "Observatory", UnlockedBy: "Astronomy",
 		Costs: []data.Resource{{
-			Name: "scaffold", Count: 50, CostExponentBase: 1.1,
+			Name: "scaffold", Count: 50, CostExponentBaseResource: getCEBR(1.1),
 		}, {
-			Name: "slab", Count: 35, CostExponentBase: 1.1,
+			Name: "slab", Count: 35, CostExponentBaseResource: getCEBR(1.1),
 		}, {
-			Name: "iron", Count: 750, CostExponentBase: 1.1,
+			Name: "iron", Count: 750, CostExponentBaseResource: getCEBR(1.1),
 		}, {
-			Name: "science", Count: 1000, CostExponentBase: 1.1,
+			Name: "science", Count: 1000, CostExponentBaseResource: getCEBR(1.1),
 		}},
 	}, {
 		Name: "Active Bio Lab", UnlockedBy: "Biology",
 		Costs: []data.Resource{{
-			Name: "slab", Count: 100, CostExponentBase: 1.1,
+			Name: "slab", Count: 100, CostExponentBaseResource: getCEBR(1.1),
 		}, {
-			Name: "alloy", Count: 25, CostExponentBase: 1.1,
+			Name: "alloy", Count: 25, CostExponentBaseResource: getCEBR(1.1),
 		}, {
-			Name: "science", Count: 1500, CostExponentBase: 1.1,
+			Name: "science", Count: 1500, CostExponentBaseResource: getCEBR(1.1),
 		}},
 	}, {
 		Name: "Harbour", UnlockedBy: "Navigation",
 		Costs: []data.Resource{{
-			Name: "scaffold", Count: 5, CostExponentBase: 1.15,
+			Name: "scaffold", Count: 5, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "slab", Count: 50, CostExponentBase: 1.15,
+			Name: "slab", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "plate", Count: 75, CostExponentBase: 1.15,
+			Name: "plate", Count: 75, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Quarry", UnlockedBy: "Geology",
 		Costs: []data.Resource{{
-			Name: "scaffold", Count: 50, CostExponentBase: 1.15,
+			Name: "scaffold", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "steel", Count: 125, CostExponentBase: 1.15,
+			Name: "steel", Count: 125, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "slab", Count: 1000, CostExponentBase: 1.15,
+			Name: "slab", Count: 1000, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Lumber Mill", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "wood", Count: 100, CostExponentBase: 1.15,
+			Name: "wood", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "iron", Count: 50, CostExponentBase: 1.15,
+			Name: "iron", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "mineral", Count: 250, CostExponentBase: 1.15,
+			Name: "mineral", Count: 250, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Oil Well", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "steel", Count: 50, CostExponentBase: 1.15,
+			Name: "steel", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "gear", Count: 25, CostExponentBase: 1.15,
+			Name: "gear", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "scaffold", Count: 25, CostExponentBase: 1.15,
+			Name: "scaffold", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Active Accelerator", UnlockedBy: "Particle Physics",
 		Costs: []data.Resource{{
-			Name: "titanium", Count: 7500, CostExponentBase: 1.15,
+			Name: "titanium", Count: 7500, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "concrete", Count: 125, CostExponentBase: 1.15,
+			Name: "concrete", Count: 125, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "uranium", Count: 25, CostExponentBase: 1.15,
+			Name: "uranium", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Active Steamworks", UnlockedBy: "Machinery",
 		Costs: []data.Resource{{
-			Name: "steel", Count: 65, CostExponentBase: 1.25,
+			Name: "steel", Count: 65, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "gear", Count: 20, CostExponentBase: 1.25,
+			Name: "gear", Count: 20, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 1, CostExponentBaseResource: getCEBR(1.25),
 		}},
 	}, {
 		Name: "Active Magneto", UnlockedBy: "Electricity",
 		Costs: []data.Resource{{
-			Name: "alloy", Count: 10, CostExponentBase: 1.25,
+			Name: "alloy", Count: 10, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "gear", Count: 5, CostExponentBase: 1.25,
+			Name: "gear", Count: 5, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 1, CostExponentBaseResource: getCEBR(1.25),
 		}},
 	}, {
 		Name: "Active Calciner", UnlockedBy: "Chemistry",
 		Costs: []data.Resource{{
-			Name: "steel", Count: 100, CostExponentBase: 1.15,
+			Name: "steel", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "titanium", Count: 15, CostExponentBase: 1.15,
+			Name: "titanium", Count: 15, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "blueprint", Count: 1, CostExponentBase: 1.15,
+			Name: "blueprint", Count: 1, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "oil", Count: 500, CostExponentBase: 1.15,
+			Name: "oil", Count: 500, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Factory", UnlockedBy: "Mechanization",
 		Costs: []data.Resource{{
-			Name: "titanium", Count: 2000, CostExponentBase: 1.15,
+			Name: "titanium", Count: 2000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "plate", Count: 25000, CostExponentBase: 1.15,
+			Name: "plate", Count: 25000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "concrete", Count: 15, CostExponentBase: 1.15,
+			Name: "concrete", Count: 15, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Active Reactor", UnlockedBy: "Nuclear Fission",
 		Costs: []data.Resource{{
-			Name: "titanium", Count: 3500, CostExponentBase: 1.15,
+			Name: "titanium", Count: 3500, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "plate", Count: 5000, CostExponentBase: 1.15,
+			Name: "plate", Count: 5000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "concrete", Count: 50, CostExponentBase: 1.15,
+			Name: "concrete", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "blueprint", Count: 25, CostExponentBase: 1.15,
+			Name: "blueprint", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Amphitheatre", UnlockedBy: "Writing",
 		Costs: []data.Resource{{
-			Name: "wood", Count: 200, CostExponentBase: 1.15,
+			Name: "wood", Count: 200, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "mineral", Count: 1200, CostExponentBase: 1.15,
+			Name: "mineral", Count: 1200, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "parchment", Count: 3, CostExponentBase: 1.15,
+			Name: "parchment", Count: 3, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Chapel", UnlockedBy: "Acoustics",
 		Costs: []data.Resource{{
-			Name: "mineral", Count: 2000, CostExponentBase: 1.15,
+			Name: "mineral", Count: 2000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "culture", Count: 250, CostExponentBase: 1.15,
+			Name: "culture", Count: 250, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "parchment", Count: 250, CostExponentBase: 1.15,
+			Name: "parchment", Count: 250, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Temple", UnlockedBy: "Philosophy",
 		Costs: []data.Resource{{
-			Name: "slab", Count: 25, CostExponentBase: 1.15,
+			Name: "slab", Count: 25, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "plate", Count: 15, CostExponentBase: 1.15,
+			Name: "plate", Count: 15, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "gold", Count: 50, CostExponentBase: 1.15,
+			Name: "gold", Count: 50, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "manuscript", Count: 10, CostExponentBase: 1.15,
+			Name: "manuscript", Count: 10, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Tradepost", UnlockedBy: "Currency",
 		Costs: []data.Resource{{
-			Name: "wood", Count: 500, CostExponentBase: 1.15,
+			Name: "wood", Count: 500, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "mineral", Count: 200, CostExponentBase: 1.15,
+			Name: "mineral", Count: 200, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "gold", Count: 10, CostExponentBase: 1.15,
+			Name: "gold", Count: 10, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Active Mint", UnlockedBy: "Architecture",
 		Costs: []data.Resource{{
-			Name: "mineral", Count: 5000, CostExponentBase: 1.15,
+			Name: "mineral", Count: 5000, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "plate", Count: 200, CostExponentBase: 1.15,
+			Name: "plate", Count: 200, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "gold", Count: 500, CostExponentBase: 1.15,
+			Name: "gold", Count: 500, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Active Brewery", UnlockedBy: "Drama and Poetry",
 		Costs: []data.Resource{{
-			Name: "wood", Count: 1000, CostExponentBase: 1.5,
+			Name: "wood", Count: 1000, CostExponentBaseResource: getCEBR(1.5),
 		}, {
-			Name: "culture", Count: 750, CostExponentBase: 1.5,
+			Name: "culture", Count: 750, CostExponentBaseResource: getCEBR(1.5),
 		}, {
-			Name: "spice", Count: 5, CostExponentBase: 1.5,
+			Name: "spice", Count: 5, CostExponentBaseResource: getCEBR(1.5),
 		}, {
-			Name: "parchment", Count: 375, CostExponentBase: 1.5,
+			Name: "parchment", Count: 375, CostExponentBaseResource: getCEBR(1.5),
 		}},
 	}, {
 		Name: "Ziggurat", UnlockedBy: "Construction",
 		Costs: []data.Resource{{
-			Name: "megalith", Count: 50, CostExponentBase: 1.25,
+			Name: "megalith", Count: 50, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "scaffold", Count: 50, CostExponentBase: 1.25,
+			Name: "scaffold", Count: 50, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "blueprint", Count: 1, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 1, CostExponentBaseResource: getCEBR(1.25),
 		}},
 	}, {
 		Name: "Chronosphere", UnlockedBy: "Chronophysics",
 		Costs: []data.Resource{{
-			Name: "unobtainium", Count: 2500, CostExponentBase: 1.25,
+			Name: "unobtainium", Count: 2500, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "time crystal", Count: 1, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 1, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "blueprint", Count: 100, CostExponentBase: 1.25,
+			Name: "blueprint", Count: 100, CostExponentBaseResource: getCEBR(1.25),
 		}, {
-			Name: "science", Count: 250000, CostExponentBase: 1.25,
+			Name: "science", Count: 250000, CostExponentBaseResource: getCEBR(1.25),
 		}},
 	}, {
 		Name: "AI Core", UnlockedBy: "Artificial Intelligence",
 		Costs: []data.Resource{{
-			Name: "antimatter", Count: 125, CostExponentBase: 1.15,
+			Name: "antimatter", Count: 125, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "science", Count: 500000, CostExponentBase: 1.15,
+			Name: "science", Count: 500000, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Solar Farm", UnlockedBy: "Ecology",
 		Costs: []data.Resource{{
-			Name: "titanium", Count: 250, CostExponentBase: 1.15,
+			Name: "titanium", Count: 250, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Hydro Plant", UnlockedBy: "Robotics",
 		Costs: []data.Resource{{
-			Name: "concrete", Count: 100, CostExponentBase: 1.15,
+			Name: "concrete", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "titanium", Count: 2500, CostExponentBase: 1.15,
+			Name: "titanium", Count: 2500, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Data Center", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "concrete", Count: 10, CostExponentBase: 1.15,
+			Name: "concrete", Count: 10, CostExponentBaseResource: getCEBR(1.15),
 		}, {
-			Name: "steel", Count: 100, CostExponentBase: 1.15,
+			Name: "steel", Count: 100, CostExponentBaseResource: getCEBR(1.15),
 		}},
 	}, {
 		Name: "Broadcast Tower", UnlockedBy: "Electronics",
 		Costs: []data.Resource{{
-			Name: "iron", Count: 1250, CostExponentBase: 1.18,
+			Name: "iron", Count: 1250, CostExponentBaseResource: getCEBR(1.18),
 		}, {
-			Name: "titanium", Count: 75, CostExponentBase: 1.18,
+			Name: "titanium", Count: 75, CostExponentBaseResource: getCEBR(1.18),
 		}},
 	}, {
 		Name: "Unicorn Tomb", UnlockedBy: "Ziggurat",

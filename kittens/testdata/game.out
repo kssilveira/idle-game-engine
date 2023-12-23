@@ -7363,7 +7363,14 @@
         {
           "Name": "wood",
           "Count": 25,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7381,7 +7388,14 @@
         {
           "Name": "wood",
           "Count": 50,
-          "CostExponentBase": 1.75
+          "CostExponentBaseResource": {
+            "Factor": 1.75,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7399,7 +7413,14 @@
         {
           "Name": "wood",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7417,12 +7438,26 @@
         {
           "Name": "wood",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "mineral",
           "Count": 400,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7440,7 +7475,14 @@
         {
           "Name": "mineral",
           "Count": 200,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7475,12 +7517,26 @@
         {
           "Name": "catnip",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "wood",
           "Count": 10,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7498,7 +7554,14 @@
         {
           "Name": "unicorn",
           "Count": 2,
-          "CostExponentBase": 1.75
+          "CostExponentBaseResource": {
+            "Factor": 1.75,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7516,17 +7579,38 @@
         {
           "Name": "wood",
           "Count": 50,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "mineral",
           "Count": 70,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "science",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7544,12 +7628,26 @@
         {
           "Name": "beam",
           "Count": 1.5,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "slab",
           "Count": 2,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7567,12 +7665,26 @@
         {
           "Name": "wood",
           "Count": 200,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "mineral",
           "Count": 250,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7594,7 +7706,14 @@
         {
           "Name": "mineral",
           "Count": 75,
-          "CostExponentBase": 1.12
+          "CostExponentBaseResource": {
+            "Factor": 1.12,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7612,17 +7731,38 @@
         {
           "Name": "slab",
           "Count": 185,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "steel",
           "Count": 75,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "titanium",
           "Count": 25,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7644,22 +7784,50 @@
         {
           "Name": "scaffold",
           "Count": 50,
-          "CostExponentBase": 1.1
+          "CostExponentBaseResource": {
+            "Factor": 1.1,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "slab",
           "Count": 35,
-          "CostExponentBase": 1.1
+          "CostExponentBaseResource": {
+            "Factor": 1.1,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "iron",
           "Count": 750,
-          "CostExponentBase": 1.1
+          "CostExponentBaseResource": {
+            "Factor": 1.1,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "science",
           "Count": 1000,
-          "CostExponentBase": 1.1
+          "CostExponentBaseResource": {
+            "Factor": 1.1,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7677,17 +7845,38 @@
         {
           "Name": "slab",
           "Count": 100,
-          "CostExponentBase": 1.1
+          "CostExponentBaseResource": {
+            "Factor": 1.1,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "alloy",
           "Count": 25,
-          "CostExponentBase": 1.1
+          "CostExponentBaseResource": {
+            "Factor": 1.1,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "science",
           "Count": 1500,
-          "CostExponentBase": 1.1
+          "CostExponentBaseResource": {
+            "Factor": 1.1,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7722,17 +7911,38 @@
         {
           "Name": "scaffold",
           "Count": 5,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "slab",
           "Count": 50,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "plate",
           "Count": 75,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7750,17 +7960,38 @@
         {
           "Name": "scaffold",
           "Count": 50,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "steel",
           "Count": 125,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "slab",
           "Count": 1000,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7778,17 +8009,38 @@
         {
           "Name": "wood",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "iron",
           "Count": 50,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "mineral",
           "Count": 250,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7806,17 +8058,38 @@
         {
           "Name": "steel",
           "Count": 50,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "gear",
           "Count": 25,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "scaffold",
           "Count": 25,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7834,17 +8107,38 @@
         {
           "Name": "titanium",
           "Count": 7500,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "concrete",
           "Count": 125,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "uranium",
           "Count": 25,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7879,17 +8173,38 @@
         {
           "Name": "steel",
           "Count": 65,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "gear",
           "Count": 20,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "blueprint",
           "Count": 1,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7924,17 +8239,38 @@
         {
           "Name": "alloy",
           "Count": 10,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "gear",
           "Count": 5,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "blueprint",
           "Count": 1,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -7969,22 +8305,50 @@
         {
           "Name": "steel",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "titanium",
           "Count": 15,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "blueprint",
           "Count": 1,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "oil",
           "Count": 500,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8019,17 +8383,38 @@
         {
           "Name": "titanium",
           "Count": 2000,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "plate",
           "Count": 25000,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "concrete",
           "Count": 15,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8047,22 +8432,50 @@
         {
           "Name": "titanium",
           "Count": 3500,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "plate",
           "Count": 5000,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "concrete",
           "Count": 50,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "blueprint",
           "Count": 25,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8097,17 +8510,38 @@
         {
           "Name": "wood",
           "Count": 200,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "mineral",
           "Count": 1200,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "parchment",
           "Count": 3,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8125,17 +8559,38 @@
         {
           "Name": "mineral",
           "Count": 2000,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "culture",
           "Count": 250,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "parchment",
           "Count": 250,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8153,22 +8608,50 @@
         {
           "Name": "slab",
           "Count": 25,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "plate",
           "Count": 15,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "gold",
           "Count": 50,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "manuscript",
           "Count": 10,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8186,17 +8669,38 @@
         {
           "Name": "wood",
           "Count": 500,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "mineral",
           "Count": 200,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "gold",
           "Count": 10,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8214,17 +8718,38 @@
         {
           "Name": "mineral",
           "Count": 5000,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "plate",
           "Count": 200,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "gold",
           "Count": 500,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8259,22 +8784,50 @@
         {
           "Name": "wood",
           "Count": 1000,
-          "CostExponentBase": 1.5
+          "CostExponentBaseResource": {
+            "Factor": 1.5,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "culture",
           "Count": 750,
-          "CostExponentBase": 1.5
+          "CostExponentBaseResource": {
+            "Factor": 1.5,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "spice",
           "Count": 5,
-          "CostExponentBase": 1.5
+          "CostExponentBaseResource": {
+            "Factor": 1.5,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "parchment",
           "Count": 375,
-          "CostExponentBase": 1.5
+          "CostExponentBaseResource": {
+            "Factor": 1.5,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8309,17 +8862,38 @@
         {
           "Name": "megalith",
           "Count": 50,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "scaffold",
           "Count": 50,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "blueprint",
           "Count": 1,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8337,22 +8911,50 @@
         {
           "Name": "unobtainium",
           "Count": 2500,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "time crystal",
           "Count": 1,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "blueprint",
           "Count": 100,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "science",
           "Count": 250000,
-          "CostExponentBase": 1.25
+          "CostExponentBaseResource": {
+            "Factor": 1.25,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8370,12 +8972,26 @@
         {
           "Name": "antimatter",
           "Count": 125,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "science",
           "Count": 500000,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8393,7 +9009,14 @@
         {
           "Name": "titanium",
           "Count": 250,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8411,12 +9034,26 @@
         {
           "Name": "concrete",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "titanium",
           "Count": 2500,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8434,12 +9071,26 @@
         {
           "Name": "concrete",
           "Count": 10,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "steel",
           "Count": 100,
-          "CostExponentBase": 1.15
+          "CostExponentBaseResource": {
+            "Factor": 1.15,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
@@ -8457,12 +9108,26 @@
         {
           "Name": "iron",
           "Count": 1250,
-          "CostExponentBase": 1.18
+          "CostExponentBaseResource": {
+            "Factor": 1.18,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         },
         {
           "Name": "titanium",
           "Count": 75,
-          "CostExponentBase": 1.18
+          "CostExponentBaseResource": {
+            "Factor": 1.18,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
