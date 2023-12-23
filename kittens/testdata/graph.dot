@@ -593,6 +593,7 @@ digraph {
   "Bio Lab" -> "wood" [color="green"];
   "Catnip Field" -> "Refine catnip" [color="blue"];
   "catnip" -> "Catnip Field" [color="orange"];
+  "PriceRatioBonus" -> "Catnip Field" [color="red"];
   "catnip" -> "Catnip Field" [color="blue"];
   "wood" -> "Hut" [color="orange"];
   "Ironwood Huts" -> "Hut" [color="green"];

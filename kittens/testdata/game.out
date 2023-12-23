@@ -7293,7 +7293,14 @@
         {
           "Name": "catnip",
           "Count": 10,
-          "CostExponentBase": 1.12
+          "CostExponentBaseResource": {
+            "Factor": 1.12,
+            "Bonus": [
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [
