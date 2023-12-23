@@ -926,28 +926,33 @@
       "Formula": "Count = ((c(Unicornmancy) * 0.1) + (c(Temporal Accelerator) * 0.0125) + (c(Blazar) * 0.025))"
     },
     {
-      "Name": "HutCostExponentBase",
+      "Name": "PriceRatioBonus",
       "Type": "Resource",
       "IsHidden": true,
-      "StartCount": 2.5,
-      "Bonus": [
+      "Producers": [
         {
-          "Name": "Ironwood Huts",
-          "Factor": -0.5
+          "Name": "Enlightenment",
+          "Factor": -0.01
         },
         {
-          "Name": "Concrete Huts",
-          "Factor": -0.3
+          "Name": "Golden Ratio",
+          "Factor": -0.01618
         },
         {
-          "Name": "Unobtainium Huts",
-          "Factor": -0.25
+          "Name": "Divine Proportion",
+          "Factor": -0.017777
         },
         {
-          "Name": "Eludium Huts",
-          "Factor": -0.1
+          "Name": "Vitruvian Feline",
+          "Factor": -0.02
+        },
+        {
+          "Name": "Renaissance",
+          "Factor": -0.0225
         }
-      ]
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = ((c(Enlightenment) * -0.01) + (c(Golden Ratio) * -0.01618) + (c(Divine Proportion) * -0.017777) + (c(Vitruvian Feline) * -0.02) + (c(Renaissance) * -0.0225))"
     },
     {
       "Name": "catnip cap",
@@ -7306,7 +7311,30 @@
         {
           "Name": "wood",
           "Count": 5,
-          "CostExponentBaseResource": "HutCostExponentBase"
+          "CostExponentBaseResource": {
+            "Factor": 2.5,
+            "Bonus": [
+              {
+                "Name": "Ironwood Huts",
+                "Factor": -0.5
+              },
+              {
+                "Name": "Concrete Huts",
+                "Factor": -0.3
+              },
+              {
+                "Name": "Unobtainium Huts",
+                "Factor": -0.25
+              },
+              {
+                "Name": "Eludium Huts",
+                "Factor": -0.1
+              },
+              {
+                "Name": "PriceRatioBonus"
+              }
+            ]
+          }
         }
       ],
       "Adds": [

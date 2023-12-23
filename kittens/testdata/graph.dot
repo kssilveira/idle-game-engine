@@ -90,10 +90,11 @@ digraph {
   "Unicornmancy" -> "UnicornEventBonus" [color="green"];
   "Temporal Accelerator" -> "UnicornEventBonus" [color="green"];
   "Blazar" -> "UnicornEventBonus" [color="green"];
-  "Ironwood Huts" -> "HutCostExponentBase" [color="red"];
-  "Concrete Huts" -> "HutCostExponentBase" [color="red"];
-  "Unobtainium Huts" -> "HutCostExponentBase" [color="red"];
-  "Eludium Huts" -> "HutCostExponentBase" [color="red"];
+  "PriceRatioBonus" -> "Enlightenment" [color="red"];
+  "PriceRatioBonus" -> "Golden Ratio" [color="red"];
+  "PriceRatioBonus" -> "Divine Proportion" [color="red"];
+  "PriceRatioBonus" -> "Vitruvian Feline" [color="red"];
+  "PriceRatioBonus" -> "Renaissance" [color="red"];
   "Barn" -> "catnip cap" [color="green"];
   "BarnCatnipCapBonus" -> "Barn" [color="green"];
   "Warehouse" -> "catnip cap" [color="green"];
@@ -594,7 +595,11 @@ digraph {
   "catnip" -> "Catnip Field" [color="orange"];
   "catnip" -> "Catnip Field" [color="blue"];
   "wood" -> "Hut" [color="orange"];
-  "HutCostExponentBase" -> "Hut" [color="orange"];
+  "Ironwood Huts" -> "Hut" [color="green"];
+  "Concrete Huts" -> "Hut" [color="green"];
+  "Unobtainium Huts" -> "Hut" [color="green"];
+  "Eludium Huts" -> "Hut" [color="green"];
+  "PriceRatioBonus" -> "Hut" [color="red"];
   "Hut" -> "kitten" [color="limegreen"];
   "Catnip Field" -> "Hut" [color="blue"];
   "wood" -> "Library" [color="orange"];
@@ -1835,7 +1840,7 @@ digraph {
   "CryostationStorageBonus" [shape="cylinder"];
   "AstronomicalEventBonus" [shape="cylinder"];
   "UnicornEventBonus" [shape="cylinder"];
-  "HutCostExponentBase" [shape="cylinder"];
+  "PriceRatioBonus" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];
   "wood cap" [shape="cylinder"];

@@ -39,8 +39,8 @@ type Resource struct {
 
 	// Cost = Count * pow(CostExponentBase, add.Count)
 	CostExponentBase float64 `json:",omitempty"`
-	// Cost = Count * pow(CostExponentBaseResource.Count, add.Count)
-	CostExponentBaseResource string `json:",omitempty"`
+	// Cost = Count * pow(rate(CostExponentBaseResource), add.Count)
+	CostExponentBaseResource *Resource `json:",omitempty"`
 
 	ProducerAction string `json:",omitempty"`
 

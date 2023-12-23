@@ -306,20 +306,22 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Blazar", Factor: 0.025,
 		}},
+	}, {
+		Name: "PriceRatioBonus",
+		Producers: []data.Resource{{
+			Name: "Enlightenment", Factor: -0.01,
+		}, {
+			Name: "Golden Ratio", Factor: -0.01618,
+		}, {
+			Name: "Divine Proportion", Factor: -0.017777,
+		}, {
+			Name: "Vitruvian Feline", Factor: -0.02,
+		}, {
+			Name: "Renaissance", Factor: -0.0225,
+		}},
 	}})
 
 	g.AddResources([]data.Resource{{
-		Name: "HutCostExponentBase", Type: "Resource", IsHidden: true, StartCount: 2.5,
-		Bonus: []data.Resource{{
-			Name: "Ironwood Huts", Factor: -0.50,
-		}, {
-			Name: "Concrete Huts", Factor: -0.30,
-		}, {
-			Name: "Unobtainium Huts", Factor: -0.25,
-		}, {
-			Name: "Eludium Huts", Factor: -0.10,
-		}},
-	}, {
 		Name: "catnip cap", Type: "Resource", IsHidden: true, StartCount: 5000,
 		Producers: []data.Resource{{
 			Name: "Barn", Factor: 5000,
@@ -1769,8 +1771,22 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []data.Resource{{Name: "catnip", Count: 10, CostExponentBase: 1.12}},
 	}, {
 		Name: "Hut", UnlockedBy: "Catnip Field",
-		Costs: []data.Resource{{Name: "wood", Count: 5, CostExponentBaseResource: "HutCostExponentBase"}},
-		Adds:  []data.Resource{{Name: "kitten", Cap: 2}},
+		Costs: []data.Resource{{
+			Name: "wood", Count: 5, CostExponentBaseResource: &data.Resource{
+				Factor: 2.5,
+				Bonus: []data.Resource{{
+					Name: "Ironwood Huts", Factor: -0.50,
+				}, {
+					Name: "Concrete Huts", Factor: -0.30,
+				}, {
+					Name: "Unobtainium Huts", Factor: -0.25,
+				}, {
+					Name: "Eludium Huts", Factor: -0.10,
+				}, {
+					Name: "PriceRatioBonus",
+				}},
+			}}},
+		Adds: []data.Resource{{Name: "kitten", Cap: 2}},
 	}, {
 		Name: "Library", UnlockedBy: "Catnip Field",
 		Costs: []data.Resource{{Name: "wood", Count: 25, CostExponentBase: 1.15}},
