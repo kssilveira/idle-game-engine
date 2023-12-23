@@ -12,6 +12,7 @@ last action:
 ###
 [-] [Resource] catnip 996.8/5000 -3.2/s 5m11s to empty
 [Resource] science 0.03/250 0.03/s 2h13m19s to cap
+[Resource] mineral 0.01/250 0.01/s 5h33m19s to cap
 [Resource] kitten 1/1 0.05/s
 [Resource] paragon 0.000001 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
@@ -25,6 +26,7 @@ last action: farmer
 ###
 [-] [Resource] catnip 1006.8/5000 -3.2/s 5m14s to empty
 [Resource] science 0.03/250 0.03/s 2h13m18s to cap
+[Resource] mineral 0.01/250 0.01/s 5h33m18s to cap
 [Resource] kitten 1/1 0.05/s
 [Resource] paragon 0.000001 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
@@ -42,6 +44,7 @@ last action: Gather catnip
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] catnip 1008.9/5000 2.1/s 31m40s to cap
 [Resource] science 0.06/250 0.03/s 2h13m17s to cap
+[Resource] mineral 0.03/250 0.01/s 5h33m17s to cap
 [Resource] paragon 0.000003 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
@@ -58,6 +61,7 @@ last action: farmer
 [Calendar] day_of_year 2 (1 + 1 % 400)
 [Resource] catnip 1018.9/5000 2.1/s 31m35s to cap
 [Resource] science 0.06/250 0.03/s 2h13m17s to cap
+[Resource] mineral 0.03/250 0.01/s 5h33m17s to cap
 [Resource] paragon 0.000003 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)

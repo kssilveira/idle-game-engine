@@ -204,6 +204,7 @@ digraph {
   "Space Beacon" -> "science cap" [color="green"];
   "SpaceReactorScienceBonus" -> "Space Beacon" [color="green"];
   "GlobalCapBonus" -> "science cap" [color="green"];
+  "AstronomicalEventBonus" -> "Celestial Mechanics" [color="green"];
   "Cath" -> "Space Station" [color="green"];
   "Kairo" -> "Space Station" [color="red"];
   "Numeromancy" -> "Piscine" [color="green"];

@@ -558,6 +558,9 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Factor: 0.0025 * 25. / 2.,
 			Bonus:  []data.Resource{{Name: "AstronomicalEventBonus"}},
+		}, {
+			Name: "Celestial Mechanics", Factor: 0.001 * 15. / 2.,
+			Bonus: []data.Resource{{Name: "AstronomicalEventBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{
@@ -707,6 +710,9 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Active Smelter", Factor: -0.1 * 5, ProductionOnGone: true,
 		}, {
 			Name: "Active Calciner", Factor: -1.5 * 5, ProductionOnGone: true,
+		}, {
+			Factor: 0.001 * 25. / 2.,
+			Bonus:  []data.Resource{{Name: "AstronomicalEventBonus"}},
 		}},
 		Bonus: []data.Resource{{
 			Bonus: []data.Resource{{Name: "GlobalProductionBonus"}},

@@ -16,6 +16,7 @@ last action:
 [-] [Resource] catnip 983/5000 -17/s 57s to empty
 [Resource] wood 0.09/200 0.09/s 36m17s to cap
 [Resource] science 0.03/500 0.03/s 4h2m24s to cap
+[Resource] mineral 0.01/250 0.01/s 5h33m19s to cap
 [Resource] kitten 3/3 0.05/s
 [Resource] paragon 0.000001 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -33,6 +34,7 @@ last action: woodcutter
 [-] [Resource] catnip 983/5000 -17/s 57s to empty
 [Resource] wood 0.09/200 0.09/s 36m17s to cap
 [Resource] science 0.03/500 0.03/s 4h2m24s to cap
+[Resource] mineral 0.01/250 0.01/s 5h33m18s to cap
 [Resource] kitten 3/3 0.05/s
 [Resource] paragon 0.000001 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -55,6 +57,7 @@ error: action Refine catnip is locked
 [-] [Resource] catnip 966/5000 -17/s 56s to empty
 [Resource] wood 0.18/200 0.09/s 36m16s to cap
 [Resource] science 0.27/500 0.23/s 36m5s to cap
+[Resource] mineral 0.03/250 0.01/s 5h33m17s to cap
 [Resource] kitten 2/2 0.05/s
 [Resource] paragon 0.000003 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -76,6 +79,7 @@ last action: scholar
 [-] [Resource] catnip 966/5000 -17/s 56s to empty
 [Resource] wood 0.18/200 0.09/s 36m16s to cap
 [Resource] science 0.27/500 0.23/s 36m5s to cap
+[Resource] mineral 0.03/250 0.01/s 5h33m17s to cap
 [Resource] kitten 2/2 0.05/s
 [Resource] paragon 0.000003 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -98,6 +102,7 @@ error: action Refine catnip is locked
 [-] [Resource] catnip 954.1/5000 -11.9/s 1m20s to empty
 [Resource] wood 0.28/200 0.09/s 36m15s to cap
 [Resource] science 0.5/500 0.23/s 36m4s to cap
+[Resource] mineral 0.04/250 0.01/s 5h33m16s to cap
 [Resource] kitten 1/1 0.05/s
 [Resource] paragon 0.000004 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -119,6 +124,7 @@ last action: farmer
 [-] [Resource] catnip 14/5000 -11.9/s 1s to empty
 [Resource] wood 7.53/200 0.09/s 34m56s to cap
 [Resource] science 18.72/500 0.23/s 34m45s to cap
+[Resource] mineral 1.03/250 0.01/s 5h31m57s to cap
 [Resource] kitten 1/1 0.05/s
 [Resource] paragon 0.0001 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -141,6 +147,7 @@ error: action Refine catnip is locked
 [Resource] catnip 2.1/5000 -11.9/s
 [Resource] wood 7.62/200 0.09/s 34m55s to cap
 [Resource] science 18.95/500 0.23/s 34m44s to cap
+[Resource] mineral 1.04/250 0.01/s 5h31m56s to cap
 [Resource] kitten 1/1 0.05/s
 [Resource] paragon 0.0001 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
@@ -162,6 +169,7 @@ error: action Refine catnip is locked
 [Calendar] day_of_year 43 (1 + 42 % 400)
 [Resource] wood 7.71/200 0.09/s 34m14s to cap
 [Resource] science 19.18/500 0.23/s 34m9s to cap
+[Resource] mineral 1.05/250 0.01/s 5h31m55s to cap
 [Resource] kitten 0.05/1 0.05/s 18s to cap
 [Resource] paragon 0.0001 0.000001/s
 [Job] happiness 0.04 (0.1 + -0.06)
@@ -181,6 +189,7 @@ error: action Refine catnip is locked
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
 [Resource] science 19.42/500 0.24/s 33m35s to cap
+[Resource] mineral 1.06/250 0.01/s 5h31m54s to cap
 [Resource] kitten 0.1/2 0.05/s 37s to cap
 [Resource] paragon 0.0001 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
@@ -200,6 +209,7 @@ error: action Refine catnip is locked
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
 [Resource] science 19.45/500 0.03/s 3h52m59s to cap
+[Resource] mineral 1.08/250 0.01/s 5h31m53s to cap
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] paragon 0.0001 0.000001/s
 [Job] happiness 0.08 (0.1 + -0.02)
@@ -219,6 +229,7 @@ error: action Refine catnip is locked
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
 [Resource] science 19.45/500 0.03/s 3h52m59s to cap
+[Resource] mineral 1.08/250 0.01/s 5h31m53s to cap
 [Resource] kitten 0.15/3 0.05/s 57s to cap
 [Resource] paragon 0.0001 0.000001/s
 [Job] happiness 0.08 (0.1 + -0.02)
