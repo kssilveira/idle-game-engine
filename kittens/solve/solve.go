@@ -74,9 +74,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"3 s Hut", "3 s woodcutter", "3 s farmer",
 
 		"11 s Harbour",
-		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
-		"m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Temple", "m Observatory",
-		"m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Temple", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism",
 		"s Ironwood Huts", "s Solar Revolution",
 
 		"s Architecture",
@@ -87,7 +85,16 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"2 m Mint", "Active Mint",
 		"m Temple", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Basilica",
 
-		"s Unicorn Tomb",
+		"11 s Unicorn Tomb", "11 s Ivory Tower", "11 s Ivory Citadel", "11 s Sky Palace", "11 s Unicorn Utopia", "11 s Sunspire",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "2 m Mint", "m Temple",
+		"s Unicorn Utopia", "6 s Sunspire",
+		"m Basilica",
+
+		"2 s Physics", "s Steel Saw", "s Caravanserai", "s Pyrolysis", "3 s Pneumatic Press",
+
+		"2 s Chemistry", "22 s Oil Well",
+		"30 s Hut", "30 s miner", "30 s farmer",
+		"100 s Zebras", "s Calciner", "Active Calciner", "3 m Calciner",
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {
