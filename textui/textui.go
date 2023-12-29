@@ -156,7 +156,7 @@ func getCosts(costs []ui.Cost) string {
 			overCap = "*"
 		}
 		duration := ""
-		if c.Duration != 0 {
+		if c.Duration > 0 {
 			duration = fmt.Sprintf(" %s", c.Duration)
 		}
 		out := fmt.Sprintf("%s / %s%s%s", toString(c.Count), toString(c.Cost), overCap, duration)
