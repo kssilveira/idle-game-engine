@@ -43913,43 +43913,43 @@ X: [*] [Tech] Apocrypha -(faith 5 000, gold 816.8 / 5 000* 136h34m0s) +(Apocryph
 X: [*] [Tech] Transcendence -(faith 7 500, gold 816.8 / 7 500* 218h10m59s) +(Transcendence 1)
 last action: Active Calciner
 ###
-[Calendar] Termogus 1 (1 if 14 078 % 10 == 8)
-[Calendar] year 70 393 (1 + 70 392)
-[Calendar] Winter 1 (1 if 281 571 % 4 == 3)
-[Calendar] day_of_year 394 (1 + 28 157 193 % 400)
-[Resource] catnip 98 659 / 98 659 345.43/s
-[Resource] wood 35 415 / 35 415 5.97/s
-[Resource] science 21.78 / 141 301 12.2/s 3h13m2s to cap
-[Resource] catpower 3 311 / 3 311 10.39/s
-[Resource] mineral 47 154 / 47 154 99.35/s
-[Resource] iron 7 617 / 7 617 1.98/s
-[Resource] coal 2 876 / 2 936 0.8/s 1m15s to cap
-[Resource] gold 2 312 / 2 312 0.01/s
-[Resource] titanium 464.85 / 917.19 0.004/s 29h29m35s to cap
-[Resource] oil 19 161 / 19 161 1.67/s
-[Resource] fur 12 699 377 0.49/s
-[Resource] ivory 904 804 1.29/s
-[Resource] unicorn 2 118 067 048 166.68/s
-[Resource] culture 10 246 / 10 246 155.67/s
-[Resource] faith 11 300 / 11 300 0.61/s
-[Resource] starchart 110 390 0.003/s
-[Resource] alicorn 130 157 0.01/s
-[Resource] paragon 70.39 0.000001/s
+[Calendar] Yarn 1 (1 if 14 692 % 10 == 2)
+[Calendar] year 73 465 (1 + 73 464)
+[Calendar] Summer 1 (1 if 293 857 % 4 == 1)
+[Calendar] day_of_year 141 (1 + 29 385 740 % 400)
+[Resource] catnip 98 928 / 98 928 532.36/s
+[Resource] wood 35 516 / 35 516 6.05/s
+[Resource] science 25.38 / 141 427 12.42/s 3h9m47s to cap
+[Resource] catpower 3 320 / 3 320 10.58/s
+[Resource] mineral 47 289 / 47 289 101.14/s
+[Resource] iron 7 639 / 7 639 2.01/s
+[Resource] coal 2 944 / 2 944 0.81/s
+[Resource] gold 2 318 / 2 318 0.01/s
+[Resource] titanium 351.96 / 919.81 0.004/s 36h22m10s to cap
+[Resource] oil 285.42 / 19 212 1.7/s 3h5m32s to cap
+[Resource] fur 13 925 038 0.5/s
+[Resource] ivory 4 103 334 1.31/s
+[Resource] unicorn 2 531 277 748 169.69/s
+[Resource] culture 10 246 / 10 246 158.48/s
+[Resource] faith 11 300 / 11 300 0.62/s
+[Resource] starchart 116 990 0.003/s
+[Resource] alicorn 149 289 0.01/s
+[Resource] paragon 73.46 0.000001/s
 [Job] happiness 0.6 (0.1 + 0.5)
-[Resource] beam 37 975 988 0.78/s
-[Resource] slab 35 460 360 0.73/s
-[Resource] plate 114 101 0.24/s
-[Resource] manuscript 383 143 0.01/s
+[Resource] beam 39 905 589 0.79/s
+[Resource] slab 37 258 782 0.73/s
+[Resource] plate 695 159 0.24/s
+[Resource] manuscript 368 521 0.01/s
+X: [Building] Mine (42) -(wood 35 424) +(Mine 1)
 X: [Building] Active Smelter (6) -(Idle Smelter 1) +(Active Smelter 1)
 X: [Building] Unic. Pasture (11) -(unicorn 942.86) +(Unic. Pasture 1)
 X: [Building] Warehouse (11) -(beam 6.98, slab 9.3) +(Warehouse 1)
 X: [Building] Log House -(wood 200, mineral 250) +(Log House 1, kitten cap 1)
-X: [Building] Mansion -(slab 185, steel 75, titanium 25) +(Mansion 1, kitten cap 1)
+X: [Building] Mansion -(slab 185, steel 2.35 / 75 (iron 2 400, coal 2 400), titanium 25) +(Mansion 1, kitten cap 1)
 X: [Building] Harbour (11) -(scaffold 0.89 / 23.26 (beam 400), slab 232.62, plate 348.93) +(Harbour 1)
-X: [Building] Oil Well (11) -(steel 232.62, gear 0.2 / 116.31 (steel 467.1 / 570 (iron 3 400, coal 2 876 / 3 400 10m56s)), scaffold 0.89 / 116.31 (beam 1 900)) +(Oil Well 1)
-X: [Building] Steamworks (3) -(steel 126.95, gear 0.2 / 39.06 (steel 195), blueprint 1.95) +(Steamworks 1)
+X: [Building] Oil Well (11) -(steel 2.35 / 232.62 (iron 7 500, coal 2 944 / 7 500 1h33m30s), gear 0.2 / 116.31 (steel 2.35 / 570 (iron 7 639 / 18 400 1h29m11s, coal 2 944 / 18 400 5h17m15s)), scaffold 0.89 / 116.31 (beam 1 900)) +(Oil Well 1)
+X: [Building] Steamworks (3) -(steel 2.35 / 126.95 (iron 4 100, coal 2 944 / 4 100 23m42s), gear 0.2 / 39.06 (steel 2.35 / 195 (iron 6 300, coal 2 944 / 6 300 1h8m52s)), blueprint 1.72 / 1.95 (compendium 1.6 / 25 (manuscript 400, science 25.38 / 80 000 1h47m20s), science 25.38 / 25 000 33m31s)) +(Steamworks 1)
 X: [Building] Active Steamworks (1) -(Idle Steamworks 1) +(Active Steamworks 1)
-X: [Building] Calciner (11) -(steel 465.24, titanium 69.79, blueprint 3.64 / 4.65 (compendium 25, science 21.78 / 25 000 34m7s), oil 2 326) +(Calciner 1)
 X: [Building] Active Calciner (1) -(Idle Calciner 1) +(Active Calciner 1)
 X: [Building] Amphitheatre (14) -(wood 1 415, mineral 8 490, parchment 17.24 / 21.23 (fur 350)) +(Amphitheatre 1)
 X: [Building] Active Mint (1) -(Idle Mint 1) +(Active Mint 1)
@@ -43958,7 +43958,8 @@ X: [Building] Unicorn Tomb (11) -(tear 1.26 / 23.26 (unicorn 15 000), ivory 2 32
 X: [Building] Ivory Tower (11) -(tear 1.26 / 116.31 (unicorn 72 500), ivory 116 309) +(Ivory Tower 1)
 X: [Building] Ivory Citadel (11) -(tear 1.26 / 232.62 (unicorn 142 500), ivory 232 619) +(Ivory Citadel 1)
 X: [Building] Sky Palace (11) -(tear 1.26 / 2 326 (unicorn 1 420 000), ivory 581 548, megalith 1.55 / 23.26 (beam 200, slab 400, plate 40)) +(Sky Palace 1)
-X: [*] [Building] Templars -(faith 3 500, gold 2 312 / 3 000* 22h25m44s) +(Templars 1)
+X: [Building] Sunspire (6) -(tear 1.26 / 57 826 (unicorn 35 260 000), ivory 1 734 795, gold 2 313) +(Sunspire 1)
+X: [*] [Building] Templars -(faith 3 500, gold 2 318 / 3 000* 21h49m13s) +(Templars 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] Send hunters -(catpower 100) +(fur 177.75, ivory 48.51, unicorn 0.05)
 X: [Trade] Lizards -(catpower 50, gold 15, mineral 1 000) +(wood 500, beam 1.5, scaffold 0.1, blueprint 0.1, spice 8.75)
@@ -43970,63 +43971,63 @@ X: [Trade] Spiders -(catpower 50, gold 15, scaffold 0.89 / 50 (beam 800)) +(coal
 X: [Craft] Praise the sun! -(faith 1) +(worship 1)
 X: [Craft] Sacrifice Alicorns -(alicorn 25) +(time crystal 2.15)
 X: [Craft] Refine Time Crystals -(time crystal 0 / 25) +(relic 1)
-X: [Tech] Metaphysics -(science 21.78 / 55 000 1h15m7s, unobtainium 0 / 5) +(Metaphysics 1)
-X: [Tech] Acoustics -(science 21.78 / 60 000 1h21m57s, compendium 27.5 / 60 (manuscript 550, science 21.78 / 110 000 2h30m16s)) +(Acoustics 1)
-X: [Tech] Geology -(science 21.78 / 65 000 1h28m46s, compendium 27.5 / 65 (manuscript 650, science 21.78 / 130 000 2h57m35s)) +(Geology 1)
-X: [Tech] Electricity -(science 21.78 / 75 000 1h42m26s, compendium 27.5 / 85 (manuscript 950, science 21.78 / 190 000 4h19m34s)) +(Electricity 1)
-X: [*] [Tech] Cryptotheology -(science 21.78 / 650 000* 14h48m5s, relic 0 / 5) +(Cryptotheology 1)
-X: [Tech] Titanium Saw -(titanium 464.85 / 500 2h17m30s, science 21.78 / 70 000 1h35m36s) +(Titanium Saw 1)
-X: [Tech] Titanium Axe -(science 21.78 / 38 000 51m53s, titanium 10) +(Titanium Axe 1)
-X: [Tech] Alloy Axe -(science 21.78 / 70 000 1h35m36s, alloy 1.25 / 25 (steel 467.1 / 600 (iron 4 300, coal 2 876 / 4 300 29m45s), titanium 80)) +(Alloy Axe 1)
-X: [Tech] Titanium Barns -(science 21.78 / 60 000 1h21m57s, titanium 25, steel 200, scaffold 0.89 / 250 (beam 4 050)) +(Titanium Barns 1)
-X: [Tech] Alloy Barns -(science 21.78 / 75 000 1h42m26s, alloy 1.25 / 20 (steel 467.1 / 525 (iron 1 900, coal 1 900), titanium 70), plate 750) +(Alloy Barns 1)
-X: [Tech] Alloy Warehouses -(science 21.78 / 90 000 2h2m56s, titanium 464.85 / 750 18h35m32s, alloy 1.25 / 50 (steel 467.1 / 1 200 (iron 7 617 / 23 700 2h15m38s, coal 2 876 / 23 700 7h15m10s), titanium 160)) +(Alloy Warehouses 1)
-X: [Tech] Expanded Cargo -(science 21.78 / 55 000 1h15m7s, blueprint 3.64 / 15 (compendium 27.5 / 100 (manuscript 1 200, science 21.78 / 240 000 5h27m53s), science 21.78 / 100 000 2h16m36s)) +(Expanded Cargo 1)
-X: [Tech] Silos -(science 21.78 / 50 000 1h8m17s, steel 125, blueprint 3.64 / 5 (compendium 25, science 21.78 / 25 000 34m7s)) +(Silos 1)
-X: [Tech] Alloy Armour -(science 21.78 / 50 000 1h8m17s, alloy 1.25 / 25 (steel 467.1 / 600 (iron 4 300, coal 2 876 / 4 300 29m45s), titanium 80)) +(Alloy Armour 1)
-X: [Tech] Astrolabe -(science 21.78 / 25 000 34m7s, titanium 5, starchart 75) +(Astrolabe 1)
-X: [Tech] Titanium Reflectors -(science 21.78 / 20 000 27m17s, titanium 15, starchart 20) +(Titanium Reflectors 1)
-X: [*] [Tech] Apocrypha -(faith 5 000, gold 2 312 / 5 000* 87h37m52s) +(Apocrypha 1)
-X: [*] [Tech] Transcendence -(faith 7 500, gold 2 312 / 7 500* 169h8m2s) +(Transcendence 1)
+X: [Tech] Metaphysics -(science 25.38 / 55 000 1h13m47s, unobtainium 0 / 5) +(Metaphysics 1)
+X: [Tech] Acoustics -(science 25.38 / 60 000 1h20m29s, compendium 1.6 / 60 (manuscript 950, science 25.38 / 190 000 4h14m58s)) +(Acoustics 1)
+X: [Tech] Geology -(science 25.38 / 65 000 1h27m12s, compendium 1.6 / 65 (manuscript 1 050, science 25.38 / 210 000 4h41m49s)) +(Geology 1)
+X: [Tech] Electricity -(science 25.38 / 75 000 1h40m37s, compendium 1.6 / 85 (manuscript 1 350, science 25.38 / 270 000 6h2m20s)) +(Electricity 1)
+X: [*] [Tech] Cryptotheology -(science 25.38 / 650 000* 14h32m22s, relic 0 / 5) +(Cryptotheology 1)
+X: [Tech] Titanium Saw -(titanium 351.96 / 500 9h28m53s, science 25.38 / 70 000 1h33m55s) +(Titanium Saw 1)
+X: [Tech] Titanium Axe -(science 25.38 / 38 000 50m58s, titanium 10) +(Titanium Axe 1)
+X: [Tech] Alloy Axe -(science 25.38 / 70 000 1h33m55s, alloy 1.25 / 25 (steel 2.35 / 600 (iron 7 639 / 19 300 1h36m39s, coal 2 944 / 19 300 5h35m44s), titanium 80)) +(Alloy Axe 1)
+X: [Tech] Titanium Barns -(science 25.38 / 60 000 1h20m29s, titanium 25, steel 2.35 / 200 (iron 6 400, coal 2 944 / 6 400 1h10m55s), scaffold 0.89 / 250 (beam 4 050)) +(Titanium Barns 1)
+X: [Tech] Alloy Barns -(science 25.38 / 75 000 1h40m37s, alloy 1.25 / 20 (steel 2.35 / 525 (iron 7 639 / 16 900 1h16m45s, coal 2 944 / 16 900 4h46m28s), titanium 70), plate 750) +(Alloy Barns 1)
+X: [Tech] Alloy Warehouses -(science 25.38 / 90 000 2h0m45s, titanium 351.96 / 750 25h29m36s, alloy 1.25 / 50 (steel 2.35 / 1 200 (iron 7 639 / 38 700 4h17m27s, coal 2 944 / 38 700 12h13m59s), titanium 160)) +(Alloy Warehouses 1)
+X: [Tech] Expanded Cargo -(science 25.38 / 55 000 1h13m47s, blueprint 1.72 / 15 (compendium 1.6 / 125 (manuscript 2 000, science 25.38 / 400 000 8h56m49s), science 25.38 / 125 000 2h47m44s)) +(Expanded Cargo 1)
+X: [Tech] Silos -(science 25.38 / 50 000 1h7m4s, steel 2.35 / 125 (iron 4 000, coal 2 944 / 4 000 21m39s), blueprint 1.72 / 5 (compendium 1.6 / 50 (manuscript 800, science 25.38 / 160 000 3h34m42s), science 25.38 / 50 000 1h7m4s)) +(Silos 1)
+X: [Tech] Alloy Armour -(science 25.38 / 50 000 1h7m4s, alloy 1.25 / 25 (steel 2.35 / 600 (iron 7 639 / 19 300 1h36m39s, coal 2 944 / 19 300 5h35m44s), titanium 80)) +(Alloy Armour 1)
+X: [Tech] Astrolabe -(science 25.38 / 25 000 33m31s, titanium 5, starchart 75) +(Astrolabe 1)
+X: [Tech] Titanium Reflectors -(science 25.38 / 20 000 26m48s, titanium 15, starchart 20) +(Titanium Reflectors 1)
+X: [*] [Tech] Apocrypha -(faith 5 000, gold 2 318 / 5 000* 85h52m5s) +(Apocrypha 1)
+X: [*] [Tech] Transcendence -(faith 7 500, gold 2 318 / 7 500* 165h55m40s) +(Transcendence 1)
 last action: max Calciner
 ###
-[Calendar] Piscine 1 (1 if 14 087 % 10 == 7)
-[Calendar] year 70 439 (1 + 70 438)
-[Calendar] Winter 1 (1 if 281 755 % 4 == 3)
-[Calendar] day_of_year 320 (1 + 28 175 519 % 400)
-[Resource] catnip 98 663 / 98 663 345.52/s
-[Resource] wood 35 417 / 35 417 5.97/s
-[Resource] science 23.15 / 141 302 12.2/s 3h12m59s to cap
-[Resource] catpower 3 311 / 3 311 10.4/s
-[Resource] mineral 47 156 / 47 156 99.38/s
-[Resource] iron 7 618 / 7 618 1.98/s
-[Resource] coal 2 876 / 2 936 0.8/s 1m15s to cap
-[Resource] gold 2 312 / 2 312 0.01/s
-[Resource] titanium 551.23 / 917.23 0.004/s 23h51m26s to cap
-[Resource] oil 19 162 / 19 162 1.67/s
-[Resource] fur 12 717 476 0.49/s
-[Resource] ivory 952 093 1.29/s
-[Resource] unicorn 2 124 176 961 166.73/s
-[Resource] culture 10 246 / 10 246 155.71/s
-[Resource] faith 11 300 / 11 300 0.61/s
-[Resource] starchart 110 487 0.003/s
-[Resource] alicorn 130 440 0.01/s
-[Resource] paragon 70.44 0.000001/s
+[Calendar] Yarn 1 (1 if 14 692 % 10 == 2)
+[Calendar] year 73 465 (1 + 73 464)
+[Calendar] Summer 1 (1 if 293 857 % 4 == 1)
+[Calendar] day_of_year 141 (1 + 29 385 740 % 400)
+[Resource] catnip 98 928 / 98 928 532.36/s
+[Resource] wood 35 516 / 35 516 6.05/s
+[Resource] science 37.8 / 141 427 12.42/s 3h9m46s to cap
+[Resource] catpower 3 320 / 3 320 10.58/s
+[Resource] mineral 47 289 / 47 289 101.14/s
+[Resource] iron 7 639 / 7 639 2.01/s
+[Resource] coal 2 944 / 2 944 0.81/s
+[Resource] gold 2 318 / 2 318 0.01/s
+[Resource] titanium 351.97 / 919.81 0.004/s 36h22m9s to cap
+[Resource] oil 287.12 / 19 212 1.7/s 3h5m31s to cap
+[Resource] fur 13 925 039 0.5/s
+[Resource] ivory 4 103 335 1.31/s
+[Resource] unicorn 2 531 277 917 169.69/s
+[Resource] culture 10 246 / 10 246 158.48/s
+[Resource] faith 11 300 / 11 300 0.62/s
+[Resource] starchart 116 990 0.003/s
+[Resource] alicorn 149 289 0.01/s
+[Resource] paragon 73.46 0.000001/s
 [Job] happiness 0.6 (0.1 + 0.5)
-[Resource] beam 38 004 731 0.78/s
-[Resource] slab 35 487 149 0.73/s
-[Resource] plate 122 757 0.24/s
-[Resource] manuscript 382 618 0.01/s
+[Resource] beam 39 905 590 0.79/s
+[Resource] slab 37 258 782 0.73/s
+[Resource] plate 695 159 0.24/s
+[Resource] manuscript 368 521 0.01/s
+X: [Building] Mine (42) -(wood 35 424) +(Mine 1)
 X: [Building] Active Smelter (6) -(Idle Smelter 1) +(Active Smelter 1)
 X: [Building] Unic. Pasture (11) -(unicorn 942.86) +(Unic. Pasture 1)
 X: [Building] Warehouse (11) -(beam 6.98, slab 9.3) +(Warehouse 1)
 X: [Building] Log House -(wood 200, mineral 250) +(Log House 1, kitten cap 1)
-X: [Building] Mansion -(slab 185, steel 75, titanium 25) +(Mansion 1, kitten cap 1)
+X: [Building] Mansion -(slab 185, steel 2.35 / 75 (iron 2 400, coal 2 400), titanium 25) +(Mansion 1, kitten cap 1)
 X: [Building] Harbour (11) -(scaffold 0.89 / 23.26 (beam 400), slab 232.62, plate 348.93) +(Harbour 1)
-X: [Building] Oil Well (11) -(steel 232.62, gear 0.2 / 116.31 (steel 535.06 / 570 (iron 1 200, coal 1 200)), scaffold 0.89 / 116.31 (beam 1 900)) +(Oil Well 1)
-X: [Building] Steamworks (3) -(steel 126.95, gear 0.2 / 39.06 (steel 195), blueprint 1.95) +(Steamworks 1)
+X: [Building] Oil Well (11) -(steel 2.35 / 232.62 (iron 7 500, coal 2 944 / 7 500 1h33m30s), gear 0.2 / 116.31 (steel 2.35 / 570 (iron 7 639 / 18 400 1h29m11s, coal 2 944 / 18 400 5h17m15s)), scaffold 0.89 / 116.31 (beam 1 900)) +(Oil Well 1)
+X: [Building] Steamworks (3) -(steel 2.35 / 126.95 (iron 4 100, coal 2 944 / 4 100 23m42s), gear 0.2 / 39.06 (steel 2.35 / 195 (iron 6 300, coal 2 944 / 6 300 1h8m52s)), blueprint 1.72 / 1.95 (compendium 1.6 / 25 (manuscript 400, science 37.8 / 80 000 1h47m19s), science 37.8 / 25 000 33m30s)) +(Steamworks 1)
 X: [Building] Active Steamworks (1) -(Idle Steamworks 1) +(Active Steamworks 1)
-X: [Building] Calciner (12) -(steel 535.03, titanium 80.25, blueprint 5.19 / 5.35 (compendium 25, science 23.15 / 25 000 34m7s), oil 2 675) +(Calciner 1)
 X: [Building] Active Calciner (1) -(Idle Calciner 1) +(Active Calciner 1)
 X: [Building] Amphitheatre (14) -(wood 1 415, mineral 8 490, parchment 17.24 / 21.23 (fur 350)) +(Amphitheatre 1)
 X: [Building] Active Mint (1) -(Idle Mint 1) +(Active Mint 1)
@@ -44035,7 +44036,8 @@ X: [Building] Unicorn Tomb (11) -(tear 1.26 / 23.26 (unicorn 15 000), ivory 2 32
 X: [Building] Ivory Tower (11) -(tear 1.26 / 116.31 (unicorn 72 500), ivory 116 309) +(Ivory Tower 1)
 X: [Building] Ivory Citadel (11) -(tear 1.26 / 232.62 (unicorn 142 500), ivory 232 619) +(Ivory Citadel 1)
 X: [Building] Sky Palace (11) -(tear 1.26 / 2 326 (unicorn 1 420 000), ivory 581 548, megalith 1.55 / 23.26 (beam 200, slab 400, plate 40)) +(Sky Palace 1)
-X: [*] [Building] Templars -(faith 3 500, gold 2 312 / 3 000* 22h25m11s) +(Templars 1)
+X: [Building] Sunspire (6) -(tear 1.26 / 57 826 (unicorn 35 260 000), ivory 1 734 795, gold 2 313) +(Sunspire 1)
+X: [*] [Building] Templars -(faith 3 500, gold 2 318 / 3 000* 21h49m13s) +(Templars 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] Send hunters -(catpower 100) +(fur 177.75, ivory 48.51, unicorn 0.05)
 X: [Trade] Lizards -(catpower 50, gold 15, mineral 1 000) +(wood 500, beam 1.5, scaffold 0.1, blueprint 0.1, spice 8.75)
@@ -44047,63 +44049,63 @@ X: [Trade] Spiders -(catpower 50, gold 15, scaffold 0.89 / 50 (beam 800)) +(coal
 X: [Craft] Praise the sun! -(faith 1) +(worship 1)
 X: [Craft] Sacrifice Alicorns -(alicorn 25) +(time crystal 2.15)
 X: [Craft] Refine Time Crystals -(time crystal 0 / 25) +(relic 1)
-X: [Tech] Metaphysics -(science 23.15 / 55 000 1h15m5s, unobtainium 0 / 5) +(Metaphysics 1)
-X: [Tech] Acoustics -(science 23.15 / 60 000 1h21m55s, compendium 27.1 / 60 (manuscript 550, science 23.15 / 110 000 2h30m13s)) +(Acoustics 1)
-X: [Tech] Geology -(science 23.15 / 65 000 1h28m45s, compendium 27.1 / 65 (manuscript 650, science 23.15 / 130 000 2h57m32s)) +(Geology 1)
-X: [Tech] Electricity -(science 23.15 / 75 000 1h42m25s, compendium 27.1 / 85 (manuscript 950, science 23.15 / 190 000 4h19m30s)) +(Electricity 1)
-X: [*] [Tech] Cryptotheology -(science 23.15 / 650 000* 14h47m51s, relic 0 / 5) +(Cryptotheology 1)
-X: [Tech] Titanium Saw -(titanium 500, science 23.15 / 70 000 1h35m35s) +(Titanium Saw 1)
-X: [Tech] Titanium Axe -(science 23.15 / 38 000 51m52s, titanium 10) +(Titanium Axe 1)
-X: [Tech] Alloy Axe -(science 23.15 / 70 000 1h35m35s, alloy 1.25 / 25 (steel 535.06 / 600 (iron 2 100, coal 2 100), titanium 80)) +(Alloy Axe 1)
-X: [Tech] Titanium Barns -(science 23.15 / 60 000 1h21m55s, titanium 25, steel 200, scaffold 0.89 / 250 (beam 4 050)) +(Titanium Barns 1)
-X: [Tech] Alloy Barns -(science 23.15 / 75 000 1h42m25s, alloy 1.25 / 20 (steel 525, titanium 70), plate 750) +(Alloy Barns 1)
-X: [Tech] Alloy Warehouses -(science 23.15 / 90 000 2h2m54s, titanium 551.23 / 750 12h57m24s, alloy 1.25 / 50 (steel 535.06 / 1 200 (iron 7 618 / 21 500 1h57m3s, coal 2 876 / 21 500 6h29m5s), titanium 160)) +(Alloy Warehouses 1)
-X: [Tech] Expanded Cargo -(science 23.15 / 55 000 1h15m5s, blueprint 5.19 / 15 (compendium 27.1 / 100 (manuscript 1 200, science 23.15 / 240 000 5h27m48s), science 23.15 / 100 000 2h16m33s)) +(Expanded Cargo 1)
-X: [Tech] Silos -(science 23.15 / 50 000 1h8m16s, steel 125, blueprint 5) +(Silos 1)
-X: [Tech] Alloy Armour -(science 23.15 / 50 000 1h8m16s, alloy 1.25 / 25 (steel 535.06 / 600 (iron 2 100, coal 2 100), titanium 80)) +(Alloy Armour 1)
-X: [Tech] Astrolabe -(science 23.15 / 25 000 34m7s, titanium 5, starchart 75) +(Astrolabe 1)
-X: [Tech] Titanium Reflectors -(science 23.15 / 20 000 27m17s, titanium 15, starchart 20) +(Titanium Reflectors 1)
-X: [*] [Tech] Apocrypha -(faith 5 000, gold 2 312 / 5 000* 87h36m16s) +(Apocrypha 1)
-X: [*] [Tech] Transcendence -(faith 7 500, gold 2 312 / 7 500* 169h5m7s) +(Transcendence 1)
+X: [Tech] Metaphysics -(science 37.8 / 55 000 1h13m46s, unobtainium 0 / 5) +(Metaphysics 1)
+X: [Tech] Acoustics -(science 37.8 / 60 000 1h20m28s, compendium 1.6 / 60 (manuscript 950, science 37.8 / 190 000 4h14m57s)) +(Acoustics 1)
+X: [Tech] Geology -(science 37.8 / 65 000 1h27m11s, compendium 1.6 / 65 (manuscript 1 050, science 37.8 / 210 000 4h41m48s)) +(Geology 1)
+X: [Tech] Electricity -(science 37.8 / 75 000 1h40m36s, compendium 1.6 / 85 (manuscript 1 350, science 37.8 / 270 000 6h2m19s)) +(Electricity 1)
+X: [*] [Tech] Cryptotheology -(science 37.8 / 650 000* 14h32m21s, relic 0 / 5) +(Cryptotheology 1)
+X: [Tech] Titanium Saw -(titanium 351.97 / 500 9h28m52s, science 37.8 / 70 000 1h33m54s) +(Titanium Saw 1)
+X: [Tech] Titanium Axe -(science 37.8 / 38 000 50m57s, titanium 10) +(Titanium Axe 1)
+X: [Tech] Alloy Axe -(science 37.8 / 70 000 1h33m54s, alloy 1.25 / 25 (steel 2.35 / 600 (iron 7 639 / 19 300 1h36m39s, coal 2 944 / 19 300 5h35m44s), titanium 80)) +(Alloy Axe 1)
+X: [Tech] Titanium Barns -(science 37.8 / 60 000 1h20m28s, titanium 25, steel 2.35 / 200 (iron 6 400, coal 2 944 / 6 400 1h10m55s), scaffold 0.89 / 250 (beam 4 050)) +(Titanium Barns 1)
+X: [Tech] Alloy Barns -(science 37.8 / 75 000 1h40m36s, alloy 1.25 / 20 (steel 2.35 / 525 (iron 7 639 / 16 900 1h16m45s, coal 2 944 / 16 900 4h46m28s), titanium 70), plate 750) +(Alloy Barns 1)
+X: [Tech] Alloy Warehouses -(science 37.8 / 90 000 2h0m44s, titanium 351.97 / 750 25h29m35s, alloy 1.25 / 50 (steel 2.35 / 1 200 (iron 7 639 / 38 700 4h17m27s, coal 2 944 / 38 700 12h13m59s), titanium 160)) +(Alloy Warehouses 1)
+X: [Tech] Expanded Cargo -(science 37.8 / 55 000 1h13m46s, blueprint 1.72 / 15 (compendium 1.6 / 125 (manuscript 2 000, science 37.8 / 400 000 8h56m48s), science 37.8 / 125 000 2h47m43s)) +(Expanded Cargo 1)
+X: [Tech] Silos -(science 37.8 / 50 000 1h7m3s, steel 2.35 / 125 (iron 4 000, coal 2 944 / 4 000 21m39s), blueprint 1.72 / 5 (compendium 1.6 / 50 (manuscript 800, science 37.8 / 160 000 3h34m41s), science 37.8 / 50 000 1h7m3s)) +(Silos 1)
+X: [Tech] Alloy Armour -(science 37.8 / 50 000 1h7m3s, alloy 1.25 / 25 (steel 2.35 / 600 (iron 7 639 / 19 300 1h36m39s, coal 2 944 / 19 300 5h35m44s), titanium 80)) +(Alloy Armour 1)
+X: [Tech] Astrolabe -(science 37.8 / 25 000 33m30s, titanium 5, starchart 75) +(Astrolabe 1)
+X: [Tech] Titanium Reflectors -(science 37.8 / 20 000 26m47s, titanium 15, starchart 20) +(Titanium Reflectors 1)
+X: [*] [Tech] Apocrypha -(faith 5 000, gold 2 318 / 5 000* 85h52m5s) +(Apocrypha 1)
+X: [*] [Tech] Transcendence -(faith 7 500, gold 2 318 / 7 500* 165h55m40s) +(Transcendence 1)
 last action: max Calciner
 ###
-[Calendar] Piscine 1 (1 if 14 097 % 10 == 7)
-[Calendar] year 70 489 (1 + 70 488)
-[Calendar] Winter 1 (1 if 281 955 % 4 == 3)
-[Calendar] day_of_year 333 (1 + 28 195 532 % 400)
-[Resource] catnip 98 667 / 98 667 345.62/s
-[Resource] wood 35 419 / 35 419 5.98/s
-[Resource] science 13.95 / 141 305 12.2/s 3h12m56s to cap
-[Resource] catpower 3 311 / 3 311 10.4/s
-[Resource] mineral 47 158 / 47 158 99.41/s
-[Resource] iron 7 618 / 7 618 1.98/s
-[Resource] coal 2 875 / 2 936 0.8/s 1m16s to cap
-[Resource] gold 2 312 / 2 312 0.01/s
-[Resource] titanium 641.56 / 917.27 0.004/s 17h58m0s to cap
-[Resource] oil 19 163 / 19 163 1.67/s
-[Resource] fur 12 737 246 0.49/s
-[Resource] ivory 1 003 748 1.29/s
-[Resource] unicorn 2 130 851 042 166.78/s
-[Resource] culture 10 246 / 10 246 155.76/s
-[Resource] faith 11 300 / 11 300 0.61/s
-[Resource] starchart 110 594 0.003/s
-[Resource] alicorn 130 749 0.01/s
-[Resource] paragon 70.49 0.000001/s
+[Calendar] Yarn 1 (1 if 14 692 % 10 == 2)
+[Calendar] year 73 465 (1 + 73 464)
+[Calendar] Summer 1 (1 if 293 857 % 4 == 1)
+[Calendar] day_of_year 142 (1 + 29 385 741 % 400)
+[Resource] catnip 98 928 / 98 928 532.36/s
+[Resource] wood 35 516 / 35 516 6.05/s
+[Resource] science 50.21 / 141 427 12.42/s 3h9m45s to cap
+[Resource] catpower 3 320 / 3 320 10.58/s
+[Resource] mineral 47 289 / 47 289 101.14/s
+[Resource] iron 7 639 / 7 639 2.01/s
+[Resource] coal 2 944 / 2 944 0.81/s
+[Resource] gold 2 318 / 2 318 0.01/s
+[Resource] titanium 351.97 / 919.81 0.004/s 36h22m8s to cap
+[Resource] oil 288.82 / 19 212 1.7/s 3h5m30s to cap
+[Resource] fur 13 925 039 0.5/s
+[Resource] ivory 4 103 336 1.31/s
+[Resource] unicorn 2 531 278 087 169.69/s
+[Resource] culture 10 246 / 10 246 158.48/s
+[Resource] faith 11 300 / 11 300 0.62/s
+[Resource] starchart 116 990 0.003/s
+[Resource] alicorn 149 289 0.01/s
+[Resource] paragon 73.46 0.000001/s
 [Job] happiness 0.6 (0.1 + 0.5)
-[Resource] beam 38 036 121 0.78/s
-[Resource] slab 35 516 405 0.73/s
-[Resource] plate 132 209 0.24/s
-[Resource] manuscript 382 118 0.01/s
+[Resource] beam 39 905 591 0.79/s
+[Resource] slab 37 258 783 0.73/s
+[Resource] plate 695 159 0.24/s
+[Resource] manuscript 368 521 0.01/s
+X: [Building] Mine (42) -(wood 35 424) +(Mine 1)
 X: [Building] Active Smelter (6) -(Idle Smelter 1) +(Active Smelter 1)
 X: [Building] Unic. Pasture (11) -(unicorn 942.86) +(Unic. Pasture 1)
 X: [Building] Warehouse (11) -(beam 6.98, slab 9.3) +(Warehouse 1)
 X: [Building] Log House -(wood 200, mineral 250) +(Log House 1, kitten cap 1)
-X: [Building] Mansion -(slab 185, steel 75, titanium 25) +(Mansion 1, kitten cap 1)
+X: [Building] Mansion -(slab 185, steel 2.35 / 75 (iron 2 400, coal 2 400), titanium 25) +(Mansion 1, kitten cap 1)
 X: [Building] Harbour (11) -(scaffold 0.89 / 23.26 (beam 400), slab 232.62, plate 348.93) +(Harbour 1)
-X: [Building] Oil Well (11) -(steel 232.62, gear 0.2 / 116.31 (steel 570), scaffold 0.89 / 116.31 (beam 1 900)) +(Oil Well 1)
-X: [Building] Steamworks (3) -(steel 126.95, gear 0.2 / 39.06 (steel 195), blueprint 1.95) +(Steamworks 1)
+X: [Building] Oil Well (11) -(steel 2.35 / 232.62 (iron 7 500, coal 2 944 / 7 500 1h33m30s), gear 0.2 / 116.31 (steel 2.35 / 570 (iron 7 639 / 18 400 1h29m11s, coal 2 944 / 18 400 5h17m15s)), scaffold 0.89 / 116.31 (beam 1 900)) +(Oil Well 1)
+X: [Building] Steamworks (3) -(steel 2.35 / 126.95 (iron 4 100, coal 2 944 / 4 100 23m42s), gear 0.2 / 39.06 (steel 2.35 / 195 (iron 6 300, coal 2 944 / 6 300 1h8m52s)), blueprint 1.72 / 1.95 (compendium 1.6 / 25 (manuscript 400, science 50.21 / 80 000 1h47m18s), science 50.21 / 25 000 33m29s)) +(Steamworks 1)
 X: [Building] Active Steamworks (1) -(Idle Steamworks 1) +(Active Steamworks 1)
-X: [Building] Calciner (13) -(steel 615.28, titanium 92.29, blueprint 6.04 / 6.15 (compendium 25, science 13.95 / 25 000 34m7s), oil 3 076) +(Calciner 1)
 X: [Building] Active Calciner (1) -(Idle Calciner 1) +(Active Calciner 1)
 X: [Building] Amphitheatre (14) -(wood 1 415, mineral 8 490, parchment 17.24 / 21.23 (fur 350)) +(Amphitheatre 1)
 X: [Building] Active Mint (1) -(Idle Mint 1) +(Active Mint 1)
@@ -44112,7 +44114,8 @@ X: [Building] Unicorn Tomb (11) -(tear 1.26 / 23.26 (unicorn 15 000), ivory 2 32
 X: [Building] Ivory Tower (11) -(tear 1.26 / 116.31 (unicorn 72 500), ivory 116 309) +(Ivory Tower 1)
 X: [Building] Ivory Citadel (11) -(tear 1.26 / 232.62 (unicorn 142 500), ivory 232 619) +(Ivory Citadel 1)
 X: [Building] Sky Palace (11) -(tear 1.26 / 2 326 (unicorn 1 420 000), ivory 581 548, megalith 1.55 / 23.26 (beam 200, slab 400, plate 40)) +(Sky Palace 1)
-X: [*] [Building] Templars -(faith 3 500, gold 2 312 / 3 000* 22h24m35s) +(Templars 1)
+X: [Building] Sunspire (6) -(tear 1.26 / 57 826 (unicorn 35 260 000), ivory 1 734 795, gold 2 313) +(Sunspire 1)
+X: [*] [Building] Templars -(faith 3 500, gold 2 318 / 3 000* 21h49m13s) +(Templars 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] Send hunters -(catpower 100) +(fur 177.75, ivory 48.51, unicorn 0.05)
 X: [Trade] Lizards -(catpower 50, gold 15, mineral 1 000) +(wood 500, beam 1.5, scaffold 0.1, blueprint 0.1, spice 8.75)
@@ -44124,22 +44127,22 @@ X: [Trade] Spiders -(catpower 50, gold 15, scaffold 0.89 / 50 (beam 800)) +(coal
 X: [Craft] Praise the sun! -(faith 1) +(worship 1)
 X: [Craft] Sacrifice Alicorns -(alicorn 25) +(time crystal 2.15)
 X: [Craft] Refine Time Crystals -(time crystal 0 / 25) +(relic 1)
-X: [Tech] Metaphysics -(science 13.95 / 55 000 1h15m5s, unobtainium 0 / 5) +(Metaphysics 1)
-X: [Tech] Acoustics -(science 13.95 / 60 000 1h21m54s, compendium 26.7 / 60 (manuscript 550, science 13.95 / 110 000 2h30m11s)) +(Acoustics 1)
-X: [Tech] Geology -(science 13.95 / 65 000 1h28m44s, compendium 26.7 / 65 (manuscript 650, science 13.95 / 130 000 2h57m30s)) +(Geology 1)
-X: [Tech] Electricity -(science 13.95 / 75 000 1h42m23s, compendium 26.7 / 85 (manuscript 950, science 13.95 / 190 000 4h19m26s)) +(Electricity 1)
-X: [*] [Tech] Cryptotheology -(science 13.95 / 650 000* 14h47m36s, relic 0 / 5) +(Cryptotheology 1)
-X: [Tech] Titanium Saw -(titanium 500, science 13.95 / 70 000 1h35m34s) +(Titanium Saw 1)
-X: [Tech] Titanium Axe -(science 13.95 / 38 000 51m52s, titanium 10) +(Titanium Axe 1)
-X: [Tech] Alloy Axe -(science 13.95 / 70 000 1h35m34s, alloy 1.25 / 25 (steel 600, titanium 80)) +(Alloy Axe 1)
-X: [Tech] Titanium Barns -(science 13.95 / 60 000 1h21m54s, titanium 25, steel 200, scaffold 0.89 / 250 (beam 4 050)) +(Titanium Barns 1)
-X: [Tech] Alloy Barns -(science 13.95 / 75 000 1h42m23s, alloy 1.25 / 20 (steel 525, titanium 70), plate 750) +(Alloy Barns 1)
-X: [Tech] Alloy Warehouses -(science 13.95 / 90 000 2h2m52s, titanium 641.56 / 750 7h3m59s, alloy 1.25 / 50 (steel 616.93 / 1 200 (iron 7 618 / 18 900 1h35m6s, coal 2 875 / 18 900 5h34m41s), titanium 160)) +(Alloy Warehouses 1)
-X: [Tech] Expanded Cargo -(science 13.95 / 55 000 1h15m5s, blueprint 6.04 / 15 (compendium 26.7 / 75 (manuscript 800, science 13.95 / 160 000 3h38m28s), science 13.95 / 75 000 1h42m23s)) +(Expanded Cargo 1)
-X: [Tech] Silos -(science 13.95 / 50 000 1h8m15s, steel 125, blueprint 5) +(Silos 1)
-X: [Tech] Alloy Armour -(science 13.95 / 50 000 1h8m15s, alloy 1.25 / 25 (steel 600, titanium 80)) +(Alloy Armour 1)
-X: [Tech] Astrolabe -(science 13.95 / 25 000 34m7s, titanium 5, starchart 75) +(Astrolabe 1)
-X: [Tech] Titanium Reflectors -(science 13.95 / 20 000 27m17s, titanium 15, starchart 20) +(Titanium Reflectors 1)
-X: [*] [Tech] Apocrypha -(faith 5 000, gold 2 312 / 5 000* 87h34m31s) +(Apocrypha 1)
-X: [*] [Tech] Transcendence -(faith 7 500, gold 2 312 / 7 500* 169h1m56s) +(Transcendence 1)
+X: [Tech] Metaphysics -(science 50.21 / 55 000 1h13m45s, unobtainium 0 / 5) +(Metaphysics 1)
+X: [Tech] Acoustics -(science 50.21 / 60 000 1h20m27s, compendium 1.6 / 60 (manuscript 950, science 50.21 / 190 000 4h14m56s)) +(Acoustics 1)
+X: [Tech] Geology -(science 50.21 / 65 000 1h27m10s, compendium 1.6 / 65 (manuscript 1 050, science 50.21 / 210 000 4h41m47s)) +(Geology 1)
+X: [Tech] Electricity -(science 50.21 / 75 000 1h40m35s, compendium 1.6 / 85 (manuscript 1 350, science 50.21 / 270 000 6h2m18s)) +(Electricity 1)
+X: [*] [Tech] Cryptotheology -(science 50.21 / 650 000* 14h32m20s, relic 0 / 5) +(Cryptotheology 1)
+X: [Tech] Titanium Saw -(titanium 351.97 / 500 9h28m51s, science 50.21 / 70 000 1h33m53s) +(Titanium Saw 1)
+X: [Tech] Titanium Axe -(science 50.21 / 38 000 50m56s, titanium 10) +(Titanium Axe 1)
+X: [Tech] Alloy Axe -(science 50.21 / 70 000 1h33m53s, alloy 1.25 / 25 (steel 2.35 / 600 (iron 7 639 / 19 300 1h36m39s, coal 2 944 / 19 300 5h35m44s), titanium 80)) +(Alloy Axe 1)
+X: [Tech] Titanium Barns -(science 50.21 / 60 000 1h20m27s, titanium 25, steel 2.35 / 200 (iron 6 400, coal 2 944 / 6 400 1h10m55s), scaffold 0.89 / 250 (beam 4 050)) +(Titanium Barns 1)
+X: [Tech] Alloy Barns -(science 50.21 / 75 000 1h40m35s, alloy 1.25 / 20 (steel 2.35 / 525 (iron 7 639 / 16 900 1h16m45s, coal 2 944 / 16 900 4h46m28s), titanium 70), plate 750) +(Alloy Barns 1)
+X: [Tech] Alloy Warehouses -(science 50.21 / 90 000 2h0m43s, titanium 351.97 / 750 25h29m34s, alloy 1.25 / 50 (steel 2.35 / 1 200 (iron 7 639 / 38 700 4h17m27s, coal 2 944 / 38 700 12h13m59s), titanium 160)) +(Alloy Warehouses 1)
+X: [Tech] Expanded Cargo -(science 50.21 / 55 000 1h13m45s, blueprint 1.72 / 15 (compendium 1.6 / 125 (manuscript 2 000, science 50.21 / 400 000 8h56m47s), science 50.21 / 125 000 2h47m42s)) +(Expanded Cargo 1)
+X: [Tech] Silos -(science 50.21 / 50 000 1h7m2s, steel 2.35 / 125 (iron 4 000, coal 2 944 / 4 000 21m39s), blueprint 1.72 / 5 (compendium 1.6 / 50 (manuscript 800, science 50.21 / 160 000 3h34m40s), science 50.21 / 50 000 1h7m2s)) +(Silos 1)
+X: [Tech] Alloy Armour -(science 50.21 / 50 000 1h7m2s, alloy 1.25 / 25 (steel 2.35 / 600 (iron 7 639 / 19 300 1h36m39s, coal 2 944 / 19 300 5h35m44s), titanium 80)) +(Alloy Armour 1)
+X: [Tech] Astrolabe -(science 50.21 / 25 000 33m29s, titanium 5, starchart 75) +(Astrolabe 1)
+X: [Tech] Titanium Reflectors -(science 50.21 / 20 000 26m46s, titanium 15, starchart 20) +(Titanium Reflectors 1)
+X: [*] [Tech] Apocrypha -(faith 5 000, gold 2 318 / 5 000* 85h52m5s) +(Apocrypha 1)
+X: [*] [Tech] Transcendence -(faith 7 500, gold 2 318 / 7 500* 165h55m40s) +(Transcendence 1)
 last action: max Calciner

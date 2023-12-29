@@ -333,12 +333,35 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 }
 
 func (g *Game) doMax(input data.ParsedInput) error {
+	before := g.getActionState(input.Action, 1 /* factor */)
 	for {
-		if _, err := g.act(fmt.Sprintf("s%d", input.Index)); err != nil {
-			return nil
+		g.act(fmt.Sprintf("s%d", input.Index))
+		after := g.getActionState(input.Action, 1 /* factor */)
+		if before == after {
+			break
 		}
+		before = after
 	}
 	return nil
+}
+
+func (g *Game) getActionState(action data.Action, factor float64) string {
+	res := []string{}
+	for _, c := range action.Costs {
+		r := g.GetResource(c.Name)
+		cost := g.getCost(action, c) * factor
+		missing := 0.0
+		if r.Count < cost {
+			missing = cost - r.Count
+		}
+		res = append(res, fmt.Sprintf("%s %f %f", c.Name, cost, missing))
+		if r.ProducerAction == "" {
+			continue
+		}
+		factor := g.getNeededNestedAction(action, c)
+		res = append(res, g.getActionState(g.getNestedAction(action, c), factor))
+	}
+	return strings.Join(res, " ")
 }
 
 func (g *Game) checkCost(input data.ParsedInput) error {
