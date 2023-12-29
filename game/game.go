@@ -337,7 +337,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 func (g *Game) doMax(input data.ParsedInput) error {
 	for {
 		before := g.getActionState(input.Action, 1 /* factor */)
-		_, err := g.act(fmt.Sprintf("s%d", input.Index))
+		g.act(fmt.Sprintf("s%d", input.Index))
 		after := g.getActionState(input.Action, 1 /* factor */)
 		if before == after {
 			break
