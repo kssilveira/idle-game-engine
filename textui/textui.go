@@ -5,6 +5,7 @@ import (
 	"log"
 	"strings"
 
+	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/ui"
 )
 
@@ -19,8 +20,15 @@ type Config struct {
 }
 
 var (
-	negativeStatus = "[-] "
-	overCapStatus  = "[*] "
+	negativeStatus          = "[-] "
+	overCapStatus           = "[*] "
+	parsedInputTypeToPrefix = map[string]string{
+		data.ParsedInputTypeSkip:   "skip ",
+		data.ParsedInputTypeCreate: "create ",
+		data.ParsedInputTypeMax:    "max ",
+		data.ParsedInputTypeReset:  "reset",
+		data.ParsedInputTypeHide:   "hide",
+	}
 )
 
 func Show(cfg Config, data *ui.Data) {
@@ -29,22 +37,7 @@ func Show(cfg Config, data *ui.Data) {
 	}
 	showResources(cfg, data)
 	showActions(cfg, data)
-	prefix := ""
-	if data.LastInput.IsSkip {
-		prefix = "skip "
-	}
-	if data.LastInput.IsCreate {
-		prefix = "create "
-	}
-	if data.LastInput.IsMax {
-		prefix = "max "
-	}
-	if data.LastInput.IsReset {
-		prefix = "reset "
-	}
-	if data.LastInput.IsHide {
-		prefix = "hide "
-	}
+	prefix := parsedInputTypeToPrefix[data.LastInput.Type]
 	cfg.Logger.Printf("last action: %s%s\n", prefix, data.LastInput.Action.Name)
 	if data.Error != nil {
 		cfg.Logger.Printf("error: %v\n", data.Error)

@@ -291,11 +291,11 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	if err != nil {
 		return input, err
 	}
-	if input.IsReset {
+	if input.Type == data.ParsedInputTypeReset {
 		g.reset()
 		return input, nil
 	}
-	if input.IsHide {
+	if input.Type == data.ParsedInputTypeHide {
 		g.hideOverCap = !g.hideOverCap
 		return input, nil
 	}
@@ -305,7 +305,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	if err := g.checkMax(input.Action); err != nil {
 		return input, err
 	}
-	if input.IsSkip {
+	if input.Type == data.ParsedInputTypeSkip {
 		skipTime, err := g.getSkipTime(input.Action)
 		if err != nil {
 			return input, err
@@ -314,7 +314,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 			g.timeSkip(skipTime)
 		}
 	}
-	if input.IsSkip || input.IsCreate {
+	if input.Type == data.ParsedInputTypeSkip || input.Type == data.ParsedInputTypeCreate {
 		for _, c := range input.Action.Costs {
 			r := g.GetResource(c.Name)
 			if r.ProducerAction == "" {
@@ -329,7 +329,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 			}
 		}
 	}
-	if input.IsMax {
+	if input.Type == data.ParsedInputTypeMax {
 		prefixes := []string{"s", "s", "c", ""}
 		for {
 			errors := 0
@@ -346,7 +346,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	}
 	for _, c := range input.Action.Costs {
 		if g.GetResource(c.Name).Count < g.getCost(input.Action, c) {
-			if input.IsSkip {
+			if input.Type == data.ParsedInputTypeSkip {
 				return input, nil
 			}
 			return input, fmt.Errorf("not enough %s", c.Name)
@@ -414,24 +414,16 @@ func (g *Game) getBonusFormula(resource data.Resource) string {
 
 func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 	res := data.ParsedInput{}
-	if strings.HasPrefix(in, "s") {
-		res.IsSkip = true
-		in = in[1:]
+	if len(in) > 0 {
+		for _, t := range data.ParsedInputTypes {
+			if string(in[0]) == t {
+				res.Type = t
+				in = in[1:]
+				break
+			}
+		}
 	}
-	if strings.HasPrefix(in, "c") {
-		res.IsCreate = true
-		in = in[1:]
-	}
-	if strings.HasPrefix(in, "m") {
-		res.IsMax = true
-		in = in[1:]
-	}
-	if strings.HasPrefix(in, "r") {
-		res.IsReset = true
-		return res, nil
-	}
-	if strings.HasPrefix(in, "h") {
-		res.IsHide = true
+	if res.Type == data.ParsedInputTypeHide || res.Type == data.ParsedInputTypeReset {
 		return res, nil
 	}
 	index, err := strconv.Atoi(in)

@@ -65,14 +65,19 @@ type Action struct {
 	ResetResource string     `json:",omitempty"`
 }
 
+var (
+	ParsedInputTypeSkip   = "s"
+	ParsedInputTypeCreate = "c"
+	ParsedInputTypeMax    = "m"
+	ParsedInputTypeReset  = "r"
+	ParsedInputTypeHide   = "h"
+	ParsedInputTypes      = []string{ParsedInputTypeSkip, ParsedInputTypeCreate, ParsedInputTypeMax, ParsedInputTypeReset, ParsedInputTypeHide}
+)
+
 type ParsedInput struct {
-	IsSkip   bool
-	IsCreate bool
-	IsMax    bool
-	IsReset  bool
-	IsHide   bool
-	Index    int
-	Action   Action
+	Type   string
+	Index  int
+	Action Action
 }
 
 func (r *Resource) Add(add Resource) {

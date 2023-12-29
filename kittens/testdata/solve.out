@@ -13,7 +13,7 @@ last action:
 [Resource] mineral 0.03 / 250 0.01/s 5h33m17s to cap
 [Resource] paragon 0.000003 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
-last action: hide 
+last action: hide
 ###
 [Calendar] Charon 1 (1 if 0.001 % 10 == 0)
 [Calendar] year 1 (1 + 0.003)
