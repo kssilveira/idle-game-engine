@@ -50,7 +50,7 @@ func showResources(cfg Config, data *ui.Data) {
 		status := ""
 		capacity := ""
 		if r.Cap > 0 {
-			capacity = fmt.Sprintf("/%s", toString(r.Cap))
+			capacity = fmt.Sprintf(" / %s", toString(r.Cap))
 		}
 		extra := ""
 		if d.Rate != 0 {
@@ -140,7 +140,7 @@ func getCosts(costs []ui.Cost, status *string) string {
 		if c.Duration != 0 {
 			duration = fmt.Sprintf(" %s", c.Duration)
 		}
-		out := fmt.Sprintf("%s/%s%s%s", toString(c.Count), toString(c.Cost), overCap, duration)
+		out := fmt.Sprintf("%s / %s%s%s", toString(c.Count), toString(c.Cost), overCap, duration)
 		if c.Count >= c.Cost {
 			out = fmt.Sprintf("%s", toString(c.Cost))
 		}
@@ -164,11 +164,35 @@ func toString(n float64) string {
 		res = strings.TrimRight(res, "0")
 		res = strings.TrimRight(res, ".")
 		if res != "0" {
-			return res
+			return format(res)
 		}
 	}
 	res := fmt.Sprintf("%f", n)
 	res = strings.TrimRight(res, "0")
 	res = strings.TrimRight(res, ".")
-	return res
+	return format(res)
+}
+
+func format(n string) string {
+	reverse := []rune{}
+	parts := strings.Split(n, ".")
+	end := ""
+	if len(parts) > 1 {
+		end = "." + parts[1]
+	}
+	runes := []rune(parts[0])
+	if len(runes) >= 4 {
+		end = ""
+	}
+	for i := 0; i < len(runes); i++ {
+		if i > 0 && i%3 == 0 {
+			reverse = append(reverse, ' ')
+		}
+		reverse = append(reverse, runes[len(runes)-i-1])
+	}
+	res := []rune{}
+	for i := 0; i < len(reverse); i++ {
+		res = append(res, reverse[len(reverse)-i-1])
+	}
+	return fmt.Sprintf("%s%s", string(res), end)
 }
