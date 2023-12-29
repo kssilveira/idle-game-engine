@@ -22,6 +22,8 @@ type Resource struct {
 	ProductionModulus int `json:",omitempty"`
 	// Count = StartCount if (Producer.Count * Factor) % ProductionModulus == ProductionModulusEquals else 0
 	ProductionModulusEquals int `json:",omitempty"`
+	// Count = min(Min, Count)
+	Min float64 `json:",omitempty"`
 
 	// Production *= 1 + sum(Bonus)
 	Bonus []Resource `json:",omitempty"`

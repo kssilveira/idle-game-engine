@@ -587,7 +587,11 @@ func (g *Game) getRateFormula(resource data.Resource) string {
 }
 
 func (g *Game) getOneRate(resource data.Resource) float64 {
-	return g.getCountForRate(resource) * GetFactor(resource.Factor) * g.getBonus(resource)
+	res := g.getCountForRate(resource) * GetFactor(resource.Factor) * g.getBonus(resource)
+	if resource.Min != 0 && res < resource.Min {
+		res = resource.Min
+	}
+	return res
 }
 
 func (g *Game) getOneRateFormula(resource data.Resource) string {

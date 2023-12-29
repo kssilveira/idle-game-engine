@@ -1379,7 +1379,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "fur", Type: "Resource", Cap: -1,
 		Producers: []R{{
 			Name: "all kittens", Factor: -0.05,
-			Bonus: []R{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []R{{Name: "Tradepost", Factor: -0.04, Min: -1}},
 		}, {
 			Name: "Active Mint", Factor: 0.0000875,
 			Bonus:               []R{{Name: "catpower cap"}},
@@ -1393,7 +1393,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "ivory", Type: "Resource", Cap: -1,
 		Producers: []R{{
 			Name: "all kittens", Factor: -0.035,
-			Bonus: []R{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []R{{Name: "Tradepost", Factor: -0.04, Min: -1}},
 		}, {
 			Name: "Active Mint", Factor: 0.000021,
 			Bonus:               []R{{Name: "catpower cap"}},
@@ -1410,7 +1410,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "spice", Type: "Resource", Cap: -1,
 		Producers: []R{{
 			Name: "all kittens", Factor: -0.005,
-			Bonus: []R{{Name: "Tradepost", Factor: -0.04}},
+			Bonus: []R{{Name: "Tradepost", Factor: -0.04, Min: -1}},
 		}, {
 			Name: "Active Brewery", Factor: -0.1 * 5, ProductionOnGone: true,
 		}, {

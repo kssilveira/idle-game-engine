@@ -4017,7 +4017,8 @@
           "Bonus": [
             {
               "Name": "Tradepost",
-              "Factor": -0.04
+              "Factor": -0.04,
+              "Min": -1
             }
           ]
         },
@@ -4055,7 +4056,8 @@
           "Bonus": [
             {
               "Name": "Tradepost",
-              "Factor": -0.04
+              "Factor": -0.04,
+              "Min": -1
             }
           ]
         },
@@ -4102,7 +4104,8 @@
           "Bonus": [
             {
               "Name": "Tradepost",
-              "Factor": -0.04
+              "Factor": -0.04,
+              "Min": -1
             }
           ]
         },
