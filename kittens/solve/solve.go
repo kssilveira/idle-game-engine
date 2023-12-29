@@ -53,7 +53,30 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Writing", "m Amphitheatre",
 		"s Register",
 
-		"s Philosophy", "100 s Send hunters", "m Temple",
+		"s Philosophy", "100 s Sharks", "m Temple", "m Amphitheatre",
+
+		"s Steel", "s Coal Furnace", "s Deep Mining", "s Steel Axe", "s Steel Armour", "s High Pressure Engine",
+
+		"s Reinforced Warehouses",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
+		"m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost",
+
+		"s Machinery", "s Crossbow", "s Printing Press", "s Workshop Automation",
+		"10 s Steamworks", "Active Steamworks", "m Temple",
+
+		"s Theology", "s Hut", "s priest", "s farmer",
+		"m Golden Spire", "m Solar Chant", "m Scholasticism",
+		"10 s Praise the sun!",
+
+		"s Astronomy", "m Observatory",
+
+		"s Navigation",
+		"s Hut", "s woodcutter", "s farmer",
+		"s Hut", "s woodcutter", "s farmer",
+
+		"11 s Harbour",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
+		"m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory",
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {
