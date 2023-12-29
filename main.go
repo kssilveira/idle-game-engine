@@ -109,13 +109,17 @@ func handleInput(g *game.Game, input game.Input) error {
 
 func handleOutput(output game.Output, last *string, waiting chan bool, refreshed chan bool) {
 	textConfig := textui.Config{
-		Logger:    log.New(os.Stdout, "" /* prefix */, 0 /* flags */),
-		Separator: "\033[H\033[2J",
+		Logger:     log.New(os.Stdout, "" /* prefix */, 0 /* flags */),
+		Separator:  "\033[H\033[2J",
+		RedColor:   "\033[1;91m",
+		CloseColor: "\033[0m",
 	}
 	var buf bytes.Buffer
 	htmlConfig := textui.Config{
-		Logger: log.New(&buf, "" /* prefix */, 0 /* flags */),
-		IsHTML: true,
+		Logger:     log.New(&buf, "" /* prefix */, 0 /* flags */),
+		IsHTML:     true,
+		RedColor:   "<span style='color:red;'>",
+		CloseColor: "</span>",
 	}
 	for data := range output {
 		textui.Show(textConfig, data)

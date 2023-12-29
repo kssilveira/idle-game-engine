@@ -1807,7 +1807,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []R{{Name: "Catnip Enrichment", Factor: -0.50}},
 		}},
 		Adds: []R{{
-			Name: "wood", Count: 1,
+			Name: "wood", Count: 5,
 			Bonus: []R{{Name: "Bio Lab", Factor: 0.10}},
 		}},
 	}})

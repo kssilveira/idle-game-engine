@@ -14,7 +14,14 @@ type Config struct {
 	IsHTML            bool
 	HideActionNumbers bool
 	HideCustomActions bool
+	RedColor          string
+	CloseColor        string
 }
+
+var (
+	negativeStatus = "[-] "
+	overCapStatus  = "[*] "
+)
 
 func Show(cfg Config, data *ui.Data) {
 	if cfg.Separator != "" {
@@ -60,7 +67,7 @@ func showResources(cfg Config, data *ui.Data) {
 			}
 			if d.DurationToEmpty > 0 && r.StartCount == 0 {
 				capStr = fmt.Sprintf(" %s to empty", d.DurationToEmpty)
-				status = "[-] "
+				status = negativeStatus
 			}
 			rateStr := ""
 			operator := "+"
@@ -79,8 +86,15 @@ func showResources(cfg Config, data *ui.Data) {
 			}
 			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}
-		cfg.Logger.Printf("%s[%s] %s %s%s%s\n", status, r.Type, r.Name, toString(r.Count), capacity, extra)
+		cfg.Logger.Printf("%s%s[%s] %s %s%s%s%s\n", getColor(cfg, status), status, r.Type, r.Name, toString(r.Count), capacity, extra, cfg.CloseColor)
 	}
+}
+
+func getColor(cfg Config, status string) string {
+	if status == negativeStatus || status == overCapStatus {
+		return cfg.RedColor
+	}
+	return ""
 }
 
 func showActions(cfg Config, data *ui.Data) {
@@ -95,7 +109,7 @@ func showActions(cfg Config, data *ui.Data) {
 		}
 		name := fmt.Sprintf("%s%s", a.Name, quantity)
 		if cfg.IsHTML {
-			name = fmt.Sprintf("<a href='/%d'>%s%s</a> [<a href='/s%d'>skip</a>]", i, a.Name, quantity, i)
+			name = fmt.Sprintf("%s [%s]", link("" /* prefix */, i, a.Name+quantity), link("m", i, "max"))
 		}
 		parts := []string{name}
 		costs := getCosts(a.Costs, &status)
@@ -116,13 +130,17 @@ func showActions(cfg Config, data *ui.Data) {
 		if cfg.HideActionNumbers {
 			number = "X"
 		}
-		cfg.Logger.Printf("%s: %s[%s] %s)\n", number, status, a.Type, strings.Join(parts, ""))
+		cfg.Logger.Printf("%s%s: %s[%s] %s)%s\n", getColor(cfg, status), number, status, a.Type, strings.Join(parts, ""), cfg.CloseColor)
 	}
 	if !cfg.HideCustomActions {
 		for _, a := range data.CustomActions {
 			cfg.Logger.Printf("%s\n", a.Name)
 		}
 	}
+}
+
+func link(prefix string, i int, name string) string {
+	return fmt.Sprintf("<a href='/%s%d'>%s</a>", prefix, i, name)
 }
 
 func getCosts(costs []ui.Cost, status *string) string {
@@ -134,7 +152,7 @@ func getCosts(costs []ui.Cost, status *string) string {
 		overCap := ""
 		if c.Cost > c.Cap && c.Cap != -1 {
 			overCap = "*"
-			*status = "[*] "
+			*status = overCapStatus
 		}
 		duration := ""
 		if c.Duration != 0 {
@@ -144,8 +162,8 @@ func getCosts(costs []ui.Cost, status *string) string {
 		if c.Count >= c.Cost {
 			out = fmt.Sprintf("%s", toString(c.Cost))
 		}
-		var status string
-		nested := getCosts(c.Costs, &status)
+		var ignoredStatus string
+		nested := getCosts(c.Costs, &ignoredStatus)
 		extra := ""
 		if nested != "" {
 			extra = fmt.Sprintf(" (%s)", nested)

@@ -1,11 +1,11 @@
 ###
-X: [Building] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 10)
+X: [Building] <a href='/0'>Gather catnip</a> [<a href='/m0'>max</a>] +(catnip 10)
 last action: 
 ###
-X: [Building] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 10)
-X: [Building] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 10) +(Catnip Field 1)
+X: [Building] <a href='/0'>Gather catnip</a> [<a href='/m0'>max</a>] +(catnip 10)
+X: [Building] <a href='/2'>Catnip Field</a> [<a href='/m2'>max</a>] -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
-X: [Building] <a href='/0'>Gather catnip</a> [<a href='/s0'>skip</a>] +(catnip 10)
-X: [Building] <a href='/2'>Catnip Field</a> [<a href='/s2'>skip</a>] -(catnip 10) +(Catnip Field 1)
+X: [Building] <a href='/0'>Gather catnip</a> [<a href='/m0'>max</a>] +(catnip 10)
+X: [Building] <a href='/2'>Catnip Field</a> [<a href='/m2'>max</a>] -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
