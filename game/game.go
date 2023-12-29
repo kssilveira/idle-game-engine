@@ -53,9 +53,8 @@ func (g *Game) AddResource(resource data.Resource) {
 		g.errors = append(g.errors, fmt.Errorf("duplicate resource %s", resource.Name))
 	}
 	g.resourceToIndex[resource.Name] = len(g.Resources)
-	cp := resource
-	cp.Formula = g.getFormula(cp)
-	g.Resources = append(g.Resources, &cp)
+	resource.Formula = g.getFormula(resource)
+	g.Resources = append(g.Resources, &resource)
 }
 
 func (g *Game) AddActions(actions []data.Action) {
@@ -69,8 +68,7 @@ func (g *Game) AddAction(action data.Action) {
 		g.errors = append(g.errors, fmt.Errorf("duplicate action %s", action.Name))
 	}
 	g.actionToIndex[action.Name] = len(g.Actions)
-	cp := action
-	g.Actions = append(g.Actions, cp)
+	g.Actions = append(g.Actions, action)
 }
 
 func (g *Game) Validate() error {
@@ -109,8 +107,9 @@ func (g *Game) Run(now Now, input Input, output Output) {
 	for {
 		g.update(now())
 		data := &ui.Data{
-			LastInput: parsedInput,
-			Error:     err,
+			LastInput:   parsedInput,
+			Error:       err,
+			HideOverCap: g.hideOverCap,
 		}
 		g.populateUIResources(data)
 		g.populateUIActions(data)
@@ -156,9 +155,6 @@ func (g *Game) populateUIActions(data *ui.Data) {
 				Count: g.getActionAdd(r).Count,
 				Cap:   r.Cap,
 			})
-		}
-		if action.IsOverCap && g.hideOverCap && action.Count > 0 {
-			continue
 		}
 		data.Actions = append(data.Actions, action)
 	}

@@ -12,6 +12,7 @@ type Data struct {
 	Resources     []Resource
 	Actions       []Action
 	CustomActions []CustomAction
+	HideOverCap   bool
 }
 
 type Resource struct {

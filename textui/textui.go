@@ -98,6 +98,9 @@ func showActions(cfg Config, data *ui.Data) {
 		if a.IsLocked || a.IsHidden {
 			continue
 		}
+		if a.IsOverCap && data.HideOverCap && a.Count > 0 {
+			continue
+		}
 		status := ""
 		if a.IsOverCap {
 			status = overCapStatus
