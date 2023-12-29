@@ -108,5 +108,6 @@ Missing features:
 
 TODO:
 
+- parsed input single type
 - make [solve.go](kittens/solve/solve.go) get everything
 - record terminal using https://asciinema.org/

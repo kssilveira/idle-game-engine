@@ -70,6 +70,7 @@ type ParsedInput struct {
 	IsCreate bool
 	IsMax    bool
 	IsReset  bool
+	IsHide   bool
 	Index    int
 	Action   Action
 }

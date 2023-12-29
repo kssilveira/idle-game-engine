@@ -22,22 +22,24 @@ type Resource struct {
 }
 
 type Action struct {
-	Name     string
-	Type     string
-	Count    float64
-	IsLocked bool
-	IsHidden bool
-	Costs    []Cost
-	Adds     []Add
+	Name      string
+	Type      string
+	Count     float64
+	IsLocked  bool
+	IsHidden  bool
+	IsOverCap bool
+	Costs     []Cost
+	Adds      []Add
 }
 
 type Cost struct {
-	Name     string
-	Count    float64
-	Cap      float64
-	Cost     float64
-	Duration time.Duration
-	Costs    []Cost
+	Name      string
+	Count     float64
+	Cap       float64
+	Cost      float64
+	IsOverCap bool
+	Duration  time.Duration
+	Costs     []Cost
 }
 
 type Add struct {

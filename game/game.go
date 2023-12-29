@@ -21,6 +21,7 @@ type Game struct {
 	actionToIndex map[string]int
 	now           time.Time
 	errors        []error
+	hideOverCap   bool
 }
 
 type Input chan string
@@ -148,13 +149,16 @@ func (g *Game) populateUIActions(data *ui.Data) {
 		if g.HasResource(a.Name) {
 			action.Count = g.GetResource(a.Name).Count
 		}
-		action.Costs = g.populateUICosts(a, false /* isNested */)
+		action.Costs = g.populateUICosts(a, &action, false /* isNested */)
 		for _, r := range a.Adds {
 			action.Adds = append(action.Adds, ui.Add{
 				Name:  r.Name,
 				Count: g.getActionAdd(r).Count,
 				Cap:   r.Cap,
 			})
+		}
+		if action.IsOverCap && g.hideOverCap && action.Count > 0 {
+			continue
 		}
 		data.Actions = append(data.Actions, action)
 	}
@@ -165,11 +169,13 @@ func (g *Game) populateUIActions(data *ui.Data) {
 	}, {
 		Name: "mX: max action X (skip, create, buy)",
 	}, {
+		Name: "h: hide maxed actions",
+	}, {
 		Name: "r: reset",
 	}}
 }
 
-func (g *Game) populateUICosts(a data.Action, isNested bool) []ui.Cost {
+func (g *Game) populateUICosts(a data.Action, aui *ui.Action, isNested bool) []ui.Cost {
 	res := []ui.Cost{}
 	for _, c := range a.Costs {
 		cost := g.getCost(a, c)
@@ -184,8 +190,12 @@ func (g *Game) populateUICosts(a data.Action, isNested bool) []ui.Cost {
 		if isNested {
 			one.Cap = -1
 		}
+		one.IsOverCap = one.Cost > one.Cap && one.Cap != -1
+		if one.IsOverCap {
+			aui.IsOverCap = true
+		}
 		if r.ProducerAction != "" {
-			one.Costs = g.populateUICosts(g.getNestedAction(a, c), true /* isNested */)
+			one.Costs = g.populateUICosts(g.getNestedAction(a, c), &ui.Action{}, true /* isNested */)
 		}
 		res = append(res, one)
 	}
@@ -283,6 +293,10 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	}
 	if input.IsReset {
 		g.reset()
+		return input, nil
+	}
+	if input.IsHide {
+		g.hideOverCap = !g.hideOverCap
 		return input, nil
 	}
 	if g.isLocked(input.Action) {
@@ -414,6 +428,10 @@ func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 	}
 	if strings.HasPrefix(in, "r") {
 		res.IsReset = true
+		return res, nil
+	}
+	if strings.HasPrefix(in, "h") {
+		res.IsHide = true
 		return res, nil
 	}
 	index, err := strconv.Atoi(in)

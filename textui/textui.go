@@ -42,6 +42,9 @@ func Show(cfg Config, data *ui.Data) {
 	if data.LastInput.IsReset {
 		prefix = "reset "
 	}
+	if data.LastInput.IsHide {
+		prefix = "hide "
+	}
 	cfg.Logger.Printf("last action: %s%s\n", prefix, data.LastInput.Action.Name)
 	if data.Error != nil {
 		cfg.Logger.Printf("error: %v\n", data.Error)
@@ -103,6 +106,9 @@ func showActions(cfg Config, data *ui.Data) {
 			continue
 		}
 		status := ""
+		if a.IsOverCap {
+			status = overCapStatus
+		}
 		quantity := ""
 		if a.Count > 0 {
 			quantity = fmt.Sprintf(" (%s)", toString(a.Count))
@@ -112,7 +118,7 @@ func showActions(cfg Config, data *ui.Data) {
 			name = fmt.Sprintf("%s [%s]", link("" /* prefix */, i, a.Name+quantity), link("m", i, "max"))
 		}
 		parts := []string{name}
-		costs := getCosts(a.Costs, &status)
+		costs := getCosts(a.Costs)
 		if costs != "" {
 			parts = append(parts, fmt.Sprintf(" -(%s)", costs))
 		}
@@ -143,16 +149,15 @@ func link(prefix string, i int, name string) string {
 	return fmt.Sprintf("<a href='/%s%d'>%s</a>", prefix, i, name)
 }
 
-func getCosts(costs []ui.Cost, status *string) string {
+func getCosts(costs []ui.Cost) string {
 	res := []string{}
 	for _, c := range costs {
 		if c.Cost == 0 {
 			continue
 		}
 		overCap := ""
-		if c.Cost > c.Cap && c.Cap != -1 {
+		if c.IsOverCap {
 			overCap = "*"
-			*status = overCapStatus
 		}
 		duration := ""
 		if c.Duration != 0 {
@@ -162,8 +167,7 @@ func getCosts(costs []ui.Cost, status *string) string {
 		if c.Count >= c.Cost {
 			out = fmt.Sprintf("%s", toString(c.Cost))
 		}
-		var ignoredStatus string
-		nested := getCosts(c.Costs, &ignoredStatus)
+		nested := getCosts(c.Costs)
 		extra := ""
 		if nested != "" {
 			extra = fmt.Sprintf(" (%s)", nested)

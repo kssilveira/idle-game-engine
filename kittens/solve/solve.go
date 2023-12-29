@@ -10,9 +10,10 @@ import (
 )
 
 func Solve(g *game.Game, input chan string, sleepMS int) error {
+	input <- "h"
 	cmds := []string{
-		"10 Gather catnip", "Catnip Field", "m Catnip Field",
-		"5 s Refine catnip", "Hut", "s woodcutter",
+		"Gather catnip", "Catnip Field", "m Catnip Field",
+		"s Refine catnip", "Hut", "s woodcutter",
 		"s Library", "s scholar", "m Library",
 		"s Calendar", "s Agriculture", "s Hut", "s farmer", "s farmer",
 		"m Barn", "m Catnip Field", "m Library",
