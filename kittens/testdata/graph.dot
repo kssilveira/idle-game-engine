@@ -675,6 +675,8 @@ digraph {
   "Chronosphere" -> "thorium" [color="green"];
   "megalith" -> "reset megalith" [color="green"];
   "Chronosphere" -> "megalith" [color="green"];
+  "tear" -> "reset tear" [color="green"];
+  "Chronosphere" -> "tear" [color="green"];
   "Gather catnip" -> "catnip" [color="limegreen"];
   "catnip" -> "Refine catnip" [color="orange"];
   "Catnip Enrichment" -> "catnip" [color="green"];
@@ -1207,10 +1209,6 @@ digraph {
   "Adore the galaxy" -> "epiphany" [color="limegreen"];
   "Transcendence Level" -> "epiphany" [color="green"];
   "Apocrypha" -> "Adore the galaxy" [color="blue"];
-  "unicorn" -> "Sacrifice Unicorns" [color="orange"];
-  "Sacrifice Unicorns" -> "tear" [color="limegreen"];
-  "Ziggurat" -> "tear" [color="green"];
-  "Ziggurat" -> "Sacrifice Unicorns" [color="blue"];
   "alicorn" -> "Sacrifice Alicorns" [color="orange"];
   "Sacrifice Alicorns" -> "time crystal" [color="limegreen"];
   "Unicorn Utopia" -> "time crystal" [color="green"];
@@ -1935,6 +1933,11 @@ digraph {
   "@megalith" -> "megalith" [color="limegreen"];
   "CraftRatio" -> "megalith" [color="green"];
   "Construction" -> "@megalith" [color="blue"];
+  "unicorn" -> "@tear" [color="orange"];
+  "@tear" -> "tear" [color="limegreen"];
+  "CraftRatio" -> "tear" [color="green"];
+  "Ziggurat" -> "tear" [color="green"];
+  "Ziggurat" -> "@tear" [color="blue"];
   "Charon" [shape="cylinder"];
   "Umbra" [shape="cylinder"];
   "Yarn" [shape="cylinder"];
@@ -2040,7 +2043,6 @@ digraph {
   "hash" [shape="cylinder"];
   "leviathan energy cap" [shape="cylinder"];
   "leviathan energy" [shape="cylinder"];
-  "tear" [shape="cylinder"];
   "alicorn" [shape="cylinder"];
   "necrocorn" [shape="cylinder"];
   "sorrow cap" [shape="cylinder"];
@@ -2468,6 +2470,8 @@ digraph {
   "reset thorium" [shape="cylinder"];
   "megalith" [shape="cylinder"];
   "reset megalith" [shape="cylinder"];
+  "tear" [shape="cylinder"];
+  "reset tear" [shape="cylinder"];
   "Gather catnip" [shape="box3d"];
   "Refine catnip" [shape="box3d"];
   "Send hunters" [shape="house"];
@@ -2483,7 +2487,6 @@ digraph {
   "Feed Leviathans" [shape="cds"];
   "Praise the sun!" [shape="cds"];
   "Adore the galaxy" [shape="cds"];
-  "Sacrifice Unicorns" [shape="cds"];
   "Sacrifice Alicorns" [shape="cds"];
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];
@@ -2508,10 +2511,11 @@ digraph {
   "@blueprint" [shape="cds"];
   "@thorium" [shape="cds"];
   "@megalith" [shape="cds"];
+  "@tear" [shape="cds"];
 }
 # titanium: 74
 # blueprint: 48
-# Chronosphere: 44
+# Chronosphere: 45
 # PriceRatioBonus: 44
 # starchart: 42
 # alloy: 40

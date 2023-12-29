@@ -108,6 +108,5 @@ Missing features:
 
 TODO:
 
-- change tear to craft
 - make [solve.go](kittens/solve/solve.go) get everything
 - record terminal using https://asciinema.org/

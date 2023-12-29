@@ -1664,8 +1664,6 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "leviathan energy", Type: "Resource", CapResource: "leviathan energy cap",
 	}, {
-		Name: "tear", Type: "Resource", Cap: -1,
-	}, {
 		Name: "alicorn", Type: "Resource", Cap: -1,
 		Producers: []R{{
 			Name: "Sky Palace", Factor: 0.00002 * 5,
@@ -2951,14 +2949,6 @@ func NewGame(now game.Now) *game.Game {
 				Name:  "Transcendence Level",
 				Bonus: []R{{Name: "Transcendence Level"}},
 			}},
-		}},
-	}, {
-		Name: "Sacrifice Unicorns", Type: "Craft", UnlockedBy: "Ziggurat",
-		Costs: []R{{Name: "unicorn", Count: 2500}},
-		Adds: []R{{
-			Name: "tear", Count: 1,
-			Bonus:               []R{{Name: "Ziggurat"}},
-			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "Ziggurat",
@@ -4977,6 +4967,10 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "plate", Count: 5,
 		}},
+	}, {
+		Name: "tear", UnlockedBy: "Ziggurat",
+		Costs: []R{{Name: "unicorn", Count: 2500}},
+		Bonus: []R{{Name: "Ziggurat"}},
 	}})
 
 	return g

@@ -4677,11 +4677,6 @@
       "CapResource": "leviathan energy cap"
     },
     {
-      "Name": "tear",
-      "Type": "Resource",
-      "Cap": -1
-    },
-    {
       "Name": "alicorn",
       "Type": "Resource",
       "Cap": -1,
@@ -8143,6 +8138,33 @@
       "StartCountFromZero": true,
       "ResetResource": "reset megalith",
       "Formula": "Count = (c(megalith) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "tear",
+      "Type": "Resource",
+      "Cap": -1,
+      "ProducerAction": "@tear"
+    },
+    {
+      "Name": "reset tear",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "tear",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset tear",
+      "Formula": "Count = (c(tear) * (c(Chronosphere) * 0.015))"
     }
   ],
   "Actions": [
@@ -11888,30 +11910,6 @@
               ]
             }
           ]
-        }
-      ],
-      "CostExponentBaseResource": {}
-    },
-    {
-      "Name": "Sacrifice Unicorns",
-      "Type": "Craft",
-      "UnlockedBy": "Ziggurat",
-      "Costs": [
-        {
-          "Name": "unicorn",
-          "Count": 2500
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "tear",
-          "Count": 1,
-          "Bonus": [
-            {
-              "Name": "Ziggurat"
-            }
-          ],
-          "BonusStartsFromZero": true
         }
       ],
       "CostExponentBaseResource": {}
@@ -18791,6 +18789,38 @@
       ],
       "IsHidden": true,
       "CostExponentBaseResource": {}
+    },
+    {
+      "Name": "@tear",
+      "Type": "Craft",
+      "UnlockedBy": "Ziggurat",
+      "Costs": [
+        {
+          "Name": "unicorn",
+          "Count": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "tear",
+          "Count": 1,
+          "Bonus": [
+            {
+              "Name": "CraftRatio"
+            },
+            {
+              "Name": "Ziggurat"
+            }
+          ]
+        }
+      ],
+      "IsHidden": true,
+      "CostExponentBaseResource": {},
+      "Bonus": [
+        {
+          "Name": "Ziggurat"
+        }
+      ]
     }
   ]
 }

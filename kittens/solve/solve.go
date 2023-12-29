@@ -47,7 +47,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Engineering", "m Aqueduct",
 		"s Currency", "s Gold Ore", "m Tradepost",
 
-		"11 s Sharks", "m Ziggurat", "6 Sacrifice Unicorns",
+		"11 s Sharks", "m Ziggurat",
 		"s Hunting Armour",
 
 		"s Writing", "m Amphitheatre",
