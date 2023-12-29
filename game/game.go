@@ -307,18 +307,8 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		}
 	}
 	if input.Type == data.ParsedInputTypeSkip || input.Type == data.ParsedInputTypeCreate {
-		for _, c := range input.Action.Costs {
-			r := g.GetResource(c.Name)
-			if r.ProducerAction == "" {
-				continue
-			}
-			nested := fmt.Sprintf("%d", g.actionToIndex[r.ProducerAction])
-			need := int(g.getNeededNestedAction(input.Action, c))
-			for i := 0; i < need; i++ {
-				if _, err := g.act(input.Type + nested); err != nil {
-					break
-				}
-			}
+		if err := g.create(input); err != nil {
+			return input, err
 		}
 	}
 	if input.Type == data.ParsedInputTypeMax {
@@ -343,6 +333,23 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		r.Add(g.getActionAdd(add))
 	}
 	return input, nil
+}
+
+func (g *Game) create(input data.ParsedInput) error {
+	for _, c := range input.Action.Costs {
+		r := g.GetResource(c.Name)
+		if r.ProducerAction == "" {
+			continue
+		}
+		nested := fmt.Sprintf("%d", g.actionToIndex[r.ProducerAction])
+		need := int(g.getNeededNestedAction(input.Action, c))
+		for i := 0; i < need; i++ {
+			if _, err := g.act(input.Type + nested); err != nil {
+				break
+			}
+		}
+	}
+	return nil
 }
 
 func (g *Game) skip(input data.ParsedInput) error {
