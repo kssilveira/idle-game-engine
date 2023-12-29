@@ -2162,367 +2162,410 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Unicorn Tomb", UnlockedBy: "Ziggurat",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "tear", Count: 5, CostExponentBase: 1.15,
+			Name: "tear", Count: 5,
 		}, {
-			Name: "ivory", Count: 500, CostExponentBase: 1.15,
+			Name: "ivory", Count: 500,
 		}},
 	}, {
 		Name: "Ivory Tower", UnlockedBy: "Unicorn Tomb",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "tear", Count: 25, CostExponentBase: 1.15,
+			Name: "tear", Count: 25,
 		}, {
-			Name: "ivory", Count: 25000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 25000,
 		}},
 	}, {
 		Name: "Ivory Citadel", UnlockedBy: "Ivory Tower",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "tear", Count: 50, CostExponentBase: 1.15,
+			Name: "tear", Count: 50,
 		}, {
-			Name: "ivory", Count: 50000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 50000,
 		}},
 	}, {
 		Name: "Sky Palace", UnlockedBy: "Ivory Citadel",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "tear", Count: 500, CostExponentBase: 1.15,
+			Name: "tear", Count: 500,
 		}, {
-			Name: "ivory", Count: 125000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 125000,
 		}, {
-			Name: "megalith", Count: 5, CostExponentBase: 1.15,
+			Name: "megalith", Count: 5,
 		}},
 	}, {
 		Name: "Unicorn Utopia", UnlockedBy: "Sky Palace",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "tear", Count: 5000, CostExponentBase: 1.15,
+			Name: "tear", Count: 5000,
 		}, {
-			Name: "ivory", Count: 1000000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 1000000,
 		}, {
-			Name: "gold", Count: 500, CostExponentBase: 1.15,
+			Name: "gold", Count: 500,
 		}},
 	}, {
 		Name: "Sunspire", UnlockedBy: "Unicorn Utopia",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "tear", Count: 25000, CostExponentBase: 1.15,
+			Name: "tear", Count: 25000,
 		}, {
-			Name: "ivory", Count: 750000, CostExponentBase: 1.15,
+			Name: "ivory", Count: 750000,
 		}, {
-			Name: "gold", Count: 1000, CostExponentBase: 1.15,
+			Name: "gold", Count: 1000,
 		}},
 	}, {
 		Name: "Marker", UnlockedBy: "Megalomania",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "tear", Count: 5000, CostExponentBase: 1.15,
+			Name: "tear", Count: 5000,
 		}, {
-			Name: "megalith", Count: 750, CostExponentBase: 1.15,
+			Name: "megalith", Count: 750,
 		}, {
-			Name: "spice", Count: 50000, CostExponentBase: 1.15,
+			Name: "spice", Count: 50000,
 		}, {
-			Name: "unobtainium", Count: 2500, CostExponentBase: 1.15,
+			Name: "unobtainium", Count: 2500,
 		}},
 	}, {
 		Name: "Unicorn Graveyard", UnlockedBy: "Black Codex",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "necrocorn", Count: 5, CostExponentBase: 1.15,
+			Name: "necrocorn", Count: 5,
 		}, {
-			Name: "megalith", Count: 1000, CostExponentBase: 1.15,
+			Name: "megalith", Count: 1000,
 		}},
 	}, {
 		Name: "Unicorn Necropolis", UnlockedBy: "Unicorn Graveyard",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "necrocorn", Count: 15, CostExponentBase: 1.15,
+			Name: "necrocorn", Count: 15,
 		}, {
-			Name: "megalith", Count: 2500, CostExponentBase: 1.15,
+			Name: "megalith", Count: 2500,
 		}, {
-			Name: "alicorn", Count: 100, CostExponentBase: 1.15,
+			Name: "alicorn", Count: 100,
 		}, {
-			Name: "void", Count: 5, CostExponentBase: 1.15,
+			Name: "void", Count: 5,
 		}},
 	}, {
 		Name: "Black Pyramid", UnlockedBy: "Megalomania",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "sorrow", Count: 5, CostExponentBase: 1.15,
+			Name: "sorrow", Count: 5,
 		}, {
-			Name: "megalith", Count: 2500, CostExponentBase: 1.15,
+			Name: "megalith", Count: 2500,
 		}, {
-			Name: "spice", Count: 150000, CostExponentBase: 1.15,
+			Name: "spice", Count: 150000,
 		}, {
-			Name: "unobtainium", Count: 5000, CostExponentBase: 1.15,
+			Name: "unobtainium", Count: 5000,
 		}},
 	}, {
 		Name: "Solar Chant", UnlockedBy: "Philosophy",
-		Costs: []R{{Name: "faith", Count: 100, CostExponentBase: 2.5}},
+		CostExponentBase: 2.5,
+		Costs:            []R{{Name: "faith", Count: 100}},
 	}, {
 		Name: "Scholasticism", UnlockedBy: "Philosophy",
-		Costs: []R{{Name: "faith", Count: 250, CostExponentBase: 2.5}},
+		CostExponentBase: 2.5,
+		Costs:            []R{{Name: "faith", Count: 250}},
 	}, {
 		Name: "Golden Spire", UnlockedBy: "Philosophy",
+		CostExponentBase: 2.5,
 		Costs: []R{{
-			Name: "faith", Count: 350, CostExponentBase: 2.5,
+			Name: "faith", Count: 350,
 		}, {
-			Name: "gold", Count: 150, CostExponentBase: 2.5,
+			Name: "gold", Count: 150,
 		}},
 	}, {
 		Name: "Sun Altar", UnlockedBy: "Philosophy",
+		CostExponentBase: 2.5,
 		Costs: []R{{
-			Name: "faith", Count: 500, CostExponentBase: 2.5,
+			Name: "faith", Count: 500,
 		}, {
-			Name: "gold", Count: 250, CostExponentBase: 2.5,
+			Name: "gold", Count: 250,
 		}},
 	}, {
 		Name: "Stained Glass", UnlockedBy: "Philosophy",
+		CostExponentBase: 2.5,
 		Costs: []R{{
-			Name: "faith", Count: 500, CostExponentBase: 2.5,
+			Name: "faith", Count: 500,
 		}, {
-			Name: "gold", Count: 250, CostExponentBase: 2.5,
+			Name: "gold", Count: 250,
 		}},
 	}, {
 		Name: "Basilica", UnlockedBy: "Philosophy",
+		CostExponentBase: 2.5,
 		Costs: []R{{
-			Name: "faith", Count: 1250, CostExponentBase: 2.5,
+			Name: "faith", Count: 1250,
 		}, {
-			Name: "gold", Count: 750, CostExponentBase: 2.5,
+			Name: "gold", Count: 750,
 		}},
 	}, {
 		Name: "Templars", UnlockedBy: "Philosophy",
+		CostExponentBase: 2.5,
 		Costs: []R{{
-			Name: "faith", Count: 3500, CostExponentBase: 2.5,
+			Name: "faith", Count: 3500,
 		}, {
-			Name: "gold", Count: 3000, CostExponentBase: 2.5,
+			Name: "gold", Count: 3000,
 		}},
 	}, {
 		Name: "Transcendence Level", UnlockedBy: "Transcendence", ResetResource: "Transcendence Level",
-		Costs: []R{{
-			Name: "epiphany", Count: 1, CostExponentBase: 3,
-		}},
+		CostExponentBase: 3,
+		Costs:            []R{{Name: "epiphany", Count: 1}},
 	}, {
 		Name: "Black Obelisk", UnlockedBy: "Cryptotheology", ResetResource: "Black Obelisk",
-		Costs: []R{{Name: "relic", Count: 100, CostExponentBase: 1.15}},
+		CostExponentBase: 1.15,
+		Costs:            []R{{Name: "relic", Count: 100}},
 	}, {
 		Name: "Black Nexus", UnlockedBy: "Cryptotheology", ResetResource: "Black Nexus",
-		Costs: []R{{Name: "relic", Count: 5000, CostExponentBase: 1.15}},
+		CostExponentBase: 1.15,
+		Costs:            []R{{Name: "relic", Count: 5000}},
 	}, {
 		Name: "Black Core", UnlockedBy: "Cryptotheology", ResetResource: "Black Core",
-		Costs: []R{{Name: "relic", Count: 10000, CostExponentBase: 1.15}},
+		CostExponentBase: 1.15,
+		Costs:            []R{{Name: "relic", Count: 10000}},
 	}, {
 		Name: "Event Horizon", UnlockedBy: "Cryptotheology", ResetResource: "Event Horizon",
-		Costs: []R{{Name: "relic", Count: 25000, CostExponentBase: 1.15}},
+		CostExponentBase: 1.15,
+		Costs:            []R{{Name: "relic", Count: 25000}},
 	}, {
 		Name: "Black Library", UnlockedBy: "Cryptotheology", ResetResource: "Black Library",
-		Costs: []R{{Name: "relic", Count: 30000, CostExponentBase: 1.15}},
+		CostExponentBase: 1.15,
+		Costs:            []R{{Name: "relic", Count: 30000}},
 	}, {
 		Name: "Black Radiance", UnlockedBy: "Cryptotheology", ResetResource: "Black Radiance",
-		Costs: []R{{Name: "relic", Count: 37500, CostExponentBase: 1.15}},
+		CostExponentBase: 1.15,
+		Costs:            []R{{Name: "relic", Count: 37500}},
 	}, {
 		Name: "Blazar", UnlockedBy: "Cryptotheology", ResetResource: "Blazar",
-		Costs: []R{{Name: "relic", Count: 50000, CostExponentBase: 1.15}},
+		CostExponentBase: 1.15,
+		Costs:            []R{{Name: "relic", Count: 50000}},
 	}, {
 		Name: "Dark Nova", UnlockedBy: "Cryptotheology", ResetResource: "Dark Nova",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "relic", Count: 75000, CostExponentBase: 1.15,
+			Name: "relic", Count: 75000,
 		}, {
-			Name: "void", Count: 7500, CostExponentBase: 1.15,
+			Name: "void", Count: 7500,
 		}},
 	}, {
 		Name: "Mausoleum", UnlockedBy: "Cryptotheology", ResetResource: "Mausoleum",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "relic", Count: 50000, CostExponentBase: 1.15,
+			Name: "relic", Count: 50000,
 		}, {
-			Name: "void", Count: 12500, CostExponentBase: 1.15,
+			Name: "void", Count: 12500,
 		}, {
-			Name: "necrocorn", Count: 10, CostExponentBase: 1.15,
+			Name: "necrocorn", Count: 10,
 		}},
 	}, {
 		Name: "Holy Genocide", UnlockedBy: "Cryptotheology", ResetResource: "Holy Genocide",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "relic", Count: 100000, CostExponentBase: 1.15,
+			Name: "relic", Count: 100000,
 		}, {
-			Name: "void", Count: 25000, CostExponentBase: 1.15,
+			Name: "void", Count: 25000,
 		}},
 	}, {
 		Name: "Space Elevator", UnlockedBy: "Orbital Engineering",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "titanium", Count: 6000, CostExponentBase: 1.15,
+			Name: "titanium", Count: 6000,
 		}, {
-			Name: "science", Count: 75000, CostExponentBase: 1.15,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "unobtainium", Count: 50, CostExponentBase: 1.15,
+			Name: "unobtainium", Count: 50,
 		}},
 	}, {
 		Name: "Satellite", UnlockedBy: "Satellites",
+		CostExponentBase: 1.08,
 		Costs: []R{{
-			Name: "starchart", Count: 325, CostExponentBase: 1.08,
+			Name: "starchart", Count: 325,
 		}, {
-			Name: "titanium", Count: 2500, CostExponentBase: 1.08,
+			Name: "titanium", Count: 2500,
 		}, {
-			Name: "science", Count: 100000, CostExponentBase: 1.08,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "oil", Count: 15000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 15000, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Space Station", UnlockedBy: "Orbital Engineering",
+		CostExponentBase: 1.12,
 		Costs: []R{{
-			Name: "starchart", Count: 425, CostExponentBase: 1.12,
+			Name: "starchart", Count: 425,
 		}, {
-			Name: "alloy", Count: 750, CostExponentBase: 1.12,
+			Name: "alloy", Count: 750,
 		}, {
-			Name: "science", Count: 150000, CostExponentBase: 1.12,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "oil", Count: 35000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 35000, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 		Adds: []R{{Name: "kitten", Cap: 2}},
 	}, {
 		Name: "Active Lunar Outpost", UnlockedBy: "Moon Mission",
+		CostExponentBase: 1.12,
 		Costs: []R{{
-			Name: "starchart", Count: 650, CostExponentBase: 1.12,
+			Name: "starchart", Count: 650,
 		}, {
-			Name: "uranium", Count: 500, CostExponentBase: 1.12,
+			Name: "uranium", Count: 500,
 		}, {
-			Name: "alloy", Count: 750, CostExponentBase: 1.12,
+			Name: "alloy", Count: 750,
 		}, {
-			Name: "concrete", Count: 150, CostExponentBase: 1.12,
+			Name: "concrete", Count: 150,
 		}, {
-			Name: "science", Count: 100000, CostExponentBase: 1.12,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "oil", Count: 55000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 55000, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Moon Base", UnlockedBy: "Moon Mission",
+		CostExponentBase: 1.12,
 		Costs: []R{{
-			Name: "starchart", Count: 700, CostExponentBase: 1.12,
+			Name: "starchart", Count: 700,
 		}, {
-			Name: "titanium", Count: 9500, CostExponentBase: 1.12,
+			Name: "titanium", Count: 9500,
 		}, {
-			Name: "concrete", Count: 250, CostExponentBase: 1.12,
+			Name: "concrete", Count: 250,
 		}, {
-			Name: "science", Count: 100000, CostExponentBase: 1.12,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "unobtainium", Count: 50, CostExponentBase: 1.12,
+			Name: "unobtainium", Count: 50,
 		}, {
-			Name: "oil", Count: 70000, CostExponentBase: 1.05, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
+			Name: "oil", Count: 70000, Bonus: []R{{Name: "SpaceElevatorOilBonus"}},
 		}},
 	}, {
 		Name: "Planet Cracker", UnlockedBy: "Dune Mission",
+		CostExponentBase: 1.18,
 		Costs: []R{{
-			Name: "starchart", Count: 2500, CostExponentBase: 1.18,
+			Name: "starchart", Count: 2500,
 		}, {
-			Name: "alloy", Count: 1750, CostExponentBase: 1.18,
+			Name: "alloy", Count: 1750,
 		}, {
-			Name: "science", Count: 125000, CostExponentBase: 1.18,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "kerosene", Count: 50, CostExponentBase: 1.18,
+			Name: "kerosene", Count: 50,
 		}},
 	}, {
 		Name: "Hydraulic Fracturer", UnlockedBy: "Dune Mission",
+		CostExponentBase: 1.18,
 		Costs: []R{{
-			Name: "starchart", Count: 750, CostExponentBase: 1.18,
+			Name: "starchart", Count: 750,
 		}, {
-			Name: "alloy", Count: 1025, CostExponentBase: 1.18,
+			Name: "alloy", Count: 1025,
 		}, {
-			Name: "science", Count: 150000, CostExponentBase: 1.18,
+			Name: "science", Count: 150000,
 		}, {
-			Name: "kerosene", Count: 100, CostExponentBase: 1.18,
+			Name: "kerosene", Count: 100,
 		}},
 	}, {
 		Name: "Spice Refinery", UnlockedBy: "Dune Mission",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "starchart", Count: 500, CostExponentBase: 1.15,
+			Name: "starchart", Count: 500,
 		}, {
-			Name: "alloy", Count: 500, CostExponentBase: 1.15,
+			Name: "alloy", Count: 500,
 		}, {
-			Name: "science", Count: 75000, CostExponentBase: 1.15,
+			Name: "science", Count: 75000,
 		}, {
-			Name: "kerosene", Count: 125, CostExponentBase: 1.15,
+			Name: "kerosene", Count: 125,
 		}},
 	}, {
 		Name: "Research Vessel", UnlockedBy: "Piscine Mission",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "starchart", Count: 100, CostExponentBase: 1.15,
+			Name: "starchart", Count: 100,
 		}, {
-			Name: "alloy", Count: 2500, CostExponentBase: 1.15,
+			Name: "alloy", Count: 2500,
 		}, {
-			Name: "titanium", Count: 12500, CostExponentBase: 1.15,
+			Name: "titanium", Count: 12500,
 		}, {
-			Name: "kerosene", Count: 250, CostExponentBase: 1.15,
+			Name: "kerosene", Count: 250,
 		}},
 	}, {
 		Name: "Orbital Array", UnlockedBy: "Piscine Mission",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "science", Count: 250000, CostExponentBase: 1.15,
+			Name: "science", Count: 250000,
 		}, {
-			Name: "eludium", Count: 100, CostExponentBase: 1.15,
+			Name: "eludium", Count: 100,
 		}, {
-			Name: "kerosene", Count: 500, CostExponentBase: 1.15,
+			Name: "kerosene", Count: 500,
 		}, {
-			Name: "starchart", Count: 2000, CostExponentBase: 1.15,
+			Name: "starchart", Count: 2000,
 		}},
 	}, {
 		Name: "Sunlifter", UnlockedBy: "Helios Mission",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "science", Count: 500000, CostExponentBase: 1.15,
+			Name: "science", Count: 500000,
 		}, {
-			Name: "eludium", Count: 225, CostExponentBase: 1.15,
+			Name: "eludium", Count: 225,
 		}, {
-			Name: "kerosene", Count: 2500, CostExponentBase: 1.15,
+			Name: "kerosene", Count: 2500,
 		}},
 	}, {
 		Name: "Containment Chamber", UnlockedBy: "Helios Mission",
+		CostExponentBase: 1.125,
 		Costs: []R{{
-			Name: "science", Count: 500000, CostExponentBase: 1.125,
+			Name: "science", Count: 500000,
 		}, {
-			Name: "kerosene", Count: 2500, CostExponentBase: 1.125,
+			Name: "kerosene", Count: 2500,
 		}},
 	}, {
 		Name: "Heatsink", UnlockedBy: "Helios Mission",
+		CostExponentBase: 1.12,
 		Costs: []R{{
-			Name: "science", Count: 125000, CostExponentBase: 1.12,
+			Name: "science", Count: 125000,
 		}, {
-			Name: "thorium", Count: 12500, CostExponentBase: 1.12,
+			Name: "thorium", Count: 12500,
 		}, {
-			Name: "relic", Count: 1, CostExponentBase: 1.12,
+			Name: "relic", Count: 1,
 		}, {
-			Name: "kerosene", Count: 5000, CostExponentBase: 1.12,
+			Name: "kerosene", Count: 5000,
 		}},
 	}, {
 		Name: "Sunforge", UnlockedBy: "Helios Mission",
+		CostExponentBase: 1.12,
 		Costs: []R{{
-			Name: "science", Count: 100000, CostExponentBase: 1.12,
+			Name: "science", Count: 100000,
 		}, {
-			Name: "relic", Count: 1, CostExponentBase: 1.12,
+			Name: "relic", Count: 1,
 		}, {
-			Name: "kerosene", Count: 1250, CostExponentBase: 1.12,
+			Name: "kerosene", Count: 1250,
 		}, {
-			Name: "antimatter", Count: 250, CostExponentBase: 1.12,
+			Name: "antimatter", Count: 250,
 		}},
 	}, {
 		Name: "Cryostation", UnlockedBy: "T-Minus Mission",
+		CostExponentBase: 1.12,
 		Costs: []R{{
-			Name: "science", Count: 200000, CostExponentBase: 1.12,
+			Name: "science", Count: 200000,
 		}, {
-			Name: "eludium", Count: 25, CostExponentBase: 1.12,
+			Name: "eludium", Count: 25,
 		}, {
-			Name: "concrete", Count: 1500, CostExponentBase: 1.12,
+			Name: "concrete", Count: 1500,
 		}, {
-			Name: "kerosene", Count: 500, CostExponentBase: 1.12,
+			Name: "kerosene", Count: 500,
 		}},
 	}, {
 		Name: "Space Beacon", UnlockedBy: "Kairo Mission",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "starchart", Count: 25000, CostExponentBase: 1.15,
+			Name: "starchart", Count: 25000,
 		}, {
-			Name: "antimatter", Count: 50, CostExponentBase: 1.15,
+			Name: "antimatter", Count: 50,
 		}, {
-			Name: "alloy", Count: 25000, CostExponentBase: 1.15,
+			Name: "alloy", Count: 25000,
 		}, {
-			Name: "kerosene", Count: 7500, CostExponentBase: 1.15,
+			Name: "kerosene", Count: 7500,
 		}},
 	}, {
 		Name: "Terraforming Station", UnlockedBy: "Terraformation",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "antimatter", Count: 25, CostExponentBase: 1.25,
+			Name: "antimatter", Count: 25,
 		}, {
-			Name: "uranium", Count: 5000, CostExponentBase: 1.25,
+			Name: "uranium", Count: 5000,
 		}, {
-			Name: "kerosene", Count: 5000, CostExponentBase: 1.25,
+			Name: "kerosene", Count: 5000,
 		}},
 		Adds: []R{{
 			Name: "kitten", Cap: 1,
@@ -2530,127 +2573,144 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}, {
 		Name: "Hydroponics", UnlockedBy: "Hydroponics Tech",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "unobtainium", Count: 1, CostExponentBase: 1.15,
+			Name: "unobtainium", Count: 1,
 		}, {
-			Name: "kerosene", Count: 500, CostExponentBase: 1.15,
+			Name: "kerosene", Count: 500,
 		}},
 	}, {
 		Name: "HR Harvester", UnlockedBy: "Umbra Mission",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "relic", Count: 25, CostExponentBase: 1.15,
+			Name: "relic", Count: 25,
 		}, {
-			Name: "antimatter", Count: 1250, CostExponentBase: 1.15,
+			Name: "antimatter", Count: 1250,
 		}},
 	}, {
 		Name: "Entanglement Station", UnlockedBy: "Quantum Cryptography",
+		CostExponentBase: 1.15,
 		Costs: []R{{
-			Name: "relic", Count: 1250, CostExponentBase: 1.15,
+			Name: "relic", Count: 1250,
 		}, {
-			Name: "antimatter", Count: 5250, CostExponentBase: 1.15,
+			Name: "antimatter", Count: 5250,
 		}, {
-			Name: "eludium", Count: 5000, CostExponentBase: 1.15,
+			Name: "eludium", Count: 5000,
 		}},
 	}, {
 		Name: "Tectonic", UnlockedBy: "Terraformation",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "science", Count: 600000, CostExponentBase: 1.25,
+			Name: "science", Count: 600000,
 		}, {
-			Name: "antimatter", Count: 500, CostExponentBase: 1.25,
+			Name: "antimatter", Count: 500,
 		}, {
-			Name: "thorium", Count: 75000, CostExponentBase: 1.25,
+			Name: "thorium", Count: 75000,
 		}},
 	}, {
 		Name: "Molten Core", UnlockedBy: "Exophysics",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "science", Count: 25000000, CostExponentBase: 1.25,
+			Name: "science", Count: 25000000,
 		}, {
-			Name: "uranium", Count: 5000000, CostExponentBase: 1.25,
+			Name: "uranium", Count: 5000000,
 		}},
 	}, {
 		Name: "Hash Level", UnlockedBy: "Entanglement Station",
-		Costs: []R{{Name: "hash", Count: 1600, CostExponentBase: 1.6}},
+		CostExponentBase: 1.6,
+		Costs:            []R{{Name: "hash", Count: 1600}},
 	}, {
 		Name: "Temporal Battery", UnlockedBy: "Chronoforge",
-		Costs: []R{{Name: "time crystal", Count: 5, CostExponentBase: 1.25}},
+		CostExponentBase: 1.25,
+		Costs:            []R{{Name: "time crystal", Count: 5}},
 	}, {
 		Name: "Chrono Furnace", UnlockedBy: "Chronoforge",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "time crystal", Count: 25, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 25,
 		}, {
-			Name: "relic", Count: 5, CostExponentBase: 1.25,
+			Name: "relic", Count: 5,
 		}},
 	}, {
 		Name: "Time Boiler", UnlockedBy: "Chronoforge",
-		Costs: []R{{Name: "time crystal", Count: 25000, CostExponentBase: 1.25}},
+		CostExponentBase: 1.25,
+		Costs:            []R{{Name: "time crystal", Count: 25000}},
 	}, {
 		Name: "Temporal Accelerator", UnlockedBy: "Chronoforge",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "time crystal", Count: 10, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 10,
 		}, {
-			Name: "relic", Count: 1000, CostExponentBase: 1.25,
+			Name: "relic", Count: 1000,
 		}},
 	}, {
 		Name: "Time Impedance", UnlockedBy: "Chronoforge",
+		CostExponentBase: 1.05,
 		Costs: []R{{
-			Name: "time crystal", Count: 100, CostExponentBase: 1.05,
+			Name: "time crystal", Count: 100,
 		}, {
-			Name: "relic", Count: 250, CostExponentBase: 1.05,
+			Name: "relic", Count: 250,
 		}},
 	}, {
 		Name: "Resource Retrieval", UnlockedBy: "Paradox Theory",
-		Costs: []R{{Name: "time crystal", Count: 1000, CostExponentBase: 1.3}},
+		CostExponentBase: 1.3,
+		Costs:            []R{{Name: "time crystal", Count: 1000}},
 	}, {
 		Name: "Temporal Press", UnlockedBy: "Chronosurge",
+		CostExponentBase: 1.1,
 		Costs: []R{{
-			Name: "time crystal", Count: 100, CostExponentBase: 1.1,
+			Name: "time crystal", Count: 100,
 		}, {
-			Name: "void", Count: 10, CostExponentBase: 1.1,
+			Name: "void", Count: 10,
 		}},
 	}, {
 		Name: "Cryochambers", UnlockedBy: "Void Space",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "time crystal", Count: 2, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 2,
 		}, {
-			Name: "void", Count: 100, CostExponentBase: 1.25,
+			Name: "void", Count: 100,
 		}, {
-			Name: "karma", Count: 1, CostExponentBase: 1.25,
+			Name: "karma", Count: 1,
 		}},
 	}, {
 		Name: "Void Hoover", UnlockedBy: "Void Aspiration",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "time crystal", Count: 10, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 10,
 		}, {
-			Name: "void", Count: 250, CostExponentBase: 1.25,
+			Name: "void", Count: 250,
 		}, {
-			Name: "antimatter", Count: 1000, CostExponentBase: 1.25,
+			Name: "antimatter", Count: 1000,
 		}},
 	}, {
 		Name: "Void Rift", UnlockedBy: "Void Aspiration",
-		Costs: []R{{Name: "void", Count: 75, CostExponentBase: 1.3}},
+		CostExponentBase: 1.3,
+		Costs:            []R{{Name: "void", Count: 75}},
 	}, {
 		Name: "Chronocontrol", UnlockedBy: "Paradox Theory",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "time crystal", Count: 30, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 30,
 		}, {
-			Name: "void", Count: 500, CostExponentBase: 1.25,
+			Name: "void", Count: 500,
 		}, {
-			Name: "temporal flux", Count: 3000, CostExponentBase: 1.25,
+			Name: "temporal flux", Count: 3000,
 		}},
 	}, {
 		Name: "Void Resonator", UnlockedBy: "Paradox Theory",
+		CostExponentBase: 1.25,
 		Costs: []R{{
-			Name: "time crystal", Count: 1000, CostExponentBase: 1.25,
+			Name: "time crystal", Count: 1000,
 		}, {
-			Name: "relic", Count: 10000, CostExponentBase: 1.25,
+			Name: "relic", Count: 10000,
 		}, {
-			Name: "void", Count: 50, CostExponentBase: 1.25,
+			Name: "void", Count: 50,
 		}},
 	}, {
 		Name: "karma", UnlockedBy: "Hut", ResetResource: "karma",
-		Costs: []R{{
-			Name: "karma kitten", Count: 1, CostExponentBase: 1.13,
-		}},
+		CostExponentBase: 1.13,
+		Costs:            []R{{Name: "karma kitten", Count: 1}},
 	}})
 
 	addJobs(g, []data.Action{{

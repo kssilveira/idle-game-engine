@@ -658,10 +658,7 @@ func (g *Game) GetActionIndex(name string) int {
 }
 
 func (g *Game) getCost(a data.Action, c data.Resource) float64 {
-	base := c.CostExponentBase
-	if base == 0 {
-		base = a.CostExponentBase
-	}
+	base := a.CostExponentBase
 	if base == 0 {
 		base = g.getOneRate(a.CostExponentBaseResource)
 	}

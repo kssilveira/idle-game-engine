@@ -23,9 +23,10 @@ func main() {
 		Name: "Catnip Field", Cap: -1,
 	}})
 	g.AddActions([]data.Action{{
-		Name: "Catnip Field",
+		Name:             "Catnip Field",
+		CostExponentBase: 1.12,
 		Costs: []data.Resource{{
-			Name: "catnip", Count: 10, CostExponentBase: 1.12,
+			Name: "catnip", Count: 10,
 		}},
 		Adds: []data.Resource{{
 			Name: "Catnip Field", Count: 1,

@@ -37,9 +37,10 @@ func TestAct(t *testing.T) {
 			Name: "producer", Cap: -1,
 		}},
 		actions: []data.Action{{
-			Name: "producer",
+			Name:             "producer",
+			CostExponentBase: 2,
 			Costs: []data.Resource{{
-				Name: "resource", Count: 1, CostExponentBase: 2,
+				Name: "resource", Count: 1,
 			}},
 			Adds: []data.Resource{{
 				Name: "producer", Count: 1,
@@ -62,9 +63,10 @@ func TestAct(t *testing.T) {
 			Name: "producer", Cap: -1,
 		}},
 		actions: []data.Action{{
-			Name: "producer",
+			Name:             "producer",
+			CostExponentBase: 2,
 			Costs: []data.Resource{{
-				Name: "resource", Count: 1, CostExponentBase: 2,
+				Name: "resource", Count: 1,
 			}},
 			Adds: []data.Resource{{
 				Name: "producer", Count: 1,
@@ -121,9 +123,10 @@ func TestAct(t *testing.T) {
 			Name: "producer", Cap: -1,
 		}},
 		actions: []data.Action{{
-			Name: "producer",
+			Name:             "producer",
+			CostExponentBase: 2,
 			Costs: []data.Resource{{
-				Name: "resource", Count: 1, CostExponentBase: 2,
+				Name: "resource", Count: 1,
 			}},
 			Adds: []data.Resource{{
 				Name: "producer", Count: 1,
@@ -156,9 +159,10 @@ func TestAct(t *testing.T) {
 			Name: "producer", Cap: -1,
 		}},
 		actions: []data.Action{{
-			Name: "producer",
+			Name:             "producer",
+			CostExponentBase: 2,
 			Costs: []data.Resource{{
-				Name: "resource", Count: 1, CostExponentBase: 2,
+				Name: "resource", Count: 1,
 			}},
 			Adds: []data.Resource{{
 				Name: "producer", Count: 1,
@@ -240,9 +244,10 @@ func TestAct(t *testing.T) {
 			Name: "producer", Cap: -1,
 		}},
 		actions: []data.Action{{
-			Name: "producer",
+			Name:             "producer",
+			CostExponentBase: 2,
 			Costs: []data.Resource{{
-				Name: "resource", Count: 1, CostExponentBase: 2,
+				Name: "resource", Count: 1,
 			}},
 			Adds: []data.Resource{{
 				Name: "producer", Count: 1,

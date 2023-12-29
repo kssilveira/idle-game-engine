@@ -39,9 +39,6 @@ type Resource struct {
 	// Count = ResetResource.Count
 	ResetResource string `json:",omitempty"`
 
-	// Cost = Count * pow(CostExponentBase, add.Count)
-	CostExponentBase float64 `json:",omitempty"`
-
 	ProducerAction string `json:",omitempty"`
 
 	// generated production formula
