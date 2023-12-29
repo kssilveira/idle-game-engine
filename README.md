@@ -111,5 +111,5 @@ TODO:
 - remove redundant cost exponent base
 - format numbers like '1 000 000.00'
 - add colors to textui
-- record terminal using https://asciinema.org/
 - make [solve.go](kittens/solve/solve.go) get everything
+- record terminal using https://asciinema.org/

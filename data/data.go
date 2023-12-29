@@ -41,8 +41,6 @@ type Resource struct {
 
 	// Cost = Count * pow(CostExponentBase, add.Count)
 	CostExponentBase float64 `json:",omitempty"`
-	// Cost = Count * pow(rate(CostExponentBaseResource), add.Count)
-	CostExponentBaseResource *Resource `json:",omitempty"`
 
 	ProducerAction string `json:",omitempty"`
 
@@ -58,6 +56,12 @@ type Action struct {
 	Costs      []Resource `json:",omitempty"`
 	Adds       []Resource `json:",omitempty"`
 	IsHidden   bool       `json:",omitempty"`
+
+	// Cost = Count * pow(CostExponentBase, add.Count)
+	CostExponentBase float64 `json:",omitempty"`
+	// Cost = Count * pow(rate(CostExponentBaseResource), add.Count)
+	CostExponentBaseResource *Resource `json:",omitempty"`
+
 	// extra fields for convenience
 	Producers     []Resource `json:",omitempty"`
 	Bonus         []Resource `json:",omitempty"`

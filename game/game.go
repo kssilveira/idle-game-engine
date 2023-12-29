@@ -94,6 +94,11 @@ func (g *Game) Validate() error {
 				}
 			}
 		}
+		if a.CostExponentBaseResource != nil {
+			if err := g.validateResource(a.CostExponentBaseResource); err != nil {
+				return err
+			}
+		}
 	}
 	return nil
 }
@@ -537,11 +542,6 @@ func (g *Game) validateResource(r *data.Resource) error {
 			}
 		}
 	}
-	if r.CostExponentBaseResource != nil {
-		if err := g.validateResource(r.CostExponentBaseResource); err != nil {
-			return err
-		}
-	}
 	if r.StartCount != 0 || r.StartCountFromZero {
 		if r.Count != 0 {
 			return fmt.Errorf("resource %s has StartCount and Count", r.Name)
@@ -661,8 +661,11 @@ func (g *Game) GetActionIndex(name string) int {
 
 func (g *Game) getCost(a data.Action, c data.Resource) float64 {
 	base := c.CostExponentBase
-	if c.CostExponentBaseResource != nil {
-		base = g.getOneRate(*c.CostExponentBaseResource)
+	if base == 0 {
+		base = a.CostExponentBase
+		if a.CostExponentBaseResource != nil {
+			base = g.getOneRate(*a.CostExponentBaseResource)
+		}
 	}
 	if base == 0 {
 		base = 1
