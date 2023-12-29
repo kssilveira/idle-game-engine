@@ -108,5 +108,7 @@ Missing features:
 
 TODO:
 
+- add | to textui before rate
+- change epiphany and workship to craft
 - make [solve.go](kittens/solve/solve.go) get everything
 - record terminal using https://asciinema.org/

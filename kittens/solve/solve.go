@@ -15,69 +15,69 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"Gather catnip", "Catnip Field", "m Catnip Field",
 		"s Refine catnip", "Hut", "s woodcutter",
 		"s Library", "s scholar", "m Library",
-		"s Calendar", "s Agriculture", "s Hut", "s farmer", "s farmer",
+		"m Calendar", "m Agriculture", "s Hut", "m farmer",
 		"m Barn", "m Catnip Field", "m Library",
-		"s Archery", "s Hut", "s hunter", "s farmer",
-		"s Animal Husbandry", "m Pasture",
+		"m Archery", "s Hut", "s hunter", "s farmer",
+		"m Animal Husbandry", "m Pasture",
 
 		"40 s Send hunters", "Unic. Pasture", "10 s Unic. Pasture",
 
-		"s Mining", "s Mine", "s Hut", "s miner", "s farmer", "m Mine",
-		"m Workshop", "s Mineral Hoes", "s Mineral Axe", "s Bolas",
-		"s Metal Working",
+		"m Mining", "s Mine", "s Hut", "s miner", "s farmer", "m Mine",
+		"m Workshop", "m Mineral Hoes", "m Mineral Axe", "m Bolas",
+		"m Metal Working",
 
-		"s Smelter", "s Hut", "s woodcutter", "s farmer", "Active Smelter",
-		"s Iron Hoes", "s Iron Axe",
+		"m Smelter", "s Hut", "s woodcutter", "s farmer", "Active Smelter",
+		"m Iron Hoes", "m Iron Axe",
 
-		"s Expanded Barns",
+		"m Expanded Barns",
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
-		"s Hunting Armour",
+		"m Hunting Armour",
 
-		"s Civil Service", "s Mathematics",
+		"m Civil Service", "m Mathematics",
 		"m Academy",
-		"s Celestial Mechanics",
+		"m Celestial Mechanics",
 
-		"s Construction", "s Catnip Enrichment", "s Composite Bow",
+		"m Construction", "m Catnip Enrichment", "m Composite Bow",
 		"m Reinforced Barns",
 		"11 s Warehouse",
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
 		"m Academy", "m Lumber Mill",
-		"s Reinforced Saw",
+		"m Reinforced Saw",
 
-		"s Engineering", "m Aqueduct",
-		"s Currency", "s Gold Ore", "m Tradepost",
+		"m Engineering", "m Aqueduct",
+		"m Currency", "m Gold Ore", "m Tradepost",
 
 		"11 s Sharks", "m Ziggurat",
-		"s Hunting Armour",
+		"m Hunting Armour",
 
-		"s Writing", "m Amphitheatre",
-		"s Register",
+		"m Writing", "m Amphitheatre",
+		"m Register",
 
-		"s Philosophy", "100 s Sharks", "m Temple", "m Amphitheatre",
+		"m Philosophy", "100 s Sharks", "m Temple", "m Amphitheatre",
 
-		"s Steel", "s Coal Furnace", "s Deep Mining", "s Steel Axe", "s Steel Armour", "s High Pressure Engine",
+		"m Steel", "m Coal Furnace", "m Deep Mining", "m Steel Axe", "m Steel Armour", "m High Pressure Engine",
 
-		"s Reinforced Warehouses",
+		"m Reinforced Warehouses",
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
 		"m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost",
 
-		"s Machinery", "s Crossbow", "s Printing Press", "s Workshop Automation",
+		"m Machinery", "m Crossbow", "m Printing Press", "m Workshop Automation",
 		"10 s Steamworks", "Active Steamworks", "m Temple",
 
-		"s Theology", "s Hut", "s priest", "s farmer",
+		"m Theology", "s Hut", "s priest", "s farmer",
 		"m Golden Spire", "m Solar Chant", "m Scholasticism",
 		"10 s Praise the sun!",
 
-		"s Astronomy", "m Observatory",
+		"m Astronomy", "m Observatory",
 
-		"s Navigation",
+		"m Navigation",
 		"3 s Hut", "3 s woodcutter", "3 s farmer",
 
 		"11 s Harbour",
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Temple", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism",
-		"s Ironwood Huts", "s Solar Revolution",
+		"m Ironwood Huts", "m Solar Revolution",
 
-		"s Architecture",
+		"m Architecture",
 		"5 s Hut", "5 s woodcutter", "5 s farmer",
 		"s Hut", "s miner", "s farmer",
 		"13 s Hut", "13 s hunter", "13 s farmer",
@@ -86,16 +86,45 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"m Temple", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Basilica",
 
 		"11 s Unicorn Tomb", "11 s Ivory Tower", "11 s Ivory Citadel", "11 s Sky Palace", "11 s Unicorn Utopia", "11 s Sunspire",
-		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine",
-		"m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple",
 		"s Unicorn Utopia", "6 s Sunspire",
 		"m Basilica",
 
-		"2 s Physics", "s Steel Saw", "s Caravanserai", "s Pyrolysis", "3 s Pneumatic Press",
+		"2 s Physics", "m Steel Saw", "m Caravanserai", "m Pyrolysis", "m Pneumatic Press",
 
 		"2 s Chemistry", "22 s Oil Well",
 		"30 s Hut", "30 s miner", "30 s farmer",
-		"100 s Zebras", "s Calciner", "Active Calciner", "m Calciner",
+		"100 s Zebras", "m Calciner", "Active Calciner", "m Calciner",
+		"m Mine", "m Amphitheatre", "m Sunspire",
+		"m Titanium Saw", "m Titanium Axe", "m Alloy Axe", "m Titanium Barns", "m Alloy Barns", "m Alloy Warehouses", "m Expanded Cargo", "m Silos", "m Alloy Armour", "m Astrolabe", "m Titanium Reflectors", "m Alloy Saw", "m Titanium Warehouses",
+
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple", "m Academy", "m Amphitheatre", "m Sunspire", "m Golden Spire", "m Basilica", "m Templars",
+		"m Apocrypha", "5 s Adore the galaxy",
+
+		"m Acoustics", "m Chapel",
+
+		"m Geology",
+		"s Hut", "s geologist", "s farmer",
+		"m Geodesy",
+		"11 s Quarry",
+
+		"m Electricity", "13 s Magneto", "Active Magneto",
+		"m Industrialization",
+		"m Barges", "m Advanced Automation", "m Logistics",
+		"2 s Hut", "2 s woodcutter", "2 s farmer",
+		"2 Active Smelter",
+
+		"m Biology", "m Bio Lab", "Active Bio Lab",
+
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple", "m Academy", "m Amphitheatre", "m Sunspire", "m Golden Spire", "m Basilica", "m Templars",
+
+		"m Drama and Poetry", "s Brewery", "s Festival",
+
+		"m Mechanization", "m Concrete Pillars", "m Pumpjack", "m Concrete Warehouses", "m Concrete Barns",
+
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple", "m Academy", "m Amphitheatre", "m Sunspire", "m Golden Spire", "m Basilica", "m Templars", "m Library", "m Mine", "m Workshop", "m Pasture", "m Lumber Mill", "m Factory", "m Chapel", "m Bio Lab",
+
+		"m Transcendence",
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {
