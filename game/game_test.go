@@ -177,9 +177,56 @@ func TestAct(t *testing.T) {
 			}},
 		}},
 		inputs: []string{"0", "s0", "s0", "s0"},
-		want:   []int{0, 0, 2, 0},
+		want:   []int{0, 0, 0, 0},
 		wantResources: map[string]int{
-			"producer": 3,
+			"producer": 4,
+		},
+	}, {
+		name: "make twice nested producer action",
+		resources: []data.Resource{{
+			Name: "resource", Count: 1, Cap: -1,
+			ProducerAction: "make resource",
+		}, {
+			Name: "nested", Cap: 2,
+			ProducerAction: "make nested",
+		}, {
+			Name: "leaf", Cap: 2,
+			Producers: []data.Resource{{
+				Name: "producer", Factor: 1,
+			}},
+		}, {
+			Name: "producer", Cap: -1,
+		}},
+		actions: []data.Action{{
+			Name:             "producer",
+			CostExponentBase: 2,
+			Costs: []data.Resource{{
+				Name: "resource", Count: 1,
+			}},
+			Adds: []data.Resource{{
+				Name: "producer", Count: 1,
+			}},
+		}, {
+			Name: "make resource",
+			Costs: []data.Resource{{
+				Name: "nested", Count: 1,
+			}},
+			Adds: []data.Resource{{
+				Name: "resource", Count: 1,
+			}},
+		}, {
+			Name: "make nested",
+			Costs: []data.Resource{{
+				Name: "leaf", Count: 1,
+			}},
+			Adds: []data.Resource{{
+				Name: "nested", Count: 1,
+			}},
+		}},
+		inputs: []string{"0", "s0", "s0", "s0"},
+		want:   []int{0, 0, 0, 0},
+		wantResources: map[string]int{
+			"producer": 4,
 		},
 	}, {
 		name: "add 1 capacity",
@@ -254,7 +301,7 @@ func TestAct(t *testing.T) {
 			}},
 		}},
 		inputs: []string{"0", "m0"},
-		want:   []int{0, 10},
+		want:   []int{0, 2},
 		wantResources: map[string]int{
 			"producer": 4, // cost 1, 2, 4, 8, 16
 		},

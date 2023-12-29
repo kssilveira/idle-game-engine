@@ -302,12 +302,16 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		return input, err
 	}
 	if input.Type == data.ParsedInputTypeSkip {
-		skipTime, err := g.getSkipTime(input.Action)
+		skipTime, err := g.getSkipTime(input.Action, false /* isNested */)
 		if err != nil {
 			return input, err
 		}
-		if skipTime > 0 {
+		for skipTime > 0 {
 			g.timeSkip(skipTime)
+			skipTime, err = g.getSkipTime(input.Action, false /* isNested */)
+			if err != nil {
+				return input, err
+			}
 		}
 	}
 	if input.Type == data.ParsedInputTypeSkip || input.Type == data.ParsedInputTypeCreate {
@@ -319,32 +323,21 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 			nested := fmt.Sprintf("%d", g.actionToIndex[r.ProducerAction])
 			need := int(g.getNeededNestedAction(input.Action, c))
 			for i := 0; i < need; i++ {
-				if _, err := g.act(nested); err != nil {
+				if _, err := g.act(input.Type + nested); err != nil {
 					break
 				}
 			}
 		}
 	}
 	if input.Type == data.ParsedInputTypeMax {
-		prefixes := []string{"s", "s", "c", ""}
 		for {
-			errors := 0
-			for _, prefix := range prefixes {
-				if _, err := g.act(fmt.Sprintf("%s%d", prefix, input.Index)); err != nil {
-					errors++
-				}
-			}
-			if errors > 3 || g.isLocked(input.Action) {
-				break
+			if _, err := g.act(fmt.Sprintf("s%d", input.Index)); err != nil {
+				return input, nil
 			}
 		}
-		return input, nil
 	}
 	for _, c := range input.Action.Costs {
 		if g.GetResource(c.Name).Count < g.getCost(input.Action, c) {
-			if input.Type == data.ParsedInputTypeSkip {
-				return input, nil
-			}
 			return input, fmt.Errorf("not enough %s", c.Name)
 		}
 	}
@@ -454,7 +447,7 @@ func (g *Game) checkMax(a data.Action) error {
 	return nil
 }
 
-func (g *Game) getSkipTime(a data.Action) (time.Duration, error) {
+func (g *Game) getSkipTime(a data.Action, isNested bool) (time.Duration, error) {
 	var skipTime time.Duration
 	for _, c := range a.Costs {
 		r := g.GetResource(c.Name)
@@ -462,7 +455,13 @@ func (g *Game) getSkipTime(a data.Action) (time.Duration, error) {
 		if r.Count >= cost {
 			continue
 		}
-		if g.getRate(r) > 0 && (r.Cap == -1 || r.Count < r.Cap) {
+		if r.Count == r.Cap {
+			continue
+		}
+		if !isNested && r.Cap != -1 && cost > r.Cap {
+			return 0, fmt.Errorf("not enough cap for %s", c.Name)
+		}
+		if g.getRate(r) > 0 {
 			duration := g.getDuration(r, cost) + time.Second
 			if duration > skipTime {
 				skipTime = duration
@@ -470,7 +469,7 @@ func (g *Game) getSkipTime(a data.Action) (time.Duration, error) {
 			continue
 		}
 		if r.ProducerAction != "" {
-			duration, err := g.getSkipTime(g.getNestedAction(a, c))
+			duration, err := g.getSkipTime(g.getNestedAction(a, c), true /* isNested */)
 			if err == nil {
 				if duration > skipTime {
 					skipTime = duration
