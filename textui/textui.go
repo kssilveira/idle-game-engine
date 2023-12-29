@@ -32,6 +32,9 @@ func Show(cfg Config, data *ui.Data) {
 	if data.LastInput.IsMax {
 		prefix = "max "
 	}
+	if data.LastInput.IsReset {
+		prefix = "reset "
+	}
 	cfg.Logger.Printf("last action: %s%s\n", prefix, data.LastInput.Action.Name)
 	if data.Error != nil {
 		cfg.Logger.Printf("error: %v\n", data.Error)

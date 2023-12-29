@@ -955,6 +955,405 @@
       "Formula": "Count = ((c(Enlightenment) * -0.01) + (c(Golden Ratio) * -0.01618) + (c(Divine Proportion) * -0.017777) + (c(Vitruvian Feline) * -0.02) + (c(Renaissance) * -0.0225))"
     },
     {
+      "Name": "reset catnip",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "catnip",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset catnip",
+      "Formula": "Count = (c(catnip) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset wood",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "wood",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset wood",
+      "Formula": "Count = (c(wood) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset mineral",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "mineral",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset mineral",
+      "Formula": "Count = (c(mineral) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset coal",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "coal",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset coal",
+      "Formula": "Count = (c(coal) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset iron",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "iron",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset iron",
+      "Formula": "Count = (c(iron) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset titanium",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "titanium",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset titanium",
+      "Formula": "Count = (c(titanium) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset gold",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "gold",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset gold",
+      "Formula": "Count = (c(gold) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset oil",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "oil",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset oil",
+      "Formula": "Count = (c(oil) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset uranium",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "uranium",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset uranium",
+      "Formula": "Count = (c(uranium) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset unobtainium",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "unobtainium",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset unobtainium",
+      "Formula": "Count = (c(unobtainium) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset antimatter",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "antimatter",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset antimatter",
+      "Formula": "Count = (c(antimatter) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset catpower",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "catpower",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset catpower",
+      "Formula": "Count = (c(catpower) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset science",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "science",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset science",
+      "Formula": "Count = (c(science) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset culture",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "culture",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset culture",
+      "Formula": "Count = (c(culture) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset faith",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "faith",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset faith",
+      "Formula": "Count = (c(faith) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset starchart",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "starchart",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset starchart",
+      "Formula": "Count = (c(starchart) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset relic",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "relic",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset relic",
+      "Formula": "Count = (c(relic) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset void",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "void",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset void",
+      "Formula": "Count = (c(void) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "reset blackcoin",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "blackcoin",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset blackcoin",
+      "Formula": "Count = (c(blackcoin) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "catnip cap",
       "Type": "Resource",
       "IsHidden": true,
@@ -1312,6 +1711,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "catnip cap",
+      "ResetResource": "reset catnip",
       "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(woodcutter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(scholar)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(farmer)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(hunter)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(miner)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(priest)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (floor(c(geologist)) * -4.25 * (1 + (c(Pasture) * -0.005) + (c(Unic. Pasture) * -0.0015) + (c(Robotic Assistance) * -0.25))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025 * (1 + (c(Yarn) * c(Numerology)) + (c(Piscine) * -0.5 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -1524,6 +1924,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "wood cap",
+      "ResetResource": "reset wood",
       "Formula": "Count += ((((c(woodcutter) * 0.09 * (1 + c(happiness) + (c(Mineral Axe) * 0.7) + (c(Iron Axe) * 0.5) + (c(Steel Axe) * 0.5) + (c(Titanium Axe) * 0.5) + (c(Alloy Axe) * 0.5))) + (c(Active Smelter) * -0.25) + (c(Active Steamworks) * -0.000025 * (c(Workshop Automation) * (c(wood cap) * (1 + c(Advanced Automation)))))) * ((1 + (c(Lumber Mill) * 0.1 * (1 + (c(Reinforced Saw) * 0.2) + (c(Steel Saw) * 0.2) + (c(Titanium Saw) * 0.15) + (c(Alloy Saw) * 0.15)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -1843,6 +2244,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "science cap",
+      "ResetResource": "reset science",
       "Formula": "Count += ((((c(scholar) * 0.175 * (1 + c(happiness))) + (0.03125 * (1 + c(AstronomicalEventBonus))) + (c(Celestial Mechanics) * 0.0075 * (1 + c(AstronomicalEventBonus)))) * ((1 + (c(Library) * 0.1) + (c(Academy) * 0.2) + (c(Observatory) * 0.25) + (c(Bio Lab) * 0.35) + (c(Data Center) * 0.1 * (1 + (c(Bio Lab) * 0.01 * c(Uplink)) + (c(AI Core) * 0.1 * c(Machine Learning)))) + (c(Space Station) * 0.5 * (1 + (c(Cath) * 0.5 * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Piscine) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -1948,6 +2350,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "catpower cap",
+      "ResetResource": "reset catpower",
       "Formula": "Count += ((((c(hunter) * 0.3 * (1 + c(happiness) + (c(Composite Bow) * 0.5) + (c(Crossbow) * 0.25) + (c(Railgun) * 0.25))) + (c(Active Mint) * -3.75)) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Cath) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -2135,6 +2538,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "mineral cap",
+      "ResetResource": "reset mineral",
       "Formula": "Count += ((((c(miner) * 0.25 * (1 + c(happiness) + (c(Mine) * 0.2) + (c(Quarry) * 0.35))) + (c(Active Smelter) * -0.5) + (c(Active Calciner) * -7.5) + (0.0125 * (1 + c(AstronomicalEventBonus))) + (c(Active Steamworks) * -0.000025 * (c(Workshop Automation) * (c(mineral cap) * (1 + c(Advanced Automation)))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -2338,6 +2742,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "iron cap",
+      "ResetResource": "reset iron",
       "Formula": "Count += ((((c(Active Smelter) * 0.1 * (1 + (c(Electrolytic Smelting) * 0.95))) + (c(Active Calciner) * 0.75 * (1 + (c(Oxidation) * 0.95) + (c(Rotary Kiln) * 0.75) + c(Fluoridized Reactors))) + (c(Active Calciner) * -0.075 * c(Steel Plants)) + (c(Active Steamworks) * -0.000025 * (c(Workshop Automation) * (c(Pneumatic Press) * (c(iron cap) * (1 + c(Advanced Automation))))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -2548,6 +2953,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "coal cap",
+      "ResetResource": "reset coal",
       "Formula": "Count += ((((c(geologist) * 0.075 * (1 + c(happiness) + (c(Geodesy) * 0.5) + (c(Mining Drill) * 0.66) + c(Unobtainium Drill))) + (c(Quarry) * 0.075) + (c(Active Smelter) * 0.025 * (c(Coal Furnace) * (1 + (c(Electrolytic Smelting) * 0.95)))) + (c(Mine) * 0.015 * c(Deep Mining)) + (c(Active Calciner) * -0.075 * c(Steel Plants))) * ((1 + (c(Pyrolysis) * 0.2) + ((1 if c(Active Steamworks) gt 0) * -0.8 * (1 + (c(High Pressure Engine) * -0.25) + (c(Fuel Injector) * -0.25)))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -2710,6 +3116,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "gold cap",
+      "ResetResource": "reset gold",
       "Formula": "Count += ((((c(Active Mint) * -0.025) + (c(Active Smelter) * 0.005 * c(Gold Ore)) + (c(geologist) * 0.004 * (c(Geodesy) * (1 + (c(Mining Drill) * 0.625) + (c(Unobtainium Drill) * 0.625))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Umbra) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -2871,6 +3278,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "titanium cap",
+      "ResetResource": "reset titanium",
       "Formula": "Count += ((((c(Active Accelerator) * -0.075) + (c(Active Calciner) * 0.0025 * (1 + (c(Oxidation) * 2.85) + (c(Rotary Kiln) * 2.25) + (c(Fluoridized Reactors) * 3))) + (c(Active Smelter) * 0.0075 * c(Nuclear Smelter))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 1.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -3027,6 +3435,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "oil cap",
+      "ResetResource": "reset oil",
       "Formula": "Count += ((((c(Oil Well) * 0.1 * (1 + (c(Pumpjack) * 0.45) + (c(Oil Refinery) * 0.35) + (c(Oil Distillation) * 0.75))) + (c(Active Magneto) * -0.25) + (c(Active Calciner) * -0.12) + (c(Active Bio Lab) * 0.1 * (c(Biofuel Processing) * (1 + (c(GM Catnip) * 0.6)))) + (c(Hydraulic Fracturer) * 2.5 * (1 + c(SpaceProductionBonus) + (c(Umbra) * -0.25 * c(Numerology)) + (c(Dune) * 0.5 * c(Numerology))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Termogus) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -3181,6 +3590,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "uranium cap",
+      "ResetResource": "reset uranium",
       "Formula": "Count += ((((c(Active Accelerator) * 0.0125) + (c(Active Reactor) * -0.005 * (1 + (c(Enriched Uranium) * -0.25))) + (c(Quarry) * 0.0025 * (c(Orbital Geodesy) * (1 + (c(Enriched Uranium) * 0.25)))) + (c(Active Lunar Outpost) * -1.75 * (1 + c(SpaceProductionBonus))) + (c(Planet Cracker) * 1.5 * (1 + c(Planet Busters) + c(SpaceProductionBonus) + (c(Umbra) * -0.1 * c(Numerology)) + (c(Dune) * 0.1 * c(Numerology))))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Dune) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -3300,12 +3710,34 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "unobtainium cap",
+      "ResetResource": "reset unobtainium",
       "Formula": "Count += (((c(Active Lunar Outpost) * 0.035 * (1 + c(SpaceProductionBonus) + (c(Charon) * -0.1 * c(Numerology)) + (c(Redmoon) * 0.2 * c(Numerology)))) * ((1 + (c(Microwarp Reactors) * 0.75)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Redmoon) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+    },
+    {
+      "Name": "reset time crystal",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "time crystal",
+          "Bonus": [
+            {
+              "Name": "Anachronomancy"
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset time crystal",
+      "Formula": "Count = (c(time crystal) * c(Anachronomancy))"
     },
     {
       "Name": "time crystal",
       "Type": "Resource",
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "reset time crystal"
     },
     {
       "Name": "antimatter cap",
@@ -3346,6 +3778,7 @@
         }
       ],
       "CapResource": "antimatter cap",
+      "ResetResource": "reset antimatter",
       "Formula": "Count += ((c(Sunlifter) * 0.00125) * seconds)"
     },
     {
@@ -3393,6 +3826,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
+      "ResetResource": "reset relic",
       "Formula": "Count += (((c(Space Beacon) * 0.005 * (c(Relic Station) * (1 + (c(Black Nexus) * 0.1 * c(Black Pyramid)) + (c(Hash Level) * 0.25) + c(SpaceProductionBonus)))) * (1 + c(GlobalProductionBonus))) * seconds)"
     },
     {
@@ -3433,6 +3867,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
+      "ResetResource": "reset void",
       "Formula": "Count += (((c(Chronosphere) * 0.000025 * (1 + c(Void Hoover))) * ((1 + (c(Chronocontrol) * (1 + (c(Distortion) * 2)))) * (1 + c(GlobalProductionBonus)))) * seconds)"
     },
     {
@@ -3483,12 +3918,14 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "temporal flux cap",
+      "ResetResource": "temporal flux",
       "Formula": "Count += ((((0.008333 * (1 + (c(Temporal Accelerator) * 0.05))) + (c(Chronosphere) * 0.00125 * c(Chronosurge))) * (1 + c(GlobalProductionBonus))) * seconds)"
     },
     {
       "Name": "blackcoin",
       "Type": "Resource",
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "reset blackcoin"
     },
     {
       "Name": "kitten",
@@ -3911,6 +4348,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "culture cap",
+      "ResetResource": "reset culture",
       "Formula": "Count += ((((c(Amphitheatre) * 0.025) + (c(Chapel) * 0.25) + (c(Temple) * 0.5 * (1 + (c(Stained Glass) * 0.5) + (c(Basilica) * 2)))) * ((1 + c(GlobalProductionBonus)) * (1 + (c(Yarn) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -4003,6 +4441,7 @@
       ],
       "BonusIsMultiplicative": true,
       "CapResource": "faith cap",
+      "ResetResource": "reset faith",
       "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075 * c(Theology)) + (c(Chapel) * 0.025)) * ((1 + (c(Solar Chant) * 0.1)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -4013,7 +4452,8 @@
     {
       "Name": "epiphany",
       "Type": "Resource",
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "epiphany"
     },
     {
       "Name": "starchart",
@@ -4162,6 +4602,7 @@
         }
       ],
       "BonusIsMultiplicative": true,
+      "ResetResource": "reset starchart",
       "Formula": "Count += ((((c(scholar) * 0.0005 * c(Astrophysicists)) + (c(Satellite) * 0.005 * (1 + (c(Cath) * c(Numerology)) + (c(Kairo) * -0.25 * c(Numerology)))) + (c(Research Vessel) * 0.05 * (1 + c(SpaceProductionBonus) + (c(Yarn) * -0.5 * c(Numerology)) + (c(Piscine) * 0.5 * c(Numerology)))) + (c(Space Beacon) * 0.125 * (1 + c(SpaceProductionBonus) + (c(Cath) * -0.5 * c(Numerology)) + (c(Kairo) * 4 * c(Numerology)))) + (c(Astronomy) * 0.00125 * (1 + c(AstronomicalEventBonus)))) * ((1 + (c(Hubble Space Telescope) * 0.3)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Kairo) * 4 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
@@ -4354,7 +4795,8 @@
     {
       "Name": "sorrow",
       "Type": "Resource",
-      "CapResource": "sorrow cap"
+      "CapResource": "sorrow cap",
+      "ResetResource": "sorrow"
     },
     {
       "Name": "chronoheat cap",
@@ -4405,9 +4847,82 @@
       "Formula": "Count += ((c(Chrono Furnace) * 0.1 * (1 if c(chronoheat) gt 0)) * seconds)"
     },
     {
-      "Name": "karma",
+      "Name": "kitten minus 35",
       "Type": "Resource",
-      "Cap": -1
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Factor": -35
+        },
+        {
+          "Name": "all kittens"
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (-35 + c(all kittens))"
+    },
+    {
+      "Name": "reset karma kitten",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "kitten minus 35",
+          "Bonus": [
+            {
+              "Name": "kitten minus 35",
+              "ProductionBoolean": true
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(kitten minus 35) * (1 if c(kitten minus 35) gt 0))"
+    },
+    {
+      "Name": "karma kitten",
+      "Type": "Resource",
+      "Cap": -1,
+      "ResetResource": "reset karma kitten"
+    },
+    {
+      "Name": "kitten minus 70",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Factor": -70
+        },
+        {
+          "Name": "all kittens"
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (-70 + c(all kittens))"
+    },
+    {
+      "Name": "reset paragon",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "kitten minus 70",
+          "Bonus": [
+            {
+              "Name": "kitten minus 70",
+              "ProductionBoolean": true
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "Formula": "Count = (c(kitten minus 70) * (1 if c(kitten minus 70) gt 0))"
     },
     {
       "Name": "paragon",
@@ -4423,7 +4938,8 @@
     {
       "Name": "burned paragon",
       "Type": "Resource",
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "burned paragon"
     },
     {
       "Name": "gone kitten",
@@ -4530,6 +5046,26 @@
       ],
       "StartCount": 0.1,
       "Formula": "Count = (0.1 + ((c(all kittens) * -0.02) + ((1 if c(ivory) gt 0) * 0.1) + ((1 if c(fur) gt 0) * 0.1) + ((1 if c(spice) gt 0) * 0.1) + ((1 if c(unicorn) gt 0) * 0.1) + ((1 if c(alicorn) gt 0) * 0.1) + ((1 if c(necrocorn) gt 0) * 0.1) + ((1 if c(karma) gt 0) * 0.1) + (c(karma) * 0.01) + ((1 if c(tear) gt 0) * 0.1) + ((1 if c(relic) gt 0) * 0.1) + ((1 if c(blackcoin) gt 0) * 0.1) + ((1 if c(void) gt 0) * 0.1) + ((1 if c(festival day) gt 0) * 0.1 * (1 + (c(Active Brewery) * 0.01))) + (c(Amphitheatre) * 0.048) + (c(Broadcast Tower) * 0.75) + (c(Temple) * 0.005 * c(Sun Altar))))"
+    },
+    {
+      "Name": "reset Chronophysics",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": 1,
+      "Producers": [
+        {
+          "Name": "Chronophysics",
+          "Bonus": [
+            {
+              "Name": "Anachronomancy"
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset Chronophysics",
+      "Formula": "Count = (c(Chronophysics) * c(Anachronomancy))"
     },
     {
       "Name": "Catnip Field",
@@ -5369,6 +5905,12 @@
     },
     {
       "Name": "Void Resonator",
+      "Type": "Building",
+      "IsHidden": true,
+      "Cap": -1
+    },
+    {
+      "Name": "karma",
       "Type": "Building",
       "IsHidden": true,
       "Cap": -1
@@ -6996,6 +7538,27 @@
       "Formula": "Count += ((c(Active Steamworks) * 0.000007 * (c(Workshop Automation) * (c(wood cap) * (1 + c(Advanced Automation) + c(CraftRatio))))) * seconds)"
     },
     {
+      "Name": "reset beam",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "beam",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset beam",
+      "Formula": "Count = (c(beam) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "slab",
       "Type": "Resource",
       "Cap": -1,
@@ -7030,10 +7593,52 @@
       "Formula": "Count += ((c(Active Steamworks) * 0.000005 * (c(Workshop Automation) * (c(mineral cap) * (1 + c(Advanced Automation) + c(CraftRatio))))) * seconds)"
     },
     {
+      "Name": "reset slab",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "slab",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset slab",
+      "Formula": "Count = (c(slab) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "concrete",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@concrete"
+    },
+    {
+      "Name": "reset concrete",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "concrete",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset concrete",
+      "Formula": "Count = (c(concrete) * (c(Chronosphere) * 0.015))"
     },
     {
       "Name": "plate",
@@ -7074,6 +7679,27 @@
       ],
       "ProducerAction": "@plate",
       "Formula": "Count += ((c(Active Steamworks) * 0.00001 * (c(Workshop Automation) * (c(Pneumatic Press) * (c(iron cap) * (1 + c(Advanced Automation) + c(CraftRatio)))))) * seconds)"
+    },
+    {
+      "Name": "reset plate",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "plate",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset plate",
+      "Formula": "Count = (c(plate) * (c(Chronosphere) * 0.015))"
     },
     {
       "Name": "steel",
@@ -7121,10 +7747,52 @@
       "Formula": "Count += ((c(Active Calciner) * 0.00075 * (c(Steel Plants) * (1 + (c(Oxidation) * 0.95) + (c(CraftRatio) * 0.25 * c(Automated Plants)) + (c(Reactor) * 0.02 * c(Nuclear Plants))))) * seconds)"
     },
     {
+      "Name": "reset steel",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "steel",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset steel",
+      "Formula": "Count = (c(steel) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "gear",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@gear"
+    },
+    {
+      "Name": "reset gear",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "gear",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset gear",
+      "Formula": "Count = (c(gear) * (c(Chronosphere) * 0.015))"
     },
     {
       "Name": "alloy",
@@ -7133,10 +7801,52 @@
       "ProducerAction": "@alloy"
     },
     {
+      "Name": "reset alloy",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "alloy",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset alloy",
+      "Formula": "Count = (c(alloy) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "eludium",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@eludium"
+    },
+    {
+      "Name": "reset eludium",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "eludium",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset eludium",
+      "Formula": "Count = (c(eludium) * (c(Chronosphere) * 0.015))"
     },
     {
       "Name": "scaffold",
@@ -7145,10 +7855,52 @@
       "ProducerAction": "@scaffold"
     },
     {
+      "Name": "reset scaffold",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "scaffold",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset scaffold",
+      "Formula": "Count = (c(scaffold) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "ship",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@ship"
+    },
+    {
+      "Name": "reset ship",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "ship",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset ship",
+      "Formula": "Count = (c(ship) * (c(Chronosphere) * 0.015))"
     },
     {
       "Name": "tanker",
@@ -7157,16 +7909,79 @@
       "ProducerAction": "@tanker"
     },
     {
+      "Name": "reset tanker",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "tanker",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset tanker",
+      "Formula": "Count = (c(tanker) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "kerosene",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@kerosene"
     },
     {
+      "Name": "reset kerosene",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "kerosene",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset kerosene",
+      "Formula": "Count = (c(kerosene) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "parchment",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@parchment"
+    },
+    {
+      "Name": "reset parchment",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "parchment",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset parchment",
+      "Formula": "Count = (c(parchment) * (c(Chronosphere) * 0.015))"
     },
     {
       "Name": "manuscript",
@@ -7200,16 +8015,79 @@
       "Formula": "Count += ((c(Steamworks) * 0.0025 * (c(Printing Press) * (1 + (c(Offset Press) * 3 * (1 + (c(Photolithography) * 3)))))) * seconds)"
     },
     {
+      "Name": "reset manuscript",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "manuscript",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset manuscript",
+      "Formula": "Count = (c(manuscript) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "compendium",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@compendium"
     },
     {
+      "Name": "reset compendium",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "compendium",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset compendium",
+      "Formula": "Count = (c(compendium) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "blueprint",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@blueprint"
+    },
+    {
+      "Name": "reset blueprint",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "blueprint",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset blueprint",
+      "Formula": "Count = (c(blueprint) * (c(Chronosphere) * 0.015))"
     },
     {
       "Name": "thorium",
@@ -7237,10 +8115,52 @@
       "Formula": "Count += ((c(Active Reactor) * -0.25 * (c(Thorium Reactors) * (1 + (c(Enriched Thorium) * -0.25)))) * seconds)"
     },
     {
+      "Name": "reset thorium",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "thorium",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset thorium",
+      "Formula": "Count = (c(thorium) * (c(Chronosphere) * 0.015))"
+    },
+    {
       "Name": "megalith",
       "Type": "Resource",
       "Cap": -1,
       "ProducerAction": "@megalith"
+    },
+    {
+      "Name": "reset megalith",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "megalith",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset megalith",
+      "Formula": "Count = (c(megalith) * (c(Chronosphere) * 0.015))"
     }
   ],
   "Actions": [
@@ -9579,7 +10499,8 @@
           "Name": "Transcendence Level",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Transcendence Level"
     },
     {
       "Name": "Black Obelisk",
@@ -9597,7 +10518,8 @@
           "Name": "Black Obelisk",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Black Obelisk"
     },
     {
       "Name": "Black Nexus",
@@ -9615,7 +10537,8 @@
           "Name": "Black Nexus",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Black Nexus"
     },
     {
       "Name": "Black Core",
@@ -9633,7 +10556,8 @@
           "Name": "Black Core",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Black Core"
     },
     {
       "Name": "Event Horizon",
@@ -9651,7 +10575,8 @@
           "Name": "Event Horizon",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Event Horizon"
     },
     {
       "Name": "Black Library",
@@ -9669,7 +10594,8 @@
           "Name": "Black Library",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Black Library"
     },
     {
       "Name": "Black Radiance",
@@ -9687,7 +10613,8 @@
           "Name": "Black Radiance",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Black Radiance"
     },
     {
       "Name": "Blazar",
@@ -9705,7 +10632,8 @@
           "Name": "Blazar",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Blazar"
     },
     {
       "Name": "Dark Nova",
@@ -9728,7 +10656,8 @@
           "Name": "Dark Nova",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Dark Nova"
     },
     {
       "Name": "Mausoleum",
@@ -9756,7 +10685,8 @@
           "Name": "Mausoleum",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Mausoleum"
     },
     {
       "Name": "Holy Genocide",
@@ -9779,7 +10709,8 @@
           "Name": "Holy Genocide",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Holy Genocide"
     },
     {
       "Name": "Space Elevator",
@@ -10806,6 +11737,25 @@
           "Count": 1
         }
       ]
+    },
+    {
+      "Name": "karma",
+      "Type": "Building",
+      "UnlockedBy": "Hut",
+      "Costs": [
+        {
+          "Name": "karma kitten",
+          "Count": 1,
+          "CostExponentBase": 1.13
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "karma",
+          "Count": 1
+        }
+      ],
+      "ResetResource": "karma"
     },
     {
       "Name": "woodcutter",
@@ -12759,7 +13709,8 @@
           "Name": "Chronophysics",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "reset Chronophysics"
     },
     {
       "Name": "Tachyon Theory",
@@ -16603,7 +17554,8 @@
           "Name": "Enlightenment",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Enlightenment"
     },
     {
       "Name": "Codex Vox",
@@ -16621,7 +17573,8 @@
           "Name": "Codex Vox",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Codex Vox"
     },
     {
       "Name": "Codex Logos",
@@ -16639,7 +17592,8 @@
           "Name": "Codex Logos",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Codex Logos"
     },
     {
       "Name": "Codex Agrum",
@@ -16657,7 +17611,8 @@
           "Name": "Codex Agrum",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Codex Agrum"
     },
     {
       "Name": "Megalomania",
@@ -16675,7 +17630,8 @@
           "Name": "Megalomania",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Megalomania"
     },
     {
       "Name": "Black Codex",
@@ -16693,7 +17649,8 @@
           "Name": "Black Codex",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Black Codex"
     },
     {
       "Name": "Codex Leviathanus",
@@ -16711,7 +17668,8 @@
           "Name": "Codex Leviathanus",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Codex Leviathanus"
     },
     {
       "Name": "Golden Ratio",
@@ -16729,7 +17687,8 @@
           "Name": "Golden Ratio",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Golden Ratio"
     },
     {
       "Name": "Divine Proportion",
@@ -16747,7 +17706,8 @@
           "Name": "Divine Proportion",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Divine Proportion"
     },
     {
       "Name": "Vitruvian Feline",
@@ -16765,7 +17725,8 @@
           "Name": "Vitruvian Feline",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Vitruvian Feline"
     },
     {
       "Name": "Renaissance",
@@ -16783,7 +17744,8 @@
           "Name": "Renaissance",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Renaissance"
     },
     {
       "Name": "Diplomacy",
@@ -16801,7 +17763,8 @@
           "Name": "Diplomacy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Diplomacy"
     },
     {
       "Name": "Zebra Diplomacy",
@@ -16819,7 +17782,8 @@
           "Name": "Zebra Diplomacy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Zebra Diplomacy"
     },
     {
       "Name": "Zebra Covenant",
@@ -16837,7 +17801,8 @@
           "Name": "Zebra Covenant",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Zebra Covenant"
     },
     {
       "Name": "Navigation Diplomacy",
@@ -16855,7 +17820,8 @@
           "Name": "Navigation Diplomacy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Navigation Diplomacy"
     },
     {
       "Name": "Chronomancy",
@@ -16873,7 +17839,8 @@
           "Name": "Chronomancy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Chronomancy"
     },
     {
       "Name": "Anachronomancy",
@@ -16891,7 +17858,8 @@
           "Name": "Anachronomancy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Anachronomancy"
     },
     {
       "Name": "Astromancy",
@@ -16909,7 +17877,8 @@
           "Name": "Astromancy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Astromancy"
     },
     {
       "Name": "Unicornmancy",
@@ -16927,7 +17896,8 @@
           "Name": "Unicornmancy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Unicornmancy"
     },
     {
       "Name": "Carnivals",
@@ -16945,7 +17915,8 @@
           "Name": "Carnivals",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Carnivals"
     },
     {
       "Name": "Numerology",
@@ -16963,7 +17934,8 @@
           "Name": "Numerology",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Numerology"
     },
     {
       "Name": "Order of the Void",
@@ -16981,7 +17953,8 @@
           "Name": "Order of the Void",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Order of the Void"
     },
     {
       "Name": "Venus of Willenfluff",
@@ -16999,7 +17972,8 @@
           "Name": "Venus of Willenfluff",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Venus of Willenfluff"
     },
     {
       "Name": "Pawgan Rituals",
@@ -17017,7 +17991,8 @@
           "Name": "Pawgan Rituals",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Pawgan Rituals"
     },
     {
       "Name": "Numeromancy",
@@ -17035,7 +18010,8 @@
           "Name": "Numeromancy",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Numeromancy"
     },
     {
       "Name": "Malkuth",
@@ -17053,7 +18029,8 @@
           "Name": "Malkuth",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Malkuth"
     },
     {
       "Name": "Yesod",
@@ -17071,7 +18048,8 @@
           "Name": "Yesod",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Yesod"
     },
     {
       "Name": "Hod",
@@ -17089,7 +18067,8 @@
           "Name": "Hod",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Hod"
     },
     {
       "Name": "Netzach",
@@ -17107,7 +18086,8 @@
           "Name": "Netzach",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Netzach"
     },
     {
       "Name": "Tiferet",
@@ -17125,7 +18105,8 @@
           "Name": "Tiferet",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Tiferet"
     },
     {
       "Name": "Gevurah",
@@ -17143,7 +18124,8 @@
           "Name": "Gevurah",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Gevurah"
     },
     {
       "Name": "Chesed",
@@ -17161,7 +18143,8 @@
           "Name": "Chesed",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Chesed"
     },
     {
       "Name": "Binah",
@@ -17179,7 +18162,8 @@
           "Name": "Binah",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Binah"
     },
     {
       "Name": "Chokhmah",
@@ -17197,7 +18181,8 @@
           "Name": "Chokhmah",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Chokhmah"
     },
     {
       "Name": "Keter",
@@ -17215,7 +18200,8 @@
           "Name": "Keter",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Keter"
     },
     {
       "Name": "Adjustment Bureau",
@@ -17233,7 +18219,8 @@
           "Name": "Adjustment Bureau",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "Adjustment Bureau"
     },
     {
       "Name": "ASCOH",
@@ -17251,7 +18238,8 @@
           "Name": "ASCOH",
           "Count": 1
         }
-      ]
+      ],
+      "ResetResource": "ASCOH"
     },
     {
       "Name": "@beam",

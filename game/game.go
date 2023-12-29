@@ -161,6 +161,8 @@ func (g *Game) populateUIActions(data *ui.Data) {
 		Name: "cX: create inputs and buy action X",
 	}, {
 		Name: "mX: max action X (skip, create, buy)",
+	}, {
+		Name: "r: reset",
 	}}
 }
 
@@ -276,6 +278,10 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	if err != nil {
 		return input, err
 	}
+	if input.IsReset {
+		g.reset()
+		return input, nil
+	}
 	if g.isLocked(input.Action) {
 		return input, fmt.Errorf("action %s is locked", input.Action.Name)
 	}
@@ -341,6 +347,16 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	return input, nil
 }
 
+func (g *Game) reset() {
+	for _, resource := range g.Resources {
+		count := 0.0
+		if resource.ResetResource != "" {
+			count = g.GetResource(resource.ResetResource).Count
+		}
+		resource.Count = count
+	}
+}
+
 func (g *Game) getActionAdd(add data.Resource) data.Resource {
 	add.Count *= g.getBonus(add)
 	return add
@@ -392,6 +408,10 @@ func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 	if strings.HasPrefix(in, "m") {
 		res.IsMax = true
 		in = in[1:]
+	}
+	if strings.HasPrefix(in, "r") {
+		res.IsReset = true
+		return res, nil
 	}
 	index, err := strconv.Atoi(in)
 	if err != nil {
@@ -499,7 +519,7 @@ func (g *Game) timeSkip(skip time.Duration) {
 }
 
 func (g *Game) validateResource(r *data.Resource) error {
-	for _, name := range []string{r.Name, r.CapResource} {
+	for _, name := range []string{r.Name, r.CapResource, r.ResetResource} {
 		if err := g.validateResourceName(name); err != nil {
 			return err
 		}

@@ -112,6 +112,7 @@ digraph {
   "Void Aspiration" -> "Void Rift" [color="blue"];
   "Paradox Theory" -> "Chronocontrol" [color="blue"];
   "Paradox Theory" -> "Void Resonator" [color="blue"];
+  "Hut" -> "karma" [color="blue"];
   "Hut" -> "woodcutter" [color="blue"];
   "Library" -> "scholar" [color="blue"];
   "Agriculture" -> "farmer" [color="blue"];
@@ -516,6 +517,7 @@ digraph {
   "Void Rift" [shape="box3d"];
   "Chronocontrol" [shape="box3d"];
   "Void Resonator" [shape="box3d"];
+  "karma" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];

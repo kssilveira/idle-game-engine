@@ -323,6 +323,8 @@ func NewGame(now game.Now) *game.Game {
 		}},
 	}})
 
+	addResets(g, []string{"catnip", "wood", "mineral", "coal", "iron", "titanium", "gold", "oil", "uranium", "unobtainium", "antimatter", "catpower", "science", "culture", "faith", "starchart", "relic", "void", "blackcoin"})
+
 	g.AddResources([]R{{
 		Name: "catnip cap", Type: "Resource", IsHidden: true, StartCount: 5000,
 		Producers: []R{{
@@ -355,7 +357,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "catnip", Type: "Resource", CapResource: "catnip cap",
+		Name: "catnip", Type: "Resource", CapResource: "catnip cap", ResetResource: "reset catnip",
 		Producers: join([]R{{
 			Name: "Catnip Field", Factor: 0.125 * 5,
 			Bonus: []R{{
@@ -458,7 +460,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "wood", Type: "Resource", CapResource: "wood cap",
+		Name: "wood", Type: "Resource", CapResource: "wood cap", ResetResource: "reset wood",
 		Producers: []R{{
 			Name: "woodcutter", Factor: 0.018 * 5,
 			Bonus: []R{{
@@ -602,7 +604,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "science", Type: "Resource", CapResource: "science cap",
+		Name: "science", Type: "Resource", CapResource: "science cap", ResetResource: "reset science",
 		Producers: []R{{
 			Name: "scholar", Factor: 0.035 * 5,
 			Bonus: []R{{Name: "happiness"}},
@@ -677,7 +679,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "catpower", Type: "Resource", CapResource: "catpower cap",
+		Name: "catpower", Type: "Resource", CapResource: "catpower cap", ResetResource: "reset catpower",
 		Producers: []R{{
 			Name: "hunter", Factor: 0.06 * 5,
 			Bonus: []R{{
@@ -747,7 +749,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "mineral", Type: "Resource", CapResource: "mineral cap",
+		Name: "mineral", Type: "Resource", CapResource: "mineral cap", ResetResource: "reset mineral",
 		Producers: []R{{
 			Name: "miner", Factor: 0.05 * 5,
 			Bonus: []R{{
@@ -835,7 +837,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "iron", Type: "Resource", CapResource: "iron cap",
+		Name: "iron", Type: "Resource", CapResource: "iron cap", ResetResource: "reset iron",
 		Producers: []R{{
 			Name: "Active Smelter", Factor: 0.02 * 5,
 			Bonus: []R{{Name: "Electrolytic Smelting", Factor: 0.95}},
@@ -917,7 +919,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "coal", Type: "Resource", CapResource: "coal cap",
+		Name: "coal", Type: "Resource", CapResource: "coal cap", ResetResource: "reset coal",
 		Producers: []R{{
 			Name: "geologist", Factor: 0.015 * 5,
 			Bonus: []R{{
@@ -1006,7 +1008,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "gold", Type: "Resource", CapResource: "gold cap",
+		Name: "gold", Type: "Resource", CapResource: "gold cap", ResetResource: "reset gold",
 		Producers: []R{{
 			Name: "Active Mint", Factor: -0.005 * 5, ProductionOnGone: true,
 		}, {
@@ -1072,7 +1074,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "titanium", Type: "Resource", CapResource: "titanium cap",
+		Name: "titanium", Type: "Resource", CapResource: "titanium cap", ResetResource: "reset titanium",
 		Producers: []R{{
 			Name: "Active Accelerator", Factor: -0.015 * 5, ProductionOnGone: true,
 		}, {
@@ -1119,7 +1121,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "oil", Type: "Resource", CapResource: "oil cap",
+		Name: "oil", Type: "Resource", CapResource: "oil cap", ResetResource: "reset oil",
 		Producers: []R{{
 			Name: "Oil Well", Factor: 0.02 * 5,
 			Bonus: []R{{
@@ -1184,7 +1186,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "uranium", Type: "Resource", CapResource: "uranium cap",
+		Name: "uranium", Type: "Resource", CapResource: "uranium cap", ResetResource: "reset uranium",
 		Producers: []R{{
 			Name: "Active Accelerator", Factor: 0.0025 * 5,
 		}, {
@@ -1244,7 +1246,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap",
+		Name: "unobtainium", Type: "Resource", CapResource: "unobtainium cap", ResetResource: "reset unobtainium",
 		Producers: []R{{
 			Name: "Active Lunar Outpost", Factor: 0.035,
 			Bonus: []R{{
@@ -1276,7 +1278,14 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "time crystal", Type: "Resource", Cap: -1,
+		Name: "reset time crystal", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true, ResetResource: "reset time crystal",
+		Producers: []R{{
+			Name:                "time crystal",
+			Bonus:               []R{{Name: "Anachronomancy"}},
+			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "time crystal", Type: "Resource", Cap: -1, ResetResource: "reset time crystal",
 	}, {
 		Name: "antimatter cap", Type: "Resource", IsHidden: true, StartCount: 100,
 		Producers: []R{{
@@ -1288,10 +1297,10 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "antimatter", Type: "Resource", CapResource: "antimatter cap",
+		Name: "antimatter", Type: "Resource", CapResource: "antimatter cap", ResetResource: "reset antimatter",
 		Producers: []R{{Name: "Sunlifter", Factor: 1. / (2 * 100 * 4)}},
 	}, {
-		Name: "relic", Type: "Resource", Cap: -1,
+		Name: "relic", Type: "Resource", Cap: -1, ResetResource: "reset relic",
 		Producers: []R{{
 			Name: "Space Beacon", Factor: 0.01 / 2,
 			Bonus: []R{{
@@ -1313,7 +1322,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "void", Type: "Resource", Cap: -1,
+		Name: "void", Type: "Resource", Cap: -1, ResetResource: "reset void",
 		Producers: []R{{
 			Name: "Chronosphere", Factor: 0.005 / (2 * 100),
 			Bonus: []R{{Name: "Void Hoover"}},
@@ -1333,7 +1342,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "Temporal Battery", Factor: 0.25,
 		}},
 	}, {
-		Name: "temporal flux", Type: "Resource", IsHidden: true, CapResource: "temporal flux cap",
+		Name: "temporal flux", Type: "Resource", IsHidden: true, CapResource: "temporal flux cap", ResetResource: "temporal flux",
 		Producers: []R{{
 			Factor: 5. / (60 * 10),
 			Bonus:  []R{{Name: "Temporal Accelerator", Factor: 0.05}},
@@ -1347,7 +1356,7 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "blackcoin", Type: "Resource", Cap: -1,
+		Name: "blackcoin", Type: "Resource", Cap: -1, ResetResource: "reset blackcoin",
 	}, {
 		Name: "kitten", Type: "Resource", Cap: 0,
 		Producers: []R{{Factor: 0.05}},
@@ -1481,7 +1490,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []R{{Name: "Unicorn Graveyard", Factor: 0.125}},
 		}},
 	}, {
-		Name: "culture", Type: "Resource", CapResource: "culture cap",
+		Name: "culture", Type: "Resource", CapResource: "culture cap", ResetResource: "reset culture",
 		Producers: []R{{
 			Name: "Amphitheatre", Factor: 0.005 * 5,
 		}, {
@@ -1519,7 +1528,7 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}},
 	}, {
-		Name: "faith", Type: "Resource", CapResource: "faith cap",
+		Name: "faith", Type: "Resource", CapResource: "faith cap", ResetResource: "reset faith",
 		Producers: []R{{
 			Name: "priest", Factor: 0.0015 * 5,
 			Bonus: []R{{Name: "happiness"}},
@@ -1549,9 +1558,9 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "worship", Type: "Resource", Cap: -1,
 	}, {
-		Name: "epiphany", Type: "Resource", Cap: -1,
+		Name: "epiphany", Type: "Resource", Cap: -1, ResetResource: "epiphany",
 	}, {
-		Name: "starchart", Type: "Resource", Cap: -1,
+		Name: "starchart", Type: "Resource", Cap: -1, ResetResource: "reset starchart",
 		Producers: []R{{
 			Name: "scholar", Factor: 0.0005,
 			Bonus:               []R{{Name: "Astrophysicists"}},
@@ -1684,7 +1693,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "sorrow cap", Type: "Resource", IsHidden: true, StartCount: 16,
 		Producers: []R{{Name: "Black Core"}},
 	}, {
-		Name: "sorrow", Type: "Resource", CapResource: "sorrow cap",
+		Name: "sorrow", Type: "Resource", CapResource: "sorrow cap", ResetResource: "sorrow",
 	}, {
 		Name: "chronoheat cap", Type: "Resource", IsHidden: true, StartCount: 1,
 		Producers: []R{{
@@ -1703,12 +1712,40 @@ func NewGame(now game.Now) *game.Game {
 			BonusStartsFromZero: true,
 		}},
 	}, {
-		Name: "karma", Type: "Resource", Cap: -1,
+		Name: "kitten minus 35", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
+		Producers: []R{{
+			Factor: -35,
+		}, {
+			Name: "all kittens",
+		}},
+	}, {
+		Name: "reset karma kitten", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
+		Producers: []R{{
+			Name:                "kitten minus 35",
+			Bonus:               []R{{Name: "kitten minus 35", ProductionBoolean: true}},
+			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "karma kitten", Type: "Resource", Cap: -1, ResetResource: "reset karma kitten",
+	}, {
+		Name: "kitten minus 70", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
+		Producers: []R{{
+			Factor: -70,
+		}, {
+			Name: "all kittens",
+		}},
+	}, {
+		Name: "reset paragon", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
+		Producers: []R{{
+			Name:                "kitten minus 70",
+			Bonus:               []R{{Name: "kitten minus 70", ProductionBoolean: true}},
+			BonusStartsFromZero: true,
+		}},
 	}, {
 		Name: "paragon", Type: "Resource", Cap: -1,
 		Producers: []R{{Factor: 1. / (2 * 100 * 4 * 1000)}},
 	}, {
-		Name: "burned paragon", Type: "Resource", Cap: -1,
+		Name: "burned paragon", Type: "Resource", Cap: -1, ResetResource: "burned paragon",
 	}, {
 		Name: "gone kitten", Type: "Resource", Cap: -1,
 	}, {
@@ -1749,6 +1786,13 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Temple", Factor: 0.005,
 			Bonus:               []R{{Name: "Sun Altar"}},
+			BonusStartsFromZero: true,
+		}},
+	}, {
+		Name: "reset Chronophysics", Type: "Resource", IsHidden: true, Cap: 1, StartCountFromZero: true, ResetResource: "reset Chronophysics",
+		Producers: []R{{
+			Name:                "Chronophysics",
+			Bonus:               []R{{Name: "Anachronomancy"}},
 			BonusStartsFromZero: true,
 		}},
 	}})
@@ -2210,40 +2254,40 @@ func NewGame(now game.Now) *game.Game {
 			Name: "gold", Count: 3000, CostExponentBase: 2.5,
 		}},
 	}, {
-		Name: "Transcendence Level", UnlockedBy: "Transcendence",
+		Name: "Transcendence Level", UnlockedBy: "Transcendence", ResetResource: "Transcendence Level",
 		Costs: []R{{
 			Name: "epiphany", Count: 1, CostExponentBase: 3,
 		}},
 	}, {
-		Name: "Black Obelisk", UnlockedBy: "Cryptotheology",
+		Name: "Black Obelisk", UnlockedBy: "Cryptotheology", ResetResource: "Black Obelisk",
 		Costs: []R{{Name: "relic", Count: 100, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Nexus", UnlockedBy: "Cryptotheology",
+		Name: "Black Nexus", UnlockedBy: "Cryptotheology", ResetResource: "Black Nexus",
 		Costs: []R{{Name: "relic", Count: 5000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Core", UnlockedBy: "Cryptotheology",
+		Name: "Black Core", UnlockedBy: "Cryptotheology", ResetResource: "Black Core",
 		Costs: []R{{Name: "relic", Count: 10000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Event Horizon", UnlockedBy: "Cryptotheology",
+		Name: "Event Horizon", UnlockedBy: "Cryptotheology", ResetResource: "Event Horizon",
 		Costs: []R{{Name: "relic", Count: 25000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Library", UnlockedBy: "Cryptotheology",
+		Name: "Black Library", UnlockedBy: "Cryptotheology", ResetResource: "Black Library",
 		Costs: []R{{Name: "relic", Count: 30000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Black Radiance", UnlockedBy: "Cryptotheology",
+		Name: "Black Radiance", UnlockedBy: "Cryptotheology", ResetResource: "Black Radiance",
 		Costs: []R{{Name: "relic", Count: 37500, CostExponentBase: 1.15}},
 	}, {
-		Name: "Blazar", UnlockedBy: "Cryptotheology",
+		Name: "Blazar", UnlockedBy: "Cryptotheology", ResetResource: "Blazar",
 		Costs: []R{{Name: "relic", Count: 50000, CostExponentBase: 1.15}},
 	}, {
-		Name: "Dark Nova", UnlockedBy: "Cryptotheology",
+		Name: "Dark Nova", UnlockedBy: "Cryptotheology", ResetResource: "Dark Nova",
 		Costs: []R{{
 			Name: "relic", Count: 75000, CostExponentBase: 1.15,
 		}, {
 			Name: "void", Count: 7500, CostExponentBase: 1.15,
 		}},
 	}, {
-		Name: "Mausoleum", UnlockedBy: "Cryptotheology",
+		Name: "Mausoleum", UnlockedBy: "Cryptotheology", ResetResource: "Mausoleum",
 		Costs: []R{{
 			Name: "relic", Count: 50000, CostExponentBase: 1.15,
 		}, {
@@ -2252,7 +2296,7 @@ func NewGame(now game.Now) *game.Game {
 			Name: "necrocorn", Count: 10, CostExponentBase: 1.15,
 		}},
 	}, {
-		Name: "Holy Genocide", UnlockedBy: "Cryptotheology",
+		Name: "Holy Genocide", UnlockedBy: "Cryptotheology", ResetResource: "Holy Genocide",
 		Costs: []R{{
 			Name: "relic", Count: 100000, CostExponentBase: 1.15,
 		}, {
@@ -2565,6 +2609,11 @@ func NewGame(now game.Now) *game.Game {
 			Name: "relic", Count: 10000, CostExponentBase: 1.25,
 		}, {
 			Name: "void", Count: 50, CostExponentBase: 1.25,
+		}},
+	}, {
+		Name: "karma", UnlockedBy: "Hut", ResetResource: "karma",
+		Costs: []R{{
+			Name: "karma kitten", Count: 1, CostExponentBase: 1.13,
 		}},
 	}})
 
@@ -3179,7 +3228,7 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Dimensional Physics", UnlockedBy: "Particle Physics",
 		Costs: []R{{Name: "science", Count: 235000}},
 	}, {
-		Name: "Chronophysics", UnlockedBy: "Particle Physics",
+		Name: "Chronophysics", UnlockedBy: "Particle Physics", ResetResource: "reset Chronophysics",
 		Costs: []R{{
 			Name: "science", Count: 250000,
 		}, {
@@ -4486,115 +4535,115 @@ func NewGame(now game.Now) *game.Game {
 			Name: "thorium", Count: 75000,
 		}},
 	}, {
-		Name: "Enlightenment", UnlockedBy: "Metaphysics",
+		Name: "Enlightenment", UnlockedBy: "Metaphysics", ResetResource: "Enlightenment",
 		Costs: []R{{Name: "paragon", Count: 5}},
 	}, {
-		Name: "Codex Vox", UnlockedBy: "Enlightenment",
+		Name: "Codex Vox", UnlockedBy: "Enlightenment", ResetResource: "Codex Vox",
 		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Codex Logos", UnlockedBy: "Codex Vox",
+		Name: "Codex Logos", UnlockedBy: "Codex Vox", ResetResource: "Codex Logos",
 		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
-		Name: "Codex Agrum", UnlockedBy: "Codex Logos",
+		Name: "Codex Agrum", UnlockedBy: "Codex Logos", ResetResource: "Codex Agrum",
 		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
-		Name: "Megalomania", UnlockedBy: "Enlightenment",
+		Name: "Megalomania", UnlockedBy: "Enlightenment", ResetResource: "Megalomania",
 		Costs: []R{{Name: "paragon", Count: 10}},
 	}, {
-		Name: "Black Codex", UnlockedBy: "Megalomania",
+		Name: "Black Codex", UnlockedBy: "Megalomania", ResetResource: "Black Codex",
 		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Codex Leviathanus", UnlockedBy: "Codex Logos",
+		Name: "Codex Leviathanus", UnlockedBy: "Codex Logos", ResetResource: "Codex Leviathanus",
 		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
-		Name: "Golden Ratio", UnlockedBy: "Enlightenment",
+		Name: "Golden Ratio", UnlockedBy: "Enlightenment", ResetResource: "Golden Ratio",
 		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
-		Name: "Divine Proportion", UnlockedBy: "Golden Ratio",
+		Name: "Divine Proportion", UnlockedBy: "Golden Ratio", ResetResource: "Divine Proportion",
 		Costs: []R{{Name: "paragon", Count: 100}},
 	}, {
-		Name: "Vitruvian Feline", UnlockedBy: "Divine Proportion",
+		Name: "Vitruvian Feline", UnlockedBy: "Divine Proportion", ResetResource: "Vitruvian Feline",
 		Costs: []R{{Name: "paragon", Count: 250}},
 	}, {
-		Name: "Renaissance", UnlockedBy: "Vitruvian Feline",
+		Name: "Renaissance", UnlockedBy: "Vitruvian Feline", ResetResource: "Renaissance",
 		Costs: []R{{Name: "paragon", Count: 750}},
 	}, {
-		Name: "Diplomacy", UnlockedBy: "Metaphysics",
+		Name: "Diplomacy", UnlockedBy: "Metaphysics", ResetResource: "Diplomacy",
 		Costs: []R{{Name: "paragon", Count: 5}},
 	}, {
-		Name: "Zebra Diplomacy", UnlockedBy: "Diplomacy",
+		Name: "Zebra Diplomacy", UnlockedBy: "Diplomacy", ResetResource: "Zebra Diplomacy",
 		Costs: []R{{Name: "paragon", Count: 35}},
 	}, {
-		Name: "Zebra Covenant", UnlockedBy: "Zebra Diplomacy",
+		Name: "Zebra Covenant", UnlockedBy: "Zebra Diplomacy", ResetResource: "Zebra Covenant",
 		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
-		Name: "Navigation Diplomacy", UnlockedBy: "Metaphysics",
+		Name: "Navigation Diplomacy", UnlockedBy: "Metaphysics", ResetResource: "Navigation Diplomacy",
 		Costs: []R{{Name: "paragon", Count: 300}},
 	}, {
-		Name: "Chronomancy", UnlockedBy: "Metaphysics",
+		Name: "Chronomancy", UnlockedBy: "Metaphysics", ResetResource: "Chronomancy",
 		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Anachronomancy", UnlockedBy: "Chronomancy",
+		Name: "Anachronomancy", UnlockedBy: "Chronomancy", ResetResource: "Anachronomancy",
 		Costs: []R{{Name: "paragon", Count: 125}},
 	}, {
-		Name: "Astromancy", UnlockedBy: "Chronomancy",
+		Name: "Astromancy", UnlockedBy: "Chronomancy", ResetResource: "Astromancy",
 		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
-		Name: "Unicornmancy", UnlockedBy: "Metaphysics",
+		Name: "Unicornmancy", UnlockedBy: "Metaphysics", ResetResource: "Unicornmancy",
 		Costs: []R{{Name: "paragon", Count: 125}},
 	}, {
-		Name: "Carnivals", UnlockedBy: "Metaphysics",
+		Name: "Carnivals", UnlockedBy: "Metaphysics", ResetResource: "Carnivals",
 		Costs: []R{{Name: "paragon", Count: 25}},
 	}, {
-		Name: "Numerology", UnlockedBy: "Carnivals",
+		Name: "Numerology", UnlockedBy: "Carnivals", ResetResource: "Numerology",
 		Costs: []R{{Name: "paragon", Count: 50}},
 	}, {
-		Name: "Order of the Void", UnlockedBy: "Numerology",
+		Name: "Order of the Void", UnlockedBy: "Numerology", ResetResource: "Order of the Void",
 		Costs: []R{{Name: "paragon", Count: 75}},
 	}, {
-		Name: "Venus of Willenfluff", UnlockedBy: "Numerology",
+		Name: "Venus of Willenfluff", UnlockedBy: "Numerology", ResetResource: "Venus of Willenfluff",
 		Costs: []R{{Name: "paragon", Count: 150}},
 	}, {
-		Name: "Pawgan Rituals", UnlockedBy: "Venus of Willenfluff",
+		Name: "Pawgan Rituals", UnlockedBy: "Venus of Willenfluff", ResetResource: "Pawgan Rituals",
 		Costs: []R{{Name: "paragon", Count: 400}},
 	}, {
-		Name: "Numeromancy", UnlockedBy: "Numerology",
+		Name: "Numeromancy", UnlockedBy: "Numerology", ResetResource: "Numeromancy",
 		Costs: []R{{Name: "paragon", Count: 250}},
 	}, {
-		Name: "Malkuth", UnlockedBy: "Numeromancy",
+		Name: "Malkuth", UnlockedBy: "Numeromancy", ResetResource: "Malkuth",
 		Costs: []R{{Name: "paragon", Count: 500}},
 	}, {
-		Name: "Yesod", UnlockedBy: "Malkuth",
+		Name: "Yesod", UnlockedBy: "Malkuth", ResetResource: "Yesod",
 		Costs: []R{{Name: "paragon", Count: 750}},
 	}, {
-		Name: "Hod", UnlockedBy: "Yesod",
+		Name: "Hod", UnlockedBy: "Yesod", ResetResource: "Hod",
 		Costs: []R{{Name: "paragon", Count: 1250}},
 	}, {
-		Name: "Netzach", UnlockedBy: "Hod",
+		Name: "Netzach", UnlockedBy: "Hod", ResetResource: "Netzach",
 		Costs: []R{{Name: "paragon", Count: 1750}},
 	}, {
-		Name: "Tiferet", UnlockedBy: "Netzach",
+		Name: "Tiferet", UnlockedBy: "Netzach", ResetResource: "Tiferet",
 		Costs: []R{{Name: "paragon", Count: 2500}},
 	}, {
-		Name: "Gevurah", UnlockedBy: "Tiferet",
+		Name: "Gevurah", UnlockedBy: "Tiferet", ResetResource: "Gevurah",
 		Costs: []R{{Name: "paragon", Count: 5000}},
 	}, {
-		Name: "Chesed", UnlockedBy: "Gevurah",
+		Name: "Chesed", UnlockedBy: "Gevurah", ResetResource: "Chesed",
 		Costs: []R{{Name: "paragon", Count: 7500}},
 	}, {
-		Name: "Binah", UnlockedBy: "Chesed",
+		Name: "Binah", UnlockedBy: "Chesed", ResetResource: "Binah",
 		Costs: []R{{Name: "paragon", Count: 15000}},
 	}, {
-		Name: "Chokhmah", UnlockedBy: "Binah",
+		Name: "Chokhmah", UnlockedBy: "Binah", ResetResource: "Chokhmah",
 		Costs: []R{{Name: "paragon", Count: 30000}},
 	}, {
-		Name: "Keter", UnlockedBy: "Chokhmah",
+		Name: "Keter", UnlockedBy: "Chokhmah", ResetResource: "Keter",
 		Costs: []R{{Name: "paragon", Count: 60000}},
 	}, {
-		Name: "Adjustment Bureau", UnlockedBy: "Metaphysics",
+		Name: "Adjustment Bureau", UnlockedBy: "Metaphysics", ResetResource: "Adjustment Bureau",
 		Costs: []R{{Name: "paragon", Count: 5}},
 	}, {
-		Name: "ASCOH", UnlockedBy: "Adjustment Bureau",
+		Name: "ASCOH", UnlockedBy: "Adjustment Bureau", ResetResource: "ASCOH",
 		Costs: []R{{Name: "paragon", Count: 5}},
 	}})
 
@@ -4867,6 +4916,19 @@ func addBonus(g *game.Game, resources []R) {
 	}
 }
 
+func addResets(g *game.Game, names []string) {
+	for _, name := range names {
+		g.AddResource(R{
+			Name: "reset " + name, Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true, ResetResource: "reset " + name,
+			Producers: []R{{
+				Name:                name,
+				Bonus:               []R{{Name: "Chronosphere", Factor: 0.015}},
+				BonusStartsFromZero: true,
+			}},
+		})
+	}
+}
+
 func addCrafts(g *game.Game, actions []data.Action) {
 	for _, action := range actions {
 		name := action.Name
@@ -4881,6 +4943,14 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		g.AddResource(R{
 			Name: name, Type: "Resource", Cap: -1, ProducerAction: action.Name,
 			Producers: action.Producers,
+		})
+		g.AddResource(R{
+			Name: "reset " + name, Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true, ResetResource: "reset " + name,
+			Producers: []R{{
+				Name:                name,
+				Bonus:               []R{{Name: "Chronosphere", Factor: 0.015}},
+				BonusStartsFromZero: true,
+			}},
 		})
 	}
 }

@@ -95,6 +95,42 @@ digraph {
   "PriceRatioBonus" -> "Divine Proportion" [color="red"];
   "PriceRatioBonus" -> "Vitruvian Feline" [color="red"];
   "PriceRatioBonus" -> "Renaissance" [color="red"];
+  "catnip" -> "reset catnip" [color="green"];
+  "Chronosphere" -> "catnip" [color="green"];
+  "wood" -> "reset wood" [color="green"];
+  "Chronosphere" -> "wood" [color="green"];
+  "mineral" -> "reset mineral" [color="green"];
+  "Chronosphere" -> "mineral" [color="green"];
+  "coal" -> "reset coal" [color="green"];
+  "Chronosphere" -> "coal" [color="green"];
+  "iron" -> "reset iron" [color="green"];
+  "Chronosphere" -> "iron" [color="green"];
+  "titanium" -> "reset titanium" [color="green"];
+  "Chronosphere" -> "titanium" [color="green"];
+  "gold" -> "reset gold" [color="green"];
+  "Chronosphere" -> "gold" [color="green"];
+  "oil" -> "reset oil" [color="green"];
+  "Chronosphere" -> "oil" [color="green"];
+  "uranium" -> "reset uranium" [color="green"];
+  "Chronosphere" -> "uranium" [color="green"];
+  "unobtainium" -> "reset unobtainium" [color="green"];
+  "Chronosphere" -> "unobtainium" [color="green"];
+  "antimatter" -> "reset antimatter" [color="green"];
+  "Chronosphere" -> "antimatter" [color="green"];
+  "catpower" -> "reset catpower" [color="green"];
+  "Chronosphere" -> "catpower" [color="green"];
+  "culture" -> "reset culture" [color="green"];
+  "Chronosphere" -> "culture" [color="green"];
+  "faith" -> "reset faith" [color="green"];
+  "Chronosphere" -> "faith" [color="green"];
+  "starchart" -> "reset starchart" [color="green"];
+  "Chronosphere" -> "starchart" [color="green"];
+  "relic" -> "reset relic" [color="green"];
+  "Chronosphere" -> "relic" [color="green"];
+  "void" -> "reset void" [color="green"];
+  "Chronosphere" -> "void" [color="green"];
+  "blackcoin" -> "reset blackcoin" [color="green"];
+  "Chronosphere" -> "blackcoin" [color="green"];
   "Barn" -> "catnip cap" [color="green"];
   "BarnCatnipCapBonus" -> "Barn" [color="green"];
   "Warehouse" -> "catnip cap" [color="green"];
@@ -149,6 +185,7 @@ digraph {
   "catnip" -> "Active Bio Lab" [color="red"];
   "Biofuel Processing" -> "Active Bio Lab" [color="red"];
   "catnip cap" -> "catnip" [color="limegreen"];
+  "reset catnip" -> "catnip" [color="limegreen"];
   "Aqueduct" -> "catnip" [color="green"];
   "Hydroponics" -> "catnip" [color="green"];
   "Yarn" -> "Hydroponics" [color="green"];
@@ -185,6 +222,7 @@ digraph {
   "wood cap" -> "Workshop Automation" [color="green"];
   "Advanced Automation" -> "wood cap" [color="green"];
   "wood cap" -> "wood" [color="limegreen"];
+  "reset wood" -> "wood" [color="limegreen"];
   "Lumber Mill" -> "wood" [color="green"];
   "Reinforced Saw" -> "Lumber Mill" [color="green"];
   "Steel Saw" -> "Lumber Mill" [color="green"];
@@ -240,6 +278,7 @@ digraph {
   "Railgun" -> "hunter" [color="green"];
   "catpower" -> "Active Mint" [color="red"];
   "catpower cap" -> "catpower" [color="limegreen"];
+  "reset catpower" -> "catpower" [color="limegreen"];
   "GlobalProductionBonus" -> "catpower" [color="green"];
   "Cath" -> "catpower" [color="green"];
   "Numeromancy" -> "Cath" [color="green"];
@@ -259,6 +298,7 @@ digraph {
   "mineral cap" -> "Workshop Automation" [color="green"];
   "Advanced Automation" -> "mineral cap" [color="green"];
   "mineral cap" -> "mineral" [color="limegreen"];
+  "reset mineral" -> "mineral" [color="limegreen"];
   "GlobalProductionBonus" -> "mineral" [color="green"];
   "Charon" -> "mineral" [color="green"];
   "Barn" -> "iron cap" [color="green"];
@@ -282,6 +322,7 @@ digraph {
   "iron cap" -> "Pneumatic Press" [color="green"];
   "Advanced Automation" -> "iron cap" [color="green"];
   "iron cap" -> "iron" [color="limegreen"];
+  "reset iron" -> "iron" [color="limegreen"];
   "GlobalProductionBonus" -> "iron" [color="green"];
   "Umbra" -> "iron" [color="green"];
   "Numeromancy" -> "Umbra" [color="green"];
@@ -305,6 +346,7 @@ digraph {
   "Deep Mining" -> "Mine" [color="green"];
   "coal" -> "Active Calciner" [color="red"];
   "coal cap" -> "coal" [color="limegreen"];
+  "reset coal" -> "coal" [color="limegreen"];
   "Pyrolysis" -> "coal" [color="green"];
   "Active Steamworks" -> "coal" [color="red"];
   "High Pressure Engine" -> "Active Steamworks" [color="green"];
@@ -327,6 +369,7 @@ digraph {
   "Mining Drill" -> "Geodesy" [color="green"];
   "Unobtainium Drill" -> "Geodesy" [color="green"];
   "gold cap" -> "gold" [color="limegreen"];
+  "reset gold" -> "gold" [color="limegreen"];
   "GlobalProductionBonus" -> "gold" [color="green"];
   "Umbra" -> "gold" [color="green"];
   "Barn" -> "titanium cap" [color="green"];
@@ -342,6 +385,7 @@ digraph {
   "Active Smelter" -> "titanium" [color="green"];
   "Nuclear Smelter" -> "Active Smelter" [color="green"];
   "titanium cap" -> "titanium" [color="limegreen"];
+  "reset titanium" -> "titanium" [color="limegreen"];
   "GlobalProductionBonus" -> "titanium" [color="green"];
   "Charon" -> "titanium" [color="green"];
   "Oil Well" -> "oil cap" [color="green"];
@@ -365,6 +409,7 @@ digraph {
   "Dune" -> "Hydraulic Fracturer" [color="green"];
   "Numerology" -> "Dune" [color="green"];
   "oil cap" -> "oil" [color="limegreen"];
+  "reset oil" -> "oil" [color="limegreen"];
   "GlobalProductionBonus" -> "oil" [color="green"];
   "Termogus" -> "oil" [color="green"];
   "Numeromancy" -> "Termogus" [color="green"];
@@ -387,6 +432,7 @@ digraph {
   "Umbra" -> "Planet Cracker" [color="red"];
   "Dune" -> "Planet Cracker" [color="green"];
   "uranium cap" -> "uranium" [color="limegreen"];
+  "reset uranium" -> "uranium" [color="limegreen"];
   "GlobalProductionBonus" -> "uranium" [color="green"];
   "Dune" -> "uranium" [color="green"];
   "Numeromancy" -> "Dune" [color="green"];
@@ -401,24 +447,30 @@ digraph {
   "Redmoon" -> "Active Lunar Outpost" [color="green"];
   "Numerology" -> "Redmoon" [color="green"];
   "unobtainium cap" -> "unobtainium" [color="limegreen"];
+  "reset unobtainium" -> "unobtainium" [color="limegreen"];
   "Microwarp Reactors" -> "unobtainium" [color="green"];
   "GlobalProductionBonus" -> "unobtainium" [color="green"];
   "Redmoon" -> "unobtainium" [color="green"];
   "Numeromancy" -> "Redmoon" [color="green"];
+  "time crystal" -> "reset time crystal" [color="green"];
+  "Anachronomancy" -> "time crystal" [color="green"];
+  "reset time crystal" -> "time crystal" [color="limegreen"];
   "Containment Chamber" -> "antimatter cap" [color="green"];
   "Heatsink" -> "Containment Chamber" [color="green"];
   "GlobalCapBonus" -> "antimatter cap" [color="green"];
   "Sunlifter" -> "antimatter" [color="green"];
   "antimatter cap" -> "antimatter" [color="limegreen"];
+  "reset antimatter" -> "antimatter" [color="limegreen"];
   "Space Beacon" -> "relic" [color="green"];
   "Relic Station" -> "Space Beacon" [color="green"];
   "Black Nexus" -> "Relic Station" [color="green"];
   "Black Pyramid" -> "Black Nexus" [color="green"];
   "Hash Level" -> "Relic Station" [color="green"];
   "SpaceProductionBonus" -> "Relic Station" [color="green"];
+  "reset relic" -> "relic" [color="limegreen"];
   "GlobalProductionBonus" -> "relic" [color="green"];
-  "Chronosphere" -> "void" [color="green"];
   "Void Hoover" -> "Chronosphere" [color="green"];
+  "reset void" -> "void" [color="limegreen"];
   "Chronocontrol" -> "void" [color="green"];
   "Distortion" -> "Chronocontrol" [color="green"];
   "GlobalProductionBonus" -> "void" [color="green"];
@@ -427,6 +479,7 @@ digraph {
   "Chronosurge" -> "Chronosphere" [color="green"];
   "temporal flux cap" -> "temporal flux" [color="limegreen"];
   "GlobalProductionBonus" -> "temporal flux" [color="green"];
+  "reset blackcoin" -> "blackcoin" [color="limegreen"];
   "Venus of Willenfluff" -> "kitten" [color="green"];
   "Pawgan Rituals" -> "kitten" [color="green"];
   "Active Brewery" -> "kitten" [color="green"];
@@ -480,6 +533,7 @@ digraph {
   "Temple" -> "culture" [color="green"];
   "Stained Glass" -> "Temple" [color="green"];
   "culture cap" -> "culture" [color="limegreen"];
+  "reset culture" -> "culture" [color="limegreen"];
   "GlobalProductionBonus" -> "culture" [color="green"];
   "Yarn" -> "culture" [color="green"];
   "Numeromancy" -> "Yarn" [color="green"];
@@ -491,6 +545,7 @@ digraph {
   "Theology" -> "Temple" [color="green"];
   "Chapel" -> "faith" [color="green"];
   "faith cap" -> "faith" [color="limegreen"];
+  "reset faith" -> "faith" [color="limegreen"];
   "Solar Chant" -> "faith" [color="green"];
   "GlobalProductionBonus" -> "faith" [color="green"];
   "Helios" -> "faith" [color="green"];
@@ -512,6 +567,7 @@ digraph {
   "Numerology" -> "Kairo" [color="green"];
   "Astronomy" -> "starchart" [color="green"];
   "AstronomicalEventBonus" -> "Astronomy" [color="green"];
+  "reset starchart" -> "starchart" [color="limegreen"];
   "Hubble Space Telescope" -> "starchart" [color="green"];
   "GlobalProductionBonus" -> "starchart" [color="green"];
   "Kairo" -> "starchart" [color="green"];
@@ -544,7 +600,14 @@ digraph {
   "chronoheat cap" -> "chronoheat" [color="limegreen"];
   "Chrono Furnace" -> "chrono furnace fuel" [color="green"];
   "chronoheat" -> "Chrono Furnace" [color="green"];
+  "all kittens" -> "kitten minus 35" [color="green"];
+  "kitten minus 35" -> "reset karma kitten" [color="green"];
+  "reset karma kitten" -> "karma kitten" [color="limegreen"];
+  "all kittens" -> "kitten minus 70" [color="green"];
+  "kitten minus 70" -> "reset paragon" [color="green"];
   "Active Brewery" -> "festival day" [color="green"];
+  "Chronophysics" -> "reset Chronophysics" [color="green"];
+  "Anachronomancy" -> "Chronophysics" [color="green"];
   "Smelter" -> "Idle Smelter" [color="green"];
   "Idle Smelter" -> "Active Smelter" [color="red"];
   "Bio Lab" -> "Idle Bio Lab" [color="green"];
@@ -568,10 +631,18 @@ digraph {
   "Active Steamworks" -> "beam" [color="green"];
   "Workshop Automation" -> "Active Steamworks" [color="green"];
   "CraftRatio" -> "wood cap" [color="green"];
+  "beam" -> "reset beam" [color="green"];
+  "Chronosphere" -> "beam" [color="green"];
   "Active Steamworks" -> "slab" [color="green"];
   "CraftRatio" -> "mineral cap" [color="green"];
+  "slab" -> "reset slab" [color="green"];
+  "Chronosphere" -> "slab" [color="green"];
+  "concrete" -> "reset concrete" [color="green"];
+  "Chronosphere" -> "concrete" [color="green"];
   "Active Steamworks" -> "plate" [color="green"];
   "CraftRatio" -> "iron cap" [color="green"];
+  "plate" -> "reset plate" [color="green"];
+  "Chronosphere" -> "plate" [color="green"];
   "Active Calciner" -> "steel" [color="green"];
   "Steel Plants" -> "Active Calciner" [color="green"];
   "Oxidation" -> "Steel Plants" [color="green"];
@@ -579,13 +650,41 @@ digraph {
   "Automated Plants" -> "CraftRatio" [color="green"];
   "Reactor" -> "Steel Plants" [color="green"];
   "Nuclear Plants" -> "Reactor" [color="green"];
+  "steel" -> "reset steel" [color="green"];
+  "Chronosphere" -> "steel" [color="green"];
+  "gear" -> "reset gear" [color="green"];
+  "Chronosphere" -> "gear" [color="green"];
+  "alloy" -> "reset alloy" [color="green"];
+  "Chronosphere" -> "alloy" [color="green"];
+  "eludium" -> "reset eludium" [color="green"];
+  "Chronosphere" -> "eludium" [color="green"];
+  "scaffold" -> "reset scaffold" [color="green"];
+  "Chronosphere" -> "scaffold" [color="green"];
+  "ship" -> "reset ship" [color="green"];
+  "Chronosphere" -> "ship" [color="green"];
+  "tanker" -> "reset tanker" [color="green"];
+  "Chronosphere" -> "tanker" [color="green"];
+  "kerosene" -> "reset kerosene" [color="green"];
+  "Chronosphere" -> "kerosene" [color="green"];
+  "parchment" -> "reset parchment" [color="green"];
+  "Chronosphere" -> "parchment" [color="green"];
   "Steamworks" -> "manuscript" [color="green"];
   "Printing Press" -> "Steamworks" [color="green"];
   "Offset Press" -> "Printing Press" [color="green"];
   "Photolithography" -> "Offset Press" [color="green"];
+  "manuscript" -> "reset manuscript" [color="green"];
+  "Chronosphere" -> "manuscript" [color="green"];
+  "compendium" -> "reset compendium" [color="green"];
+  "Chronosphere" -> "compendium" [color="green"];
+  "blueprint" -> "reset blueprint" [color="green"];
+  "Chronosphere" -> "blueprint" [color="green"];
   "thorium" -> "Active Reactor" [color="red"];
   "Thorium Reactors" -> "Active Reactor" [color="red"];
   "Enriched Thorium" -> "Thorium Reactors" [color="red"];
+  "thorium" -> "reset thorium" [color="green"];
+  "Chronosphere" -> "thorium" [color="green"];
+  "megalith" -> "reset megalith" [color="green"];
+  "Chronosphere" -> "megalith" [color="green"];
   "Gather catnip" -> "catnip" [color="limegreen"];
   "catnip" -> "Refine catnip" [color="orange"];
   "Catnip Enrichment" -> "catnip" [color="green"];
@@ -1000,6 +1099,8 @@ digraph {
   "relic" -> "Void Resonator" [color="orange"];
   "void" -> "Void Resonator" [color="orange"];
   "Paradox Theory" -> "Void Resonator" [color="blue"];
+  "karma kitten" -> "karma" [color="orange"];
+  "Hut" -> "karma" [color="blue"];
   "kitten" -> "woodcutter" [color="orange"];
   "Hut" -> "woodcutter" [color="blue"];
   "kitten" -> "scholar" [color="orange"];
@@ -1879,6 +1980,24 @@ digraph {
   "AstronomicalEventBonus" [shape="cylinder"];
   "UnicornEventBonus" [shape="cylinder"];
   "PriceRatioBonus" [shape="cylinder"];
+  "reset catnip" [shape="cylinder"];
+  "reset wood" [shape="cylinder"];
+  "reset mineral" [shape="cylinder"];
+  "reset coal" [shape="cylinder"];
+  "reset iron" [shape="cylinder"];
+  "reset titanium" [shape="cylinder"];
+  "reset gold" [shape="cylinder"];
+  "reset oil" [shape="cylinder"];
+  "reset uranium" [shape="cylinder"];
+  "reset unobtainium" [shape="cylinder"];
+  "reset antimatter" [shape="cylinder"];
+  "reset catpower" [shape="cylinder"];
+  "reset culture" [shape="cylinder"];
+  "reset faith" [shape="cylinder"];
+  "reset starchart" [shape="cylinder"];
+  "reset relic" [shape="cylinder"];
+  "reset void" [shape="cylinder"];
+  "reset blackcoin" [shape="cylinder"];
   "catnip cap" [shape="cylinder"];
   "catnip" [shape="cylinder"];
   "wood cap" [shape="cylinder"];
@@ -1902,6 +2021,7 @@ digraph {
   "uranium" [shape="cylinder"];
   "unobtainium cap" [shape="cylinder"];
   "unobtainium" [shape="cylinder"];
+  "reset time crystal" [shape="cylinder"];
   "time crystal" [shape="cylinder"];
   "antimatter cap" [shape="cylinder"];
   "antimatter" [shape="cylinder"];
@@ -1936,9 +2056,14 @@ digraph {
   "chronoheat cap" [shape="cylinder"];
   "chronoheat" [shape="cylinder"];
   "chrono furnace fuel" [shape="cylinder"];
-  "karma" [shape="cylinder"];
+  "kitten minus 35" [shape="cylinder"];
+  "reset karma kitten" [shape="cylinder"];
+  "karma kitten" [shape="cylinder"];
+  "kitten minus 70" [shape="cylinder"];
+  "reset paragon" [shape="cylinder"];
   "paragon" [shape="cylinder"];
   "burned paragon" [shape="cylinder"];
+  "reset Chronophysics" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
   "Library" [shape="box3d"];
@@ -2061,6 +2186,7 @@ digraph {
   "Void Rift" [shape="box3d"];
   "Chronocontrol" [shape="box3d"];
   "Void Resonator" [shape="box3d"];
+  "karma" [shape="box3d"];
   "woodcutter" [shape="house"];
   "scholar" [shape="house"];
   "farmer" [shape="house"];
@@ -2315,23 +2441,41 @@ digraph {
   "Adjustment Bureau" [shape="diamond"];
   "ASCOH" [shape="diamond"];
   "beam" [shape="cylinder"];
+  "reset beam" [shape="cylinder"];
   "slab" [shape="cylinder"];
+  "reset slab" [shape="cylinder"];
   "concrete" [shape="cylinder"];
+  "reset concrete" [shape="cylinder"];
   "plate" [shape="cylinder"];
+  "reset plate" [shape="cylinder"];
   "steel" [shape="cylinder"];
+  "reset steel" [shape="cylinder"];
   "gear" [shape="cylinder"];
+  "reset gear" [shape="cylinder"];
   "alloy" [shape="cylinder"];
+  "reset alloy" [shape="cylinder"];
   "eludium" [shape="cylinder"];
+  "reset eludium" [shape="cylinder"];
   "scaffold" [shape="cylinder"];
+  "reset scaffold" [shape="cylinder"];
   "ship" [shape="cylinder"];
+  "reset ship" [shape="cylinder"];
   "tanker" [shape="cylinder"];
+  "reset tanker" [shape="cylinder"];
   "kerosene" [shape="cylinder"];
+  "reset kerosene" [shape="cylinder"];
   "parchment" [shape="cylinder"];
+  "reset parchment" [shape="cylinder"];
   "manuscript" [shape="cylinder"];
+  "reset manuscript" [shape="cylinder"];
   "compendium" [shape="cylinder"];
+  "reset compendium" [shape="cylinder"];
   "blueprint" [shape="cylinder"];
+  "reset blueprint" [shape="cylinder"];
   "thorium" [shape="cylinder"];
+  "reset thorium" [shape="cylinder"];
   "megalith" [shape="cylinder"];
+  "reset megalith" [shape="cylinder"];
   "Gather catnip" [shape="box3d"];
   "Refine catnip" [shape="box3d"];
   "Send hunters" [shape="house"];
@@ -2373,9 +2517,9 @@ digraph {
   "@thorium" [shape="cds"];
   "@megalith" [shape="cds"];
 }
-# titanium: 71
-# blueprint: 46
+# titanium: 74
+# blueprint: 48
+# Chronosphere: 44
 # PriceRatioBonus: 44
-# paragon: 40
-# starchart: 39
-# alloy: 38
+# starchart: 42
+# alloy: 40

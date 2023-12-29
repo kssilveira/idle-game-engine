@@ -89,9 +89,6 @@ Edges:
 
 Missing features:
 
-- [Space Travel Speed](https://wiki.kittensgame.com/en/game-tabs/space)
-- [Reset](https://wiki.kittensgame.com/en/general-information/game-mechanics#reset)
-
 - [AI Apocalypse](https://wiki.kittensgame.com/en/general-information/events/ai-apocalypse)
 - [Achievements](https://wiki.kittensgame.com/en/game-tabs/achievements)
 - [Blackcoin](https://wiki.kittensgame.com/en/general-information/resources/blackcoin)
@@ -106,6 +103,7 @@ Missing features:
 - [Policies](https://wiki.kittensgame.com/en/game-tabs/science/policies)
 - [Pollution](https://wiki.kittensgame.com/en/general-information/game-mechanics/pollution)
 - [Resource Retrieval](https://wiki.kittensgame.com/en/game-tabs/time#resource-retrieval)
+- [Space Travel Speed](https://wiki.kittensgame.com/en/game-tabs/space)
 - [Trade Attitude and Embassy](https://wiki.kittensgame.com/en/game-tabs/trade)
 
 TODO:

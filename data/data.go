@@ -36,6 +36,8 @@ type Resource struct {
 
 	// Cap = CapResource.Count
 	CapResource string `json:",omitempty"`
+	// Count = ResetResource.Count
+	ResetResource string `json:",omitempty"`
 
 	// Cost = Count * pow(CostExponentBase, add.Count)
 	CostExponentBase float64 `json:",omitempty"`
@@ -57,14 +59,16 @@ type Action struct {
 	Adds       []Resource `json:",omitempty"`
 	IsHidden   bool       `json:",omitempty"`
 	// extra fields for convenience
-	Producers []Resource `json:",omitempty"`
-	Bonus     []Resource `json:",omitempty"`
+	Producers     []Resource `json:",omitempty"`
+	Bonus         []Resource `json:",omitempty"`
+	ResetResource string     `json:",omitempty"`
 }
 
 type ParsedInput struct {
 	IsSkip   bool
 	IsCreate bool
 	IsMax    bool
+	IsReset  bool
 	Index    int
 	Action   Action
 }

@@ -48,6 +48,7 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 			graphBonus(edgefn, p)
 		}
 		edgefn(r.CapResource, r.Name, "limegreen")
+		edgefn(r.ResetResource, r.Name, "limegreen")
 		graphBonus(edgefn, *r)
 	}
 	for _, a := range g.Actions {
