@@ -62,15 +62,12 @@ func Graph(logger *log.Logger, g *game.Game, colors map[string]bool) {
 			graphBonus(edgefn, add)
 		}
 		edgefn(a.UnlockedBy, a.Name, "blue")
-		if a.CostExponentBaseResource == nil {
-			continue
-		}
 		edgefn(a.CostExponentBaseResource.Name, a.Name, "orange")
 		if a.CostExponentBaseResource.Name == "" {
 			a.CostExponentBaseResource.Name = a.Name
 		}
 		a.CostExponentBaseResource.Factor = game.GetFactor(a.CostExponentBaseResource.Factor) * -1
-		graphBonus(edgefn, *a.CostExponentBaseResource)
+		graphBonus(edgefn, a.CostExponentBaseResource)
 	}
 	for _, r := range g.Resources {
 		if !nodes[r.Name] {

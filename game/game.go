@@ -94,10 +94,8 @@ func (g *Game) Validate() error {
 				}
 			}
 		}
-		if a.CostExponentBaseResource != nil {
-			if err := g.validateResource(a.CostExponentBaseResource); err != nil {
-				return err
-			}
+		if err := g.validateResource(&a.CostExponentBaseResource); err != nil {
+			return err
 		}
 	}
 	return nil
@@ -663,12 +661,9 @@ func (g *Game) getCost(a data.Action, c data.Resource) float64 {
 	base := c.CostExponentBase
 	if base == 0 {
 		base = a.CostExponentBase
-		if a.CostExponentBaseResource != nil {
-			base = g.getOneRate(*a.CostExponentBaseResource)
-		}
 	}
 	if base == 0 {
-		base = 1
+		base = g.getOneRate(a.CostExponentBaseResource)
 	}
 	return c.Count * math.Pow(base, g.GetResource(a.Adds[0].Name).Count)
 }

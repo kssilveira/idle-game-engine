@@ -1818,7 +1818,7 @@ func NewGame(now game.Now) *game.Game {
 		Costs:                    []R{{Name: "catnip", Count: 10}},
 	}, {
 		Name: "Hut", UnlockedBy: "Catnip Field",
-		CostExponentBaseResource: &R{
+		CostExponentBaseResource: R{
 			Factor: 2.5,
 			Bonus: []R{{
 				Name: "Ironwood Huts", Factor: -0.50,
@@ -5064,8 +5064,8 @@ func addTechs(g *game.Game, actions []data.Action) {
 	}
 }
 
-func getCEBR(base float64) *R {
-	return &R{
+func getCEBR(base float64) R {
+	return R{
 		Factor: base,
 		Bonus:  []R{{Name: "PriceRatioBonus"}},
 	}
