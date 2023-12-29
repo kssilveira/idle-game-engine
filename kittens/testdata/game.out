@@ -11860,30 +11860,6 @@
       "CostExponentBaseResource": {}
     },
     {
-      "Name": "Sacrifice Unicorns",
-      "Type": "Craft",
-      "UnlockedBy": "Ziggurat",
-      "Costs": [
-        {
-          "Name": "unicorn",
-          "Count": 2500
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "tear",
-          "Count": 1,
-          "Bonus": [
-            {
-              "Name": "Ziggurat"
-            }
-          ],
-          "BonusStartsFromZero": true
-        }
-      ],
-      "CostExponentBaseResource": {}
-    },
-    {
       "Name": "Praise the sun!",
       "Type": "Craft",
       "UnlockedBy": "Philosophy",
@@ -11930,6 +11906,30 @@
               ]
             }
           ]
+        }
+      ],
+      "CostExponentBaseResource": {}
+    },
+    {
+      "Name": "Sacrifice Unicorns",
+      "Type": "Craft",
+      "UnlockedBy": "Ziggurat",
+      "Costs": [
+        {
+          "Name": "unicorn",
+          "Count": 2500
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "tear",
+          "Count": 1,
+          "Bonus": [
+            {
+              "Name": "Ziggurat"
+            }
+          ],
+          "BonusStartsFromZero": true
         }
       ],
       "CostExponentBaseResource": {}

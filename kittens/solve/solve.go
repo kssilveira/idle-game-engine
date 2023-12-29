@@ -48,6 +48,12 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Currency", "s Gold Ore", "m Tradepost",
 
 		"11 s Sharks", "m Ziggurat", "Sacrifice Unicorns",
+		"s Hunting Armour",
+
+		"s Writing", "m Amphitheatre",
+		"s Register",
+
+		"s Philosophy", "100 s Send hunters", "m Temple",
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {

@@ -1209,10 +1209,6 @@ digraph {
   "necrocorn" -> "Feed Leviathans" [color="orange"];
   "Feed Leviathans" -> "leviathan energy" [color="limegreen"];
   "Black Pyramid" -> "Feed Leviathans" [color="blue"];
-  "unicorn" -> "Sacrifice Unicorns" [color="orange"];
-  "Sacrifice Unicorns" -> "tear" [color="limegreen"];
-  "Ziggurat" -> "tear" [color="green"];
-  "Ziggurat" -> "Sacrifice Unicorns" [color="blue"];
   "faith" -> "Praise the sun!" [color="orange"];
   "Praise the sun!" -> "worship" [color="limegreen"];
   "epiphany" -> "worship" [color="green"];
@@ -1221,6 +1217,10 @@ digraph {
   "Adore the galaxy" -> "epiphany" [color="limegreen"];
   "Transcendence Level" -> "epiphany" [color="green"];
   "Apocrypha" -> "Adore the galaxy" [color="blue"];
+  "unicorn" -> "Sacrifice Unicorns" [color="orange"];
+  "Sacrifice Unicorns" -> "tear" [color="limegreen"];
+  "Ziggurat" -> "tear" [color="green"];
+  "Ziggurat" -> "Sacrifice Unicorns" [color="blue"];
   "alicorn" -> "Sacrifice Alicorns" [color="orange"];
   "Sacrifice Alicorns" -> "time crystal" [color="limegreen"];
   "Unicorn Utopia" -> "time crystal" [color="green"];
@@ -2489,9 +2489,9 @@ digraph {
   "Dragons" [shape="cds"];
   "Leviathans" [shape="cds"];
   "Feed Leviathans" [shape="cds"];
-  "Sacrifice Unicorns" [shape="cds"];
   "Praise the sun!" [shape="cds"];
   "Adore the galaxy" [shape="cds"];
+  "Sacrifice Unicorns" [shape="cds"];
   "Sacrifice Alicorns" [shape="cds"];
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];

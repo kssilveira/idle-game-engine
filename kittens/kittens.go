@@ -2929,14 +2929,6 @@ func NewGame(now game.Now) *game.Game {
 		Costs: []R{{Name: "necrocorn", Count: 1}},
 		Adds:  []R{{Name: "leviathan energy", Count: 1}},
 	}, {
-		Name: "Sacrifice Unicorns", Type: "Craft", UnlockedBy: "Ziggurat",
-		Costs: []R{{Name: "unicorn", Count: 2500}},
-		Adds: []R{{
-			Name: "tear", Count: 1,
-			Bonus:               []R{{Name: "Ziggurat"}},
-			BonusStartsFromZero: true,
-		}},
-	}, {
 		Name: "Praise the sun!", Type: "Craft", UnlockedBy: "Philosophy",
 		Costs: []R{{Name: "faith", Count: 1}},
 		Adds: []R{{
@@ -2952,6 +2944,14 @@ func NewGame(now game.Now) *game.Game {
 				Name:  "Transcendence Level",
 				Bonus: []R{{Name: "Transcendence Level"}},
 			}},
+		}},
+	}, {
+		Name: "Sacrifice Unicorns", Type: "Craft", UnlockedBy: "Ziggurat",
+		Costs: []R{{Name: "unicorn", Count: 2500}},
+		Adds: []R{{
+			Name: "tear", Count: 1,
+			Bonus:               []R{{Name: "Ziggurat"}},
+			BonusStartsFromZero: true,
 		}},
 	}, {
 		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "Ziggurat",
