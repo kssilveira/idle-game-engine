@@ -302,16 +302,8 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		return input, err
 	}
 	if input.Type == data.ParsedInputTypeSkip {
-		skipTime, err := g.getSkipTime(input.Action, false /* isNested */)
-		if err != nil {
+		if err := g.skip(input); err != nil {
 			return input, err
-		}
-		for skipTime > 0 {
-			g.timeSkip(skipTime)
-			skipTime, err = g.getSkipTime(input.Action, false /* isNested */)
-			if err != nil {
-				return input, err
-			}
 		}
 	}
 	if input.Type == data.ParsedInputTypeSkip || input.Type == data.ParsedInputTypeCreate {
@@ -351,6 +343,21 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		r.Add(g.getActionAdd(add))
 	}
 	return input, nil
+}
+
+func (g *Game) skip(input data.ParsedInput) error {
+	skipTime, err := g.getSkipTime(input.Action, false /* isNested */)
+	if err != nil {
+		return err
+	}
+	for skipTime > 0 {
+		g.timeSkip(skipTime)
+		skipTime, err = g.getSkipTime(input.Action, false /* isNested */)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func (g *Game) reset() {
