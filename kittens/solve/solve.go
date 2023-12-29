@@ -47,7 +47,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Engineering", "m Aqueduct",
 		"s Currency", "s Gold Ore", "m Tradepost",
 
-		"11 s Sharks", "m Ziggurat", "Sacrifice Unicorns",
+		"11 s Sharks", "m Ziggurat", "6 Sacrifice Unicorns",
 		"s Hunting Armour",
 
 		"s Writing", "m Amphitheatre",
@@ -71,12 +71,23 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Astronomy", "m Observatory",
 
 		"s Navigation",
-		"s Hut", "s woodcutter", "s farmer",
-		"s Hut", "s woodcutter", "s farmer",
+		"3 s Hut", "3 s woodcutter", "3 s farmer",
 
 		"11 s Harbour",
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter",
-		"m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory",
+		"m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Temple", "m Observatory",
+		"m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism",
+		"s Ironwood Huts", "s Solar Revolution",
+
+		"s Architecture",
+		"5 s Hut", "5 s woodcutter", "5 s farmer",
+		"s Hut", "s miner", "s farmer",
+		"13 s Hut", "13 s hunter", "13 s farmer",
+		"5 Active Smelter",
+		"2 m Mint", "Active Mint",
+		"m Temple", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Basilica",
+
+		"s Unicorn Tomb",
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {
