@@ -317,10 +317,8 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		}
 		return input, nil
 	}
-	for _, c := range input.Action.Costs {
-		if g.GetResource(c.Name).Count < g.getCost(input.Action, c) {
-			return input, fmt.Errorf("not enough %s", c.Name)
-		}
+	if err := g.checkCost(input); err != nil {
+		return input, err
 	}
 	for _, c := range input.Action.Costs {
 		r := g.GetResource(c.Name)
@@ -338,6 +336,15 @@ func (g *Game) doMax(input data.ParsedInput) error {
 	for {
 		if _, err := g.act(fmt.Sprintf("s%d", input.Index)); err != nil {
 			return nil
+		}
+	}
+	return nil
+}
+
+func (g *Game) checkCost(input data.ParsedInput) error {
+	for _, c := range input.Action.Costs {
+		if g.GetResource(c.Name).Count < g.getCost(input.Action, c) {
+			return fmt.Errorf("not enough %s", c.Name)
 		}
 	}
 	return nil
