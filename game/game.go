@@ -312,11 +312,10 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		}
 	}
 	if input.Type == data.ParsedInputTypeMax {
-		for {
-			if _, err := g.act(fmt.Sprintf("s%d", input.Index)); err != nil {
-				return input, nil
-			}
+		if err := g.doMax(input); err != nil {
+			return input, err
 		}
+		return input, nil
 	}
 	for _, c := range input.Action.Costs {
 		if g.GetResource(c.Name).Count < g.getCost(input.Action, c) {
@@ -333,6 +332,15 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		r.Add(g.getActionAdd(add))
 	}
 	return input, nil
+}
+
+func (g *Game) doMax(input data.ParsedInput) error {
+	for {
+		if _, err := g.act(fmt.Sprintf("s%d", input.Index)); err != nil {
+			return nil
+		}
+	}
+	return nil
 }
 
 func (g *Game) create(input data.ParsedInput) error {
