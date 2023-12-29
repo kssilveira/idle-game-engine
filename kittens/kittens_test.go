@@ -198,7 +198,7 @@ func TestRun(t *testing.T) {
 			}
 		}
 		output := make(chan *ui.Data)
-		go g.Run(nowfn, input, output)
+		go g.Run(input, output)
 		cfg := textui.Config{
 			Logger:            log.New(&buf, "", 0 /* flags */),
 			Separator:         "###",

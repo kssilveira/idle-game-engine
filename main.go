@@ -41,7 +41,7 @@ func all() error {
 
 	input := make(chan string)
 	output := make(chan *ui.Data)
-	go g.Run(now, input, output)
+	go g.Run(input, output)
 
 	go func() {
 		if err := handleInput(g, input); err != nil {

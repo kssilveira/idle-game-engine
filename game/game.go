@@ -11,6 +11,10 @@ import (
 	"github.com/kssilveira/idle-game-engine/ui"
 )
 
+type Input chan string
+type Output chan *ui.Data
+type Now func() time.Time
+
 type Game struct {
 	Resources []*data.Resource `json:",omitempty"`
 	Actions   []data.Action    `json:",omitempty"`
@@ -20,17 +24,15 @@ type Game struct {
 	// maps action name to index in Actions
 	actionToIndex map[string]int
 	now           time.Time
+	nowfn         Now
 	errors        []error
 	hideOverCap   bool
 }
 
-type Input chan string
-type Output chan *ui.Data
-type Now func() time.Time
-
-func NewGame(now time.Time) *Game {
+func NewGame(nowfn Now) *Game {
 	g := &Game{
-		now:             now,
+		nowfn:           nowfn,
+		now:             nowfn(),
 		resourceToIndex: map[string]int{},
 		actionToIndex:   map[string]int{},
 	}
@@ -100,12 +102,12 @@ func (g *Game) Validate() error {
 	return nil
 }
 
-func (g *Game) Run(now Now, input Input, output Output) {
+func (g *Game) Run(input Input, output Output) {
 	var in string
 	var parsedInput data.ParsedInput
 	var err error
 	for {
-		g.update(now())
+		g.update(g.nowfn())
 		data := &ui.Data{
 			LastInput:   parsedInput,
 			Error:       err,
@@ -333,14 +335,14 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 }
 
 func (g *Game) doMax(input data.ParsedInput) error {
-	before := g.getActionState(input.Action, 1 /* factor */)
 	for {
-		g.act(fmt.Sprintf("s%d", input.Index))
+		before := g.getActionState(input.Action, 1 /* factor */)
+		_, err := g.act(fmt.Sprintf("s%d", input.Index))
 		after := g.getActionState(input.Action, 1 /* factor */)
 		if before == after {
 			break
 		}
-		before = after
+		g.update(g.nowfn())
 	}
 	return nil
 }

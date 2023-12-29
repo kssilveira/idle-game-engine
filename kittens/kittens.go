@@ -14,7 +14,7 @@ func NewGame(now game.Now) *game.Game {
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
 	}
 
-	g := game.NewGame(now())
+	g := game.NewGame(now)
 
 	g.AddResources(join([]R{{
 		Name: "day", Type: "Calendar", IsHidden: true, Count: 0, Cap: -1,

@@ -13,7 +13,8 @@ import (
 )
 
 func main() {
-	g := game.NewGame(time.Now())
+	now := func() time.Time { return time.Now() }
+	g := game.NewGame(now)
 	g.AddResources([]data.Resource{{
 		Name: "catnip", Count: 10, Cap: 100,
 		Producers: []data.Resource{{
@@ -36,10 +37,9 @@ func main() {
 		log.Fatal(err)
 	}
 
-	now := func() time.Time { return time.Now() }
 	input := make(chan string)
 	output := make(chan *ui.Data)
-	go g.Run(now, input, output)
+	go g.Run(input, output)
 
 	go func() {
 		for {

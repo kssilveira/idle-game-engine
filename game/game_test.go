@@ -307,7 +307,7 @@ func TestAct(t *testing.T) {
 		},
 	}}
 	for _, in := range inputs {
-		g := NewGame(time.Unix(0, 0))
+		g := NewGame(func() time.Time { return time.Unix(0, 0) })
 		g.AddResources(in.resources)
 		g.AddActions(in.actions)
 		if err := g.Validate(); err != nil {
@@ -631,7 +631,7 @@ func TestUpdate(t *testing.T) {
 		},
 	}}
 	for _, in := range inputs {
-		g := NewGame(time.Unix(0, 0))
+		g := NewGame(func() time.Time { return time.Unix(0, 0) })
 		g.AddResources(in.resources)
 		if err := g.Validate(); err != nil {
 			t.Errorf("[%s] Validate got err %v", in.name, err)

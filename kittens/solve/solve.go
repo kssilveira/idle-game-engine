@@ -82,11 +82,12 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"s Hut", "s miner", "s farmer",
 		"13 s Hut", "13 s hunter", "13 s farmer",
 		"5 Active Smelter",
-		"2 m Mint", "Active Mint",
+		"m Mint", "Active Mint",
 		"m Temple", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Basilica",
 
 		"11 s Unicorn Tomb", "11 s Ivory Tower", "11 s Ivory Citadel", "11 s Sky Palace", "11 s Unicorn Utopia", "11 s Sunspire",
-		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "2 m Mint", "m Temple",
+		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine",
+		"m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple",
 		"s Unicorn Utopia", "6 s Sunspire",
 		"m Basilica",
 
@@ -94,7 +95,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 
 		"2 s Chemistry", "22 s Oil Well",
 		"30 s Hut", "30 s miner", "30 s farmer",
-		"100 s Zebras", "s Calciner", "Active Calciner", "3 m Calciner",
+		"100 s Zebras", "s Calciner", "Active Calciner", "m Calciner",
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {
