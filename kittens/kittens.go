@@ -112,7 +112,7 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "SpaceElevatorOilBonus",
 		Producers: []R{{
-			Name: "Space Elevator", Factor: -0.05,
+			Name: "Space Elevator", Factor: -0.05, Min: -1,
 			Bonus: []R{{
 				Name:                "Cath",
 				Bonus:               []R{{Name: "Numerology"}},
@@ -321,6 +321,22 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "Renaissance", Factor: -0.0225,
 		}},
+	}, {
+		Name: "UnhappinessBonus",
+		Producers: []R{{
+			Name: "Amphitheatre", Factor: -0.048, Min: -1,
+		}, {
+			Name: "Broadcast Tower", Factor: -0.75, Min: -1,
+		}},
+	}, {
+		Name: "CatnipConsumptionBonus",
+		Producers: []R{{
+			Name: "Pasture", Factor: -0.005, Min: -1,
+		}, {
+			Name: "Unic. Pasture", Factor: -0.0015, Min: -1,
+		}, {
+			Name: "Robotic Assistance", Factor: -0.25, Min: -1,
+		}},
 	}})
 
 	addResets(g, []string{"catnip", "wood", "mineral", "coal", "iron", "titanium", "gold", "oil", "uranium", "unobtainium", "antimatter", "catpower", "science", "culture", "faith", "starchart", "relic", "void", "blackcoin"})
@@ -367,13 +383,7 @@ func NewGame(now game.Now) *game.Game {
 			}},
 		}}, resourceWithName(R{
 			Factor: -4.25, ProductionFloor: true, ProductionOnGone: true,
-			Bonus: []R{{
-				Name: "Pasture", Factor: -0.005,
-			}, {
-				Name: "Unic. Pasture", Factor: -0.0015,
-			}, {
-				Name: "Robotic Assistance", Factor: -0.25,
-			}},
+			Bonus: []R{{Name: "CatnipConsumptionBonus", Min: -1}},
 		}, kittenNames), []R{{
 			Name: "farmer", Factor: 1 * 5,
 			Bonus: []R{{
@@ -1751,7 +1761,8 @@ func NewGame(now game.Now) *game.Game {
 	}, {
 		Name: "happiness", Type: "Job", StartCount: 0.1, Cap: -1,
 		Producers: []R{{
-			Name: "all kittens", Factor: -0.02,
+			Name: "all kittens", Factor: -0.02, Min: -0.75,
+			Bonus: []R{{Name: "UnhappinessBonus", Min: -1}},
 		}, {
 			Name: "ivory", Factor: 0.10, ProductionBoolean: true,
 		}, {
@@ -1779,10 +1790,6 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "festival day", Factor: 0.10, ProductionBoolean: true,
 			Bonus: []R{{Name: "Active Brewery", Factor: 0.01}},
-		}, {
-			Name: "Amphitheatre", Factor: 0.048,
-		}, {
-			Name: "Broadcast Tower", Factor: 0.75,
 		}, {
 			Name: "Temple", Factor: 0.005,
 			Bonus:               []R{{Name: "Sun Altar"}},

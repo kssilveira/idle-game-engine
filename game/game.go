@@ -595,7 +595,11 @@ func (g *Game) getOneRate(resource data.Resource) float64 {
 }
 
 func (g *Game) getOneRateFormula(resource data.Resource) string {
-	return joinFormula("*", g.getCountForRateFormula(resource), floatFormula(GetFactor(resource.Factor)), g.getBonusFormula(resource))
+	res := joinFormula("*", g.getCountForRateFormula(resource), floatFormula(GetFactor(resource.Factor)), g.getBonusFormula(resource))
+	if resource.Min != 0 {
+		res = fmt.Sprintf("max(%s, %s)", floatFormula(resource.Min), res)
+	}
+	return res
 }
 
 func GetFactor(factor float64) float64 {
