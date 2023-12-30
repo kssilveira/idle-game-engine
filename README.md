@@ -12,8 +12,9 @@ Game engine for idle games like kittens game.
 - [kittens.go](kittens/kittens.go) kittens game
 - [main.go](main.go) run kittens game
 - [game.out](kittens/testdata/game.out) json representation of kittens game, including generated formulas
-- [solve.go](kittens/solve/solve.go) solution to kittens game
-- [solve.out](kittens/testdata/solve.out) text UI output for solution to kittens game
+- [solve.go](kittens/solve/solve.go) partial solution to kittens game
+- [asciicast](https://asciinema.org/a/629412) ascii cast of solution
+- [solve.out](kittens/testdata/solve.out) text UI output of solution
 - [graph.go](kittens/graph/graph.go) generate graph of kittens game dependencies
 - [graph.svg](kittens/testdata/graph.svg) graph of kittens game dependencies
 - [graph_blue.svg](kittens/testdata/graph_blue.svg) graph of kittens game unlocks
