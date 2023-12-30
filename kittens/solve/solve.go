@@ -10,61 +10,90 @@ import (
 )
 
 func Solve(g *game.Game, input chan string, sleepMS int) error {
-	cmds := []string{
-		"Gather catnip", "Catnip Field", "m Catnip Field", "h Catnip Field", "h catnip",
+	precmds := []string{
 		"h Charon", "h Umbra", "h Yarn", "h Helios", "h Cath", "h Redmoon", "h Dune", "h Piscine", "h Termogus",
-		"h Autumn", "h Spring", "h Summer", "h Winter",
-		"h day_of_year", "hc",
+		"h Spring", "h Summer", "h Autumn", "h Winter",
+		"h day_of_year",
+	}
+	cmds := []string{
+		// catnip
+		"Gather catnip", "Catnip Field", "m Catnip Field",
 
-		"s Refine catnip", "Hut", "s woodcutter", "h wood",
+		// woodcutter
+		"s Refine catnip", "Hut", "s woodcutter",
 
-		"s Library", "s scholar", "m Library", "h Library", "h science", "h woodcutter", "h scholar",
+		// scholar
+		"s Library", "s scholar", "m Library",
 
-		"m Calendar", "m Agriculture", "s Hut", "2 m farmer", "h farmer",
-		"m Barn",
+		// farmer
+		"m Calendar", "m Agriculture", "s Hut", "2 m farmer",
+		"m Barn", "m Catnip Field", "m Library",
 
-		"m Archery", "s Hut", "s hunter", "s farmer", "h hunter", "h catpower", "h Lizards", "h Griffins",
+		// hunter
+		"m Archery", "s Hut", "s hunter", "s farmer",
 
-		"m Animal Husbandry", "m Pasture", "h Pasture",
+		// unicorn
+		"m Animal Husbandry", "m Pasture",
+		"40 s Send hunters", "Unic. Pasture", "10 s Unic. Pasture",
 
-		"40 s Send hunters", "Unic. Pasture", "10 s Unic. Pasture", "h Unic. Pasture", "h Send hunters", "h unicorn",
+		"hc",
 
-		"m Mining", "s Mine", "s Hut", "s miner", "s farmer", "m Mine", "h Mine", "h mineral", "h miner",
+		// miner
+		"m Mining", "s Mine", "s Hut", "s miner", "s farmer", "m Mine",
+		"m Workshop", "m Mineral Hoes", "m Mineral Axe", "m Bolas",
 
-		"m Workshop", "m Mineral Hoes", "m Mineral Axe", "m Bolas", "h Workshop",
-
+		// iron
 		"m Metal Working", "m Smelter",
 		"s Hut", "s woodcutter", "s farmer",
-		"Active Smelter", "h Smelter", "h Active Smelter", "h iron",
+		"Active Smelter",
 		"m Iron Hoes", "m Iron Axe",
-		"m Expanded Barns", "m Barn", "m Hunting Armour",
+		"m Expanded Barns",
+		"m Barn", "m Catnip Field", "m Library", "m Mine", "m Workshop", "m Smelter", "m Pasture",
+		"m Hunting Armour",
 
-		"m Civil Service", "m Mathematics", "m Academy", "m Celestial Mechanics", "h Academy",
+		"m Civil Service", "m Mathematics", "m Academy", "m Celestial Mechanics",
 
+		// craft
 		"m Construction", "m Catnip Enrichment", "m Composite Bow",
-		"m Reinforced Barns", "11 s Warehouse", "m Barn", "m Lumber Mill", "m Reinforced Saw", "h Lumber Mill", "h Warehouse",
+		"m Reinforced Barns", "33 s Warehouse",
+		"m Barn", "m Catnip Field", "m Library", "m Mine", "m Workshop", "m Smelter", "m Pasture", "m Academy", "m Lumber Mill",
+		"m Reinforced Saw",
 
-		"m Engineering", "m Aqueduct", "h Aqueduct",
+		"m Engineering", "m Aqueduct",
 
-		"m Currency", "m Gold Ore", "m Tradepost", "h Tradepost",
+		// gold
+		"m Currency", "m Gold Ore", "m Tradepost",
 
-		"m Writing", "m Amphitheatre", "m Register", "h Nagas",
+		"h Send hunters", "h Lizards", "h Griffins",
 
-		"m Philosophy",
+		// culture
+		"m Writing", "m Register", "10 s Sharks", "m Amphitheatre",
+
+		"hm", "h Nagas",
+
+		"m Philosophy", "20 s Sharks", "m Temple",
 
 		"m Steel", "m Coal Furnace", "m Deep Mining", "m Steel Axe", "m Steel Armour", "m High Pressure Engine",
 
-		"m Reinforced Warehouses",
+		"m Reinforced Warehouses", "m Ironwood Huts", "30 s Sharks", "m High Pressure Engine",
+		"m Mine", "m Workshop", "m Aqueduct", "m Lumber Mill", "m Tradepost",
 
+		// manuscript
 		"m Machinery", "m Crossbow", "m Printing Press", "m Workshop Automation",
-		"s Hut", "s woodcutter", "s farmer",
-		"11 s Sharks", "2 s Steamworks", "Active Steamworks",
-		"m Library", "m Academy",
+		"2 s Hut", "2 s woodcutter", "2 s farmer",
+		"s Sharks", "2 s Steamworks", "Active Steamworks",
 
+		// priest
 		"m Theology", "s Hut", "s priest", "s farmer",
 		"m Amphitheatre", "m Temple",
 		"m Golden Spire", "m Solar Chant", "m Scholasticism",
-		"h gold", "h culture", "h faith", "h beam", "h slab", "h manuscript", "h Steamworks", "h Active Steamworks", "h Temple", "h priest", "h Sharks", "h coal",
+		"m Sun Altar", "m Stained Glass",
+		"m Academy",
+	}
+	for _, cmd := range precmds {
+		if err := ToInput(g, cmd, input); err != nil {
+			return err
+		}
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {
@@ -95,7 +124,7 @@ func ToInput(g *game.Game, in string, input chan string) error {
 	cmd := strings.Join(words, " ")
 	if g.HasAction(cmd) {
 		cmd = fmt.Sprintf("%d", g.GetActionIndex(cmd))
-	} else if !g.HasResource(cmd) && in != "hc" {
+	} else if !g.HasResource(cmd) && in != "hc" && in != "hm" {
 		return fmt.Errorf("invalid arg %s", cmd)
 	}
 	for i := 0; i < count; i++ {

@@ -19,9 +19,10 @@ import (
 )
 
 var (
-	auto        = flag.Bool("auto", false, "automatically trigger all actions")
-	autoSleepMS = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
-	resourceMap = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
+	auto         = flag.Bool("auto", false, "automatically trigger all actions")
+	endAfterAuto = flag.Bool("end_after_auto", false, "end after auto actions")
+	autoSleepMS  = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
+	resourceMap  = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
 )
 
 func main() {
@@ -97,6 +98,9 @@ func handleInput(g *game.Game, input game.Input) error {
 	if *auto {
 		if err := solve.Solve(g, input, *autoSleepMS); err != nil {
 			return err
+		}
+		if *endAfterAuto {
+			os.Exit(0)
 		}
 	}
 	for {

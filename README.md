@@ -108,5 +108,5 @@ Missing features:
 
 TODO:
 
-- solve with logic
 - record terminal using https://asciinema.org/
+- solve the rest with logic
