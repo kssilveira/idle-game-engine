@@ -160,6 +160,8 @@ func (g *Game) populateUIActions(data *ui.Data) {
 		}
 		if g.HasResource(a.Name) {
 			action.Count = g.GetResource(a.Name).Count
+		} else {
+			action.MissingResource = true
 		}
 		action.Costs = g.populateUICosts(a, &action, false /* isNested */)
 		for _, r := range a.Adds {

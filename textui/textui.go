@@ -109,7 +109,7 @@ func showActions(cfg Config, data *ui.Data) {
 		if a.IsOverCap && data.HideOverCap && a.Count > 0 && !data.ShowAll {
 			continue
 		}
-		if data.HideAction[a.Name] && !data.ShowAll {
+		if (a.Count > 0 || a.MissingResource) && data.HideAction[a.Name] && !data.ShowAll {
 			continue
 		}
 		status := ""

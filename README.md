@@ -108,6 +108,5 @@ Missing features:
 
 TODO:
 
-- hide individual buildings
 - make [solve.go](kittens/solve/solve.go) get everything
 - record terminal using https://asciinema.org/

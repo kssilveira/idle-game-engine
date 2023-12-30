@@ -27,14 +27,15 @@ type Resource struct {
 }
 
 type Action struct {
-	Name      string
-	Type      string
-	Count     float64
-	IsLocked  bool
-	IsHidden  bool
-	IsOverCap bool
-	Costs     []Cost
-	Adds      []Add
+	Name            string
+	Type            string
+	Count           float64
+	MissingResource bool
+	IsLocked        bool
+	IsHidden        bool
+	IsOverCap       bool
+	Costs           []Cost
+	Adds            []Add
 }
 
 type Cost struct {
