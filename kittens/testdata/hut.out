@@ -1,12 +1,12 @@
 ###
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: 
 ###
 [Resource] science 0.03 / 250 | 0.03/s 2h13m19s to cap
 [Resource] mineral 0.01 / 250 | 0.01/s 5h33m19s to cap
 [Resource] paragon 0.000001 | 0.000001/s
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Hut
 error: action Hut is locked
@@ -14,7 +14,7 @@ error: action Hut is locked
 [Resource] science 0.03 / 250 | 0.03/s 2h13m18s to cap
 [Resource] mineral 0.01 / 250 | 0.01/s 5h33m18s to cap
 [Resource] paragon 0.000001 | 0.000001/s
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
@@ -25,7 +25,7 @@ last action: Gather catnip
 [Resource] science 0.06 / 250 | 0.03/s 2h13m17s to cap
 [Resource] mineral 0.03 / 250 | 0.01/s 5h33m17s to cap
 [Resource] paragon 0.000003 | 0.000001/s
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Hut
 error: action Hut is locked
@@ -37,7 +37,7 @@ error: action Hut is locked
 [Resource] science 3.19 / 250 | 0.03/s 2h11m37s to cap
 [Resource] mineral 1.28 / 250 | 0.01/s 5h31m37s to cap
 [Resource] paragon 0.0001 | 0.000001/s
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip
 ###
@@ -48,6 +48,6 @@ last action: Gather catnip
 [Resource] science 3.19 / 250 | 0.03/s 2h11m37s to cap
 [Resource] mineral 1.28 / 250 | 0.01/s 5h31m37s to cap
 [Resource] paragon 0.0001 | 0.000001/s
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 last action: Gather catnip

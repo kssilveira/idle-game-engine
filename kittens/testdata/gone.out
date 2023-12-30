@@ -2,7 +2,7 @@
 [-] [Resource] catnip 1 000 / 5 000 | -17/s 58s to empty
 [Resource] kitten 4 / 4 | 0.05/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 0 / 50) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -21,7 +21,7 @@ last action:
 [Resource] kitten 3 / 3 | 0.05/s
 [Resource] paragon 0.000001 | 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 0.09 / 50 9m3s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -40,7 +40,7 @@ last action: woodcutter
 [Resource] kitten 3 / 3 | 0.05/s
 [Resource] paragon 0.000001 | 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 0.09 / 50 9m3s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -64,7 +64,7 @@ error: action Refine catnip is locked
 [Resource] kitten 2 / 2 | 0.05/s
 [Resource] paragon 0.000003 | 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 0.18 / 50 9m2s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -87,7 +87,7 @@ last action: scholar
 [Resource] kitten 2 / 2 | 0.05/s
 [Resource] paragon 0.000003 | 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 0.18 / 50 9m2s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -111,7 +111,7 @@ error: action Refine catnip is locked
 [Resource] kitten 1 / 1 | 0.05/s
 [Resource] paragon 0.000004 | 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 0.28 / 50 9m1s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -134,7 +134,7 @@ last action: farmer
 [Resource] kitten 1 / 1 | 0.05/s
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 7.53 / 50 7m42s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -158,7 +158,7 @@ error: action Refine catnip is locked
 [Resource] kitten 1 / 1 | 0.05/s
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.02 (0.1 + -0.08)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Catnip Field -(catnip 2.1 / 10) +(Catnip Field 1)
 X: [Building] Barn -(wood 7.62 / 50 7m41s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
@@ -181,7 +181,7 @@ error: action Refine catnip is locked
 [Resource] kitten 0.05 / 1 | 0.05/s 18s to cap
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.04 (0.1 + -0.06)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Barn -(wood 7.71 / 50 7m31s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] woodcutter (1) -(kitten 0.05 / 1 18s) +(woodcutter 1)
@@ -202,7 +202,7 @@ error: action Refine catnip is locked
 [Resource] kitten 0.1 / 2 | 0.05/s 37s to cap
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Barn -(wood 7.71 / 50) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] woodcutter -(kitten 0.1 / 1 18s) +(woodcutter 1)
@@ -223,7 +223,7 @@ error: action Refine catnip is locked
 [Resource] kitten 0.15 / 3 | 0.05/s 57s to cap
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.08 (0.1 + -0.02)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Barn -(wood 7.71 / 50) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] woodcutter -(kitten 0.15 / 1 17s) +(woodcutter 1)
@@ -244,7 +244,7 @@ error: action Refine catnip is locked
 [Resource] kitten 0.15 / 3 | 0.05/s 57s to cap
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.08 (0.1 + -0.02)
-X: [Building] Gather catnip +(catnip 10)
+X: [Building] Gather catnip +(catnip 5)
 X: [Building] Barn -(wood 7.71 / 50) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] woodcutter -(kitten 0.15 / 1 17s) +(woodcutter 1)

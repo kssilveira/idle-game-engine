@@ -8218,7 +8218,7 @@
       "Adds": [
         {
           "Name": "catnip",
-          "Count": 10
+          "Count": 5
         }
       ],
       "CostExponentBaseResource": {}
@@ -8243,7 +8243,7 @@
       "Adds": [
         {
           "Name": "wood",
-          "Count": 5,
+          "Count": 2.5,
           "Bonus": [
             {
               "Name": "Bio Lab",
@@ -11483,7 +11483,7 @@
         },
         {
           "Name": "unicorn",
-          "Count": 0.05
+          "Count": 0.5
         }
       ],
       "CostExponentBaseResource": {}
