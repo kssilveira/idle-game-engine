@@ -1,14 +1,17 @@
 package solve
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/game"
+	"github.com/kssilveira/idle-game-engine/ui"
 )
 
 type Config struct {
 	Game      *game.Game
 	Input     chan string
+	LastData  *ui.Data
 	Waiting   chan bool
 	Refreshed chan bool
 	IsSmart   bool
@@ -23,6 +26,22 @@ func Solve(cfg Config) error {
 }
 
 func solveSmart(cfg Config) error {
+	cfg.Input <- "hc"
+	cfg.Input <- "hm"
+
+	for {
+		cfg.Waiting <- true
+		<-cfg.Refreshed
+		for i, a := range cfg.LastData.Actions {
+			if a.IsLocked || a.IsHidden || a.IsOverCap {
+				continue
+			}
+			cfg.Input <- fmt.Sprintf("s %d", i)
+		}
+		time.Sleep(time.Second * time.Duration(cfg.SleepMS) / 1000.)
+	}
+
+	cfg.Input <- "999"
 	return nil
 }
 

@@ -103,6 +103,7 @@ func handleInput(g *game.Game, input game.Input, lastData *ui.Data, waiting chan
 		if err := solve.Solve(solve.Config{
 			Game:      g,
 			Input:     input,
+			LastData:  lastData,
 			Waiting:   waiting,
 			Refreshed: refreshed,
 			IsSmart:   *autoSmart,
