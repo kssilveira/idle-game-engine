@@ -13,8 +13,9 @@ import (
 )
 
 func main() {
-	now := func() time.Time { return time.Now() }
-	g := game.NewGame(now)
+	g := game.NewGame(game.Config{
+		NowFn: func() time.Time { return time.Now() },
+	})
 	g.AddResources([]data.Resource{{
 		Name: "catnip", Count: 10, Cap: 100,
 		Producers: []data.Resource{{

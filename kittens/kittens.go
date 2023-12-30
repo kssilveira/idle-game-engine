@@ -9,12 +9,12 @@ import (
 
 type R = data.Resource
 
-func NewGame(now game.Now) *game.Game {
+func NewGame(cfg game.Config) *game.Game {
 	kittenNames := []string{
 		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
 	}
 
-	g := game.NewGame(now)
+	g := game.NewGame(cfg)
 
 	g.AddResources(join([]R{{
 		Name: "day", Type: "Calendar", IsHidden: true, Count: 0, Cap: -1,

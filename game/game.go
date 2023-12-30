@@ -16,6 +16,11 @@ type Input chan string
 type Output chan *ui.Data
 type Now func() time.Time
 
+type Config struct {
+	NowFn          Now
+	MaxSkipSeconds time.Duration
+}
+
 type Game struct {
 	Resources []*data.Resource `json:",omitempty"`
 	Actions   []data.Action    `json:",omitempty"`
@@ -24,8 +29,8 @@ type Game struct {
 	resourceToIndex map[string]int
 	// maps action name to index in Actions
 	actionToIndex map[string]int
+	config        Config
 	now           time.Time
-	nowfn         Now
 	errors        []error
 	showAll       bool
 	hideOverCap   bool
@@ -34,10 +39,10 @@ type Game struct {
 	hideResource  map[string]bool
 }
 
-func NewGame(nowfn Now) *Game {
+func NewGame(cfg Config) *Game {
 	g := &Game{
-		nowfn:           nowfn,
-		now:             nowfn(),
+		config:          cfg,
+		now:             cfg.NowFn(),
 		resourceToIndex: map[string]int{},
 		actionToIndex:   map[string]int{},
 		hideAction:      map[string]bool{},
@@ -114,7 +119,7 @@ func (g *Game) Run(input Input, output Output) {
 	var parsedInput data.ParsedInput
 	var err error
 	for {
-		g.update(g.nowfn())
+		g.update(g.config.NowFn())
 		data := &ui.Data{
 			LastInput:    parsedInput,
 			Error:        err,
@@ -394,7 +399,7 @@ func (g *Game) doMax(input data.ParsedInput) error {
 		if before == after {
 			break
 		}
-		g.update(g.nowfn())
+		g.update(g.config.NowFn())
 	}
 	return nil
 }
@@ -609,6 +614,9 @@ func (g *Game) getSkipTime(a data.Action, isNested bool) (time.Duration, error) 
 			}
 		}
 		return 0, fmt.Errorf("not enough %s", c.Name)
+	}
+	if g.config.MaxSkipSeconds > 0 && skipTime > g.config.MaxSkipSeconds {
+		return 0, fmt.Errorf("max skip %s > skip %s", g.config.MaxSkipSeconds, skipTime)
 	}
 	return skipTime, nil
 }

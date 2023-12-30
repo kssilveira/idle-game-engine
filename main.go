@@ -19,11 +19,12 @@ import (
 )
 
 var (
-	auto         = flag.Bool("auto", false, "automatically trigger all actions")
-	autoSmart    = flag.Bool("auto_smart", false, "smart solve")
-	endAfterAuto = flag.Bool("end_after_auto", false, "end after auto actions")
-	autoSleepMS  = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
-	resourceMap  = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
+	auto           = flag.Bool("auto", false, "automatically trigger all actions")
+	autoSmart      = flag.Bool("auto_smart", false, "smart solve")
+	endAfterAuto   = flag.Bool("end_after_auto", false, "end after auto actions")
+	autoSleepMS    = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
+	maxSkipSeconds = flag.Int("max_skip_seconds", 0, "max skip duration")
+	resourceMap    = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
 )
 
 func main() {
@@ -34,9 +35,7 @@ func main() {
 }
 
 func all() error {
-	now := func() time.Time { return time.Now() }
-
-	g, err := newGame(now)
+	g, err := newGame()
 	if err != nil {
 		return err
 	}
@@ -62,8 +61,11 @@ func all() error {
 	return http.ListenAndServe(":8080", nil)
 }
 
-func newGame(now game.Now) (*game.Game, error) {
-	g := kittens.NewGame(now)
+func newGame() (*game.Game, error) {
+	g := kittens.NewGame(game.Config{
+		NowFn:          func() time.Time { return time.Now() },
+		MaxSkipSeconds: time.Second * time.Duration(*maxSkipSeconds),
+	})
 	if err := updateResources(g, *resourceMap); err != nil {
 		return nil, err
 	}
