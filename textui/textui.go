@@ -38,12 +38,16 @@ func Show(cfg Config, data *ui.Data) {
 	}
 	showResources(cfg, data)
 	showActions(cfg, data)
+	count := ""
+	if data.LastInput.Count > 1 {
+		count = fmt.Sprintf("%d ", data.LastInput.Count)
+	}
 	prefix := parsedInputTypeToPrefix[data.LastInput.Type]
 	name := data.LastInput.Action.Name
 	if name == "" {
 		name = data.LastInput.Arg
 	}
-	cfg.Logger.Printf("last action: %s%s\n", prefix, name)
+	cfg.Logger.Printf("last action: %s%s%s\n", count, prefix, name)
 	if data.Error != nil {
 		cfg.Logger.Printf("error: %v\n", data.Error)
 	}

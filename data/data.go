@@ -81,6 +81,7 @@ type ParsedInput struct {
 	Type   string
 	Arg    string
 	Index  int
+	Count  int
 	Action Action
 }
 

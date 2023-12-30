@@ -3,10 +3,10 @@ package game
 import (
 	"fmt"
 	"math"
+	"regexp"
 	"strconv"
 	"strings"
 	"time"
-	"unicode"
 
 	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/ui"
@@ -188,6 +188,8 @@ func (g *Game) populateUIActions(data *ui.Data) {
 	}, {
 		Name: "cX: create inputs and buy action X",
 	}, {
+		Name: "XA: X times action A",
+	}, {
 		Name: "hm: hide maxed actions",
 	}, {
 		Name: "hc: hide custom actions",
@@ -318,9 +320,18 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 	if err != nil {
 		return input, err
 	}
+	for i := 0; i < input.Count; i++ {
+		if err := g.actImpl(input); err != nil {
+			return input, err
+		}
+	}
+	return input, nil
+}
+
+func (g *Game) actImpl(input data.ParsedInput) error {
 	if input.Type == data.ParsedInputTypeReset {
 		g.reset()
-		return input, nil
+		return nil
 	}
 	if input.Type == data.ParsedInputTypeHide {
 		if input.Arg == "m" {
@@ -332,36 +343,36 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		} else {
 			g.hideResource[input.Arg] = !g.hideResource[input.Arg]
 		}
-		return input, nil
+		return nil
 	}
 	if input.Type == data.ParsedInputTypeShow {
 		g.showAll = !g.showAll
-		return input, nil
+		return nil
 	}
 	if g.isLocked(input.Action) {
-		return input, fmt.Errorf("action %s is locked", input.Action.Name)
+		return fmt.Errorf("action %s is locked", input.Action.Name)
 	}
 	if err := g.checkMax(input.Action); err != nil {
-		return input, err
+		return err
 	}
 	if input.Type == data.ParsedInputTypeSkip {
 		if err := g.skip(input); err != nil {
-			return input, err
+			return err
 		}
 	}
 	if input.Type == data.ParsedInputTypeSkip || input.Type == data.ParsedInputTypeCreate {
 		if err := g.create(input); err != nil {
-			return input, err
+			return err
 		}
 	}
 	if input.Type == data.ParsedInputTypeMax {
 		if err := g.doMax(input); err != nil {
-			return input, err
+			return err
 		}
-		return input, nil
+		return nil
 	}
 	if err := g.checkCost(input); err != nil {
-		return input, err
+		return err
 	}
 	for _, c := range input.Action.Costs {
 		r := g.GetResource(c.Name)
@@ -372,7 +383,7 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		r := g.GetResource(add.Name)
 		r.Add(g.getActionAdd(add))
 	}
-	return input, nil
+	return nil
 }
 
 func (g *Game) doMax(input data.ParsedInput) error {
@@ -496,32 +507,50 @@ func (g *Game) getBonusFormula(resource data.Resource) string {
 	return joinFormula(operator, bonus...)
 }
 
+var (
+	inputRegexp = regexp.MustCompile(`(\d*)(\w?)(\D*)(\d*)`)
+)
+
 func (g *Game) parseInput(in string) (data.ParsedInput, error) {
-	res := data.ParsedInput{}
-	if len(in) > 0 {
+	res := data.ParsedInput{Count: 1}
+	matches := inputRegexp.FindStringSubmatch(in)
+	if len(matches) != 5 {
+		return res, fmt.Errorf("input %s invalid matches %#v", in, matches)
+	}
+	if matches[4] == "" && matches[1] != "" {
+		matches[4] = matches[1]
+		matches[1] = ""
+	}
+	if matches[1] != "" {
+		count, err := strconv.Atoi(matches[1])
+		if err != nil {
+			return res, err
+		}
+		res.Count = count
+	}
+	if matches[2] != "" {
 		for _, t := range data.ParsedInputTypes {
-			if string(in[0]) == t {
+			if matches[2] == t {
 				res.Type = t
-				in = in[1:]
 				break
 			}
 		}
-	}
-	res.Arg = in
-	if res.Type == data.ParsedInputTypeHide || res.Type == data.ParsedInputTypeReset || res.Type == data.ParsedInputTypeShow {
-		if !(len(in) > 0 && unicode.IsDigit([]rune(in)[0])) {
-			return res, nil
+		if res.Type == "" {
+			return res, fmt.Errorf("input %s invalid command %s", in, matches[2])
 		}
 	}
-	index, err := strconv.Atoi(in)
-	if err != nil {
-		return res, err
+	res.Arg = matches[3]
+	if matches[4] != "" {
+		index, err := strconv.Atoi(matches[4])
+		if err != nil {
+			return res, err
+		}
+		res.Index = index
+		if index < 0 || index >= len(g.Actions) {
+			return res, fmt.Errorf("invalid index %d", index)
+		}
+		res.Action = g.Actions[index]
 	}
-	if index < 0 || index >= len(g.Actions) {
-		return res, fmt.Errorf("invalid index %d", index)
-	}
-	res.Index = index
-	res.Action = g.Actions[index]
 	return res, nil
 }
 
