@@ -52,7 +52,7 @@ func Show(cfg Config, data *ui.Data) {
 func showResources(cfg Config, data *ui.Data) {
 	for _, d := range data.Resources {
 		r := d.Resource
-		if r.IsHidden || d.Rate == 0 || r.Count == 0 {
+		if r.IsHidden || (d.Rate == 0 && !data.ShowAll) || r.Count == 0 {
 			continue
 		}
 		if d.Rate >= 0 && data.HideResource[d.Resource.Name] && !data.ShowAll {
