@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"math/rand"
 	"net/http"
 	"os"
 	"strconv"
@@ -109,7 +110,9 @@ func handleInput(g *game.Game, input game.Input, lastData *ui.Data, waiting chan
 			Waiting:   waiting,
 			Refreshed: refreshed,
 			IsSmart:   *autoSmart,
-			SleepMS:   *autoSleepMS}); err != nil {
+			SleepMS:   *autoSleepMS,
+			PermFn:    rand.Perm,
+		}); err != nil {
 			return err
 		}
 		if *endAfterAuto {

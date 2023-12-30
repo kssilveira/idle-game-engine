@@ -16,6 +16,7 @@ type Config struct {
 	Refreshed chan bool
 	IsSmart   bool
 	SleepMS   int
+	PermFn    func(int) []int
 }
 
 func Solve(cfg Config) error {
@@ -32,11 +33,15 @@ func solveSmart(cfg Config) error {
 	for {
 		cfg.Waiting <- true
 		<-cfg.Refreshed
+		options := []int{}
 		for i, a := range cfg.LastData.Actions {
 			if a.IsLocked || a.IsHidden || a.IsOverCap {
 				continue
 			}
-			cfg.Input <- fmt.Sprintf("s %d", i)
+			options = append(options, i)
+		}
+		for _, index := range cfg.PermFn(len(options)) {
+			cfg.Input <- fmt.Sprintf("s %d", options[index])
 		}
 		time.Sleep(time.Second * time.Duration(cfg.SleepMS) / 1000.)
 	}
