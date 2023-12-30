@@ -78,7 +78,7 @@ func showResources(cfg Config, data *ui.Data) {
 				}
 				rateStr = fmt.Sprintf("(%s %s %s%s)", toString(r.StartCount), operator, toString(d.Rate), extra)
 			} else {
-				rateStr = fmt.Sprintf("%s/s", toString(d.Rate))
+				rateStr = fmt.Sprintf("| %s/s", toString(d.Rate))
 			}
 			extra = fmt.Sprintf(" %s%s", rateStr, capStr)
 		}

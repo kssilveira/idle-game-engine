@@ -7,9 +7,9 @@ X: [*] [Tech] Archery -(science 0 / 300* 2h40m0s) +(Archery 1)
 X: [*] [Tech] Mining -(science 0 / 500* 4h26m40s) +(Mining 1)
 last action: 
 ###
-[Resource] science 0.03 / 250 0.03/s 2h13m19s to cap
-[Resource] mineral 0.01 / 500 0.01/s 11h6m39s to cap
-[Resource] paragon 0.000001 0.000001/s
+[Resource] science 0.03 / 250 | 0.03/s 2h13m19s to cap
+[Resource] mineral 0.01 / 500 | 0.01/s 11h6m39s to cap
+[Resource] paragon 0.000001 | 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 1 / 10) +(Catnip Field 1)
 X: [Building] Barn (1) -(wood 87.5) +(Barn 1)
@@ -18,9 +18,9 @@ X: [*] [Tech] Archery -(science 0.03 / 300* 2h39m59s) +(Archery 1)
 X: [*] [Tech] Mining -(science 0.03 / 500* 4h26m39s) +(Mining 1)
 last action: Barn
 ###
-[Resource] science 0.03 / 250 0.03/s 2h13m18s to cap
-[Resource] mineral 0.01 / 500 0.01/s 11h6m38s to cap
-[Resource] paragon 0.000001 0.000001/s
+[Resource] science 0.03 / 250 | 0.03/s 2h13m18s to cap
+[Resource] mineral 0.01 / 500 | 0.01/s 11h6m38s to cap
+[Resource] paragon 0.000001 | 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn (1) -(wood 87.5) +(Barn 1)
@@ -33,9 +33,9 @@ last action: Gather catnip
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] science 0.06 / 250 0.03/s 2h13m17s to cap
-[Resource] mineral 0.03 / 750 0.01/s 16h39m57s to cap
-[Resource] paragon 0.000003 0.000001/s
+[Resource] science 0.06 / 250 | 0.03/s 2h13m17s to cap
+[Resource] mineral 0.03 / 750 | 0.01/s 16h39m57s to cap
+[Resource] paragon 0.000003 | 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn (2) -(wood 62.5 / 153.12) +(Barn 1)
@@ -48,9 +48,9 @@ last action: Barn
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] science 0.06 / 250 0.03/s 2h13m17s to cap
-[Resource] mineral 0.03 / 750 0.01/s 16h39m57s to cap
-[Resource] paragon 0.000003 0.000001/s
+[Resource] science 0.06 / 250 | 0.03/s 2h13m17s to cap
+[Resource] mineral 0.03 / 750 | 0.01/s 16h39m57s to cap
+[Resource] paragon 0.000003 | 0.000001/s
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
 X: [Building] Barn (2) -(wood 62.5 / 153.12) +(Barn 1)

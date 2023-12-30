@@ -1,6 +1,6 @@
 ###
-[-] [Resource] catnip 1 000 / 5 000 -8.5/s 1m57s to empty
-[Resource] kitten 2 / 2 0.05/s
+[-] [Resource] catnip 1 000 / 5 000 | -8.5/s 1m57s to empty
+[Resource] kitten 2 / 2 | 0.05/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -10,11 +10,11 @@ X: [*] [Tech] Archery -(science 0 / 300* 2h40m0s) +(Archery 1)
 X: [*] [Tech] Mining -(science 0 / 500* 4h26m40s) +(Mining 1)
 last action: 
 ###
-[-] [Resource] catnip 996.8 / 5 000 -3.2/s 5m11s to empty
-[Resource] science 0.03 / 250 0.03/s 2h13m19s to cap
-[Resource] mineral 0.01 / 250 0.01/s 5h33m19s to cap
-[Resource] kitten 1 / 1 0.05/s
-[Resource] paragon 0.000001 0.000001/s
+[-] [Resource] catnip 996.8 / 5 000 | -3.2/s 5m11s to empty
+[Resource] science 0.03 / 250 | 0.03/s 2h13m19s to cap
+[Resource] mineral 0.01 / 250 | 0.01/s 5h33m19s to cap
+[Resource] kitten 1 / 1 | 0.05/s
+[Resource] paragon 0.000001 | 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -24,11 +24,11 @@ X: [*] [Tech] Archery -(science 0.03 / 300* 2h39m59s) +(Archery 1)
 X: [*] [Tech] Mining -(science 0.03 / 500* 4h26m39s) +(Mining 1)
 last action: farmer
 ###
-[-] [Resource] catnip 1 006 / 5 000 -3.2/s 5m14s to empty
-[Resource] science 0.03 / 250 0.03/s 2h13m18s to cap
-[Resource] mineral 0.01 / 250 0.01/s 5h33m18s to cap
-[Resource] kitten 1 / 1 0.05/s
-[Resource] paragon 0.000001 0.000001/s
+[-] [Resource] catnip 1 006 / 5 000 | -3.2/s 5m14s to empty
+[Resource] science 0.03 / 250 | 0.03/s 2h13m18s to cap
+[Resource] mineral 0.01 / 250 | 0.01/s 5h33m18s to cap
+[Resource] kitten 1 / 1 | 0.05/s
+[Resource] paragon 0.000001 | 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -42,10 +42,10 @@ last action: Gather catnip
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] catnip 1 008 / 5 000 2.1/s 31m40s to cap
-[Resource] science 0.06 / 250 0.03/s 2h13m17s to cap
-[Resource] mineral 0.03 / 250 0.01/s 5h33m17s to cap
-[Resource] paragon 0.000003 0.000001/s
+[Resource] catnip 1 008 / 5 000 | 2.1/s 31m40s to cap
+[Resource] science 0.06 / 250 | 0.03/s 2h13m17s to cap
+[Resource] mineral 0.03 / 250 | 0.01/s 5h33m17s to cap
+[Resource] paragon 0.000003 | 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
@@ -59,10 +59,10 @@ last action: farmer
 [Calendar] year 1 (1 + 0.003)
 [Calendar] Spring 1 (1 if 0.01 % 4 == 0)
 [Calendar] day_of_year 2 (1 + 1 % 400)
-[Resource] catnip 1 018 / 5 000 2.1/s 31m35s to cap
-[Resource] science 0.06 / 250 0.03/s 2h13m17s to cap
-[Resource] mineral 0.03 / 250 0.01/s 5h33m17s to cap
-[Resource] paragon 0.000003 0.000001/s
+[Resource] catnip 1 018 / 5 000 | 2.1/s 31m35s to cap
+[Resource] science 0.06 / 250 | 0.03/s 2h13m17s to cap
+[Resource] mineral 0.03 / 250 | 0.01/s 5h33m17s to cap
+[Resource] paragon 0.000003 | 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 10)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
