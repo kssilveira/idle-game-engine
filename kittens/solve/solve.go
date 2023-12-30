@@ -66,7 +66,6 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 
 		"m Theology", "s Hut", "s priest", "s farmer",
 		"m Golden Spire", "m Solar Chant", "m Scholasticism",
-		"10 s Praise the sun!",
 
 		"m Astronomy", "m Observatory",
 
@@ -99,7 +98,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		"m Titanium Saw", "m Titanium Axe", "m Alloy Axe", "m Titanium Barns", "m Alloy Barns", "m Alloy Warehouses", "m Expanded Cargo", "m Silos", "m Alloy Armour", "m Astrolabe", "m Titanium Reflectors", "m Alloy Saw", "m Titanium Warehouses",
 
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple", "m Academy", "m Amphitheatre", "m Sunspire", "m Golden Spire", "m Basilica", "m Templars",
-		"m Apocrypha", "5 s Adore the galaxy",
+		"m Apocrypha",
 
 		"m Acoustics", "m Chapel",
 

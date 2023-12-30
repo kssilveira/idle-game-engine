@@ -1566,10 +1566,6 @@ func NewGame(now game.Now) *game.Game {
 		}},
 		BonusIsMultiplicative: true,
 	}, {
-		Name: "worship", Type: "Resource", Cap: -1,
-	}, {
-		Name: "epiphany", Type: "Resource", Cap: -1, ResetResource: "epiphany",
-	}, {
 		Name: "starchart", Type: "Resource", Cap: -1, ResetResource: "reset starchart",
 		Producers: []R{{
 			Name: "scholar", Factor: 0.0005,
@@ -2933,23 +2929,6 @@ func NewGame(now game.Now) *game.Game {
 		Name: "Feed Leviathans", Type: "Craft", UnlockedBy: "Black Pyramid",
 		Costs: []R{{Name: "necrocorn", Count: 1}},
 		Adds:  []R{{Name: "leviathan energy", Count: 1}},
-	}, {
-		Name: "Praise the sun!", Type: "Craft", UnlockedBy: "Philosophy",
-		Costs: []R{{Name: "faith", Count: 1}},
-		Adds: []R{{
-			Name: "worship", Count: 1,
-			Bonus: []R{{Name: "epiphany"}},
-		}},
-	}, {
-		Name: "Adore the galaxy", Type: "Craft", UnlockedBy: "Apocrypha",
-		Costs: []R{{Name: "worship", Count: 1}},
-		Adds: []R{{
-			Name: "epiphany", Count: 1. / 1000000,
-			Bonus: []R{{
-				Name:  "Transcendence Level",
-				Bonus: []R{{Name: "Transcendence Level"}},
-			}},
-		}},
 	}, {
 		Name: "Sacrifice Alicorns", Type: "Craft", UnlockedBy: "Ziggurat",
 		Costs: []R{{Name: "alicorn", Count: 25}},
@@ -4971,6 +4950,17 @@ func NewGame(now game.Now) *game.Game {
 		Name: "tear", UnlockedBy: "Ziggurat",
 		Costs: []R{{Name: "unicorn", Count: 2500}},
 		Bonus: []R{{Name: "Ziggurat"}},
+	}, {
+		Name: "worship", UnlockedBy: "Philosophy",
+		Costs: []R{{Name: "faith", Count: 1}},
+		Bonus: []R{{Name: "epiphany"}},
+	}, {
+		Name: "epiphany", UnlockedBy: "Apocrypha",
+		Costs: []R{{Name: "worship", Count: 1000000}},
+		Bonus: []R{{
+			Name:  "Transcendence Level",
+			Bonus: []R{{Name: "Transcendence Level"}},
+		}},
 	}})
 
 	return g

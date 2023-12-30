@@ -677,6 +677,10 @@ digraph {
   "Chronosphere" -> "megalith" [color="green"];
   "tear" -> "reset tear" [color="green"];
   "Chronosphere" -> "tear" [color="green"];
+  "worship" -> "reset worship" [color="green"];
+  "Chronosphere" -> "worship" [color="green"];
+  "epiphany" -> "reset epiphany" [color="green"];
+  "Chronosphere" -> "epiphany" [color="green"];
   "Gather catnip" -> "catnip" [color="limegreen"];
   "catnip" -> "Refine catnip" [color="orange"];
   "Catnip Enrichment" -> "catnip" [color="green"];
@@ -1201,14 +1205,6 @@ digraph {
   "necrocorn" -> "Feed Leviathans" [color="orange"];
   "Feed Leviathans" -> "leviathan energy" [color="limegreen"];
   "Black Pyramid" -> "Feed Leviathans" [color="blue"];
-  "faith" -> "Praise the sun!" [color="orange"];
-  "Praise the sun!" -> "worship" [color="limegreen"];
-  "epiphany" -> "worship" [color="green"];
-  "Philosophy" -> "Praise the sun!" [color="blue"];
-  "worship" -> "Adore the galaxy" [color="orange"];
-  "Adore the galaxy" -> "epiphany" [color="limegreen"];
-  "Transcendence Level" -> "epiphany" [color="green"];
-  "Apocrypha" -> "Adore the galaxy" [color="blue"];
   "alicorn" -> "Sacrifice Alicorns" [color="orange"];
   "Sacrifice Alicorns" -> "time crystal" [color="limegreen"];
   "Unicorn Utopia" -> "time crystal" [color="green"];
@@ -1938,6 +1934,16 @@ digraph {
   "CraftRatio" -> "tear" [color="green"];
   "Ziggurat" -> "tear" [color="green"];
   "Ziggurat" -> "@tear" [color="blue"];
+  "faith" -> "@worship" [color="orange"];
+  "@worship" -> "worship" [color="limegreen"];
+  "CraftRatio" -> "worship" [color="green"];
+  "epiphany" -> "worship" [color="green"];
+  "Philosophy" -> "@worship" [color="blue"];
+  "worship" -> "@epiphany" [color="orange"];
+  "@epiphany" -> "epiphany" [color="limegreen"];
+  "CraftRatio" -> "epiphany" [color="green"];
+  "Transcendence Level" -> "epiphany" [color="green"];
+  "Apocrypha" -> "@epiphany" [color="blue"];
   "Charon" [shape="cylinder"];
   "Umbra" [shape="cylinder"];
   "Yarn" [shape="cylinder"];
@@ -2035,8 +2041,6 @@ digraph {
   "culture" [shape="cylinder"];
   "faith cap" [shape="cylinder"];
   "faith" [shape="cylinder"];
-  "worship" [shape="cylinder"];
-  "epiphany" [shape="cylinder"];
   "starchart" [shape="cylinder"];
   "festival day" [shape="cylinder"];
   "gigaflop" [shape="cylinder"];
@@ -2472,6 +2476,10 @@ digraph {
   "reset megalith" [shape="cylinder"];
   "tear" [shape="cylinder"];
   "reset tear" [shape="cylinder"];
+  "worship" [shape="cylinder"];
+  "reset worship" [shape="cylinder"];
+  "epiphany" [shape="cylinder"];
+  "reset epiphany" [shape="cylinder"];
   "Gather catnip" [shape="box3d"];
   "Refine catnip" [shape="box3d"];
   "Send hunters" [shape="house"];
@@ -2485,8 +2493,6 @@ digraph {
   "Dragons" [shape="cds"];
   "Leviathans" [shape="cds"];
   "Feed Leviathans" [shape="cds"];
-  "Praise the sun!" [shape="cds"];
-  "Adore the galaxy" [shape="cds"];
   "Sacrifice Alicorns" [shape="cds"];
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];
@@ -2512,10 +2518,12 @@ digraph {
   "@thorium" [shape="cds"];
   "@megalith" [shape="cds"];
   "@tear" [shape="cds"];
+  "@worship" [shape="cds"];
+  "@epiphany" [shape="cds"];
 }
 # titanium: 74
 # blueprint: 48
-# Chronosphere: 45
+# Chronosphere: 47
 # PriceRatioBonus: 44
 # starchart: 42
 # alloy: 40
