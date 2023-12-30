@@ -20,6 +20,7 @@ import (
 
 var (
 	auto         = flag.Bool("auto", false, "automatically trigger all actions")
+	autoSmart    = flag.Bool("auto_smart", false, "smart solve")
 	endAfterAuto = flag.Bool("end_after_auto", false, "end after auto actions")
 	autoSleepMS  = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
 	resourceMap  = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
@@ -44,17 +45,20 @@ func all() error {
 	output := make(chan *ui.Data)
 	go g.Run(input, output)
 
+	var lastData ui.Data
+	waitingForLastData := make(chan bool)
+	refreshedLastData := make(chan bool)
 	go func() {
-		if err := handleInput(g, input); err != nil {
+		if err := handleInput(g, input, &lastData, waitingForLastData, refreshedLastData); err != nil {
 			log.Fatal(err)
 		}
 	}()
-	var last string
-	waiting := make(chan bool)
-	refreshed := make(chan bool)
-	go handleOutput(output, &last, waiting, refreshed)
+	var lastString string
+	waitingForLastString := make(chan bool)
+	refreshedLastString := make(chan bool)
+	go handleOutput(output, &lastData, waitingForLastData, refreshedLastData, &lastString, waitingForLastString, refreshedLastString)
 
-	http.HandleFunc("/", handleHTTP(&last, input, *auto, *autoSleepMS, waiting, refreshed))
+	http.HandleFunc("/", handleHTTP(&lastString, input, *auto, *autoSleepMS, waitingForLastString, refreshedLastString))
 	return http.ListenAndServe(":8080", nil)
 }
 
@@ -94,9 +98,15 @@ func updateResources(g *game.Game, resourceMap string) error {
 	return nil
 }
 
-func handleInput(g *game.Game, input game.Input) error {
+func handleInput(g *game.Game, input game.Input, lastData *ui.Data, waiting chan bool, refreshed chan bool) error {
 	if *auto {
-		if err := solve.Solve(g, input, *autoSleepMS); err != nil {
+		if err := solve.Solve(solve.Config{
+			Game:      g,
+			Input:     input,
+			Waiting:   waiting,
+			Refreshed: refreshed,
+			IsSmart:   *autoSmart,
+			SleepMS:   *autoSleepMS}); err != nil {
 			return err
 		}
 		if *endAfterAuto {
@@ -111,7 +121,7 @@ func handleInput(g *game.Game, input game.Input) error {
 	return nil
 }
 
-func handleOutput(output game.Output, last *string, waiting chan bool, refreshed chan bool) {
+func handleOutput(output game.Output, lastData *ui.Data, waitingForLastData chan bool, refreshedLastData chan bool, lastString *string, waitingForLastString chan bool, refreshedLastString chan bool) {
 	textConfig := textui.Config{
 		Logger:     log.New(os.Stdout, "" /* prefix */, 0 /* flags */),
 		Separator:  "\033[H\033[2J",
@@ -128,11 +138,17 @@ func handleOutput(output game.Output, last *string, waiting chan bool, refreshed
 	for data := range output {
 		textui.Show(textConfig, data)
 		textui.Show(htmlConfig, data)
-		*last = buf.String()
+		*lastData = *data
+		*lastString = buf.String()
 		buf.Reset()
 		select {
-		case <-waiting:
-			refreshed <- true
+		case <-waitingForLastData:
+			refreshedLastData <- true
+		default:
+		}
+		select {
+		case <-waitingForLastData:
+			refreshedLastString <- true
 		default:
 		}
 	}

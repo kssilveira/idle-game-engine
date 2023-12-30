@@ -176,7 +176,9 @@ func TestRun(t *testing.T) {
 		g := NewGame(nowfn)
 		go func() {
 			if len(in.iters) == 0 {
-				if err := solve.Solve(g, input, 0 /* sleepMS */); err != nil {
+				if err := solve.Solve(solve.Config{
+					Game:  g,
+					Input: input}); err != nil {
 					t.Errorf("[%s] Solve err %v", in.name, err)
 				}
 			}

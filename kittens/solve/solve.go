@@ -6,7 +6,27 @@ import (
 	"github.com/kssilveira/idle-game-engine/game"
 )
 
-func Solve(g *game.Game, input chan string, sleepMS int) error {
+type Config struct {
+	Game      *game.Game
+	Input     chan string
+	Waiting   chan bool
+	Refreshed chan bool
+	IsSmart   bool
+	SleepMS   int
+}
+
+func Solve(cfg Config) error {
+	if cfg.IsSmart {
+		return solveSmart(cfg)
+	}
+	return solve(cfg)
+}
+
+func solveSmart(cfg Config) error {
+	return nil
+}
+
+func solve(cfg Config) error {
 	precmds := []string{
 		"h Charon", "h Umbra", "h Yarn", "h Helios", "h Cath", "h Redmoon", "h Dune", "h Piscine", "h Termogus",
 		"h Spring", "h Summer", "h Autumn", "h Winter",
@@ -90,11 +110,11 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		//*/
 	}
 	for _, cmd := range precmds {
-		input <- cmd
+		cfg.Input <- cmd
 	}
 	for _, cmd := range cmds {
-		input <- cmd
-		time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
+		cfg.Input <- cmd
+		time.Sleep(time.Second * time.Duration(cfg.SleepMS) / 1000.)
 	}
 	return nil
 }
