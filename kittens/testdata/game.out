@@ -4428,17 +4428,6 @@
       "Formula": "Count += ((((c(priest) * 0.0075 * (1 + c(happiness))) + (c(Temple) * 0.0075 * c(Theology)) + (c(Chapel) * 0.025)) * ((1 + (c(Solar Chant) * 0.1)) * (1 + c(GlobalProductionBonus)) * (1 + (c(Helios) * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
-      "Name": "worship",
-      "Type": "Resource",
-      "Cap": -1
-    },
-    {
-      "Name": "epiphany",
-      "Type": "Resource",
-      "Cap": -1,
-      "ResetResource": "epiphany"
-    },
-    {
       "Name": "starchart",
       "Type": "Resource",
       "Cap": -1,
@@ -8165,6 +8154,60 @@
       "StartCountFromZero": true,
       "ResetResource": "reset tear",
       "Formula": "Count = (c(tear) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "worship",
+      "Type": "Resource",
+      "Cap": -1,
+      "ProducerAction": "@worship"
+    },
+    {
+      "Name": "reset worship",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "worship",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset worship",
+      "Formula": "Count = (c(worship) * (c(Chronosphere) * 0.015))"
+    },
+    {
+      "Name": "epiphany",
+      "Type": "Resource",
+      "Cap": -1,
+      "ProducerAction": "@epiphany"
+    },
+    {
+      "Name": "reset epiphany",
+      "Type": "Resource",
+      "IsHidden": true,
+      "Cap": -1,
+      "Producers": [
+        {
+          "Name": "epiphany",
+          "Bonus": [
+            {
+              "Name": "Chronosphere",
+              "Factor": 0.015
+            }
+          ],
+          "BonusStartsFromZero": true
+        }
+      ],
+      "StartCountFromZero": true,
+      "ResetResource": "reset epiphany",
+      "Formula": "Count = (c(epiphany) * (c(Chronosphere) * 0.015))"
     }
   ],
   "Actions": [
@@ -11859,57 +11902,6 @@
         {
           "Name": "leviathan energy",
           "Count": 1
-        }
-      ],
-      "CostExponentBaseResource": {}
-    },
-    {
-      "Name": "Praise the sun!",
-      "Type": "Craft",
-      "UnlockedBy": "Philosophy",
-      "Costs": [
-        {
-          "Name": "faith",
-          "Count": 1
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "worship",
-          "Count": 1,
-          "Bonus": [
-            {
-              "Name": "epiphany"
-            }
-          ]
-        }
-      ],
-      "CostExponentBaseResource": {}
-    },
-    {
-      "Name": "Adore the galaxy",
-      "Type": "Craft",
-      "UnlockedBy": "Apocrypha",
-      "Costs": [
-        {
-          "Name": "worship",
-          "Count": 1
-        }
-      ],
-      "Adds": [
-        {
-          "Name": "epiphany",
-          "Count": 0.000001,
-          "Bonus": [
-            {
-              "Name": "Transcendence Level",
-              "Bonus": [
-                {
-                  "Name": "Transcendence Level"
-                }
-              ]
-            }
-          ]
         }
       ],
       "CostExponentBaseResource": {}
@@ -18819,6 +18811,80 @@
       "Bonus": [
         {
           "Name": "Ziggurat"
+        }
+      ]
+    },
+    {
+      "Name": "@worship",
+      "Type": "Craft",
+      "UnlockedBy": "Philosophy",
+      "Costs": [
+        {
+          "Name": "faith",
+          "Count": 1
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "worship",
+          "Count": 1,
+          "Bonus": [
+            {
+              "Name": "CraftRatio"
+            },
+            {
+              "Name": "epiphany"
+            }
+          ]
+        }
+      ],
+      "IsHidden": true,
+      "CostExponentBaseResource": {},
+      "Bonus": [
+        {
+          "Name": "epiphany"
+        }
+      ]
+    },
+    {
+      "Name": "@epiphany",
+      "Type": "Craft",
+      "UnlockedBy": "Apocrypha",
+      "Costs": [
+        {
+          "Name": "worship",
+          "Count": 1000000
+        }
+      ],
+      "Adds": [
+        {
+          "Name": "epiphany",
+          "Count": 1,
+          "Bonus": [
+            {
+              "Name": "CraftRatio"
+            },
+            {
+              "Name": "Transcendence Level",
+              "Bonus": [
+                {
+                  "Name": "Transcendence Level"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsHidden": true,
+      "CostExponentBaseResource": {},
+      "Bonus": [
+        {
+          "Name": "Transcendence Level",
+          "Bonus": [
+            {
+              "Name": "Transcendence Level"
+            }
+          ]
         }
       ]
     }

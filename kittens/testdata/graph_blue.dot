@@ -131,8 +131,6 @@ digraph {
   "Nuclear Fission" -> "Dragons" [color="blue"];
   "Black Pyramid" -> "Leviathans" [color="blue"];
   "Black Pyramid" -> "Feed Leviathans" [color="blue"];
-  "Philosophy" -> "Praise the sun!" [color="blue"];
-  "Apocrypha" -> "Adore the galaxy" [color="blue"];
   "Ziggurat" -> "Sacrifice Alicorns" [color="blue"];
   "Megalomania" -> "Refine Tears" [color="blue"];
   "Ziggurat" -> "Refine Time Crystals" [color="blue"];
@@ -404,6 +402,8 @@ digraph {
   "Thorium" -> "@thorium" [color="blue"];
   "Construction" -> "@megalith" [color="blue"];
   "Ziggurat" -> "@tear" [color="blue"];
+  "Philosophy" -> "@worship" [color="blue"];
+  "Apocrypha" -> "@epiphany" [color="blue"];
   "catnip" [shape="cylinder"];
   "Catnip Field" [shape="box3d"];
   "Hut" [shape="box3d"];
@@ -783,8 +783,6 @@ digraph {
   "Dragons" [shape="cds"];
   "Leviathans" [shape="cds"];
   "Feed Leviathans" [shape="cds"];
-  "Praise the sun!" [shape="cds"];
-  "Adore the galaxy" [shape="cds"];
   "Sacrifice Alicorns" [shape="cds"];
   "Refine Tears" [shape="cds"];
   "Refine Time Crystals" [shape="cds"];
@@ -810,6 +808,8 @@ digraph {
   "@thorium" [shape="cds"];
   "@megalith" [shape="cds"];
   "@tear" [shape="cds"];
+  "@worship" [shape="cds"];
+  "@epiphany" [shape="cds"];
 }
 # Construction: 16
 # Philosophy: 15

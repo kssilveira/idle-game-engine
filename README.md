@@ -108,6 +108,6 @@ Missing features:
 
 TODO:
 
-- change epiphany and workship to craft
+- hide individual buildings
 - make [solve.go](kittens/solve/solve.go) get everything
 - record terminal using https://asciinema.org/

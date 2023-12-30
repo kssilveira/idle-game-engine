@@ -123,7 +123,11 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 
 		"m Barn", "m Catnip Field", "m Library", "m Pasture", "m Mine", "m Workshop", "m Smelter", "m Academy", "m Lumber Mill", "m Aqueduct", "m Tradepost", "m Observatory", "m Sun Altar", "m Stained Glass", "m Golden Spire", "m Solar Chant", "m Scholasticism", "m Mint", "m Temple", "m Academy", "m Amphitheatre", "m Sunspire", "m Golden Spire", "m Basilica", "m Templars", "m Library", "m Mine", "m Workshop", "m Pasture", "m Lumber Mill", "m Factory", "m Chapel", "m Bio Lab",
 
-		"m Transcendence",
+		"m Transcendence", "11 s Transcendence Level",
+
+		"m Combustion", "m Tradepost", "m Offset Press", "m Fuel Injector", "m Oil Refinery",
+
+		"m Metallurgy", "m Mining Drill", "m Electrolytic Smelting", "m Oxidation",
 	}
 	for _, cmd := range cmds {
 		if err := ToInput(g, cmd, input); err != nil {
