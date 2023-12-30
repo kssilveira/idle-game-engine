@@ -121,8 +121,8 @@ func (g *Game) Run(input Input, output Output) {
 			ShowAll:      g.showAll,
 			HideOverCap:  g.hideOverCap,
 			HideCustom:   g.hideCustom,
-			HideAction:   g.hideAction,
-			HideResource: g.hideResource,
+			HideAction:   makeCopy(g.hideAction),
+			HideResource: makeCopy(g.hideResource),
 		}
 		g.populateUIResources(data)
 		g.populateUIActions(data)
@@ -137,6 +137,14 @@ func (g *Game) Run(input Input, output Output) {
 		case <-time.After(1 * time.Second):
 		}
 	}
+}
+
+func makeCopy(in map[string]bool) map[string]bool {
+	res := map[string]bool{}
+	for k, v := range in {
+		res[k] = v
+	}
+	return res
 }
 
 func (g *Game) populateUIResources(data *ui.Data) {
