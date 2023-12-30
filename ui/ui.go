@@ -12,7 +12,11 @@ type Data struct {
 	Resources     []Resource
 	Actions       []Action
 	CustomActions []CustomAction
+	ShowAll       bool
 	HideOverCap   bool
+	HideCustom    bool
+	HideAction    map[string]bool
+	HideResource  map[string]bool
 }
 
 type Resource struct {

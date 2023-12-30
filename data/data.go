@@ -73,11 +73,13 @@ var (
 	ParsedInputTypeMax    = "m"
 	ParsedInputTypeReset  = "r"
 	ParsedInputTypeHide   = "h"
-	ParsedInputTypes      = []string{ParsedInputTypeSkip, ParsedInputTypeCreate, ParsedInputTypeMax, ParsedInputTypeReset, ParsedInputTypeHide}
+	ParsedInputTypeShow   = "S"
+	ParsedInputTypes      = []string{ParsedInputTypeSkip, ParsedInputTypeCreate, ParsedInputTypeMax, ParsedInputTypeReset, ParsedInputTypeHide, ParsedInputTypeShow}
 )
 
 type ParsedInput struct {
 	Type   string
+	Arg    string
 	Index  int
 	Action Action
 }

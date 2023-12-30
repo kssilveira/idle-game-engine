@@ -27,7 +27,8 @@ var (
 		data.ParsedInputTypeCreate: "create ",
 		data.ParsedInputTypeMax:    "max ",
 		data.ParsedInputTypeReset:  "reset",
-		data.ParsedInputTypeHide:   "hide",
+		data.ParsedInputTypeHide:   "hide ",
+		data.ParsedInputTypeShow:   "show",
 	}
 )
 
@@ -38,7 +39,11 @@ func Show(cfg Config, data *ui.Data) {
 	showResources(cfg, data)
 	showActions(cfg, data)
 	prefix := parsedInputTypeToPrefix[data.LastInput.Type]
-	cfg.Logger.Printf("last action: %s%s\n", prefix, data.LastInput.Action.Name)
+	name := data.LastInput.Action.Name
+	if name == "" {
+		name = data.LastInput.Arg
+	}
+	cfg.Logger.Printf("last action: %s%s\n", prefix, name)
 	if data.Error != nil {
 		cfg.Logger.Printf("error: %v\n", data.Error)
 	}
@@ -48,6 +53,9 @@ func showResources(cfg Config, data *ui.Data) {
 	for _, d := range data.Resources {
 		r := d.Resource
 		if r.IsHidden || d.Rate == 0 || r.Count == 0 {
+			continue
+		}
+		if d.Rate >= 0 && data.HideResource[d.Resource.Name] && !data.ShowAll {
 			continue
 		}
 		status := ""
@@ -98,7 +106,10 @@ func showActions(cfg Config, data *ui.Data) {
 		if a.IsLocked || a.IsHidden {
 			continue
 		}
-		if a.IsOverCap && data.HideOverCap && a.Count > 0 {
+		if a.IsOverCap && data.HideOverCap && a.Count > 0 && !data.ShowAll {
+			continue
+		}
+		if data.HideAction[a.Name] && !data.ShowAll {
 			continue
 		}
 		status := ""
@@ -134,10 +145,11 @@ func showActions(cfg Config, data *ui.Data) {
 		}
 		cfg.Logger.Printf("%s%s: %s[%s] %s)%s\n", getColor(cfg, status), number, status, a.Type, strings.Join(parts, ""), cfg.CloseColor)
 	}
-	if !cfg.HideCustomActions {
-		for _, a := range data.CustomActions {
-			cfg.Logger.Printf("%s\n", a.Name)
-		}
+	if cfg.HideCustomActions || (data.HideCustom && !data.ShowAll) {
+		return
+	}
+	for _, a := range data.CustomActions {
+		cfg.Logger.Printf("%s\n", a.Name)
 	}
 }
 

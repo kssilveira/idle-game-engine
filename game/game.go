@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"unicode"
 
 	"github.com/kssilveira/idle-game-engine/data"
 	"github.com/kssilveira/idle-game-engine/ui"
@@ -26,7 +27,11 @@ type Game struct {
 	now           time.Time
 	nowfn         Now
 	errors        []error
+	showAll       bool
 	hideOverCap   bool
+	hideCustom    bool
+	hideAction    map[string]bool
+	hideResource  map[string]bool
 }
 
 func NewGame(nowfn Now) *Game {
@@ -35,6 +40,8 @@ func NewGame(nowfn Now) *Game {
 		now:             nowfn(),
 		resourceToIndex: map[string]int{},
 		actionToIndex:   map[string]int{},
+		hideAction:      map[string]bool{},
+		hideResource:    map[string]bool{},
 	}
 	g.AddResources([]data.Resource{{
 		Name: "time", Type: "Calendar", Cap: -1,
@@ -109,9 +116,13 @@ func (g *Game) Run(input Input, output Output) {
 	for {
 		g.update(g.nowfn())
 		data := &ui.Data{
-			LastInput:   parsedInput,
-			Error:       err,
-			HideOverCap: g.hideOverCap,
+			LastInput:    parsedInput,
+			Error:        err,
+			ShowAll:      g.showAll,
+			HideOverCap:  g.hideOverCap,
+			HideCustom:   g.hideCustom,
+			HideAction:   g.hideAction,
+			HideResource: g.hideResource,
 		}
 		g.populateUIResources(data)
 		g.populateUIActions(data)
@@ -161,13 +172,21 @@ func (g *Game) populateUIActions(data *ui.Data) {
 		data.Actions = append(data.Actions, action)
 	}
 	data.CustomActions = []ui.CustomAction{{
+		Name: "mX: max action X (skip, create, buy)",
+	}, {
 		Name: "sX: time skip, create inputs and buy action X",
 	}, {
 		Name: "cX: create inputs and buy action X",
 	}, {
-		Name: "mX: max action X (skip, create, buy)",
+		Name: "hm: hide maxed actions",
 	}, {
-		Name: "h: hide maxed actions",
+		Name: "hc: hide custom actions",
+	}, {
+		Name: "hX: hide action X",
+	}, {
+		Name: "hR: hide resource S",
+	}, {
+		Name: "S: show all",
 	}, {
 		Name: "r: reset",
 	}}
@@ -294,7 +313,19 @@ func (g *Game) act(in string) (data.ParsedInput, error) {
 		return input, nil
 	}
 	if input.Type == data.ParsedInputTypeHide {
-		g.hideOverCap = !g.hideOverCap
+		if input.Arg == "m" {
+			g.hideOverCap = !g.hideOverCap
+		} else if input.Arg == "c" {
+			g.hideCustom = !g.hideCustom
+		} else if input.Action.Name != "" {
+			g.hideAction[input.Action.Name] = !g.hideAction[input.Action.Name]
+		} else {
+			g.hideResource[input.Arg] = !g.hideResource[input.Arg]
+		}
+		return input, nil
+	}
+	if input.Type == data.ParsedInputTypeShow {
+		g.showAll = !g.showAll
 		return input, nil
 	}
 	if g.isLocked(input.Action) {
@@ -466,8 +497,11 @@ func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 			}
 		}
 	}
-	if res.Type == data.ParsedInputTypeHide || res.Type == data.ParsedInputTypeReset {
-		return res, nil
+	res.Arg = in
+	if res.Type == data.ParsedInputTypeHide || res.Type == data.ParsedInputTypeReset || res.Type == data.ParsedInputTypeShow {
+		if !(len(in) > 0 && unicode.IsDigit([]rune(in)[0])) {
+			return res, nil
+		}
 	}
 	index, err := strconv.Atoi(in)
 	if err != nil {
