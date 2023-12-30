@@ -17,10 +17,10 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 	}
 	cmds := []string{
 		// catnip
-		"2 Gather catnip", "Catnip Field", "m Catnip Field",
+		"10 Gather catnip", "Catnip Field", "m Catnip Field",
 
 		// woodcutter
-		"2 s Refine catnip", "Hut", "s woodcutter",
+		"5 s Refine catnip", "Hut", "s woodcutter",
 
 		// scholar
 		"s Library", "s scholar", "m Library",
@@ -34,7 +34,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 
 		// unicorn
 		"m Animal Husbandry", "m Pasture",
-		"4 s Send hunters", "Unic. Pasture", "10 s Unic. Pasture",
+		"40 s Send hunters", "Unic. Pasture", "10 s Unic. Pasture",
 
 		"hc",
 

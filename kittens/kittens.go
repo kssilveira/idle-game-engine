@@ -1800,7 +1800,7 @@ func NewGame(now game.Now) *game.Game {
 
 	g.AddActions([]data.Action{{
 		Name: "Gather catnip", Type: "Building", LockedBy: "Catnip Field",
-		Adds: []R{{Name: "catnip", Count: 1 * 5}},
+		Adds: []R{{Name: "catnip", Count: 1}},
 	}, {
 		Name: "Refine catnip", Type: "Building", UnlockedBy: "Catnip Field", LockedBy: "woodcutter",
 		Costs: []R{{
@@ -1808,7 +1808,7 @@ func NewGame(now game.Now) *game.Game {
 			Bonus: []R{{Name: "Catnip Enrichment", Factor: -0.50}},
 		}},
 		Adds: []R{{
-			Name: "wood", Count: 1 * 2.5,
+			Name: "wood", Count: 1,
 			Bonus: []R{{Name: "Bio Lab", Factor: 0.10}},
 		}},
 	}})
@@ -2738,7 +2738,7 @@ func NewGame(now game.Now) *game.Game {
 		}, {
 			Name: "ivory", Count: 10.78, Bonus: []R{{Name: "HuntingBonus"}},
 		}, {
-			Name: "unicorn", Count: 0.05 * 10,
+			Name: "unicorn", Count: 0.05,
 		}},
 	}, {
 		Name: "Festival", Type: "Job", UnlockedBy: "Drama and Poetry",
