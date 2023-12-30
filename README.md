@@ -108,5 +108,5 @@ Missing features:
 
 TODO:
 
-- make [solve.go](kittens/solve/solve.go) get everything
+- solve with logic
 - record terminal using https://asciinema.org/
