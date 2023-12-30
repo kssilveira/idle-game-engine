@@ -71,6 +71,8 @@ Faster solution:
 
 ## Kittens
 
+[![asciicast](https://asciinema.org/a/629412.svg)](https://asciinema.org/a/629412)
+
 Graph of features:
 
 ![graph](kittens/testdata/graph.svg)
@@ -108,5 +110,4 @@ Missing features:
 
 TODO:
 
-- record terminal using https://asciinema.org/
 - solve the rest with logic
