@@ -508,7 +508,7 @@ func (g *Game) getBonusFormula(resource data.Resource) string {
 }
 
 var (
-	inputRegexp = regexp.MustCompile(`(\d*)(\w?)(\D*)(\d*)`)
+	inputRegexp = regexp.MustCompile(`\s*(\d*)\s*([mschSr]?)\s*(\D*)\s*(\d*)\s*`)
 )
 
 func (g *Game) parseInput(in string) (data.ParsedInput, error) {
@@ -516,17 +516,6 @@ func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 	matches := inputRegexp.FindStringSubmatch(in)
 	if len(matches) != 5 {
 		return res, fmt.Errorf("input %s invalid matches %#v", in, matches)
-	}
-	if matches[4] == "" && matches[1] != "" {
-		matches[4] = matches[1]
-		matches[1] = ""
-	}
-	if matches[1] != "" {
-		count, err := strconv.Atoi(matches[1])
-		if err != nil {
-			return res, err
-		}
-		res.Count = count
 	}
 	if matches[2] != "" {
 		for _, t := range data.ParsedInputTypes {
@@ -540,6 +529,21 @@ func (g *Game) parseInput(in string) (data.ParsedInput, error) {
 		}
 	}
 	res.Arg = matches[3]
+	if g.HasAction(res.Arg) {
+		matches[4] = fmt.Sprintf("%d", g.GetActionIndex(res.Arg))
+		res.Arg = ""
+	}
+	if matches[4] == "" && matches[1] != "" {
+		matches[4] = matches[1]
+		matches[1] = ""
+	}
+	if matches[1] != "" {
+		count, err := strconv.Atoi(matches[1])
+		if err != nil {
+			return res, err
+		}
+		res.Count = count
+	}
 	if matches[4] != "" {
 		index, err := strconv.Atoi(matches[4])
 		if err != nil {

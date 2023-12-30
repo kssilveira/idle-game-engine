@@ -22,7 +22,7 @@ error: action Library is locked
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 1)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-last action: scholar
+last action: skip scholar
 error: action scholar is locked
 ###
 [-] [Resource] catnip 992.5 / 5 000 | -8.5/s 1m56s to empty
@@ -76,7 +76,7 @@ last action: Gather catnip
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 1)
 X: [Building] Catnip Field -(catnip 10) +(Catnip Field 1)
-last action: scholar
+last action: skip scholar
 error: action scholar is locked
 ###
 [Calendar] Charon 1 (1 if 0.001 % 10 == 0)

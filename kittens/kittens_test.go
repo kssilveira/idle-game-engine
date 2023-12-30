@@ -96,9 +96,9 @@ func TestRun(t *testing.T) {
 			"kitten": 2,
 		},
 		iters: []iter{
-			{"Library", 0}, {"scholar", 0}, {"Gather catnip", 1},
+			{"Library", 0}, {"s scholar", 0}, {"Gather catnip", 1},
 			{"Library", 0}, {"Gather catnip", 1},
-			{"scholar", 0}, {"Gather catnip", 1},
+			{"s scholar", 0}, {"Gather catnip", 1},
 		},
 	}, {
 		name: "woodcutter",
@@ -133,7 +133,7 @@ func TestRun(t *testing.T) {
 		},
 		iters: []iter{
 			{"woodcutter", 0}, {"Refine catnip", 1},
-			{"scholar", 0}, {"Refine catnip", 1},
+			{"s scholar", 0}, {"Refine catnip", 1},
 			{"farmer", 0}, {"Refine catnip", 1},
 			{"Refine catnip", 79},
 			{"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1}, {"Refine catnip", 1},
@@ -181,9 +181,7 @@ func TestRun(t *testing.T) {
 				}
 			}
 			for _, one := range in.iters {
-				if err := solve.ToInput(g, one.input, input); err != nil {
-					t.Errorf("[%s] got input err %v", in.name, err)
-				}
+				input <- one.input
 			}
 			input <- "999"
 		}()

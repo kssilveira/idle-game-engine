@@ -1,9 +1,6 @@
 package solve
 
 import (
-	"fmt"
-	"strconv"
-	"strings"
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/game"
@@ -17,7 +14,7 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 	}
 	cmds := []string{
 		// catnip
-		"10 Gather catnip", "Catnip Field", "m Catnip Field",
+		"10 s Gather catnip", "Catnip Field", "m Catnip Field",
 
 		// woodcutter
 		"5 s Refine catnip", "Hut", "s woodcutter",
@@ -81,10 +78,11 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		// manuscript
 		"m Machinery", "m Crossbow", "m Printing Press", "m Workshop Automation",
 		"2 s Hut", "2 s woodcutter", "2 s farmer",
-		"s Sharks", "2 s Steamworks", "Active Steamworks",
+		"30 s Sharks", "2 s Steamworks", "Active Steamworks",
 
 		// priest
-		"m Theology", "s Hut", "s priest", "s farmer",
+		"m Theology",
+		"s Hut", "s priest", "s farmer",
 		"m Amphitheatre", "m Temple",
 		"m Golden Spire", "m Solar Chant", "m Scholasticism",
 		"m Sun Altar", "m Stained Glass",
@@ -92,44 +90,11 @@ func Solve(g *game.Game, input chan string, sleepMS int) error {
 		//*/
 	}
 	for _, cmd := range precmds {
-		if err := ToInput(g, cmd, input); err != nil {
-			return err
-		}
+		input <- cmd
 	}
 	for _, cmd := range cmds {
-		if err := ToInput(g, cmd, input); err != nil {
-			return err
-		}
+		input <- cmd
 		time.Sleep(time.Second * time.Duration(sleepMS) / 1000.)
-	}
-	return nil
-}
-
-func ToInput(g *game.Game, in string, input chan string) error {
-	words := strings.Split(in, " ")
-	prefix := ""
-	count := 1
-	if len(words) > 0 {
-		cnt, err := strconv.Atoi(words[0])
-		if err == nil {
-			count = cnt
-			words = words[1:]
-		}
-	}
-	if len(words) > 0 {
-		if len(words[0]) == 1 {
-			prefix = words[0]
-			words = words[1:]
-		}
-	}
-	cmd := strings.Join(words, " ")
-	if g.HasAction(cmd) {
-		cmd = fmt.Sprintf("%d", g.GetActionIndex(cmd))
-	} else if !g.HasResource(cmd) && in != "hc" && in != "hm" {
-		return fmt.Errorf("invalid arg %s", cmd)
-	}
-	for i := 0; i < count; i++ {
-		input <- fmt.Sprintf("%s%s", prefix, cmd)
 	}
 	return nil
 }
