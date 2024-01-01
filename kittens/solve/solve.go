@@ -38,7 +38,14 @@ func Solve(cfg Config) error {
 func solveSmart(cfg Config) error {
 	cfg.Input <- "hc"
 	cfg.Input <- "hm"
-	for {
+	reset := 0
+	for iter := 0; ; iter++ {
+		if iter == 120 {
+			iter = 0
+			cfg.Input <- "r"
+			reset += 1
+		}
+		fmt.Printf("reset %d iter %d", reset, iter)
 		cfg.Waiting <- true
 		<-cfg.Refreshed
 		kittenActions := []ui.Action{}
@@ -86,7 +93,7 @@ func solveSmart(cfg Config) error {
 				cfg.Input <- fmt.Sprintf("s %d", index)
 				cfg.Input <- fmt.Sprintf("s farmer")
 			}
-			if isKitten[index] {
+			if isKitten[index] && iter < 100 {
 				if action.Count == 0 {
 					cfg.Input <- fmt.Sprintf("s %d", index)
 				}
