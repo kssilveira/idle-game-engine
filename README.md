@@ -108,8 +108,3 @@ Missing features:
 - [Resource Retrieval](https://wiki.kittensgame.com/en/game-tabs/time#resource-retrieval)
 - [Space Travel Speed](https://wiki.kittensgame.com/en/game-tabs/space)
 - [Trade Attitude and Embassy](https://wiki.kittensgame.com/en/game-tabs/trade)
-
-TODO:
-
-- fix reset logic
-- solve the rest with logic
