@@ -197,20 +197,21 @@ error: action Refine catnip is locked
 [Calendar] year 1.1 (1 + 0.1)
 [Calendar] Spring 1 (1 if 0.42 % 4 == 0)
 [Calendar] day_of_year 43 (1 + 42 % 400)
-[Resource] science 19.42 / 500 | 0.24/s 33m35s to cap
+[Resource] wood 7.8 / 200 | 0.1/s 33m34s to cap
+[Resource] science 19.22 / 500 | 0.03/s 3h53m6s to cap
 [Resource] mineral 1.06 / 250 | 0.01/s 5h31m54s to cap
 [Resource] kitten 0.1 / 2 | 0.05/s 37s to cap
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.06 (0.1 + -0.04)
 X: [Building] Gather catnip +(catnip 1)
-X: [Building] Barn -(wood 7.71 / 50) +(Barn 1)
+X: [Building] Barn -(wood 7.8 / 50 7m22s) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
-X: [Job] woodcutter -(kitten 0.1 / 1 18s) +(woodcutter 1)
-X: [Job] scholar (1) -(kitten 0.1 / 1 18s) +(scholar 1)
+X: [Job] woodcutter (1) -(kitten 0.1 / 1 18s) +(woodcutter 1)
+X: [Job] scholar -(kitten 0.1 / 1 18s) +(scholar 1)
 X: [Job] farmer (1) -(kitten 0.1 / 1 18s) +(farmer 1)
-X: [Tech] Calendar -(science 19.42 / 30 44s) +(Calendar 1)
-X: [Tech] Archery -(science 19.42 / 300 19m36s) +(Archery 1)
-X: [Tech] Mining -(science 19.42 / 500 33m35s) +(Mining 1)
+X: [Tech] Calendar -(science 19.22 / 30 5m13s) +(Calendar 1)
+X: [Tech] Archery -(science 19.22 / 300 2h16m8s) +(Archery 1)
+X: [Tech] Mining -(science 19.22 / 500 3h53m6s) +(Mining 1)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -218,20 +219,20 @@ error: action Refine catnip is locked
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
-[Resource] science 19.45 / 500 | 0.03/s 3h52m59s to cap
+[Resource] science 19.25 / 500 | 0.03/s 3h53m5s to cap
 [Resource] mineral 1.08 / 250 | 0.01/s 5h31m53s to cap
 [Resource] kitten 0.15 / 3 | 0.05/s 57s to cap
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.08 (0.1 + -0.02)
 X: [Building] Gather catnip +(catnip 1)
-X: [Building] Barn -(wood 7.71 / 50) +(Barn 1)
+X: [Building] Barn -(wood 7.8 / 50) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] woodcutter -(kitten 0.15 / 1 17s) +(woodcutter 1)
 X: [Job] scholar -(kitten 0.15 / 1 17s) +(scholar 1)
 X: [Job] farmer (1) -(kitten 0.15 / 1 17s) +(farmer 1)
-X: [Tech] Calendar -(science 19.45 / 30 5m6s) +(Calendar 1)
-X: [Tech] Archery -(science 19.45 / 300 2h16m1s) +(Archery 1)
-X: [Tech] Mining -(science 19.45 / 500 3h52m59s) +(Mining 1)
+X: [Tech] Calendar -(science 19.25 / 30 5m12s) +(Calendar 1)
+X: [Tech] Archery -(science 19.25 / 300 2h16m7s) +(Archery 1)
+X: [Tech] Mining -(science 19.25 / 500 3h53m5s) +(Mining 1)
 last action: Refine catnip
 error: action Refine catnip is locked
 ###
@@ -239,19 +240,19 @@ error: action Refine catnip is locked
 [Calendar] year 1.11 (1 + 0.11)
 [Calendar] Spring 1 (1 if 0.43 % 4 == 0)
 [Calendar] day_of_year 44 (1 + 43 % 400)
-[Resource] science 19.45 / 500 | 0.03/s 3h52m59s to cap
+[Resource] science 19.25 / 500 | 0.03/s 3h53m5s to cap
 [Resource] mineral 1.08 / 250 | 0.01/s 5h31m53s to cap
 [Resource] kitten 0.15 / 3 | 0.05/s 57s to cap
 [Resource] paragon 0.0001 | 0.000001/s
 [Job] happiness 0.08 (0.1 + -0.02)
 X: [Building] Gather catnip +(catnip 1)
-X: [Building] Barn -(wood 7.71 / 50) +(Barn 1)
+X: [Building] Barn -(wood 7.8 / 50) +(Barn 1)
 X: [Building] karma -(karma kitten 0 / 1) +(karma 1)
 X: [Job] woodcutter -(kitten 0.15 / 1 17s) +(woodcutter 1)
 X: [Job] scholar -(kitten 0.15 / 1 17s) +(scholar 1)
 X: [Job] farmer (1) -(kitten 0.15 / 1 17s) +(farmer 1)
-X: [Tech] Calendar -(science 19.45 / 30 5m6s) +(Calendar 1)
-X: [Tech] Archery -(science 19.45 / 300 2h16m1s) +(Archery 1)
-X: [Tech] Mining -(science 19.45 / 500 3h52m59s) +(Mining 1)
+X: [Tech] Calendar -(science 19.25 / 30 5m12s) +(Calendar 1)
+X: [Tech] Archery -(science 19.25 / 300 2h16m7s) +(Archery 1)
+X: [Tech] Mining -(science 19.25 / 500 3h53m5s) +(Mining 1)
 last action: Refine catnip
 error: action Refine catnip is locked

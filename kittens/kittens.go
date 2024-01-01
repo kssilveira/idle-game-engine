@@ -11,7 +11,7 @@ type R = data.Resource
 
 func NewGame(cfg game.Config) *game.Game {
 	kittenNames := []string{
-		"kitten", "woodcutter", "scholar", "farmer", "hunter", "miner", "priest", "geologist",
+		"kitten", "geologist", "priest", "hunter", "scholar", "miner", "woodcutter", "farmer",
 	}
 
 	g := game.NewGame(cfg)

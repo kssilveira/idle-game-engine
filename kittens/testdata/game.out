@@ -1509,55 +1509,7 @@
           "ProductionOnGone": true
         },
         {
-          "Name": "woodcutter",
-          "Factor": -4.25,
-          "ProductionFloor": true,
-          "Bonus": [
-            {
-              "Name": "CatnipConsumptionBonus",
-              "Min": -1
-            }
-          ],
-          "ProductionOnGone": true
-        },
-        {
-          "Name": "scholar",
-          "Factor": -4.25,
-          "ProductionFloor": true,
-          "Bonus": [
-            {
-              "Name": "CatnipConsumptionBonus",
-              "Min": -1
-            }
-          ],
-          "ProductionOnGone": true
-        },
-        {
-          "Name": "farmer",
-          "Factor": -4.25,
-          "ProductionFloor": true,
-          "Bonus": [
-            {
-              "Name": "CatnipConsumptionBonus",
-              "Min": -1
-            }
-          ],
-          "ProductionOnGone": true
-        },
-        {
-          "Name": "hunter",
-          "Factor": -4.25,
-          "ProductionFloor": true,
-          "Bonus": [
-            {
-              "Name": "CatnipConsumptionBonus",
-              "Min": -1
-            }
-          ],
-          "ProductionOnGone": true
-        },
-        {
-          "Name": "miner",
+          "Name": "geologist",
           "Factor": -4.25,
           "ProductionFloor": true,
           "Bonus": [
@@ -1581,7 +1533,55 @@
           "ProductionOnGone": true
         },
         {
-          "Name": "geologist",
+          "Name": "hunter",
+          "Factor": -4.25,
+          "ProductionFloor": true,
+          "Bonus": [
+            {
+              "Name": "CatnipConsumptionBonus",
+              "Min": -1
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "scholar",
+          "Factor": -4.25,
+          "ProductionFloor": true,
+          "Bonus": [
+            {
+              "Name": "CatnipConsumptionBonus",
+              "Min": -1
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "miner",
+          "Factor": -4.25,
+          "ProductionFloor": true,
+          "Bonus": [
+            {
+              "Name": "CatnipConsumptionBonus",
+              "Min": -1
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "woodcutter",
+          "Factor": -4.25,
+          "ProductionFloor": true,
+          "Bonus": [
+            {
+              "Name": "CatnipConsumptionBonus",
+              "Min": -1
+            }
+          ],
+          "ProductionOnGone": true
+        },
+        {
+          "Name": "farmer",
           "Factor": -4.25,
           "ProductionFloor": true,
           "Bonus": [
@@ -1692,7 +1692,7 @@
       "BonusIsMultiplicative": true,
       "CapResource": "catnip cap",
       "ResetResource": "reset catnip",
-      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(woodcutter)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(scholar)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(farmer)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(hunter)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(miner)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(priest)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(geologist)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025 * (1 + (c(Yarn) * c(Numerology)) + (c(Piscine) * -0.5 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
+      "Formula": "Count += ((((c(Catnip Field) * 0.625 * (1 + (c(Spring) * 0.5) + (c(Winter) * -0.75))) + (floor(c(kitten)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(geologist)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(priest)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(hunter)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(scholar)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(miner)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(woodcutter)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (floor(c(farmer)) * -4.25 * (1 + max(-1, c(CatnipConsumptionBonus)))) + (c(farmer) * 5 * (1 + c(happiness) + (c(Mineral Hoes) * 0.5) + (c(Iron Hoes) * 0.3))) + (c(Active Brewery) * -5) + (c(Active Bio Lab) * -5 * c(Biofuel Processing))) * ((1 + (c(Aqueduct) * 0.03) + (c(Hydroponics) * 0.025 * (1 + (c(Yarn) * c(Numerology)) + (c(Piscine) * -0.5 * c(Numerology))))) * (1 + c(GlobalProductionBonus)) * (1 + (c(Charon) * 0.5 * (c(Numeromancy) * (1 if c(festival day) gt 0)))))) * seconds)"
     },
     {
       "Name": "wood cap",
@@ -3955,23 +3955,7 @@
           "ProductionFloor": true
         },
         {
-          "Name": "woodcutter",
-          "ProductionFloor": true
-        },
-        {
-          "Name": "scholar",
-          "ProductionFloor": true
-        },
-        {
-          "Name": "farmer",
-          "ProductionFloor": true
-        },
-        {
-          "Name": "hunter",
-          "ProductionFloor": true
-        },
-        {
-          "Name": "miner",
+          "Name": "geologist",
           "ProductionFloor": true
         },
         {
@@ -3979,12 +3963,28 @@
           "ProductionFloor": true
         },
         {
-          "Name": "geologist",
+          "Name": "hunter",
+          "ProductionFloor": true
+        },
+        {
+          "Name": "scholar",
+          "ProductionFloor": true
+        },
+        {
+          "Name": "miner",
+          "ProductionFloor": true
+        },
+        {
+          "Name": "woodcutter",
+          "ProductionFloor": true
+        },
+        {
+          "Name": "farmer",
           "ProductionFloor": true
         }
       ],
       "StartCountFromZero": true,
-      "Formula": "Count = (floor(c(kitten)) + floor(c(woodcutter)) + floor(c(scholar)) + floor(c(farmer)) + floor(c(hunter)) + floor(c(miner)) + floor(c(priest)) + floor(c(geologist)))"
+      "Formula": "Count = (floor(c(kitten)) + floor(c(geologist)) + floor(c(priest)) + floor(c(hunter)) + floor(c(scholar)) + floor(c(miner)) + floor(c(woodcutter)) + floor(c(farmer)))"
     },
     {
       "Name": "fur",

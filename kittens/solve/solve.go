@@ -45,6 +45,18 @@ func solveSmart(cfg Config) error {
 		kittenCounts := map[int]float64{}
 		kittenIndexes := map[string]int{}
 		isKitten := map[int]bool{}
+		minJobCount := 999.0
+		for _, action := range cfg.LastData.Actions {
+			if action.IsLocked || action.IsHidden {
+				continue
+			}
+			if action.Type != "Job" {
+				continue
+			}
+			if action.Count > 0 && action.Count < minJobCount {
+				minJobCount = action.Count
+			}
+		}
 		for index, action := range cfg.LastData.Actions {
 			if action.IsLocked || action.IsHidden {
 				continue
@@ -76,6 +88,10 @@ func solveSmart(cfg Config) error {
 			}
 			if isKitten[index] {
 				if action.Count == 0 {
+					cfg.Input <- fmt.Sprintf("s %d", index)
+				}
+			} else if action.Type == "Job" {
+				if action.Count == minJobCount {
 					cfg.Input <- fmt.Sprintf("s %d", index)
 				}
 			} else {
