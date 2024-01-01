@@ -1723,7 +1723,7 @@ func NewGame(cfg game.Config) *game.Game {
 			Name: "all kittens",
 		}},
 	}, {
-		Name: "reset karma kitten", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
+		Name: "reset karma kitten", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true, ResetResource: "reset karma kitten",
 		Producers: []R{{
 			Name:                "kitten minus 35",
 			Bonus:               []R{{Name: "kitten minus 35", ProductionBoolean: true}},
@@ -1739,7 +1739,7 @@ func NewGame(cfg game.Config) *game.Game {
 			Name: "all kittens",
 		}},
 	}, {
-		Name: "reset paragon", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true,
+		Name: "reset paragon", Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true, ResetResource: "reset paragon",
 		Producers: []R{{
 			Name:                "kitten minus 70",
 			Bonus:               []R{{Name: "kitten minus 70", ProductionBoolean: true}},

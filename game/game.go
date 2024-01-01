@@ -475,6 +475,9 @@ func (g *Game) reset() {
 			count = g.GetResource(resource.ResetResource).Count
 		}
 		resource.Count = count
+		if resource.Cap > 1 {
+			resource.Cap = 0
+		}
 	}
 }
 

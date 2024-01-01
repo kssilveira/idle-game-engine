@@ -4847,6 +4847,7 @@
         }
       ],
       "StartCountFromZero": true,
+      "ResetResource": "reset karma kitten",
       "Formula": "Count = (c(kitten minus 35) * (1 if c(kitten minus 35) gt 0))"
     },
     {
@@ -4889,6 +4890,7 @@
         }
       ],
       "StartCountFromZero": true,
+      "ResetResource": "reset paragon",
       "Formula": "Count = (c(kitten minus 70) * (1 if c(kitten minus 70) gt 0))"
     },
     {

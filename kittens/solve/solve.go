@@ -44,6 +44,7 @@ func solveSmart(cfg Config) error {
 			iter = 0
 			cfg.Input <- "r"
 			reset += 1
+			return nil
 		}
 		fmt.Printf("reset %d iter %d", reset, iter)
 		cfg.Waiting <- true

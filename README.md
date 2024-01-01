@@ -111,4 +111,5 @@ Missing features:
 
 TODO:
 
+- fix reset logic
 - solve the rest with logic
