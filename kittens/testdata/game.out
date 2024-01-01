@@ -5586,67 +5586,78 @@
       "Name": "Transcendence Level",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Transcendence Level"
     },
     {
       "Name": "Black Obelisk",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Black Obelisk"
     },
     {
       "Name": "Black Nexus",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Black Nexus"
     },
     {
       "Name": "Black Core",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Black Core"
     },
     {
       "Name": "Event Horizon",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Event Horizon"
     },
     {
       "Name": "Black Library",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Black Library"
     },
     {
       "Name": "Black Radiance",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Black Radiance"
     },
     {
       "Name": "Blazar",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Blazar"
     },
     {
       "Name": "Dark Nova",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Dark Nova"
     },
     {
       "Name": "Mausoleum",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Mausoleum"
     },
     {
       "Name": "Holy Genocide",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "Holy Genocide"
     },
     {
       "Name": "Space Elevator",
@@ -5885,7 +5896,8 @@
       "Name": "karma",
       "Type": "Building",
       "IsHidden": true,
-      "Cap": -1
+      "Cap": -1,
+      "ResetResource": "karma"
     },
     {
       "Name": "woodcutter",
@@ -6339,7 +6351,8 @@
       "Name": "Chronophysics",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "reset Chronophysics"
     },
     {
       "Name": "Tachyon Theory",
@@ -7257,223 +7270,260 @@
       "Name": "Enlightenment",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Enlightenment"
     },
     {
       "Name": "Codex Vox",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Codex Vox"
     },
     {
       "Name": "Codex Logos",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Codex Logos"
     },
     {
       "Name": "Codex Agrum",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Codex Agrum"
     },
     {
       "Name": "Megalomania",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Megalomania"
     },
     {
       "Name": "Black Codex",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Black Codex"
     },
     {
       "Name": "Codex Leviathanus",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Codex Leviathanus"
     },
     {
       "Name": "Golden Ratio",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Golden Ratio"
     },
     {
       "Name": "Divine Proportion",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Divine Proportion"
     },
     {
       "Name": "Vitruvian Feline",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Vitruvian Feline"
     },
     {
       "Name": "Renaissance",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Renaissance"
     },
     {
       "Name": "Diplomacy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Diplomacy"
     },
     {
       "Name": "Zebra Diplomacy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Zebra Diplomacy"
     },
     {
       "Name": "Zebra Covenant",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Zebra Covenant"
     },
     {
       "Name": "Navigation Diplomacy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Navigation Diplomacy"
     },
     {
       "Name": "Chronomancy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Chronomancy"
     },
     {
       "Name": "Anachronomancy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Anachronomancy"
     },
     {
       "Name": "Astromancy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Astromancy"
     },
     {
       "Name": "Unicornmancy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Unicornmancy"
     },
     {
       "Name": "Carnivals",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Carnivals"
     },
     {
       "Name": "Numerology",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Numerology"
     },
     {
       "Name": "Order of the Void",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Order of the Void"
     },
     {
       "Name": "Venus of Willenfluff",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Venus of Willenfluff"
     },
     {
       "Name": "Pawgan Rituals",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Pawgan Rituals"
     },
     {
       "Name": "Numeromancy",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Numeromancy"
     },
     {
       "Name": "Malkuth",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Malkuth"
     },
     {
       "Name": "Yesod",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Yesod"
     },
     {
       "Name": "Hod",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Hod"
     },
     {
       "Name": "Netzach",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Netzach"
     },
     {
       "Name": "Tiferet",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Tiferet"
     },
     {
       "Name": "Gevurah",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Gevurah"
     },
     {
       "Name": "Chesed",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Chesed"
     },
     {
       "Name": "Binah",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Binah"
     },
     {
       "Name": "Chokhmah",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Chokhmah"
     },
     {
       "Name": "Keter",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Keter"
     },
     {
       "Name": "Adjustment Bureau",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "Adjustment Bureau"
     },
     {
       "Name": "ASCOH",
       "Type": "Tech",
       "IsHidden": true,
-      "Cap": 1
+      "Cap": 1,
+      "ResetResource": "ASCOH"
     },
     {
       "Name": "beam",
@@ -7506,6 +7556,7 @@
           "ProductionOnGone": true
         }
       ],
+      "ResetResource": "reset beam",
       "ProducerAction": "@beam",
       "Formula": "Count += ((c(Active Steamworks) * 0.000007 * (c(Workshop Automation) * (c(wood cap) * (1 + c(Advanced Automation) + c(CraftRatio))))) * seconds)"
     },
@@ -7561,6 +7612,7 @@
           "ProductionOnGone": true
         }
       ],
+      "ResetResource": "reset slab",
       "ProducerAction": "@slab",
       "Formula": "Count += ((c(Active Steamworks) * 0.000005 * (c(Workshop Automation) * (c(mineral cap) * (1 + c(Advanced Automation) + c(CraftRatio))))) * seconds)"
     },
@@ -7589,6 +7641,7 @@
       "Name": "concrete",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset concrete",
       "ProducerAction": "@concrete"
     },
     {
@@ -7649,6 +7702,7 @@
           "ProductionOnGone": true
         }
       ],
+      "ResetResource": "reset plate",
       "ProducerAction": "@plate",
       "Formula": "Count += ((c(Active Steamworks) * 0.00001 * (c(Workshop Automation) * (c(Pneumatic Press) * (c(iron cap) * (1 + c(Advanced Automation) + c(CraftRatio)))))) * seconds)"
     },
@@ -7715,6 +7769,7 @@
           "BonusStartsFromZero": true
         }
       ],
+      "ResetResource": "reset steel",
       "ProducerAction": "@steel",
       "Formula": "Count += ((c(Active Calciner) * 0.00075 * (c(Steel Plants) * (1 + (c(Oxidation) * 0.95) + (c(CraftRatio) * 0.25 * c(Automated Plants)) + (c(Reactor) * 0.02 * c(Nuclear Plants))))) * seconds)"
     },
@@ -7743,6 +7798,7 @@
       "Name": "gear",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset gear",
       "ProducerAction": "@gear"
     },
     {
@@ -7770,6 +7826,7 @@
       "Name": "alloy",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset alloy",
       "ProducerAction": "@alloy"
     },
     {
@@ -7797,6 +7854,7 @@
       "Name": "eludium",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset eludium",
       "ProducerAction": "@eludium"
     },
     {
@@ -7824,6 +7882,7 @@
       "Name": "scaffold",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset scaffold",
       "ProducerAction": "@scaffold"
     },
     {
@@ -7851,6 +7910,7 @@
       "Name": "ship",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset ship",
       "ProducerAction": "@ship"
     },
     {
@@ -7878,6 +7938,7 @@
       "Name": "tanker",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset tanker",
       "ProducerAction": "@tanker"
     },
     {
@@ -7905,6 +7966,7 @@
       "Name": "kerosene",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset kerosene",
       "ProducerAction": "@kerosene"
     },
     {
@@ -7932,6 +7994,7 @@
       "Name": "parchment",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset parchment",
       "ProducerAction": "@parchment"
     },
     {
@@ -7983,6 +8046,7 @@
           "BonusStartsFromZero": true
         }
       ],
+      "ResetResource": "reset manuscript",
       "ProducerAction": "@manuscript",
       "Formula": "Count += ((c(Steamworks) * 0.0025 * (c(Printing Press) * (1 + (c(Offset Press) * 3 * (1 + (c(Photolithography) * 3)))))) * seconds)"
     },
@@ -8011,6 +8075,7 @@
       "Name": "compendium",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset compendium",
       "ProducerAction": "@compendium"
     },
     {
@@ -8038,6 +8103,7 @@
       "Name": "blueprint",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset blueprint",
       "ProducerAction": "@blueprint"
     },
     {
@@ -8083,6 +8149,7 @@
           "BonusStartsFromZero": true
         }
       ],
+      "ResetResource": "reset thorium",
       "ProducerAction": "@thorium",
       "Formula": "Count += ((c(Active Reactor) * -0.25 * (c(Thorium Reactors) * (1 + (c(Enriched Thorium) * -0.25)))) * seconds)"
     },
@@ -8111,6 +8178,7 @@
       "Name": "megalith",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset megalith",
       "ProducerAction": "@megalith"
     },
     {
@@ -8138,6 +8206,7 @@
       "Name": "tear",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset tear",
       "ProducerAction": "@tear"
     },
     {
@@ -8165,6 +8234,7 @@
       "Name": "worship",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset worship",
       "ProducerAction": "@worship"
     },
     {
@@ -8192,6 +8262,7 @@
       "Name": "epiphany",
       "Type": "Resource",
       "Cap": -1,
+      "ResetResource": "reset epiphany",
       "ProducerAction": "@epiphany"
     },
     {

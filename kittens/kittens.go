@@ -5031,7 +5031,7 @@ func addCrafts(g *game.Game, actions []data.Action) {
 		g.AddAction(action)
 		g.AddResource(R{
 			Name: name, Type: "Resource", Cap: -1, ProducerAction: action.Name,
-			Producers: action.Producers,
+			Producers: action.Producers, ResetResource: "reset " + name,
 		})
 		g.AddResource(R{
 			Name: "reset " + name, Type: "Resource", IsHidden: true, Cap: -1, StartCountFromZero: true, ResetResource: "reset " + name,
@@ -5059,7 +5059,7 @@ func addBuildings(g *game.Game, actions []data.Action) {
 		}}, action.Adds...)
 		g.AddAction(action)
 		g.AddResource(R{
-			Name: action.Name, Type: action.Type, IsHidden: true, Cap: -1,
+			Name: action.Name, Type: action.Type, IsHidden: true, Cap: -1, ResetResource: action.ResetResource,
 		})
 
 		if activeName == "" {
@@ -5112,7 +5112,7 @@ func addTechs(g *game.Game, actions []data.Action) {
 		action.LockedBy = action.Name
 		g.AddAction(action)
 		g.AddResource(R{
-			Name: action.Name, Type: action.Type, IsHidden: true, Cap: 1,
+			Name: action.Name, Type: action.Type, IsHidden: true, Cap: 1, ResetResource: action.ResetResource,
 		})
 	}
 }

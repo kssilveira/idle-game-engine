@@ -44,6 +44,7 @@ func solveSmart(cfg Config) error {
 		if iter == 120 {
 			iter = 0
 			cfg.Input <- "r"
+			cfg.Input <- "S"
 			reset += 1
 		}
 		fmt.Printf("reset %d iter %d", reset, iter)
@@ -66,7 +67,7 @@ func solveSmart(cfg Config) error {
 			}
 		}
 		for index, action := range cfg.LastData.Actions {
-			if action.IsLocked || action.IsHidden {
+			if action.IsLocked || action.IsHidden || action.Name == "Burn Paragon" {
 				continue
 			}
 			if action.IsOverCap && action.Type != "Job" {

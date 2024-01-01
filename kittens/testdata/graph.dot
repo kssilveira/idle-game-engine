@@ -620,19 +620,24 @@ digraph {
   "Idle Brewery" -> "Active Brewery" [color="red"];
   "Lunar Outpost" -> "Idle Lunar Outpost" [color="green"];
   "Idle Lunar Outpost" -> "Active Lunar Outpost" [color="red"];
+  "reset Chronophysics" -> "Chronophysics" [color="limegreen"];
   "Active Steamworks" -> "beam" [color="green"];
   "Workshop Automation" -> "Active Steamworks" [color="green"];
   "CraftRatio" -> "wood cap" [color="green"];
+  "reset beam" -> "beam" [color="limegreen"];
   "beam" -> "reset beam" [color="green"];
   "Chronosphere" -> "beam" [color="green"];
   "Active Steamworks" -> "slab" [color="green"];
   "CraftRatio" -> "mineral cap" [color="green"];
+  "reset slab" -> "slab" [color="limegreen"];
   "slab" -> "reset slab" [color="green"];
   "Chronosphere" -> "slab" [color="green"];
+  "reset concrete" -> "concrete" [color="limegreen"];
   "concrete" -> "reset concrete" [color="green"];
   "Chronosphere" -> "concrete" [color="green"];
   "Active Steamworks" -> "plate" [color="green"];
   "CraftRatio" -> "iron cap" [color="green"];
+  "reset plate" -> "plate" [color="limegreen"];
   "plate" -> "reset plate" [color="green"];
   "Chronosphere" -> "plate" [color="green"];
   "Active Calciner" -> "steel" [color="green"];
@@ -642,45 +647,62 @@ digraph {
   "Automated Plants" -> "CraftRatio" [color="green"];
   "Reactor" -> "Steel Plants" [color="green"];
   "Nuclear Plants" -> "Reactor" [color="green"];
+  "reset steel" -> "steel" [color="limegreen"];
   "steel" -> "reset steel" [color="green"];
   "Chronosphere" -> "steel" [color="green"];
+  "reset gear" -> "gear" [color="limegreen"];
   "gear" -> "reset gear" [color="green"];
   "Chronosphere" -> "gear" [color="green"];
+  "reset alloy" -> "alloy" [color="limegreen"];
   "alloy" -> "reset alloy" [color="green"];
   "Chronosphere" -> "alloy" [color="green"];
+  "reset eludium" -> "eludium" [color="limegreen"];
   "eludium" -> "reset eludium" [color="green"];
   "Chronosphere" -> "eludium" [color="green"];
+  "reset scaffold" -> "scaffold" [color="limegreen"];
   "scaffold" -> "reset scaffold" [color="green"];
   "Chronosphere" -> "scaffold" [color="green"];
+  "reset ship" -> "ship" [color="limegreen"];
   "ship" -> "reset ship" [color="green"];
   "Chronosphere" -> "ship" [color="green"];
+  "reset tanker" -> "tanker" [color="limegreen"];
   "tanker" -> "reset tanker" [color="green"];
   "Chronosphere" -> "tanker" [color="green"];
+  "reset kerosene" -> "kerosene" [color="limegreen"];
   "kerosene" -> "reset kerosene" [color="green"];
   "Chronosphere" -> "kerosene" [color="green"];
+  "reset parchment" -> "parchment" [color="limegreen"];
   "parchment" -> "reset parchment" [color="green"];
   "Chronosphere" -> "parchment" [color="green"];
   "Steamworks" -> "manuscript" [color="green"];
   "Printing Press" -> "Steamworks" [color="green"];
   "Offset Press" -> "Printing Press" [color="green"];
   "Photolithography" -> "Offset Press" [color="green"];
+  "reset manuscript" -> "manuscript" [color="limegreen"];
   "manuscript" -> "reset manuscript" [color="green"];
   "Chronosphere" -> "manuscript" [color="green"];
+  "reset compendium" -> "compendium" [color="limegreen"];
   "compendium" -> "reset compendium" [color="green"];
   "Chronosphere" -> "compendium" [color="green"];
+  "reset blueprint" -> "blueprint" [color="limegreen"];
   "blueprint" -> "reset blueprint" [color="green"];
   "Chronosphere" -> "blueprint" [color="green"];
   "thorium" -> "Active Reactor" [color="red"];
   "Thorium Reactors" -> "Active Reactor" [color="red"];
   "Enriched Thorium" -> "Thorium Reactors" [color="red"];
+  "reset thorium" -> "thorium" [color="limegreen"];
   "thorium" -> "reset thorium" [color="green"];
   "Chronosphere" -> "thorium" [color="green"];
+  "reset megalith" -> "megalith" [color="limegreen"];
   "megalith" -> "reset megalith" [color="green"];
   "Chronosphere" -> "megalith" [color="green"];
+  "reset tear" -> "tear" [color="limegreen"];
   "tear" -> "reset tear" [color="green"];
   "Chronosphere" -> "tear" [color="green"];
+  "reset worship" -> "worship" [color="limegreen"];
   "worship" -> "reset worship" [color="green"];
   "Chronosphere" -> "worship" [color="green"];
+  "reset epiphany" -> "epiphany" [color="limegreen"];
   "epiphany" -> "reset epiphany" [color="green"];
   "Chronosphere" -> "epiphany" [color="green"];
   "Gather catnip" -> "catnip" [color="limegreen"];
@@ -2524,7 +2546,7 @@ digraph {
   "@epiphany" [shape="cds"];
 }
 # titanium: 74
-# blueprint: 48
+# blueprint: 49
 # Chronosphere: 47
 # PriceRatioBonus: 44
 # paragon: 42
