@@ -2,6 +2,7 @@ package solve
 
 import (
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/kssilveira/idle-game-engine/game"
@@ -14,22 +15,77 @@ type Config struct {
 	LastData  *ui.Data
 	Waiting   chan bool
 	Refreshed chan bool
-	IsSmart   bool
+	Type      string
 	SleepMS   int
 	PermFn    func(int) []int
 }
 
 func Solve(cfg Config) error {
-	if cfg.IsSmart {
+	switch cfg.Type {
+	case "smart":
 		return solveSmart(cfg)
+	case "random":
+		return solveRandom(cfg)
+	case "fixed":
+	case "":
+		return solveFixed(cfg)
+	default:
+		return fmt.Errorf("invalid type %s", cfg.Type)
 	}
-	return solve(cfg)
+	return nil
 }
 
 func solveSmart(cfg Config) error {
 	cfg.Input <- "hc"
 	cfg.Input <- "hm"
+	for {
+		cfg.Waiting <- true
+		<-cfg.Refreshed
+		kittenActions := []ui.Action{}
+		kittenCounts := map[int]float64{}
+		kittenIndexes := map[string]int{}
+		isKitten := map[int]bool{}
+		for index, action := range cfg.LastData.Actions {
+			if action.IsLocked || action.IsHidden {
+				continue
+			}
+			if action.IsOverCap && action.Type != "Job" {
+				continue
+			}
+			if strings.HasPrefix(action.Name, "Active ") && action.Count > 0 {
+				continue
+			}
+			for _, add := range action.Adds {
+				if add.Name == "kitten" {
+					kittenActions = append(kittenActions, action)
+					isKitten[index] = true
+					kittenCounts[index] = add.Cap
+					kittenIndexes[action.Name] = index
+					break
+				}
+			}
+			if action.Type == "Job" && action.Count == 0 && len(kittenActions) > 0 {
+				kittenAction := kittenActions[0]
+				kittenIndex := kittenIndexes[kittenAction.Name]
+				cfg.Input <- fmt.Sprintf("s %d", kittenIndex)
+				if kittenCounts[kittenIndex] == 1 {
+					cfg.Input <- fmt.Sprintf("s %d", kittenIndex)
+				}
+				cfg.Input <- fmt.Sprintf("s %d", index)
+				cfg.Input <- fmt.Sprintf("s farmer")
+			}
+			if action.Count == 0 || !isKitten[index] {
+				cfg.Input <- fmt.Sprintf("s %d", index)
+			}
+		}
+		time.Sleep(time.Second * time.Duration(cfg.SleepMS) / 1000.)
+	}
+	return nil
+}
 
+func solveRandom(cfg Config) error {
+	cfg.Input <- "hc"
+	cfg.Input <- "hm"
 	for {
 		cfg.Waiting <- true
 		<-cfg.Refreshed
@@ -45,12 +101,10 @@ func solveSmart(cfg Config) error {
 		}
 		time.Sleep(time.Second * time.Duration(cfg.SleepMS) / 1000.)
 	}
-
-	cfg.Input <- "999"
 	return nil
 }
 
-func solve(cfg Config) error {
+func solveFixed(cfg Config) error {
 	precmds := []string{
 		"h Charon", "h Umbra", "h Yarn", "h Helios", "h Cath", "h Redmoon", "h Dune", "h Piscine", "h Termogus",
 		"h Spring", "h Summer", "h Autumn", "h Winter",

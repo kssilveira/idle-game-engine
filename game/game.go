@@ -616,7 +616,7 @@ func (g *Game) getSkipTime(a data.Action, isNested bool) (time.Duration, error) 
 		return 0, fmt.Errorf("not enough %s", c.Name)
 	}
 	if g.config.MaxSkipSeconds > 0 && skipTime > g.config.MaxSkipSeconds {
-		return 0, fmt.Errorf("max skip %s > skip %s", g.config.MaxSkipSeconds, skipTime)
+		return 0, fmt.Errorf("max skip %s < skip %s", g.config.MaxSkipSeconds, skipTime)
 	}
 	return skipTime, nil
 }

@@ -21,7 +21,7 @@ import (
 
 var (
 	auto           = flag.Bool("auto", false, "automatically trigger all actions")
-	autoSmart      = flag.Bool("auto_smart", false, "smart solve")
+	autoType       = flag.String("auto_type", "smart", "solve 'smart', 'random' or 'fixed'")
 	endAfterAuto   = flag.Bool("end_after_auto", false, "end after auto actions")
 	autoSleepMS    = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
 	maxSkipSeconds = flag.Int("max_skip_seconds", 0, "max skip duration")
@@ -109,7 +109,7 @@ func handleInput(g *game.Game, input game.Input, lastData *ui.Data, waiting chan
 			LastData:  lastData,
 			Waiting:   waiting,
 			Refreshed: refreshed,
-			IsSmart:   *autoSmart,
+			Type:      *autoType,
 			SleepMS:   *autoSleepMS,
 			PermFn:    rand.Perm,
 		}); err != nil {
