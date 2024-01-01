@@ -19,6 +19,7 @@ type Now func() time.Time
 type Config struct {
 	NowFn          Now
 	MaxSkipSeconds time.Duration
+	MaxCreateIter  int
 }
 
 type Game struct {
@@ -440,6 +441,9 @@ func (g *Game) create(input data.ParsedInput) error {
 		}
 		nested := fmt.Sprintf("%d", g.actionToIndex[r.ProducerAction])
 		need := int(g.getNeededNestedAction(input.Action, c))
+		if g.config.MaxCreateIter > 0 && need > g.config.MaxCreateIter {
+			return fmt.Errorf("max create iter %d < need %d for action %s", g.config.MaxCreateIter, need, input.Action.Name)
+		}
 		for i := 0; i < need; i++ {
 			if _, err := g.act(input.Type + nested); err != nil {
 				break

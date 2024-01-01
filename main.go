@@ -25,6 +25,7 @@ var (
 	endAfterAuto   = flag.Bool("end_after_auto", false, "end after auto actions")
 	autoSleepMS    = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
 	maxSkipSeconds = flag.Int("max_skip_seconds", 0, "max skip duration")
+	maxCreateIter  = flag.Int("max_create_iter", 0, "max create iterations")
 	resourceMap    = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
 )
 
@@ -66,6 +67,7 @@ func newGame() (*game.Game, error) {
 	g := kittens.NewGame(game.Config{
 		NowFn:          func() time.Time { return time.Now() },
 		MaxSkipSeconds: time.Second * time.Duration(*maxSkipSeconds),
+		MaxCreateIter:  *maxCreateIter,
 	})
 	if err := updateResources(g, *resourceMap); err != nil {
 		return nil, err
