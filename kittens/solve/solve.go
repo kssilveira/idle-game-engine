@@ -74,8 +74,12 @@ func solveSmart(cfg Config) error {
 				cfg.Input <- fmt.Sprintf("s %d", index)
 				cfg.Input <- fmt.Sprintf("s farmer")
 			}
-			if action.Count == 0 || !isKitten[index] {
-				cfg.Input <- fmt.Sprintf("s %d", index)
+			if isKitten[index] {
+				if action.Count == 0 {
+					cfg.Input <- fmt.Sprintf("s %d", index)
+				}
+			} else {
+				cfg.Input <- fmt.Sprintf("10 s %d", index)
 			}
 		}
 		time.Sleep(time.Second * time.Duration(cfg.SleepMS) / 1000.)
