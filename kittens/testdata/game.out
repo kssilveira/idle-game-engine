@@ -4887,11 +4887,14 @@
             }
           ],
           "BonusStartsFromZero": true
+        },
+        {
+          "Name": "paragon"
         }
       ],
       "StartCountFromZero": true,
       "ResetResource": "reset paragon",
-      "Formula": "Count = (c(kitten minus 70) * (1 if c(kitten minus 70) gt 0))"
+      "Formula": "Count = ((c(kitten minus 70) * (1 if c(kitten minus 70) gt 0)) + c(paragon))"
     },
     {
       "Name": "paragon",
@@ -4902,6 +4905,7 @@
           "Factor": 0.00000125
         }
       ],
+      "ResetResource": "reset paragon",
       "Formula": "Count += (0.000001 * seconds)"
     },
     {

@@ -1744,9 +1744,11 @@ func NewGame(cfg game.Config) *game.Game {
 			Name:                "kitten minus 70",
 			Bonus:               []R{{Name: "kitten minus 70", ProductionBoolean: true}},
 			BonusStartsFromZero: true,
+		}, {
+			Name: "paragon",
 		}},
 	}, {
-		Name: "paragon", Type: "Resource", Cap: -1,
+		Name: "paragon", Type: "Resource", Cap: -1, ResetResource: "reset paragon",
 		Producers: []R{{Factor: 1. / (2 * 100 * 4 * 1000)}},
 	}, {
 		Name: "burned paragon", Type: "Resource", Cap: -1, ResetResource: "burned paragon",

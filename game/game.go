@@ -766,6 +766,8 @@ func (g *Game) getCountForRate(p data.Resource) float64 {
 	if p.ProductionBoolean {
 		if quantity > 0 {
 			quantity = 1
+		} else {
+			quantity = 0
 		}
 	}
 	return quantity

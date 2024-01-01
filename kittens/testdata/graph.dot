@@ -594,6 +594,8 @@ digraph {
   "reset karma kitten" -> "karma kitten" [color="limegreen"];
   "all kittens" -> "kitten minus 70" [color="green"];
   "kitten minus 70" -> "reset paragon" [color="green"];
+  "paragon" -> "reset paragon" [color="green"];
+  "reset paragon" -> "paragon" [color="limegreen"];
   "UnhappinessBonus" -> "all kittens" [color="red"];
   "Active Brewery" -> "festival day" [color="green"];
   "Chronophysics" -> "reset Chronophysics" [color="green"];
@@ -2525,5 +2527,5 @@ digraph {
 # blueprint: 48
 # Chronosphere: 47
 # PriceRatioBonus: 44
+# paragon: 42
 # starchart: 42
-# alloy: 40

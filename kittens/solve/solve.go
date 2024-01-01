@@ -27,6 +27,7 @@ func Solve(cfg Config) error {
 	case "random":
 		return solveRandom(cfg)
 	case "fixed":
+		fallthrough
 	case "":
 		return solveFixed(cfg)
 	default:
