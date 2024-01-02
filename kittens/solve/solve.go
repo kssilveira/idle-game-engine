@@ -56,7 +56,7 @@ func solveSmart(cfg Config) error {
 					fmt.Printf("missing resource %s\n", resource.Resource.Name)
 				}
 				if resource.Resource.Name == "paragon" {
-					fmt.Printf("resource paragon %f\n", resource.Resource.Count)
+					fmt.Printf("\nresource paragon %f\n\n", resource.Resource.Count)
 				}
 			}
 
