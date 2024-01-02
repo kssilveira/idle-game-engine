@@ -40,16 +40,26 @@ func solveSmart(cfg Config) error {
 	cfg.Input <- "hc"
 	cfg.Input <- "hm"
 	reset := 0
+	firstResource := map[string]bool{}
+	start := time.Now()
 	for iter := 0; ; iter++ {
 		if iter == 120 {
 			iter = 0
 			cfg.Input <- "r"
 			cfg.Input <- "S"
 			reset += 1
+			fmt.Printf("\n==========\n%s: reset %d\n==========\n\n", time.Since(start), reset)
 		}
-		fmt.Printf("reset %d iter %d", reset, iter)
 		cfg.Waiting <- true
 		<-cfg.Refreshed
+
+		for _, resource := range cfg.LastData.Resources {
+			if resource.Resource.Count > 0 && !firstResource[resource.Resource.Name] {
+				firstResource[resource.Resource.Name] = true
+				fmt.Printf("%s: resource %s\n", time.Since(start), resource.Resource.Name)
+			}
+		}
+
 		kittenActions := []ui.Action{}
 		kittenCounts := map[int]float64{}
 		kittenIndexes := map[string]int{}

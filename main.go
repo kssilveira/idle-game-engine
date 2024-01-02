@@ -23,6 +23,7 @@ var (
 	auto           = flag.Bool("auto", false, "automatically trigger all actions")
 	autoType       = flag.String("auto_type", "smart", "solve 'smart', 'random' or 'fixed'")
 	endAfterAuto   = flag.Bool("end_after_auto", false, "end after auto actions")
+	silentOutput   = flag.Bool("silent_output", false, "silent output")
 	autoSleepMS    = flag.Int("auto_sleep_ms", 1000, "sleep between auto actions")
 	maxSkipSeconds = flag.Int("max_skip_seconds", 0, "max skip duration")
 	maxCreateIter  = flag.Int("max_create_iter", 0, "max create iterations")
@@ -144,8 +145,10 @@ func handleOutput(output game.Output, lastData *ui.Data, waitingForLastData chan
 		CloseColor: "</span>",
 	}
 	for data := range output {
-		textui.Show(textConfig, data)
-		textui.Show(htmlConfig, data)
+		if !*silentOutput {
+			textui.Show(textConfig, data)
+			textui.Show(htmlConfig, data)
+		}
 		*lastData = *data
 		*lastString = buf.String()
 		buf.Reset()
