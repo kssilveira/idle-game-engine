@@ -48,6 +48,18 @@ func solveSmart(cfg Config) error {
 			cfg.Input <- "r"
 			cfg.Input <- "S"
 			reset += 1
+
+			fmt.Printf("\n==========\n%s: reset %d\n==========\n\n", time.Since(start), reset)
+
+			for _, resource := range cfg.LastData.Resources {
+				if !firstResource[resource.Resource.Name] {
+					fmt.Printf("missing resource %s\n", resource.Resource.Name)
+				}
+				if resource.Resource.Name == "paragon" {
+					fmt.Printf("resource paragon %f\n", resource.Resource.Count)
+				}
+			}
+
 			fmt.Printf("\n==========\n%s: reset %d\n==========\n\n", time.Since(start), reset)
 		}
 		cfg.Waiting <- true

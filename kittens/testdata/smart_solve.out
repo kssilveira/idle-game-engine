@@ -1,0 +1,1855 @@
+1.251461ms: resource day
+1.277459ms: resource Charon
+1.280146ms: resource year
+1.282092ms: resource Spring
+1.283918ms: resource day_of_year
+1.286215ms: resource ParagonCapBonus
+1.288038ms: resource GlobalCapBonus
+1.289874ms: resource ParagonProductionBonus
+1.29265ms: resource GlobalProductionBonus
+1.294838ms: resource catnip cap
+1.296718ms: resource wood cap
+1.298458ms: resource science cap
+1.300834ms: resource science
+1.302674ms: resource catpower cap
+1.304406ms: resource mineral cap
+1.306126ms: resource mineral
+1.307828ms: resource iron cap
+1.309667ms: resource coal cap
+1.311413ms: resource gold cap
+1.313116ms: resource titanium cap
+1.314821ms: resource oil cap
+1.316574ms: resource uranium cap
+1.318307ms: resource unobtainium cap
+1.320073ms: resource antimatter cap
+1.32271ms: resource temporal flux cap
+1.324962ms: resource temporal flux
+1.326821ms: resource culture cap
+1.328559ms: resource faith cap
+1.330379ms: resource leviathan energy cap
+1.332249ms: resource sorrow cap
+1.334013ms: resource chronoheat cap
+1.335836ms: resource reset paragon
+1.337608ms: resource paragon
+1.339372ms: resource happiness
+2.635533ms: resource catnip
+8.722692ms: resource time
+8.727697ms: resource skip
+8.729783ms: resource Summer
+8.733668ms: resource Catnip Field
+1.026986433s: resource Autumn
+1.027048612s: resource wood
+1.027071441s: resource kitten
+1.027090242s: resource Hut
+1.027103142s: resource Library
+1.054575007s: resource all kittens
+1.054589373s: resource woodcutter
+1.054592765s: resource scholar
+1.054595379s: resource Calendar
+1.066213576s: resource Helios
+1.066227899s: resource gone kitten
+1.066232954s: resource Agriculture
+1.0842799s: resource Dune
+1.084297063s: resource Barn
+1.084304089s: resource farmer
+1.084308232s: resource Archery
+1.084311571s: resource Mining
+1.121082217s: resource Termogus
+1.121096831s: resource HuntingBonus
+1.121100959s: resource CraftRatio
+1.121106034s: resource catpower
+1.121110908s: resource unicorn
+1.121115967s: resource Mine
+1.121119384s: resource Workshop
+1.121125084s: resource hunter
+1.121128991s: resource Animal Husbandry
+1.121132223s: resource Metal Working
+1.121137145s: resource Bolas
+1.174786892s: resource Umbra
+1.174804719s: resource Smelter
+1.174807888s: resource Idle Smelter
+1.174810315s: resource Pasture
+1.174814524s: resource miner
+1.17481728s: resource Civil Service
+1.174819552s: resource Mathematics
+1.174821727s: resource Construction
+1.174824664s: resource Mineral Hoes
+1.1748269s: resource Mineral Axe
+1.227056612s: resource AstronomicalEventBonus
+1.227067839s: resource iron
+1.227071665s: resource Active Smelter
+1.22707581s: resource Currency
+1.227077616s: resource Celestial Mechanics
+1.22707963s: resource Engineering
+1.227082016s: resource Iron Hoes
+1.227083823s: resource Iron Axe
+1.227087178s: resource Catnip Enrichment
+1.288570109s: resource Winter
+1.288579212s: resource BarnBonus
+1.288582833s: resource gold
+1.288586346s: resource Warehouse
+1.288588039s: resource Log House
+1.28858963s: resource Aqueduct
+1.288591682s: resource Lumber Mill
+1.28859501s: resource Writing
+1.288597313s: resource Expanded Barns
+1.288598999s: resource Reinforced Barns
+1.288603112s: resource Composite Bow
+1.288605565s: resource Gold Ore
+1.288608513s: resource beam
+1.288610471s: resource slab
+1.365535647s: resource fur
+1.365545011s: resource ivory
+1.365547121s: resource spice
+1.365550692s: resource Academy
+1.365552865s: resource Tradepost
+1.365556756s: resource Reinforced Saw
+1.365559036s: resource Hunting Armour
+1.365560826s: resource Register
+1.365563643s: resource steel
+1.365565318s: resource gear
+1.365566938s: resource scaffold
+1.36556861s: resource parchment
+1.365570207s: resource manuscript
+1.365571804s: resource compendium
+1.365573346s: resource blueprint
+1.695769677s: resource culture
+1.695781373s: resource Amphitheatre
+1.695784399s: resource Ziggurat
+1.695788115s: resource Philosophy
+1.695789988s: resource Steel
+1.69579183s: resource Machinery
+1.695796645s: resource plate
+1.695799188s: resource megalith
+3.059574192s: resource Piscine
+3.059644425s: resource WarehouseBonus
+3.059666043s: resource coal
+3.059679669s: resource faith
+3.059693689s: resource Steamworks
+3.059701954s: resource Idle Steamworks
+3.059711165s: resource Temple
+3.059727542s: resource Theology
+3.059739241s: resource Steel Axe
+3.059749932s: resource Reinforced Warehouses
+3.059764084s: resource Crossbow
+3.059777956s: resource Steel Armour
+3.059792131s: resource Coal Furnace
+3.059804744s: resource Deep Mining
+3.059817999s: resource Printing Press
+3.059826441s: resource Workshop Automation
+3.059834283s: resource High Pressure Engine
+3.190496199s: resource Redmoon
+3.190508298s: resource starchart
+3.190511845s: resource Active Steamworks
+3.190514207s: resource Solar Chant
+3.190515848s: resource Scholasticism
+3.19051745s: resource Golden Spire
+3.19051902s: resource Sun Altar
+3.190521244s: resource priest
+3.190523631s: resource Astronomy
+3.238834769s: resource Observatory
+3.238848221s: resource Navigation
+3.355561714s: resource Harbour
+3.355574s: resource Architecture
+3.478045743s: resource Cath
+3.478065694s: resource Expanded Cargo
+3.602255548s: resource Stained Glass
+3.602266276s: resource Physics
+3.745580643s: resource Kairo
+3.745593482s: resource kitten minus 35
+3.745595785s: resource reset karma kitten
+3.745599591s: resource Basilica
+3.745603013s: resource Chemistry
+3.745606373s: resource Pyrolysis
+3.7456084s: resource Pneumatic Press
+3.880515179s: resource oil
+3.880527469s: resource Oil Well
+4.159350548s: resource Mint
+4.15936119s: resource Idle Mint
+5.274434278s: resource Steel Saw
+5.577078992s: resource Acoustics
+5.931139123s: resource Active Mint
+6.102275s: resource Chapel
+6.282686858s: resource kitten minus 70
+6.676511553s: resource Templars
+7.689971285s: resource Ironwood Huts
+8.012981343s: resource Yarn
+8.192867383s: resource BarnCatnipCapBonus
+8.192889478s: resource Silos
+8.360249995s: resource Geology
+8.769296705s: resource Unic. Pasture
+8.769308272s: resource Quarry
+8.769311279s: resource Unicorn Tomb
+8.76931406s: resource geologist
+8.769316849s: resource Electricity
+8.769322446s: resource tear
+8.891228272s: resource Ivory Tower
+8.891240888s: resource Biology
+8.891245062s: resource Caravanserai
+8.891248143s: resource Solar Revolution
+10.172990552s: resource titanium
+10.173013644s: resource Industrialization
+10.173017725s: resource Titanium Axe
+10.173025736s: resource Astrolabe
+10.173030336s: resource concrete
+10.173033772s: resource alloy
+10.37042645s: resource Ivory Citadel
+10.370441132s: resource Biochemistry
+10.370444308s: resource Mechanization
+10.571023145s: resource Combustion
+10.57103489s: resource Metallurgy
+10.571038305s: resource Titanium Barns
+10.571041577s: resource Concrete Pillars
+10.571043843s: resource Advanced Automation
+10.57104609s: resource Logistics
+10.971577908s: resource Ecology
+10.971591223s: resource Offset Press
+10.971594232s: resource Fuel Injector
+11.411992682s: resource Electronics
+11.636816888s: resource Genetics
+12.144149722s: resource Data Center
+12.144165627s: resource Robotics
+12.365905302s: resource Titanium Reflectors
+12.539168081s: resource Calciner
+12.539179901s: resource Idle Calciner
+12.539188503s: resource Nuclear Fission
+12.742782039s: resource Active Calciner
+12.742797278s: resource Solar Farm
+12.742807051s: resource Alloy Axe
+12.742810379s: resource Alloy Barns
+12.742813146s: resource Titanium Warehouses
+12.742816971s: resource Alloy Armour
+12.742819686s: resource Geodesy
+12.742824034s: resource Pumpjack
+12.74282671s: resource SETI
+12.742830174s: resource Apocrypha
+13.043895519s: resource Mansion
+13.043908135s: resource Bio Lab
+13.043910797s: resource Idle Bio Lab
+13.043914355s: resource Magneto
+13.043916489s: resource Idle Magneto
+13.314583857s: resource OtherProductionBonus
+13.314595476s: resource uranium
+13.314599451s: resource Active Bio Lab
+13.314601589s: resource Active Magneto
+13.314606114s: resource Artificial Intelligence
+13.314611919s: resource thorium
+13.584422012s: resource Rocketry
+13.827752881s: resource Orbital Launch
+14.043430515s: resource Oil Processing
+14.043439429s: resource Titanium Saw
+14.043442089s: resource Concrete Warehouses
+14.043445571s: resource Biofuel Processing
+14.043447308s: resource CAD System
+14.043449211s: resource Oil Refinery
+14.043450911s: resource Factory Optimization
+14.043452625s: resource Factory Robotics
+14.36835956s: resource Factory
+14.368370849s: resource Satellites
+14.608937926s: resource Particle Physics
+14.608946716s: resource Alloy Saw
+14.608950804s: resource Concrete Huts
+14.608954754s: resource Mining Drill
+14.608957897s: resource Factory Logistics
+14.608960625s: resource Unicorn Selection
+14.60896372s: resource Transcendence
+14.951990128s: resource time crystal
+14.951999864s: resource relic
+14.952002595s: resource alicorn
+14.952007214s: resource Sky Palace
+14.952011915s: resource Dimensional Physics
+14.952013828s: resource Chronophysics
+15.260601012s: resource CatnipCapBonus
+15.260614776s: resource Hydro Plant
+15.260617832s: resource Satellite
+15.260621826s: resource Nanotechnology
+15.260624597s: resource Concrete Barns
+15.260626418s: resource Alloy Warehouses
+15.260628111s: resource Energy Rifts
+15.260629959s: resource Barges
+15.260631799s: resource Refrigeration
+15.260634138s: resource Electrolytic Smelting
+15.260635901s: resource Orbital Geodesy
+15.260637656s: resource Photolithography
+15.260640723s: resource Moon Mission
+15.909079583s: resource Broadcast Tower
+15.909096992s: resource Oxidation
+15.909100436s: resource Fluoridized Reactors
+15.909103063s: resource Nuclear Smelter
+15.909106851s: resource GM Catnip
+15.909109746s: resource Augmentations
+16.501289957s: resource Accelerator
+16.501299951s: resource Idle Accelerator
+16.779194392s: resource Drama and Poetry
+16.779205263s: resource Superconductors
+17.078584698s: resource Nanosuits
+17.078592788s: resource Steel Plants
+17.371526837s: resource Active Accelerator
+17.37153567s: resource Reactor
+17.371537684s: resource Idle Reactor
+17.371542789s: resource Orbital Engineering
+17.371545926s: resource Photovoltaic Cells
+17.37154775s: resource Reactor Vessel
+17.371549593s: resource Railgun
+17.371551849s: resource Automated Plants
+17.371553462s: resource Rotary Kiln
+17.371555247s: resource Uplink
+17.371557619s: resource Enriched Uranium
+17.3715596s: resource Oil Distillation
+17.371561168s: resource Factory Processing
+17.371562802s: resource Telecommunication
+17.371564317s: resource Neural Network
+17.371566222s: resource Dune Mission
+17.371568036s: resource Piscine Mission
+17.371570513s: resource kerosene
+17.629400701s: resource Active Reactor
+18.056049301s: resource Exogeology
+18.266540913s: resource Antimatter
+18.518906927s: resource Advanced Exogeology
+19.236281655s: resource Space Engineers
+20.270381251s: resource Unicorn Utopia
+20.507824937s: resource Sunspire
+20.763586716s: resource AcceleratorCapBonus
+20.763618446s: resource Stasis Chambers
+21.008715857s: resource Thorium
+21.987320281s: resource Void Energy
+21.987331698s: resource Solar Satellites
+21.987337301s: resource Hubble Space Telescope
+21.987340357s: resource Helios Mission
+22.253023029s: resource festival day
+22.253038397s: resource Containment Chamber
+23.221890967s: resource Spice Refinery
+26.210696436s: resource Starlink
+26.210705418s: resource Satellite Navigation
+26.210708561s: resource T-Minus Mission
+26.47554681s: resource Brewery
+26.475556058s: resource Idle Brewery
+26.475559626s: resource Space Station
+26.735373792s: resource Active Brewery
+
+==========
+27.935612997s: reset 1
+==========
+
+missing resource HarbourBonus
+missing resource SpaceElevatorOilBonus
+missing resource SpaceReactorScienceBonus
+missing resource MoonBaseCapBonus
+missing resource ParagonEffectBonus
+missing resource OtherCapBonus
+missing resource BaseMetalCapBonus
+missing resource SolarRevolutionProductionBonus
+missing resource SpaceProductionBonus
+missing resource CryostationStorageBonus
+missing resource UnicornEventBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset catnip
+missing resource reset wood
+missing resource reset mineral
+missing resource reset coal
+missing resource reset iron
+missing resource reset titanium
+missing resource reset gold
+missing resource reset oil
+missing resource reset uranium
+missing resource reset unobtainium
+missing resource reset antimatter
+missing resource reset catpower
+missing resource reset science
+missing resource reset culture
+missing resource reset faith
+missing resource reset starchart
+missing resource reset relic
+missing resource reset void
+missing resource reset blackcoin
+missing resource unobtainium
+missing resource reset time crystal
+missing resource antimatter
+missing resource void
+missing resource blackcoin
+missing resource gigaflop
+missing resource hash
+missing resource leviathan energy
+missing resource necrocorn
+missing resource sorrow
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource karma kitten
+missing resource burned paragon
+missing resource reset Chronophysics
+missing resource Chronosphere
+missing resource AI Core
+missing resource Marker
+missing resource Unicorn Graveyard
+missing resource Unicorn Necropolis
+missing resource Black Pyramid
+missing resource Transcendence Level
+missing resource Black Obelisk
+missing resource Black Nexus
+missing resource Black Core
+missing resource Event Horizon
+missing resource Black Library
+missing resource Black Radiance
+missing resource Blazar
+missing resource Dark Nova
+missing resource Mausoleum
+missing resource Holy Genocide
+missing resource Space Elevator
+missing resource Lunar Outpost
+missing resource Active Lunar Outpost
+missing resource Idle Lunar Outpost
+missing resource Moon Base
+missing resource Planet Cracker
+missing resource Hydraulic Fracturer
+missing resource Research Vessel
+missing resource Orbital Array
+missing resource Sunlifter
+missing resource Heatsink
+missing resource Sunforge
+missing resource Cryostation
+missing resource Space Beacon
+missing resource Terraforming Station
+missing resource Hydroponics
+missing resource HR Harvester
+missing resource Entanglement Station
+missing resource Tectonic
+missing resource Molten Core
+missing resource Hash Level
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Void Hoover
+missing resource Void Rift
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource karma
+missing resource Metaphysics
+missing resource Quantum Cryptography
+missing resource Blackchain
+missing resource Terraformation
+missing resource Hydroponics Tech
+missing resource Exophysics
+missing resource Tachyon Theory
+missing resource Cryptotheology
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Storage Bunkers
+missing resource Dark Energy
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Flux Condensator
+missing resource LHC
+missing resource Thin Film Cells
+missing resource Quantum Dot Cells
+missing resource Unobtainium Huts
+missing resource Eludium Huts
+missing resource Unobtainium Drill
+missing resource Nuclear Plants
+missing resource Cryocomputing
+missing resource Machine Learning
+missing resource Carbon Sequestration
+missing resource Space Manufacturing
+missing resource Unobtainium Reflectors
+missing resource Eludium Reflectors
+missing resource Hydro Plant Turbines
+missing resource Antimatter Bases
+missing resource AI Bases
+missing resource Antimatter Fission
+missing resource Antimatter Drive
+missing resource Antimatter Reactors
+missing resource Advanced AM Reactors
+missing resource Void Reactors
+missing resource Relic Station
+missing resource Cold Fusion
+missing resource Thorium Reactors
+missing resource Enriched Thorium
+missing resource Satellite Radio
+missing resource Astrophysicists
+missing resource Microwarp Reactors
+missing resource Planet Busters
+missing resource Thorium Drive
+missing resource AI Engineers
+missing resource Chronoengineers
+missing resource Robotic Assistance
+missing resource Void Aspiration
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Kairo Mission
+missing resource Rorschach Mission
+missing resource Yarn Mission
+missing resource Umbra Mission
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Enlightenment
+missing resource Codex Vox
+missing resource Codex Logos
+missing resource Codex Agrum
+missing resource Megalomania
+missing resource Black Codex
+missing resource Codex Leviathanus
+missing resource Golden Ratio
+missing resource Divine Proportion
+missing resource Vitruvian Feline
+missing resource Renaissance
+missing resource Diplomacy
+missing resource Zebra Diplomacy
+missing resource Zebra Covenant
+missing resource Navigation Diplomacy
+missing resource Chronomancy
+missing resource Anachronomancy
+missing resource Astromancy
+missing resource Unicornmancy
+missing resource Carnivals
+missing resource Numerology
+missing resource Order of the Void
+missing resource Venus of Willenfluff
+missing resource Pawgan Rituals
+missing resource Numeromancy
+missing resource Malkuth
+missing resource Yesod
+missing resource Hod
+missing resource Netzach
+missing resource Tiferet
+missing resource Gevurah
+missing resource Chesed
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource Adjustment Bureau
+missing resource ASCOH
+missing resource reset beam
+missing resource reset slab
+missing resource reset concrete
+missing resource reset plate
+missing resource reset steel
+missing resource reset gear
+missing resource reset alloy
+missing resource eludium
+missing resource reset eludium
+missing resource reset scaffold
+missing resource ship
+missing resource reset ship
+missing resource tanker
+missing resource reset tanker
+missing resource reset kerosene
+missing resource reset parchment
+missing resource reset manuscript
+missing resource reset compendium
+missing resource reset blueprint
+missing resource reset thorium
+missing resource reset megalith
+missing resource reset tear
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+27.936311169s: reset 1
+==========
+
+27.937546803s: resource karma kitten
+28.978078827s: resource karma
+39.796303072s: resource Terraformation
+39.7963125s: resource Cryptotheology
+40.878280383s: resource Hydroponics Tech
+44.588615206s: resource Black Obelisk
+
+==========
+57.635094413s: reset 2
+==========
+
+missing resource HarbourBonus
+missing resource SpaceElevatorOilBonus
+missing resource SpaceReactorScienceBonus
+missing resource MoonBaseCapBonus
+missing resource ParagonEffectBonus
+missing resource OtherCapBonus
+missing resource BaseMetalCapBonus
+missing resource SolarRevolutionProductionBonus
+missing resource SpaceProductionBonus
+missing resource CryostationStorageBonus
+missing resource UnicornEventBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset catnip
+missing resource reset wood
+missing resource reset mineral
+missing resource reset coal
+missing resource reset iron
+missing resource reset titanium
+missing resource reset gold
+missing resource reset oil
+missing resource reset uranium
+missing resource reset unobtainium
+missing resource reset antimatter
+missing resource reset catpower
+missing resource reset science
+missing resource reset culture
+missing resource reset faith
+missing resource reset starchart
+missing resource reset relic
+missing resource reset void
+missing resource reset blackcoin
+missing resource unobtainium
+missing resource reset time crystal
+missing resource antimatter
+missing resource void
+missing resource blackcoin
+missing resource gigaflop
+missing resource hash
+missing resource leviathan energy
+missing resource necrocorn
+missing resource sorrow
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource reset Chronophysics
+missing resource Chronosphere
+missing resource AI Core
+missing resource Marker
+missing resource Unicorn Graveyard
+missing resource Unicorn Necropolis
+missing resource Black Pyramid
+missing resource Transcendence Level
+missing resource Black Nexus
+missing resource Black Core
+missing resource Event Horizon
+missing resource Black Library
+missing resource Black Radiance
+missing resource Blazar
+missing resource Dark Nova
+missing resource Mausoleum
+missing resource Holy Genocide
+missing resource Space Elevator
+missing resource Lunar Outpost
+missing resource Active Lunar Outpost
+missing resource Idle Lunar Outpost
+missing resource Moon Base
+missing resource Planet Cracker
+missing resource Hydraulic Fracturer
+missing resource Research Vessel
+missing resource Orbital Array
+missing resource Sunlifter
+missing resource Heatsink
+missing resource Sunforge
+missing resource Cryostation
+missing resource Space Beacon
+missing resource Terraforming Station
+missing resource Hydroponics
+missing resource HR Harvester
+missing resource Entanglement Station
+missing resource Tectonic
+missing resource Molten Core
+missing resource Hash Level
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Void Hoover
+missing resource Void Rift
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Metaphysics
+missing resource Quantum Cryptography
+missing resource Blackchain
+missing resource Exophysics
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Storage Bunkers
+missing resource Dark Energy
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Flux Condensator
+missing resource LHC
+missing resource Thin Film Cells
+missing resource Quantum Dot Cells
+missing resource Unobtainium Huts
+missing resource Eludium Huts
+missing resource Unobtainium Drill
+missing resource Nuclear Plants
+missing resource Cryocomputing
+missing resource Machine Learning
+missing resource Carbon Sequestration
+missing resource Space Manufacturing
+missing resource Unobtainium Reflectors
+missing resource Eludium Reflectors
+missing resource Hydro Plant Turbines
+missing resource Antimatter Bases
+missing resource AI Bases
+missing resource Antimatter Fission
+missing resource Antimatter Drive
+missing resource Antimatter Reactors
+missing resource Advanced AM Reactors
+missing resource Void Reactors
+missing resource Relic Station
+missing resource Cold Fusion
+missing resource Thorium Reactors
+missing resource Enriched Thorium
+missing resource Satellite Radio
+missing resource Astrophysicists
+missing resource Microwarp Reactors
+missing resource Planet Busters
+missing resource Thorium Drive
+missing resource AI Engineers
+missing resource Chronoengineers
+missing resource Robotic Assistance
+missing resource Void Aspiration
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Kairo Mission
+missing resource Rorschach Mission
+missing resource Yarn Mission
+missing resource Umbra Mission
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Enlightenment
+missing resource Codex Vox
+missing resource Codex Logos
+missing resource Codex Agrum
+missing resource Megalomania
+missing resource Black Codex
+missing resource Codex Leviathanus
+missing resource Golden Ratio
+missing resource Divine Proportion
+missing resource Vitruvian Feline
+missing resource Renaissance
+missing resource Diplomacy
+missing resource Zebra Diplomacy
+missing resource Zebra Covenant
+missing resource Navigation Diplomacy
+missing resource Chronomancy
+missing resource Anachronomancy
+missing resource Astromancy
+missing resource Unicornmancy
+missing resource Carnivals
+missing resource Numerology
+missing resource Order of the Void
+missing resource Venus of Willenfluff
+missing resource Pawgan Rituals
+missing resource Numeromancy
+missing resource Malkuth
+missing resource Yesod
+missing resource Hod
+missing resource Netzach
+missing resource Tiferet
+missing resource Gevurah
+missing resource Chesed
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource Adjustment Bureau
+missing resource ASCOH
+missing resource reset beam
+missing resource reset slab
+missing resource reset concrete
+missing resource reset plate
+missing resource reset steel
+missing resource reset gear
+missing resource reset alloy
+missing resource eludium
+missing resource reset eludium
+missing resource reset scaffold
+missing resource ship
+missing resource reset ship
+missing resource tanker
+missing resource reset tanker
+missing resource reset kerosene
+missing resource reset parchment
+missing resource reset manuscript
+missing resource reset compendium
+missing resource reset blueprint
+missing resource reset thorium
+missing resource reset megalith
+missing resource reset tear
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+57.635698434s: reset 2
+==========
+
+1m3.861268929s: resource Nuclear Plants
+1m4.837433043s: resource Satellite Radio
+1m5.58879195s: resource Carbon Sequestration
+1m5.588802001s: resource Space Manufacturing
+1m7.187343677s: resource Lunar Outpost
+1m7.187354031s: resource Idle Lunar Outpost
+1m7.187363182s: resource Kairo Mission
+1m7.444367136s: resource unobtainium
+1m7.444384178s: resource Metaphysics
+1m7.444389316s: resource LHC
+1m7.721154401s: resource UnicornEventBonus
+1m7.721175455s: resource Unobtainium Reflectors
+1m7.721179939s: resource Enlightenment
+1m7.721181894s: resource Diplomacy
+1m7.721183571s: resource Navigation Diplomacy
+1m7.721185245s: resource Chronomancy
+1m7.72118688s: resource Unicornmancy
+1m7.721188616s: resource Carnivals
+1m7.721190359s: resource Adjustment Bureau
+1m8.094735355s: resource SpaceProductionBonus
+1m8.094752334s: resource Space Elevator
+1m8.094755021s: resource Moon Base
+1m8.09476277s: resource Hydro Plant Turbines
+1m8.094766416s: resource Codex Vox
+1m8.094768171s: resource Megalomania
+1m8.094769837s: resource Golden Ratio
+1m8.094771568s: resource Zebra Diplomacy
+1m8.094773338s: resource Anachronomancy
+1m8.094774925s: resource Astromancy
+1m8.094776542s: resource Numerology
+1m8.09477838s: resource ASCOH
+1m16.159103027s: resource antimatter
+1m16.159117076s: resource Active Lunar Outpost
+1m16.159119408s: resource Planet Cracker
+1m16.159121156s: resource Hydraulic Fracturer
+1m16.159122869s: resource Orbital Array
+1m16.159124458s: resource Sunlifter
+1m16.159126132s: resource Cryostation
+1m16.159131258s: resource Storage Bunkers
+1m16.15913316s: resource Thin Film Cells
+1m16.159134777s: resource Quantum Dot Cells
+1m16.15913662s: resource Unobtainium Huts
+1m16.159138213s: resource Eludium Huts
+1m16.159140476s: resource Unobtainium Drill
+1m16.159142736s: resource Cryocomputing
+1m16.159144277s: resource Machine Learning
+1m16.159146707s: resource Eludium Reflectors
+1m16.159148773s: resource Cold Fusion
+1m16.159150613s: resource Astrophysicists
+1m16.159152179s: resource Microwarp Reactors
+1m16.159156908s: resource Planet Busters
+1m16.159159303s: resource AI Engineers
+1m16.159162063s: resource Codex Logos
+1m16.159164151s: resource Black Codex
+1m16.159166051s: resource Divine Proportion
+1m16.159169031s: resource Zebra Covenant
+1m16.159171067s: resource Order of the Void
+1m16.159172815s: resource Venus of Willenfluff
+1m16.159174549s: resource Numeromancy
+1m16.159177061s: resource eludium
+1m16.80050571s: resource ParagonEffectBonus
+1m16.800518252s: resource gigaflop
+1m16.800524012s: resource AI Core
+1m16.80053471s: resource Thorium Reactors
+1m16.800538804s: resource Codex Agrum
+1m16.800541174s: resource Codex Leviathanus
+1m16.800543158s: resource Vitruvian Feline
+1m16.800545725s: resource Pawgan Rituals
+1m16.80054771s: resource Malkuth
+1m17.71686857s: resource Yarn Mission
+1m17.716880592s: resource Renaissance
+1m17.716884046s: resource Yesod
+1m18.096417094s: resource Robotic Assistance
+1m18.096428127s: resource Hod
+1m18.480705213s: resource Netzach
+1m18.735160221s: resource necrocorn
+1m18.73516887s: resource sorrow
+1m18.735174231s: resource Marker
+1m18.735176266s: resource Unicorn Graveyard
+1m19.060209137s: resource Black Pyramid
+1m19.302398153s: resource CryostationStorageBonus
+1m19.302408273s: resource reset time crystal
+1m19.302412246s: resource leviathan energy
+1m19.686121031s: resource reset Chronophysics
+1m19.686153988s: resource Antimatter Bases
+1m19.686159333s: resource Antimatter Fission
+1m19.686163414s: resource Antimatter Drive
+1m20.092707704s: resource BaseMetalCapBonus
+1m20.092717277s: resource reset catnip
+1m20.092719798s: resource reset wood
+1m20.092721773s: resource reset mineral
+1m20.092723558s: resource reset coal
+1m20.092725403s: resource reset iron
+1m20.092727066s: resource reset titanium
+1m20.092728687s: resource reset gold
+1m20.09273026s: resource reset oil
+1m20.092731909s: resource reset uranium
+1m20.092733652s: resource reset unobtainium
+1m20.092735354s: resource reset antimatter
+1m20.09273697s: resource reset catpower
+1m20.092738615s: resource reset science
+1m20.092740224s: resource reset culture
+1m20.092741817s: resource reset faith
+1m20.092743432s: resource reset starchart
+1m20.092745088s: resource reset relic
+1m20.092746665s: resource reset void
+1m20.092749415s: resource void
+1m20.092756849s: resource Chronosphere
+1m20.092760471s: resource Unicorn Necropolis
+1m20.09276488s: resource Sunforge
+1m20.092767246s: resource Terraforming Station
+1m20.09277763s: resource reset beam
+1m20.092779555s: resource reset slab
+1m20.092781275s: resource reset concrete
+1m20.092782975s: resource reset plate
+1m20.092784697s: resource reset steel
+1m20.092786337s: resource reset gear
+1m20.092787988s: resource reset alloy
+1m20.092789645s: resource reset eludium
+1m20.092791312s: resource reset scaffold
+1m20.092793186s: resource reset kerosene
+1m20.092794877s: resource reset parchment
+1m20.092796572s: resource reset manuscript
+1m20.092798218s: resource reset compendium
+1m20.092799839s: resource reset blueprint
+1m20.092801511s: resource reset megalith
+1m20.092803199s: resource reset tear
+1m20.84380192s: resource Hydroponics
+1m20.843813893s: resource Flux Condensator
+1m21.883043877s: resource SpaceReactorScienceBonus
+1m21.883064613s: resource Antimatter Reactors
+1m22.252172794s: resource Umbra Mission
+1m22.25218709s: resource reset thorium
+1m23.070542493s: resource HR Harvester
+1m23.070553414s: resource Dark Energy
+1m23.070559475s: resource Rorschach Mission
+1m24.870837481s: resource HarbourBonus
+1m24.870869932s: resource Advanced AM Reactors
+1m24.870880349s: resource ship
+1m24.870883035s: resource reset ship
+1m25.380016667s: resource Void Aspiration
+1m25.690732313s: resource OtherCapBonus
+1m25.690747572s: resource Heatsink
+1m25.690750531s: resource Void Rift
+1m26.752664346s: resource Void Reactors
+1m27.634976199s: resource Void Hoover
+1m39.299888195s: resource MoonBaseCapBonus
+1m39.299910819s: resource AI Bases
+
+==========
+1m42.345671454s: reset 3
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource hash
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Black Nexus
+missing resource Black Core
+missing resource Event Horizon
+missing resource Black Library
+missing resource Black Radiance
+missing resource Blazar
+missing resource Dark Nova
+missing resource Mausoleum
+missing resource Holy Genocide
+missing resource Research Vessel
+missing resource Space Beacon
+missing resource Entanglement Station
+missing resource Tectonic
+missing resource Molten Core
+missing resource Hash Level
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Quantum Cryptography
+missing resource Blackchain
+missing resource Exophysics
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Relic Station
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Tiferet
+missing resource Gevurah
+missing resource Chesed
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+1m42.345796528s: reset 3
+==========
+
+1m42.353550981s: resource Tiferet
+1m49.644029878s: resource Research Vessel
+1m51.031314869s: resource Relic Station
+1m54.601869612s: resource Space Beacon
+1m54.601884224s: resource Quantum Cryptography
+1m54.601888963s: resource Exophysics
+1m55.510055409s: resource Black Nexus
+1m55.510065008s: resource Black Core
+1m55.510067671s: resource Event Horizon
+1m55.510069458s: resource Black Library
+1m55.510071035s: resource Black Radiance
+1m55.510072664s: resource Blazar
+1m55.510074263s: resource Dark Nova
+1m55.510075911s: resource Holy Genocide
+1m55.510080202s: resource Blackchain
+1m55.818203713s: resource Molten Core
+1m58.90266702s: resource Mausoleum
+
+==========
+2m18.331218944s: reset 4
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource hash
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Entanglement Station
+missing resource Tectonic
+missing resource Hash Level
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Gevurah
+missing resource Chesed
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+2m18.331335136s: reset 4
+==========
+
+2m19.345593696s: resource Gevurah
+2m46.648191179s: resource hash
+2m46.648205836s: resource Entanglement Station
+2m46.888994907s: resource Hash Level
+
+==========
+2m57.399620592s: reset 5
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Chesed
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+2m57.39977491s: reset 5
+==========
+
+2m57.413140296s: resource Chesed
+
+==========
+3m41.038306227s: reset 6
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+3m41.038441527s: reset 6
+==========
+
+
+==========
+4m26.442051605s: reset 7
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+4m26.442158771s: reset 7
+==========
+
+
+==========
+5m10.060082639s: reset 8
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Binah
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+5m10.060216626s: reset 8
+==========
+
+5m10.072736146s: resource Binah
+
+==========
+5m52.437649639s: reset 9
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+5m52.437793666s: reset 9
+==========
+
+
+==========
+6m38.343271315s: reset 10
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+6m38.343407166s: reset 10
+==========
+
+
+==========
+7m22.193967715s: reset 11
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+7m22.194137758s: reset 11
+==========
+
+
+==========
+8m4.233617185s: reset 12
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+8m4.233760762s: reset 12
+==========
+
+
+==========
+8m48.947349532s: reset 13
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Chokhmah
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+8m48.947526844s: reset 13
+==========
+
+8m48.957554895s: resource Chokhmah
+
+==========
+9m36.617798028s: reset 14
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+9m36.618026091s: reset 14
+==========
+
+
+==========
+10m19.352232284s: reset 15
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+10m19.35235774s: reset 15
+==========
+
+
+==========
+11m2.681060945s: reset 16
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+11m2.681218058s: reset 16
+==========
+
+
+==========
+11m46.013942866s: reset 17
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+11m46.014126321s: reset 17
+==========
+
+
+==========
+12m27.92518196s: reset 18
+==========
+
+missing resource SpaceElevatorOilBonus
+missing resource SolarRevolutionProductionBonus
+missing resource PriceRatioBonus
+missing resource UnhappinessBonus
+missing resource CatnipConsumptionBonus
+missing resource reset blackcoin
+missing resource blackcoin
+missing resource chronoheat
+missing resource chrono furnace fuel
+missing resource burned paragon
+missing resource Transcendence Level
+missing resource Tectonic
+missing resource Temporal Battery
+missing resource Chrono Furnace
+missing resource Time Boiler
+missing resource Temporal Accelerator
+missing resource Time Impedance
+missing resource Resource Retrieval
+missing resource Temporal Press
+missing resource Cryochambers
+missing resource Chronocontrol
+missing resource Void Resonator
+missing resource Tachyon Theory
+missing resource Void Space
+missing resource Paradox Theory
+missing resource Chronoforge
+missing resource Tachyon Accelerators
+missing resource Enriched Thorium
+missing resource Thorium Drive
+missing resource Chronoengineers
+missing resource Distortion
+missing resource Chronosurge
+missing resource Invisible Black Hand
+missing resource Charon Mission
+missing resource Centaurus Mission
+missing resource Furthest Ring
+missing resource Keter
+missing resource tanker
+missing resource reset tanker
+missing resource worship
+missing resource reset worship
+missing resource epiphany
+missing resource reset epiphany
+
+==========
+12m27.925345074s: reset 18
+==========
+
