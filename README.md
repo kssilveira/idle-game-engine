@@ -22,9 +22,12 @@ Game engine for idle games like kittens game.
 
 ## Special Actions
 
+- Max an action (skip, create, buy)
 - Time skip until a game action is available
 - Create all the inputs for an action
-- Max an action (skip, create, buy)
+- Repeat an action
+- Hide actions and resources
+- Reset
 
 ## Dev
 
