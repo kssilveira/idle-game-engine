@@ -153,7 +153,10 @@ func TestRun(t *testing.T) {
 		name: "solve",
 	}}
 	{
-		g := NewGame(game.Config{NowFn: func() time.Time { return time.Unix(0, 0) }})
+		g := NewGame(Config{
+			Config:  game.Config{NowFn: func() time.Time { return time.Unix(0, 0) }},
+			Seasons: AllSeasons,
+		})
 		if err := g.Validate(); err != nil {
 			t.Fatalf("Validate got err %v", err)
 		}
@@ -173,7 +176,7 @@ func TestRun(t *testing.T) {
 			}
 			return res
 		}
-		g := NewGame(game.Config{NowFn: nowfn})
+		g := NewGame(Config{Config: game.Config{NowFn: nowfn}, Seasons: AllSeasons})
 		go func() {
 			if len(in.iters) == 0 {
 				if err := solve.Solve(solve.Config{
@@ -248,7 +251,10 @@ func TestGraph(t *testing.T) {
 	for _, in := range inputs {
 		var buf bytes.Buffer
 		logger := log.New(&buf, "", 0 /* flags */)
-		g := NewGame(game.Config{NowFn: func() time.Time { return time.Unix(0, 0) }})
+		g := NewGame(Config{
+			Config:  game.Config{NowFn: func() time.Time { return time.Unix(0, 0) }},
+			Seasons: AllSeasons,
+		})
 		in.fn(logger, g, in.colors)
 		name := strings.Replace(in.name, " ", "_", -1)
 		dot := filepath.Join("testdata", name+".dot")
@@ -266,7 +272,10 @@ func TestGraph(t *testing.T) {
 }
 
 func TestNew(t *testing.T) {
-	g := NewGame(game.Config{NowFn: func() time.Time { return time.Unix(0, 0) }})
+	g := NewGame(Config{
+		Config:  game.Config{NowFn: func() time.Time { return time.Unix(0, 0) }},
+		Seasons: AllSeasons,
+	})
 	content, err := json.MarshalIndent(g, "", "  ")
 	if err != nil {
 		t.Errorf("TestNew got err %v", err)

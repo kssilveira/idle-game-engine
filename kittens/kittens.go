@@ -9,12 +9,21 @@ import (
 
 type R = data.Resource
 
-func NewGame(cfg game.Config) *game.Game {
+type Config struct {
+	Config  game.Config
+	Seasons []string
+}
+
+var (
+	AllSeasons = []string{"Spring", "Summer", "Autumn", "Winter"}
+)
+
+func NewGame(cfg Config) *game.Game {
 	kittenNames := []string{
 		"kitten", "geologist", "priest", "hunter", "scholar", "miner", "woodcutter", "farmer",
 	}
 
-	g := game.NewGame(cfg)
+	g := game.NewGame(cfg.Config)
 
 	g.AddResources(join([]R{{
 		Name: "day", Type: "Calendar", IsHidden: true, Count: 0, Cap: -1,
@@ -30,12 +39,22 @@ func NewGame(cfg game.Config) *game.Game {
 	}}, resourceWithModulus(R{
 		Type: "Calendar", StartCount: 1, Cap: -1,
 		Producers: []R{{Name: "day", Factor: 0.01, ProductionFloor: true}},
-	}, []string{
-		"Spring", "Summer", "Autumn", "Winter"}), []R{{
+	}, cfg.Seasons), []R{{
 		Name: "day_of_year", Type: "Calendar", StartCount: 1, Cap: -1,
 		ProductionModulus: 400, ProductionModulusEquals: -1,
 		Producers: []R{{Name: "day", ProductionFloor: true}},
 	}}))
+
+	seasons := map[string]bool{}
+	for _, season := range cfg.Seasons {
+		seasons[season] = true
+	}
+	for _, season := range AllSeasons {
+		if seasons[season] {
+			continue
+		}
+		g.AddResources([]R{{Name: season}})
+	}
 
 	addBonus(g, []R{{
 		Name: "BarnBonus",

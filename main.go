@@ -28,6 +28,7 @@ var (
 	maxSkipSeconds = flag.Int("max_skip_seconds", 0, "max skip duration")
 	maxCreateIter  = flag.Int("max_create_iter", 0, "max create iterations")
 	resourceMap    = flag.String("resource_map", "", "map of resource quantities, e.g. 'catnip:1,Catnip Field:2,wood:3")
+	seasons        = flag.String("seasons", strings.Join(kittens.AllSeasons, ","), "list of seasons")
 )
 
 func main() {
@@ -65,10 +66,13 @@ func all() error {
 }
 
 func newGame() (*game.Game, error) {
-	g := kittens.NewGame(game.Config{
-		NowFn:          func() time.Time { return time.Now() },
-		MaxSkipSeconds: time.Second * time.Duration(*maxSkipSeconds),
-		MaxCreateIter:  *maxCreateIter,
+	g := kittens.NewGame(kittens.Config{
+		Config: game.Config{
+			NowFn:          func() time.Time { return time.Now() },
+			MaxSkipSeconds: time.Second * time.Duration(*maxSkipSeconds),
+			MaxCreateIter:  *maxCreateIter,
+		},
+		Seasons: strings.Split(*seasons, ","),
 	})
 	if err := updateResources(g, *resourceMap); err != nil {
 		return nil, err
