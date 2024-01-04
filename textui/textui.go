@@ -29,6 +29,7 @@ var (
 		data.ParsedInputTypeReset:  "reset",
 		data.ParsedInputTypeHide:   "hide ",
 		data.ParsedInputTypeShow:   "show",
+		data.ParsedInputTypeUndo:   "undo",
 	}
 )
 
