@@ -25,6 +25,7 @@ Game engine for idle games like kittens game.
 - Max an action (skip, create, buy)
 - Time skip until a game action is available
 - Create all the inputs for an action
+- Undo an action
 - Repeat an action
 - Hide actions and resources
 - Reset

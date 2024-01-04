@@ -194,6 +194,8 @@ func (g *Game) populateUIActions(data *ui.Data) {
 	}, {
 		Name: "cX: create inputs and buy action X",
 	}, {
+		Name: "uX: undo action X",
+	}, {
 		Name: "XA: X times action A",
 	}, {
 		Name: "hm: hide maxed actions",
@@ -264,7 +266,7 @@ func (g *Game) update(now time.Time) {
 				resource.Count = resource.StartCount + factor
 			}
 		} else {
-			resource.Add(data.Resource{Count: factor * elapsed.Seconds()})
+			resource.Add(data.Resource{Count: elapsed.Seconds()}, factor)
 		}
 		if factor < 0 && resource.Count == 0 {
 			g.updateRate(resource)
@@ -358,8 +360,10 @@ func (g *Game) actImpl(input data.ParsedInput) error {
 	if g.isLocked(input.Action) {
 		return fmt.Errorf("action %s is locked", input.Action.Name)
 	}
-	if err := g.checkMax(input.Action); err != nil {
-		return err
+	if input.Type != data.ParsedInputTypeUndo {
+		if err := g.checkMax(input.Action); err != nil {
+			return err
+		}
 	}
 	if input.Type == data.ParsedInputTypeSkip {
 		if err := g.skip(input); err != nil {
@@ -377,17 +381,23 @@ func (g *Game) actImpl(input data.ParsedInput) error {
 		}
 		return nil
 	}
-	if err := g.checkCost(input); err != nil {
-		return err
+	if input.Type != data.ParsedInputTypeUndo {
+		if err := g.checkCost(input); err != nil {
+			return err
+		}
+	}
+	factor := 1.0
+	if input.Type == data.ParsedInputTypeUndo {
+		factor = -1.0
 	}
 	for _, c := range input.Action.Costs {
 		r := g.GetResource(c.Name)
-		r.Count -= g.getCost(input.Action, c)
-		r.Cap -= c.Cap
+		r.Count -= g.getCost(input.Action, c) * factor
+		r.Cap -= c.Cap * factor
 	}
 	for _, add := range input.Action.Adds {
 		r := g.GetResource(add.Name)
-		r.Add(g.getActionAdd(add))
+		r.Add(g.getActionAdd(add), factor)
 	}
 	return nil
 }

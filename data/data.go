@@ -74,7 +74,8 @@ var (
 	ParsedInputTypeReset  = "r"
 	ParsedInputTypeHide   = "h"
 	ParsedInputTypeShow   = "S"
-	ParsedInputTypes      = []string{ParsedInputTypeSkip, ParsedInputTypeCreate, ParsedInputTypeMax, ParsedInputTypeReset, ParsedInputTypeHide, ParsedInputTypeShow}
+	ParsedInputTypeUndo   = "u"
+	ParsedInputTypes      = []string{ParsedInputTypeSkip, ParsedInputTypeCreate, ParsedInputTypeMax, ParsedInputTypeReset, ParsedInputTypeHide, ParsedInputTypeShow, ParsedInputTypeUndo}
 )
 
 type ParsedInput struct {
@@ -85,9 +86,9 @@ type ParsedInput struct {
 	Action Action
 }
 
-func (r *Resource) Add(add Resource) {
-	r.Cap += add.Cap
-	r.Count += add.Count
+func (r *Resource) Add(add Resource, factor float64) {
+	r.Cap += add.Cap * factor
+	r.Count += add.Count * factor
 	if r.Count > r.Cap && r.Cap >= 0 {
 		r.Count = r.Cap
 	}
