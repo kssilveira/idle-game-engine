@@ -530,7 +530,7 @@ func (g *Game) getBonusFormula(resource data.Resource) string {
 }
 
 var (
-	inputRegexp = regexp.MustCompile(`\s*(\d*)\s*([mschSr]?)\s*(\D*)\s*(\d*)\s*`)
+	inputRegexp = regexp.MustCompile(fmt.Sprintf(`\s*(\d*)\s*([%s]?)\s*(\D*)\s*(\d*)\s*`, strings.Join(data.ParsedInputTypes, "")))
 )
 
 func (g *Game) parseInput(in string) (data.ParsedInput, error) {

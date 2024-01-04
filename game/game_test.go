@@ -27,8 +27,8 @@ func TestAct(t *testing.T) {
 				Name: "resource", Count: 1,
 			}},
 		}},
-		inputs: []string{"0", "0"},
-		want:   []int{1, 2},
+		inputs: []string{"0", "0", "u0", "u0"},
+		want:   []int{1, 2, 1, 0},
 	}, {
 		name: "cost",
 		resources: []data.Resource{{
@@ -658,6 +658,37 @@ func TestUpdate(t *testing.T) {
 			if got != want {
 				t.Errorf("[%s] resource %s want %d got %d", in.name, name, want, got)
 			}
+		}
+	}
+}
+
+func TestParsedInput(t *testing.T) {
+	inputs := []struct {
+		name     string
+		input    string
+		wantType string
+	}{{
+		input:    "0",
+		wantType: "",
+	}, {
+		input:    "s0",
+		wantType: "s",
+	}, {
+		input:    "u0",
+		wantType: "u",
+	}}
+	for _, in := range inputs {
+		g := NewGame(Config{NowFn: func() time.Time { return time.Unix(0, 0) }})
+		g.AddActions([]data.Action{{Name: "action_name"}})
+		if err := g.Validate(); err != nil {
+			t.Errorf("[%s] Validate got err %v", in.input, err)
+		}
+		got, err := g.parseInput(in.input)
+		if err != nil {
+			t.Errorf("[%s] got err %v", in.input, err)
+		}
+		if got.Type != in.wantType {
+			t.Errorf("[%s] want type %s got %s", in.input, in.wantType, got.Type)
 		}
 	}
 }
